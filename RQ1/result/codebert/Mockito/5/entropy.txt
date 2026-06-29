@@ -1,0 +1,44 @@
+return;#84,17.863654483448375
+timer.start();#78,17.811571041742962
+this.pollingPeriodMillis = pollingPeriodMillis;#53,17.71748762545378
+error = null;#86,17.49301354090373
+return pollingPeriodMillis;#123,17.45112050374349
+return e;#104,17.3359037399292
+AssertionError error = null;#76,17.324823021888733
+if (returnOnSuccess) {#83,17.272078555563223
+return delegate;#131,17.24529032273726
+public VerificationMode getDelegate() {#130,17.19424233069787
+error = handleVerifyException(e);#89,17.15651966094971
+this.delegate = delegate;#55,17.150506909688314
+return !(verificationMode instanceof AtMost || verificationMode instanceof NoMoreInteractions);#111,17.07496314389365
+public long getPollingPeriod() {#122,17.0002498626709
+delegate.verify(data);#81,16.968763268512227
+this.durationMillis = durationMillis;#54,16.921043237050373
+return durationMillis;#127,16.89781350355882
+this(pollingPeriodMillis, durationMillis, delegate, returnOnSuccess, new Timer(durationMillis));#37,16.841786411830356
+try {#80,16.82913616725377
+sleep(pollingPeriodMillis);#103,16.78626319340297
+throw error;#97,16.77250410715739
+if (error != null) {#96,16.73845386505127
+throw e;#106,16.67752882639567
+public VerificationOverTimeImpl(long pollingPeriodMillis, long durationMillis, VerificationMode delegate, boolean returnOnSuccess) {#36,16.62803610633401
+try {#115,16.59914903640747
+error = handleVerifyException(e);#92,16.591397953033447
+private final long pollingPeriodMillis;#19,16.58784030033992
+catch (org.mockito.exceptions.verification.junit.ArgumentsAreDifferent e) {#91,16.56951904296875
+this.returnOnSuccess = returnOnSuccess;#56,16.56887568367852
+public VerificationOverTimeImpl(long pollingPeriodMillis, long durationMillis, VerificationMode delegate, boolean returnOnSuccess, Timer timer) {#52,16.511303826382285
+public long getDuration() {#126,16.374271202087403
+Thread.sleep(sleep);#116,16.36202467812432
+while (timer.isCounting()) {#79,16.33310256284826
+if (canRecoverFromFailure(delegate)) {#102,16.31184825897217
+this.timer = timer;#57,16.206818921225413
+private AssertionError handleVerifyException(AssertionError e) {#101,16.11450093133109
+private void sleep(long sleep) {#114,15.833198388417562
+private final VerificationMode delegate;#21,15.814967328851873
+public void verify(VerificationData data) {#75,15.795553752354213
+private final long durationMillis;#20,15.73151614449241
+protected boolean canRecoverFromFailure(VerificationMode verificationMode) {#110,15.628721688923083
+private final Timer timer;#23,15.4677978515625
+private final boolean returnOnSuccess;#22,15.32857981595126
+public class VerificationOverTimeImpl implements VerificationMode {#17,15.25818237891564

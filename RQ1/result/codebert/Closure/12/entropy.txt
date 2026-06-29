@@ -1,0 +1,119 @@
+case Token.NAME:#171,19.580107602206144
+public int hashCode() {#108,19.36759967803955
+case Token.HOOK:#206,19.29196087519328
+private final Scope jsScope;#48,19.237255930900574
+boolean isForward() {#132,19.10811342511858
+private final Set<Var> escaped;#49,19.036775207519533
+@Override#136,18.96865487098694
+case Token.WHILE:#175,18.80539067586263
+if (var == null || var.scope != jsScope) {#272,18.774853653377956
+case Token.OR:#201,18.6947454105724
+if (varName.hasChildren()) {#216,18.68668561823228
+@Override#141,18.639527082443237
+for (ReachingUses uses : from) {#124,18.62211317174575
+case Token.VAR:#212,18.618163267771404
+ControlFlowGraph<Node> cfg, Scope jsScope, AbstractCompiler compiler) {#52,18.614591865539552
+case Token.AND:#200,18.613080284812234
+@Override#101,18.582715670267742
+default:#224,18.572530508041382
+if (!NodeUtil.isForIn(n)) {#183,18.57101867312477
+case Token.FOR:#182,18.561248952692207
+case Token.IF:#177,18.56087910045277
+if (var == null || var.scope != jsScope) {#257,18.527006096310085
+ReachingUses createEntryLattice() {#137,18.499904192410984
+if (lhs.isName() && !conditional) {#193,18.481802304585774
+case Token.DO:#176,18.478364077481356
+public boolean equals(Object other) {#102,18.464784304300945
+@Override#131,18.463544845581055
+case Token.FUNCTION:#168,18.38552474975586
+@Override#107,18.375215848286945
+if (lhs.isVar()) {#190,18.36282850566663
+public ReachingUses() {#88,18.34438046542081
+Var var = jsScope.getVar(name);#271,18.332405789693198
+switch (n.getType()) {#165,18.313153902689617
+this.jsScope = jsScope;#54,18.23788619041443
+Var var = jsScope.getVar(name);#256,18.22705421447754
+@Override#121,18.202680587768555
+computeEscaped(jsScope, escaped, compiler);#59,18.16356913248698
+return (other instanceof ReachingUses) &&#103,18.14975699256448
+ReachingUses createInitialEstimateLattice() {#142,18.149541409810386
+MaybeReachingVariableUse(#51,18.145679712295532
+case Token.BLOCK:#167,18.075976689656574
+public ReachingUses apply(List<ReachingUses> from) {#122,18.064338275364467
+computeMayUse(#178,18.03361972173055
+@Override#146,18.02325177192688
+if (!n.isAssign()) {#232,17.98390037135074
+public ReachingUses(ReachingUses other) {#97,17.957602500915527
+return output;#156,17.905056680951798
+if (!conditional) {#227,17.894699156284332
+computeMayUse(varName.getFirstChild(), cfgNode, output, conditional);#217,17.888504455829487
+if (!escaped.contains(var)) {#275,17.88051389058431
+computeMayUse(name.getNext(), cfgNode, output, conditional);#236,17.87003372333668
+private void addToUseIfLocal(String name, Node node, ReachingUses use) {#255,17.828279163526453
+private boolean hasExceptionHandler(Node cfgNode) {#159,17.818629332951136
+computeMayUse(n.getLastChild(), cfgNode, output, true);#207,17.802323524768536
+computeMayUse(n.getLastChild(), cfgNode, output, true);#202,17.78473164485051
+lhs = lhs.getLastChild(); // for(var x in y) {...}#191,17.77154165325743
+Node name = n.getFirstChild();#226,17.762851915861432
+Node varName = n.getFirstChild();#213,17.74594471189711
+if (!escaped.contains(var)) {#260,17.72039686838786
+boolean conditional = hasExceptionHandler(n);#153,17.696196409372185
+return;#198,17.65917043685913
+for (Node c = n.getLastChild(); c != null; c = n.getChildBefore(c)) {#243,17.652879820929634
+return;#180,17.648283290863038
+if (NodeUtil.isAssignmentOp(n) && n.getFirstChild().isName()) {#225,17.646269112825394
+computeMayUse(n, n, output, conditional);#154,17.636164486408234
+return;#169,17.631201934814452
+computeMayUse(c, cfgNode, output, conditional);#244,17.591847273019646
+Preconditions.checkState(n.hasChildren(), "AST should be normalized");#214,17.566122165093056
+computeMayUse(#184,17.54774080004011
+if (!conditional) {#218,17.540102124214172
+private void removeFromUseIfLocal(String name, ReachingUses use) {#270,17.537011337280273
+return;#222,17.50607919692993
+final Multimap<Var, Node> mayUseMap;#86,17.49691340502571
+return result;#127,17.46513557434082
+ReachingUses flowThrough(Node n, ReachingUses input) {#147,17.435410198412445
+DataFlowAnalysis<Node, MaybeReachingVariableUse.ReachingUses> {#45,17.426898436112836
+((ReachingUses) other).mayUseMap.equals(this.mayUseMap);#104,17.41942879461473
+addToUseIfLocal(name.getString(), cfgNode, output);#233,17.406080443283606
+return;#173,17.393252277374266
+addToUseIfLocal(n.getString(), cfgNode, output);#172,17.385218849182127
+ReachingUses result = new ReachingUses();#123,17.357833438449436
+return;#204,17.3435941696167
+computeMayUse(n.getFirstChild(), cfgNode, output, conditional);#203,17.34352368574876
+Node lhs = n.getFirstChild();#188,17.30777072906494
+private static class ReachingUsesJoinOp implements JoinOp<ReachingUses> {#120,17.29178810119629
+return false;#133,17.289812360491073
+return mayUseMap.hashCode();#109,17.28265483038766
+removeFromUseIfLocal(varName.getString(), output);#219,17.269605269798866
+computeMayUse(n.getFirstChild(), cfgNode, output, conditional);#209,17.264776926774246
+computeMayUse(rhs, cfgNode, output, conditional);#196,17.249868202209473
+return new ReachingUses();#143,17.24372811750932
+return false;#160,17.231534685407365
+Collection<Node> getUses(String name, Node defNode) {#290,17.227019839816624
+return;#210,17.17037925720215
+return new ReachingUses();#138,17.169464631514117
+Node n, Node cfgNode, ReachingUses output, boolean conditional) {#164,17.141331394513447
+static final class ReachingUses implements LatticeElement {#85,17.135238202412925
+computeMayUse(n.getFirstChild().getNext(), cfgNode, output, true);#208,17.12998890054637
+return;#258,17.12890601158142
+removeFromUseIfLocal(name.getString(), output);#228,17.09019527435303
+FlowState<ReachingUses> state = n.getAnnotation();#293,17.076290321350097
+Node rhs = lhs.getNext();#189,17.068504428863527
+use.mayUseMap.put(var, node);#261,17.039546648661297
+return;#273,17.015711784362793
+NodeUtil.getConditionExpression(n), cfgNode, output, conditional);#179,16.984327623921057
+return state.getOut().mayUseMap.get(jsScope.getVar(name));#294,16.98417858282725
+ReachingUses output = new ReachingUses(input);#148,16.93326997756958
+this.escaped = Sets.newHashSet();#55,16.9289519627889
+super(cfg, new ReachingUsesJoinOp());#53,16.91899925470352
+private void computeMayUse(#163,16.823233366012573
+removeFromUseIfLocal(lhs.getString(), output);#194,16.78705281477708
+class MaybeReachingVariableUse extends#44,16.772381067276
+NodeUtil.getConditionExpression(n), cfgNode, output, conditional);#185,16.740667111945875
+result.mayUseMap.putAll(uses.mayUseMap);#125,16.693177803702977
+GraphNode<Node, Branch> n = getCfg().getNode(defNode);#291,16.519690845323645
+mayUseMap = HashMultimap.create(other.mayUseMap);#98,16.381123667177945
+use.mayUseMap.removeAll(var);#276,16.098007314345416
+Preconditions.checkNotNull(n);#292,16.075958728790283
+mayUseMap = HashMultimap.create();#89,15.967407058267032

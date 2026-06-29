@@ -1,0 +1,29 @@
+injectMocksFieldInstance = new FieldInitializer(testClassInstance, field).initialize();#77,17.910142183303833
+mockCandidateFilter.filterCandidate(mocks, field, fieldInstance).thenInject();#93,17.906677997473516
+private final MockCandidateFilter mockCandidateFilter = new TypeBasedCandidateFilter(new NameBasedCandidateFilter(new FinalMockCandidateFilter()));#28,17.56252640172055
+Class<?> fieldClass = injectMocksFieldInstance.getClass();#83,17.508899794684517
+Field[] declaredFields = awaitingInjectionClazz.getDeclaredFields();#98,17.401878723731407
+injectMockCandidate(fieldClass, mocksToBeInjected, injectMocksFieldInstance);#85,17.330932065060264
+public void injectMocksOnFields(Set<Field> injectMocksFields, Set<Object> mocks, Object testClassInstance) {#72,17.29847764968872
+fieldClass = fieldClass.getSuperclass();#86,17.287609870617207
+Set<Object> mocksToBeInjected = new HashSet<Object>(mocks);#74,17.16768515110016
+for(Field field : orderedInstanceFieldsFrom(awaitingInjectionClazz)) {#92,17.158257537417942
+return declaredFields;#100,17.09073961698092
+Object injectMocksFieldInstance = null;#75,17.079971903846378
+for (Field field : injectMocksFields) {#73,17.011647510528565
+public int compare(Field field1, Field field2) {#30,17.008583205086843
+Class<?> field2Type = field2.getType();#32,16.916499824523925
+new Reporter().cannotInitializeForInjectMocksAnnotation(field.getName(), e);#79,16.91084256925081
+private Comparator<Field> supertypesLast = new Comparator<Field>() {#29,16.88444792140614
+if(field2Type.isAssignableFrom(field1Type)) {#37,16.87409963278935
+return 1;#35,16.870355355112178
+if(field1Type.isAssignableFrom(field2Type)) {#34,16.81197344023606
+private void injectMockCandidate(Class<?> awaitingInjectionClazz, Set<Object> mocks, Object fieldInstance) {#91,16.755996386210125
+public class DefaultInjectionEngine {#26,16.658803343772888
+Class<?> field1Type = field1.getType();#31,16.634978065490724
+try {#76,16.620258331298828
+Arrays.sort(declaredFields, supertypesLast);#99,16.538088343360208
+while (fieldClass != Object.class) {#84,16.399219599637117
+return 0;#40,16.304049237569174
+return -1;#38,16.012210512161253
+private Field[] orderedInstanceFieldsFrom(Class<?> awaitingInjectionClazz) {#97,16.0095274966696

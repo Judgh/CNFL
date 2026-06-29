@@ -1,0 +1,288 @@
+public void clear() {#494,18.79480160607232
+else if (w == LengthConstraintType.FIXED) {#147,18.758247624272887
+private Block centerBlock;#69,18.733582814534504
+else {#101,18.698588943481447
+else if (h == LengthConstraintType.FIXED) {#151,18.650701063650626
+if (obj == this) {#510,18.63979123433431
+if (!(obj instanceof BorderArrangement)) {#513,18.604144382476807
+public BorderArrangement() {#86,18.594167015769266
+else if (h == LengthConstraintType.FIXED) {#140,18.58860245457402
+if (this.centerBlock != null) {#406,18.586678822835285
+w[0] = constraint.getWidth();#426,18.584551917182075
+new Range(0.0, constraint.getWidth()),#446,18.539580287355363
+else {#258,18.534606742858887
+public boolean equals(Object obj) {#509,18.533948580423992
+private Block leftBlock;#78,18.531826337178547
+if (this.rightBlock != null) {#480,18.51260609096951
+if (this.leftBlock != null) {#227,18.503382788764107
+public void add(Block block, Object key) {#96,18.50264441172282
+else if (w == LengthConstraintType.RANGE) {#158,18.49494038457456
+RectangleConstraint constraint) {#253,18.484754880269367
+if (this.rightBlock != null) {#201,18.481306711832683
+if (this.centerBlock != null) {#236,18.478149625990127
+if (this.rightBlock != null) {#300,18.47735685772366
+if (this.leftBlock != null) {#397,18.468544907040066
+if (this.bottomBlock != null) {#223,18.45002619425456
+if (this.topBlock != null) {#219,18.438086562686497
+if (this.centerBlock != null) {#464,18.435540941026474
+if (this.rightBlock != null) {#231,18.42655923631456
+if (this.rightBlock != null) {#366,18.421140829722088
+if (this.bottomBlock != null) {#472,18.419451342688667
+if (this.rightBlock != null) {#453,18.41361443201701
+if (this.leftBlock != null) {#196,18.410885439978706
+if (this.leftBlock != null) {#476,18.39598602718777
+else if (edge == RectangleEdge.LEFT) {#109,18.386421585083006
+if (this.centerBlock != null) {#484,18.384170850118
+if (this.leftBlock != null) {#444,18.380972120496963
+if (this.centerBlock != null) {#210,18.37179962793986
+if (this.bottomBlock != null) {#393,18.370397249857586
+if (this.bottomBlock != null) {#287,18.368341604868572
+if (this.leftBlock != null) {#295,18.348792764875625
+if (this.rightBlock != null) {#401,18.34554057651096
+if (this.topBlock != null) {#468,18.33940855662028
+if (!ObjectUtilities.equal(this.rightBlock, that.rightBlock)) {#526,18.336565053021467
+if (h == LengthConstraintType.NONE) {#137,18.32526995585515
+private Block rightBlock;#81,18.32246250576443
+if (this.leftBlock != null) {#358,18.322289996676975
+private Block bottomBlock;#75,18.317158910963272
+RectangleConstraint constraint) {#423,18.30363271175287
+if (this.bottomBlock != null) {#190,18.301625622643364
+if (this.topBlock != null) {#389,18.28527545928955
+else if (h == LengthConstraintType.FIXED) {#162,18.279127686112016
+new Range(0.0, constraint.getWidth() - w[2]),#455,18.278251287099476
+Range widthRange3 = Range.shift(widthRange, -(w[2] + w[3]), false);#376,18.267904483910762
+if (constraint.getHeightRange().contains(size1.getHeight())) {#255,18.2648218746843
+if (this.topBlock != null) {#185,18.256142245398628
+else if (h == LengthConstraintType.RANGE) {#143,18.25137890709771
+else if (h == LengthConstraintType.RANGE) {#154,18.249534324363427
+return new Size2D(container.calculateTotalWidth(contentSize.getWidth()),#170,18.245147409110235
+RectangleConstraint constraint) {#130,18.2244852290434
+double[] w = new double[5];#183,18.220423754523782
+if (edge == RectangleEdge.TOP) {#103,18.20702942557957
+else if (edge == RectangleEdge.BOTTOM) {#106,18.205598537738506
+if (!ObjectUtilities.equal(this.leftBlock, that.leftBlock)) {#523,18.199694174307364
+this.topBlock = null;#496,18.19858061472575
+if (h == LengthConstraintType.NONE) {#148,18.196773015535793
+if (key == null) {#98,18.159888394673665
+if (this.bottomBlock != null) {#436,18.15825578901503
+if (this.topBlock != null) {#427,18.134266535441082
+double[] w = new double[5];#424,18.130385286667767
+double[] w = new double[5];#340,18.122960988213034
+if (this.bottomBlock != null) {#349,18.12238221698337
+this.rightBlock = null;#499,18.117683347066244
+if (this.centerBlock != null) {#314,18.114001433054607
+w[4] = constraint.getWidth() - w[3] - w[2];#462,18.112207787377493
+new Range(0.0, constraint.getHeight()),#430,18.102468201608367
+this.leftBlock = null;#498,18.08399117787679
+if (this.topBlock != null) {#282,18.078592406378853
+double maxW = Math.max(width - w[2], 0.0);#301,18.06638479232788
+if (this.centerBlock != null) {#377,18.050020694732666
+Range widthRange2 = Range.shift(widthRange, -w[2], false);#365,18.043587578667534
+double[] h = new double[5];#425,18.042517830343808
+if (this.topBlock != null) {#342,18.032210879855686
+Range heightRange2 = Range.shift(heightRange, -h[0], false);#350,18.02635875824959
+this.bottomBlock = null;#497,18.023722076416014
+private Block topBlock;#72,18.02152082655165
+if (!ObjectUtilities.equal(this.centerBlock, that.centerBlock)) {#529,18.020053898846662
+Size2D contentSize = null;#133,18.014297425746918
+else if (h == LengthConstraintType.RANGE) {#165,18.00900932594582
+w[0] = size.width;#346,18.002045813060942
+Range heightRange3 = Range.shift(heightRange, -(h[0] + h[1]));#357,17.98084568977356
+double[] w = new double[5];#277,17.97966693429386
+RectangleEdge edge = (RectangleEdge) key;#102,17.97690478960673
+if (h == LengthConstraintType.NONE) {#159,17.975846437307503
+this.centerBlock = null;#495,17.930467732747395
+w[1] = size.width;#354,17.916629337129137
+LengthConstraintType.FIXED, 0.0,#429,17.916115934198555
+constraint.getHeightRange(), g2);#167,17.914155728889234
+throw new RuntimeException("Not implemented.");#141,17.912624168395997
+double[] h = new double[5];#184,17.889927864074707
+if (w == LengthConstraintType.NONE) {#136,17.889612674713135
+LengthConstraintType w = contentConstraint.getWidthConstraintType();#134,17.862729496426052
+double[] h = new double[5];#341,17.85497985166662
+w[0] = size.width;#187,17.851703961690266
+Range widthRange, Range heightRange,#338,17.84632765941131
+throw new RuntimeException("Not implemented.");#160,17.83161418914795
+if (!ObjectUtilities.equal(this.topBlock, that.topBlock)) {#517,17.828985814695006
+private static final long serialVersionUID = 506071142274883745L;#66,17.827929269699823
+else if (edge == RectangleEdge.RIGHT) {#112,17.82647430419922
+w[2] = size.width;#450,17.755925223940896
+Graphics2D g2,#129,17.7551229596138
+Graphics2D g2) {#339,17.74983074790553
+Size2D size = this.bottomBlock.arrange(g2,#191,17.744966541017806
+Size2D size = this.rightBlock.arrange(g2, c3);#306,17.73690506719774
+w[3] = size.width;#307,17.72892733982631
+double width) {#276,17.727418981279644
+protected Size2D arrangeNN(BlockContainer container, Graphics2D g2) {#182,17.726504716006193
+w[3] = size.width;#459,17.72439025697254
+throw new RuntimeException("Not implemented.");#163,17.724365425109863
+w[2] = size.width;#362,17.706858680361794
+contentSize = arrangeFF(container, g2, constraint);#152,17.703357499221276
+Size2D size1 = arrangeFN(container, g2, constraint.getWidth());#254,17.69792761626067
+h[0] = size.height;#433,17.69542221795945
+w[0] = size.width;#284,17.689146132696244
+double width = Math.max(w[0], Math.max(w[1], w[2] + w[4] + w[3]));#387,17.681275481269473
+w[1] = size.width;#193,17.672025725955056
+new Range(Math.min(w[2], maxW), maxW),#303,17.670653652500462
+Size2D size = this.leftBlock.arrange(g2, c3);#361,17.669867915491903
+h[0] = size.height;#347,17.66646839323498
+if (!ObjectUtilities.equal(this.bottomBlock, that.bottomBlock)) {#520,17.661507818433975
+Size2D size = this.rightBlock.arrange(g2, c4);#369,17.657602710108602
+Size2D size = this.leftBlock.arrange(g2, c3);#449,17.6477935852543
+double[] h = new double[5];#278,17.63298578823314
+h[1] = size.height;#441,17.63137690226237
+new Range(0.0, width), LengthConstraintType.RANGE,#293,17.624477190129898
+double height = h[0] + h[1] + centerHeight;#218,17.61936394373576
+constraint.getHeight() - h[0]), LengthConstraintType.RANGE);#439,17.61861688662798
+LengthConstraintType.FIXED);#448,17.610806169181036
+LengthConstraintType.FIXED);#457,17.610160367242223
+BorderArrangement that = (BorderArrangement) obj;#516,17.607875520532783
+w[3] = size.width;#370,17.603615261259534
+w[4] = size.width;#319,17.595855394999187
+RectangleConstraint c3 = new RectangleConstraint(0.0,#445,17.5945398576798
+Size2D size = this.leftBlock.arrange(g2, c2);#296,17.59290433699085
+LengthConstraintType.FIXED, 0.0, new Range(0.0,#438,17.59038701057434
+Size2D size = this.topBlock.arrange(g2, c1);#345,17.58892456177742
+return arrange(container, g2, new RectangleConstraint(width, height));#323,17.5881784580372
+double h = constraint.getHeightRange().constrain(size1.getHeight());#259,17.586612978289203
+container.calculateTotalHeight(contentSize.getHeight()));#171,17.581073760986328
+this.centerBlock = block;#99,17.571866336621735
+Size2D size = this.centerBlock.arrange(g2, c5);#383,17.567880230565226
+Size2D size = this.bottomBlock.arrange(g2, c2);#353,17.56434714409613
+LengthConstraintType h = contentConstraint.getHeightConstraintType();#135,17.563494964882178
+h[1] = size.height;#355,17.555087089538574
+w[4] = size.width;#384,17.53711482456752
+w[4] = size.width;#213,17.535416239783878
+return new Size2D(width, height);#240,17.5307101143731
+protected Size2D arrangeFF(BlockContainer container, Graphics2D g2,#422,17.529678072248185
+w[1] = size.width;#289,17.527811005001976
+RectangleConstraint c3 = new RectangleConstraint(0.0,#302,17.52752148720526
+Size2D size = this.centerBlock.arrange(g2, c4);#318,17.521987269001624
+w[2] = size.width;#297,17.514004162379674
+h[0]));#470,17.511289405822755
+width - w[2] - w[3], centerHeight));#238,17.503466774435605
+return new Size2D(width, height);#410,17.50162018669976
+RectangleConstraint c5 = new RectangleConstraint(widthRange3,#378,17.49953817552136
+contentSize = arrangeRR(container, constraint.getWidthRange(),#166,17.495049635569256
+double width = Math.max(w[0], Math.max(w[1], w[2] + w[4] + w[3]));#216,17.49165609904698
+h[0]));#391,17.48425304412842
+RectangleConstraint c4 = new RectangleConstraint(width - w[2]#315,17.481938419920027
+public Size2D arrange(BlockContainer container,#128,17.478391306740896
+w[1] = w[0];#435,17.477246957666733
+throw new RuntimeException("Not implemented.");#144,17.465963134765627
+Size2D size = this.bottomBlock.arrange(g2, c1);#288,17.464943639693722
+Size2D size = this.rightBlock.arrange(g2, c4);#458,17.460109003128544
+h[0]));#221,17.45319206237793
+Size2D size = this.topBlock.arrange(g2, c1);#283,17.449091049932665
+LengthConstraintType.FIXED, 0.0, null,#280,17.44837530197636
+h[0] = size.height;#285,17.434454191298713
+LengthConstraintType.RANGE);#431,17.431334824397645
+RectangleConstraint c4 = new RectangleConstraint(0.0,#454,17.4304017712993
+h[0] = size.height;#188,17.425308454604377
+protected Size2D arrangeFR(BlockContainer container, Graphics2D g2,#252,17.4221035639445
+RectangleConstraint c2 = new RectangleConstraint(0.0,#292,17.405218724851256
+return new Size2D(constraint.getWidth(), constraint.getHeight());#488,17.397975077995888
+double centerHeight = Math.max(h[2], Math.max(h[3], h[4]));#217,17.39414558988629
+Size2D size = this.bottomBlock.arrange(g2, c2);#440,17.391363851485714
+Size2D size = this.topBlock.arrange(g2, c1);#432,17.39085311274375
+centerHeight));#229,17.375389182049297
+w[3] = size.width;#203,17.36854076385498
+- w[3], null, LengthConstraintType.FIXED, 0.0, null,#316,17.35266181400844
+w[2] = size.width;#198,17.34971945626395
+contentSize = arrangeFN(container, g2, constraint.getWidth());#149,17.34885996580124
+protected Size2D arrangeFN(BlockContainer container, Graphics2D g2,#275,17.345839954557874
+h[1] = size.height;#194,17.343189602806454
+width - w[2] - w[3], height - h[0] - h[1]));#408,17.334801075070402
+protected Size2D arrangeRR(BlockContainer container,#337,17.331575139363608
+h[3] = size.height;#308,17.32350544702439
+RectangleConstraint c2 = new RectangleConstraint(w[0], null,#437,17.319513898907285
+heightRange3);#368,17.31905436515808
+h[2] = size.height;#363,17.31698226928711
+h[1] = size.height;#290,17.299677076793852
+RectangleConstraint c2 = new RectangleConstraint(widthRange,#351,17.298634497324624
+RectangleConstraint contentConstraint#131,17.29815656998578
+this.centerBlock.arrange(g2, c5);#465,17.271046051612267
+contentSize = arrangeFR(container, g2, constraint);#155,17.267057747676454
+h[2] = constraint.getHeight() - h[1] - h[0];#443,17.252570152282715
+RectangleConstraint c1 = new RectangleConstraint(w[0], null,#428,17.246739589806758
+Size2D size = this.centerBlock.arrange(g2,#211,17.23672260556902
+contentSize = arrangeNN(container, g2);#138,17.218163631580495
+return true;#532,17.21047947623513
+LengthConstraintType.RANGE, 0.0, null,#304,17.198647362845286
+height - h[1], width, h[1]));#395,17.19549338022868
+LengthConstraintType.RANGE, h[2], null,#447,17.194755962916783
+RectangleConstraint c3 = new RectangleConstraint(widthRange,#359,17.193935839335122
+RectangleConstraint c4 = new RectangleConstraint(widthRange2,#367,17.17826941705519
+h[3] = h[2];#375,17.168050485498764
+heightRange);#344,17.15676282799762
+RectangleConstraint.NONE);#192,17.15660907482279
+Size2D size = this.rightBlock.arrange(g2, RectangleConstraint.NONE);#202,17.153627369854902
+h[4] = size.height;#385,17.153499103727796
+w[1], h[1]));#474,17.135498605925463
+this.topBlock.setBounds(new Rectangle2D.Double(0.0, 0.0, width,#220,17.13216048020583
+this.topBlock.setBounds(new Rectangle2D.Double(0.0, 0.0, width,#390,17.131233386504345
+h[2] = size.height;#298,17.13005983261835
+h[3] = h[2];#208,17.124498142915613
+h[4] = h[2];#461,17.11701538983513
+RectangleConstraint c1 = new RectangleConstraint(widthRange,#343,17.112143898010252
+height - h[1], width, h[1]));#225,17.105857878020316
+0.0, null, LengthConstraintType.NONE);#294,17.10419700991723
+return arrange(container, g2, c2);#261,17.099721950033437
+Size2D size = this.leftBlock.arrange(g2, RectangleConstraint.NONE);#197,17.0964554967107
+h[2]));#478,17.095212478637695
+public class BorderArrangement implements Arrangement, Serializable {#63,17.09244925181071
+h[3] = size.height;#371,17.085676647367933
+LengthConstraintType.RANGE, h[2], null,#456,17.076831572396415
+heightRange2);#352,17.05147409439087
+h[2]));#399,17.042207374572754
+heightRange3);#379,17.035449107487995
+heightRange3);#360,17.033433238665264
+RectangleConstraint c1 = new RectangleConstraint(width, null,#279,17.033301494739675
+Size2D size = this.topBlock.arrange(g2, RectangleConstraint.NONE);#186,17.029012293428988
+RectangleConstraint c5 = new RectangleConstraint(w[4], h[4]);#463,16.999932719815163
+RectangleConstraint c2 = constraint.toFixedHeight(h);#260,16.999382291521346
+this.bottomBlock.setBounds(new Rectangle2D.Double(0.0,#224,16.985565012151543
+this.rightBlock.setBounds(new Rectangle2D.Double(width - w[3],#232,16.97371087755476
+RectangleConstraint.NONE);#212,16.97119581288305
+return false;#521,16.968288612365722
+this.bottomBlock = block;#107,16.947745323181152
+h[3] = h[2];#312,16.946927855996524
+LengthConstraintType.NONE);#305,16.943152263246734
+this.leftBlock = block;#110,16.936784163765285
+h[2] = size.height;#199,16.92851189204625
+h[4]));#486,16.922106475830077
+h[4] = size.height;#320,16.91776552654448
+double height = h[0] + h[1] + Math.max(h[2], Math.max(h[3], h[4]));#388,16.913902010236466
+this.bottomBlock.setBounds(new Rectangle2D.Double(0.0,#394,16.909244710748847
+this.rightBlock.setBounds(new Rectangle2D.Double(width - w[3],#402,16.906235885620116
+h[3] = size.height;#204,16.899965649559384
+h[3] = h[2];#452,16.89655309564927
+h[2] = Math.max(h[2], h[3]);#374,16.84888038635254
+LengthConstraintType.NONE);#317,16.819807907630658
+return false;#524,16.779737408955892
+this.leftBlock.setBounds(new Rectangle2D.Double(0.0, h[0], w[2],#477,16.77733702775909
+this.topBlock.setBounds(new Rectangle2D.Double(0.0, 0.0, w[0],#469,16.773514863921374
+this.topBlock = block;#104,16.770329019297723
+this.bottomBlock.setBounds(new Rectangle2D.Double(0.0, h[0] + h[2],#473,16.762753191448393
+return false;#527,16.754350852966308
+h[4] = size.height;#214,16.739662987845286
+LengthConstraintType.NONE);#281,16.671895217895507
+this.rightBlock.setBounds(new Rectangle2D.Double(w[2] + w[4], h[0],#481,16.664669877006894
+this.leftBlock.setBounds(new Rectangle2D.Double(0.0, h[0], w[2],#228,16.664585578732375
+this.leftBlock.setBounds(new Rectangle2D.Double(0.0, h[0], w[2],#398,16.660368105260336
+h[2] = Math.max(h[2], h[3]);#207,16.64091697692871
+return false;#514,16.587914021809897
+w[3], h[3]));#482,16.586565313668086
+h[2] = Math.max(h[2], h[3]);#311,16.55486640930176
+return size1;#256,16.536848843097687
+= container.toContentConstraint(constraint);#132,16.536076841683222
+h[0], w[3], centerHeight));#233,16.51879399822604
+return true;#511,16.49747454325358
+return false;#518,16.47331167856852
+return false;#530,16.463725153605143
+double height = h[0] + h[1] + Math.max(h[2], Math.max(h[3], h[4]));#322,16.423750218890962
+this.centerBlock.setBounds(new Rectangle2D.Double(w[2], h[0], w[4],#485,16.384263550362935
+h[0], w[3], h[3]));#403,16.31982234030059
+this.centerBlock.setBounds(new Rectangle2D.Double(w[2], h[0],#237,16.318992150796426
+this.centerBlock.setBounds(new Rectangle2D.Double(w[2], h[0],#407,16.266331827318346
+this.rightBlock = block;#113,16.138684480086617

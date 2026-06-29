@@ -1,0 +1,191 @@
+if (start == null || end == null) {#147,20.179387042396947
+protected void addField(DurationFieldType field, int value) {#509,19.754762331644695
+if (startInstant == null && endInstant == null) {#115,19.601742290315173
+if (period == null) {#415,19.298059463500977
+protected void setField(DurationFieldType field, int value) {#478,19.262145466274685
+private void setPeriodInternal(ReadablePeriod period) {#425,19.236072328355576
+protected void addPeriod(ReadablePeriod period) {#568,19.184428495519303
+public int getValue(int index) {#334,19.173679791964016
+protected void mergePeriod(ReadablePeriod period) {#539,19.106311124913834
+PeriodType type) {#80,18.965928745269775
+int index = indexOf(field);#522,18.952422261238098
+if (value != 0 || field == null) {#493,18.84789392222529
+if (value != 0 || field == null) {#524,18.824056335117508
+int index = indexOf(field);#491,18.820854425430298
+if (period != null) {#540,18.75732307434082
+public int size() {#312,18.733289188808865
+if (period != null) {#569,18.726884905497233
+if (DateTimeUtils.isContiguous(start) == false) {#168,18.726779806202856
+if (value != 0) {#586,18.696159887313843
+iType = type;#260,18.693910745474007
+private void setPeriodInternal(int years, int months, int weeks, int days,#456,18.680820713872496
+protected void addFieldInto(int[] values, DurationFieldType field, int value) {#521,18.62701189517975
+protected void setPeriod(ReadablePeriod period) {#414,18.603909772985123
+public PeriodType getPeriodType() {#302,18.596469218914326
+iType = type;#191,18.57409697312575
+int hours, int minutes, int seconds, int millis) {#449,18.573745040006415
+for (int i = 0, isize = period.size(); i < isize; i++) {#583,18.535485575276038
+private PeriodType iType;#58,18.507372093200683
+protected void setValue(int index, int value) {#607,18.486685514450073
+if (index == -1) {#397,18.450247943401337
+protected void setFieldInto(int[] values, DurationFieldType field, int value) {#490,18.434992909431458
+int hours, int minutes, int seconds, int millis) {#457,18.433743301703004
+for (int i = 0, isize = period.size(); i < isize; i++) {#427,18.428810691833498
+iType = type;#209,18.42633452782264
+if (index == -1) {#523,18.40412938594818
+if (newValue != 0) {#398,18.402144765853883
+for (int i = 0, isize = start.size(); i < isize; i++) {#163,18.400798797607422
+public DurationFieldType getFieldType(int index) {#323,18.38716548681259
+if (index == -1) {#492,18.363676607608795
+iType = type;#279,18.36263003716102
+for (int i = 0, isize = period.size(); i < isize; i++) {#554,18.354098043134137
+if (this instanceof ReadWritablePeriod) {#261,18.33992247581482
+iType = type;#100,18.330907968374397
+private void checkAndUpdate(DurationFieldType type, int[] values, int newValue) {#395,18.3036554257075
+"Period does not support field '" + field + "'");#495,18.302548071917364
+int index = indexOf(type);#396,18.273441910743713
+public Duration toDurationTo(ReadableInstant endInstant) {#379,18.268562765682447
+throw new IllegalArgumentException("ReadablePartial objects must have the same set of fields");#165,18.261102652549745
+iType = type;#242,18.256723477290226
+protected BasePeriod(long duration) {#221,18.253047209519607
+public Duration toDurationFrom(ReadableInstant startInstant) {#355,18.23270893096924
+"Period does not support field '" + field + "'");#526,18.229082331937903
+protected PeriodType checkPeriodType(PeriodType type) {#292,18.213610543145073
+return iType.size();#313,18.178395884377615
+protected int[] addPeriodInto(int[] values, ReadablePeriod period) {#582,18.156073689460754
+throw new IllegalArgumentException("ReadablePartial objects must have the same set of fields");#161,18.155311504999798
+protected int[] mergePeriodInto(int[] values, ReadablePeriod period) {#553,18.147871613502502
+super();#185,18.14092273712158
+throw new IllegalArgumentException("ReadablePartial objects must not be null");#148,18.124798248554097
+if (start.size() != end.size()) {#160,18.118201812108357
+super();#146,18.108129024505615
+iType = type;#83,18.106017479529747
+iType = type;#157,18.07764238469741
+protected void setPeriod(int years, int months, int weeks, int days,#448,18.077264872464266
+this(duration, null, null);#222,18.062729239463806
+super();#203,18.046191215515137
+throw new IllegalArgumentException("ReadablePartial objects must be contiguous");#169,18.040883898735046
+protected BasePeriod(ReadableInstant startInstant, ReadableDuration duration, PeriodType type) {#184,18.034457397460937
+protected BasePeriod(ReadableDuration duration, ReadableInstant endInstant, PeriodType type) {#202,18.03264087677002
+implements ReadablePeriod, Serializable {#52,18.032386723686667
+throw new IllegalArgumentException(#494,18.01414634870446
+long startMillis = DateTimeUtils.getInstantMillis(startInstant);#356,18.01051950454712
+super();#113,18.0091965675354
+addFieldInto(iValues, field, value);#510,18.00099515914917
+if (start instanceof BaseLocal && end instanceof BaseLocal && start.getClass() == end.getClass()) {#150,17.982200454263126
+"Period does not support field '" + type.getName() + "'");#400,17.97456585733514
+return iType;#303,17.97307523091634
+iValues = newValues;#467,17.949261460985458
+long durationMillis = DateTimeUtils.getDurationMillis(duration);#188,17.948477096557617
+throw new IllegalArgumentException(#525,17.938551156417184
+throw new IllegalArgumentException(#399,17.92683381619661
+extends AbstractPeriod#51,17.917316913604736
+long endMillis = FieldUtils.safeAdd(startMillis, durationMillis);#189,17.91273260116577
+type = checkPeriodType(type);#259,17.907179888556986
+type = checkPeriodType(type);#204,17.90635243584128
+long endMillis = DateTimeUtils.getInstantMillis(endInstant);#380,17.903177518111008
+type = checkPeriodType(type);#114,17.89767787035774
+long startMillis = ((BaseLocal) start).getLocalMillis();#153,17.897310495376587
+long durationMillis = DateTimeUtils.getDurationMillis(duration);#205,17.890021514892577
+long endMillis = DateTimeUtils.getInstantMillis(endInstant);#206,17.877067822676437
+type = checkPeriodType(type);#186,17.848048827227423
+Chronology chrono = DateTimeUtils.getChronology(start.getChronology()).withUTC();#172,17.836232310847233
+iValues = addPeriodInto(getValues(), period);#570,17.82522491308359
+return DateTimeUtils.getPeriodType(type);#293,17.817021415347146
+Chronology chrono = DateTimeUtils.getInstantChronology(endInstant);#381,17.80785737214265
+super();#278,17.7925666809082
+long startMillis = DateTimeUtils.getInstantMillis(startInstant);#187,17.79247496678279
+if (start.getFieldType(i) != end.getFieldType(i)) {#164,17.783227576149834
+type = (type == null ? converter.getPeriodType(period) : type);#258,17.775848459314417
+Chronology chrono = DateTimeUtils.getInstantChronology(startInstant);#357,17.774901778609664
+Chronology chrono = DateTimeUtils.getInstantChronology(endInstant);#208,17.774744069134748
+int value = period.getValue(i);#429,17.77049073305997
+protected BasePeriod(int years, int months, int weeks, int days,#78,17.7670286269415
+protected void setValues(int[] values) {#616,17.76140465055193
+int value = period.getValue(i);#585,17.728014863055684
+iValues = new int[size()];#117,17.718949726649694
+super();#97,17.713723850250243
+long startMillis = DateTimeUtils.getInstantMillis(startInstant);#119,17.7126802444458
+Chronology chrono = DateTimeUtils.getInstantChronology(startInstant);#190,17.700525177849663
+if (index == -1) {#588,17.681147003173827
+long endMillis = ((BaseLocal) end).getLocalMillis();#154,17.679517575672694
+setFieldInto(iValues, field, value);#479,17.676821088790895
+"Period does not support field '" + type.getName() + "'");#590,17.6724332986876
+DurationFieldType type = period.getFieldType(i);#584,17.670911935659554
+iValues = mergePeriodInto(getValues(), period);#541,17.651985021737907
+type = checkPeriodType(type);#152,17.64979416983468
+Chronology chrono = start.getChronology();#155,17.638403018315632
+iValues = values;#617,17.63093552222619
+long startMillis = chrono.add(this, endMillis, -1);#382,17.619697217588072
+int value = period.getValue(i);#556,17.60636615753174
+iType = type;#122,17.60547783795525
+iValues = values;#280,17.59378616626446
+iType = checkPeriodType(type);#171,17.588522737676445
+iType = type;#116,17.5793934990378
+int[] newValues = new int[size()];#458,17.573079360158818
+return iType.getFieldType(index);#324,17.569501611921524
+return values;#596,17.55519636472066
+private int[] iValues;#60,17.536988830566408
+return values;#559,17.53048308690389
+type = checkPeriodType(type);#98,17.52844743167653
+iValues = newValues;#432,17.501543521881104
+long endMillis = chrono.add(this, startMillis, 1);#358,17.493217725020187
+int index = indexOf(type);#587,17.485144996643065
+checkAndUpdate(DurationFieldType.millis(), newValues, millis);#466,17.47847728729248
+type = checkPeriodType(type);#240,17.477898036732395
+protected BasePeriod(ReadableInstant startInstant, ReadableInstant endInstant, PeriodType type) {#112,17.466450177706204
+values[index] = FieldUtils.safeAdd(getValue(index), value);#592,17.464272928237914
+int[] newValues = new int[size()];#426,17.458175408212764
+super();#239,17.44793758392334
+setPeriodInternal(period);#418,17.426752793161494
+return new Duration(startMillis, endMillis);#359,17.421076679229735
+int hours, int minutes, int seconds, int millis,#79,17.420604454843623
+iValues = new int[size()];#262,17.4113773164295
+setPeriodInternal(years, months, weeks, days, hours, minutes, seconds, millis);#450,17.40141429901123
+long endMillis = DateTimeUtils.getInstantMillis(endInstant);#120,17.40122677485148
+DurationFieldType type = period.getFieldType(i);#428,17.39821750640869
+super();#256,17.383866119384766
+values[index] = newValue;#403,17.38132224082947
+return iValues[index];#335,17.379124300820486
+DurationFieldType type = period.getFieldType(i);#555,17.36645005299495
+chrono = DateTimeUtils.getChronology(chrono);#99,17.365224639574688
+chrono = DateTimeUtils.getChronology(chrono);#241,17.361382444699604
+long startMillis = FieldUtils.safeSubtract(endMillis, durationMillis);#207,17.358653767903647
+PeriodConverter converter = ConverterManager.getInstance().getPeriodConverter(period);#257,17.35843782424927
+return new Duration(startMillis, endMillis);#383,17.351413202285766
+super();#81,17.339109039306642
+protected BasePeriod(Object period, PeriodType type, Chronology chrono) {#255,17.33603200045499
+setPeriodInternal(years, months, weeks, days, hours, minutes, seconds, millis); // internal method#84,17.32522996266683
+Chronology chrono = DateTimeUtils.getIntervalChronology(startInstant, endInstant);#121,17.307587487357004
+protected BasePeriod(long duration, PeriodType type, Chronology chrono) {#238,17.29421078075062
+chrono = DateTimeUtils.getChronology(chrono);#156,17.294079508100236
+chrono = DateTimeUtils.getChronology(chrono);#263,17.28900068146842
+throw new IllegalArgumentException(#589,17.28212026187352
+values[index] = FieldUtils.safeAdd(values[index], value);#529,17.279015032450356
+checkAndUpdate(DurationFieldType.years(), newValues, years);#459,17.27139423204505
+type = checkPeriodType(type);#82,17.26395595774931
+checkAndUpdate(DurationFieldType.seconds(), newValues, seconds);#465,17.229133854741637
+values[index] = value;#498,17.216012854325143
+protected BasePeriod(int[] values, PeriodType type) {#277,17.213431941138374
+iValues = new MutablePeriod(period, type, chrono).getValues();#266,17.183452421619045
+checkAndUpdate(DurationFieldType.months(), newValues, months);#460,17.1735374201899
+iValues = chrono.get(this, startMillis, endMillis);#158,17.17083168029785
+checkAndUpdate(DurationFieldType.minutes(), newValues, minutes);#464,17.163979093233745
+iValues[index] = value;#608,17.134350776672363
+setValues(new int[size()]);#416,17.12843113853818
+iValues = chrono.get(this, startMillis, endMillis);#192,17.107893595328697
+protected BasePeriod(long startInstant, long endInstant, PeriodType type, Chronology chrono) {#96,17.052710391857005
+checkAndUpdate(DurationFieldType.weeks(), newValues, weeks);#461,17.017111976941425
+iValues = chrono.get(this, startInstant, endInstant);#101,17.002608478069305
+checkAndUpdate(DurationFieldType.days(), newValues, days);#462,16.997099627619203
+iValues = chrono.get(this, startMillis, endMillis);#123,16.957432619730632
+converter.setInto((ReadWritablePeriod) this, period, chrono);#264,16.95112649856075
+iValues = chrono.get(this, duration);#243,16.941313123703004
+checkAndUpdate(DurationFieldType.hours(), newValues, hours);#463,16.903622088224992
+iValues = chrono.get(this, startMillis, endMillis);#210,16.85650267967811
+private static final long serialVersionUID = -2110953284060001145L;#55,16.79960760862931
+protected BasePeriod(ReadablePartial start, ReadablePartial end, PeriodType type) {#145,16.791483182173508
+checkAndUpdate(type, values, value);#557,16.623651670373004
+checkAndUpdate(type, newValues, value);#430,16.49906241375467
+public abstract class BasePeriod#50,16.042666707720077
+iValues = chrono.get(this, chrono.set(start, 0L), chrono.set(end, 0L));#173,16.01648846126738

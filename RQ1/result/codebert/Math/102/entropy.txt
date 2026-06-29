@@ -1,0 +1,144 @@
+throw new IllegalArgumentException(#67,18.29981598101164
+throw new IllegalArgumentException(#71,18.241738369590358
+throw new IllegalArgumentException(#119,18.11607531497353
+throw new IllegalArgumentException(#202,18.104716602124665
+throw new IllegalArgumentException(#207,18.100462913513184
+throw new IllegalArgumentException(#278,18.01529804028963
+public boolean chiSquareTestDataSetsComparison(long[] observed1, long[] observed2,#275,17.961829948425294
+throws IllegalArgumentException, MathException {#184,17.951830277076134
+throw new IllegalArgumentException(#221,17.88900832126015
+public double chiSquareTestDataSetsComparison(long[] observed1, long[] observed2)#259,17.874625778198244
+public double chiSquareDataSetsComparison(long[] observed1, long[] observed2)#197,17.843773166338604
+throw new IllegalArgumentException("Input table must be rectangular");#303,17.823088493347168
+"bad significance level: " + alpha);#120,17.809581460623907
+throw new IllegalArgumentException("Input table must have at least two rows");#295,17.80618122645787
+throw new IllegalArgumentException("bad significance level: " + alpha);#186,17.738276976126212
+"bad significance level: " + alpha);#279,17.734746406818257
+sumSq += (dev * dev) / (obs1 + obs2);#246,17.730046850262266
+throw new IllegalArgumentException("Input table must have at least two columns");#299,17.72722969736372
+dev = obs1 - obs2;#244,17.724540301731654
+throw new IllegalArgumentException(#236,17.700386379076086
+throws IllegalArgumentException, MathException {#168,17.695740626408504
+public boolean chiSquareTest(double[] expected, long[] observed,#116,17.669515710127982
+double alpha) throws IllegalArgumentException, MathException {#117,17.65439800421397
+double[] rowSum = new double[nRows];#137,17.638722038269044
+throws IllegalArgumentException, MathException {#96,17.62081510880414
+dev = obs1/weight - obs2 * weight;#242,17.608225345611572
+double[] colSum = new double[nCols];#138,17.56709403991699
+double alpha) throws IllegalArgumentException, MathException {#276,17.535053690274555
+expected = (rowSum[row] * colSum[col]) / total;#153,17.53284298289906
+public double chiSquareTest(double[] expected, long[] observed)#95,17.521915276845295
+throws IllegalArgumentException {#65,17.511352811540878
+sumSq += dev * dev / expected[i];#78,17.49666350228446
+double dev = 0.0d;#75,17.492249488830566
+for (int row = 0; row < nRows; row++) {#151,17.43068011601766
+"observed counts must not both be zero");#237,17.403673929326676
+chiSquare(expected, observed));#99,17.379460686131527
+throw new IllegalArgumentException("All entries in input 2-way table must be non-negative");#307,17.360196315880977
+double sumSq = 0.0d;#74,17.31546974182129
+double dev = 0.0d;#231,17.30924528837204
+return false;#352,17.287745977702894
+for (int col = 0; col < nCols; col++) {#152,17.25819706916809
+throws IllegalArgumentException, MathException {#260,17.25209482978372
+return false;#369,17.247180938720703
+for (int row = 0; row < nRows; row++) {#140,17.226370016733807
+chiSquareDataSetsComparison(observed1, observed2));#263,17.211122881981634
+"observed counts must be non-negative");#208,17.199485998887283
+return false;#335,17.1849667900487
+throws IllegalArgumentException {#198,17.176031248910085
+double sumSq = 0.0d;#149,17.167199664645725
+((double) counts[row][col] - expected)) / expected;#155,17.159823775291443
+countSum1 += observed1[i];#216,17.141505650111608
+for (int i = 0; i < observed1.length; i++) {#234,17.13803153991699
+public double chiSquare(double[] expected, long[] observed)#64,17.121397859909955
+double expected = 0.0d;#150,17.118650674819946
+for (int i = 0; i < observed1.length; i++) {#215,17.108013534545897
+distribution = value;#402,17.097933848698933
+for (int i = 0; i < observed.length; i++) {#76,17.077699263890583
+double total = 0.0d;#139,17.060883581638336
+countSum2 += observed2[i];#217,17.044529914855957
+"observed counts must be non-negative and expected counts must be postive");#72,17.0399321642789
+"observed, expected array lengths incorrect");#68,17.034250621137947
+return sumSq;#158,17.013834879948543
+for (int j = 0; j < in[i].length; j++) {#385,17.003802808125815
+return false;#387,16.989521855893344
+obs2 = (double) observed2[i];#240,16.98659978089509
+this(new ChiSquaredDistributionImpl(1.0));#39,16.975426197052002
+double obs2 = 0.0d;#233,16.972169315113742
+colSum[col] += (double) counts[row][col];#143,16.969405112727994
+return (chiSquareTestDataSetsComparison(observed1, observed2) < alpha);#281,16.95753728932348
+for (int col = 0; col < nCols; col++) {#141,16.956236668995448
+double obs1 = 0.0d;#232,16.950313512016745
+for (int i = 1; i < in.length; i++) {#333,16.877736290295918
+sumSq += (((double) counts[row][col] - expected) *#154,16.870300047738212
+total += (double) counts[row][col];#144,16.867962554649072
+return sumSq;#249,16.842970848083496
+double sumSq = 0.0d;#230,16.828487237294514
+rowSum[row] += (double) counts[row][col];#142,16.7891629434401
+super();#49,16.78277244567871
+private void checkArray(long[][] in) throws IllegalArgumentException {#292,16.766370182945614
+for (int i = 0; i < in.length; i ++) {#350,16.76422409057617
+public double chiSquare(long[][] counts) throws IllegalArgumentException {#130,16.75081325712658
+long countSum2 = 0;#212,16.74585927327474
+public class ChiSquareTestImpl implements UnknownDistributionChiSquareTest {#30,16.734855592250824
+boolean unequalCounts = false;#213,16.729048220316567
+return (chiSquareTest(expected, observed) < alpha);#122,16.726338704427082
+dev = ((double) observed[i] - expected[i]);#77,16.717407131195067
+"observed counts cannot all be 0");#222,16.716278117635976
+return sumSq;#80,16.71312603583703
+int nRows = counts.length;#133,16.697857295765598
+long countSum1 = 0;#211,16.690973409016927
+double weight = 0.0;#214,16.68380921681722
+weight = Math.sqrt((double) countSum1 / (double) countSum2);#227,16.681118577718735
+"oberved1, observed2 array lengths incorrect");#203,16.650622644732074
+return true;#391,16.64255601709539
+return true;#372,16.618850447914816
+for (int i = 0; i < in.length; i ++) {#367,16.61876163482666
+for (int i = 0; i < in.length; i ++) {#384,16.618544082641602
+return 1.0 - distribution.cumulativeProbability(#98,16.61553228469122
+public ChiSquareTestImpl(ChiSquaredDistribution x) {#48,16.608259853563812
+obs1 = (double) observed1[i];#239,16.607008474844474
+return true;#355,16.60486429387873
+private boolean isNonNegative(long[] in) {#366,16.6013166308403
+return true;#338,16.575470837679777
+return 1 - distribution.cumulativeProbability(#262,16.574040814449912
+if (in[i][j] < 0) {#386,16.54562963758196
+if (in[i] <= 0) {#351,16.54368404908614
+checkArray(counts);#169,16.500864505767822
+distribution.setDegreesOfFreedom(expected.length - 1.0);#97,16.411581993103027
+if ((alpha <= 0) || (alpha > 0.5)) {#118,16.405550832333773
+return (chiSquareTest(counts) < alpha);#188,16.381758642196655
+if ((alpha <= 0) || (alpha > 0.5)) {#277,16.35906352167544
+if (in[i] < 0) {#368,16.355209307237104
+private boolean isPositive(double[] in) {#349,16.353107515970866
+return DistributionFactory.newInstance();#319,16.349070231119793
+double df = ((double) counts.length -1) * ((double) counts[0].length - 1);#170,16.32746908068657
+if ((alpha <= 0) || (alpha > 0.5)) {#185,16.313537970833156
+if (observed1[i] == 0 && observed2[i] == 0) {#235,16.28239271044731
+private boolean isRectangular(long[][] in) {#332,16.28129768371582
+distribution.setDegreesOfFreedom((double) observed1.length - 1);#261,16.274892990405743
+distribution.setDegreesOfFreedom(df);#171,16.264976099917764
+if (!isNonNegative(observed1) || !isNonNegative(observed2)) {#206,16.262507100259104
+public ChiSquareTestImpl() {#38,16.203123092651367
+return 1 - distribution.cumulativeProbability(chiSquare(counts));#172,16.200865821838377
+if (!isPositive(expected) || !isNonNegative(observed)) {#70,16.18077168641267
+private boolean isNonNegative(long[][] in) {#383,16.172646469540066
+int nCols = counts[0].length;#134,16.151660818802682
+public boolean chiSquareTest(long[][] counts, double alpha)#183,16.103239511188708
+if (!isRectangular(in)) {#302,16.064665401683133
+setDistribution(x);#50,16.060041155133927
+public double chiSquareTest(long[][] counts)#167,16.01953887939453
+public void setDistribution(ChiSquaredDistribution value) {#401,16.01915454864502
+checkArray(counts);#132,15.96294675554548
+if (countSum1 * countSum2 == 0) {#220,15.934756687709264
+unequalCounts = (countSum1 != countSum2);#225,15.859195527576265
+if (in[i].length != in[0].length) {#334,15.849766307406956
+if (unequalCounts) { // apply weights#241,15.827941082142017
+if ((observed1.length < 2) || (observed1.length != observed2.length)) {#201,15.735322117805481
+if ((expected.length < 2) || (expected.length != observed.length)) {#66,15.64548796194571
+if (in[0].length < 2) {#298,15.625761232878032
+private ChiSquaredDistribution distribution;#33,15.517595609029135
+protected DistributionFactory getDistributionFactory() {#318,15.429559194124662
+if (!isNonNegative(in)) {#306,15.367669529385036
+if (in.length < 2) {#294,15.35510248296401
+if (unequalCounts) {#226,14.97598785161972

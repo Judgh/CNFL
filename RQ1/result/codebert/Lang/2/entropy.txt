@@ -1,0 +1,109 @@
+if (str == null) {#89,20.115454228719077
+if (locale != null) {#188,19.797710478305817
+if (ch0 == '_') {#97,19.673660839305203
+if (languageCode == null) {#285,19.55497932434082
+if (countries == null) {#289,19.534659385681152
+if (len < 2) {#93,19.492477798461913
+if (countryCode == null) {#253,19.37236773967743
+if (langs == null) {#257,19.312764823436737
+if (ch3 == '_') {#131,19.09282112121582
+static {#315,19.092569160461426
+if (len == 3) {#106,19.042057539287367
+if (str.charAt(2) != '_') {#127,19.040945456578182
+if (len == 5) {#138,18.95849729839124
+static class SyncAvoid {#309,18.952275382147896
+if (len < 3) {#98,18.910468201888236
+if (len < 5) {#124,18.89404613093326
+if (len == 2) {#121,18.866204763713636
+if (len < 7) {#141,18.853095355786774
+if (len < 5) {#109,18.836279417339124
+final int len = str.length();#92,18.753273367881775
+if (str.charAt(3) != '_') {#112,18.717615017524132
+final char ch0 = str.charAt(0);#96,18.67402582168579
+if (str.charAt(5) != '_') {#144,18.65112928243784
+if (locale.getVariant().length() > 0) {#190,18.600909268414533
+return langs;#271,18.494314193725586
+public LocaleUtils() {#56,18.376761609857734
+if (locale.getCountry().length() > 0) {#193,18.340444638178898
+public static boolean isAvailableLocale(final Locale locale) {#238,18.30756351682875
+return Collections.emptyList();#286,18.296203825208877
+final char ch4 = str.charAt(4);#134,18.278518080711365
+return new Locale(str);#122,18.251646871152133
+return Collections.emptyList();#254,18.241583612230087
+langs.add(locale);#264,18.18897329057966
+final char ch3 = str.charAt(3);#130,18.155985474586487
+return new Locale("", str.substring(1, 3), str.substring(4));#115,18.144955102135153
+for (int i = 0; i < locales.size(); i++) {#292,18.143446067283893
+for (int i = 0; i < locales.size(); i++) {#260,18.08123703660636
+public static Locale toLocale(final String str) {#88,18.059817594640396
+if (languageCode.equals(locale.getLanguage()) &&#294,18.058623190849058
+throw new IllegalArgumentException("Invalid locale format: " + str);#99,18.051757597154186
+langs = Collections.unmodifiableList(langs);#267,18.02661304473877
+final char ch2 = str.charAt(2);#102,18.02521785100301
+return new Locale(str.substring(0, 2), "", str.substring(4));#132,18.011090131906364
+countries.add(locale);#297,17.999268037301523
+throw new IllegalArgumentException("Invalid locale format: " + str);#94,17.96857738494873
+return null;#90,17.938211949666343
+return SyncAvoid.AVAILABLE_LOCALE_SET;#228,17.91781256415627
+final char ch1 = str.charAt(1);#117,17.90936517715454
+return new Locale("", str.substring(1, 3));#107,17.87408241148918
+throw new IllegalArgumentException("Invalid locale format: " + str);#136,17.834875599030525
+cCountriesByLanguage.putIfAbsent(languageCode, countries);#301,17.820461443492345
+countries = Collections.unmodifiableList(countries);#300,17.801625927289326
+list.add(new Locale(locale.getLanguage(), ""));#194,17.797852024887547
+list.add(locale);#189,17.779444644325658
+private static final ConcurrentMap<String, List<Locale>> cCountriesByLanguage =#46,17.779161491394042
+if (list.contains(defaultLocale) == false) {#196,17.771094922666197
+langs = new ArrayList<Locale>();#258,17.770693675331447
+if (countryCode.equals(locale.getCountry()) &&#262,17.770604933461836
+if (!Character.isUpperCase(ch3) || !Character.isUpperCase(ch4)) {#135,17.757929853490882
+final char ch1 = str.charAt(1);#101,17.751722892125446
+if (!Character.isLowerCase(ch0) || !Character.isLowerCase(ch1)) {#118,17.745071629115515
+throw new IllegalArgumentException("Invalid locale format: " + str);#145,17.73529455738683
+return SyncAvoid.AVAILABLE_LOCALE_LIST;#214,17.734560229561545
+throw new IllegalArgumentException("Invalid locale format: " + str);#104,17.727210906244093
+locale.getVariant().isEmpty()) {#296,17.721515992108515
+throw new IllegalArgumentException("Invalid locale format: " + str);#128,17.721483445936634
+return availableLocaleList().contains(locale);#239,17.714800214767457
+return new Locale(str.substring(0, 2), str.substring(3, 5), str.substring(6));#147,17.67530025754656
+return new Locale(str.substring(0, 2), str.substring(3, 5));#139,17.67140515645345
+throw new IllegalArgumentException("Invalid locale format: " + str);#142,17.669519916657478
+locale.getCountry().length() != 0 &&#295,17.666185715619257
+throw new IllegalArgumentException("Invalid locale format: " + str);#119,17.665236534610873
+if (!Character.isUpperCase(ch1) || !Character.isUpperCase(ch2)) {#103,17.660540503424567
+private static final Set<Locale> AVAILABLE_LOCALE_SET;#313,17.659094645426823
+return countries;#304,17.644475763494317
+private static final ConcurrentMap<String, List<Locale>> cLanguagesByCountry =#42,17.641034774780273
+throw new IllegalArgumentException("Invalid locale format: " + str);#110,17.615796335281864
+private static final List<Locale> AVAILABLE_LOCALE_LIST;#311,17.571585416793823
+throw new IllegalArgumentException("Invalid locale format: " + str);#125,17.5653712672572
+throw new IllegalArgumentException("Invalid locale format: " + str);#113,17.563026981969035
+final Locale locale = locales.get(i);#293,17.56179451942444
+List<Locale> langs = cLanguagesByCountry.get(countryCode);#256,17.537232010452836
+countries = new ArrayList<Locale>();#290,17.53718718615445
+cLanguagesByCountry.putIfAbsent(countryCode, langs);#268,17.528236389160156
+List<Locale> countries = cCountriesByLanguage.get(languageCode);#288,17.515618947836067
+final List<Locale> locales = availableLocaleList();#291,17.50011660502507
+public class LocaleUtils {#39,17.47346031665802
+locale.getVariant().isEmpty()) {#263,17.468910834368536
+final List<Locale> locales = availableLocaleList();#259,17.432522957141583
+AVAILABLE_LOCALE_SET = Collections.unmodifiableSet(new HashSet<Locale>(list));#318,17.428124779149105
+final Locale locale = locales.get(i);#261,17.405556201934814
+countries = cCountriesByLanguage.get(languageCode);#302,17.379609336853026
+AVAILABLE_LOCALE_LIST = Collections.unmodifiableList(list);#317,17.358870660105058
+super();#57,17.35623598098755
+list.add(defaultLocale);#197,17.338266968727112
+public static List<Locale> availableLocaleList() {#213,17.286052479463464
+return Collections.unmodifiableList(list);#200,17.273035473293728
+list.add(new Locale(locale.getLanguage(), locale.getCountry()));#191,17.263221475813125
+langs = cLanguagesByCountry.get(countryCode);#269,17.254027843475342
+public static Set<Locale> availableLocaleSet() {#227,17.19659698710722
+public static List<Locale> languagesByCountry(final String countryCode) {#252,17.13914444333031
+return localeLookupList(locale, locale);#165,17.113900837145355
+public static List<Locale> countriesByLanguage(final String languageCode) {#284,17.11023494175502
+final List<Locale> list = new ArrayList<Locale>(4);#187,17.058362159729004
+final List<Locale> list = new ArrayList<Locale>(Arrays.asList(Locale.getAvailableLocales()));  // extra safe#316,16.979391543761544
+new ConcurrentHashMap<String, List<Locale>>();#43,16.792831897735596
+public static List<Locale> localeLookupList(final Locale locale, final Locale defaultLocale) {#186,16.77196348124537
+public static List<Locale> localeLookupList(final Locale locale) {#164,16.623816836964
+new ConcurrentHashMap<String, List<Locale>>();#47,16.57304351980036

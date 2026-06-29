@@ -1,0 +1,51 @@
+public void setDenominatorDegreesOfFreedom(double degreesOfFreedom) {#179,15.119416583668102
+public void setNumeratorDegreesOfFreedom(double degreesOfFreedom) {#157,14.983466451818293
+setDenominatorDegreesOfFreedom(denominatorDegreesOfFreedom);#52,14.688167360093859
+public FDistributionImpl(double numeratorDegreesOfFreedom,#48,14.666173759259676
+public double getDenominatorDegreesOfFreedom() {#191,14.494782167322496
+public class FDistributionImpl#30,14.441372053963798
+private double denominatorDegreesOfFreedom;#41,14.372787884303502
+public double getNumeratorDegreesOfFreedom() {#169,14.269157690160414
+public double inverseCumulativeProbability(final double p)#98,14.166031385722913
+public double cumulativeProbability(double x) throws MathException {#70,14.018507480621338
+protected double getDomainLowerBound(double p) {#118,13.952381706237793
+private double numeratorDegreesOfFreedom;#38,13.9452771459307
+setNumeratorDegreesOfFreedom(numeratorDegreesOfFreedom);#51,13.80567776715314
+private static final long serialVersionUID = -8516354193418641566L;#35,13.76873517036438
+extends AbstractContinuousDistribution#31,13.493728637695312
+protected double getDomainUpperBound(double p) {#131,13.28687959909439
+this.denominatorDegreesOfFreedom = degreesOfFreedom;#184,13.227501682613207
+protected double getInitialDomain(double p) {#143,13.120694637298584
+double d = getDenominatorDegreesOfFreedom();#145,12.892756507510232
+implements FDistribution, Serializable  {#32,12.758897414574257
+double m = getDenominatorDegreesOfFreedom();#76,12.613063774108888
+double n = getNumeratorDegreesOfFreedom();#75,12.581015129089355
+return super.inverseCumulativeProbability(p);#106,12.579670710997148
+this.numeratorDegreesOfFreedom = degreesOfFreedom;#162,12.549194107884945
+ret = Beta.regularizedBeta((n * x) / (m + n * x),#78,12.106255888938904
+if (degreesOfFreedom <= 0.0) {#180,11.971651983261108
+if (degreesOfFreedom <= 0.0) {#158,11.896440458297729
+throw new IllegalArgumentException(#159,11.716714833912096
+throws MathException {#99,11.582512378692627
+throw new IllegalArgumentException(#181,11.576092594548276
+double denominatorDegreesOfFreedom) {#49,11.545830943367697
+double ret;#71,11.42953330820257
+return numeratorDegreesOfFreedom;#170,11.30462901732501
+return Double.MAX_VALUE;#132,11.109606075286866
+double ret;#144,11.06296374581077
+"degrees of freedom must be positive.");#160,11.0604719382066
+if (x <= 0.0) {#72,11.047215405632468
+if (p == 1) {#103,11.01988770167033
+"degrees of freedom must be positive.");#182,10.92139671399043
+if (p == 0) {#100,10.845854187011719
+return denominatorDegreesOfFreedom;#192,10.729960329392377
+return ret;#82,10.680568608370693
+super();#50,10.647802066802978
+return ret;#148,10.554035533558238
+return Double.POSITIVE_INFINITY;#104,10.467394351959229
+ret = d / (d - 2.0);#147,10.087857101274574
+0.5 * m);#80,10.02867976101962
+0.5 * n,#79,9.8914335640994
+return 0.0;#119,9.408857785738432
+ret = 0.0;#73,9.174193753136528
+return 0d;#101,8.247717082500458

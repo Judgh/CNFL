@@ -1,0 +1,538 @@
+final int precedence) {#629,19.99019830877131
+case '/':  // escape it#1053,19.842223739624025
+if (null == pattern || (null != flags && null != flags.getNext())) {#967,19.60612638791402
+case Token.NOT:#63,19.523034529252485
+case Token.NAME:#201,19.4555884874784
+StringBuilder sb = null;#1046,19.430021632801402
+case Token.HOOK: {#752,19.416065362783577
+case Token.WITH:#613,19.38069588797433
+String name = result.getString();#202,19.37120755513509
+case Token.FOR:#615,19.336374576275166
+case Token.EQ:#229,19.29840898513794
+static boolean containsUnicodeEscape(String s) {#1072,19.275931104024252
+case Token.HOOK:#75,19.26677672068278
+case Token.NOT:#676,19.25316012989391
+case '\\':  // skip over the next char after a '\\'.#1050,19.226276397705078
+if (follow == null) {#162,19.215658628023586
+&& pattern.getString().length() < 100#979,19.122491041819256
+case Token.WHILE:#614,19.11225802557809
+case Token.NOT: {#679,19.110601603984833
+default:#208,19.071217727661132
+if (!mayHaveSideEffects(operand)) {#196,19.053851036798385
+case (Token.NUMBER):#938,18.996743965148926
+while (follow != null &&#149,18.944424438476563
+case Token.IF:#67,18.933396339416504
+if (name.equals("undefined")) {#203,18.931306611923944
+FoldArrayAction action = FoldArrayAction.NOT_SAFE_TO_FOLD;#926,18.88455419955046
+public boolean apply(Node input) {#648,18.857396398271835
+case (Token.STRING):#934,18.856851450602214
+case Token.IF:#606,18.85442352294922
+String s = n.getString();#1044,18.840259552001953
+public boolean apply(Node input) {#632,18.837207794189453
+return flags.indexOf('g') < 0;#1037,18.821419843037923
+@SuppressWarnings("fallthrough")#57,18.820799112319946
+int pos = 0;#1047,18.81735674540202
+case Token.VOID:#194,18.811731474740164
+if (type == Token.OR && !rval ||#735,18.80476899580522
+"Array",#835,18.800443649291992
+if (null == flags || "".equals(flags.getString())) {#991,18.743704120318096
+private static enum FoldArrayAction {#916,18.73385673099094
+if (arg.getDouble() == 0) {#940,18.72051765805199
+pattern.getType() == Token.STRING#973,18.712536017100017
+case Token.SHEQ:#235,18.707378900968113
+&& (null == flags || flags.getType() == Token.STRING)#981,18.679128494262695
+case (Token.ARRAYLIT):#944,18.672965610728543
+case Token.WHILE:#79,18.663692156473797
+case Token.FOR:#84,18.65038264881481
+if (leftParent.getType() == Token.NOT#691,18.63156160941491
+switch (notChild.getType()) {#228,18.62858009338379
+for (int i = 0; i < s.length(); ++i) {#1048,18.61794108436221
+if (null == sb) { return n.cloneTree(); }#1062,18.613673511304352
+"Invalid flags to RegExp constructor: {0}");#43,18.601444721221924
+result.checkTreeEqualsSilent(follow.getFirstChild())) &&#174,18.599119186401367
+case Token.AND:#687,18.588686370849608
+Node replacement = null;#768,18.584585043100212
+case Token.CALL:#97,18.565031210581463
+Predicate<Node> isLowerPrecedencePredicate = new Predicate<Node>() {#630,18.562549781799316
+if ("RegExp".equals(className)) {#882,18.557141145070393
+if (!NodeUtil.isForIn(node)) {#85,18.555321602594283
+for (;!ControlFlowAnalysis.isBreakTarget(breakTarget, null /* no label */);#122,18.54922088623047
+case Token.NEW:#90,18.54468415000222
+switch (s.charAt(i)) {#1049,18.544560730457306
+if (arg == null) {#928,18.52765586159446
+case Token.AND: {#712,18.526059865951538
+case Token.DO:#80,18.524795618924227
+(result != null && follow.hasChildren() &&#173,18.519188577478584
+(result == follow.getFirstChild() ||#172,18.481212091445922
+if (first.getType() == Token.VAR) {#581,18.472457538951527
+boolean rval = rightVal.toBoolean(true);#731,18.470341350721277
+case Token.OR: {#688,18.453144013881683
+if (!newNode.isEquivalentTo(n)) {#819,18.444363425759708
+Node elseExpr = elseOp.getLastChild();#376,18.43532657623291
+if (cond.getType() == Token.NOT && !consumesDanglingElse(elseBranch)) {#329,18.419459751674108
+@Override#56,18.416850566864014
+action == FoldArrayAction.SAFE_TO_FOLD_WITHOUT_ARGS) {#897,18.41123565038045
+default:#618,18.408045768737793
+pattern = makeForwardSlashBracketSafe(pattern);#988,18.404586950937908
+"Object",#834,18.4020021226671
+Node flags = null != pattern ? pattern.getNext() : null;  // e.g. gi#958,18.38450403566714
+case Token.NE:#232,18.38343481584029
+String esc = CodeGenerator.regexpEscape(s);#1073,18.373388139825117
+if (replacement != null) {#742,18.367563883463543
+case Token.OR:#711,18.361515045166016
+for (int i = -1; (i = esc.indexOf("\\u", i + 1)) >= 0;) {#1074,18.349204152822495
+if ("Object".equals(className) && !constructorHasArgs) {#888,18.347453630887546
+if (action == FoldArrayAction.SAFE_TO_FOLD_WITH_ARGS ||#896,18.33953756093979
+if (result == null) {#165,18.332268460591635
+if (isPropertyAssignmentInExpression(expr)) {#277,18.32936632065546
+if (// is pattern folded#972,18.32847309112549
+if (node.getType() != Token.CALL) {#92,18.291413914073598
+if (cond.getType() == Token.NOT) {#283,18.277230398995535
+switch (arg.getType()) {#933,18.27503524507795
+Node regexLiteral;#990,18.2432545820872
+Node expr = NodeUtil.newExpr(assign);#383,18.242692470550537
+if (null == sb) { sb = new StringBuilder(s.length() + 16); }#1054,18.23885351238829
+Node right = n.getLastChild();#714,18.233341441434973
+&& name1.getString().equals(maybeName2.getString())) {#421,18.23242766281654
+public boolean apply(Node input) {#48,18.230138301849365
+++i;#1051,18.230007978586052
+&& maybeName1.getString().equals(name2.getString())) {#446,18.22635877543482
+Node elseExpr = getBlockReturnExpression(elseBranch);#340,18.220645995367143
+action = FoldArrayAction.SAFE_TO_FOLD_WITH_ARGS;#936,18.2023606300354
+new Predicate<Node>() {#646,18.20187795162201
+while (i - nSlashes > 0 && '\\' == esc.charAt(i - nSlashes - 1)) {#1076,18.194978938383215
+if (!areValidRegexpFlags(flags.getString())) {#996,18.1839892466863
+follow = ControlFlowAnalysis.computeFollowNode(follow);#158,18.178175725434954
+&& !containsUnicodeEscape(pattern.getString())) {#984,18.170903244018554
+switch (result.getType()) {#193,18.16821677344186
+ControlFlowAnalysis.getExceptionHandler(n) ==#175,18.165095287820566
+Node name2 = var.getFirstChild();#442,18.158015429973602
+if (n.getChildCount() < 3) {#607,18.155349904840644
+if (replacement != null) {#789,18.14435350894928
+Node name1 = var.getFirstChild();#416,18.13023465871811
+if (isLowerPrecedenceInExpression(cond, AND_PRECEDENCE) ||#302,18.12546730041504
+if (isLowerPrecedenceInExpression(cond, OR_PRECEDENCE) &&#285,18.108613137275942
+!mayEffectMutableState(lhs)) {#371,18.10544303894043
+continue;#612,18.09975282351176
+String className = constructorNameNode.getString();#880,18.097429107217227
+Node replacement = null;#730,18.08946812947591
+if (name1.hasChildren()#419,18.087846415383474
+&& maybeName2.getType() == Token.NAME#420,18.082891550931063
+TernaryValue rightVal = NodeUtil.getBooleanValue(right);#727,18.07401396678044
+Node hookNode = new Node(Token.HOOK, cond, thenExpr, elseExpr)#379,18.071212824653177
+left = tryMinimizeCondition(left);#718,18.071164636050952
+error(INVALID_REGULAR_EXPRESSION_FLAGS, flags);#997,18.068459340504237
+FoldArrayAction action = isSafeToFoldArrayConstructor(arg0);#894,18.06652401111744
+if (NodeUtil.getBooleanValue(right) != TernaryValue.UNKNOWN) {#728,18.061078163885302
+if (action == FoldArrayAction.SAFE_TO_FOLD_WITH_ARGS) {#900,18.056360408238003
+if (n.getFirstChild().getType() == Token.NAME) {#850,18.054111688033395
+if (name2.hasChildren()#444,18.048762730189733
+if (!areSafeFlagsToFold(flags.getString())) {#1000,18.047844688097637
+&& NodeUtil.getBooleanValue(falseNode) == TernaryValue.TRUE) {#775,18.038572992597306
+Node maybeName2 = elseAssign.getFirstChild();#417,18.02600604609439
+Node falseNode = n.getLastChild();#755,18.021953370836044
+if (!NodeUtil.isStatementBlock(parent)) {#490,18.012943380019244
+@Override#647,18.003589987754822
+Node rightParent = first.getLastChild();#690,18.00148332118988
+Node lastFalse = falseBranch.getLastChild();#504,18.000417285495335
+int type = n.getType();#729,18.00004810757107
+action = FoldArrayAction.SAFE_TO_FOLD_WITHOUT_ARGS;#929,17.999345108314795
+switch (first.getType()) {#678,17.995431780815125
+switch (n.getType()) {#675,17.995351711908977
+&& maybeName1.getType() == Token.NAME#445,17.986218495802447
+boolean constructorHasArgs = constructorNameNode.getNext() != null;#886,17.98526797087296
+@Override#631,17.982386827468872
+replacement = new Node(Token.NOT, condition);#778,17.977691559564498
+if (lastTrue == null || lastFalse == null#505,17.96934649523567
+Node elseExpr = elseAssign.getLastChild().detachFromParent();#423,17.963513667766865
+boolean possibleException = result != null &&#113,17.955877701441448
+right = tryMinimizeCondition(right);#719,17.955410732942468
+action = FoldArrayAction.SAFE_TO_FOLD_WITH_ARGS;#931,17.944422831902138
+Node hookNode = new Node(Token.HOOK, cond, thenExpr, elseExpr)#450,17.944364643096925
+if (0 == (nSlashes & 1)) { return true; }#1081,17.935132546858355
+reportCodeChange();#682,17.932474454243977
+if (elseBranch == null) {#274,17.93136802086463
+replacement = condition;#773,17.927725860050746
+default:#798,17.921293020248413
+&& rightParent.getType() == Token.NOT) {#692,17.914443631325998
+if (newLiteralNode != null) {#906,17.90848029287238
+if (result != null &&#151,17.903863191604614
+ImmutableSet.of(#833,17.90312261581421
+return n;#749,17.898831800981
+Node operand = result.getFirstChild();#195,17.897084951400757
+switch (n.getType()) {#605,17.8790648324149
+if (n.hasOneChild()) {#579,17.878051630655925
+Node expr = getBlockExpression(thenBranch);#276,17.87685112953186
+replacement = left;#737,17.876566112041473
+return Node.newString(sb.toString()).copyInformationFrom(n);#1065,17.86903576417403
+NodeUtil.mayHaveSideEffects(result))) {#154,17.868673448977262
+if (isASTNormalized() && Token.NAME == constructorNameNode.getType()) {#878,17.86648980776469
+&& !"".equals(pattern.getString())#975,17.864991855621337
+Node elseExpr = name2.removeChildren();#448,17.8613896620901
+boolean result = nVal.toBoolean(true);#802,17.856999397277832
+action = FoldArrayAction.SAFE_TO_FOLD_WITH_ARGS;#946,17.856126435597737
+if (areNodesEqualForInlining(lhs, elseOp.getFirstChild()) &&#366,17.854244858026505
+&& NodeUtil.getBooleanValue(falseNode) == TernaryValue.FALSE) {#770,17.854051371983118
+int nSlashes = 0;#1075,17.847329946664665
+elseOp.removeChild(elseExpr);#377,17.84068536758423
+switch(node.getType()) {#59,17.83900777498881
+case Token.EXPR_RESULT:#71,17.82704741160075
+Predicate<Node> isPropertyAssignmentInExpressionPredicate =#645,17.82265853881836
+return n;#709,17.81674645163796
+return input.getType() != Token.FUNCTION;#49,17.809420384858782
+DiagnosticType.error(#41,17.806482982635497
+if (NodeUtil.isAssignmentOp(thenOp)) {#364,17.803381049114726
+if (isReturnExpressBlock(thenBranch) && isReturnExpressBlock(elseBranch)) {#338,17.79855574094332
+return (input.getType() == Token.GETPROP &&#649,17.798299399289217
+reportCodeChange();#167,17.798259122031077
+Node assign = new Node(thenOp.getType(), assignName, hookNode)#381,17.789632034301757
+Node hookNode = new Node(Token.HOOK, cond, thenExpr, elseExpr)#425,17.784045378367107
+return newOperator;#249,17.781033727857803
+if (thenOp.getType() == elseOp.getType()) {#362,17.779463507912375
+Node assignName = thenOp.removeFirstChild();#374,17.777842314346977
+if (thenBranchIsVar && elseBranchIsExpressionBlock &&#410,17.77514500617981
+private static boolean areValidRegexpFlags(String flags) {#1024,17.77073299884796
+Node lastTrue = trueBranch.getLastChild();#503,17.769455273946125
+Node condition = n.getFirstChild();#753,17.769206720239975
+var.detachFromParent();#427,17.762188148498534
+return NodeUtil.precedence(input.getType()) < precedence;#633,17.756698417663575
+action = FoldArrayAction.SAFE_TO_FOLD_WITHOUT_ARGS;#941,17.756201368389707
+complementOperator = Token.EQ;#233,17.754618869108313
+if (NodeUtil.getBooleanValue(trueNode) == TernaryValue.TRUE#769,17.75409615834554
+if (isFoldableExpressBlock(thenBranch)) {#275,17.751522397994997
+if (n.hasOneChild()) {#554,17.748635164896648
+String className = n.getFirstChild().getString();#851,17.7419406800043
+var.detachFromParent();#452,17.738172086079917
+default:#948,17.730377197265625
+if (n.getType() == Token.BLOCK) {#553,17.726176261901855
+@Override#47,17.71972115834554
+if (first.getType() == Token.RETURN) {#556,17.715602614662863
+Node thenExpr = thenOp.removeFirstChild();#375,17.715369979540508
+breakTarget.getType() == Token.SCRIPT) {#125,17.714307619177777
+Node follow = ControlFlowAnalysis.computeFollowNode(breakTarget);#139,17.708325787594443
+if (NodeUtil.isFunction(breakTarget) ||#124,17.70312991895174
+regexLiteral = new Node(Token.REGEXP, pattern);#993,17.702917264855426
+private static Node makeForwardSlashBracketSafe(Node n) {#1043,17.702571139616126
+reportCodeChange();#385,17.693215429782867
+Node hookNode = new Node(Token.HOOK, cond, thenExpr, elseExpr)#348,17.69204616546631
+return n;#826,17.68757942744664
+private static boolean areSafeFlagsToFold(String flags) {#1036,17.677421152591705
+break;#200,17.669018904368084
+Node hookNode = new Node(Token.HOOK, cond, thenOp, elseOp)#394,17.65709180831909
+Node newRoot = first.removeFirstChild();#680,17.644635677337646
+int complementOperator;#227,17.639706293741863
+)) {#177,17.637665601877067
+TernaryValue nVal = NodeUtil.getBooleanValue(n);#800,17.62888112434974
+n = n.getLastChild();#611,17.62850438223945
+if (thenBranchIsExpressionBlock && elseBranchIsExpressionBlock) {#359,17.626033741494883
+case Token.RETURN:#60,17.624305963516235
+Node newRoot = new Node(newOp, left, right);#697,17.61698236465454
+if (n.getType() == Token.BLOCK) {#520,17.615846474965412
+regexLiteral = new Node(Token.REGEXP, pattern, flags);#1004,17.613247795104982
+sb.append(s, pos, i).append('\\');#1055,17.610791625976564
+= new Predicate<Node>() {#46,17.601706314086915
+int equivalentResult = result ? 1 : 0;#803,17.60071978569031
+reportCodeChange();#183,17.59696936607361
+Node first = n.getFirstChild();#677,17.596848543952493
+static final DiagnosticType INVALID_REGULAR_EXPRESSION_FLAGS =#40,17.59559508732387
+(NodeUtil.canBeSideEffected(result) ||#153,17.595161199569702
+if (n.getType() == Token.BLOCK) {#578,17.591811233096653
+case Token.SHNE:#238,17.58525522549947
+isLowerPrecedenceInExpression(expr.getFirstChild(),#303,17.584090762668186
+NodeUtil.isTryFinallyNode(follow.getParent(), follow)) {#150,17.581843872070312
+return newExpr;#298,17.57222016652425
+if (n.hasOneChild()) {#521,17.568646176656088
+elseExpr.detachFromParent();#343,17.56862881978353
+|| n.getType() == Token.NEW);#868,17.567184347855417
+Node elseOp = getBlockExpression(elseBranch).getFirstChild();#361,17.565899641617484
+expr.removeFirstChild()).copyInformationFrom(n);#293,17.560061413308848
+"JSC_INVALID_REGULAR_EXPRESSION_FLAGS",#42,17.55828508963952
+if (STANDARD_OBJECT_CONSTRUCTORS.contains(className)) {#852,17.55010233606611
+|| !areNodesEqualForInlining(lastTrue, lastFalse)) {#506,17.54857121195112
+Node thenExpr = name1.removeChildren();#422,17.541034096165706
+"RegExp",#836,17.5349383354187
+.copyInformationFrom(n);#380,17.530359757252228
+n.setType(Token.BREAK);#182,17.52943886650933
+private Node tryMinimizeCondition(Node n) {#672,17.52421467120831
+Node var = getBlockVar(elseBranch);#438,17.508552495171042
+condition.detachFromParent();#772,17.50771365446203
+Node arg0 = constructorNameNode.getNext();#893,17.501314390273322
+private boolean consumesDanglingElse(Node n) {#603,17.50089740753174
+return node;#82,17.499457532709297
+if (result != null) {#192,17.4990592436357
+replacement = new Node(Token.OR, condition, falseNode);#782,17.497438828150432
+n.setType(Token.BREAK);#166,17.49512324333191
+private boolean isLowerPrecedenceInExpression(Node n,#628,17.484736144542694
+boolean elseBranchIsVar = isVarBlock(elseBranch);#407,17.482961855436628
+Node leftParent = first.getFirstChild();#689,17.48152196407318
+n.removeChildren();#899,17.476008583517636
+NodeUtil.isAssign(getBlockExpression(elseBranch).getFirstChild())) {#411,17.464254040871896
+reportCodeChange();#248,17.460208654403687
+Node maybeExpr = n.getFirstChild();#522,17.460167834633275
+return tryMinimizeNot(node);#65,17.45387077331543
+reportCodeChange();#296,17.451165063040598
+if (nVal != TernaryValue.UNKNOWN) {#801,17.45031634244052
+Node expr = NodeUtil.newExpr(hookNode);#396,17.447818597157795
+default:#100,17.447465419769287
+isLowerPrecedenceInExpression(expr.getFirstChild(),#286,17.446902242200128
+tryMinimizeCondition(NodeUtil.getConditionExpression(node));#81,17.44601567586263
+reportCodeChange();#205,17.443179190158844
+Node maybeName1 = thenAssign.getFirstChild();#441,17.439692798413727
+Node newExpr = NodeUtil.newExpr(or);#294,17.43743236541748
+Node var = getBlockVar(thenBranch);#413,17.435654023114374
+falseNode = tryMinimizeCondition(falseNode);#761,17.433686758342542
+return tryMinimizeIf(node);#69,17.42472094297409
+NodeUtil.isAssign(getBlockExpression(thenBranch).getFirstChild())) {#436,17.42161713877032
+reportCodeChange();#314,17.419848998387653
+private boolean isPropertyAssignmentInExpression(Node n) {#644,17.416125297546387
+int newOp = (first.getType() == Token.AND) ? Token.OR : Token.AND;#696,17.415601801872253
+Node pattern = constructor.getNext();  // e.g.  ^foobar$#957,17.412331788436227
+newLiteralNode = new Node(Token.ARRAYLIT);#898,17.40376356669835
+sb.append(s, pos, s.length());#1064,17.402055796454935
+ControlFlowAnalysis.getExceptionHandler(follow)#176,17.392066912217572
+Node thenExpr = thenAssign.getLastChild().detachFromParent();#447,17.389821456028866
+Preconditions.checkArgument(n.getType() == Token.CALL#867,17.38665433363481
+condition.detachFromParent();#777,17.382319786969354
+n = n.getLastChild();#616,17.38218312793308
+lastFalse.detachFromParent();#510,17.376970495496476
+trueNode = tryMinimizeCondition(trueNode);#760,17.376194602564762
+input.getParent().getType() == Token.ASSIGN);#650,17.374817811525784
+while (true) {#502,17.371793217129177
+reportCodeChange();#198,17.364096581935883
+private Node tryMinimizeNot(Node n) {#222,17.36387377518874
+"Error"#837,17.36273447672526
+return NodeUtil.has(n, isLowerPrecedencePredicate,#637,17.352529071626208
+return node;#88,17.343976801091973
+elseOp.detachFromParent();#393,17.341121673583984
+reportCodeChange();#455,17.33927019437154
+private static final ImmutableSet<String> STANDARD_OBJECT_CONSTRUCTORS =#829,17.33674698784238
+return n;#795,17.336395263671875
+break;#943,17.333002885182697
+Node left = n.getFirstChild();#713,17.331295742708093
+private Node getBlockReturnExpression(Node n) {#568,17.331143174852645
+if (NodeUtil.isLiteralValue(cond, true)) {#267,17.329802603948686
+newLiteralNode = new Node(Token.OBJECTLIT);#890,17.326928028693565
+replacement = right;#739,17.325214862823486
+reportCodeChange();#398,17.306148529052734
+private Node getBlockExpression(Node n) {#543,17.29341807732215
+break;#207,17.280555645624798
+return action;#951,17.270420483180455
+private Node getBlockVar(Node n) {#593,17.268978039423626
+return expr;#387,17.26405429840088
+private static final Pattern REGEXP_FLAGS_RE = Pattern.compile("^[gmi]*$");#1015,17.259245166072137
+Node thenExpr = getBlockReturnExpression(thenBranch);#339,17.254001344953263
+return var;#431,17.253323208202016
+static final Predicate<Node> DONT_TRAVERSE_FUNCTIONS_PREDICATE#45,17.244174003601074
+parent.replaceChild(n, expr);#384,17.239509310041154
+Preconditions.checkNotNull(falseBranch);#500,17.237146198749542
+reportCodeChange();#1008,17.234762763977052
+Node or = new Node(Token.OR, cond.removeFirstChild(),#292,17.213491659898025
+break;#231,17.207065391540528
+Node constructor = n.getFirstChild();#956,17.205983308645393
+return newRoot;#685,17.204294469621445
+if (isASTNormalized()) {#849,17.198479175567627
+reportCodeChange();#821,17.19363479614258
+name2.addChildrenToBack(hookNode);#453,17.192014995374176
+Node lhs = thenOp.getFirstChild();#365,17.186478478567942
+parent.replaceChild(n, newRoot);#681,17.165731072425842
+Node elseAssign = getBlockExpression(elseBranch).getFirstChild();#414,17.164960821469624
+replacement = new Node(Token.AND, condition, trueNode);#786,17.162288864453632
+n.detachChildren();#781,17.16189980506897
+default:#242,17.150847911834717
+Node result = n.getFirstChild();#111,17.150411679194523
+reportCodeChange();#333,17.148848438262938
+return n;#168,17.138695129981407
+tryMinimizeCondition(node.getFirstChild());#68,17.13742356551321
+break;#237,17.137261486053468
+break;#937,17.13111448287964
+return n;#969,17.12426535288493
+return NodeUtil.has(n, isPropertyAssignmentInExpressionPredicate,#654,17.11856058369512
+break;#234,17.1180006980896
+type == Token.AND && rval) {#736,17.116244157155354
+complementOperator = Token.NE;#230,17.113711059093475
+private boolean isVarBlock(Node n) {#577,17.11361773808797
+newOperator.setType(complementOperator);#246,17.09055095911026
+reportCodeChange();#512,17.089691162109375
+DONT_TRAVERSE_FUNCTIONS_PREDICATE);#638,17.089247970581056
+Node first = n.getFirstChild();#555,17.08899627012365
+boolean elseBranchIsExpressionBlock = isFoldableExpressBlock(elseBranch);#357,17.088451027870178
+return n;#184,17.088130604137074
+return regexLiteral;#1009,17.087586720784504
+++nSlashes;#1077,17.08505813892071
+return node;#77,17.080853895707563
+return n;#461,17.080538613455637
+NOT_SAFE_TO_FOLD, SAFE_TO_FOLD_WITH_ARGS, SAFE_TO_FOLD_WITHOUT_ARGS}#917,17.080062245213707
+reportCodeChange();#352,17.076596546173096
+reportCodeChange();#699,17.07634687423706
+lastTrue.detachFromParent();#509,17.063465118408203
+n.detachChildren();#743,17.059745523664688
+return n;#1012,17.059463909694127
+private FoldArrayAction isSafeToFoldArrayConstructor(Node arg) {#925,17.046290698804352
+n.removeChild(cond);#391,17.046283834120807
+n.removeChildren();#181,17.045034261850212
+private Node maybeReplaceChildWithNumber(Node n, Node parent, int num) {#817,17.044419651939755
+Node first = n.getFirstChild();#580,17.044317918665268
+return n;#214,17.033969470432826
+tryMinimizeCondition(NodeUtil.getConditionExpression(node));#86,17.029602087461033
+tryMinimizeCondition(node.getFirstChild());#72,17.029328697606136
+private Node tryMinimizeIf(Node n) {#258,17.017177728506233
+n.removeChild(cond);#373,17.01170946422376
+name1.addChildrenToBack(hookNode);#428,16.99885589198062
+.copyInformationFrom(thenOp);#382,16.99608850479126
+Node and = new Node(Token.AND, cond, expr.removeFirstChild())#310,16.991745251875656
+Node trueNode = n.getFirstChild().getNext();#754,16.988316354297456
+Preconditions.checkState(n.getType() == Token.IF);#487,16.983149301438104
+Node right = rightParent.removeFirstChild();#694,16.972872807429386
+return n;#280,16.95868257375864
+parent.replaceChild(n, expr);#397,16.958328247070312
+Node newExpr = NodeUtil.newExpr(and);#312,16.958151029503863
+parent.replaceChild(n, newExpr);#295,16.957761174156552
+Node newNode = Node.newNumber(num);#818,16.943592262268066
+continue;#617,16.942210117975872
+return n;#319,16.936267217000324
+Node falseBranch = trueBranch.getNext();#498,16.933665692806244
+return newRoot;#702,16.929097890853882
+return node;#73,16.926883870905097
+cond.detachFromParent();#424,16.91249001820882
+safe = false;#155,16.91106430689494
+OR_PRECEDENCE)) {#287,16.907568087944618
+if (!isASTNormalized()) {#963,16.896136045455933
+complementOperator = Token.SHEQ;#239,16.894414371914333
+reportCodeChange();#745,16.875240683555603
+parent.replaceChild(n, var);#429,16.86279566147748
+boolean safe = true;#120,16.856998867458767
+return n;#913,16.85416998182024
+Node elseBranch = thenBranch.getNext();#272,16.852718353271484
+DONT_TRAVERSE_FUNCTIONS_PREDICATE);#655,16.849159774780272
+return false;#537,16.839868545532227
+Node thenAssign = getBlockExpression(thenBranch).getFirstChild();#439,16.837764819463093
+return n;#859,16.834461212158203
+return maybeReplaceChildWithNumber(n, parent, equivalentResult);#804,16.834148178100588
+tryMinimizeCondition(node.getFirstChild());#64,16.82953307503148
+parent.replaceChild(n, replacement);#790,16.821194347582367
+Node breakTarget = n;#119,16.809535694122314
+thenOp.detachFromParent();#392,16.807002279493545
+n.detachChildren();#785,16.801673889160156
+private static final int OR_PRECEDENCE = NodeUtil.precedence(Token.OR);#38,16.801222038269042
+return n;#268,16.795536465115017
+Node constructorNameNode = n.getFirstChild();#870,16.795118649800617
+AND_PRECEDENCE)) {#304,16.791976809501648
+return var;#457,16.79017500443892
+parent.replaceChild(n, replacement);#744,16.782331648327055
+ControlFlowAnalysis.mayThrowException(result);#114,16.777626249525284
+return newExpr;#316,16.772883855379543
+Preconditions.checkState(n.getType() == Token.NEW);#844,16.770973023914156
+return REGEXP_FLAGS_RE.matcher(flags).matches();#1025,16.768357821873256
+return n;#289,16.762933667500814
+reportCodeChange();#908,16.761204855782644
+while (true) {#604,16.757958941989475
+reportCodeChange();#430,16.756303310394287
+Preconditions.checkNotNull(trueBranch);#499,16.75609564781189
+n.removeFirstChild();#204,16.750652684105766
+complementOperator = Token.SHNE;#236,16.746947120217715
+boolean thenBranchIsVar = isVarBlock(thenBranch);#406,16.72927680768465
+.copyInformationFrom(n);#395,16.725606969884925
+if (safe) {#161,16.723658058378433
+Node thenOp = getBlockExpression(thenBranch).getFirstChild();#360,16.716120927230172
+return n;#334,16.710315810309517
+Node returnNode = new Node(Token.RETURN, hookNode);#350,16.6924440293085
+Node trueBranch = cond.getNext();#497,16.682755606515066
+tryMinimizeCondition(node.getFirstChild());#76,16.680476941560443
+return false;#587,16.668023109436035
+return n;#807,16.666036779230293
+parent.replaceChild(n, var);#454,16.662688928491928
+return false;#562,16.658216612679617
+private static final int AND_PRECEDENCE = NodeUtil.precedence(Token.AND);#37,16.65559539794922
+return n;#964,16.653652403089737
+return n.getFirstChild();#545,16.64961996945468
+cond.detachFromParent();#449,16.6462433497111
+private boolean isReturnExpressBlock(Node n) {#552,16.64536527486948
+Node left = leftParent.removeFirstChild();#693,16.634064564338097
+return n;#403,16.625163820054794
+parent.replaceChild(n, newExpr);#313,16.60522511130885
+parent.replaceChild(n, newRoot);#698,16.59644548709576
+return returnNode;#353,16.596381759643556
+Node newOperator = n.removeFirstChild();#245,16.586681365966797
+n.removeFirstChild();#197,16.58459546830919
+parent.addChildAfter(lastTrue, n);#511,16.584285511690027
+return NodeUtil.isExpressionNode(maybeExpr);#533,16.58410155773163
+return n.getFirstChild();#595,16.568757490678266
+n = replacement;#791,16.547537190573557
+private Node tryReduceReturn(Node n) {#110,16.535917282104492
+Node cond = n.getFirstChild();#262,16.527050458467922
+return node; //Nothing changed#101,16.526938029697963
+.copyInformationFrom(n);#451,16.523472377232142
+Node cond = n.getFirstChild();#496,16.52344402900109
+.copyInformationFrom(n);#311,16.521812597910564
+n.getParent().replaceChild(n, newLiteralNode);#907,16.508143938504734
+private void tryRemoveRepeatedStatements(Node n) {#486,16.505651728312174
+Node thenBranch = cond.getNext();#271,16.479509830474854
+break;#705,16.47553096498762
+node = tryFoldStandardConstructors(node);#91,16.47029545432643
+Preconditions.checkState(isVarBlock(n));#594,16.468081025516284
+private boolean isFoldableExpressBlock(Node n) {#519,16.467391967773438
+.copyInformationFrom(n);#426,16.44868657248361
+thenExpr.detachFromParent();#342,16.441892242431642
+return tryReduceReturn(node);#61,16.440034568309784
+public Node optimizeSubtree(Node node) {#58,16.43141444524129
+boolean thenBranchIsExpressionBlock = isFoldableExpressBlock(thenBranch);#356,16.400062441825867
+break;#240,16.386172485351562
+public class PeepholeSubstituteAlternateSyntax#34,16.384650157048153
+extends AbstractPeepholeOptimization {#35,16.37041326002641
+safe = false;#134,16.35242795944214
+parent.replaceChild(n, regexLiteral);#1007,16.33008845647176
+Node parent = n.getParent();#955,16.311132272084553
+n.setType(Token.CALL);#853,16.307694695212625
+return n;#306,16.302569976219765
+return replacement;#746,16.291902669270833
+n.addChildToBack(thenBranch);#332,16.287059054655188
+breakTarget = breakTarget.getParent()) {#123,16.2842894660102
+.copyInformationFrom(n);#349,16.254753228389855
+reportCodeChange();#792,16.25333915437971
+return first.hasOneChild();#582,16.247271986568677
+tryRemoveRepeatedStatements(n);#325,16.2381869829618
+return true;#608,16.23767630259196
+return;#493,16.220802068710327
+return n;#243,16.216212966225363
+Node newLiteralNode = null;#872,16.212310864375187
+return n.getFirstChild().getFirstChild();#570,16.207304255167642
+break;#1052,16.201257785161335
+return newLiteralNode;#909,16.19787737902473
+Node notChild = n.getFirstChild();#225,16.187561988830566
+Preconditions.checkState(isFoldableExpressBlock(n));#544,16.179485607147218
+Node parent = n.getParent();#260,16.169469594955444
+Node parent = n.getParent();#673,16.159536600112915
+return false;#1083,16.154516220092773
+return first.hasOneChild();#557,16.142415832070743
+return expr;#400,16.139568769014797
+pos = i;#1056,16.135561874934606
+Node parent = n.getParent();#489,16.131999969482422
+Preconditions.checkState(isReturnExpressBlock(n));#569,16.108553992377388
+return n;#998,16.082975534292366
+);#838,16.076052120753697
+return false;#619,16.072179354154148
+reportCodeChange();#854,16.065268516540527
+newLiteralNode.addChildrenToFront(arg0);#901,16.064817326409475
+n.removeChild(cond);#309,16.057331720987957
+Node parent = n.getParent();#223,16.029385646184284
+break;#135,16.015501403808592
+return newNode;#823,16.005786323547362
+n.removeChild(flags);#1003,15.968530972798666
+private Node tryFoldLiteralConstructor(Node n) {#866,15.947805348564597
+n.removeChild(thenBranch);#331,15.90242665608724
+break;#156,15.891968536376954
+parent.replaceChild(n, returnNode);#351,15.832997143268585
+return n;#1001,15.783948018000675
+break;#507,15.740525150299073
+parent.replaceChild(n, newOperator);#247,15.729608408610027
+private Node tryFoldStandardConstructors(Node n) {#843,15.728205998738607
+return node;#93,15.716673557574932
+n.removeChild(cond);#341,15.674312518193172
+return tryFoldRegularExpressionConstructor(n);#884,15.581885957717896
+parent.replaceChild(n, newNode);#820,15.558789730072021
+private Node tryFoldRegularExpressionConstructor(Node n) {#954,15.543149387135225
+break;#947,15.510234276453653
+n.replaceChild(cond, cond.removeFirstChild());#330,15.438068741246274
+return tryFoldLiteralConstructor(node);#98,15.397950458526612
+break;#210,14.959734780447823
+break;#1057,14.766319036483765

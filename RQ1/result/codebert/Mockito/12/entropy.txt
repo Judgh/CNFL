@@ -1,0 +1,8 @@
+Type generic = field.getGenericType();#17,17.68257017696605
+@SuppressWarnings("unchecked")#7,17.281790386546742
+return (Class) actual;#20,17.141631733287465
+public Class getGenericType(Field field) {#16,17.123011762445625
+return Object.class;#24,17.091852701627293
+if (generic != null && generic instanceof ParameterizedType) {#18,16.96767516758131
+Type actual = ((ParameterizedType) generic).getActualTypeArguments()[0];#19,16.28280818462372
+public class GenericMaster {#8,14.933626015981039

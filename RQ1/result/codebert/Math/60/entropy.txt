@@ -1,0 +1,72 @@
+private static final long serialVersionUID = 8589540077390120676L;#43,19.02976305588432
+private final double solverAbsoluteAccuracy;#51,18.52886438369751
+private final double mean;#47,18.325442420111763
+try {#126,18.258837604522704
+public double density(double x) {#109,18.23928737640381
+return 1;#133,18.17564286683735
+protected double getSolverAbsoluteAccuracy() {#148,18.170504252115887
+double ret;#241,18.162737412886187
+return Double.POSITIVE_INFINITY;#172,18.069033249564793
+double ret;#199,18.02279316295277
+return 0;#131,18.010771400050114
+throw new NotStrictlyPositiveException(LocalizedFormats.STANDARD_DEVIATION, sd);#75,17.95644236899711
+public double getMean() {#94,17.9564378044822
+double ret;#220,17.89746128429066
+@Override#218,17.824549039204914
+@Override#147,17.796838760375977
+return solverAbsoluteAccuracy;#149,17.778969645500183
+@Override#184,17.707539240519207
+ret = -Double.MAX_VALUE;#202,17.706754048665363
+if (p == 1) {#171,17.665499687194824
+this(mean, sd, DEFAULT_INVERSE_ABSOLUTE_ACCURACY);#60,17.64336045583089
+public static final double DEFAULT_INVERSE_ABSOLUTE_ACCURACY = 1e-9;#41,17.630897686399262
+return super.inverseCumulativeProbability(p);#174,17.626130624250933
+public double inverseCumulativeProbability(final double p)#166,17.610528469085693
+@Override#108,17.56274716059367
+if (x < (mean - 20 * standardDeviation)) { // JDK 1.5 blows at 38#130,17.55682040623256
+protected double getDomainLowerBound(double p) {#198,17.552925237019856
+return ret;#251,17.502798253839668
+@Override#197,17.463412284851074
+protected double getDomainUpperBound(double p) {#219,17.44908332824707
+public double cumulativeProbability(double x) throws MathException {#124,17.407906373341877
+(standardDeviation * FastMath.sqrt(2.0))));#128,17.40711710188124
+final double dev = x - mean;#125,17.37694650888443
+final double x1 = x0 / standardDeviation;#111,17.306481313705444
+return 0.5 * (1.0 + Erf.erf((dev) /#127,17.303752757884837
+return Double.NEGATIVE_INFINITY;#169,17.29025061234184
+private static final double SQRT2PI = FastMath.sqrt(2 * FastMath.PI);#45,17.284629858457127
+solverAbsoluteAccuracy = inverseCumAccuracy;#80,17.275184404282342
+public NormalDistributionImpl(double mean, double sd, double inverseCumAccuracy) {#73,17.272060592969257
+private final double standardDeviation;#49,17.235135598616168
+final double x0 = x - mean;#110,17.213634883656223
+protected double getInitialDomain(double p) {#240,17.191313879830496
+if (p == 0) {#168,17.18609479268392
+ret = Double.MAX_VALUE;#225,17.170817613601685
+ret = mean - standardDeviation;#244,17.15116114616394
+return FastMath.exp(-0.5 * x1 * x1) / (standardDeviation * SQRT2PI);#112,17.135870279584612
+@Override#239,17.05482800801595
+ret = mean + standardDeviation;#246,17.030554342269898
+throw ex;#135,16.982138533341256
+public NormalDistributionImpl(double mean, double sd){#59,16.958602011203766
+return mean;#95,16.95324420928955
+if (p < 0.5) {#243,16.9408021253698
+if (p < 0.5) {#201,16.939780235290527
+public double getStandardDeviation() {#101,16.915430148442585
+this.mean = mean;#78,16.915348189217703
+if (sd <= 0) {#74,16.86472536722819
+return ret;#207,16.85613640871915
+public double sample() throws MathException {#185,16.84201995531718
+ret = mean;#223,16.841244280338287
+if (p < 0.5) {#222,16.833675216226016
+return ret;#228,16.79098857532848
+return randomData.nextGaussian(mean, standardDeviation);#186,16.627728072079744
+return standardDeviation;#102,16.548406454233024
+public class NormalDistributionImpl extends AbstractContinuousDistribution#35,16.446366163400505
+this(0, 1);#88,16.444727965763636
+ret = mean;#204,16.428562581539154
+@Override#165,16.274884700775146
+throws MathException {#167,15.993974804878235
+ret = mean;#248,15.947057843208313
+standardDeviation = sd;#79,15.797520637512207
+implements NormalDistribution, Serializable {#36,15.776629984378815
+public NormalDistributionImpl(){#87,15.69016695022583

@@ -1,0 +1,301 @@
+protected Compiler createCompiler() {#442,20.223885154724123
+String param = params.getParameter(0);#288,20.043979273902046
+public String getDefaultMetaVariable() {#307,20.01446029118129
++ "--module flags occur in relation to --js flags is unimportant")#133,19.66632131735484
+switch (this) {#322,19.615820277820934
+handler = BooleanOptionHandler.class,#84,19.542217314243317
+String lowerParam = param.toLowerCase();#293,19.431466007232665
+protected CompilerOptions createOptions() {#419,19.42408952713013
+handler = BooleanOptionHandler.class,#90,19.42359471321106
+throws CmdLineException {#349,19.38007704416911
+public static class BooleanOptionHandler extends OptionHandler<Boolean> {#274,19.378532780541313
+CompilerOptions options = new CompilerOptions();#420,19.30190168108259
+handler = BooleanOptionHandler.class,#152,19.2491415143013
+private String output_wrapper = "";#183,19.223926305770874
+private void applyToOptions(CompilerOptions options) {#321,19.218274474143982
+throws CmdLineException {#343,19.203786214192707
+private List<String> module = Lists.newArrayList();#134,19.16869847914752
+usage = "Specifies which formatting options, if any, should be "#261,19.1574300683063
+handler = BooleanOptionHandler.class,#166,19.132651925086975
+private String charset = "";#237,19.12998000058261
+private List<String> js = Lists.newArrayList();#120,19.11846087960636
+if (param == null) {#289,19.106702931722005
+usage = "A javascript module specification. The format is "#128,19.097339391708374
+public int parseArguments(Parameters params) throws CmdLineException {#287,19.08291362580799
+private List<String> module_wrapper = Lists.newArrayList();#195,19.075542650724714
+case PRINT_INPUT_DELIMITER:#326,19.05511960529146
+usage = "An output wrapper for a javascript module (optional). "#191,19.017550165002998
+usage = "Use this token as output marker in the value of"#186,19.015195673162285
+IOException {#448,18.99888144599067
+AbstractCommandLineRunner<Compiler, CompilerOptions> {#75,18.996671340044806
+String value = matcher.group(2);#368,18.987117608388264
+private final Flags flags = new Flags();#335,18.98233528137207
+private static final Set<String> TRUES =#275,18.96311503648758
+aliases = {"--dev_mode"})#102,18.957964841057272
+"source files back to the original source file will be " +#205,18.955178169977096
++ "source files must be listed in the corresponding order. Where "#132,18.94604375145652
+private List<String> define = Lists.newArrayList();#233,18.93369758830351
+private String output_wrapper_marker = "%output%";#188,18.92038278018727
+case PRETTY_PRINT:#323,18.90274715423584
+private List<String> jscomp_error = Lists.newArrayList();#214,18.89424705505371
++ " 0 (never print summary), 1 (print summary only if there are "#174,18.889394760131836
+throws CmdLineException {#356,18.887144565582275
+public class CommandLineRunner extends#74,18.883757999965123
+private List<FormattingOption> formatting = Lists.newArrayList();#264,18.860562525297468
+usage = "Controls how detailed the compilation summary is. Values:"#173,18.85916168039495
+CmdLineParser parser = new CmdLineParser(flags);#380,18.818268299102783
+protected CommandLineRunner(String[] args)#342,18.80690930106423
+for (String arg : args) {#363,18.80359109242757
+"best phase ordering from this run")#86,18.794585466384888
+private boolean print_pass_graph = false;#98,18.79100411278861
+usage = "Override the value of a variable annotated @define. " +#228,18.777599811553955
+handler = BooleanOptionHandler.class,#251,18.7764835357666
+private static final Set<String> FALSES =#277,18.768637825460996
+"output to the specified path. The %outname% placeholder will " +#206,18.75656572977702
+CmdLineParser parser, OptionDef option,#281,18.750178050994872
+private CompilerOptions.DevMode jscomp_dev_mode =#103,18.749307261572945
+usage = "Interpolate output into this string at the place denoted"#181,18.737985730171204
+private List<String> jscomp_off = Lists.newArrayList();#224,18.71259994506836
+handler = BooleanOptionHandler.class,#79,18.70980143547058
++ "renaming map produced by a previous compilation")#138,18.703483882703278
+"QUIET, DEFAULT, VERBOSE")#247,18.695270437943307
+private List<String> jscomp_warning =  Lists.newArrayList();#219,18.692877769470215
+usage = "Input charset for all files.")#236,18.690095477634006
+private boolean print_tree = false;#81,18.68723964691162
+private boolean compute_phase_ordering = false;#87,18.682853766850062
+super();#344,18.68130048116048
++ "renaming map produced by a previous compilation")#143,18.65782060121235
+handler = BooleanOptionHandler.class,#267,18.654233813285828
+default:#329,18.641188430786134
+Setter<? super Boolean> setter) {#282,18.62225995063782
++ " warnings for the JavaScript code under compilation")#110,18.618897279103596
++ " --output_wrapper")#187,18.608432706197103
+handler = BooleanOptionHandler.class,#256,18.60828799009323
+@Option(name = "--output_wrapper_marker",#185,18.600781811608208
+private String create_source_map = "";#209,18.59982422419957
+getCommandLineConfig()#388,18.58716975318061
+if (TRUES.contains(lowerParam)) {#294,18.57001083547419
+protected List<JSSourceFile> createExterns() throws FlagUsageException,#447,18.561865425109865
+Pattern argPattern = Pattern.compile("(--[a-zA-Z_]+)=(.*)");#360,18.539845269301843
++ "errors or warnings), 2 (print summary if type checking is on, "#175,18.535967330932618
++ " by the marker token %output%. See --output_wrapper_marker")#182,18.53457447198721
+"corresponds to.")#208,18.52928134373256
+private String js_output_file = "";#125,18.51677519934518
+usage = "The javascript filename. You may specify multiple")#119,18.51596074104309
++ "with a module specified using --module. The wrapper must "#193,18.512260350314055
+usage = "Specifies the compilation level to use. Options: " +#240,18.505854979805324
+private boolean print_ast = false;#93,18.49733241399129
+usage = "If specified, a source map file mapping the generated " +#204,18.49660657799762
+private List<String> externs = Lists.newArrayList();#116,18.487863791616338
+public BooleanOptionHandler(#280,18.450814680619672
+@Option(name = "--jscomp_dev_mode",#100,18.439822408888077
+Pattern quotesPattern = Pattern.compile("^['\"](.*)['\"]$");#361,18.435889442761738
+@Option(name = "--compute_phase_ordering",#83,18.43563222885132
+@Option(name = "--print_pass_graph",#95,18.43541919483858
+@Option(name = "--js",#118,18.428336950448845
++ "{binary name}_props_map.out. Note that this flag cannot be used "#155,18.421296777396368
+@Override#441,18.415409803390503
+@Option(name = "--debug",#255,18.407294493455154
+Matcher quotesMatcher = quotesPattern.matcher(value);#369,18.405977335843172
+private boolean debug = false;#258,18.40099754333496
+@Option(name = "--define",#226,18.39219958965595
+private CompilationLevel compilation_level =#242,18.391719102859497
+@Option(name = "--module_output_path_prefix",#197,18.382015429045026
+@Option(name = "--jscomp_warning",#216,18.381323397159576
+@Override#418,18.36903715133667
+@Option(name = "--output_wrapper",#180,18.359806632995607
+"that contains no single quotes. If [=<val>] is omitted, " +#231,18.352350675142727
+throw new CmdLineException(owner,#299,18.350383168175107
+@Option(name = "--print_tree",#78,18.33892993927002
+try {#479,18.330851395924885
+if (quotesMatcher.matches()) {#370,18.32934976878919
+private String variable_map_input_file = "";#139,18.328830361366272
+public static void main(String[] args) {#478,18.303429921468098
+@Option(name = "--module_wrapper",#190,18.297221120198568
+private boolean use_only_custom_externs = false;#253,18.29689841800266
+usage = "The file containing javascript externs. You may specify"#114,18.295178413391113
+.setThirdParty(flags.third_party)#404,18.29326017279374
++ "in conjunction with either variable_map_output_file or "#156,18.272484572037406
+@Option(name = "--js_output_file",#122,18.2697935665355
+@Override#306,18.2621591091156
+private boolean create_name_map_files = false;#158,18.247418463230133
+@Override#286,18.24439311027527
++ "will be created as needed. Use with --module")#200,18.239597184317454
+usage = "Check source validity but do not enforce Closure style "#167,18.238962867043234
++ "<module-name>.js will be appended to this prefix. Directories "#199,18.232543541834904
++ "unique. Each dep is the name of a module that this module "#130,18.232417821884155
+String[] args, PrintStream err)#355,18.229756082807267
+initConfigFromFlags(args, err);#351,18.223096554095928
+"WHITESPACE_ONLY, SIMPLE_OPTIMIZATIONS, ADVANCED_OPTIMIZATIONS")#241,18.220076122799433
++ " multiple")#115,18.214670419692993
+Matcher matcher = argPattern.matcher(arg);#364,18.214503639622738
++ "applied to the output JS. Options: "#262,18.210674715042114
+aliases = {"--D", "-D"},#227,18.2044298508588
+private void initConfigFromFlags(#354,18.195098876953125
+@Option(name = "--variable_map_input_file",#136,18.18706642953973
+processedArgs.add(matcher.group(1));#366,18.172071790695192
++ "contain %s as the code placeholder")#194,18.168196828741777
+@Option(name = "--module",#127,18.1611416890071
+@Option(name = "--variable_map_output_file",#146,18.160782111318486
+usage = "Specifies the warning level to use. Options: " +#246,18.160150320633598
+@Option(name = "--compilation_level",#239,18.15621191263199
+options.setCodingConvention(new ClosureCodingConvention());#421,18.154942321777344
+if (matcher.matches()) {#365,18.14854310353597
+for (FormattingOption formattingOption : flags.formatting) {#430,18.14835023880005
+.setJscompDevMode(flags.jscomp_dev_mode)#393,18.142198006312054
+private List<JSSourceFile> getDefaultExterns() throws IOException {#463,18.129800271987914
+try {#381,18.1225372950236
++ "depends on. Modules must be listed in dependency order, and js "#131,18.119308691758377
+@Option(name = "--jscomp_off",#221,18.11478763818741
+@Option(name = "--formatting",#260,18.11196095602853
+private String variable_map_output_file = "";#149,18.110454082489014
+.setModuleOutputPathPrefix(flags.module_output_path_prefix)#409,18.092126772953915
+@Option(name = "--third_party",#165,18.08178990681966
+.setModuleWrapper(flags.module_wrapper)#408,18.07065682411194
+private boolean process_closure_primitives = true;#270,18.06867815653483
+CompilerOptions.DevMode.OFF;#104,18.066531293532428
+@Option(name = "--use_only_custom_externs",#250,18.063385509309313
++ "renaming map produced should be saved")#162,18.06134769651625
+usage = "Primary output filename. If not specified, output is " +#123,18.05840430052384
+.setModule(flags.module)#398,18.053895890712738
+parser.parseArgument(processedArgs.toArray(new String[] {}));#382,18.044800122578938
+.setComputePhaseOrdering(flags.compute_phase_ordering)#390,18.04463912963867
+private WarningLevel warning_level = WarningLevel.DEFAULT;#248,18.041775871725644
+usage = "Enable debugging options")#257,18.039612515767416
+(new CommandLineRunner(args)).run();#480,18.037715077400208
+for (ZipEntry entry = null; (entry = zip.getNextEntry()) != null; ) {#468,18.034521249624397
+@Option(name = "--process_closure_primitives",#266,18.033888869815403
+private boolean third_party = false;#169,18.029371579488117
++ "is 1")#177,18.016571118281437
++ "files will be produced as {binary name}_vars_map.out and "#154,18.013896942138672
+setter.addValue(true);#295,18.002319812774658
+"written to stdout")#124,17.998132160731725
+"variable and <val> is a boolean, number, or a single-quoted string " +#230,17.97791438267149
+@Option(name = "--print_ast",#89,17.967487843831382
+.setOutputWrapperMarker(flags.output_wrapper_marker)#407,17.96740451812744
+initConfigFromFlags(args, System.err);#345,17.96270243326823
++ "renaming map produced should be saved")#148,17.956101894378662
+@Option(name = "--jscomp_error",#211,17.947815477848053
++ " values) for Compiler progress. Does not control errors or"#109,17.94082836482836
+"expand to the name of the output file that the source map " +#207,17.93961771329244
+private String module_output_path_prefix = "./";#201,17.913681647356817
+.setOutputWrapper(flags.output_wrapper)#406,17.911897039413454
+usage = "Prefix for filenames of compiled js modules. "#198,17.909458077472188
+super(parser, option, setter);#283,17.905840537127325
+List<String> processedArgs = Lists.newArrayList();#362,17.90135613609763
+usage = "Specifies whether the default externs should be excluded")#252,17.900195080301035
+@Option(name = "--property_map_input_file",#141,17.872566674884997
+setter.addValue(true);#290,17.86936961279975
+@Option(name = "--externs",#113,17.865637588500977
+"the variable is marked true")#232,17.859549522399902
+.setPrintPassGraph(flags.print_pass_graph)#392,17.850858081470836
+@Override#446,17.843124389648438
++ " tree and exits")#92,17.825968538011825
+private String logging_level = Level.WARNING.getName();#111,17.8181531569537
+usage = "Prints out the parse tree and exits")#80,17.807906246185304
+@Option(name = "--create_source_map",#203,17.79235856673297
+private static enum FormattingOption {#316,17.768892923990887
+throw e;#386,17.76612726847331
+@Option(name = "--charset",#235,17.765179061889647
+setter.addValue(false);#297,17.75942907333374
+private String property_map_output_file = "";#163,17.757924735546112
+private int summary_detail_level = 1;#178,17.745770931243896
+CompilationLevel.SIMPLE_OPTIMIZATIONS;#243,17.744396890912736
++ "The format is <name>:<wrapper>. The module name must correspond "#192,17.74409885406494
+if (flags.debug) {#424,17.743953097950328
+if (!flags.use_only_custom_externs) {#450,17.738682144566585
+.setJs(flags.js)#396,17.72507405281067
++ " and exits")#97,17.72483414870042
+level.setOptionsForCompilationLevel(options);#423,17.724481264750164
+return null;#308,17.722141786055133
++ "see --check_types), 3 (always print summary). The default level "#176,17.720308175453773
+@Option(name = "--warning_level",#245,17.718179130554198
+PRINT_INPUT_DELIMITER,#318,17.715667009353638
++ "PRETTY_PRINT, PRINT_INPUT_DELIMITER")#263,17.708345544749292
+.setDefine(flags.define)#414,17.679439712973203
+.setVariableMapOutputFile(flags.variable_map_output_file)#401,17.674579887390138
+@Option(name = "--logging_level",#107,17.66826641559601
+usage = "If true, variable renaming and property renaming map "#153,17.64847597868546
+.setJsOutputFile(flags.js_output_file)#397,17.64749730717052
+@Option(name = "--create_name_map_files",#151,17.640980519746478
+PRETTY_PRINT,#317,17.633146806196734
+private String property_map_input_file = "";#144,17.62832087278366
+InputStream input = CommandLineRunner.class.getResourceAsStream(#464,17.61354883093583
+protected CommandLineRunner(String[] args, PrintStream out, PrintStream err)#348,17.603525462903473
++ "rules and conventions")#168,17.590455191476003
+return 0;#291,17.587798045231747
+usage = "Turns on extra sanity checks",#101,17.561908933851456
+usage = "Processes built-ins from the Closure library, such as "#268,17.553848686218263
+.setPropertyMapOutputFile(flags.property_map_output_file)#403,17.55091522216797
+private static class Flags {#77,17.539511271885463
+ZipInputStream zip = new ZipInputStream(input);#466,17.533193111419678
+if (flags.process_closure_primitives) {#433,17.52950406074524
+.setJscompOff(flags.jscomp_off)#413,17.52175049554734
+usage = "Make the named class of warnings a normal warning. " +#217,17.515897253285285
+.setPrintTree(flags.print_tree)#389,17.515448871411774
+parser.printUsage(err);#385,17.51105051774245
+return options;#438,17.483892713274276
+@Option(name = "--property_map_output_file",#160,17.45394736842105
+processedArgs.add(quotesMatcher.group(1));#371,17.440216541290283
+.setPrintAst(flags.print_ast)#391,17.42766571044922
+throw new RuntimeException("Unknown formatting option: " + this);#330,17.42444909137228
+usage = "File containing the serialized version of the variable "#137,17.419132913861954
++ "goog.require(), goog.provide(), and goog.exportSymbol()")#269,17.410356680552166
+return new Compiler(getErrorPrintStream());#443,17.40095785685948
+.setVariableMapInputFile(flags.variable_map_input_file)#399,17.396274375915528
+usage = "File where the serialized version of the variable "#147,17.371835027422225
+.setJscompError(flags.jscomp_error)#411,17.3673856371925
+usage = "Make the named class of warnings an error. Options:" +#212,17.335071646648906
+usage = "The logging level (standard java.util.logging.Level"#108,17.325316276550293
+@Option(name = "--summary_detail_level",#172,17.32405118381276
+.setJscompWarning(flags.jscomp_warning)#412,17.319297699701217
+super(out, err);#350,17.315066719055174
+CompilationLevel level = flags.compilation_level;#422,17.314497530460358
++ "property_map_output_file")#157,17.31449074215359
++ "<name>:<num-js-files>[:[<dep>,...][:]]]. Module names must be "#129,17.307025389237836
+break;#325,17.30152948697408
+LimitInputStream entryStream = new LimitInputStream(zip, entry.getSize());#469,17.293935497601826
+options.prettyPrint = true;#324,17.272616554709042
+"Options:" + DiagnosticGroups.DIAGNOSTIC_GROUP_NAMES)#218,17.254775285720825
+usage = "File containing the serialized version of the property "#142,17.25344825926281
+.setSummaryDetailLevel(flags.summary_detail_level)#405,17.252558915511422
+Sets.newHashSet("true", "on", "yes", "1");#276,17.249879095289444
+options.printInputDelimiter = true;#327,17.242612981796263
+usage = "Runs the compile job many times, then prints out the " +#85,17.224150466918946
+"Illegal boolean value: " + lowerParam);#300,17.203689721914436
+usage = "Turn off the named class of warnings. Options:" +#222,17.20365368236195
+"/externs.zip");#465,17.200285530090333
+return 1;#302,17.199504999014046
+usage = "Prints a dot file describing the passes that will get run"#96,17.182409445444744
+.setCreateSourceMap(flags.create_source_map)#410,17.166839816353537
+.setCreateNameMapFiles(flags.create_name_map_files)#402,17.141740226745604
+.setLoggingLevel(flags.logging_level)#394,17.116980507260276
+System.exit(-1);#482,17.10519591967265
+List<JSSourceFile> defaultExterns = getDefaultExterns();#451,17.09934417406718
+Sets.newHashSet("false", "off", "no", "0");#278,17.09642936565258
+.setExterns(flags.externs)#395,17.0568546295166
+"The format is <name>[=<val>], where <name> is the name of a @define " +#229,17.051579359805945
+usage = "File where the serialized version of the property "#161,17.03307846614293
+initOptionsFromFlags(options);#437,17.02403874830766
+.setPropertyMapInputFile(flags.property_map_input_file)#400,16.946102905273438
+usage = "Prints a dot file describing the internal abstract syntax"#91,16.90297170118852
+level.setDebugOptionsForCompilationLevel(options);#425,16.823676533169216
+DiagnosticGroups.DIAGNOSTIC_GROUP_NAMES)#213,16.790400505065918
+formattingOption.applyToOptions(options);#431,16.771114158630372
+WarningLevel wLevel = flags.warning_level;#428,16.745736821492514
+;#319,16.727596855163576
+err.println(e.getMessage());#384,16.692098108927407
+externs.add(JSSourceFile.fromInputStream(entry.getName(), entryStream));#470,16.67051338327342
+List<JSSourceFile> externs = Lists.newLinkedList();#467,16.614871458573774
+DiagnosticGroups.DIAGNOSTIC_GROUP_NAMES)#223,16.553718090057373
+return externs;#472,16.49701976776123
+List<JSSourceFile> externs = super.createExterns();#449,16.488538308577105
+return defaultExterns;#453,16.47194465001424
+.setCharset(flags.charset);#415,16.355593633651733
+break;#328,16.35281030337016
+return externs;#455,16.217256285927512
+wLevel.setOptionsForWarningLevel(options);#429,16.213498306274413
+options.closurePass = true;#434,16.170013354374813
+processedArgs.add(value);#373,16.143570451175464
+processedArgs.add(arg);#376,16.061259460449218
+defaultExterns.addAll(externs);#452,15.601863967047798

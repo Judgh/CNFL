@@ -1,0 +1,140 @@
+if (valueToAdd == 0) {#206,19.802459548501407
+if (months == 0) {#92,19.670288785298666
+class BasicMonthOfYearDateTimeField extends ImpreciseDateTimeField {#34,19.28583885641659
+public DurationField getRangeDurationField() {#309,19.284682053786057
+public DurationField getLeapDurationField() {#328,19.24675144468035
+long datePart =#197,19.18677806854248
+public int getMaximumValue() {#338,19.171680797230113
+long datePart =#144,19.152521292368572
+public int get(long instant) {#71,19.15083662668864
+public int getMinimumValue() {#333,19.12888492237438
+public long add(long instant, long months) {#150,19.078628285725912
+if (i_months == months) {#152,19.076615501852597
+private final int iMax;#42,19.06222610473633
+return instant - roundFloor(instant);#351,18.976306650373672
+if (dayToUse > maxDay) {#138,18.948373158772785
+public long add(long instant, int months) {#91,18.923535792032876
+thisDom = maxDom;#301,18.894344594743515
+public long set(long instant, int month) {#292,18.793854077657063
+if (yearToUse < iChronology.getMinYear() ||#181,18.707093397776287
+return instant; // the easy case#93,18.69462655719958
+long timePart = iChronology.getMillisOfDay(instant);#98,18.688462880941536
+return add(instant, i_months);#153,18.660161235115744
+if (dayToUse > maxDay) {#193,18.652402030097115
+iMax = iChronology.getMaxMonth();#53,18.633906269073485
+if (monthToUse >= 0) {#113,18.623174779555377
+int i_yearToUse = (int)yearToUse;#188,18.616881543939765
+long minuendRem = minuendInstant#266,18.58839570151435
+private final BasicChronology iChronology;#41,18.538995234171548
+return datePart + timePart;#199,18.52345848083496
+int i_months = (int)months;#151,18.521855036417644
+if (monthToUse >= 0) {#165,18.499882698059082
+if (thisDom > maxDom) {#299,18.499413882984836
+return false;#59,18.49487946250222
+int minuendDom = iChronology.getDayOfMonth#251,18.48450569484545
+return datePart + timePart;#146,18.468054962158202
+return iChronology.days();#329,18.45277225971222
+public boolean isLeap(long instant) {#314,18.445785181862966
+public long addWrapField(long instant, int months) {#232,18.425331698523628
+if (remMonthToUse == 0) {#172,18.40491958097978
+if (minuendInstant < subtrahendInstant) {#238,18.39565308888753
+int yearToUse;#110,18.387754880464993
+return iMax;#339,18.380233605702717
+public boolean isLenient() {#58,18.376991618763316
+private Object readResolve() {#358,18.376872929659758
+if (DateTimeUtils.isContiguous(partial)) {#210,18.3732516115362
+return iChronology.years();#310,18.36929965019226
+long subtrahendRem = subtrahendInstant#268,18.349822362263996
+int subtrahendDom = iChronology.getDayOfMonth#255,18.349676662021214
+if (remMonthToUse == 0) {#121,18.34730997952548
+long timePart = iChronology.getMillisOfDay(instant);#158,18.327801374288704
+public long roundFloor(long instant) {#343,18.327473844800675
+int thisDom = iChronology.getDayOfMonth(instant, thisYear);#297,18.296606506620133
+return iChronology.monthOfYear();#359,18.283656650119358
+dayToUse = maxDay;#139,18.281522851241263
+int thisYear = iChronology.getYear(instant);#103,18.27917239976966
+long instant = 0L;#211,18.274950557284885
+private static final int MIN = DateTimeConstants.JANUARY;#39,18.254822778701783
+if (monthToUse == 1) {#126,18.200734592619398
+if (subtrahendDom > minuendDom) {#257,18.182668266296385
+if (minuendRem < subtrahendRem) {#271,18.17307862781343
+int thisYear = iChronology.getYear(instant);#160,18.158850421076234
+public long remainder(long instant) {#350,18.1575821240743
+return MIN;#334,18.14966982061213
+long yearToUse;#163,18.144166946411133
+int year = iChronology.getYear(instant);#344,18.140836282209918
+for (int i = 0, isize = partial.size(); i < isize; i++) {#212,18.13489403444178
+dayToUse = maxDay;#194,18.132365327132376
+throw new IllegalArgumentException#184,18.0937409930759
+private final int iLeapMonth;#43,18.068307876586914
+int remMonthToUse = (int)(monthToUse % iMax);#171,18.068184988839285
+yearToUse += 1;#127,18.024272181771018
+iChronology.getMillisOfDay(instant);#305,18.022242876199577
+return isLeap(instant) ? 1 : 0;#324,18.010019756498792
+int remMonthToUse = monthToUse % iMax;#119,18.007909660339354
+return -getDifference(subtrahendInstant, minuendInstant);#239,18.006340401513235
+return set(instant, FieldUtils.getWrappedValue(get(instant), months, MIN, iMax));#233,18.00570752280099
+return false;#319,17.990963328968395
+int i_monthToUse = (int)monthToUse;#189,17.988347140225496
+return (iChronology.getMonthOfYear(instant, thisYear) == iLeapMonth);#317,17.95489043659634
+public int getLeapAmount(long instant) {#323,17.950831604003906
+difference--;#272,17.94202448527018
+int thisYear = iChronology.getYear(instant);#295,17.926097206447434
+if (monthToUse == 1) {#176,17.92440900348482
+int monthToUse = thisMonth - 1 + months;#112,17.917160177230834
+int thisYear = iChronology.getYear(instant);#315,17.914498163306195
+return super.add(partial, fieldIndex, values, valueToAdd);#218,17.89390710421971
+if (minuendDom == iChronology.getDaysInYearMonth(minuendYear, minuendMonth)) {#253,17.88198184967041
+long monthToUse = thisMonth - 1 + months;#164,17.864334535598754
+instant = add(instant, valueToAdd);#215,17.843470241712488
+remMonthToUse = iMax;#122,17.842856009801228
+subtrahendInstant = iChronology.dayOfMonth().set(subtrahendInstant, minuendDom);#261,17.839550358908518
+int thisMonth = iChronology.getMonthOfYear(instant, thisYear);#104,17.819007635116577
+iChronology = chronology;#52,17.81514447927475
+("Magnitude of add amount is too large: " + months);#185,17.814894580841063
+public int[] add(ReadablePartial partial, int fieldIndex, int[] values, int valueToAdd) {#203,17.80099997027167
+int month = iChronology.getMonthOfYear(instant, year);#345,17.791440633627083
+public long getDifferenceAsLong(long minuendInstant, long subtrahendInstant) {#237,17.78583335876465
+monthToUse = iMax - remMonthToUse + 1;#175,17.78100560261653
+int maxDom = iChronology.getDaysInYearMonth(thisYear, month);#298,17.77539883341108
+return difference;#275,17.74841343272816
+int dayToUse = iChronology.getDayOfMonth(instant, thisYear, thisMonth);#136,17.73347294330597
+remMonthToUse = iMax;#173,17.717225909233093
+super(DateTimeFieldType.monthOfYear(), chronology.getAverageMillisPerMonth());#51,17.71343096371355
+int maxDay = iChronology.getDaysInYearMonth(yearToUse, monthToUse);#137,17.69535732269287
+int minuendYear = iChronology.getYear(minuendInstant);#242,17.68246548264115
+return values;#207,17.680022303263346
+monthToUse = iMax - remMonthToUse + 1;#124,17.666411289801964
+iChronology.getYearMonthDayMillis(yearToUse, monthToUse, dayToUse);#145,17.653201844957138
+int thisMonth = iChronology.getMonthOfYear(instant, thisYear);#161,17.640758889062063
+int subtrahendYear = iChronology.getYear(subtrahendInstant);#244,17.581334326002334
+return iChronology.getMonthOfYear(instant);#72,17.571640448136762
+int dayToUse = iChronology.getDayOfMonth(instant, thisYear, thisMonth);#191,17.53896415233612
+iLeapMonth = leapMonth;#54,17.51067590713501
+yearToUse += 1;#177,17.46755127473311
+BasicMonthOfYearDateTimeField(BasicChronology chronology, int leapMonth) {#50,17.460408926010132
+long difference = (minuendYear - subtrahendYear) * ((long) iMax) + minuendMonth - subtrahendMonth;#247,17.45993838310242
+monthToUse = (monthToUse % iMax) + 1;#167,17.45201121436225
+int maxDay = iChronology.getDaysInYearMonth(i_yearToUse, i_monthToUse);#192,17.440678242274693
+FieldUtils.verifyValueBounds(this, month, MIN, iMax);#293,17.439414165638112
+yearToUse = thisYear + (monthToUse / iMax) - 1;#117,17.425083096822103
+monthToUse = (monthToUse % iMax) + 1;#115,17.424170600043404
+int minuendMonth = iChronology.getMonthOfYear(minuendInstant, minuendYear);#243,17.420180937823126
+return iChronology.getYearMonthDayMillis(thisYear, month, thisDom) +#304,17.412985801696777
+(minuendInstant, minuendYear, minuendMonth);#252,17.41004831450326
+return iChronology.get(partial, instant);#216,17.394835035006206
+int subtrahendMonth = iChronology.getMonthOfYear(subtrahendInstant, subtrahendYear);#245,17.390333147609937
+yearToUse = thisYear + (monthToUse / iMax) - 1;#169,17.38079293568929
+return iChronology.getYearMonthMillis(year, month);#346,17.222172737121582
+iChronology.getYearMonthDayMillis(i_yearToUse, i_monthToUse, dayToUse);#198,17.182116866111755
+yearToUse > iChronology.getMaxYear()) {#182,17.16254601111779
+instant = partial.getFieldType(i).getField(iChronology).set(instant, values[i]);#213,17.160109165102938
+yearToUse = thisYear + (monthToUse / iMax);#114,17.142368740505642
+(subtrahendInstant, subtrahendYear, subtrahendMonth);#256,17.1108857691288
+private static final long serialVersionUID = -8258715387168736L;#37,17.109062238173053
+yearToUse = thisYear + (monthToUse / iMax);#166,17.065765380859375
+monthToUse = Math.abs(monthToUse);#118,17.023394187291462
+monthToUse = Math.abs(monthToUse);#170,16.931785504023235
+- iChronology.getYearMonthMillis(minuendYear, minuendMonth);#267,16.8967947398915
+if (iChronology.isLeapYear(thisYear)) {#316,16.89275058110555
+- iChronology.getYearMonthMillis(subtrahendYear, subtrahendMonth);#269,16.862632274627686

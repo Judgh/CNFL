@@ -1,0 +1,739 @@
+public Object clone() throws CloneNotSupportedException {#1680,20.858757155282156
+public DrawingSupplier getDrawingSupplier() {#1541,20.307463137308755
+public int getColumnCount() {#809,19.998580412431195
+DrawingSupplier result = null;#1542,19.710905838012696
+public Range findRangeBounds(CategoryDataset dataset) {#901,19.55470323562622
+public int getPassCount() {#266,19.544303027066317
+public CategoryItemLabelGenerator getSeriesItemLabelGenerator(int series) {#334,19.516508511134557
+private CategoryPlot plot;#191,19.48562791612413
+public LegendItemCollection getLegendItems() {#1790,19.389447138859676
+if (dataset instanceof SelectableCategoryDataset) {#873,19.3868000196374
+Shape s = hotspot;#1868,19.378344127110072
+public int getRowCount() {#799,19.367496317083184
+public int hashCode() {#1531,19.349801445007323
+LegendItemCollection result = new LegendItemCollection();#1791,19.308642917209202
+if (!(range.intersects(start, end))) {#1237,19.305611463693474
+protected void addEntity(EntityCollection entities, Shape hotspot,#1836,19.26153631771312
+private transient int columnCount;#240,19.250785923004152
+CategoryDataset dataset) {#1761,19.24992591456363
+protected Range findRangeBounds(CategoryDataset dataset,#917,19.21316859301399
+public LegendItem getLegendItem(int datasetIndex, int series) {#1417,19.17423243271677
+public CategoryPlot getPlot() {#279,19.163356607610528
+private ObjectList urlGeneratorList;#206,19.122833569844563
+public CategoryURLGenerator getSeriesURLGenerator(int series) {#565,19.09614251789294
+if (hotspot == null) {#1869,19.089841425418854
+protected void addEntity(EntityCollection entities, Shape hotspot,#1862,19.077163079205683
+public CategoryToolTipGenerator getSeriesToolTipGenerator(int series) {#452,19.075902802603586
+if (label != null) {#1218,19.035722431383636
+public void setPlot(CategoryPlot plot) {#292,19.025731291089738
+selected) {#547,18.99020004272461
+if (label != null) {#1154,18.98485387166341
+Range range = axis.getRange();#1236,18.98268575668335
+Rectangle2D dataArea, CategoryPlot plot, CategoryDataset dataset,#857,18.96424885453849
+double end = im.getEndValue();#1235,18.956198692321777
+private transient int rowCount;#237,18.953754234313966
+if (label != null) {#1320,18.951643893593236
+CategorySeriesLabelGenerator generator) {#763,18.948054218292235
+String url = null;#1885,18.94555267920861
+protected ValueAxis getRangeAxis(CategoryPlot plot, int index) {#1774,18.93889976683117
+for (int s = 0; s < seriesCount; s++) {#925,18.921105278862846
+Iterator iterator = null;#1651,18.907568522862025
+Range range = axis.getRange();#1189,18.90647268295288
+else if (marker instanceof IntervalMarker) {#1232,18.87883690425328
+Shape shape = lookupLegendShape(series);#1443,18.875439643859863
+if (cri != null) {#881,18.872814226150513
+String label = marker.getLabel();#1318,18.87187795639038
+public void setSeriesItemLabelGenerator(int series,#365,18.862300395965576
+final Composite savedComposite = g2.getComposite();#1241,18.850804576167352
+CategoryDataset dataset, int row, int column, boolean selected,#1607,18.84524525536431
+CategorySeriesLabelGenerator generator) {#788,18.84442801475525
+if (bounds == null) {#1986,18.84411358833313
+public void addAnnotation(CategoryAnnotation annotation) {#654,18.843007266521454
+String label = generator.generateLabel(dataset, row, column);#1617,18.815774818946576
+this.itemLabelGeneratorList = new ObjectList();#250,18.81103119850159
+else {#1731,18.8082948412214
+private ObjectList itemLabelGeneratorList;#194,18.806016555199257
+if (y == null) {#1946,18.79727210998535
+else {#865,18.789277458190917
+String urlText = null;#1438,18.78141634804862
+Range range = axis.getRange();#1059,18.77531009912491
+if (p instanceof GradientPaint) {#1271,18.77512554500414
+public void drawRangeLine(Graphics2D g2, CategoryPlot plot, ValueAxis axis,#1056,18.760656661987305
+int seriesCount = dataset.getRowCount();#924,18.758999997919258
+String description = label;#1432,18.749272860013523
+if (dataset != null) {#1797,18.741821681751926
+for (int row = 0; row < this.rowCount; row++) {#829,18.740955696105956
+private ObjectList toolTipGeneratorList;#200,18.740375738877518
+public void setSeriesItemLabelGenerator(int series,#348,18.72707635164261
+public void setSeriesToolTipGenerator(int series,#483,18.71221923828125
+CategoryDataset dataset, int row, int column, boolean selected,#1863,18.71195927372685
+if (p == null) {#1420,18.709683481852213
+else {#1131,18.7087610244751
+CategoryDataset dataset, int row, int column, boolean selected,#1939,18.69825734032525
+if (this.plot == null) {#1792,18.696488660924576
+Comparable key = dataset.getColumnKey(column);#1944,18.694517850875854
+if (!isSeriesVisible(series) || !isSeriesVisibleInLegend(series)) {#1425,18.687774362235235
+final Composite savedComposite = g2.getComposite();#1195,18.68144526305022
+String label = marker.getLabel();#1216,18.67293291091919
+for (int i = 0; i < seriesCount; i++) {#1802,18.66089132097032
+CategoryItemLabelGenerator generator) {#349,18.655560541152955
+if (isSeriesVisibleInLegend(i)) {#1803,18.648836272103445
+double transX, double transY, PlotOrientation orientation) {#1571,18.645857069227432
+this.toolTipGeneratorList = new ObjectList();#251,18.644040203094484
+ItemLabelPosition position = null;#1618,18.629195414091413
+CategorySeriesLabelGenerator generator) {#735,18.62158908843994
+if (obj == this) {#1471,18.614794158935545
+Line2D line = null;#1022,18.596786753336588
+if (paint == null) {#1016,18.594615697860718
+public CategoryItemLabelGenerator getBaseItemLabelGenerator() {#380,18.58539146847195
+CategoryToolTipGenerator generator) {#466,18.582712650299072
+else {#1658,18.575476264953615
+if (marker instanceof ValueMarker) {#1186,18.568191879674007
+ValueAxis rangeAxis, CategoryDataset dataset, int row, int column,#1981,18.562913340906942
+else {#1698,18.562591893332346
+CategoryPlot plot, CategoryAxis domainAxis, ValueAxis rangeAxis,#1938,18.56175765991211
+double w = r * 2;#1871,18.56103811765972
+String tip = null;#1879,18.55602132357084
+else {#1716,18.55582639149257
+private List foregroundAnnotations;#234,18.552219200134278
+if (im.getOutlinePaint() != null && im.getOutlineStroke() != null) {#1285,18.546035892085026
+if (!(obj instanceof AbstractCategoryItemRenderer)) {#1474,18.545931989496406
+int seriesCount = dataset.getRowCount();#1800,18.5437593460083
+private List backgroundAnnotations;#226,18.54123935699463
+Line2D line = null;#1065,18.531302960713706
+if (getDataBoundsIncludesVisibleSeriesOnly()) {#922,18.523821558271134
+String label = marker.getLabel();#1152,18.52380806207657
+public void setSeriesURLGenerator(int series,#595,18.523012351989745
+int visibleSeriesCount = 0;#828,18.520613161722817
+CategoryDataset dataset, int row, int column, boolean selected,#1914,18.52031686570909
+public boolean removeAnnotation(CategoryAnnotation annotation) {#696,18.50953310728073
+CategoryPlot cp = getPlot();#1543,18.508760452270508
+addEntity(entities, hotspot, dataset, row, column, selected, 0.0, 0.0);#1842,18.50656726143577
+System.arraycopy(visibleSeriesTemp, 0, visibleSeries, 0,#836,18.506357828776043
+CategoryItemEntity entity = new CategoryItemEntity(s, tip, url,#1890,18.50597337881724
+CategoryItemLabelGenerator generator) {#393,18.503739213943483
+dataset.getColumnCount(), dataArea,#1133,18.496443518276873
+else {#679,18.485429286956787
+if (labelPaint != null) {#1452,18.48176950566909
+public CategorySeriesLabelGenerator getLegendItemLabelGenerator() {#722,18.481071313222248
+CategoryDataset dataset, CategoryAxis axis, Rectangle2D area,#953,18.481001919713513
+if (cp != null) {#1544,18.47974967956543
+else {#1622,18.46980517251151
+if (generator != null) {#1882,18.468560218811035
+if (hotspot == null) {#1839,18.46840465068817
+CategoryURLGenerator generator#548,18.46802755502554
+private static final long serialVersionUID = 1247553218442497391L;#188,18.4640719240362
+CategoryDataset dataset = p.getDataset(datasetIndex);#1429,18.46261321581327
+Rectangle2D dataArea) {#970,18.45850861378205
+CategoryDataset dataset, int row, int column, boolean selected) {#1837,18.450668369020736
+Paint paint = lookupSeriesPaint(series);#1444,18.446019649505615
+Number y = dataset.getValue(row, column);#1945,18.441064882278443
+this.columnCount = dataset.getColumnCount();#863,18.431203966555387
+if (stroke == null) {#1019,18.430821800231932
+public void setSeriesToolTipGenerator(int series,#465,18.424714863300323
+int index = this.plot.getIndexOf(this);#1795,18.420393625895183
+CategoryPlot plot, CategoryAxis domainAxis, ValueAxis rangeAxis,#1913,18.42024949391683
+List visibleSeriesKeys = new ArrayList();#923,18.41858904702323
+final Composite savedComposite = g2.getComposite();#1107,18.417948639911152
+public boolean equals(Object obj) {#1469,18.41705886522929
+g2.fill(rect);#1282,18.416611922414678
+if (generator != null) {#1612,18.412985920906067
+if (dataset != null) {#861,18.402519562665155
+else {#1583,18.399681431906565
+this.legendItemLabelGenerator#253,18.399521470069885
+if (dataset == null) {#919,18.398576792548685
+CategoryURLGenerator generator) {#579,18.397227939806488
+boolean includeInterval) {#918,18.397045559353298
+if (isSeriesVisibleInLegend(i)) {#1813,18.3866149357387
+result.setRect(xx - 2, yy - 2, 4, 4);#1954,18.38546734589797
+if (selectionState == null && info != null) {#879,18.384892559051515
+while (iterator.hasNext()) {#1662,18.381567418575287
+public void setSeriesURLGenerator(int series,#578,18.37752062479655
+CategoryItemLabelGenerator generator, boolean notify) {#366,18.376389503479004
+double start = im.getStartValue();#1234,18.373125893729075
+if (crosshairState != null) {#1577,18.364467789145078
+public void addAnnotation(CategoryAnnotation annotation, Layer layer) {#667,18.363837242126465
+if (isSeriesVisible(row)) {#830,18.35328756679188
+int datasetIndex = plot.indexOf(dataset);#1762,18.352174622671946
+Rectangle2D dataArea, CategoryPlot plot, CategoryAxis domainAxis,#1980,18.351786677042643
+double v1 = axis.getCategoryEnd(columnIndex,#1135,18.349338760375975
+if (this.baseItemLabelGenerator instanceof PublicCloneable) {#1692,18.346925439505743
+CategoryPlot p = getPlot();#1419,18.3436829884847
+else if (layer.equals(Layer.BACKGROUND)) {#675,18.34181733564897
+boolean notify) {#636,18.33774644136429
+if (!getItemCreateEntity(row, column, selected)) {#1865,18.337277325716887
+String toolTipText = null;#1433,18.3326171875
+int columnIndex = dataset.getColumnIndex(category);#1102,18.3266535282135
+g2.setComposite(AlphaComposite.getInstance(#1196,18.326240335192
+else if (orientation == PlotOrientation.VERTICAL) {#1207,18.312507488109446
+CategoryDatasetSelectionState selectionState = null;#872,18.309971714019774
+if (t != null) {#1274,18.30691329292629
+Rectangle2D bounds = null;#1112,18.30622547864914
+double x, double y, boolean negative) {#1608,18.303927421569824
+else {#1279,18.299936090196883
+if (result == null) {#1941,18.299931526184082
+dataset.getColumnCount(), dataArea,#1115,18.295504274039434
+CategoryToolTipGenerator generator, boolean notify) {#484,18.292909124623176
+if (notify) {#598,18.29283312388829
+Line2D line = null;#1202,18.289747940866572
+if (notify) {#486,18.288194179534912
+CategoryDataset dataset = plot.getDataset(plot.getIndexOf(this));#1101,18.285280326317096
+if (notify) {#368,18.2778902053833
+dataset.getColumnCount(), dataArea,#1136,18.277785005240606
+CategoryToolTipGenerator result = null;#434,18.276347216437845
+else if (layer.equals(Layer.BACKGROUND)) {#1655,18.271661324934527
+PlotOrientation orientation,#1351,18.271269884976473
+throw new IllegalArgumentException("Null 'paint' argument.");#1017,18.269536936724627
+double entityX, double entityY) {#1864,18.268971897306898
+PlotOrientation orientation,#1385,18.266244313933633
+Paint p = marker.getPaint();#1270,18.262464750380744
+Line2D line = null;#1117,18.259564249139082
+public void drawDomainLine(Graphics2D g2, CategoryPlot plot,#1013,18.258115100860596
+if (generator == null) {#736,18.249705255031586
+if (urlster != null) {#1887,18.245247542858124
+else if (orientation == PlotOrientation.VERTICAL) {#1262,18.242260650352197
+if (notify) {#638,18.240215301513672
+if (!negative) {#1619,18.239734200870288
+CategoryDataset dataset = this.plot.getDataset(index);#1796,18.239729499816896
+throw new IllegalArgumentException("Null 'orientation' argument.");#1574,18.23788611094157
+Rectangle2D markerArea,#1387,18.23775185479058
+Rectangle2D markerArea,#1353,18.236736064487033
+CategoryURLGenerator generator, boolean notify) {#596,18.234687848524615
+public boolean hitTest(double xx, double yy, Graphics2D g2,#1979,18.233251745050605
+CategoryItemLabelGenerator generator, boolean notify) {#409,18.222296797710918
+Rectangle2D dataArea) {#987,18.221152676476372
+g2.setComposite(AlphaComposite.getInstance(#1108,18.216569383939106
+iterator = this.backgroundAnnotations.iterator();#1656,18.210567647760566
+CategoryPlot plot,#1095,18.205503927694785
+else {#1811,18.203815841674803
+CategoryAxis axis,#1096,18.20342106568186
+else if (orientation == PlotOrientation.VERTICAL) {#1122,18.202189092282897
+if (this.legendItemToolTipGenerator != null) {#1434,18.197182904119078
+that.backgroundAnnotations)) {#1516,18.191326929175336
+CategoryPlot plot,#969,18.186513083321707
+public CategoryToolTipGenerator getBaseToolTipGenerator() {#498,18.18594005372789
+if (this.itemLabelGeneratorList != null) {#1686,18.184174083528063
+if (this.legendItemURLGenerator != null) {#1439,18.183859651738945
+return (CategoryItemLabelGenerator) this.itemLabelGeneratorList.get(#335,18.179263775165264
+if (this.baseToolTipGenerator instanceof PublicCloneable) {#1710,18.178909170216528
+Comparable rowKey, Comparable columnKey, double value,#1569,18.178127365112303
+else if (orientation == PlotOrientation.VERTICAL) {#1071,18.17479187509288
+public CategoryItemLabelGenerator getItemLabelGenerator(int row,#315,18.174667258011667
+double yy = rangeAxis.valueToJava2D(y.doubleValue(), dataArea,#1952,18.173148600260415
+if (this.baseURLGenerator instanceof PublicCloneable) {#1727,18.172967229570663
+CategoryItemLabelGenerator generator = (CategoryItemLabelGenerator)#317,18.171704162250865
+if (notify) {#528,18.171275275094168
+throw new RuntimeException("Not implemented.");#1916,18.16902037227855
+throw new CloneNotSupportedException(#1699,18.157350125520125
+private CategoryURLGenerator baseURLGenerator;#209,18.156225272587367
+double value = vm.getValue();#1188,18.154558610916137
+this.urlGeneratorList = new ObjectList();#252,18.152241104527523
+for (int i = seriesCount - 1; i >= 0; i--) {#1812,18.150372378031413
+ChartRenderingInfo cri = info.getOwner();#880,18.14668674468994
+CategoryPlot plot,#1181,18.143089956707424
+Paint paint = getItemLabelPaint(row, column, selected);#1614,18.14055103725857
+protected CategoryAxis getDomainAxis(CategoryPlot plot,#1760,18.13984145058526
+public CategorySeriesLabelGenerator getLegendItemURLGenerator() {#775,18.138458993699814
+g2.setComposite(AlphaComposite.getInstance(#1242,18.135934386934554
+RectangleEdge edge) {#954,18.13347413804796
+if (range.contains(start)) {#1292,18.130414390563963
+if (marker.getDrawAsLine()) {#1113,18.12995127627724
+boolean notify) {#526,18.128097772598267
+if (!range.contains(value)) {#1191,18.12485339424827
+if (this.urlGeneratorList != null) {#1722,18.117898511886597
+double v0 = axis.getCategoryStart(columnIndex,#1132,18.113456268310546
+ValueAxis axis,#1182,18.10844191989383
+SelectableCategoryDataset scd = (SelectableCategoryDataset) dataset;#874,18.106820937125914
+Rectangle2D dataArea,#1386,18.102317068311905
+PublicCloneable pc#1711,18.102010817754838
+g2.setComposite(savedComposite);#1230,18.094700263096737
+int result = super.hashCode();#1532,18.089807748794556
+boolean selected) {#432,18.087925493717194
+g2.setStroke(im.getOutlineStroke());#1291,18.087362057453877
+Rectangle2D dataArea,#1352,18.08684770796034
+if (this.legendItemLabelGenerator instanceof PublicCloneable) {#1737,18.084295639624962
+public void setBaseToolTipGenerator(CategoryToolTipGenerator generator) {#510,18.07909665788923
+PublicCloneable pc#1693,18.078358059837704
+CategoryAxis domainAxis, ValueAxis rangeAxis, Layer layer,#1648,18.075777810195397
+CategoryPlot plot,#986,18.07283765077591
+dataArea.getMinY(), high - low,#1259,18.072836303710936
+if (this.plot.isRangeCrosshairLockedOnData()) {#1578,18.068464313234603
+if (notify) {#411,18.06635046005249
+RectangleInsets markerOffset,#1354,18.06576779683431
+private CategorySeriesLabelGenerator legendItemLabelGenerator;#212,18.065604388713837
+else if (orientation == PlotOrientation.VERTICAL) {#1143,18.062298916004323
+Rectangle2D dataArea) {#1098,18.054916660960128
+public CategoryURLGenerator getBaseURLGenerator() {#610,18.051212787628174
+return 1;#267,18.050816015763715
+public CategorySeriesLabelGenerator getLegendItemToolTipGenerator() {#750,18.049160053855495
+if (this.legendItemURLGenerator instanceof PublicCloneable) {#1745,18.046427800105167
+private CategorySeriesLabelGenerator legendItemURLGenerator;#218,18.039075911045074
+RectangleInsets markerOffset,#1388,18.035395664638944
+int column, boolean selected) {#316,18.034466241535387
+throw new CloneNotSupportedException(#1717,18.033459995103918
+double r = getDefaultEntityRadius();#1870,18.033183960687545
+throw new IllegalArgumentException("Null 'annotation' argument.");#669,18.03236523380986
+if (range.contains(start)) {#1307,18.032099692026772
+if (columnIndex < 0) {#1103,18.028770565986633
+double v = axis.getCategoryMiddle(columnIndex,#1114,18.026805599530537
+else if (orientation == PlotOrientation.VERTICAL) {#1029,18.01977124421493
+protected AbstractCategoryItemRenderer() {#249,18.017573209909294
+if (this.legendItemToolTipGenerator instanceof PublicCloneable) {#1741,18.010032724451136
+double xx = domainAxis.getCategoryMiddle(key,#1949,18.010011536734446
+else if (orientation == PlotOrientation.VERTICAL) {#1363,18.006515295609184
+if (orientation == null) {#1573,18.003721565008163
+if (annotation == null) {#668,18.00356823205948
+String label = this.legendItemLabelGenerator.generateLabel(dataset,#1430,18.003316129956925
+ValueMarker vm = (ValueMarker) marker;#1187,18.000957051912945
+else if (orientation == PlotOrientation.VERTICAL) {#1397,17.994979153508726
+g2.fill(area);#1148,17.9945135618511
+if (range.contains(end)) {#1296,17.993144957224526
+PlotRenderingInfo info) {#1649,17.99085102081299
+if (this.toolTipGeneratorList != null) {#1704,17.981381961277553
+public void drawBackground(Graphics2D g2,#968,17.974118932088217
+if (!range.contains(value)) {#1060,17.962709532843697
+g2.setStroke(im.getOutlineStroke());#1306,17.961874961853027
+CategoryURLGenerator urlster = getURLGenerator(row, column, selected);#1886,17.959734036372257
+Rectangle2D bounds = createHotSpotBounds(g2, dataArea, plot,#1983,17.951986040387833
+public double getItemMiddle(Comparable rowKey, Comparable columnKey,#952,17.94880609512329
+public void drawOutline(Graphics2D g2,#985,17.947721898555756
+if (generator == null) {#319,17.94646042585373
+Rectangle2D area = null;#1138,17.94642119407654
+if (result == null) {#436,17.946291732788087
+throw new IllegalArgumentException("Null 'hotspot' argument.");#1840,17.94172516575566
+if (!ObjectUtilities.equal(this.toolTipGeneratorList,#1487,17.940743883450825
+if (range.contains(end)) {#1311,17.9404403368632
+public CategoryURLGenerator getURLGenerator(int row, int column, boolean#546,17.93960262480236
+g2.draw(line);#1214,17.935933815805537
+if (!ObjectUtilities.equal(this.itemLabelGeneratorList,#1479,17.934865355491638
+if (result == null) {#1776,17.92518933614095
+Font labelFont = getItemLabelFont(row, column, selected);#1613,17.92493435188576
+throw new CloneNotSupportedException(#1732,17.924839351488195
+if (generator == null) {#550,17.916452169418335
+Paint outlinePaint = lookupSeriesOutlinePaint(series);#1445,17.915425777435303
+if (getPlot().getOrientation() == PlotOrientation.VERTICAL) {#1872,17.91386240720749
+g2, orientation, dataArea, bounds, marker.getLabelOffset(),#1159,17.91145904858907
+if (plot == null) {#293,17.910266304016112
+Rectangle2D rect = null;#1253,17.907414817810057
+CategoryAnnotation annotation = (CategoryAnnotation) iterator.next();#1663,17.89877957564134
+item.setSeriesKey(dataset.getRowKey(series));#1455,17.89639226595561
+protected CategoryItemRendererState createState(PlotRenderingInfo info) {#825,17.89617815884677
+LegendItem item = new LegendItem(label, description, toolTipText,#1448,17.894970575968426
+if (isSeriesVisible(s)) {#926,17.89102554321289
+(float) coordinates.getX(), (float) coordinates.getY(),#1162,17.886734591590034
+double y1 = dataArea.getMaxY();#1304,17.882899899636545
+if (orientation == PlotOrientation.VERTICAL) {#1286,17.88211924235026
+public CategoryToolTipGenerator getToolTipGenerator(int row, int column,#431,17.88110759041526
+Comparable category = marker.getKey();#1100,17.880889163297766
+Marker marker,#1183,17.877911806106567
+(float) anchorPoint.getX(), (float) anchorPoint.getY(),#1628,17.87700743424265
+this.backgroundAnnotations = new ArrayList();#255,17.87675454881456
+that.toolTipGeneratorList)) {#1488,17.87387317657471
+Rectangle2D dataArea) {#1184,17.872424125671387
+dataArea.getWidth(), (v1 - v0));#1141,17.86913621747816
+Rectangle2D dataArea, double value, Paint paint, Stroke stroke) {#1014,17.867639795939127
+PlotRenderingInfo info) {#858,17.858268690109252
+domainAxis, rangeAxis, dataset, row, column, selected,#1984,17.851238042116165
+throw new IllegalArgumentException("Null 'stroke' argument.");#1020,17.84905690413255
+Serializable {#185,17.846609462391246
+that.urlGeneratorList)) {#1496,17.845614433288574
+dataset, dataset.getRowKey(row), dataset.getColumnKey(column));#1891,17.84214246974272
+return result;#1533,17.839886925437234
+public void setBaseURLGenerator(CategoryURLGenerator generator) {#621,17.839324951171875
+PlotOrientation orientation = plot.getOrientation();#1199,17.838582191467285
+if (plot.getRowRenderingOrder().equals(SortOrder.ASCENDING)) {#1801,17.835677242279054
+Font labelFont = marker.getLabelFont();#1321,17.82757406968337
+AbstractCategoryItemRenderer that = (AbstractCategoryItemRenderer) obj;#1477,17.824439635643593
+if (orientation == PlotOrientation.HORIZONTAL) {#1203,17.820743560791016
+return this.columnCount;#810,17.82066787992205
+public Shape createHotSpotShape(Graphics2D g2, Rectangle2D dataArea,#1912,17.811084071795147
+return result;#1821,17.808594703674316
+int datasetIndex,#1570,17.805323719978333
+double end2d = axis.valueToJava2D(end, dataArea,#1247,17.805266030629475
+Stroke outlineStroke = lookupSeriesOutlineStroke(series);#1446,17.79983455657959
+protected void updateCrosshairValues(CategoryCrosshairState crosshairState,#1568,17.798484250118857
+setPlot(plot);#860,17.790391188401443
+double v = axis.valueToJava2D(value, dataArea,#1200,17.788471528462
+LegendItem item = getLegendItem(index, i);#1804,17.78548189997673
+double y0 = dataArea.getMinY();#1303,17.782808580706195
+setSeriesItemLabelGenerator(series, generator, true);#350,17.77582127707345
+return (CategoryToolTipGenerator) this.toolTipGeneratorList.get(series);#453,17.773545163018362
+g2, orientation, dataArea, line.getBounds2D(),#1223,17.769391179084778
+return this.rowCount;#800,17.76853895187378
+PlotOrientation orientation = plot.getOrientation();#1252,17.768339920043946
+boolean selected, CategoryItemRendererState state) {#1982,17.76608331998189
+if (orientation == PlotOrientation.HORIZONTAL) {#1139,17.765768478656636
+public void drawRangeMarker(Graphics2D g2,#1180,17.760487724752988
+item.setLabelFont(lookupLegendTextFont(series));#1450,17.75930504365401
+g2.draw(line);#1128,17.758428523415013
+CategoryItemRendererState state) {#1915,17.75260525658017
+iterator = this.foregroundAnnotations.iterator();#1653,17.743435818216074
+g2.setFont(labelFont);#1322,17.74278579711914
+(float) coordinates.getX(), (float) coordinates.getY(),#1329,17.74233992099762
+g2.setComposite(savedComposite);#1165,17.740608085285533
+if (orientation == PlotOrientation.HORIZONTAL) {#1118,17.73923318139438
+g2.setFont(labelFont);#1615,17.732786859784806
+return bounds.contains(xx, yy);#1991,17.730785118906123
+rect = new Rectangle2D.Double(low,#1258,17.72834553037371
+low = Math.max(low, dataArea.getMinX());#1256,17.726305869317823
+bounds = line.getBounds2D();#1129,17.724220232530072
+int[] visibleSeries = new int[visibleSeriesCount];#835,17.719192886352538
+that.baseURLGenerator)) {#1500,17.71792217095693
+if (orientation == PlotOrientation.HORIZONTAL) {#1254,17.717378846530256
+return plot.getDomainAxisForDataset(datasetIndex);#1763,17.715919342041015
+if (!ObjectUtilities.equal(this.baseURLGenerator,#1499,17.71562323362931
+marker.getLabelOffset(), marker.getLabelOffsetType(),#1326,17.707700548945247
+private CategoryToolTipGenerator baseToolTipGenerator;#203,17.70632553100586
+that.itemLabelGeneratorList)) {#1480,17.701377754211425
+if (this.baseItemLabelGenerator != null) {#1691,17.70074122292655
+low = Math.max(low, dataArea.getMinY());#1264,17.700185252774148
+double high = Math.max(start2d, end2d);#1250,17.69629414876302
+else {#1875,17.693411350250244
+setSeriesURLGenerator(series, generator, true);#580,17.690252208709715
+CategoryMarker marker,#1097,17.687909427442047
+notifyListeners(new RendererChangeEvent(this));#712,17.684769535064696
+g2.setFont(labelFont);#1156,17.682962372189476
+return result;#1547,17.681198120117188
+notifyListeners(new RendererChangeEvent(this));#699,17.67770733833313
+marker.getLabelOffset(), LengthAdjustmentType.EXPAND,#1224,17.67515400836342
+notifyListeners(new RendererChangeEvent(this));#673,17.674885710080463
+if (!ObjectUtilities.equal(this.baseToolTipGenerator,#1491,17.663238763809204
+if (!ObjectUtilities.equal(this.urlGeneratorList,#1495,17.647254736527152
+CategoryItemRendererState state, Rectangle2D result) {#1940,17.64543699335169
+clone.legendItemToolTipGenerator = (CategorySeriesLabelGenerator)#1742,17.643210674154346
+setSeriesToolTipGenerator(series, generator, true);#467,17.641624904814222
+double x0 = dataArea.getMinX();#1288,17.641519085053474
+private CategoryItemLabelGenerator baseItemLabelGenerator;#197,17.632472932338715
+setBaseItemLabelGenerator(generator, true);#394,17.631066513061523
+if (!ObjectUtilities.equal(this.legendItemURLGenerator,#1511,17.628381996154786
+that.legendItemLabelGenerator)) {#1504,17.625157209543083
+this.rowCount = dataset.getRowCount();#862,17.624851890232254
+that.baseItemLabelGenerator)) {#1484,17.621588439941405
+if (layer.equals(Layer.FOREGROUND)) {#1652,17.61480372292655
+if (!ObjectUtilities.equal(this.backgroundAnnotations,#1515,17.61451361396096
+position = getPositiveItemLabelPosition(row, column, selected);#1620,17.614119068268806
+Font labelFont = marker.getLabelFont();#1155,17.61237972432917
+PlotOrientation orientation = plot.getOrientation();#1023,17.607857295445033
+return findRangeBounds(dataset, false);#902,17.603126811981202
+double x1 = dataArea.getMaxX();#1289,17.603114128112793
+double start2d = axis.valueToJava2D(start, dataArea,#1245,17.60263344446818
+if (layer.equals(Layer.FOREGROUND)) {#671,17.600700151352655
+throw new IllegalArgumentException("Null 'plot' argument.");#294,17.59987893471351
+that.baseToolTipGenerator)) {#1492,17.599683570861817
+Rectangle2D dataArea, double value, Paint paint, Stroke stroke) {#1057,17.598312028249104
+visibleSeriesCount);#837,17.59472613334656
+if (orientation == PlotOrientation.HORIZONTAL) {#1067,17.589934120178224
+if (item != null) {#1805,17.58931435479058
+that.legendItemToolTipGenerator)) {#1508,17.587786568535698
+private CategorySeriesLabelGenerator legendItemToolTipGenerator;#215,17.587122692781335
+AlphaComposite.SRC_OVER, marker.getAlpha()));#1243,17.586710956361557
+if (!ObjectUtilities.equal(this.baseItemLabelGenerator,#1483,17.58378227551778
+CategoryItemRendererState state = createState(info);#869,17.58129646664574
+public void setBaseItemLabelGenerator(#392,17.58002809377817
+s = new Ellipse2D.Double(entityX - r, entityY - r, w, w);#1873,17.57662780110429
+clone.legendItemLabelGenerator = (CategorySeriesLabelGenerator)#1738,17.575242246900284
+public void setBaseToolTipGenerator(CategoryToolTipGenerator generator,#525,17.574004220962525
+AlphaComposite.SRC_OVER, marker.getAlpha()));#1197,17.57290710343255
+annotation.draw(g2, this.plot, dataArea, domainAxis, rangeAxis,#1664,17.572120918947107
+return result;#1779,17.5660907571966
+series);#336,17.563925955030655
+(float) coordinates.getX(), (float) coordinates.getY(),#1227,17.561061429977418
+return (CategoryURLGenerator) this.urlGeneratorList.get(series);#566,17.55789389977088
+this.legendItemLabelGenerator = generator;#739,17.5572980579577
+g2.setPaint(paint);#1616,17.551195188002154
+bounds = area;#1149,17.549031257629395
+if (!ObjectUtilities.equal(this.legendItemLabelGenerator,#1503,17.543008766174317
+if (orientation == PlotOrientation.HORIZONTAL) {#1393,17.538391342163084
+url = urlster.generateURL(dataset, row, column);#1888,17.534378577922954
+Font labelFont = marker.getLabelFont();#1219,17.53387275108924
+return result;#439,17.532881476662375
+g2.setStroke(marker.getStroke());#1127,17.52933178629194
+AlphaComposite.SRC_OVER, marker.getAlpha()));#1109,17.52873945236206
+IntervalMarker im = (IntervalMarker) marker;#1233,17.524320749136116
+that.foregroundAnnotations)) {#1520,17.515017986297607
+if (!ObjectUtilities.equal(this.legendItemToolTipGenerator,#1507,17.51491612654466
+low, dataArea.getWidth(),#1267,17.51422017812729
+dataArea.getMaxY());#1205,17.51401658211985
+double v = axis.valueToJava2D(value, dataArea, plot.getRangeAxisEdge());#1066,17.513619601726532
+RectangleAnchor anchor) {#1390,17.50473928451538
+RectangleAnchor anchor) {#1356,17.503847847814146
+clone.urlGeneratorList = (ObjectList) this.urlGeneratorList.clone();#1723,17.498079508543015
+return axis.getCategoryMiddle(columnKey, dataset.getColumnKeys(), area,#955,17.497172832489014
+state.setSelectionState(selectionState);#887,17.496500492095947
+g2.setPaint(paint);#1076,17.49630249871148
+g2.setStroke(marker.getStroke());#1213,17.495590925216675
+high = Math.min(high, dataArea.getMaxY());#1265,17.491576163999497
+if (this.baseURLGenerator != null) {#1726,17.490204858779908
+LengthAdjustmentType labelOffsetType,#1355,17.487264881963316
+if (!ObjectUtilities.equal(this.foregroundAnnotations,#1519,17.48406878761623
+that.legendItemURLGenerator)) {#1512,17.483901023864746
+if (orientation == PlotOrientation.HORIZONTAL) {#1025,17.482731895446776
+this.legendItemToolTipGenerator = generator;#764,17.482705640792847
+g2, orientation, dataArea, rect,#1325,17.481200358446905
+double low = Math.min(start2d, end2d);#1249,17.47796556684706
+protected void drawItemLabel(Graphics2D g2, PlotOrientation orientation,#1606,17.47377530011264
+if (orientation == PlotOrientation.HORIZONTAL) {#1359,17.471364250183104
+int[] visibleSeriesTemp = new int[this.rowCount];#827,17.467799230055377
+throw new IllegalArgumentException("Null 'generator' argument.");#737,17.46521939171685
+LengthAdjustmentType labelOffsetType,#1389,17.459966369297195
+public void setBaseURLGenerator(CategoryURLGenerator generator,#635,17.4589597913954
+this.legendItemURLGenerator = generator;#789,17.456487304285954
+RectangleAnchor anchor = marker.getLabelAnchor();#1319,17.454373536286532
+public CategoryItemRendererState initialise(Graphics2D g2,#856,17.452583408355714
+ValueAxis result = plot.getRangeAxis(index);#1775,17.450113426555287
+rect = new Rectangle2D.Double(dataArea.getMinX(),#1266,17.449281721404105
+setBaseURLGenerator(generator, true);#622,17.44652853514019
+edge);#956,17.446528169843887
+item.setSeriesIndex(series);#1456,17.44453513622284
+dataArea.getMaxY());#1069,17.436258174754954
+g2.setPaint(paint);#1034,17.42791419559055
+if (this.baseToolTipGenerator != null) {#1709,17.427361579168412
+this.baseURLGenerator = generator;#637,17.425808289471796
+RectangleAnchor anchor = marker.getLabelAnchor();#1217,17.424031964054816
+notifyListeners(new RendererChangeEvent(this));#677,17.42007903258006
+g2.setFont(labelFont);#1220,17.418321800231933
+setBaseToolTipGenerator(generator, true);#511,17.414836359024047
+clone.baseURLGenerator = (CategoryURLGenerator) pc.clone();#1729,17.40441302097205
+high = Math.min(high, dataArea.getMaxX());#1257,17.402005503254554
+result = getSeriesToolTipGenerator(row);#435,17.39901402122096
+this.plot = plot;#296,17.38255194255284
+this.rowCount = 0;#866,17.38160981630024
+Rectangle2D anchorRect = null;#1358,17.38149009031408
+PlotOrientation orientation = plot.getOrientation();#1064,17.381091571989515
+public Rectangle2D createHotSpotBounds(Graphics2D g2, Rectangle2D dataArea,#1937,17.380268369402206
+dataArea.getMaxX(), v);#1120,17.376183769919656
+result = cp.getDrawingSupplier();#1545,17.373288934881035
+CategoryToolTipGenerator generator = getToolTipGenerator(row, column,#1880,17.37305618286133
+public void drawDomainMarker(Graphics2D g2,#1094,17.367157879997702
+this.columnCount = 0;#867,17.365694397374202
+dataArea.getMaxX(), v);#1073,17.361887734511804
+dataArea, plot.getDomainAxisEdge());#1951,17.358360255206073
+return this.legendItemLabelGenerator;#723,17.35267162322998
+line.setLine(x0, start2d, x1, start2d);#1293,17.352152846580328
+this.itemLabelGeneratorList.set(series, generator);#367,17.351486812938344
+line = new Line2D.Double(v, dataArea.getMinY(), v,#1068,17.35011523962021
+return DatasetUtilities.findRangeBounds(dataset,#930,17.346512487956456
+else {#933,17.343959617614747
+dataArea.getMaxX(), value);#1027,17.34364420792152
+return false;#1485,17.339121691385905
+g2.setPaint(marker.getPaint());#1126,17.337390422821045
+(v1 - v0), dataArea.getHeight());#1145,17.33556711351549
+public void drawAnnotations(Graphics2D g2, Rectangle2D dataArea,#1647,17.333643457163934
+datasetIndex, transX, transY, orientation);#1581,17.33030253819057
+Rectangle2D anchorRect = null;#1392,17.32692107032327
+dataArea.getMaxX(), v);#1209,17.321919094432484
+return false;#1493,17.31726868947347
+g2.setPaint(marker.getLabelPaint());#1157,17.31706651051839
+else { // PlotOrientation.HORIZONTAL#1301,17.31607696927827
+PlotOrientation orientation = plot.getOrientation();#1111,17.316014653160458
+this.backgroundAnnotations.clear();#711,17.315472900867462
+g2.setPaint(marker.getLabelPaint());#1323,17.313488652629236
+this.baseItemLabelGenerator = generator;#410,17.311339961157906
+return false;#1489,17.30975602467855
+s = new Ellipse2D.Double(entityY - r, entityX - r, w, w);#1876,17.307811550977753
+g2.setComposite(savedComposite);#1332,17.30216488471398
+this.toolTipGeneratorList.set(series, generator);#485,17.30135098370639
+return null;#920,17.29980360666911
+state.setVisibleSeriesArray(visibleSeries);#838,17.292698458621377
+clone.itemLabelGeneratorList#1687,17.286537973504316
+return result;#1955,17.28219327059659
+return this.plot;#280,17.281872896047737
+"ItemLabelGenerator not cloneable.");#1700,17.26823158825145
+public void removeAnnotations() {#709,17.267460216175426
+this.foregroundAnnotations = new ArrayList();#256,17.258251842699554
+Line2D line = new Line2D.Double();#1302,17.256648391485214
+g2.setPaint(marker.getLabelPaint());#1221,17.25581722874795
+g2.setPaint(im.getOutlinePaint());#1290,17.251445606776645
+tip = generator.generateToolTip(dataset, row, column);#1883,17.24732208251953
+return false;#1501,17.245841407775877
+Line2D line = new Line2D.Double();#1287,17.24562492966652
+g2.setPaint(marker.getPaint());#1212,17.24411729665903
+public void setLegendItemLabelGenerator(#734,17.24318372286283
+item.setDataset(dataset);#1457,17.237632851851615
+= (CategoryItemLabelGenerator) pc.clone();#1696,17.236756218804253
+marker.getLabelOffsetType(), anchor);#1160,17.232894108213227
+line = new Line2D.Double(value, dataArea.getMinY(), value,#1030,17.23191547393799
+GradientPaint gp = (GradientPaint) p;#1272,17.231453323364256
+this.baseToolTipGenerator = generator;#527,17.228011899524265
+series);#1431,17.222265667385525
+dataArea.getHeight());#1260,17.220195770263672
+plot.drawOutline(g2, dataArea);#989,17.219151735305786
+g2.draw(line);#1294,17.21017763691564
+"Base item URL generator not cloneable.");#1733,17.20577559751623
+dataArea.getMaxY());#1124,17.204031544346964
+return this.baseItemLabelGenerator;#381,17.19203483357149
+selectionState = (CategoryDatasetSelectionState)#883,17.187951224190847
+toolTipText = this.legendItemToolTipGenerator.generateLabel(#1435,17.1876584370931
+visibleSeriesCount++;#832,17.187032079696657
+datasetIndex, transX, orientation);#1585,17.185905873775482
+return generator;#322,17.18174561587247
+LengthAdjustmentType.CONTRACT, labelOffsetType);#1399,17.180153702244613
+labelOffsetType, LengthAdjustmentType.CONTRACT);#1395,17.17795871965813
+PublicCloneable pc = (PublicCloneable) this.baseURLGenerator;#1728,17.177562645503453
+visibleSeriesTemp[visibleSeriesCount] = row;#831,17.17390148727982
+line.setLine(start2d, y0, start2d, y1);#1308,17.17034428618675
+Point2D coordinates = calculateRangeMarkerTextAnchorPoint(#1324,17.168573348752915
+dataArea.getMaxY());#1031,17.168547771595144
+clone.toolTipGeneratorList#1705,17.16836206536544
+CategoryItemLabelGenerator generator = getItemLabelGenerator(row,#1610,17.165562629699707
+plot.getRangeAxisEdge());#1201,17.165486880711146
+GradientPaintTransformer t = im.getGradientPaintTransformer();#1273,17.162644330193014
+return false;#1497,17.154681587219237
+return false;#1505,17.15176690419515
+return this.legendItemURLGenerator;#776,17.148543039957683
+line = new Line2D.Double(dataArea.getMinX(), v,#1072,17.148113123575847
+plot.getRangeAxisEdge());#1246,17.147110598427908
+crosshairState.updateCrosshairPoint(rowKey, columnKey, value,#1580,17.146229483864524
+return state;#889,17.144603989341043
+g2.setPaint(im.getOutlinePaint());#1305,17.14302534375872
+area = new Rectangle2D.Double(v0, dataArea.getMinY(),#1144,17.13744020462036
+plot.drawBackground(g2, dataArea);#972,17.137189212598297
+AbstractCategoryItemRenderer clone#1682,17.13584156036377
+line = new Line2D.Double(dataArea.getMinX(), value,#1026,17.135602537790934
+labelOffsetType, LengthAdjustmentType.CONTRACT);#1365,17.134957804824367
+return this.baseURLGenerator;#611,17.133831799030304
+clone.legendItemURLGenerator = (CategorySeriesLabelGenerator)#1746,17.132826839174545
+Point2D coordinates = calculateRangeMarkerTextAnchorPoint(#1222,17.13046735332858
+LengthAdjustmentType.CONTRACT, labelOffsetType);#1361,17.129108342257414
+implements CategoryItemRenderer, Cloneable, PublicCloneable,#184,17.124794462452765
+plot.getDomainAxisEdge());#1134,17.117839166096278
+return this.legendItemToolTipGenerator;#751,17.113784890425833
+area = new Rectangle2D.Double(dataArea.getMinX(), v0,#1140,17.11305830213759
+g2.draw(line);#1309,17.112176710559474
+return false;#1509,17.111025873819987
+urlText = this.legendItemURLGenerator.generateLabel(dataset,#1440,17.108320027589798
+plot.getCategoriesForAxis(domainAxis),#1950,17.096729048367205
+position = getNegativeItemLabelPosition(row, column, selected);#1623,17.096530729724513
+return state;#839,17.096115372397684
+g2.draw(line);#1078,17.092812983194985
+return generator;#553,17.09223781932484
+line = new Line2D.Double(dataArea.getMinX(), v,#1119,17.089685075423297
+dataset, series);#1436,17.0849293867747
+Point2D coordinates = calculateDomainMarkerTextAnchorPoint(#1158,17.08192539215088
+addAnnotation(annotation, Layer.FOREGROUND);#656,17.080762004852296
+TextUtilities.drawAlignedString(label, g2,#1161,17.073103574606087
+return false;#1513,17.068234316507976
+line = new Line2D.Double(v, dataArea.getMinY(), v,#1204,17.065485689375137
+this.urlGeneratorList.set(series, generator);#597,17.062034425281343
+return clone;#1749,17.061546152288262
+if (item != null) {#1815,17.057778005246764
+TextUtilities.drawAlignedString(label, g2,#1226,17.051426124572753
+g2.draw(line);#1036,17.046084912618003
+g2.setStroke(stroke);#1077,17.042057514190674
+RenderingSource rs = cri.getRenderingSource();#882,17.039913813273113
+position.getItemLabelAnchor(), x, y, orientation);#1626,17.036019107273646
+line = new Line2D.Double(dataArea.getMinX(), v,#1208,17.027695122887106
+CategoryItemRendererState state = new CategoryItemRendererState(info);#826,17.027272334465614
+urlText, shape, paint, outlineStroke, outlinePaint);#1449,17.017952024936676
+= new StandardCategorySeriesLabelGenerator();#254,17.015032806396484
+"Base tool tip generator not cloneable.");#1718,17.01098888060626
+return result;#1798,17.010182507832845
+Paint labelPaint = lookupLegendTextPaint(series);#1451,17.00936158498128
+anchorRect = markerOffset.createAdjustedRectangle(markerArea,#1360,17.00908718790327
+anchorRect = markerOffset.createAdjustedRectangle(markerArea,#1394,17.003692524773733
+item.setDatasetIndex(datasetIndex);#1458,17.00356020246233
+LegendItem item = getLegendItem(index, i);#1814,17.00176492333412
+return RectangleAnchor.coordinates(anchorRect, anchor);#1401,16.99892520904541
+g2.setPaint(gp);#1277,16.998281517028808
+plot.getDomainAxisEdge());#1116,16.99802848270961
+throw new RuntimeException("Unknown layer.");#1660,16.993935630435036
+TextUtilities.drawRotatedString(label, g2,#1627,16.993409853715164
+entities.add(entity);#1892,16.987204006740026
+TextUtilities.drawAlignedString(label, g2,#1328,16.986734199523926
+result = new Rectangle();#1942,16.984393808576797
+public void setBaseItemLabelGenerator(#408,16.979465117821327
+fireChangeEvent();#740,16.97581688563029
+line = new Line2D.Double(v, dataArea.getMinY(), v,#1123,16.974612050586277
+fireChangeEvent();#790,16.974186499913532
+fireChangeEvent();#765,16.97012988726298
+high - low);#1268,16.967680556433542
+g2.setStroke(stroke);#1035,16.967161814371746
+return super.equals(obj);#1523,16.95293563604355
+Point2D anchorPoint = calculateLabelAnchorPoint(#1625,16.950741386413576
+return false;#1517,16.947490564982097
+notifyListeners(new RendererChangeEvent(this));#369,16.945680896441143
+protected Point2D calculateRangeMarkerTextAnchorPoint(Graphics2D g2,#1384,16.94529922803243
+return this.baseToolTipGenerator;#499,16.925429568571204
+column, selected);#1611,16.920025396347047
+line.setLine(end2d, y0, end2d, y1);#1312,16.90858215509459
+gp = t.transform(gp, rect);#1275,16.904155604044597
+public void setLegendItemToolTipGenerator(#762,16.903288228171213
+= (CategoryToolTipGenerator) pc.clone();#1714,16.884914106792873
+line.setLine(x0, end2d, x1, end2d);#1297,16.879098714784135
+notifyListeners(new RendererChangeEvent(this));#412,16.87716845671336
+return false;#1481,16.875191179911294
+selectionState = scd.getSelectionState();#875,16.86671489218007
+notifyListeners(new RendererChangeEvent(this));#529,16.862670222918194
+notifyListeners(new RendererChangeEvent(this));#599,16.854841192563374
+notifyListeners(new RendererChangeEvent(this));#487,16.849665602048237
+g2.draw(line);#1298,16.840719961350963
+crosshairState.updateCrosshairX(rowKey, columnKey,#1584,16.838410469793505
+= (PublicCloneable) this.baseItemLabelGenerator;#1694,16.82401714569483
+notifyListeners(new RendererChangeEvent(this));#639,16.822656551996868
+visibleSeriesKeys.add(dataset.getRowKey(s));#927,16.81552179654439
+return RectangleAnchor.coordinates(anchorRect, anchor);#1367,16.80656909942627
+selected);#1881,16.80101336373223
+g2.setPaint(p);#1280,16.78092502593994
+protected Point2D calculateDomainMarkerTextAnchorPoint(Graphics2D g2,#1350,16.776717742284138
+= (ObjectList) this.itemLabelGeneratorList.clone();#1688,16.77265747615269
+return false;#1987,16.76873633066813
+return DatasetUtilities.findRangeBounds(dataset, includeInterval);#934,16.766061514616013
+0, info);#1665,16.759811560312908
+RectangleAnchor anchor = marker.getLabelAnchor();#1153,16.746184825897217
+return;#1866,16.740407262529647
+this.backgroundAnnotations.add(annotation);#676,16.733156328615934
+= (AbstractCategoryItemRenderer) super.clone();#1683,16.731059830764245
+= (PublicCloneable) this.baseToolTipGenerator;#1712,16.72869908503997
+result = plot.getRangeAxis();#1777,16.726196425301687
+g2.setPaint(marker.getPaint());#1147,16.720078064845158
+plot.getRangeAxisEdge());#1953,16.717828273773193
+position.getTextAnchor(),#1629,16.710851192474365
+public void setLegendItemURLGenerator(#787,16.709617101229153
+return item;#1459,16.709263021295722
+position.getAngle(), position.getRotationAnchor());#1630,16.70404088156564
+g2.draw(line);#1313,16.69948870135892
+return removed;#700,16.69158632105047
+return null;#1947,16.689179929097495
+return result;#1793,16.68685614267985
+anchor);#1225,16.680490750532883
+plot.getDomainAxisEdge());#1137,16.679406268256052
+plot.getRangeAxisEdge());#1248,16.677826745169504
+state, null);#1985,16.669730806350707
+series);#1441,16.657887588847768
+this.foregroundAnnotations.add(annotation);#672,16.62905470530192
+result.add(item);#1806,16.619548098246256
+throw new RuntimeException("Unknown layer.");#681,16.602436065673828
+= (ObjectList) this.toolTipGeneratorList.clone();#1706,16.60236761910575
+removed = removed & this.backgroundAnnotations.remove(annotation);#698,16.58531309210736
+boolean removed = this.foregroundAnnotations.remove(annotation);#697,16.573568592900816
+this.foregroundAnnotations.clear();#710,16.569802957422592
+visibleSeriesKeys, includeInterval);#931,16.552061864307948
+= (CategoryURLGenerator) this.urlGeneratorList.get(row);#549,16.532338591182935
+clone.baseItemLabelGenerator#1695,16.521439220594324
+marker.getLabelTextAnchor());#1228,16.508738951249555
+anchorRect = markerOffset.createAdjustedRectangle(markerArea,#1398,16.50822183064052
+return false;#1475,16.503061485290527
+rs.getSelectionState(dataset);#884,16.49537675040109
+clone.baseToolTipGenerator#1713,16.435991743336555
+generator = this.baseItemLabelGenerator;#320,16.420535391027276
+return;#1238,16.4060247209337
+anchor);#1327,16.38160852285532
+ObjectUtilities.clone(this.legendItemLabelGenerator);#1739,16.37038094656808
+anchorRect = markerOffset.createAdjustedRectangle(markerArea,#1364,16.36072976248605
+generator = this.baseURLGenerator;#551,16.33861677987235
+return true;#1472,16.329751269022623
+ObjectUtilities.clone(this.legendItemToolTipGenerator);#1743,16.31941368844774
+return null;#1421,16.27244981129964
+this.itemLabelGeneratorList.get(row);#318,16.253510986055648
+return;#1104,16.223470279148646
+item.setLabelPaint(labelPaint);#1453,16.17454018800155
+return false;#1521,16.16366653442383
+result = this.baseToolTipGenerator;#437,16.091473059220746
+return null;#1426,16.071952056884765
+return;#1061,16.00149713243757
+result.add(item);#1816,15.993877061208089
+marker.getLabelTextAnchor());#1330,15.921303893580582
+marker.getLabelTextAnchor());#1163,15.907096270857187
+ObjectUtilities.clone(this.legendItemURLGenerator);#1747,15.902326502118791
+return;#1192,15.787835862901476
+public abstract class AbstractCategoryItemRenderer extends AbstractRenderer#183,15.380996704101562

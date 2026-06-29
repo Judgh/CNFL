@@ -1,0 +1,1035 @@
+public Object clone() throws CloneNotSupportedException {#2962,20.725896971566335
+public String getPlotType() {#2675,20.19026166742498
+public PiePlot() {#482,20.065351274278427
+private PieDataset dataset;#271,19.945989088578656
+private double shadowYOffset = 4.0f;#322,19.93713836669922
+throws IOException, ClassNotFoundException {#3019,19.900043824139765
+Iterator iterator = keys.iterator();#2618,19.819039404392242
+public PiePlot(PieDataset dataset) {#491,19.60967508951823
+public void setExplodePercent(Comparable key, double percent) {#1361,19.592226128829154
+public LegendItemCollection getLegendItems() {#2609,19.531560090871956
+Iterator iterator = keys.iterator();#2451,19.52793049812317
+DrawingSupplier ds = getDrawingSupplier();#1168,19.485570748647053
+public double getStartAngle() {#613,19.48348077138265
+DrawingSupplier ds = getDrawingSupplier();#1033,19.461211681365967
+DrawingSupplier ds = getDrawingSupplier();#843,19.441707094510395
+public boolean getIgnoreZeroValues() {#773,19.439247644864597
+private double startAngle;#286,19.43475227355957
+Iterator iterator = keys.iterator();#2356,19.397337079048157
+LegendItemCollection result = new LegendItemCollection();#2611,19.370949056413437
+private Rotation direction;#289,19.370503001742893
+public Rotation getDirection() {#640,19.35796864827474
+public double getShadowYOffset() {#1306,19.345190048217773
+private boolean ignoreZeroValues;#437,19.32907066345215
+if (!(obj instanceof PiePlot)) {#2801,19.29052930408054
+public double getLabelGap() {#1422,19.288813908894856
+public void setDataset(PieDataset dataset) {#561,19.273403697543674
+public double getExplodePercent(Comparable key) {#1339,19.261478900909424
+if (this.direction == Rotation.CLOCKWISE) {#2259,19.234863571498703
+private double shadowXOffset = 4.0f;#319,19.233758608500164
+public boolean getIgnoreNullValues() {#745,19.228637768672062
+if (include) {#2465,19.203182893640854
+double angle = (angle2 - angle1);#2271,19.195594787597656
+Shape shape = getLegendItemShape();#2617,19.185815691947937
+public void setDirection(Rotation direction) {#652,19.16396452585856
+for (int pass = 0; pass < passesRequired; pass++) {#2212,19.15960043447989
+if (include) {#2370,19.14993331011604
+if (this.ignoreZeroValues != that.ignoreZeroValues) {#2823,19.147291515184484
+if ((percent < 0.0) || (percent > MAX_INTERIOR_GAP)) {#685,19.14323379253519
+else if (currentPass == 1) {#2292,19.10441761925107
+public PieDataset getDataset() {#550,19.10352414449056
+Paint result = null;#1023,19.09582152733436
+public Shape getLegendItemShape() {#1931,19.077776590983074
+public double getMaximumExplodePercent() {#1377,19.064367441030647
+double angle2 = 0.0;#2257,19.048761904239655
+PieLabelRecord record) {#2724,19.02259787535056
+double angle1 = 0.0;#2256,19.014749348163605
+public double getLabelLinkMargin() {#1500,19.013148454519417
+public double getMaximumLabelWidth() {#1447,19.004196325937908
+double marginX = plotArea.getX() + this.interiorGap * plotArea.getWidth();#2484,18.991449266672134
+DatasetChangeEvent event = new DatasetChangeEvent(this, dataset);#577,18.990621676811806
+)) {#2846,18.98762493133545
+Stroke result = null;#1158,18.985853672027588
+int y = (int) arc.getEndPoint().getY();#2380,18.975371268487745
+if (explodePercent == 0.0) {#2698,18.96438422955965
+Paint result = null;#833,18.954571650578426
+public double getInteriorGap() {#669,18.932664504418007
+PieLabelRecord record) {#2760,18.93234281539917
+if (this.direction != that.direction) {#2820,18.902762463218288
+double gap = plotArea.getWidth() * this.labelGap;#2485,18.896814425786335
+PiePlot that = (PiePlot) obj;#2807,18.890430291493733
+else {#2365,18.889894076756068
+public Font getLabelFont() {#1580,18.877971909262918
+public void setInteriorGap(double percent) {#683,18.876014411449432
+if (this.interiorGap != that.interiorGap) {#2811,18.867325286865235
+public void setStartAngle(double angle) {#627,18.861529604593912
+public boolean getSectionOutlinesVisible() {#965,18.857185227530344
+Comparable key = (Comparable) iterator.next();#2620,18.854824145634968
+private boolean ignoreNullValues;#432,18.847625637054442
+else {#2626,18.844617979867117
+if (currentPass == 0) {#2283,18.844450855255126
+private PaintMap sectionOutlinePaintMap;#304,18.83195754459926
+return this.ignoreZeroValues;#774,18.82703431447347
+private double labelLinkMargin = 0.025;#395,18.821579678853354
+private Map explodePercentages;#325,18.816489696502686
+public class PiePlot extends Plot implements Cloneable, Serializable {#231,18.81557355608259
+notifyListeners(new PlotChangeEvent(this));#1369,18.815038881803815
+private boolean sectionOutlinesVisible;#301,18.80975866317749
+PiePlot clone = (PiePlot) super.clone();#2963,18.80943899154663
+if (mep > 0.0) {#2275,18.805868408896707
+this.dataset = dataset;#493,18.801487624645233
+public PieSectionLabelGenerator getLabelGenerator() {#1397,18.789237558841705
+if (dataset != null) {#571,18.788530966814825
+public boolean isCircular() {#705,18.787785096602008
+if (autoPopulate) {#1167,18.7849396387736
+private double labelGap = 0.025;#389,18.781435353415354
+private void writeObject(ObjectOutputStream stream) throws IOException {#2994,18.77758942710029
+PieSectionLabelGenerator generator) {#1998,18.774155139923096
+if (!(this.shadowYOffset == that.shadowYOffset)) {#2864,18.772943417231243
+double gapVertical = plotArea.getHeight() * this.interiorGap * 2.0;#2124,18.77260014318651
+else if (this.direction == Rotation.ANTICLOCKWISE) {#2263,18.769916763305662
+Iterator iterator = this.dataset.getKeys().iterator();#1379,18.760570484658945
+double v1 = explodeArea.getHeight() * percent;#2189,18.75429407755534
+if (autoPopulate) {#842,18.752063115437824
+else {#2701,18.750484466552734
+PieDataset existing = this.dataset;#564,18.74056158065796
+if (autoPopulate) {#1032,18.7377903620402
+if (obj == this) {#2798,18.733474922180175
+else {#2460,18.718432426452637
+double result = 0.0;#1340,18.717716217041016
+public void setIgnoreZeroValues(boolean flag) {#788,18.71646718417897
+if (include) {#2635,18.713044671451343
+protected void drawLabels(Graphics2D g2, List keys, double totalValue,#2438,18.706075429916382
+double targetY = record.getAllocatedY();#2728,18.704877953780326
+if (label != null) {#2638,18.702746930329695
+private static final long serialVersionUID = -795612466005590431L;#234,18.701254139775816
+private int pieIndex;#274,18.69474008348253
+public boolean getLabelLinksVisible() {#1472,18.690579194288986
+double targetY = record.getAllocatedY();#2764,18.689162153946725
+double linkY = state.getPieCenterY() - Math.sin(theta)#2734,18.68480572104454
+Comparable key = (Comparable) iterator.next();#2358,18.669648845990498
+double linkY = state.getPieCenterY() - Math.sin(theta)#2770,18.665524423122406
+public int getPieIndex() {#589,18.664984529668633
+notifyListeners(new PlotChangeEvent(this));#1221,18.66297887500964
+if (direction == null) {#653,18.662324778238933
+Comparable key = (Comparable) iterator.next();#2453,18.655443628629047
+notifyListeners(new PlotChangeEvent(this));#1411,18.646372242977744
+public double getShadowXOffset() {#1282,18.646183411280315
+if ((this.dataset != null) && (this.dataset.getKeys().size() > 0)) {#2205,18.64542865753174
+notifyListeners(new PlotChangeEvent(this));#762,18.643334840473376
+notifyListeners(new PlotChangeEvent(this));#1461,18.64303086933337
+protected Comparable getSectionKey(int section) {#872,18.63997637430827
+while (iterator.hasNext()) {#1380,18.639732122421265
+Shape savedClip = g2.getClip();#2084,18.639306497573852
+if (!(this.maximumLabelWidth == that.maximumLabelWidth)) {#2906,18.638248642285664
+while (iterator.hasNext()) {#2619,18.6364808678627
+notifyListeners(new PlotChangeEvent(this));#1272,18.63611371893632
+public Stroke getSectionOutlineStroke(Comparable key) {#1199,18.635873317718506
+public Stroke getLabelOutlineStroke() {#1682,18.6350439786911
+PiePlotState state) {#2346,18.63295989566379
+notifyListeners(new PlotChangeEvent(this));#1543,18.6307117562545
+notifyListeners(new PlotChangeEvent(this));#1570,18.629500238518965
+private boolean circular;#283,18.62604284286499
+notifyListeners(new PlotChangeEvent(this));#1948,18.623569036784925
+notifyListeners(new PlotChangeEvent(this));#1808,18.619022016172057
+public void setShadowYOffset(double offset) {#1318,18.61890875498454
+if (this.labelGenerator != null) {#2490,18.618347770289372
+double theta = record.getAngle();#2731,18.618000680750068
+notifyListeners(new PlotChangeEvent(this));#1086,18.61329264389841
+notifyListeners(new PlotChangeEvent(this));#1248,18.60921563600239
+notifyListeners(new PlotChangeEvent(this));#1975,18.6091846666838
+if (dataset != null) {#494,18.609106176039752
+if (info != null) {#2076,18.608674621582033
+notifyListeners(new PlotChangeEvent(this));#1624,18.6086267672087
+private transient Shape legendItemShape;#440,18.60759128223766
+if (this.ignoreNullValues != that.ignoreNullValues) {#2826,18.604834763900094
+if (label != null) {#2522,18.598017341212223
+double vv = linkArea.getHeight() * lm * 2.0;#2176,18.597191077012283
+private transient Paint baseSectionOutlinePaint;#307,18.597068786621094
+double igy1 = plotArea.getY() + vGap;#2133,18.585547310965403
+double theta = record.getAngle();#2767,18.5849703875455
+angle2 = angle1 - value / state.getTotal() * 360.0;#2261,18.583020782470705
+if (this.labelGenerator != null && !this.simpleLabels) {#2119,18.57760422046368
+public RectangleInsets getLabelPadding() {#1732,18.57759838104248
+if (this.explodePercentages == null) {#1365,18.577349948883057
+else {#1042,18.57297029495239
+notifyListeners(new PlotChangeEvent(this));#657,18.57122466438695
+notifyListeners(new PlotChangeEvent(this));#1751,18.568425027947676
+if (clone.dataset != null) {#2964,18.56721305847168
+notifyListeners(new PlotChangeEvent(this));#923,18.56667809737356
+notifyListeners(new PlotChangeEvent(this));#1836,18.564383757741826
+state.setPieCenterY(pieArea.getCenterY());#2200,18.56194509159435
+notifyListeners(new PlotChangeEvent(this));#1597,18.558593398646305
+double vGap = plotArea.getHeight() * this.interiorGap;#2129,18.558352808798514
+double h1 = explodeArea.getWidth() * percent;#2188,18.556864057268417
+notifyListeners(new PlotChangeEvent(this));#1777,18.55660709581877
+double elbowY = state.getPieCenterY() - Math.sin(theta)#2738,18.551873475313187
+double elbowY = state.getPieCenterY() - Math.sin(theta)#2774,18.546681702136993
+while (iterator.hasNext()) {#2357,18.54292893409729
+return this.ignoreNullValues;#746,18.53882058461507
+double maximumExplodePercent = getMaximumExplodePercent();#2185,18.5387583732605
+if (this.interiorGap != percent) {#690,18.53584246635437
+notifyListeners(new PlotChangeEvent(this));#1696,18.531502673500462
+notifyListeners(new PlotChangeEvent(this));#1720,18.529280110409385
+double deltaY = (point1.getY() - point2.getY()) * explodePercent;#2709,18.52892516641056
+notifyListeners(new PlotChangeEvent(this));#1514,18.52651053980777
+public void setPieIndex(int index) {#601,18.521219389779226
+notifyListeners(new PlotChangeEvent(this));#2000,18.519981585050886
+private double interiorGap;#280,18.519638442993163
+while (iterator.hasNext()) {#2452,18.51823389530182
+private double minimumArcAngleToDraw;#453,18.518214739285984
+else {#1177,18.518002414703368
+if (this.labelShadowPaint != null) {#2398,18.515892710004533
+public boolean equals(Object obj) {#2797,18.514126698176067
+double lm = 0.0;#2171,18.511611819267273
+if (this.labelBackgroundPaint != null) {#2404,18.50792019707816
+public Paint getLabelBackgroundPaint() {#1634,18.507060564481296
+notifyListeners(new PlotChangeEvent(this));#1672,18.504548223395098
+double result = 0.0;#1378,18.50446548461914
+if (!this.labelPadding.equals(that.labelPadding)) {#2903,18.502202657552864
+protected Stroke lookupSectionOutlineStroke(Comparable key) {#1130,18.498108530044554
+if (shape == null) {#1944,18.497810745239256
+int section = 0;#2616,18.49734247647799
+)) {#2855,18.496648120880128
+notifyListeners(new PlotChangeEvent(this));#1489,18.49551978864168
+notifyListeners(new PlotChangeEvent(this));#629,18.49367874547055
+PlotRenderingInfo info) {#2113,18.486610739571706
+private double maximumLabelWidth = 0.14;#383,18.486536502838135
+notifyListeners(new PlotChangeEvent(this));#1296,18.48600909584447
+if (label != null) {#2575,18.48141017713045
+if (!(this.labelLinkMargin == that.labelLinkMargin)) {#2912,18.4803451024569
+else {#2267,18.478189182281493
+notifyListeners(new PlotChangeEvent(this));#1437,18.47664331134997
+if (this.shadowPaint != null) {#2284,18.47294666148998
+Comparable key = (Comparable) iterator.next();#1381,18.466476917266846
+if (this.startAngle != that.startAngle) {#2817,18.465492124142855
+boolean autoPopulate) {#1021,18.464682790968155
+notifyListeners(new PlotChangeEvent(this));#1863,18.462889771712454
+public Paint getLabelOutlinePaint() {#1658,18.461950165884836
+for (int section = 0; section < keys.size(); section++) {#2214,18.461570978164673
+notifyListeners(new PlotChangeEvent(this));#1648,18.460624494050677
+notifyListeners(new PlotChangeEvent(this));#951,18.45806242290296
+notifyListeners(new PlotChangeEvent(this));#1887,18.4570447018272
+public void setIgnoreNullValues(boolean flag) {#760,18.45349541832419
+if (v == 0.0) {#2628,18.45301467895508
+else {#852,18.44946708679199
+private PieSectionLabelGenerator labelGenerator;#328,18.44720676967076
+notifyListeners(new PlotChangeEvent(this));#2028,18.443981271041068
+public void setLabelLinkMargin(double margin) {#1512,18.4416321516037
+for (int i = 0; i < keys.getItemCount(); i++) {#2571,18.44124438212468
+public Stroke getLabelLinkStroke() {#1553,18.439592933654787
+PiePlotState state, int currentPass) {#2249,18.43908365149247
+int x = (int) arc.getEndPoint().getX();#2379,18.43904996687366
+boolean autoPopulate) {#1156,18.438111517164444
+if (this.sectionOutlinesVisible) {#2300,18.42761371753834
+public void setSectionOutlineStroke(Comparable key, Stroke stroke) {#1218,18.427136048026707
+public void setSectionOutlinePaint(Comparable key, Paint paint) {#1083,18.422075544084823
+if (this.explodePercentages != null) {#1341,18.42104525566101
+if (ds != null) {#1034,18.413139995775726
+public PieURLGenerator getURLGenerator() {#1873,18.412011210123698
+double linkY = plotArea.getY() + gapVertical / 2;#2141,18.409109840393068
+private PaintMap sectionPaintMap;#292,18.407768090565998
+private StrokeMap sectionOutlineStrokeMap;#310,18.40717625617981
+notifyListeners(new PlotChangeEvent(this));#1113,18.40326509977642
+double lGap = plotArea.getWidth() * this.labelGap;#2517,18.40003596819364
+double igy2 = plotArea.getMaxY() - vGap;#2134,18.399129275617927
+double v = 0.0;#2455,18.39722131427966
+this.sectionOutlinePaintMap = new PaintMap();#509,18.396890958150227
+if (this.labelLinksVisible) {#2766,18.396236101786297
+double lGap = plotArea.getWidth() * this.labelGap;#2568,18.395985566652737
+protected Paint lookupSectionOutlinePaint(Comparable key) {#995,18.391582647959392
+double ww = linkArea.getX() - gap - marginX;#2486,18.389880418777466
+return this.labelGap;#1423,18.384363174438477
+public PieToolTipGenerator getToolTipGenerator() {#1848,18.38240859087776
+this.explodePercentages = new TreeMap();#515,18.371577564038727
+PiePlotState state = initialise(g2, plotArea, this, null, info);#2115,18.371144601276942
+DefaultKeyedValues rightKeys = new DefaultKeyedValues();#2448,18.36465531303769
+double v = 0.0;#2360,18.364131827103463
+angle2 = angle1 + value / state.getTotal() * 360.0;#2265,18.362512881939228
+if (!PaintUtilities.equal(#2844,18.35732920029584
+if (ds != null) {#844,18.356995984127646
+g2.setClip(savedClip);#2098,18.35582365989685
+return this.maximumLabelWidth;#1448,18.35115883085463
+double ep = 0.0;#2273,18.349397709495143
+notifyListeners(new PlotChangeEvent(this));#1320,18.348960073370684
+public void setLabelGap(double gap) {#1435,18.347905604044595
+if (state.getInfo() != null) {#2308,18.346793951811613
+if (ds != null) {#1169,18.346041127255088
+PiePlotState state = new PiePlotState(info);#2049,18.34170651435852
+if (existing != null) {#565,18.341402053833008
+public void setMaximumLabelWidth(double width) {#1459,18.341188685099283
+if (paint == null) {#1620,18.340686917304993
+protected Paint lookupSectionPaint(Comparable key) {#807,18.337747991085052
+if (this.labelLinksVisible) {#2730,18.33557399113973
+if (!(this.shadowXOffset == that.shadowXOffset)) {#2861,18.330860058466595
+private transient Paint baseSectionPaint;#295,18.32926122347514
+double percent = maximumExplodePercent / (1.0 + maximumExplodePercent);#2186,18.328310086176945
+public Paint getSectionOutlinePaint(Comparable key) {#1064,18.32666391796536
+notifyListeners(new PlotChangeEvent(this));#980,18.32524118925396
+DefaultKeyedValues leftKeys = new DefaultKeyedValues();#2447,18.31737313951765
+notifyListeners(new PlotChangeEvent(this));#790,18.317058663619193
+double deltaX = (point1.getX() - point2.getX()) * explodePercent;#2708,18.315187538371365
+private PieURLGenerator legendLabelURLGenerator;#427,18.31497599283854
+double mep = getMaximumExplodePercent();#2274,18.314128962430086
+this.dataset = dataset;#570,18.31343412399292
+public Paint getLabelLinkPaint() {#1525,18.312417103694035
+String label = this.legendLabelGenerator.generateSectionLabel(#2636,18.311455190181732
+0.5f);#261,18.309757737552417
+public Stroke getBaseSectionOutlineStroke() {#1232,18.30842618381276
+Point2D point1 = arc1.getEndPoint();#2704,18.307777252197265
+double linkX = state.getPieCenterX() + Math.cos(theta)#2732,18.30510926246643
+if (n == null) {#2362,18.30232374291671
+if (this.dataset != null) {#874,18.29985990022358
+double anchorY = elbowY;#2776,18.29721164703369
+double mid = getStartAngle() + (getDirection().getFactor()#2374,18.29406200755726
+double linkX = state.getPieCenterX() + Math.cos(theta)#2768,18.292801707983017
+if (this.urlGenerator instanceof PublicCloneable) {#2967,18.292118611543074
+super();#492,18.29019088745117
+double anchorY = elbowY;#2740,18.286400042082136
+private transient Paint shadowPaint = Color.gray;#316,18.281408882141115
+Number n = getDataset().getValue(key);#2361,18.281380386352538
+return this.shadowPaint;#1259,18.279683378007675
+if (this.dataset == null) {#2612,18.278540410493548
+public void setLabelOutlineStroke(Stroke stroke) {#1694,18.276892137527465
+if (percent != null) {#1343,18.27596920414975
+section++;#2661,18.27434794108073
+if (offset == null) {#1804,18.271856816609702
+if (n == null) {#2457,18.270562171936035
+if (notify) {#732,18.26854603631156
+private transient Paint labelOutlinePaint;#346,18.26821209834172
+public void setLabelOutlinePaint(Paint paint) {#1670,18.267820093366836
+public void setLabelGenerator(PieSectionLabelGenerator generator) {#1409,18.264061476054945
+private Font labelFont;#331,18.261420567830402
+double v = n.doubleValue();#2627,18.261119206746418
+float maxLabelWidth, PiePlotState state) {#2564,18.260716438293457
+return this.shadowYOffset;#1307,18.259852027893068
+PieSectionLabelGenerator labelGenerator = getLabelGenerator();#2382,18.259351666768392
+String description = label;#2639,18.257512092590332
+double hGap = plotArea.getWidth() * this.interiorGap;#2128,18.25498750132899
+protected Paint lookupSectionPaint(Comparable key, boolean autoPopulate) {#832,18.254192533947172
+return localizationResources.getString("Pie_Plot");#2676,18.251219548677142
+public double getMinimumArcAngleToDraw() {#1898,18.250689951578774
+return this.labelLinkMargin;#1501,18.249271894756117
+double runningTotal = 0.0;#2213,18.24721844991048
+state.setPieWRadius(pieArea.getWidth() / 2.0);#2201,18.24588616689046
+if (this.toolTipGenerator != null) {#2312,18.245625654856365
+if (this.pieIndex != that.pieIndex) {#2808,18.24451850709461
+if (padding == null) {#1747,18.241525395711264
+PiePlot plot, Integer index, PlotRenderingInfo info) {#2047,18.23851998647054
+if (this.circular) {#2146,18.237923502922058
+if (n == null) {#2623,18.235272206758196
+public PieSectionLabelGenerator getLegendLabelGenerator() {#1958,18.232772995443906
+double totalValue, Rectangle2D plotArea, Rectangle2D pieArea,#2345,18.23165293662779
+float labelWidth = (float) this.labelPadding.trimWidth(ww);#2487,18.22916998686614
+public Paint getBaseSectionOutlinePaint() {#1097,18.226284980773926
+else {#2663,18.225699629102433
+this.labelGenerator = new StandardPieSectionLabelGenerator();#517,18.22449237650091
+Number n = this.dataset.getValue(key);#2456,18.221488549159123
+for (int i = 0; i < leftKeys.getItemCount(); i++) {#2519,18.219192632039388
+Number n = this.dataset.getValue(key);#2621,18.2173705467811
+double targetX = anchorX - record.getGap();#2727,18.214662551879883
+return this.direction;#641,18.212986652667706
+if (!(this.labelGap == that.labelGap)) {#2909,18.211540937423706
+public void setLegendItemShape(Shape shape) {#1943,18.209780565897624
+if (!DatasetUtilities.isEmptyOrNull(this.dataset)) {#2091,18.206586905888148
+protected void drawRightLabel(Graphics2D g2, PiePlotState state,#2759,18.19991380518133
+float maxLabelWidth, PiePlotState state) {#2514,18.198045603434245
+linkY = (linkY + linkY + linkH) / 2 - min;#2149,18.19617280960083
+this.pieIndex = 0;#497,18.191885630289715
+double runningTotal = 0.0;#2450,18.191662907600403
+public void setSectionPaint(Comparable key, Paint paint) {#920,18.190769848070648
+if (DEBUG_DRAW_INTERIOR) {#2127,18.190601298683568
+if (this.legendLabelToolTipGenerator != null) {#2641,18.190332739693776
+if (paint == null) {#1539,18.1896795630455
+if (stroke == null) {#1244,18.181446901957194
+g2.setFont(getLabelFont());#2480,18.177623112996418
+if (!this.simpleLabelOffset.equals(that.simpleLabelOffset)) {#2900,18.17667396251972
+public Paint getLabelPaint() {#1607,18.171732584635418
+drawBackground(g2, area);#2081,18.16936457157135
+return this.labelLinkStroke;#1554,18.16909704208374
+protected void drawLeftLabel(Graphics2D g2, PiePlotState state,#2723,18.168859004974365
+this.sectionPaintMap = new PaintMap();#505,18.167871475219727
+state.setPieArea(pieArea);#2198,18.167760848999023
+if (paint == null) {#947,18.167457938194275
+private PieSectionLabelGenerator legendLabelGenerator;#417,18.166583506266274
+double linkW = plotArea.getWidth() - gapHorizontal;#2142,18.164999174035113
+double elbowX = state.getPieCenterX() + Math.cos(theta)#2736,18.160251915454865
+double elbowX = state.getPieCenterX() + Math.cos(theta)#2772,18.160251915454865
+if (paint == null) {#1109,18.158752501010895
+Composite originalComposite = g2.getComposite();#2348,18.158188299699262
+if (n != null) {#2216,18.15729879449915
+if (this.legendLabelURLGenerator instanceof PublicCloneable) {#2980,18.156064473665676
+double gapHorizontal = plotArea.getWidth() * (this.interiorGap#2122,18.153393507003784
+public void setShadowXOffset(double offset) {#1294,18.152962239583335
+if (this.simpleLabels) {#2225,18.149930636088055
+protected void drawSimpleLabels(Graphics2D g2, List keys,#2344,18.149627776373002
+if (this.sectionOutlinesVisible != that.sectionOutlinesVisible) {#2837,18.142656290972674
+protected Stroke lookupSectionOutlineStroke(Comparable key,#1155,18.142364931106567
+ep = getExplodePercent(getSectionKey(section)) / mep;#2276,18.140251218056193
+return this.labelPadding;#1733,18.137838236490886
+public static final double MAX_INTERIOR_GAP = 0.40;#240,18.1276638507843
+PiePlotState state) {#2440,18.12752361786671
+if (result != null) {#1162,18.12742691040039
+double baseY = state.getPieCenterY() - Math.sin(theta)#2534,18.1255308787028
+double mid = this.startAngle + (this.direction.getFactor()#2469,18.12277987509063
+private PieURLGenerator urlGenerator;#414,18.12252323444073
+if (this.legendLabelURLGenerator != null) {#2646,18.121788024902344
+return this.labelGenerator;#1398,18.120829317304825
+private void readObject(ObjectInputStream stream)#3018,18.119782829284667
+if (result != null) {#1027,18.118991216023762
+public void setLabelFont(Font font) {#1592,18.114913122994558
+g2.setComposite(originalComposite);#2099,18.09964520590646
+int passesRequired = state.getPassesRequired();#2211,18.09565776327382
+for (int i = 0; i < this.labelDistributor.getItemCount(); i++) {#2597,18.095359279263405
+public RectangleInsets getSimpleLabelOffset() {#1789,18.094904772440593
+double angle, double extent,#2695,18.094167750814687
+this(null);#483,18.091692050298054
+151, 128);#265,18.091204702854156
+List keys = this.dataset.getKeys();#2207,18.090891162554424
+public void setCircular(boolean flag) {#717,18.08903408050537
+public static final double DEFAULT_INTERIOR_GAP = 0.08;#237,18.08665861402239
+String urlText = null;#2645,18.08499736052293
+double linkX = plotArea.getX() + gapHorizontal / 2;#2140,18.081710395812987
+if (result != null) {#837,18.080287742614747
+else {#2094,18.08000240325928
+drawOutline(g2, area);#2082,18.076738357543945
+public boolean getSimpleLabels() {#1762,18.073699553807575
+Composite originalComposite = g2.getComposite();#2087,18.070677974007346
+if (this.simpleLabels != that.simpleLabels) {#2897,18.067218158556066
+if (label == null) {#2388,18.065236298934273
+String label = this.labelGenerator.generateSectionLabel(#2572,18.06497859954834
+if (!this.simpleLabels) {#2172,18.064098245957318
+return this.baseSectionOutlineStroke;#1233,18.063428098505195
+public Paint getLabelShadowPaint() {#1706,18.06311930142916
+linkX = (linkX + linkX + linkW) / 2 - min;#2148,18.061833763122557
+double totalValue = DatasetUtilities.calculatePieDatasetTotal(#2208,18.061800187633885
+if (this.labelOutlinePaint != null#2408,18.061702966690063
+plot.getDataset()));#2052,18.05865434237889
+List keys = this.dataset.getKeys();#2615,18.0586030960083
+if (font == null) {#1593,18.0558677037557
+public void setLabelBackgroundPaint(Paint paint) {#1646,18.055142514845905
+include = getIgnoreZeroValues() ? v > 0.0 : v >= 0.0;#2367,18.054864264823294
+if (generator == null) {#1971,18.051666140556335
+else {#2234,18.049751567840577
+double hh = linkArea.getWidth() * lm * 2.0;#2175,18.045947845165546
+this.ignoreNullValues = flag;#761,18.045852661132812
+if (this.urlGenerator != null) {#2317,18.043687411717006
+this.direction = Rotation.CLOCKWISE;#502,18.038629722595214
+for (int i = 0; i < this.labelDistributor.getItemCount(); i++) {#2546,18.038432767314294
+String label = labelGenerator.generateSectionLabel(#2386,18.03802888734
+public void setLabelLinkPaint(Paint paint) {#1538,18.03627249773811
+if (n == null) {#2252,18.033414777119955
+this.sectionOutlineStrokeMap = new StrokeMap();#512,18.031714107679285
+if (this.circular != that.circular) {#2814,18.029478254772368
+double anchorX = state.getLinkArea().getMaxX();#2762,18.029406547546387
+double runningTotal = 0.0;#2355,18.029235363006592
+public void setShadowPaint(Paint paint) {#1270,18.026507914066315
+protected void drawLeftLabels(KeyedValues leftKeys, Graphics2D g2,#2512,18.019102851549786
+if (stroke == null) {#1566,18.019000244140624
+return lookupSectionOutlineStroke(key, false);#1131,18.017379399003655
+this.direction = direction;#656,18.0171503339495
+private transient Stroke baseSectionOutlineStroke;#313,18.01523619890213
+return this.sectionOutlinesVisible;#966,18.00893559175379
+if (this.legendLabelToolTipGenerator != null) {#2976,18.008418539296027
+this.ignoreZeroValues = false;#540,18.007721841335297
+return this.shadowXOffset;#1283,18.006426684061687
+this.toolTipGenerator = null;#532,18.005276006810806
+public Paint getSectionPaint(Comparable key) {#901,18.00499302148819
+double anchorX = state.getLinkArea().getMinX();#2726,17.999962416562166
+public void setLabelLinkStroke(Stroke stroke) {#1565,17.999701399552194
+else {#2631,17.999215496910942
+return this.labelOutlineStroke;#1683,17.9985761112637
+this.startAngle = angle;#628,17.992538452148438
+this.labelFont = DEFAULT_LABEL_FONT;#518,17.99003119902177
+double explodePercent) {#2696,17.989891702478584
+return result;#1045,17.98968895998868
+return this.interiorGap;#670,17.98907196521759
+return result;#1180,17.988454732027922
+protected Paint lookupSectionOutlinePaint(Comparable key,#1020,17.987883938683403
+this.labelPadding = new RectangleInsets(2, 2, 2, 2);#530,17.98751630101885
+this.shadowYOffset = offset;#1319,17.98678127088045
+this.labelOutlineStroke = DEFAULT_LABEL_OUTLINE_STROKE;#522,17.983698240915935
+this.interiorGap = DEFAULT_INTERIOR_GAP;#499,17.97733434041341
+if (entities != null) {#2310,17.97100285121373
+double igx1 = plotArea.getX() + hGap;#2131,17.968479088374547
+if (DEBUG_DRAW_PIE_AREA) {#2194,17.96574705297297
+String label = this.labelGenerator.generateSectionLabel(#2520,17.963827316577618
+public void setLabelPadding(RectangleInsets padding) {#1746,17.96341307957967
+linkArea.getWidth(), linkArea.getHeight()));#2165,17.957036914247453
+state.setPassesRequired(2);#2050,17.956209351034726
+return this.dataset;#551,17.954020182291668
+String toolTipText = null;#2640,17.95099823563187
+public void setSectionOutlinesVisible(boolean visible) {#978,17.94554869333903
+double igx2 = plotArea.getMaxX() - hGap;#2132,17.943020425993822
+toolTipText, urlText, true, shape, true, paint,#2654,17.940151994878594
+String url = null;#2316,17.937047662406133
+if (this.labelLinksVisible != that.labelLinksVisible) {#2915,17.932227821350097
+this.ignoreZeroValues = flag;#789,17.927347362041473
+double linkH = plotArea.getHeight() - gapVertical;#2143,17.926219940185547
+Composite originalComposite = g2.getComposite();#2442,17.926192370328035
+return result;#2667,17.924587856639516
+this.dataset, key);#2314,17.923017371784557
+255, 192);#254,17.92221850156784
+if (DEBUG_DRAW_LINK_AREA) {#2160,17.9200607213107
+if (!ObjectUtilities.equal(this.labelFont, that.labelFont)) {#2875,17.918598069085014
+this.legendLabelToolTipGenerator = null;#535,17.906627035140993
+double targetX = anchorX + record.getGap();#2763,17.90645758310954
+public Paint getShadowPaint() {#1258,17.905661662419636
+if (section >= 0 && section < this.dataset.getItemCount()) {#875,17.90495361820344
+this.shadowXOffset = offset;#1295,17.90173746410169
+g2.setStroke(this.labelLinkStroke);#2778,17.894311359950475
+EntityCollection entities = state.getEntityCollection();#2309,17.894005680084227
+public PiePlotState initialise(Graphics2D g2, Rectangle2D plotArea,#2046,17.892820239067078
+public void setLabelPaint(Paint paint) {#1619,17.892660677433014
+this.startAngle = DEFAULT_START_ANGLE;#501,17.88309511931046
+return result;#1387,17.882613788951527
+this.baseSectionOutlineStroke = DEFAULT_OUTLINE_STROKE;#513,17.88189676829747
+else {#1173,17.880002430507115
+private boolean simpleLabels = true;#365,17.879515806833904
+public void setLabelShadowPaint(Paint paint) {#1718,17.879235099343692
+public PieSectionLabelGenerator getLegendLabelToolTipGenerator() {#1985,17.87767334988243
+public void setLegendLabelGenerator(PieSectionLabelGenerator generator) {#1970,17.875045442581175
+double verticalLinkRadius = state.getLinkArea().getHeight() / 2.0;#2518,17.87472105026245
+"Invalid 'percent' (" + percent + ") argument.");#687,17.873609670003255
+private boolean labelLinksVisible;#392,17.868901946327902
+if (this.legendLabelGenerator != null) {#2972,17.867295810154506
+state.setLatestAngle(angle2);#2329,17.86706935034858
+this.labelOutlinePaint = DEFAULT_LABEL_OUTLINE_PAINT;#521,17.86627193859645
+g2.setComposite(originalComposite);#2424,17.86462484087263
+public void setToolTipGenerator(PieToolTipGenerator generator) {#1861,17.861909103393554
+if (key == null) {#879,17.861813990275063
+else {#2229,17.859441007886613
+public void setBaseSectionOutlineStroke(Stroke stroke) {#1243,17.852955909002397
+if (!ObjectUtilities.equal(this.toolTipGenerator,#2925,17.851971348126728
+Number percent = (Number) this.explodePercentages.get(key);#1342,17.850674399014178
+protected void drawRightLabels(KeyedValues keys, Graphics2D g2,#2562,17.849776060684867
+g2.setComposite(originalComposite);#2496,17.849577994573686
+if (!ObjectUtilities.equal(#2853,17.8426913022995
+that.labelLinkStroke)) {#2922,17.842207794189452
+if (!super.equals(obj)) {#2804,17.841699017418755
+return lookupSectionOutlinePaint(key, false);#996,17.841612304959977
+private RectangleInsets simpleLabelOffset;#380,17.83925988123967
+public void setMinimumArcAngleToDraw(double angle) {#1920,17.8389007780287
+if (labelGenerator == null) {#2383,17.838611183166503
+this.explodePercentages.put(key, new Double(percent));#1368,17.83620246251424
+public PieURLGenerator getLegendLabelURLGenerator() {#2012,17.829266940846164
+g2.setStroke(this.labelLinkStroke);#2742,17.82915449142456
+Number n = this.dataset.getValue(section);#2251,17.825180400501598
+double value = n.doubleValue();#2255,17.82478106021881
+double verticalLinkRadius = state.getLinkArea().getHeight() / 2.0;#2569,17.824289321899414
+return lookupSectionPaint(key, false);#808,17.821850556593674
+this.legendItemShape = shape;#1947,17.821138999041388
+g2.clip(area);#2085,17.820785395304362
+private transient Stroke labelOutlineStroke;#352,17.82066205342611
+include = this.ignoreZeroValues ? v > 0.0 : v >= 0.0;#2462,17.819568819469875
+TextBox tb = record.getLabel();#2747,17.814970705244278
+throw new IllegalArgumentException("Null 'shape' argument.");#1945,17.814933446737435
+this.legendLabelGenerator = generator;#1974,17.80739090177748
+Comparable key = getSectionKey(section);#2293,17.80658615552462
+return this.labelLinkPaint;#1526,17.80614777615196
+throw new IllegalArgumentException("Null 'direction' argument.");#654,17.80236900769747
+if (value > 0.0) {#2218,17.801770903847434
+private PieSectionLabelGenerator legendLabelToolTipGenerator;#420,17.79746857811423
+getForegroundAlpha()));#2089,17.797189192338422
+Stroke outlineStroke = lookupSectionOutlineStroke(key);#2299,17.795467925794195
+state.setExplodedPieArea(explodeArea);#2180,17.7944673538208
+PlotState parentState, PlotRenderingInfo info) {#2070,17.793842736412497
+else {#848,17.790949957711355
+private PieToolTipGenerator toolTipGenerator;#411,17.78878746032715
+if (!ObjectUtilities.equal(this.labelGenerator,#2871,17.783315119536027
+this.minimumArcAngleToDraw = angle;#1921,17.78123574507864
+public static final double DEFAULT_MINIMUM_ARC_ANGLE_TO_DRAW = 0.00001;#268,17.78050038019816
+&& this.labelOutlineStroke != null) {#2409,17.780095512802536
+state.getExplodedPieArea(), angle1, angle, ep);#2279,17.779475184849332
+TextBox tb = record.getLabel();#2784,17.778606096903484
+return result;#1347,17.778594623912465
+if (!ObjectUtilities.equal(this.sectionOutlinePaintMap,#2840,17.777929929586556
+if (!PaintUtilities.equal(this.labelShadowPaint,#2893,17.77524311065674
+public void setURLGenerator(PieURLGenerator generator) {#1885,17.766478909386528
+if (!ObjectUtilities.equal(this.sectionOutlineStrokeMap,#2849,17.763986622845685
++ labelReserve) * 2.0;#2123,17.76394194823045
+protected static ResourceBundle localizationResources =#456,17.760359207789104
+drawLeftLabels(leftKeys, g2, plotArea, linkArea, labelWidth,#2491,17.759302486072887
+private transient Paint labelBackgroundPaint;#340,17.756759881973267
+that.labelOutlinePaint)) {#2886,17.75599250793457
+state.setPieCenterX(pieArea.getCenterX());#2199,17.755114121870562
+FontMetrics fm = g2.getFontMetrics();#2392,17.75482727686564
+igy2 - igy1));#2137,17.754242726734706
+if (key == null) {#1362,17.753835797309875
+Point2D point2 = arc2.getEndPoint();#2707,17.748358726501465
+private transient Paint labelPaint;#334,17.747646418484774
+String tip = null;#2311,17.742127582944672
+this.labelOutlinePaint = paint;#1671,17.738118436601425
+that.legendLabelToolTipGenerator)) {#2943,17.734927742569536
+if (Math.abs(angle) > getMinimumArcAngleToDraw()) {#2272,17.733541928804836
+private RectangleInsets labelPadding;#373,17.7306269132174
+this.legendLabelURLGenerator = null;#536,17.73051814029091
+this.labelDistributor.addPieLabelRecord(new PieLabelRecord(#2538,17.723199931058016
+if (!ObjectUtilities.equal(this.legendLabelURLGenerator,#2946,17.722297058105468
+return this.baseSectionOutlinePaint;#1098,17.721175602504186
+drawRightLabels(rightKeys, g2, plotArea, linkArea, labelWidth,#2493,17.71970933856386
+LegendItem item = new LegendItem(label, description,#2653,17.718497796492144
+if (explode != null) {#1383,17.714616346359254
+notifyListeners(new PlotChangeEvent(this));#733,17.711486779726467
+that.labelOutlineStroke)) {#2890,17.706487582280086
+this.baseSectionOutlinePaint = DEFAULT_OUTLINE_PAINT;#510,17.69521742600661
+Number n = this.dataset.getValue(section);#2215,17.689244803260355
+Rectangle2D bounds = TextUtilities.getTextBounds(label, g2, fm);#2393,17.68734142107841
+Comparable key = null;#873,17.686411448887416
+this.legendLabelGenerator = new StandardPieSectionLabelGenerator();#534,17.685126344362896
+throw new IllegalArgumentException("Null 'offset' argument.");#1805,17.683122561528133
+this.labelDistributor.addPieLabelRecord(new PieLabelRecord(#2589,17.682983167243727
+this.labelPaint = paint;#1623,17.680659353733063
+this.ignoreNullValues = false;#539,17.68037521839142
+1.0f));#2350,17.6782808303833
+public void setSimpleLabelOffset(RectangleInsets offset) {#1803,17.67789347966512
+Number explode = (Number) this.explodePercentages.get(key);#1382,17.67427345802044
+public static final Stroke DEFAULT_LABEL_OUTLINE_STROKE = new BasicStroke(#260,17.673192262649536
+boolean include = true;#2622,17.660225980422076
+v = n.doubleValue();#2366,17.659990766774055
+include = !this.ignoreNullValues;#2624,17.65687608718872
+double baseY = state.getPieCenterY()#2586,17.656365530831472
+return this.labelLinksVisible;#1473,17.656046748161316
+double value = n.doubleValue();#2217,17.65360537171364
+this.shadowPaint = paint;#1271,17.653136134147644
+mid - getStartAngle(), Arc2D.OPEN);#2378,17.653006779520137
+public void setCircular(boolean circular, boolean notify) {#730,17.64934009975857
+else {#1038,17.64799083982195
+boolean include = true;#2454,17.642857832067154
+return result;#855,17.642798857255414
+Rectangle2D arcBounds = getArcBounds(state.getPieArea(),#2278,17.636770635843277
+throw new IllegalArgumentException("Null 'generator' argument.");#1972,17.63555869349727
+state.setLatestAngle(plot.getStartAngle());#2053,17.63298463821411
+private transient Stroke labelLinkStroke = new BasicStroke(0.5f);#401,17.632631683349608
+this.legendLabelURLGenerator = generator;#2027,17.630685655694258
+state.setPieHRadius(pieArea.getHeight() / 2.0);#2202,17.630534207379377
+this.urlGenerator = null;#533,17.626838386058807
+this.labelLinkMargin = margin;#1513,17.625468983369714
+that.explodePercentages)) {#2868,17.621964772542317
+Paint paint = lookupSectionPaint(key, true);#2294,17.6217942578452
+return false;#2847,17.61954600016276
+tb.draw(g2, (float) targetX, (float) targetY, RectangleAnchor.LEFT);#2785,17.61882565472577
+this.sectionOutlinesVisible = true;#508,17.618578275044758
+runningTotal = runningTotal + v;#2466,17.61857016881307
+if (!ObjectUtilities.equal(this.explodePercentages,#2867,17.617857893308003
+return this.startAngle;#614,17.617018063863117
+if (!PaintUtilities.equal(this.labelBackgroundPaint,#2881,17.61618824005127
+public static final double DEFAULT_START_ANGLE = 90.0;#243,17.61520817166283
+return this.labelOutlinePaint;#1659,17.609415222616757
+result = this.sectionOutlineStrokeMap.getStroke(key);#1161,17.608898692660862
+if (!ShapeUtilities.equal(this.legendItemShape, that.legendItemShape)) {#2935,17.60873354634931
+if (!ObjectUtilities.equal(this.legendLabelGenerator,#2938,17.60870819091797
+public void setLegendLabelURLGenerator(PieURLGenerator generator) {#2026,17.606408262252806
+public void setBaseSectionOutlinePaint(Paint paint) {#1108,17.603549907082005
+double labelReserve = 0.0;#2118,17.595893018385944
+if (!PaintUtilities.equal(this.shadowPaint, that.shadowPaint)) {#2858,17.5951647122701
+this.labelPaint = DEFAULT_LABEL_PAINT;#519,17.59509517835534
+v = n.doubleValue();#2461,17.59054362255594
+that.labelBackgroundPaint)) {#2882,17.589603543281555
+- Math.sin(theta) * verticalLinkRadius;#2587,17.58872506835244
+static final boolean DEBUG_DRAW_INTERIOR = false;#464,17.58787435643813
+angle1 = state.getLatestAngle();#2260,17.587392243472014
+throw new IllegalArgumentException("Null 'key' argument.");#1363,17.586231451768143
+if (!ObjectUtilities.equal(this.labelLinkStroke,#2921,17.585904541015626
+double theta = Math.toRadians(keys.getValue(i).doubleValue());#2585,17.58097921477424
+this.labelOutlineStroke = stroke;#1695,17.580173693205182
+this.legendLabelToolTipGenerator = generator;#1999,17.578143644332886
+this.labelPadding = padding;#1750,17.576274394989014
+public void setSimpleLabels(boolean simple) {#1775,17.576081216335297
+throw new IllegalArgumentException("Null 'paint' argument.");#1110,17.575780582427978
+that.sectionOutlineStrokeMap)) {#2850,17.575380360638654
+boolean include = true;#2359,17.573914471794577
+Rectangle2D plotArea, Rectangle2D linkArea,#2439,17.573188463846844
+g2.setPaint(Color.gray);#2135,17.567711539890457
+throw new IllegalArgumentException("Null 'paint' argument.");#1621,17.56683886492694
+this.labelFont = font;#1596,17.566100374857584
+if (!ObjectUtilities.equal(this.labelOutlineStroke,#2889,17.563310146331787
+PieSectionEntity entity = new PieSectionEntity(#2321,17.56196092156803
+if (!ObjectUtilities.equal(this.legendLabelToolTipGenerator,#2942,17.55905162371122
+throw new IllegalArgumentException("Null 'paint' argument.");#1540,17.558389169198495
+this.maximumLabelWidth = width;#1460,17.55662053823471
+this.labelLinkPaint = paint;#1542,17.556107745451087
+throw new IllegalArgumentException("Null 'padding' argument.");#1748,17.554236778846153
+Paint outlinePaint = lookupSectionOutlinePaint(key);#2298,17.554052098592123
+throw new IllegalArgumentException("Null 'paint' argument.");#948,17.552792358398438
+tb.draw(g2, (float) targetX, (float) targetY, RectangleAnchor.RIGHT);#2748,17.552541139963513
+public static final Paint DEFAULT_LABEL_OUTLINE_PAINT = Color.black;#257,17.550925771395367
+else {#2474,17.550661987728542
+Paint paint = lookupSectionPaint(key, true);#2650,17.54953733086586
+return this.sectionOutlineStrokeMap.getStroke(key);#1201,17.544983863830566
+arc, this.dataset, this.pieIndex, section, key,#2322,17.54480134224405
+if (!PaintUtilities.equal(this.labelLinkPaint, that.labelLinkPaint)) {#2918,17.542044073343277
+public void setLabelLinksVisible(boolean visible) {#1487,17.540658838608685
+insets.trim(area);#2074,17.53962343931198
+Rectangle2D plotArea, Rectangle2D linkArea,#2513,17.53724394039232
+public Paint getBaseSectionPaint() {#934,17.534204262953537
+this.labelGenerator = generator;#1410,17.532852232456207
+this.dataset, leftKeys.getKey(i));#2521,17.532454462612378
+this.labelBackgroundPaint = DEFAULT_LABEL_BACKGROUND_PAINT;#520,17.528645444799352
+include = !this.ignoreNullValues;#2458,17.52783058166504
+x - bounds.getCenterX(), y - bounds.getCenterY());#2397,17.52772557735443
+throw new IllegalArgumentException("Null 'stroke' argument.");#1245,17.527362231550544
+this.labelShadowPaint = paint;#1719,17.52705893797033
+drawSimpleLabels(g2, keys, totalValue, plotArea, linkArea,#2226,17.514946116341484
+return this.baseSectionPaint;#935,17.513736298209743
+Rectangle2D labelsArea = labelInsets.createInsetRectangle(pieArea);#2354,17.512952089309692
+return this.minimumArcAngleToDraw;#1899,17.509726153479683
+return this.simpleLabelOffset;#1790,17.509515253702798
+throw new IllegalArgumentException("Null 'font' argument.");#1594,17.506760120391846
+protected void drawItem(Graphics2D g2, int section, Rectangle2D dataArea,#2248,17.506446647644044
+return this.pieIndex;#590,17.504204954419816
+SerialUtilities.writeStroke(this.labelOutlineStroke, stream);#3003,17.498083659580775
+keys.getKey(i), theta, baseY, labelBox, hh,#2590,17.49729132097821
+this.labelShadowPaint = DEFAULT_LABEL_SHADOW_PAINT;#523,17.492630209241593
+private transient Paint labelLinkPaint = Color.black;#398,17.492384374141693
+Font.PLAIN, 10);#247,17.488331593965228
+include = !getIgnoreNullValues();#2363,17.486524658203123
+if (!PaintUtilities.equal(this.labelOutlinePaint,#2885,17.48161374605619
+this.baseSectionOutlineStroke, that.baseSectionOutlineStroke#2854,17.479498494055964
+Rectangle2D plotArea, Rectangle2D linkArea,#2563,17.477236728668213
+that.labelGenerator)) {#2872,17.476813482201617
+setDatasetGroup(dataset.getGroup());#572,17.475713500976564
+this.toolTipGenerator = generator;#1862,17.4734629462747
+if (!ObjectUtilities.equal(this.sectionPaintMap,#2829,17.473374406496685
+return this.labelFont;#1581,17.47244487489973
+g2.setPaint(Color.yellow);#2163,17.46929769930632
+g2.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER,#2349,17.468005534580776
+if (!ObjectUtilities.equal(this.urlGenerator, that.urlGenerator)) {#2929,17.46715765985949
+runningTotal = runningTotal + v;#2371,17.466066320737202
+throw new IllegalStateException("Rotation type not recognised.");#2268,17.464643682752335
+key, this.pieIndex);#2319,17.461140433023143
+this.dataset, key, this.pieIndex);#2648,17.46050213707818
+state);#2492,17.45586005124179
+return this.legendLabelGenerator;#1959,17.45385523403392
+Shape shadow = ShapeUtilities.createTranslatedShape(bg,#2399,17.44832671029227
+unexploded.getY() - deltaY, unexploded.getWidth(),#2711,17.447675189456426
+runningTotal += value;#2219,17.447624090946082
+angle1 = state.getLatestAngle();#2264,17.44583749771118
+public AbstractPieLabelDistributor getLabelDistributor() {#1819,17.445620112948948
+g2.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER,#2443,17.443280928475517
+public void setBaseSectionPaint(Paint paint) {#946,17.440791803247787
+this.circular = true;#500,17.43504498799642
+state.setLinkArea(linkArea);#2158,17.43478500141817
+labelBox.setOutlineStroke(this.labelOutlineStroke);#2529,17.434720747811454
+this.labelBackgroundPaint = paint;#1647,17.428684515111588
++ getExplodePercent(leftKeys.getKey(i))));#2541,17.42863046205961
+throw new IllegalArgumentException("Null 'stroke' argument.");#1567,17.427850759946384
+if (Math.cos(Math.toRadians(mid)) < 0.0) {#2471,17.42379509078132
+this.shadowXOffset, this.shadowYOffset);#2400,17.422834849357606
+g2.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER,#2088,17.419537680489675
+if (distributor == null) {#1832,17.418665100546445
+return false;#2842,17.416076723734538
+return this.labelDistributor;#1820,17.410890340805054
+that.legendLabelGenerator)) {#2939,17.40438289642334
+return this.labelBackgroundPaint;#1635,17.40160185098648
+Stroke outlineStroke = lookupSectionOutlineStroke(key);#2652,17.399416150273503
+this.pieIndex = index;#602,17.396418571472168
+SerialUtilities.writePaint(this.shadowPaint, stream);#2999,17.388122359911602
+linkW = 2 * min;#2150,17.38788594697651
+this.baseSectionOutlinePaint = paint;#1112,17.38269665366725
+leftKeys.getKey(i), theta, baseY, labelBox, hh,#2539,17.382652802900836
+static final boolean DEBUG_DRAW_PIE_AREA = false;#477,17.382563257217406
+public void draw(Graphics2D g2, Rectangle2D area, Point2D anchor,#2069,17.381607284545897
+return this.simpleLabels;#1763,17.379147020975747
+this.labelGap = gap;#1436,17.376151084899902
+public static final Font DEFAULT_LABEL_FONT = new Font("SansSerif",#246,17.376050508939304
+return this.labelShadowPaint;#1707,17.375148057937622
+(float) this.shadowYOffset);#2287,17.374994200629157
+drawLabels(g2, keys, totalValue, plotArea, linkArea, state);#2230,17.37352842754788
+g2.setFont(this.labelFont);#2391,17.371062172783745
+true, outlinePaint, outlineStroke,#2655,17.370348191261293
+private transient Paint labelShadowPaint;#358,17.36998240152995
+this.labelLinkStroke = stroke;#1569,17.369039164649116
+this.sectionOutlinePaintMap.put(key, paint);#1085,17.368559090987496
+g2.draw(new Rectangle2D.Double(igx1, igy1, igx2 - igx1,#2136,17.364572888328915
+SerialUtilities.writeStroke(this.baseSectionOutlineStroke, stream);#2998,17.360360014027563
+clone.legendLabelToolTipGenerator = (PieSectionLabelGenerator)#2977,17.360018094380695
+explodeArea.getWidth() - h1, explodeArea.getHeight() - v1);#2192,17.359609683354694
+lGap / 2.0 + lGap / 2.0 * -Math.cos(theta), 0.9#2540,17.358505359062782
+this.labelDistributor.distributeLabels(plotArea.getMinY(),#2544,17.356865337916783
+return this.circular;#706,17.35429491315569
+this.sectionPaintMap.put(key, paint);#922,17.35400031861805
+return this.legendLabelToolTipGenerator;#1986,17.35261967307643
+that.sectionOutlinePaintMap)) {#2841,17.348558866060696
+this.dataset, keys.getKey(i));#2573,17.347751646330863
+include = !this.ignoreZeroValues;#2629,17.347085565328598
+0.9 + getExplodePercent(keys.getKey(i))));#2592,17.346995888686763
+this.sectionOutlinesVisible = visible;#979,17.345203081766766
+that.sectionPaintMap)) {#2830,17.34380594889323
+return false;#2923,17.34181079864502
+result = ds.getNextOutlineStroke();#1170,17.34047001805799
+return this.legendLabelURLGenerator;#2013,17.338015450371635
+this.labelDistributor.distributeLabels(plotArea.getMinY(),#2595,17.335270609174454
+drawLeftLabel(g2, state,#2547,17.332992163571443
+g2.setPaint(outlinePaint);#2301,17.321431159973145
+state);#2494,17.31849869814786
+notifyListeners(new PlotChangeEvent(this));#692,17.314818423727285
+return;#2253,17.313501414130716
+result = this.sectionOutlinePaintMap.getPaint(key);#1026,17.31330863952637
+protected void drawPie(Graphics2D g2, Rectangle2D plotArea,#2112,17.311938285827637
+return false;#2831,17.311474990844726
+this.labelDistributor.getPieLabelRecord(i));#2548,17.31053896511302
+Rectangle2D exploded,#2694,17.310048082139758
+drawOutline(g2, area);#2101,17.30925733902875
+return false;#2835,17.307789929707845
+g2.setPaint(this.labelOutlinePaint);#2410,17.30400426047189
+1.0f));#2444,17.303968293326243
+continue;#2389,17.302118258042768
+g2.setPaint(this.labelLinkPaint);#2777,17.302098274230957
+public static final Paint DEFAULT_LABEL_SHADOW_PAINT = new Color(151, 151,#264,17.301020523597455
+clone.legendItemShape = ShapeUtilities.clone(this.legendItemShape);#2971,17.299251862934657
+return false;#2883,17.29750588734945
+drawNoDataMessage(g2, plotArea);#2235,17.29502947434135
+leftKeys.getValue(i).doubleValue());#2533,17.292045484270368
+return false;#2869,17.28741111755371
+g2.setPaint(this.labelLinkPaint);#2741,17.284829139709473
+return this.legendItemShape;#1932,17.27951282262802
+return false;#2851,17.278323682149253
+return false;#2879,17.277740287780762
+return false;#2887,17.276573181152344
+if (!PaintUtilities.equal(this.baseSectionPaint,#2833,17.27619125366211
+clone.legendLabelGenerator = (PieSectionLabelGenerator)#2973,17.276147740227835
+arc, (float) this.shadowXOffset,#2286,17.272668385505675
+return false;#2821,17.268756421407065
+.generateSectionLabel(getDataset(), key), g2, x, y,#2418,17.267137739393448
+drawRightLabel(g2, state,#2598,17.26392329822887
+.generateSectionLabel(this.dataset, key);#2643,17.26268301839414
+that.legendLabelURLGenerator)) {#2947,17.25623497596154
+url = this.urlGenerator.generateURL(this.dataset,#2318,17.253330393040432
+return false;#2838,17.250600560506186
+this.labelFont, this.labelPaint, maxLabelWidth,#2577,17.245380759239197
+lGap / 2.0 + lGap / 2.0 * Math.cos(theta),#2591,17.244384507338207
+return key;#882,17.240966710177336
+g2.fill(arc);#2296,17.2401587444803
+that.toolTipGenerator)) {#2926,17.23863383134206
+datasetChanged(event);#578,17.236418063823994
+return false;#2919,17.234039306640625
+this.simpleLabelOffset = offset;#1807,17.232723593711853
+g2.fill(bg);#2406,17.231552371272333
+section++;#2664,17.231399430169
+g2.setFont(this.labelFont);#2416,17.230713738335503
+return this.labelPaint;#1608,17.22982737223307
+labelBox.setOutlineStroke(this.labelOutlineStroke);#2582,17.22799391065325
+Rectangle2D out = this.labelPadding.createOutsetRectangle(#2394,17.227028033312628
+throw new IllegalArgumentException("Null 'distributor' argument.");#1833,17.221823964800155
+return false;#2818,17.221392885843912
+return false;#2891,17.220836893717447
+Paint outlinePaint = lookupSectionOutlinePaint(key);#2651,17.216957793516272
+false,          // line not visible#2656,17.216232565946356
+this.dataset, key);#2637,17.216172635555267
+return false;#2865,17.21416320800781
+return this.toolTipGenerator;#1849,17.214069068431854
+return false;#2930,17.2138370513916
+this.labelLinksVisible = true;#524,17.213811313404758
+RectangleInsets insets = getInsets();#2073,17.209840222408896
+this.labelOutlineStroke = SerialUtilities.readStroke(stream);#3028,17.202519757407053
+SerialUtilities.writePaint(this.labelBackgroundPaint, stream);#3001,17.19721794128418
+Shape bg = ShapeUtilities.createTranslatedShape(out,#2396,17.194861501455307
+if (!PaintUtilities.equal(this.labelPaint, that.labelPaint)) {#2878,17.191667207082112
+this.simpleLabelOffset = new RectangleInsets(UnitType.RELATIVE, 0.18,#528,17.191487866063273
+this.labelFont, this.labelPaint, maxLabelWidth,#2524,17.185655426979064
+this.shadowPaint = SerialUtilities.readPaint(stream);#3024,17.18528648217519
+return state;#2054,17.18470712141557
+labelBox.setBackgroundPaint(this.labelBackgroundPaint);#2527,17.184127192343436
+this.sectionOutlineStrokeMap.put(key, result);#1171,17.183266401290894
+g2.setStroke(this.labelOutlineStroke);#2411,17.182042740486764
+if (!(this.minimumArcAngleToDraw == that.minimumArcAngleToDraw)) {#2932,17.18132292429606
+new Line2D.Float(), new BasicStroke(), Color.black);#2657,17.172543038262262
+this.baseSectionOutlineStroke = stroke;#1247,17.16957621574402
+this.legendItemShape = Plot.DEFAULT_LEGEND_ITEM_CIRCLE;#537,17.169437531502016
+leftKeys.addValue(key, new Double(mid));#2472,17.16894227808172
+return false;#2862,17.167102940877278
+public static final Paint DEFAULT_LABEL_BACKGROUND_PAINT = new Color(255,#253,17.165578768803524
+SerialUtilities.writePaint(this.baseSectionOutlinePaint, stream);#2997,17.157452159457737
+return false;#2936,17.15252946217855
+SerialUtilities.writePaint(this.labelOutlinePaint, stream);#3002,17.152407352740948
+SerialUtilities.writePaint(this.labelShadowPaint, stream);#3004,17.14858627319336
+this.baseSectionPaint = paint;#950,17.144805908203125
+this.explodePercentages = new TreeMap();#1366,17.14437729379405
+public void setLabelDistributor(AbstractPieLabelDistributor distributor) {#1831,17.14236454736619
+return false;#2873,17.14145253499349
+that.labelShadowPaint)) {#2894,17.13461438814799
+this.labelDistributor.getPieLabelRecord(i));#2599,17.132498825297635
+SerialUtilities.writePaint(this.labelPaint, stream);#3000,17.131275177001953
+stream.defaultWriteObject();#2995,17.128314767565048
+labelBox.setInteriorGap(this.labelPadding);#2584,17.127398460142075
++ h1 / 2.0, explodeArea.getY() + v1 / 2.0,#2191,17.118680000305176
+g2.setPaint(Color.blue);#2161,17.11559818101966
+double theta = Math.toRadians(#2532,17.110698296473576
+SerialUtilities.writePaint(this.baseSectionPaint, stream);#2996,17.110243453979493
+Arc2D arc = new Arc2D.Double(labelsArea, getStartAngle(),#2377,17.10968205803319
+this.sectionOutlineStrokeMap.put(key, stroke);#1220,17.104553421338398
+g2.draw(linkArea);#2162,17.103061866760253
+return false;#2927,17.102506319681805
+protected Rectangle2D getArcBounds(Rectangle2D unexploded,#2693,17.100538080388848
+this.labelDistributor = new PieLabelDistributor(0);#525,17.0976239045461
+g2.setPaint(this.labelPaint);#2415,17.097529345545276
+return this.urlGenerator;#1874,17.09170583089193
+g2.fill(shadow);#2402,17.09115219116211
+g2.draw(new Line2D.Double(linkX, linkY, elbowX, elbowY));#2743,17.087808979882134
+double min = Math.min(linkW, linkH) / 2;#2147,17.082361664090836
+state);#2227,17.082093752347507
+return true;#2951,17.081740639426492
+this.labelOutlinePaint = SerialUtilities.readPaint(stream);#3027,17.081547627082237
+return false;#2815,17.080373128255207
+clone.legendLabelURLGenerator = (PieURLGenerator)#2981,17.075875691005162
+return false;#2827,17.074052874247233
+return false;#2933,17.073234049479165
+labelBox.setInteriorGap(this.labelPadding);#2531,17.07044272268972
+throw new IllegalArgumentException(#686,17.067180834318464
+plotArea.getHeight());#2545,17.062638369473543
+SerialUtilities.writeStroke(this.labelLinkStroke, stream);#3006,17.054190035219545
+this.sectionOutlinePaintMap.put(key, result);#1036,17.051279560212166
+return this.sectionOutlinePaintMap.getPaint(key);#1066,17.047122875849407
+Shape shadowArc = ShapeUtilities.createTranslatedShape(#2285,17.04298889275753
+return result;#1163,17.042940266927083
+continue;#2384,17.04085874557495
+return result;#1028,17.04060478210449
+bounds);#2395,17.039751016176663
+g2.draw(new Line2D.Double(linkX, linkY, elbowX, elbowY));#2779,17.03968029552036
+labelBox.setBackgroundPaint(this.labelBackgroundPaint);#2580,17.03646542949061
+stream.defaultReadObject();#3020,17.03390407562256
+public static final Paint DEFAULT_LABEL_PAINT = Color.black;#250,17.031687827337358
+result = this.sectionPaintMap.getPaint(key);#836,17.018117116845172
+return false;#2812,17.014248275756835
+return false;#2824,17.010670598347982
+this.baseSectionOutlineStroke = SerialUtilities.readStroke(stream);#3023,17.01035289106698
+linkY + vv / 2.0, linkW - hh, linkH - vv);#2178,17.007638956371107
+this.labelDistributor.clear();#2567,17.007057526532343
+g2.draw(bg);#2412,17.003725828947843
+return false;#2809,16.998633321126302
+static final boolean DEBUG_DRAW_LINK_AREA = false;#471,16.995443248748778
+return false;#2876,16.99504165649414
+result = ds.getNextOutlinePaint();#1035,16.994688647133962
+return result;#838,16.9923796971639
+this.labelDistributor.clear();#2516,16.991516954758588
+return false;#2859,16.989760653177896
+this.baseSectionPaint = Color.gray;#506,16.989617247330514
+clone.urlGenerator = (PieURLGenerator) ObjectUtilities.clone(#2968,16.989564641316733
+return false;#2910,16.987951024373373
+result = this.baseSectionOutlineStroke;#1178,16.986319700876873
+this.urlGenerator = generator;#1886,16.98560392856598
+drawItem(g2, section, explodeArea, state, pass);#2220,16.98190742315248
+this.labelShadowPaint = SerialUtilities.readPaint(stream);#3029,16.97032070159912
+this.baseSectionOutlinePaint, that.baseSectionOutlinePaint#2845,16.967247617655786
+this.labelBackgroundPaint = SerialUtilities.readPaint(stream);#3026,16.960254249572753
+return false;#2856,16.956998125712076
+this.labelLinkPaint = SerialUtilities.readPaint(stream);#3030,16.956741905212404
+0.18, 0.18, 0.18, 0.18);#2353,16.951950907707214
+return false;#2913,16.946441205342612
+toolTipText = this.legendLabelToolTipGenerator#2642,16.94604340115109
+tip = this.toolTipGenerator.generateToolTip(#2313,16.940885271344865
+return false;#2944,16.939436022440592
+return false;#2940,16.937738927205405
+g2.setPaint(paint);#2295,16.93117116047786
+plotArea.getHeight());#2596,16.93082159215754
+return new Rectangle2D.Double(unexploded.getX() - deltaX,#2710,16.93025794173732
+state.setTotal(DatasetUtilities.calculatePieDatasetTotal(#2051,16.923070281744003
+this.dataset, key);#2387,16.915647715330124
+return false;#2898,16.909375635782876
+TextBox labelBox = new TextBox(block);#2579,16.908545423437047
+this.labelLinksVisible = visible;#1488,16.90425137912526
+labelBox.setOutlinePaint(this.labelOutlinePaint);#2528,16.903960054570977
+Rectangle2D pieArea = new Rectangle2D.Double(explodeArea.getX()#2190,16.902482617285944
+Arc2D.OPEN);#2703,16.90120213120072
+return clone;#2984,16.89834906838157
+return false;#2904,16.895995140075684
+info.setPlotArea(area);#2077,16.895918703079225
+g2.setStroke(outlineStroke);#2302,16.895769708296832
+SerialUtilities.writePaint(this.labelLinkPaint, stream);#3005,16.893229217529296
+TextUtilities.drawAlignedString(getLabelGenerator()#2417,16.8926833152771
+key = new Integer(section);#880,16.887953557466204
+g2.setPaint(this.labelShadowPaint);#2401,16.886743601630716
+TextBox labelBox = new TextBox(block);#2526,16.88660964259395
+return false;#2916,16.88583132425944
+this.minimumArcAngleToDraw = DEFAULT_MINIMUM_ARC_ANGLE_TO_DRAW;#503,16.88253829058479
+this.interiorGap = percent;#691,16.875694184076217
+double hh = labelBox.getHeight(g2);#2536,16.875514869032234
+this.labelPaint = SerialUtilities.readPaint(stream);#3025,16.87389083703359
+double hh = labelBox.getHeight(g2);#2588,16.870980525838917
+return false;#2901,16.87000300089518
+return this.sectionPaintMap.getPaint(key);#903,16.868733579462226
+return false;#2907,16.85830930074056
+Arc2D arc1 = new Arc2D.Double(unexploded, angle, extent / 2,#2702,16.854011244244045
+Rectangle2D linkArea = new Rectangle2D.Double(linkX, linkY, linkW,#2156,16.847636251738578
+return false;#2895,16.844157854715984
+g2.setPaint(Color.green);#2195,16.840139181717582
+this.dataset);#2209,16.833893335782566
+clone.dataset.addChangeListener(clone);#2965,16.827696681022644
+labelReserve = this.labelGap + this.maximumLabelWidth;#2120,16.826263815164566
+linkH = 2 * min;#2151,16.822359938370553
+this.labelLinkStroke = SerialUtilities.readStroke(stream);#3031,16.822336550112123
+drawNoDataMessage(g2, area);#2095,16.821005777879193
+g2.draw(new Line2D.Double(anchorX, anchorY, targetX, targetY));#2781,16.79182374799574
+labelBox.setOutlinePaint(this.labelOutlinePaint);#2581,16.77884361960671
+labelBox.setShadowPaint(this.labelShadowPaint);#2530,16.775139870182162
+RectangleInsets labelInsets = new RectangleInsets(UnitType.RELATIVE,#2352,16.771504731013856
+this.baseSectionOutlinePaint = SerialUtilities.readPaint(stream);#3022,16.765128135681152
+setCircular(flag, true);#718,16.757742762565613
+labelBox.setShadowPaint(this.labelShadowPaint);#2583,16.742520086226925
+this.simpleLabels = simple;#1776,16.7387433052063
+public void setLegendLabelToolTipGenerator(#1997,16.729158673967635
+result = this.baseSectionOutlinePaint;#1043,16.728191417196523
+drawPie(g2, area, info);#2092,16.724504470825195
+g2.draw(new Line2D.Double(anchorX, anchorY, targetX, targetY));#2745,16.72249613581477
+result = ds.getNextPaint();#845,16.720688856565037
+this.sectionPaintMap.put(key, result);#846,16.717261741901265
+this.labelDistributor = distributor;#1835,16.705640400157254
+g2.setPaint(this.labelBackgroundPaint);#2405,16.70419460184434
+that.baseSectionPaint)) {#2834,16.70157249768575
+lm = this.labelLinkMargin;#2173,16.692967674948953
+private AbstractPieLabelDistributor labelDistributor;#408,16.685752034187317
+TextBlock block = TextUtilities.createTextBlock(label,#2576,16.684313681817823
+dataset.addChangeListener(this);#495,16.657081508636473
+TextBlock block = TextUtilities.createTextBlock(label,#2523,16.653326680583337
+g2.draw(new Line2D.Double(anchorX, anchorY, elbowX, elbowY));#2780,16.65321146475302
+return false;#2802,16.650863075256346
+urlText = this.legendLabelURLGenerator.generateURL(#2647,16.643754601478577
+this.circular = circular;#731,16.638358497619627
+new G2TextMeasurer(g2));#2578,16.637519135194665
+this.baseSectionPaint = SerialUtilities.readPaint(stream);#3021,16.635114479064942
+new G2TextMeasurer(g2));#2525,16.62625245486989
+linkH);#2157,16.625269789444772
+Arc2D.OPEN);#2706,16.62098029807762
+this.simpleLabels = false;#527,16.620690524578094
+Arc2D.Double arc2 = new Arc2D.Double(exploded, angle, extent / 2,#2705,16.616971686079694
+g2.draw(new Line2D.Double(anchorX, anchorY, elbowX, elbowY));#2744,16.616134488904798
+return result;#2613,16.614763514200845
+0.18, 0.18, 0.18);#529,16.59117821284703
+return unexploded;#2699,16.58925187587738
+this.legendItemShape = SerialUtilities.readShape(stream);#3032,16.584620436032612
+result = this.baseSectionOutlineStroke;#1174,16.584174190248763
+TextAnchor.CENTER);#2419,16.57626935839653
+g2.draw(pieArea);#2196,16.568119955062866
+result = this.baseSectionPaint;#853,16.56386709213257
+g2.setPaint(this.shadowPaint);#2288,16.557275425304066
+unexploded.getHeight());#2712,16.54704244320209
+return false;#2805,16.541705703735353
+Arc2D.PIE);#2281,16.534185162297003
+include = v > 0.0;#2632,16.531214929396107
+g2.draw(new Ellipse2D.Double(linkArea.getX(), linkArea.getY(),#2164,16.523908981910118
+g2.fill(shadowArc);#2289,16.522877420697892
+info.setDataArea(area);#2078,16.509526634216307
+item.setDataset(getDataset());#2658,16.503364354372025
+dataset.addChangeListener(this);#573,16.486648178100587
+return true;#2799,16.470167223612467
+result = percent.doubleValue();#1344,16.463096660116445
+rightKeys.addValue(key, new Double(mid));#2475,16.453598369251598
+SerialUtilities.writeShape(this.legendItemShape, stream);#3007,16.452293515205383
+Arc2D.Double arc = new Arc2D.Double(arcBounds, angle1, angle,#2280,16.443903896543716
+g2.draw(arc);#2303,16.43890274895562
+ObjectUtilities.clone(this.legendLabelToolTipGenerator);#2978,16.408536195755005
+existing.removeChangeListener(this);#566,16.377336740493774
+result = this.baseSectionPaint;#849,16.373902473449707
+tip, url);#2323,16.36817691061232
+Rectangle2D explodeArea = new Rectangle2D.Double(linkX + hh / 2.0,#2177,16.362094093771542
+ResourceBundle.getBundle("org.jfree.chart.plot.LocalizationBundle");#457,16.33513655382044
+this.urlGenerator);#2969,16.31457673586332
+result = this.baseSectionOutlinePaint;#1039,16.256745197154856
+key = this.dataset.getKey(section);#876,16.22571402582629
+result = Math.max(result, explode.doubleValue());#1384,16.134376376867294
+ObjectUtilities.clone(this.legendLabelGenerator);#2974,16.07615633571849
+ObjectUtilities.clone(this.legendLabelURLGenerator);#2982,15.977474076407296
+result.add(item);#2659,15.817403059739332
+return false;#2948,15.745079358418783
+entities.add(entity);#2324,15.71978759765625

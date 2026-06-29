@@ -1,0 +1,508 @@
+break;#393,19.7900873819987
+break;#327,19.71122455596924
+break;#339,19.623300393422443
+break;#404,19.567883279588486
+double r = x1max / xabs;#597,19.41088118272669
+s1= 1 + s1 * r * r;#598,19.35746841960483
+if (xabs > x1max) {#596,19.338380273183187
+prodHigh[i] = ai * bi;#836,19.305186520452086
+double r = x3max / xabs;#606,19.20734635521384
+if (xabs > x3max) {#605,19.17756331761678
+if (strict) {#330,19.149365988644686
+double evaluate(double[] array);#65,19.14233201344808
+case DECREASING:#328,19.12234173880683
+case INCREASING:#383,19.095752239227295
+case INCREASING:#316,19.09498781628079
+s3= 1 + s3 * r * r;#607,19.083292563756306
+s1 += r * r;#602,19.032947786392704
+double r = xabs / x1max;#601,18.996602787691003
+return false;#320,18.96727876309995
+double[] out = new double[len];#1301,18.96141152911716
+x1max = xabs;#599,18.920274426860193
+double norm;#620,18.893412590026855
+T[] array = (T[]) Array.newInstance(field.getRuntimeClass(), length);#1335,18.88556931813558
+break ITEM;#386,18.88544147355216
+break ITEM;#390,18.829800946371897
+case DECREASING:#394,18.824469725290935
+if (strict) {#395,18.809181170030072
+double sum = 0;#251,18.801286350597035
+final double[] result = a.clone();#190,18.78722381591797
+final double[] result = a.clone();#168,18.765722891863653
+final double[] result = a.clone();#124,18.760398976943073
+double sum = 0;#235,18.74741891714243
+default:#340,18.744694301060267
+if (strict) {#318,18.740189162167635
+norm = x1max * Math.sqrt(s1 + (s2 / x1max) / x1max);#622,18.737577413901306
+final double[] result = a.clone();#146,18.718458568348606
+break ITEM;#397,18.68865363938468
+public static double[] copyOf(double[] source) {#763,18.67667226230397
+public static double[] normalizeArray(double[] values, double normalizedSum)#1291,18.642497425987607
+double r = xabs / x3max;#611,18.61982420871132
+s3 += r * r;#612,18.600129672459193
+array = (T[][]) Array.newInstance(dummyRow.getClass(), rows);#1357,18.585285186767578
+public static void scaleInPlace(double val, final double[] arr) {#102,18.585005044937134
+double sum = 0;#205,18.579517657940205
+public static void sortInPlace(double[] x,#675,18.556160354614256
+double evaluate(double[] array,#72,18.539146359761556
+final double aHigh = ca - (ca - ai);#829,18.53622791290283
+result = 0;#865,18.533634305000305
+final T[][] array;#1354,18.527363717556
+final double bi = b[i];#832,18.52265167236328
+if (xabs > rdwarf) {#595,18.517809761895073
+if (Double.isInfinite(normalizedSum)) {#1293,18.5167442668568
+return false;#332,18.503630744086372
+public static double[] scale(double val, final double[] arr) {#85,18.485694634286983
+break ITEM;#401,18.48110226222447
+array = (T[][]) Array.newInstance(field.getRuntimeClass(),#1359,18.479201378360873
+double xabs = Math.abs(v[i]);#593,18.467999935150146
+double x1max = 0;#588,18.46744925181071
+if (Double.isInfinite(values[i])) {#1303,18.461166664406104
+public static double[] ebeSubtract(double[] a, double[] b)#140,18.45221775228327
+x3max = xabs;#608,18.44586230862525
+new Comparator<Pair<Double, Integer>>() {#709,18.431416587829588
+final double[] y = new double[totalLength];#1407,18.42557258605957
+if (val[index] < previous) {#389,18.425333054860435
+if (strict) {#384,18.41922629963268
+final double cb1        = SPLIT_FACTOR * b1;#913,18.41364066831527
+final double cb1        = SPLIT_FACTOR * b1;#993,18.41364066831527
+final double cb1        = SPLIT_FACTOR * b1;#1095,18.41364066831527
+final double bHigh = cb - (cb - bi);#834,18.400738182067872
+public static double[] ebeAdd(double[] a, double[] b)#118,18.39367218017578
+final double ca = SPLIT_FACTOR * ai;#828,18.390935787787804
+final double cb = SPLIT_FACTOR * bi;#833,18.38682589164147
+final double ai = a[i];#827,18.385815665835427
+default:#405,18.38412993294852
+comp = val[i].compareTo(previous);#329,18.383423542154247
+final double ca4        = SPLIT_FACTOR * a4;#1128,18.381403541564943
+public int compare(Pair<Double, Integer> o1,#715,18.381393065819374
+if (comp > 0) {#323,18.378602734318488
+ITEM:#380,18.370713320645418
+if (val[index] >= previous) {#396,18.364990552266438
+switch (dir) {#315,18.357697094188016
+public static double[] ebeDivide(double[] a, double[] b)#184,18.353106407892135
+final List<Pair<Double, Integer>> list#700,18.35102011028089
+switch (dir) {#382,18.344385876375085
+final double a4High     = ca4 - (ca4 - a4);#1129,18.327264956065587
+if (Double.isNaN(normalizedSum)) {#1296,18.320908936587248
+public int compare(Pair<Double, Integer> o1,#710,18.317525386810303
+double prodHighNext = prodHigh[1];#846,18.31574143303765
+final double a1High     = ca1 - (ca1 - a1);#911,18.29836767060416
+final double a1High     = ca1 - (ca1 - a1);#991,18.297890969685145
+final double a1High     = ca1 - (ca1 - a1);#1093,18.297890969685145
+final double ca3        = SPLIT_FACTOR * a3;#1014,18.296109263102213
+public static double[] ebeMultiply(double[] a, double[] b)#162,18.29609342054887
+if (val[index] <= previous) {#385,18.293781503041586
+final double ca1        = SPLIT_FACTOR * a1;#910,18.285985120137532
+MathUtils.checkNotNull(x);#1395,18.285697485271253
+final double ca1        = SPLIT_FACTOR * a1;#990,18.285597387949625
+final double ca1        = SPLIT_FACTOR * a1;#1092,18.285597387949625
+comp = previous.compareTo(val[i]);#317,18.283187219074794
+public static void checkPositive(final double[] in)#479,18.2750141620636
+final double ca2        = SPLIT_FACTOR * a2;#922,18.257424068450927
+public static double[] convolve(double[] x, double[] h)#1392,18.238629817962646
+final double cb3        = SPLIT_FACTOR * b3;#1119,18.22746778303577
+final double ca3        = SPLIT_FACTOR * a3;#1116,18.224368000030516
+final Comparator<Pair<Double, Integer>> comp#707,18.222953605651856
+Collections.sort(list, comp);#722,18.219778537750244
+final double cb4        = SPLIT_FACTOR * b4;#1131,18.218968760582708
+return sum;#224,18.20560211605496
+public static int[] copyOf(int[] source) {#753,18.200294999515307
+checkOrder(val, dir, strict, true);#437,18.19196941978053
+final double aLow = ai - aHigh;#830,18.191906431446906
+return false;#324,18.19026205274794
+final double[] output = new double[len];#792,18.178606936806126
+if (xabs < rdwarf || xabs > agiant) {#594,18.168418160800275
+if (comp >= 0) {#331,18.167397534405744
+return FastMath.sqrt(sum);#256,18.167041524251303
+final double ca2        = SPLIT_FACTOR * a2;#1002,18.16319367090861
+final double ca2        = SPLIT_FACTOR * a2;#1104,18.16319367090861
+double x3max = 0;#589,18.163133112589517
+public static void sortInPlace(double[] x, double[] ... yList)#653,18.161888304210844
+public static double[] copyOf(double[] source, int len) {#791,18.15549679806358
+final int comp;#314,18.15254706144333
+if (val[index] > previous) {#400,18.14627488454183
+if (comp >= 0) {#319,18.130405143455224
+T[] dummyRow = buildArray(field, 0);#1356,18.126731300354002
+MathUtils.checkNotNull(in);#461,18.126323805914986
+aHigh * bHigh) -#838,18.11862848572812
+double max = 0;#267,18.1073427933913
+if (Double.isNaN(values[i])) {#1314,18.106613724320024
+if (xabs != 0) {#610,18.10331082344055
+final double[] prodHigh = new double[len];#823,18.087819049232884
+double yn = 0;#1411,18.08722566303454
+final double cb3        = SPLIT_FACTOR * b3;#1017,18.084805365531675
+final double cb2        = SPLIT_FACTOR * b2;#1005,18.084618414601973
+final double cb2        = SPLIT_FACTOR * b2;#1107,18.084618414601973
+if (comp > 0) {#335,18.08210496549253
+norm = x3max * Math.sqrt(s3);#625,18.081537214914956
+= new ArrayList<Pair<Double, Integer>>(len);#701,18.07466408058449
+final double a4Low      = a4 - a4High;#1130,18.066783244793232
+double rgiant = 1.304e+19;#584,18.062397856461374
+INCREASING,#294,18.05708745809702
+int j = n - k;#1413,18.056324768066407
+double prodLowSum = 0;#824,18.05372625986735
+if (y.length != len) {#694,18.04683440072196
+final double[] y = yList[j];#690,18.04500558159568
+Arrays.fill(array, field.getZero());#1336,18.03949215298607
+final double bLow = bi - bHigh;#835,18.028049425645307
+checkOrder(val, OrderDirection.INCREASING, true);#448,18.01710347334544
+double s1 = 0;#585,18.010070868900844
+final double a1Low      = a1 - a1High;#912,18.00622529249925
+final double a1Low      = a1 - a1High;#992,18.00622529249925
+final double a1Low      = a1 - a1High;#1094,18.00622529249925
+= dir == MathArrays.OrderDirection.INCREASING ?#708,18.00409279550825
+return false;#336,17.99186504804171
+for (int i = 0; i < len; i++) {#728,17.987086946314033
+out[i] = values[i] * normalizedSum / sum;#1317,17.98643586039543
+x[i] = e.getKey();#730,17.970998200503264
+double[] newArr = new double[arr.length];#86,17.964906874157133
+public static boolean equals(float[] x, float[] y) {#1177,17.9634034898546
+MathUtils.checkNotNull(h);#1396,17.95284989005641
+return checkOrder(val, dir, strict, false);#359,17.951036310195924
+final double a2High     = ca2 - (ca2 - a2);#1003,17.949439934321813
+final double a2High     = ca2 - (ca2 - a2);#1105,17.949439934321813
+sortInPlace(x, OrderDirection.INCREASING, yList);#655,17.94477026279156
+final double cb2        = SPLIT_FACTOR * b2;#925,17.939106879695768
+final Pair<Double, Integer> e = list.get(i);#729,17.937920217160826
+throws NullArgumentException,#678,17.93616465159825
+double s2 = 0;#586,17.927166598183767
+return sum;#209,17.907904451543633
+if (Double.isNaN(result)) {#942,17.90150311118678
+final double prod4High  = a4 * b4;#1136,17.901222501482284
+sum += dp * dp;#238,17.898503494262695
+final double a3High     = ca3 - (ca3 - a3);#1117,17.896852322987147
+if (Double.isNaN(result)) {#1039,17.893196256537188
+final double prodLow = aLow * bLow - (((prodHigh[i] -#837,17.88340151309967
+if (Double.isNaN(result)) {#1158,17.857625007629395
+final double a3Low      = a3 - a3High;#1118,17.85399081156804
+final double a2High     = ca2 - (ca2 - a2);#923,17.852799074990408
+public static double distance1(double[] p1, double[] p2) {#204,17.84373714810326
+public static double distance(double[] p1, double[] p2) {#234,17.840439796447754
+public static double linearCombination(final double[] a, final double[] b)#814,17.839082854134695
+double sum = 0d;#1299,17.8287379582723
+final double a2Low      = a2 - a2High;#1004,17.822566692645733
+final double a2Low      = a2 - a2High;#1106,17.822566692645733
+return result;#871,17.82192074168812
+Arrays.fill(array[i], field.getZero());#1364,17.814926424334125
+final double a3High     = ca3 - (ca3 - a3);#1015,17.814812694277084
+if (Double.isNaN(result)) {#862,17.811219014619525
+@SuppressWarnings("unchecked") // OK because field must be correct class#1334,17.807815622400355
+return FastMath.sqrt(sum);#240,17.80615868287928
+public static boolean equals(double[] x, double[] y) {#1228,17.79388936360677
+norm = Math.sqrt(s2 * (1 + (x3max / s2) * (x3max * s3)));#628,17.79319290086335
+final double prod1High  = a1 * b1;#918,17.787962368556432
+final double prod1High  = a1 * b1;#998,17.787962368556432
+final double prod1High  = a1 * b1;#1100,17.787962368556432
+for (int i = 0; i < len; i++) {#1313,17.7743732618249
+public static double safeNorm(double[] v) {#582,17.770006306966145
+yn += x[j--] * h[k++];#1415,17.770000580818422
+arr[i] *= val;#104,17.767742443084718
+out[i] = Double.NaN;#1315,17.766193566498934
+public static boolean checkOrder(double[] val, OrderDirection dir,#373,17.76118654953806
+for (int i = 0; i < len; i++) {#826,17.75970307263461
+throws NullArgumentException,#1393,17.759355290730795
+return norm;#634,17.751958153464578
+final double b4High     = cb4 - (cb4 - b4);#1132,17.750534813979577
+final double a3Low      = a3 - a3High;#1016,17.74306143247164
+final double[] yOrig = yInPlace.clone();#739,17.73391564687093
+return copyOf(source, source.length);#754,17.725914804559004
+if (!Double.isNaN(values[i])) {#1306,17.72368515862359
+public static boolean equalsIncludingNaN(float[] x, float[] y) {#1203,17.7219540422613
+throw new NotPositiveException(in[i]);#499,17.720252990722656
+final int[] indices = new int[len];#727,17.70400291019016
+for (int j = 0; j < in[i].length; j++) {#514,17.693175029754638
+final double a2Low      = a2 - a2High;#924,17.691921894366924
+throw new NotPositiveException(in[i][j]);#516,17.68209101937034
+public static void checkOrder(double[] val, OrderDirection dir,#435,17.676680414300215
+final double b1High     = cb1 - (cb1 - b1);#914,17.667326762758453
+final double b1High     = cb1 - (cb1 - b1);#994,17.667326762758453
+final double b1High     = cb1 - (cb1 - b1);#1096,17.667326762758453
+for (int n = 0; n < totalLength; n++) {#1410,17.66536811987559
+public static double distanceInf(double[] p1, double[] p2) {#266,17.662025451660156
+return array;#1367,17.660722494125366
+for (int i = 0; i < len; i++) {#1302,17.656068345774774
+for (index = 1; index < max; index++) {#381,17.654397828238352
+sum += FastMath.abs(p1[i] - p2[i]);#207,17.64743318557739
+if (in[i][j] < 0) {#515,17.647107771464757
+if (a.length != b.length) {#186,17.640941318712738
+return copyOf(source, source.length);#764,17.638795802467747
+while (k < hLen && j >= 0) {#1414,17.630749855041504
+sum += dp * dp;#254,17.62562216652764
+final double[] yInPlace = yList[j];#738,17.62302311261495
+result += a[i] * b[i];#867,17.62297898751718
+public static  <T extends Comparable<? super T>> boolean isMonotonic(T[] val,#308,17.622445363264816
+return o1.getKey().compareTo(o2.getKey());#712,17.612149065191094
+public static boolean equalsIncludingNaN(double[] x, double[] y) {#1254,17.609454415061258
+return true;#1266,17.60846944288774
+public static boolean isMonotonic(double[] val, OrderDirection dir, boolean strict) {#358,17.604780082702636
+for (int i = 0; i < len; i++) {#702,17.603130210529674
+throw new NonMonotonicSequenceException(val[index], previous, index, dir, strict);#420,17.596929353826187
+double agiant = rgiant / floatn;#591,17.595785035027397
+final double prod3High  = a3 * b3;#1124,17.581219082786923
+if (len != b.length) {#817,17.566073642057532
+if (a.length != b.length) {#142,17.563516114887438
+public static int[] copyOf(int[] source, int len) {#776,17.55707966653924
+return true;#1189,17.55166634646329
+final double a2, final double b2,#1076,17.5503484617989
+return true;#1240,17.533548788590863
+indices[i] = e.getValue();#731,17.520049138502642
+public static void checkNonNegative(final long[] in)#495,17.51454684313606
+return true;#1215,17.50738742134788
+if (a.length != b.length) {#120,17.50624059375964
+result = a1 * b1 + a2 * b2 + a3 * b3;#1042,17.504495173692703
+throw new MathInternalError();#342,17.496580383994363
+final double dp = p1[i] - p2[i];#237,17.492411954062327
+double[] ... yList)#677,17.491905514786882
+throw new NotStrictlyPositiveException(in[i]);#483,17.491037591298422
+double floatn = v.length;#590,17.489432454109192
+if (in[i].length != in[0].length) {#463,17.486785500137895
+if (a.length != b.length) {#164,17.47111691926655
+double rdwarf = 3.834e-20;#583,17.47100192850286
+public static void checkOrder(double[] val) throws NonMonotonicSequenceException {#447,17.46492734162704
+return true;#415,17.464665540059407
+final double prod2High  = a2 * b2;#1010,17.461482048034668
+final double prod2High  = a2 * b2;#1112,17.461482048034668
+norm = Math.sqrt(x3max * ((s2 / x3max) + (x3max * s3)));#630,17.459769307350626
+final int lenMinusOne = len - 1;#851,17.458609681380423
+int sum = 0;#220,17.457569555802777
+result = a1 * b1 + a2 * b2 + a3 * b3 + a4 * b4;#1161,17.454945438786556
+DECREASING#296,17.45320439338684
+throw new DimensionMismatchException(#464,17.453174988428753
+for (int i = 0; i < len; ++i) {#866,17.45117579566108
+aHigh * bLow);#840,17.44632727759225
+return max;#271,17.43694730238481
+throws NotStrictlyPositiveException {#480,17.43614123849308
+int k = FastMath.max(0, n + 1 - xLen);#1412,17.42725315093994
+double result = s12High + (prod1Low + prod2Low + s12Low);#940,17.42321090040536
+double s3 = 0;#587,17.423195021493093
+return false;#1263,17.42073284952264
+for (int i = 1; i < lenMinusOne; i++) {#852,17.418939323425292
+final double prodHighCur = prodHigh[0];#845,17.416294449254085
+final double b3High     = cb3 - (cb3 - b3);#1120,17.411206738702184
+sum += FastMath.abs(p1[i] - p2[i]);#222,17.409382615770614
+final double prod4Low   = a4Low * b4Low - (((prod4High - a4High * b4High) - a4Low * b4High) - a4High * b4Low);#1137,17.40693176001833
+final double b2High     = cb2 - (cb2 - b2);#1006,17.394604222527867
+final double b2High     = cb2 - (cb2 - b2);#1108,17.394604222527867
+final double b4Low      = b4 - b4High;#1133,17.391066257770245
+if (abort) {#419,17.386598587036133
+System.arraycopy(source, 0, output, 0, FastMath.min(len, source.length));#793,17.38211874528365
+for (int i = 0; i < p1.length; i++) {#283,17.38073902130127
+for (int i = 1; i < max; i++) {#313,17.378901264884256
+if (s2 >= x3max) {#627,17.373421118809627
+return o2.getKey().compareTo(o1.getKey());#717,17.371604803836707
+final double prod2High  = a2 * b2;#930,17.36863513219924
+final double prod3High  = a3 * b3;#1022,17.367188726152694
+if (columns < 0) {#1355,17.366597287795123
+newArr[i] = arr[i] * val;#88,17.359472824976994
+if (s1 != 0) {#621,17.353257715702057
+final int len = x.length;#687,17.335065603256226
+for (int j = 0; j < yListLen; j++) {#689,17.329058408737183
+for (int i = 0; i < p1.length; i++) {#236,17.328306350708008
+for (int i = 0; i < in.length; i ++) {#513,17.32349910736084
+for (int i = 0; i < v.length; i++) {#592,17.32324767112732
+if (in[i] < 0) {#498,17.318087100982666
+double result = sHighPrev + (prodLowSum + sLowSum);#860,17.31635673522949
+System.arraycopy(source, 0, output, 0, FastMath.min(len, source.length));#778,17.314973802277535
+return true;#347,17.31290695884011
+return y;#1420,17.305011828740437
+return result;#194,17.298341404307973
+return !((x == null) ^ (y == null));#1230,17.29769416809082
+throws DimensionMismatchException {#815,17.294307645161947
+final double s12High    = prod1High + prod2High;#1026,17.287216186523438
+prodHighNext = prodHigh[i + 1];#853,17.279704591502313
+s2 += xabs * xabs;#617,17.279416160583494
+list.add(new Pair<Double, Integer>(x[i], i));#703,17.273117756021435
+return !((x == null) ^ (y == null));#1179,17.26783519744873
+max = FastMath.max(max, FastMath.abs(p1[i] - p2[i]));#269,17.266831598783796
+final double s1234High  = s123High + prod4High;#1150,17.261429985364277
+final double s12Prime   = s12High - prod2High;#1141,17.249194939931233
+final double b1Low      = b1 - b1High;#915,17.243060662196232
+final double b1Low      = b1 - b1High;#995,17.243060662196232
+final double b1Low      = b1 - b1High;#1097,17.243060662196232
+final double s12High    = prod1High + prod2High;#1140,17.241243476867677
+for (int i = 0; i < rows; ++i) {#1363,17.238396848951066
+throw new MathInternalError();#407,17.234761454842307
+final double dp = p1[i] - p2[i];#253,17.23271949474628
+return max;#286,17.232650236649945
+max = FastMath.max(max, FastMath.abs(p1[i] - p2[i]));#284,17.22884780482242
+return false;#1212,17.224676885102923
+public static <T> T[] buildArray(final Field<T> field, final int length) {#1333,17.224506625422723
+if (y == null) {#691,17.22246365798147
+for (int i = 0; i < in.length; i++) {#481,17.220351417859394
+for (int i = 0; i < p1.length; i++) {#268,17.216132164001465
+public static double distance(int[] p1, int[] p2) {#250,17.211177110671997
+return !((x == null) ^ (y == null));#1256,17.209027976989745
+return false;#1237,17.206962334482295
+if (in[i] <= 0) {#482,17.20640923760154
+final double s12Prime   = s12High - prod2High;#1027,17.203104098637898
+double result = s1234High + (prod1Low + prod2Low + prod3Low + prod4Low + s12Low + s123Low + s1234Low);#1156,17.20132141924919
+final double b2High     = cb2 - (cb2 - b2);#926,17.200668236304974
+final double b3High     = cb3 - (cb3 - b3);#1018,17.19726897930277
+return !((x == null) ^ (y == null));#1205,17.193136825561524
+for (int i = 0; i < in.length; i++) {#497,17.190085689226787
+if (x.length != y.length) {#1181,17.18873089238217
+final int[] output = new int[len];#777,17.1880878147326
+y[n] = yn;#1417,17.186875706627255
+for (int i = 0; i < a.length; i++) {#191,17.18582769234975
+for (int i = 0; i < x.length; ++i) {#1261,17.18338104248047
+return false;#1186,17.18252548418547
+return array;#1337,17.18148358662923
+for (int i = 1; i < in.length; i++) {#462,17.172679622968037
+throws DimensionMismatchException {#185,17.168646812438965
+final double s12High    = prod1High + prod2High;#934,17.166264762878416
+throws DimensionMismatchException {#119,17.16594893137614
+double result = s123High + (prod1Low + prod2Low + prod3Low + s12Low + s123Low);#1037,17.16518783569336
+double previous = val[0];#376,17.164535140991212
+for (int i = 0; i < p1.length; i++) {#206,17.162803688049316
+for (int i = 0; i < p1.length; i++) {#252,17.15939753988515
+final double s12Low     = (prod2High - (s12High - s12Prime)) + (prod1High - s12Prime);#1028,17.15619525042447
+int index;#379,17.15363242409446
+for (int i = 0; i < a.length; i++) {#147,17.152393341064453
+return output;#794,17.152033646901447
+throws DimensionMismatchException {#163,17.146905835469564
+result = a1 * b1 + a2 * b2;#945,17.145565729874832
+final double s12Low     = (prod2High - (s12High - s12Prime)) + (prod1High - s12Prime);#1142,17.14250774817033
+for (int j = 0; j < yListLen; j++) {#736,17.140445709228516
+if (x.length != y.length) {#1232,17.14033563513505
+throws DimensionMismatchException {#141,17.137777837117515
+final double prod1Low   = a1Low * b1Low - (((prod1High - a1High * b1High) - a1Low * b1High) - a1High * b1Low);#919,17.135080337524414
+final double prod1Low   = a1Low * b1Low - (((prod1High - a1High * b1High) - a1Low * b1High) - a1High * b1Low);#999,17.135080337524414
+final double prod1Low   = a1Low * b1Low - (((prod1High - a1High * b1High) - a1Low * b1High) - a1High * b1Low);#1101,17.135080337524414
+final int len = a.length;#816,17.134007215499878
+if ((x == null) || (y == null)) {#1255,17.13388138725644
+final double s12Low     = (prod2High - (s12High - s12Prime)) + (prod1High - s12Prime);#936,17.133734182877973
+throws MathIllegalArgumentException, MathArithmeticException {#1292,17.13318005475131
+aLow * bHigh) -#839,17.13113549659992
+for (int i = 0; i < len; i++) {#741,17.12610156719501
+final double s1234Prime = s1234High - prod4High;#1151,17.12553270657857
+for (int i = 0; i < a.length; i++) {#125,17.12134639422099
+return out;#1320,17.118940353393555
+return result;#1164,17.11788272857666
+final int max = val.length;#377,17.11175310611725
+return result;#1045,17.108542268926445
+if (x.length != y.length) {#1207,17.108096875642474
+for (int i = 0; i < x.length; ++i) {#1210,17.10108325958252
+final int hLen = h.length;#1399,17.10010438495212
+if (index == max) {#413,17.095861625671386
+return result;#948,17.094348907470703
+yInPlace[i] = yOrig[indices[i]];#742,17.092310339212418
+if ((x == null) || (y == null)) {#1204,17.090235710144043
+if (xLen == 0 || hLen == 0) {#1401,17.08861004222523
+if (x.length != y.length) {#1258,17.086219185277034
+for (int i = 0; i < a.length; i++) {#169,17.084378083546955
+for (int i = 0; i < x.length; ++i) {#1235,17.079728775024414
+return false;#1259,17.0751646677653
+for (int i = 0; i < arr.length; i++) {#87,17.071519772211712
+final double s123High   = s12High + prod3High;#1031,17.065408666928608
+if ((x == null) || (y == null)) {#1178,17.064051355634415
+for (int i = 0; i < x.length; ++i) {#1184,17.060509452819826
+if (sum == 0) {#1310,17.05524832010269
+if (x == null) {#682,17.051801045735676
+if ((x == null) || (y == null)) {#1229,17.045274325779506
+final double s123High   = s12High + prod3High;#1145,17.031489888827007
+final double b2Low      = b2 - b2High;#1007,17.02951244207529
+final double b2Low      = b2 - b2High;#1109,17.02951244207529
+throw new DimensionMismatchException(y.length, len);#695,17.02626984914144
+return output;#779,17.021066427230835
+previous = val[i];#345,17.014197455512154
+final int max = val.length;#312,16.994952380657196
+return false;#1182,16.99387092590332
+final double b3Low      = b3 - b3High;#1121,16.9929189315209
+new int[] {#1360,16.983607759662704
+public static double linearCombination(final double a1, final double b1,#1075,16.98323831104097
+throw new MathIllegalArgumentException(LocalizedFormats.INFINITE_ARRAY_ELEMENT, values[i], i);#1304,16.976649463176727
+final double s123Prime  = s123High - prod3High;#1146,16.976283114889394
+public static void checkRectangular(final long[][] in)#459,16.975884649488663
+final int len = values.length;#1300,16.974837639752558
+return false;#1208,16.969750531514485
+return result;#128,16.96954484419389
+public static void checkNonNegative(final long[][] in)#511,16.966369679099635
+Pair<Double, Integer> o2) {#716,16.962584262940943
+final int xLen = x.length;#1398,16.95311556922065
+for (int i = 0; i < p1.length; i++) {#221,16.94500608029573
+boolean strict, boolean abort)#374,16.935336312582326
+return result;#172,16.932643630287863
+public static int distance1(int[] p1, int[] p2) {#219,16.93217286609468
+if (!Precision.equals(x[i], y[i])) {#1236,16.930178197224937
+final double s123Prime  = s123High - prod3High;#1032,16.92781634952711
+final double s123Low    = (prod3High - (s123High - s123Prime)) + (s12High - s123Prime);#1033,16.924033573695592
+throw new NullArgumentException();#692,16.920223650724992
+if (!Precision.equals(x[i], y[i])) {#1185,16.91805470784505
+for (int i = 0; i < arr.length; i++) {#103,16.915506442387898
+final int totalLength = xLen + hLen - 1;#1406,16.91454453901811
+previous = val[index];#410,16.910434828864204
+final double b3Low      = b3 - b3High;#1019,16.901348480811485
+int max = 0;#282,16.900892697847805
+return false;#1233,16.89931494394938
+if (s2 == 0) {#624,16.895744037628173
+final double s1234Low   = (prod4High - (s1234High - s1234Prime)) + (s123High - s1234Prime);#1152,16.890968640645344
+return result;#150,16.8898304158991
+sum += values[i];#1307,16.884716282720152
+public static double linearCombination(final double a1, final double b1,#974,16.877892357962473
+Pair<Double, Integer> o2) {#711,16.863209049876144
+final double sHighCur = sHighPrev + prodHighNext;#854,16.856633699857273
+throw new DimensionMismatchException(a.length, b.length);#165,16.855199337005615
+throw new DimensionMismatchException(a.length, b.length);#143,16.851944616862706
+final double b2Low      = b2 - b2High;#927,16.850554906404934
+boolean strict) throws NonMonotonicSequenceException {#436,16.850339599277664
+double sHighPrev = prodHighCur + prodHighNext;#847,16.843121846516926
+throw new DimensionMismatchException(a.length, b.length);#121,16.841497319085256
+throw new DimensionMismatchException(a.length, b.length);#187,16.834956850324357
+final double s12Prime   = s12High - prod2High;#935,16.82720911502838
+if (!Precision.equalsIncludingNaN(x[i], y[i])) {#1262,16.820516249712774
+boolean strict) {#310,16.797683307102748
+int numElements);#74,16.78747167258427
+public static double linearCombination(final double a1, final double b1,#895,16.785815329778764
+if (!Precision.equalsIncludingNaN(x[i], y[i])) {#1211,16.762170595281265
+final double s123Low    = (prod3High - (s123High - s123Prime)) + (s12High - s123Prime);#1147,16.746420951116654
+public static int distanceInf(int[] p1, int[] p2) {#281,16.74035285768055
+return newArr;#90,16.733977757967434
+throws NonMonotonicSequenceException {#375,16.72008211472455
+public static <T> T[][] buildArray(final Field<T> field, final int rows, final int columns) {#1353,16.712611466646194
+result[i] *= b[i];#170,16.71147160096602
+throw new MathArithmeticException(LocalizedFormats.ARRAY_SUMS_TO_ZERO);#1311,16.701625770992703
+final double a3, final double b3,#1077,16.694229449865954
+double sPrime = sHighPrev - prodHighNext;#848,16.678971529006958
+throw new MathIllegalArgumentException(LocalizedFormats.NORMALIZE_INFINITE);#1294,16.669530841282437
+final double prod3Low   = a3Low * b3Low - (((prod3High - a3High * b3High) - a3Low * b3High) - a3High * b3Low);#1125,16.64574326966938
+final double prod3Low   = a3Low * b3Low - (((prod3High - a3High * b3High) - a3Low * b3High) - a3High * b3Low);#1023,16.63209433304636
+result[i] /= b[i];#192,16.62174268202348
+double sLowSum = (prodHighNext - (sHighPrev - sPrime)) + (prodHighCur - sPrime);#849,16.620772129780537
+result[i] += b[i];#126,16.591586748758953
+LocalizedFormats.DIFFERENT_ROWS_LENGTHS,#465,16.576902436047064
+public interface Function {#58,16.575231671333313
+final double a2, final double b2,#975,16.55817728222541
+result[i] -= b[i];#148,16.534419059753418
+private static final int SPLIT_FACTOR = 0x8000001;#47,16.530134927658807
+sPrime = sHighCur - prodHighNext;#855,16.518252455669902
+return false;#422,16.51781597137451
+throws NotPositiveException {#496,16.51335688999721
+throws NotPositiveException {#512,16.508025578090123
+final double prod2Low   = a2Low * b2Low - (((prod2High - a2High * b2High) - a2Low * b2High) - a2High * b2Low);#1011,16.484666874534206
+final double prod2Low   = a2Low * b2Low - (((prod2High - a2High * b2High) - a2Low * b2High) - a2High * b2Low);#1113,16.484666874534206
+final double prod2Low   = a2Low * b2Low - (((prod2High - a2High * b2High) - a2Low * b2High) - a2High * b2Low);#931,16.470349278366356
+final double a2, final double b2) {#896,16.46775915004589
+final double a4, final double b4) {#1078,16.45555035273234
+throw new MathIllegalArgumentException(LocalizedFormats.NORMALIZE_NAN);#1297,16.413052054012525
+in[i].length, in[0].length);#466,16.40329490767585
+public class MathArrays {#45,16.402911594935826
+sLowSum += (prodHighNext - (sHighCur - sPrime)) + (sHighPrev - sPrime);#856,16.37610088250576
+@SuppressWarnings("unchecked")#1352,16.358751678466795
+rows, columns#1361,16.356771416134304
+throw new DimensionMismatchException(len, b.length);#818,16.325011253356934
+throws NullArgumentException, DimensionMismatchException {#460,16.30903630256653
+throw new NullArgumentException();#683,16.285158257735404
+OrderDirection dir,#309,16.262048410814863
+T previous = val[0];#311,16.246791712443034
+final double a3, final double b3) {#976,16.219105384967946
+final OrderDirection dir,#676,16.054770004458543
+DimensionMismatchException {#679,16.040482657296316
+int startIndex,#73,16.0184063911438
+private MathArrays() {}#52,16.01115427017212
+prodLowSum += prodLow;#841,15.952850642957186
+final int yListLen = yList.length;#686,15.935419735155607
+public static enum OrderDirection {#292,15.84073630246249
+throws DimensionMismatchException, NullArgumentException {#654,15.795959520339967
+throw new NoDataException();#1402,15.49647798036274
+NoDataException {#1394,15.33128023147583
+sHighPrev = sHighCur;#857,14.994713973999023

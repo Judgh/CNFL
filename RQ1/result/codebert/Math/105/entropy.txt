@@ -1,0 +1,92 @@
+public double getSumSquaredErrors() {#263,15.129005977085658
+public double getSlopeConfidenceInterval() throws MathException {#416,14.498588429556953
+public double getIntercept() {#204,14.452438787980514
+public double getRegressionSumSquares() {#300,14.379995891026088
+public double getSlopeConfidenceInterval(double alpha)#451,14.304864154142493
+public double getTotalSumSquares() {#277,14.25149338061993
+public double getInterceptStdErr() {#374,14.046601231892904
+private double getRegressionSumSquares(double slope) {#506,13.975896218243767
+private double getIntercept(double slope) {#496,13.966998781476702
+public double getSlope() {#224,13.953784249045633
+public double getSlopeStdErr() {#389,13.86594181060791
+public double getSignificance() throws MathException {#481,13.857567596435548
+public double getMeanSquareError() {#314,13.823604877178486
+return (ssto - getSumSquaredErrors()) / ssto;#360,13.718335206692036
+public SimpleRegression() {#88,13.597788906097412
+public class SimpleRegression implements Serializable {#54,13.5257173538208
+public void addData(double x, double y) {#105,13.473976075649261
+private double ybar = 0;#81,13.439921812577682
+private static final long serialVersionUID = -3004689053607543335L;#57,13.29573392868042
+public long getN() {#162,13.294520473480224
+return getSumSquaredErrors() / (double) (n - 2);#318,13.289464435577393
+public double getRSquare() {#358,13.258375565210978
+private TDistribution getTDistribution() {#516,13.244544574192592
+double ssto = getTotalSumSquares();#359,13.233345483478747
+private long n = 0;#75,13.10648136138916
+public double predict(double x) {#183,13.072463274002075
+return 2d* (1.0 - getTDistribution().cumulativeProbability(#482,13.053843361990792
+if (Math.abs(sumXX) < 10 * Double.MIN_VALUE) {#228,13.022187798111528
+private double sumYY = 0d;#69,13.019788344701132
+return getRegressionSumSquares(getSlope());#301,12.99089069366455
+private double xbar = 0;#78,12.912398685108531
+private double sumY = 0d;#66,12.871140877405802
+return DistributionFactory.newInstance().createTDistribution(n - 2);#517,12.842536846796671
+getTDistribution().inverseCumulativeProbability(1d - alpha / 2d);#457,12.839285093195299
+return Math.sqrt(getMeanSquareError() / sumXX);#390,12.801135659217834
+double result = Math.sqrt(getRSquare());#337,12.674357414245605
+private double sumXX = 0d;#63,12.598956187566122
+public double getR() {#335,12.51719765663147
+return getIntercept(getSlope());#205,12.442889718448415
+getMeanSquareError() * ((1d / (double) n) + (xbar * xbar) / sumXX));#376,12.42633559703827
+Math.abs(getSlope()) / getSlopeStdErr()));#483,12.413935109188682
+private double sumX = 0d;#60,12.411121845245361
+public void clear() {#148,12.38453616036309
+public void addData(double[][] data) {#139,12.293042182922363
+double b1 = getSlope();#336,12.28583088517189
+double dy = y - ybar;#111,12.177838468551636
+private double sumXY = 0d;#72,12.172988812128702
+sumY += y;#119,12.149490869962252
+for (int i = 0; i < data.length; i++) {#140,12.04802413781484
+sumYY += dy * dy * (double) n / (double) (n + 1.0);#113,11.918934485491585
+if (alpha >= 1 || alpha <= 0) {#453,11.916697251169305
+return (sumY - slope * sumX) / ((double) n);#497,11.712002714474997
+sumXX += dx * dx * (double) n / (double) (n + 1.0);#112,11.704129078808952
+return Math.sqrt(#375,11.68126630783081
+return Double.NaN; //not enough variation in x#229,11.647592147191366
+sumXY += dx * dy * (double) n / (double) (n + 1.0);#114,11.641033228705911
+double dx = x - xbar;#110,11.629963541030884
+return getSlopeStdErr() *#456,11.625008980433146
+return getSlopeConfidenceInterval(0.05d);#417,11.564629728143865
+ybar += dy / (double) (n + 1.0);#116,11.563040556731048
+sumX += x;#118,11.555772634652945
+double b1 = getSlope();#184,11.48388284444809
+if (n < 2) {#225,11.462764390309651
+if (n == 0) {#106,11.382412242889405
+ybar = y;#108,11.3532855089973
+return sumXY / sumXX;#231,11.339550018310547
+if (n < 2) {#278,11.309171549479167
+sumY = 0d;#151,11.296119758061
+sumXX = 0d;#150,11.22225911276681
+throws MathException {#452,11.217816352844238
+return getIntercept(b1) + b1 * x;#185,11.209531393918125
+sumYY = 0d;#152,11.208895887647357
+xbar += dx / (double) (n + 1.0);#115,11.130930794609917
+throw new IllegalArgumentException();#454,11.125527532477127
+addData(data[i][0], data[i][1]);#141,11.119235515594482
+if (n < 3) {#315,11.098511441548665
+return sumYY - sumXY * sumXY / sumXX;#264,11.043701103755406
+sumX = 0d;#149,11.020523411887032
+if (b1 < 0) {#338,10.977658331394196
+xbar = x;#107,10.794453817255357
+return sumYY;#281,10.684395670890808
+return slope * slope * sumXX;#507,10.681392580270767
+n++;#120,10.629417037963867
+return Double.NaN; //not enough data#226,10.517994735551918
+sumXY = 0d;#153,10.422887291227068
+n = 0;#154,10.409809708595276
+return result;#341,10.06041058627042
+super();#89,10.017623281478881
+return n;#163,9.874196659434926
+return Double.NaN;#279,9.633739127053154
+return Double.NaN;#316,9.552320851220024
+result = -result;#339,9.318261258742389

@@ -1,0 +1,51 @@
+public class NormalDistributionImpl extends AbstractContinuousDistribution#32,17.50262485231672
+private static final long serialVersionUID = 8589540077390120676L;#36,17.071466570315152
+public NormalDistributionImpl(double mean, double sd){#49,16.824474155902863
+return Double.NEGATIVE_INFINITY;#130,16.631852108499277
+return Double.POSITIVE_INFINITY;#133,16.62072451218315
+private double standardDeviation = 1;#42,16.610429922739666
+public NormalDistributionImpl(){#59,16.48367099761963
+public double getStandardDeviation() {#83,16.45911208788554
+protected double getInitialDomain(double p) {#188,16.44620963505336
+return 0.5 * (1.0 + Erf.erf((x - mean) /#109,16.409079869588215
+standardDeviation = sd;#97,16.40095697130476
+ret = getMean() + getStandardDeviation();#194,16.308462619781494
+ret = getMean() - getStandardDeviation();#192,16.205547094345093
+protected double getDomainUpperBound(double p) {#168,16.06254470348358
+return ret;#199,16.036940574645996
+"Standard deviation must be positive.");#95,15.89527686436971
+protected double getDomainLowerBound(double p) {#147,15.88601271311442
+return standardDeviation;#84,15.855547024653507
+return ret;#177,15.818678855895996
+this.mean = mean;#76,15.773274081093925
+private double mean = 0;#39,15.773219013214112
+public double inverseCumulativeProbability(final double p)#127,15.76222374564723
+public void setStandardDeviation(double sd) {#92,15.709174092610677
+return ret;#156,15.695280942049893
+if (p < .5) {#191,15.605988919734955
+double ret;#189,15.531075130809437
+implements NormalDistribution, Serializable {#33,15.530750930309296
+ret = getMean();#196,15.530676682790121
+if (p == 0) {#129,15.429432360331218
+if (p == 1) {#132,15.39781494140625
+return mean;#68,15.37185304815119
+if (p < .5) {#150,15.349580347537994
+ret = -Double.MAX_VALUE;#151,15.31348214830671
+ret = Double.MAX_VALUE;#174,15.251351737976075
+setStandardDeviation(sd);#52,15.247113990783692
+return super.inverseCumulativeProbability(p);#135,15.236533121629195
+if (p < .5) {#171,15.222920060157776
+ret = getMean();#153,15.122518645392525
+public double cumulativeProbability(double x) throws MathException {#108,15.117056157853868
+this(0.0, 1.0);#60,15.110431088341606
+double ret;#169,15.097840309143066
+if (sd <= 0.0) {#93,15.058011279386633
+double ret;#148,14.940105178139426
+ret = getMean();#172,14.897379239400228
+(standardDeviation * Math.sqrt(2.0))));#110,14.877143887111119
+public double getMean() {#67,14.738950122486461
+public void setMean(double mean) {#75,14.677237033843994
+setMean(mean);#51,14.64834213256836
+throws MathException {#128,14.538763642311096
+throw new IllegalArgumentException(#94,14.30746038336503
+super();#50,13.925983333587647

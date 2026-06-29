@@ -1,0 +1,179 @@
+private final String sourceName;#86,19.7758926153183
+public String getReferenceName() {#151,19.664249632093643
+String toStringHelper(boolean forAnnotations) {#156,19.489652701786586
+ErrorReporter t, boolean ignoreForwardReferencedTypes) {#331,19.333046245574952
+private final String propertyName;#379,19.21324768066406
+String sourceName, int lineno, int charno) {#104,19.212055055718672
+private final String reference;#85,19.11094093322754
+if (!isForwardDeclared && registry.isLastGeneration()) {#336,19.09472029549735
+void commit(ObjectType target) {#395,19.071465810139973
+public int hashCode() {#176,19.06739354133606
+public boolean hasReferenceName() {#161,18.92795075310601
+private void finishPropertyContinuations() {#133,18.865274238586426
+String propertyName,#385,18.830270926157635
+boolean isForwardDeclared =#333,18.8160293896993
+if (referencedType instanceof EnumElementType &&#322,18.76885986328125
+private final boolean inferred;#381,18.766166898939346
+@Override#160,18.71035122871399
+@Override#150,18.602047443389893
+for (int i = 1; i < componentNames.length; i++) {#289,18.581941922505695
+class NamedType extends ProxyObjectType {#82,18.55058330959744
+resolveViaProperties(t, enclosing);#201,18.550574575151717
+this.sourceName = sourceName;#109,18.5503777662913
+@Override#165,18.543473720550537
+for (PropertyContinuation c : propertyContinuations) {#137,18.54252686500549
+@Override#155,18.502843618392944
+sourceName, lineno, charno);#316,18.50170348672306
+ObjectType referencedObjType = getReferencedObjTypeInternal();#134,18.475665198432075
+if (referencedObjType != null && !referencedObjType.isUnknownType()) {#135,18.47015164448665
+public JSType getReferencedType() {#146,18.465502959031326
+@Override#170,18.43775486946106
+NamedType(JSTypeRegistry registry, String reference,#103,18.437078348795573
+private final JSType type;#380,18.433920860290527
+return registry.isLastGeneration() ?#210,18.37164988884559
+(value.isConstructor() || value.isInterface())) {#238,18.35966852436895
+if (componentNames[0].length() == 0) {#269,18.35135538437787
+private static final long serialVersionUID = 1L;#83,18.33410908625676
+if (componentNames[i].length() == 0) {#294,18.324896511278656
+ignoreForwardReferencedTypes &&#334,18.305776652167825
+this.reference = reference;#108,18.297348403930663
+JSType value = lookupViaProperties(t, enclosing);#235,18.28701737052516
+registry.isForwardDeclaredType(reference);#335,18.286877870559692
+if (propertyContinuations != null) {#136,18.278643480936687
+boolean inferred,#387,18.27404603091153
+return registry.isLastGeneration() ?#197,18.26019770304362
+private PropertyContinuation(#384,18.256072786119248
+ErrorReporter t, StaticScope<JSType> enclosing) {#219,18.23828835920854
+JSTypeNative.NO_OBJECT_TYPE).getInstanceType(), t, enclosing);#245,18.231814547947476
+functionType.getInstanceType(), t, enclosing);#241,18.21771426634355
+if (type != null) {#221,18.216529412703082
+return reference;#152,18.215329033987864
+boolean resolved = resolveViaRegistry(t, enclosing);#189,18.212672850664923
+return null;#361,18.18881266457694
+private static final class PropertyContinuation {#378,18.184053039550783
+if (slotType == null || slotType.isAllType() || slotType.isNoType()) {#280,18.180670031794794
+JSType type,#386,18.175635484548714
+if (resolved) {#194,18.164904499053954
+this.charno = charno;#111,18.146324157714844
+if (registry.isLastGeneration() && validator != null) {#344,18.14371120452881
+if (validator != null) {#304,18.129668474197388
+StaticScope<JSType> enclosing) {#303,18.12767438327565
+private List<PropertyContinuation> propertyContinuations = null;#98,18.124697558085124
+private final int charno;#88,18.09501075744629
+private JSType lookupViaProperties( ErrorReporter t,#266,18.08509600162506
+String[] componentNames = reference.split("\\.", -1);#268,18.08290370305379
+@Override#175,18.082363843917847
+((EnumType) value).getElementsType(), t, enclosing);#248,18.068070906179923
+private Predicate<JSType> validator;#93,18.054968687204216
+return reference;#157,18.046489715576172
+sourceName, lineno, charno);#338,18.03408295767648
+this.type = type;#390,18.01828424135844
+if (type != null) {#357,18.00901768424294
+public boolean isNominalType() {#171,18.008488048206676
+if (isResolved()) {#207,18.004570960998535
+if (value != null && value.isFunctionType() &&#237,17.986994294559253
+JSType resolveInternal(ErrorReporter t, StaticScope<JSType> enclosing) {#184,17.978534022967022
+this.inferred = inferred;#391,17.977583445035496
+return true;#167,17.970981189182826
+propertyName, type, inferred, propertyNode));#125,17.97001286347707
+this.lineno = lineno;#110,17.944047451019287
+return true;#162,17.935232979910715
+if (this.isResolved()) {#369,17.929419150719276
+finishPropertyContinuations();#208,17.914118419994008
+return reference.hashCode();#177,17.913916397094727
+if (propertyContinuations == null) {#120,17.91065355936686
+setReferencedType(#340,17.89647810799735
+boolean defineProperty(String propertyName, JSType type,#115,17.88385124206543
+public boolean setValidator(Predicate<JSType> validator) {#365,17.86301171152215
+StaticScope<JSType> enclosing) {#234,17.845416353103964
+((EnumElementType) referencedType).getPrimitiveType() == this) {#323,17.842232594123253
+Node propertyNode) {#388,17.830719287578876
+finishPropertyContinuations();#196,17.812797459689055
+@Override#364,17.775556802749634
+@Override#183,17.772902488708496
+if (value == null) {#284,17.76684787056663
+this.propertyName = propertyName;#389,17.76596130643572
+private boolean resolveViaRegistry(#218,17.742527431911892
+if (registry.isLastGeneration()) {#332,17.729402287801108
+if (slot == null) {#273,17.72549993341619
+getReferencedType() : this;#198,17.71940140975149
+return true;#172,17.71378285544259
+StaticScope<JSType> enclosing) {#267,17.710477380191577
+propertyName, type, inferred, propertyNode);#129,17.705216503143312
+t.warning("Bad type annotation. Unknown type " + reference,#337,17.669322230599143
+private void handleTypeCycle(ErrorReporter t) {#312,17.66580130259196
+getReferencedType() : this;#211,17.665033677045038
+if (!isResolved()) {#117,17.644785274158824
+return getReferencedTypeInternal();#147,17.58678913116455
+propertyName, type, inferred, propertyNode);#397,17.577510786056518
+propertyContinuations = null;#142,17.563836288452148
+return null;#270,17.545409944322373
+return super.defineProperty(#128,17.525766531626385
+t.warning("Cycle detected in inheritance chain of type " + reference,#315,17.49715127944946
+setReferencedType(type);#307,17.481582403182983
+if (parentClass == null) {#291,17.47869348526001
+private final int lineno;#87,17.47171151638031
+JSType referencedType = getReferencedType();#321,17.446196675300598
+return null;#274,17.433596822950577
+private void setReferencedAndResolvedType(JSType type, ErrorReporter t,#302,17.428538239520527
+boolean inferred, Node propertyNode) {#116,17.395729133061
+if (detectImplicitPrototypeCycle()) {#202,17.345276415348053
+private void resolveViaProperties(ErrorReporter t,#233,17.31340060915266
+if (detectImplicitPrototypeCycle()) {#190,17.311068058013916
+registry.getNativeObjectType(JSTypeNative.UNKNOWN_TYPE));#314,17.30672290802002
+super(registry, registry.getNativeObjectType(JSTypeNative.UNKNOWN_TYPE));#105,17.30207633972168
+setReferencedType(#313,17.294690227508546
+private final Node propertyNode;#382,17.27450351715088
+setReferencedAndResolvedType(#243,17.237461598714194
+JSType getTypedefType(ErrorReporter t, StaticSlot<JSType> slot, String name) {#355,17.231980093594256
+return null;#281,17.223363452487522
+@Override#114,17.2216854095459
+this.validator = validator;#372,17.21939311708723
+setReferencedAndResolvedType(type, t, enclosing);#222,17.21925826506181
+boolean isNamedType() {#166,17.210920757717556
+return null;#285,17.200092209710014
+StaticSlot<JSType> slot = enclosing.getSlot(componentNames[0]);#272,17.160033464431763
+propertyContinuations = Lists.newArrayList();#121,17.145191563500298
+setResolvedTypeInternal(getReferencedType());#349,17.11975950664944
+JSType value = getTypedefType(t, slot, componentNames[0]);#283,17.093078931172688
+super.resolveInternal(t, enclosing);#195,17.08112060322481
+handleUnresolvedType(t, true);#360,17.034732001168386
+return false;#225,17.028285843985422
+super.resolveInternal(t, enclosing);#206,17.002848434448243
+return super.setValidator(validator);#370,16.968311190605164
+c.commit(this);#138,16.95287948846817
+FunctionType functionType = value.toMaybeFunctionType();#239,16.942833052741157
+setReferencedAndResolvedType(#247,16.905280176798502
+private void checkEnumElementCycle(ErrorReporter t) {#320,16.901960260727826
+ObjectType parentClass = ObjectType.cast(value);#290,16.893142223358154
+value = parentClass.getPropertyType(componentNames[i]);#297,16.891410493850707
+private void handleUnresolvedType(#330,16.869082260131837
+new PropertyContinuation(#124,16.86773961385091
+handleUnresolvedType(t, value == null || value.isUnknownType());#256,16.831732193628948
+return value;#299,16.831631796700613
+setResolvedTypeInternal(getReferencedType());#309,16.80057317018509
+JSType type = registry.getType(reference);#220,16.79976260662079
+JSTypeNative.NO_RESOLVED_TYPE));#342,16.79761489232381
+return true;#126,16.78443823920356
+setReferencedAndResolvedType(#240,16.751565361022948
+return true;#373,16.750439431932236
+Preconditions.checkNotNull(reference);#107,16.732971259525844
+JSType slotType = slot.getType();#279,16.71817226409912
+propertyContinuations.add(#123,16.71155858039856
+return null;#295,16.699630650607023
+setResolvedTypeInternal(getReferencedType());#317,16.59881180524826
+target.defineProperty(#396,16.597799214449797
+return null;#292,16.541475035927512
+handleTypeCycle(t);#324,16.499682866610012
+registry.getNativeFunctionType(#244,16.49704086079317
+registry.getNativeObjectType(#341,16.44565627449437
+handleTypeCycle(t);#191,16.440849744356594
+handleTypeCycle(t);#203,16.423109934880184
+checkEnumElementCycle(t);#308,16.35504781282865
+JSType type = slot.getType();#356,16.318202359335764
+this.propertyNode = propertyNode;#392,16.30797665459769
+return true;#223,16.290812280442978
+return type;#358,16.245687272813583
+validator.apply(getReferencedType());#345,16.15416653951009
+setResolvedTypeInternal(this);#351,16.111909253256663
+validator.apply(type);#305,16.028485444875862

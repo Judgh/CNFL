@@ -1,0 +1,197 @@
+public String toString() {#300,20.464664697647095
+public synchronized String getCode() throws IOException {#433,20.381830624171666
+public synchronized String getCode() throws IOException {#387,20.327631541660853
+String originalPath, String code) {#325,20.09184796469552
+public String getLine(int lineNumber) {#205,20.019577582677204
+String getCodeNoCache() {#151,19.916017320421005
+private String code = null;#77,19.779852390289307
+public String getName() {#182,19.747655868530273
+public String getCode() throws IOException {#139,19.744823109019887
+if (lineNumber >= lastLine) {#221,19.708484796377327
+lastLine = lineNumber;#236,19.692607402801514
+if (lineNumber >= endLine) {#283,19.659568273104153
+throws IOException {#330,19.627580833435058
+Preloaded(String fileName, String originalPath, String code) {#365,19.511647876940277
+private void setCode(String sourceCode) {#155,19.49741506576538
+public Reader getCodeReader() throws IOException {#447,19.43614455631801
+Preloaded(String fileName, String code) {#361,19.414158439636232
+public Reader getCodeReader() throws IOException {#146,19.367167711257935
+throws IOException {#342,19.33660888671875
+private String originalPath = null;#66,19.321053822835285
+boolean hasSourceInMemory() {#176,19.264605628119575
+public static SourceFile fromCode(String fileName, String code) {#320,19.223089442533606
+if (hasSourceInMemory()) {#448,19.208671501704625
+private int lastLine;#75,19.198563030787877
+public String getOriginalPath() {#159,19.151715172661675
+public String getCode();#49,19.058728006150986
+if (c != null) {#421,18.84859422536997
+String js = "";#206,18.843831380208332
+@VisibleForTesting#150,18.81411566053118
+private final String fileName;#58,18.810064792633057
+String js = "";#258,18.8018864525689
+int endLine = startLine;#275,18.797820004549894
+if (js.indexOf('\n', pos) == -1) {#238,18.75153977530343
+int startLine = 1;#217,18.749715995788574
+int nextpos = js.indexOf('\n', pos);#227,18.72551679611206
+String originalPath, InputStream s) throws IOException {#336,18.66997792985704
+int nextpos = js.indexOf('\n', pos);#268,18.667698621749878
+for (int n = startLine; n < lineNumber; n++) {#226,18.661260747909544
+public Charset getCharset() {#479,18.62852484839303
+try {#259,18.62499745686849
+public void setCharset(Charset c) {#469,18.599629346062155
+if (cachedCode == null) {#436,18.578238169352215
+private static final long serialVersionUID = 1L;#377,18.567913055419922
+public class SourceFile implements StaticSourceFile, Serializable {#42,18.55951762199402
+@Override#446,18.542330900828045
+Generated(String fileName, Generator generator) {#381,18.53585764567057
+public SourceFile(String fileName) {#86,18.52389040860263
+public static SourceFile fromReader(String fileName, Reader r)#341,18.52193570137024
+return new StringReader(getCode());#147,18.49385356903076
+private final Generator generator;#378,18.487015300326878
+String cachedCode = super.getCode();#434,18.473735109965006
+try {#207,18.472154935201008
+private static final long serialVersionUID = 1L;#359,18.458948961893718
+String cachedCode = super.getCode();#388,18.452700106302895
+private static final long serialVersionUID = 1L;#411,18.451643435160317
+private static final long serialVersionUID = 1L;#43,18.442144027123085
+@Override#299,18.410842180252075
+int pos = 0;#216,18.409101486206055
+private final File file;#412,18.407704671223957
+Generator generator) {#347,18.40073757171631
+int pos = 0;#264,18.389834509955513
+if (end == -1) {#286,18.38593928019206
+end = js.indexOf('\n', end);#277,18.375066333346897
+if (cachedCode == null) {#390,18.366054471333822
+return code != null;#177,18.361819903055828
+OnDisk(File file, Charset c) {#419,18.32750105857849
+@Override#458,18.27952257792155
+public void clearCachedSource() {#459,18.27800504366557
+@Override#187,18.268266677856445
+if (js.charAt(last) == '\n') {#288,18.247304734729585
+public static SourceFile fromFile(String fileName, Charset c) {#304,18.236323005274723
+if (nextpos == -1) {#269,18.223426183064777
+if (end == -1) {#278,18.213809081486293
+@Override#181,18.20568609237671
+int last = js.length() - 1;#287,18.190997898578644
+@Override#96,18.180559635162354
+if (nextpos == -1) {#228,18.164199574788412
+@Override#386,18.157067616780598
+startLine = lastLine;#223,18.145360946655273
+for (int n = 1; n < startLine; n++) {#267,18.136202260067588
+int getNumLines() {#110,18.135761260986328
+public int getLineOffset(int lineno) {#97,18.133875406705418
+for (int ii = 1; ii < sourceLines.length; ++ii) {#121,18.131187286376953
+return js.substring(pos, js.indexOf('\n', pos));#244,18.125827471415203
+public boolean isExtern() {#188,18.11619038052029
+@Override#432,18.103188196818035
+@Override#399,18.09487533569336
+return new SimpleRegion(startLine, endLine, js.substring(pos, end));#295,18.08763625071599
+if (fileName == null || fileName.isEmpty()) {#87,18.087004396650528
+for (int n = 0; n < SOURCE_EXCERPT_REGION_LENGTH; n++, endLine++) {#276,18.084412771112778
+String[] sourceLines = getCode().split("\n");#119,18.077243089675903
+"Expected line number between 1 and " + lineOffsets.length +#103,18.068858733543983
+public void setOriginalPath(String originalPath) {#163,18.06849897824801
+this.originalPath = originalPath;#164,18.068142731984455
+public static SourceFile fromFile(String fileName) {#308,18.054773126329696
+return code;#140,18.01556818825858
+OnDisk(File file) {#427,17.999629107388582
+pos = lastOffset;#222,17.999287605285645
+throw new IllegalArgumentException("a source must have a name");#88,17.99721360206604
+public void clearCachedSource() {#400,17.991546630859375
+return Charset.forName(inputCharset);#480,17.98244401028282
+lastOffset = pos;#235,17.957732094658745
+try {#118,17.947008450826008
+js = getCode();#260,17.932925050908867
+int end = pos;#274,17.923492643568252
+public static SourceFile fromFile(File file, Charset c) {#312,17.914135879940456
+this.lastLine = 1;#93,17.900976527820934
+pos = nextpos + 1;#272,17.889452860905575
+throw new IllegalArgumentException(#102,17.87126929943378
+return code;#152,17.870616912841797
+js = getCode();#211,17.849429910833184
+if (lineOffsets == null) {#111,17.846877171443058
+private void findLineOffsets() {#117,17.83605031967163
+pos = nextpos + 1;#231,17.81960971538837
+public void clearCachedSource() {#171,17.817244815826417
+code = sourceCode;#156,17.816486252678764
+static class Preloaded extends SourceFile {#358,17.810027027130126
+static class Generated extends SourceFile {#376,17.807783126831055
+return cachedCode;#440,17.796967029571533
+if (lineOffsets == null) {#98,17.758709760812614
+return originalPath != null ? originalPath : fileName;#160,17.758672952651978
+static class OnDisk extends SourceFile {#410,17.754148864746092
+private static final int SOURCE_EXCERPT_REGION_LENGTH = 5;#56,17.752377380024303
+return new Preloaded(fileName, originalPath, code);#326,17.737479602589328
+return new SimpleRegion(startLine, endLine, js.substring(pos));#292,17.730031893803524
+return fromFile(new File(fileName), c);#305,17.697293162345886
+super.setOriginalPath(originalPath);#367,17.69063243865967
+return fileName;#183,17.676455855369568
+public Region getRegion(int lineNumber) {#257,17.66655683517456
+return lineOffsets[lineno - 1];#106,17.661118234906876
+lineNumber - (SOURCE_EXCERPT_REGION_LENGTH + 1) / 2 + 1);#266,17.63385146856308
+private int lastOffset;#74,17.62106786455427
+return fromCode(fileName,#331,17.616877209056508
+return new Preloaded(fileName, code);#321,17.60811471939087
+this.generator = generator;#383,17.53420213552622
+lineOffsets[0] = 0;#127,17.51316680908203
+return null;#284,17.510296715630425
+super(fileName);#382,17.47393087907271
+inputCharset = c.name();#470,17.470750681559245
+super(fileName);#366,17.456810084256258
+lineOffsets[ii - 1] + sourceLines[ii - 1].length() + 1;#123,17.454967554877786
+return cachedCode;#394,17.43434886932373
+public static SourceFile fromFile(File file) {#316,17.409449063814602
+void setIsExtern(boolean newVal) {#193,17.398618630000524
+return fromFile(new File(fileName));#309,17.395708288465226
+public static SourceFile fromCode(String fileName,#324,17.38285732269287
+protected String inputCharset = Charsets.UTF_8.name();#417,17.382473264421737
+public static SourceFile fromGenerator(String fileName,#346,17.374014105115617
+return new OnDisk(file, c);#313,17.372781240023098
+new SimpleRegion(startLine, endLine, js.substring(pos, last));#290,17.35123788156817
+return fromCode(fileName, originalPath,#337,17.341919830867223
+if (lineno < 1 || lineno > lineOffsets.length) {#101,17.33892667861212
+super.setCode(null);#460,17.32342705359826
+public static SourceFile fromInputStream(String fileName, InputStream s)#329,17.30330122841729
+private boolean isExternFile = false;#59,17.27802701429887
+lineOffsets = new int[sourceLines.length];#120,17.243104031211452
+this.lastOffset = 0;#92,17.23951634493741
+return null;#262,17.235489315456814
+this(file);#420,17.218922233581544
+return isExternFile;#189,17.21566047668457
+return fromCode(fileName, CharStreams.toString(r));#343,17.187222385406493
+return null;#213,17.173848364088272
+super.setCode(null);#401,17.13563743004432
+private int[] lineOffsets = null;#69,17.102487217296254
+int startLine = Math.max(1,#265,17.079957212720597
+super.setCode(code);#368,17.04486421438364
+return fileName;#301,17.0446674823761
+this.setCharset(c);#422,17.0138095406925
+return super.getCodeReader();#449,17.009662691752116
+this(fileName, fileName, code);#362,17.008186995983124
+public static SourceFile fromInputStream(String fileName,#335,17.001612527029856
+end++;#281,16.997496247291565
+super(file.getPath());#428,16.993354137127216
+return new Generated(fileName, generator);#348,16.971293653760636
+"\nActual: " + lineno);#104,16.93123860359192
+super.setCode(cachedCode);#438,16.91646603976979
+return lineOffsets.length;#114,16.80813676660711
+this.fileName = fileName;#90,16.798484643300373
+return new FileReader(file);#452,16.72576001485189
+return new OnDisk(file);#317,16.676474571228027
+CharStreams.toString(new InputStreamReader(s, Charsets.UTF_8)));#332,16.67095184326172
+return#289,16.638041284349228
+CharStreams.toString(new InputStreamReader(s, Charsets.UTF_8)));#338,16.63272165483044
+public interface Generator {#48,16.625712235768635
+lineOffsets[ii] =#122,16.6148930867513
+lineOffsets = new int[1];#126,16.60563398996989
+super.setCode(cachedCode);#392,16.603071212768555
+this.file = file;#429,16.581973155339558
+findLineOffsets();#112,16.574967644431375
+cachedCode = Files.toString(file, this.getCharset());#437,16.44232521057129
+isExternFile = newVal;#194,16.431475559870403
+cachedCode = generator.getCode();#391,16.399081468582153
+findLineOffsets();#99,16.257941419428047
+return null;#229,16.085142048922453
+return null;#242,15.963482509959828
+break;#279,15.842684650421143
+break;#270,15.65457820892334

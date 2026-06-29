@@ -1,0 +1,227 @@
+PathIterator iterator2 = p1.getPathIterator(null);#275,19.665758696469393
+if (shape instanceof Cloneable) {#103,19.560455322265625
+PathIterator iterator1 = p1.getPathIterator(null);#274,19.560058203610506
+public static Shape clone(Shape shape) {#102,19.52514824500451
+public static Shape createUpTriangle(float s) {#467,19.481004536151886
+public static Shape createLineRegion(Line2D line, float width) {#502,19.348140478134155
+public static Shape createDownTriangle(float s) {#483,19.1922670006752
+else if (s1 instanceof GeneralPath && s2 instanceof GeneralPath) {#140,19.118114104637733
+public static Shape createDiagonalCross(float l, float t) {#399,19.030301244635332
+float y1 = (float) line.getY1();#506,19.021289008004324
+GeneralPath result = new GeneralPath();#503,19.018406808376312
+private ShapeUtilities() {#84,18.95089111328125
+float y2 = (float) line.getY2();#507,18.93968409583682
+if (shape == null) {#334,18.933798917134602
+if ((x2 - x1) != 0.0) {#508,18.911688457835805
+return ((x >= x0) && (y >= y0)#569,18.872967850078236
+float dy = (float) Math.cos(theta) * width;#511,18.842025314058578
+float dx = (float) Math.sin(theta) * width;#510,18.8292647089277
+if (shape == null) {#310,18.77319819132487
+if (iterator1.isDone() != iterator2.isDone()) {#280,18.754897356033325
+double y0 = rect1.getY();#588,18.735113322734833
+if (p1 == null) {#237,18.69281816482544
+if (p2 == null) {#240,18.6801655292511
+double y0 = rect1.getY();#563,18.67024252149794
+public static Shape createRegularCross(float l, float t) {#425,18.668211301167805
+double theta = Math.atan((y2 - y1) / (x2 - x1));#509,18.66117872911341
+if (p2 == null) {#268,18.648394286632538
+float x1 = (float) line.getX1();#504,18.641676221575057
+if (a1 == null) {#206,18.63718092441559
+double y = rect2.getY();#565,18.61949292351218
+if (p1 == null) {#265,18.61375069618225
+public static Shape createTranslatedShape(Shape shape,#330,18.602885437011718
+boolean done = iterator1.isDone() && iterator2.isDone();#278,18.59238851070404
+public static Shape createDiamond(float s) {#450,18.588684150150844
+else {#518,18.579055786132812
+double y = rect2.getY();#592,18.53296445210775
+if (a2 == null) {#209,18.521788775920868
+throw new IllegalArgumentException("Null 'shape' argument.");#335,18.508196573991043
+public static boolean equal(Shape s1, Shape s2) {#127,18.492566214667427
+else if (s1 instanceof Ellipse2D && s2 instanceof Ellipse2D) {#131,18.489305764436722
+GeneralPath p0 = new GeneralPath();#400,18.476232192095587
+else {#143,18.474331283569335
+public static Shape createTranslatedShape(Shape shape,#307,18.46606362660726
+public static boolean equal(GeneralPath p1, GeneralPath p2) {#264,18.465704107284544
+p0.lineTo(0.0f, -t * SQRT2);#403,18.45906114578247
+double locationY) {#333,18.442880798788632
+float x2 = (float) line.getX2();#505,18.437680971054803
+if (e2 == null) {#187,18.39644980430603
+p0.lineTo(0.0f, t * SQRT2);#409,18.395582160949708
+if (s1 instanceof Line2D && s2 instanceof Line2D) {#128,18.38696511586507
+if (a1.getAngleExtent() != a2.getAngleExtent()) {#218,18.383528741200767
+p0.lineTo(-t, t);#428,18.379836400349934
+if (e1 == null) {#184,18.374526262283325
+else if (s1 instanceof Polygon && s2 instanceof Polygon) {#137,18.37181230691763
+p0.lineTo(-t * SQRT2, 0.0f);#412,18.349933624267578
+double[] d1 = new double[6];#276,18.348384380340576
+p0.lineTo(-t, -l);#436,18.340617731997842
+if (l2 == null) {#162,18.33397674560547
+if (l1 == null) {#159,18.321268916130066
+result.moveTo(x1 - width / 2.0f, y1);#520,18.319422403971355
+GeneralPath p0 = new GeneralPath();#426,18.31244446249569
+p0.lineTo(-t, -t);#437,18.296022415161133
+double x0 = rect1.getX();#562,18.286070399814182
+return result;#111,18.280882141806863
+p0.moveTo(0.0f, -s);#469,18.270686929876153
+int seg1 = iterator1.currentSegment(d1);#283,18.265222196225768
+double transY) {#309,18.252864744149
+if (a1.getAngleStart() != a2.getAngleStart()) {#215,18.25218197277614
+while (!done) {#279,18.24551597008338
+if (!a1.getFrame().equals(a2.getFrame())) {#212,18.239388642487704
+double[] d2 = new double[6];#277,18.238900184631348
+p0.lineTo(t, -t);#434,18.231165885925293
+GeneralPath p0 = new GeneralPath();#451,18.22528850331026
+int seg2 = iterator2.currentSegment(d2);#284,18.224165351302535
+if (!e1.getFrame().equals(e2.getFrame())) {#190,18.219777425130207
+if (!Arrays.equals(p1.ypoints, p2.ypoints)) {#249,18.209482192993164
+if (!Arrays.equals(d1, d2)) {#288,18.206882900661892
+p0.lineTo(t * SQRT2, 0.0f);#406,18.19484920501709
+if (seg1 != seg2) {#285,18.178865391275156
+catch (CloneNotSupportedException cnse) {#107,18.162935495376587
+double height = rect2.getHeight();#593,18.151288414001463
+if (!Arrays.equals(p1.xpoints, p2.xpoints)) {#246,18.148054418892695
+if (base == null) {#360,18.1400754292806
+Rectangle2D area) {#543,18.13350547934478
+p0.lineTo(t, t);#431,18.131956418355305
+p0.lineTo(-l - t, l - t);#411,18.131270842118695
+p0.moveTo(0.0f, -s);#452,18.129344073208895
+return equal((GeneralPath) s1, (GeneralPath) s2);#141,18.122358015605382
+p0.moveTo(0.0f, s);#485,18.115880693708146
+p0.moveTo(-l - t, -l + t);#401,18.115301339522652
+if (a1.getArcType() != a2.getArcType()) {#221,18.113623472360466
+Shape result = null;#110,18.091022638174202
+return equal((Ellipse2D) s1, (Ellipse2D) s2);#132,18.088922107920926
+try {#104,18.088879653385707
+p0.lineTo(t, -l);#435,18.07119399622867
+GeneralPath p0 = new GeneralPath();#484,18.069937369402716
+double width = rect2.getWidth();#591,18.068745549519857
+double x0 = rect1.getX();#587,18.06671130657196
+p0.lineTo(-l + t, -l - t);#402,18.0646507014399
+public static boolean intersects(Rectangle2D rect1, Rectangle2D rect2) {#585,18.061656341552734
+iterator1.next();#291,18.060428899877213
+public static boolean contains(Rectangle2D rect1, Rectangle2D rect2) {#560,18.057248155275982
+return (x + width >= x0 && y + height >= y0 && x <= x0 + rect1.getWidth()#594,18.051140149434406
+result.lineTo(x1 + width / 2.0f, y1);#521,18.039669450124105
+p0.moveTo(-l, t);#427,18.03723367055257
+result.closePath();#516,18.035541085635913
+p0.lineTo(-l, -t);#438,18.03349791075054
+p0.lineTo(l, -t);#433,18.031601353695518
+p0.lineTo(l - t, -l - t);#404,18.017322706139606
+p0.lineTo(-s, s);#471,18.016258663601345
+else if (s1 instanceof Arc2D && s2 instanceof Arc2D) {#134,18.00810500553676
+p0.lineTo(-s, 0.0f);#455,18.00338867732457
+if (p1.npoints != p2.npoints) {#243,18.001608102217965
+GeneralPath p0 = new GeneralPath();#468,18.0009370691636
+double w = rect2.getWidth();#566,17.98160407122444
+public static boolean equal(Polygon p1, Polygon p2) {#236,17.979612398147584
+double x = rect2.getX();#590,17.961880493164063
+result.lineTo(x2 + width / 2.0f, y2);#522,17.96083574295044
+result.lineTo(x1 + dx, y1 - dy);#513,17.95221960986102
+private static final float SQRT2 = (float) Math.pow(2.0, 0.5);#389,17.951315811702184
+result.moveTo(x1 - dx, y1 + dy);#512,17.941723223085756
+double h = rect2.getHeight();#567,17.932380844565
+double locationX,#332,17.925302085876464
+throw new IllegalArgumentException("Null 'shape' argument.");#311,17.92514518591074
+p0.lineTo(-t, l);#429,17.918511814541286
+p0.lineTo(s, -s);#486,17.91168664631091
+public static Shape rotateShape(Shape base, double angle,#358,17.907725632190704
+p0.lineTo(-s, -s);#487,17.90313444639507
+p0.lineTo(s, s);#470,17.89477194680108
+RectangleAnchor anchor,#331,17.893433894751208
+throw new IllegalArgumentException("Null 'anchor' argument.");#338,17.891049950211137
+float x, float y) {#359,17.884432016417037
+p0.lineTo(s, 0.0f);#453,17.87348765418643
+return equal((Line2D) s1, (Line2D) s2);#129,17.871675713857016
+p0.lineTo(l, t);#432,17.86705133650038
+AffineTransform rotate = AffineTransform.getRotateInstance(angle, x, y);#363,17.86188748904637
+if (p1.getWindingRule() != p2.getWindingRule()) {#271,17.825903824397496
+double angle, float x, float y) {#378,17.824869441986085
+public static boolean equal(Ellipse2D e1, Ellipse2D e2) {#183,17.823625601254978
+double x = rect2.getX();#564,17.819617664112766
+p0.lineTo(0.0f, s);#454,17.806855428786506
+return result;#526,17.805929444052957
+&& ((x + w) <= (x0 + rect1.getWidth()))#570,17.805104031282312
+result.lineTo(x2 - width / 2.0f, y2);#523,17.79347842534383
+return equal((Polygon) s1, (Polygon) s2);#138,17.788146495819092
+p0.lineTo(-l + t, l + t);#410,17.78692288832231
+p0.lineTo(t, l);#430,17.757976161109077
+p0.lineTo(l + t, -l + t);#405,17.732304863307785
+result.lineTo(x2 + dx, y2 - dy);#514,17.72186929208261
+AffineTransform rotate = AffineTransform.getRotateInstance(angle, x, y);#381,17.701200655528478
+if (!l1.getP1().equals(l2.getP1())) {#165,17.691104494292162
+return result;#365,17.672989671880547
+public class ShapeUtilities {#79,17.664191382271902
+if (!l1.getP2().equals(l2.getP2())) {#168,17.659619035391973
+AffineTransform transform = AffineTransform.getTranslateInstance(#313,17.645870078693736
+if (anchor == null) {#337,17.63658505678177
+double transX,#308,17.58450963973999
+iterator2.next();#292,17.565877465640796
+y = Math.max(area.getMinY(), Math.min(y, area.getMaxY()));#546,17.55190511183305
+p0.lineTo(l - t, l + t);#408,17.54132604598999
+done = iterator1.isDone() && iterator2.isDone();#293,17.502114295959473
+AffineTransform transform = AffineTransform.getTranslateInstance(#342,17.487105282870207
+result.lineTo(x2 - dx, y2 + dy);#515,17.46636062198215
+AffineTransform saved = g2.getTransform();#380,17.466160573457415
+&& ((y + h) <= (y0 + rect1.getHeight())));#571,17.464819172450476
+p0.lineTo(l + t, l - t);#407,17.45628309249878
+transX, transY);#314,17.424321824854072
+p0.closePath();#472,17.366256577628
+p0.closePath();#413,17.358391421181814
+result.closePath();#524,17.356114387512207
+locationX - anchorPoint.getX(), locationY - anchorPoint.getY());#343,17.328911977655746
+public static boolean equal(Line2D l1, Line2D l2) {#158,17.31347313794223
+public static void drawRotatedShape(Graphics2D g2, Shape shape,#377,17.31067180633545
+Point2D anchorPoint = RectangleAnchor.coordinates(shape.getBounds2D(),#340,17.2485868700089
+return true;#295,17.233529004183683
+x = Math.max(area.getMinX(), Math.min(x, area.getMaxX()));#545,17.230878801056832
+p0.closePath();#488,17.201256479535783
+return true;#224,17.19499293240634
+return (p2 == null);#266,17.189438016791094
+return equal((Arc2D) s1, (Arc2D) s2);#135,17.177698167165122
+return true;#193,17.16558690504594
+p0.closePath();#439,17.162087508610316
+p0.closePath();#456,17.15668453489031
+return true;#171,17.091049974614922
+public static boolean equal(Arc2D a1, Arc2D a2) {#205,17.09053473039107
+return (p2 == null);#238,17.069153986479108
+return true;#252,17.06319505518133
+return p0;#473,17.02690013249715
+g2.setTransform(saved);#384,17.020456931170294
+g2.draw(shape);#383,16.999132474263508
+&& y <= y0 + rect1.getHeight());#595,16.99881990139301
+anchor);#341,16.98954243130154
+return (a2 == null);#207,16.962864976180228
+return p0;#414,16.958309253056843
+public static Point2D getPointInRectangle(double x, double y,#542,16.91847583225795
+return p0;#489,16.847373406092327
+return p0;#457,16.820886929829914
+return p0;#440,16.80956268310547
+return transform.createTransformedShape(shape);#344,16.802529176076252
+return (l2 == null);#160,16.765101332413522
+return false;#216,16.721353912353514
+return (Shape) ObjectUtilities.clone(shape);#105,16.703889676502772
+return ObjectUtilities.equal(s1, s2);#145,16.698083000183104
+return false;#241,16.64057102203369
+return false;#269,16.60128682454427
+return false;#210,16.600796381632488
+g2.transform(rotate);#382,16.59501624107361
+Shape result = rotate.createTransformedShape(base);#364,16.585916805267335
+return false;#163,16.54432226816813
+return null;#361,16.53854554494222
+return (e2 == null);#185,16.5269519906295
+return false;#213,16.49875628153483
+return false;#219,16.49846445719401
+return transform.createTransformedShape(shape);#315,16.462131023406982
+return false;#244,16.460939343770345
+return false;#166,16.45790869394938
+return false;#188,16.392200978597007
+return false;#247,16.37241408030192
+return false;#286,16.362785590322392
+return new Point2D.Double(x, y);#547,16.334548568725587
+return false;#272,16.181940905253093
+return false;#222,16.178684425354003
+return false;#289,16.13088412033884
+return false;#169,16.11674149831136
+return false;#250,16.04566567738851
+return false;#281,15.942962044163755
+return false;#191,15.922394879659016

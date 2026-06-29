@@ -1,0 +1,220 @@
+StringBuilder result = new StringBuilder();#373,20.629783868789673
+public boolean matchesNumberContext() {#103,19.380502276950413
+if (otherAlternate.isSubtype(this)) {#283,19.31990232921782
+@Override public String toString() {#372,19.25861511230469
+public boolean matchesStringContext() {#125,19.16675673590766
+public class UnionType extends JSType {#65,18.975385665893555
+public int hashCode() {#315,18.85993242263794
+if (t.matchesNumberContext()) {#106,18.72002011537552
+if (t.matchesStringContext()) {#128,18.705597162246704
+public boolean matchesObjectContext() {#152,18.652646594577366
+for (JSType t : alternates) {#242,18.642630767822265
+if (p.typeB != null) {#450,18.642473578453064
+if (p.typeB != null) {#468,18.63906580209732
+if (p.typeB != null) {#432,18.608649611473083
+for (JSType t : alternates) {#154,18.584992027282716
+@Override#314,18.549804210662842
+for (JSType otherAlternate : ((UnionType) that).alternates) {#282,18.546106071472167
+if (object instanceof UnionType) {#306,18.537498840918907
+for (JSType t : alternates) {#127,18.51902395884196
+if (t.isUnknownType() || !t.isSubtype(type)) {#365,18.51204341888428
+for (JSType t : alternates) {#201,18.49375203450521
+for (JSType t : alternates) {#190,18.442498270670573
+public JSType restrictByNotNullOrUndefined() {#210,18.43790537516276
+for (JSType t : alternates) {#105,18.43068052927653
+UnionTypeBuilder thatRestricted = new UnionTypeBuilder(registry);#462,18.407588757966693
+private static final long serialVersionUID = 1L;#66,18.406932684091423
+for (JSType t : alternates) {#252,18.404413668314614
+if (changed) {#493,18.39316463470459
+if (alternate.isSubtype(that)) {#276,18.386228137546116
+UnionTypeBuilder builder = new UnionTypeBuilder(registry);#274,18.370075281928568
+if (t.matchesObjectContext()) {#155,18.35491371154785
+@Override#89,18.34664297103882
+if (!alternate.isUnknownType() && that.isSubtype(alternate)) {#264,18.3306428364345
+UnionTypeBuilder thatRestricted = new UnionTypeBuilder(registry);#444,18.31033566123561
+for (JSType t : alternates) {#221,18.283388519287108
+UnionTypeBuilder thatRestricted = new UnionTypeBuilder(registry);#426,18.283256580955104
+UnionType(JSTypeRegistry registry, Set<JSType> alternates) {#75,18.261558576063678
+UnionTypeBuilder restricted = new UnionTypeBuilder(registry);#211,18.25590156106388
+for (JSType t : alternates) {#212,18.232220776875813
+public boolean contains(JSType alternate) {#344,18.225885152816772
+for (JSType t : alternates) {#364,18.221357091267905
+if (result != null) {#291,18.197598717429422
+if (t.isUnknownType()) {#253,18.19420312245687
+UnionTypeBuilder thisRestricted = new UnionTypeBuilder(registry);#443,18.181198270697344
+UnionTypeBuilder thisRestricted = new UnionTypeBuilder(registry);#461,18.18016875417609
+@Override#477,18.180063724517822
+public boolean isUnionType() {#320,18.178620868259006
+UnionTypeBuilder restricted = new UnionTypeBuilder(registry);#363,18.173816007726334
+@Override#441,18.172252655029297
+public boolean isUnknownType() {#251,18.158652941385906
+for (JSType type : getAlternates()) {#91,18.154422998428345
+public void forgiveUnknownNames() {#90,18.149349424574112
+@Override#482,18.13621950149536
+@Override#209,18.124865293502808
+UnionTypeBuilder thisRestricted = new UnionTypeBuilder(registry);#425,18.11622755151046
+@Override#240,18.112034797668457
+for (JSType element : alternates) {#445,18.10940017700195
+@Override#319,18.105841159820557
+public <T> T visit(Visitor<T> visitor) {#478,18.104204851038315
+for (JSType element : alternates) {#427,18.099559148152668
+@Override#459,18.097175359725952
+if (result == null) {#223,18.095715082608738
+if (that instanceof UnionType) {#281,18.08805927863488
+if (alternate.isNullType() || alternate.isVoidType()) {#168,18.08250645796458
+@Override#324,18.076464414596558
+public Iterable<JSType> getAlternates() {#85,18.072529856363932
+return true;#321,18.04499135698591
+for (JSType element : alternates) {#404,18.044942474365236
+for (JSType element : alternates) {#463,18.041255950927734
+@Override#423,18.036645889282227
+for (JSType alternate : alternates) {#326,18.033227475484214
+for (JSType element : alternates) {#392,17.994901657104492
+if (p.typeA != null) {#465,17.993404030799866
+public JSType getRestrictedTypeGivenToBooleanOutcome(boolean outcome) {#401,17.983342127366498
+@Override#304,17.979963064193726
+if (p.typeA != null) {#447,17.966812312602997
+@Override#151,17.962267637252808
+@Override#400,17.951627254486084
+@Override#411,17.93461298942566
+@Override#124,17.93279242515564
+if (p.typeA != null) {#429,17.9310941696167
+if (t.isUnknownType()) {#191,17.924618848164876
+for (JSType element : alternates) {#414,17.924404525756835
+result.append(")");#386,17.9166202545166
+@Override#260,17.905948877334595
+@Override#218,17.903863191604614
+public boolean equals(Object object) {#305,17.892880153656005
+Set<JSType> alternates;#68,17.88741111755371
+@Override#102,17.874558448791504
+UnionTypeBuilder restricted = new UnionTypeBuilder(registry);#403,17.874239023993997
+for (JSType t : sorted) {#379,17.859956332615443
+@Override#187,17.8585467338562
+public boolean isObject() {#325,17.84260392189026
+if (!firstAlternate) {#380,17.838976860046387
+@Override#199,17.83517813682556
+@Override#250,17.82445526123047
+boolean firstAlternate = true;#374,17.817560716108844
+@Override#162,17.79488468170166
+if (t.isNullable()) {#243,17.784652137756346
+@Override#390,17.78356409072876
+if (!t.canBeCalled()) {#202,17.780134618282318
+for (JSType alternate : alternates) {#488,17.779018910725913
+if (propertyType == null) {#177,17.777208260127477
+if (!element.isSubtype(that)) {#393,17.771601172054517
+if (!that.isUnknownType()) {#262,17.764464745154747
+if (altPropertyType == null) {#173,17.74737091064453
+return this;#496,17.745386396135604
+public JSType findPropertyType(String propertyName) {#163,17.69556032816569
+JSType resolveInternal(ErrorReporter t, StaticScope<JSType> scope) {#483,17.66682027733844
+for (JSType alternate : alternates) {#275,17.663148498535158
+return result;#229,17.653715133666992
+for (JSType alternate : getAlternates()) {#166,17.651369273662567
+public boolean canBeCalled() {#200,17.638316822052
+element.getRestrictedTypeGivenToBooleanOutcome(outcome));#406,17.63744376255916
+return result.toString();#387,17.63622465133667
+thatRestricted.addAlternate(p.typeB);#469,17.63400686354864
+UnionType that = (UnionType) object;#307,17.61603194475174
+thatRestricted.addAlternate(p.typeB);#433,17.591716130574543
+thatRestricted.addAlternate(p.typeB);#451,17.568514642261324
+for (JSType alternate : alternates) {#263,17.566852008595188
+restricted.addAlternate(t.restrictByNotNullOrUndefined());#213,17.525129940198816
+return canAssign;#196,17.49935923682319
+public boolean isNullable() {#241,17.497234238518608
+public boolean canAssignTo(JSType that) {#188,17.4957701365153
+result.append(t.toString());#383,17.46096509297689
+public BooleanLiteralSet getPossibleToBooleanOutcomes() {#412,17.43589406543308
+JSType meet(JSType that) {#273,17.39615271641658
+changed |= (alternate != newAlternate);#490,17.355640130884506
+return true;#331,17.34836741856166
+ImmutableSet.Builder<JSType> resolvedTypes = ImmutableSet.builder();#487,17.338905832041863
+result.append("|");#381,17.331245490482875
+return new TypePair(#472,17.324779891967772
+JSType result = builder.build();#290,17.317446121802696
+TernaryValue result = null;#220,17.301376501719158
+return true;#206,17.282408714294434
+public boolean isSubtype(JSType that) {#391,17.276747226715088
+return getLeastSupertype(this, that);#270,17.25577392578125
+if (!alternate.isObject()) {#327,17.25203717549642
+return result;#292,17.24523660871718
+result.append("(");#376,17.23963499069214
+TypePair p = element.getTypesUnderEquality(that);#428,17.238489241827104
+TypePair p = element.getTypesUnderInequality(that);#446,17.213063630190764
+return new TypePair(#436,17.1878041267395
+return propertyType;#184,17.1859130859375
+return new TypePair(#454,17.176848220825196
+public JSType getRestrictedUnion(JSType type) {#362,17.17276158052332
+public TypePair getTypesUnderInequality(JSType that) {#442,17.168728728043405
+return alternates.hashCode();#316,17.16542521390048
+return false;#247,17.16232899257115
+TypePair p = element.getTypesUnderShallowInequality(that);#464,17.142792860666912
+return false;#310,17.138658417595757
+public TypePair getTypesUnderShallowInequality(JSType that) {#460,17.133796737307595
+builder.addAlternate(otherAlternate);#284,17.131870889663695
+canAssign &= t.canAssignTo(that);#194,17.13037838935852
+public TypePair getTypesUnderEquality(JSType that) {#424,17.11944368150499
+JSType newAlternate = alternate.resolve(t, scope);#489,17.106148719787598
+return true;#397,17.103191103254044
+public TernaryValue testForEquality(JSType that) {#219,17.090134726630318
+type.forgiveUnknownNames();#92,17.089604524465706
+thisRestricted.build(),#473,17.07664155960083
+return false;#132,17.07606111254011
+thisRestricted.addAlternate(p.typeA);#466,17.066133499145508
+super(registry);#76,17.064398977491592
+return alternates;#86,17.037740111351013
+setResolvedTypeInternal(this); // for circularly defined types.#484,17.034159058018734
+return false;#257,17.02048942020961
+thisRestricted.addAlternate(p.typeA);#430,17.0091742560977
+return false;#110,17.007137298583984
+JSType propertyType = null;#164,16.994038502375286
+boolean changed = false;#486,16.99352561102973
+thisRestricted.addAlternate(p.typeA);#448,16.98779719216483
+return visitor.caseUnionType(this);#479,16.96888146033654
+builder.addAlternate(alternate);#277,16.951510148889877
+return true;#107,16.938800898465242
+return literals;#420,16.92415964603424
+return restricted.build();#369,16.92007287343343
+if (literals == BooleanLiteralSet.BOTH) {#416,16.89592520395915
+thisRestricted.build(),#455,16.893327236175537
+return getNativeType(JSTypeNative.NO_OBJECT_TYPE);#294,16.89304418149202
+return false;#159,16.887120928083146
+return true;#244,16.881292950023305
+boolean canAssign = true;#189,16.88000705025413
+return alternates.contains(alternate);#345,16.875273500170028
+public JSType getLeastSupertype(JSType that) {#261,16.868178685506184
+return alternates.equals(that.alternates);#308,16.863148106469048
+return true;#129,16.85916701230136
+thisRestricted.build(),#437,16.854765142713273
+SortedSet<JSType> sorted = new TreeSet<JSType>(ALPHA);#377,16.841422851269062
+return restricted.build();#215,16.819224887424046
+return restricted.build();#408,16.784384303622776
+this.alternates = alternates;#77,16.781750122706097
+builder.addAlternate(that);#288,16.76775142124721
+return true;#254,16.69323305650191
+TernaryValue test = t.testForEquality(that);#222,16.693121728442964
+thatRestricted.build());#474,16.668681689671107
+thatRestricted.build());#438,16.654632295880997
+BooleanLiteralSet literals = BooleanLiteralSet.EMPTY;#413,16.640611875624884
+return false;#328,16.618973298506305
+alternates = resolvedTypes.build();#494,16.615327085767472
+return true;#156,16.599700580943715
+thatRestricted.build());#456,16.596069608415878
+return getNativeType(JSTypeNative.NO_TYPE);#296,16.59088215827942
+firstAlternate = false;#384,16.572860717773438
+restricted.addAlternate(#405,16.4365709622701
+resolvedTypes.add(alternate);#491,16.366098744528635
+propertyType = propertyType.getLeastSupertype(altPropertyType);#180,16.336875995000202
+return true;#192,16.236888538707387
+return false;#394,16.19653354991566
+return false;#203,16.17423491044478
+JSType altPropertyType = alternate.findPropertyType(propertyName);#172,16.166124430569734
+propertyType = altPropertyType;#178,16.12617931365967
+continue;#169,16.111089611053465
+restricted.addAlternate(t);#366,16.10428613424301
+literals = literals.union(element.getPossibleToBooleanOutcomes());#415,16.05631629943848
+return this;#265,16.05233361170842
+continue;#174,16.021619033813476
+return UNKNOWN;#226,15.925770044326782
+result = test;#224,15.888367335001627
+break;#417,15.10513677597046
+sorted.addAll(alternates);#378,14.946945230166117

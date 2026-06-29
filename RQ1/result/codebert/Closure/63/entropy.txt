@@ -1,0 +1,85 @@
+String line;#145,20.168459978970613
+public String formatLine(String line, int lineNumber) {#121,20.112261323367846
+StringBuilder b = new StringBuilder();#74,19.96914013226827
+StringBuilder builder = new StringBuilder(code.length() * 2);#139,19.7525452205113
+public String formatRegion(Region region) {#125,19.46116359417255
+private String format(JSError error, boolean warning) {#66,19.448200941085815
+static LightweightMessageFormatter withoutSource() {#54,19.401755332946777
+if (line.length() == 0) {#148,19.330350589752197
+public String formatError(JSError error) {#58,19.19842685971941
+int lineNumber = region.getBeginningLineNumber();#142,19.181503912981817
+String code = region.getSourceExcerpt();#129,19.164883017539978
+int spaces = numberLength - Integer.toString(lineNumber).length();#157,19.101772665977478
+SourceExcerptProvider source = getSource();#68,19.094803736760067
+if (code.length() == 0) {#130,19.085651755332947
+public LightweightMessageFormatter(SourceExcerptProvider source) {#43,19.083194255828857
+public String formatWarning(JSError warning) {#62,19.066673278808594
+int end = code.indexOf('\n', start);#141,18.889804990668047
+String sourceExcerpt = source == null ? null :#69,18.885059293111166
+builder.append(lineNumber);#159,18.851416079203286
+SourceExcerpt excerpt) {#48,18.777852217356365
+if (region == null) {#126,18.764149005596455
+if (end < 0) {#163,18.740162531534832
+builder.append(line);#167,18.70988440513611
+return line;#122,18.679893599616157
+char c = sourceExcerpt.charAt(i);#100,18.656184803355824
+if (error.lineNumber > 0) {#77,18.636709809303284
+if (Character.isWhitespace(c)) {#101,18.598443854938854
+int start = 0;#140,18.593759189952504
+builder.append(line);#164,18.587593615055084
+if (end < 0) {#146,18.58005510965983
+for (int i = 0; i < charno; i++) {#99,18.533852121104363
+builder.append(Strings.repeat(" ", spaces));#158,18.533787202835082
+int numberLength = Integer.toString(region.getEndingLineNumber())#135,18.490915339926016
+start = -1;#165,18.403325017293295
+private LightweightMessageFormatter() {#38,18.399495220184328
+int charno = error.getCharno();#92,18.372684422661276
+&& 0 <= charno && charno < sourceExcerpt.length()) {#98,18.33743377832266
+this(source, LINE);#44,18.30344638824463
+while (start >= 0) {#143,18.285799906804012
+if (sourceExcerpt != null) {#89,18.263693809509277
+line = code.substring(start);#147,18.25831207476164
+builder.append("| ");#160,18.248782348632812
+end = code.indexOf('\n', start);#170,18.11552281813188
+start = end + 1;#169,18.051745176315308
+builder.append("  ");#154,18.03998591105143
+private SourceExcerpt excerpt;#31,18.02750051021576
+private static final ExcerptFormatter excerptFormatter =#32,18.009762617257927
+builder.append('\n');#168,18.004940257352942
+public LightweightMessageFormatter(SourceExcerptProvider source,#47,17.95284366607666
+super(source);#49,17.92802667617798
+lineNumber++;#171,17.90927028656006
+source, error.sourceName, error.lineNumber, excerptFormatter);#71,17.891782896859304
+if (error.sourceName != null) {#75,17.89127234050206
+b.append('\n');#88,17.8795916817405
+super(null);#39,17.84757089614868
+line = code.substring(start, end);#152,17.842352140517463
+return new LightweightMessageFormatter();#55,17.835670709609985
+this.excerpt = LINE;#40,17.802463444796476
+new LineNumberingFormatter();#33,17.695311913123497
+b.append(c);#102,17.68238279554579
+return format(warning, true);#63,17.66081177104603
+public class LightweightMessageFormatter extends AbstractMessageFormatter {#30,17.443512507847377
+this.excerpt = excerpt;#51,17.429653948003594
+if (excerpt.equals(LINE)#97,17.416677117347717
+b.append("^\n");#107,17.371644258499146
+static class LineNumberingFormatter implements ExcerptFormatter {#120,17.36954034169515
+return format(error, false);#59,17.333341338417746
+return null;#131,17.320109714161266
+return null;#127,17.26654763655229
+return b.toString();#110,17.259502506256105
+b.append('\n');#91,17.256520858177772
+b.append(" - ");#85,17.205054023049094
+return builder.toString();#174,17.19837514559428
+b.append(": ");#81,17.184026277982273
+b.append(' ');#104,17.161839644114178
+b.append(getLevelName(warning ? CheckLevel.WARNING : CheckLevel.ERROR));#84,17.139188448588055
+Preconditions.checkNotNull(source);#50,17.073347296033585
+return builder.substring(0, builder.length() - 1);#149,17.014350926434552
+b.append(error.sourceName);#76,16.94875456492106
+.length();#136,16.853020961468037
+b.append(error.description);#87,16.851605733235676
+b.append(':');#78,16.811423710414342
+b.append(sourceExcerpt);#90,16.67240231377738
+b.append(error.lineNumber);#79,16.532617064083325
+excerpt.get(#70,16.155539115269978

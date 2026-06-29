@@ -1,0 +1,871 @@
+private final String sourceString;#79,20.162439942359924
+private final String sourceName;#80,19.91217029094696
+private IRFactory(String sourceString,#101,19.451896286010744
+JsDocInfoParser jsDocParser) {#179,19.40831983089447
+String sourceString,#125,19.31647511017628
+this.sourceString = sourceString;#105,19.252738396326702
+private int position2charno(int position) {#263,19.169698102133616
+private Node newStringNode(int type, String value) {#1275,19.16815528869629
+"setters must have exactly one parameter",#935,19.062795839811628
+switch (token) {#942,19.062612957424587
+Node processScope(Scope scopeNode) {#735,19.047737635098972
+@Override#635,19.041895866394043
+if ((lineSet == false) && (finallyBlock != null)) {#809,18.99931422146884
+switch (target.getType()) {#845,18.99562672206334
+if (skipCount > 0) {#322,18.963572093418666
+if (c.getType() == Token.EMPTY) {#316,18.937517339533027
+Node processVariableDeclaration(VariableDeclaration declarationNode) {#855,18.870505557340735
+case Token.NAME:#846,18.863604325514572
+@Override#625,18.86296494801839
+"getters may not have parameters",#928,18.861902236938477
+int skipCount = 0;#313,18.836318492889404
+@Override#739,18.83010705312093
+public class IRFactory {#77,18.818313598632812
+@Override#597,18.80507755279541
+@Override#471,18.783192316691082
+@Override#465,18.77710024515788
+@Override#592,18.77483558654785
+transform(loopNode.getIterator()),#482,18.77021142056114
+if (lineIndex == -1) {#265,18.762801830585186
+@Override#777,18.745930671691895
+if (flags != null && !flags.isEmpty()) {#716,18.7431583404541
+if (directives == null) {#376,18.742305278778076
+if (child.getType() == Token.EMPTY) {#327,18.73960800965627
+String msg = (type == Token.INC)#826,18.7213452946056
+node.setCharno(position2charno(leftParamPos));#508,18.71640868808912
+private void parseDirectives(Node node) {#371,18.71604367664882
+if (directives != null) {#383,18.71332229886736
+msg,#830,18.71285343170166
+if (statementNode.getLabel() != null) {#440,18.71012290318807
+for (Comment comment : node.getComments()) {#133,18.709996223449707
+if (initializerNode.getInitializer() != null) {#871,18.70963559150696
+JsDocInfoParser jsdocParser =#248,18.699616578909065
+@Override#630,18.699308395385742
+"Unsupported syntax: " +#897,18.689491832957547
+@Override#640,18.680603981018066
+@Override#457,18.68034903208415
+if (!config.acceptES5) {#648,18.66301098991843
+String sourceName,#102,18.6099800268809
+String flags = literalNode.getFlags();#715,18.599227714538575
+this.sourceName = sourceName;#106,18.585249106089275
+return Token.SETNAME;#962,18.573669161115372
+Node processThrowStatement(ThrowStatement statementNode) {#778,18.571412150065104
+int j = 0;#325,18.571038759671726
+transform(loopNode.getInitializer()),#491,18.553483057022095
+if (statementNode.getBreakLabel() != null) {#405,18.547781291760895
+@Override#602,18.54028574625651
+@Override#689,18.534932454427082
+Token.WITH,#889,18.531722640991212
+Token.WHILE,#881,18.52593797047933
+@Override#783,18.51716073354085
+return Token.IMPORT;#1160,18.516723769051687
+@Override#767,18.51621087392171
+int lineIndex = sourceString.lastIndexOf('\n', position);#264,18.513985013961793
+@Override#745,18.510810216267902
+private final Config config;#81,18.505725860595703
+if (finallyBlock != null) {#802,18.504349136352538
+private JsDocInfoParser createJsDocInfoParser(Comment node) {#241,18.495203283098007
+private Node newStringNode(String value) {#1271,18.495141585667927
+private static int transformTokenType(int token) {#941,18.495109411386345
+Node processEmptyExpression(EmptyExpression exprNode) {#466,18.49250266131233
+@Override#886,18.4787384668986
+if (name == null) {#516,18.478581795325645
+for (VariableInitializer child : declarationNode.getVariables()) {#862,18.476355643499467
+if (irNode.getType() == Token.EMPTY) {#162,18.474991934640066
+throw new IllegalStateException(String.valueOf(token));#1251,18.469889696906595
+Node processCatchClause(CatchClause clauseNode) {#415,18.463172410663805
+Token.FOR,#481,18.46305091040475
+String comment = node.getValue();#242,18.45112880071004
+if (!validAssignmentTarget(target)) {#343,18.44824469089508
+Node node = newNode(Token.CONTINUE);#439,18.43794059753418
+sourceName,#922,18.42840752234826
+@Override#694,18.427189985911053
+Node newName = transform(name);#522,18.41652706691197
+@Override#878,18.413414637247723
+return Token.SETVAR;#1056,18.405519231160483
+Node processLabel(Label labelNode) {#598,18.40404833280123
+newName.setCharno(position2charno(lpColumn));#532,18.391884841918944
+@Override#868,18.389312426249187
+if (prev != null) {#608,18.385471725463866
+@Override#734,18.376893679300945
+this.config = config;#107,18.374885272979736
+private Node newNode(int type) {#1255,18.356902729381215
+return Token.ENTERWITH;#950,18.353228867053986
+"setters are not supported in Internet Explorer",#921,18.348830366134642
+"invalid assignment target",#345,18.347118079662323
+if (comment != null) {#195,18.343672925775703
+Node processVariableInitializer(VariableInitializer initializerNode) {#869,18.338270505269367
+Token.FOR,#490,18.335843358721053
+@Override#725,18.335477828979492
+@Override#512,18.325969060262043
+@Override#478,18.321413040161133
+"getters are not supported in Internet Explorer",#914,18.319747352600096
+Token.HOOK,#431,18.317878405253094
+@Override#487,18.31608772277832
+cur.setCharno(clauseAbsolutePosition);#616,18.312153725397017
+Node processSwitchCase(SwitchCase caseNode) {#746,18.31214059193929
+@Override#402,18.30735381444295
+@Override#449,18.306241194407146
+sourceName,#254,18.30571460723877
+@Override#894,18.305020968119305
+if (statementNode.getReturnValue() != null) {#728,18.303020878842002
+@Override#498,18.302910486857098
+if (lineSet == false) {#793,18.300971925258636
+cur.addChildToBack(transform(label));#611,18.281510604055303
+Node processName(Name nameNode) {#626,18.269604756281925
+return Token.LABEL;#1198,18.264373983655656
+IRFactory irFactory = new IRFactory(sourceString, node.getSourceName(),#128,18.260023030367766
+if (node.getComments() != null) {#132,18.257886505126955
+return Token.EMPTY;#1194,18.256719180515834
+case Token.GETELEM:#848,18.251486599445343
+lp.setCharno(position2charno(lparenCharno));#552,18.251266699570877
+if (clauseNode.getCatchCondition() != null) {#418,18.249817167009628
+Node node = newNode(Token.EMPTY);#467,18.249615949742935
+@Override#854,18.247488498687744
+if (fileOverviewInfo != null) {#150,18.231374667241024
+if ((irNode.getJSDocInfo() != null) &&#151,18.228438331967308
+private boolean validAssignmentTarget(Node target) {#844,18.22715034484863
+@Override#437,18.2259734471639
+if (fnName != null) {#544,18.215357099260604
+int i = 0;#324,18.215115033663235
+if (type == Token.INC || type == Token.DEC) {#824,18.20046387548032
+return position - lineIndex - 1;#269,18.199160848345077
+flagsNode.setLineno(literalNode.getLineno());#719,18.19546425860861
+Node processNumberLiteral(NumberLiteral literalNode) {#636,18.192796907926862
+return Token.CONTINUE;#1180,18.19242140452067
+Node prev = null;#605,18.190429167314008
+Node processContinueStatement(ContinueStatement statementNode) {#438,18.187157758076985
+sourceName,#915,18.18018942612868
+return Token.EXPORT;#1158,18.174724578857422
+if (!config.acceptConstKeyword && declarationNode.getType() ==#856,18.172795685854826
+sourceName,#929,18.167927668644833
+Node node = newNode(Token.LABEL);#604,18.16770301145666
+exprNode.getOperatorPosition()));#588,18.16655394905492
+if (jsDocInfo != null) {#208,18.164421228262093
+@Override#428,18.162837982177734
+if (el.isGetter()) {#649,18.161919694197806
+for (Label label : statementNode.getLabels()) {#607,18.161331427724736
+if (statementNode.getElsePart() != null) {#569,18.161081615247223
+node.getLineno(), "", 0);#901,18.159190797805785
+Node processFunctionCall(FunctionCall callNode) {#499,18.15840015411377
+for (AstNode param : functionNode.getParams()) {#553,18.133481597900392
+@Override#701,18.127838452657063
+private Node newNode(int type, Node child1) {#1259,18.126149876912436
+for (ObjectProperty el : literalNode.getElements()) {#647,18.125294065475465
+sourceName,#908,18.112365429218
+@Override#306,18.105102221171062
+@Override#414,18.102018356323242
+if (!validAssignmentTarget(operand)) {#825,18.093993731907435
+return Token.SUB;#990,18.089232649121964
+private Node newNode(int type, Node child1, Node child2, Node child3) {#1267,18.088683999103047
+Set<String> directives = null;#373,18.07912199837821
+if (irNode.getLineno() == -1) {#218,18.078666019439698
+return Token.BITNOT;#1000,18.077501910073416
+@Override#564,18.074845949808758
+private Node newNode(int type, Node child1, Node child2) {#1263,18.072686697307386
+transform(exprNode.getTestExpression()),#432,18.070055734543573
+Node flagsNode = newStringNode(flags);#717,18.060517681969536
+@Override#709,18.058175404866535
+@Override#397,18.056142171223957
+if (ret.getType() == Token.STRING) {#298,18.05440196990967
+Node node;#747,18.051301532321506
+transformTokenType(exprNode.getType()),#578,18.050233432224818
+while (isDirective(node.getFirstChild())) {#374,18.049993801116944
+return Token.SEMI;#1102,18.04925956726074
+Node processNewExpression(NewExpression exprNode) {#631,18.044835315031165
+return Token.NAME;#1022,18.0432616013747
+new JsDocInfoParser(#249,18.034671856806828
+@Override#575,18.03460995356242
+return Token.REF_SPECIAL;#1084,18.028252005577087
+boolean lineSet = false;#788,18.027530590693157
+Node node = newNode(Token.FUNCTION);#521,18.025915993584526
+errorReporter.error(#829,18.018173906538223
+return Token.WITH;#1184,18.018096242632186
+case Token.GETPROP:#847,18.01630064646403
+if (comment.getCommentType() == JSDOC && !comment.isParsed()) {#134,18.013079929351807
+ErrorReporter errorReporter) {#127,18.011278729106106
+i++;#332,18.010825872421265
+return Token.LE;#976,18.010683719928448
+return Token.RESERVED;#1192,18.010595440864563
+return Token.WHILE;#1172,18.009632178715297
+return Token.NUMBER;#1024,18.00788927078247
+Node target = assign.getFirstChild();#342,18.005798784891763
+sourceName,#900,18.003378648024338
+if (irNode.getType() == Token.FUNCTION &&#213,18.0030080393741
+private Node justTransform(AstNode node) {#273,18.00014082590739
+private final Set<String> ALLOWED_DIRECTIVES = Sets.newHashSet("use strict");#86,17.992536888122558
+for (Node child : node.children()) {#326,17.99237034055922
+cur.setLineno(label.getLineno());#613,17.98580060005188
+if (isUnnamedFunction) {#523,17.978497641427175
+Node processLabeledStatement(LabeledStatement statementNode) {#603,17.976140022277832
+node.addChildToBack(transform(statementNode.getCondition()));#567,17.973059610887006
+return Token.RETHROW;#1046,17.9702005982399
+"Catch clauses are not supported",#420,17.967044734954833
+Node node = newNode(Token.OBJECTLIT);#646,17.963333380849736
+return Token.TARGET;#1200,17.96030351093837
+if (getFnParamNode(value).hasChildren()) {#663,17.959656715393066
+target.getLineno(), "", 0);#347,17.95446047782898
+int[] skipIndexes = new int[skipCount];#323,17.95445590019226
+return Token.CALL;#1020,17.949752739497594
+for (CatchClause cc : statementNode.getCatchClauses()) {#790,17.93191623687744
+return Token.FALSE;#1032,17.93090956551688
+return Token.CATCH_SCOPE;#1058,17.925613459418802
+return Token.NOT;#998,17.914516815772423
+labelName.setType(Token.LABEL_NAME);#443,17.91167404538109
+return Token.THROW;#1044,17.909754943847656
+return Token.SWITCH;#1166,17.908794403076172
+Node processExpressionStatement(ExpressionStatement statementNode) {#472,17.9001324597527
+Config config,#126,17.899523509176152
+return Token.NULL;#1028,17.896496846125675
+return Token.REF_NAME;#1096,17.894835472106934
+newName.setLineno(functionNode.getLineno());#526,17.891973235390402
+return Token.CASE;#1168,17.891647543225968
+private boolean isDirective(Node n) {#388,17.88430827004569
+int leftParamPos = callNode.getAbsolutePosition() + callNode.getLp();#506,17.882482634650337
+@Override#339,17.88241195678711
+key.setType(Token.SET);#667,17.878209766588714
+@Override#816,17.873584429423016
+"destructuring assignment forbidden",#907,17.87316471338272
+return Token.DOTQUERY;#1229,17.860767126083374
+return Token.SETELEM;#1018,17.857597291469574
+Node node = newNode(Token.IF);#566,17.855052292346954
+Node c = transform(child);#315,17.85429286956787
+skipCount++;#317,17.850744760953464
+Node n =  newNode(#577,17.849066147437462
+return Token.FINALLY;#1188,17.84585564477103
+private Node createTemplateNode() {#117,17.845116509331596
+return Token.FOR;#1176,17.844027592585636
+return Token.RB;#1106,17.841491625859188
+Node node = newNode(Token.CATCH, transform(catchVar));#417,17.839475241574373
+Node processSwitchStatement(SwitchStatement statementNode) {#768,17.83863697052002
+irNode.setLineno(lineno);#223,17.8363143603007
+for (AstNode child : literalNode.getElements()) {#314,17.833698415756224
+return Token.IFEQ;#958,17.832824434552872
+Node node = newNode(Token.VAR);#861,17.831753506379968
+block.addChildToBack(transform(cc));#797,17.83142260501259
+int lineno = node.getLineno();#222,17.826082229614258
+return Token.ARRAYLIT;#1072,17.822404205799103
+return Token.ADD;#988,17.821054238539475
+return Token.VOID;#1190,17.81408303124564
+labelName.setType(Token.LABEL_NAME);#408,17.811509858994256
+JsDocInfoParser jsDocParser = createJsDocInfoParser(comment);#188,17.811088970729283
+Node processBreakStatement(BreakStatement statementNode) {#403,17.810806655883788
+Node processInfixExpression(InfixExpression exprNode) {#576,17.810641489530866
+return Token.GETVAR;#1054,17.80901673634847
+return Token.TO_OBJECT;#1235,17.80552852153778
+prev.addChildToBack(transform(statementNode.getStatement()));#621,17.801675623113457
+return Token.BINDNAME;#1042,17.79977315266927
+this.templateNode = createTemplateNode();#111,17.79922419327956
+Token.GETELEM,#460,17.794423383824967
+node.setLineno(callNode.getLineno());#507,17.792268753051758
+newBlock.setLineno(irNode.getLineno());#167,17.787759824232623
+sourceName,#936,17.787008799039402
+transform(statementNode.getExpression()),#890,17.78696036338806
+for (AstNode child : callNode.getArguments()) {#502,17.784689474105836
+return Token.MUL;#992,17.784590108054026
+n.setLineno(exprNode.getLineno());#583,17.77622247997083
+return Token.ASSIGN_SUB;#1134,17.769596660838406
+Node node = newNode(transformTokenType(n.getType()));#280,17.768555641174316
+return Token.INC;#1150,17.766416329603928
+Node node = newNode(type, operand);#836,17.756677527176706
+config, errorReporter);#129,17.7559951373509
+return Token.EQ;#970,17.755170890263148
+return newNode(#459,17.755127429962158
+Node node = newNode(transformTokenType(statementNode.getType()));#473,17.7544992281043
+literalStringNode.setLineno(literalNode.getLineno());#713,17.751860878684305
+return Token.TRUE;#1034,17.75098957334246
+if (exprNode.isPostfix()) {#837,17.750190046098496
+private Node transformAsString(AstNode n) {#296,17.749264335632326
+node.addChildToBack(transformBlock(statementNode.getThenPart()));#568,17.74764883518219
+sourceName,#346,17.747426473177395
+private Node newNumberNode(Double value) {#1279,17.746257066726685
+parseDirectives(node);#358,17.744966586430866
+node.getLineno(), "", 0);#909,17.744784116744995
+Config config,#103,17.744169235229492
+return newNode(Token.EMPTY);#902,17.74346790313721
+Node processReturnStatement(ReturnStatement statementNode) {#726,17.739505704243978
+return Token.POS;#1002,17.736361650320198
+irNode.getFirstChild().getLineno() != -1) {#214,17.735398491223652
+ErrorReporter errorReporter) {#104,17.734829051154
+Node node = newNode(Token.TRY,#785,17.734567284584045
+new JsDocTokenStream(comment.substring(numOpeningChars),#250,17.734543058607315
+node.getLineno(), "", 0);#916,17.73086037635803
+return Token.JSR;#1207,17.72747823170253
+return Token.HOOK;#1142,17.72715084893363
+return Token.COLON;#1144,17.72389050892421
+return Token.AND;#1148,17.720613039456882
+return Token.OR;#1146,17.718316004826473
+return null;#202,17.718233517238072
+if (el.isGetter()) {#660,17.716159540064194
+clauseNode.getCatchCondition().getLineno(), "", 0);#422,17.71601472582136
+return Token.ERROR;#944,17.714849178607647
+transformBlock(statementNode.getStatement()));#891,17.70972948074341
+Node labelName = transform(statementNode.getLabel());#441,17.70953698158264
+Node processUnaryExpression(UnaryExpression exprNode) {#817,17.706532227365596
+return Token.SET_REF;#1078,17.7025447845459
+return Token.TRY;#1100,17.7021882717426
+return Token.FUNCTION;#1156,17.7009401957194
+if (caseNode.isDefault()) {#748,17.700377655029296
+return Token.GT;#978,17.69903564453125
+node,#253,17.698435227076214
+node = newNode(Token.DEFAULT);#749,17.698137760162354
+int position = node.getAbsolutePosition();#244,17.697456087384904
+Node labelName = transform(statementNode.getBreakLabel());#406,17.6969849722726
+if (n == null) return false;#389,17.694531440734863
+return Token.REF_CALL;#1082,17.689176857471466
+return Token.VAR;#1182,17.688369342258998
+Boolean isUnnamedFunction = false;#515,17.68151228768485
+int charno = position2charno(node.getAbsolutePosition());#224,17.676899795532226
+Node processBlock(Block blockNode) {#398,17.676729862506573
+sourceName,#421,17.67670294443766
+Node node = newNode(transformTokenType(callNode.getType()),#500,17.676695906597637
+if (jsDocParser.getFileOverviewJSDocInfo() != fileOverviewInfo) {#180,17.67500329017639
+int clauseAbsolutePosition =#614,17.671643597739084
+errorReporter.error(#344,17.671083995274135
+return Token.OBJECTLIT;#1074,17.6709326505661
+return Token.SET;#1241,17.662862190833458
+Node node = newNode(Token.REGEXP, literalStringNode);#714,17.661218461536226
+node.getLineno(), "", 0);#923,17.66080050468445
+return newNode(Token.THROW,#779,17.656792163848877
+return Token.ASSIGN_MUL;#1136,17.65628163954791
+position2charno(position) + numOpeningChars),#252,17.652545356750487
+Node node = newNode(Token.SCRIPT);#354,17.647148356718176
+transform(loopNode.getCondition()),#882,17.638254466809723
+cur = newNode(Token.LABEL);#619,17.638175381554497
+@Override#352,17.637746810913086
+continue;#651,17.634465421949113
+Node node = newNode(Token.SWITCH,#769,17.634050313164206
+Node node = newNode(Token.BREAK);#404,17.629497247583725
+return Token.IF;#1162,17.625400836651142
+block.setCharno(position2charno(caseNode.getAbsolutePosition()));#757,17.623946973255702
+return newNode(#451,17.622931289672852
+return Token.COLONCOLON;#1225,17.618382513523102
+private final ErrorReporter errorReporter;#82,17.61500219865279
+if (type == Token.NEG && operand.getType() == Token.NUMBER) {#820,17.613549402781896
+for (AstNode child : statementNode.getCases()) {#771,17.611415910720826
+return newStringNode(Token.LABEL_NAME, labelNode.getName());#599,17.60547626018524
+return Token.REF_MEMBER;#1092,17.60413748025894
+Node cur = node;#606,17.603526895696465
+node.getLineno(), "", 0);#930,17.603453588485717
+j++;#330,17.59929289136614
+return Token.TO_DOUBLE;#1237,17.597641608294317
+return newNode(#703,17.591277885437012
+if (caseNode.getStatements() != null) {#758,17.59078884124756
+sourceName,#831,17.587656638201544
+return Token.RC;#1110,17.58640978886531
+return newNode(#880,17.58496227264404
+return Token.GE;#980,17.576102476853592
+block.setLineno(caseNode.getLineno());#756,17.574111787896406
+Node processIfStatement(IfStatement statementNode) {#565,17.574013582865398
+node.addChildToBack(transform(statementNode.getExpression()));#474,17.571818061496902
+Token.DO,#452,17.571679864610946
+return Token.LT;#974,17.569836909954365
+void reportSetter(AstNode node) {#919,17.569575445992605
+errorReporter.error(#419,17.568780830928258
+JsDocInfoParser jsDocParser = createJsDocInfoParser(comment);#196,17.567542241967242
+return Token.DEFAULT;#1170,17.566036088126047
+node.addChildToBack(transformBlock(clauseNode.getBody()));#424,17.561836043993633
+block.setLineno(finallyBlock.getLineno());#810,17.560270396145906
+return Token.GOTO;#956,17.55904265812465
+node.addChildToBack(transformBlock(statementNode.getElsePart()));#570,17.556768343998836
+return newNode(transformTokenType(literalNode.getType()));#594,17.5520132671703
+return Token.ENUM_INIT_VALUES;#1062,17.54959683418274
+Node processStringLiteral(StringLiteral literalNode) {#740,17.548568374232243
+Node processWithStatement(WithStatement statementNode) {#887,17.544812774658205
+AstNode catchVar = clauseNode.getVarName();#416,17.54349512524075
+return Token.NE;#972,17.541764846214882
+return Token.COMMA;#1116,17.53889540263585
+return Token.URSH;#986,17.535103389195033
+return Token.DEC;#1152,17.528736774738018
+Node processArrayLiteral(ArrayLiteral literalNode) {#307,17.527614944859554
+name.setIdentifier("");#518,17.52324956258138
+return Token.RP;#1114,17.52264088850755
+if (!getFnParamNode(value).hasOneChild()) {#669,17.52005989074707
+private void handlePossibleFileOverviewJsDoc(Comment comment) {#187,17.518564760684967
+Node node = newNode(#489,17.515979051589966
+com.google.javascript.jscomp.mozilla.rhino.Token.typeToName(#898,17.510882223806075
+Node node = newNode(Token.ARRAYLIT);#312,17.50616038473029
+key.setType(Token.GET);#661,17.50554240377326
+void reportSetterParam(AstNode node) {#933,17.50526326497396
+void reportGetterParam(AstNode node) {#926,17.504511833190918
+return jsdocParser;#260,17.503916634453667
+return (nType == Token.EXPR_RESULT || nType == Token.EXPR_VOID) &&#392,17.502458418569258
+return Token.TYPEOFNAME;#1211,17.49878978729248
+return Token.SET_REF_OP;#1221,17.498103197883157
+return Token.THIS;#1030,17.4923975284283
+return Token.REF_NS_NAME;#1098,17.491807544932644
+Node node = transform(initializerNode.getTarget());#870,17.491720305548775
+transform(statementNode.getExpression()));#780,17.491157150268556
+return Token.ENUM_NEXT;#1064,17.491140197305118
+Node processIllegalToken(AstNode node) {#895,17.489429601033528
+node.getLineno(), "", 0);#937,17.488192081451416
+node.putProp(Node.SKIP_INDEXES_PROP, skipIndexes);#334,17.48737256280307
+name = new Name();#517,17.485090255737305
+return Token.SHEQ;#1036,17.482059478759766
+Node value = transform(el.getRight());#659,17.48193899790446
+node.addChildToBack(labelName);#444,17.47902838389079
+Node processKeywordLiteral(KeywordLiteral literalNode) {#593,17.473930858430407
+Node processParenthesizedExpression(ParenthesizedExpression exprNode) {#695,17.47375120435442
+node.getType()),#899,17.47076897621155
+node = newNode(Token.CASE, transform(expr));#752,17.469355193051424
+return Token.MOD;#996,17.46913689833421
+return Token.ENUM_ID;#1066,17.4662264585495
+return new Node(type, child1, child2, child3).clonePropsFrom(templateNode);#1268,17.461845680519385
+for (AstNode child : caseNode.getStatements()) {#759,17.460620620033957
+return newNode(#430,17.459353733062745
+return Token.ASSIGN_MOD;#1140,17.45902693271637
+return Token.RSH;#984,17.459022453853063
+node.addChildToBack(transform(statementNode.getReturnValue()));#729,17.457002334594726
+node.setLineno(node.getLineno());#873,17.456370782852172
+return Token.CATCH;#1186,17.456349236624582
+return Token.NEW;#1006,17.45468777876634
+node.addChildToBack(transform(initializerNode.getInitializer()));#872,17.452063377086933
+return Token.LB;#1104,17.44521265763503
+return Token.REF_NS_MEMBER;#1094,17.442604647742378
+return Token.DOTDOT;#1223,17.436348736286163
+return Token.LEAVEWITH;#952,17.43320863387164
+return newStringNode(Token.NAME, nameNode.getIdentifier());#627,17.43288668719205
+Node key = transformAsString(el.getLeft());#658,17.428877449035646
+return Token.ASSIGN_ADD;#1132,17.427363991737366
+return Token.STRING;#1026,17.424328463418142
+return Token.REGEXP;#1040,17.420330456324987
+transform(loopNode.getIncrement()));#493,17.419826364517213
+return newNode(#888,17.416919803619386
+String directive = node.removeFirstChild().getFirstChild().getString();#375,17.413390000661213
+return false;#851,17.412774085998535
+return Token.SETPROP;#1014,17.405025927225747
+private Node transform(AstNode node) {#205,17.404015280983664
+return Token.EOF;#946,17.40091473715646
+lp.setLineno(functionNode.getLineno());#547,17.397748383608732
+JSDocInfo fileOverviewInfo = null;#93,17.396764914194744
+return Token.BITXOR;#966,17.388645235697428
+errorReporter.error(#896,17.382564703623455
+return Token.ENUM_INIT_KEYS;#1060,17.382380723953247
+return Token.IFNE;#960,17.380988938467844
+Node block = newNode(Token.BLOCK);#787,17.367699847501868
+int type = transformTokenType(exprNode.getType());#818,17.36608003315173
+return Token.ELSE;#1164,17.362635408129012
+return Token.ASSIGN;#1118,17.3617616380964
+return node;#722,17.36120139227973
+: "invalid decrement target";#828,17.361066619555157
+node.addChildToBack(labelName);#409,17.35883813434177
+return Token.IN;#1048,17.35682194049542
+Preconditions.checkState(value.getType() == Token.FUNCTION);#662,17.35639006516029
+Node node = newNode(Token.RETURN);#727,17.351850677939023
+irNode.setCharno(charno);#225,17.35163164138794
+skipIndexes[j] = i;#329,17.346867288861954
+Node processObjectLiteral(ObjectLiteral literalNode) {#641,17.344847227397718
+return n;#742,17.342939058939617
+transform(loopNode.getCondition()),#492,17.33755458028693
+Preconditions.checkState(value.getType() == Token.FUNCTION);#668,17.337195955473803
+n.setCharno(position2charno(exprNode.getAbsolutePosition() +#587,17.333966323307582
+return new Node(type).clonePropsFrom(templateNode);#1256,17.328863620758057
+return Token.DO;#1174,17.3230499120859
+return node;#284,17.322259373135036
+return node;#411,17.31990909576416
+return Token.XMLATTR;#1231,17.316140055656433
+Node lp = newNode(Token.LP);#536,17.31253096636604
+transformBlock(loopNode.getBody()),#453,17.30836935043335
+return Token.TYPEOF;#1010,17.307601898908615
+return Node.newString(value).clonePropsFrom(templateNode);#1272,17.30714621543884
+if (!handlePossibleFileOverviewJsDoc(jsDocParser)) {#198,17.305788630530948
+return node;#359,17.305304845174152
+return Token.USE_STACK;#1213,17.30411583185196
+transform(loopNode.getIteratedObject()),#483,17.30260994320824
+irNode.setCharno(irNode.getFirstChild().getCharno());#216,17.301645499009354
+node.addChildToBack(c);#319,17.301574426538803
+transform(getNode.getTarget()),#461,17.301202322307386
+return Token.GET_REF;#1076,17.298488553365072
+Node processTryStatement(TryStatement statementNode) {#784,17.289290364583334
+return new Node(type, child1, child2).clonePropsFrom(templateNode);#1264,17.289284149805706
+return newNode(#480,17.286821174621583
+Node processObjectProperty(ObjectProperty propertyNode) {#690,17.286746342976887
+Node processAssignment(Assignment assignmentNode) {#340,17.28565305074056
+Node getFnParamNode(Node fnNode) {#683,17.282617886861164
+return Token.EXPR_RESULT;#1205,17.277714504915124
+if (irNode.getType() != Token.BLOCK) {#161,17.276810545670358
+parseDirectives(bodyNode);#559,17.275104522705078
+return newNumberNode(literalNode.getNumber());#637,17.269970470004612
+operand.getLineno(), "", 0);#832,17.268180198669434
+AstNode finallyBlock = statementNode.getFinallyBlock();#801,17.268042246500652
+node.addChildToBack(lp);#556,17.2622891108195
+return Token.ASSIGN_BITAND;#1124,17.261109239914838
+return node;#676,17.256393008761936
+Preconditions.checkArgument(fnNode.getType() == Token.FUNCTION);#685,17.25141539940467
+lineno,#251,17.251173973083496
+transform(statementNode.getExpression()));#770,17.250653743743896
+return Token.GETELEM;#1016,17.250535905361176
+lp.setLineno(fnName.getLineno());#545,17.247403318231758
+return Token.BITOR;#964,17.24654463359288
+return node;#468,17.246474160088432
+return node;#336,17.245643933614094
+Node processPropertyGet(PropertyGet getNode) {#702,17.238704109191893
+return Token.ASSIGN_RSH;#1128,17.235909854664524
+return Token.BREAK;#1178,17.231353214808873
+return Token.BLOCK;#1196,17.229761328016007
+lp.addChildToBack(transform(param));#554,17.226204109191894
+return Token.SCRIPT;#1209,17.22289330618722
+(irNode.getJSDocInfo().getLicense() != null)) {#152,17.221531762017143
+return node;#446,17.22096019321018
+return Token.ESCXMLTEXT;#1088,17.218758639167337
+int lparenCharno = functionNode.getLp() +#549,17.216810181027366
+newBlock.setCharno(irNode.getCharno());#168,17.21114520231883
+int lineno = node.getLineno();#243,17.211044924599783
+return Token.RETURN;#954,17.21101345334734
+return Token.THISFN;#1068,17.21043143953596
+Node processForInLoop(ForInLoop loopNode) {#479,17.205463689916275
+transform(loopNode.getCondition()));#454,17.20251494959781
+Node processWhileLoop(WhileLoop loopNode) {#879,17.196356582641602
+return Token.ASSIGN_BITXOR;#1122,17.19331826104058
+Node assign = processInfixExpression(assignmentNode);#341,17.18900630348607
+Node literalStringNode = newStringNode(literalNode.getValue());#711,17.188303210518576
+Node processForLoop(ForLoop loopNode) {#488,17.18816706339518
+private Node transformBlock(AstNode node) {#159,17.18675645192464
+return position;#266,17.176989449395073
+return Token.LOCAL_LOAD;#1052,17.175403892993927
+return Token.ASSIGN_BITOR;#1120,17.174976965960333
+return Token.BITAND;#968,17.173757348741805
+int lpColumn = functionNode.getAbsolutePosition() +#530,17.173442233692516
+return node;#561,17.17317295074463
+return assign;#349,17.172234111362034
+Node block = newNode(Token.BLOCK);#754,17.169194221496582
+transformBlock(loopNode.getBody()));#883,17.160820770263673
+return node;#764,17.16006130642361
+Node processRegExpLiteral(RegExpLiteral literalNode) {#710,17.15648855481829
+transform(exprNode.getTrueExpression()),#433,17.155782608758834
+return node;#774,17.15466266208225
+Node ret = transform(n);#297,17.1519952920767
+errorReporter.error(#927,17.151378790537517
+errorReporter.error(#934,17.150230407714844
+Node processElementGet(ElementGet getNode) {#458,17.14746437072754
+return Token.NEG;#1004,17.14349106379918
+return Token.GETPROP;#1012,17.14254353841146
+return Token.INSTANCEOF;#1050,17.138200163841248
+return node;#875,17.13143804338243
+return Token.LSH;#982,17.128609861646378
+int numOpeningChars = 3;#247,17.125887235005695
+Node bodyNode = transform(functionNode.getBody());#558,17.124662187364365
+return node;#865,17.117505921257866
+void reportGetter(AstNode node) {#912,17.114112377166748
+Token.GETPROP,#704,17.114034473896027
+transformAsString(getNode.getProperty()));#706,17.112969534737722
+return Token.ASSIGN_LSH;#1126,17.112512812894934
+block.putBooleanProp(Node.SYNTHETIC_BLOCK_PROP, true);#755,17.111583578175512
+return Token.DIV;#994,17.110048073988693
+return Token.ASSIGN_DIV;#1138,17.109776198863983
+return Token.ASSIGN_URSH;#1130,17.105257763582117
+errorReporter.error(#913,17.104772249857586
+return Token.DOT;#1154,17.101869106292725
+transform(exprNode.getRight()));#580,17.101398417824193
+node.addChildToBack(transformBlock(loopNode.getBody()));#494,17.101343279299527
+irNode.setLineno(irNode.getFirstChild().getLineno());#215,17.097376664479572
+return new Node(type, child1).clonePropsFrom(templateNode);#1260,17.096838542393275
+return Node.newString(type, value).clonePropsFrom(templateNode);#1276,17.089550971984863
+return Token.RETURN_RESULT;#1070,17.08334036434398
+Node processAstRoot(AstRoot rootNode) {#353,17.082427151997884
+transformBlock(statementNode.getTryBlock()));#786,17.078474090212868
+Node n = newStringNode(literalNode.getValue());#741,17.077866125106812
+errorReporter.error(#920,17.077790021896362
+transform(exprNode.getFalseExpression()));#434,17.07051154545375
+return Node.newNumber(value).clonePropsFrom(templateNode);#1280,17.063179206848144
+return Token.SETELEM_OP;#1217,17.052198939853245
+node.addChildToBack(transform(child));#772,17.049745660079154
+node.addChildToBack(block);#799,17.040996805826822
+return Token.SETPROP_OP;#1215,17.039825551650104
+return Token.CONST;#1243,17.03589861733573
+irNode.setWasEmptyNode(true);#164,17.020125812954372
+if (literalNode.isDestructuring()) {#642,17.006336159176296
+node.addChildToBack(bodyNode);#560,17.004730343818665
+return Token.EOL;#948,17.00341006687709
+return Token.ESCXMLATTR;#1090,17.002909501393635
+return Token.XMLEND;#1233,17.001867802937827
+node.addChildToBack(transformBlock(finallyBlock));#803,17.000403360887006
+return Token.LP;#1112,16.99784418252798
+node.addChildToBack(transform((AstNode)child));#356,16.99416346983476
+transform(getNode.getElement()));#462,16.992880118520635
+ret.putBooleanProp(Node.QUOTED_PROP, true);#299,16.99242459810697
+return node;#698,16.990623897976345
+node.setDirectives(directives);#384,16.98705420774572
+Name fnName = functionNode.getFunctionName();#543,16.980180628159466
+return templateNode;#121,16.97581422328949
+node.addChildToBack(transform((AstNode)child));#282,16.974860061298717
+transform(getNode.getTarget()),#705,16.970616039476898
+return Token.SETCONST;#1245,16.966842651367188
+errorReporter.error(#906,16.965075810750324
+node.putBooleanProp(Node.INCRDECR_PROP, true);#838,16.964107513427734
+return Token.LOOP;#1202,16.96129560470581
+return Token.GET;#1239,16.9550603719858
+return node;#731,16.95468521118164
+return n;#589,16.95291985405816
+Node irNode = justTransform(node);#207,16.95228092487042
+processIllegalToken(declarationNode);#858,16.949797181522143
+return node;#475,16.938666131761337
+transform(exprNode.getLeft()),#579,16.93087733419318
+return Token.LOCAL_BLOCK;#1219,16.927403618307675
+position2charno(label.getAbsolutePosition());#615,16.917831420898438
+int nType = n.getType();#391,16.91756426493327
+return node;#572,16.91522216796875
+JSDocInfo jsDocInfo = handleJsDoc(node);#206,16.91296837064955
+transform(callNode.getTarget()));#501,16.912664969762165
+continue;#654,16.91162429537092
+n.getFirstChild().getType() == Token.STRING &&#393,16.910764617919924
+if (literalNode.isDestructuring()) {#308,16.907847722371418
+this.errorReporter = errorReporter;#108,16.89964403424944
+prev = cur;#618,16.894845883051556
+return Token.LC;#1108,16.893891994769756
+return Token.DEL_REF;#1080,16.888542473316193
+return ret;#303,16.882722324795193
+node.addChildToBack(transform(child));#863,16.881021650213945
+return node;#495,16.872106128268772
+return processGeneric(scopeNode);#736,16.87194956265963
+Name name = functionNode.getFunctionName();#514,16.869075894355774
+return Token.DEFAULTNAMESPACE;#1086,16.859755780961777
+block.setLineno(cc.getLineno());#794,16.852454662322998
+return node;#622,16.850673463609482
+directives = Sets.newHashSet(directive);#377,16.84728240966797
+AstNode expr = caseNode.getExpression();#751,16.846595262226305
+return false;#184,16.845848083496094
+return node;#425,16.83978048960368
+Node node = transform(exprNode.getExpression());#696,16.832748572031658
+return Token.XML;#1227,16.827324867248535
+transformBlock(loopNode.getBody()));#484,16.815412282943726
+reportGetter(el);#650,16.808128356933594
+node.addChildToBack(flagsNode);#720,16.79464552137587
+templateNode.putProp(Node.SOURCENAME_PROP, sourceName);#120,16.782715320587158
+node.putProp(Node.PARENTHESIZED_PROP, Boolean.TRUE);#697,16.781982489994594
+return irNode;#228,16.76985263824463
+Node.FileLevelJsDocBuilder fileLevelJsDocBuilder =#91,16.768107859293618
+return Token.DEBUGGER;#1247,16.758135386875697
+return node;#509,16.75794749789768
+node.addChildToBack(newName);#535,16.7361963391304
+return processFunctionCall(exprNode);#632,16.729103088378906
+Node processDoLoop(DoLoop loopNode) {#450,16.725750160217284
+irNode.setType(Token.BLOCK);#163,16.71919566706607
+return Token.SHNE;#1038,16.704993997301376
+Node processConditionalExpression(ConditionalExpression exprNode) {#429,16.70456404435007
+for (com.google.javascript.jscomp.mozilla.rhino.Node child : n) {#281,16.700349972165863
+node.addChildToBack(block);#763,16.694118054707847
+config,#255,16.692912022272747
+Comment comment = node.getJsDocNode();#194,16.682045936584473
+node.addChildToBack(key);#674,16.677774541518268
+return Token.DELPROP;#1008,16.672279119491577
+case com.google.javascript.jscomp.mozilla.rhino.Token.EXPORT:#1157,16.66483250370732
+private JSDocInfo handleJsDoc(AstNode node) {#193,16.66293305158615
+Node newBlock = newNode(Token.BLOCK, irNode);#166,16.65693706014882
+errorReporter);#256,16.645175797598704
+Node irNode = irFactory.transform(node);#130,16.64261837005615
+Node processFunctionNode(FunctionNode functionNode) {#513,16.631032371520995
+com.google.javascript.jscomp.mozilla.rhino.Token.CONST) {#857,16.621476481037757
+case com.google.javascript.jscomp.mozilla.rhino.Token.CATCH_SCOPE:#1057,16.617544078826903
+Node templateNode = new Node(Token.SCRIPT);#119,16.609243750572205
+irNode.setJSDocInfo(fileOverviewInfo);#155,16.60677382820531
+jsdocParser.setFileOverviewJSDocInfo(fileOverviewInfo);#258,16.598463678359984
+jsdocParser.setFileLevelJsDocBuilder(fileLevelJsDocBuilder);#257,16.597280593145463
+Node irNode = transform(node);#160,16.593850135803223
+private Node processGeneric(#278,16.590898301866318
+reportSetter(el);#653,16.59009340074327
+case com.google.javascript.jscomp.mozilla.rhino.Token.SETNAME:#961,16.58660496605767
+fileOverviewInfo = jsDocParser.getFileOverviewJSDocInfo();#181,16.584078788757324
+node.addChildToBack(transform(child));#503,16.58375022285863
+return node;#840,16.572112343528055
+return operand;#822,16.56544836362203
+case com.google.javascript.jscomp.mozilla.rhino.Token.TYPEOFNAME:#1210,16.555222670237224
+this.transformDispatcher = new TransformDispatcher();#109,16.554211055531223
+case com.google.javascript.jscomp.mozilla.rhino.Token.ASSIGN_SUB:#1133,16.537548796335855
+isUnnamedFunction = true;#519,16.53701833089193
+case com.google.javascript.jscomp.mozilla.rhino.Token.REF_SPECIAL:#1083,16.527078102374897
+directives.add(directive);#379,16.523516430574304
+case com.google.javascript.jscomp.mozilla.rhino.Token.DEBUGGER:#1246,16.522486156887478
+case com.google.javascript.jscomp.mozilla.rhino.Token.HOOK:#1141,16.510457851268626
+key.addChildToFront(value);#673,16.507542778463925
+case com.google.javascript.jscomp.mozilla.rhino.Token.SETVAR:#1055,16.5033734866551
+case com.google.javascript.jscomp.mozilla.rhino.Token.SUB:#989,16.500608797426576
+case com.google.javascript.jscomp.mozilla.rhino.Token.ENTERWITH:#949,16.497627422727387
+case com.google.javascript.jscomp.mozilla.rhino.Token.LABEL:#1197,16.496934961389613
+return node;#813,16.49077076382107
+case com.google.javascript.jscomp.mozilla.rhino.Token.SEMI:#1101,16.476467609405518
+case com.google.javascript.jscomp.mozilla.rhino.Token.JSR:#1206,16.471493862293386
+fileOverviewInfo.setLicense(irNode.getJSDocInfo().getLicense());#153,16.466241695262767
+case com.google.javascript.jscomp.mozilla.rhino.Token.COLON:#1143,16.46158942469844
+case com.google.javascript.jscomp.mozilla.rhino.Token.EMPTY:#1193,16.46043321821425
+case com.google.javascript.jscomp.mozilla.rhino.Token.CONTINUE:#1179,16.460269348961965
+case com.google.javascript.jscomp.mozilla.rhino.Token.IMPORT:#1159,16.4590807667485
+return fnNode.getFirstChild().getNext();#686,16.443125665187836
+block.addChildToBack(transform(child));#760,16.44295006706601
+ALLOWED_DIRECTIVES.contains(n.getFirstChild().getString());#394,16.442140102386475
+case com.google.javascript.jscomp.mozilla.rhino.Token.POS:#1001,16.439816218156082
+case com.google.javascript.jscomp.mozilla.rhino.Token.RETHROW:#1045,16.434273358049065
+case com.google.javascript.jscomp.mozilla.rhino.Token.DOTDOT:#1222,16.42773200725687
+case com.google.javascript.jscomp.mozilla.rhino.Token.DEFAULT:#1169,16.427712263884366
+case com.google.javascript.jscomp.mozilla.rhino.Token.THROW:#1043,16.419577189854213
+case com.google.javascript.jscomp.mozilla.rhino.Token.DOTQUERY:#1228,16.415328979492188
+case com.google.javascript.jscomp.mozilla.rhino.Token.WHILE:#1171,16.41407189545808
+for (com.google.javascript.jscomp.mozilla.rhino.Node child : rootNode) {#355,16.41153704325358
+case com.google.javascript.jscomp.mozilla.rhino.Token.RESERVED:#1191,16.41088439678324
+ret.setType(Token.STRING);#301,16.40610980987549
+case com.google.javascript.jscomp.mozilla.rhino.Token.EQ:#969,16.404363102383083
+private final TransformDispatcher transformDispatcher;#83,16.40366767002986
+reportGetterParam(el.getLeft());#664,16.399116819555108
+case com.google.javascript.jscomp.mozilla.rhino.Token.TARGET:#1199,16.39331591570819
+case com.google.javascript.jscomp.mozilla.rhino.Token.TRUE:#1033,16.392005108020925
+case com.google.javascript.jscomp.mozilla.rhino.Token.GETVAR:#1053,16.39145568438939
+case com.google.javascript.jscomp.mozilla.rhino.Token.REF_CALL:#1081,16.37980842590332
+case com.google.javascript.jscomp.mozilla.rhino.Token.SHEQ:#1035,16.376869712557113
+case com.google.javascript.jscomp.mozilla.rhino.Token.INSTANCEOF:#1049,16.375974128986226
+case com.google.javascript.jscomp.mozilla.rhino.Token.WITH:#1183,16.375911642003942
+irNode.setJSDocInfo(jsDocInfo);#209,16.37556096127159
+case com.google.javascript.jscomp.mozilla.rhino.Token.VOID:#1189,16.369564444930464
+void reportDestructuringAssign(AstNode node) {#905,16.36871349110323
+case com.google.javascript.jscomp.mozilla.rhino.Token.SET:#1240,16.367913722991943
+case com.google.javascript.jscomp.mozilla.rhino.Token.INC:#1149,16.36703524222741
+case com.google.javascript.jscomp.mozilla.rhino.Token.CASE:#1167,16.36305657139531
+? "invalid increment target"#827,16.360764005909797
+case com.google.javascript.jscomp.mozilla.rhino.Token.SET_REF_OP:#1220,16.35990858078003
+case com.google.javascript.jscomp.mozilla.rhino.Token.MUL:#991,16.357673715662074
+comment.setParsed(true);#197,16.35518964131673
+case com.google.javascript.jscomp.mozilla.rhino.Token.LE:#975,16.35384489939763
+irFactory.setFileOverviewJsDoc(irNode);#140,16.34933853149414
+case com.google.javascript.jscomp.mozilla.rhino.Token.TRY:#1099,16.346458985255314
+lineSet = true;#795,16.33867920146269
+case com.google.javascript.jscomp.mozilla.rhino.Token.RB:#1105,16.33346539277297
+case com.google.javascript.jscomp.mozilla.rhino.Token.VAR:#1181,16.331189155578613
+com.google.javascript.jscomp.mozilla.rhino.Node n) {#279,16.330341091862433
+case com.google.javascript.jscomp.mozilla.rhino.Token.FINALLY:#1187,16.330236823470504
+return irNode;#172,16.32893455028534
+case com.google.javascript.jscomp.mozilla.rhino.Token.TO_DOUBLE:#1236,16.326555411020916
+case com.google.javascript.jscomp.mozilla.rhino.Token.REF_NAME:#1095,16.32382266862052
+case com.google.javascript.jscomp.mozilla.rhino.Token.NAME:#1021,16.321093009068417
+case com.google.javascript.jscomp.mozilla.rhino.Token.ENUM_NEXT:#1063,16.321046765645345
+case com.google.javascript.jscomp.mozilla.rhino.Token.NUMBER:#1023,16.320010679739493
+public static Node transformTree(AstRoot node,#124,16.31202467282613
+case com.google.javascript.jscomp.mozilla.rhino.Token.CALL:#1019,16.311897560402198
+case com.google.javascript.jscomp.mozilla.rhino.Token.REF_MEMBER:#1091,16.311309321173304
+return irNode;#142,16.308865070343018
+case com.google.javascript.jscomp.mozilla.rhino.Token.DEC:#1151,16.305781474480263
+case com.google.javascript.jscomp.mozilla.rhino.Token.ENUM_INIT_VALUES:#1061,16.297875780047793
+case com.google.javascript.jscomp.mozilla.rhino.Token.SETCONST:#1244,16.29528386252267
+case com.google.javascript.jscomp.mozilla.rhino.Token.FOR:#1175,16.29466100839468
+case com.google.javascript.jscomp.mozilla.rhino.Token.CATCH:#1185,16.291255244502313
+case com.google.javascript.jscomp.mozilla.rhino.Token.TO_OBJECT:#1234,16.290735705145472
+case com.google.javascript.jscomp.mozilla.rhino.Token.OBJECTLIT:#1073,16.290502613988416
+case com.google.javascript.jscomp.mozilla.rhino.Token.ARRAYLIT:#1071,16.289690839833227
+reportDestructuringAssign(literalNode);#643,16.27798557281494
+case com.google.javascript.jscomp.mozilla.rhino.Token.SETELEM_OP:#1216,16.275974089099513
+case com.google.javascript.jscomp.mozilla.rhino.Token.BITNOT:#999,16.269867331893355
+case com.google.javascript.jscomp.mozilla.rhino.Token.FALSE:#1031,16.268802607500994
+case com.google.javascript.jscomp.mozilla.rhino.Token.ERROR:#943,16.26780476936927
+case com.google.javascript.jscomp.mozilla.rhino.Token.SWITCH:#1165,16.263041814168293
+case com.google.javascript.jscomp.mozilla.rhino.Token.BINDNAME:#1041,16.261986902781896
+case com.google.javascript.jscomp.mozilla.rhino.Token.REF_NS_MEMBER:#1093,16.258165421024447
+case com.google.javascript.jscomp.mozilla.rhino.Token.RC:#1109,16.257727696345402
+private void setFileOverviewJsDoc(Node irNode) {#145,16.25622189839681
+prev.addChildToBack(cur);#609,16.255330888848555
+rootNodeJsDocHolder.getJsDocBuilderForNode();#92,16.249653100967407
+case com.google.javascript.jscomp.mozilla.rhino.Token.USE_STACK:#1212,16.24897966713741
+node.removeChild(child);#328,16.24412561717786
+case com.google.javascript.jscomp.mozilla.rhino.Token.EXPR_VOID:#1203,16.237788995107014
+case com.google.javascript.jscomp.mozilla.rhino.Token.BREAK:#1177,16.237209426032173
+case com.google.javascript.jscomp.mozilla.rhino.Token.GE:#979,16.235760358663704
+jsdocParser.parse();#259,16.232776927948
+case com.google.javascript.jscomp.mozilla.rhino.Token.NOT:#997,16.232538626744198
+case com.google.javascript.jscomp.mozilla.rhino.Token.SETELEM:#1017,16.229748758776434
+case com.google.javascript.jscomp.mozilla.rhino.Token.ASSIGN_MUL:#1135,16.22056875228882
+case com.google.javascript.jscomp.mozilla.rhino.Token.NEW:#1005,16.217006793388954
+case com.google.javascript.jscomp.mozilla.rhino.Token.DOT:#1153,16.214689360724556
+case com.google.javascript.jscomp.mozilla.rhino.Token.ENUM_ID:#1065,16.214000405936407
+case com.google.javascript.jscomp.mozilla.rhino.Token.NULL:#1027,16.210932364830605
+case com.google.javascript.jscomp.mozilla.rhino.Token.FUNCTION:#1155,16.20903754234314
+case com.google.javascript.jscomp.mozilla.rhino.Token.MOD:#995,16.20623672925509
+case com.google.javascript.jscomp.mozilla.rhino.Token.RP:#1113,16.20435696381789
+return true;#849,16.20302647810716
+case com.google.javascript.jscomp.mozilla.rhino.Token.ASSIGN_RSH:#1127,16.202296606699626
+case com.google.javascript.jscomp.mozilla.rhino.Token.GET_REF:#1075,16.20166485650199
+case com.google.javascript.jscomp.mozilla.rhino.Token.IF:#1161,16.200349734379696
+case com.google.javascript.jscomp.mozilla.rhino.Token.LB:#1103,16.20022957141583
+case com.google.javascript.jscomp.mozilla.rhino.Token.EOF:#945,16.19870620303684
+private boolean handlePossibleFileOverviewJsDoc(#178,16.19097677866618
+case com.google.javascript.jscomp.mozilla.rhino.Token.THIS:#1029,16.190083760481613
+case com.google.javascript.jscomp.mozilla.rhino.Token.CONST:#1242,16.187471954910844
+operand.setDouble(-operand.getDouble());#821,16.185658407211303
+case com.google.javascript.jscomp.mozilla.rhino.Token.AND:#1147,16.1848678955665
+case com.google.javascript.jscomp.mozilla.rhino.Token.COMMA:#1115,16.183880911933052
+case com.google.javascript.jscomp.mozilla.rhino.Token.BITXOR:#965,16.183253254209244
+case com.google.javascript.jscomp.mozilla.rhino.Token.ASSIGN_LSH:#1125,16.177690919240316
+case com.google.javascript.jscomp.mozilla.rhino.Token.REF_NS_NAME:#1097,16.177443917592367
+case com.google.javascript.jscomp.mozilla.rhino.Token.ELSE:#1163,16.173817775867604
+case com.google.javascript.jscomp.mozilla.rhino.Token.ESCXMLTEXT:#1087,16.17342856725057
+case com.google.javascript.jscomp.mozilla.rhino.Token.GT:#977,16.172925325540398
+case com.google.javascript.jscomp.mozilla.rhino.Token.SET_REF:#1077,16.16769790649414
+case com.google.javascript.jscomp.mozilla.rhino.Token.LOCAL_LOAD:#1051,16.166473355786554
+case com.google.javascript.jscomp.mozilla.rhino.Token.ASSIGN_BITXOR:#1121,16.1660857354441
+case com.google.javascript.jscomp.mozilla.rhino.Token.IFEQ:#957,16.16504669189453
+case com.google.javascript.jscomp.mozilla.rhino.Token.XML:#1226,16.164504686991375
+case com.google.javascript.jscomp.mozilla.rhino.Token.LT:#973,16.163790079263542
+reportSetterParam(el.getLeft());#670,16.16144496744329
+return true;#182,16.156516287061905
+case com.google.javascript.jscomp.mozilla.rhino.Token.TYPEOF:#1009,16.15636782810606
+case com.google.javascript.jscomp.mozilla.rhino.Token.DEFAULTNAMESPACE:#1085,16.148656260582708
+case com.google.javascript.jscomp.mozilla.rhino.Token.GETELEM:#1015,16.144410297788422
+case com.google.javascript.jscomp.mozilla.rhino.Token.NE:#971,16.144378148592434
+case com.google.javascript.jscomp.mozilla.rhino.Token.IN:#1047,16.144260443173923
+case com.google.javascript.jscomp.mozilla.rhino.Token.RSH:#983,16.14348033622459
+case com.google.javascript.jscomp.mozilla.rhino.Token.DIV:#993,16.139474355257473
+case com.google.javascript.jscomp.mozilla.rhino.Token.LEAVEWITH:#951,16.13066593805949
+case com.google.javascript.jscomp.mozilla.rhino.Token.OR:#1145,16.129928295428936
+case com.google.javascript.jscomp.mozilla.rhino.Token.EOL:#947,16.127960876182275
+case com.google.javascript.jscomp.mozilla.rhino.Token.ADD:#987,16.121753215789795
+case com.google.javascript.jscomp.mozilla.rhino.Token.STRING:#1025,16.11994393666585
+functionNode.getAbsolutePosition();#550,16.116371419694687
+case com.google.javascript.jscomp.mozilla.rhino.Token.NEG:#1003,16.11353796499747
+case com.google.javascript.jscomp.mozilla.rhino.Token.SETPROP_OP:#1214,16.097952365875244
+case com.google.javascript.jscomp.mozilla.rhino.Token.BITOR:#963,16.09674439606843
+case com.google.javascript.jscomp.mozilla.rhino.Token.REGEXP:#1039,16.08758541389748
+case com.google.javascript.jscomp.mozilla.rhino.Token.ENUM_INIT_KEYS:#1059,16.084403384815563
+case com.google.javascript.jscomp.mozilla.rhino.Token.ASSIGN:#1117,16.084102171438712
+case com.google.javascript.jscomp.mozilla.rhino.Token.GET:#1238,16.078164944281944
+case com.google.javascript.jscomp.mozilla.rhino.Token.COLONCOLON:#1224,16.075863640883874
+case com.google.javascript.jscomp.mozilla.rhino.Token.LOOP:#1201,16.075178111041033
+case com.google.javascript.jscomp.mozilla.rhino.Token.RETURN_RESULT:#1069,16.070288594563802
+case com.google.javascript.jscomp.mozilla.rhino.Token.ASSIGN_URSH:#1129,16.062077458699545
+case com.google.javascript.jscomp.mozilla.rhino.Token.EXPR_RESULT:#1204,16.05871664683024
+case com.google.javascript.jscomp.mozilla.rhino.Token.LSH:#981,16.054200101781774
+case com.google.javascript.jscomp.mozilla.rhino.Token.LP:#1111,16.051975617041954
+case com.google.javascript.jscomp.mozilla.rhino.Token.ASSIGN_MOD:#1139,16.050277841502222
+case com.google.javascript.jscomp.mozilla.rhino.Token.SETPROP:#1013,16.04663406099592
+Node rootNodeJsDocHolder = new Node(Token.SCRIPT);#90,16.045714219411213
+case com.google.javascript.jscomp.mozilla.rhino.Token.ASSIGN_ADD:#1131,16.044932529844086
+case com.google.javascript.jscomp.mozilla.rhino.Token.ESCXMLATTR:#1089,16.04417324066162
+case com.google.javascript.jscomp.mozilla.rhino.Token.URSH:#985,16.038216767487704
+case com.google.javascript.jscomp.mozilla.rhino.Token.XMLEND:#1232,16.02623156138829
+handlePossibleFileOverviewJsDoc(jsDocParser);#190,16.024512827396393
+case com.google.javascript.jscomp.mozilla.rhino.Token.SCRIPT:#1208,16.023592560379594
+irFactory.handlePossibleFileOverviewJsDoc(comment);#135,16.022045508674953
+comment.setParsed(true);#189,16.01485384427584
+case com.google.javascript.jscomp.mozilla.rhino.Token.THISFN:#1067,16.014148676836932
+case com.google.javascript.jscomp.mozilla.rhino.Token.ASSIGN_DIV:#1137,16.00578206160973
+case com.google.javascript.jscomp.mozilla.rhino.Token.ASSIGN_BITOR:#1119,16.00177551905314
+case com.google.javascript.jscomp.mozilla.rhino.Token.LOCAL_BLOCK:#1218,16.00005334218343
+case com.google.javascript.jscomp.mozilla.rhino.Token.XMLATTR:#1230,15.994962001668997
+return processGeneric(blockNode);#399,15.98623510507437
+case com.google.javascript.jscomp.mozilla.rhino.Token.BLOCK:#1195,15.963610613787615
+case com.google.javascript.jscomp.mozilla.rhino.Token.DO:#1173,15.962359171647291
+case com.google.javascript.jscomp.mozilla.rhino.Token.GOTO:#955,15.957455458464446
+irNode = newBlock;#169,15.95543112073626
+case com.google.javascript.jscomp.mozilla.rhino.Token.DEL_REF:#1079,15.953753504259833
+case com.google.javascript.jscomp.mozilla.rhino.Token.LC:#1107,15.951888928046593
+return transformDispatcher.process(node);#274,15.931869234357562
+private class TransformDispatcher extends TypeSafeDispatcher<Node> {#277,15.90673197640313
+case com.google.javascript.jscomp.mozilla.rhino.Token.ASSIGN_BITAND:#1123,15.889393997192382
+case com.google.javascript.jscomp.mozilla.rhino.Token.IFNE:#959,15.888862221329301
+reportDestructuringAssign(literalNode);#309,15.871519490292197
+case com.google.javascript.jscomp.mozilla.rhino.Token.GETPROP:#1011,15.848635911941528
+case com.google.javascript.jscomp.mozilla.rhino.Token.BITAND:#967,15.813619083828396
+Node operand = transform(exprNode.getOperand());#819,15.794425613001772
+case com.google.javascript.jscomp.mozilla.rhino.Token.DELPROP:#1007,15.787735610172666
+case com.google.javascript.jscomp.mozilla.rhino.Token.RETURN:#953,15.775553244131583
+private Node templateNode;#97,15.754617691040039
+functionNode.getLp();#531,15.74875299554122
+case com.google.javascript.jscomp.mozilla.rhino.Token.SHNE:#1037,15.731184959411621
+irNode.setJSDocInfo(rootNodeJsDocHolder.getJSDocInfo());#149,15.691960334777832
+return jsDocParser.retrieveAndResetParsedJSDocInfo();#199,15.65572843184838
+return processInfixExpression(propertyNode);#691,15.609634637832642

@@ -1,0 +1,311 @@
+public JSModule getModule() {#596,20.13504479148171
+public JSModule getModule() {#553,20.059029145674273
+Scope scope;#607,19.99733461652483
+NameInfo(String name) {#633,19.827876871282403
+NameContext(NameInfo name) {#608,19.784114519755047
+JSModule getDeepestCommonModuleRef() {#685,19.70091254370553
+private final JSModule module;#569,19.67072925567627
+final String name;#618,19.64659309387207
+private Stack<NameContext> symbolStack = new Stack<NameContext>();#189,19.61217622756958
+JSModule getModule();#451,19.610863791571724
+implements EdgeCallback<NameInfo, JSModule> {#420,19.573653613819797
+public JSModule getModule() {#486,19.567567998712715
+private final JSModule module;#523,19.503714179992677
+private NameInfo getNameInfoForName(String name, SymbolType type) {#175,19.49432829806679
+boolean readsClosureVariables() {#645,19.478969834067605
+private final JSModuleGraph moduleGraph;#61,19.443459510803223
+private enum SymbolType {#454,19.38675335475377
+private void addSymbolUse(String name, JSModule module, SymbolType type) {#288,19.328852031541906
+private final JSModule module;#464,19.277397537231444
+private class NameContext {#605,19.237402507237025
+boolean markReference(JSModule module) {#655,19.225761560293343
+@Override public String toString() { return name; }#637,19.215759217739105
+if (propName.equals("prototype")) {#223,19.15656009473299
+final NameInfo name;#606,19.14415126376682
+JSModule module) {#572,19.103992462158203
+@Override#195,19.099053064982098
+private JSModule deepestCommonModuleRef = null;#622,19.036921977996826
+JSModule startModule = start.getDeepestCommonModuleRef();#423,19.032502781261098
+private final LinkedDirectedGraph<NameInfo, JSModule> symbolGraph =#84,18.964917986016523
+boolean isReferenced() {#640,18.93792083046653
+Map<String, NameInfo> map = type == PROPERTY ?#176,18.93087151176051
+if (!referenced) {#657,18.914719801682693
+private final Map<String, NameInfo> varNameInfo = Maps.newHashMap();#102,18.887256168183825
+public void remove() {#534,18.86950132581923
+if (var.getInitialValue() != null &&#254,18.86446086220119
+if (start.isReferenced()) {#422,18.863705217838287
+symbolStack.push(new NameContext(getNameInfoForName(name, VAR)));#213,18.859423571619494
+private boolean readClosureVariables = false;#626,18.85581537393423
+public Collection<NameInfo> getAllNameInfo() {#162,18.854447296687535
+this.compiler = compiler;#117,18.850168228149414
+public Node getValue() {#591,18.845111179351807
+if (compiler.getCodingConvention().isExported(name) ||#355,18.837649198678825
+public void remove() {#581,18.830137570699055
+if (startModule != null &&#424,18.829961395263673
+public boolean traverseEdge(NameInfo start, JSModule edge, NameInfo dest) {#421,18.828396276994184
+String name = parent.getType() == Token.NAME ?#210,18.821162450881232
+private final JSModule firstModule;#62,18.804405000474716
+isGlobalFunctionDeclaration(t, firstChild)) {#348,18.785055550661955
+if (moduleGraph != null) {#662,18.768452508108957
+private final Node key;#565,18.768367555406357
+AssignmentProperty(Node node, JSModule module) {#528,18.765961774190266
+return t.inGlobalScope() &&#308,18.763010365622385
+private final NameInfo globalNode = new NameInfo("[global]");#88,18.759137378019446
+@Override#590,18.756319046020508
+this.moduleGraph = moduleGraph;#118,18.694501717885334
+if (var != null) {#251,18.689873695373535
+@Override#538,18.68479585647583
+public Node getValue() {#544,18.673213481903076
+private final Deque<Symbol> declarations = new ArrayDeque<Symbol>();#621,18.672956052033797
+Deque<Symbol> getDeclarations() {#693,18.65096995035807
+Node getValue();#512,18.645784616470337
+if (moduleGraph != null) {#122,18.629480600357056
+if (map.getType() == Token.OBJECTLIT) {#390,18.61671781539917
+private final Node map;#567,18.614537556966145
+String name = dest.getString();#381,18.614101076126097
+for (Node key = map.getFirstChild();#391,18.610259263411812
+@Override#543,18.594785531361897
+if (dest.getType() == Token.STRING &&#378,18.588211101034414
+if (t.inGlobalScope()) {#256,18.57816405918287
+NameContext context = symbolStack.get(i);#271,18.567635803222657
+@Override#585,18.56182336807251
+if (moduleGraph == null) {#135,18.554231779915945
+NameInfo info = getNameInfoForName(name, type);#289,18.552618312835694
+String name = nameNode.getString();#349,18.55139721141142
+@Override#580,18.55117114384969
+private final SymbolType VAR = SymbolType.VAR;#56,18.5346253712972
+private final AbstractCompiler compiler;#58,18.529360983106827
+@Override#533,18.528399149576824
+switch (n.getType()) {#371,18.515105724334717
+private Node getAssignNode() {#548,18.49103871981303
+private boolean referenced = false;#620,18.487621879577638
+private final NameInfo anonymousNode = new NameInfo("[anonymous]");#94,18.479585647583008
+public void remove() {#475,18.46986134847005
+for (JSModule module : moduleGraph.getAllModules()) {#138,18.459970432779063
+private final Node value;#566,18.451361232333714
+symbolStack.push(new NameContext(getNameInfoForName(#207,18.44423368702764
+class NameInfo {#616,18.427208582560223
+if (var.isGlobal()) {#253,18.418943934970432
+private void addGlobalUseOfSymbol(String name, JSModule module,#404,18.41735997200012
+private ProcessProperties() {#191,18.411605644226075
+if (child.getType() == Token.STRING &&#326,18.39991042924964
+addGlobalUseOfSymbol(propName, t.getModule(), PROPERTY);#226,18.37616864566145
+symbolStack.peek().scope = t.getScope();#197,18.365786351655657
+case Token.ASSIGN:#388,18.35071986062186
+NameInfo def = null;#290,18.34852933883667
+String name = n.getString();#248,18.34722739458084
+this.assign = assign;#576,18.346012849074143
+if (deepestCommonModuleRef == null) {#665,18.342344685604697
+symbolStack.push(new NameContext(globalNode));#192,18.33299774593777
+if (context.scope == var.getScope()) {#273,18.31707294170673
+NameInfo nameInfo = new NameInfo(name);#181,18.309144300573013
+Var var = t.getScope().getVar(name);#250,18.306806382678804
+String name = key.getString();#394,18.296500726179644
+JSModuleGraph moduleGraph, boolean canModifyExterns,#115,18.287219762802124
+SymbolType type) {#405,18.286946076613205
+isGlobalFunctionDeclaration(t, parent) ||#345,18.2808293842134
+private final Map<String, NameInfo> propertyNameInfo = Maps.newHashMap();#98,18.27236339024135
+NameInfo nameInfo = getNameInfoForName(property, PROPERTY);#134,18.267973029095195
+this.value = value;#574,18.26760705312093
+case Token.GETPROP:#373,18.261732165018717
+this.key = key;#573,18.251729726791382
+if (!def.equals(info)) {#298,18.248924911022186
+!(parent.getType() == Token.ASSIGN &&#234,18.232622644175652
+private final Node assign;#568,18.225403679741753
+public void enterScope(NodeTraversal t) {#196,18.20554769039154
+this.map = map;#575,18.202651341756184
+JSModule originalDeepestCommon = deepestCommonModuleRef;#663,18.19647789001465
+return result;#165,18.19091020311628
+@Override#474,18.178716977437336
+for (int i = symbolStack.size() - 1; i >= 0; i--) {#270,18.144162900520094
+symbolGraph.connect(globalNode, module, getNameInfoForName(name, type));#406,18.13381074025081
+parent.getType() == Token.VAR ||#468,18.133270899454754
+return readClosureVariables;#646,18.117288827896118
+@Override#552,18.116862614949543
+@Override#595,18.115198771158855
+FixedPointGraphTraversal<NameInfo, JSModule> t =#153,18.081912592837686
+propertyNameInfo : varNameInfo;#177,18.0538929104805
+private class PropagateReferences#419,18.04090132032122
+this.module = module;#530,18.017228921254475
+if (!propNameNode.isQuotedString()) {#243,18.01453854820945
+isGlobalFunctionDeclaration(t, n) ||#282,18.00252591995966
+symbolStack.push(new NameContext(anonymousNode));#215,17.988805952526274
+parent.getParent())) {#258,17.981231750980502
+this.module = module;#471,17.966643651326496
+addGlobalUseOfSymbol(name, t.getModule(), VAR);#357,17.95938138608579
+"prototype"))) {#237,17.955933752514067
+return declarations;#694,17.95487075381809
+addSymbolUse(propName, t.getModule(), PROPERTY);#228,17.941973862824618
+getNameInfoForName(name, PROPERTY).getDeclarations().add(prop);#383,17.93779358267784
+if (isChainedProperty) {#323,17.93447071313858
+for (int i = symbolStack.size() - 1; i >= 0; i--) {#292,17.9286863538954
+this.module = module;#577,17.92510453859965
+Property prop = new AssignmentProperty(grandParent, t.getModule());#382,17.91973689750389
+private static final Set<String> IMPLICITLY_USED_PROPERTIES =#65,17.916866475885566
+public void exitScope(NodeTraversal t) {#201,17.90898734331131
+var.getInitialValue().getType() == Token.FUNCTION) {#255,17.90779720653187
+boolean isChainedProperty =#320,17.90716293879918
+AnalyzePrototypeProperties(AbstractCompiler compiler,#114,17.897282702582224
+class GlobalFunction implements Symbol {#462,17.89184135860867
+getNameInfoForName(name, VAR).getDeclarations().add(#350,17.86589984893799
+if (originalDeepestCommon != deepestCommonModuleRef) {#673,17.861136118570965
+context.name.readClosureVariables = true;#272,17.85994255065918
+private final Node exprNode;#522,17.851085662841797
+result.addAll(varNameInfo.values());#164,17.832592391967772
+public Node getPrototype() {#586,17.8274882923473
+parent.getString() /* VAR */ :#211,17.812187671661377
+if (isPrototypePropertyAssign(n)) {#206,17.798619959089493
+interface Symbol {#442,17.793104553222655
+if (!processGlobalFunctionDeclaration(t, n, parent,#257,17.788747946421307
+firstModule = null;#125,17.7743071642789
+if (n.getType() == Token.GETPROP) {#412,17.757414863223122
+private final Node nameNode;#463,17.73775405883789
+if (// Check for a named FUNCTION.#344,17.737044166116153
+ImmutableSet.of("length", "toString", "valueOf");#66,17.733583667061545
+return getAssignNode().getLastChild();#545,17.73357355594635
+symbolGraph.connect(externNode, null, nameInfo);#136,17.730686577883635
+@Override#200,17.72371705373128
+boolean hasChanged = false;#656,17.715187788009644
+private final NameInfo externNode = new NameInfo("[extern]");#91,17.714070721676475
+if (parent.getType() == Token.FUNCTION || parent.hasOneChild()) {#477,17.713662536055953
+List<NameInfo> result = Lists.newArrayList(propertyNameInfo.values());#163,17.709987930629563
+(NodeUtil.isFunctionDeclaration(n) ||#309,17.69454587024191
+Node grandParent = parent.getParent();#376,17.685155466983193
+public Node getFunctionNode() {#490,17.679683685302734
+Node parent = n.getParent();#375,17.675251642862957
+firstModule = moduleGraph.getRootModule();#123,17.671569645404816
+key != null; key = key.getNext()) {#392,17.67095266539475
+return nameInfo;#184,17.66789903640747
+public Node getPrototype() {#539,17.654103885997426
+map.put(name, nameInfo);#182,17.653449122111002
+if (def != anonymousNode) {#294,17.651776611804962
+addGlobalUseOfSymbol(name, t.getModule(), VAR);#259,17.648322432381764
+return hasChanged;#678,17.64796676635742
+Node map = n.getFirstChild().getNext();#389,17.645172682675447
+def = symbolStack.get(i).name;#293,17.643807862934313
+return module;#487,17.642693943447536
+return deepestCommonModuleRef;#686,17.60324962933858
+getNameInfoForName(n.getLastChild().getString(), PROPERTY));#414,17.60148968235139
+this.name = name;#634,17.599940299987793
+if (isPrototypePropertyAssign(n) ||#281,17.595094627804226
+addSymbolUse(name, t.getModule(), VAR);#262,17.571576672215617
+@Override#485,17.568647861480713
+if (NodeUtil.isFunction(parent)) {#493,17.549324406517876
+return module;#597,17.546404944525825
+deepestCommonModuleRef = module;#666,17.544721322901108
+return referenced;#641,17.54283396402995
+this.name = name;#609,17.534484148025513
+getNameInfoForName(name, PROPERTY).getDeclarations().add(prop);#397,17.533059007981244
+if (!canModifyExterns) {#146,17.527104786464147
+return dest.markReference(startModule);#426,17.52666352924548
+if (n.getType() == Token.GETPROP) {#221,17.522131147838774
+moduleGraph.dependsOn(startModule, edge)) {#425,17.520825500488282
+n.getFirstChild().getLastChild().getString(), PROPERTY)));#208,17.517088272992304
+child.getString().equals("prototype")) {#327,17.512316513061524
+n.getType() == Token.FUNCTION &&#310,17.512276483618695
+deepestCommonModuleRef =#668,17.511533546447755
+for (String property : IMPLICITLY_USED_PROPERTIES) {#133,17.49544093919837
+symbolGraph.connect(def, module, info);#299,17.493137409812526
+referenced = true;#658,17.478387514750164
+this.exprNode = node;#529,17.467015779935398
+private final boolean canModifyExterns;#59,17.461180448532104
+String propName = n.getFirstChild().getNext().getString();#222,17.454487959543865
+return module;#554,17.45373429192437
+if (map.containsKey(name)) {#178,17.449961280822755
+parent.getFirstChild().getType() == Token.GETPROP &&#235,17.446190118789673
+return value;#592,17.435106807284885
+Property prop = new LiteralProperty(#395,17.42577535455877
+Node nameNode, Node parent, Node gramps) {#341,17.413670778274536
+GlobalFunction(Node nameNode, Node parent, Node gramps, JSModule module) {#466,17.406749435093094
+private boolean isGlobalFunctionDeclaration(NodeTraversal t, Node n) {#307,17.39337019486861
+for (Node propNameNode = n.getFirstChild(); propNameNode != null;#240,17.38224909040663
+Node getPrototype();#509,17.3603638543023
+hasChanged = true;#659,17.337868983928974
+NodeUtil.isFunctionDeclaration(parent));#469,17.329584530421666
+addSymbolUse(propNameNode.getString(), t.getModule(), PROPERTY);#244,17.302694898663145
+new GlobalFunction(nameNode, parent, gramps, t.getModule()));#351,17.29603449503581
+t.computeFixedPoint(symbolGraph,#155,17.293770281473794
+class AnalyzePrototypeProperties implements CompilerPass {#52,17.28815269470215
+void remove();#446,17.245675495692662
+globalNode.markReference(null);#128,17.240171670913696
+private final SymbolType PROPERTY = SymbolType.PROPERTY;#55,17.237747865564682
+) {#318,17.210469484329224
+Node dest = n.getFirstChild().getNext();#374,17.206229079853404
+return false;#362,17.178576045566135
+Node n = assign.getFirstChild();#315,17.17274398803711
+private boolean isPrototypePropertyAssign(Node assign) {#314,17.17230218999526
+Preconditions.checkState(parent.getType() == Token.VAR);#480,17.171395962054913
+firstChild != null &&#347,17.149621772766114
+return nameNode.getChildAtIndex(1);#497,17.139080248380964
+return exprNode.getFirstChild();#549,17.129685061318533
+break;#385,17.110623995463055
+symbolStack.pop();#284,17.110372836773212
+symbolGraph.connect(externNode, firstModule,#413,17.104921436309816
+n.getParent().getType() == Token.NAME);#311,17.099332491556805
+return false;#333,17.086601151360405
+this.canModifyExterns = canModifyExterns;#119,17.074763584136964
+interface Property extends Symbol {#506,17.070293154035294
+this.nameNode = nameNode;#470,17.055625370570592
+Node parent = nameNode.getParent();#491,17.036273384094237
+symbolGraph.connect(externNode, module, nameInfo);#139,17.026217460632324
+NodeUtil.isVarOrSimpleAssignLhs(n, parent)) {#380,17.013925194740295
+&& n.getType() == Token.GETPROP#317,17.004990664395418
+return assign.getFirstChild();#587,17.003602027893066
+Sets.newHashSet(externNode, globalNode));#156,16.98216202145531
+PROPERTY,#455,16.980189204216003
+anchorUnusedVars) {#356,16.97953404878315
+NodeUtil.isExprAssign(grandParent) &&#379,16.9743527003697
+Node parent = nameNode.getParent();#476,16.944331296284993
+private final boolean anchorUnusedVars;#60,16.942939844998445
+private boolean processGlobalFunctionDeclaration(NodeTraversal t,#340,16.92872953414917
+moduleGraph.getDeepestCommonDependencyInclusive(#669,16.926344765557182
+NodeUtil.isFunction(n)) {#283,16.911337757110594
+if (n != null && NodeUtil.isVarOrSimpleAssignLhs(n, assign)#316,16.908279912225133
+boolean anchorUnusedVars) {#116,16.887597152165004
+return true;#217,16.882226943969727
+key, key.getFirstChild(), map, n, t.getModule());#396,16.88117528642927
+public boolean shouldTraverse(NodeTraversal t, Node n, Node parent) {#205,16.87232137762982
+Node firstChild = nameNode.getFirstChild();#342,16.86547845952651
+VAR;#456,16.864833695547922
+parent.getFirstChild().getLastChild().getString().equals(#236,16.82689097949437
+Preconditions.checkState(#467,16.81914410224328
+LiteralProperty(Node key, Node value, Node map, Node assign,#571,16.80028643608093
+Node child = n.getFirstChild().getFirstChild().getNext();#324,16.79878330230713
+symbolGraph.createNode(nameInfo);#183,16.796009953816732
+deepestCommonModuleRef, module);#670,16.78566833496094
+return false;#431,16.77814218733046
+private class ProcessProperties implements NodeTraversal.ScopedCallback {#188,16.76517666087431
+private class ProcessExternProperties extends AbstractPostOrderCallback {#410,16.72678362528483
+propNameNode = propNameNode.getNext()) {#241,16.679153442382812
+externNode.markReference(null);#129,16.648698880122257
+public void process(Node externRoot, Node root) {#145,16.64207909901937
+return map.get(name);#179,16.62686113210825
+return getAssignNode().getFirstChild().getFirstChild();#540,16.619453620910644
+static class AssignmentProperty implements Property {#521,16.616304927402073
+break;#400,16.591256618499756
+static class LiteralProperty implements Property {#564,16.56131467819214
+symbolGraph.createNode(externNode);#131,16.544468879699707
+processPrototypeParent(t, parent);#224,16.537166394685443
+n.getFirstChild().getString() /* named function */;#212,16.52926261608417
+public void visit(NodeTraversal t, Node n, Node parent) {#411,16.520384243556432
+symbolGraph.createNode(globalNode);#130,16.48824904515193
+n.getFirstChild().getType() == Token.GETPROP;#321,16.473839010511124
+FixedPointGraphTraversal.newTraversal(new PropagateReferences());#154,16.45586238861084
+private void processPrototypeParent(NodeTraversal t, Node n) {#370,16.36271113441104
+public void visit(NodeTraversal t, Node n, Node parent) {#220,16.3610014688401
+return true;#360,16.33135578849099
+NodeTraversal.traverse(compiler, externRoot,#147,16.30862331390381
+LinkedDirectedGraph.createWithoutAnnotations();#85,16.297136979944565
+map.removeChild(key);#582,16.277395248413086
+new ProcessExternProperties());#148,16.26567335689769
+NodeTraversal.traverse(compiler, root, new ProcessProperties());#151,16.26365375518799
+NodeUtil.removeChild(parent.getParent(), parent);#478,16.25933920253407
+hasChanged = true;#674,16.250776545206705
+return dest.markReference(edge);#428,16.231677373250324
+NodeUtil.removeChild(exprNode.getParent(), exprNode);#535,16.218407500873912
+break;#274,16.06170786751641
+return parent;#494,16.045130816372957
+parent.removeChild(nameNode);#481,15.92544138431549
+this.anchorUnusedVars = anchorUnusedVars;#120,15.817618922183389
+break;#295,15.383039951324463
+return true;#328,15.253075408935548

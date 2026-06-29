@@ -1,0 +1,62 @@
+private static MockitoCore mockitoCore() {#150,18.27332285472325
+return mockSettings.serializable()#99,17.925427436828613
+@Override#127,17.610073852539063
+return mock;#110,17.55977552587336
+return mockitoCore().mock(#88,17.541660845279694
+public class ReturnsDeepStubs implements Answer<Object>, Serializable {#42,17.537878608703615
+container.addAnswer(new DeeplyStubbedAnswer(mock), false);#109,17.41974977346567
+@SuppressWarnings("serial") // serialization will fail with a nice message if mock not serializable#138,17.409358732161984
+private static ReturnsEmptyValues delegate() {#154,17.329610109329224
+return recordDeepStubAnswer(#70,17.321141497294107
+MockSettings mockSettings = returnTypeGenericMetadata.hasRawExtraInterfaces() ?#95,17.296890478867752
+DeeplyStubbedAnswer(Object mock) {#141,17.276152359811885
+return stubbedInvocationMatcher.answer(invocation);#65,17.221848454968683
+actualParameterizedType(invocation.getMock()).resolveGenericReturnType(invocation.getMethod());#48,17.169083385932737
+return mock;#145,17.07022673288981
+private Object writeReplace() throws IOException {#131,17.046518431769478
+if (container.getInvocationForStubbing().matches(stubbedInvocationMatcher.getInvocation())) {#64,16.94354924923036
+private static class DeeplyStubbedAnswer implements Answer<Object>, Serializable {#137,16.903682072957356
+InternalMockHandler<Object> handler = new MockUtil().getMockHandler(invocation.getMock());#59,16.829658957088697
+public Object answer(InvocationOnMock invocation) throws Throwable {#144,16.80517623735511
+@SuppressWarnings("serial") // not gonna be serialized#120,16.78062617260477
+: withSettings();#97,16.763625192642213
+withSettings().extraInterfaces(returnTypeGenericMetadata.rawExtraInterfaces())#96,16.734147352330826
+private static final MockitoCore MOCKITO_CORE = new MockitoCore();#159,16.696742764225714
+this.mock = mock;#142,16.696450835780094
+return new ReturnsDeepStubsSerializationFallback(returnTypeGenericMetadata);#105,16.69326784133911
+private Object recordDeepStubAnswer(final Object mock, InvocationContainerImpl container) throws Throwable {#108,16.57972919023954
+return GenericMetadataSupport.inferFrom(mockSettings.getTypeToMock());#115,16.548541648047312
+private static class ReturnsDeepStubsSerializationFallback extends ReturnsDeepStubs implements Serializable {#119,16.53503296772639
+return Mockito.RETURNS_DEEP_STUBS;#132,16.530850798995406
+private ReturnsDeepStubs returnsDeepStubsAnswerUsing(final GenericMetadataSupport returnTypeGenericMetadata) {#104,16.473344598497665
+CreationSettings mockSettings = (CreationSettings) new MockUtil().getMockHandler(mock).getMockSettings();#114,16.46851568751865
+GenericMetadataSupport returnTypeGenericMetadata =#47,16.450919151306152
+return deepStub(invocation, returnTypeGenericMetadata);#55,16.43166563727639
+protected GenericMetadataSupport actualParameterizedType(Object mock) {#128,16.34856687892567
+return returnTypeGenericMetadata;#129,16.34627568094354
+private static final ReturnsEmptyValues DELEGATE = new ReturnsEmptyValues();#160,16.34498530626297
+newDeepStubMock(returnTypeGenericMetadata),#71,16.334762474586224
+public ReturnsDeepStubsSerializationFallback(GenericMetadataSupport returnTypeGenericMetadata) {#123,16.33440300513958
+for (StubbedInvocationMatcher stubbedInvocationMatcher : container.getStubbedInvocations()) {#63,16.32983480181013
+.defaultAnswer(returnsDeepStubsAnswerUsing(returnTypeGenericMetadata));#100,16.289206364575556
+Class<?> rawType = returnTypeGenericMetadata.rawType();#50,16.258337352586828
+protected GenericMetadataSupport actualParameterizedType(Object mock) {#113,16.237616962856716
+return LazyHolder.DELEGATE;#155,16.16534699891743
+private static final long serialVersionUID = -7105341425736035847L;#44,16.15398057301839
+private final Object mock;#139,16.124043391301083
+this.returnTypeGenericMetadata = returnTypeGenericMetadata;#124,16.079776690556454
+InvocationContainerImpl container = (InvocationContainerImpl) handler.getInvocationContainer();#60,16.071988388344092
+private final GenericMetadataSupport returnTypeGenericMetadata;#121,16.070792865753173
+public Object answer(InvocationOnMock invocation) throws Throwable {#46,16.051217079162598
+if (!mockitoCore().isTypeMockable(rawType)) {#51,16.017966918945312
+return LazyHolder.MOCKITO_CORE;#151,15.969941876151346
+returnTypeGenericMetadata.rawType(),#89,15.90993766784668
+);#73,15.702755716111925
+);#91,15.691411760118273
+private Object deepStub(InvocationOnMock invocation, GenericMetadataSupport returnTypeGenericMetadata) throws Throwable {#58,15.672253178011987
+return delegate().returnValueFor(rawType);#52,15.6241830479015
+private static class LazyHolder {#158,15.506513675053915
+withSettingsUsing(returnTypeGenericMetadata)#90,15.276594748863808
+container#72,15.225593847386977
+private Object newDeepStubMock(GenericMetadataSupport returnTypeGenericMetadata) {#87,15.18691905339559
+private MockSettings withSettingsUsing(GenericMetadataSupport returnTypeGenericMetadata) {#94,15.06429823962125

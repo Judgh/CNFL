@@ -1,0 +1,118 @@
+public class OpenMapRealMatrix extends AbstractRealMatrix#31,17.470502159812234
+public OpenMapRealMatrix createMatrix(int rowDimension, int columnDimension) {#74,15.034699647322945
+public OpenMapRealMatrix(OpenMapRealMatrix matrix) {#60,15.025991215425378
+public int getColumnDimension() {#80,15.003563364346823
+public OpenMapRealMatrix multiply(OpenMapRealMatrix m) {#178,14.987541728549534
+public OpenMapRealMatrix copy() {#68,14.986298203468323
+public OpenMapRealMatrix subtract(OpenMapRealMatrix m) {#127,14.984855757819282
+public OpenMapRealMatrix subtract(final RealMatrix m) {#111,14.869105787838206
+final BlockRealMatrix out = new BlockRealMatrix(rows, outCols);#153,14.801542364317795
+public OpenMapRealMatrix(int rowDimension, int columnDimension) {#48,14.734852018810454
+public RealMatrix multiply(final RealMatrix m) {#144,14.681414985656739
+final int outCols = m.getColumnDimension();#182,14.645866121564593
+implements SparseRealMatrix, Serializable {#32,14.6011716402494
+OpenMapRealMatrix out = new OpenMapRealMatrix(rows, outCols);#183,14.539333563584547
+public OpenMapRealMatrix add(OpenMapRealMatrix m) {#92,14.524548742506239
+final OpenMapRealMatrix out = new OpenMapRealMatrix(this);#131,14.421605400417162
+private final OpenIntToDoubleHashMap entries;#40,14.404941286359515
+private int computeKey(int row, int column) {#268,14.37000960111618
+for (OpenIntToDoubleHashMap.Iterator iterator = entries.iterator(); iterator.hasNext();) {#184,14.360191068341654
+final OpenMapRealMatrix out = new OpenMapRealMatrix(this);#97,14.344054636747941
+public int getRowDimension() {#218,14.257872899373373
+public double getEntry(int row, int column) {#210,14.158657670021057
+for (OpenIntToDoubleHashMap.Iterator iterator = entries.iterator(); iterator.hasNext();) {#154,14.07358397075108
+for (OpenIntToDoubleHashMap.Iterator iterator = m.entries.iterator(); iterator.hasNext();) {#132,14.063878297805786
+for (OpenIntToDoubleHashMap.Iterator iterator = m.entries.iterator(); iterator.hasNext();) {#98,14.002340653363396
+final int outCols = m.getColumnDimension();#152,13.875191707611084
+@Override#110,13.739500522613525
+public void setEntry(int row, int column, double value) {#224,13.673447056820518
+final int key = computeKey(row, column);#239,13.661000101189865
+public void multiplyEntry(int row, int column, double factor) {#250,13.609578483983091
+final int key = computeKey(row, column);#253,13.526007100155478
+private static final long serialVersionUID = -5962461716457143437L;#34,13.497661963753078
+@Override#143,13.484866460164389
+MatrixUtils.checkMultiplicationCompatible(this, m);#180,13.461452795111615
+private final int columns;#38,13.44003963470459
+MatrixUtils.checkColumnIndex(this, column);#226,13.408465147018433
+for (int j = 0; j < outCols; ++j) {#190,13.401750811215106
+return new OpenMapRealMatrix(rowDimension, columnDimension);#75,13.379970985910166
+public void addToEntry(int row, int column, double increment) {#236,13.376079320907593
+private final int rows;#36,13.303267267015245
+@Override#217,13.299827257792154
+@Override#209,13.202473322550455
+MatrixUtils.checkColumnIndex(this, column);#238,13.196209144592284
+MatrixUtils.checkRowIndex(this, row);#225,13.134249639511108
+MatrixUtils.checkColumnIndex(this, column);#252,13.072851848602294
+@Override#79,13.048599402109781
+@Override#235,13.014423370361328
+@Override#249,12.994362990061441
+MatrixUtils.checkAdditionCompatible(this, m);#129,12.966471975499934
+MatrixUtils.checkRowIndex(this, row);#237,12.952539968490601
+@Override#67,12.922409057617188
+MatrixUtils.checkRowIndex(this, row);#251,12.902351903915406
+@Override#73,12.864284674326578
+MatrixUtils.checkAdditionCompatible(this, m);#95,12.841543977910822
+MatrixUtils.checkMultiplicationCompatible(this, m);#150,12.793454258530229
+@Override#223,12.786711057027182
+MatrixUtils.checkColumnIndex(this, column);#212,12.764029574394225
+this.entries = new OpenIntToDoubleHashMap(matrix.entries);#63,12.759950002034506
+out.setEntry(row, col, getEntry(row, col) - iterator.value());#136,12.722975701996774
+MatrixUtils.checkRowIndex(this, row);#211,12.722637701034547
+out.entries.get(outKey) + value * m.entries.get(rightKey);#195,12.718532826038118
+final int col = iterator.key() - row * columns;#135,12.705902328491211
+if (m.entries.containsKey(rightKey)) {#192,12.680800437927246
+super(rowDimension, columnDimension);#49,12.659328672620985
+final double value = entries.get(key) + increment;#240,12.636030673980713
+final int k        = key % columns;#189,12.556422445509169
+final int rightKey = m.computeKey(k, j);#191,12.531759631249212
+return entries.get(computeKey(row, column));#213,12.519304275512695
+final int col = iterator.key() - row * columns;#101,12.476637649536134
+return new OpenMapRealMatrix(this);#69,12.44916405397303
+for (int j = 0; j < outCols; ++j) {#160,12.407245982776988
+out.setEntry(row, col, getEntry(row, col) + iterator.value());#102,12.350189497976592
+return (OpenMapRealMatrix) super.subtract(m);#115,12.241183969709608
+final int outKey = out.computeKey(i, j);#193,12.062447547912598
+return out;#205,12.058705416592685
+final double value = entries.get(key) * factor;#254,12.024046352931432
+this.entries = new OpenIntToDoubleHashMap(0.0);#52,11.983915100097656
+if (value == 0.0) {#227,11.940043814042035
+out.entries.put(outKey, outValue);#199,11.925069538322655
+return multiply((OpenMapRealMatrix) m);#146,11.919981999830766
+return out;#139,11.88966213573109
+final int row = iterator.key() / columns;#134,11.880806881448496
+this.columns = matrix.columns;#62,11.86129609743754
+entries.put(computeKey(row, column), value);#230,11.834599531613863
+final double value = iterator.value();#186,11.789987874031066
+final int key      = iterator.key();#187,11.782350254058837
+if (value == 0.0) {#255,11.767881056841683
+this.columns = columnDimension;#51,11.755135760587805
+if (value == 0.0) {#241,11.73191463246065
+final int row = iterator.key() / columns;#100,11.722123519234035
+return subtract((OpenMapRealMatrix) m);#113,11.721885789524425
+return out;#105,11.718367143110795
+entries.remove(computeKey(row, column));#228,11.647227346897125
+out.addToEntry(i, j, value * m.getEntry(k, j));#161,11.599821532644876
+out.entries.remove(outKey);#197,11.555112993015962
+try {#145,11.511330795288085
+final int k        = key % columns;#159,11.499630005128923
+final int i        = key / columns;#188,11.46454092308327
+if (outValue == 0.0) {#196,11.453207302093507
+final double outValue =#194,11.419654312133789
+this.rows = matrix.rows;#61,11.328186273574829
+final double value = iterator.value();#156,11.264903744061789
+final int key      = iterator.key();#157,11.210871910226755
+this.rows = rowDimension;#50,11.147407919168472
+return row * columns + column;#269,10.9707612991333
+try {#112,10.915019512176514
+iterator.advance();#185,10.860977509442497
+iterator.advance();#133,10.802773896385641
+iterator.advance();#155,10.766208239964076
+final int i        = key / columns;#158,10.70774119900119
+iterator.advance();#99,10.633402010973763
+return out;#165,10.510895665486654
+entries.put(key, value);#258,10.505672097206116
+entries.put(key, value);#244,10.489406633377076
+entries.remove(key);#242,10.399249288770887
+entries.remove(key);#256,10.10194084379408
+return columns;#81,10.011527624997226
+return rows;#219,9.709685845808549

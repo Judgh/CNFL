@@ -1,0 +1,66 @@
+public class MultiStartUnivariateRealOptimizer<FUNC extends UnivariateRealFunction>#46,16.701664924621582
+public MultiStartUnivariateRealOptimizer(final BaseUnivariateRealOptimizer<FUNC> optimizer,#70,16.383569717407227
+private final BaseUnivariateRealOptimizer<FUNC> optimizer;#49,16.194869232177734
+implements BaseUnivariateRealOptimizer<FUNC> {#47,16.104506604811725
+public ConvergenceChecker<UnivariateRealPointValuePair> getConvergenceChecker() {#88,16.084356638101433
+public void setConvergenceChecker(ConvergenceChecker<UnivariateRealPointValuePair> checker) {#81,15.638095886476579
+private UnivariateRealPointValuePair[] optima;#59,15.394844472408295
+Arrays.sort(optima, new Comparator<UnivariateRealPointValuePair>() {#191,15.09229424794515
+public UnivariateRealPointValuePair[] getOptima() {#134,14.866767115063137
+public UnivariateRealPointValuePair optimize(final FUNC f, final GoalType goal,#150,14.774248003959656
+public UnivariateRealPointValuePair optimize(final FUNC f,#142,14.753426551818848
+private void sortPairs(final GoalType goal) {#190,14.457076013088226
+private RandomGenerator generator;#57,14.289546966552734
+public void setMaxEvaluations(int maxEvaluations) {#103,14.032848910281533
+optima = new UnivariateRealPointValuePair[starts];#154,14.005023956298828
+throws FunctionEvaluationException {#153,13.91412280400594
+optimizer.setMaxEvaluations(optimizer.getMaxEvaluations() - usedEvaluations);#170,13.898364782333374
+public int getMaxEvaluations() {#93,13.834337968092699
+private int totalEvaluations;#53,13.745795770124955
+throw new ConvergenceException(LocalizedFormats.NO_CONVERGENCE_WITH_ANY_START_POINT,#177,13.73164770079822
+private int maxEvaluations;#51,13.716068614612926
+public int getEvaluations() {#98,13.659017642339071
+private int starts;#55,13.38255226612091
+public int compare(final UnivariateRealPointValuePair o1,#192,13.3742767764676
+optima[i] = optimizer.optimize(f, goal, FastMath.min(bound1, bound2), FastMath.max(bound1, bound2));#162,13.343050903744167
+final int usedEvaluations = optimizer.getEvaluations();#169,13.250724103715685
+if (optima[0] == null) {#176,13.197010893570749
+return optimizer.getConvergenceChecker();#89,13.066090709284731
+optimizer.setConvergenceChecker(checker);#82,12.99592365537371
+optimizer.setMaxEvaluations(maxEvaluations);#105,12.943922519683838
+final double bound2 = (i == 0) ? max : min + generator.nextDouble() * (max - min);#161,12.941661516825357
+throws FunctionEvaluationException {#145,12.914403438568115
+throw new MathIllegalStateException(LocalizedFormats.NO_OPTIMUM_COMPUTED_YET);#136,12.87004637106871
+for (int i = 0; i < starts; ++i) {#158,12.84743530853935
+totalEvaluations = 0;#155,12.75350882212321
+final double bound1 = (i == 0) ? min : min + generator.nextDouble() * (max - min);#160,12.743583531606765
+if (optima == null) {#135,12.651627600193024
+sortPairs(goal);#174,12.437794412885394
+Double.compare(v1, v2) : Double.compare(v2, v1);#202,12.42820244647087
+totalEvaluations += usedEvaluations;#171,12.347725694829768
+return (goal == GoalType.MINIMIZE) ?#201,12.258158922195435
+final double v2 = o2.getValue();#200,12.24309298299974
+this.maxEvaluations = maxEvaluations;#104,12.032678627967835
+this.optimizer = optimizer;#73,11.876166939735413
+final UnivariateRealPointValuePair o2) {#193,11.873422480644063
+return optimize(f, goal, min, max, 0);#146,11.83135427747454
+return optima.clone();#138,11.771103177751813
+final double v1 = o1.getValue();#199,11.743350121282763
+this.starts = starts;#74,11.643859672546387
+optima[i] = null;#164,11.504894296328226
+return optima[0];#182,11.396788256508964
+if (o1 == null) {#194,11.378389937537056
+return (o2 == null) ? 0 : 1;#195,11.324149582121107
+this.generator = generator;#75,11.1541277885437
+optima[i] = null;#166,11.119741082191467
+return totalEvaluations;#99,10.957155908857073
+try {#159,10.907403332846505
+starts);#178,10.770578490363228
+return maxEvaluations;#94,10.750084025519234
+final double startValue)#152,10.690744682594582
+final RandomGenerator generator) {#72,10.566980251899132
+final double min, final double max,#151,10.511242088518644
+final double min, final double max)#144,10.041463592596221
+final GoalType goal,#143,10.041425051512542
+return -1;#197,9.880790301731654
+final int starts,#71,9.619896460552605

@@ -1,0 +1,59 @@
+public class UniformRealDistribution extends AbstractRealDistribution {#34,16.192191710838905
+public UniformRealDistribution(RandomGenerator rng,#90,15.47220253944397
+public UniformRealDistribution() {#50,14.521509343927557
+public double getNumericalVariance() {#148,14.509591170719691
+public UniformRealDistribution(double lower, double upper, double inverseCumAccuracy)#75,14.439146995544434
+private static final long serialVersionUID = 20120109L;#38,14.4376620685353
+public boolean isSupportLowerBoundInclusive() {#178,14.288981914520264
+public double getSupportLowerBound() {#161,14.250251452128092
+private final double solverAbsoluteAccuracy;#44,13.79198067528861
+public double getNumericalMean() {#138,13.762190069471087
+public boolean isSupportUpperBoundInclusive() {#183,13.741416994730631
+protected double getSolverAbsoluteAccuracy() {#128,13.723899650573731
+public boolean isSupportConnected() {#194,13.683085759480795
+public static final double DEFAULT_INVERSE_ABSOLUTE_ACCURACY = 1e-9;#36,13.58944636377795
+public double getSupportUpperBound() {#173,13.576120890103853
+public UniformRealDistribution(double lower, double upper)#62,13.569716811180115
+super(rng);#95,13.362475468562199
+@Override#127,13.177571614583334
+public double cumulativeProbability(double x)  {#116,13.16778188943863
+private final double lower;#40,13.153498331705729
+@Override#199,13.073649088541666
+solverAbsoluteAccuracy = inverseCumAccuracy;#104,13.052532945360456
+this(lower, upper, DEFAULT_INVERSE_ABSOLUTE_ACCURACY);#64,13.026898829142253
+throws NumberIsTooLargeException {#94,12.98385009765625
+public double density(double x) {#108,12.930496454238892
+private final double upper;#42,12.828818851047092
+this(new  Well19937c(), lower, upper, inverseCumAccuracy);#77,12.827399748343009
+public double sample()  {#200,12.669453144073486
+throw new NumberIsTooLargeException(#97,12.66521258354187
+final double u = random.nextDouble();#201,12.449625968933105
+LocalizedFormats.LOWER_BOUND_NOT_BELOW_UPPER_BOUND,#98,12.167603698431277
+if (lower >= upper) {#96,12.091773287455242
+throws NumberIsTooLargeException {#63,11.936647288004558
+if (x < lower || x > upper) {#109,11.793148843865646
+return solverAbsoluteAccuracy;#129,11.763025999069214
+throws NumberIsTooLargeException {#76,11.744711558024088
+return (x - lower) / (upper - lower);#123,11.73135461807251
+double inverseCumAccuracy)#93,11.245742162068685
+if (x >= upper) {#120,11.160507520039877
+if (x <= lower) {#117,10.986039352416991
+return 1 / (upper - lower);#112,10.909784227609634
+this.lower = lower;#102,10.845203535897392
+this.upper = upper;#103,10.771054915019445
+double lower,#91,10.613901401820936
+this(0, 1);#51,10.405204977308001
+return u * upper + (1 - u) * lower;#202,10.378463790530251
+double ul = upper - lower;#149,10.31227903366089
+return 0.5 * (lower + upper);#139,10.191974533928764
+return ul * ul / 12;#150,10.149083709716797
+double upper,#92,10.058340612210726
+return true;#195,10.046481002460826
+lower, upper, false);#99,9.986596836763269
+return true;#179,9.45210820978338
+return upper;#174,9.389716191725297
+return lower;#162,9.384238893335516
+return false;#184,9.199091131036932
+return 1;#121,8.687203439076741
+return 0.0;#110,8.663671998416676
+return 0;#118,8.372488180796305

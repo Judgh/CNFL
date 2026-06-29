@@ -1,0 +1,401 @@
+public TimeZone getTimeZone() {#166,19.88470482826233
+private final TimeZone timeZone;#83,19.596881259571422
+this.timeZone = timeZone;#106,19.56860876083374
+private void init() {#115,19.52964104546441
+public Date parse(String source) throws ParseException {#249,19.378522098064423
+if(date==null) {#251,19.37066396077474
+public boolean isNumber() {#718,19.33608055114746
+public boolean isNumber() {#806,19.313824108668737
+public boolean isNumber() {#663,19.309974806649343
+boolean wasWhite= false;#304,19.23790740966797
+boolean isNumber();#513,19.204524676005047
+public boolean equals(Object obj) {#192,19.169092337290447
+if(tzs==null) {#592,19.15931063890457
+boolean isNextNumber() {#493,19.13677272796631
+public boolean isNumber() {#620,19.135714871542795
+@Override#822,19.11821517944336
+public int modify(int iValue) {#749,19.0402172313017
+final String validTimeZoneChars;#773,19.02915197610855
+return timeZone;#167,19.026601314544678
+public Object parseObject(String source) throws ParseException {#241,19.009213279275333
+if(!matcher.lookingAt()) {#278,19.006972577836777
+@Override#683,18.987472248077392
+if (key == null) {#419,18.959139171399567
+@Override#631,18.95483112335205
+private final int field;#649,18.915821075439453
+for(;;) {#130,18.911286647503193
+else if(value.startsWith("GMT")) {#828,18.909747282663982
+@Override#670,18.866322231292724
+public String toString() {#218,18.86115417480469
+@Override#662,18.858232307434083
+if(fieldKeyValues==null) {#381,18.840225107529584
+@Override#805,18.83944034576416
+case '[':#325,18.838311767578126
+@Override#217,18.836822191874187
+@Override#758,18.83308343887329
+@Override#619,18.82157669067383
+@Override#157,18.81763458251953
+protected final int field;#704,18.805539204524113
+int count= 0;#446,18.798475118783806
+else {#831,18.794460160391672
+public int modify(int iValue) {#862,18.789016667534323
+@Override#640,18.782621765136717
+switch(field) {#383,18.771981632008274
+public KeyValue(String key, int value) {#357,18.76401810897024
+if (! (obj instanceof FastDateParser) ) {#193,18.737529134750368
+@Override#725,18.735874557495116
+TimeZone tz= TimeZone.getTimeZone(id);#785,18.722548739115396
+protected FastDateParser(String pattern, TimeZone timeZone, Locale locale) {#104,18.71667159687389
+case 'w':#584,18.69750452041626
+@Override#739,18.694818115234376
+public int modify(int iValue) {#849,18.693227992338294
+@Override#207,18.684516588846844
+for(String id : TimeZone.getAvailableIDs()) {#781,18.683208351135253
+return "FastDateParser[" + pattern + "," + locale + "," + timeZone.getID() + "]";#219,18.678372137887138
+return null;#279,18.672682317097983
+@Override#717,18.66052656173706
+int getFieldWidth() {#501,18.651675033569337
+if(c=='\'') {#622,18.634514490763348
+for(String value : values) {#448,18.62433409690857
+cal.clear();#283,18.61536701520284
+public int modify(int iValue) {#868,18.60949213364545
+if(id.startsWith("GMT")) {#782,18.595420201619465
+@Override#165,18.587260723114014
+if(value.charAt(0)=='+' || value.charAt(0)=='-') {#825,18.580833486608558
+for(String id : tzNames.keySet()) {#795,18.57178062438965
+@Override#173,18.5680030186971
+throw new IllegalArgumentException("Invalid pattern");#125,18.55499336936257
+if(trial < thisYear+20) {#483,18.539401955074734
+@Override#813,18.538518142700195
+wasWhite= false;#314,18.533770953907688
+case 'z':#588,18.52969980239868
+private transient int thisYear;#89,18.51133632659912
+case 'F':#556,18.50949223836263
+return cal.getTime();#290,18.50107410975865
+if(values!=null) {#447,18.500740468502045
+public String getPattern() {#158,18.492400932312012
+NumberStrategy(int field) {#710,18.489971339702606
+case 'H':#560,18.47437858581543
+@Override#191,18.474366664886475
+public Locale getLocale() {#174,18.473952611287434
+case 'm':#580,18.4659686088562
+case '|':#332,18.463265538215637
+return false;#194,18.46187489827474
+case ']':#326,18.461374640464783
+if(values!=null) {#465,18.461127877235413
+case 'a':#572,18.445283095041912
+TimeZone tz;#824,18.44130179461311
+switch(c) {#315,18.435212528004367
+case 'h':#576,18.4159099260966
+int offset= pos.getIndex();#276,18.40303283929825
+for(Map.Entry<String, Integer> me : era.entrySet()) {#416,18.401378081395077
+case '(':#327,18.39602788289388
+if(++i==value.length()) {#318,18.39244909286499
+throw new IllegalArgumentException(value + " is not a supported timezone name");#834,18.38996982574463
+public int value;#350,18.389277537663776
+case 'Z':#570,18.38705364863078
+&& timeZone.equals(other.timeZone)#198,18.380723357200623
+return trial;#484,18.369880549112956
+return inCache;#596,18.36143503189087
+@Override#861,18.343211555480956
+public void setCalendar(FastDateParser parser, Calendar cal, String value) {#740,18.341422521151028
+for(int i= 0; i<value.length(); ++i) {#305,18.34006416320801
+for(int i=0; i<strategies.length;) {#285,18.328138580322264
+case 'W':#568,18.31890567143758
+case ')':#328,18.30348014831543
+TextStrategy(int field) {#655,18.301717400550842
+public String key;#349,18.288628896077473
+case '{':#329,18.286946058273315
+throw new IllegalArgumentException();#420,18.280112225076426
+init();#108,18.27799415588379
+char c= value.charAt(i);#306,18.27348518371582
+Integer fieldInt = Integer.valueOf(field);#379,18.264715094315378
+@Override#367,18.261612033843996
+cal.setTimeZone(tz);#837,18.257324743270875
+private transient String currentFormatField;#93,18.256636879660867
+private final String pattern;#82,18.25448046790229
+case 'G':#558,18.254326184590656
+@Override#240,18.25138266881307
+@Override#848,18.250074577331542
+validTimeZoneChars= sb.toString();#799,18.24536983172099
+private static class TimeZoneStrategy implements Strategy {#771,18.239094461713517
+private final String formatField;#606,18.237780843462264
+case '?':#324,18.233276903629303
+case 'S':#566,18.23162070910136
+else {#730,18.23004572732108
+case 'D':#552,18.22738552093506
+case 'k':#578,18.224480787913006
+tz= TimeZone.getTimeZone("GMT"+value);#826,18.214372358014508
+public void setCalendar(FastDateParser parser, Calendar cal, String value) {#684,18.208828926086426
+@Override#867,18.207947540283204
+init();#234,18.19816360473633
+if(tz.useDaylightTime()) {#788,18.197808339045597
+TimeZoneStrategy tzs= tzsCache.get(locale);#591,18.197042208451492
+if(parser.isNextNumber()) {#727,18.1968108131772
+tz= TimeZone.getTimeZone(value);#829,18.19156547955104
+case '+':#334,18.187665581703186
+return regex;#319,18.17680154023347
+case 's':#582,18.175192674001057
+return pattern;#159,18.16041981090199
+regex.append(validTimeZoneChars);#815,18.15877832065929
+TimeZoneStrategy inCache= tzsCache.putIfAbsent(locale, tzs);#594,18.147787147098118
+case 'd':#574,18.145402272542317
+case '\\':#331,18.130653619766235
+public void setCalendar(FastDateParser parser, Calendar cal, String value) {#759,18.12818739964412
+regex.append("\\s*+");#310,18.12558443792935
+regex.append('\\');#338,18.121234807101164
+private interface Strategy {#508,18.1032817363739
+case 'M':#564,18.091673851013184
+String[] eras = new String[era.size()]; // assume no gaps in entry values#415,18.089506255255806
+int idx = me.getValue().intValue();#417,18.076517820358276
+case 'K':#562,18.076420307159424
+case 'y':#586,18.06487798690796
+private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException {#232,18.060364432956863
+FastDateParser other = (FastDateParser) obj;#196,18.051742029190063
+default:#550,18.04875316619873
+if(unquote) {#317,18.046243624253705
+CopyQuotedStrategy(String formatField) {#612,18.041601130836888
+public int compare(KeyValue left, KeyValue right) {#368,18.041317531040736
+if (locale.equals(JAPANESE_IMPERIAL)) {#253,18.041315046946206
+case 'E':#554,18.028695106506348
+this.locale = locale;#107,18.025600624084472
+public boolean addRegex(FastDateParser parser, StringBuilder regex) {#814,18.015984733899433
+TimeZoneStrategy(Locale locale) {#780,18.006592962476944
+@Override#248,18.00277296702067
+public void setCalendar(FastDateParser parser, Calendar cal, String value) {#823,17.994655022254356
+if(!patternMatcher.lookingAt()) {#124,17.991617001985247
+return fieldKeyValues;#411,17.974146109360916
+if(iValue<100) {#761,17.971741771698
+@Override#266,17.97053035100301
+return parsePattern;#180,17.970349470774334
+private static int count(String[] values) {#445,17.970127446310862
+public Date parse(String source, ParsePosition pos) {#275,17.96622102400836
+return iValue%12;#869,17.960285716586643
+Pattern getParsePattern() {#179,17.958078124306418
+@Override#274,17.957610448201496
+tzs= new TimeZoneStrategy(locale);#593,17.957548637390136
+formatField= formatField.substring(1, formatField.length()-1);#547,17.954887744358608
+case '*':#333,17.950971961021423
+switch(formatField.charAt(0)) {#544,17.948965875725996
+case Calendar.DAY_OF_WEEK:#394,17.94250553304499
+if(idx<0) {#687,17.936364936828614
+if(inCache!=null) {#595,17.914243107750302
+return iValue-1;#850,17.910357263353134
+c= formatField.charAt(1);#623,17.908989429473877
+continue;#783,17.906605807217684
+static final Locale JAPANESE_IMPERIAL = new Locale("ja","JP","JP");#79,17.903978877597385
+public boolean addRegex(FastDateParser parser, StringBuilder regex) {#726,17.903180599212646
+Calendar cal= Calendar.getInstance(timeZone, locale);#282,17.896030289786204
+"Unparseable date: \""+source+"\" does not match "+parsePattern.pattern(), 0);#256,17.888163685798645
+public boolean addRegex(FastDateParser parser, StringBuilder regex) {#632,17.885334610939026
+int adjustYear(int twoDigitYear) {#481,17.880313428243003
+case Calendar.AM_PM:#397,17.84843921661377
+case '}':#330,17.846028327941895
+char c= formatField.charAt(0);#621,17.844778765802797
+return left.key.compareToIgnoreCase(right.key);#369,17.843892574310303
+public void setCalendar(FastDateParser parser, Calendar cal, String value) {#641,17.83484594638531
+in.defaultReadObject();#233,17.834725993020193
+public boolean addRegex(FastDateParser parser, StringBuilder regex) {#671,17.83001395066579
+wasWhite= true;#309,17.82413227081299
+private static class NumberStrategy implements Strategy {#703,17.823746314415565
+private static final Strategy DAY_OF_WEEK_IN_MONTH_STRATEGY = new NumberStrategy(Calendar.DAY_OF_WEEK_IN_MONTH);#858,17.804797475988213
+regex.append('(');#672,17.791316774156357
+return trial-100;#486,17.78989498431866
+for(int i= 0; i<values.length; ++i) {#466,17.78184594779179
+case '\'':#545,17.77534580230713
+if(!wasWhite) {#308,17.767266729603644
+thisYear= Calendar.getInstance(timeZone, locale).get(Calendar.YEAR);#116,17.764060283529346
+case '^':#335,17.760076642036438
+iValue= parser.adjustYear(iValue);#762,17.75916721202709
+this.key= key;#358,17.755800353156197
+return tzs;#599,17.75199083181528
+if(!patternMatcher.lookingAt()) {#132,17.743706205616828
+this.field= field;#711,17.734295995611895
+"(The " +locale + " locale does not support dates before 1868 AD)\n" +#255,17.7310120900472
+if(Character.isWhitespace(c)) {#307,17.72831881046295
+default:#403,17.72246769496373
+private final Locale locale;#84,17.711980628967286
+if(tz==null) {#833,17.698261219522227
+private Strategy getStrategy(String formatField) {#543,17.69662488301595
+sb.append(" not in (");#689,17.683793754577636
+tz= tzNames.get(value);#832,17.683268970913357
+if(formatField.length()>2) {#546,17.68279038304868
+cal.set(field, textKeyValues[idx].value);#696,17.68150124726472
+currentFormatField= null;#147,17.675792489733016
+Calendar c = Calendar.getInstance(locale);#388,17.673101778383607
+tzNames.put(tz.getDisplayName(true, TimeZone.SHORT, locale), tz);#789,17.67251794603136
+return fieldKeyValues;#437,17.66004929175744
+return currentFormatField.length();#502,17.660031255086263
+c= value.charAt(i);#321,17.6573978292531
+return date;#260,17.651735479181465
+++count;#450,17.65149099930473
+private static class TextStrategy implements Strategy {#648,17.64300199655386
+case '\'':#316,17.642031837912167
+this.value= value;#359,17.640524440341526
+for(KeyValue textKeyValue : parser.getDisplayNames(field)) {#673,17.63759106603162
+return pattern.equals(other.pattern)#197,17.636461787753635
+private static class CopyQuotedStrategy implements Strategy {#605,17.62796942392985
+public Object parseObject(String source, ParsePosition pos) {#267,17.62301990720961
+return true;#677,17.622093836466473
+final SortedMap<String, TimeZone> tzNames= new TreeMap<String, TimeZone>(String.CASE_INSENSITIVE_ORDER);#774,17.619251836429942
+private static class KeyValue {#348,17.61083288192749
+escapeRegex(sb, id, false).append('|');#796,17.60984443028768
+Date date= parse(source, new ParsePosition(0));#250,17.60861570184881
+this.pattern = pattern;#105,17.607735565730504
+break;#393,17.599504046969944
+for(KeyValue textKeyValue : textKeyValues) {#690,17.595439910888672
+if(value.length()>0) {#449,17.59010263589712
+if(value.length()>0) {#468,17.576665548177864
+nextStrategy = null;#133,17.57208555394953
+throw new IllegalArgumentException("Invalid field value "+field);#404,17.570022583007812
+return locale;#175,17.56796628778631
+case Calendar.ERA:#384,17.565377684200513
+return iValue%24;#863,17.56510321299235
+KeyValue[] getDisplayNames(int field) {#378,17.560306612650553
+final String key = me.getKey();#418,17.55856822785877
+StringBuilder regex= new StringBuilder();#120,17.5569366812706
+case '.':#337,17.553318738937378
+"D+|E+|F+|G+|H+|K+|M+|S+|W+|Z+|a+|d+|h+|k+|m+|s+|w+|y+|z+|''|'[^']++(''[^']*+)*+'|[^'A-Za-z]++");#536,17.539923248291014
+this.field= field;#656,17.538808981577557
+sb.append(textKeyValue.key).append(' ');#691,17.526134872436522
+return DAY_OF_WEEK_IN_MONTH_STRATEGY;#557,17.52247093463766
+break;#402,17.519957913292778
+int iValue= Integer.parseInt(value);#760,17.508090433867082
+escapeRegex(regex, formatField, true);#633,17.500438173611958
+fieldKeyValues[offset++]= new KeyValue(value, i);#469,17.49986449650356
+return offset;#473,17.47966159473766
+cal.set(Calendar.YEAR, iValue);#764,17.478737411499022
+String[] shortEras = toArray(c.getDisplayNames(Calendar.ERA, Calendar.SHORT, locale));#390,17.476224322651706
+return false;#664,17.47162284851074
+private static StringBuilder escapeRegex(StringBuilder regex, String value, boolean unquote) {#303,17.469955841700237
+break;#399,17.463241577148438
+fieldKeyValues= createKeyValues(symbols.getAmPmStrings(), null);#398,17.45831587507918
+break;#134,17.4522803624471
+sb.append("(GMT[+\\-]\\d{0,1}\\d{2}|[+\\-]\\d{2}:?\\d{2}|");#794,17.448476444591176
+private transient Strategy nextStrategy;#94,17.43604746731845
+StringBuilder sb= new StringBuilder();#793,17.43042432694208
+KeyValue[] prior = nameValues.putIfAbsent(fieldInt, fieldKeyValues);#406,17.427857488393784
+String[] longEras = toArray(c.getDisplayNames(Calendar.ERA, Calendar.LONG, locale));#391,17.425326569135798
+return false;#634,17.422221247355143
+regex.append("(\\p{IsNd}++)");#731,17.419926293691
+throw new ParseException("Unparseable date: \""+source+"\" does not match "+parsePattern.pattern(), 0);#258,17.413195144839403
+return eras;#424,17.407682332125578
+collector.add(currentStrategy);#139,17.404812216758728
+break;#396,17.392859829796684
+private static final Strategy WEEK_OF_MONTH_STRATEGY = new NumberStrategy(Calendar.WEEK_OF_MONTH);#855,17.38840468270438
+fieldKeyValues= createKeyValues(longEras, shortEras);#392,17.3722203373909
+if(prior!=null) {#407,17.36159410930815
+tzNames.put(tz.getDisplayName(true, TimeZone.LONG, locale), tz);#790,17.349798562791612
+int trial= twoDigitYear + thisYear - thisYear%100;#482,17.34373966852824
+sb.setCharAt(sb.length()-1, ')');#798,17.34341259660392
+return WEEK_OF_MONTH_STRATEGY;#569,17.338599642117817
+StringBuilder sb= new StringBuilder(value);#688,17.336936597470885
+String value= values[i];#467,17.323960262796152
+return parse(source, pos);#268,17.322122637430827
+sb.setCharAt(sb.length()-1, ')');#693,17.315135493423
+this.formatField= formatField;#613,17.28943738937378
+throw new ParseException(#254,17.28016779639504
+continue;#312,17.277897516886394
+tzNames.put(tz.getDisplayName(false, TimeZone.SHORT, locale), tz);#786,17.270546029253705
+return regex;#342,17.268589539961383
+fieldKeyValues= prior;#408,17.259839101271197
+collector.add(currentStrategy);#145,17.259007358551024
+escapeRegex(regex, textKeyValue.key, false).append('|');#674,17.257618740626743
+private static final long serialVersionUID = 1L;#74,17.251606941223145
+parsePattern= Pattern.compile(regex.toString());#149,17.239431988109242
+regex.append("(\\p{IsNd}{").append(parser.getFieldWidth()).append("}+)");#728,17.231742815537885
+Matcher matcher= parsePattern.matcher(source.substring(offset));#277,17.229994260347805
+break;#589,17.22393458230155
+return pattern.hashCode() + 13 * (timeZone.hashCode() + 13 * locale.hashCode());#209,17.211705267429352
+Strategy strategy= strategies[i++];#286,17.208308839797972
+cal.set(field, modify(Integer.parseInt(value)));#741,17.207627739225114
+return false;#807,17.205107243855796
+strategies= collector.toArray(new Strategy[collector.size()]);#148,17.201287984848022
+private static final ConcurrentMap<Locale,TimeZoneStrategy> tzsCache=#76,17.19653570652008
+KeyValue[] fieldKeyValues= nameValues.get(fieldInt);#380,17.178005467290465
+currentFormatField= patternMatcher.group();#128,17.175157017178005
+regex.append(c);#340,17.16967052883572
+return true;#733,17.166750526428224
+private static final Strategy SECOND_STRATEGY = new NumberStrategy(Calendar.SECOND);#874,17.147040880643406
+String nextFormatField= patternMatcher.group();#136,17.143308639526367
+eras[idx] = key;#422,17.13769884109497
+return iValue;#750,17.132984817028046
+tzNames.put(tz.getDisplayName(false, TimeZone.LONG, locale), tz);#787,17.13126847802139
+public int hashCode() {#208,17.127941417694093
+private static final Strategy MODULO_HOUR_OF_DAY_STRATEGY = new NumberStrategy(Calendar.HOUR_OF_DAY) {#860,17.110961938515686
+Arrays.sort(fieldKeyValues, IGNORE_CASE_COMPARATOR);#436,17.11043032893428
+regex.setCharAt(regex.length()-1, ')');#676,17.10993220888335
+throw new IllegalArgumentException(sb.toString());#694,17.10884826523917
+void setCalendar(FastDateParser parser, Calendar cal, String value);#520,17.107834617296856
+return true;#816,17.106852531433105
+return nextStrategy!=null && nextStrategy.isNumber();#494,17.10665740137515
+private static int copy(KeyValue[] fieldKeyValues, int offset, String[] values) {#464,17.09065035978953
+&& locale.equals(other.locale);#199,17.076008299122687
+return parse(source);#242,17.065004715552696
+break;#571,17.06017051424299
+private static final Strategy WEEK_OF_YEAR_STRATEGY = new NumberStrategy(Calendar.WEEK_OF_YEAR);#854,17.06012020111084
+private static final Strategy DAY_OF_MONTH_STRATEGY = new NumberStrategy(Calendar.DAY_OF_MONTH);#857,17.05598839591531
+private static final Strategy TEXT_MONTH_STRATEGY = new TextStrategy(Calendar.MONTH);#845,17.053882224219187
+currentFormatField= nextFormatField;#141,17.052630805969237
+return count;#454,17.044321753761984
+case '$':#336,17.04179084300995
+break;#323,17.02080202102661
+new ConcurrentHashMap<Locale,TimeZoneStrategy>(3);#77,17.012943426767986
+boolean addRegex(FastDateParser parser, StringBuilder regex);#529,17.008463339372113
+private static final Strategy MODULO_HOUR_STRATEGY = new NumberStrategy(Calendar.HOUR) {#866,16.982164844389885
+return WEEK_OF_YEAR_STRATEGY;#585,16.97210435072581
+private String[] toArray(Map<String, Integer> era) {#414,16.969995097110147
+private static final Strategy NUMBER_MONTH_STRATEGY = new NumberStrategy(Calendar.MONTH) {#847,16.962796942392984
+private static final Strategy DAY_OF_WEEK_STRATEGY = new TextStrategy(Calendar.DAY_OF_WEEK);#843,16.954534502590406
+nextStrategy = getStrategy(nextFormatField);#137,16.950952649116516
+private static final Comparator<KeyValue> IGNORE_CASE_COMPARATOR = new Comparator<KeyValue> () {#366,16.936144962906837
+DateFormatSymbols symbols= DateFormatSymbols.getInstance(locale);#382,16.924409004949755
+pos.setIndex(offset+matcher.end());#289,16.92237434387207
+private static final Strategy HOUR_OF_DAY_STRATEGY = new NumberStrategy(Calendar.HOUR_OF_DAY);#859,16.9220812180463
+return DAY_OF_MONTH_STRATEGY;#575,16.90205732981364
+private static final Strategy ABBREVIATED_YEAR_STRATEGY = new NumberStrategy(Calendar.YEAR) {#754,16.858458936214447
+private static final Pattern formatPattern= Pattern.compile(#535,16.8508061170578
+case Calendar.MONTH:#400,16.84573072857327
+private transient Pattern parsePattern;#87,16.832025814056397
+if(currentStrategy.addRegex(this, regex)) {#144,16.818596798440684
+int idx= Arrays.binarySearch(textKeyValues, new KeyValue(value, -1), IGNORE_CASE_COMPARATOR);#686,16.80820015801324
+return DAY_OF_WEEK_STRATEGY;#555,16.788411299387615
+return MODULO_HOUR_OF_DAY_STRATEGY;#561,16.78433891705104
+copy(fieldKeyValues, copy(fieldKeyValues, 0, longValues), shortValues);#435,16.784293242863246
+return true;#719,16.77591037750244
+private static final Strategy DAY_OF_YEAR_STRATEGY = new NumberStrategy(Calendar.DAY_OF_YEAR);#856,16.769212021547204
+return new CopyQuotedStrategy(formatField);#551,16.752011382061504
+return DAY_OF_YEAR_STRATEGY;#553,16.736777941385906
+private static final Strategy LITERAL_YEAR_STRATEGY = new NumberStrategy(Calendar.YEAR);#853,16.712991682688394
+private static final Strategy AM_PM_STRATEGY = new TextStrategy(Calendar.AM_PM);#844,16.703864778791154
+return formatField.length()>=3 ?TEXT_MONTH_STRATEGY :NUMBER_MONTH_STRATEGY;#565,16.67836235790718
+if(currentStrategy.addRegex(this, regex)) {#138,16.667702109725386
+KeyValue[] textKeyValues= parser.getDisplayNames(field);#685,16.66616831885444
+return formatField.length()>2 ?LITERAL_YEAR_STRATEGY :ABBREVIATED_YEAR_STRATEGY;#587,16.659965818578545
+currentStrategy= nextStrategy;#142,16.649722290039062
+private static final Strategy HOUR_STRATEGY = new NumberStrategy(Calendar.HOUR);#872,16.611152245448185
+return SECOND_STRATEGY;#583,16.6035436630249
+return HOUR_OF_DAY_STRATEGY;#579,16.58922779560089
+return AM_PM_STRATEGY;#573,16.570313907804945
+private static final Strategy MILLISECOND_STRATEGY = new NumberStrategy(Calendar.MILLISECOND);#875,16.52784747462119
+return Character.isDigit(c);#625,16.49291805993943
+strategy.setCalendar(this, cal, matcher.group(i));#287,16.471308609534955
+fieldKeyValues= createKeyValues(symbols.getMonths(), symbols.getShortMonths());#401,16.45693546686417
+nameValues= new ConcurrentHashMap<Integer, KeyValue[]>();#118,16.440967162450153
+private transient ConcurrentMap<Integer, KeyValue[]> nameValues;#90,16.416935870521947
+private static final Strategy MINUTE_STRATEGY = new NumberStrategy(Calendar.MINUTE);#873,16.407772761124832
+fieldKeyValues= createKeyValues(symbols.getWeekdays(), symbols.getShortWeekdays());#395,16.407013477423252
+patternMatcher.region(patternMatcher.end(), patternMatcher.regionEnd());#131,16.40458180827479
+return MINUTE_STRATEGY;#581,16.362606000900268
+public class FastDateParser implements DateParser, Serializable {#68,16.34566094325139
+Strategy currentStrategy= getStrategy(currentFormatField);#129,16.344992047264462
+Matcher patternMatcher= formatPattern.matcher(pattern);#123,16.307659322565254
+return HOUR_STRATEGY;#563,16.304218912124632
+return MODULO_HOUR_STRATEGY;#577,16.251045902570088
+private transient Strategy[] strategies;#88,16.221142292022705
+List<Strategy> collector = new ArrayList<Strategy>();#121,16.199856799581777
+private static final Strategy ERA_STRATEGY = new TextStrategy(Calendar.ERA);#842,16.106971502304077
+private static KeyValue[] createKeyValues(String[] longValues, String[] shortValues) {#433,15.930426239967346
+return ERA_STRATEGY;#559,15.878784280074271
+KeyValue[] fieldKeyValues= new KeyValue[count(longValues)+count(shortValues)];#434,15.811385154724121
+return MILLISECOND_STRATEGY;#567,15.681337356567383

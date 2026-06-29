@@ -1,0 +1,209 @@
+private List<AliasUsage> getAliasUsages() {#203,19.773900032043457
+private final String correctedType;#168,19.533184051513672
+private AliasTransformation transformation = null;#197,19.51416191687951
+Scope scope = t.getScope();#273,19.487034252711705
+String... arguments) {#267,19.43854654752291
+private final AliasTransformationHandler transformationHandler;#57,19.43256489435832
+AliasTransformationHandler transformationHandler) {#92,19.35515899658203
+private final AbstractCompiler compiler;#55,19.323115666707356
+SourcePosition<AliasTransformation> pos =#259,19.307329368591308
+String qualifiedName =#284,19.257998330252512
+private final List<AliasUsage> aliasUsages = Lists.newArrayList();#190,19.249377023606073
+aliases.put(name, aliasVar);#282,19.207420650281403
+Collection<Node> getAliasDefinitionsInOrder() {#199,19.159064531326294
+for (AliasUsage aliasUsage : traversal.getAliasUsages()) {#111,19.136125217784535
+if (t.getScopeDepth() >= 2) {#366,19.05685461892022
+private interface AliasUsage {#144,19.047428369522095
+private final List<Node> scopeCalls = Lists.newArrayList();#188,18.98124489784241
+AliasedTypeNode(Node aliasReference, String correctedType) {#170,18.97326856189304
+private final Map<String, Var> aliases = Maps.newHashMap();#193,18.960307598114014
+if (t.getScopeDepth() == 2) {#343,18.951660103268093
+if (aliasVar != null) {#368,18.951238870620728
+public void applyAlias() {#176,18.948604583740234
+if (t.getScopeDepth() == 2) {#232,18.945504400465225
+transformation.addAlias(name, qualifiedName);#286,18.921424198150635
+if (aliasVar != null) {#399,18.919800400733948
+Var aliasVar = null;#333,18.918412685394287
+public void applyAlias() {#159,18.893322563171388
+Node scopeClosureBlock = scopeCall.getLastChild().getLastChild();#128,18.892319798469543
+String name = n.getString();#280,18.781617959340412
+if (n != null && isCallToScopeMethod(n)) {#223,18.7719882329305
+if (aliasVar.getNode() == n) {#345,18.76793978431008
+ScopedAliases(AbstractCompiler compiler,#90,18.760525385538738
+if (isCallToScopeMethod(n)) {#324,18.733196875628302
+this.compiler = compiler;#93,18.70926640250466
+for (Var v : scope.getVarIterable()) {#274,18.668746044761257
+if (parent == null || !isCallToScopeMethod(parent)) {#242,18.65700940291087
+boolean hasErrors() {#211,18.64570360183716
+int endIndex = name.indexOf('.');#393,18.64185855263158
+Node expressionWithScopeCall = scopeCall.getParent();#127,18.638735342025758
+if (info != null) {#380,18.637832260131837
+if (aliasDefinition.getParent().isVar() &&#117,18.634868717193605
+AliasedNode(Node aliasReference, Node aliasDefinition) {#153,18.631279833176556
+Var aliasVar = scope.getVar(name);#281,18.62855089278448
+if (t.getScopeDepth() < 2) {#328,18.62385829289754
+private boolean isCallToScopeMethod(Node n) {#215,18.620914220809937
+String name = typeNode.getString();#392,18.617236698375027
+private final List<Node> aliasDefinitionsInOrder = Lists.newArrayList();#186,18.61486933448098
+int endChar = next == null ? Integer.MAX_VALUE : next.getCharno();#258,18.61205252894649
+if (parent.isVar()) {#278,18.59979784488678
+List<Node> getScopeCalls() {#207,18.594702175685338
+transformation = transformationHandler.logAliasTransformation(#224,18.576719495985245
+int endLine = next == null ? Integer.MAX_VALUE : next.getLineno();#257,18.57161940061129
+Var aliasVar = aliases.get(baseName);#398,18.560838900114362
+if (type == Token.NAME) {#334,18.549516359965008
+private final Node aliasDefinition;#151,18.535571479797362
+for (Node scopeCall : traversal.getScopeCalls()) {#126,18.502700669424875
+if (typeNode.isString()) {#391,18.478231620788574
+String name = n.getString();#335,18.475960552692413
+static final String SCOPING_METHOD_NAME = "goog.scope";#53,18.46372007068835
+new SourcePosition<AliasTransformation>() {};#260,18.438590413048153
+this.transformationHandler = transformationHandler;#95,18.433784118065468
+private SourcePosition<AliasTransformation> getSourceRegion(Node n) {#249,18.432405948638916
+private final Node aliasReference;#149,18.42027893066406
+if (n.isFunction() && t.inGlobalScope()) {#240,18.35389636811756
+private class AliasedTypeNode implements AliasUsage {#165,18.35291569049542
+"The call to goog.scope must be alone in a single statement.");#62,18.348496561465055
+if (endIndex == -1) {#394,18.341665380141315
+@Override#98,18.309980392456055
+DiagnosticType.error(#65,18.29941471417745
+private final Node aliasReference;#166,18.26909589767456
+if (aliasVar != null && NodeUtil.isLValue(n)) {#344,18.25361868051382
+"The local variable {0} is in a goog.scope and is not an alias.");#88,18.241458115754305
+"The call to goog.scope must take only a single parameter.  It must" +#67,18.237637170155843
+pos.setPositionInformation(#261,18.23568646113078
+"The alias {0} is assigned a value more than once.");#84,18.19587058112735
+@Override#175,18.182796796162922
+this.aliasReference = aliasReference;#154,18.18172366278512
+if (n.getChildCount() != 2) {#306,18.177070988549126
+if (n.hasChildren() && n.getFirstChild().isQualifiedName()) {#279,18.175891462961832
+String baseName = name.substring(0, endIndex);#397,18.170053655450996
+for (Node aliasDefinition : traversal.getAliasDefinitionsInOrder()) {#116,18.151244909866996
+@Override#158,18.128756205240887
+return pos;#263,18.122829543219673
+int type = n.getType();#276,18.107425272464752
+private class AliasedNode implements AliasUsage {#148,18.096043984095257
+public void applyAlias();#145,18.092236624823677
+private boolean hasErrors = false;#195,18.092150290807087
+@Override#103,18.065196990966797
+"The body of a goog.scope function cannot use 'throw'.");#80,18.065173799341377
+if (preprocessorSymbolTable != null) {#300,18.04337002249325
+@Override#220,18.033027331034344
+aliasReference, aliasDefinition.cloneTree());#161,18.00789687508031
+if (type == Token.RETURN) {#356,17.99261713027954
+return scopeCalls;#208,17.990939660505816
+@Override#322,17.988473574320476
+return aliasDefinitionsInOrder;#200,17.97728472489577
+return aliasUsages;#204,17.972131729125977
+if (!anonymousFnNode.isFunction() ||#312,17.962171697616576
+this.aliasDefinition = aliasDefinition;#155,17.94892338344029
+Node next = null;#251,17.92193464799361
+if (lexicalVar != null && lexicalVar == aliases.get(name)) {#337,17.896874145225244
+int type = n.getType();#332,17.881590638841903
+@Override#238,17.881221453348797
+"The body of a goog.scope function cannot use 'return'.");#76,17.871534130790018
+private final PreprocessorSymbolTable preprocessorSymbolTable;#56,17.86938934326172
+if (!parent.isExprResult()) {#303,17.866701543331146
+n.getSourceFileName(), getSourceRegion(n));#225,17.849872986475628
+Node aliasedNode = aliasVar.getInitialValue();#375,17.841459014198996
+n.getLineno(), n.getCharno(), endLine, endChar);#262,17.83515818365689
+for (; next != null || testNode.isScript();) {#252,17.83422179449172
+" be an anonymous function that itself takes no parameters.");#68,17.82807262127216
+@Override#230,17.7866849899292
+"The body of a goog.scope function cannot reference 'this'.");#72,17.786472884091463
+this.aliasReference = aliasReference;#171,17.778818607330322
+aliasUsage.applyAlias();#112,17.762363501957484
+transformation = null;#234,17.749907573064167
+Node n = v.getNode();#275,17.72454071044922
+scopeClosureBlock.detachFromParent();#129,17.701731401331283
+compiler.report(t.makeError(n, error, arguments));#268,17.68480196453276
+public void exitScope(NodeTraversal t) {#231,17.667728185653687
+public void enterScope(NodeTraversal t) {#221,17.65499037504196
+Var lexicalVar = t.getScope().getVar(n.getString());#336,17.621622672447792
+static final DiagnosticType GOOG_SCOPE_ALIAS_REDEFINED = DiagnosticType.error(#82,17.596511091504777
+for (Node node : info.getTypeNodes()) {#381,17.58238755101743
+@Nullable PreprocessorSymbolTable preprocessorSymbolTable,#91,17.580993509292604
+report(t, n, GOOG_SCOPE_REFERENCES_THIS);#359,17.563734499613442
+"JSC_GOOG_SCOPE_ALIAS_REDEFINED",#83,17.56032901763916
+return n.isCall() &&#216,17.5588929102971
+Node aliasedNode = aliasVar.getInitialValue();#400,17.55770713632757
+class ScopedAliases implements HotSwapCompilerPass {#51,17.55072409766061
+aliasedNode.getQualifiedName() + name.substring(endIndex)));#402,17.5236359798547
+aliasUsages.add(new AliasedNode(n, aliasedNode));#376,17.51847164719193
+scopeClosureBlock);#132,17.503522217273712
+aliasReference.setString(correctedType);#177,17.487460136413574
+if (traversal.getAliasUsages().size() > 0 ||#136,17.48602468317205
+NodeUtil.tryMergeBlock(scopeClosureBlock);#133,17.484222094217937
+aliasDefinition.getParent().detachFromParent();#119,17.45678729102725
+Node testNode = n;#250,17.456726789474487
+return hasErrors;#212,17.430081800981
+this.preprocessorSymbolTable = preprocessorSymbolTable;#94,17.397368960910374
+static final DiagnosticType GOOG_SCOPE_USES_THROW = DiagnosticType.error(#78,17.390519777933758
+static final DiagnosticType GOOG_SCOPE_REFERENCES_THIS = DiagnosticType.error(#70,17.389810314884894
+this.correctedType = correctedType;#172,17.382781728108725
+static final DiagnosticType GOOG_SCOPE_USED_IMPROPERLY = DiagnosticType.error(#60,17.373284135546005
+Node parent = n.getParent();#277,17.361743211746216
+static final DiagnosticType GOOG_SCOPE_HAS_BAD_PARAMETERS =#64,17.356291389465333
+JSDocInfo info = n.getJSDocInfo();#379,17.351073655215178
+report(t, n, GOOG_SCOPE_USES_RETURN);#357,17.34669155910097
+Node n = t.getCurrentNode().getParent();#222,17.34211794535319
+NodeUtil.getFunctionParameters(anonymousFnNode).hasChildren()) {#314,17.336623859405517
+private void validateScopeCall(NodeTraversal t, Node n, Node parent) {#299,17.33576011657715
+private void report(NodeTraversal t, Node n, DiagnosticType error,#266,17.30376299944791
+"JSC_GOOG_SCOPE_USES_THROW",#79,17.301090757052105
+report(t, n, GOOG_SCOPE_ALIAS_REDEFINED, n.getString());#352,17.299295575995195
+return true;#246,17.299046092563206
+"JSC_GOOG_SCOPE_REFERENCES_THIS",#71,17.288439591725666
+report(t, n, GOOG_SCOPE_USES_THROW);#361,17.28232412338257
+Node anonymousFnNode = n.getChildAtIndex(1);#311,17.23835219507632
+private void findAliases(NodeTraversal t) {#272,17.23350210750804
+traversal.getScopeCalls().size() > 0) {#138,17.233133633931477
+NodeUtil.getFunctionName(anonymousFnNode) != null ||#313,17.23236504916487
+expressionWithScopeCall,#131,17.224143477047193
+report(t, n, GOOG_SCOPE_USED_IMPROPERLY);#304,17.2066650390625
+expressionWithScopeCall.getParent().replaceChild(#130,17.170038574620296
+report(t, n, GOOG_SCOPE_HAS_BAD_PARAMETERS);#309,17.154023617506027
+static final DiagnosticType GOOG_SCOPE_USES_RETURN = DiagnosticType.error(#74,17.147741060990555
+aliasDefinition.getParent().hasOneChild()) {#118,17.141037401945695
+endIndex = name.length();#395,17.14054298400879
+private void fixTypeNode(Node typeNode) {#390,17.13295987447103
+SCOPING_METHOD_NAME.equals(n.getFirstChild().getQualifiedName());#217,17.127307534217834
+aliasDefinition.detachFromParent();#121,17.110383192698162
+traversal.getAliasDefinitionsInOrder().size() > 0 ||#137,17.09451416015625
+"JSC_GOOG_SCOPE_HAS_BAD_PARAMETERS",#66,17.060812443494797
+return;#350,17.04714482171195
+hasErrors = true;#269,17.02709635098775
+report(t, n, GOOG_SCOPE_NON_ALIAS_LOCAL, n.getString());#293,17.024155101260625
+public void hotSwapScript(Node root, Node originalRoot) {#104,17.00908868453082
+aliases.clear();#233,17.008058786392212
+static final DiagnosticType GOOG_SCOPE_NON_ALIAS_LOCAL = DiagnosticType.error(#86,16.978939845644195
+"JSC_GOOG_SCOPE_USED_IMPROPERLY",#61,16.97856674194336
+if (!traversal.hasErrors()) {#108,16.973805618286132
+compiler.reportCodeChange();#139,16.91574900490897
+"JSC_GOOG_SCOPE_NON_ALIAS_LOCAL",#87,16.906517835763786
+aliasVar = lexicalVar;#338,16.901423790875604
+report(t, anonymousFnNode, GOOG_SCOPE_HAS_BAD_PARAMETERS);#315,16.898004196785593
+for (Node child = typeNode.getFirstChild(); child != null;#406,16.87667768651789
+findAliases(t);#226,16.86872625350952
+aliasDefinitionsInOrder.add(n);#346,16.839532245289195
+aliasVar.getInitialValue().getQualifiedName();#285,16.837560396928055
+return;#329,16.82235164642334
+preprocessorSymbolTable.addReference(n.getFirstChild());#301,16.78704896180526
+validateScopeCall(t, n, n.getParent());#325,16.754273187546502
+public final boolean shouldTraverse(NodeTraversal t, Node n, Node parent) {#239,16.74137357870738
+Traversal traversal = new Traversal();#105,16.7306090037028
+private class Traversal implements NodeTraversal.ScopedCallback {#182,16.66583599763758
+"JSC_GOOG_SCOPE_USES_RETURN",#75,16.654156062913977
+aliasUsages.add(new AliasedTypeNode(typeNode,#401,16.650166778564454
+public void process(Node externs, Node root) {#99,16.56718495686849
+aliasReference.getParent().replaceChild(#160,16.534598223368327
+public void visit(NodeTraversal t, Node n, Node parent) {#323,16.498505637759255
+NodeTraversal.traverse(compiler, root, traversal);#106,16.463994026184082
+child = child.getNext()) {#407,16.40337005414461
+hotSwapScript(root, null);#100,16.36012708223783
+scopeCalls.add(n);#317,16.244383970896404
+fixTypeNode(node);#382,16.12373447418213
+next = testNode.getNext();#253,16.094936728477478
+fixTypeNode(child);#408,16.04903241566249
+return false;#243,15.79416641822228
+testNode = testNode.getParent();#254,15.349389749414781

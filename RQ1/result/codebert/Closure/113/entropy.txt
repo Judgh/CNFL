@@ -1,0 +1,652 @@
+private final String namespace;#876,20.160280015733505
+final String namespace;#1224,19.73932695388794
+private final JSModuleGraph moduleGraph;#119,19.5840145111084
+case Token.NAME:#258,19.35005742853338
+callee,#497,19.31342601776123
+callee,#524,19.28398748544546
+if (t.inGlobalScope() &&#271,19.24925433888155
+if (enclosingQname == null ||#513,19.21605145931244
+private final JSModule firstModule;#881,19.162933523004707
+if (verifyDefine(t, parent, left, args)) {#370,19.127498388290405
+final String inputName;#1225,19.124126222398544
+pos = ns.indexOf('.', pos + 1);#858,19.11922264099121
+if (arg.isString()) {#228,19.114758708260275
+String ns, Node node, JSModule module) {#854,19.11334368761848
+public String get(String value) {#681,19.07849097251892
+int pos = ns.indexOf('.');#855,19.07618454524449
+for (Map.Entry<String, String> a : cssNames.entrySet()) {#664,19.070849672953287
+if (enclosingQname.indexOf(".prototype.") == -1) {#472,19.068496869957965
+Node arg, int desiredType) {#792,19.053971971784318
+if (indexOfDot == -1) {#1008,19.043088549659366
+if (name.isName() &&#209,19.02208375930786
+if (typeDecls != null) {#240,19.016256581182066
+private JSModule explicitModule = null;#886,19.013168811798096
+Set<String> getExportedVariableNames() {#145,19.007678325359638
+int indexOfDot = namespace.lastIndexOf('.');#1007,19.000836690266926
+"method \"{0}\" called without an argument");#47,18.978083504570854
+if ("base".equals(methodName)) {#215,18.975625369859777
+if (combined != null &&#666,18.94850896534167
+"method \"{0}\" called with invalid argument");#59,18.943234814537895
+private final AbstractCompiler compiler;#118,18.909967952304417
+if (name != null) {#391,18.90206527709961
+"required \"{0}\" namespace not provided yet");#83,18.86475478278266
+for (Map.Entry<String, String> b : cssNames.entrySet()) {#660,18.859874861580984
+if (b.getKey().length() > 10) {#661,18.84713782434878
+String methodName = methodNameNode.getString();#511,18.845143486471738
+if (!verifyNotNull(t, methodName, arg) ||#734,18.824109830354388
+if (candidateDefinition.isExprResult() &&#979,18.822456455230714
+List<String> errors = Lists.newArrayList();#659,18.807271242141724
+final Map<String, String> cssNames = Maps.newHashMap();#612,18.80481657774552
+String name = args.getString();#746,18.783057530721027
+@Override#680,18.781840896606447
+try {#634,18.777464151382446
+if (!verifyNotNull(t, methodName, arg) ||#741,18.774968398244756
+private void setSourceInfo(Node newNode) {#1107,18.76543286641439
+"required \"{0}\" namespace never provided");#79,18.744128619923313
+if (offset != 0) {#1113,18.741606345543495
+"namespace \"{0}\" provided in module {1} " +#99,18.729080070148814
+if (provideStringNode == null) {#1123,18.72765964269638
+"method \"{0}\" called with more than one argument");#67,18.71141333580017
+this.compiler = compiler;#135,18.711215886202726
+private JSModule minimumModule = null;#892,18.71037753423055
+private void updateMinimumModule(JSModule newModule) {#943,18.70261824131012
+private final Map<String, ProvidedName> providedNames =#122,18.699053968702042
+if (provided != null) {#329,18.691711572500374
+final int forQuote = 1;#1183,18.687826243313875
+return 2 + indexOfLastDot;#1133,18.68624153137207
+String enclosingQname = enclosingFnNameNode.getQualifiedName();#471,18.68208581751043
+int indexOfLastDot = namespace.lastIndexOf('.');#1127,18.672709419613792
+if (minimumModule == null) {#944,18.671206406184606
+private int getSourceInfoOffset(Node provideStringNode) {#1122,18.66987699620864
+String name = null;#406,18.66651760448109
+compiler.getCodingConvention(), name,#1178,18.653864595625137
+String name = args.getString();#372,18.620528629847936
+if (pn != null) {#275,18.617794597850125
+if (name != null) {#414,18.607531474186825
+private final Set<String> exportedVariables = Sets.newHashSet();#127,18.59959538777669
+boolean explicit) {#898,18.598509152730305
+if ((candidateDefinition == null) || !node.isExprResult()) {#937,18.592240850130718
+compiler.getCodingConvention(),#499,18.58795189857483
+"method \"{0}\" expected an object string argument");#55,18.585013389587402
+Node methodName, Node args) {#730,18.582333905356272
+if (pn != null) {#393,18.58185888926188
+compiler.getCodingConvention(),#526,18.57711820602417
+private Node makeVarDeclNode() {#1045,18.5767985979716
+reportBadBaseClassUse(t, n, "May only be called directly.");#286,18.57449173927307
+String ns = arg.getString();#299,18.574212074279785
+setSourceInfo(decl);#1061,18.556514422098797
+if (info == null || !info.isDefine()) {#755,18.54002528720432
+current.setSourceEncodedPosition(n.getSourcePosition() + forQuote);#1193,18.54000961780548
+ProcessClosurePrimitives(AbstractCompiler compiler,#132,18.531089544296265
+if (namespace.indexOf('.') == -1) {#1034,18.528908547900972
+String ending = ".prototype." + methodName;#512,18.517203152179718
+case Token.CALL:#204,18.512741883595783
+if (verifyLastArgumentIsString(t, left, arg)) {#298,18.5070283526466
+@Override#689,18.4927116394043
+if (!secondArg.isString()) {#829,18.48997542063395
+node == null /* The base case */ ||#900,18.488564441078587
+for (String typeDecl : typeDecls) {#241,18.488226148817276
+"Missing @define annotation");#95,18.483210802078247
+setSourceInfo(decl);#1094,18.480563402175903
+if (nameNode.isName()) {#984,18.474512602153577
+String methodName = name.getNext().getString();#214,18.473823467890423
+if (parent != null) {#546,18.467504061185398
+private Node createNamespaceLiteral() {#1070,18.46654728480748
+this.moduleGraph = compiler.getModuleGraph();#137,18.464602788289387
+CodingConvention convention = compiler.getCodingConvention();#237,18.46414933885847
+if (maybeInheritsExpr != null &&#478,18.458267885095932
+if (moduleGraph != null &&#311,18.453253555297852
+if (pn != null) {#419,18.446851449854233
+"but required in module {2}");#100,18.445862134297688
+String ns = arg.getString();#343,18.445270470210485
+int offset = getSourceInfoOffset(provideStringNode);#1109,18.443746667159232
+if (!verifyLastArgumentIsString(t, methodName, arg)) {#708,18.44183215227994
+for (String key : cssNames.keySet()) {#645,18.435409954616002
+"method \"{0}\" expected an object literal argument");#51,18.432697697689658
+JSModule module = t.getModule();#310,18.43092374240651
+if (!key.isStringKey()#617,18.427545189857483
+"incorrect use of goog.base: {0}");#113,18.422969388961793
+String name = n.getString();#1176,18.41259018580119
+if (t.inGlobalScope() && info != null && info.hasTypedefType()) {#389,18.39785935328557
+Node objlit = IR.objectlit();#1071,18.39071814219157
+if (errors.size() != 0) {#650,18.38872438006931
+if (candidateDefinition != null && explicitNode != null) {#973,18.373231172561646
+if (methodNameNode == null || !methodNameNode.isString()) {#506,18.36991728907046
+Node firstArg) {#821,18.36243213306774
+if (t.inGlobalScope()) {#405,18.36151145054744
+while (pos != -1) {#856,18.351858139038086
+!enclosingQname.endsWith(ending)) {#514,18.34787426824155
+if (candidateDefinition == null) {#1056,18.347873306274415
+DiagnosticType error;#163,18.345892099233772
+if (arg.getNext() != null) {#629,18.342609517714557
+private final List<Node> defineCalls = Lists.newArrayList();#130,18.34236118528578
+for (UnrecognizedRequire r : unrecognizedRequires) {#162,18.33975749015808
+private Node createDeclarationNode() {#1033,18.338635206222534
+if (verifyProvide(t, left, arg)) {#342,18.32676622602675
+String name = n.getFirstChild().getString();#273,18.325309666720305
+GOOG.equals(name.getString())) {#210,18.319014651434763
+if (firstModule == minimumModule) {#1002,18.3111733268289
+void addProvide(Node node, JSModule module, boolean explicit) {#912,18.31067900657654
+void addDefinition(Node node, JSModule module) {#932,18.299777567386627
+@Override#149,18.299378871917725
+JSModule module = t.getModule();#583,18.296957397460936
+!verifyIsLast(t, methodName, arg)) {#742,18.294721776788887
+if (arg == null) {#779,18.28937955336137
+for (String part : name.split("\\.")) {#747,18.28892365623923
+UnrecognizedRequire(Node requireNode, String namespace, String inputName) {#1227,18.280176509510387
+List<String> errors = Lists.newArrayList();#644,18.278767776489257
+if (thisArg == null || !thisArg.isThis()) {#460,18.274974923384818
+"\"{0}\" is not a valid JS identifier name");#91,18.27289171218872
+!combined.equals(a.getValue() + "-" + b.getValue())) {#667,18.267737535329964
+if (errors.size() != 0) {#673,18.258743180169
+current.setSourceEncodedPosition(n.getSourcePosition() + forQuote);#1202,18.24590947411277
+!verifyOfType(t, methodName, arg, Token.STRING)) {#735,18.24124173764829
+if (verifySetCssNameMapping(t, left, arg)) {#609,18.236883206800982
+if (n.isName() && parent.isVar()) {#407,18.233740377426148
+case Token.FUNCTION:#268,18.230595955481895
+Node current = null;#1186,18.22270605299208
+ProvidedName provided = new ProvidedName(name, expr, module, true);#586,18.219920418479226
+String prefixNs = ns.substring(0, pos);#857,18.218880251834268
+if (candidateDefinition == null) {#1090,18.214750289916992
+current.getLastChild().setSourceEncodedPosition(#1196,18.20850001441108
+module != providedModule &&#312,18.2073735629811
+"\"{0}\" is not a valid JS identifier name");#87,18.202654218673707
+int dot = arg.getString().indexOf('.');#229,18.20166956145188
+return objlit;#1074,18.188865184783936
+Preconditions.checkArgument(node.isExprResult() || // assign#933,18.18460524082184
+if (dot == -1) {#230,18.176066637039185
+@Override#201,18.17266082763672
+return exportedVariables;#146,18.166866620381672
+compiler.getNodeForCodeInsertion(minimumModule)#1010,18.161773880322773
+if (firstNode == null) {#965,18.161089079720632
+new ProvidedName(GOOG, null, null, false /* implicit */));#142,18.160413017272948
+static final DiagnosticType EXPECTED_STRING_ERROR = DiagnosticType.error(#53,18.159007505937055
+ProvidedName parentName =#1014,18.140580962685977
+if (left.isGetProp()) {#207,18.13362912570729
+if (parent.isAssign() ||#547,18.133591708014993
+Node expr,#729,18.131567849053276
+compiler.getCodingConvention(), namespace,#1085,18.131195306777954
+static final String GOOG = "goog";#116,18.127624878516563
+private final List<UnrecognizedRequire> unrecognizedRequires =#125,18.116157293319702
+!moduleGraph.dependsOn(module, providedModule)) {#313,18.110306703127346
+if (arg.getNext() != null) {#806,18.101907539367676
+compiler.reportCodeChange();#975,18.099731922149658
+String combined = cssNames.get(a.getKey() + "-" + b.getKey());#665,18.09948512486049
+Node decl = IR.var(name);#1049,18.098185348510743
+Node sourceInfoNode = provideStringNode == null#1110,18.087764859199524
+DiagnosticType diagnostic = null;#822,18.087621342052113
+private Node explicitNode = null;#885,18.0838135805997
+List<String> typeDecls =#238,18.075227564031426
+private Node makeAssignmentExprNode() {#1081,18.070591109139578
+callNode.getLastChild().isQualifiedName()) {#484,18.0694340133667
+if (compiler.getCodingConvention().isConstant(namespace)) {#1053,18.06781982421875
+sourceInfoNode.getSourcePosition() + offset);#1115,18.06564538375191
+private Node candidateDefinition = null;#889,18.061464483087715
+case Token.ASSIGN:#257,18.05309311548869
+Node varNode = IR.var(nameNode);#990,18.052678232607633
+if (n.getFirstChild().isName() &&#282,18.050604152679444
+if (NodeUtil.isFunctionDeclaration(scopeRoot)) {#541,18.04889262349982
+boolean isExplicitlyProvided() {#922,18.04730488703801
+if (provided == null || !provided.isExplicitlyProvided()) {#301,18.045026364533797
+"namespace \"{0}\" cannot be provided twice");#71,18.03984431216591
+if (cssNames.containsKey(value)) {#682,18.025866421786223
+n /* real source offsets will be filled in below */,#1179,18.025770044326784
+|| !value.isString()) {#619,18.02259941101074
+"JSC_XMODULE_REQUIRE_ERROR",#98,18.015218684547825
+return verifyNotNull(t, methodName, arg) &&#770,17.995705548454733
+!candidateDefinition.getFirstChild().isQualifiedName()) {#980,17.983526794998735
+if (diagnostic != null) {#835,17.981230974197388
+DiagnosticType.error(#103,17.978801250457764
+maybeAddStringNodeToSymbolTable(arg);#322,17.963597297668457
+Node className =#521,17.95927791595459
+reportBadBaseClassUse(t, n, "First argument must be 'this'.");#461,17.958016395568848
+this.inputName = inputName;#1230,17.95131356375558
+for (current = syntheticRef;#1187,17.94700709256259
+className.getQualifiedName(), methodName),#528,17.943049642774795
+String.format("%s.superClass_.%s.call",#527,17.940199110243057
+n.getSourcePosition() + namespaceLen + forQuote + forDot);#1197,17.940031475490994
+Node name = left.getFirstChild();#208,17.93587935598273
+@Override#194,17.930930137634277
+if (key.contains("-")) {#646,17.929855871200562
+"goog.setCssNameMapping only takes an object literal with string values");#105,17.92613700866699
+CheckLevel requiresLevel) {#134,17.920400698979694
+Node nameNode = assignNode.getFirstChild();#983,17.91795285542806
+private Node replacementNode = null;#895,17.91599516435103
+for (Node n : defineCalls) {#153,17.915647779192245
+private class ProvidedName {#875,17.912148339407786
+private boolean verifyLastArgumentIsString(#768,17.911924969066273
+String name = n.getChildAtIndex(1).getString();#184,17.90600119139019
+if (firstArg == null) {#823,17.902493317921955
+compiler.report(#314,17.899288722446986
+if ("goog.inherits".equals(#482,17.8945191860199
+if (isNamespacePlaceholder(parent)) {#592,17.890574286965762
+varNode.copyInformationFrom(candidateDefinition);#991,17.88927982164466
+maybeInheritsExpr.getFirstChild().isCall()) {#480,17.888078994750977
+processDefineCall(t, n, parent);#221,17.883613967895506
+this.namespace = namespace;#902,17.88235121506911
+"Invalid entries in css renaming map: {0}");#109,17.881939220428468
+"goog.base".equals(n.getQualifiedName())) {#285,17.880692450205483
+implements HotSwapCompilerPass {#43,17.87935511271159
+ProvidedName(String namespace, Node node, JSModule module,#897,17.878957748413086
+private Node getProvideStringNode() {#1136,17.876093277564415
+static final DiagnosticType XMODULE_REQUIRE_ERROR = DiagnosticType.warning(#97,17.875085960734975
+ProvidedName pn = providedNames.get(name);#274,17.872698480432685
+case Token.EXPR_RESULT:#264,17.864953358968098
+Node thisArg = callee.getNext();#459,17.86311115537371
+compiler.reportCodeChange();#581,17.862878402074177
+minimumModule = newModule;#945,17.85671063831874
+if (arg.getType() != desiredType) {#793,17.85549223423004
+final int forDot = 1;#1184,17.852739651997883
+static final DiagnosticType INVALID_STYLE_ERROR = DiagnosticType.error(#61,17.846761205922004
+NULL_ARGUMENT_ERROR, methodName.getQualifiedName()));#782,17.846475660800934
+if (explicit) {#913,17.84492301940918
+if (enclosingFnNameNode == null) {#466,17.84276238609763
+Node decl = IR.exprResult(#1082,17.842488493238175
+objlit.setJSType(#1072,17.841310501098633
+Node arg = left.getNext();#227,17.839210076765582
+builder.recordConstancy();#1100,17.832187334696453
+Node scopeRoot = t.getScopeRoot();#540,17.828402996063232
+this.firstModule = module;#904,17.824990932758038
+"JSC_INVALID_MISSING_DEFINE_ANNOTATION",#94,17.8247664642334
+Node value = key.getFirstChild();#616,17.8246270348044
+static final DiagnosticType LATE_PROVIDE_ERROR = DiagnosticType.error(#81,17.82442283630371
+public CssRenamingMap.Style getStyle() {#690,17.822678804397583
+return value != null#1161,17.82256770133972
+for (ProvidedName pn : providedNames.values()) {#157,17.82249795065986
+boolean isExpr = parent.isExprResult();#205,17.822223806381224
+if (expectedName != null && expectedName.firstNode != null) {#165,17.82193652788798
+Node callNode = maybeInheritsExpr.getFirstChild();#481,17.820155351058297
+reportBadBaseClassUse(t, n, "Could not find enclosing method.");#467,17.819091720581056
+compiler.report(#620,17.813979693821498
+static final DiagnosticType INVALID_DEFINE_NAME_ERROR = DiagnosticType.error(#89,17.813713272412617
+static final DiagnosticType MISSING_DEFINE_ANNOTATION = DiagnosticType.error(#93,17.81311914195185
+maybeAddStringNodeToSymbolTable(arg);#346,17.805855975431555
+TOO_MANY_ARGUMENTS_ERROR, methodName.getQualifiedName()));#809,17.80255103111267
+String name = n.getFirstChild().getQualifiedName();#390,17.79968786239624
+Node provideStringNode = getProvideStringNode();#1108,17.796602361342487
+verifyOfType(t, methodName, arg, Token.STRING) &&#771,17.79649215698242
+Node nameNode = args;#371,17.7948424021403
+new UnrecognizedRequire(n, ns, t.getSourceName()));#303,17.79386831919352
+if (providedNames.containsKey(prefixNs)) {#859,17.790924674586247
+INVALID_ARGUMENT_ERROR, methodName.getQualifiedName()));#796,17.788874962750604
+Node assignNode = candidateDefinition.getFirstChild();#982,17.77900586809431
+registerAnyProvidedPrefixes(name, expr, module);#584,17.773565101623536
+Node value = args.getNext();#373,17.77147694996425
+if (n.isExprResult()) {#1153,17.770577839442662
+minimumModule = moduleGraph.getDeepestCommonDependencyInclusive(#947,17.767343640327454
+compiler.reportCodeChange();#502,17.76587239901225
+new ProvidedName(prefixNs, node, module, false /* implicit */));#865,17.757680245808192
+!parent.isCall() &&#283,17.756485888832493
+Node baseClassNode = null;#477,17.756265346820538
+switch (n.getType()) {#203,17.75205135345459
+processRequireCall(t, n, parent);#223,17.74654037475586
+replacementNode = createDeclarationNode();#1001,17.74408483505249
+nameNode.setJSDocInfo(assignNode.getJSDocInfo());#994,17.738100390280447
+NodeUtil.newQualifiedNameNode(#498,17.737630891799927
+reportBadBaseClassUse(#490,17.73375654220581
+static final DiagnosticType INVALID_PROVIDE_ERROR = DiagnosticType.error(#85,17.733727585185658
+"Missing module graph");#953,17.721794755835283
+current.setLength(current.getString().length());#1203,17.721441209316254
+Node callee = n.getFirstChild();#458,17.719015462057932
+static final DiagnosticType NULL_ARGUMENT_ERROR = DiagnosticType.error(#45,17.70966625213623
+JSModule providedModule = provided.explicitModule;#305,17.70947059832121
+ProvidedName provided = providedNames.get(ns);#300,17.70710513171028
+for (Node key = arg.getFirstChild(); key != null;#614,17.706518536522275
+static final DiagnosticType MISSING_PROVIDE_ERROR = DiagnosticType.error(#77,17.703587713695708
+IR.assign(#1083,17.70231736501058
+void replace() {#964,17.699002742767334
+if (preprocessorSymbolTable != null) {#1212,17.69830430348714
+callee, "goog.base"));#529,17.695533405650746
+static final DiagnosticType BASE_CLASS_ERROR = DiagnosticType.error(#111,17.690649735300166
+convention.identifyTypeDeclarationCall(n);#239,17.69046615732127
+a.getKey() + ")-map(" + b.getKey() + ")");#669,17.689602555169
+parent.getLastChild() == scopeRoot &&#548,17.6863470511003
+"Invalid CSS name map style {0}");#63,17.68562412261963
+Node expr = new Node(Token.EXPR_RESULT);#578,17.683654499053954
+private final PreprocessorSymbolTable preprocessorSymbolTable;#129,17.68343849182129
+JSDocInfoBuilder builder = new JSDocInfoBuilder(false);#1099,17.677271236072887
+private final Node firstNode;#880,17.674029922485353
+processProvideCall(t, n, parent);#225,17.67230667114258
+reportBadBaseClassUse(t, n, "Second argument must name a method.");#507,17.670840722543222
+return (firstNode.getFirstChild() != null &&#1137,17.657706790500217
+"\"{0}\" cannot be both provided and declared as a function");#75,17.6536602973938
+Node maybeInheritsExpr = (enclosingParent.isAssign() ?#475,17.646184272766114
+compiler.report(t.makeError(expr, MISSING_DEFINE_ANNOTATION));#756,17.64141312351933
+t, n, "Enclosing method does not match " + methodName);#516,17.637992201180293
+Node value = n.getChildAtIndex(2).detachFromParent();#185,17.63646007719494
+if (!previouslyProvided.isExplicitlyProvided()) {#350,17.636294779570207
+compiler.reportCodeChange();#191,17.632426166534422
+diagnostic, methodName.getQualifiedName()));#838,17.632016906738283
+Node left = n.getFirstChild();#206,17.629233640782974
+NodeUtil.newQualifiedNameNode(#525,17.628584766387938
+providedNames.put(name, provided);#587,17.620851198832195
+diagnostic = EXPECTED_STRING_ERROR;#830,17.61911301863821
+compiler.report(#637,17.61879555384318
+value = assign.getLastChild();#1155,17.618058953966415
+providedNames.put(#863,17.61432823768029
+compiler.report(t.makeError(args, INVALID_DEFINE_NAME_ERROR, name));#749,17.611553192138672
+"JSC_INVALID_DEFINE_NAME_ERROR",#90,17.605291866120837
+return null;#559,17.60512297494071
+if (preprocessorSymbolTable == null) {#1172,17.60391394297282
+compiler.report(#836,17.60352954864502
+private void maybeAddStringNodeToSymbolTable(Node n) {#1171,17.6022886949427
+node, module, false /* implicit */);#861,17.59733404432024
+Node args = left.getNext();#369,17.59299914042155
+diagnostic = EXPECTED_OBJECTLIT_ERROR;#826,17.59217367674175
+maybeInheritsExpr.isExprResult() &&#479,17.590779180112094
+if (providedNames.containsKey(ns)) {#348,17.587756686740452
+compiler.reportCodeChange();#249,17.579308938980102
+Node arg = left.getNext();#608,17.572141647338867
+Node name = IR.name(namespace);#1046,17.5703262090683
+module.getName()));#317,17.57000772158305
+compiler.reportCodeChange();#1025,17.569592884608678
+Lists.newArrayList();#126,17.56588403383891
+compiler.report(JSError.make(#172,17.56397227237099
+static final DiagnosticType EXPECTED_OBJECTLIT_ERROR = DiagnosticType.error(#49,17.56260124842326
+"JSC_INVALID_PROVIDE_ERROR",#86,17.56124892987703
+maybeAddToSymbolTable(left);#321,17.55781167348226
+compiler.reportCodeChange();#531,17.54690154393514
+for (String part : arg.getString().split("\\.")) {#712,17.54416675567627
+compiler.report(#780,17.540971660614012
+private void maybeAddToSymbolTable(Node n) {#1211,17.539359664916994
+if (explicitNode != null) {#1022,17.532895985771628
+int namespaceLen = current.getFirstChild().getQualifiedName().length();#1191,17.530523217242695
+String styleStr = "BY_PART";#628,17.525570805867513
+case Token.GETPROP:#281,17.521157851585976
+enclosingFnNameNode.getFirstChild().getFirstChild();#522,17.516899223327638
+newNode.copyInformationFromForTree(sourceInfoNode);#1112,17.51631024009303
+private JSDocInfo createConstantJsDoc() {#1098,17.515281021595
+reportBadBaseClassUse(#515,17.514489037649973
+compiler.getCodingConvention(), name, value, n.getJSDocInfo());#188,17.507389272962296
+if (!NodeUtil.isValidPropertyName(part)) {#713,17.50652685165405
+return explicitNode != null;#923,17.505239645640057
+static final DiagnosticType INVALID_CSS_RENAMING_MAP = DiagnosticType.warning(#107,17.499755969414345
+"JSC_MISSING_PROVIDE_ERROR",#78,17.497736428913317
+compiler.reportCodeChange();#995,17.48116440243191
+r.inputName, r.requireNode, requiresLevel, error, r.namespace));#173,17.481065094470978
+Node enclosingParent = enclosingFnNameNode.getParent();#474,17.47947361355736
+verifyIsLast(t, methodName, arg);#772,17.47862268749036
+private void registerAnyProvidedPrefixes(#853,17.474167744318645
+if (parent.getBooleanProp(Node.IS_NAMESPACE)) {#415,17.47149252008509
+static final DiagnosticType TOO_MANY_ARGUMENTS_ERROR = DiagnosticType.error(#65,17.470179924598106
+!NodeUtil.isFunctionExpression(n)) {#272,17.459045944213866
+Node valueNode = nameNode.getNext();#986,17.4536470933394
+"JSC_INVALID_CSS_NAME_MAP_STYLE_ERROR",#62,17.451026329627403
+&& value.isObjectLit()#1162,17.45092269352504
+ProvidedName previouslyProvided = providedNames.get(ns);#349,17.446960857936315
+updateMinimumModule(module);#919,17.44261892636617
+compiler.reportCodeChange();#696,17.441800514856975
+handleTypedefDefinition(t, n);#265,17.44139215681288
+"JSC_LATE_PROVIDE_ERROR",#82,17.439764128790962
+t.makeError(n, XMODULE_REQUIRE_ERROR, ns,#315,17.430124282836914
+NodeTraversal t, String name, Node parent) {#574,17.42367834793894
+static final DiagnosticType INVALID_ARGUMENT_ERROR = DiagnosticType.error(#57,17.42072896162669
+compiler.report(t.makeError(arg, INVALID_PROVIDE_ERROR, part));#714,17.41959664026896
+diagnostic = NULL_ARGUMENT_ERROR;#824,17.418984188753015
+error = LATE_PROVIDE_ERROR;#167,17.416933965682983
+key = key.getNext()) {#615,17.41582679748535
+parent.isExprResult()) {#410,17.41013198428684
+String.format("%s.call", baseClassNode.getQualifiedName()),#500,17.409748292738392
+handleCandidateProvideDefinition(t, n, parent);#261,17.408924148196267
+exportedVariables.add(arg.getString().substring(0, dot));#233,17.399250560336643
+if (!NodeUtil.isValidQualifiedName(part)) {#748,17.398800759088424
+newNode.setSourceEncodedPositionForTree(#1114,17.396797431142705
+addProvide(node, module, explicit);#906,17.39623337984085
+ProvidedName pn = providedNames.get(name);#418,17.395108699798584
+registerAnyProvidedPrefixes(ns, parent, t.getModule());#357,17.395063667297364
+"JSC_EXPECTED_STRING_ERROR",#54,17.39278261285079
+private void handleCandidateProvideDefinition(#403,17.390022798018023
+private class UnrecognizedRequire {#1222,17.38523635864258
+ns, new ProvidedName(ns, parent, t.getModule(), true));#359,17.38277208394018
+compiler.reportCodeChange();#331,17.382682459694998
+node.isVar());#935,17.38250913375463
+Node arg = args;#733,17.374002986484104
+break;#219,17.373087406158447
+compiler.report(t.makeError(n, BASE_CLASS_ERROR, extraMessage));#565,17.371838649113972
+static final DiagnosticType DUPLICATE_NAMESPACE_ERROR = DiagnosticType.error(#69,17.37164330482483
+current = current.getFirstChild()) {#1189,17.37114953994751
+maybeAddStringNodeToSymbolTable(nameNode);#376,17.369127591451008
+minimumModule, newModule);#948,17.364543596903484
+@Nullable PreprocessorSymbolTable preprocessorSymbolTable,#133,17.361975383758544
+name = n.getString();#408,17.35659739176432
+candidateDefinition.putBooleanProp(Node.IS_NAMESPACE, true);#981,17.356081502190953
+current.getLastChild().setLength(#1198,17.354300371805827
+exportedVariables.add(arg.getString());#231,17.35275492174872
+NodeTraversal t, Node n) {#387,17.35252159833908
+replacement.useSourceInfoIfMissingFromForTree(n);#189,17.35119640125948
+"JSC_BASE_CLASS_ERROR",#112,17.350302920621985
+node.isFunction() ||#934,17.349580264091493
+replacementNode = candidateDefinition;#978,17.345470087868826
+private void reportBadBaseClassUse(#563,17.343718910217284
+parent.getFirstChild().isQualifiedName()) {#549,17.342876036961872
+replacementNode = candidateDefinition;#967,17.342177731650217
+"JSC_INVALID_ARGUMENT_ERROR",#58,17.339751061939058
+Preconditions.checkNotNull(parentName);#1016,17.339169212009597
+NodeUtil.newQualifiedNameNode(#1084,17.337164600690205
+Node methodNameNode = thisArg.getNext();#505,17.334959030151367
+compiler.report(#794,17.33490629196167
+Node arg = left.getNext();#341,17.332674821217854
+"INVALID_CSS_RENAMING_MAP",#108,17.330047798156738
+processBaseClassCall(t, n);#216,17.32522678375244
+current.setLength(fullLen);#1194,17.32291603088379
+Node value = null;#1152,17.320810953776043
+if (baseClassNode == null) {#489,17.31615072886149
+current.isGetProp();#1188,17.312153561909994
+!parent.isAssign() &&#284,17.31198501586914
+return scopeRoot.getFirstChild();#543,17.309163366045272
+"JSC_TOO_MANY_ARGUMENTS_ERROR",#66,17.30830773063328
+callee, "goog.base"));#501,17.3076474016363
+providedModule.getName(),#316,17.299558401107788
+return makeVarDeclNode();#1035,17.294581140790665
+"JSC_DUPLICATE_NAMESPACE_ERROR",#70,17.27565930106423
+compiler.report(#651,17.273180621010916
+int fullLen = current.getQualifiedName().length();#1190,17.26898685254549
+expr.copyInformationFromForTree(parent);#579,17.267201006412506
+cssNames.put(key.getString(), value.getString());#625,17.264745076497395
+current.getLastChild().getString().length());#1199,17.26027111780076
+ProvidedName pn = providedNames.get(name);#392,17.259847164154053
+this.preprocessorSymbolTable = preprocessorSymbolTable;#136,17.252651267581516
+Node arg = left.getNext();#297,17.24493098258972
+static final DiagnosticType NON_STRING_PASSED_TO_SET_CSS_NAME_MAPPING_ERROR =#102,17.242401978065228
+Preconditions.checkNotNull(providedModule);#308,17.237269351356908
+Node enclosingFnNameNode = getEnclosingDeclNameNode(t);#465,17.233295180580832
+this.namespace = namespace;#1229,17.226786540104793
+NodeTraversal t, Node n, String extraMessage) {#564,17.226048040390015
+processProvideFromPreviousPass(t, name, parent);#416,17.216464042663574
+NodeTraversal t, Node methodName, Node arg) {#769,17.212742567062378
+createNamespaceLiteral()));#1088,17.19610188224099
+Node replacement = NodeUtil.newQualifiedNameNodeDeclaration(#187,17.195758869773464
+name.addChildToFront(createNamespaceLiteral());#1047,17.195140314102172
+diagnostic = TOO_MANY_ARGUMENTS_ERROR;#832,17.19489168084186
+private static boolean isNamespacePlaceholder(Node n) {#1147,17.193126106262206
+compiler.report(#674,17.190693378448486
+static final DiagnosticType FUNCTION_NAMESPACE_ERROR = DiagnosticType.error(#73,17.18493135770162
+decl.putBooleanProp(Node.IS_NAMESPACE, true);#1050,17.18278153737386
+private boolean verifyNotNull(NodeTraversal t, Node methodName, Node arg) {#778,17.18055399981412
+return parent.getFirstChild();#551,17.17983885372386
+"JSC_EXPECTED_OBJECTLIT_ERROR",#50,17.176642236255464
+parent.replaceChild(n, IR.number(0));#248,17.17650893882469
+private boolean verifyIsLast(NodeTraversal t, Node methodName, Node arg) {#805,17.16846058585427
+return true;#785,17.16781725202288
+Preconditions.checkNotNull(parentName.replacementNode);#1017,17.165729416741264
+t.makeError(n, INVALID_CSS_RENAMING_MAP, errors.toString()));#652,17.16051811920969
+assignNode.removeChild(valueNode);#988,17.160130319141206
+ProvidedName expectedName = providedNames.get(r.namespace);#164,17.154143209042758
+maybeAddToSymbolTable(left);#345,17.152712059020995
+errors.add("map(" + a.getKey() + "-" + b.getKey() + ") != map(" +#668,17.146293458484468
+nameNode.addChildToFront(valueNode);#989,17.142901752306066
+t.makeError(n, INVALID_CSS_RENAMING_MAP, errors.toString()));#675,17.141916802054958
+break;#266,17.140434741973877
+Preconditions.checkState(isNamespacePlaceholder(decl));#1093,17.13936487833659
+t.makeError(n, INVALID_STYLE_ERROR, styleStr));#638,17.138143569231033
+private void processDefineCall(NodeTraversal t, Node n, Node parent) {#367,17.133347901430998
+"JSC_NULL_ARGUMENT_ERROR",#46,17.119857336345472
+t, n, "Could not find goog.inherits for base class");#491,17.119791666666668
+if (requiresLevel.isOn()) {#161,17.117561927208534
+if (!n.getBooleanProp(Node.IS_NAMESPACE)) {#1148,17.115431163621984
+prefixNs,#864,17.10228945414225
+final Node requireNode;#1223,17.099346584743923
+return true;#812,17.096808978489467
+previouslyProvided.addProvide(parent, t.getModule(), true);#351,17.093583848741318
+Node assign = n.getFirstChild();#1154,17.093548583984376
+enclosingParent.getParent() : enclosingParent).getNext();#476,17.0927063369751
+name.putBooleanProp(Node.IS_CONSTANT_NAME, true);#1054,17.092461268107098
+compiler.report(#807,17.089638042449952
+error = MISSING_PROVIDE_ERROR;#169,17.08242721557617
+Node name = n.getFirstChild();#1157,17.078402519226074
+if (!providedNames.containsKey(name)) {#575,17.07108497619629
+compiler.report(t.makeError(n, FUNCTION_NAMESPACE_ERROR, name));#276,17.070647292666965
+t.makeError(n, DUPLICATE_NAMESPACE_ERROR, ns));#354,17.070638235877542
+decl.putBooleanProp(Node.IS_NAMESPACE, true);#1089,17.065953969955444
+return builder.build(null);#1101,17.061844752385067
+break;#255,17.061328601837157
+private void processRequireCall(NodeTraversal t, Node n, Node parent) {#295,17.06031998721036
+firstNode /* real source info will be filled in below */,#1086,17.052792579896987
+assignNode.removeChild(nameNode);#987,17.042499178931827
+compiler.report(#353,17.041135787963867
+|| value == null#618,17.04040151834488
+Node parent = scopeRoot.getParent();#545,17.03648738861084
+compiler.setCssRenamingMap(cssRenamingMap);#694,17.035917615890504
+&& !value.hasChildren();#1163,17.034863471984863
+return true;#799,17.030486788068497
+private boolean verifyProvide(NodeTraversal t, Node methodName, Node arg) {#707,17.027061462402344
+maybeAddToSymbolTable(syntheticRef);#1205,17.019879400730133
+t.makeError(methodName,#795,17.014099597930908
+NodeTraversal t, Node n, Node parent) {#404,17.013600148652728
+return cssNames.get(value);#683,17.012395086742583
+compiler.getTypeRegistry().createAnonymousObjectType(null));#1073,17.008595665295918
+Preconditions.checkState(newModule == minimumModule,#952,16.99648443857829
+compiler.getTypeRegistry().forwardDeclareType(typeDecl);#242,16.994529753020316
+Preconditions.checkArgument(#899,16.96653733934675
+Preconditions.checkState(isNamespacePlaceholder(decl));#1060,16.947993778047106
+return true;#841,16.94763674054827
+"JSC_NON_STRING_PASSED_TO_SET_CSS_NAME_MAPPING_ERROR",#104,16.947544355650205
+node.isExprResult());#901,16.94159356285544
+Preconditions.checkArgument(node.isExprResult());#915,16.93836908755095
+return true;#718,16.930252075195312
+firstNode.getFirstChild().getLastChild() :#1139,16.930230790918525
+private final CheckLevel requiresLevel;#128,16.92520374721951
+this.requireNode = requireNode;#1228,16.923207759857178
+break;#262,16.916472053527833
+name = n.getFirstChild().getQualifiedName();#411,16.913955688476562
+compiler.reportCodeChange();#594,16.913867473602295
+JSDocInfo info = n.getFirstChild().getJSDocInfo();#388,16.913047660480846
+style = CssRenamingMap.Style.valueOf(styleStr);#635,16.912950197855633
+return style;#691,16.907545529879055
+this.compiler.process(this);#198,16.896390474759617
+break;#279,16.89360933303833
+baseClassNode = callNode.getLastChild();#485,16.893606322152273
+NON_STRING_PASSED_TO_SET_CSS_NAME_MAPPING_ERROR));#622,16.893133783340453
+candidateDefinition, varNode);#993,16.892025514082476
+explicitModule = module;#917,16.891906664921688
+continue;#662,16.88939026423863
+private Node getEnclosingDeclNameNode(NodeTraversal t) {#539,16.884500804700348
+this.firstNode = node;#903,16.863325119018555
+return 0;#1124,16.860449704256926
+return value;#685,16.854314549764
+providedNames.get(namespace.substring(0, indexOfDot));#1015,16.849581858691046
+private boolean verifyOfType(NodeTraversal t, Node methodName,#791,16.848364935980904
+return decl;#1062,16.827042791578506
+t.makeError(methodName,#808,16.82258786095513
+callNode.getFirstChild().getQualifiedName()) &&#483,16.82143471158784
+return;#1173,16.81528079509735
+public void hotSwapScript(Node scriptRoot, Node originalRoot) {#195,16.81426742341783
+Node syntheticRef = NodeUtil.newQualifiedNameNode(#1177,16.802335368262398
+maybeAddToSymbolTable(left);#375,16.79478867848714
+explicitNode.detachFromParent();#974,16.78673940896988
+provided.addDefinition(parent, module);#588,16.774084345499674
+t.makeError(methodName,#781,16.773794439103867
+value = name.getFirstChild();#1158,16.771138463701522
+return decl;#1095,16.77055401272244
+Node left = n.getFirstChild();#607,16.768955817589394
+private void processProvideFromPreviousPass(#573,16.76878660375422
+namespace),#1087,16.76678071022034
+providedNames.put(GOOG,#141,16.766380603496845
+return false;#743,16.76220777299669
+providedNames.put(#358,16.761596826406624
+replaceGoogDefines(n);#154,16.75330557141985
+return true;#759,16.752506937299454
+private boolean verifyDefine(NodeTraversal t,#728,16.73133066722325
+Node secondArg = firstArg.getNext();#828,16.719380855560303
+return;#968,16.7144136428833
+return false;#709,16.70065477159288
+candidateDefinition.getParent().replaceChild(#992,16.698636872427805
+Node left = n.getFirstChild();#340,16.697550700261043
+NodeUtil.isExprCall(firstNode)) ?#1138,16.696588198343914
+JSDocInfo info = expr.getFirstChild().getJSDocInfo();#754,16.682676228609953
+private void processSetCssNameMapping(NodeTraversal t, Node n, Node parent) {#606,16.67745948791504
+private void processBaseClassCall(NodeTraversal t, Node n) {#430,16.6734820918033
+updateMinimumModule(module);#939,16.67299086706979
+Node left = n.getFirstChild();#368,16.670973704411434
+private boolean verifySetCssNameMapping(NodeTraversal t, Node methodName,#820,16.666369221427225
+return makeAssignmentExprNode();#1037,16.655637204647064
+styleStr = arg.getNext().getString();#630,16.653776670757093
+candidateDefinition = node;#938,16.64200027172382
+providedNames.get(prefixNs).addProvide(#860,16.629696130752563
+CssRenamingMap cssRenamingMap = new CssRenamingMap() {#679,16.626019325256348
+t.makeError(methodName,#837,16.624583827124702
+return false;#1149,16.62429693010118
+final CssRenamingMap.Style style;#633,16.619606494903564
+replacementNode = varNode;#996,16.60491418838501
+return;#517,16.603410148620604
+public void process(Node externs, Node root) {#150,16.59093329111735
+? firstNode : provideStringNode;#1111,16.584915267096626
+processSetCssNameMapping(t, n, parent);#251,16.55411802019392
+private void replaceGoogDefines(Node n) {#181,16.5521525655474
+return false;#736,16.551616562737358
+new NodeTraversal(compiler, this).traverse(root);#151,16.541822624206542
+name.setJSDocInfo(createConstantJsDoc());#1057,16.526550379666414
+Node left = n.getFirstChild();#296,16.525702476501465
+if (style == CssRenamingMap.Style.BY_PART) {#642,16.51322485053021
+return;#492,16.511685943603517
+private void processProvideCall(NodeTraversal t, Node n, Node parent) {#339,16.50995076786388
+class ProcessClosurePrimitives extends AbstractPostOrderCallback#42,16.508211482654918
+"JSC_FUNCTION_NAMESPACE_ERROR",#74,16.485216367812384
+this.defineCalls.add(n);#378,16.474916219711304
+Preconditions.checkState(parent.isExprResult());#183,16.468268712361652
+Maps.newLinkedHashMap();#123,16.465577466147288
+name);#1180,16.455535697937012
+return;#639,16.450805473327637
+explicitNode.detachFromParent();#1023,16.448309156629776
+pn.addDefinition(parent, t.getModule());#420,16.44023178100586
+return;#462,16.422905683517456
+this.requiresLevel = requiresLevel;#138,16.41610074043274
+decl.getFirstChild().setJSDocInfo(createConstantJsDoc());#1091,16.413526645073524
+return;#508,16.401463985443115
+pn.replace();#158,16.399905031377617
+Preconditions.checkState(explicitNode == null);#914,16.395238876342773
+Preconditions.checkArgument(explicitNode != node);#936,16.3911913394928
+private void handleTypedefDefinition(#386,16.345383644104004
+return;#468,16.344262838363647
+t.makeError(n,#621,16.343550772893998
+n.replaceChild(#496,16.32182962244207
+pn.addDefinition(n, t.getModule());#394,16.32169827170994
+parent.detachFromParent();#330,16.304809188842775
+arg = arg.getNext();#740,16.25811091336337
+firstNode.getParent().addChildBefore(replacementNode, firstNode);#1003,16.250364515516495
+n.replaceChild(#523,16.235679366371848
+Node parent = n.getParent();#182,16.230449597040813
+return;#623,16.22852595647176
+unrecognizedRequires.add(#302,16.139778886522567
+.addChildToBack(replacementNode);#1011,16.128321244166447
+return false;#783,16.06943353017171
+preprocessorSymbolTable.addReference(n);#1213,16.047187075895422
+errors.add(key);#647,16.0367374420166
+return false;#810,16.01635678609212
+explicitNode = node;#916,16.00706782707801
+public void visit(NodeTraversal t, Node n, Node parent) {#202,15.96193393908049
+return false;#797,15.948366906907824
+null;#1140,15.90436323483785
+return false;#839,15.903423839145237
+return false;#757,15.902317259046766
+parentName.replacementNode.getParent().addChildAfter(#1018,15.89544861133282
+replacementNode, parentName.replacementNode);#1019,15.893930471860445
+break;#288,15.847178840637207
+n.removeChild(methodNameNode);#530,15.762169075012206
+return false;#715,15.613918911327016
+parent.getParent().addChildBefore(expr, parent);#580,15.582131185029683
+return parent;#554,15.484856605529785
+parent.getParent().replaceChild(parent, replacement);#190,15.280009806156158
+return false;#750,15.275078860196201
+parent.getParent().removeChild(parent);#695,15.02748191356659
+parent.getParent().removeChild(parent);#593,14.814526345994738

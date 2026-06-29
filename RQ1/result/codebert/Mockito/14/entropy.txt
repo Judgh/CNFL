@@ -1,0 +1,48 @@
+InvocationMatcher invocationMatcher = matchersBinder.bindMatchers(mockingProgress#60,18.322312623262405
+public void setAnswersForStubbing(List<Answer> answers) {#112,17.791498093377974
+MatchersBinder matchersBinder = new MatchersBinder();#36,17.662310449700605
+InvocationMatcher invocationMatcher = matchersBinder.bindMatchers(mockingProgress.getArgumentMatcherStorage(),#67,17.548939996295505
+@SuppressWarnings("unchecked")#111,17.487399305616105
+return stubbedInvocation.answer(invocation);#89,17.43918812793234
+return null;#63,17.24878355662028
+Object ret = mockSettings.getDefaultAnswer().answer(invocation);#91,17.242659392180265
+return mockSettings;#108,17.13810443878174
+VerificationDataImpl data = new VerificationDataImpl(invocationContainerImpl.getInvocations(), invocationMatcher);#76,17.10000150292008
+this.matchersBinder = new MatchersBinder();#44,17.03751822880336
+invocationContainerImpl.setMethodForStubbing(invocationMatcher);#62,16.896311828068324
+MockHandler() {#49,16.87833523750305
+invocationContainerImpl.resetInvocationForPotentialStubbing(invocationMatcher);#98,16.838253144294985
+invocationContainerImpl.setAnswersForStubbing(answers);#113,16.825540622075398
+StubbedInvocationMatcher stubbedInvocation = invocationContainerImpl.findAnswerFor(invocation);#85,16.756679487228393
+return null;#78,16.75240381140458
+MockingProgress mockingProgress = new ThreadSafeMockingProgress();#37,16.721405141493854
+this(new MockSettingsImpl());#50,16.703355089823404
+invocationContainerImpl.setInvocationForPotentialStubbing(invocationMatcher);#81,16.701364199320476
+public MockSettingsImpl getMockSettings() {#107,16.67963538851057
+mockingProgress.validateState();#70,16.59878749847412
+if (stubbedInvocation != null) {#87,16.582524801555433
+public InvocationContainer getInvocationContainer() {#116,16.581623213631765
+private final MockSettingsImpl mockSettings;#39,16.559718370437622
+this(oldMockHandler.getMockSettings());#54,16.521502780914307
+VerificationMode verificationMode = mockingProgress.pullVerificationMode();#65,16.49630308151245
+if (invocationContainerImpl.hasAnswersForStubbing()) {#58,16.49036983648936
+.getArgumentMatcherStorage(), invocation);#61,16.483508511593467
+public Object handle(Invocation invocation) throws Throwable {#57,16.462358236312866
+return invocationContainerImpl;#117,16.451612032376804
+public class MockHandler<T> implements MockitoInvocationHandler, MockHandlerInterface<T> {#31,16.42890657078136
+this.mockSettings = mockSettings;#42,16.425087816574994
+InvocationContainerImpl invocationContainerImpl;#35,16.397706508636475
+stubbedInvocation.captureArgumentsFrom(invocation);#88,16.386808505425087
+mockingProgress.reportOngoingStubbing(ongoingStubbing);#83,16.375097541809083
+this.mockingProgress = new ThreadSafeMockingProgress();#43,16.34505980355399
+if (verificationMode != null) {#73,16.343795720268698
+this.invocationContainerImpl = new InvocationContainerImpl(mockingProgress);#45,16.213501319885253
+return ret;#99,16.094455846150716
+public MockHandler(MockSettingsImpl mockSettings) {#41,16.078915119171143
+OngoingStubbingImpl<T> ongoingStubbing = new OngoingStubbingImpl<T>(invocationContainerImpl);#82,15.97376773164079
+return new VoidMethodStubbableImpl<T>(mock, invocationContainerImpl);#104,15.960415216592642
+verificationMode.verify(data);#77,15.94886346658071
+invocation);#68,15.912518391242394
+private static final long serialVersionUID = -2917871070982574165L;#33,15.748175342877706
+public VoidMethodStubbable<T> voidMethodStubbable(T mock) {#103,15.550373782282291
+public MockHandler(MockHandlerInterface<T> oldMockHandler) {#53,15.502422151111421

@@ -1,0 +1,834 @@
+public class EigenDecompositionImpl implements EigenDecomposition {#61,17.983248353004456
+private void findEigenvalues()#611,17.71951302615079
+private double[] squaredSecondary;#79,17.487431612881746
+for (boolean deflating = true; deflating;) {#996,17.432851274808247
+case 0 : // no realEigenvalues deflated.#1447,17.32685503959656
+private int countEigenValues(final double t, final int index, final int n) {#1229,17.29796802997589
+realEigenvalues[index + 1] = p / largestRoot;#745,17.180776305820633
+private static final double TOLERANCE = 100 * MathUtils.EPSILON;#64,17.16892699400584
+final double margin = 2 * (tNorm * MathUtils.EPSILON * n + 2 * minPivot);#1172,17.013914980207172
+this.imagEigenvalues = imagEigenvalues;#383,17.005497296651203
+work[4 * end - pingPong - 1] = eMin;#1317,17.002696990966797
+private double splitTolerance;#70,16.9572585105896
+private static class Solver implements DecompositionSolver {#363,16.93406444787979
+work[4 * end - pingPong - 1] = eMin;#1419,16.92939794063568
+throw new InvalidMatrixException("eigen decomposition of assymetric matrices not supported yet");#175,16.91188416336522
+private void decompose() {#235,16.90065155029297
+private void initialSplits(final int n) {#934,16.88603229522705
+private void ldlTDecomposition(final double lambda, final int index, final int n) {#1252,16.869862923255333
+public DecompositionSolver getSolver() {#355,16.849845123291015
+private Solver(final double[] realEigenvalues, final double[] imagEigenvalues,#380,16.780626705714635
+private double[] imagEigenvalues;#142,16.765438715616863
+eigenvectors = null;#249,16.765339533487957
+private double lowerSpectra;#85,16.74844808578491
+final double r        = ((9 * c - 2 * b2) * b - 27 * d) / 54;#774,16.71134711534549
+private double sigma;#94,16.705564392937553
+private double eMin;#112,16.686119821336533
+private double upperSpectra;#88,16.68543586730957
+private boolean flipIfWarranted(final int n, final int step) {#1131,16.653597688674928
+public EigenDecompositionImpl(final RealMatrix matrix,#165,16.64849023257985
+public EigenDecompositionImpl(final double[] main, double[] secondary,#189,16.64360505058652
+final double eps  = 10 * rows * columns * MathUtils.EPSILON;#217,16.6170726973435
+dMin1 = -work[4 * start + pingPong];#1276,16.615650218466055
+return new Solver(realEigenvalues, imagEigenvalues, eigenvectors);#359,16.60860562324524
+double lower = Double.POSITIVE_INFINITY;#1159,16.60091645377023
+lowerSpectra = Double.POSITIVE_INFINITY;#574,16.591166973114014
+realEigenvalues[index + 1] = z1;#806,16.591028894696915
+private double[] main;#73,16.560051600138348
+double d = work[4 * start + pingPong] - tau;#1274,16.554842491149902
+realEigenvalues[index + 2] = z2;#807,16.549345061892556
+private double dN1;#130,16.545764446258545
+eMin = work[4 * start + pingPong + 4];#1330,16.540205540864363
+private double[] secondary;#76,16.54015350341797
+private static final double TOLERANCE_2 = TOLERANCE * TOLERANCE;#67,16.53963424682617
+int nn = 4 * end + pingPong - 1;#1444,16.53545969182795
+final int l = 4 * deflatedEnd + pingPong - 1;#1049,16.525676369667053
+private double dMin2;#124,16.522454261779785
+eMin = work[4 * start + pingPong + 4];#1273,16.51709146084993
+upperSpectra = Double.NEGATIVE_INFINITY;#575,16.51373884894631
+private ArrayRealVector[] eigenvectors;#145,16.51286847250802
+dN1 = work[j4p2 + 2] * (dN2 / work[j4 - 2]) - tau;#1305,16.511188306306536
+private double dMin1;#121,16.502534770965575
+private TriDiagonalTransformer transformer;#82,16.4883287747701
+final double absoluteTolerance = 4 * minPivot;#1169,16.47648811340332
+for (final int end : splitIndices) {#621,16.46974899894313
+private int pingPong;#106,16.46941566467285
+dN = work[j4p2 + 2] * (dN1 / work[j4 - 2]) - tau;#1313,16.468568673004974
+private void process2RowsBlock(final int index)#727,16.45905089378357
+private double dN2;#133,16.457938385009765
+private double[] eigenvaluesRange(final int index, final int n) {#1154,16.45315747033982
+work[upperStart + m - 1] = upper;#602,16.45298480987549
+ratio = main[index + i] - squaredSecondary[index + i - 1] / ratio - t;#1233,16.445639186435276
+private void process3RowsBlock(final int index)#755,16.438841223716736
+private double[] realEigenvalues;#139,16.438422679901123
+this.realEigenvalues = realEigenvalues;#382,16.437763571739197
+j4p2 = j4 + 2 * pingPong - 1;#1400,16.427918076515198
+(work[k - 2 * pingPong - 4] <= TOLERANCE_2 * work[k - 7])))) {#1008,16.42245836460844
+final double delta = s * s - 4 * p;#738,16.415238285064696
+throws InvalidMatrixException {#255,16.410289544325607
+private double[] work;#103,16.40551821390788
+private void computeShiftIncrement(final int start, final int end, final int deflated) {#1430,16.397740173339844
+throws InvalidMatrixException {#288,16.383956762460564
+return true;#227,16.371103286743164
+final double largestRoot = 0.5 * (s + Math.sqrt(delta));#743,16.369781187602452
+final int k = 4 * deflatedEnd + pingPong - 1;#1003,16.36908139501299
+work[j4] = work[j4p2 + 2] * (work[j4p2] / work[j4 - 2]);#1304,16.368114233016968
+this.splitTolerance = splitTolerance;#204,16.364132139417862
+work[lowerStart + m - 1] = lower;#599,16.355761575698853
+return imagEigenvalues.clone();#324,16.34280890226364
+if (cachedVt == null) {#290,16.33477767308553
+private double sigmaLow;#97,16.32239227294922
+double d = work[4 * start + pingPong];#1331,16.321792330060685
+double t = 0.5 * ((work[k - 7] - work[k - 3]) + work[k - 5]);#1026,16.306675513585407
+private double tau;#100,16.305232683817547
+final double q1q2Me22 = q1 * q2 - squaredSecondary[index + 1];#764,16.301616760992236
+j4p2 = j4 + 2 * pingPong - 1;#1310,16.301390091578167
+private double dMin;#118,16.29170078701443
+for (int i = 0; i < squaredSecondary.length; ++i) {#559,16.286024941338432
+work[j4] = work[j4p2 + 2] * (work[j4p2] / work[j4 - 2]);#1312,16.271018958091737
+for (int i = 0; i < squaredSecondary.length; ++i) {#199,16.270071665445965
+imagEigenvalues = new double[main.length];#619,16.263974142074584
+final double delta    = q * q * q + r * r;#775,16.255531120300294
+final double relativeTolerance = Math.sqrt(MathUtils.EPSILON);#1168,16.25192063195365
+z1 = t;#803,16.244922189151538
+int j4p2 = j4 + 2 * pingPong - 1;#1302,16.241457061767576
+final int upperStart = 5 * main.length;#1158,16.240202953940944
+public RealVector getEigenvector(final int i)#334,16.23567968606949
+public RealMatrix getD()#277,16.23323221206665
+cachedD = MatrixUtils.createRealDiagonalMatrix(realEigenvalues);#281,16.232610511779786
+findEigenvalues();#246,16.217311198894794
+public RealMatrix getVT()#287,16.215897274017333
+if (1.5 * work[pingPong] < work[4 * (n - 1) + pingPong]) {#1132,16.20878333515591
+z2 = t;#798,16.20619291417739
+(work[k - 2 * pingPong - 8] <= TOLERANCE_2 * work[k - 11])) {#1016,16.205733744303384
+this.eigenvectors    = eigenvectors;#384,16.201048073945223
+z1 = t;#793,16.19551322039436
+throws InvalidMatrixException {#823,16.191303179814266
+list.add(secondary.length + 1);#707,16.189952585432266
+final int upperStart = 5 * m;#573,16.187383763930377
+public double[] getImagEigenvalues()#322,16.177153519221715
+dN1 = work[j4p2 + 2] * (dN2 / work[j4 - 2]);#1394,16.17480835161711
+d = d * tmp - tau;#1282,16.170732345581055
+if (delta >= 0) {#776,16.1665056347847
+private double dN;#127,16.147559377882217
+int j4 = 4 * (end - 2) - pingPong - 1;#1379,16.146666270035965
+for (double lambda : realEigenvalues) {#348,16.143213322288112
+work[j4 - 2] = dN1 + work[j4p2];#1401,16.13853461654098
+cachedVt.setRowVector(k, eigenvectors[k]);#299,16.13347830916896
+private void processGeneralBlock(final int n)#822,16.128622395651682
+if (work[np - 8] > b2 || work[np - 4] > b1) {#1537,16.124762950799404
+return realEigenvalues.clone();#312,16.121315002441406
+this.secondary = secondary.clone();#194,16.108718276023865
+private int goodStep(final int start, final int end) {#990,16.10779359605577
+private double g;#136,16.105701804161072
+private double minPivot;#91,16.100968742370604
+if (eigenvectors == null) {#336,16.095609929826523
+final int lowerStart = 4 * main.length;#1157,16.093803757115413
+private RealMatrix cachedVt;#154,16.09148528359153
+int j4p2 = j4 + 2 * pingPong - 1;#1380,16.084867248535158
+public RealMatrix getV()#254,16.08313102722168
+if (eigenvectors == null) {#356,16.078030904134113
+work[j4] = work[j4p2 + 2] * (work[j4p2] / work[j4 - 2]);#1393,16.070959134535357
+final int lowerStart = 4 * m;#572,16.070799547083237
+squaredSecondary[i] = s * s;#561,16.067301584326703
+throws InvalidMatrixException {#612,16.0658781345074
+for (int i = 0; i < m - 1; ++i) {#579,16.059591484069824
+if (delta < 0) {#739,16.057609379291534
+int j4 = 4 * (end - 2) - pingPong - 1;#1301,16.053460744711067
+s = work[k - 3] * work[k - 5] / (t + Math.sqrt(t * (t + s)));#1031,16.052017671721323
+work[4 * deflatedEnd - 8] = sigma + work[k - 7];#1037,16.045338100857204
+return cachedVt;#305,16.044398381159855
+final double cnst3 = 1.05;#1434,16.04351440228914
+work[j4 - 2] = dN1 + work[j4p2];#1311,16.043387201097275
+return imagEigenvalues[i];#330,16.03931415081024
+if (z1 < z2) {#795,16.03403097040513
+work[j4] = work[j4p2 + 2] * (work[j4p2] / work[j4 - 2]);#1413,16.033880298787896
+public double getDeterminant() {#346,16.030407587687176
+throws InvalidMatrixException {#278,16.02580275902381
+if (flipIfWarranted(deflatedEnd, 1)) {#1053,16.019384066263836
+dN = work[j4p2 + 2] * (dN1 / work[j4 - 2]);#1414,16.019188313870817
+realEigenvalues = new double[main.length];#618,16.01772861480713
+private void dqd(final int start, final int end) {#1328,16.017146562275133
+public boolean isNonSingular() {#506,16.009273767471313
+for (int k = 0; k < 2; ++k) {#937,16.008974738742996
+public double[] getRealEigenvalues()#310,16.00629887214074
+work[j4 - 2] = d + work[j4 - 1];#1280,15.999345923915055
+throws InvalidMatrixException {#191,15.997722625732422
+d = d * tmp - tau;#1291,15.995830650329589
+final double cnst1 = 0.563;#1432,15.991718493009868
+private final ArrayRealVector[] eigenvectors;#372,15.991585781699733
+work[4 * n - 3 - pingPong] = d;#970,15.979023615519205
+private boolean isSymmetric(final RealMatrix matrix) {#214,15.978652898003073
+secondary = transformer.getSecondaryDiagonalRef();#555,15.97713515633031
+if (cachedV == null) {#257,15.976209416108972
+double b1 = work[nn - 5] / work[nn - 7];#1638,15.974471872503107
+final int m = realEigenvalues.length;#438,15.973638410153596
+tau = Math.max(s, a2 * (1 - cnst2 * a2 * (b2 / gap2) * b2));#1613,15.96824660124602
+work[4 * deflatedEnd - 4] = sigma + work[4 * deflatedEnd - 4 + pingPong];#1011,15.965101783925837
+work[j4 - 2] = dN2 + work[j4p2];#1303,15.95969479172318
+transformer    = null;#195,15.959694099426269
+work[j4 - 2] = dN2 + work[j4p2];#1381,15.959107610914442
+final double alpha  = 2 * sqrtMq;#784,15.958505439758301
+lower = Math.max(lower, left - 100 * MathUtils.EPSILON * Math.abs(left));#1194,15.958279609680176
+if (work[k - 5] > TOLERANCE_2 * work[k - 3]) {#1025,15.95739102974916
+final double dCurrent = main[m - 1];#597,15.949383635269967
+throws InvalidMatrixException {#167,15.941896218519945
+if (cachedD == null) {#279,15.927186236662024
+((work[k - 5] <= TOLERANCE_2 * (sigma + work[k - 3])) ||#1007,15.926016547463156
+cachedVt = null;#239,15.922851630619594
+double d = work[4 * (n - 1) + pingPong];#940,15.916996824330297
+private int    tType;#115,15.913200616836548
+work[j4 + 2] = dN;#1316,15.910079705087762
+final int m     = main.length;#571,15.909446811676025
+work[j4 - 2] = d + work[j4 - 1];#1336,15.908852085922703
+private void dqds(final int start, final int end) {#1271,15.905377036646792
+if (work[j4 - 2] == 0.0) {#1402,15.903104408927586
+if ((dMin <= 0) || (deflatedEnd < end)) {#1052,15.900761246681213
+final double tmp = work[j4 + 2] / work[j4 - 3];#1290,15.895050757271903
+int deflatedEnd = end;#995,15.892900657653808
+public RealMatrix getInverse()#519,15.891127459208171
+double a2 = work[nn - 7] + work[nn - 5];#1452,15.888804377931537
+if (b.getDimension() != m) {#439,15.888215184211731
+z0 = z1;#792,15.887967533535427
+return cachedD;#283,15.887330452601114
+squaredSecondary[i] = s * s;#201,15.887292613153873
+dMin = d;#1332,15.886251229506273
+work[lowerStart + i] = lower;#588,15.884789250113748
+double b1 = work[nn - 5] / work[nn - 7];#1594,15.884395425969904
+public double getImagEigenvalue(final int i)#328,15.87911875107709
+cachedVt = MatrixUtils.createRealMatrix(m, m);#297,15.877225841794695
+z1 = z2;#797,15.87390947341919
+private double[] realEigenvalues;#366,15.871493101119995
+s = work[k - 3] * work[k - 5] / (t * (1 + Math.sqrt(1 + s / t)));#1029,15.870683900241193
+for (int i4 = 4 * end - 10 + pingPong; i4 >= 4 * start + 2 + pingPong; i4 -= 4) {#1597,15.86848368211226
+private double[] imagEigenvalues;#369,15.868461549282074
+double z2 = alpha * Math.cos((theta + 4 * Math.PI) / 3) - beta;#789,15.868268735481031
+return false;#1145,15.866483428261496
+final double tmp = work[j4p2 + 2] / work[j4 - 2];#1389,15.861894491947059
+return deflatedEnd;#1120,15.859771214998686
+decompose();#205,15.85758096521551
+cachedV.setColumnVector(k, eigenvectors[k]);#266,15.855596542358398
+if (dMin2 == dN2 && 2 * work[nn - 5] < work[nn - 7]) {#1632,15.8552128390262
+work[4 * deflatedEnd - 4] = sigma + work[k - 3];#1038,15.849284092585245
+final double lower = dCurrent - eCurrent;#598,15.849247190687391
+upper = Math.min(upper, right + 100 * MathUtils.EPSILON * Math.abs(right));#1216,15.84756554194859
+work[upperStart + i] = upper;#592,15.844695047898727
+double a2 = (work[np - 8] / b2) * (1 + work[np - 4] / b1);#1540,15.84461563958062
+dN2 = d;#1299,15.843302522386823
+final double upper = dCurrent + eCurrent;#601,15.842751079135471
+final double tmp = work[j4p2 + 2] / work[j4 - 2];#1409,15.842731244636305
+tType = -1;#1440,15.842188835144043
+2 + (int) ((Math.log(tNorm + minPivot) - Math.log(minPivot)) / Math.log(2.0));#1171,15.84090679249865
+final int m = realEigenvalues.length;#474,15.838194308073625
+dMin = d;#1275,15.837768628047062
+final int m = realEigenvalues.length;#402,15.837093477663787
+final double[] bp = new double[m];#409,15.835245505623195
+double z1 = alpha * Math.cos((theta + 2 * Math.PI) / 3) - beta;#788,15.833422386285031
+eMin = Math.min(work[j4 - 1], eMin);#1294,15.830843983274518
+return count;#1238,15.830198721452193
+if (b.getRowDimension() != m) {#475,15.826993789672851
+private RealMatrix cachedD;#151,15.82344160079956
+for (int i = 0; i < maxIter; ++i) {#1199,15.820098916689554
+final double[] bp = new double[m];#445,15.81970152647599
+final double theta  = Math.acos(r / (-q * sqrtMq));#783,15.817504751271215
+final double t = z0;#791,15.817403743141575
+final double beta   = b / 3;#785,15.802527162763807
+t = work[k - 7] + (s + work[k - 5]);#1033,15.794950736196418
+throw new InvalidMatrixException(new MaxIterationsExceededException(maxIter));#889,15.793262732656379
+final double tmp = work[j4 + 1] / work[j4 - 2];#1281,15.790993799482074
+initialSplits(n);#842,15.78748505456107
+switch (deflated) {#1445,15.7847580909729
+for (int j4 = 4 * start + 3; j4 <= 4 * (end - 3); j4 += 4) {#1279,15.783247232437134
+final int j = i - 2 * pingPong - 1;#953,15.781950378417969
+final double cnst2 = 1.010;#1433,15.780400778117933
+Arrays.sort(realEigenvalues);#675,15.775673389434814
+tau = (tau + dMin) * (1.0 - 2.0 * MathUtils.EPSILON);#1100,15.77342772933672
+final double gap2 = work[nn - 7] + work[nn - 9] -#1654,15.769040816170829
+if ((dMin < 0) ||#1066,15.768511772155762
+b.getRowDimension(), b.getColumnDimension(), m, "n");#478,15.765917844550554
+lowerSpectra = Math.min(lowerSpectra, lower);#600,15.762972181493586
+for (int i = 2 + pingPong; i < 4 * n - 2; i += 4) {#952,15.7596402698093
+work[j4] = work[j4 - 1] * tmp;#1284,15.759021282196045
+final double e12      = squaredSecondary[index];#763,15.757149577140808
+public RealVector solve(final RealVector b)#431,15.754768901401096
+final double q        = (3 * c - b2) / 9;#773,15.752985000610352
+for (int j4 = 4 * start + 3; j4 <= 4 * (end - 3); j4 += 4) {#1288,15.751758217811584
+lowerSpectra = Math.min(lowerSpectra, lower);#589,15.751270954425518
+flipIfWarranted(n, 2);#839,15.749777176800896
+final double e12  = squaredSecondary[index];#734,15.747109270095825
+final double lower = dCurrent - radius;#587,15.746740159534273
+if (work[nn - 5] > work[nn - 7]) {#1591,15.746574431657791
+z0 = z1;#802,15.7423980500963
+if (z0 < z1) {#790,15.740221752839929
+realEigenvalues[index]     = largestRoot;#744,15.738319189652152
+for (int i = 0; i < maxIter; ++i) {#1177,15.736511985460917
+if ((start == deflatedEnd - 1) ||#1005,15.731985755588697
+work[j4 + 2] = dN;#1418,15.731306276823345
+tau = Math.max(s, a2 * (1 - cnst2 * b2));#1615,15.72144863217376
+tau   = Math.max(dN - (b1 / gap1) * b1, 0.5 * dMin);#1459,15.721235398893002
+int count = (ratio > 0) ? 0 : 1;#1231,15.71958268772472
+for (int i = 4 * (n - 2) + pingPong; i >= 0; i -= 4) {#941,15.718352016649748
+work[j4] = work[j4p2] * tmp;#1390,15.717710835593087
+return determinant;#351,15.717023293177286
+dN1 = dN2 * tmp;#1391,15.71621357310902
+List<Integer> splitIndices = computeSplits();#615,15.705948305130004
+private RealMatrix cachedV;#148,15.704698848724366
+for (int i = 0; i < n - 1; ++i) {#827,15.703385696411132
+final double gap2 = 0.5 * dMin2 - a2;#1611,15.700518637895584
+return realEigenvalues[i];#318,15.698361575603485
+squaredSecondary = new double[secondary.length];#558,15.698226326390317
+for (int k = 0; k < nColB; ++k) {#483,15.695735339460702
+throws InvalidMatrixException {#728,15.691762337317833
+for (int i = 0; i < n; ++i) {#1161,15.690428111864174
+double b1 = Math.sqrt(work[nn - 3]) * Math.sqrt(work[nn - 5]);#1450,15.685726587162462
+tau = (range[1] - range[0]) * MathUtils.EPSILON * n + 2 * minPivot;#651,15.684937172747674
+eMin = Math.min(work[j4], eMin);#1285,15.6827695908085
+throws InvalidMatrixException {#311,15.681578489450308
+private void process1RowBlock(final int index) {#717,15.678672730922699
+b2 = work[nn - 13] / work[nn - 15];#1544,15.675544871224297
+double ratio = main[index] - t;#1230,15.67208194732666
+final double t = z1;#796,15.669800708168431
+tType = -8;#1616,15.669477426088774
+for (int i = 0; i < secondary.length; ++i) {#696,15.667199325561523
+return cachedV;#272,15.664670785268148
+double s = work[k - 3] * (work[k - 5] / t);#1027,15.664215064048767
+for (int i4 = 4 * end - 9 + pingPong; i4 >= 4 * start + 2 + pingPong; i4 -= 4) {#1641,15.66114810596813
+work     = new double[6 * main.length];#240,15.659223224805748
+case 2 : // two realEigenvalues deflated. use dMin2, dN2 for dMin and dN.#1629,15.658425903320312
+tau = -dMin;#1439,15.653881474545127
+for (int i4 = nn - 17; i4 >= 4 * start + 2 + pingPong; i4 -= 4) {#1546,15.653658580780029
+throws InvalidMatrixException, ArrayIndexOutOfBoundsException {#335,15.650737353733607
+cachedV = MatrixUtils.createRealMatrix(m, m);#264,15.646851610254359
+tau = 0.5 * dMin1;#1623,15.64385703302199
+final double radius = ePrevious + eCurrent;#585,15.643851713700728
+throw new InvalidMatrixException("cannot solve degree {0} equation", 2);#740,15.643472013802365
+dN   = work[j4p2 + 2];#1404,15.641678443321815
+final double s = 0.333 * dMin2;#1634,15.635894060134888
+work[j4] = work[j4p2] * tmp;#1410,15.631203208650861
+final boolean chooseLeft   = (oneFourthCount - 1) >= (n - threeFourthCount);#648,15.630717503397088
+final double a2 = dMin1 / (1 + b2 * b2);#1610,15.630315948935117
+for (int j4 = 4 * start + 3; j4 < 4 * (end - 3); j4 += 4) {#1355,15.619152283668518
+if (!isNonSingular()) {#434,15.617879867553711
+if (!isNonSingular()) {#398,15.617596054077149
+realEigenvalues[j] = tmp;#680,15.61683195287531
+this.splitTolerance = splitTolerance;#169,15.615466421300715
+final double range = right - left;#1179,15.6110689163208
+dMin = Math.min(dMin, d);#1292,15.609433276312691
+int j = realEigenvalues.length - 1;#676,15.607333850860595
+return list;#708,15.606256831776012
+final double tmp = work[j4 + 2] / work[j4 - 3];#1364,15.6058471875313
+if (work[nn - 5] > work[nn - 7]) {#1635,15.605724096298218
+final int oneFourthCount   = countEigenValues(oneFourth, begin, n);#645,15.605432298448351
+private double qMax;#109,15.603032112121582
+double eCurrent = 0;#578,15.602713857378278
+if (!isNonSingular()) {#470,15.601764297485351
+final double q1   = main[index + 1];#733,15.601034436907087
+findEigenVectors();#357,15.600809147483425
+this.main      = main.clone();#193,15.600063278561546
+eMin = Math.min(eMin, work[j4 - 1]);#1372,15.59958215193315
+(work[4 * n0 - 2] <= TOLERANCE_2 * sigma)) {#900,15.599135852995373
+(work[k - 9] <= TOLERANCE_2 * sigma) ||#1015,15.596357345581055
+squaredSecondary = new double[secondary.length];#198,15.596044791372199
+throw new InvalidMatrixException("cannot solve degree {0} equation", 3);#780,15.595700559944943
+for (int k = 0; i0 < n0; ++k) {#887,15.595045681657462
+work[j4] = work[j4 + 1] * (work[j4 - 1] / work[j4 - 2]);#1348,15.59500331878662
+throws InvalidMatrixException {#323,15.594938058119554
+for (int k = 0; k < m; ++k) {#298,15.59412454675745
+private void transformToTridiagonal(final RealMatrix matrix) {#550,15.593431048923069
+final double gap1 = a2 - dN - ((gap2 > 0.0 && gap2 > b2) ? (b2 / gap2) * b2 : (b1 + b2));#1457,15.59207633137703
+public double getRealEigenvalue(final int i)#316,15.589904725551605
+double z0 = alpha * Math.cos(theta / 3) - beta;#787,15.589496539189266
+throws InvalidMatrixException {#756,15.587697615990272
+minPivot = MathUtils.SAFE_MIN * Math.max(1.0, eMax * eMax);#603,15.587669236319405
+work[j4 - 3] = d + work[j4];#1289,15.587015736487604
+if (work[i] <= TOLERANCE_2 * d) {#955,15.5854255213882
+squaredSecondary[i] = 0;#703,15.582567749023438
+d *= work[j4 + 2] / work[j4 - 3];#1369,15.580476158543638
+pingPong = 1 - pingPong;#973,15.579483942552047
+dMin2 = dMin;#1300,15.577835655212402
+dN = dN1 * tmp;#1411,15.574657122294107
+final double t = z0;#801,15.573800839875874
+case 1 : // one eigenvalue just deflated. use dMin1, dN1 for dMin and dN.#1585,15.570860236031669
+case 3:#635,15.568916193644206
+if (work[j4 - 2] == 0.0) {#1382,15.567999466605809
+final double max = splitTolerance * Math.sqrt(absDPrevious * absDCurrent);#699,15.567470718832578
+final double gap2 = dMin2 - a2 - dMin2 * 0.25;#1456,15.566155767440796
+final int rows    = matrix.getRowDimension();#215,15.566028031435879
+private void computeGershgorinCircles() {#569,15.564306146958295
+throws InvalidMatrixException, ArrayIndexOutOfBoundsException {#329,15.561645734877814
+final double[][] invData = new double[m][m];#527,15.560990898697465
+if (work[i + 2] <= TOLERANCE_2 * d) {#942,15.558455794198172
+final int np = nn - 2 * pingPong;#1533,15.5574736101874
+work[j4 - 1] = work[j4 + 2] * (work[j4] / work[j4 - 3]);#1368,15.557333354949952
+double upper = Double.NEGATIVE_INFINITY;#1160,15.556974955967494
+if (b.length != m) {#403,15.55455107915969
+transformer = new TriDiagonalTransformer(matrix);#553,15.551412868499757
+dN2   = d;#1377,15.550389766693115
+if (!isNonSingular()) {#522,15.54711012840271
+double b2 = Math.sqrt(work[nn - 7]) * Math.sqrt(work[nn - 9]);#1451,15.54506375068842
+dMin = Math.min(dMin, d);#1283,15.54193537575858
+for (int j4 = 4 * start + 3; j4 < 4 * (end - 3); j4 += 4) {#1335,15.541554975509644
+work[j4 - 3] = d + work[j4];#1356,15.538308420488912
+private List<Integer> computeSplits() {#690,15.532997676304408
+bp[j] += s * vData[j];#451,15.529850468491063
+bp[j] += s * vData[j];#415,15.525984215013908
+throws InvalidMatrixException, ArrayIndexOutOfBoundsException {#317,15.52426796867734
+double b1 = work[np - 2];#1534,15.518499264350304
+if (countEigenValues(middle, index, n) >= 1) {#1187,15.515406904549435
+dMin2 = dMin;#1378,15.513441340128582
+work[k - 3] *= work[k - 7] / t;#1034,15.511988330531764
+final double middle = 0.5 * (left + right);#1186,15.510647621154785
+(MathUtils.SAFE_MIN * work[j4 - 2] < work[j4p2 + 2])) {#1408,15.508837223052979
+dN1  = work[j4p2 + 2];#1384,15.507718563079834
+for (int i = 1; i < n; ++i) {#1232,15.507136303445566
+pingPong = 1 - pingPong;#894,15.506663579207201
+sigma    = (n0 == n) ? 0 : -work[4 * n0 - 2];#859,15.504675246573782
+throw MathRuntimeException.createIllegalArgumentException(#440,15.50370022228786
+for (int k = 0; k < m; ++k) {#265,15.501253304658112
+final double absDPrevious = absDCurrent;#697,15.499268241550611
+upperSpectra = Math.max(upperSpectra, upper);#593,15.49469885459313
+dMin1 = dMin;#1308,15.486542956034343
+(MathUtils.SAFE_MIN * work[j4 - 2] < work[j4p2 + 2])) {#1388,15.483638763427734
+if (z0 < z1) {#800,15.479239127215218
+eMin = Math.min(eMin, work[j4]);#1352,15.472290623572565
+left  = lower - margin;#1197,15.471644910176595
+b.getDimension(), m);#442,15.468726485967636
+d *= work[i] / (d + work[i + 2]);#946,15.467728099307498
+double eMax = 0;#576,15.4662139075143
+throw MathRuntimeException.createIllegalArgumentException(#404,15.461182458060128
+for (boolean loop = true; loop;) {#1074,15.460845232009888
+final double range = right - left;#1201,15.459773063659668
+work[k - 7] = tmp;#1022,15.457302619671
+ldlTDecomposition(lambda, begin, n);#654,15.45173062949345
+throw MathRuntimeException.createIllegalArgumentException(#476,15.451200348990303
+final double[] vData = v.getDataRef();#412,15.446020296641759
+"dimensions mismatch: got {0}x{1} but expected {2}x{3}",#477,15.443352212297155
+final int n = end - begin;#622,15.442113256454467
+findEigenVectors();#337,15.442109810678582
+return MatrixUtils.createRealMatrix(invData);#540,15.439448793729147
+throws IllegalArgumentException, InvalidMatrixException {#468,15.438602534207432
+if (isSymmetric(matrix)) {#168,15.42917161238821
+work[k - 7]  = t;#1035,15.42764819463094
+dMin1 = dMin;#1398,15.427089754740397
+final double a2 = dMin2 / (1 + b2 * b2);#1653,15.424813410815071
+realEigenvalues[i] = realEigenvalues[j];#679,15.424783636022497
+realEigenvalues[index] = main[index];#718,15.423200273513794
+for (int i = 0; i < realEigenvalues.length; ++i) {#507,15.422809660434723
+for (int i = 1; i < n; ++i) {#1255,15.42180053047512
+double b2 = work[np - 6];#1535,15.420206143305851
+d *= work[j4 + 1] / work[j4 - 2];#1349,15.415175789280942
+list.add(i + 1);#701,15.41506258646647
+public RealMatrix solve(final RealMatrix b)#467,15.409166442023384
+right = upper + margin;#1198,15.408443450927734
+final double c        = q0 * q1 + q0 * q2 + q1q2Me22 - e12;#768,15.408384858108148
+lower = Math.min(lower, work[lowerStart + index +i]);#1162,15.408303227917902
+if (work[k - 3] > work[k - 7]) {#1019,15.405341863632202
+if (dMin1 == dN1 && dMin2 == dN2) {#1586,15.403303884690807
+final double upper = dCurrent + radius;#591,15.402824311029343
+if (dMin <= 0.0) {#1438,15.40276018778483
+final int m = realEigenvalues.length;#526,15.396808334018873
+for (int i = 0; i < m; ++i) {#529,15.39247597588433
+final double tmp = work[j4 + 1] / work[j4 - 2];#1344,15.390856571686573
+tType = -6;#1580,15.388071450320156
+throws IllegalArgumentException, InvalidMatrixException {#432,15.387005069039084
+work[j + 2] = work[i + 2] * (work[i] / work[j]);#966,15.386803085153753
+if (eigenvectors == null) {#259,15.383735223249955
+dqd(start, deflatedEnd);#1118,15.37996154361301
+work[4 * deflatedEnd - 3 - pingPong] = 0.0;#1089,15.377745995154747
+final double b2       = b * b;#772,15.377046253370201
+final double s = v.dotProduct(b) / realEigenvalues[i];#449,15.374082810538155
+invIJ += vK[i] * vK[j] / realEigenvalues[k];#535,15.373991344286049
+Math.min(work[6 + pingPong], work[6 + pingPong]));#1060,15.372609062194824
+final double[] invI = invData[i];#530,15.369731337935836
+if (pingPong == 0) {#1278,15.368418637443991
+for (int i4 = np; i4 >= 4 * start + 2 + pingPong; i4 -= 4) {#1503,15.367949972761439
+upper = Math.max(upper, work[upperStart + index +i]);#1163,15.364437037500842
+work[j4 - 1] = work[j4] * tmp;#1293,15.363658100366592
+for (int i = 4 * (n0 - 2); i >= 0; i -= 4) {#868,15.361820922178381
+final double s = v.dotProduct(b) / realEigenvalues[i];#413,15.36051959991455
+realEigenvalues[begin + i] = lambda - work[4 * i];#666,15.360406421479725
+final double ePrevious = eCurrent;#582,15.359470558166503
+i0 = 1 + i / 4;#870,15.359040161658978
+tType = -9;#1625,15.35858830538663
+int maxIter = 30 * (n0 - i0);#886,15.358229789733887
+(work[4 * deflatedEnd - 5 - pingPong] < TOLERANCE * (sigma + dN1)) &&#1086,15.35669770157128
+final double middle = 0.5 * (left + right);#1208,15.355874519348145
+if (work[j4 - 2] == 0.0) {#1337,15.352416100040559
+final double[] vData = v.getDataRef();#448,15.351649590900966
+for (int i = 0; i < j; ++i) {#677,15.350605467091436
+double left  = lower - margin;#1175,15.350517988204956
+determinant *= lambda;#349,15.348354286617703
+final int m = eigenvectors.length;#296,15.347916354303775
+final int threeFourthCount = countEigenValues(threeFourth, begin, n);#647,15.347742641673369
+if (sumOffDiag == 0) {#833,15.34298324584961
+"vector length mismatch: got {0} but expected {1}",#441,15.338883204337877
+realEigenvalues[index]     = z0;#805,15.338781356811523
+b2 = work[nn - 5] / work[nn - 7];#1484,15.33691771030426
+deflating = false;#1043,15.336284984241832
+throws IllegalArgumentException, InvalidMatrixException {#396,15.335552909157492
+return deflatedEnd;#1000,15.332018352690197
+"vector length mismatch: got {0} but expected {1}",#405,15.329616791162735
+main      = transformer.getMainDiagonalRef();#554,15.327367865520975
+for (int i = 0; i < m; ++i) {#410,15.324690253646285
+for (int i = 0; i < m; ++i) {#446,15.319521126923737
+for (int i = 0; i < rows; ++i) {#218,15.318227104518725
+work[k - 3] = work[k - 7];#1021,15.31722389567982
+return MatrixUtils.createRealMatrix(bp);#498,15.316849625628928
+tType = -10;#1633,15.310211224989457
+di = (main[index + i] - lambda) - eiM1 * ratio;#1260,15.304628610610962
+if (start >= deflatedEnd) {#998,15.303103764851889
+return true;#1143,15.300463994344076
+offDiagMin = work[4 * i0 + 2];#903,15.298414623036104
+transformToTridiagonal(matrix);#170,15.294332867576962
+(MathUtils.SAFE_MIN * work[j4 - 3] < work[j4 + 2])) {#1363,15.291677316029867
+return bp;#419,15.290844023227692
+double diagMax    = work[4 * n0 - 4];#865,15.290117033596697
+work[j4] = 0.0;#1383,15.28588598424738
+cachedD  = null;#238,15.2856525012425
+realEigenvalues[begin + i] = lambda + work[4 * i];#662,15.285547733306885
+final double ei = work[fourI + 2];#829,15.281273047129313
+final int m = eigenvectors.length;#263,15.276250963625701
+d *= work[i + 2] / work[j];#967,15.275757677414838
+tType = 0;#845,15.271537780761719
+work[j4] = work[j4 - 1] * tmp;#1345,15.269902812110054
+return true;#512,15.268099975585937
+findEigenVectors();#293,15.263133214867633
+bp[j][k] += s * vData[j];#493,15.2616394727658
+final double tmp = work[i + 2] / work[j];#962,15.260191535949707
+dMin = d;#1340,15.259858207702637
+return;#835,15.253621986934117
+d = work[j4 + 2];#1359,15.250422115983634
+deflatedEnd -= 1;#1012,15.244339552792637
+a2 = cnst3 * a2;#1560,15.243965548853721
+g += 0.333 * (1 - g);#1573,15.242968743847262
+if ((work[i + 3] <= TOLERANCE_2 * work[i]) &&#906,15.241537878248426
+final int columns = matrix.getColumnDimension();#216,15.238598672967209
+if (eigenvectors == null) {#292,15.238064029000022
+tau = gam * (1 - Math.sqrt(a2)) / (1 + a2);#1564,15.235802960950275
+decompose();#171,15.23509693145752
+if (a2 > (b1 + b2)) {#1466,15.233632628982132
+if (pingPong == 0) {#1334,15.233267728020163
+final double[][] bp = new double[m][nColB];#482,15.233244468425882
+if ((range < absoluteTolerance) ||#1180,15.231132552737282
+dMin2 = Math.min(dMin2, work[l - 1]);#1054,15.23092623317943
+for (int j = 0; j < m; ++j) {#531,15.22385351119503
+if (countEigenValues(middle, index, n) >= n) {#1209,15.221648545100772
+if (Math.abs(mij - mji) > (Math.max(Math.abs(mij), Math.abs(mji)) * eps)) {#222,15.22116155444451
+if (work[j4 - 3] == 0.0) {#1357,15.219345185064501
+tau = 0.25 * dMin1;#1621,15.21632773787887
+double sumOffDiag = 0;#826,15.215553104877472
+double s = 0.333 * dMin1;#1590,15.213375444765445
+int begin = 0;#620,15.21227660545936
+(MathUtils.SAFE_MIN * work[j4 - 2] < work[j4 + 1])) {#1343,15.211329919320566
+dMin = d;#1360,15.209627418518066
+tau = s;#1566,15.208670234680175
+if (ratio <= 0) {#1234,15.206812715530395
+double previousEMin = work[4 * i0 + 3];#904,15.206352514379164
+final int maxIter =#1170,15.20357762850248
+findEigenVectors();#260,15.194237377332604
+b2 = work[nn - 9] / work[nn - 11];#1497,15.19276442527771
+for (int k = 0; k < m; ++k) {#533,15.188126346043179
+g = 0.0;#992,15.187496389661517
+work[j4] = 0.0;#1403,15.186315406452525
+dMin = Math.min(dMin, dN);#1314,15.18506417955671
+case 2:#630,15.183394304911296
+absDCurrent = Math.abs(main[i + 1]);#698,15.181879630455605
+pingPong = 0;#936,15.179584435054235
+return;#1441,15.179086344582695
+if (100 * Math.max(b2, b1) < a2 || cnst1 < a2) {#1513,15.175635412627576
+int j = 4 * n - 1;#1134,15.172435215541295
+public double[] solve(final double[] b)#395,15.171946949428982
+throws InvalidMatrixException {#520,15.17074977650362
+(MathUtils.SAFE_MIN * qMax < Math.min(work[l - 1],#1067,15.170222677503313
+eMax = Math.max(eMax, eCurrent);#584,15.169430923461913
+final double q2       = main[index + 2];#762,15.168323554992675
+tType = -7;#1589,15.165350914001465
+d = work[j4 + 1];#1339,15.164215942908978
+if (end - start > 2) {#1543,15.153510589599609
+work[4 * n0 - 2] = offDiagMin;#880,15.15144814385308
+begin = end;#671,15.146910011768341
+double s = 0.25 * dMin;#1530,15.145594523503231
+default:#640,15.1441285269601
+final double p     = q0 * q1 - e12;#737,15.14184741973877
+qMax  = Math.max(qMax, Math.max(work[3 + pingPong], work[7 + pingPong]));#1061,15.140672127405802
+final int fourI = 4 * i;#828,15.135412216186523
+eMin = 0.0;#1406,15.131011209989849
+j4 = j4 + 4;#1399,15.128766536712646
+double right = upper + margin;#1176,15.127412033081054
+final double b        = -(q0 + q1 + q2);#767,15.126740487416585
+left = middle;#1190,15.126604032516479
+dMin = Math.min(dMin, dN1);#1306,15.120184118097479
+s = gam * (1 - Math.sqrt(a2)) / (1 + a2);#1521,15.119430541992188
+final double tmp = realEigenvalues[i];#678,15.109729932702106
+for (int j = 0; j < m; ++j) {#488,15.10756195613316
+Math.min(work[l - 2 * pingPong],#1059,15.107240087845746
+dMin = Math.min(dMin, dN1);#1396,15.104531158100475
+dMin = Math.min(dMin, d);#1371,15.102881227220808
+double determinant = 1;#347,15.101258959089007
+return false;#223,15.099048655966055
+final ArrayRealVector v = eigenvectors[i];#447,15.097005449492356
+for (int j = i + 1; j < columns; ++j) {#219,15.096133626740555
+work[j + 2] = work[i] * tmp;#963,15.092306754168343
+for (int i = 0; i < j; i += 4) {#1135,15.089244161333356
+deflatedEnd -= 2;#1039,15.086009068922563
+if (work[i + 2] <= 0) {#869,15.08507970401219
+work[i + k] = work[j - k];#1138,15.083702983278217
+if ((range < absoluteTolerance) ||#1202,15.083018212091355
+for (int j = 0; j < m; ++j) {#450,15.083007074171498
+final ArrayRealVector v = eigenvectors[i];#411,15.082877652398471
+if (100 * Math.max(b2, b1) < a2 || cnst1 < a2)  {#1556,15.082525675113384
+a2 = work[np - 4] / work[np - 2];#1493,15.080725836753846
+tType = -5;#1529,15.079998233101584
+double di = main[index] - lambda;#1253,15.07970274819268
+j4 = j4 + 4;#1309,15.07790321111679
+dMin = dN;#1405,15.073985629611546
+throw new SingularMatrixException();#435,15.07009916720183
+if (work[nn - 5]  >  work[nn - 7]) {#1481,15.068049022129603
+work[l - 2 * pingPong] =#1058,15.061163478427464
+dN2   = 0;#850,15.057240843772888
+b2 = Math.sqrt(cnst3 * b2);#1609,15.055570264016428
+final ArrayRealVector v = eigenvectors[i];#485,15.055539738048207
+((start != deflatedEnd - 2) &&#1006,15.054339665632982
+throw new SingularMatrixException();#471,15.054287744605023
+for (int j = 0; j < m; ++j) {#414,15.05374579275808
+for (int i = 0; i < m; ++i) {#484,15.047744412575998
+Math.min(work[3 + pingPong], work[7 + pingPong]));#1057,15.041244430541992
+sigmaLow = 0;#860,15.040737311045328
+diagMax    = work[4 * i0];#902,15.03883981704712
+if (dMin == dN || dMin == dN1) {#1448,15.038307564599174
+(work[i + 2] <= TOLERANCE_2 * sigma)) {#907,15.036399861599536
+final double dCurrent = main[i];#581,15.035866192408971
+double absDCurrent = Math.abs(main[0]);#695,15.035692442031134
+final double s     = q0 + q1;#736,15.035275892777877
+dMin2 = 0;#847,15.032825469970703
+dMin = Math.min(dMin, d);#1351,15.031371797834124
+for (int i = 0; i < n; ++i) {#665,15.031237139020647
+sumOffDiag += ei;#830,15.026345682144164
+d = work[i + 2];#959,15.025615964617048
+d = work[pingPong];#951,15.01702160835266
+work[j - k] = tmp;#1139,15.01571852585365
+for (int i = 0; i < n; ++i) {#661,15.010393033708844
+dMin = Math.min(dMin, dN);#1416,15.008319854736328
+for (int k = 0; k < 4; k += step) {#1136,15.00022006034851
+return eigenvectors[i].copy();#339,14.997887558407253
+if (tType == -6) {#1572,14.996298866271973
+int i0 = 0;#854,14.994401591164726
+--j;#681,14.994044812520345
+(Math.abs(dN) < TOLERANCE * sigma)) {#1087,14.988232485453288
+final double s = secondary[i];#560,14.983496475219727
+processGeneralBlock(n);#657,14.977575475519354
+work[j + 2] = 0.0;#958,14.977096065398186
+eMin = 0.0;#1386,14.9755455820184
+throw new SingularMatrixException();#399,14.971670855646549
+final double tmp = work[k - 3];#1020,14.969615236918132
+tType = -3;#1470,14.968894640604654
+++count;#1235,14.967431118613796
+b1 = b1 * (work[i4] / work[i4 - 2]);#1602,14.966493844985962
+(MathUtils.SAFE_MIN * work[j] < work[i + 2])) {#961,14.964984531402587
+tType -= 12;#1105,14.963981496876684
+final double[] vData = v.getDataRef();#486,14.963810801506042
+for (int i = 4 * i0; i < 4 * n0 - 11; i += 4) {#905,14.96375595439564
+final double d        = q2 * e12 - q0 * q1q2Me22;#769,14.963527842930384
+final double s = secondary[i];#200,14.962011194229126
+if (b2 != 0.0) {#1596,14.95797293002789
+work[j] = d + work[i];#954,14.951696431195295
+final double[] vK = eigenvectors[k].getDataRef();#534,14.950088500976562
+work[j4 - 1] = work[j4] * tmp;#1365,14.947862227757772
+final double threeFourth   = 0.25 * (range[0] + 3 * range[1]);#646,14.9396941111638
+if (a2 < cnst1) {#1520,14.936796803628244
+final double oneFourth     = 0.25 * (3 * range[0] + range[1]);#644,14.934982369585734
+b2 = Math.sqrt(cnst3 * b2);#1652,14.933624759797127
+work[i + 2] = -0.0;#943,14.932861059904099
+final int nColB = b.getColumnDimension();#481,14.925531311035156
+if (tType < -22) {#1095,14.923218332487961
+if ((dMin >= 0) && (dMin1 > 0)) {#1080,14.922540575265884
+work[fourI - 2] = ratio * ratio * Math.abs(di);#1259,14.910493818918864
+s = Math.min(s, a2 - (b1 + b2));#1467,14.910326252812924
+throw new SingularMatrixException();#523,14.90816128772238
+final double q1       = main[index + 1];#761,14.906054649353027
+if ((realEigenvalues[i] == 0) && (imagEigenvalues[i] == 0)) {#508,14.904546225943216
+if (k >= maxIter) {#888,14.902705669403076
+dMin1 = 0;#846,14.900268486567906
+if (gap2 > 0.0 && gap2 > b2 * a2) {#1612,14.898091643197196
+a2 = a2 + b2;#1545,14.894107719947552
+final List<Integer> list = new ArrayList<Integer>();#692,14.884469118985264
+work[4 * n0 - 1] = previousEMin;#921,14.883464729084688
+if (diagMin >= 4 * offDiagMax) {#873,14.872527186075846
+dN1   = 0;#849,14.871070265769958
+dMin = dN1;#1385,14.870956973025674
+final double eiM1  = secondary[index + i - 1];#1257,14.870913846152169
+final int    fourI = 4 * i;#1256,14.865443269411722
+invI[j] = invIJ;#537,14.852535313573377
+return false;#509,14.852439838906992
+if (a2 < cnst1) {#1563,14.848240817034686
+computeShiftIncrement(start, deflatedEnd, end - deflatedEnd);#1071,14.848045579318342
+dN    = 0;#848,14.846889555454254
+if (s <= t) {#1028,14.844295925564236
+tau   = g * dMin;#1579,14.843488949995775
+right = middle;#1188,14.83474907875061
+if (b2 != 0.0){#1640,14.833862609863282
+left = middle;#1212,14.831884765625
+if (dMin1 == dN1) {#1622,14.831801485132289
+d *= tmp;#1366,14.831440353393555
+(work[4 * n0 - 1] <= TOLERANCE_2 * diagMax) &&#899,14.830261252647222
+b2 = b2 * (work[i4] / work[i4 - 2]);#1554,14.82925551587885
+break;#1183,14.827835241953531
+b1 *= work[i4] / work[i4 - 2];#1645,14.826014844382682
+pingPong = 0;#885,14.823984993828667
+process2RowsBlock(begin);#632,14.82395339012146
+b2 = b2 * (work[i4] / work[i4 - 2]);#1511,14.821158972653476
+a2 = cnst3 * a2;#1517,14.815061907614432
+for (int j = 0; j < m; ++j) {#492,14.812637301853725
+cachedV  = null;#237,14.812105110713414
+break;#871,14.811063072898172
+a2 = a2 + b2;#1502,14.80684832868905
+d *= tmp;#1346,14.806476020812989
+work[l - 1] =#1055,14.806257662565812
+b.length, m);#406,14.80572868982951
+computeGershgorinCircles();#243,14.80066336525811
+if (work[nn - 9]  >  work[nn - 11]) {#1494,14.785733836037773
+dMin  = -0.0;#1062,14.782473030090332
+g = 0.25 * 0.333;#1575,14.779553699493409
+d = work[i];#944,14.778837167299711
+work[fourI] = Math.abs(di);#1261,14.77862536907196
+tau   = 0;#851,14.77825215657552
+while (n0 > 0) {#856,14.775397658348083
+dqds(start, deflatedEnd);#1077,14.773335090050331
+double offDiagMin = (i0 == n0) ? 0 : work[4 * n0 - 6];#863,14.76176117561959
+dMin = -Math.max(0, diagMin - 2 * Math.sqrt(diagMin * offDiagMax));#883,14.760213579450335
+final ArrayRealVector[] eigenvectors) {#381,14.758678604574765
+j -= 4;#1141,14.751948499679566
+if (100 * b1 < b2) {#1647,14.748736081804548
+if (dMin == dN && dMin1 == dN1) {#1454,14.74854902787642
+final double tmp = work[i + k];#1137,14.747979482014975
+work[j4 - 1] = 0.0;#1358,14.742985934019089
+tau   = Math.max(s, 0.333 * dMin);#1469,14.740322544461204
+previousEMin = Math.min(previousEMin, work[i + 3]);#917,14.736944482681599
+final double[] range       = eigenvaluesRange(begin, n);#643,14.736584345499674
+diagMax    = Math.max(diagMax, work[i] + work[i + 2]);#877,14.724727471669516
+break;#1205,14.718366781870523
+case 1:#625,14.717946879069011
+b2 += b1;#1646,14.708091100056967
+final double gam = dN2;#1536,14.705514589945475
+final double tNorm = Math.max(Math.abs(lower), Math.abs(upper));#1167,14.699995468402731
+diagMin    = Math.min(diagMin, work[i + 4]);#874,14.680723562473204
+switch (n) {#623,14.680590910070082
+final double q0   = main[index];#732,14.679010190461812
+double diagMin    = diagMax;#866,14.678224762280783
+double s = 0.25 * dMin;#1475,14.6720490137736
+if (chooseLeft) {#660,14.671536570009978
+Math.min(work[l - 1],#1056,14.669356155395509
+return new double[] { lower, upper };#1218,14.668555147507611
+if (work[np - 4]  >  work[np - 2]) {#1490,14.657287029992967
+if (gap1 > 0.0 && gap1 > b1) {#1458,14.652109543482462
+final double sqrtMq = Math.sqrt(-q);#782,14.645872896367853
+b2 = work[np - 2];#1488,14.644262516137326
+d *= tmp;#964,14.643428649902344
+tType = -2;#1460,14.635590902964275
+work[i + 2]  = -sigma;#909,14.630290126800537
+if ((pingPong == 0) && (n0 - i0 > 3) &&#898,14.624196788242886
+work[j4] = 0.0;#1338,14.623808797200521
+g = 0.25;#1577,14.617970429933989
+offDiagMax = Math.max(offDiagMax, work[i + 2]);#875,14.617420220375061
+s += v.getEntry(j) * b.getEntry(j, k);#489,14.609361182811648
+work[4 * n0 - 2] = offDiagMin;#920,14.607505580357143
+break;#1583,14.604647023337227
+process3RowsBlock(begin);#637,14.598684271176657
+tType -= 11;#1101,14.593100284707957
+secondary[i] = 0;#702,14.589565111243207
+np = nn - 13;#1498,14.583429398075227
+final double q0       = main[index];#760,14.579817149950111
+eMin = 0.0;#1341,14.579075354116934
+int n0 = n;#855,14.57559871673584
+break;#1627,14.57496384211949
+double b2 = b1;#1639,14.571120179217795
+work[j]     = d;#957,14.562701471390262
+i0 = 0;#867,14.561125979704016
+i0 = split + 1;#922,14.55598149476228
+tType = -4;#1474,14.553518295288086
+s /= realEigenvalues[i];#491,14.54996789296468
+right = middle;#1210,14.548483610153198
+double b2 = b1;#1595,14.542690028315006
+eCurrent = Math.abs(secondary[i]);#583,14.541214942932129
+final double ratio = eiM1 / di;#1258,14.539693583612857
+diagMax      = Math.max(diagMax, work[i + 4]);#915,14.533300455878763
+if (100 * Math.max(b1, oldB1) < b2) {#1604,14.526729518716985
+process1RowBlock(begin);#627,14.523336700771166
+if (work[i4] > work[i4 - 2]) {#1599,14.515140914916993
+if (work[i4] > work[i4 - 2]) {#1642,14.496891069412232
+eMin = 0.0;#1361,14.494819429185656
+if (work[i4]  >  work[i4 - 2]) {#1551,14.470757121131534
+work[0] = Math.abs(di);#1254,14.461486113698859
+if (work[i4]  >  work[i4 - 2]) {#1508,14.458186808086577
+break;#633,14.441870901319716
+tau = s;#1523,14.44134075164795
+previousEMin = work[i + 7];#913,14.423979357669229
+if (dMin == dN) {#1478,14.416130033032648
+offDiagMin = Math.min(offDiagMin, work[i + 2]);#878,14.415209611256918
+final double mji = matrix.getEntry(j, i);#221,14.412556171417236
+int split  = i0 - 1;#901,14.400827670919485
+final double mij = matrix.getEntry(i, j);#220,14.398512172698975
+a2 = a2 + b2;#1555,14.389898415767785
+if (Math.abs(secondary[i]) <= max) {#700,14.380043249863844
+offDiagMin   = work[i + 6];#912,14.36836477605308
+break;#628,14.36535734600491
+offDiagMin   = Math.min(offDiagMin, work[i + 2]);#916,14.354054107666016
+work[i]     = -0.0;#956,14.34667859357946
+final double oldB1 = b1;#1598,14.343986135540586
+dMin = 0.0;#1090,14.341887615345142
+return;#1538,14.33902324329723
+updateSigma(tau);#1091,14.338760446619105
+return new ArrayRealVector(bp, false);#455,14.331245465712113
+return;#1600,14.328912099202475
+break;#1648,14.325479571024577
+dMin2 + work[l - 2 * pingPong])))) {#1069,14.320577888488769
+break;#1548,14.318927828470866
+b2 = b2 + b1;#1603,14.311616377397018
+(range < relativeTolerance * Math.max(Math.abs(left), Math.abs(right)))) {#1181,14.30673930644989
+tau *= 0.25;#1104,14.29382973909378
+if (b2 == 0.0) {#1547,14.286689253414378
+Math.min(work[l - 9],#1068,14.285842450459798
+(range < relativeTolerance * Math.max(Math.abs(left), Math.abs(right)))) {#1203,14.28148810863495
+final double lambda        = chooseLeft ? range[0] : range[1];#649,14.269482906048115
+s = dN - b1;#1464,14.269096189075047
+return deflatedEnd;#1083,14.267316665649414
+(dMin1 > 0.0) &&#1085,14.261276605966929
+double s = 0;#487,14.259141845703125
+if (dN > b1) {#1463,14.252581827568285
+tau = 0.0;#1108,14.248164353547272
+double invIJ = 0;#532,14.209724866426908
+break;#1505,14.205199718475342
+return;#1592,14.202276186509566
+break;#1605,14.195169353485108
+double offDiagMax = 0;#864,14.193797731399536
+return deflatedEnd;#1092,14.188564758300782
+if(b2 == 0.0) {#1504,14.174879186293659
+a2 = a2 + b2;#1512,14.155124779903527
+return;#1636,14.138612747192383
+break;#1514,14.106900151570638
+double s = 0.0;#1462,14.078935469350506
+a2 = 0.0;#1480,14.071928731856808
+final double splitTolerance)#190,14.068212933010525
+b1 = b2;#1507,14.065875434875489
+break;#1557,14.058484013875326
+np = nn - 2 * pingPong;#1487,14.026962389264789
+diagMax      = 0;#911,14.023213093097393
+np = nn - 9;#1485,14.018396408327165
+split        = i / 4;#910,14.01824271969679
+b1 = b2;#1550,13.994637966156006
+tau = 0.0;#1097,13.987794691516507
+break;#638,13.978854815165201
+double gam;#1476,13.949907095535941
+return;#1643,13.923191738128661
+loop = false;#1111,13.881246169408163
+gam = dN;#1479,13.830166783826105
+final double splitTolerance)#166,13.824771738052368
+return;#1552,13.796172014872234
+n0 = goodStep(i0, n0);#893,13.78807292665754
+return;#1495,13.785420767466228
+return;#1509,13.73501148223877
+updateSigma(tau);#1082,13.695066416705096
+gam = dN1;#1489,13.65434201558431
+int np;#1477,13.635257886803668
+return;#1482,13.572056897481282
+return;#1491,13.439851093292237

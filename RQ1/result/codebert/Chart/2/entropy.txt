@@ -1,0 +1,920 @@
+public static boolean isEmptyOrNull(CategoryDataset dataset) {#598,19.726566415084037
+public static Number findMaximumRangeValue(CategoryDataset dataset) {#1737,19.71598414370888
+public static Number findMinimumRangeValue(CategoryDataset dataset) {#1621,19.605734523973968
+public static Range findRangeBounds(CategoryDataset dataset) {#794,19.597460144444515
+Iterator iterator = keys.iterator();#316,19.54670536518097
+for (int g = 0; g < groupCount; g++) {#1950,19.546342213948567
+Iterator iterator = keys.iterator();#186,19.54388076066971
+if (dataset instanceof DomainInfo) {#1570,19.52873280173854
+for (int j = 0; j < groupCount; j++) {#1956,19.511675975940847
+if (dataset instanceof DomainInfo) {#1515,19.499601364135742
+for (int c = 0; c < columnCount; c++) {#611,19.447650344283492
+Iterator iterator = visibleSeriesKeys.iterator();#1342,19.443836862390693
+Iterator iterator = visibleSeriesKeys.iterator();#1471,19.43530732935125
+int columnCount = dataset.getColumnCount();#976,19.403400527106392
+public static boolean isEmptyOrNull(PieDataset dataset) {#565,19.391937657406455
+Iterator iterator = visibleSeriesKeys.iterator();#1090,19.3780199397694
+public static Number findMaximumStackedRangeValue(CategoryDataset dataset) {#2014,19.366569564456032
+Iterator iterator = visibleSeriesKeys.iterator();#1138,19.35832743211226
+Iterator iterator = visibleSeriesKeys.iterator();#1449,19.349139517003838
+Iterator iterator = visibleSeriesKeys.iterator();#1061,19.339215408671986
+for (int item = 0; item < categoryCount; item++) {#1930,19.33389539303987
+public static Number findMinimumStackedRangeValue(CategoryDataset dataset) {#1974,19.326432636805944
+Iterator iterator = visibleSeriesKeys.iterator();#1426,19.32545501535589
+if (dataset instanceof DomainInfo) {#672,19.320570142645586
+DefaultCategoryDataset result = new DefaultCategoryDataset();#456,19.303132837468926
+Iterator iterator = visibleSeriesKeys.iterator();#1164,19.281661207025703
+public static Range findStackedRangeBounds(CategoryDataset dataset) {#1850,19.258784294128418
+for (int series = 0; series < seriesCount; series++) {#1934,19.25462390758373
+if (dataset instanceof CategoryRangeInfo) {#843,19.25456886291504
+public static double calculatePieDatasetTotal(PieDataset dataset) {#180,19.248133523123606
+Iterator iterator = visibleSeriesKeys.iterator();#1323,19.24170038916848
+Iterator iterator = visibleSeriesKeys.iterator();#1112,19.238364913246848
+Number result = null;#1978,19.22298974257249
+DefaultCategoryDataset result = new DefaultCategoryDataset();#486,19.222863110628996
+if (dataset instanceof RangeInfo) {#1683,19.22286023591694
+Iterator iterator = visibleSeriesKeys.iterator();#1403,19.217262528159402
+public static Range iterateRangeBounds(CategoryDataset dataset) {#955,19.204300117492675
+if (dataset instanceof RangeInfo) {#1744,19.196702254445928
+DefaultCategoryDataset result = new DefaultCategoryDataset();#370,19.183843005787242
+public static Number findMaximumRangeValue(XYDataset dataset) {#1793,19.17867881373355
+DefaultCategoryDataset result = new DefaultCategoryDataset();#398,19.17211692983454
+Number result = null;#2018,19.16598716148963
+int columnCount = dataset.getColumnCount();#605,19.16296731101142
+if (includeInterval && dataset instanceof IntervalCategoryDataset) {#977,19.151402893066408
+if (dataset instanceof RangeInfo) {#1627,19.142891030562552
+public static Number findMaximumDomainValue(XYDataset dataset) {#1564,19.13864853507594
+public static Range findRangeBounds(XYDataset dataset) {#862,19.129702517860814
+int seriesCount = dataset.getSeriesCount();#1521,19.125287316062234
+else if (includeInterval && dataset instanceof OHLCDataset) {#1253,19.12289478302002
+else if (includeInterval && dataset instanceof IntervalXYDataset) {#1446,19.120503939115086
+if (dataset instanceof RangeInfo) {#883,19.116822343123587
+for (int item = 0; item < categoryCount; item++) {#2022,19.102178490680195
+if (dataset instanceof RangeInfo) {#1800,19.102141430503444
+if (dataset instanceof RangeInfo) {#813,19.095355184454668
+for (int series = 0; series < seriesCount; series++) {#1810,19.087844919275355
+for (int series = 0; series < seriesCount; series++) {#1637,19.06518159089265
+for (int item = 0; item < categoryCount; item++) {#1872,19.06429796633513
+for (int item = 0; item < categoryCount; item++) {#1982,19.063404829605766
+for (int series = 0; series < seriesCount; series++) {#1579,19.062545917652272
+int seriesCount = dataset.getSeriesCount();#2074,19.060325622558594
+public static Number findMinimumRangeValue(XYDataset dataset) {#1676,19.053394518400495
+for (int s = 0; s < seriesCount; s++) {#2115,19.052429530931555
+for (int series = 0; series < seriesCount; series++) {#1876,19.05108677899396
+int columnCount = dataset.getColumnCount();#1055,19.04857243431939
+for (int series = 0; series < seriesCount; series++) {#1272,19.04850850281892
+public static Range iterateRangeBounds(XYDataset dataset) {#1212,19.04628963470459
+int seriesCount = dataset.getSeriesCount();#1691,19.045808922160756
+int seriesCount = dataset.getSeriesCount();#1578,19.0354228886691
+for (int series = 0; series < seriesCount; series++) {#1522,19.032626823142724
+Comparable currentKey = (Comparable) iterator.next();#318,19.029037399291994
+public static boolean isEmptyOrNull(XYDataset dataset) {#631,19.02301718059339
+private DatasetUtilities() {#167,19.016112089157104
+for (int series = 0; series < seriesCount; series++) {#1239,19.0149114396837
+Comparable current = (Comparable) iterator.next();#188,19.007933338483173
+Number result = null;#1568,19.00482353797326
+int categoryCount = dataset.getColumnCount();#1929,18.999661763509113
+for (int current = 0; current < columnCount; current++) {#231,18.99066912609598
+for (int series = 0; series < seriesCount; series++) {#1755,18.99044488977503
+double step = (end - start) / (samples - 1);#549,18.98898995440939
+else if (includeInterval && dataset instanceof BoxAndWhiskerXYDataset) {#1423,18.978890287465063
+for (int seriesNo = 0; seriesNo < seriesCount; seriesNo++) {#2075,18.976458676656087
+public static Range iterateXYRangeBounds(XYDataset dataset) {#1198,18.976233073643275
+int seriesCount = dataset.getSeriesCount();#1809,18.975187301635742
+for (int c = 0; c < data[r].length; c++) {#459,18.972044308980305
+public static Number findMinimumDomainValue(XYDataset dataset) {#1509,18.96896939528616
+for (int series = 0; series < seriesCount; series++) {#752,18.96424123975966
+int seriesCount = dataset.getSeriesCount();#1233,18.96080340279473
+for (int i = 0; i < samples; i++) {#550,18.942434137517754
+for (int series = 0; series < seriesCount; series++) {#1985,18.932856948287398
+for (int r = 0; r < rowCount; r++) {#610,18.92797606924306
+double uvalue;#749,18.9242361386617
+if (dataset instanceof XYDomainInfo) {#704,18.919856452941893
+if (dataset instanceof XYRangeInfo) {#915,18.91156029701233
+int categoryCount = dataset.getColumnCount();#1981,18.910306559668648
+Number result = null;#1513,18.908818905170147
+for (int series = 0; series < seriesCount; series++) {#1692,18.907076906274867
+for (int column = 0; column < columnCount; column++) {#1168,18.90227167067989
+public static Range findDomainBounds(XYDataset dataset) {#649,18.899855613708496
+int seriesCount = dataset.getRowCount();#2024,18.899795098738238
+&& dataset instanceof MultiValueCategoryDataset) {#1107,18.897178615842545
+int itemCount = dataset.getColumnCount();#1636,18.8953370180997
+for (int column = 0; column < columnCount; column++) {#1142,18.895153414818548
+int categoryCount = dataset.getColumnCount();#1871,18.89317904578315
+for (int column = 0; column < columnCount; column++) {#1094,18.89206886291504
+List visibleSeriesKeys, Range xRange, boolean includeInterval) {#1383,18.88448616310402
+int categoryCount = dataset.getColumnCount();#2021,18.883408228556316
+ArrayList otherKeys = new ArrayList();#315,18.883353233337402
+for (int column = 0; column < columnCount; column++) {#983,18.881605579007058
+public static Range findCumulativeRangeBounds(CategoryDataset dataset) {#2134,18.88148559223522
+int seriesCount = dataset.getRowCount();#1933,18.879819479855623
+for (int series = 0; series < seriesCount; series++) {#2025,18.872931445086444
+IntervalCategoryDataset icd = (IntervalCategoryDataset) dataset;#1088,18.872795689490534
+int seriesCount = dataset.getRowCount();#1984,18.869836763902143
+int itemCount = dataset.getColumnCount();#1754,18.866465178402986
+public static Range findStackedRangeBounds(CategoryDataset dataset,#1863,18.86242804527283
+for (int column = 0; column < columnCount; column++) {#1116,18.857229540424964
+List visibleSeriesKeys, Range xRange, boolean includeInterval) {#910,18.853241991113734
+int seriesCount = dataset.getRowCount();#1875,18.849076010964133
+public static Range findStackedRangeBounds(TableXYDataset dataset) {#2051,18.846496278589424
+&& dataset instanceof BoxAndWhiskerCategoryDataset) {#1057,18.84158497471963
+int columnCount = dataset.getColumnCount();#230,18.839841842651367
+&& dataset instanceof StatisticalCategoryDataset) {#1133,18.833721831992822
+public static Range findRangeBounds(CategoryDataset dataset,#807,18.831649356418186
+for (int series = 0; series < seriesCount; series++) {#1256,18.82706274809661
+Comparable currentKey = (Comparable) iterator.next();#332,18.82569984436035
+for (int series = 0; series < seriesCount; series++) {#767,18.818119826140226
+public static Range findStackedRangeBounds(CategoryDataset dataset,#1909,18.813848400115965
+&& dataset instanceof IntervalCategoryDataset) {#1085,18.813655342374528
+iterator = keys.iterator();#329,18.80796343939645
+for (int c = 0; c < data[r].length; c++) {#401,18.78777615229289
+IntervalCategoryDataset icd = (IntervalCategoryDataset) dataset;#980,18.787646724331765
+for (int r = 0; r < data.length; r++) {#446,18.78480263551076
+for (int column = 0; column < columnCount; column++) {#1009,18.7837714533652
+public static Range iterateDomainBounds(XYDataset dataset) {#725,18.780783939361573
+List visibleSeriesKeys, boolean includeInterval) {#699,18.778860092163086
+if (includeInterval && dataset instanceof OHLCDataset) {#1400,18.772132237752277
+public static double calculateStackTotal(TableXYDataset dataset, int item) {#2112,18.769706509330057
+KeyToGroupMap map) {#1910,18.76963723147357
+public static Range iterateCategoryRangeBounds(CategoryDataset dataset,#940,18.766246128082276
+while (iterator.hasNext()) {#317,18.760254979133606
+for (int item = 0; item < itemCount; item++) {#576,18.753895013228707
+BoxAndWhiskerCategoryDataset bx#1059,18.752856793610945
+if (current != null) {#189,18.741110851890163
+List visibleSeriesKeys, boolean includeInterval) {#838,18.73917106960131
+if (includeInterval && dataset instanceof IntervalXYDataset) {#750,18.72996368408203
+Comparable seriesKey = (Comparable) iterator.next();#1473,18.725032280231343
+for (int item = 0; item < itemCount; item++) {#1694,18.72014888640373
+for (int c = 0; c < data[r].length; c++) {#373,18.712579250335693
+List visibleSeriesKeys, boolean includeInterval) {#1043,18.7108676744544
+List visibleSeriesKeys, boolean includeInterval) {#1307,18.709188958872918
+if (start >= end) {#541,18.703830019632974
+double minimum = Double.POSITIVE_INFINITY;#1231,18.69878323872884
+for (int column = 0; column <= dataset.getColumnCount() - 1;#2144,18.68984384536743
+while (iterator.hasNext()) {#1113,18.68967318534851
+if (visibleSeriesKeys == null) {#1312,18.67812218385584
+for (int item = 0; item < itemCount; item++) {#1524,18.67519394043953
+int itemCount = dataset.getColumnCount();#1065,18.674352389115555
+for (int i = 0; i < dataset.getRowCount(); i++) {#1919,18.673446875352127
+for (int r = 0; r < data.length; r++) {#457,18.672004262606304
+if (includeInterval && dataset instanceof IntervalXYDataset) {#1236,18.666556739807127
+int groupCount = map.getGroupCount();#1925,18.663065327538384
+int itemCount = dataset.getItemCount(series);#1811,18.66098686626979
+if (xRange == null) {#1392,18.659746050834656
+for (int s = 0; s < dataset.getSeriesCount(); s++) {#633,18.656834506988524
+for (int item = 0; item < itemCount; item++) {#1812,18.65356885233233
+if (o instanceof Number){#1121,18.652151925223215
+while (iterator.hasNext()) {#1091,18.6516845703125
+for (int item = 0; item < itemCount; item++) {#1328,18.644704941780336
+if (includeInterval && dataset instanceof IntervalXYDataset) {#1320,18.642207069396974
+int seriesCount = dataset.getSeriesCount();#747,18.64171028137207
+for (int item = 0; item < itemCount; item++) {#1476,18.634478938195013
+double minimum = Double.POSITIVE_INFINITY;#973,18.63442225683303
+if (f == null) {#535,18.633911196390788
+Number value;#1639,18.632381605065387
+if (dataValue != null) {#334,18.629865026474
+while (iterator.hasNext()) {#1472,18.627747344970704
+public static Range findRangeBounds(CategoryDataset dataset,#837,18.626914978027344
+double minimum = Double.POSITIVE_INFINITY;#1869,18.626790864127024
+for (int item = 0; item < itemCount; item++) {#1638,18.625047837534257
+if (dataValue != null) {#320,18.624865198135375
+while (iterator.hasNext()) {#1324,18.617655754089355
+if (dataset instanceof IntervalXYDataset) {#1814,18.615707860674178
+while (iterator.hasNext()) {#1404,18.61506590843201
+while (iterator.hasNext()) {#1343,18.613360357284545
+int itemCount = dataset.getItemCount(series);#1475,18.61295679637364
+while (iterator.hasNext()) {#1450,18.611356115341188
+for (int item = 0; item < itemCount; item++) {#1581,18.61052350075014
+int itemCount = dataset.getItemCount(series);#1693,18.60339491707938
+for (int item = 0; item < itemCount; item++) {#754,18.60173871440272
+while (iterator.hasNext()) {#1427,18.601486444473267
+for (int row = 0; row < rowCount; row++) {#982,18.597998159903067
+Comparable seriesKey = (Comparable) iterator.next();#1344,18.595104842350402
+if (visibleSeriesKeys == null) {#1048,18.589172138887292
+Range result = null;#914,18.588710198035606
+for (int item = 0; item < itemCount; item++) {#1241,18.581270371713945
+if (dataset instanceof IntervalCategoryDataset) {#1640,18.576465797424316
+for (int item = 0; item < itemCount; item++) {#1258,18.569364793838993
+Comparable seriesKey = (Comparable) iterator.next();#1166,18.568893037993334
+Range result = null;#703,18.56149336007925
+public static Range iterateRangeBounds(CategoryDataset dataset,#971,18.557258656150417
+Range result = null;#1868,18.551105352548454
+if (dataset instanceof IntervalCategoryDataset) {#1758,18.550699397495816
+while (iterator.hasNext()) {#187,18.55039644241333
+int seriesCount = dataset.getSeriesCount();#2114,18.550255086686875
+for (int item = 0; item < itemCount; item++) {#1454,18.549117119081558
+for (int row = 0; row < dataset.getRowCount(); row++) {#2142,18.547372891352726
+if (dataset instanceof IntervalXYDataset) {#1697,18.53891236441476
+Range result = null;#842,18.535735790546124
+for (int item = 0; item < itemCount; item++) {#769,18.528661327977336
+for (int item = 0; item < itemCount; item++) {#1408,18.52786562519689
+for (int row = 0; row < rowCount; row++) {#1008,18.525094032287598
+if (includeInterval#1056,18.522135221041164
+else {#708,18.521670150756837
+for (int r = 0; r < data.length; r++) {#399,18.52152148882548
+for (int item = 0; item < itemCount; item++) {#1274,18.520012455601847
+for (int item = 0; item < itemCount; item++) {#1756,18.518181923897036
+double minimum = Double.POSITIVE_INFINITY;#745,18.515491303943453
+while (iterator.hasNext()) {#1062,18.514586925506592
+for (int r = 0; r < data.length; r++) {#371,18.51435077190399
+int itemCount = dataset.getItemCount(series);#1523,18.511813061577932
+int itemCount = dataset.getItemCount(series);#768,18.510521820613317
+Comparable key, double minimumPercent, int minItems) {#308,18.509604415893556
+if (y != null) {#578,18.50718422939903
+for (int item = 0; item < itemCount; item++) {#1347,18.504194813389933
+int itemCount = dataset.getItemCount(series);#1580,18.50360243661063
+Number value;#1757,18.502322860386062
+DefaultPieDataset result = new DefaultPieDataset();#310,18.5022554397583
+if (visibleSeriesKeys == null) {#1388,18.500528055078842
+double[] negative = new double[groupCount];#1932,18.499177239157937
+else {#1340,18.49912452697754
+int itemCount = dataset.getItemCount(series);#1453,18.497853892190115
+for (int i = 0; i < rowData.getItemCount(); i++) {#487,18.49737050798204
+else {#920,18.4960205078125
+Comparable seriesKey = (Comparable) iterator.next();#1114,18.49479836431043
+MultiValueCategoryDataset mvcd#1110,18.491105760846818
+for (int item = 0; item < itemCount; item++) {#1431,18.490415880756995
+StatisticalCategoryDataset scd#1136,18.490252193651703
+public static PieDataset createPieDatasetForColumn(CategoryDataset dataset,#247,18.487344940503437
+String columnKeyPrefix, Number[][] data) {#396,18.48654228210449
+if (otherKeys.size() >= minItems) {#347,18.484457588195802
+Comparable seriesKey = (Comparable) iterator.next();#1063,18.483008022966057
+IntervalXYDataset ixyd = (IntervalXYDataset) dataset;#1238,18.478539496660233
+int rowCount = dataset.getRowCount();#975,18.47841082678901
+throw new IllegalArgumentException("Null 'dataset' argument.");#1386,18.47162413597107
+if (dataset == null) {#2135,18.4703452166389
+groupIndex[i] = map.getGroupIndex(map.getGroup(#1920,18.468397798209356
+else {#1469,18.467897987365724
+IntervalXYDataset intervalXYData = (IntervalXYDataset) dataset;#751,18.46729725599289
+while (iterator.hasNext()) {#331,18.46537446975708
+Range result = null;#812,18.464789317204403
+throw new IllegalArgumentException(#441,18.461075230648643
+Comparable rowKey) {#213,18.45996151299312
+double minimum = Double.POSITIVE_INFINITY;#1053,18.45960707891555
+Comparable seriesKey = (Comparable) iterator.next();#1140,18.459316450974036
+Comparable key, double minimumPercent) {#287,18.45626667567662
+String columnKeyPrefix, double[][] data) {#368,18.454563064575197
+throw new IllegalArgumentException("Null 'dataset' argument.");#1310,18.453787667410715
+if (dataset == null) {#2066,18.449939335093777
+while (iterator.hasNext()) {#1139,18.44728465080261
+column++) {#2145,18.446682929992676
+throw new IllegalArgumentException("Null 'dataset' argument.");#1046,18.446137768881663
+Comparable seriesKey = (Comparable) iterator.next();#1325,18.442365449050378
+if (number != null) {#1936,18.442058148591414
+for (int item = 0; item < itemCount; item++) {#1066,18.437606688468687
+Range result = null;#882,18.436862798837517
+throw new IllegalArgumentException("Null 'seriesKey' argument.");#539,18.4345165182043
+Number y = dataset.getValue(item);#577,18.43331878835505
+while (iterator.hasNext()) {#1165,18.431854581832887
+int itemCount = dataset.getItemCount(series);#1257,18.43100837298802
+if (itemCount == 0) {#572,18.426972031593323
+Number dataValue = source.getValue(currentKey);#319,18.423755089441936
+public static CategoryDataset createCategoryDataset(Comparable[] rowKeys,#423,18.42358498139815
+Range result = null;#1915,18.422393652109
+dataset.getRowKey(i)));#1921,18.421166189785662
+double[] minimum = new double[groupCount];#1926,18.420092423756916
+int columnCount = 0;#445,18.419719900403702
+else {#1519,18.418481636047364
+if (dataset == null) {#1865,18.414952165940228
+else {#847,18.41269760131836
+int itemCount = dataset.getItemCount(series);#1346,18.40860894748143
+if (dataset == null) {#567,18.407446636873132
+if (rowCount == 0 || columnCount == 0) {#606,18.40640685671852
+if (dataset == null) {#600,18.403717658099005
+double total = DatasetUtilities.calculatePieDatasetTotal(source);#311,18.40309582437788
+if (number != null) {#1878,18.40184099777885
+int itemCount = dataset.getItemCount(series);#1430,18.397920540400914
+int itemCount = dataset.getItemCount(series);#1327,18.396326678139822
+if (number != null) {#1987,18.39574150417162
+throw new IllegalArgumentException(#450,18.39500361994693
+Comparable seriesKey = (Comparable) iterator.next();#1451,18.39230152656292
+if (dataset instanceof IntervalXYDataset) {#1527,18.39213087899344
+throw new IllegalArgumentException("Null 'xRange' argument");#1393,18.38693226300753
+Comparable seriesKey = (Comparable) iterator.next();#1405,18.386162231708393
+if (dataset == null) {#2015,18.3848295211792
+public static PieDataset createPieDatasetForColumn(CategoryDataset dataset,#262,18.37920626004537
+CategoryRangeInfo info = (CategoryRangeInfo) dataset;#844,18.378793875376385
+throw new IllegalArgumentException("Null 'columnKeys' argument.");#431,18.377439887435347
+public static Range iterateToFindRangeBounds(CategoryDataset dataset,#1042,18.373365720113117
+if (columnKeys.length != columnCount) {#449,18.371454991792376
+XYRangeInfo info = (XYRangeInfo) dataset;#916,18.3696928024292
+int seriesCount = dataset.getRowCount();#1635,18.363726659254596
+int row) {#228,18.36169535773141
+boolean includeInterval) {#941,18.36002625359429
+if (dataset == null) {#1975,18.353819959303912
+Comparable[] columnKeys, double[][] data) {#424,18.353069381713865
+else {#1576,18.350544452667236
+if (dataset == null) {#1045,18.349659527049344
+int series = dataset.indexOf(seriesKey);#1345,18.34851770047788
+if (dataset == null) {#1623,18.34759257821476
+if (minimum == Double.POSITIVE_INFINITY) {#1541,18.346905425742822
+if (dataset == null) {#1309,18.343911002664004
+if (dataset == null) {#1565,18.342310063979205
+Iterator valueIterator = values.iterator();#1118,18.3412624885296
+DefaultPieDataset result = new DefaultPieDataset();#229,18.339544599706475
+DefaultPieDataset result = new DefaultPieDataset();#264,18.339011148972943
+if (dataset instanceof IntervalXYDataset) {#1584,18.337209483555384
+if (seriesKey == null) {#538,18.336673617362976
+if (meanN != null) {#1144,18.336575167519705
+IntervalXYDataset ixyd = (IntervalXYDataset) dataset;#1448,18.33566242456436
+Range result = null;#670,18.335602246798
+int itemCount = dataset.getItemCount(series);#1273,18.33082239968436
+Comparable seriesKey = (Comparable) iterator.next();#1428,18.330634939259497
+public static Range findStackedRangeBounds(TableXYDataset dataset,#2064,18.324711708795455
+int itemCount = dataset.getItemCount(series);#1240,18.323828186307633
+if (dataset == null) {#1911,18.321725003859576
+IntervalXYDataset ixyd = (IntervalXYDataset) dataset;#1322,18.320743918418884
+for (int itemNo = 0; itemNo < dataset.getItemCount(); itemNo++) {#2071,18.31524845649456
+Comparable seriesKey = (Comparable) iterator.next();#1092,18.314755571299585
+double[] maximum = new double[groupCount];#1927,18.31412845187717
+int series = dataset.getRowIndex(seriesKey);#1167,18.312323570251465
+double minimum = Double.POSITIVE_INFINITY;#1317,18.31179500761486
+for (int i = 0; i < rowCount; i++) {#266,18.310197208238684
+int itemCount = dataset.getItemCount(series);#1407,18.31017647470747
+if (minimum == Double.POSITIVE_INFINITY) {#1653,18.30094316270616
+if (minimum == Double.POSITIVE_INFINITY) {#1715,18.29785629555031
+Number number = dataset.getValue(series, item);#1935,18.2973027910505
+&& otherKeys.size() >= minItems) {#336,18.292459118750788
+if (dataset == null) {#700,18.28760545394
+else {#1750,18.286381340026857
+throw new IllegalArgumentException("Null 'rowKeys' argument.");#428,18.283932085390443
+int seriesCount = dataset.getRowCount();#1753,18.283069653944537
+throw new IllegalArgumentException("Null 'dataset' argument.");#2136,18.27883529663086
+double total = 0.0;#2023,18.27723166817113
+if (dataset == null) {#1385,18.276169833014993
+if (dataset == null) {#839,18.27550843182732
+if (dataset == null) {#1510,18.275190914378445
+Comparable columnKey) {#248,18.27233961761975
+double minimum = Double.POSITIVE_INFINITY;#1396,18.27172106788272
+if (ArrayUtilities.hasDuplicateItems(columnKeys)) {#436,18.26883562405904
+int itemCount = dataset.getItemCount(series);#753,18.268682854516165
+throw new IllegalArgumentException("Null 'f' argument.");#536,18.268675840817966
+public static CategoryDataset createCategoryDataset(Comparable rowKey,#477,18.267675399780273
+Number n = dataset.getValue(row, column);#2146,18.267268793923513
+double minimum = Double.POSITIVE_INFINITY;#1690,18.259803657531737
+if (minimum == Double.POSITIVE_INFINITY) {#1283,18.256913682688836
+int rowCount = dataset.getRowCount();#265,18.255181312561035
+double minimum = Double.POSITIVE_INFINITY;#1520,18.253256721496584
+else {#1162,18.251937866210938
+String rowKey = rowKeyPrefix + (r + 1);#372,18.251708104060246
+throw new IllegalArgumentException("Requires 'start' < 'end'.");#542,18.250583955219813
+Comparable rowKey = rowKeys[r];#458,18.24945250424472
+if (dataset == null) {#742,18.24691110498765
+if (number != null) {#2027,18.246641739555027
+if (ArrayUtilities.hasDuplicateItems(rowKeys)) {#433,18.246405482292175
+String rowKey = rowKeyPrefix + (r + 1);#400,18.244132372049187
+if (dataset == null) {#1678,18.244051428402173
+Number dataValue = source.getValue(currentKey);#333,18.24363060792287
+if (dataset == null) {#1739,18.240807925953586
+if (!Double.isNaN(y)) {#2077,18.231989613285773
+int column) {#263,18.231235294018763
+double minimum = 0.0;#1980,18.230568567911785
+public static Range findRangeBounds(XYDataset dataset,#909,18.218737496270073
+if (columnKeys == null) {#430,18.217270255088806
+double start, double end, int samples, Comparable seriesKey) {#533,18.217120241235804
+Number lvalue, uvalue;#1089,18.21369507438258
+if (rowKeys == null) {#427,18.209578573703766
+int[] groupIndex = new int[dataset.getRowCount()];#1918,18.204606819152833
+public static PieDataset createConsolidatedPieDataset(PieDataset source,#286,18.20458839416504
+public static Range findRangeBounds(XYDataset dataset,#877,18.2044644885593
+if (y > 0.0) {#2078,18.202076221334522
+if (minimum == Double.POSITIVE_INFINITY) {#1488,18.200988354890242
+throw new IllegalArgumentException(#437,18.19897174835205
+throw new IllegalArgumentException("Requires 'samples' > 1");#545,18.190609967267072
+if (dataset == null) {#911,18.185466598061954
+double total = 0.0;#2113,18.18524742126465
+if (dataset == null) {#809,18.184833863202265
+else {#1544,18.179328101021902
+double value;#1813,18.17745590209961
+int series = dataset.indexOf(seriesKey);#1452,18.175484904536493
+public static PieDataset createPieDatasetForRow(CategoryDataset dataset,#227,18.16755159695943
+if (value != null) {#192,18.166061152582582
+if (minimum == Double.POSITIVE_INFINITY) {#1357,18.163780751435652
+public static PieDataset createPieDatasetForRow(CategoryDataset dataset,#212,18.161988576253254
+if (rowKeys.length != data.length) {#440,18.16191759109497
+double y = dataset.getYValue(seriesNo, itemNo);#2076,18.159693287264915
+else {#1689,18.156977081298827
+double total = 0.0;#1983,18.15535259246826
+double negative = base;#1874,18.153593568240893
+else {#766,18.152228546142577
+if (dataset == null) {#1795,18.149418550379135
+int series = dataset.indexOf(seriesKey);#1474,18.14869608702483
+if (minimum == Double.POSITIVE_INFINITY) {#1180,18.148117977639902
+if (dataset == null) {#879,18.147891325109146
+throw new IllegalArgumentException("Null 'rowKey' argument.");#481,18.144929497330278
+throw new IllegalArgumentException("Null 'dataset' argument.");#2067,18.142396722521102
+if (dataset == null) {#181,18.140118262347052
+else {#676,18.136446475982666
+if (minimum == Double.POSITIVE_INFINITY) {#1021,18.13551724475363
+else {#1633,18.12982521057129
+int series = dataset.getRowIndex(seriesKey);#1115,18.129092114312307
+else {#1270,18.12733860015869
+if (samples < 2) {#544,18.123337388038635
+boolean includeInterval) {#741,18.119074172973633
+double[] positive = new double[groupCount];#1931,18.116704724051736
+BoxAndWhiskerXYDataset bx = (BoxAndWhiskerXYDataset) dataset;#1425,18.1152303283279
+else {#887,18.112339591979982
+if (value > 0.0) {#1939,18.110789068813983
+if (rowData == null) {#483,18.109987378120422
+double otherValue = 0;#330,18.10965769631522
+if (dataset.getValue(r, c) != null) {#612,18.10751435250947
+double runningTotal = 0.0;#2143,18.106143617630003
+else {#1600,18.10435540335519
+Number number = dataset.getValue(series, item);#2026,18.103723321642196
+double value;#1526,18.10063117483388
+public static PieDataset createConsolidatedPieDataset(PieDataset source,#307,18.099611015319823
+if (n != null) {#2147,18.098723660344664
+if (rowKey == null) {#480,18.0963516831398
+int itemCount = dataset.getItemCount();#571,18.09459050496419
+else if (dataset instanceof OHLCDataset) {#1702,18.09297409057617
+double lvalue;#748,18.09288263320923
+public static Range findDomainBounds(XYDataset dataset,#698,18.092119640774197
+public static Range iterateDomainBounds(XYDataset dataset,#740,18.091272153352435
+Number number = dataset.getValue(series, item);#1877,18.087915318352835
+throw new IllegalArgumentException("Null 'dataset' argument.");#743,18.086534874779836
+double value;#1583,18.084767590398375
+else {#817,18.08015642166138
+RangeInfo info = (RangeInfo) dataset;#1745,18.078160242600873
+if (dataset.getItemCount(s) > 0) {#634,18.076947450637817
+"Null 'visibleSeriesKeys' argument.");#1050,18.076519711812338
+IntervalCategoryDataset icd#1759,18.072906881570816
+int rowCount = dataset.getRowCount();#604,18.071087307400173
+if (dataset == null) {#666,18.069167922524844
+Number number = dataset.getValue(series, item);#1986,18.06903372492109
+public static Range iterateRangeBounds(XYDataset dataset,#1229,18.063656756752415
+int series = dataset.indexOf(seriesKey);#1429,18.058137646427863
+if (uvalue != null && !Double.isNaN(uvalue.doubleValue())) {#1100,18.057544413067045
+int series = dataset.indexOf(seriesKey);#1326,18.05242527855767
+public static Range iterateToFindRangeBounds(XYDataset dataset,#1382,18.051868847438268
+else if (dataset instanceof OHLCDataset) {#1819,18.049252809797014
+throw new IllegalArgumentException("Null 'dataset' argument.");#1976,18.04750006539481
+IntervalCategoryDataset icd#1641,18.04670760035515
+if (uvalue == null) {#1072,18.04600293295724
+RangeInfo info = (RangeInfo) dataset;#1684,18.04417506131259
+double minimum = 0.0;#2140,18.043046951293945
+int series = dataset.getRowIndex(seriesKey);#1093,18.039275680269515
+double minimum = Double.POSITIVE_INFINITY;#1634,18.034053802490234
+if (hasValidData) {#1955,18.030114301045735
+int series = dataset.getRowIndex(seriesKey);#1141,18.028839315686906
+throw new IllegalArgumentException("Null 'dataset' argument.");#701,18.027218784604752
+throw new IllegalArgumentException("Null 'dataset' argument.");#182,18.02412380490984
+if (value < 0.0) {#1943,18.019658154454724
+public static CategoryDataset createCategoryDataset(String rowKeyPrefix,#395,18.01655539599332
+public static CategoryDataset createCategoryDataset(String rowKeyPrefix,#367,18.012034936384723
+double end, int samples, Comparable seriesKey) {#508,18.011552890141804
+&& !Double.isNaN(v = uvalue.doubleValue())) {#999,18.010705242986266
+throw new IllegalArgumentException("Null 'dataset' argument.");#1624,18.002129350389755
+RangeInfo info = (RangeInfo) dataset;#1628,18.001661604101006
+if (dataset != null) {#632,17.999879276051242
+"Null 'visibleSeriesKeys' argument.");#1314,17.997678152720134
+double v;#985,17.99576311526091
+throw new IllegalArgumentException("Null 'dataset' argument.");#840,17.993455750601633
+else if (includeInterval#1106,17.993393148694718
+RangeInfo info = (RangeInfo) dataset;#1801,17.992927984757856
+else if (includeInterval#1084,17.98861312866211
+double value;#1696,17.987690801205844
+throw new IllegalArgumentException("Null 'dataset' argument.");#912,17.985365629196167
+int series = dataset.getRowIndex(seriesKey);#1064,17.98448416164943
+RangeInfo info = (RangeInfo) dataset;#814,17.98292385448109
+throw new IllegalArgumentException("Null 'dataset' argument.");#2016,17.979242937905447
+List keys = dataset.getKeys();#184,17.976831793785095
+if (value != null) {#1170,17.9727581165455
+throw new IllegalArgumentException("Null 'dataset' argument.");#1740,17.96912407875061
+result = info.getDomainBounds(visibleSeriesKeys, includeInterval);#706,17.968089662749193
+throw new IllegalArgumentException("Null 'rowData' argument.");#484,17.961942425480597
+else {#1006,17.9603271484375
+DomainInfo info = (DomainInfo) dataset;#1516,17.95688772201538
+double totalValue = 0;#185,17.956798553466797
+else if (includeInterval#1132,17.95553582055228
+throw new IllegalArgumentException("Null 'dataset' argument.");#1796,17.954780680792673
+else {#1183,17.95450391769409
+DomainInfo info = (DomainInfo) dataset;#1571,17.951440117575906
+int series = dataset.indexOf(seriesKey);#1406,17.95083999633789
+else  {#1806,17.95013765855269
+RangeInfo info = (RangeInfo) dataset;#884,17.94859218597412
+else {#1491,17.947315406799316
+throw new IllegalArgumentException("Null 'dataset' argument.");#810,17.947259834834508
+throw new IllegalArgumentException("Null 'dataset' argument.");#1866,17.946801730564662
+XYSeries series = new XYSeries(seriesKey);#548,17.944951509174548
+throw new IllegalArgumentException(#1389,17.94483726903012
+if (lvalue != null) {#1075,17.941270181110927
+else {#782,17.94072256088257
+double std = 0.0;#1145,17.94000074940343
+Number value = dataset.getValue(row, column);#1010,17.93684509396553
+throw new IllegalArgumentException("Null 'dataset' argument.");#1912,17.933646031788417
+throw new IllegalArgumentException("Duplicate items in 'rowKeys'.");#434,17.93188683740024
+else {#2161,17.931384372711182
+throw new IllegalArgumentException("Null 'dataset' argument.");#1511,17.929956368037633
+throw new IllegalArgumentException("Null 'dataset' argument.");#1566,17.92952118601118
+throw new IllegalArgumentException("Null 'dataset' argument.");#1679,17.924601759229386
+else {#1286,17.921980953216554
+double yy = y.doubleValue();#579,17.921617813110352
+if (value / total < minimumPercent) {#322,17.915606315319355
+double maximum = Double.NEGATIVE_INFINITY;#974,17.914781070890882
+result = info.getRangeBounds(visibleSeriesKeys, includeInterval);#845,17.91429437440017
+throw new IllegalArgumentException("Null 'dataset' argument.");#880,17.91286931719099
+double v = 0.0;#191,17.911873236946438
+throw new IllegalArgumentException("Null 'dataset' argument.");#667,17.909446818487986
+if (xRange.contains(x)) {#1456,17.908085546185895
+Number value = dataset.getValue(series, column);#1169,17.903871774673462
+if (positive > maximum) {#2086,17.901983160721628
+public static Range findDomainBounds(XYDataset dataset,#663,17.901188161638046
+boolean includeInterval) {#972,17.89941194322374
+if (!allItemsNull) {#2158,17.891073989868165
+List keys = source.getKeys();#314,17.890654385089874
+if (!Double.isNaN(y)) {#1480,17.89046320234026
+OHLCDataset ohlc = (OHLCDataset) dataset;#1402,17.886077354694233
+throw new IllegalArgumentException(#1049,17.88342234962865
+positive += y;#2079,17.880347728729248
+else {#340,17.88025977876451
+if (xRange.contains(x)) {#1433,17.87925495639924
+if (v > 0) {#195,17.878023976865023
+else {#1360,17.87607536315918
+return result;#1961,17.87603386965665
+if (xRange.contains(x)) {#1479,17.87432655211418
+if (stdN != null) {#1147,17.872926145792007
+"Null 'visibleSeriesKeys' argument.");#1390,17.870507017771402
+if (lvalue != null) {#1436,17.866347640752792
+XYSeries series = sampleFunction2DToSeries(f, start, end, samples,#511,17.859991002965856
+return result;#1549,17.858780774203215
+if (value > 0.0) {#1880,17.8581569277007
+else {#1718,17.856851169041224
+public static Range iterateToFindDomainBounds(XYDataset dataset,#1306,17.851678257896786
+return findRangeBounds(dataset, true);#795,17.849924755096435
+return result;#1606,17.84472370147705
+double maximum = Double.NEGATIVE_INFINITY;#1232,17.844690686180478
+return findRangeBounds(dataset, true);#863,17.8438560962677
+else {#1774,17.842745644705637
+double maximum = Double.NEGATIVE_INFINITY;#1870,17.833237193879626
+Number value = dataset.getValue(current);#190,17.830042178814228
+double maximum = Double.NEGATIVE_INFINITY;#746,17.825069336664107
+if (lvalue != null && !Double.isNaN(lvalue.doubleValue())) {#1097,17.82227949869065
+return findDomainBounds(dataset, true);#650,17.81856985092163
+&& !Double.isNaN(v = lvalue.doubleValue())) {#993,17.815280416737433
+XYDomainInfo info = (XYDomainInfo) dataset;#705,17.811566193898518
+return createPieDatasetForColumn(dataset, column);#250,17.81105298581331
+IntervalXYDataset intervalXYData#1815,17.810971028877027
+IntervalXYDataset intervalXYData#1698,17.80013113310843
+boolean includeInterval) {#878,17.799899661022685
+boolean includeInterval) {#808,17.79981814260068
+if (value != null) {#1011,17.79493875856753
+boolean includeInterval) {#664,17.784701002405043
+"The number of row keys does not match the number of rows in "#442,17.784559680569558
+if (!Double.isNaN(mean)) {#1154,17.783997562953402
+if (maximum == Double.NEGATIVE_INFINITY) {#1597,17.783639695909287
+boolean includeInterval) {#1230,17.78277328279283
+else {#1024,17.782444286346436
+else {#1645,17.782066692005504
+if (xRange.contains(x)) {#1410,17.77486410448628
+if (negative < minimum) {#2089,17.773193008021305
+return iterateDomainBounds(dataset, true);#726,17.76891544886998
+DomainInfo info = (DomainInfo) dataset;#673,17.764846151525322
+return result;#890,17.763073661110617
+if (lvalue == null) {#1068,17.75395737375532
+return result;#820,17.752471056851473
+String columnKey = columnKeyPrefix + (c + 1);#402,17.749118709564208
+else {#1763,17.745314207944002
+double base) {#2065,17.740904116163065
+Number value, lvalue, uvalue;#981,17.740315800621396
+if (maximum == Double.NEGATIVE_INFINITY) {#1771,17.739430992691606
+else {#2096,17.738495063781738
+double maximum = Double.NEGATIVE_INFINITY;#1397,17.733673004876998
+if (hasValidData) {#2037,17.73185590108236
+double negative = base;#2073,17.729930316700656
+boolean allItemsNull = true; // we'll set this to false if there is at#2138,17.72688575891348
+return total;#2121,17.723501205444336
+return iterateRangeBounds(dataset);#1199,17.707608423734968
+if (otherKeys.contains(currentKey)#335,17.707580743012606
+if (value < 0.0) {#1883,17.7067614259391
+if (yy > 0.0) {#580,17.69875118255615
+double maximum = 0.0;#2020,17.696957461039226
+return series;#554,17.69690990447998
+return result;#2001,17.696825894442473
+if (lvalue != null#992,17.696281836583065
+double y = dataset.getYValue(series, item);#1478,17.69615768663811
+else {#1834,17.693919931139266
+else {#1532,17.693846008994363
+double value = number.doubleValue();#2029,17.692406790597097
+String columnKey = columnKeyPrefix + (c + 1);#374,17.691677856445313
+else {#1589,17.689063982530072
+throw new IllegalArgumentException(#1313,17.687713020726253
+else {#1656,17.685539994921005
+if (!Double.isNaN(uvalue)) {#1247,17.68428722023964
+double value = dataset.getYValue(series, item);#1275,17.68199094136556
+return findStackedRangeBounds(dataset, 0.0);#1851,17.67576738198598
+double maximum = Double.NEGATIVE_INFINITY;#1318,17.669776462373278
+double value = number.doubleValue();#1879,17.667245353971207
+otherValue += dataValue.doubleValue();#338,17.664728690837993
+return iterateRangeBounds(dataset, true);#1213,17.66201741354806
+double x = dataset.getXValue(series, item);#1477,17.656684557596844
+return collection;#514,17.65295713598078
+double v = value.doubleValue();#1012,17.652423858642578
+double x = ixyd.getXValue(series, item);#1455,17.64682183946882
+double mean = meanN.doubleValue();#1153,17.644677942449395
+double maximum = Double.NEGATIVE_INFINITY;#1054,17.64362398783366
+IntervalXYDataset intervalXYData#1528,17.6430119601163
+return iterateRangeBounds(dataset, includeInterval);#942,17.642699863599695
+if (maximum == Double.NEGATIVE_INFINITY) {#1831,17.642460681773997
+return findStackedRangeBounds(dataset, 0.0);#2052,17.63874900341034
+result = iterateToFindRangeBounds(dataset, visibleSeriesKeys,#848,17.633662605285643
+IntervalXYDataset intervalXYData#1585,17.632484898422703
+XYSeriesCollection collection = new XYSeriesCollection(series);#513,17.628848266601562
+return result;#406,17.628267114812676
+if (hasValidData) {#1998,17.626757876078287
+double maximum = base;#2070,17.622838533841648
+return iterateRangeBounds(dataset, true);#956,17.622452145531064
+double maximum = 0.0;#2141,17.621784973144532
+double value = dataValue.doubleValue();#321,17.616290588378906
+if (uvalue != null#998,17.615641911824543
+return result;#2040,17.61515539342707
+&& !Double.isNaN(v = value.doubleValue())) {#987,17.61305743323432
+result.setValue(rowKey, dataset.getValue(i, column));#268,17.608568092872357
+double value = dataset.getYValue(s, item);#2116,17.60808418273926
+else {#1706,17.606021534312855
+KeyedValues rowData) {#478,17.605158563644167
+Number meanN = scd.getMeanValue(series, column);#1143,17.597823672824436
+if (!Double.isNaN(x)) {#1349,17.596078349697976
+positive = positive + value;#1881,17.59443187713623
+result.setValue(columnKey, dataset.getValue(row, current));#233,17.59216884086872
+minimumPercent, 2);#289,17.59029887971424
+return totalValue;#200,17.588397979736328
+double uvalue = ixyd.getEndYValue(series, item);#1243,17.585092261030866
+if (!Double.isNaN(value)) {#1276,17.581457138061523
+else {#1823,17.58076173608953
+if (uvalue != null) {#1078,17.579268523624965
+double value = n.doubleValue();#2149,17.573988573891775
+return result;#924,17.570269497958098
+double lvalue = ixyd.getStartYValue(series, item);#1242,17.56488998516186
+Number lvalue = bx.getMinRegularValue(series, item);#1067,17.562974479463364
+columnCount = Math.max(columnCount, data[r].length);#447,17.561064311436244
+if (!Double.isNaN(lvalue)) {#757,17.55844447016716
+if (!Double.isNaN(lvalue)) {#1331,17.557708263397217
+double v = value.doubleValue();#1171,17.544568181037903
+"The number of column keys does not match the number of "#451,17.54223494694151
+if (!Double.isNaN(lvalue)) {#1244,17.540732622146606
+if (!Double.isNaN(lvalue)) {#1261,17.53944757580757
+result = info.getRangeBounds(visibleSeriesKeys, xRange,#917,17.53684660366603
+if (!Double.isNaN(value)) {#2150,17.53623867034912
+Number uvalue = bx.getMaxRegularValue(series, item);#1071,17.536104414198135
+double base) {#1864,17.534599244594574
+return result;#851,17.532866564663973
+if (!Double.isNaN(uvalue)) {#760,17.52457019686699
+double x = dataset.getXValue(series, item);#1348,17.52450639551336
+double positive = base;#2072,17.524078200845157
+if (value < 0.0) {#1990,17.52225948202199
+int column = dataset.getColumnIndex(columnKey);#249,17.51996865272522
+return result;#464,17.51152766834606
+uvalue = intervalXYData.getEndXValue(series, item);#756,17.507762379116482
+result = iterateDomainBounds(dataset, includeInterval);#677,17.507305792399816
+= (IntervalCategoryDataset) dataset;#1760,17.49852476364527
+double value = number.doubleValue();#1938,17.49770266669137
+if (uvalue != null) {#1439,17.497042804956436
+if (!Double.isNaN(v)) {#1172,17.494961847577777
+std = stdN.doubleValue();#1148,17.486836036046345
+return result;#712,17.484375
+result = iterateToFindRangeBounds(dataset, visibleSeriesKeys,#921,17.480930391947428
+= (IntervalCategoryDataset) dataset;#1642,17.471917773402016
+if (!Double.isNaN(uvalue)) {#1264,17.468859016895294
+if (!Double.isNaN(v)) {#1013,17.467968668256486
+double minimum = base;#2069,17.46749525803786
+else {#2081,17.45986457304521
+if (!Double.isNaN(uvalue)) {#1334,17.459285259246826
+double positive = base;#1873,17.45554177901324
+result = iterateToFindDomainBounds(dataset, visibleSeriesKeys,#709,17.449203046162925
+double value = number.doubleValue();#1989,17.44850962502616
++ "columns in the data array.");#452,17.44784589914175
+return DatasetUtilities.createConsolidatedPieDataset(source, key,#288,17.444875717163086
+if (minimum <= maximum) {#2093,17.439510027567547
+if ((value != null)#986,17.434817717625545
+double x = bx.getXValue(series, item);#1432,17.431639979867374
+return result;#378,17.43010885065252
+return new Double(info.getDomainUpperBound(true));#1572,17.428064236274132
+= positive[groupIndex[series]] + value;#1941,17.424053799022328
+double uvalue = ixyd.getEndYValue(series, item);#1458,17.41903111992813
+double lvalue = ixyd.getStartXValue(series, item);#1329,17.41486374107567
+result = Range.combine(result, new Range(minimum[j],#1957,17.412274569272995
+List values = mvcd.getValues(series, column);#1117,17.40681339712704
+uvalue = icd.getEndValue(row, column);#997,17.404948234558105
+result = info.getDomainBounds(includeInterval);#674,17.400125885009764
+result = iterateRangeBounds(dataset, includeInterval);#888,17.39668451036726
+OHLCDataset ohlc = (OHLCDataset) dataset;#1255,17.39348105726571
+uvalue = icd.getEndValue(series, column);#1096,17.389190617729636
+maximum = positive;#2087,17.386580848693846
+if (!Double.isNaN(lvalue)) {#772,17.38165295124054
+result = iterateRangeBounds(dataset, includeInterval);#818,17.381137098584855
+return createPieDatasetForRow(dataset, row);#215,17.378129378609035
+v = value.doubleValue();#193,17.369263543023003
+if (minimum <= maximum) {#1892,17.36644592285156
+return result;#270,17.365784124894574
+return result;#679,17.36191073330966
+Object o = valueIterator.next();#1120,17.356082852681478
+= (IntervalXYDataset) dataset;#1699,17.355246233385664
+return new Double(info.getRangeUpperBound(true));#1802,17.354537450350247
+if (!Double.isNaN(uvalue)) {#1416,17.353493558035957
+runningTotal = runningTotal + value;#2151,17.350899308919907
+return result;#235,17.35012739354914
+lvalue = icd.getStartValue(row, column);#991,17.349742524764117
+double uvalue = ixyd.getEndXValue(series, item);#1330,17.347690504950446
+value = icd.getValue(row, column);#984,17.343982070684433
+lvalue = icd.getStartValue(series, column);#1095,17.341835919548483
+boolean hasValidData = false;#1979,17.336875025431315
+minimum = Math.min(v, minimum);#994,17.335319014156568
+positive[groupIndex[series]]#1940,17.334968290021344
+if (value > 0.0) {#2030,17.33364595215896
+lvalue = intervalXYData.getStartXValue(series, item);#755,17.331219964557224
+boolean hasValidData = false;#2019,17.327763430277507
+double v = ((Number) o).doubleValue();#1122,17.32529610081723
+return new Double(info.getRangeUpperBound(true));#1746,17.32488489151001
+if (!Double.isNaN(uvalue)) {#1462,17.31802574793498
+= (IntervalXYDataset) dataset;#1529,17.300383201012245
+result = null;#1542,17.290170621871948
+= (IntervalXYDataset) dataset;#1586,17.287186964964256
+double x = ohlc.getXValue(series, item);#1409,17.28413486480713
+= (IntervalXYDataset) dataset;#1816,17.282400962633965
+value = dataset.getXValue(series, item);#1533,17.281502034929062
+seriesKey);#512,17.276839105706465
+double x = start + (step * i);#551,17.268079454248603
+result = info.getRangeBounds(includeInterval);#885,17.265490112304686
+return result;#490,17.262636358087715
+public static XYDataset sampleFunction2D(Function2D f, double start,#507,17.25839498768682
+value = dataset.getYValue(series, item);#1707,17.2577928437127
+negative += y;#2082,17.256129673549108
+return null;#1832,17.25172253658897
+if (minimum > maximum) {#779,17.25162436167399
+return null;#1772,17.251185768528988
+Comparable columnKey = dataset.getColumnKey(current);#232,17.24260414123535
+return result;#350,17.241758259859953
+return new Double(info.getDomainLowerBound(true));#1517,17.236793289184572
+if (!Double.isNaN(lvalue)) {#1459,17.235794756147598
+value = dataset.getXValue(series, item);#1590,17.230959468417698
+result = info.getRangeBounds(includeInterval);#815,17.230012130737304
+return null;#1716,17.22911608846564
+return null;#1654,17.227750878585013
+negative[groupIndex[series]]#1944,17.223877814508253
+if (!Double.isNaN(value)) {#1709,17.222337630487257
+int row = dataset.getRowIndex(rowKey);#214,17.21704511642456
+std = 0.0;#1150,17.21652317047119
+if (!Double.isNaN(lvalue)) {#1413,17.21518882115682
+uvalue = lvalue;#771,17.215042444375847
+double lvalue = ixyd.getStartYValue(series, item);#1457,17.211317248460723
+result = null;#1598,17.21010642051697
+Number uvalue = bx.getMaxRegularValue(series, item);#1435,17.20902373790741
+return true;#639,17.20816724950617
+"Duplicate items in 'columnKeys'.");#438,17.207120341639364
+if (Double.isNaN(std)) {#1149,17.19945169106508
+double maximum = Double.NEGATIVE_INFINITY;#1577,17.195801010131834
+value = intervalXYData.getStartYValue(series, item);#1700,17.195631491832245
+value = dataset.getYValue(series, item);#1824,17.195003456539578
+= (MultiValueCategoryDataset) dataset;#1111,17.194949611540764
+if (!Double.isNaN(value)) {#2117,17.192435388979703
+Number stdN = scd.getStdDevValue(series, column);#1146,17.176455009274367
+if (!Double.isNaN(value)) {#1826,17.166822279653243
+return result;#1895,17.16369039362127
+if (!Double.isNaN(v)){#1123,17.161887620624743
+= (BoxAndWhiskerCategoryDataset) dataset;#1060,17.149067598230697
+public final class DatasetUtilities {#162,17.14497184753418
+lvalue = dataset.getXValue(series, item);#770,17.144352421616063
++ "the data array.");#443,17.141294976939324
+return null;#780,17.141018231709797
+double uvalue = ohlc.getHighValue(series, item);#1260,17.138875607081822
+value = intervalXYData.getStartXValue(series, item);#1530,17.13691591605162
+value = intervalXYData.getEndYValue(series, item);#1817,17.13274004520514
+boolean hasValidData = false;#1914,17.127394231160483
+value = icd.getStartValue(series, item);#1643,17.124416428643304
+if (!Double.isNaN(value)) {#1592,17.110798958809145
+value = intervalXYData.getEndXValue(series, item);#1587,17.108505982619064
+public static XYSeries sampleFunction2DToSeries(Function2D f,#532,17.092499828338624
+return null;#2162,17.089740626017253
+value = icd.getEndValue(series, item);#1761,17.077567693349476
+minimum = Math.min(v, minimum);#988,17.076533317565918
+double maximum = Double.NEGATIVE_INFINITY;#1808,17.07587600708008
+total = total + value;#1991,17.074980322519938
+minimum = Math.min(minimum, mean - std);#1155,17.072938394546508
+if (!Double.isNaN(value)) {#1535,17.072553080897176
+return new Range(minimum, maximum);#2159,17.071934366226195
+return new Range(minimum, maximum);#2094,17.041203451156616
+while (valueIterator.hasNext()) {#1119,17.03886390554494
+hasValidData = true;#1937,17.03841367134681
+if (value != null) {#1766,17.029897725140607
+double maximum = Double.NEGATIVE_INFINITY;#1752,17.025714645385744
+value = dataset.getValue(series, item);#1764,17.020626149858746
+Comparable columnKey = columnKeys[c];#460,17.017977421100323
+double lvalue = ohlc.getLowValue(series, item);#1259,17.01630984715053
+value = dataset.getValue(series, item);#1646,16.99249447413853
+if (value != null) {#1648,16.985938990557635
+return null;#1489,16.960193761189778
+return new Double(info.getRangeLowerBound(true));#1629,16.960089645385743
+return new Double(info.getRangeLowerBound(true));#1685,16.936812477111815
+return null;#1022,16.936303329467773
+hasValidData = true;#2028,16.91936100446261
+return true;#619,16.917752265930176
+maximum = Math.max(v, maximum);#989,16.91695754668292
+Comparable rowKey = dataset.getRowKey(i);#267,16.909138984680176
+maximum[j]));#1958,16.904414867532665
+series.add(x, f.getValue(x));#552,16.899734573364256
+return null;#1284,16.89605401357015
+result.addValue(new Double(data[r][c]), rowKey, columnKey);#461,16.889289087719387
+minimum = Math.min(minimum, total);#1996,16.878748893737793
+xRange, includeInterval);#922,16.87456448872884
+return true;#586,16.87035421891646
+Number lvalue = bx.getMinRegularValue(series, item);#1434,16.860977745056154
+includeInterval);#849,16.855008284250896
+double uvalue = ohlc.getHighValue(series, item);#1412,16.84750055655455
+hasValidData = true;#1988,16.84630691088163
+return null;#1358,16.8414306640625
+total = total + value;#2031,16.813730653127035
+minimum = Math.min(minimum, lvalue.doubleValue());#1437,16.804093973977224
+minimum = Math.min(minimum, lvalue.doubleValue());#1076,16.800966664364463
+includeInterval);#710,16.800373315811157
+result = new Range(minimum, maximum);#1893,16.799947057451522
+value = highLowData.getHighValue(series, item);#1821,16.799127779508893
+allItemsNull = false;#2148,16.793858638176552
+return null;#1181,16.768955103556316
+maximum = Math.max(v, maximum);#995,16.757541488198672
+= (StatisticalCategoryDataset) dataset;#1137,16.752801787468695
+uvalue = bx.getValue(series, item);#1073,16.74704765629124
+= negative[groupIndex[series]] + value;#1945,16.74459288337014
+value = highLowData.getLowValue(series, item);#1704,16.742759804976615
+minimum = Math.min(minimum, runningTotal);#2152,16.718762860979353
+result.addValue(new Double(data[r][c]), rowKey, columnKey);#375,16.699667268329197
+result.addValue(rowData.getValue(i), rowKey, rowData.getKey(i));#488,16.696142435073853
+negative = negative + value;#1884,16.68968572616577
+minimum = Math.min(minimum, negative);#1889,16.686412421139803
+result.addValue(data[r][c], rowKey, columnKey);#403,16.68322383996212
+return new Range(minimum, maximum);#1025,16.681357908248902
+minimum = Math.min(minimum, lvalue);#1460,16.66858531267215
+minimum = Math.min(minimum, lvalue);#1332,16.662209919520787
+includeInterval);#918,16.661757866541546
+minimum = Math.min(minimum, lvalue);#758,16.657767404828753
+minimum = Math.min(v, minimum);#1000,16.655261432423313
+maximum = Math.max(maximum, uvalue.doubleValue());#1440,16.6508534068153
+return new Range(minimum, maximum);#1492,16.648016357421874
+return new Range(minimum, maximum);#1184,16.631298875808717
+minimum = Math.min(minimum, lvalue);#1245,16.63062278202602
+result = new Double(maximum);#2038,16.623410074334394
+result = new Double(minimum);#1999,16.60820368716591
+double lvalue = ohlc.getLowValue(series, item);#1411,16.607877706870056
+maximum = Math.max(maximum, positive);#1890,16.60135893388228
+minimum = Math.min(minimum, lvalue);#1414,16.598239336258327
+minimum[g] = Math.min(minimum[g], negative[g]);#1951,16.594360958446156
+result.setValue(currentKey, dataValue);#342,16.586472880455755
+return null;#2097,16.573219045003256
+minimum = negative;#2090,16.56497731208801
+totalValue = totalValue + v;#196,16.560125044413976
+return new Range(minimum, maximum);#783,16.55859684944153
+maximum = Math.max(maximum, mean + std);#1156,16.53387243747711
+maximum = Math.max(maximum, v);#1125,16.531912583571213
+return new Range(minimum, maximum);#1287,16.531567192077638
+return new Range(minimum, maximum);#1361,16.50516266822815
+minimum = Math.min(minimum, lvalue);#1262,16.504800769260953
+minimum = Math.min(minimum, value);#1277,16.503278844496784
+result.setValue(key, otherValue);#348,16.500834465026855
+maximum = Math.max(maximum, total);#2035,16.487566471099854
+maximum = Math.max(maximum, runningTotal);#2153,16.46803297315325
+maximum = Math.max(maximum, v);#1015,16.456983842347796
+minimum = Math.min(minimum, x);#1350,16.449163717382095
+minimum = Math.min(minimum, y);#1481,16.43571989159835
+OHLCDataset highLowData = (OHLCDataset) dataset;#1703,16.43079992703029
+maximum = Math.max(maximum, v);#1174,16.42423848101967
+OHLCDataset highLowData = (OHLCDataset) dataset;#1820,16.417972666876658
+total = total + value;#2118,16.4160889712247
+maximum = Math.max(maximum, uvalue.doubleValue());#1079,16.41567679455406
+minimum = Math.min(minimum, v);#1014,16.41114468323557
+maximum = Math.max(maximum, y);#1482,16.388310081080387
+minimum = Math.min(minimum, lvalue.doubleValue());#1098,16.384223561537894
+return true;#601,16.37551587422689
+maximum = Math.max(maximum, uvalue);#1417,16.37003839932955
+minimum = Math.min(minimum, v);#1124,16.364936192830402
+minimum = Math.min(minimum, v);#1173,16.359953654439824
+maximum = Math.max(maximum, uvalue);#1463,16.331008030818058
+return true;#568,16.33090476989746
+return true;#607,16.328352228800455
+return true;#573,16.32031504313151
+maximum = Math.max(maximum, value);#1278,16.299033445470474
+lvalue = bx.getValue(series, item);#1069,16.294594249209844
+maximum = Math.max(maximum, x);#1351,16.233667233411005
+minimum = Math.min(minimum, lvalue);#773,16.20757326398577
+minimum = Math.min(minimum, value.doubleValue());#1649,16.176571588258486
+maximum[g] = Math.max(maximum[g], positive[g]);#1952,16.166669180898957
+otherKeys.add(currentKey);#323,16.163964884621755
+maximum = Math.max(v, maximum);#1001,16.13830602870268
+maximum = Math.max(maximum, uvalue.doubleValue());#1101,16.080648070887516
+result = new Double(maximum);#1601,16.046632227690324
+maximum = Math.max(maximum, uvalue);#761,16.033927890232633
+minimum = Math.min(minimum, value);#1710,16.003563291886273
+return new Double(minimum);#1657,15.999007268385453
+minimum = Math.min(minimum, value);#1536,15.984458951389088
+return new Double(maximum);#1775,15.979119170795787
+maximum = Math.max(maximum, uvalue);#774,15.963262067522322
+maximum = Math.max(maximum, uvalue);#1265,15.958590071541922
+return new Double(minimum);#1719,15.95193338394165
+maximum = Math.max(maximum, value.doubleValue());#1767,15.944492108113057
+result = new Double(minimum);#1545,15.943395158518916
+maximum = Math.max(maximum, uvalue);#1335,15.93557755606515
+return new Double(maximum);#1835,15.90050203149969
+maximum = Math.max(maximum, uvalue);#1248,15.88079891204834
+maximum = Math.max(maximum, value);#1593,15.800316333770752
+maximum = Math.max(maximum, value);#1827,15.721113709842458
+return false;#581,15.700008848439092
+return false;#635,15.67391702403193
+return false;#613,15.587514089501422

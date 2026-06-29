@@ -1,0 +1,49 @@
+private final List<T> singletons;#49,17.983610153198242
+return singletons.get(singletons.size() - 1);#170,17.952611168225605
+random = rng;#87,17.694566579965446
+sampleSize);#184,17.65898140617039
+return out;#193,17.53636819666082
+return singletons.get(i);#163,17.483238372802735
+throw new NotStrictlyPositiveException(LocalizedFormats.NUMBER_OF_SAMPLES,#183,17.42644304699368
+this(new Well19937c(), samples);#69,17.4064056608412
+throws NotPositiveException, MathArithmeticException, MathIllegalArgumentException {#68,17.32723771608793
+return probability;#132,17.298089547590777
+final double[] probs = new double[samples.size()];#90,17.262005515720535
+public List<Pair<T, Double>> getSamples() {#141,17.261867272226436
+protected final RandomGenerator random;#45,17.257987195795234
+out[i] = sample();#190,17.231601865668047
+probabilities = MathArrays.normalizeArray(probs, 1.0);#101,17.22748538970947
+probability += probabilities[i];#128,17.2165846824646
+throws NotPositiveException, MathArithmeticException, MathIllegalArgumentException {#86,17.207559842329758
+singletons = new ArrayList<T>(samples.size());#89,17.178170204162598
+final List<Pair<T, Double>> samples = new ArrayList<Pair<T, Double>>(probabilities.length);#142,17.1458898343538
+throw new NotPositiveException(sample.getValue());#96,17.109558003289358
+(x != null && x.equals(singletons.get(i)))) {#127,17.097338526589528
+public class DiscreteDistribution<T> {#40,17.06648943640969
+for (int i = 0; i < probabilities.length; i++) {#144,17.046034534772236
+for (int i = 0; i < probabilities.length; i++) {#160,16.992613156636555
+sum += probabilities[i];#161,16.961866696675617
+for (int i = 0; i < probabilities.length; i++) {#125,16.96083374818166
+double sum = 0;#158,16.95211858015794
+random.setSeed(seed);#110,16.849904358386993
+singletons.add(sample.getKey());#94,16.84872755797013
+private final double[] probabilities;#53,16.825993251800536
+probs[i] = sample.getValue();#98,16.806945717853047
+final double randomValue = random.nextDouble();#157,16.79896640777588
+samples.add(new Pair<T, Double>(singletons.get(i), probabilities[i]));#145,16.78729380501641
+for (int i = 0; i < sampleSize; i++) {#189,16.768274099930473
+public T[] sample(int sampleSize) throws NotStrictlyPositiveException {#181,16.7373966737227
+if (randomValue < sum) {#162,16.70073652267456
+double probability(final T x) {#122,16.663559357325237
+double probability = 0;#123,16.66098660689134
+if (sample.getValue() < 0) {#95,16.65526929108993
+public void reseedRandomGenerator(long seed) {#109,16.638841211795807
+for (int i = 0; i < samples.size(); i++) {#92,16.57038374741872
+public DiscreteDistribution(final RandomGenerator rng, final List<Pair<T, Double>> samples)#85,16.5380073415822
+if ((x == null && singletons.get(i) == null) ||#126,16.5296604792277
+final T[]out = (T[]) java.lang.reflect.Array.newInstance(singletons.get(0).getClass(), sampleSize);#187,16.518172877175466
+final Pair<T, Double> sample = samples.get(i);#93,16.503383459868253
+return samples;#148,16.459026076576926
+public T sample() {#156,16.414626545376247
+public DiscreteDistribution(final List<Pair<T, Double>> samples)#67,16.164903662421487
+if (sampleSize <= 0) {#182,15.910560965538025

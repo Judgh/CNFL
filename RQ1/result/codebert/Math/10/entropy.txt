@@ -1,0 +1,649 @@
+xk *= xReciprocal * (nReciprocal - i);#963,18.733123055819807
+result[resultOffset + i] =#661,18.570021677017213
+result[resultOffset + i] = lhs[lhsOffset + i] + rhs[rhsOffset + i];#738,18.35781833453056
+result[resultOffset + i] = lhs[lhsOffset + i] - rhs[rhsOffset + i];#754,18.309762832445976
+result[resultOffset + i] = lhs[lhsOffset + i] - k * rhs[rhsOffset + i];#823,18.090082912910276
+public void pow(final double[] x, final int xOffset,#923,18.071513917711044
+result[resultOffset + i] = r;#779,18.059504855762828
+double xk = FastMath.pow(inv, -n);#895,18.04567591349284
+public void atan2(final double[] y, final int yOffset,#1382,18.022307443618775
+public void add(final double[] lhs, final int lhsOffset,#734,18.004991626739503
+function[0] = FastMath.acos(x);#1215,18.000699361165363
+public class DSCompiler {#125,17.992746591567993
+multiply(x, xOffset, x, xOffset, tmp1, 0);      // x^2#1388,17.927481370813705
+public void acos(final double[] operand, final int operandOffset,#1209,17.926649411519367
+function[0] = FastMath.atan(x);#1329,17.89400143623352
+compose(operand, operandOffset, function, result, resultOffset);#987,17.89154016971588
+final double x2    = x * x;#1226,17.885788559913635
+result[resultOffset + i] = r;#1723,17.883892492814496
+equals &= termJ[l] == termK[l];#481,17.872449829464866
+function[0] = FastMath.sqrt(operand[operandOffset]);#950,17.872360642751058
+xk *= inv;#898,17.86327292702415
+public void divide(final double[] lhs, final int lhsOffset,#793,17.862394332885742
+final double x2  = x * x;#1554,17.855168212543834
+final double x2    = x * x;#1283,17.85375102361043
+final double x2    = x * x;#1611,17.852937936782837
+public void subtract(final double[] lhs, final int lhsOffset,#750,17.847180223464967
+function[0] = FastMath.cos(operand[operandOffset]);#1107,17.846136589050293
+v *= x;#1358,17.832664184570312
+v *= x;#1686,17.820096054077148
+throw new NumberIsTooLargeException(ordersSum, order, true);#573,17.81603120988415
+v *= x;#1629,17.812100868225098
+function[0] = FastMath.sin(operand[operandOffset]);#1133,17.810945014953614
+v *= x;#1572,17.810214080810546
+public void remainder(final double[] lhs, final int lhsOffset,#810,17.80646915435791
+v *= x;#1301,17.799622535705566
+throws DimensionMismatchException, NumberIsTooLargeException {#535,17.79865692138672
+function[0] = FastMath.log1p(operand[operandOffset]);#1052,17.794791680795175
+v *= x;#1244,17.793003540039063
+compose(operand, operandOffset, function, result, resultOffset);#1008,17.77761133511861
+final double x2    = x * x;#1340,17.77372658252716
+multiply(lhs, lhsOffset, reciprocal, 0, result, resultOffset);#798,17.75058364868164
+function[0] = FastMath.log(operand[operandOffset]);#1025,17.737872581481934
+double xk  = inv / FastMath.log(10.0);#1082,17.734171288354055
+function[0] = FastMath.cosh(operand[operandOffset]);#1435,17.727629514840935
+xk *= -i * inv;#1031,17.72246856689453
+function[0] = FastMath.expm1(operand[operandOffset]);#1004,17.712798719052916
+coefficient *= n - i;#905,17.70907728295577
+xk *= -i * inv;#1058,17.7016641998291
+function[0] = FastMath.cbrt(operand[operandOffset]);#953,17.692582653414817
+public void exp(final double[] operand, final int operandOffset,#979,17.68354911804199
+exp(yLogX, 0, result, resultOffset);#930,17.6720586504255
+multiply(y, yOffset, y, yOffset, tmp2, 0);      // y^2#1390,17.670471219455493
+subtract(tmp1, 0, x, xOffset, tmp2, 0);     // r - x#1407,17.668798575530182
+function[0] = FastMath.asin(x);#1272,17.667038488388062
+throws NumberIsTooLargeException {#558,17.65802148183187
+result[resultOffset + i] = -2 * tmp2[i]; // +/-pi - 2 * atan(y / (r - x))#1413,17.650731841723125
+function[0] = FastMath.log10(operand[operandOffset]);#1079,17.649012602292576
+result[resultOffset + i] =#686,17.64459948539734
+throw new DimensionMismatchException(orders.length, getFreeParameters());#539,17.639206954411097
+final int maxParameters = FastMath.max(parameters, cache == null ? 0 : cache.length);#197,17.62674666989234
+public void expm1(final double[] operand, final int operandOffset,#999,17.624760627746582
+v *= t;#1188,17.624385871887206
+v *= t;#1516,17.621937217712404
+throw new DimensionMismatchException(parameters, compiler.parameters);#1755,17.61423945426941
+final double f     = 1.0 / (1 + x2);#1612,17.61274789174398
+coefficient *= p - i;#852,17.61114346353631
+final double f     = 1.0 / (1 + x2);#1341,17.609978071848552
+final double k   = FastMath.rint((lhs[lhsOffset] - rem) / rhs[rhsOffset]);#816,17.604224308117015
+xk *= -i * inv;#1085,17.60353210449219
+r += product;#1721,17.596169090270998
+double[] tmp2 = new double[getSize()];#1389,17.59436149597168
+final DSCompiler[][] newCache = new DSCompiler[maxParameters + 1][maxOrder + 1];#199,17.589060974121093
+result[resultOffset + i] = 2 * tmp2[i]; // 2 * atan(y / (r + x))#1401,17.57760589773005
+final int[][] derivativesIndirection = new int[vSize + dSize][parameters];#268,17.570598602294922
+final double t = FastMath.tanh(operand[operandOffset]);#1487,17.56361080169678
+final double[] yLogX = new double[getSize()];#928,17.562463717027143
+function[0] = FastMath.sinh(operand[operandOffset]);#1461,17.56156162115244
+int m         = order;#563,17.55072103227888
+function[0] = FastMath.acosh(x);#1543,17.5486935206822
+Arrays.fill(result, resultOffset + 1, resultOffset + getSize(), 0);#875,17.547520607709885
+function[0] = FastMath.atanh(x);#1657,17.540813128153484
+final double f     = 1.0 / (1 - x2);#1227,17.540782356262206
+public void atan(final double[] operand, final int operandOffset,#1323,17.539107209160214
+((tmp2[0] <= 0) ? -FastMath.PI : FastMath.PI) - 2 * tmp2[0]; // +/-pi - 2 * atan(y / (r - x))#1411,17.534446217463568
+xk          = 1.0 / (n * FastMath.pow(function[0], n - 1));#957,17.533333269755044
+public void compose(final double[] operand, final int operandOffset, final double[] f,#1710,17.524670906066895
+function[1] = FastMath.cos(operand[operandOffset]);#1135,17.516215686140388
+final double x2 = x * x;#1668,17.512289637611026
+final double[] logX = new double[getSize()];#926,17.51028133573986
+public void rootN(final double[] operand, final int operandOffset, final int n,#942,17.50989345550537
+final double f     = 1.0 / (1 - x2);#1284,17.509290790557863
+return new int[] { 0 };#311,17.503455212241725
+a3, c3[offset3 + i]);#689,17.503381808598835
+public void atanh(final double[] operand, final int operandOffset,#1651,17.49762990257957
+final double nReciprocal = 1.0 / n;#959,17.496959777105424
+lhs[lhsOffset + mappingI[j][1]] *#776,17.49244032965766
+throw new DimensionMismatchException(order, compiler.order);#1758,17.485176233144905
+public int getFreeParameters() {#623,17.477558396079324
+public void tan(final double[] operand, final int operandOffset,#1154,17.477179431915282
+final double t = FastMath.tan(operand[operandOffset]);#1159,17.47528115908305
+double[] tmp1 = new double[getSize()];#1387,17.47512607574463
+this.order      = order;#162,17.470793121739437
+final int[] lowerIndirection = new int[vSize + dSize];#317,17.468998233477276
+Arrays.fill(function, FastMath.exp(operand[operandOffset]));#984,17.46851406778608
+public void tanh(final double[] operand, final int operandOffset,#1482,17.467334770020983
+new AtomicReference<DSCompiler[][]>(null);#129,17.467218780517577
+public void cos(final double[] operand, final int operandOffset,#1102,17.464592695236206
+double xk  = inv;#1055,17.464550118697318
+result[resultOffset + i] =#717,17.464412689208984
+function[0] = FastMath.asinh(x);#1600,17.46387835911342
+double xk  = inv;#1028,17.463557795474404
+public int getPartialDerivativeIndex(final int ... orders)#534,17.463258592705976
+p[n + 1] = -n * p[n];#1506,17.46193437576294
+a2, c2[offset2 + i],#688,17.459778197606404
+final int maxOrder      = FastMath.max(order,     cache == null ? 0 : cache[0].length);#198,17.457232382239365
+function[1] = -FastMath.sin(operand[operandOffset]);#1109,17.454520257314048
+public void multiply(final double[] lhs, final int lhsOffset,#768,17.452163553237916
+multiply(logX, 0, y, yOffset, yLogX, 0);#929,17.45214608999399
+function[i] = xk;#845,17.45200147628784
+public void linearCombination(final double a1, final double[] c1, final int offset1,#681,17.45056493465717
+return getPartialDerivativeIndex(destP, destO, destSizes, orders);#605,17.449090036852606
+compose(operand, operandOffset, function, result, resultOffset);#1368,17.448956727981567
+valueCompiler, derivativeCompiler);#169,17.442610800266266
+rhs[rhsOffset + mappingI[j][2]];#777,17.441664298375446
+compose(operand, operandOffset, function, result, resultOffset);#909,17.44114629427592
+this.sizes      = compileSizes(parameters, order, valueCompiler);#163,17.437298651664488
+public void acosh(final double[] operand, final int operandOffset,#1537,17.433367774600075
+final double[] result, final int resultOffset) {#736,17.43192768096924
+int[] orders = new int[parameters];#435,17.431146731743446
+List<int[]> row = new ArrayList<int[]>();#426,17.42927872693097
+compose(operand, operandOffset, function, result, resultOffset);#1444,17.425803025563557
+compose(operand, operandOffset, function, result, resultOffset);#1254,17.425350507100422
+for (int o = FastMath.max(0, diag - parameters); o <= FastMath.min(order, diag); ++o) {#210,17.42460426754422
+final double f  = 1.0 / (1 - x2);#1669,17.424171023898655
+compose(operand, operandOffset, function, result, resultOffset);#1696,17.419920404752094
+compose(operand, operandOffset, function, result, resultOffset);#1470,17.41806908448537
+final DSCompiler[][] cache = compilers.get();#188,17.417763253916863
+compose(operand, operandOffset, function, result, resultOffset);#1142,17.415335655212402
+pow(rhs, lhsOffset, -1, reciprocal, 0);#797,17.414315581321716
+compose(operand, operandOffset, function, result, resultOffset);#1311,17.412144819895428
+throws DimensionMismatchException {#1753,17.41141996885601
+compose(operand, operandOffset, function, result, resultOffset);#1116,17.411376357078552
+function[i] = xk;#962,17.407848072052
+public void linearCombination(final double a1, final double[] c1, final int offset1,#657,17.40755715736976
+MathArrays.linearCombination(a1, c1[offset1 + i], a2, c2[offset2 + i]);#662,17.40713182449341
+compose(operand, operandOffset, function, result, resultOffset);#856,17.406686941782635
+value += term;#1743,17.404260516166687
+a3, c3[offset3 + i],#720,17.40379090309143
+final double[] result, final int resultOffset) {#752,17.40079058541192
+compose(operand, operandOffset, function, result, resultOffset);#1197,17.399296204249065
+compose(operand, operandOffset, function, result, resultOffset);#1582,17.39717157681783
+compose(operand, operandOffset, function, result, resultOffset);#1639,17.39594026406606
+public void sin(final double[] operand, final int operandOffset,#1128,17.39484305381775
+final double rem = lhs[lhsOffset] % rhs[rhsOffset];#815,17.391499872560853
+valueCompiler, derivativeCompiler);#166,17.39095128024066
+final int[][][] compIndirection = new int[vSize + dSize][][];#416,17.387227420149177
+function[0] = FastMath.pow(operand[operandOffset], 1.0 / n);#956,17.38244234191047
+result[resultOffset] = 1.0;#874,17.378977992317893
+divide(y, yOffset, tmp2, 0, tmp1, 0);       // y /(r - x)#1408,17.37890793556391
+compose(operand, operandOffset, function, result, resultOffset);#1525,17.37763984998067
+List<int[]> row = new ArrayList<int[]>();#358,17.375870068868
+double term = ds[dsOffset + i];#1737,17.37572180706522
+public void sinh(final double[] operand, final int operandOffset,#1456,17.37413197471982
+function[i] = xk;#1030,17.371087034543354
+double[] function = new double[1 + order];#983,17.369846946314762
+double[] function = new double[1 + order];#842,17.367737569307025
+valueCompiler, derivativeCompiler,#175,17.365801987824618
+final double xReciprocal = 1.0 / operand[operandOffset];#960,17.364727423741268
+compose(operand, operandOffset, function, result, resultOffset);#1036,17.36358443895976
+public double taylor(final double[] ds, final int dsOffset, final double ... delta) {#1733,17.362906491314924
+newCache[p][o] = new DSCompiler(p, o, valueCompiler, derivativeCompiler);#215,17.359075338944145
+compose(operand, operandOffset, function, result, resultOffset);#967,17.358158349990845
+public void linearCombination(final double a1, final double[] c1, final int offset1,#711,17.35746845832238
+compose(operand, operandOffset, function, result, resultOffset);#1063,17.356383244196575
+int index     = 0;#562,17.35585958817426
+add(tmp1, 0, tmp2, 0, tmp2, 0);                 // x^2 + y^2#1391,17.352511094540965
+compose(operand, operandOffset, function, result, resultOffset);#1090,17.348524411519367
+function[1] = FastMath.cosh(operand[operandOffset]);#1463,17.3478351910909
+sizes, derivativesIndirection);#176,17.343634843826294
+int[] orders = new int[destP];#603,17.34209484524197
+xk *= operand[operandOffset];#846,17.340242841969367
+p[0] = -p[1];#1568,17.33988338358262
+p[0] = -1;#1225,17.338479852676393
+result[resultOffset] = rem;#819,17.337769985198975
+double[] function = new double[1 + order];#1003,17.335481292323063
+xk          = 1.0 / (3.0 * function[0] * function[0]);#954,17.330052739097958
+log(x, xOffset, logX, 0);#927,17.328339624404908
+q[n - 1] = -n * q[n - 2];#1348,17.326124042272568
+final double f   = 1.0 / (x2 - 1);#1555,17.325940540858678
+int[] derivedTermF = new int[term.length + 1];#432,17.325850825155936
+final double[] rhs, final int rhsOffset,#769,17.325090099025417
+double[] function = new double[1 + order];#947,17.322180798179225
+final int[][] sizes = new int[parameters + 1][order + 1];#236,17.315538865548593
+return;#876,17.30986888068063
+compilers.compareAndSet(cache, newCache);#221,17.306417828514462
+final double[] rhs, final int rhsOffset,#735,17.304754078388214
+public void asin(final double[] operand, final int operandOffset,#1266,17.301137924194336
+final double[] result, final int resultOffset) {#659,17.29980297088623
+final int maxOrder = FastMath.min(order, n);#885,17.29948616027832
+p[n + 1] = n * p[n];#1178,17.298161835506043
+function[i] = xk;#1057,17.296067277590435
+return new int[1][parameters];#263,17.29144169035412
+double[] function = new double[1 + order];#1213,17.290756878099945
+atan(tmp1, 0, tmp2, 0);                     // atan(y / (r + x))#1399,17.28900909423828
+function[1] = FastMath.sinh(operand[operandOffset]);#1437,17.288642183939615
+double[] function = new double[1 + order];#1327,17.28500918338173
+double[] function = new double[1 + order];#1270,17.28449354673687
+p[n - 1] = (n - 1) * p[n - 2];#1234,17.282034710475376
+a4, c4[offset4 + i]);#721,17.28171485265096
+xk          = 0.5 / function[0];#951,17.27927815914154
+double xk = FastMath.pow(operand[operandOffset], n - maxOrder);#886,17.27902504977058
+public void log1p(final double[] operand, final int operandOffset,#1047,17.278665672649037
+valueCompiler, derivativeCompiler, lowerIndirection);#172,17.278141240604587
+double[] function = new double[1 + order];#1541,17.277960978056257
+derivedTermG[1] = term[1];#452,17.276107941904375
+double[] function = new double[1 + order];#1598,17.275581711216976
+derivativesIndirection[vSize + i][parameters - 1]++;#287,17.27524941055863
+double[] function = new double[1 + order];#1655,17.273520369278756
+p[n - 1] = (n - 1) * p[n - 2];#1291,17.266536222185408
+add(tmp1, 0, x, xOffset, tmp2, 0);          // r + x#1397,17.2661261785598
+public void log(final double[] operand, final int operandOffset,#1020,17.26502366065979
+public void cosh(final double[] operand, final int operandOffset,#1430,17.264679136730376
+r += mappingI[j][0] *#775,17.264410275679367
+divide(y, yOffset, tmp2, 0, tmp1, 0);       // y /(r + x)#1398,17.262873782668002
+final int[][][] multIndirection = new int[vSize + dSize][][];#352,17.26029836720434
+double[] function = new double[1 + order];#1024,17.256122488724557
+double[] function = new double[1 + order];#1132,17.255385800411826
+double xk = FastMath.pow(operand[operandOffset], p - order);#843,17.25423026907033
+final DSCompiler derivativeCompiler) {#260,17.252940729260445
+a2, c2[offset2 + i],#719,17.25031763712565
+final double[] rhs, final int rhsOffset,#751,17.249534864683408
+public void asinh(final double[] operand, final int operandOffset,#1594,17.238372282548383
+parameters, order, sizes);#443,17.237456221329538
+function[i] = xk;#1084,17.23740820089976
+final DSCompiler derivativeCompiler) {#308,17.236957226480758
+this.compIndirection =#173,17.23256710597447
+double[] function = new double[1 + order];#1106,17.228567625346937
+xk *= operand[operandOffset];#889,17.22804468649405
+final double[] result, final int resultOffset) {#684,17.227901204427084
+double[] function = new double[1 + order];#1434,17.226311031140778
+final double[] function = new double[1 + order];#1486,17.225915575027464
+for (int n = 2; n <= order; ++n) {#1672,17.223875328346534
+double[] function = new double[1 + order];#1051,17.223689531025133
+v = v * x2 + p[k];#1564,17.22171909578385
+double inv = 1.0 / (1.0 + operand[operandOffset]);#1054,17.22092087038102
+public int[] getPartialDerivativeOrders(final int index) {#616,17.21763901483445
+p[n - 1] = (1 - n) * p[n - 2];#1562,17.21449508666992
+final double[] function = new double[1 + order];#1158,17.21306390762329
+Arrays.fill(function, 1, 1 + order, FastMath.exp(operand[operandOffset]));#1005,17.211111489464255
+final double a3, final double[] c3, final int offset3,#683,17.20909698486328
+for (int n = 2; n <= order; ++n) {#1344,17.20645484217891
+final double[] rhs, final int rhsOffset,#794,17.203111130850655
+row.add(new int[] { dRow[j][0], lowerIndirection[dRow[j][1]], vSize + dRow[j][2] });#360,17.201693923385054
+for (int n = 2; n <= order; ++n) {#1558,17.199484330636484
+public void log10(final double[] operand, final int operandOffset,#1074,17.199147723969958
+double[] function = new double[1 + order];#1078,17.198222260726126
+Arrays.fill(sizes[0], 1);#238,17.195855061213177
+public void pow(final double[] operand, final int operandOffset, final int n,#869,17.194488922754925
+result[resultOffset] =#1410,17.19016472498576
+v = v * x2 + p[k];#1621,17.186754411266698
+final double a4, final double[] c4, final int offset4,#714,17.186379737854004
+double[] function = new double[1 + order];#1460,17.18228581077174
+function[i] = xk;#888,17.18201454480489
+v = v * x2 + p[k];#1236,17.181688247188443
+v = v * x2 + p[k];#1293,17.181688247188443
+private static AtomicReference<DSCompiler[][]> compilers =#128,17.18083788219251
+function[i] *= coefficient;#904,17.17857155799866
+for (int n = 2; n <= order; ++n) {#1287,17.178279452853733
+derivedTermF[0] = term[0];     // p#433,17.178027557604242
+final double[] rhs, final int rhsOffset,#811,17.173072639264557
+v = v * x2 + q[k];#1350,17.172824428927512
+parameters);#284,17.17141031449841
+public void pow(final double[] operand, final int operandOffset, final double p,#837,17.171008070309956
+final double[] result, final int resultOffset) {#795,17.17055020612829
+for (int n = 2; n <= order; ++n) {#1230,17.16984279067428
+q[n - 1] = n * q[n - 2];#1676,17.168654934052498
+double product = mappingIJ[0] * f[mappingIJ[1]];#1717,17.167562064002542
+ordersSum += derivativeOrder;#571,17.16739993625217
+double[] function = new double[1 + order];#881,17.166698355423776
+for (int n = 1; n <= order; ++n) {#1174,17.16421533513952
+function[i] = xk;#897,17.162930091222126
+for (int n = 2; n <= order; ++n) {#1615,17.162871643348975
+for (int n = 1; n <= order; ++n) {#1502,17.16120214815493
+derivedTermG[j] = getPartialDerivativeIndex(parameters, order, sizes, orders);#463,17.151826088245098
+p[n - 1] = (1 - n) * p[n - 2];#1619,17.14921267373221
+MathArrays.linearCombination(a1, c1[offset1 + i],#718,17.148731207236267
+final DSCompiler valueCompiler,#307,17.146483768116344
+row.add(derivedTermG);#467,17.13557801927839
+final DSCompiler valueCompiler, final DSCompiler derivativeCompiler) {#159,17.12910747528076
+MathArrays.linearCombination(a1, c1[offset1 + i],#687,17.12881557758038
+final double[] result, final int resultOffset) {#925,17.12755987721105
+final double[] q = new double[order];#1338,17.127547004006125
+atan(tmp1, 0, tmp2, 0);                     // atan(y / (r - x))#1409,17.1273455619812
+orders[parameters - 1]++;#462,17.127192205852932
+p[0] = p[1];#1184,17.126418604995266
+v = v * x2 + q[k];#1678,17.12559481590025
+p[0] = p[1];#1512,17.124992804093793
+for (int j = 0; j < dRow.length; ++j) {#359,17.124494489034017
+function[i] *= coefficient;#851,17.123685312271117
+for (int l = 2; l < term.length; ++l) {#449,17.1232866229433
+final int dSize = derivativeCompiler.lowerIndirection.length;#316,17.121457473091457
+final double a2, final double[] c2, final int offset2,#658,17.12061779022217
+coeff *= f;#1247,17.1186956058849
+final int dSize = derivativeCompiler.derivativesIndirection.length;#267,17.112882652282714
+rootN(tmp2, 0, 2, tmp1, 0);                     // r = sqrt(x^2 + y^2)#1392,17.11222682082862
+function[n] = v;#1191,17.107365732607633
+p[0] = 1;#1553,17.106246546695107
+final double[] result, final int resultOffset) {#1711,17.10565607888358
+coeff *= f;#1304,17.105192878029563
+final double[] reciprocal = new double[getSize()];#796,17.10425024032593
+final double[] p = new double[order + 2];#1499,17.10327223936717
+term *= FastMath.pow(delta[k], orders[k]) / ArithmeticUtils.factorial(orders[k]);#1740,17.099600735832663
+for (int j = 0; j < mappingI.length; ++j) {#1715,17.097569624582928
+final double[] p = new double[order + 2];#1171,17.09258242448171
+coeff *= f;#1361,17.09247623790394
+final int[][] sizes, final int ... orders)#557,17.092026319660125
+double r = 0;#1714,17.088553821339328
+function[n] = coeff * v;#1362,17.087773213019737
+int[] derivedTermG = new int[term.length];#450,17.087538170092035
+p[0] = p[1];#1240,17.085919813676313
+coeff *= f;#1689,17.085794882340863
+parameters - 1);#275,17.08443323771159
+p[0] = p[1];#1297,17.084247329018332
+function[n] = coeff * v;#1690,17.08350471349863
+final double[] result, final int resultOffset) {#770,17.08232135242886
+coeff *= f;#1575,17.08062930540605
+coeff *= f;#1632,17.079774553125556
+p[0] = 1;#1282,17.07847901394493
+p[0] = p[1];#1625,17.07788372039795
+final double[] p = new double[order];#1224,17.074472557414662
+final int dSize = derivativeCompiler.multIndirection.length;#351,17.074114923891813
+function[n] = coeff * v;#1576,17.071846118340126
+derivativeCompiler.derivativesIndirection,#442,17.0717143543431
+this.parameters = parameters;#161,17.067849604288735
+function[n] = coeff * v;#1633,17.067469670222355
+final double[] y, final int yOffset,#924,17.065481440226236
+final double[] q = new double[order];#1666,17.06103177504106
+final DSCompiler derivativeCompiler,#406,17.058248079740086
+double xk;#948,17.056516488393147
+final int p = diag - o;#211,17.056057739257813
+function[n] = v;#1519,17.053945251133133
+function[n] = coeff * v;#1248,17.053641649392937
+final double[] p = new double[order];#1609,17.04971556230025
+p[0] = 1;#1610,17.047773863139906
+function[n] = coeff * v;#1305,17.046440784747784
+final DSCompiler valueCompiler      = (p == 0) ? null : newCache[p - 1][o];#213,17.046001322129193
+for (int i = 0; i < dSize; ++i) {#319,17.045881032943726
+double inv = 1.0 / operand[operandOffset];#1081,17.04587646631094
+derivativesIndirection[vSize + i], 0,#283,17.04507179260254
+for (int diag = 0; diag <= parameters + order; ++diag) {#209,17.044482163020543
+for (int i = 2; i <= order; ++i) {#1110,17.044002568280256
+double inv = 1.0 / operand[operandOffset];#1027,17.043893337249756
+final double[] p = new double[order];#1552,17.04382983121005
+final double[] result, final int resultOffset) {#870,17.039439355173418
+product *= operand[operandOffset + mappingIJ[k]];#1719,17.03860929277208
+function[0] = xk;#891,17.034946060180665
+final int[] mappingIJ = mappingI[j];#1716,17.034251813535338
+function[0] = xk;#848,17.033136069774628
+sizes[parameters][0] = 1;#241,17.028898889368232
+final int[] orders = getPartialDerivativeOrders(i);#1736,17.02861510004316
+final double[] p = new double[order];#1281,17.028029962019488
+function[i] = -function[i - 2];#1111,17.02358709062849
+final DSCompiler derivativeCompiler = (o == 0) ? null : newCache[p][o - 1];#214,17.02291488647461
+row.add(derivedTermF);#446,17.018595457077026
+double coeff = FastMath.sqrt(f);#1556,17.018136858940125
+for (int i = 2; i <= order; ++i) {#1438,17.015352496394403
+for (int i = 2; i <= order; ++i) {#1136,17.01451838458026
+final double[] result, final int resultOffset) {#715,17.010727140638565
+function[i] = -function[i - 2];#1137,17.00829141480582
+for (int i = 1; i < tmp2.length; ++i) {#1412,17.005571174621583
+termJ[0] += termK[0];#373,17.001023170275566
+final int[] termK = row.get(k);#478,16.99888202879164
+for (int k = n + 1; k >= 0; k -= 2) {#1507,16.997400788699878
+parameters, order, sizes);#458,16.997262391887727
+sizes[parameters][i + 1] = sizes[parameters][i] + sizes[parameters - 1][i + 1];#243,16.996780098809136
+for (int i = 2; i <= order; ++i) {#1464,16.99588750909876
+for (int k = n + 1; k >= 0; k -= 2) {#1179,16.99324156256283
+compileMultiplicationIndirection(parameters, order,#171,16.987271342958724
+for (int j = 0; j < mappingI.length; ++j) {#774,16.98362506230672
+final int dSize = derivativeCompiler.compIndirection.length;#415,16.981155727220617
+final DSCompiler derivativeCompiler,#342,16.970212740056656
+final int[] termK = row.get(k);#370,16.969790803061592
+return getPartialDerivativeIndex(parameters, order, sizes, orders);#542,16.966646451216477
+final double[] result, final int resultOffset) {#1652,16.962151382908676
+double coefficient = n;#902,16.962055353017952
+public int getOrder() {#630,16.95963191986084
+double coeff = FastMath.sqrt(f);#1228,16.958760499954224
+double coeff = FastMath.sqrt(f);#1285,16.957369287808735
+v = v * t2 + p[k];#1180,16.956700109666393
+p[k - 2] = (k - 1) * p[k - 1] + (k - 3) * p[k - 3];#1182,16.95630751337324
+derivedTermG[0] = term[0];#451,16.95528338032384
+termK[0] = 0;#375,16.952531735102337
+double coeff = FastMath.sqrt(f);#1613,16.948116660118103
+row.add(new int[] { dRow[j][0], vSize + dRow[j][1], lowerIndirection[dRow[j][2]] });#361,16.943998030896456
+for (int k = n - 1; k >= 0; k -= 2) {#1563,16.943873489604275
+v = v * t2 + p[k];#1508,16.94308997738746
+p[k - 2] = (k - 1) * p[k - 1] + (2 * n - k) * p[k - 3];#1238,16.942676675730738
+p[k - 2] = (k - 1) * p[k - 1] + (2 * n - k) * p[k - 3];#1295,16.942676675730738
+while (derivativeOrder-- > 0) {#576,16.941825825235117
+double r = 0;#773,16.941421396592084
+for (int k = n - 1; k >= 0; k -= 2) {#1349,16.94113602357752
+final double[] x, final int xOffset,#1383,16.940644443035126
+for (int i = 0; i <= order; ++i) {#896,16.940109394214772
+final double[] result, final int resultOffset) {#812,16.939886557089316
+final double[] result, final int resultOffset) {#980,16.938729624594412
+System.arraycopy(srcDerivativesIndirection[index], 0, orders, 0, FastMath.min(srcP, destP));#604,16.938434234032265
+termJ[0] += termK[0];#485,16.937902646187023
+final double[] result, final int resultOffset) {#1324,16.93786197900772
+final double[] result, final int resultOffset) {#1483,16.93741875886917
+orders[parameters - 1] = 1;#436,16.93476159756
+return sizes;#247,16.933002125133168
+for (int k = n - 1; k >= 0; k -= 2) {#1677,16.931835959939395
+final double[] result, final int resultOffset) {#1538,16.92761978507042
+derivativeCompiler.derivativesIndirection,#457,16.92753174121563
+for (int k = n - 1; k >= 0; k -= 2) {#1620,16.925537025227268
+for (int k = n - 1; k >= 0; k -= 2) {#1235,16.925384801976822
+for (int k = n - 1; k >= 0; k -= 2) {#1292,16.925384801976822
+final int[][] dRow = derivativeCompiler.multIndirection[i];#357,16.919996134440105
+final double a2, final double[] c2, final int offset2,#712,16.90710735321045
+final int srcP, final int[][] srcDerivativesIndirection,#601,16.906929537935078
+final double[] result, final int resultOffset) {#1000,16.90506007454612
+p[k - 2] = (1 - k) * p[k - 1] + (k - 2 * n) * p[k - 3];#1566,16.90409803390503
+this.lowerIndirection =#167,16.903465475354874
+final double[] result, final int resultOffset) {#1595,16.89834561944008
+p[k - 2] = (k - 1) * p[k - 1] - (k - 3) * p[k - 3];#1510,16.8969030891146
+final double[] result, final int resultOffset) {#1048,16.892184575398762
+System.arraycopy(cache[i], 0, newCache[i], 0, cache[i].length);#204,16.89175500869751
+final double a3, final double[] c3, final int offset3,#713,16.888599548339844
+final double[] result, final int resultOffset) {#1267,16.88652995324904
+final DSCompiler valueCompiler) {#234,16.885826377868653
+this.multIndirection =#170,16.88579327719552
+derivedTermF[1] = term[1] + 1; // f_(k+1)#434,16.885680739944046
+final int vSize = valueCompiler.multIndirection.length;#350,16.885633966197137
+final int vSize = valueCompiler.compIndirection.length;#414,16.885467985401984
+for (int j = 2; j < term.length; ++j) {#438,16.88420616496693
+final double[] result, final int resultOffset) {#1210,16.883253958917432
+derivedTermF[term.length] = getPartialDerivativeIndex(parameters, order, sizes, orders);  // g_1#437,16.879012412213264
+termK[0] = 0;#487,16.87272063891093
+final List<int[]> combined = new ArrayList<int[]>(row.size());#365,16.872656637622462
+final int[] lowerIndirection) {#343,16.871808123232714
+final DSCompiler valueCompiler,#259,16.868489174615767
+q[0] = 1;#1667,16.862556808873226
+q[0] = q[1];#1354,16.861514004794035
+q[0] = q[1];#1682,16.8578394687537
+private static int getPartialDerivativeIndex(final int parameters, final int order,#556,16.856078438136887
+private static int convertIndex(final int index,#600,16.852499893733434
+final int vSize = valueCompiler.lowerIndirection.length;#315,16.850637145664383
+final double[] result, final int resultOffset) {#1075,16.847341884266246
+for (int l = 1; equals && l < termJ.length; ++l) {#480,16.847287286411632
+function[0] = t;#1160,16.841045761108397
+for (int i = 1; i <= order; ++i) {#1029,16.838470458984375
+for (int i = 1; i <= order; ++i) {#961,16.83755459992782
+final double[] result, final int resultOffset) {#943,16.835131905295633
+final int vSize = valueCompiler.derivativesIndirection.length;#266,16.83332660675049
+final double[] result, final int resultOffset) {#1129,16.831775480701076
+Arrays.sort(derivedTermG, 2, derivedTermG.length);#466,16.830283474277806
+for (int i = 1; i <= order; ++i) {#850,16.826758674953293
+final double[] result, final int resultOffset) {#1384,16.824309493556168
+final double[] result, final int resultOffset) {#1431,16.823492854833603
+function[i] = function[i - 2];#1465,16.82230677428069
+final int[] termJ = row.get(j);#475,16.819698231560842
+function[i] = function[i - 2];#1439,16.818263124536585
+function[1] = coeff * p[0];#1557,16.816022674242657
+double value = 0;#1734,16.814648848313553
+final double inv = 1.0 / operand[operandOffset];#894,16.814367682845504
+for (int i = 1; i < getSize(); ++i) {#822,16.814345717430115
+final DSCompiler valueCompiler,#405,16.81345571371225
+function[0] = t;#1488,16.804002062479654
+final int destP, final int destO, final int[][] destSizes) {#602,16.802993740354264
+for (int i = 1; i <= order; ++i) {#1056,16.80052517078541
+final DSCompiler valueCompiler,#341,16.79942037077511
+int ordersSum = 0;#564,16.798896176474436
+Arrays.sort(derivedTermF, 2, derivedTermF.length);#445,16.798719435027152
+for (int i = 0; i < dSize; ++i) {#279,16.797142028808594
+p[k - 2] = (k - 1) * p[k - 1] + (k - 2 * n) * p[k - 3];#1623,16.79630919160514
+final double[] result, final int resultOffset) {#838,16.795052928309286
+q[0] = 1;#1339,16.794694900512695
+double coefficient = p;#849,16.792941460242638
+final double[] result, final int resultOffset) {#1021,16.79272617832307
+lowerIndirection[vSize + i] = valueCompiler.getSize() + derivativeCompiler.lowerIndirection[i];#320,16.79061601161957
+multIndirection[vSize + i] = combined.toArray(new int[combined.size()][]);#382,16.78491314037426
+final int[] termJ = row.get(j);#367,16.783310856137955
+for (int j = 0; j < row.size(); ++j) {#366,16.780100098971662
+compIndirection[vSize + i] = combined.toArray(new int[combined.size()][]);#494,16.77622230632885
+compileDerivativesIndirection(parameters, order,#165,16.771975415093557
+for (int i = 0; i < dSize; ++i) {#425,16.7716570297877
+boolean equals = termJ.length == termK.length;#479,16.77055309914254
+final double[] result, final int resultOffset) {#1457,16.769186913967133
+for (int j = 0; j < row.size(); ++j) {#474,16.768990352235992
+final double[] result, final int resultOffset) {#1155,16.767388959084787
+final List<int[]> combined = new ArrayList<int[]>(row.size());#473,16.761009554709158
+double coeff = f;#1670,16.757607724931503
+for (int i = 0; i < dSize; ++i) {#356,16.756069898605347
+derivedTermF[j] = convertIndex(term[j], parameters,#441,16.754451963636612
+q[k - 2] = (k - 1) * q[k - 1] + (2 * n - k + 1) * q[k - 3];#1680,16.75182099342346
+return order;#631,16.750486200506035
+for (int i = maxOrder; i > 0; --i) {#887,16.749037674495153
+return multIndirection;#386,16.74168638082651
+combined.add(termJ);#378,16.74140637009232
+function[1] = coeff * p[0];#1229,16.73868703842163
+for (int i = 1; i <= order; ++i) {#1083,16.738364608199507
+index += sizes[i][m--];#580,16.73801326751709
+function[1] = coeff * p[0];#1286,16.735445777575176
+for (int i = 1; i <= order; ++i) {#903,16.73502242046854
+for (int i = 0; i < getSize(); ++i) {#660,16.729417204856873
+for (int i = 0; i < getSize(); ++i) {#753,16.72822705904643
+function[1] = coeff * p[0];#1614,16.727314909299213
+double v = 0;#1675,16.71482431320917
+System.arraycopy(derivativesIndirection[derivedTermG[j]], 0, orders, 0, parameters);#461,16.707489826061106
+double v = 0;#1561,16.706213905697776
+p[1] = 1;#1172,16.703457982916582
+final double a2, final double[] c2, final int offset2,#682,16.69527338027954
+return compIndirection;#498,16.694875203646145
+p[1] = 1;#1500,16.69270144010845
+for (int k = j + 1; k < row.size(); ++k) {#369,16.691044856340458
+final double[] result, final int resultOffset) {#1103,16.690985679626465
+compileCompositionIndirection(parameters, order,#174,16.690697387412744
+double v = 0;#1233,16.688440958658855
+double v = 0;#1290,16.687507811046782
+double v = 0;#1618,16.680210068112327
+double v = 0;#1347,16.678774470374698
+int derivativeOrder = orders[i];#568,16.676499319076537
+derivedTermG[j] = convertIndex(term[j], parameters,#456,16.675317788124083
+combined.add(termJ);#490,16.674925203676576
+for (int k = 0; k < orders.length; ++k) {#1738,16.672654151916504
+for (int i = 0; i < vSize; ++i) {#271,16.665183385213215
+for (int k = 2; k < mappingIJ.length; ++k) {#1718,16.65901091519524
+for (int i = 0; i < getSize(); ++i) {#737,16.65724015235901
+final int[][] derivativesIndirection) {#408,16.654109102306943
+return index;#585,16.653366435657848
+derivativesIndirection[i], 0,#274,16.652625805622822
+q[k - 2] = (k - 1) * q[k - 1] + (k - 1 - 2 * n) * q[k - 3];#1352,16.647087224324544
+return parameters;#624,16.64591373096813
+final int[][] sizes,#407,16.64269516960023
+double coeff = f;#1342,16.642644352383083
+for (int i = 0; i < tmp2.length; ++i) {#1400,16.637811024983723
+if (cache != null && cache.length > parameters && cache[parameters].length > order) {#189,16.634312693277995
+for (int i = 0; i < getSize(); ++i) {#685,16.6306391954422
+double v = 0;#1505,16.619151887439546
+return cache[parameters][order];#192,16.614113847414654
+double v = 0;#1177,16.612698554992676
+for (int i = 0; i < order; ++i) {#242,16.611044353908962
+final int[][] mappingI = multIndirection[i];#772,16.609848425938534
+for (int i = getSize() - 1; i >= 0; --i) {#1735,16.60431402700919
+final double x = operand[operandOffset];#1214,16.60387937646163
+final double x = operand[operandOffset];#1328,16.596893109773333
+final double x = operand[operandOffset];#1656,16.594906756752415
+final double x = operand[operandOffset];#1599,16.591154500057822
+for (int k = j + 1; k < row.size(); ++k) {#477,16.588584386385403
+for (int j = 2; j < term.length; ++j) {#453,16.58697373158223
+if (termJ[1] == termK[1] && termJ[2] == termK[2]) {#371,16.585316371917724
+final double t2 = t * t;#1173,16.580843743823824
+final double x = operand[operandOffset];#1271,16.58035027353387
+private DSCompiler(final int parameters, final int order,#158,16.576409498850506
+System.arraycopy(valueCompiler.multIndirection, 0, multIndirection, 0, vSize);#354,16.57405760884285
+final double x = operand[operandOffset];#1542,16.5687511343705
+System.arraycopy(valueCompiler.sizes, 0, sizes, 0, parameters);#240,16.565818458795547
+function[1] = coeff * q[0];#1671,16.555527885754902
+final double t2 = t * t;#1501,16.546037356058758
+if (orders[k] > 0) {#1739,16.542824084942158
+if (equals) {#483,16.531190220514933
+for (int i = 0; i < multIndirection.length; ++i) {#771,16.52868694729275
+private final int[][] derivativesIndirection;#141,16.524308681488037
+if (j == l) {#459,16.52228623051797
+for (int i = order; i > 0; --i) {#844,16.5183744845183
+for (int i = 0; i < getSize(); ++i) {#716,16.51187547047933
+function[1] = coeff * q[0];#1343,16.508811950683594
+final int[][] mappingI = compIndirection[i];#1713,16.50405634366549
+return new int[][][] { { { 1, 0 } } };#411,16.49537147794451
+private final int[][][] compIndirection;#150,16.49462299346924
+public int getSize() {#641,16.488811779022218
+if (orders.length != getFreeParameters()) {#538,16.47793147438451
+return value;#1745,16.47770526192405
+compileLowerIndirection(parameters, order,#168,16.47095907651461
+System.arraycopy(valueCompiler.lowerIndirection, 0, lowerIndirection, 0, vSize);#318,16.461974948644638
+public void checkCompatibility(final DSCompiler compiler)#1752,16.443216716541965
+System.arraycopy(valueCompiler.derivativesIndirection[i], 0,#273,16.441316881487445
+System.arraycopy(valueCompiler.compIndirection, 0, compIndirection, 0, vSize);#419,16.43042290210724
+return derivativesIndirection;#291,16.428553141080418
+this.derivativesIndirection =#164,16.428337514400482
+if (x[xOffset] >= 0) {#1394,16.42337236906353
+for (int i = 0; i < compIndirection.length; ++i) {#1712,16.39678524158619
+private final int order;#135,16.372535069783527
+private final int[] lowerIndirection;#144,16.372452179590862
+System.arraycopy(derivativeCompiler.derivativesIndirection[i], 0,#282,16.340641050627738
+return new int[][][] { { { 1, 0, 0 } } };#346,16.33811394373576
+private static int[][] compileSizes(final int parameters, final int order,#233,16.32976094159213
+if (newCache[p][o] == null) {#212,16.326991640288256
+for (int i = 0; i < cache.length; ++i) {#203,16.3090725931628
+if (parameters != compiler.parameters) {#1754,16.30567701239335
+if (cache[parameters][order] != null) {#190,16.27340961456299
+for (int i = parameters - 1; i >= 0; --i) {#565,16.26411666870117
+private static int[][][] compileCompositionIndirection(final int parameters, final int order,#404,16.25594543457031
+if (termJ[0] > 0) {#476,16.244911123205114
+if ((n & 0x1) == 0) {#1357,16.188952139445714
+if ((n & 0x1) == 0) {#1685,16.17552116939
+if ((n & 0x1) == 0) {#1300,16.163764272417342
+if ((n & 0x1) == 0) {#1243,16.163258246013097
+if ((n & 0x1) == 0) {#1628,16.159912722451345
+private final int[][][] multIndirection;#147,16.15474688212077
+if ((n & 0x1) == 0) {#1571,16.142027514321462
+if ((n & 0x1) == 0) {#1187,16.14043927192688
+if (termJ[0] > 0) {#368,16.138585832383896
+if ((n & 0x1) == 0) {#1515,16.13842933518546
+return newCache[parameters][order];#223,16.131938092848834
+public static DSCompiler getCompiler(int parameters, int order) {#185,16.1164033526466
+private final int[][] sizes;#138,16.093238751093548
+if (k > 2) {#1351,16.07820048155608
+if (k > 2) {#1679,16.077623296667028
+if (k > 2) {#1565,16.069722493489582
+if (k > 2) {#1622,16.059681291933412
+if (k > 2) {#1237,16.05589845445421
+if (k > 2) {#1294,16.05589845445421
+if (k > 2) {#1509,16.049255653663916
+if (ordersSum > order) {#572,16.0482216835022
+if (k > 2) {#1181,16.037052825645166
+private static int[][] compileDerivativesIndirection(final int parameters, final int order,#258,16.036244468688963
+for (int[] term : derivativeCompiler.compIndirection[i]) {#427,16.022656473620184
+if (parameters == 0) {#237,16.00074940919876
+return lowerIndirection;#323,15.993482736440805
+return sizes[parameters][order];#642,15.951406300067902
+if (n > 0) {#883,15.930115000406902
+return derivativesIndirection[index];#617,15.918530400594076
+if (parameters == 0 || order <= 1) {#310,15.91319718360901
+private static int[] compileLowerIndirection(final int parameters, final int order,#306,15.906311398460751
+if (n == 2) {#949,15.89754950205485
+if (n == 0) {#872,15.780897649129232
+private static int[][][] compileMultiplicationIndirection(final int parameters, final int order,#340,15.718925292675312
+if (cache != null) {#201,15.71798775990804
+if (parameters == 0 || order == 0) {#262,15.697808980941772
+if (order > 0) {#1080,15.6752166112264
+private final int parameters;#132,15.665242195129395
+if (order > 0) {#1026,15.586900520324708
+if (order > 0) {#1053,15.563900756835938
+if (order > 0) {#1108,15.517237154642741
+if (order > 0) {#1134,15.51420815785726
+if (order > 0) {#1436,15.499257659912109
+if (order > 0) {#1462,15.49393825531006
+if (order > 0) {#1162,15.429102325439453
+if (order > 0) {#1490,15.425521850585938
+if (order > 0) {#1658,15.34285945892334
+if (order != compiler.order) {#1757,15.337571088005514
+if (order > 0) {#1330,15.331766319274902
+if (order > 0) {#1601,15.32900390625
+if (order > 0) {#1216,15.3271759668986
+if (order > 0) {#1544,15.324031257629395
+if (order > 0) {#1273,15.313739077250164
+if ((parameters == 0) || (order == 0)) {#345,15.18254856629805
+if ((parameters == 0) || (order == 0)) {#410,14.886293627999045

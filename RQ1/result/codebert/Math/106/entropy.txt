@@ -1,0 +1,72 @@
+private static final long serialVersionUID = -6337346779577272307L;#38,17.85028910636902
+public StringBuffer format(Fraction fraction, StringBuffer toAppendTo,#86,17.079817152023317
+getDenominatorFormat().format(den, toAppendTo,#104,16.84861585368281
+this(format, (NumberFormat)format.clone(), (NumberFormat)format.clone());#58,16.347550255911692
+parseAndIgnoreWhitespace(source, pos);#153,16.15409336090088
+public class ProperFractionFormat extends FractionFormat {#35,16.143071333567303
+"whole format can not be null.");#217,16.125601988572342
+toAppendTo.append(' ');#99,16.114244052342006
+parseAndIgnoreWhitespace(source, pos);#188,16.11347007751465
+parseAndIgnoreWhitespace(source, pos);#140,16.03736605644226
+getWholeFormat().format(whole, toAppendTo, pos);#98,16.02529848032984
+return toAppendTo;#107,16.013243675231934
+getNumeratorFormat().format(num, toAppendTo, pos);#102,16.007992362976076
+public Fraction parse(String source, ParsePosition pos) {#130,15.893893347846138
+public ProperFractionFormat(NumberFormat format) {#57,15.880736414591471
+return null;#149,15.845450528462727
+public void setWholeFormat(NumberFormat format) {#214,15.802043437957764
+return null;#184,15.781423886617025
+public ProperFractionFormat(NumberFormat wholeFormat,#68,15.753751881917317
+return new Fraction(((Math.abs(w) * d) + n) * MathUtils.sign(w), d);#205,15.731651177277437
+if (den == null) {#192,15.696982447306315
+public NumberFormat getWholeFormat() {#114,15.690887964688814
+public ProperFractionFormat() {#47,15.657390074296432
+return ret;#134,15.645406723022461
+int den = fraction.getDenominator();#93,15.638468424479166
+Number den = getDenominatorFormat().parse(source, pos);#191,15.617659610250723
+int d = den.intValue();#204,15.598301768302917
+if (format == null) {#215,15.597426414489746
+toAppendTo.append(" / ");#103,15.582265112135145
+if (num == null) {#157,15.556099764506023
+super(numeratorFormat, denominatorFormat);#72,15.551979918228952
+this.wholeFormat = format;#219,15.478152096271515
+int initialIndex = pos.getIndex();#137,15.45935552260455
+return null;#162,15.442979049682616
+int n = num.intValue();#203,15.381758689880371
+return wholeFormat;#115,15.366089026133219
+case '/' :#175,15.327393054962158
+private NumberFormat wholeFormat;#41,15.304673862457275
+if (ret != null) {#133,15.240058008829752
+if (whole == null) {#144,15.232039153575897
+return null;#197,15.227051162719727
+this(getDefaultNumberFormat());#48,15.132053629557292
+int whole = num / den;#94,15.130670738220214
+num = num % den;#95,15.123897280011859
+if (whole != 0) {#97,15.122598350048065
+Number num = getNumeratorFormat().parse(source, pos);#156,15.122288164885148
+int w = whole.intValue();#202,15.069080710411072
+int startIndex = pos.getIndex();#168,15.061868050519157
+int num = fraction.getNumerator();#92,15.045970598856607
+default :#178,15.000375175476075
+case 0 :#171,14.959370266307484
+throw new IllegalArgumentException(#216,14.948221959565815
+return new Fraction(num.intValue(), 1);#174,14.919136246045431
+pos.setIndex(initialIndex);#148,14.908188962936402
+pos.setIndex(initialIndex);#196,14.887676811218261
+pos.setIndex(initialIndex);#161,14.881561994552612
+pos.setErrorIndex(startIndex);#183,14.872350874401274
+switch (c) {#170,14.846575883718637
+char c = parseNextCharacter(source, pos);#169,14.837742805480957
+Fraction ret = super.parse(source, pos);#132,14.833730792999267
+FieldPosition pos) {#87,14.814248533809886
+Number whole = getWholeFormat().parse(source, pos);#143,14.798346259377219
+setWholeFormat(wholeFormat);#73,14.755686423357796
+pos);#105,14.725029264177595
+pos.setEndIndex(0);#90,14.718413949012756
+pos.setBeginIndex(0);#89,14.713146984577179
+num = Math.abs(num);#100,14.598430061340332
+pos.setIndex(initialIndex);#182,14.478588533401489
+NumberFormat denominatorFormat)#70,14.336136764950222
+{#71,14.237598037719726
+break;#177,14.183301653180804
+NumberFormat numeratorFormat,#69,14.115953869289822

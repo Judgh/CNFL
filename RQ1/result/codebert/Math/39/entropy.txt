@@ -1,0 +1,137 @@
+extends AdaptiveStepsizeIntegrator {#63,15.366302680969238
+private final RungeKuttaStepInterpolator prototype;#78,15.239985185510973
+final RungeKuttaStepInterpolator interpolator = (RungeKuttaStepInterpolator) prototype.copy();#207,14.951765805482864
+super(name, minStep, maxStep, vecAbsoluteTolerance, vecRelativeTolerance);#153,14.815296649932861
+protected EmbeddedRungeKuttaIntegrator(final String name, final boolean fsal,#108,14.795887210152365
+protected EmbeddedRungeKuttaIntegrator(final String name, final boolean fsal,#146,14.781425085934726
+super(name, minStep, maxStep, scalAbsoluteTolerance, scalRelativeTolerance);#115,14.568857853229229
+final boolean filteredNextIsLast = forward ? (filteredNextT >= t) : (filteredNextT <= t);#313,14.540194590886435
+private final boolean fsal;#66,14.300191402435303
+public double getSafety() {#178,14.262304306030273
+final int stages = c.length + 1;#201,14.240973200116839
+public double getMaxGrowth() {#347,14.223013114929199
+final boolean forward = t > equations.getTime();#196,14.147994550069173
+stepStart = acceptStep(interpolator, y, yDotTmp, t);#291,14.129054803114672
+if (!isLastStep) {#294,14.079897513756386
+final double[][] yDotK = new double[stages][y.length];#202,14.04976056019465
+final boolean nextIsLast = forward ? (nextT >= t) : (nextT <= t);#309,14.038289962276336
+for (int j = 0; j < y0.length; ++j) {#267,13.97256113932683
+@Override#190,13.924146890640259
+public void integrate(final ExpandableStatefulODE equations, final double t)#191,13.889664808909098
+boolean firstTime = true;#215,13.866410541534425
+protected abstract double estimateError(double[][] yDotK,#365,13.850782618803137
+final double[] y = y0.clone();#200,13.833134514944893
+interpolator.storeTime(equations.getTime());#210,13.806180000305176
+public abstract class EmbeddedRungeKuttaIntegrator#62,13.797443976769081
+final double[] yDotTmp = new double[y.length];#204,13.77069902420044
+interpolator.reinitialize(this, yTmp, yDotK, forward,#208,13.769535144170126
+public double getMinReduction() {#333,13.746973705291747
+final double[] y0  = equations.getCompleteState();#199,13.710700876572552
+public void setSafety(final double safety) {#185,13.69476350148519
+for (int j = 0; j < y0.length; ++j) {#254,13.6862838608878
+public void setMaxGrowth(final double maxGrowth) {#354,13.680395364761353
+computeDerivatives(stepStart + c[k-1] * stepSize, yTmp, yDotK[k]);#262,13.664780421134752
+error = estimateError(yDotK, y, yTmp, stepSize);#276,13.636661176328305
+public void setMinReduction(final double minReduction) {#340,13.536791980266571
+initIntegration(equations.getTime(), y0, t);#216,13.520581646969443
+System.arraycopy(y, 0, yTmp, 0, y.length);#292,13.517849712371826
+public abstract int getOrder();#173,13.499545097351074
+throws MathIllegalStateException, MathIllegalArgumentException {#192,13.468662786483765
+equations.setTime(stepStart);#323,13.417554378509521
+yTmp[j] = y[j] + stepSize * sum;#272,13.411002653616446
+System.arraycopy(yDotK[stages - 1], 0, yDotTmp, 0, y0.length);#290,13.357046312756008
+System.arraycopy(yTmp, 0, y, 0, y0.length);#289,13.324690708747276
+for (int k = 1; k < stages; ++k) {#252,13.249682011811629
+computeDerivatives(stepStart, y, yDotK[0]);#230,13.244879987504747
+private final double[] b;#75,13.229931449890136
+interpolator.storeTime(stepStart + stepSize);#288,13.200516170925564
+if (firstTime || !fsal) {#228,13.199005550808376
+private final double exp;#81,13.185065693325466
+if (vecAbsoluteTolerance == null) {#235,13.121766817002069
+private double safety;#84,13.089851379394531
+setEquations(equations);#195,13.052619847384365
+private final double[] c;#69,13.047547531127929
+equations.setCompleteState(y);#324,13.036438783009848
+FastMath.min(maxGrowth, FastMath.max(minReduction, safety * FastMath.pow(error, exp)));#306,12.963748550415039
+if (firstTime) {#233,12.945734364645821
+final double[] yTmp    = y0.clone();#203,12.92198015514173
+this.maxGrowth = maxGrowth;#355,12.898441689355034
+this.prototype = prototype;#121,12.881841564178467
+this.prototype = prototype;#159,12.860046100616454
+isLastStep = false;#219,12.845701313018798
+while (error >= 1.0) {#226,12.817074394226074
+if (filteredNextIsLast) {#314,12.792435119026585
+for (int l = 1; l < stages; ++l) {#269,12.765700798034668
+final double[] scale = new double[mainSetDimension];#234,12.72640099732772
+hNew = initializeStep(forward, getOrder(), scale,#244,12.701767299486244
+hNew = filterStep(scaledH, forward, nextIsLast);#310,12.686214208602905
+sanityChecks(equations, t);#194,12.683599398686336
+setSafety(0.9);#126,12.670452551408248
+private double maxGrowth;#90,12.669423294067382
+if (error >= 1.0) {#277,12.663929546580595
+scale[i] = vecAbsoluteTolerance[i] + vecRelativeTolerance[i] * FastMath.abs(y[i]);#241,12.615241467952728
+yTmp[j] = y[j] + stepSize * sum;#259,12.606089805734568
+if (fsal) {#299,12.574472427368164
+exp = -1.0 / getOrder();#123,12.570761953081403
+double sum = a[k-1][0] * yDotK[0][j];#255,12.533295024525035
+for (int i = 0; i < scale.length; ++i) {#240,12.528287241535802
+final double  nextT      = stepStart + scaledH;#308,12.515250311957466
+exp = -1.0 / getOrder();#161,12.505790506090436
+setSafety(0.9);#164,12.496521256186746
+private final double[][] a;#72,12.488303899765015
+private double minReduction;#87,12.403431129455566
+setMaxGrowth(10.0);#128,12.380880722632774
+interpolator.storeTime(stepStart);#297,12.34900366632562
+for (int l = 1; l < k; ++l) {#256,12.337337688163474
+scale[i] = scalAbsoluteTolerance + scalRelativeTolerance * FastMath.abs(y[i]);#237,12.312349171865554
+setMaxGrowth(10.0);#166,12.304801133962778
+for (int i = 0; i < scale.length; ++i) {#236,12.185897919439501
+double error = 10;#225,12.16465746272694
+double sum    = b[0] * yDotK[0][j];#268,12.15929962793986
+final double  filteredNextT      = stepStart + hNew;#312,12.15735822064536
+final RungeKuttaStepInterpolator prototype,#110,12.143585528967515
+resetInternalState();#326,12.13735842704773
+final RungeKuttaStepInterpolator prototype,#148,12.102936618732956
+final double factor =#305,12.102692604064941
+setMinReduction(0.2);#127,12.096455280597393
+this.minReduction = minReduction;#341,12.035723652158465
+stepSize = hNew;#249,12.000994341714042
+interpolator.shift();#222,11.982844872908158
+stepStart         = equations.getTime();#213,11.980154657363892
+System.arraycopy(yDotTmp, 0, yDotK[0], 0, y0.length);#301,11.94415115728611
+setMinReduction(0.2);#165,11.909608987661509
+final double[] c, final double[][] a, final double[] b,#109,11.847572080020246
+sum += a[k-1][l] * yDotK[l][j];#257,11.845004109775319
+this.fsal      = fsal;#155,11.82074218637803
+this.fsal      = fsal;#117,11.75958246343276
+final double[] c, final double[][] a, final double[] b,#147,11.751950609272924
+equations.getPrimaryMapper(), equations.getSecondaryMappers());#209,11.734123198191325
+final double[] vecRelativeTolerance) {#151,11.708818968604593
+return maxGrowth;#348,11.665185610453287
+do {#220,11.657504717508951
+FastMath.max(minReduction, safety * FastMath.pow(error, exp)));#281,11.64456082363518
+final double  scaledH    = stepSize * factor;#307,11.61798789103826
+stepStart, y, yDotK[0], yTmp, yDotK[1]);#245,11.61174751628529
+final double minStep, final double maxStep,#111,11.588845972921334
+final double scalRelativeTolerance) {#113,11.580437707901002
+hNew = filterStep(stepSize * factor, forward, false);#282,11.578864307403565
+sum    += b[l] * yDotK[l][j];#270,11.477092881356516
+final double   minStep, final double maxStep,#149,11.365167581810141
+final double scalAbsoluteTolerance,#112,11.339897058448013
+firstTime = false;#246,11.325284639994303
+final double factor =#279,11.322398458208356
+this.safety = safety;#186,11.24252209663391
+return minReduction;#334,11.18185191684299
+final double[] vecAbsoluteTolerance,#150,11.176119127273559
+return safety;#179,11.172718593052455
+FastMath.min(maxGrowth,#280,11.1470773531043
+this.c         = c;#118,10.63922455575731
+this.c         = c;#156,10.606058518091837
+double  hNew      = 0;#214,10.60511338710785
+double[] y0, double[] y1,#366,10.541851080380953
+this.a         = a;#119,10.43055788675944
+this.a         = a;#157,10.341662459903294
+hNew = t - stepStart;#315,10.315319754860617
+this.b         = b;#120,10.138019879659018
+this.b         = b;#158,10.120383554034763
+double h);#367,9.790083355373806

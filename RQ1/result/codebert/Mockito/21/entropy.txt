@@ -1,0 +1,21 @@
+Constructor<T> c = cls.getDeclaredConstructor(outerClassInstance.getClass());#24,17.667171832493374
+this.outerClassInstance = outerClassInstance;#10,17.534054438273113
+if (outerClassInstance == null) {#14,17.519509091096765
+return cls.newInstance();#39,17.427751942684775
+return c.newInstance(outerClassInstance);#25,17.416836045005105
+try {#21,17.223904037475585
+public ConstructorInstantiator(Object outerClassInstance) {#9,17.09229514178108
+return withOuterClass(cls);#17,16.973701252656824
+public class ConstructorInstantiator implements Instantiator {#5,16.7086213185237
+return new InstantationException("Unable to create mock instance of '"#32,16.61827908391538
+private static <T> InstantationException paramsException(Class<T> cls, Exception e) {#31,16.47695284623366
+throw paramsException(cls, e);#27,16.371151152111235
+private final Object outerClassInstance;#7,16.352044452320445
+return noArgConstructor(cls);#15,16.35122435433524
+throw new InstantationException("Unable to create mock instance of '"#41,16.33216162081118
++ cls.getSimpleName() + "'.\nPlease ensure that the outer instance has correct type and that the target class has parameter-less constructor.", e);#33,16.319227536519367
++ cls.getSimpleName() + "'.\nPlease ensure it has parameter-less constructor.", e);#42,16.147167552601207
+try {#38,16.049968433380126
+private <T> T withOuterClass(Class<T> cls) {#20,16.02986730228771
+public <T> T newInstance(Class<T> cls) {#13,15.755351161956787
+private static <T> T noArgConstructor(Class<T> cls) {#37,15.328680536021357

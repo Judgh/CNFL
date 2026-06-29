@@ -1,0 +1,15 @@
+return next.filterCandidate(mocks, field, fieldInstance);#43,17.659165117475723
+return next.filterCandidate(mockNameMatches, field,#31,17.376912518551475
+List<Object> mockNameMatches = new ArrayList<Object>();#24,17.248239768178838
+if (field.getName().equals(mockUtil.getMockName(mock).toString())) {#27,16.990615237842906
+private final MockUtil mockUtil = new MockUtil();#16,16.93461310863495
+Field field, Object fieldInstance) {#23,16.670784155527752
+public OngoingInjecter filterCandidate(Collection<Object> mocks,#22,16.630006990934675
+public class NameBasedCandidateFilter implements MockCandidateFilter {#14,16.543089321681432
+if (mocks.size() > 1) {#25,16.439907210213796
+public NameBasedCandidateFilter(MockCandidateFilter next) {#18,16.398787891163547
+this.next = next;#19,16.031025886535645
+private final MockCandidateFilter next;#15,16.003540420532225
+fieldInstance);#32,15.92648590935601
+for (Object mock : mocks) {#26,15.893339743980995
+mockNameMatches.add(mock);#28,15.746925690594841

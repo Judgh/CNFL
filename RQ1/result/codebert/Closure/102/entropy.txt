@@ -1,0 +1,237 @@
+Callback tickler = new ScopeTicklingCallback();#429,20.117599308490753
+private final class ScopeTicklingCallback#503,19.77639389038086
+AbstractCompiler compiler, boolean forbidChanges) {#113,19.667872111002605
+final private AbstractCompiler compiler;#162,19.460113351995293
+private final AbstractCompiler compiler;#68,19.441072993808323
+Node nodeWithLineNumber) {#449,19.41385841369629
+implements CompilerPass {#108,19.292364900762383
+private final AbstractCompiler compiler;#109,19.249578389254484
+VerifyConstants(AbstractCompiler compiler, boolean checkUserDeclarations) {#165,19.240238618850707
+case Token.LABEL:#319,19.180437905447825
+case Token.LABEL:#285,19.144877433776855
+if (init.getType() == Token.VAR) {#331,19.12806202815129
+case Token.WHILE:#288,19.08442481358846
+if (var != null) {#201,19.01711990958766
+@Override#505,18.955766201019287
+class Normalize implements CompilerPass, Callback {#66,18.915369033813477
+case Token.FOR:#287,18.910336407748137
+implements CompilerPass {#160,18.907119404185902
+if (expectedConst) {#212,18.905527710914612
+case Token.DO:#289,18.862089330499824
+if (var != null) {#134,18.858627700805663
+@Override#512,18.828388532002766
+if (checkUserDeclarations) {#191,18.812275886535645
+Normalize(AbstractCompiler compiler, boolean assertOnChange) {#73,18.745259761810303
+@Override#118,18.731079419453938
+case Token.FOR:#322,18.678045199467586
+Node newStatement;#328,18.659152507781982
+if (!NodeUtil.isForIn(c)#323,18.61071924729781
+while (current != null) {#391,18.59046086398038
+compiler, new DuplicateDeclarationHandler());#431,18.578738605274875
+this.compiler = compiler;#74,18.55304865403609
+String name = n.getString();#142,18.54687156677246
+final private boolean checkUserDeclarations;#163,18.54286479949951
+MakeDeclaredNamesUnique renamer = new MakeDeclaredNamesUnique();#90,18.52866554260254
+throw new IllegalStateException(#143,18.526575247446697
+switch (c.getType()) {#318,18.524255071367538
+String name = n.getString();#185,18.52351051568985
+default:#291,18.49606704711914
+if (NodeUtil.isStatementBlock(gramps)) {#481,18.48711399237315
+if (n.getType() == Token.NAME) {#184,18.483074188232422
+switch (last.getType()) {#284,18.482847929000854
+Node insertBefore = (before == null) ? c : before;#316,18.459140872955324
+if (info != null && info.isConstant()) {#205,18.45344062805176
+if (c.getType() == Token.VAR) {#357,18.45185751914978
+@Override#170,18.415777524312336
+private void reportCodeChange(String changeDescription) {#78,18.393199700575607
+this.compiler = compiler;#166,18.38322749504676
+if (parent.getType() == Token.VAR) {#451,18.380201244354247
+private final class DuplicateDeclarationHandler implements#439,18.37750027396462
+if (n.getType() == Token.NAME) {#126,18.376433171724017
+Node next = current.getNext();#393,18.358378887176514
+this.compiler = compiler;#114,18.34685780451848
+if ((info != null && info.isConstant()) &&#138,18.317781221298944
+if (n.getType() == Token.LABEL) {#252,18.314031706915962
+case Token.BLOCK:#286,18.29631193478902
+if (value == null) {#222,18.26036548614502
+private Map<String,Boolean> constantMap = Maps.newHashMap();#180,18.25724256606329
+if (assertOnChange) {#141,18.25566858403823
+while (c.getFirstChild() != c.getLastChild()) {#362,18.251246333122253
+case Token.WHILE:#236,18.246200720469158
+@Override#182,18.244622866312664
+Node previous = null;#380,18.242255528767902
+if (assertOnChange && !c.hasChildren()) {#358,18.237114406767347
+if (n.getString().isEmpty()) {#127,18.23290809832121
+@Override#86,18.231138467788696
+@Override#99,18.215384483337402
+constantMap.put(name, isConst);#223,18.179410934448242
+Preconditions.checkState(value.booleanValue() == isConst,#225,18.14898861779107
+Preconditions.checkState(expectedConst == isConst,#213,18.144950523376465
+@Override#517,18.14354674021403
+"The name " + name + " should not be annotated as constant.");#217,18.12086512825706
+if (NodeUtil.isFunctionDeclaration(current)) {#394,18.11474976539612
+@Override#446,18.107945442199707
+if (n.getString().isEmpty()) {#186,18.102399173535797
+private final boolean assertOnChange;#110,18.09579389745539
+|| compiler.getCodingConvention().isConstant(n.getString())) {#194,18.085811194251566
+expectedConst = false;#197,18.083460583406335
+@Override#123,18.078445116678875
+"The name " + name + " is not annotated as constant.");#214,18.075747966766357
+if (after == null) {#417,18.050000710920855
+c.replaceChild(init, new Node(Token.EMPTY));#326,18.048138512505425
+Var var = t.getScope().getVar(n.getString());#200,18.04065660067967
+t.getScope();#509,18.040363571860574
+if (CONVERT_WHILE_TO_FOR) {#237,18.026265825544083
+if (n.hasChildren()) {#471,17.99160659313202
+@Override#233,17.97823739051819
+Boolean value = constantMap.get(name);#221,17.978232436709934
+Node insertBeforeParent = (before == null) ? n : beforeParent;#317,17.977529699152168
+expectedConst = true;#195,17.94166161032284
+Node value = n.getFirstChild();#475,17.934867808693333
+public void exitScope(NodeTraversal t) {#513,17.926680624485016
+@Override#523,17.901784261067707
+Node replacement = new Node(Token.ASSIGN, n, value);#477,17.901286048889162
+this.assertOnChange = forbidChanges;#115,17.896592585245767
+if (assertOnChange) {#79,17.891881335865367
+new PropogateConstantAnnotations(compiler, assertOnChange)#95,17.88703293800354
+Node init = c.getFirstChild();#325,17.884141149975004
+public void enterScope(NodeTraversal t) {#506,17.88298809528351
+while (current != null && NodeUtil.isFunctionDeclaration(current)) {#384,17.881164420734752
+Scope s, String name, Node n, Node parent, Node gramps,#448,17.873656431833904
+previous = current;#405,17.846801280975342
+"The name " + name + " is not consistently annotated as " +#226,17.845790799458822
+if (NodeUtil.isStatementBlock(n) || n.getType() == Token.LABEL) {#258,17.791184491124646
+SyntacticScopeCreator.RedeclarationHandler {#440,17.78549665874905
+compiler.reportCodeChange();#402,17.781194346291677
+&& c.getFirstChild().getType() != Token.EMPTY) {#324,17.770514795857093
+Preconditions.checkState(expectedConst == isConst,#216,17.758204574584962
+private static final boolean CONVERT_WHILE_TO_FOR = true;#70,17.75776704152425
+JSDocInfo info = null;#131,17.74967509508133
+this.checkUserDeclarations = checkUserDeclarations;#167,17.7484007941352
+throw new IllegalStateException(#80,17.730146884918213
+Var var = t.getScope().getVar(n.getString());#133,17.717395822207134
+for (Node next, c = n.getFirstChild(); c != null; c = next) {#355,17.712521846477802
+boolean expectedConst = false;#192,17.689399302005768
+JSDocInfo info = null;#199,17.682444286346435
+if (NodeUtil.isStatementBlock(n)) {#264,17.66239054062787
+!n.getBooleanProp(Node.IS_CONSTANT_NAME)) {#139,17.66143017430459
+for (Node next, c = n.getFirstChild(); c != null; c = next) {#314,17.64854020338792
+Node name = c.getFirstChild();#363,17.638935440465023
+Node newVar = new Node(Token.VAR, name, n.getLineno(), n.getCharno());#365,17.62581714423927
+switch (n.getType()) {#235,17.609179496765137
+public PropogateConstantAnnotations(#112,17.60497628725492
+private void splitVarDeclarations(Node n) {#354,17.601769300607536
+previous = current;#385,17.59582986831665
+boolean isConst = n.getBooleanProp(Node.IS_CONSTANT_NAME);#190,17.579743747053474
+current = next;#407,17.574749088287355
+private final boolean assertOnChange;#69,17.56721411810981
+Preconditions.checkState(gramps.getType() == Token.LABEL);#490,17.564389844094553
+compiler.reportCodeChange();#83,17.560595989227295
+n.putBooleanProp(Node.IS_CONSTANT_NAME, true);#140,17.551234672809468
+"Unexpected const change.\n" +#144,17.526590273930477
+if (NodeUtil.isConstantName(n)#193,17.523331559222676
+n.setType(Token.FOR);#239,17.521504502547415
+return true;#103,17.51253809247698
+"  name: "+ name + "\n" +#145,17.49493288110804
+public boolean shouldTraverse(#518,17.490499019622803
+newStatement = init;#332,17.480437630101253
+expectedConst = true;#206,17.47979440187153
+extractForInitializer(c, insertBefore, insertBeforeParent);#320,17.475661079088848
+this.assertOnChange = assertOnChange;#75,17.47264051437378
+throw new IllegalStateException("Empty VAR node.");#359,17.455672220750287
+Preconditions.checkState(n.getType() == Token.NAME);#450,17.44786735202955
+implements NodeTraversal.ScopedCallback {#504,17.44648587703705
+Node n, Node before, Node beforeParent) {#312,17.441442153033087
+private Node addToFront(Node parent, Node newChild, Node after) {#416,17.429662252727308
+Node expr = n.getFirstChild();#238,17.420788614373457
+insertAfter = addToFront(functionBody, current, insertAfter);#401,17.41841166952382
+current = current.getNext();#386,17.385186268733097
+n.addChildBefore(new Node(Token.EMPTY), expr);#240,17.37851520685049
+n.addChildAfter(new Node(Token.EMPTY), expr);#241,17.377042550307053
+return true;#520,17.350982983907063
+public void onRedeclaration(#447,17.33061718940735
+expectedConst = false;#208,17.315998027199193
+extends AbstractPostOrderCallback#107,17.290116570212625
+Node insertAfter = previous;#390,17.2848690032959
+ScopeCreator scopeCreator =  new SyntacticScopeCreator(#430,17.28353043606407
+reportCodeChange("Duplicate VAR declaration");#494,17.271892949154502
+n.removeChild(value);#476,17.26397968741024
+info = var.getJSDocInfo();#135,17.25613136291504
+doStatementNormalizations(t, n, parent);#101,17.24946511586507
+public static class PropogateConstantAnnotations#106,17.239536841710407
+gramps.replaceChild(parent, new Node(Token.EXPR_RESULT, replacement));#478,17.231463155438824
+n.addChildBefore(newVar, c);#366,17.199299494425457
+private void normalizeLabels(Node n) {#280,17.195009525005634
+info = var.getJSDocInfo();#202,17.18981389204661
+next = c.getNext();#315,17.173660425039436
+extractForInitializer(n, null, null);#259,17.164668419781854
+functionBody.getParent().getType() == Token.FUNCTION);#379,17.162569562594097
+static class VerifyConstants extends AbstractPostOrderCallback#159,17.15338961283366
+public void process(Node externs, Node root) {#119,17.145286672255573
+Preconditions.checkArgument(n.getType() == Token.LABEL);#281,17.13550551041313
+if (n.getType() == Token.FUNCTION) {#268,17.13119592164692
+Node current = functionBody.getFirstChild();#381,17.129121439797537
+public void process(Node externs, Node root) {#171,17.12897356818704
+Preconditions.checkNotNull(previous);#396,17.11819819400185
+reportCodeChange("FOR initializer");#338,17.113528156280516
+static final boolean MAKE_LOCAL_NAMES_UNIQUE = true;#71,17.08119191621479
+next = c.getNext();#356,17.068579527047966
+gramps.replaceChild(parent, n);#488,17.04549858786843
+Node last = n.getLastChild();#283,17.003574958214394
+compiler, Lists.newArrayList(externs, root), this);#177,17.001002898583046
+reportCodeChange("LABEL normalization");#295,17.000786781311035
+private void extractForInitializer(#311,16.965593655904133
+Node block = new Node(Token.BLOCK);#292,16.95641833857486
+reportCodeChange("VAR with multiple children");#367,16.942952489852907
+"Normalize constraints violated:\n" + changeDescription);#81,16.94244146347046
+newStatement = NodeUtil.newExpr(init);#334,16.919986265676993
+private void removeDuplicateDeclarations(Node root) {#428,16.91318194071452
+new NodeTraversal(compiler, this).traverseRoots(externs, root);#120,16.902939319610596
+NodeTraversal t = new NodeTraversal(compiler, tickler, scopeCreator);#432,16.88168540367713
+reportCodeChange("WHILE node");#242,16.86879041459825
+parent.removeChild(n);#473,16.866621690637924
+NodeTraversal.traverse(compiler, root, this);#88,16.846048104135615
+parent.removeChild(n);#487,16.84048446856047
+return newChild;#422,16.782401204109192
+gramps.replaceChild(parent, new Node(Token.EMPTY));#491,16.772029638290405
+Preconditions.checkState(parent.hasOneChild());#452,16.768846103123256
+return;#290,16.709988403320313
+c.removeChild(name);#364,16.69764513127944
+public void visit(NodeTraversal t, Node n, Node parent) {#524,16.67874268123082
+if (MAKE_LOCAL_NAMES_UNIQUE) {#89,16.672233533859252
+NodeTraversal t = new NodeTraversal(compiler, renamer);#91,16.66003982226054
+break;#321,16.656771500905354
+block.addChildToFront(last);#294,16.646635560428393
+NodeTraversal nodeTraversal, Node n, Node parent) {#519,16.62840485572815
+public void visit(NodeTraversal t, Node n, Node parent) {#183,16.62153893425351
+n.replaceChild(last, block);#293,16.5716173508588
+public void process(Node externs, Node root) {#87,16.561632664998374
+"  gramps:" + n.getParent().getParent().toStringTree());#146,16.531587712904987
+private void doStatementNormalizations(NodeTraversal t, Node n, Node parent) {#251,16.522209904410623
+return;#128,16.497275431950886
+return;#187,16.471248308817547
+public void visit(NodeTraversal t, Node n, Node parent) {#124,16.45125997634161
+functionBody.removeChildAfter(previous);#397,16.443832291497124
+splitVarDeclarations(n);#265,16.410022735595703
+Preconditions.checkState(externsAndJs != null);#173,16.409056391034806
+public boolean shouldTraverse(NodeTraversal t, Node n, Node parent) {#100,16.39475985935756
+break;#340,16.331443309783936
+Node externsAndJs = root.getParent();#172,16.28095531463623
+"constant.");#227,16.24648832020007
+Preconditions.checkState(externsAndJs.hasChild(externs));#174,16.22428607940674
+.process(externs, root);#96,16.219002948087805
+Preconditions.checkState(#378,16.20918403972279
+insertBeforeParent.addChildBefore(newStatement, insertBefore);#337,16.207141142625076
+gramps.removeChild(parent);#482,16.14941534996033
+normalizeLabels(n);#253,16.127402965839092
+t.traverseRoots(externs, root);#92,16.107053405360173
+removeDuplicateDeclarations(root);#94,16.09471636552077
+return;#296,16.082220363616944
+t.traverse(root);#433,15.935954614119096
+NodeTraversal.traverseRoots(#176,15.927574753761292
+public void visit(NodeTraversal t, Node n, Node parent) {#234,15.916595559371146
+private void moveNamedFunctions(Node functionBody) {#377,15.864179356892903
+parent.addChildToFront(newChild);#418,15.618438243865967
+moveNamedFunctions(n.getLastChild());#269,15.482650650872124
+break;#244,15.466222858428955
+parent.addChildAfter(newChild, after);#420,15.292614992927103

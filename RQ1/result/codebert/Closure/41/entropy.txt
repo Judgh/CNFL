@@ -1,0 +1,417 @@
+private Scope getScopeDeclaredIn() {#713,20.136289423162285
+private boolean addParameter(FunctionParamBuilder builder,#546,20.040634632110596
+FunctionParamBuilder paramBuilder =#259,20.025840838750202
+private final Scope scope;#73,19.875240053449357
+String paramName = param.getString();#505,19.699028895451473
+String paramName = param.getString();#520,19.619282429034893
+Node newParam = paramBuilder.newParameterFromNode(oldParam);#268,19.556942863464357
+private final String sourceName;#72,19.54480767250061
+final class FunctionTypeBuilder {#65,19.49402400425502
+if (info != null && info.hasParameterType(argumentName)) {#453,19.487559058449484
+Node errorRoot, String sourceName, Scope scope) {#211,19.411397404140896
+paramBuilder,#282,19.33704241584329
+private final String fnName;#67,19.313827991485596
+return info != null && info.hasParameterType(paramName) &&#521,19.29859899219714
+private void reportWarning(DiagnosticType warning, String ... args) {#689,19.22141154607137
+FunctionTypeBuilder inferParameterTypes(JSDocInfo info) {#407,19.214716017246246
+@Override#783,19.206340471903484
+private boolean isVarArgsParameter(#514,19.17989518907335
+if (currentParam.getNext() != null && newParam.isVarArgs()) {#276,19.178049811001483
+return info != null && info.hasParameterType(paramName) &&#506,19.1583275544016
+if (!builder.addOptionalParams(paramType) && !warnedAboutArgList) {#554,19.13924860071253
+if (paramsParent == null) {#250,19.13773997624715
+if (!builder.addVarArgs(paramType) && !warnedAboutArgList) {#559,19.11961159339318
+"parameter {0} does not appear in {1}''s parameter list");#115,19.11915107568105
+this.scope = scope;#220,19.11847343444824
+@Override#788,19.118151982625324
+if (codingConvention.isVarArgsParameter(param)) {#516,19.11406135559082
+return info.getParameterCount() > 0 ||#701,19.060676779065812
+private void reportError(DiagnosticType error, String ... args) {#693,19.060610665215385
+if (templateTypeName != null &&#465,19.03341838291713
+FunctionParamBuilder builder = new FunctionParamBuilder(typeRegistry);#437,19.01341591940986
+if (!builder.addRequiredParams(paramType) && !warnedAboutArgList) {#564,18.95646784040663
+if (templateTypeName != null &&#307,18.953253428141277
+public boolean apply(JSType type) {#185,18.945870058877126
+private ObjectType thisType = null;#82,18.92465419769287
+private List<ObjectType> extendedInterfaces = null;#80,18.902421951293945
+@Override#808,18.90074284871419
+public boolean apply(JSType type) {#162,18.896481854575022
+private static UnknownFunctionContents singleton =#771,18.892647743225098
+parameterType.restrictByNotNullOrUndefined().isTemplateType()) {#466,18.87987419410988
+if (objType != null && (info == null || !info.hasType())) {#378,18.845486934368427
+@Override#778,18.829751014709473
+return inferParameterTypes(lp, info);#414,18.826292991638184
+"{0} @extends non-object type {1}");#94,18.807399225234985
+warnedAboutArgList |= addParameter(#281,18.785066203067178
+for (String name : info.getParameterNames()) {#410,18.78228610754013
+boolean isOptionalParam = isOptionalParameter(arg, info);#450,18.7786024495175
+"variable length argument must be last");#107,18.763192449297225
+boolean isOptional, boolean isVarArgs) {#548,18.761736929416656
+private boolean isOptionalParameter(#499,18.73893117904663
+public boolean mayHaveNonEmptyReturns() {#819,18.736754930936375
+Node oldParameterType = null;#432,18.73555408824574
+static FunctionContents get() {#774,18.73316822052002
+isVarArgs = isVarArgsParameter(arg, info);#451,18.731544093081826
+if (codingConvention.isOptionalParameter(param)) {#501,18.725373639000786
+public Iterable<String> getEscapedVarNames() {#794,18.723192495458267
+if (ctor != null) {#744,18.719493865966797
+public Node getSourceNode() {#809,18.717531724409625
+public boolean apply(JSType type) {#139,18.714250700814382
+if (maybeBaseType != null &&#329,18.708282417721218
+if (returnType == null) {#588,18.70277992884318
+private Set<String> escapedVarNames;#802,18.688270788926346
+void recordEscapedVarName(String name) {#833,18.672095425923665
+if (returnType == null &&#582,18.67086341164329
+for (Node currentParam = paramsParent.getFirstChild();#264,18.661701252585964
+FunctionTypeBuilder inferThisType(JSDocInfo info, JSType type) {#372,18.633921350751603
+if (templateTypeName != null && !foundTemplateType) {#484,18.628775755564373
+.withParamsNode(parametersNode)#611,18.613224601745607
+if (hasMoreTagsToResolve(objectType)) {#148,18.610538573492143
+public Node getSourceNode() {#779,18.6081224788319
+currentParam != null; currentParam = currentParam.getNext()) {#265,18.602791456075813
+info.hasReturnType() ||#702,18.595655314127605
+@Override#818,18.59033791224162
+JSType paramType, boolean warnedAboutArgList,#547,18.58303583992852
+if (isInstanceObject || fnName.equals("Function")) {#658,18.577667917524064
+public Iterable<String> getEscapedVarNames() {#828,18.576971390668085
+return singleton;#775,18.57195806503296
+"Only one parameter type must be the template type");#125,18.571743235868567
+if (!existingFn.hasEqualCallType(fnType)) {#668,18.570242921511333
+@Override#793,18.566259066263836
+if (info != null) {#529,18.564482515508477
+private boolean hasNonEmptyReturns = false;#801,18.5606746673584
+if (maybeInterType != null &&#343,18.558229976230198
+if (hasMoreTagsToResolve(objectType)) {#171,18.54830146971203
+Node getSourceNode();#758,18.531396124098038
+private String templateTypeName = null;#86,18.530375957489014
+JSType maybeInterType = t.evaluate(scope, typeRegistry);#342,18.52932467284026
+if (getScopeDeclaredIn().isGlobal() && !fnName.isEmpty()) {#603,18.527355744288517
+private List<ObjectType> implementedInterfaces = null;#79,18.527143137795584
+if (existingType != null) {#656,18.518627166748047
+this.compiler = compiler;#219,18.517935492775656
+@Override#138,18.514320373535156
+if (dotIndex != -1) {#715,18.505057408259464
+if (info != null) {#320,18.50071317499334
+if (contents != null) {#227,18.49372386932373
+String argumentName = arg.getString();#445,18.493233807881673
+FunctionTypeBuilder inferThisType(JSDocInfo info) {#390,18.490723848342896
+builder, parameterType, warnedAboutArgList,#473,18.489301204681396
+if (extendedInterfaces != null) {#623,18.48791483470372
+if (oldParameterType != null) {#477,18.484723218282063
+if (implementedInterfaces != null) {#619,18.479550870259605
+if (thisType == null) {#376,18.47883129119873
+boolean isInstanceObject = existingType.isInstanceType();#657,18.475013785892063
+private final AbstractCompiler compiler;#68,18.468898985120987
+if (parametersNode == null) {#592,18.46026317889874
+@Override#813,18.458356539408367
+if (builder.hasVarArgs()) {#567,18.45748009401209
+if (parametersNode == null) {#253,18.451410992940268
+private ObjectType baseType = null;#81,18.449975204467773
+this.sourceName = sourceName;#218,18.447170575459797
+static final DiagnosticType IMPLEMENTS_WITHOUT_CONSTRUCTOR =#100,18.425726689790423
+if (foundTemplateType) {#467,18.42140115102132
+private static boolean hasMoreTagsToResolve(ObjectType objectType) {#732,18.415719562106663
+codingConvention.isOptionalParameter(currentParam) ||#285,18.41145442082332
+"optional arguments must be at the end");#111,18.40862757364909
+for (JSTypeExpression t : info.getExtendedInterfaces()) {#355,18.39429206114549
+if (info != null && info.hasReturnType()) {#302,18.392814299639532
+typeRegistry.getNativeType(UNKNOWN_TYPE),#283,18.39143283278854
+void recordNonEmptyReturn() {#823,18.38737088983709
+private JSType returnType = null;#77,18.37978441065008
+public boolean mayHaveNonEmptyReturns() {#789,18.35585139347957
+JSType maybeInterfaceType = t.evaluate(scope, typeRegistry);#356,18.351055851689093
+if (existingFn.getSource() == null) {#664,18.346112932477677
+if (argsParent == null) {#423,18.332403818766277
+if (maybeInterfaceType != null &&#357,18.33025534947713
+info.getParameterType(paramName).isVarArgs();#522,18.31203942071824
+if (info.hasBaseType()) {#325,18.307335980733235
+if (parametersNode != null) {#433,18.299862714914177
+Iterator<Node> oldParams = oldType.getParameters().iterator();#261,18.29708824986997
+warnedAboutArgList,#284,18.292067527770996
+FunctionTypeBuilder(String fnName, AbstractCompiler compiler,#210,18.29145965576172
+if (maybeThisType != null) {#396,18.286252682025616
+info.hasThisType() ||#703,18.28345184326172
+if (info == null) {#424,18.26900474841778
+returnType.restrictByNotNullOrUndefined().isTemplateType()) {#309,18.26572624206543
+@Override#161,18.265291055043537
+if (info != null && info.hasThisType()) {#392,18.25722873912138
+if (getScopeDeclaredIn().isGlobal() && !fnName.isEmpty()) {#683,18.251529653867085
+if (objectType == null) {#164,18.2463983808245
+warnedAboutArgList |= addParameter(#472,18.246379979451497
+compiler.report(JSError.make(sourceName, errorRoot, error, args));#694,18.23907783508301
+@Override#827,18.22641118367513
+oldParameterType.getJSType() != null) {#457,18.22271558512812
+FunctionTypeBuilder inferFromOverriddenFunction(#242,18.189781535755504
+if (objectType == null) {#141,18.189464569091797
+static final DiagnosticType TEMPLATE_TYPE_DUPLICATED = DiagnosticType.warning(#123,18.186475143432617
+compiler.report(JSError.make(sourceName, errorRoot, warning, args));#690,18.185249786376954
+isVarArgs = oldParameterType.isVarArgs();#460,18.168927478790284
+JSType parameterType = null;#449,18.1646466255188
+return this;#533,18.15316663469587
+if (escapedVarNames == null) {#834,18.152683794498444
+throw new IllegalStateException(#593,18.14322781562805
+info.getParameterType(argumentName).evaluate(scope, typeRegistry);#455,18.142072184332484
+inferThisType(info);#374,18.141281604766846
+return escapedVarNames == null#829,18.13871892293294
+Iterable<String> getEscapedVarNames();#767,18.134665870666502
+return inferParameterTypes(info);#427,18.13036142985026
+@Override#184,18.12814712524414
+info.getParameterType(paramName).isOptionalArg();#507,18.12680058252244
+if (isOptional) {#550,18.125781059265137
+return hasNonEmptyReturns;#820,18.123135169347126
+if (isInterface) {#353,18.118834495544434
+Node lp = IR.paramList();#409,18.116777493403507
+FunctionTypeBuilder inferParameterTypes(@Nullable Node argsParent,#421,18.11655157804489
+if (isConstructor) {#326,18.11560541788737
+if (isConstructor || isInterface) {#339,18.1043598651886
+oldParamsListHitOptArgs = oldParamsListHitOptArgs ||#270,18.099424252143272
+if (!type.restrictByNotNullOrUndefined().isSubtype(#192,18.09276709349259
+FunctionTypeBuilder inferTemplateTypeName(@Nullable JSDocInfo info) {#528,18.0920663356781
+parameterType = oldParameterType.getJSType();#458,18.08971471786499
+.withName(fnName)#609,18.08756643183091
+static final DiagnosticType EXTENDS_WITHOUT_TYPEDEF = DiagnosticType.warning(#88,18.074951905470627
+private boolean returnTypeInferred = false;#78,18.073012698780406
+.withTypeOfThis(thisType)#613,18.068102334675036
+return this;#383,18.060222489493235
+static boolean isFunctionTypeDeclaration(JSDocInfo info) {#700,18.042070669286392
+static final DiagnosticType TYPE_REDEFINITION = DiagnosticType.warning(#117,18.021692562103272
+for (ObjectType interfaceType : ctor.getExtendedInterfaces()) {#745,18.015813331604004
+"The template type must be a parameter type");#129,18.01484966278076
+.withReturnType(returnType, returnTypeInferred)#612,18.01427754111912
+for (JSTypeExpression t : info.getImplementedInterfaces()) {#341,18.011169574878835
+"JSC_TEMPLATE_TYPE_DUPLICATED",#124,18.003722234205767
+return null;#780,18.00112311045329
+return this;#295,17.997574669974192
+"attempted re-definition of type {0}\n"#119,17.995943450927733
+new FunctionParamBuilder(typeRegistry);#260,17.993559485987614
+"Could not resolve type in {0} tag of {1}");#98,17.99311905815488
+hasNonEmptyReturns = true;#824,17.98855942946214
+boolean isVarArgs = false;#443,17.979833776300605
+return this;#230,17.977477482387
+if (oldParams.hasNext()) {#266,17.977005004882812
+public boolean mayBeFromExterns() {#784,17.972180570874894
+private final CodingConvention codingConvention;#69,17.963159163792927
+"All Function types must have params and a return type");#594,17.957797917452726
+static final DiagnosticType TEMPLATE_TYPE_EXPECTED = DiagnosticType.warning(#127,17.957197666168213
+DiagnosticType.warning(#101,17.955164511998493
+return this;#365,17.950552531651088
+ObjectType objectType = ObjectType.cast(type);#140,17.932026863098145
+return this;#312,17.92826965876988
+FunctionType buildAndRegister() {#581,17.927527109781902
+return this;#493,17.926933697291783
+FunctionTypeBuilder inferInheritance(@Nullable JSDocInfo info) {#319,17.918843078613282
+this.codingConvention = compiler.getCodingConvention();#215,17.914783778943512
+"JSC_TYPE_REDEFINITION",#118,17.907418812022488
+codingConvention.isVarArgsParameter(currentParam));#287,17.903073054093582
+boolean mayHaveNonEmptyReturns();#764,17.88978273218328
+returnType = info.getReturnType().evaluate(scope, typeRegistry);#303,17.88915372931439
+isOptionalParam = oldParameterType.isOptionalArg();#459,17.87531523704529
+.withSourceNode(contents.getSourceNode())#610,17.86572131243619
+ObjectType objectType = ObjectType.cast(type);#163,17.84950590133667
+Var rootVar = scope.getVar(rootVarName);#717,17.846355488425807
+return scope;#722,17.83543954576765
+return emittedWarning;#575,17.823014855384827
+int dotIndex = fnName.indexOf(".");#714,17.82192724943161
+if (rootVar != null) {#718,17.82073313849313
+if (!fnType.isInterface() && baseType != null) {#633,17.818880532917223
+emittedWarning = true;#561,17.81220824901874
+reportWarning(TYPE_REDEFINITION, fnName,#669,17.810315132141113
+reportWarning(IMPLEMENTS_WITHOUT_CONSTRUCTOR, fnName);#349,17.804289964529183
+boolean emittedWarning = false;#549,17.79816951751709
+"@extends used without @constructor or @interface for {0}");#90,17.796095761385832
+reportError(TEMPLATE_TYPE_EXPECTED, fnName);#310,17.792307356129523
+public boolean mayBeFromExterns() {#814,17.7838260105678
+String rootVarName = fnName.substring(0, dotIndex);#716,17.781315196644176
+.withTemplateName(templateTypeName)#614,17.778714681926527
+fnName, contents.getSourceNode(), parametersNode, returnType);#653,17.775722793910813
+return ImmutableList.of();#795,17.775161082927998
+if (oldType == null) {#244,17.757713397343952
+Node oldParam = oldParams.next();#267,17.75604829788208
+"JSC_EXTENDS_WITHOUT_TYPEDEF",#89,17.754870456197988
+newParam.setVarArgs(false);#277,17.748163404918852
+boolean foundTemplateType = false;#442,17.746567899530586
+parameterType = typeRegistry.getNativeType(UNKNOWN_TYPE);#462,17.74626572926839
+return this;#401,17.74421501159668
+for (Node arg : argsParent.children()) {#444,17.734932708740235
+maybeBaseType.setValidator(new ExtendedTypeValidator())) {#330,17.7299542427063
+private class ExtendedTypeValidator implements Predicate<JSType> {#137,17.729801290175494
+reportWarning(EXTENDS_WITHOUT_TYPEDEF, fnName);#334,17.726252720273774
+reportError(BAD_IMPLEMENTED_TYPE, fnName);#165,17.717005769411724
+returnType != null &&#308,17.71043161245493
+typeRegistry.declareType(fnName, fnType.getInstanceType());#604,17.70823152248676
+info.getThisType().evaluate(scope, typeRegistry));#394,17.6821631193161
+!contents.mayHaveNonEmptyReturns() && !contents.mayBeFromExterns()) {#583,17.680131666121945
+DiagnosticType.warning(#132,17.67558280626933
+ObjectType objType = ObjectType.cast(type);#377,17.67483531104194
+maybeInterType.setValidator(new ImplementedTypeValidator())) {#344,17.66547167301178
+"@this type of a function must be an object\n" +#134,17.664277235666912
+private void maybeSetBaseType(FunctionType fnType) {#632,17.654451179504395
+reportError(TEMPLATE_TYPE_DUPLICATED, fnName);#468,17.643388066973007
+fnType = new FunctionBuilder(typeRegistry)#608,17.63929479262408
+return true;#790,17.621112823486328
+reportError(TEMPLATE_TYPE_EXPECTED, fnName);#485,17.61482856584632
+if (!interfaceType.isResolved()) {#746,17.613015365600585
+Node param, @Nullable JSDocInfo info) {#500,17.60945119355854
+"Actual type: {0}");#135,17.588941021969443
+Set<String> allJsDocParams = (info == null) ?#439,17.586841106414795
+foundTemplateType = true;#470,17.57692268916539
+@Nullable JSDocInfo info) {#422,17.556588768959045
+implementedInterfaces.add((ObjectType) maybeInterType);#345,17.54190898895264
+private Node parametersNode = null;#85,17.53918234507243
+maybeInterfaceType.setValidator(new ExtendedTypeValidator())) {#358,17.53460839589437
+"JSC_TEMPLATE_TYPE_EXPECTED",#128,17.531459899175736
+"JSC_IMPLEMENTS_WITHOUT_CONSTRUCTOR",#102,17.529425144195557
+private class ImplementedTypeValidator implements Predicate<JSType> {#160,17.523466311003034
+Node param, @Nullable JSDocInfo info) {#515,17.522447234705876
+if (objectType.getImplicitPrototype() != null) {#734,17.512113972714072
++ "expected: {2}");#121,17.50799070085798
+private class ThisTypeValidator implements Predicate<JSType> {#183,17.50460422740263
+"JSC_EXTENDS_NON_OBJECT",#93,17.502338695526124
+FunctionType existingFn =#659,17.497678892953054
+FunctionTypeBuilder inferReturnType(@Nullable JSDocInfo info) {#301,17.496981018467952
+private final Node errorRoot;#71,17.495933175086975
+return fnType;#629,17.492112278938293
+private final Node n;#800,17.465488221910263
+parametersNode = new FunctionParamBuilder(typeRegistry).build();#254,17.459085767919365
++ "found   : {1}\n"#120,17.4442377651439
+parameterType =#454,17.438128818165172
+static final DiagnosticType EXTENDS_NON_OBJECT = DiagnosticType.warning(#92,17.428165145542312
+@Nullable FunctionType oldType, @Nullable Node paramsParent) {#243,17.422700665213846
+private FunctionType getOrCreateConstructor() {#651,17.41634714603424
+? ImmutableList.<String>of() : escapedVarNames;#830,17.41103692849477
+return this;#245,17.402687708536785
+for (String inexistentName : allJsDocParams) {#488,17.40155659781562
+"@implements used without @constructor or @interface for {0}");#103,17.39927023428458
+if (isConstructor) {#598,17.394001787359063
+boolean warnedAboutArgList = false;#262,17.388434546334402
+reportWarning(EXTENDS_NON_OBJECT, fnName, type.toString());#142,17.384112456749225
+info.getBaseType().evaluate(scope, typeRegistry);#328,17.381109407969884
+this.fnName = fnName == null ? "" : fnName;#214,17.379095027321263
+private FunctionContents contents = UnknownFunctionContents.get();#75,17.37409965808575
+return true;#785,17.373640696207683
+emittedWarning = true;#556,17.364706773024338
+emittedWarning = true;#572,17.360752912668083
+typeRegistry.declareType(fnName, fnType.getInstanceType());#684,17.354013641675312
+typeRegistry.getNativeType(OBJECT_TYPE))) {#193,17.35130442891802
+newParam.setOptionalArg(true);#278,17.348876953125
+reportWarning(RESOLVED_TAG_EMPTY, "@implements", fnName);#168,17.34355821280644
+reportWarning(RESOLVED_TAG_EMPTY, "@extends", fnName);#145,17.323928594589233
+FunctionType fnType;#597,17.310104476081
+parametersNode = paramBuilder.build();#293,17.308560030800955
+isInstanceObject ?#660,17.307092130184174
+static final DiagnosticType THIS_TYPE_NON_OBJECT =#131,17.30465030670166
+fnName, contents.getSourceNode());#602,17.298750626413447
+return false;#169,17.29314847425981
+returnTypeInferred = oldType.isReturnTypeInferred();#249,17.28604136572944
+isInterface = info.isInterface();#322,17.27969353539603
+parametersNode = oldType.getParametersNode();#252,17.267865657806396
+existingType.toObjectType().getConstructor() :#661,17.263776222864788
+"JSC_THIS_TYPE_NON_OBJECT",#133,17.258573452631634
+returnTypeInferred = true;#585,17.256745118361252
+return false;#146,17.254730398004707
+maybeSetBaseType(fnType);#606,17.249755586896622
+boolean mayBeFromExterns();#761,17.24499050776164
+reportWarning(RESOLVED_TAG_EMPTY, "@implements", fnName);#174,17.23572503366778
+private boolean isInterface = false;#84,17.23248396979438
+this.contents = contents;#228,17.231764426598183
+returnType = typeRegistry.getNativeType(VOID_TYPE);#584,17.22852711244063
+reportWarning(VAR_ARGS_MUST_BE_LAST);#568,17.22543815330223
+oldParam.isVarArgs() ||#271,17.217409480701793
+FunctionTypeBuilder setContents(@Nullable FunctionContents contents) {#226,17.216813147068024
+Sets.<String>newHashSet() :#440,17.2116917441873
+ObjectType maybeThisType = null;#391,17.211273908615112
+baseType = (ObjectType) maybeBaseType;#331,17.197954924210258
+JSType maybeBaseType =#327,17.196490680470188
+private final JSTypeRegistry typeRegistry;#70,17.195082957927998
+this.errorRoot = errorRoot;#217,17.188159227371216
+isVarArgs);#475,17.183409145900182
+new UnknownFunctionContents();#772,17.16910428267259
+implementedInterfaces = Lists.newArrayList();#340,17.167095184326172
+return existingFn;#673,17.15369994823749
+return fnType;#686,17.149977803230286
+fnType.setExtendedInterfaces(extendedInterfaces);#624,17.139161396026612
+typeRegistry.setTemplateTypeName(templateTypeName);#531,17.127026457535592
+static class UnknownFunctionContents implements FunctionContents {#770,17.12102291800759
+extendedInterfaces = Lists.newArrayList();#354,17.119060304429794
+"JSC_INEXISTANT_PARAM",#114,17.113546954260933
+if (objectType.getImplicitPrototype().isResolved()) {#736,17.11039866100658
+return true;#197,17.083252800835503
+return false;#166,17.08275205438787
+return false;#751,17.072051790025498
+return n.isFromExterns();#815,17.070241483052573
+AstFunctionContents(Node n) {#804,17.049005111058552
+maybeSetBaseType(fnType);#681,17.047823190689087
+reportWarning(RESOLVED_TAG_EMPTY, "@extends", fnName);#151,17.039024194081623
+reportWarning(VAR_ARGS_MUST_BE_LAST);#555,17.03448429107666
+return rootVar.getScope();#719,17.02119960784912
+return n;#810,17.01743369632297
+reportWarning(VAR_ARGS_MUST_BE_LAST);#560,17.01499198913574
+info.isConstructor() ||#704,17.012514940897624
+reportWarning(INEXISTANT_PARAM, inexistentName, fnName);#489,17.012360254923504
+returnType = typeRegistry.getNativeType(UNKNOWN_TYPE);#589,17.00554422898726
+oldParameterType = parametersNode.getFirstChild();#434,16.98777125863468
+boolean oldParamsListHitOptArgs = false;#263,16.98386225980871
+boolean warnedAboutArgList = false;#438,16.971800565719604
+extendedInterfaces.add((ObjectType) maybeInterfaceType);#359,16.968591117858885
+returnType = oldType.getReturnType();#248,16.967454297201975
+static final DiagnosticType INEXISTANT_PARAM = DiagnosticType.warning(#113,16.944729895818803
+maybeThisType = ObjectType.cast(#393,16.944707997639973
+return true;#155,16.922687097029254
+this.n = n;#805,16.915289481480915
+thisType = maybeThisType;#397,16.913008983318623
+reportWarning(OPTIONAL_ARG_AT_END);#570,16.90457046031952
+static final DiagnosticType VAR_ARGS_MUST_BE_LAST = DiagnosticType.warning(#105,16.89841002005118
+return this;#425,16.898099812594328
+this.typeRegistry = compiler.getTypeRegistry();#216,16.89437686695772
+Preconditions.checkNotNull(errorRoot);#212,16.874893188476562
+thisType.setValidator(new ThisTypeValidator());#398,16.873172910589922
+info.isInterface();#705,16.862331243661735
+static interface FunctionContents {#756,16.857313428606307
+return false;#143,16.85264847495339
+return true;#517,16.84349791208903
+isOptionalParam,#474,16.842405251094274
+maybeSetBaseType(fnType);#616,16.828329222542898
+return true;#739,16.82785025509921
+return true;#502,16.82015366024441
+Sets.newHashSet(info.getParameterNames());#441,16.818766593933105
+existingFn.setSource(contents.getSourceNode());#665,16.817527612050373
+oldParameterType = oldParameterType.getNext();#478,16.81704004187333
+returnTypeInferred = false;#304,16.81424485720121
+return true;#178,16.803963747891512
+typeRegistry.clearTemplateTypeName();#627,16.78519762479342
+FunctionType ctor = objectType.getConstructor();#743,16.781004455354477
+static final DiagnosticType OPTIONAL_ARG_AT_END = DiagnosticType.warning(#109,16.761197408040363
+Preconditions.checkArgument(objectType.isUnknownType());#733,16.75762246784411
+return false;#737,16.752171082930133
+typeRegistry.getNativeFunctionType(FUNCTION_FUNCTION_TYPE);#662,16.751558580706195
+lp.addChildToBack(IR.name(name));#411,16.735119581222534
+escapedVarNames = Sets.newHashSet();#835,16.727586693233913
+parametersNode = builder.build();#492,16.71625501459295
+templateTypeName = info.getTemplateTypeName();#530,16.706006779390222
+fnType = getOrCreateConstructor();#599,16.698802757263184
+"JSC_OPTIONAL_ARG_AT_END",#110,16.69869531903948
+reportWarning(THIS_TYPE_NON_OBJECT, type.toString());#194,16.6651212985699
+fnType.setImplementedInterfaces(implementedInterfaces);#620,16.659037590026855
+"JSC_VAR_ARGS_MUST_BE_LAST",#106,16.64823265870412
+static final DiagnosticType RESOLVED_TAG_EMPTY = DiagnosticType.warning(#96,16.642461486484695
+allJsDocParams.remove(argumentName);#446,16.63967732822194
+escapedVarNames.add(name);#837,16.60970449447632
+fnType.toString(), existingFn.toString());#670,16.505958945662886
+static class AstFunctionContents implements FunctionContents {#799,16.42796464399858
+private boolean isConstructor = false;#83,16.411350440979003
+"JSC_RESOLVED_TAG_EMPTY",#97,16.39940948486328
+thisType = objType;#379,16.385838985443115
+oldParam.isOptionalArg();#272,16.385449818202428
+return true;#149,16.38351873251108
+return true;#172,16.378176835867073
+JSType existingType = typeRegistry.getType(fnName);#654,16.353671932220458
+oldParamsListHitOptArgs,#286,16.24672585267287
+fnType = typeRegistry.createInterfaceType(#601,16.228753258200253
+return true;#747,16.14332504272461
+return false;#152,16.027752362764797
+fnType.setPrototypeBasedOn(baseType);#634,15.975290033552382
+.build();#615,15.967643444354717
+return false;#175,15.71540722480187
+return false;#195,15.631512555209072
+isConstructor = info.isConstructor();#321,15.57615476846695
+FunctionType fnType = typeRegistry.createConstructorType(#652,15.490066528320312

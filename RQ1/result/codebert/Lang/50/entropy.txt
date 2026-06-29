@@ -1,0 +1,596 @@
+mTimeZone = timeZone;#548,20.451240921020506
+public TimeZone getTimeZone() {#933,20.146119912465412
+mTimeZoneForced = (timeZone != null);#544,20.014519119262694
+if (timeZone != null) {#368,19.989512264728546
+if (timeZone != null) {#462,19.97438621520996
+private final boolean mTimeZoneForced;#127,19.960801931527946
+if (timeZone == null) {#545,19.916966021060944
+private final TimeZone mTimeZone;#1645,19.872050046920776
+private final TimeZone mTimeZone;#1523,19.82818192243576
+if (timeZone != null) {#281,19.818597078323364
+private final int mStyle;#1526,19.785785266331263
+private final boolean mTimeZoneForced;#1524,19.727914529688217
+private final TimeZone mTimeZone;#123,19.727147261301678
+private final String mStandard;#1527,19.487373420170375
+private static class UnpaddedMonthField implements NumberRule {#1221,19.477036714553833
+private final String mDaylight;#1528,19.450639979044595
+protected void init() {#560,19.420479350619846
+private final int mField;#1325,19.40748337336949
+private final int mField;#1263,19.40582745415824
+if (format == null) {#470,19.39160130818685
+int len = 0;#564,19.386347110454853
+private final int mField;#1135,19.369300774165563
+mTimeZone = timeZone;#1659,19.367217214483965
+private static class UnpaddedNumberField implements NumberRule {#1175,19.35132187604904
+static synchronized String getTimeZoneDisplay(TimeZone tz, boolean daylight, int style, Locale locale) {#499,19.345403330666677
+UnpaddedMonthField() {#1228,19.332602882385252
+int length = mPattern.length();#591,19.331715285778046
+private final int mSize;#1264,19.33081844874791
+(mTimeZone == other.mTimeZone || mTimeZone.equals(other.mTimeZone)) &&#985,19.323648555858714
+int len = mRules.length;#890,19.318185329437256
+private static class TimeZoneDisplayKey {#1644,19.315849781036377
+private final int mField;#1178,19.3145432472229
+if (locale == null) {#551,19.31146490573883
+if (format == null) {#291,19.30503953297933
+mTimeZone = timeZone;#1539,19.2906695918033
+timeZone = TimeZone.getDefault();#546,19.2889039175851
+TimeZoneNameRule(TimeZone timeZone, boolean timeZoneForced, Locale locale, int style) {#1538,19.286321610212326
+TimeZoneDisplayKey(TimeZone timeZone,#1657,19.285294108920628
+if (mTimeZoneForced) {#873,19.270508766174316
+if (locale != null) {#371,19.265105485916138
+if (format == null) {#376,19.255512491861978
+if (locale != null) {#465,19.24225479364395
+int length = pattern.length();#714,19.233868090311685
+private final int mStyle;#1646,19.230482237679617
+private final char mValue;#1073,19.2284483228411
+private final NumberRule mRule;#1439,19.220982615152995
+UnpaddedNumberField(int field) {#1185,19.20721170637343
+return mTimeZoneForced;#945,19.203780619303384
+private final NumberRule mRule;#1481,19.199323336283367
+if (locale == null) {#471,19.1982638835907
+final boolean mColon;#1595,19.197700568607875
+if (pattern == null) {#539,19.190143140157065
+if (locale == null) {#292,19.184792375564577
+public void appendTo(StringBuffer buffer, int value) {#1472,19.181512060619536
+if (offset < 0) {#1619,19.16807797080592
+public void appendTo(StringBuffer buffer, int value) {#1514,19.162195886884415
+if (locale != null) {#285,19.156545221805573
+if (obj instanceof Date) {#792,19.15393042564392
+public String toString() {#1746,19.132123810904368
+public boolean equals(Object obj) {#978,19.125444094340008
+boolean inLiteral = false;#735,19.100647020339967
+public boolean equals(Object obj) {#1677,19.100614428520203
+public int estimateLength() {#1609,19.097289970942906
+if (locale == null) {#377,19.093301630020143
+mLocaleForced = (locale != null);#550,19.085359859466553
+if (tokenLen == 0) {#600,19.07221555709839
+return mTimeZone;#934,19.065859134380634
+(mTimeZoneForced == other.mTimeZoneForced) &&#987,19.048460824148997
+int i = indexRef[0];#713,19.042051196098328
+if (value == 0) {#1463,19.0408320175974
+public boolean getTimeZoneOverridesCalendar() {#944,19.02299600839615
+public int estimateLength() {#1496,19.01322637285505
+private final boolean mLocaleForced;#135,19.01220336327186
+public int estimateLength() {#1454,18.99707187925066
+int max = 0;#1154,18.984954609590417
+if (value == null) {#502,18.979068438212078
+public int estimateLength() {#1284,18.965433529445104
+char c = pattern.charAt(i);#716,18.964553515116375
+private interface Rule {#1039,18.964054107666016
+if (obj instanceof FastDateFormat == false) {#979,18.963871574401857
+private final String mValue;#1104,18.96223054613386
+public boolean equals(Object obj) {#1716,18.949631452560425
+public int estimateLength() {#1379,18.94472312927246
+int total = 0;#1001,18.941769966712364
+private static class TimeZoneNumberRule implements Rule {#1591,18.940967764173234
+if (#983,18.94037742614746
+public int estimateLength() {#1235,18.937707832881383
+public String toString() {#1015,18.925960540771484
+Calendar c = new GregorianCalendar(mTimeZone);#822,18.92305987221854
+public int estimateLength() {#1415,18.919576236179896
+public int estimateLength() {#1192,18.919081483568466
+private final String mPattern;#119,18.91002140045166
+Calendar c = new GregorianCalendar(mTimeZone);#859,18.906622614179337
+int dateStyle, int timeStyle, TimeZone timeZone) {#442,18.906479982229378
+public String format(Date date) {#821,18.897284269332886
+private transient int mMaxLengthEstimate;#143,18.884153072650616
+private static class TimeZoneNameRule implements Rule {#1522,18.874500002179825
+mTimeZoneForced = timeZoneForced;#1540,18.87316604282545
+public int estimateLength() {#1339,18.823296070098877
+if (format == null) {#214,18.8228936513265
+for (int i = 0; i < length; i++) {#594,18.82219461961226
+try {#474,18.814164297921316
+key = new Pair(key, timeZone);#369,18.810299093073066
+public void appendTo(StringBuffer buffer, Calendar calendar) {#1199,18.80960241953532
+private transient Rule[] mRules;#139,18.79941142689098
+public void appendTo(StringBuffer buffer, Calendar calendar) {#1291,18.792223567054386
+public void appendTo(StringBuffer buffer, Calendar calendar) {#1346,18.791549092247372
+protected NumberRule selectNumberRule(int field, int padding) {#769,18.78552924262153
+private final Locale mLocale;#1525,18.781274676322937
+public void appendTo(StringBuffer buffer, Calendar calendar) {#1242,18.78081566946847
+public int getMaxLengthEstimate() {#966,18.756920154278095
+TimeZoneNumberRule(boolean colon) {#1602,18.754939556121826
+i = indexRef[0];#597,18.746114429674652
+if (this == obj) {#1678,18.740871228669818
+if (this == obj) {#1717,18.73767732319079
+public int estimateLength() {#1088,18.73407976967948
+public final void appendTo(StringBuffer buffer, int value) {#1298,18.73316088589755
+rule = new TimeZoneNameRule(mTimeZone, mTimeZoneForced, mLocale, TimeZone.SHORT);#675,18.72725162903468
+if (!(obj instanceof Pair)) {#1721,18.727198328290665
+if (value == 0) {#1505,18.726648029528167
+private interface NumberRule extends Rule {#1059,18.721313389864836
+mPattern = pattern;#542,18.71345754770132
+key = new Pair(key, timeZone);#282,18.710367462851785
+private final Object mObj2;#1701,18.709629249572753
+total += (mTimeZoneForced ? 1 : 0);#1004,18.69292990366618
+public int estimateLength() {#1119,18.69246244430542
+key = new Pair(key, timeZone);#463,18.689341718500312
+public int estimateLength() {#1153,18.688797405787877
+public void appendTo(StringBuffer buffer, Calendar calendar) {#1386,18.685101781572616
+throw new IllegalArgumentException("The pattern must not be null");#540,18.68349651189951
+static final UnpaddedMonthField INSTANCE = new UnpaddedMonthField();#1222,18.67291362762451
+if (mTimeZoneForced) {#1570,18.66818532489595
+if (c >= 'A' && c <= 'Z' || c >= 'a' && c <= 'z') {#717,18.665003496057846
+String value = (String) cTimeZoneDisplayCache.get(key);#501,18.660019636154175
+public void appendTo(StringBuffer buffer, Calendar calendar) {#1422,18.652832984924316
+boolean daylight, int style, Locale locale) {#1658,18.651578125200775
+case 'a': // am/pm marker (text)#662,18.647995193799336
+Pair key = (Pair)obj;#1725,18.64153380621047
+for (int i=mRules.length; --i >= 0; ) {#565,18.64149425506592
+public static FastDateFormat getTimeInstance(int style, TimeZone timeZone) {#350,18.639644492756236
+static final TimeZoneNumberRule INSTANCE_COLON = new TimeZoneNumberRule(true);#1592,18.63735737119402
+c.setTime(date);#823,18.634796396891275
+return "FastDateFormat[" + mPattern + "]";#1016,18.623958224341983
+protected FastDateFormat(String pattern, TimeZone timeZone, Locale locale) {#537,18.61225002462214
+if (mColon) {#1630,18.608729312294408
+TwentyFourHourField(NumberRule rule) {#1489,18.603459517161053
+public Locale getLocale() {#953,18.60293634732564
+mObj2 = obj2;#1710,18.60137146397641
+public String getPattern() {#919,18.59409294128418
+switch (c) {#607,18.588122367858887
+calendar.setTimeZone(mTimeZone);#875,18.58316031369296
+private static class PaddedNumberField implements NumberRule {#1262,18.582816123962402
+total += mTimeZone.hashCode();#1003,18.576336467967312
+mField = field;#1333,18.574660132913028
+mValue = value;#1113,18.549969168270337
+public final void appendTo(StringBuffer buffer, int value) {#1393,18.54497662457553
+c.setTime(date);#860,18.54347292582194
+rule = UnpaddedMonthField.INSTANCE;#626,18.542940047479444
+public static FastDateFormat getDateInstance(int style, TimeZone timeZone) {#264,18.542625513943758
+private final Locale mLocale;#1647,18.541878521442413
+return mLocale;#954,18.53886758364164
+if (obj instanceof TimeZoneDisplayKey) {#1681,18.535269239674445
+if (timeZoneForced) {#1544,18.526385068893433
+public final void appendTo(StringBuffer buffer, int value) {#1429,18.52377358349887
+for (; i < length; i++) {#737,18.519114407626066
+if (mTimeZoneForced) {#1557,18.513921192714147
+void appendTo(StringBuffer buffer, int value);#1066,18.51144148174085
+mDaylight = getTimeZoneDisplay(timeZone, true, style, locale);#1546,18.500485195833093
+if (value < 10) {#1207,18.499627012955514
+case 'z': // time zone (text)#671,18.498516646298494
+private static class TextField implements Rule {#1134,18.494018077850342
+public final void appendTo(StringBuffer buffer, int value) {#1206,18.49245366183194
+public static synchronized FastDateFormat getTimeInstance(int style, TimeZone timeZone, Locale locale) {#366,18.491258833143448
+mStyle = style;#1542,18.490882368648755
+private static class TwoDigitNumberField implements NumberRule {#1324,18.4872624874115
+mRule.appendTo(buffer, value);#1515,18.47750611738725
+public int estimateLength() {#1556,18.47676522391183
+switch (padding) {#770,18.475642057565544
+total += (mLocaleForced ? 1 : 0);#1006,18.47504879179455
+private static class StringLiteral implements Rule {#1103,18.473111629486084
+int[] indexRef = new int[1];#592,18.467019610934788
+public void appendTo(StringBuffer buffer, Calendar calendar) {#1167,18.464788845607213
+mRule.appendTo(buffer, value);#1473,18.46375274658203
+mValue = value;#1082,18.45815445395077
+return getTimeInstance(style, timeZone, null);#351,18.45576939582825
+mMaxLengthEstimate = len;#569,18.454892456531525
+public final void appendTo(StringBuffer buffer, int value) {#1353,18.44436671517112
+private final Object mObj1;#1700,18.44236354827881
+public String format(long millis) {#811,18.44115059192364
+if (peek == c) {#724,18.4397927125295
+char c = token.charAt(0);#605,18.4379657832059
+public static synchronized FastDateFormat getDateTimeInstance(int dateStyle, int timeStyle, TimeZone timeZone,#458,18.437512159347534
+public void appendTo(StringBuffer buffer, Calendar calendar) {#1126,18.434615907214937
+rule = new TextField(Calendar.AM_PM, AmPmStrings);#663,18.431619126456123
+public void appendTo(StringBuffer buffer, Calendar calendar) {#1095,18.429648172287713
+return "[" + mObj1 + ':' + mObj2 + ']';#1747,18.411057662963866
+while (i + 1 < length) {#722,18.405417578560964
+Rule[] rules = mRules;#889,18.4031982421875
+case 'K': // hour in am/pm (0..11)#668,18.401434297914857
+max = len;#1158,18.397555430730183
+TwoDigitMonthField() {#1408,18.39519322713216
+buffer.append(getTimeZoneDisplay(timeZone, false, mStyle, mLocale));#1581,18.391906203293217
+if (value < 100) {#1299,18.390437929253828
+return mPattern;#920,18.38411235809326
+mStandard = getTimeZoneDisplay(timeZone, false, style, locale);#1545,18.382992860042688
+public final void appendTo(StringBuffer buffer, int value) {#1249,18.382263573733244
+indexRef[0] = i;#595,18.37854948043823
+mField = field;#1146,18.376917109769934
+indexRef[0] = i;#758,18.37065589427948
+public int hashCode() {#1670,18.36908721923828
+private static class Pair {#1699,18.364336331685383
+StringLiteral(String value) {#1112,18.359809707192813
+try {#295,18.352476801191056
+TwoDigitYearField() {#1372,18.347947692871095
+return new PaddedNumberField(field, padding);#776,18.342660779538363
+for (int i=mValues.length; --i >= 0; ) {#1155,18.342299790217957
+return getDateTimeInstance(dateStyle, timeStyle, timeZone, null);#443,18.33782051086426
+if (c == '\'') {#740,18.334135704040527
+if (value < 100) {#1354,18.332501060084294
+private static class TwentyFourHourField implements NumberRule {#1480,18.328855578104655
+TwoDigitNumberField(int field) {#1332,18.327353795369465
+mField = field;#1186,18.3260233262006
+buffer.append(mValue);#1127,18.325764907033818
+return new UnpaddedNumberField(field);#772,18.32486971941861
+public static synchronized FastDateFormat getDateInstance(int style, TimeZone timeZone, Locale locale) {#279,18.31509925701
+private static class TwoDigitMonthField implements NumberRule {#1402,18.308462142944336
+public void appendTo(StringBuffer buffer, Calendar calendar) {#1616,18.30588940211705
+public Pair(Object obj1, Object obj2) {#1708,18.305651950836182
+return false;#992,18.30373139814897
+Object key = new Integer(style);#367,18.302771508693695
+public StringBuffer format(Object obj, StringBuffer toAppendTo, FieldPosition pos) {#791,18.30012532075246
+public static FastDateFormat getInstance(String pattern, TimeZone timeZone) {#180,18.29528586069743
+public static FastDateFormat getDateInstance(int style) {#233,18.29471010320327
+int estimateLength();#1045,18.292926629384358
+private static class CharacterLiteral implements Rule {#1072,18.291555949619838
+mRule.appendTo(buffer, value);#1466,18.29045685854825
+public void appendTo(StringBuffer buffer, Calendar calendar) {#1461,18.284478687104723
+Object key = new Integer(style);#280,18.284303545951843
+mRule.appendTo(buffer, value);#1508,18.27975455197421
+buffer.append(mValue);#1096,18.274046797501413
+private static class TwoDigitYearField implements NumberRule {#1366,18.268571078777313
+public static FastDateFormat getTimeInstance(int style) {#319,18.26816412981819
+List rules = new ArrayList();#582,18.264030075073244
+case 'h': // hour in am/pm (number, 1..12)#632,18.261916686748638
+rule = new TimeZoneNameRule(mTimeZone, mTimeZoneForced, mLocale, TimeZone.LONG);#673,18.25364561875661
+String[] AmPmStrings = symbols.getAmPmStrings();#589,18.25202075958252
+int dateStyle, int timeStyle) {#407,18.24794301532564
+locale = Locale.getDefault();#552,18.245936250686647
+for (int i = 0; i < len; i++) {#891,18.24202199415727
+static final TimeZoneNumberRule INSTANCE_NO_COLON = new TimeZoneNumberRule(false);#1593,18.239474900563557
+if (cDefaultPattern == null) {#516,18.22693432078642
+TwelveHourField(NumberRule rule) {#1447,18.224149367388556
+Locale locale) {#459,18.217446832095874
+return getDateInstance(style, timeZone, null);#265,18.212260580062868
+mValues = values;#1147,18.212082694558536
+public static FastDateFormat getTimeInstance(int style, Locale locale) {#334,18.209960210890998
+for (int i = mSize; --i >= digits; ) {#1313,18.209624690394246
+int dateStyle, int timeStyle, Locale locale) {#424,18.208685188293458
+try {#381,18.205948080335343
+private final Locale mLocale;#131,18.205347855885822
+public static FastDateFormat getDateInstance(int style, Locale locale) {#248,18.203817458379838
+mRule = rule;#1448,18.198917164522058
+public void appendTo(StringBuffer buffer, Calendar calendar) {#1503,18.19470401037307
+PaddedNumberField(int field, int size) {#1272,18.19352831840515
+return getDateTimeInstance(dateStyle, timeStyle, null, null);#408,18.19036801656087
+len += mRules[i].estimateLength();#566,18.189397646033246
+mRule = rule;#1490,18.189385245828067
+if (value < 10) {#1250,18.18810864498741
+mTimeZone.equals(other.mTimeZone) &&#1684,18.18014618929695
+mObj1 = obj1;#1709,18.179834516424883
+appendTo(buffer, calendar.get(mField));#1292,18.174981514612835
+TextField(int field, String[] values) {#1145,18.173028293408844
+return applyRules(c, buf);#861,18.172977566719055
+if (daylight) {#1660,18.172972944047714
+case 'F': // day of week in month (number)#653,18.172940521240236
+return false;#980,18.171121088663735
+mRules = (Rule[]) rulesList.toArray(new Rule[rulesList.size()]);#562,18.164396413167317
+return true;#990,18.16313336690267
+TimeZone timeZone = calendar.getTimeZone();#1577,18.16022699850577
+Object key = new TimeZoneDisplayKey(tz, daylight, style, locale);#500,18.148074913024903
+case 'Z': // time zone (value)#678,18.147801312533293
+appendTo(buffer, calendar.get(mField));#1347,18.144543687502544
+if (i + 1 < length && pattern.charAt(i + 1) == '\'') {#741,18.14417723722236
+locale = Locale.getDefault();#378,18.143987496693928
+mField = field;#1277,18.143593732048483
+TimeZoneDisplayKey other = (TimeZoneDisplayKey)obj;#1682,18.134939511617024
+buf.append(c);#720,18.131444136301678
+(mPattern == other.mPattern || mPattern.equals(other.mPattern)) &&#984,18.13046868642171
+appendTo(buffer, calendar.get(mField));#1200,18.128284374872845
+int tokenLen = token.length();#599,18.117261695861817
+case 'H': // hour in day (number, 0..23)#635,18.113697864391185
+String[] ERAs = symbols.getEras();#584,18.109579136497096
+mLocale = locale;#1541,18.107482380337185
+private static String cDefaultPattern;#108,18.099884206598457
+FastDateFormat other = (FastDateFormat) obj;#982,18.09949049949646
+private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException {#1029,18.096539207126785
+int len = mValues[i].length();#1156,18.093134586627666
+case 'M': // month in year (text and number)#618,18.0862438583374
+value = calendar.getLeastMaximum(Calendar.HOUR) + 1;#1464,18.085070610046387
+case 'm': // minute in hour (number)#638,18.081165769825812
+buffer.append(getTimeZoneDisplay(timeZone, true, mStyle, mLocale));#1579,18.07814063095465
+public void appendTo(StringBuffer buffer, Calendar calendar) {#1569,18.064941133771622
+mLocale = locale;#554,18.064597129821777
+return format(((Long) obj).longValue(), toAppendTo);#797,18.05463239124843
+case 's': // second in minute (number)#641,18.053949397543203
+FastDateFormat format = (FastDateFormat) cDateTimeInstanceCache.get(key);#469,18.053658076695033
+return mValue.length();#1120,18.052287525600857
+init();#1031,18.049184608459473
+return getInstance(pattern, timeZone, null);#181,18.048772962469805
+int value = calendar.get(Calendar.HOUR_OF_DAY);#1504,18.041860350247088
+if (tokenLen >= 4) {#619,18.041547258694965
+total += mLocale.hashCode();#1005,18.03701047336354
+super();#538,18.03604793548584
+(mObj2 == null ? 0 : mObj2.hashCode());#1740,18.03110632300377
+return applyRules(calendar, buf);#877,18.02825995052562
+total += mPattern.hashCode();#1002,18.027318358421326
+format = emptyFormat;#215,18.024353924919577
+throw new IllegalArgumentException();#1275,18.015784056290336
+inLiteral = !inLiteral;#746,18.01469691140311
+value = calendar.getMaximum(Calendar.HOUR_OF_DAY) + 1;#1506,18.01076806916131
+locale = Locale.getDefault();#472,18.008830070495605
+rule = new CharacterLiteral(sub.charAt(0));#688,18.006419045584543
+return false;#1722,18.005712007221423
+return applyRules(c, new StringBuffer(mMaxLengthEstimate)).toString();#824,18.004028920774108
+if (mTimeZone.useDaylightTime() && calendar.get(Calendar.DST_OFFSET) != 0) {#1571,17.998036087883843
+return getTimeInstance(style, null, null);#320,17.997798016196803
+throw new IllegalArgumentException("No date pattern for locale: " + locale);#388,17.988872065688625
+case 'k': // hour in day (1..24)#665,17.98832458496094
+if (timeZone.useDaylightTime() && calendar.get(Calendar.DST_OFFSET) != 0) {#1578,17.986594005064532
+case 'w': // week in year (number)#656,17.986509862153426
+case 'W': // week in month (number)#659,17.984583315641984
+return true;#1718,17.97763473109195
+FastDateFormat format = (FastDateFormat) cDateInstanceCache.get(key);#290,17.970146497090656
+case 'd': // day in month (number)#629,17.964078115380328
+return getDateInstance(style, null, null);#234,17.96392149674265
+Rule rule;#604,17.960220718383788
+return buf;#894,17.956783121282403
+return format((Date) obj, toAppendTo);#793,17.955573439598083
+rule = TimeZoneNumberRule.INSTANCE_NO_COLON;#680,17.947633389064244
+rule = new StringLiteral(sub);#690,17.945407485961915
+int value = calendar.get(Calendar.HOUR);#1462,17.943750686645508
+if (tokenLen >= 4) {#612,17.94296634197235
+buffer.append(mValues[calendar.get(mField)]);#1168,17.942907367433822
+locale = Locale.getDefault();#293,17.942880272865295
+(mObj1 == null ? 0 : mObj1.hashCode()) +#1739,17.94271183013916
+private final String[] mValues;#1136,17.940767065684
+int minutes = offset / (60 * 1000) - 60 * hours;#1634,17.939446237352158
+void appendTo(StringBuffer buffer, Calendar calendar);#1053,17.93804841292532
+if (value < 1000) {#1307,17.935328068940535
+(mLocale == other.mLocale || mLocale.equals(other.mLocale)) &&#986,17.93365390880688
+return format(calendar, new StringBuffer(mMaxLengthEstimate)).toString();#834,17.932069107338233
+if (sub.length() == 1) {#687,17.929473400115967
+mDaylight = null;#1549,17.919143329967152
+rules[i].appendTo(buf, calendar);#892,17.91837261034095
+return getDateTimeInstance(dateStyle, timeStyle, null, locale);#425,17.917662262916565
+private static class TwelveHourField implements NumberRule {#1438,17.915135656084335
+case 'G': // era designator (text)#608,17.913795512655508
+Validate.isTrue(value > -1, "Negative values should not be possible", value);#1310,17.913127308800107
+key = new Pair(key, locale);#466,17.91216214497884
+buf.append('\'');#733,17.910567032663447
+public static synchronized FastDateFormat getInstance(String pattern, TimeZone timeZone, Locale locale) {#211,17.907500156989464
+throw new IllegalArgumentException("No date pattern for locale: " + locale);#302,17.907035076256953
+key = new Pair(key, locale);#372,17.905120758783248
+return format((Calendar) obj, toAppendTo);#795,17.899749031066893
+List rulesList = parsePattern();#561,17.896139017740886
+String pattern = formatter.toPattern();#477,17.892415885925292
+for (int i = mSize; --i >= 2; ) {#1300,17.89059140605311
+static final UnpaddedNumberField INSTANCE_YEAR = new UnpaddedNumberField(Calendar.YEAR);#1176,17.889596630545224
+String pattern = formatter.toPattern();#297,17.883475761413575
+case 'D': // day in year (number)#650,17.879536628723145
+(c >= 'A' && c <= 'Z' || c >= 'a' && c <= 'z')) {#749,17.878509895474302
+public int hashCode() {#1737,17.878379208701
+case 'y': // year (number)#611,17.87478642236619
+buffer.append((char)(value / 10 + '0'));#1303,17.873123995463054
+public static FastDateFormat getInstance(String pattern) {#165,17.871554017066956
+return format(new Date(millis));#812,17.86895813661463
+rule = TimeZoneNumberRule.INSTANCE_COLON;#682,17.86787307623661
+case 'E': // day in week (text)#647,17.86780195650847
+throw new IllegalArgumentException("No date time pattern for locale: " + locale);#482,17.86573954189525
+c = pattern.charAt(i);#738,17.86318962097168
+if (tokenLen == 1) {#679,17.85751740137736
+return mMaxLengthEstimate;#967,17.85547307332357
+buffer.append((char)(value / 10 + '0'));#1430,17.853365384615383
+return getInstance(getDefaultPattern(), null, null);#153,17.851121950149537
+String token = parseToken(mPattern, indexRef);#596,17.850262363751728
+buffer.append((char)(minutes / 10 + '0'));#1635,17.8496440604881
+rule = selectNumberRule(Calendar.DAY_OF_WEEK_IN_MONTH, tokenLen);#654,17.842107319831847
+rule = new TextField(Calendar.DAY_OF_WEEK, tokenLen < 4 ? shortWeekdays : weekdays);#648,17.836484757336702
+buffer.append(mStandard);#1574,17.83087959995976
+rule = TwoDigitYearField.INSTANCE;#615,17.82874402692241
+if (size < 3) {#1273,17.82823231345729
+mStyle = style;#1663,17.825958420248593
+if (tokenLen >= 4) {#672,17.8216392993927
+public String format(Calendar calendar) {#833,17.816814862764797
+CharacterLiteral(char value) {#1081,17.813920750337488
+String sub = token.substring(1);#686,17.812391868004433
+key.mObj1 == null : mObj1.equals(key.mObj1)) &&#1729,17.811320598308857
+rule = selectNumberRule(Calendar.WEEK_OF_MONTH, tokenLen);#660,17.809846374723648
+i++;#743,17.80897463285006
+String pattern = formatter.toPattern();#383,17.808834190368653
+FastDateFormat format = (FastDateFormat) cTimeInstanceCache.get(key);#375,17.80764964774803
+break;#601,17.79749806722005
+return getTimeInstance(style, null, locale);#335,17.79670645061292
+public static final int SHORT = DateFormat.SHORT;#106,17.795956948224237
+buf.append(c);#753,17.783359857705925
+mStyle == other.mStyle &&#1685,17.78271610396249
+buffer.append((char)(value / 10 + '0'));#1394,17.775393449343166
+return mStyle * 31 + mLocale.hashCode();#1671,17.77476837158203
+SimpleDateFormat formatter = (SimpleDateFormat) DateFormat.getDateTimeInstance(dateStyle, timeStyle,#475,17.771193504333496
+StringBuffer buf = new StringBuffer();#711,17.75811892747879
+return null;#909,17.75704678622159
+appendTo(buffer, calendar.get(Calendar.MONTH) + 1);#1423,17.7563201268514
+private static Map cTimeZoneDisplayCache = new HashMap(7);#114,17.752310451708343
+offset = -offset;#1621,17.74400656563895
+return total;#1007,17.74358593333851
+int offset = calendar.get(Calendar.ZONE_OFFSET) + calendar.get(Calendar.DST_OFFSET);#1617,17.74338268098377
+char peek = pattern.charAt(i + 1);#723,17.74286379132952
+rule = selectNumberRule(Calendar.DAY_OF_MONTH, tokenLen);#630,17.735837473188127
+Object key = new Pair(new Integer(dateStyle), new Integer(timeStyle));#461,17.735728997450607
+throw new IllegalArgumentException("Illegal pattern component: " + token);#694,17.73391082882881
+public static final int FULL = DateFormat.FULL;#94,17.732077896595
+appendTo(buffer, calendar.get(Calendar.YEAR) % 100);#1387,17.723915894826252
+private static synchronized String getDefaultPattern() {#515,17.71556465442364
+appendTo(buffer, calendar.get(Calendar.MONTH) + 1);#1243,17.71489814122518
+mStandard = null;#1548,17.714364869253977
+buf.append(c);#744,17.713757038116455
+SimpleDateFormat formatter = (SimpleDateFormat) DateFormat.getTimeInstance(style, locale);#382,17.70678058423494
+mColon = colon;#1603,17.704240851932102
+SimpleDateFormat formatter = (SimpleDateFormat) DateFormat.getDateInstance(style, locale);#296,17.696222631554853
+public StringBuffer format(Date date, StringBuffer buf) {#858,17.69350809209487
+mLocale = locale;#1664,17.684568405151367
+(obj == null ? "<null>" : obj.getClass().getName()));#800,17.679350291981418
+buf.append(c);#725,17.67874655356774
+break;#640,17.678160455491806
+key = new Pair(key, locale);#286,17.677340961637952
+rule = selectNumberRule(Calendar.WEEK_OF_YEAR, tokenLen);#657,17.67311962445577
+break;#617,17.670459111531574
+format = getInstance(pattern, timeZone, locale);#298,17.66832024710519
+if (len > max) {#1157,17.66692754496699
+public static FastDateFormat getDateTimeInstance(#441,17.666543347494944
+rule = new TextField(Calendar.MONTH, shortMonths);#622,17.665301614337498
+rule = new TextField(Calendar.MONTH, months);#620,17.66422190385706
+return#1727,17.662830939659706
+buffer.append('0');#1314,17.660577333890476
+buffer.append(Integer.toString(value));#1316,17.657231401514125
+cTimeZoneDisplayCache.put(key, value);#505,17.655550678571064
+return getDateInstance(style, null, locale);#249,17.652330549139727
+public StringBuffer format(long millis, StringBuffer buf) {#846,17.649535602993435
+format = getInstance(pattern, timeZone, locale);#478,17.64819438116891
+value = tz.getDisplayName(daylight, style, locale);#504,17.647605521338328
+break;#661,17.64736885494656
+break;#658,17.64526430765788
+int digits;#1306,17.645111083984375
+return getInstance(pattern, null, null);#166,17.6421004931132
+break;#637,17.641953044467503
+i++;#726,17.640722448175605
+static final TwoDigitMonthField INSTANCE = new TwoDigitMonthField();#1403,17.639906272888183
+buffer.append((char)(value % 10 + '0'));#1395,17.63688927430373
+break;#643,17.630774603949654
+int hours = offset / (60 * 60 * 1000);#1626,17.621052622795105
+return new TwoDigitNumberField(field);#774,17.6183482950384
+rule = selectNumberRule(Calendar.HOUR_OF_DAY, tokenLen);#636,17.613558197021483
+format = getInstance(pattern, timeZone, locale);#384,17.610715457371303
+public Object parseObject(String source, ParsePosition pos) {#906,17.610427962409126
+return mRule.estimateLength();#1455,17.60901298522949
+case 'S': // millisecond (number)#644,17.60852510278875
+static final TwoDigitYearField INSTANCE = new TwoDigitYearField();#1367,17.60465866088867
+return mRule.estimateLength();#1497,17.601403379440306
+locale);#476,17.600144533010628
+rule = new TextField(Calendar.ERA, ERAs);#609,17.599134540557863
+mSize = size;#1278,17.597492330214557
+buffer.append((char)(value % 10 + '0'));#1431,17.594606142777664
+protected String parseToken(String pattern, int[] indexRef) {#710,17.594295448727078
+public int hashCode() {#1000,17.589785861968995
+break;#649,17.5888729095459
+buffer.append((char)(hours / 10 + '0'));#1627,17.581766605377197
+break;#634,17.579021559821236
+break;#684,17.57665581173367
+) {#989,17.574291365487234
+protected List parsePattern() {#580,17.5720272064209
+buffer.append(mDaylight);#1572,17.567581755774363
+String[] shortWeekdays = symbols.getShortWeekdays();#588,17.56207361675444
+throw new IllegalArgumentException("Unknown class: " +#799,17.5570965607961
+rule = TwoDigitMonthField.INSTANCE;#624,17.552690013762444
+return value;#507,17.551624298095703
+public static FastDateFormat getInstance(String pattern, Locale locale) {#194,17.550824689865113
+buffer.append(Integer.toString(value));#1213,17.550182342529297
+public static FastDateFormat getInstance() {#152,17.542116531958946
+buffer.append((char)(value % 10 + '0'));#1254,17.54005676905314
+rule = selectNumberRule(Calendar.YEAR, tokenLen);#613,17.539669282095772
+public static FastDateFormat getDateTimeInstance(#423,17.53621550968715
+buffer.append((char)(value % 10 + '0'));#1356,17.533530489603677
+return rules;#700,17.532268870960582
+buffer.append((char)(value % 10 + '0'));#1304,17.529194005330403
+digits = 3;#1308,17.526845574378967
+buffer.append((char)(value / 10 + '0'));#1355,17.520242118835448
+public static FastDateFormat getDateTimeInstance(#406,17.51829331261771
+super();#1373,17.51726402555193
+default:#775,17.515611839294433
+super();#1229,17.514496394566127
+super();#1409,17.51231677191598
+buffer.append((char)(value + '0'));#1251,17.51139313834054
+break;#667,17.509914451175266
+return 4;#1193,17.509511947631836
+key.mObj2 == null : mObj2.equals(key.mObj2));#1731,17.504122583489668
+private static Map cDateTimeInstanceCache = new HashMap(7);#113,17.499437984667328
+return buf.toString();#759,17.497818606240408
+return format(new Date(millis), buf);#847,17.493471547176963
+return false;#1688,17.49110787709554
+public static final int LONG = DateFormat.LONG;#98,17.49032759666443
+return true;#1679,17.49014081453022
+break;#728,17.485971277410332
+break;#628,17.48354392581516
+break;#652,17.464372846815323
+break;#646,17.46185557047526
+break;#631,17.450692494710285
+digits = Integer.toString(value).length();#1311,17.447629036441928
+break;#664,17.446210543314617
+String[] weekdays = symbols.getWeekdays();#587,17.44125065050627
+break;#655,17.434648301866318
+in.defaultReadObject();#1030,17.432440893990652
+break;#670,17.431958357493084
+protected StringBuffer applyRules(Calendar calendar, StringBuffer buf) {#888,17.421284525017988
+mLocale.equals(other.mLocale);#1686,17.42015168161103
+return format;#219,17.416445125233043
+public static final int MEDIUM = DateFormat.MEDIUM;#102,17.416121875538547
+buffer.append((char)(minutes % 10 + '0'));#1636,17.410684338322394
+String[] months = symbols.getMonths();#585,17.406936539544
+buffer.append((char)(value / 10 + '0'));#1253,17.405292479197183
+buffer.append('0');#1301,17.39434157885038
+case '\'': // literal text#685,17.391659927368163
+case 1:#771,17.390925320712004
+cDateTimeInstanceCache.put(key, format);#479,17.390759297779628
+rule = new TwentyFourHourField(selectNumberRule(Calendar.HOUR_OF_DAY, tokenLen));#666,17.388484722230494
+buffer.append((char)(value % 10 + '0'));#1211,17.37345043818156
+return 5;#1610,17.37177874247233
+(mObj2 == null ?#1730,17.366604100102965
+rule = selectNumberRule(Calendar.DAY_OF_YEAR, tokenLen);#651,17.364894921439035
+break;#610,17.35959874259101
+pos.setIndex(0);#907,17.358992258707683
+String[] shortMonths = symbols.getShortMonths();#586,17.358285404386976
+(mLocaleForced == other.mLocaleForced)#988,17.35030241365786
+buffer.append('-');#1620,17.34656923467463
+return max;#1161,17.344394556681316
+buffer.append(Integer.toString(value));#1358,17.339690349720144
+cInstanceCache.put(format, format);  // this is OK!#217,17.331371988568986
+return 1;#1089,17.327179272969563
+pos.setErrorIndex(0);#908,17.323102235794067
+break;#677,17.314777215321858
+private static final long serialVersionUID = 1L;#89,17.31308911641439
+(mObj1 == null ?#1728,17.30917333519977
+cDefaultPattern = new SimpleDateFormat().toPattern();#517,17.3009211619695
+format.init();  // convert shell format into usable one#216,17.29819365342458
+style |= 0x80000000;#1661,17.295949061711628
+calendar = (Calendar) calendar.clone();#874,17.28863408348777
+return getInstance(pattern, null, locale);#195,17.28197744157579
+buffer.append((char)(value + '0'));#1208,17.280979088374547
+buffer.append('+');#1623,17.27975433523005
+return 4;#1285,17.268710962931316
+rule = selectNumberRule(Calendar.HOUR, tokenLen);#669,17.26829153491605
+cTimeInstanceCache.put(key, format);#385,17.267392970897532
+cDateInstanceCache.put(key, format);#299,17.266111691792805
+public StringBuffer format(Calendar calendar, StringBuffer buf) {#872,17.25487232208252
+private static Map cTimeInstanceCache = new HashMap(7);#112,17.25320635901557
+rules.add(rule);#697,17.248734580145943
+return format;#485,17.247394388372246
+default:#693,17.244859627314977
+return 2;#1340,17.244744237263998
+return format;#305,17.236670320684258
+i--;#750,17.22970904474673
+rule = selectNumberRule(Calendar.MINUTE, tokenLen);#639,17.218330752465032
+return#1738,17.208679786095253
+rule = selectNumberRule(Calendar.SECOND, tokenLen);#642,17.20691087169032
+buffer.append((char)(hours % 10 + '0'));#1628,17.197680216569168
+return format;#391,17.19209792397239
+return 4;#1560,17.184181815699528
+return 2;#1380,17.17419802347819
+buffer.append((char)(value / 10 + '0'));#1210,17.155878607432047
+return 2;#1416,17.14436492919922
+DateFormatSymbols symbols = new DateFormatSymbols(mLocale);#581,17.11353401037363
+case 2:#773,17.105903798883613
+rule = new TwelveHourField(selectNumberRule(Calendar.HOUR, tokenLen));#633,17.098674880133736
+private static Map cDateInstanceCache = new HashMap(7);#111,17.076730569203693
+FastDateFormat format = (FastDateFormat) cInstanceCache.get(emptyFormat);#213,17.0344014344392
+private static Map cInstanceCache = new HashMap(7);#110,17.020912002114688
+return#1683,17.006524759180405
+break;#692,17.00226746665107
+return 2;#1236,17.001265207926433
+buffer.append(':');#1631,16.95761997049505
+rule = selectNumberRule(Calendar.MILLISECOND, tokenLen);#645,16.93777297524845
+break;#751,16.906889221884988
+FastDateFormat emptyFormat = new FastDateFormat(pattern, timeZone, locale);#212,16.903491570399357
+public class FastDateFormat extends Format {#71,16.789004855685764
+return Math.max(mStandard.length(), mDaylight.length());#1558,16.725889772176743
+return cDefaultPattern;#519,16.72354969611535
+return 40;#1562,16.692199355677555

@@ -1,0 +1,121 @@
+private double[] optimaValues;#68,18.948660590431906
+this.starts           = starts;#83,18.719437026977538
+double mIY = optimaValues[i];#282,18.54503635123924
+public void setAbsoluteAccuracy(double accuracy) {#146,18.439163088798523
+if (i-- != 0) {#286,18.360837084906443
+private static final long serialVersionUID = 5983375963110961019L;#41,18.23434587319692
+optimaValues[i + 1] = currY;#295,18.232887432493012
+if (Double.isNaN(optima[i])) {#264,18.22284730275472
+if (Double.isNaN(optima[0])) {#301,18.21725086543871
+private double[] optima;#65,18.17416353225708
+optimaValues[i + 1] = mIY;#285,18.13026694095496
+public double getFunctionValue() {#91,18.11188099601052
+this.generator        = generator;#84,18.03557708046653
+currY = optimaValues[j];#277,18.013468092138115
+double mIX = optima[i];#281,17.997119064331056
+public double getAbsoluteAccuracy() {#101,17.99281149644118
+final double bound2 = (i == 0) ? max : min + generator.nextDouble() * (max - min);#243,17.937275069100515
+this.optima           = null;#85,17.848652000427247
+try {#239,17.828284195491246
+optima           = new double[starts];#231,17.82095884393763
+public double[] getOptimaValues() throws IllegalStateException {#218,17.80364440469181
+optimaValues[i] = optimizer.getFunctionValue();#247,17.799399185180665
+mIX = optima[i];#287,17.788680911064148
+public void setRelativeAccuracy(double accuracy) {#161,17.785401701927185
+double currY = optimaValues[0];#273,17.772369384765625
+optimaValues[i] = Double.NaN;#250,17.765889372144425
+public void setMaxEvaluations(int maxEvaluations) {#156,17.725330754330283
+setMaxEvaluations(Integer.MAX_VALUE);#87,17.725098276138304
+public void resetAbsoluteAccuracy() {#131,17.722239054166355
+optimizer.setAbsoluteAccuracy(accuracy);#147,17.7053421497345
+return optimaValues.clone();#222,17.69303035736084
+public double getResult() {#96,17.692646503448486
+if ((goalType == GoalType.MAXIMIZE) ^ (currY < prevY)) {#278,17.672431553111355
+mIY = optimaValues[i];#288,17.66621800029979
+currX = optima[j];#276,17.614211854480562
+optima[i + 1]       = currX;#294,17.611608056461108
+final double prevY = currY;#275,17.57429513477144
+mIY = Double.NaN;#291,17.564942273226652
+final double bound1 = (i == 0) ? min : min + generator.nextDouble() * (max - min);#242,17.563888549804688
+optima[i] = optima[--lastNaN];#265,17.56135431925456
+mIX = Double.NaN;#290,17.55189546942711
+private int maxEvaluations;#50,17.508283441716973
+optimizer.setMaxEvaluations(maxEvaluations - totalEvaluations);#241,17.50766626085554
+optimaValues[i] = optimaValues[--lastNaN];#267,17.495101183652878
+optimaValues     = new double[starts];#232,17.467060479250822
+while ((i >= 0) && ((goalType == GoalType.MAXIMIZE) ^ (currY < mIY))) {#283,17.465643437703452
+return optima.clone();#196,17.457659925733292
+return optimizer.getFunctionValue();#92,17.450255155563354
+return maxIterations;#112,17.437059549184944
+optimizer.setRelativeAccuracy(accuracy);#162,17.41643581390381
+int i = j - 1;#280,17.415231829104215
+public double getRelativeAccuracy() {#126,17.35721309368427
+for (int i = 0; i < starts; ++i) {#237,17.339779770892598
+return maxEvaluations;#117,17.318006651742117
+this.maxEvaluations = maxEvaluations;#157,17.29526991844177
+optima[i + 1]       = mIX;#284,17.273696822089118
+public double[] getOptima() throws IllegalStateException {#192,17.25517824292183
+Math.min(bound1, bound2),#245,17.216330709911528
+this.optimizer        = optimizer;#81,17.196978651958965
+return optimizer.getAbsoluteAccuracy();#102,17.1768905321757
+optima[lastNaN + 1] = Double.NaN;#266,17.17570258725074
+Math.max(bound1, bound2));#246,17.166274449181934
+private int maxIterations;#47,17.16396083831787
+if (optimaValues == null) {#219,17.13345151789048
+totalEvaluations = 0;#234,17.12603079477946
+currX = optima[j];#296,17.084068336486816
+optima[i]       = Double.NaN;#249,17.075140981963187
+this.totalIterations  = 0;#82,17.060794886420755
+optimaValues[i] = Double.NaN;#253,17.0415301663535
+currY = optimaValues[j];#297,17.014363362238957
+private int totalIterations;#53,17.000396728515625
+private int totalEvaluations;#56,16.986909953030672
+final double min, final double max)#227,16.969512367248534
+double currX = optima[0];#272,16.941684352027046
+throw new OptimizationException(#302,16.93998744752672
+this.maxIterations = count;#152,16.936997652053833
+for (int i = 0; i < lastNaN; ++i) {#263,16.927090072631835
+return optimizer.getResult();#97,16.911007150014242
+return totalEvaluations;#122,16.874999046325684
+return totalIterations;#107,16.83679309258094
+for (int j = 1; j < lastNaN; ++j) {#274,16.829950981140136
+public int getMaxEvaluations() {#116,16.822753979609562
+private int starts;#59,16.81990396976471
+setMaximalIterationCount(Integer.MAX_VALUE);#86,16.808863549005416
+optima[i]       = optimizer.optimize(f, goalType,#244,16.77955862192007
+private RandomGenerator generator;#62,16.768586540222167
+public void setMaximalIterationCount(int count) {#151,16.76053041570327
+optimizer.setMaximalIterationCount(maxIterations - totalIterations);#240,16.752373751472025
+optima[i]       = Double.NaN;#252,16.738988587350555
+public void resetRelativeAccuracy() {#141,16.6897972547091
+final double min, final double max, final double startValue)#314,16.677354645729064
+return optima[0];#308,16.669892924172537
+if (optima == null) {#193,16.663454473018646
+optimaValues[lastNaN + 1] = Double.NaN;#268,16.653799384832382
+return optimize(f, goalType, min, max);#316,16.653293943405153
+throw MathRuntimeException.createIllegalStateException(LocalizedFormats.NO_OPTIMUM_COMPUTED_YET);#194,16.624874092283704
+totalEvaluations += optimizer.getEvaluations();#257,16.6189990234375
+starts);#304,16.586033777757123
+throw MathRuntimeException.createIllegalStateException(LocalizedFormats.NO_OPTIMUM_COMPUTED_YET);#220,16.583425726209367
+FunctionEvaluationException {#229,16.542559252844917
+return optimizer.getRelativeAccuracy();#127,16.52198208702935
+totalIterations  = 0;#233,16.5159304300944
+public int getEvaluations() {#121,16.467535257339478
+private final UnivariateRealOptimizer optimizer;#44,16.446724033355714
+LocalizedFormats.NO_CONVERGENCE_WITH_ANY_START_POINT,#303,16.429448748743813
+public class MultiStartUnivariateRealOptimizer implements UnivariateRealOptimizer {#38,16.423791634409053
+throws ConvergenceException,#228,16.39328046945425
+optimizer.resetAbsoluteAccuracy();#132,16.373711081112134
+public MultiStartUnivariateRealOptimizer(final UnivariateRealOptimizer optimizer,#78,16.309306144714355
+public void resetMaximalIterationCount() {#136,16.285004956381663
+public int getMaximalIterationCount() {#111,16.195596763065883
+final RandomGenerator generator) {#80,16.176386191294743
+public int getIterationCount() {#106,16.13430682818095
+totalIterations  += optimizer.getIterationCount();#256,16.069428062438966
+int lastNaN = optima.length;#262,15.987319893307156
+throws ConvergenceException, FunctionEvaluationException {#315,15.969348866006602
+public double optimize(final UnivariateRealFunction f, final GoalType goalType,#226,15.960580825805664
+optimizer.resetRelativeAccuracy();#142,15.814327744876637
+final int starts,#79,15.730335585925044
+public double optimize(final UnivariateRealFunction f, final GoalType goalType,#313,15.71835045587449
+optimizer.resetMaximalIterationCount();#137,15.574302514394125

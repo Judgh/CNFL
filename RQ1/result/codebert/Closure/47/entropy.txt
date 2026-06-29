@@ -1,0 +1,85 @@
+@Override SourceMap getInstance() {#47,20.512202262878418
+final String prefix;#100,20.326054096221924
+@Override SourceMap getInstance() {#53,20.158157348632812
+@Override SourceMap getInstance() {#65,20.093694114685057
+private final Map<String, String> sourceLocationFixupCache =#110,20.07651436328888
+final String replacement;#101,19.993441820144653
+@Override SourceMap getInstance() {#59,19.990162404378257
+public LocationMapping(String prefix, String replacement) {#102,19.7014941573143
+public void appendTo(Appendable out, String name) throws IOException {#177,19.676776032698783
+FilePosition outputEndPosition) {#120,19.57840816791241
+private String fixupSourceLocation(String sourceFile) {#149,19.552661555153982
+for (LocationMapping mapping : prefixMappings) {#160,19.315748691558838
+ALL {#79,19.294179280598957
+outputStartPosition, outputEndPosition);#142,19.290295779705048
+abstract SourceMap getInstance();#70,19.264324968511406
+private SourceMap(SourceMapGenerator generator) {#113,19.103706946739784
+public class SourceMap {#43,19.08074124654134
+FilePosition outputStartPosition,#119,18.990890343983967
+String sourceFile = node.getSourceFileName();#121,18.898667335510254
+this.prefix = prefix;#103,18.81481631596883
+|| node.isName()#91,18.740940517849392
+private final SourceMapGenerator generator;#108,18.7105281829834
+DEFAULT {#52,18.682194471359253
+V2 {#58,18.66397452354431
+|| node.isNew()#89,18.62166717317369
+public void setStartingPosition(int offsetLine, int offsetIndex) {#186,18.53701658809886
+V3 {#64,18.506612300872803
+V1 {#46,18.45564091205597
+new FilePosition(node.getLineno(), node.getCharno()),#141,18.413002857795128
+@Override public boolean apply(Node node) {#87,18.327186584472656
+if (fixed != null) {#155,18.301237973299894
+return new SourceMap(#48,18.272034576960973
+if (fixed == null) {#169,18.252393982627176
+@Override public boolean apply(Node node) {#80,18.24778664112091
+public void setWrapperPrefix(String prefix) {#190,18.235262325831822
+Node node,#118,18.199396239386665
+return new SourceMap(#60,18.159811973571777
+return new SourceMap(#54,18.144318444388254
+private List<LocationMapping> prefixMappings = Collections.emptyList();#109,18.14078336291843
+SourceMapGeneratorFactory.getInstance(SourceMapFormat.DEFAULT));#55,18.13424117476852
+|| node.isFunction()#90,18.13402769300673
+public static class LocationMapping {#99,18.081067721048992
+if (sourceFile.startsWith(mapping.prefix)) {#161,18.06043951851981
+sourceLocationFixupCache.clear();#183,18.058661937713623
+sourceFile = fixupSourceLocation(sourceFile);#130,17.946706136067707
+sourceFile, originalName,#140,17.92457730429513
+return node.isCall()#88,17.823397432054794
+sourceLocationFixupCache.put(sourceFile, fixed);#173,17.822950138765222
+public static enum DetailLevel implements Predicate<Node> {#76,17.819280692509242
+this.generator = generator;#114,17.79876015403054
+String fixed = sourceLocationFixupCache.get(sourceFile);#154,17.79506826400757
+SourceMapGeneratorFactory.getInstance(SourceMapFormat.V1));#49,17.787961041485822
+SourceMapGeneratorFactory.getInstance(SourceMapFormat.V2));#61,17.7667269176907
+public void reset() {#181,17.74345929282052
+if (sourceFile == null || node.getLineno() < 0) {#126,17.724581718444824
+return new SourceMap(#66,17.704246316637313
+generator.setStartingPosition(offsetLine, offsetIndex);#187,17.699125111103058
+SourceMapGeneratorFactory.getInstance(SourceMapFormat.V3));#67,17.67477137954147
+public static enum Format {#45,17.625520978655135
+public void validate(boolean validate) {#194,17.52489844235507
+mapping.prefix.length());#163,17.498406529426575
+|| (node.isString() && NodeUtil.isGet(node.getParent()));#94,17.43599663358746
+return true;#81,17.423530145124957
+generator.appendTo(out, name);#178,17.390332295344425
+if (prefixMappings.isEmpty()) {#150,17.374816826411656
+public void setPrefixMappings(List<LocationMapping> sourceMapLocationMappings) {#201,17.29438416854195
+generator.validate(validate);#195,17.252790133158367
+String originalName = (String) node.getProp(Node.ORIGINALNAME_PROP);#132,17.238766009990986
+|| NodeUtil.isGet(node)#92,17.229439648714933
+this.replacement = replacement;#104,17.13003767453707
+this.prefixMappings = sourceMapLocationMappings;#202,17.120206776787253
+generator.setWrapperPrefix(prefix);#191,17.082797936030797
+return fixed;#174,16.9753360748291
+generator.reset();#182,16.970685482025146
+public void addMapping(#117,16.860949635505676
+return sourceFile;#151,16.80636854171753
+fixed = mapping.replacement + sourceFile.substring(#162,16.783115795680455
+|| NodeUtil.isObjectLitKey(node, node.getParent())#93,16.669335746765135
+return;#127,16.605220556259155
+fixed = sourceFile;#170,16.520653117786754
+Maps.newHashMap();#111,16.49374183019002
+generator.addMapping(#139,16.46941957473755
+SYMBOLS {#86,16.407684750027126
+return fixed;#156,16.309095276726616
+break;#164,15.008638191223145

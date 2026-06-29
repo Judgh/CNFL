@@ -1,0 +1,173 @@
+public int getIconHeight() {#470,19.765386072794595
+public Icon getMinIcon() {#295,19.74174100702459
+throws IOException, ClassNotFoundException {#536,19.74155336267808
+public Icon getMaxIcon() {#266,19.637510299682617
+private int lastCategory = -1;#132,19.507169405619305
+public int getIconWidth() {#466,19.477700424194335
+Shape shape = null;#345,19.476066925946405
+public int getIconWidth() {#504,19.289104461669922
+public Icon getObjectIcon() {#239,19.243437680331144
+public int getIconHeight() {#508,19.193383568211605
+private double min;#135,19.19084596633911
+final int width = shape.getBounds().width;#488,19.04276123046875
+private boolean plotLines = false;#107,19.01127004623413
+if (fill) {#495,18.9342463357108
+ValueAxis rangeAxis, CategoryDataset dataset, int row, int column,#332,18.90335621372346
+final int width = shape.getBounds().width;#448,18.874165534973145
+final int height = shape.getBounds().height;#489,18.843037605285645
+public void paintIcon(Component c, Graphics g, int x, int y) {#452,18.798167160579137
+public boolean isDrawLines() {#155,18.795468250910442
+final int height = shape.getBounds().height;#449,18.770026048024494
+public void paintIcon(Component c, Graphics g, int x, int y) {#492,18.73124542236328
+private void writeObject(ObjectOutputStream stream) throws IOException {#521,18.722877820332844
+public Stroke getGroupStroke() {#213,18.68583788190569
+Rectangle2D dataArea, CategoryPlot plot, CategoryAxis domainAxis,#331,18.67207975387573
+if (this.min > value.doubleValue()) {#357,18.643252508980886
+else {#352,18.6212249483381
+public Paint getGroupPaint() {#184,18.60469190279643
+if (this.lastCategory == column) {#356,18.603186347267844
+private double max;#138,18.600191593170166
+if (fillPaint != null) {#455,18.544733379198156
+int pass) {#333,18.517840266227722
+if (outlinePaint != null) {#459,18.50209315617879
+return new Icon() {#491,18.494933935312126
+return new Icon() {#451,18.48615195534446
+final GeneralPath path = new GeneralPath(shape);#490,18.4847667593705
+public MinMaxCategoryRenderer() {#143,18.42937293419471
+if (this.plotLines) {#392,18.422053155444917
+Number value = dataset.getValue(row, column);#336,18.420051336288452
+EntityCollection entities = state.getEntityCollection();#418,18.407410578294233
+private Icon getIcon(Shape shape, final boolean fill,#486,18.399454958298627
+private static final long serialVersionUID = 2935615937671064911L;#104,18.392649867317893
+if (dataset.getRowCount() - 1 == row) {#365,18.390515089035034
+public void setMinIcon(Icon icon) {#308,18.390087127685547
+Number previousValue = dataset.getValue(row, column - 1);#394,18.37346545628139
+if (outline) {#498,18.37045786597512
+this.objectIcon.paintIcon(null, g2, (int) y1, (int) x1);#353,18.329833869276374
+public void setMaxIcon(Icon icon) {#279,18.319402830941335
+if (paint == null) {#198,18.281527817249298
+g2.setStroke(getItemStroke(row, column));#344,18.275042057037354
+final GeneralPath path = new GeneralPath(shape);#450,18.272504133336685
+private transient Stroke groupStroke = new BasicStroke(1.0f);#117,18.264564990997314
+public void setGroupStroke(Stroke stroke) {#224,18.24977233674791
+if (value != null) {#337,18.23387794494629
+if (stroke == null) {#225,18.226833788553872
+if (icon == null) {#280,18.22389176686605
+public void setObjectIcon(Icon icon) {#250,18.211524418422155
+else {  // reset the min and max#385,18.201297850835893
+if (icon == null) {#251,18.195866266886394
+final boolean outline) {#487,18.166603200575885
+double x1 = domainAxis.getCategoryMiddle(column, getColumnCount(),#339,18.166391618790165
+shape = new Rectangle2D.Double(x1 - 4, y1 - 4, 8.0, 8.0);#346,18.155971574783326
+private void readObject(ObjectInputStream stream)#535,18.1541628519694
+if (icon == null) {#309,18.146573893229167
+if (this.max < value.doubleValue()) {#360,18.134267602648055
+if (column != 0) {#393,18.12460070071013
+Line2D line;#405,18.122597266887798
+if (this.plotLines != draw) {#169,18.111500087537262
+if (entities != null && shape != null) {#419,18.091532627741497
+public void setGroupPaint(Paint paint) {#197,18.080170035362244
+private transient Paint groupPaint = Color.black;#112,18.047882270812988
+this.minIcon.paintIcon(null, g2, (int) x1, (int) minY);#375,18.03285732269287
+getColumnCount(), dataArea,#399,18.008394779303135
+if (orient == PlotOrientation.VERTICAL) {#349,18.003113784790038
+private Icon getIcon(Shape shape, final Paint fillPaint,#445,17.98065185546875
+this.objectIcon.paintIcon(null, g2, (int) x1, (int) y1);#350,17.938507783980597
+notifyListeners(new RendererChangeEvent(this));#229,17.891894238335745
+super();#144,17.888506126403808
+path.transform(AffineTransform.getTranslateInstance(x, y));#454,17.880409548359534
+PlotOrientation orient = plot.getOrientation();#348,17.873408813476562
+g2.setPaint(getItemPaint(row, column));#343,17.837143523352488
+return this.maxIcon;#267,17.831724098750524
+plot.getDomainAxisEdge());#400,17.787115740776063
+double maxY = rangeAxis.valueToJava2D(this.max, dataArea,#370,17.784955955687025
+double previous = previousValue.doubleValue();#397,17.776709238688152
+this.groupPaint = paint;#201,17.7697491645813
+this.maxIcon.paintIcon(null, g2, (int) x1, (int) maxY);#376,17.759490852355956
+notifyListeners(new RendererChangeEvent(this));#202,17.75332455635071
+path.transform(AffineTransform.getTranslateInstance(x, y));#494,17.75270722129128
+if (previousValue != null) {#395,17.73311269694361
+return this.groupStroke;#214,17.726414442062378
+else {#378,17.718550291928377
+notifyListeners(new RendererChangeEvent(this));#255,17.716013860702514
+double x0 = domainAxis.getCategoryMiddle(column - 1,#398,17.712564514904486
+this.minIcon.paintIcon(null, g2, (int) minY, (int) x1);#380,17.69218605041504
+notifyListeners(new RendererChangeEvent(this));#284,17.686436223983765
+this.maxIcon = icon;#283,17.666493225097657
+return this.minIcon;#296,17.658169473920548
+Graphics2D g2 = (Graphics2D) g;#493,17.652395906119512
+path.transform(AffineTransform.getTranslateInstance(-x, -y));#501,17.640702948850745
+final Paint outlinePaint) {#446,17.622302639868952
+path.transform(AffineTransform.getTranslateInstance(-x, -y));#463,17.616124242544174
+return height;#471,17.61471309661865
+throw new IllegalArgumentException("Null 'stroke' argument.");#226,17.613044848808876
+notifyListeners(new RendererChangeEvent(this));#313,17.59523916244507
+this.minIcon = icon;#312,17.590816434224447
+this.maxIcon.paintIcon(null, g2, (int) maxY, (int) x1);#381,17.580263292467272
+private transient Icon objectIcon = getIcon(new Line2D.Double(-4, 0, 4, 0),#128,17.57612613269261
+return this.objectIcon;#240,17.56420455660139
+Graphics2D g2 = (Graphics2D) g;#453,17.55613136291504
+public void setDrawLines(boolean draw) {#168,17.51473104953766
+private transient Icon maxIcon = getIcon(new Arc2D.Double(-4, -4, 8, 8, 0,#124,17.514331171589514
+throw new IllegalArgumentException("Null 'icon' argument.");#281,17.51221069922814
+throw new IllegalArgumentException("Null 'paint' argument.");#199,17.503369437323677
+throw new IllegalArgumentException("Null 'icon' argument.");#252,17.50326420710637
+if (orient == PlotOrientation.VERTICAL) {#373,17.495734041387383
+this.lastCategory = column;#386,17.47926251784615
+return height;#509,17.468132320203278
+throw new IllegalArgumentException("Null 'icon' argument.");#310,17.45200516627385
+plot.getRangeAxisEdge());#369,17.43375939793057
+this.max = value.doubleValue();#388,17.429683723449706
+this.objectIcon = icon;#254,17.428909873962404
+double minY = rangeAxis.valueToJava2D(this.min, dataArea,#368,17.427053587777273
+return width;#505,17.422259029589203
+return width;#467,17.421943346659344
+line = new Line2D.Double(y0, x0, y1, x1);#410,17.40952480613411
+this.groupStroke = stroke;#228,17.399288233588724
+private transient Icon minIcon = getIcon(new Arc2D.Double(-4, -4, 8, 8, 0,#120,17.38746427720593
+double y1 = rangeAxis.valueToJava2D(value.doubleValue(), dataArea,#341,17.38416655404227
+public void drawItem(Graphics2D g2, CategoryItemRendererState state,#330,17.367692201033883
+return this.plotLines;#156,17.362221082051594
+addItemEntity(entities, dataset, row, column, shape);#420,17.35807551107099
+this.min = value.doubleValue();#358,17.353394409705853
+g2.setPaint(getItemPaint(row, column));#403,17.346169233322144
+this.max = value.doubleValue();#361,17.344278730195143
+g2.setStroke(getItemStroke(row, column));#404,17.343153045290993
+else {#409,17.32450664960421
+plot.getRangeAxisEdge());#402,17.31682162284851
+this.maxIcon = getIcon(new Arc2D.Double(-4, -4, 8, 8, 0, 360,#543,17.314381212801546
+if (orient == PlotOrientation.VERTICAL) {#406,17.295771405503558
+g2.setStroke(this.groupStroke);#367,17.29533021109445
+dataArea, plot.getDomainAxisEdge());#340,17.26578567874047
+g2.draw(new Line2D.Double(x1, minY, x1, maxY));#374,17.188977877298992
+this.minIcon = getIcon(new Arc2D.Double(-4, -4, 8, 8, 0, 360,#541,17.18307605949608
+g2.setPaint(fillPaint);#456,17.182476635636956
+return this.groupPaint;#185,17.17167599995931
+double y0 = rangeAxis.valueToJava2D(previous, dataArea,#401,17.131578943946145
+this.groupStroke = SerialUtilities.readStroke(stream);#538,17.12739060475276
+stream.defaultReadObject();#537,17.099358831133163
+g2.fill(path);#496,17.087621512236417
+stream.defaultWriteObject();#522,17.052930082593644
+g2.draw(new Line2D.Double(minY, x1, maxY, x1));#379,17.051239768664043
+360, Arc2D.OPEN), null, Color.black);#121,17.042162859881365
+this.objectIcon = getIcon(new Line2D.Double(-4, 0, 4, 0), false, true);#545,17.040039552961076
+360, Arc2D.OPEN), null, Color.black);#125,17.018700034530074
+false, true);#129,16.98981684446335
+this.min = value.doubleValue();#387,16.985586280822755
+this.notifyListeners(new RendererChangeEvent(this));#171,16.924635216041846
+SerialUtilities.writeStroke(this.groupStroke, stream);#523,16.862263899583084
+g2.fill(path);#457,16.859852256774904
+Arc2D.OPEN), null, Color.black);#542,16.839922641885693
+plot.getRangeAxisEdge());#371,16.808096143934463
+line = new Line2D.Double(x0, y0, x1, y1);#407,16.75331802757419
+plot.getRangeAxisEdge());#342,16.709674494607107
+this.groupPaint = SerialUtilities.readPaint(stream);#539,16.661935249964397
+g2.setPaint(outlinePaint);#460,16.616091823577882
+g2.draw(path);#499,16.609629101223415
+SerialUtilities.writePaint(this.groupPaint, stream);#524,16.603674292564392
+Arc2D.OPEN), null, Color.black);#544,16.591030745670714
+this.plotLines = draw;#170,16.573743438720705
+g2.setPaint(this.groupPaint);#366,16.43753938963919
+public class MinMaxCategoryRenderer extends AbstractCategoryItemRenderer {#101,16.368396534639245
+g2.draw(line);#412,16.33743086168843
+g2.draw(path);#461,16.28589256286621

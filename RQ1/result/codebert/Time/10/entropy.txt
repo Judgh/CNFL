@@ -1,0 +1,91 @@
+if (start == null || end == null) {#89,20.128104209899902
+if (start == null || end == null) {#67,19.896475992704694
+if (period == null) {#129,19.715833981831867
+public int get(DurationFieldType type) {#247,19.43174879891532
+public Period toPeriod() {#271,19.259648583152078
+public boolean isSupported(DurationFieldType type) {#260,19.19410648345947
+if (index != 0) {#216,19.181858825683594
+if (index != 0) {#232,19.166884676615396
+ReadablePeriod other = (ReadablePeriod) period;#306,19.158807147632945
+if (type == getFieldType()) {#248,19.122942475711596
+if (this == period) {#300,19.096076202392577
+public boolean equals(Object period) {#299,19.06775426864624
+protected static int standardPeriodIn(ReadablePeriod period, long millisPerUnit) {#128,19.040800971984865
+return getValue();#249,19.028619647026062
+protected int getValue() {#166,19.01851921081543
+long duration = 0L;#133,19.018327644893102
+public int compareTo(BaseSingleFieldPeriod other) {#330,19.00179116866168
+public int getValue(int index) {#231,18.988512479341946
+if (period instanceof ReadablePeriod == false) {#303,18.97430574326288
+return (other.getPeriodType() == getPeriodType() && other.getValue(0) == getValue());#307,18.939727646963938
+total = 27 * total + getFieldType().hashCode();#318,18.92866811298189
+protected void setValue(int value) {#176,18.926323817326473
+throw new IllegalArgumentException("ReadableInstant objects must not be null");#68,18.91317858014788
+if (other.getClass() != getClass()) {#331,18.901979064941408
+MutablePeriod period = new MutablePeriod();#284,18.899319648742676
+if (value != 0) {#136,18.844947212620784
+int thisValue = getValue();#335,18.8325553894043
+return false;#304,18.814723205566406
+total = 27 * total + getValue();#317,18.807797319748822
+protected BaseSingleFieldPeriod(int period) {#155,18.705168533325196
+iPeriod = value;#177,18.674088886805944
+public int size() {#201,18.632343928019207
+int total = 17;#316,18.63183989891639
+if (thisValue < otherValue) {#339,18.627792358398438
+if (DateTimeUtils.isContiguous(start) == false) {#100,18.6196284866333
+return true;#301,18.60675328572591
+int otherValue = other.getValue();#334,18.600398512447583
+for (int i = 0, isize = start.size(); i < isize; i++) {#95,18.578882503509522
+public MutablePeriod toMutablePeriod() {#283,18.577885627746582
+throw new IllegalArgumentException("ReadablePartial objects must have the same set of fields");#97,18.577858448028564
+return (type == getFieldType());#261,18.53868567943573
+" is not precise in the period " + period);#141,18.536439357659756
+if (field.isPrecise() == false) {#138,18.5314838886261
+for (int i = 0; i < period.size(); i++) {#134,18.5008944272995
+if (start.size() != end.size()) {#92,18.467822647094728
+return iPeriod;#167,18.4022216796875
+return values[0];#105,18.352187670194187
+if (thisValue > otherValue) {#336,18.35124397277832
+return getValue();#235,18.292630036671955
+return 0;#342,18.273867867209695
+private volatile int iPeriod;#54,18.24534355510365
+throw new IllegalArgumentException("ReadablePartial objects must be contiguous");#101,18.23798986843654
+DurationField field = period.getFieldType(i).getField(iso);#137,18.214852939952504
+return FieldUtils.safeToInt(duration / millisPerUnit);#146,18.205745458602905
+public abstract PeriodType getPeriodType();#193,18.194699874291054
+return getFieldType();#219,18.160788315993088
+throw new ClassCastException(getClass() + " cannot be compared to " + other.getClass());#332,18.130248013664694
+throw new IllegalArgumentException("ReadablePartial objects must not be null");#90,18.129185314836175
+return 1;#202,18.10243727944114
+iPeriod = period;#157,18.097230161939347
+return period;#286,18.06260802529075
+throw new IndexOutOfBoundsException(String.valueOf(index));#217,18.056834186826432
+protected static int between(ReadableInstant start, ReadableInstant end, DurationFieldType field) {#66,18.042719421386717
+public abstract DurationFieldType getFieldType();#186,18.034339904785156
+public DurationFieldType getFieldType(int index) {#215,17.99798011779785
+implements ReadablePeriod, Comparable<BaseSingleFieldPeriod>, Serializable {#47,17.950319436880257
+throw new IllegalArgumentException("ReadablePartial objects must have the same set of fields");#93,17.94733691215515
+return 0;#251,17.9430814222856
+return 1;#337,17.935331090291342
+int value = period.getValue(i);#135,17.91118673844771
+return -1;#340,17.91009247303009
+throw new IndexOutOfBoundsException(String.valueOf(index));#233,17.8848181111472
+super();#156,17.876839447021485
+period.add(this);#285,17.77312660217285
+return 0;#130,17.771107864379882
+"Cannot convert period to duration as " + field.getName() +#140,17.762800325046886
+throw new IllegalArgumentException(#139,17.746936586168076
+Chronology chrono = DateTimeUtils.getChronology(start.getChronology()).withUTC();#103,17.64667101467357
+return total;#319,17.612870476462625
+if (start.getFieldType(i) != end.getFieldType(i)) {#96,17.607780307531357
+public int hashCode() {#315,17.574615383148192
+Chronology chrono = DateTimeUtils.getInstantChronology(start);#70,17.53689608207116
+int amount = field.getField(chrono).getDifference(end.getMillis(), start.getMillis());#71,17.442654459817067
+Chronology iso = ISOChronology.getInstanceUTC();#132,17.420736085800897
+protected static int between(ReadablePartial start, ReadablePartial end, ReadablePeriod zeroInstance) {#88,17.34438813965896
+duration = FieldUtils.safeAdd(duration, FieldUtils.safeMultiply(field.getUnitMillis(), value));#143,17.296882756551106
+return amount;#72,17.263661297884855
+return Period.ZERO.withFields(this);#272,17.0037802696228
+public abstract class BaseSingleFieldPeriod#46,16.847664833068848
+private static final long serialVersionUID = 9386874258972L;#50,16.764191809154692
+int[] values = chrono.get(zeroInstance, chrono.set(start, 0L), chrono.set(end, 0L));#104,16.315812397003175

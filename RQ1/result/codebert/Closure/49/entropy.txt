@@ -1,0 +1,257 @@
+private final Supplier<String> uniqueIdSupplier;#511,20.84533989429474
+private final Supplier<String> uniqueIdSupplier;#572,20.683579206466675
+public Renamer forChildScope() {#448,19.983338435490925
+this.uniqueIdSupplier = uniqueIdSupplier;#519,19.981743388705784
+private final AbstractCompiler compiler;#257,19.924074172973633
+Supplier<String> uniqueIdSupplier,#516,19.911603927612305
+private boolean containsSeparator(String name) {#286,19.852679443359374
+private final boolean global;#427,19.72397910224067
+this.uniqueIdSupplier = uniqueIdSupplier;#578,19.657100041707356
+Supplier<String> uniqueIdSupplier,#576,19.592458777957493
+MakeDeclaredNamesUnique() {#63,19.58630985683865
+private String getUniqueName(String name, int id) {#482,19.512472040512982
+private void reserveName(String name) {#486,19.509544079120342
+public Renamer forChildScope() {#557,19.493218183517456
+MakeDeclaredNamesUnique(Renamer renamer) {#67,19.345590318952286
+private String getUniqueName(String name) {#535,19.32407808303833
+private static int indexOfSeparator(String name) {#282,19.292169346528894
+static CompilerPass getContextualRenameInverter(AbstractCompiler compiler) {#71,19.272949945359002
+InlineRenamer(#515,19.250573476155598
+private final String idPrefix;#512,19.242478457364168
+public Renamer forChildScope() {#583,19.174925088882446
+private final Map<String, String> declarations = Maps.newHashMap();#510,19.150859785079955
+private ContextualRenameInverter(AbstractCompiler compiler) {#268,19.147815152218467
+implements ScopedCallback, CompilerPass {#256,19.147561200459798
+public void addDeclaredName(String name) {#456,19.135161209106446
+return new InlineRenamer(uniqueIdSupplier, idPrefix, removeConstness);#558,19.105505356421837
+if (name != null && !name.isEmpty() && parent != null#125,19.103560594411995
+void addDeclaredName(String name);#233,19.09876977480375
+private final boolean removeConstness;#513,19.07441876151345
+private int incrementNameCount(String name) {#490,19.046206951141357
+public String getReplacementName(String oldName) {#552,19.00326156616211
+public void addDeclaredName(String name) {#528,18.98880564371745
+if (name.indexOf(ContextualRenamer.UNIQUE_ID_SEPARATOR) != -1) {#540,18.981056849161785
+String idPrefix) {#577,18.90105070386614
+private final Map<String, String> declarations = Maps.newHashMap();#426,18.895998430252074
+private final String idPrefix;#573,18.892861452969637
+public static String getOrginalName(String name) {#277,18.883694410324097
+private String findReplacementName(String name) {#357,18.861636797587078
+return name.indexOf(ContextualRenamer.UNIQUE_ID_SEPARATOR) != -1;#287,18.841665544817523
+case Token.NAME:#158,18.823745380748402
+return new InlineRenamer(uniqueIdSupplier, idPrefix, false);#584,18.79363214969635
+String newName = original;#359,18.79195515314738
+class MakeDeclaredNamesUnique#45,18.78785364968436
+private boolean isValidName(String name) {#371,18.761839321681432
+if (t.inGlobalScope()) {#309,18.74427973429362
+private Set<String> referencedNames = ImmutableSet.of();#260,18.733159489101833
+if (global) {#458,18.720072672917293
+if (t.inGlobalScope()) {#295,18.716586621602378
+if (t.inGlobalScope()) {#387,18.7101110458374
+for (Renamer names : nameStack) {#193,18.70233862740653
+boolean removeConstness) {#518,18.699863025120326
+String name = node.getString();#392,18.693141639232635
+private Deque<Renamer> nameStack = new ArrayDeque<Renamer>();#60,18.68647189367385
+final static String UNIQUE_ID_SEPARATOR = "$$";#429,18.6836088180542
+return name.lastIndexOf(ContextualRenamer.UNIQUE_ID_SEPARATOR);#283,18.683196987424576
+if (null == nodes) {#405,18.66591739654541
+String name  = v.getName();#336,18.664866129557293
+if (id != 0) {#465,18.66169598228053
+public String getReplacementName(String oldName) {#475,18.624760508537292
+case Token.CATCH:#181,18.61864185333252
+private final Renamer rootRenamer;#61,18.58801736831665
+private ContextualRenamer(Multiset<String> nameUsage) {#439,18.587867641448973
+@Override#455,18.585228602091473
+if (TokenStream.isJSIdentifier(name) &&#372,18.584063379388105
+@Override#556,18.572909355163574
+String newName = null;#464,18.57109202278985
+public boolean stripConstIfReplaced() {#495,18.56438475388747
+if (containsSeparator(name)) {#397,18.56178961302105
+public boolean stripConstIfReplaced() {#562,18.534827672518215
+@Override#293,18.531042734781902
+void handleScopeVar(Var v) {#335,18.528318185072678
+ContextualRenamer() {#431,18.51221466064453
+return name + UNIQUE_ID_SEPARATOR + id;#483,18.5092674891154
+if (renamer.stripConstIfReplaced()) {#162,18.504605856808748
+@Override#447,18.503763834635418
+if (containsSeparator(name) && !getOrginalName(name).isEmpty()) {#337,18.494463953478583
+static class InlineRenamer implements Renamer {#509,18.48961853981018
+Renamer renamer = nameStack.peek().forChildScope();#142,18.478264083862303
+Renamer renamer = nameStack.peek();#161,18.462604477292015
+if (newName != null) {#160,18.450490653514862
+Renamer renamer = nameStack.peek().forChildScope();#121,18.437934341430665
+case Token.CATCH:#140,18.43424344062805
+@Override#272,18.39726161956787
+while (!isValidName(newName)) {#361,18.397197008132935
+return name + ContextualRenamer.UNIQUE_ID_SEPARATOR#547,18.389307395271633
+return new ContextualRenamer(nameUsage);#449,18.385550260543823
+0, name.lastIndexOf(ContextualRenamer.UNIQUE_ID_SEPARATOR));#542,18.376329164247256
+Renamer renamer;#78,18.373212814331055
+private void addCandidateNameReference(String name, Node n) {#403,18.369393900821084
+if (!declarations.containsKey(name)) {#462,18.359883135015313
+if (!t.inGlobalScope()) {#108,18.343764085036057
+Renamer forChildScope();#249,18.339315605163574
+String getReplacementName(String oldName);#239,18.331682000841415
+String name = n.getFirstChild().getString();#124,18.324467268857088
+Node declarationRoot = t.getScopeRoot();#77,18.310047149658203
+private final Multiset<String> nameUsage;#425,18.286250241597493
+Set<String> current = referencedNames;#320,18.272897466023764
+if (nameStack.isEmpty()) {#79,18.250305615938625
+@Override#307,18.2489112218221
+@Override#474,18.235007603963215
+int index = indexOfSeparator(name);#278,18.23376537771786
+String idPrefix,#517,18.23232782804049
+if (newName != null) {#195,18.22732741492135
+private Deque<Set<String>> referenceStack = new ArrayDeque<Set<String>>();#263,18.22613929748535
+this.nameUsage = nameUsage;#441,18.21399416242327
+boolean stripConstIfReplaced();#244,18.207844040610574
+String newName = findReplacementName(name);#338,18.196909753899824
+static class BoilerplateRenamer extends ContextualRenamer {#571,18.196535873413087
+@Override#561,18.184120178222656
+@Override#494,18.171719868977863
+@Override#551,18.1669979095459
+this.compiler = compiler;#269,18.146775319026066
+@Override#75,18.138291120529175
+if (name.isEmpty()) {#536,18.13313238961356
+reserveName(name);#459,18.125596809387208
+this.removeConstness = removeConstness;#524,18.125563144683838
+int id = incrementNameCount(name);#463,18.124447686331614
+!(rootRenamer instanceof ContextualRenamer));#84,18.12003820592707
+for (Node n : references) {#345,18.116066932678223
+private String getReplacementName(String oldName) {#192,18.104511192866735
+@Override#385,18.099541664123535
+nameUsage.setCount(name, 0, 1);#487,18.084927876790363
+return new ContextualRenameInverter(compiler);#72,18.054248641518985
+return (index == -1) ? name : name.substring(0, index);#279,18.053747444152833
+declarationRoot.getType() != Token.FUNCTION ||#83,18.04569563658341
+@Override#380,18.0440772374471
+if (declarationRoot.getType() != Token.FUNCTION) {#99,18.024695441836403
+String original = getOrginalName(name);#358,18.02416229248047
+@Override#527,18.01457150777181
+n.setString(newName);#166,18.012941201527912
+return null;#199,18.008390426635742
+@Override#106,18.00511360168457
+static class ContextualRenameInverter#255,18.004443168640137
+return removeConstness;#563,18.00429803674871
+@Override#155,18.00425934791565
+case Token.FUNCTION:#171,17.99662920144888
+ContextualRenamer.UNIQUE_ID_SEPARATOR + String.valueOf(i++);#363,17.96626646859305
+int i = 0;#360,17.96403728831898
+if (declarationRoot.getType() == Token.FUNCTION) {#91,17.962846755981445
+if (NodeUtil.isVarDeclaration(n)) {#212,17.955464601516724
+for (Iterator<Var> it = t.getScope().getVars(); it.hasNext();) {#313,17.95067288080851
+private Map<String, List<Node>> nameMap = Maps.newHashMap();#266,17.94821262359619
+Var v = it.next();#314,17.93277015686035
+findDeclaredNames(functionBody, null, renamer);#97,17.93254952681692
+{#141,17.915721045600044
++ idPrefix + uniqueIdSupplier.get();#548,17.900150082328103
+referenceStack.push(referencedNames);#299,17.890806317329407
+if (!name.equals(ARGUMENTS)) {#457,17.88377551028603
+if (!declarations.containsKey(name)) {#530,17.88266854816013
+String name = n.getFirstChild().getString();#144,17.876131751320578
+private void findDeclaredNames(Node n, Node parent, Renamer renamer) {#206,17.87475672222319
+if (!referenceStack.isEmpty()) {#325,17.86899407704671
+String name = c.getString();#93,17.865269005298615
+renamer = nameStack.peek().forChildScope();#88,17.846041779769095
+{#118,17.845765325758194
+BoilerplateRenamer(#575,17.798990345001222
+findDeclaredNames(declarationRoot, null, renamer);#101,17.779621601104736
+case Token.FUNCTION:#117,17.766489175649788
+static class ContextualRenamer implements Renamer {#424,17.76249122619629
+if (parent == null#209,17.75662061903212
+declarations.put(name, newName);#468,17.7377537772769
+public void enterScope(NodeTraversal t) {#294,17.730185210704803
+interface Renamer {#228,17.728478113810223
+public void exitScope(NodeTraversal t) {#308,17.70516711473465
+&& !NodeUtil.isFunctionDeclaration(n)) {#126,17.69939957346235
+renamer.addDeclaredName(name);#145,17.693705224990843
+switch (n.getType()) {#116,17.67512019475301
+String newName = getReplacementName(n.getString());#159,17.670178109949287
+Preconditions.checkState(references != null);#344,17.643021249771117
+nameStack.push(renamer);#136,17.628494421641033
+findDeclaredNames(c, n, renamer);#220,17.620948362350465
+compiler.reportCodeChange();#349,17.616654804774694
+for (Node c = n.getFirstChild(); c != null; c = c.getNext()) {#219,17.615616140694453
+return nameUsage.add(name, 1);#491,17.610702991485596
+nameStack.pop();#174,17.584671240586502
+public static final String ARGUMENTS = "arguments";#50,17.549984486897788
+@Override#582,17.543137391408283
+t.getCompiler().reportCodeChange();#167,17.542996454238892
+public void process(Node externs, Node js) {#273,17.53351806191837
+if (NodeUtil.isReferenceName(node)) {#391,17.515173159147565
+|| n == parent.getFirstChild()) {#211,17.514081901974148
+switch (n.getType()) {#157,17.50137718518575
+!name.equals(ARGUMENTS)) {#374,17.494021112268623
+declarations.put(name, getUniqueName(name));#531,17.494019174575804
+Node functionBody = declarationRoot.getLastChild();#96,17.465771170223462
+return false;#496,17.454140451219345
+return declarations.get(oldName);#553,17.4368953704834
+@Override#113,17.43297791481018
+String newName = names.getReplacementName(oldName);#194,17.414468717575073
+this(new ContextualRenamer());#64,17.384345928827923
+return declarations.get(oldName);#476,17.376110008784703
+Preconditions.checkState(t.inGlobalScope());#85,17.33454071848016
+!referencedNames.contains(name) &&#373,17.31974493373524
+Preconditions.checkState(#82,17.30814236861009
+return newName;#365,17.306558895111085
+this.idPrefix = idPrefix;#523,17.268398761749268
+return true;#382,17.26440387301975
+for (Node c = declarationRoot.getFirstChild().getNext().getFirstChild(); c != null; c = c.getNext()) {#92,17.259475682232832
+nameStack.push(renamer);#147,17.25861342748006
+this.global = true;#432,17.220606724421184
+nameMap.put(name, nodes);#407,17.21970625484691
+return false;#377,17.216667069329155
+|| parent.getType() != Token.FUNCTION#210,17.199653673171998
+this.global = false;#440,17.19455663363139
+renamer.addDeclaredName(n.getString());#213,17.17420632498605
+nameStack.push(renamer);#103,17.096389055252075
+handleScopeVar(v);#315,17.066107749938965
+public void exitScope(NodeTraversal t) {#107,17.057412556239537
+Preconditions.checkArgument(!idPrefix.isEmpty());#522,17.053896167061545
+referencedNames = referenceStack.pop();#321,17.050973960331508
+Preconditions.checkState(n.getType() == Token.NAME);#346,17.042937420032644
+n.setString(newName);#347,17.037275897132027
+return;#310,17.031349182128906
+renamer = rootRenamer;#86,17.025543286250187
+this.idPrefix = idPrefix;#579,17.017058312892914
+newName = getUniqueName(name, id);#466,17.00356269836426
+return;#388,16.998387622833253
+renamer.addDeclaredName(name);#94,16.991403367784287
+nameUsage = HashMultiset.create();#433,16.989196836948395
+referencedNames.add(name);#395,16.972822252909342
+NodeTraversal.traverse(compiler, js, this);#274,16.941947210402716
+newName = original +#362,16.939401773306038
+renamer.addDeclaredName(nameNode.getString());#216,16.914084347811613
+referencedNames.add(newName);#342,16.911589860916138
+return;#296,16.90345678329468
+nameStack.pop();#183,16.898283518277683
+nameStack.pop();#109,16.89739773490212
+Preconditions.checkState(!name.equals(ARGUMENTS));#529,16.895024220148724
+renamer.addDeclaredName(name);#127,16.87825194272128
+referencedNames.remove(name);#339,16.876179631551107
+List<Node> references = nameMap.get(name);#343,16.863514945620583
+break;#175,16.83996868133545
+List<Node> nodes = nameMap.get(name);#404,16.831602648684854
+return true;#152,16.80577564239502
+this.rootRenamer = renamer;#68,16.78833792759822
+public void enterScope(NodeTraversal t) {#76,16.77992650440761
+public boolean shouldTraverse(NodeTraversal t, Node n, Node parent) {#381,16.765538920526918
+public void visit(NodeTraversal t, Node node, Node parent) {#386,16.737695330665225
+break;#138,16.710626888275147
+nameMap.remove(name);#350,16.687668736775716
+return newName;#196,16.656229654947918
+name = name.substring(#541,16.628899293787338
+referencedNames = Sets.newHashSet();#300,16.61734937032064
+nodes.add(n);#409,16.61723828315735
+Node nameNode = n.getFirstChild();#215,16.579204453362358
+break;#169,16.572891235351562
+return true;#375,16.5460147857666
+return name;#537,16.51690066944469
+implements NodeTraversal.ScopedCallback {#46,16.49981348855155
+n.removeProp(Node.IS_CONSTANT_NAME);#164,16.459768966392236
+public boolean shouldTraverse(NodeTraversal t, Node n, Node parent) {#114,16.41484564826602
+nodes = Lists.newLinkedList();#406,16.362469224368823
+addCandidateNameReference(name, node);#398,16.349683332443238
+break;#149,15.969308280944825
+public void visit(NodeTraversal t, Node n, Node parent) {#156,15.967728163066663
+referencedNames.addAll(current);#326,15.613011837005615
+break;#184,15.352687168121339

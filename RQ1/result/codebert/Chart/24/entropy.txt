@@ -1,0 +1,35 @@
+public Object clone() throws CloneNotSupportedException {#169,20.693687983921595
+private double lowerBound;#63,19.216091473897297
+public double getUpperBound() {#111,19.195815881093342
+private double upperBound;#66,19.170565181308323
+public double getLowerBound() {#100,19.144770882346414
+public GrayPaintScale() {#71,19.046308517456055
+if (!(obj instanceof GrayPaintScale)) {#148,18.787583541870116
+public GrayPaintScale(double lowerBound, double upperBound) {#84,18.75363410146613
+if (obj == this) {#145,18.722881889343263
+public boolean equals(Object obj) {#144,18.53124237060547
+GrayPaintScale that = (GrayPaintScale) obj;#151,18.520772803913463
+public class GrayPaintScale#59,18.4581800699234
+this(0.0, 1.0);#72,18.281933095720078
+return new Color(g, g, g);#128,18.241047011481392
+if (lowerBound >= upperBound) {#85,18.212655684527228
+implements PaintScale, PublicCloneable, Serializable {#60,18.189198446273803
+- this.lowerBound) * 255.0);#127,18.09914246311894
+int g = (int) ((value - this.lowerBound) / (this.upperBound#126,18.086527429778002
+if (this.lowerBound != that.lowerBound) {#152,18.009579204377673
+public Paint getPaint(double value) {#123,17.78435959134783
+return super.clone();#170,17.761969566345215
+if (this.upperBound != that.upperBound) {#155,17.760563032967703
+return true;#158,17.571774991353355
+this.upperBound = upperBound;#90,17.523057103157043
+return this.lowerBound;#101,17.517391477312362
+throw new IllegalArgumentException(#86,17.47439364383095
+return this.upperBound;#112,17.40504401070731
+this.lowerBound = lowerBound;#89,17.025362491607666
+"Requires lowerBound < upperBound.");#87,16.941440154766216
+v = Math.min(v, this.upperBound);#125,16.799163000924246
+double v = Math.max(value, this.lowerBound);#124,16.72976051677357
+return false;#149,16.717473411560057
+return false;#156,16.639034207661947
+return false;#153,16.553626569112144
+return true;#146,16.351013120015462

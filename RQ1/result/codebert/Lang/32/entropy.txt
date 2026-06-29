@@ -1,0 +1,177 @@
+if (object == null) {#356,20.240692075093587
+if (object == null) {#855,19.608746846516926
+if (initialNonZeroOddNumber == 0) {#579,19.587386226654054
+private int iTotal = 0;#549,19.340342955155805
+try {#176,19.052764320373534
+if (array == null) {#933,19.017950693766277
+if (array == null) {#797,19.013810221354166
+for (Field field : fields) {#180,19.013644695281982
+if (array == null) {#624,19.005067571004233
+if (array == null) {#662,19.00043430328369
+if (array == null) {#696,18.98739782969157
+if (array == null) {#899,18.97835750579834
+if (initialNonZeroOddNumber % 2 == 0) {#582,18.97722799127752
+if (array == null) {#763,18.974946467081704
+if (array == null) {#729,18.97481657663981
+if (array == null) {#835,18.973436482747395
+if (multiplierNonZeroOddNumber == 0) {#585,18.883338247026717
+static void unregister(Object value) {#537,18.788301908052883
+@Override#977,18.76351038614909
+if (object instanceof long[]) {#862,18.685684814453126
+@Override#105,18.569104385375976
+iConstant = 37;#557,18.54930509839739
+static void register(Object value) {#521,18.466429869333904
+String[] excludeFields) {#172,18.44373687944914
+public HashCodeBuilder append(int value) {#782,18.42356436593192
+public static int reflectionHashCode(Object object, boolean testTransients) {#435,18.410622191429137
+return REGISTRY.get();#137,18.39932009379069
+boolean testTransients) {#281,18.39580700132582
+throw new IllegalArgumentException("The object to build a hash code for must not be null");#357,18.373555034399033
+private final int iConstant;#544,18.345440777865324
+public HashCodeBuilder append(Object object) {#854,18.341550622667587
+public int toHashCode() {#965,18.301720185713336
+if (multiplierNonZeroOddNumber % 2 == 0) {#588,18.28989190640657
+static boolean isRegistered(Object value) {#151,18.257358184227577
+Object fieldValue = field.get(object);#186,18.250440457287958
+if (isRegistered(object)) {#173,18.213894844055176
+public HashCodeBuilder append(byte value) {#645,18.205017226082937
+&& (field.getName().indexOf('$') == -1)#182,18.18044442600674
+iTotal = initialNonZeroOddNumber;#592,18.162139733632404
+try {#185,18.07018687508323
+iTotal = iTotal * iConstant + Float.floatToIntBits(value);#749,18.013617277145386
+public static int reflectionHashCode(Object object) {#399,18.00832815170288
+iConstant = multiplierNonZeroOddNumber;#591,17.987913131713867
+append((int[]) object);#865,17.983414932533545
+public HashCodeBuilder append(double value) {#715,17.972794941493444
+public HashCodeBuilder append(short value) {#918,17.972706726619176
+append((long[]) object);#863,17.966274791293674
+append((Object[]) object);#880,17.948913362291123
+public HashCodeBuilder append(float value) {#748,17.94823626109532
+boolean testTransients, Class<? super T> reflectUpToClass, String[] excludeFields) {#354,17.940796487471637
+if(object.getClass().isArray()) {#859,17.91945503069007
+iTotal = 17;#558,17.915449142456055
+public HashCodeBuilder append(long value) {#820,17.91142647606986
+return append(Double.doubleToLongBits(value));#716,17.905303319295246
+throw new InternalError("Unexpected IllegalAccessException");#191,17.89838172367641
+return toHashCode();#979,17.89375976415781
+throw new IllegalArgumentException("HashCodeBuilder requires a non zero initial value");#580,17.866066143430512
+append((short[]) object);#867,17.859545601738823
+iTotal = iTotal * iConstant;#764,17.83795928955078
+public HashCodeBuilder append(char value) {#681,17.8096707207816
+builder.append(fieldValue);#187,17.805159507259244
+iTotal = iTotal * iConstant;#663,17.787645426663484
+iTotal = iTotal * iConstant + ((int) (value ^ (value >> 32)));#821,17.782906595865885
+append((float[]) object);#875,17.782398011949326
+iTotal = iTotal * iConstant;#625,17.77627064964988
+iTotal = iTotal * iConstant + value;#783,17.77492666244507
+public static int reflectionHashCode(int initialNonZeroOddNumber, int multiplierNonZeroOddNumber, Object object) {#237,17.770790053952126
+iTotal = iTotal * iConstant;#836,17.76450594988736
+register(object);#177,17.756754875183105
+iTotal = iTotal * iConstant + value;#682,17.747290420532227
+iTotal = iTotal * iConstant;#798,17.745326388965953
+boolean testTransients, Class<? super T> reflectUpToClass) {#303,17.74105335984911
+null);#283,17.73791567484538
+iTotal = iTotal * iConstant;#934,17.735689900138162
+iTotal = iTotal * iConstant + value;#919,17.731813144683837
+iTotal = iTotal * iConstant;#730,17.731076500632547
+public HashCodeBuilder append(boolean value) {#609,17.725849469502766
+iTotal = iTotal * iConstant;#900,17.721483490683816
+append((char[]) object);#869,17.721024018746835
+iTotal = iTotal * iConstant + value;#646,17.72040238380432
+return iTotal;#966,17.717116196950276
+public static int reflectionHashCode(Object object, Collection<String> excludeFields) {#471,17.71600696314936
+if (!ArrayUtils.contains(excludeFields, field.getName())#181,17.71101897103446
+iTotal = iTotal * iConstant;#697,17.707285144112326
+append((byte[]) object);#871,17.692293944182218
+iTotal = iTotal * iConstant + (value ? 0 : 1);#610,17.689325408935545
+&& (!Modifier.isStatic(field.getModifiers()))) {#184,17.66451695230272
+public int hashCode() {#978,17.635309314727785
+clazz = clazz.getSuperclass();#363,17.630701411854137
+append((double[]) object);#873,17.619457880655926
+for (int i = 0; i < array.length; i++) {#800,17.607628924506052
+public static int reflectionHashCode(Object object, String[] excludeFields) {#509,17.59734244573684
+for (int i = 0; i < array.length; i++) {#699,17.595565829958236
+iTotal = iTotal * iConstant;#856,17.591651483015582
+for (int i = 0; i < array.length; i++) {#627,17.583652632577078
+for (int i = 0; i < array.length; i++) {#665,17.57331235068185
+for (int i = 0; i < array.length; i++) {#732,17.56105705669948
+for (int i = 0; i < array.length; i++) {#766,17.560860838208878
+append(array[i]);#628,17.56022782759233
+while (clazz.getSuperclass() != null && clazz != reflectUpToClass) {#362,17.557406655673322
+append(array[i]);#700,17.54776161367243
+for (int i = 0; i < array.length; i++) {#902,17.542763437543595
+return;#174,17.53981167929513
+for (int i = 0; i < array.length; i++) {#838,17.534741061074392
+reflectionAppend(object, clazz, builder, testTransients, excludeFields);#361,17.53054219705087
+append(array[i]);#666,17.520226782018486
+for (int i = 0; i < array.length; i++) {#936,17.514157806124008
+append((boolean[]) object);#877,17.5126793043954
+append(array[i]);#937,17.487968488173053
+protected Set<IDKey> initialValue() {#106,17.48612382676866
+append(array[i]);#903,17.47726548801769
+append(array[i]);#767,17.47655963897705
+Class<?> clazz = object.getClass();#360,17.4742176156295
+append(array[i]);#801,17.46662629734386
+iTotal = iTotal * iConstant + superHashCode;#954,17.45818953080611
+append(array[i]);#733,17.455528129230846
+append(array[i]);#839,17.447107618505303
+throw new IllegalArgumentException("HashCodeBuilder requires an odd multiplier");#589,17.433742805763526
+return new HashSet<IDKey>();#107,17.427655310857865
+return reflectionHashCode(17, 37, object, false, null, excludeFields);#510,17.417754773740416
+throw new IllegalArgumentException("HashCodeBuilder requires an odd initial value");#583,17.414771182196482
+iTotal = iTotal * iConstant + object.hashCode();#883,17.40444223342403
+&& (useTransients || !Modifier.isTransient(field.getModifiers()))#183,17.39851986489645
+getRegistry().add(new IDKey(value));#522,17.368907976150513
+Field[] fields = clazz.getDeclaredFields();#178,17.35909339904785
+public HashCodeBuilder append(int[] array) {#796,17.352322832743326
+throw new IllegalArgumentException("HashCodeBuilder requires a non zero multiplier");#586,17.31364577157157
+reflectUpToClass, null);#305,17.305876358695652
+reflectionAppend(object, clazz, builder, testTransients, excludeFields);#364,17.28384264053837
+unregister(object);#196,17.222636783824246
+return reflectionHashCode(17, 37, object, false, null, null);#400,17.199097938537598
+private static final ThreadLocal<Set<IDKey>> REGISTRY = new ThreadLocal<Set<IDKey>>() {#104,17.19151887893677
+return reflectionHashCode(initialNonZeroOddNumber, multiplierNonZeroOddNumber, object, false, null, null);#238,17.188590812683106
+public HashCodeBuilder append(byte[] array) {#661,17.142120170593262
+return reflectionHashCode(17, 37, object, testTransients, null, null);#436,17.13826843544289
+public static int reflectionHashCode(int initialNonZeroOddNumber, int multiplierNonZeroOddNumber, Object object,#280,17.13219339052836
+public HashCodeBuilder appendSuper(int superHashCode) {#953,17.119647783391617
+public HashCodeBuilder(int initialNonZeroOddNumber, int multiplierNonZeroOddNumber) {#578,17.070196041694054
+return getRegistry().contains(new IDKey(value));#152,17.03031860698353
+return reflectionHashCode(initialNonZeroOddNumber, multiplierNonZeroOddNumber, object, testTransients, null,#282,16.991224234444754
+return reflectionHashCode(initialNonZeroOddNumber, multiplierNonZeroOddNumber, object, testTransients,#304,16.98601925011837
+public static <T> int reflectionHashCode(int initialNonZeroOddNumber, int multiplierNonZeroOddNumber, T object,#353,16.980495062741365
+getRegistry().remove(new IDKey(value));#538,16.957150506973267
+private static void reflectionAppend(Object object, Class<?> clazz, HashCodeBuilder builder, boolean useTransients,#171,16.937031968434653
+public HashCodeBuilder append(Object[] array) {#898,16.922953923543293
+public HashCodeBuilder() {#556,16.92134323120117
+public HashCodeBuilder append(float[] array) {#762,16.91050580342611
+return this;#822,16.909176046198066
+return this;#750,16.90807073766535
+return this;#955,16.891524921764027
+public static <T> int reflectionHashCode(int initialNonZeroOddNumber, int multiplierNonZeroOddNumber, T object,#302,16.852799112146553
+public HashCodeBuilder append(double[] array) {#728,16.836978594462078
+static Set<IDKey> getRegistry() {#136,16.836883195241292
+return this;#784,16.83431928808039
+return this;#920,16.824125203219328
+return this;#611,16.821596839211203
+return this;#683,16.811083273454145
+public HashCodeBuilder append(long[] array) {#834,16.804421043395998
+return this;#647,16.803500175476074
+public HashCodeBuilder append(short[] array) {#932,16.78492437998454
+AccessibleObject.setAccessible(fields, true);#179,16.77384078502655
+return this;#886,16.759425163269043
+return builder.toHashCode();#366,16.757373936971028
+return reflectionHashCode(object, ReflectionToStringBuilder.toNoNullStringArray(excludeFields));#472,16.750830799341202
+return this;#940,16.734130859375
+return this;#703,16.714269724759188
+return this;#736,16.708698532798074
+public HashCodeBuilder append(char[] array) {#695,16.677686309814455
+return this;#631,16.671552831476387
+return this;#842,16.666222225536
+return this;#669,16.661472233858976
+return this;#770,16.65064352208918
+return this;#906,16.642553416165438
+public HashCodeBuilder append(boolean[] array) {#623,16.632123231887817
+return this;#804,16.618032282049004
+HashCodeBuilder builder = new HashCodeBuilder(initialNonZeroOddNumber, multiplierNonZeroOddNumber);#359,16.275328010320663
+public class HashCodeBuilder {#96,15.914086478097099

@@ -1,0 +1,85 @@
+private final AbstractCompiler compiler;#36,19.575635698106552
+PrepareAst(AbstractCompiler compiler) {#39,19.098094159906562
+case Token.CALL:#135,19.01483474458967
+if (first.isName() &&#173,18.912204878670828
+PrepareAst(AbstractCompiler compiler, boolean checkOnly) {#43,18.846033159891764
+case Token.FUNCTION:#139,18.76952667236328
+if (!c.isEmpty()) {#102,18.721739080217148
+this.compiler = compiler;#44,18.60015244917436
+@Override#124,18.490466117858887
+if (key.getJSDocInfo() != null &&#211,18.486987515499717
+class PrepareAst implements CompilerPass {#34,18.424115816752117
+for (Node key = objlit.getFirstChild();#147,18.407366858588325
+private void annotateCalls(Node n) {#158,18.33833204905192
+!c.isBlock()) {#99,18.290129561173288
+if (root != null) {#67,18.190735816955566
+switch (n.getType()) {#134,18.14842360360282
+private void reportChange() {#48,18.138840079307556
+if (parent.getJSDocInfo() != null#184,18.133449342515732
+if (checkOnly) {#56,18.107245540618898
+@Override#132,18.09064706166585
+this(compiler, false);#40,18.07083728096702
+&& !n.isLabel()#95,18.069700876871746
+if (!NodeUtil.isGet(first)) {#167,18.027622275882297
+if (checkOnly) {#49,18.014384841918947
+if (externs != null) {#63,17.98926830291748
+Node newBlock = IR.block().srcref(n);#100,17.986768390821375
+Node objlit, Node key, Node value) {#209,17.968548624139082
+&& !n.isSwitch()) {#96,17.968542754650116
+@Override#54,17.95330500602722
+"eval".equals(first.getString())) {#174,17.868193958116613
+Node first = n.getFirstChild();#163,17.781203969319662
+n.replaceChild(c, newBlock);#101,17.741010904312134
+if (parent.isAssign()) {#186,17.692598959978888
+if (NodeUtil.isControlStructureCodeBlock(n,c) &&#98,17.644297929910515
+&& parent.getJSDocInfo().isJavaDispatch()) {#185,17.639540513356526
+private void annotateDispatchers(Node n, Node parent) {#182,17.604632728978206
+for (Node c = n.getFirstChild(); c != null; c = c.getNext()) {#97,17.59101755865689
+if (n.isObjectLit()) {#126,17.552387714385986
+return true;#129,17.547136942545574
+private final boolean checkOnly;#37,17.512859344482422
+c = newBlock;#107,17.44379908243815
+private void normalizeObjectLiteralAnnotations(Node objlit) {#145,17.429472589492796
+private void normalizeBlocks(Node n) {#93,17.38802218437195
+PrepareAnnotations() {#121,17.375731468200684
+n.putBooleanProp(Node.FREE_CALL, true);#168,17.29001037279765
+for (Node child = n.getFirstChild();#80,17.271573702494305
+this.checkOnly = checkOnly;#45,17.21438193321228
+newBlock.setWasEmptyNode(true);#105,17.195415236733176
+annotateCalls(n);#136,17.16650126962101
+newBlock.addChildrenToFront(c);#103,17.11952712319114
+compiler, externs, new PrepareAnnotations());#65,17.112923041633938
+break;#137,17.08414093653361
+Preconditions.checkState(objlit.isObjectLit());#210,17.045975957598007
+private void normalizeNodeTypes(Node n) {#77,17.034874109121468
+Node value = key.getFirstChild();#149,17.005828128141516
+value.isFunction()) {#212,16.98624277114868
+first.putBooleanProp(Node.DIRECT_EVAL, true);#175,16.9440246963501
+private void normalizeObjectLiteralKeyAnnotations(#208,16.919482171535492
+compiler, root, new PrepareAnnotations());#69,16.894343694051106
+Preconditions.checkState(objlit.isObjectLit());#146,16.88807964324951
+implements NodeTraversal.Callback {#119,16.874611105237687
+key != null; key = key.getNext()) {#148,16.790476633154828
+public boolean shouldTraverse(NodeTraversal t, Node n, Node parent) {#125,16.78750411323879
+n.putBooleanProp(Node.IS_DISPATCHER, true);#188,16.754271864891052
+normalizeObjectLiteralKeyAnnotations(objlit, key, value);#150,16.734810829162598
+normalizeBlocks(n);#78,16.732197761535645
+if (NodeUtil.isControlStructure(n)#94,16.70853889689726
+Preconditions.checkState(false, "normalizeNodeType constraints violated");#50,16.688650545866594
+static class PrepareAnnotations#118,16.672033991132462
+normalizeNodeTypes(root);#57,16.66751267359807
+reportChange();#108,16.6419709278987
+child != null; child = child.getNext()) {#81,16.63291308993385
+Preconditions.checkState(child.getParent() == n);#84,16.588941891988117
+public void visit(NodeTraversal t, Node n, Node parent) {#133,16.57809625353132
+Preconditions.checkState(parent.getLastChild() == n);#187,16.425099739661583
+normalizeNodeTypes(child);#86,16.41834677182711
+value.setJSDocInfo(key.getJSDocInfo());#213,16.39109269777934
+Preconditions.checkState(n.isCall());#159,16.37944025463528
+annotateDispatchers(n, parent);#140,16.376976490020752
+public void process(Node externs, Node root) {#55,16.366453297932942
+normalizeObjectLiteralAnnotations(n);#127,16.121831743340742
+Preconditions.checkState(n.isFunction());#183,16.08611795637343
+NodeTraversal.traverse(#64,15.879444897174835
+NodeTraversal.traverse(#68,15.836750328540802
+break;#141,15.252925316492716

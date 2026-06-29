@@ -1,0 +1,404 @@
+if (instant == null) {#838,20.37686336040497
+public static DateTimeZone forTimeZone(TimeZone zone) {#326,20.337601555718315
+if (zone == null) {#327,19.988510386149088
+if (zone != null) {#212,19.850250562032063
+if (offset == 0) {#374,19.84688886006673
+if (convId == null) {#349,19.82592409849167
+if (newZone == null) {#1051,19.759916484355927
+if (zone == null) {#179,19.73339252471924
+if (dtz == null) {#341,19.721929132938385
+public java.util.TimeZone toTimeZone() {#1255,19.69827103614807
+if (zone == null) {#135,19.68192456563314
+if (dtz != null) {#344,19.67419147491455
+public static DateTimeZone getDefault() {#133,19.670857356144833
+if (offset == 0) {#672,19.645355860392254
+if (id == null) {#205,19.643071111043295
+Provider provider = null;#468,19.62574885441707
+private static DateTimeFormatter cOffsetFormatter;#107,19.610752550760903
+if (locale == null) {#809,19.61058235168457
+if (locale == null) {#769,19.58860945701599
+DateTimeZone dtz = null;#336,19.578603625297546
+static {#115,19.567562739054363
+DateTimeZone zone = cDefault;#134,19.566491842269897
+public static void setDefault(DateTimeZone zone) throws SecurityException {#174,19.541721494574297
+newZone = DateTimeZone.getDefault();#1052,19.48695928400213
+if (offset == 0) {#680,19.451094118754067
+if (instant < overlapStart || instant >= overlapEnd) {#1203,19.45011386004361
+if (offset >= 0) {#657,19.438067817687987
+if (hoursOffset == 0 && minutesOffset == 0) {#273,19.415586426144554
+if (id.equals("UTC")) {#208,19.409591144985622
+if (map == null) {#585,19.40707302093506
+if (sm != null) {#176,19.39521204630534
+DateTimeZone zone;#380,19.372980264516976
+if (newZone == this) {#1054,19.371963679790497
+private static synchronized DateTimeFormatter offsetFormatter() {#694,19.35379958152771
+public static final DateTimeZone UTC = new FixedDateTimeZone("UTC", "UTC", 0, 0);#94,19.353592696013273
+if (id.equals("UTC")) {#331,19.345835473802353
+if (!ids.contains("UTC")) {#448,19.34407885869344
+if (nameProvider == null) {#569,19.339803218841553
+int offset = 0;#282,19.325826278099647
+protected DateTimeZone(String id) {#714,19.324995114253117
+public Chronology withZone(DateTimeZone zone) {#636,19.31537961959839
+DateTimeZone zone = cProvider.getZone(id);#211,19.288391612824938
+try {#470,19.25706253051758
+public DateTimeZone getZone() {#630,19.25516004562378
+if (ids == null || ids.size() == 0) {#444,19.22096588300622
+long afterStart = instant - overlapStart;#1208,19.220534492941464
+if (convId != null) {#338,19.192660868167877
+private static Provider getDefaultProvider() {#467,19.192186673482258
+if (offsetLocal != offset) {#1003,19.18334025144577
+return DateTimeZone.UTC;#332,19.18098339281584
+if (isFixed()) {#1168,19.16894599369594
+if (sm != null) {#427,19.095630645751953
+if (ref != null) {#382,19.093653678894043
+public static void setProvider(Provider provider) throws SecurityException {#425,19.08017410951502
+if (provider == null) {#440,19.074495553970337
+private void writeObject(ObjectOutputStream out) throws IOException {#1311,19.057241699912332
+try {#555,19.05399532318115
+if (nameProvider == null) {#539,19.051991641521454
+if (sm != null) {#526,19.048847579956053
+if (id == null) {#715,19.046292368570963
+return getDefault();#328,19.034799575805664
+try {#283,19.028933620452882
+int offset = getOffset(instantUTC);#949,19.022803995344375
+public static DateTimeZone forOffsetHours(int hoursOffset) throws IllegalArgumentException {#237,19.02073856022047
+public String toString() {#1280,19.02029628753662
+if (cOffsetFormatter == null) {#695,19.019032054477268
+if (provider == null) {#485,18.994474411010742
+public static Provider getProvider() {#411,18.982090603221547
+if (name != null) {#777,18.97906379699707
+throw new IllegalArgumentException("The datetime zone must not be null");#180,18.97527882031032
+if (name != null) {#817,18.959026590983072
+private static synchronized DateTimeZone fixedOffsetZone(String id, int offset) {#373,18.94693392799014
+long offsetAfter = getOffset(instantAfter);#1193,18.92755829660516
+if (offset == 0L) {#217,18.92538743019104
+return getDefault();#206,18.914546608924866
+cProvider = provider;#454,18.893309959998497
+if (offsetLocalFromOriginal == offsetOriginal) {#979,18.890105699238024
+long overlapStart = transition - diff;#1201,18.889770686626434
+throw new ArithmeticException("Adding time zone offset caused overflow");#953,18.889183044433594
+private void readObject(ObjectInputStream in) throws IOException {#1315,18.887923760847613
+return instantUTC;#980,18.88725197315216
+NameProvider nameProvider = null;#554,18.882736078898112
+if (minutesOffset < 0 || minutesOffset > 59) {#279,18.877911350943826
+if (zone == null) {#138,18.877542329871137
+provider = getDefaultProvider();#441,18.87145847744412
+private static Provider cProvider;#99,18.86595754623413
+public static DateTimeZone forOffsetHoursMinutes(int hoursOffset, int minutesOffset) throws IllegalArgumentException {#272,18.863509802982726
+if (nameKey == null) {#813,18.84772390127182
+if (offsetBefore <= offsetAfter) {#1194,18.84609592662138
+if (nameKey == null) {#773,18.84130746126175
+public long adjustOffset(long instant, boolean earlierOrLater) {#1186,18.822859128316242
+public static DateTimeZone forID(String id) {#204,18.81539797782898
+if (iFixedOffsetCache == null) {#377,18.81413941913181
+String providerClass =#471,18.810862183570862
+return zone;#385,18.808604190224095
+public static DateTimeZone forOffsetMillis(int millisOffset) {#303,18.805257081985474
+zone = cDefault;#137,18.799926485334122
+("The provider doesn't have any available ids");#446,18.7964773884526
+throw new IllegalArgumentException("Invalid UTC zone provided");#452,18.788097262382507
+public boolean isLocalDateTimeGap(LocalDateTime localDateTime) {#1167,18.776910327729723
+private static void setProvider0(Provider provider) {#439,18.775463231404622
+if (provider == null) {#494,18.772372007369995
+return getID();#1281,18.77204243342082
+long offsetBefore = getOffset(instantBefore);#1192,18.768186067280016
+zone = new FixedDateTimeZone(id, null, offset, offset);#388,18.759368817011516
+throw new IllegalArgumentException("Offset is too large");#292,18.751745462417603
+private static volatile DateTimeZone cDefault;#105,18.738898057204025
+cDefault = zone;#183,18.7237606048584
+return dtz;#345,18.716012358665466
+synchronized(DateTimeZone.class) {#136,18.70426468622117
+if (afterStart >= diff) {#1209,18.66744488477707
+offset = -offset;#661,18.666092592127182
+SecurityManager sm = System.getSecurityManager();#175,18.649834050072563
+return DateTimeZone.UTC;#209,18.649482676857396
+int offsetLocalFromOriginal = getOffset(instantUTC);#978,18.638120242527553
+provider = new ZoneInfoProvider("org/joda/time/tz/data");#487,18.630902206196506
+cZoneIdConversion = map;#621,18.630798959732054
+public String toString() {#639,18.618988355000813
+Stub(String id) {#1307,18.61214474269322
+sm.checkPermission(new JodaTimePermission("DateTimeZone.setDefault"));#177,18.610802303661
+String providerClass = System.getProperty("org.joda.time.DateTimeZone.NameProvider");#556,18.59869717189244
+return DateTimeZone.UTC;#274,18.5974063873291
+public long getMillisKeepLocal(DateTimeZone newZone, long oldInstant) {#1050,18.59012102044147
+SecurityManager sm = System.getSecurityManager();#525,18.58900186750624
+long diff = offsetBefore - offsetAfter;#1199,18.58569279839011
+throw new IllegalArgumentException("The provider doesn't support UTC");#449,18.580694418687088
+return buf.toString();#673,18.575281408098007
+throw new IllegalArgumentException("Millis out of range: " + millisOffset);#305,18.571075008761497
+if (zone != null) {#384,18.56416772541247
+private static NameProvider cNameProvider;#101,18.56393337249756
+buf.append('.');#684,18.56125913347517
+.appendTimeZoneOffset(null, true, 2, 4)#697,18.546200434366863
+throw new IllegalArgumentException#445,18.53826469845242
+return java.util.TimeZone.getTimeZone(iID);#1256,18.52320841084356
+long transition = nextTransition(instantBefore);#1200,18.513980062384356
+SecurityManager sm = System.getSecurityManager();#426,18.512829144795734
+private transient String iID;#1301,18.51067325047084
+zone = ref.get();#383,18.50535096062554
+locale = Locale.getDefault();#810,18.505153131484985
+synchronized(DateTimeZone.class) {#182,18.502411113065833
+return cOffsetFormatter;#700,18.49211175101144
+throw new IllegalArgumentException("Id must not be null");#716,18.489563446044922
+if (offsetLocal != offsetAdjusted) {#912,18.478471808963352
+int offsetOriginal = getOffset(originalInstantUTC);#976,18.4754907708419
+long instantBefore = instant - 3 * DateTimeConstants.MILLIS_PER_HOUR;#1190,18.472938537597656
+dtz = cProvider.getZone(id);#342,18.46154714667279
+if (!UTC.equals(provider.getZone("UTC"))) {#451,18.4508247756958
+int offsetLocal = getOffset(instantLocal);#999,18.445492895025957
+return name;#818,18.43443037668864
+if (convId.startsWith("GMT+") || convId.startsWith("GMT-")) {#351,18.43060376909044
+if (id.startsWith("+") || id.startsWith("-")) {#215,18.429580858775548
+return getName(instant, null);#794,18.42676779803108
+locale = Locale.getDefault();#770,18.424484252929688
+offset -= hours * (int) DateTimeConstants.MILLIS_PER_HOUR;#666,18.422596767030914
+sm.checkPermission(new JodaTimePermission("DateTimeZone.setProvider"));#428,18.42163762179288
+long overlapEnd = transition + diff;#1202,18.42138910293579
+return name;#778,18.416278966267903
+return getOffset(instant.getMillis());#841,18.413272958052787
+private static NameProvider getDefaultNameProvider() {#553,18.397887093680247
+return instant;  // not an overlap#1204,18.39735402001275
+return buf.toString();#681,18.397251182132297
+return DateTimeZone.UTC;#375,18.39276469381232
+public String getShortName(long instant, Locale locale) {#768,18.390287982092964
+try {#1171,18.387022972106934
+return getOffset(instant) == getStandardOffset(instant);#869,18.386690139770508
+if (offset == 0L) {#354,18.385238885879517
+return false;#1169,18.376368967692056
+return cProvider;#412,18.373318831125896
+if (hoursInMinutes < 0) {#285,18.36634163423018
+offset -= seconds * DateTimeConstants.MILLIS_PER_SECOND;#679,18.364182692307693
+map.put("ECT", "CET");#592,18.356601628390226
+return 57 + getID().hashCode();#1273,18.355922811171588
+nameProvider = getDefaultNameProvider();#540,18.34670262336731
+offset = offsetLocal;#1026,18.33491249742179
+int seconds = offset / DateTimeConstants.MILLIS_PER_SECOND;#676,18.323998380590368
+public Chronology withUTC() {#633,18.308039966382477
+return instant;  // not an overlap (less than is a gap, equal is normal case)#1195,18.30254089832306
+return getClass().getName();#640,18.299406880917758
+final String id = zone.getID();#330,18.2992042092716
+public String getName(long instant, Locale locale) {#808,18.29777796128217
+map.put("GMT", "UTC");#588,18.297430855887278
+if (strict) {#1019,18.289491103245663
+cAvailableIDs = ids;#455,18.288001569112144
+if (hoursOffset < -23 || hoursOffset > 23) {#276,18.282919493588533
+cOffsetFormatter = new DateTimeFormatterBuilder()#696,18.262701710065205
+throw new IllegalArgumentException("The datetime zone id '" + id + "' is not recognised");#362,18.262422180175783
+map.put("AST", "America/Anchorage");#596,18.256549949645997
+if (strict || offsetLocal < 0) {#1007,18.2565336642058
+public static NameProvider getNameProvider() {#510,18.250782893254208
+temp = forTimeZone(TimeZone.getDefault());#150,18.24655439853668
+return getShortName(instant, null);#754,18.24505392710368
+DateTimeZone temp = null;#139,18.24208739951805
+public static void setNameProvider(NameProvider nameProvider) throws SecurityException {#524,18.23790102005005
+offset -= minutes * DateTimeConstants.MILLIS_PER_MINUTE;#671,18.235739084390495
+@ToString#729,18.23269762311663
+Chronology chrono = new BaseChronology() {#629,18.232056140899658
+sm.checkPermission(new JodaTimePermission("DateTimeZone.setNameProvider"));#527,18.228744955623853
+long instantAfter = instant + 3 * DateTimeConstants.MILLIS_PER_HOUR;#1191,18.22799768447876
+long instantUTC = instantLocal - offsetOriginal;#977,18.226007567511665
+final int offsetLocal = getOffset(instantLocal);#907,18.22238621711731
+return oldInstant;#1055,18.207889318466187
+map.put("EAT", "Africa/Addis_Ababa");#609,18.20380470670503
+private static String printOffset(int offset) {#655,18.197516100747244
+if (nextLocal != nextAdjusted) {#1017,18.19643182020921
+final int offsetAdjusted = getOffset(instantAdjusted);#910,18.19412968375466
+long instantLocal = instantUTC + offset;#950,18.177998430588666
+if ((offsetLocal - offsetAdjusted) < 0) {#915,18.177737846374512
+return forOffsetHoursMinutes(hoursOffset, 0);#238,18.169310092926025
+if (id != null) {  // null check avoids stack overflow#143,18.160605090005056
+provider = new UTCProvider();#495,18.147706985473633
+return false;#1173,18.146497344970705
+String nameKey = getNameKey(instant);#812,18.146345138549805
+public abstract boolean isFixed();#1225,18.141959571838377
+return getOffset(DateTimeUtils.currentTimeMillis());#839,18.139922838944656
+return iID;#814,18.139709293842316
+return zone;#390,18.128979769620027
+throw new IllegalArgumentException("The datetime zone id '" + id + "' is not recognised");#224,18.1258238474528
+dtz = cProvider.getZone(convId);#339,18.124547680219013
+public int getOffsetFromLocal(long instantLocal) {#905,18.12435656785965
+String nameKey = getNameKey(instant);#772,18.123878880550986
+iFixedOffsetCache.put(id, new SoftReference<DateTimeZone>(zone));#389,18.1208171138057
+if (prev < instantAdjusted) {#927,18.119075139363606
+Reference<DateTimeZone> ref = iFixedOffsetCache.get(id);#381,18.119010429382325
+private static int parseOffset(String str) {#626,18.11853817531041
+protected Object writeReplace() throws ObjectStreamException {#1290,18.115224202473957
+convId = zone.getID();#350,18.11243872642517
+if (millisOffset < -MAX_MILLIS || millisOffset > MAX_MILLIS) {#304,18.10983109474182
+return iID;#774,18.108998894691467
+return cNameProvider;#511,18.10489610525278
+throw new ArithmeticException("Subtracting time zone offset caused overflow");#1035,18.103840930121287
+public boolean isStandardOffset(long instant) {#868,18.07207829611642
+if (temp == null) {#155,18.071500884162056
+Thread thread = Thread.currentThread();#561,18.070859806878225
+if (nextAdjusted == (instantLocal - offset)) {#1014,18.069140625
+throw new IllegalArgumentException("Hours out of range: " + hoursOffset);#277,18.06740698321112
+return cAvailableIDs;#399,18.065310845008263
+return true;#1175,18.063781229654946
+return convertLocalToUTC(instantLocal, strict);#982,18.05408148765564
+return fixedOffsetZone(id, offset);#221,18.04266792297363
+if ((instantUTC ^ instantLocal) < 0 && (instantUTC ^ offset) >= 0) {#952,18.040455725885206
+cNameProvider = nameProvider;#542,18.02866121927897
+throw new IllegalArgumentException("Minutes out of range: " + minutesOffset);#280,18.02634220123291
+return fixedOffsetZone(id, millisOffset);#308,18.025986018933747
+thread.getThreadGroup().uncaughtException(thread, ex);#478,18.01725533429314
+int hours = offset / DateTimeConstants.MILLIS_PER_HOUR;#664,18.01707250100595
+int offset = getOffset(instantLocal - offsetLocal);#1001,18.005641801016672
+int minutes = offset / DateTimeConstants.MILLIS_PER_MINUTE;#668,18.000166363186306
+private Object readResolve() throws ObjectStreamException {#1319,17.999871354354056
+map.put("VST", "Asia/Ho_Chi_Minh");#614,17.99730453491211
+nextLocal = Long.MAX_VALUE;#1011,17.99242253139101
+private static synchronized String getConvertedId(String id) {#583,17.983819905449362
+setNameProvider0(nameProvider);#529,17.97770082950592
+map.put("CTT", "Asia/Shanghai");#615,17.97315608538114
+int hoursInMinutes = hoursOffset * 60;#284,17.966889132624086
+cDefault = zone = temp;#158,17.966718991597492
+public long convertUTCToLocal(long instantUTC) {#948,17.9648614525795
+thread.getThreadGroup().uncaughtException(thread, ex);#562,17.960423581740436
+System.getProperty("org.joda.time.DateTimeZone.Provider");#472,17.95228615929099
+return zone;#213,17.952246220906577
+try {#141,17.946772428659294
+if (temp == null) {#149,17.945740607477003
+return new Stub(iID);#1291,17.941020456949868
+return DateTimeZone.UTC;#355,17.94067856117531
+buf.append('-');#660,17.938387817806667
+map.put("WET", "WET");#589,17.9324718972911
+@FromString#203,17.932103974478586
+try {#558,17.93000141779582
+public long convertLocalToUTC(long instantLocal, boolean strict, long originalInstantUTC) {#975,17.92936356862386
+map.put("CAT", "Africa/Harare");#608,17.925777031825138
+.toFormatter();#698,17.922866412571498
+return DateTimeZone.UTC;#218,17.917967381684676
+public final int getOffset(ReadableInstant instant) {#837,17.911532402038574
+public long convertLocalToUTC(long instantLocal, boolean strict) {#997,17.911262712980573
+if ((instantLocal ^ instantUTC) < 0 && (instantLocal ^ offset) < 0) {#1034,17.90457027189193
+minutesOffset = hoursInMinutes - minutesOffset;#286,17.90352114924678
+map.put("MET", "CET");#591,17.899931214072488
+try {#486,17.8982515335083
+private static void setNameProvider0(NameProvider nameProvider) {#538,17.8881393538581
+long instantUTC = instantLocal - offset;#1032,17.88052979637595
+map.put("EET", "EET");#593,17.879721351291824
+throw new IllegalInstantException(instantLocal, getID());#1021,17.87716798524599
+long nextAdjusted = nextTransition(instantLocal - offset);#1013,17.87398898216986
+return earlierOrLater ? instant + diff : instant;#1214,17.87028594244094
+return zone;#162,17.869366385719992
+try {#140,17.868459874933418
+return -(int) offsetFormatter().withChronology(chrono).parseMillis(str);#643,17.856761286335608
+map.put("CET", "CET");#590,17.85668655063795
+temp = forID(id);#144,17.856553786840195
+return nameProvider;#573,17.856407324473064
+long prev = previousTransition(instantAdjusted);#926,17.845189332962036
+return instantUTC;#1037,17.84501854578654
+setNameProvider0(null);#117,17.83755613962809
+Thread thread = Thread.currentThread();#477,17.836448499134608
+setProvider0(null);#116,17.833294323512487
+map.put("AGT", "America/Argentina/Buenos_Aires");#605,17.831544756889343
+private static final int MAX_MILLIS = (86400 * 1000) - 1;#96,17.82160746532938
+if (nextLocal == (instantLocal - offsetLocal)) {#1010,17.815953477223715
+if (instantAdjusted - prev <= diff) {#930,17.81536705153329
+return forOffsetMillis(offset);#294,17.81536054611206
+map.put("SST", "Pacific/Guadalcanal");#619,17.80909149735062
+long instantLocal = convertUTCToLocal(oldInstant);#1057,17.8072340965271
+return earlierOrLater ? instant : instant - diff;#1211,17.805704162234353
+Thread thread = Thread.currentThread();#489,17.805691520373028
+minutesOffset = hoursInMinutes + minutesOffset;#288,17.803628815544975
+nextAdjusted = Long.MAX_VALUE;#1015,17.803435707092284
+map.put("MIT", "Pacific/Apia");#594,17.795344312985737
+thread.getThreadGroup().uncaughtException(thread, ex);#490,17.789783350626628
+return map.get(id);#623,17.78697369893392
+return fixedOffsetZone(convId, offset);#358,17.774488385518392
+provider = (Provider) Class.forName(providerClass).newInstance();#475,17.76515007019043
+String convId = getConvertedId(id);#337,17.762301846554404
+return buf.toString();#686,17.745884282248362
+public abstract boolean equals(Object object);#1265,17.73687720298767
+final long instantAdjusted = instantLocal - offsetLocal;#909,17.72841010093689
+String id = System.getProperty("user.timezone");#142,17.728098915844427
+try {#474,17.723539511362713
+map.put("ACT", "Australia/Darwin");#617,17.720224062601726
+String name = cNameProvider.getName(locale, iID, nameKey);#816,17.707934697469074
+map.put("PLT", "Asia/Karachi");#611,17.696679344177245
+public abstract int getOffset(long instant);#829,17.69287263430082
+iID = in.readUTF();#1316,17.677569341659545
+return provider;#498,17.674034985628996
+nameProvider = new DefaultNameProvider();#570,17.665221548080446
+private final String iID;#706,17.66068239212036
+map.put("ART", "Africa/Cairo");#607,17.658300704956055
+if (providerClass != null) {#473,17.657231921241397
+Map<String, String> map = cZoneIdConversion;#584,17.656630971214987
+StringBuffer buf = new StringBuffer();#656,17.64871072769165
+temp = UTC;#156,17.647938660212926
+return newZone.convertLocalToUTC(instantLocal, false, oldInstant);#1058,17.617544774655943
+map.put("PRT", "America/Puerto_Rico");#603,17.610894564924568
+public final String getID() {#730,17.609267408197578
+buf.append('+');#658,17.608019457923042
+map.put("IET", "America/Indiana/Indianapolis");#602,17.599296110647696
+map.put("NET", "Asia/Yerevan");#610,17.595944328308107
+if (providerClass != null) {#557,17.581269127982004
+int diff = offsetPrev - offsetLocal;#929,17.572632637023926
+localDateTime.toDateTime(this);#1172,17.56011659448797
+public final String getShortName(long instant) {#753,17.55663515726725
+iFixedOffsetCache = new HashMap<String, SoftReference<DateTimeZone>>();#378,17.555709592757687
+map.put("BST", "Asia/Dhaka");#613,17.55552339553833
+String name = cNameProvider.getShortName(locale, iID, nameKey);#776,17.554143496922084
+int offsetPrev = getOffset(prev);#928,17.553484954833984
+public int hashCode() {#1272,17.552648258209228
+public final String getName(long instant) {#793,17.549706595284597
+int offset = parseOffset(id);#216,17.543655109405517
+buf.append(':');#677,17.542720794677734
+FormatUtils.appendPaddedInteger(buf, offset, 3);#685,17.534534205561098
+private static Map<String, SoftReference<DateTimeZone>> iFixedOffsetCache;#110,17.522120562466707
+buf.append(':');#669,17.520871298653738
+return null;#631,17.519012150011566
+convId = convId.substring(3);#352,17.51493348015679
+map.put("CNT", "America/St_Johns");#604,17.50354727992305
+long nextLocal = nextTransition(instantAdjusted);#919,17.501241420877392
+private static final class Stub implements Serializable {#1297,17.4954561820397
+private static Map<String, String> cZoneIdConversion;#113,17.48537482155694
+long nextLocal = nextTransition(instantLocal - offsetLocal);#1009,17.485248350328014
+convId = printOffset(offset);#357,17.48467915398734
+iID = id;#1308,17.47815917519962
+return printOffset(getOffset(instant));#780,17.471035957336426
+return offsetPrev;#931,17.469170570373535
+map.put("CST", "America/Chicago");#600,17.45064091682434
+if (nextLocal != nextAdjusted) {#921,17.446659895089958
+map.put("EST", "America/New_York");  // JDK 1.1 compatible#601,17.43757779670484
+int offset = parseOffset(convId);#353,17.435407943725586
+map.put("HST", "Pacific/Honolulu");  // JDK 1.1 compatible#595,17.430035417730156
+nameProvider = (NameProvider) Class.forName(providerClass).newInstance();#559,17.406276238270294
+long nextAdjusted = nextTransition(instantLocal - offsetAdjusted);#920,17.39303143819173
+private static final long serialVersionUID = -6471952376487863581L;#1299,17.39035151554988
+return instantLocal;#955,17.379597187042236
+map.put("PST", "America/Los_Angeles");#597,17.379478066055864
+String id = printOffset(millisOffset);#307,17.376415888468426
+map.put("MST", "America/Denver");  // JDK 1.1 compatible#598,17.36799317598343
+map.put("JST", "Asia/Tokyo");#616,17.360310630798338
+public abstract int getStandardOffset(long instant);#851,17.355687822614396
+map.put("PNT", "America/Phoenix");#599,17.354748606681824
+map.put("IST", "Asia/Kolkata");#612,17.353576316833497
+map.put("AET", "Australia/Sydney");#618,17.34346708884606
+Set<String> ids = provider.getAvailableIDs();#443,17.324141093662806
+map.put("BET", "America/Sao_Paulo");#606,17.3102091721126
+return iID;#731,17.30850664774577
+return offsetAdjusted;#935,17.305733900803787
+return offsetLocal;#922,17.283984621365864
+return this;#634,17.28047662032278
+return printOffset(getOffset(instant));#820,17.278641276889378
+map.put("NST", "Pacific/Auckland");#620,17.270650367736817
+iID = id;#718,17.25732421875
+FormatUtils.appendPaddedInteger(buf, seconds, 2);#678,17.234103866245437
+FormatUtils.appendPaddedInteger(buf, minutes, 2);#670,17.226840682651687
+public abstract class DateTimeZone implements Serializable {#88,17.224291628057305
+setProvider0(provider);#430,17.217018953959148
+public static Set<String> getAvailableIDs() {#398,17.183881346384684
+offset = FieldUtils.safeMultiply(minutesOffset, DateTimeConstants.MILLIS_PER_MINUTE);#290,17.17221139116985
+private static Set<String> cAvailableIDs;#103,17.092491354261124
+public abstract long nextTransition(long instant);#1235,17.084565026419504
+public abstract long previousTransition(long instant);#1245,17.079701014927455
+return forID(iID);#1320,17.074444068105596
+return this;#637,17.041814201756527
+FormatUtils.appendPaddedInteger(buf, hours, 2);#665,17.040076587511145
+id = printOffset(offset);#220,17.037205405857254
+map = new HashMap<String, String>();#587,17.034189162047014
+out.writeUTF(iID);#1312,16.97554636001587
+public abstract String getNameKey(long instant);#741,16.949904782431467
+private static final long serialVersionUID = 5546345482340108586L;#91,16.56207071651112

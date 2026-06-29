@@ -1,0 +1,151 @@
+private final AbstractCompiler compiler;#42,19.367208374871147
+case Token.WHILE:#130,19.14559725352696
+if (!scope.isDeclared(name, false)) {#192,19.13229284788433
+case Token.DO:#131,19.05379111950214
+CompilerPass, ScopedCallback {#40,19.04364816347758
+Scope scope = t.getScope();#71,18.966442267100017
+public DeadAssignmentsElimination(AbstractCompiler compiler) {#58,18.942927641027115
+case Token.CASE:#141,18.94126490184239
+Var var = scope.getVar(name);#195,18.932946026325226
+case Token.FOR:#134,18.89637991098257
+Scope scope = t.getScope();#187,18.83489499773298
+case Token.SWITCH:#140,18.824757848467147
+Node n, String variable) {#324,18.740714660057655
+FlowState<LiveVariableLattice> state) {#155,18.65445566177368
+if (!NodeUtil.isForIn(n)) {#135,18.649965410647184
+case Token.IF:#129,18.64347765995906
+FlowState<LiveVariableLattice> state =#122,18.638042702394372
+if (scope.isGlobal()) {#75,18.57774305343628
+FlowState<LiveVariableLattice> state) {#170,18.522328323788113
+Predicates.<Node>alwaysTrue())) {#90,18.471470746127043
+@Override#62,18.413955211639404
+this.compiler = compiler;#59,18.401634649796918
+if (!ControlFlowGraph.isEnteringNewCfgNode(c)) {#266,18.383983268737794
+new Predicate<Node>() {#49,18.33663845062256
+if (!ControlFlowGraph.isEnteringNewCfgNode(child)) { // Not a FUNCTION#339,18.3037120227156
+if (state.getOut().isLive(var)) {#214,18.292816814623382
+Node n, Node exprRoot, String variable) {#291,18.270428881925696
+String name = lhs.getString();#191,18.265933672587078
+switch (n.getType()) {#128,18.26211438860212
+return; // Local variable that might be escaped due to closures.#198,18.251946358453658
+@Override#101,18.227665901184082
+n.getFirstChild().getType() == Token.NAME) ||#53,18.18988296903413
+public boolean apply(Node n) {#51,18.188852945963543
+if (state == VariableLiveness.READ) {#299,18.178225108555385
+if (state.getIn().isLive(var) &&#218,18.152396904794795
+private enum VariableLiveness {#312,18.058589220046997
+if (!ControlFlowGraph.isEnteringNewCfgNode(sibling)) {#295,18.035976740030144
+@Override#69,17.99781847000122
+continue;#133,17.989946047465008
+if (rhs != null &&#204,17.97313536130465
+Node next = c.getNext();#265,17.95947515964508
+@Override#50,17.95509417851766
+if (NodeUtil.isName(n) && variable.equals(n.getString())) {#325,17.938965150288173
+liveness = new LiveVariablesAnalysis(cfg, scope, compiler);#96,17.937870126021537
+n.getType() == Token.INC || n.getType() == Token.DEC) {#175,17.92330630072232
+case Token.RETURN:#142,17.899124758584158
+compiler.reportCodeChange();#210,17.87942968096052
+for (DiGraphNode<Node, Branch> cfgNode : nodes) {#121,17.841426168169296
+return; // Variable not dead.#215,17.8356595993042
+continue;#139,17.828799645106
+if (NodeUtil.isExpressionNode(parent)) {#242,17.827487468719482
+ControlFlowGraph<Node> cfg = t.getControlFlowGraph();#95,17.795845222473144
+ControlFlowGraph<Node> cfg) {#118,17.792636513710022
+KILL, // Known there is a write before any read.#315,17.7832909822464
+if (n.hasChildren()) {#143,17.78150012758043
+if (n == null) {#125,17.774133388812725
+if (NodeUtil.isAssign(n)) {#233,17.771889385424164
+if (!NodeUtil.isName(lhs)) {#188,17.76605867084704
+if (state != VariableLiveness.MAYBE_LIVE) {#341,17.75469434261322
+isVariableStillLiveWithinExpression(n, exprRoot, var.name)) {#219,17.706129959651403
+READ, // Known there is a read left of it.#314,17.705267548561096
+new Node(Token.VOID, Node.newNumber(0).copyInformationFrom(n)));#244,17.70047076543172
+@Override#105,17.69505000114441
+MAYBE_LIVE, // May be still live in the current expression tree.#313,17.668984276907786
+for (Node c = n.getFirstChild(); c != null;) {#264,17.664541866468348
+NodeUtil.getConditionExpression(parent) != n) {#248,17.649892736364293
+compiler.reportCodeChange();#260,17.64292375246684
+return; // Not a local variable assignment.#189,17.60613811717314
+continue;#126,17.531578636169435
+rhs.getString().equals(var.name) &&#206,17.531506538391113
+NodeUtil.isName(rhs) &&#205,17.50656554812477
+if (liveness.getEscapedLocals().contains(var)) {#197,17.503156537595004
+if (rhs != null) {#182,17.497795241219656
+if (NodeUtil.isLhs(n, n.getParent())) {#326,17.48771453857422
+NodeUtil.isAssign(n)) {#207,17.465106055850075
+VariableLiveness state = isVariableReadBeforeKill(sibling, variable);#296,17.449538781092716
+return VariableLiveness.KILL;#330,17.431156039237976
+n.getType() == Token.INC || n.getType() == Token.DEC;#54,17.3843830426534
+Node fnBlock = t.getScopeRoot().getLastChild();#82,17.381110403272842
+if (NodeUtil.isAssignmentOp(n) ||#174,17.380120065477158
+private static final Predicate<Node> matchRemovableAssigns =#48,17.34850726408117
+for (Node child = n.getFirstChild();#337,17.319317881266276
+parent.replaceChild(n, new Node(Token.EMPTY));#249,17.309651107788085
+tryRemoveAssignment(t, NodeUtil.getConditionExpression(n), state);#132,17.30524101257324
+Node n = cfgNode.getValue();#124,17.231630265712738
+sibling = sibling.getNext()) {#294,17.187364472283257
+private LiveVariablesAnalysis liveness;#43,17.17340717315674
+VariableLiveness state = isVariableReadBeforeKill(child, variable);#340,17.146709110425867
+while (n != exprRoot) {#292,17.140400012334187
+if (NodeUtil.containsFunction(fnBlock)) {#83,17.13923438390096
+return;#211,17.117149353027344
+private boolean isVariableStillLiveWithinExpression(#290,17.11233687400818
+c = next;#269,17.040494600931805
+child != null; child = child.getNext()) {#338,17.039755010604857
+Iterable<DiGraphNode<Node, Branch>> nodes = cfg.getDirectedGraphNodes();#119,17.03326052206534
+return false;#308,17.017046655927384
+Node op = new Node(NodeUtil.getOpFromAssignmentOp(n), lhs, rhs);#239,16.99967861175537
+return true;#300,16.979925473531086
+Preconditions.checkState(false, "Unknown statement");#257,16.97634152003697
+liveness.analyze();#97,16.96681604385376
+return;#261,16.917450666427612
+public void exitScope(NodeTraversal t) {#102,16.91654634475708
+class DeadAssignmentsElimination extends AbstractPostOrderCallback implements#39,16.89128411610921
+public void enterScope(NodeTraversal t) {#70,16.867864268166677
+return (NodeUtil.isAssignmentOp(n) &&#52,16.854102993011473
+parent.replaceChild(n, op);#240,16.847928888657513
+t, NodeUtil.getConditionExpression(n), state);#137,16.81743397251252
+if (!NodeUtil.has(fnBlock, matchRemovableAssigns,#89,16.76225536519831
+tryRemoveAssignment(t, n, state);#150,16.745583478142233
+for(Node sibling = n.getNext(); sibling != null;#293,16.73710207939148
+return;#230,16.70085277557373
+tryRemoveAssignment(t, c, exprRoot, state);#267,16.69892954826355
+return;#193,16.68705244064331
+return VariableLiveness.MAYBE_LIVE;#346,16.676371455192566
+return;#76,16.6436665058136
+tryRemoveDeadAssignments(t, cfg);#98,16.635008424520493
+tryRemoveAssignment(t, n, n, state);#156,16.619743627660416
+tryRemoveAssignment(t, rhs, exprRoot, state);#183,16.60977952376656
+private VariableLiveness isVariableReadBeforeKill(#323,16.585750420888264
+Preconditions.checkNotNull(root);#65,16.5820723261152
+continue;#146,16.55696113904317
+return;#271,16.548324584960938
+NodeTraversal.traverse(compiler, root, this);#66,16.51106538270649
+return state;#342,16.4764802639301
+tryRemoveAssignment(#136,16.465997583725873
+n.getParent().replaceChild(n, rhs);#209,16.461060160682315
+return;#253,16.435880422592163
+public void process(Node externs, Node root) {#63,16.43323319753011
+parent.removeChild(n);#246,16.409937690286075
+return;#91,16.39343822002411
+return;#84,16.378851532936096
+n.removeChild(lhs);#238,16.362558901309967
+cfgNode.getAnnotation();#123,16.359015464782715
+n.removeChild(rhs);#208,16.352953374385834
+Node rhs = lhs.getNext();#178,16.281344175338745
+Node parent = n.getParent();#172,16.270730415980022
+tryRemoveAssignment(t, n.getFirstChild(), state);#144,16.265757454766167
+public void visit(NodeTraversal t, Node n, Node parent) {#106,16.259576446131657
+n.getParent().replaceChild(n, rhs);#235,16.217951729184104
+return VariableLiveness.READ;#332,16.15642916361491
+Preconditions.checkNotNull(externs);#64,16.13066738843918
+n.removeChild(rhs);#234,16.12302803993225
+Node lhs = n.getFirstChild();#177,16.075514554977417
+parent.replaceChild(n,#243,16.058227258570053
+return false;#302,15.985204251607259
+n.removeChild(rhs);#237,15.857008576393127
+n = n.getParent();#306,15.821139262272762
+rhs = lhs.getNext();#184,15.622819956611185
+private void tryRemoveAssignment(NodeTraversal t, Node n, Node exprRoot,#169,15.596690221266313
+private void tryRemoveDeadAssignments(NodeTraversal t,#117,15.546027071335736
+private void tryRemoveAssignment(NodeTraversal t, Node n,#154,15.306665314568413

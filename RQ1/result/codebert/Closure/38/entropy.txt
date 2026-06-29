@@ -1,0 +1,115 @@
+void appendBlockStart() {#76,19.767729997634888
+if ((isWordChar(c) || c == '\\') &&#189,19.351636284276058
+if ((first == '+' || first == '-') && prev == first) {#216,19.328689823979918
+void beginCaseBody() {#174,19.192452430725098
+void listSeparator() {#123,19.13891855875651
+if (statementContext) {#169,19.12812967300415
+char prev = getLastChar();#243,19.1136511889371
+void beginBlock() {#100,19.112132208687918
+void endLine() {#94,19.065011433192662
+void appendBlockEnd() {#80,19.037128925323486
+void notePreferredLineBreak() {#97,19.009871578216554
+abstract char getLastChar();#59,18.983940482139587
+void startNewLine() {#84,18.95135736465454
+char prev = getLastChar();#214,18.91899438337846
+void endFile() {}#299,18.883669989449636
+abstract void append(String str);#74,18.86712710062663
+if (x < 0 && prev == '-') {#245,18.80140519142151
+if (shouldEndLine) {#117,18.765494693409313
+if ((long) x == x && !negativeZero) {#249,18.70991387086756
+isWordChar(getLastChar())) {#190,18.684777842627632
+append("{");#77,18.665104150772095
+void addIdentifier(String identifier) {#61,18.655473015525125
+return (ch == '_' ||#274,18.653337160746258
+long value = (long) x;#250,18.616279329572404
+void maybeLineBreak() {#87,18.59060001373291
+if (Math.abs(x) >= 100) {#253,18.516532050238716
+if (exp > 2) {#259,18.48370177929218
+if (binOp) {#235,18.454124641418456
+appendBlockStart();#105,18.452281713485718
+static boolean isWordChar(char ch) {#273,18.41825334231059
+endLine();#107,18.400712694440568
+if (newcode.length() == 0) {#184,18.397505124409992
+int exp = 0;#252,18.362023787064985
+abstract class CodeConsumer {#29,18.315337862287247
+while (mantissa / 10 * Math.pow(10, exp + 1) == value) {#254,18.30528114688012
+void appendOp(String op, boolean binOp) {#206,18.301592894962855
+void endBlock() {#111,18.276339258466447
+void maybeCutLine() {#91,18.254047870635986
+void add(String newcode) {#181,18.235342502593994
+void endFunction() {#163,18.14500563485282
+void addNumber(double x) {#240,18.097038364410402
+appendBlockEnd();#116,18.09622287750244
+char c = newcode.charAt(0);#188,18.058546511332192
+void addOp(String op, boolean binOp) {#210,18.04778071812221
+append(" ");#193,18.030874156951903
+if (statementNeedsEnded) {#101,18.013297741229717
+isWordChar(prev)) {#221,18.006045428189363
+void endStatement() {#134,17.98196656363351
+append(":");#175,17.975606679916382
+void startSourceMapping(Node node) {#38,17.965039173762005
+void endFunction(boolean statementContext) {#167,17.963212092717487
+append(" ");#219,17.952514743804933
+boolean continueProcessing() {#52,17.946399569511414
+static boolean isNegativeZero(double x) {#269,17.942486469562237
+boolean shouldPreserveExtraBlocks() {#287,17.915768432617188
+return statementContext;#295,17.910284996032715
+ch == '$' ||#275,17.90534257888794
+void endCaseBody() {#178,17.875644207000732
+boolean breakAfterBlockFor(Node n, boolean statementContext) {#294,17.840441465377808
+append(" ");#223,17.8392502784729
+if (statementNeedsEnded) {#154,17.833489711468037
+append("}");#81,17.799039602279663
+Character.isLetterOrDigit(ch));#276,17.789914001118053
+endLine();#157,17.761302947998047
+if (needSemiColon) {#139,17.74223855825571
+append(" ");#200,17.726228141784667
+appendOp(op, binOp);#230,17.69548765818278
+add(String.valueOf(x));#265,17.674014218648274
+boolean negativeZero = isNegativeZero(x);#244,17.651714515686034
+add(",");#124,17.645485877990723
+void endBlock(boolean shouldEndLine) {#115,17.64391906444843
+endLine();#170,17.562593036227756
+add(identifier);#62,17.552003118726944
+void maybeEndStatement() {#152,17.533801317214966
+char first = op.charAt(0);#213,17.52626153400966
+maybeEndStatement();#211,17.52561902999878
+long mantissa = value;#251,17.523317019144695
+return true;#53,17.512105533054896
+maybeLineBreak();#125,17.509692549705505
+add(Long.toString(mantissa) + "E" + Integer.toString(exp));#260,17.46806150867093
+append(newcode);#203,17.434032334221733
+return false;#288,17.426989827837264
+maybeCutLine();#236,17.38744773864746
+void endSourceMapping(Node node) {#45,17.371790011723835
+append(" ");#226,17.36472110748291
+return x == 0.0 && Math.copySign(1, x) == -1.0;#270,17.363327466524563
+append(op);#207,17.35844349861145
+sawFunction = true;#168,17.353524949815537
+maybeLineBreak();#156,17.337112998962404
+boolean statementStarted = false;#31,17.336424509684246
+endLine();#118,17.319060855441624
+append(";");#155,17.269877243041993
+void endStatement(boolean needSemiColon) {#138,17.25262540181478
+maybeCutLine();#88,17.247976064682007
+endStatement(false);#135,17.178345256381565
+maybeLineBreak();#103,17.16618824005127
+maybeLineBreak();#141,17.148331069946288
+append(";");#140,17.14294548034668
+maybeEndStatement();#182,17.109598636627197
+statementStarted = true;#160,17.091446781158446
+add(Long.toString(value));#262,16.987826179055606
+return;#185,16.95348334312439
+append(";");#102,16.90592756271362
+boolean statementNeedsEnded = false;#30,16.881267981095746
+exp++;#256,16.825788180033367
+endBlock(false);#112,16.772013346354168
+add(" ");#246,16.746154689788817
+statementNeedsEnded = false;#142,16.707419804164342
+statementNeedsEnded = false;#108,16.61157218615214
+statementNeedsEnded = true;#144,16.590858800070627
+mantissa /= 10;#255,16.586552321910858
+endFunction(false);#164,16.558806313408745
+statementNeedsEnded = false;#158,16.405258587428502
+statementNeedsEnded = false;#120,16.370309829711914
+boolean sawFunction = false;#32,16.19716203212738

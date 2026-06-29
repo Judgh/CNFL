@@ -1,0 +1,49 @@
+"dangerous use of the global 'this' object");#63,19.539769967397053
+private final AbstractCompiler compiler;#65,19.031656795077854
+CheckGlobalThis(AbstractCompiler compiler, CheckLevel level) {#75,18.68951117992401
+this.compiler = compiler;#76,18.552766019647773
+if (leftName != null && leftName.contains(".prototype.")) {#120,18.52843509401594
+if (gramps.getType() == Token.VAR) {#168,18.303030281066896
+if (lhs.getLastChild().getString().equals("prototype")) {#116,18.28193208149501
+if (jsDoc != null && (jsDoc.isConstructor() || jsDoc.hasThisType())) {#90,18.202132471146122
+String leftName = lhs.getQualifiedName();#119,18.157379150390625
+if (parent != null && parent.getType() == Token.ASSIGN) {#101,17.960980241948906
+if (parentType == Token.NAME || parentType == Token.ASSIGN) {#164,17.902743657430012
+if (assignLhsChild == null) {#109,17.8641670126664
+if (n.getType() == Token.THIS && shouldReportThis(n, parent)) {#131,17.829364356994628
+if (jsDoc == null && parentType == Token.NAME) {#166,17.75548267364502
+private boolean shouldReportThis(Node n, Node parent) {#139,17.741285451253255
+if (n.getType() == Token.FUNCTION) {#86,17.71616554260254
+if (jsDoc == null) {#162,17.599894046783447
+if (n == lhs) {#105,17.558065141950333
+if (lhs.getType() == Token.GETPROP) {#115,17.552903930346172
+if (assignLhsChild != null) {#140,17.45377098719279
+final class CheckGlobalThis implements Callback {#59,17.332981395721436
+return jsDoc;#174,17.328693151474
+return false;#146,17.11197635105678
+JSDocInfo jsDoc = getFunctionJsDocInfo(n);#89,17.055784497942245
+jsDoc = parent.getJSDocInfo();#165,17.008976484599867
+Node gramps = parent.getParent();#167,17.00818322834216
+static final DiagnosticType GLOBAL_THIS = DiagnosticType.warning(#61,16.901969759087812
+"JSC_USED_GLOBAL_THIS",#62,16.829562990288984
+return true;#127,16.776003428867885
+int parentType = parent.getType();#163,16.735236231486002
+private JSDocInfo getFunctionJsDocInfo(Node n) {#159,16.69798475153306
+Node rhs = lhs.getNext();#103,16.696642875671387
+Node lhs = parent.getFirstChild();#102,16.660629212856293
+compiler.report(t.makeError(n, level, GLOBAL_THIS));#132,16.648244514465333
+this.level = level;#77,16.639710235595704
+JSDocInfo jsDoc = n.getJSDocInfo();#160,16.611847977889212
+return true;#142,16.567025502522785
+private final CheckLevel level;#66,16.516488909721375
+jsDoc = gramps.getJSDocInfo();#169,16.248233437538147
+public boolean shouldTraverse(NodeTraversal t, Node n, Node parent) {#84,16.1876004082816
+return false;#91,16.147673173384234
+return false;#117,16.07580019632975
+public void visit(NodeTraversal t, Node n, Node parent) {#130,16.059435242100765
+Node parent = n.getParent();#161,16.037241617838543
+if (n == assignLhsChild) {#134,15.89721645627703
+private Node assignLhsChild = null;#73,15.51492539319125
+return false;#121,15.449765078226726
+assignLhsChild = lhs;#110,15.410003821055094
+assignLhsChild = null;#135,15.262410897475023

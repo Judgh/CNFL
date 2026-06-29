@@ -1,0 +1,21 @@
+return StringDescription.toString(m).equals(arg.toString());#48,17.47584922790527
+if (matchers.size() != arguments.length) {#21,17.216577484494163
+&& !safelyMatches(m, arguments[i])#29,17.14482209261726
+return suspicious.toArray(new Integer[0]);#36,17.037101193478232
+int i = 0;#26,16.99516010284424
+public class ArgumentMatchingTool {#15,16.93794584274292
+public Integer[] getSuspiciouslyNotMatchingArgsIndexes(List<Matcher> matchers, Object[] arguments) {#20,16.915529251098633
+@SuppressWarnings("unchecked")#14,16.912479920820758
+&& toStringEquals(m, arguments[i])#30,16.87943971157074
+List<Integer> suspicious = new LinkedList<Integer>();#25,16.86767274683172
+return m.matches(arg);#41,16.75217399597168
+i++;#34,16.749497141156876
+private boolean toStringEquals(Matcher m, Object arg) {#47,16.729744007712917
+if (m instanceof ContainsExtraTypeInformation#28,16.519595969807018
+return false;#43,16.401448059082032
+return new Integer[0];#22,16.32245201534695
+try {#40,16.233860778808594
+private boolean safelyMatches(Matcher m, Object arg) {#39,16.006891939375137
+for (Matcher m : matchers) {#27,15.979960494571262
+&& !((ContainsExtraTypeInformation) m).typeMatches(arguments[i])) {#31,15.969764913831439
+suspicious.add(i);#32,15.652152668346059

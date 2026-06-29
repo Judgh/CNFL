@@ -1,0 +1,32 @@
+MockUtil mockUtil = new MockUtil();#57,17.996209025382996
+return "Mock for " + mockUtil.getMockSettings(mock).getTypeToMock().getSimpleName() + ", hashCode: " + mock.hashCode();#67,17.281096123812492
+public class ReturnsEmptyValues implements Answer<Object>, Serializable {#53,17.237015315464564
+MockName name = mockUtil.getMockName(mock);#65,17.183100496019637
+Object mock = invocation.getMock();#64,17.146176065717423
+return invocation.getMock() == invocation.getArguments()[0] ? 0 : 1;#75,17.060458604027243
+if (name.isDefault()) {#66,17.04519066810608
+Class<?> returnType = invocation.getMethod().getReturnType();#78,16.964548110961914
+return new TreeMap<Object, Object>();#112,16.913290587338533
+if (methodsGuru.isToString(invocation.getMethod())) {#63,16.862858878241646
+return null;#117,16.827525225552645
+return new TreeSet<Object>();#94,16.814001607894898
+return new TreeMap<Object, Object>();#110,16.803785800933838
+return new TreeSet<Object>();#96,16.79908471107483
+return new LinkedList<Object>();#100,16.785200845627557
+return new LinkedList<Object>();#102,16.76255566733224
+return new ArrayList<Object>();#104,16.74352321624756
+return new HashSet<Object>();#90,16.708097314834596
+return new HashMap<Object, Object>();#106,16.65824382955378
+return new LinkedList<Object>();#88,16.646844546000164
+return new HashSet<Object>();#92,16.63095803260803
+return new LinkedHashSet<Object>();#98,16.63036467812278
+return new HashMap<Object, Object>();#108,16.593055855144154
+public Object answer(InvocationOnMock invocation) {#62,16.583795487880707
+return name.toString();#69,16.546397382562812
+return returnValueFor(returnType);#79,16.42281836271286
+return new LinkedHashMap<Object, Object>();#114,16.11163628101349
+ObjectMethodsGuru methodsGuru = new ObjectMethodsGuru();#56,15.92481385336982
+private static final long serialVersionUID = 1998191268711234347L;#55,15.636406291614879
+Object returnValueFor(Class<?> type) {#82,15.207157135009766
+return Primitives.defaultValueForPrimitiveOrWrapper(type);#84,15.202904665911639
+if (Primitives.isPrimitiveOrWrapper(type)) {#83,15.078146851581076

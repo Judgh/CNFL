@@ -1,0 +1,540 @@
+boolean addType(T type, T top, T relatedType) {#165,19.512158243279707
+if ("{...}".equals(typeName)) {#640,19.50222356695878
+String newName;#639,19.271090507507324
+final String name;#121,19.25604796409607
+AbstractCompiler compiler, TightenTypes tt,#291,19.25252291735481
+for (T newType : newTypesToSkip) {#221,19.234572757374156
+if (jsType.isAllType() || jsType.isUnknownType()) {#460,19.155278619130453
+private final TightenTypes tt;#963,19.1173198223114
+if (t.inGlobalScope()) {#386,19.11302064259847
+T getTypeWithProperty(String field, T type) {#370,19.068672561645506
+if (scope != null) {#999,19.058552962083084
+public ConcreteTypeSystem(TightenTypes tt, CodingConvention convention) {#976,19.05695577462514
+for (T subType : typesToSkip) {#206,19.05208324250721
+public JSTypeSystem(AbstractCompiler compiler) {#752,19.01643395423889
+AbstractCompiler compiler,#284,19.008127732710406
+boolean shouldRename() {#234,19.006336975097657
+Property(String name) {#148,18.999402904510497
+protected StaticScope<T> getScope() {#399,18.965640476771764
+"Property disambiguator skipping all instances of property {0} "#90,18.957827011744182
+boolean invalidate() {#252,18.956601248847115
+int count = 0;#198,18.932061268733097
+"JSC_INVALIDATION",#89,18.915979946360867
+for (T skipType : typeSystem.getTypesToSkipForType(type)) {#187,18.904314918518068
+if (type.isInstance()) {#1118,18.870821612221853
+if (objSkipType != null) {#817,18.855519014246322
+"JSC_INVALIDATION_TYPE",#94,18.84740904757851
+if ("prototype".equals(field)) {#873,18.800977528095245
+if ("prototype".equals(field)#1096,18.800099092371322
+++instancesSkipped;#592,18.79749494128757
+if (type instanceof JSType) {#458,18.794051551818846
+"Property disambiguator skipping instances of property {0} "#95,18.793899701989215
+for (FunctionType impl#843,18.78405825297038
+logger.fine("Renamed " + instancesRenamed + " instances of "#615,18.776754331588744
+String typeName = null;#632,18.755812486012776
+++propsSkipped;#609,18.73929727077484
+if (!skipRenaming) {#269,18.738625819866474
+if (typeSystem.isTypeToSkip(top)) {#171,18.7332676024664
+if (!(type instanceof ObjectType)) {#864,18.724987387657166
+String suggestion = "";#457,18.724392382303872
+Map<String, CheckLevel> propertiesToErrorFor) {#292,18.709879072088945
+return (type == null) || type.isAll() || type.isFunction()#1058,18.70945930480957
+if (objType != null &&#839,18.700290552775066
+if (relatedType == null) {#175,18.68509930372238
+T restrictByNotNullOrUndefined(T type);#718,18.683043956756592
+ConcreteInstanceType instanceType = (ConcreteInstanceType) type;#1093,18.67729734337848
+if (top != null) {#940,18.67692400279798
+String qName = n.getFirstChild().getQualifiedName();#465,18.671228562631914
+T getTypeWithProperty(String field, T type);#731,18.666653990745544
+@Override public StaticScope<JSType> getRootScope() { return null; }#771,18.66043227651845
+if (type.isInstance()) {#1092,18.65005132130214
+void addTypeToSkip(T type) {#186,18.642802034105575
+if (objType != null) {#928,18.633955274309432
+boolean scheduleRenaming(Node node, T type) {#268,18.627969086170197
+Map<String, CheckLevel> propertiesToErrorFor) {#285,18.61815407401637
+private void recordInvalidationError(JSType t, JSError error) {#328,18.614863350277854
+if (typeName == null || type.toString().compareTo(typeName) < 0) {#634,18.60858544995708
+this.compiler = compiler;#304,18.60595668445934
+for (T subType : allTypes) {#214,18.601237487792968
+boolean shouldRename(T type) {#244,18.59700503716102
+for (T subType : alternatives) {#554,18.595211814431583
++ "because of type {1} node {2}. {3}");#91,18.592096249262493
+private void addInvalidatingType(JSType type, JSError error) {#340,18.591847919282458
+void recordInterfaces(T type, T relatedType,#743,18.58293741941452
+@Override#437,18.58122221628825
+@Override#379,18.574816068013508
+@Override public StaticScope<ConcreteType> getRootScope() {#986,18.567944476478978
+public void recordInterfaces(JSType type, JSType relatedType,#925,18.5526157106672
+int propsRenamed = 0, propsSkipped = 0, instancesRenamed = 0,#574,18.543540539948836
+ConcreteType cType, JSType jsType, String prop) {#1033,18.543348511060078
+if ((type = typeSystem.getInstanceFromPrototype(type)) != null) {#423,18.53345167225805
+if (!c.isEmpty() && !prop.typesToSkip.contains(c.iterator().next())) {#660,18.522827731238472
+String name = child.getString();#497,18.50530481338501
+return instanceType.getInstanceTypeWithProperty(field);#1094,18.4954363822937
+T getType(StaticScope<T> scope, Node node, String prop);#688,18.493442944117955
+void renameProperties() {#573,18.492905020713806
+if (owner.isConstructor() || owner.isInterface()) {#917,18.492226144541863
+return type.isInstance()#1070,18.479632536570232
+@Override public JSType restrictByNotNullOrUndefined(JSType type) {#830,18.47610418001811
+while (skipType != null) {#813,18.4696239062718
+if (types == null) {#154,18.461363865778996
+boolean isTypeToSkip(T type);#715,18.451300400954025
+@Override#1063,18.449083010355633
+return objType != null && !objType.hasReferenceName();#792,18.4479567527771
+@Override#393,18.446927388509113
+ConcreteInstanceType instanceType = (ConcreteInstanceType) type;#1119,18.440367118172023
+for (T type : set) {#633,18.435197012765066
+private final AbstractCompiler compiler;#99,18.429419729444717
+if (prop.skipRenaming) {#608,18.426623849307788
+String field = n.getLastChild().getString();#412,18.418299627304076
+for (Collection<T> c : prop.getTypes().allEquivalenceClasses()) {#659,18.41259144092428
+suggestion = "The \"this\" object is unknown in the function," +#462,18.399580401758993
+if (p.skipRenaming) {#947,18.390709377470472
+if (alternatives != null) {#552,18.38869251523699
+if (jsType == null) {#1016,18.378729002816335
+if (objType.hasOwnProperty(field)) {#891,18.37608879262751
+void expandTypesToSkip() {#194,18.35182909532027
+private Map<T, String> buildPropNames(UnionFind<T> types, String name) {#627,18.34174044926961
+ObjectType objSkipType = skipType.toObjectType();#816,18.340107418241956
+if (invalidationMap != null) {#332,18.3381244795663
+if (n.getFirstChild().isThis()) {#461,18.33601030936608
+private void printErrorLocations(List<String> errors, JSType t) {#515,18.31871803947117
+T type = typeSystem.getType(getScope(), n, name);#498,18.317081928253174
+static final DiagnosticType INVALIDATION_ON_TYPE = DiagnosticType.disabled(#93,18.3169793287913
+suggestion = "Consider casting " + qName +#466,18.314421140230618
+if (type == null) {#855,18.29934780414288
+if (shouldRename()) {#197,18.296641643230732
+boolean isInvalidatingType(T type);#696,18.291576605576736
+if (lastType != null) {#556,18.289135191175674
+if (concrete != null && !concrete.getPropertyType(prop).isNone()) {#1022,18.285207225430398
+for (Property prop : properties.values()) {#578,18.27820382799421
+Iterable<T> getTypeAlternatives(T type);#725,18.27773391499239
+static final DiagnosticType INVALIDATION = DiagnosticType.disabled(#88,18.2757607460022
+if (!errors.isEmpty()) {#472,18.2747802734375
+@Override#1075,18.272889137268066
+ConcreteType type) {#1091,18.269390638669332
+if (type.autoboxesTo() != null) {#865,18.26743425022472
+@Override#314,18.26594352722168
+return !skipRenaming && types != null#235,18.26393216451009
+ObjectType prototype = (ObjectType) type;#915,18.263180414835613
+for (JSError error : invalidationMap.get(t)) {#527,18.26219185538914
+func.getScope() : (StaticScope<ConcreteType>) null;#993,18.25885449923002
+String name = n.getLastChild().getString();#450,18.255452103084988
+StaticScope<ConcreteType> scope, Node node, String prop) {#998,18.25490673383077
+public ConcreteType restrictByNotNullOrUndefined(ConcreteType type) {#1076,18.253854794935748
+Set<T> rootTypesToSkip = Sets.newHashSet();#205,18.24909378051758
+" if you know it's type.";#467,18.241439260285475
+@Override public ObjectType getTypeWithProperty(String field, JSType type) {#854,18.23933033321215
+(type == null ? "null" : type.toString()),#481,18.23914258233432
+compiler, new JSTypeSystem(compiler), propertiesToErrorFor);#287,18.23842680454254
+List<String> errors = Lists.newArrayList();#470,18.238049763899582
+ImmutableSet<T> getTypesToSkipForType(T type);#709,18.236575412750245
+if (!t.isObject() || t.isAllType()) {#516,18.232574462890625
+Set<T> newTypesToSkip = Sets.newHashSet();#211,18.226503372192383
+private final Map<String, CheckLevel> propertiesToErrorFor;#117,18.226302981376648
+private int nextUniqueId;#964,18.22626714706421
+ObjectType foundType = null;#880,18.22570852132944
+if (propertiesToErrorFor.containsKey(name)) {#505,18.225697596867878
+@Override#1081,18.225297927856445
+for (ConcreteType t : ((ConcreteUnionType) type).getAlternatives()) {#1107,18.222607272011892
+|| (type.isInstance()#1059,18.22142283121745
+if (jsType.autoboxesTo() != null) {#1045,18.22110975356329
+private final Set<JSType> invalidatingTypes;#749,18.215995371341705
+private final TypeSystem<T> typeSystem;#100,18.215087095896404
+protected final Stack<StaticScope<T>> scopes =#376,18.212275207042694
+@Override public boolean isTypeToSkip(JSType type) {#826,18.208948787889984
+node.setString(newName);#588,18.193638181686403
+if (typeSystem.isInvalidatingType(top)) {#167,18.187117124858656
+|| codingConvention.isSuperClassReference(field)) {#1097,18.17923625946045
+for (Map.Entry<String, Property> entry : properties.entrySet()) {#656,18.176360563798383
+new Stack<StaticScope<T>>();#377,18.169730691348803
+FunctionType constructor;#929,18.16897161801656
+T getInstanceFromPrototype(T type);#737,18.167845589773997
+jsType = jsType.restrictByNotNullOrUndefined();#1034,18.164574214390345
+return cType;#1039,18.16342560450236
+if (prop.shouldRename(rootType)) {#586,18.163087541406806
+for (T type : set) {#646,18.160898004259383
+ObjectType objType = ObjectType.cast(type);#881,18.159335560268826
+JSType jsType = (JSType) type;#459,18.156259841918946
+if (objType.isFunctionType()) {#930,18.14210769865248
+private static final int MAX_INVALDIATION_WARNINGS_PER_PROPERTY = 10;#81,18.13515818119049
+T lastType = processProperty(t, prop, subType, firstType);#555,18.135073202627677
+compiler, new ConcreteTypeSystem(tt, compiler.getCodingConvention()),#294,18.13346682654487
+int originalTypesSize = allTypes.size();#213,18.131761646270753
++ "on type {1}. {2}");#96,18.123638655010023
+instancesSkipped = 0, singleTypeProps = 0;#575,18.113922618684313
+Map<T, String> propNames = buildPropNames(prop.getTypes(), prop.name);#580,18.112860234578452
+@Override public boolean isTypeToSkip(ConcreteType type) {#1068,18.11275692989952
+if (typeSystem.isInvalidatingType(topType)) {#563,18.110759821805086
+while (true) {#199,18.10819772573618
+if (propertiesToErrorFor.containsKey(name)) {#456,18.106539726257324
+compiler.reportCodeChange();#589,18.106075604756672
+T firstType = relatedType;#553,18.105727895100912
+@Override#384,18.10297171274821
+if (prop.skipRenaming || typeSystem.isInvalidatingType(type)) {#547,18.100791091918946
+if (!typesToSkip.contains(subType)#215,18.097538073857624
+if (checkLevelForProp != null &&#595,18.08925842103504
+return null;#774,18.085945977105034
+if (typeSystem.isInvalidatingType(type)) {#415,18.085035914466495
+registry.getNativeType(JSTypeNative.ALL_TYPE),#755,18.083946113586425
+return cType.unionWith(tt.getConcreteInstance((ObjectType) jsType));#1049,18.081863130841935
+if (maybeType != null && maybeType.hasOwnProperty(field)) {#906,18.08120464324951
+return (func != null) ?#992,18.081082417414738
+@Override public void addInvalidatingType(JSType type) {#981,18.079880061902497
+ConcreteType cType, Node node, String prop) {#1014,18.079405966259184
+type = typeSystem.restrictByNotNullOrUndefined(type);#546,18.067276651209053
+JSType top = getTypeWithProperty(p.name, itype);#939,18.062902253249597
+Property prop = getProperty(field);#414,18.061355352401733
+return ImmutableSet.copyOf(types);#802,18.061274740431045
+@Override public boolean isInvalidatingType(ConcreteType type) {#1055,18.049342456616852
+for (JSType alt : jsType.toMaybeUnionType().getAlternates()) {#1036,18.043685300009592
+Property prop = getProperty(name);#500,18.040518522262573
+return null;#1114,18.039725727505154
+public ImmutableSet<ConcreteType> getTypesToSkipForType(ConcreteType type) {#1064,18.036956200232872
+if (foundType == null) {#900,18.026605197361537
+++instancesRenamed;#590,18.02643722958035
+if (types.elements().size() == originalTypesSize) {#226,18.022268257141114
+if (objType != null && objType.getImplicitPrototype() != null) {#353,18.01912551659804
+if (constructor.isInterface() || constructor.isConstructor()) {#951,18.01513803922213
+typeSystem.recordInterfaces(type, top, this);#180,17.999893233889626
+for (Set<T> set : types.allEquivalenceClasses()) {#629,17.999401916157115
+while (objType != null && objType.getImplicitPrototype() != objType) {#890,17.998133429165545
+if (objType != null && objType.getConstructor() != null#882,17.99588207765059
+void addInvalidatingType(JSType type);#702,17.992338943481446
+if (node.getJSType() == null) {#779,17.9896442011783
+private Set<JSType> getTypesToSkipForTypeNonUnion(JSType type) {#810,17.987980512472298
+StaticScope<JSType> scope, Node node, String prop) {#778,17.984709183375042
+Map<T, String> names = Maps.newHashMap();#628,17.98286379708184
+@Override public void addInvalidatingType(JSType type) {#766,17.97999095916748
+ObjectType objType = ObjectType.cast(type);#927,17.978394985198975
+private JSTypeRegistry registry;#750,17.974393049875896
+Set<T> typesToSkip = Sets.newHashSet();#130,17.968125767178005
+if (errors.size() > MAX_INVALDIATION_WARNINGS_PER_PROPERTY) {#528,17.9654880464077
+if (typeSystem.isInvalidatingType(type)) {#270,17.963131132579985
+return scopes.peek();#400,17.963029054495003
+return null;#1124,17.958191765679253
+private CodingConvention codingConvention;#965,17.957544620220478
+public Iterable<ConcreteType> getTypeAlternatives(ConcreteType type) {#1082,17.954629690750785
+StaticScope<T> getRootScope();#675,17.94295780475323
+checkState(!skipRenaming, "Attempt to record skipped property: %s", name);#166,17.94152597280649
+if (!prop.skipRenaming) {#658,17.94095458984375
+@Override public StaticScope<JSType> getFunctionScope(Node node) {#773,17.93390196019953
+if (type.isUnionType()) {#797,17.93377005259196
+TypeSystem<T> typeSystem, Map<String, CheckLevel> propertiesToErrorFor) {#303,17.929692374335396
+@Override public StaticScope<ConcreteType> getFunctionScope(Node decl) {#990,17.924218394539572
+private final Set<JSType> invalidatingTypes = Sets.newHashSet();#966,17.916003357280385
+ObjectType objType = type.toObjectType();#838,17.91123224559583
+logger.fine("Skipped renaming " + instancesSkipped + " invalidated "#617,17.910164833068848
+boolean skipRenaming;#136,17.90956073337131
+T type = typeSystem.getType(getScope(), n.getFirstChild(), field);#413,17.90880867413112
+DisambiguateProperties<JSType>.Property p) {#926,17.90782215197881
+return firstType;#560,17.898417631785076
+compiler.report(JSError.make(#506,17.89155748616094
+t.toString() + " at " + error.sourceName + ":" + error.lineNumber);#533,17.888532556806293
+for (ObjectType itype : constructor.getImplementedInterfaces()) {#938,17.884080568949383
+!reported.contains(prop.name)) {#597,17.883213926244665
+String newName = propNames.get(rootType);#587,17.881335298220318
+list.add(impl.getInstanceType());#845,17.880360343239524
+@Override public ImmutableSet<JSType> getTypesToSkipForType(JSType type) {#795,17.88019527707781
+if (type.isUnionType()) {#835,17.87715352376302
+UnionFind<T> getTypes() {#153,17.873675786531887
+@Override public boolean isInvalidatingType(JSType type) {#785,17.870716094970703
+if (n.isGetProp()) {#411,17.86785628000895
+++singleTypeProps;#611,17.857014060020447
+private interface TypeSystem<T> {#670,17.854593563079835
+NodeTraversal t, Property prop, T type, T relatedType) {#545,17.848612518310546
+Set<T> allTypes = types.elements();#212,17.833024805242363
+return ImmutableSet.of(type);#1065,17.830525652567545
+@Override public JSType getInstanceFromPrototype(JSType type) {#913,17.81828873807734
+registry.getNativeType(JSTypeNative.FUNCTION_INSTANCE_TYPE),#759,17.81688887278239
+if (type == null || invalidatingTypes.contains(type) ||#786,17.81439243663441
+registry.getNativeType(JSTypeNative.NO_OBJECT_TYPE),#756,17.812836715153285
+t.getSourceName(), child, propertiesToErrorFor.get(name),#507,17.808881066062234
+for (JSType alt : t.toMaybeUnionType().getAlternates()) {#521,17.80711488370542
+if (prop.shouldRename()) {#579,17.80432720184326
+@Override public Iterable<JSType> getTypeAlternatives(JSType type) {#834,17.803745880126954
+Set<String> reported = Sets.newHashSet();#577,17.80274248123169
+registry.getNativeType(JSTypeNative.NO_TYPE),#757,17.801103553771974
+if (type.isEnumElementType()) {#859,17.800941579482135
+FunctionType owner = prototype.getOwnerFunction();#916,17.800366401672363
+ObjectType objType = ObjectType.cast(type);#352,17.79714324739244
+public void recordInterfaces(ConcreteType type, ConcreteType relatedType,#1128,17.79320848555792
+(type == null ? "null" : type.toString()), n.toString(), ""));#509,17.790036177023865
+this.typeSystem = typeSystem;#305,17.78701424598694
+ConcreteType concrete = tt.getConcreteInstance(#1020,17.77942018923552
+ObjectType objType = ObjectType.cast(type);#791,17.775621626112198
+recordInterfaces(itype, relatedType, p);#943,17.75766530403724
+processProperty(t, prop, type, null))) {#502,17.75082778930664
+private DisambiguateProperties(AbstractCompiler compiler,#302,17.74776528676351
+return cType.unionWith(tt.getConcreteInstance((ObjectType) autoboxed));#1047,17.745967197418214
+Warnings.INVALIDATION, name,#480,17.743502020835876
+@Override#996,17.742027918497723
+if (t.isUnionType()) {#520,17.735294024149578
+public void exitScope(NodeTraversal t) {#394,17.734292805194855
+class DisambiguateProperties<T> implements CompilerPass {#78,17.733385920524597
+DisambiguateProperties<T>.Property p);#744,17.724784022883366
+@Override#1127,17.717988967895508
+return null;#921,17.714743826124405
+private abstract class AbstractScopingCallback implements ScopedCallback {#375,17.714603424072266
+type.isUnknownType() /* unresolved types */) {#787,17.713608048178934
+boolean changed = !skipRenaming;#253,17.71008620943342
+return changed;#256,17.7071959177653
+return new ConcreteUniqueType(++nextUniqueId);#1104,17.70352954864502
+p.addType(itype, top, relatedType);#941,17.700614364058882
+if (!this.propertiesToErrorFor.isEmpty()) {#307,17.696877984439624
+type = type.restrictByNotNullOrUndefined();#796,17.690862705833034
+type = type.restrictByNotNullOrUndefined();#341,17.69052241830265
+types = null;#255,17.687924194335938
+for (JSTypeNative nativeType : nativeTypes) {#1019,17.686912037077406
+processProperty(t, prop, type, null))) {#455,17.685533650716145
+suggestion = "Consider fixing errors for the following types:\n";#473,17.684761409101814
+if (jsType.isUnionType()) {#1035,17.682015299797058
++ " properties that were referenced from only one type.");#620,17.680271863937378
+if (ret != null) {#1109,17.677725791931152
+(TightenTypes.ConcreteScope) scope, node);#1001,17.664576823894794
+compiler.report(JSError.make(#599,17.664415435791014
+protected Property getProperty(String name) {#362,17.658868963068183
+t.getSourceName(), n, propertiesToErrorFor.get(name),#479,17.658314674131333
+ConcreteType ret = getTypeWithProperty(field, t);#1108,17.657384951909382
+this.tt = tt;#977,17.656309641324558
+return foundType;#910,17.65325298309326
+static class Warnings {#86,17.652800015040807
+private static final JSTypeNative [] nativeTypes = new JSTypeNative[] {#970,17.65205682407726
+StaticScope<T> getFunctionScope(Node node);#678,17.64913499355316
+Iterable<T> alternatives = typeSystem.getTypeAlternatives(type);#551,17.64877982761549
+private static class ConcreteTypeSystem implements TypeSystem<ConcreteType> {#962,17.642467233869766
+return cType;#1052,17.640860176086427
+for (JSType alt : type.toMaybeUnionType().getAlternates()) {#799,17.640378563492387
+this.name = name;#149,17.637369871139526
+firstType = firstType == null ? lastType : firstType;#557,17.636075533353367
+compiler.report(JSError.make(#478,17.635249909900484
+if (topInterface != null && topInterface.getConstructor() != null) {#886,17.631156884706936
+if (type.isUnionType()) {#342,17.630737744844875
+registry.getNativeType(JSTypeNative.OBJECT_PROTOTYPE),#760,17.626213582356772
+return true;#381,17.623008516099716
+"consider using @this";#463,17.617506724137527
+&& objType.getConstructor().isInterface()) {#883,17.61057780005715
+registry.getNativeType(JSTypeNative.FUNCTION_PROTOTYPE),#758,17.608412373450495
+if (!prop.scheduleRenaming(child,#501,17.608218142860814
+while (constructor != null) {#937,17.604359686374664
+for (Node node : prop.renameNodes) {#584,17.603478976658412
+return !skipRenaming && !typesToSkip.contains(type);#245,17.60136877406727
+for (JSType alt : type.toMaybeUnionType().getAlternates()) {#343,17.59085754394531
+public void enterScope(NodeTraversal t) {#385,17.588254809379578
+private class Property {#119,17.578190485636394
+final Map<Node, T> rootTypes = Maps.newHashMap();#146,17.57548975944519
+if (!prop.scheduleRenaming(n.getLastChild(),#454,17.573074840364
+return list;#847,17.570221534142128
+List<JSType> list = Lists.newArrayList();#842,17.56625731786092
+if (n.isGetProp()) {#439,17.552600987752278
+return ((ConcreteUnionType) type).getAlternatives();#1084,17.55214972723098
+typesToSkip.addAll(rootTypesToSkip);#209,17.549620043147694
+return maybeAddAutoboxes(cType, jsType, prop);#1029,17.546997157010164
++ "properties, " + propsSkipped + " instances of properties "#618,17.538620887264127
+T type = typeSystem.getType(getScope(), n.getFirstChild(), name);#451,17.536719982440655
+return type.isEnumType() || (type.autoboxesTo() != null);#827,17.535105987831397
+skipRenaming = true;#254,17.53017012278239
+|| type.toInstance().instanceType.isInstanceType());#1072,17.529615769019493
+prop.expandTypesToSkip();#583,17.526937246322632
+prop.invalidate();#416,17.52604228258133
+objType.getConstructor() != null &&#840,17.524166453968395
+for (Node child = n.getFirstChild();#491,17.518544982461368
+return cType;#1026,17.516818364461262
+return cType;#1017,17.516525824864704
+return prototype.getOwnerFunction().getInstanceType();#918,17.514362335205078
+return types;#157,17.50886895921495
+&& types.allEquivalenceClasses().size() > 1;#236,17.50753475189209
+Warnings.INVALIDATION_ON_TYPE, prop.name,#602,17.50575076832491
+recordInvalidationError(type, error);#351,17.504086176554363
+private Map<String, Property> properties = Maps.newHashMap();#281,17.501451155718634
+cType = maybeAddAutoboxes(cType, alt, prop);#1037,17.500424031858092
+this.codingConvention = convention;#978,17.494787851969402
+ConcreteFunctionType func = tt.getConcreteFunction(decl);#991,17.4902466210452
+&& invalidatingTypes.contains(type.toInstance().instanceType));#1060,17.489477566310338
+scopes.push(typeSystem.getFunctionScope(t.getScopeRoot()));#389,17.481129928871436
+invalidate();#168,17.478951020674273
+Property prop = getProperty(name);#453,17.47596788406372
+prop.addTypeToSkip(type);#418,17.47349749113384
+objType.getConstructor().isInterface()) {#841,17.472863114398457
+constructor = objType.getOwnerFunction();#933,17.46926192233437
++ "that were skipped for specific types and " + singleTypeProps#619,17.466784261888073
+return null;#856,17.464424219998445
+ObjectType maybeType = ObjectType.cast(#901,17.463393264346653
+if (!t.isObject()) {#329,17.460421085357666
+printErrorLocations(errors, jsType);#471,17.455339352289837
+DisambiguateProperties<ConcreteType>.Property p) {#1129,17.438365189925484
+checkState(++count < 10, "Stuck in loop expanding types to skip.");#201,17.437723258446002
+private class FindExternProperties extends AbstractScopingCallback {#408,17.437509473164877
+renameProperties();#325,17.435768723487854
+@Override public ConcreteType getTypeWithProperty(String field,#1090,17.433070288764107
+registry = compiler.getTypeRegistry();#753,17.426885032653807
+private T processProperty(#544,17.42171319325765
+JSTypeNative.NUMBER_OBJECT_TYPE,#972,17.416097504752024
+T rootType = prop.rootTypes.get(node);#585,17.41478501195493
+JSType skipType = type;#812,17.407390458243235
+return ImmutableSet.copyOf(getTypesToSkipForTypeNonUnion(type));#807,17.40574249267578
+return type;#1078,17.395293765597874
+if (type.isUnion()) {#1083,17.39500175203596
+T topType = typeSystem.getTypeWithProperty(prop.name, type);#562,17.391538069798397
+++propsRenamed;#582,17.390932628086635
+registry.getGreatestSubtypeWithProperty(type, field));#902,17.38843011856079
+if (instanceType.isFunctionPrototype()) {#1120,17.386435056987562
+for (TypeMismatch mis : compiler.getTypeValidator().getMismatches()) {#318,17.384385871887208
+&& !(type.toInstance().isFunctionPrototype()#1071,17.38332646233695
+return maybeAddAutoboxes(c, node, prop);#1002,17.383255741812967
+addInvalidatingType(#347,17.382018436085094
+Multimap<String, Collection<T>> getRenamedTypesForTesting() {#654,17.38016805648804
+registry.getNativeType(JSTypeNative.TOP_LEVEL_PROTOTYPE),#761,17.36222678422928
+return true;#277,17.357990794711643
+handleGetProp(t, n);#440,17.351407527923584
+JSType jsType = node.getJSType();#1015,17.34989241549843
+rootTypes.put(node, type);#275,17.344778958488913
+this.invalidationMap = null;#310,17.331258837382
+return null;#1086,17.330873142589223
+this.propertiesToErrorFor = propertiesToErrorFor;#306,17.330151736736298
+: registry.getDirectImplementors(objType)) {#844,17.324666306376457
+prop.addType(type, topType, relatedType);#566,17.31626070113409
+Property prop = entry.getValue();#657,17.301923956189835
+return typeSystem.getTypeWithProperty(field, type);#371,17.28868074978099
+private UnionFind<T> types;#124,17.283038298288982
+NodeUtil.getSourceName(node), node,#600,17.276852258046468
+typesToSkip.add(skipType);#188,17.27478577108944
+rootTypesToSkip.add(types.find(subType));#207,17.271355940745426
+if (!properties.containsKey(name)) {#363,17.265529060363768
+if (type.isFunctionPrototypeType()) {#914,17.265191022087546
+return;#517,17.258951282501222
+JSTypeNative.BOOLEAN_OBJECT_TYPE,#971,17.25509034032407
+private class FindRenameableProperties extends AbstractScopingCallback {#436,17.253120124340057
+return type.restrictByNotNullOrUndefined();#831,17.2441217634413
+return false;#169,17.239584489302203
+@Override public ConcreteType getInstanceFromPrototype(ConcreteType type) {#1117,17.231917489658702
+Warnings.INVALIDATION, name,#508,17.21250552397508
+constructor = objType.toMaybeFunctionType();#931,17.206603002548217
+return instanceType.getConstructorType().getInstanceType();#1121,17.204291758329973
+private static class JSTypeSystem implements TypeSystem<JSType> {#748,17.204158359103733
+ObjectType topInterface = FunctionType.getTopDefiningInterface(#884,17.194896828044545
+JSTypeNative.STRING_OBJECT_TYPE#973,17.186383771896363
+properties.put(name, new Property(name));#364,17.1698818767772
+return types;#823,17.16802766587999
+private Multimap<Object, JSError> invalidationMap;#107,17.167854997846817
+handleObjectLit(t, n);#442,17.150192204643698
+return null;#849,17.144574825580303
+@Override public JSType getType(#777,17.132258561941292
+CheckLevel checkLevelForProp = propertiesToErrorFor.get(prop.name);#594,17.12541529337565
+invalidatingTypes = Sets.newHashSet(#754,17.122382044792175
+@Override#924,17.120837847391766
+newName = name;#641,17.115030141977165
+objType, field);#885,17.112273496740006
+invalidationMap.put(t, error);#333,17.10577952861786
+cType, jsType.toMaybeEnumElementType().getPrimitiveType(), prop);#1042,17.101552844047546
+return;#524,17.092288875579833
+rootType.toString(), ""));#603,17.07934100539596
+checkState(!type.isUnionType());#982,17.068681359291077
+getTypes().union(skipType, type);#189,17.056517362594604
+return null;#1004,17.054241180419922
+private void handleObjectLit(NodeTraversal t, Node n) {#490,17.044322150094168
+return null;#548,17.040919650684703
+getTypes().union(top, relatedType);#178,17.040823221206665
+return node.getJSType();#782,17.038095133645193
+addTypeToSkip(newType);#222,17.03731346130371
+tt.getTypeRegistry().getNativeObjectType(nativeType));#1021,17.03389091491699
+ConcreteType c = tt.inferConcreteType(#1000,17.03360548886386
+checkLevelForProp,#601,17.031609576681387
+checkState(!type.isUnionType());#767,17.02983558177948
+compiler.getLifeCycleStage() == LifeCycleStage.NORMALIZED);#317,17.01793169092249
+type = type.autoboxesTo();#866,17.01434106826782
+constructor = null;#954,17.013388752937317
+&& typesToSkip.contains(types.find(subType))) {#216,17.009245991706848
+propertiesToErrorFor);#295,16.996601329130286
+reported.add(prop.name);#598,16.98802934993397
+checkState(!set.isEmpty());#630,16.986897150675457
+constructor = objType.getConstructor();#935,16.985134877656634
+return tt.getTopScope();#987,16.98365354537964
+scopes.pop();#395,16.982934518293902
++ propsRenamed + " properties.");#616,16.976864318847657
+names.put(type, newName);#647,16.974635629092944
+return registry.getNativeType(JSTypeNative.UNKNOWN_TYPE);#780,16.96086193084717
+cType = cType.unionWith(concrete);#1023,16.95847737789154
+Set<JSType> types = Sets.newHashSet();#811,16.953450012207032
+n.toString(), suggestion));#482,16.95258549281529
+public boolean shouldTraverse(NodeTraversal t, Node n, Node parent) {#380,16.9405691727348
+scopes.push(typeSystem.getRootScope());#387,16.936033153533934
+return names;#650,16.93249934060233
+registry.getNativeType(JSTypeNative.UNKNOWN_TYPE));#762,16.92615244938777
+return type.toMaybeUnionType().getAlternates();#836,16.9228196144104
+types.add(skipType);#814,16.917308870951334
+checkLevelForProp != CheckLevel.OFF &&#596,16.905065243060772
+newName = typeName.replaceAll("[^\\w$]", "_") + "$" + name;#643,16.90243771672249
+return getTypesToSkipForType(#804,16.902019500732422
+Set<JSType> types = Sets.newHashSet(type);#798,16.890047073364258
+getTypes().add(top);#176,16.874620662016028
+skipType = objSkipType.getImplicitPrototype();#818,16.851503828297492
+return;#330,16.84125256538391
+child = child.getNext()) {#493,16.838218847910564
+return topType;#567,16.832333485285442
+return getTypeWithProperty(#860,16.82522119794573
+newTypesToSkip.add(subType);#217,16.82451816399892
+field, type.toMaybeEnumElementType().getPrimitiveType());#861,16.80895859854562
+typeSystem.addInvalidatingType(type);#350,16.801748156547546
+addInvalidatingType(mis.typeB, mis.src);#320,16.800982856750487
+suggestion += Joiner.on("\n").join(errors);#474,16.79821974436442
+type.toMaybeEnumElementType().getPrimitiveType(), error);#348,16.780812960404617
+Set<Node> renameNodes = Sets.newHashSet();#139,16.77570300632053
+JSType autoboxed = jsType.autoboxesTo();#1046,16.756417007446288
+return true;#181,16.749957518144086
+constructor = constructor.getSuperClassConstructor();#952,16.74526461687955
+addInvalidatingType(alt, error);#344,16.74507988200468
+return ret;#666,16.70744228363037
+public void process(Node externs, Node root) {#315,16.704822158813478
+public void visit(NodeTraversal t, Node n, Node parent) {#438,16.67058563232422
+public ConcreteType getType(#997,16.657152696089312
+types.addAll(getTypesToSkipForTypeNonUnion(alt));#800,16.649149417877197
+objType = objType.getImplicitPrototype();#894,16.648796515031293
+static DisambiguateProperties<ConcreteType> forConcreteTypeSystem(#290,16.648724603652955
+printErrorLocations(errors, alt);#522,16.6447821165386
+return null;#564,16.644104810861442
+DisambiguateProperties.class.getName());#84,16.643863995869953
+private void handleGetProp(NodeTraversal t, Node n) {#449,16.64319086074829
+private static final Logger logger = Logger.getLogger(#83,16.606939017772675
+static DisambiguateProperties<JSType> forJSTypeSystem(#283,16.59829020500183
+addTypeToSkip(top);#172,16.594231493332806
+ret.put(entry.getKey(), c);#661,16.59244856627091
+return properties.get(name);#366,16.59055891903964
+return true;#788,16.570980245416816
+types = new StandardUnionFind<T>();#155,16.55171797010634
+child != null;#492,16.545569896697998
+return;#948,16.536627292633057
+private ConcreteType maybeAddAutoboxes(#1032,16.533518409729005
+private ConcreteType maybeAddAutoboxes(#1013,16.530612818400066
+return maybeAddAutoboxes(#1041,16.51721578836441
+recordInvalidationError(objType.getImplicitPrototype(), error);#355,16.496342182159424
+invalidatingTypes.add(type);#983,16.44461468287877
+return null;#874,16.438425237482246
+typeName = type.toString();#635,16.431703726450603
+typeSystem.addInvalidatingType(objType.getImplicitPrototype());#354,16.430753860473633
+return new DisambiguateProperties<JSType>(#286,16.430515681996066
+this.invalidationMap = LinkedHashMultimap.create();#308,16.430267854170367
+@Override public void visit(NodeTraversal t, Node n, Node parent) {#409,16.425166047137715
+return new DisambiguateProperties<ConcreteType>(#293,16.412618356592514
+invalidatingTypes.add(type);#768,16.404140404292516
+return;#529,16.3719007174174
+Multimap<String, Collection<T>> ret = HashMultimap.create();#655,16.364867915277895
+prop.getTypes().add(type);#424,16.356402260916575
+type.toMaybeEnumElementType().getPrimitiveType());#805,16.311808549440823
+return type;#1098,16.249147781958946
+NodeTraversal.traverse(compiler, root, new FindRenameableProperties());#324,16.24311679840088
+foundType = maybeType;#907,16.21483415365219
+Preconditions.checkState(#316,16.204308249733664
+prop.typesToSkip.add(type);#425,16.196638974276457
+addInvalidatingType(mis.typeA, mis.src);#319,16.179618406295777
+foundType = objType;#892,16.163779894510906
+invalidate();#271,16.033393419705906
+foundType = topInterface.getConstructor().getPrototype();#887,16.00328715642293
+NodeTraversal.traverse(compiler, externs, new FindExternProperties());#323,15.998867878547081
+errors.add(#532,15.839781920115152
+return null;#868,15.808737901540903
+renameNodes.add(node);#274,15.649001896381378
+return false;#272,15.587644283588116
+break;#227,15.527839251926967
+return ret;#1110,15.384251467386882
+break;#820,15.275401592254639

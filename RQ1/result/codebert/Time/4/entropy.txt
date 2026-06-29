@@ -1,0 +1,297 @@
+if (period == null || scalar == 0) {#589,20.139134407043457
+public DateTimeFormatter getFormatter() {#704,20.095811980111257
+if (partial == null) {#259,19.979417610168458
+if (partial == null) {#680,19.840589459737142
+public DateTimeField getField() {#843,19.81754732131958
+if (f == null) {#706,19.812352307637532
+if (amount == 0) {#541,19.792995325724284
+if (amount == 0) {#565,19.73319091796875
+if (fieldType == null) {#427,19.62521779537201
+return toString();#787,19.576488733291626
+public Partial addToCopy(int valueToAdd) {#892,19.568253087997437
+if (types == null) {#193,19.534374618530272
+public Partial withPeriodAdded(ReadablePeriod period, int scalar) {#588,19.510248877785422
+return toString();#802,19.45631992816925
+public Partial withField(DateTimeFieldType fieldType, int value) {#515,19.396260595321657
+if (type == null) {#156,19.39375178019206
+public Partial with(DateTimeFieldType fieldType, int value) {#426,19.378533664502594
+DurationField lastUnitField = null;#212,19.365803062915802
+public Partial withFieldAdded(DurationFieldType fieldType, int amount) {#539,19.356278371810912
+if (values == null) {#196,19.33302052815755
+if (f1 == null) {#747,19.317500948905945
+if (f == null) {#739,19.29940554300944
+throw new IllegalArgumentException("The partial must not be null");#260,19.28679000414335
+if (types.length == 0) {#202,19.265684857087976
+public int get() {#870,19.23229510967548
+private transient DateTimeFormatter[] iFormatter;#82,19.228231620788574
+public Partial without(DateTimeFieldType fieldType) {#484,19.192688167095184
+if (size() == 0) {#707,19.190491580963133
+if (index == -1) {#431,19.169977009296417
+if (index != -1) {#486,19.119989156723022
+public int getValue(int index) {#367,19.072332015404335
+if (pattern == null) {#786,19.05047149658203
+public Partial setCopy(String text) {#966,19.04023209740134
+public Partial addWrapFieldToCopy(int valueToAdd) {#916,19.014535779538363
+throw new IllegalArgumentException("The field type must not be null");#157,19.00399299904152
+DateTimeFormatter[] f = iFormatter;#705,18.981088035985042
+public Partial(DateTimeFieldType type, int value) {#138,18.954862538506003
+if (compare < 0 || (compare != 0 && loopUnitField.isSupported() == false)) {#218,18.947561979293823
+public String toString(String pattern) {#785,18.937046637901894
+if (pattern == null) {#801,18.927514457702635
+public Partial withFieldAddWrapped(DurationFieldType fieldType, int amount) {#563,18.910795255140826
+public Partial withMaximumValue() {#980,18.868938318888347
+public Partial withMinimumValue() {#993,18.867640495300293
+public Partial setCopy(int value) {#933,18.859844768748562
+DateTimeFormatter[] f = iFormatter;#738,18.84604418905158
+DurationField loopUnitField = loopType.getDurationType().getField(iChronology);#215,18.833590738701098
+if (newChronology == getChronology()) {#402,18.811623073759534
+iTypes = new DateTimeFieldType[0];#125,18.801176171553763
+public DateTimeFieldType getFieldType(int index) {#343,18.79077692592845
+public Partial getPartial() {#861,18.78876158396403
+public boolean isMatch(ReadableInstant instant) {#655,18.78832410176595
+int i = 0;#436,18.77531853844138
+public Property property(DateTimeFieldType type) {#641,18.77408847808838
+return toStringList();#748,18.768903620102826
+f = new DateTimeFormatter[2];#710,18.739999987862326
+if (types[i] == null) {#208,18.724812854420055
+public String toString() {#737,18.70963325500488
+public Partial(Chronology chrono) {#122,18.708701951163157
+buf.append('[');#765,18.694996220724924
+public String toStringList() {#762,18.69356242093173
+DateTimeFormatter f1 = f[1];#746,18.68374161971243
+if (i > 0) {#216,18.674028697766754
+DurationField unitField = fieldType.getDurationType().getField(iChronology);#437,18.66885206103325
+protected DateTimeField getField(int index, Chronology chrono) {#332,18.666718626022337
+try {#711,18.631473268781388
+if (types[i - 1].getRangeDurationType() == null) {#222,18.63090994551375
+throw new IllegalArgumentException("The partial must not be null");#681,18.619038801926834
+if (values.length != types.length) {#199,18.59956851758455
+for (int i = 0; i < size; i++) {#766,18.586553010073576
+if (value == getValue(index)) {#468,18.58424637052748
+if (value == getValue(index)) {#517,18.579126411014133
+if (compare > 0) {#444,18.566959738731384
+DateTimeFieldType[] newTypes = new DateTimeFieldType[iTypes.length + 1];#432,18.54605715202563
+public Partial setCopy(String text, Locale locale) {#950,18.53603458404541
+public String toString(String pattern, Locale locale) {#800,18.52992686103372
+getFormatter();#740,18.5256444811821
+for (int i = 0; i < types.length; i++) {#207,18.51735206445058
+newTypes[i] = fieldType;#458,18.517180397396995
+for (int i = 0; i < types.length; i++) {#213,18.51707935333252
+return toStringList();#743,18.515955607096355
+throw new IllegalArgumentException("Types array must not contain null: index " + i);#209,18.501323209490096
+if (index >= 0) {#596,18.478756754021894
+if (loopType.getRangeDurationType() == null) {#223,18.473117978949297
+throw new IllegalArgumentException("The field type must not be null");#428,18.470825689810294
+if (f == null) {#742,18.469106573807565
+public int size() {#308,18.457358678181965
+if (unitField.isSupported()) {#438,18.455495652698335
+f[1] = f[0];#715,18.447529496817754
+if (list.size() == 0) {#714,18.442286711472732
+DurationField rangeField = fieldType.getRangeDurationType().getField(iChronology);#447,18.4417849949428
+public Partial() {#102,18.441638588905334
+int index = indexOf(fieldType);#485,18.441057205200195
+f = iFormatter;#741,18.42879072825114
+public Partial plus(ReadablePeriod period) {#613,18.419722938537596
+private final int iFieldIndex;#824,18.4098357518514
+return null;#708,18.406211250706722
+int size = size();#763,18.40524805509127
+long millis = DateTimeUtils.getInstantMillis(instant);#656,18.403714752197267
+return false;#661,18.4024725462261
+for (int i = 0; i < period.size(); i++) {#593,18.39976441860199
+newValues[i] = value;#459,18.36841516494751
+DurationField loopUnitField = loopType.getDurationType().getField(iChronology);#441,18.33712380106856
+if (i > 0) {#767,18.334692704050166
+iValues = new int[0];#126,18.33313477039337
+public Partial minus(ReadablePeriod period) {#626,18.32551498413086
+f[0] = ISODateTimeFormat.forFields(list, true, false);#713,18.324347521807695
+public DateTimeFieldType[] getFieldTypes() {#355,18.31300506591797
+iTypes = new DateTimeFieldType[partial.size()];#263,18.283338243311103
+int[] newValues = new int[newTypes.length];#433,18.2823335647583
+public Partial withChronologyRetainFields(Chronology newChronology) {#399,18.27736735343933
+iChronology = DateTimeUtils.getChronology(partial.getChronology()).withUTC();#262,18.272977043600644
+for (int i = 0; i < partial.size(); i++) {#265,18.262380798657734
+if (loopType.getRangeDurationType() == null) {#227,18.25447137732255
+for (int i = 0; i < iTypes.length; i++) {#683,18.226741600036622
+break;#445,18.226344871520997
+iTypes = new DateTimeFieldType[] {type};#159,18.215040016174317
+for (int i = 0; i < iTypes.length; i++) {#658,18.20506000518799
+int compare = unitField.compareTo(loopUnitField);#443,18.198752629129512
+throw new IllegalArgumentException("Types array must not be null");#194,18.198197951683632
+iTypes = (DateTimeFieldType[]) types.clone();#246,18.190579934553668
+this((Chronology) null);#103,18.186691641807556
+if (lastRangeField.compareTo(loopRangeField) == 0) {#237,18.184028375716437
+DurationField lastRangeField = types[i - 1].getRangeDurationType().getField(iChronology);#231,18.183889311187123
+DateTimeFieldType[] newTypes = new DateTimeFieldType[size() - 1];#487,18.175741287969775
+int index = indexOf(fieldType);#430,18.174488572513354
+newChronology = newChronology.withUTC();#401,18.15704145885649
+public Chronology getChronology() {#320,18.152755150428185
+Chronology chrono = DateTimeUtils.getInstantChronology(instant);#657,18.151266345271356
+types[i - 1].getName() + " < " + loopType.getName());#220,18.146159132321674
+DateTimeFieldType loopType = types[i];#214,18.132894764775816
+DateTimeFieldType loopType = iTypes[i];#440,18.13259643316269
+DurationField loopRangeField = loopType.getRangeDurationType().getField(iChronology);#232,18.127061678015668
+return this;#542,18.126620610555012
+return false;#686,18.12538719177246
+return (DateTimeFieldType[]) iTypes.clone();#356,18.113846869695756
+return this;#566,18.108044242858888
+return this;#518,18.102986399332682
+iChronology = partial.iChronology;#281,18.0935959815979
+return f[0];#722,18.082524152902458
+buf.append(',').append(' ');#768,18.073632973891037
+DurationField loopRangeField = loopType.getRangeDurationType().getField(iChronology);#448,18.071623649597168
+int[] newValues = getValues();#544,18.063124179840088
+int[] newValues = getValues();#592,18.051323533058167
+public Partial(DateTimeFieldType type, int value, Chronology chronology) {#152,18.044957290996205
+super();#258,18.030865955352784
+int index = indexOfSupported(fieldType);#540,18.029436111450195
+int[] newValues = getValues();#568,18.029399156570435
+int index = indexOfSupported(fieldType);#516,18.02761220932007
+iTypes = types;#298,18.0223445892334
+return buf.toString();#775,18.0198746408735
+throw new IllegalArgumentException("Types array must not contain duplicate: " + loopType.getName());#224,18.013911933898925
+iFormatter = f;#720,18.001197338104248
+int[] newValues = getValues();#520,18.000757694244385
+Property(Partial partial, int fieldIndex) {#832,17.9983071527983
+throw new IllegalArgumentException("Types array must not contain duplicate: " + loopType.getName());#238,17.994360122680664
+int index = indexOfSupported(fieldType);#564,17.987164815266926
+return (int[]) iValues.clone();#381,17.971646520826553
+iValues = new int[] {value};#160,17.968751626856186
+if (value != iValues[i]) {#660,17.966168230230156
+public boolean isMatch(ReadablePartial partial) {#679,17.965189158916473
+newValues = getField().add(iPartial, iFieldIndex, newValues, valueToAdd);#894,17.95985589708601
+return iChronology;#321,17.95524501800537
+int value = partial.get(iTypes[i]);#684,17.955214738845825
+iValues = new int[partial.size()];#264,17.94244138818038
+buf.append('=');#771,17.92679156197442
+int[] newValues = getValues();#471,17.923380851745605
+if (value != iValues[i]) {#685,17.923363989049736
+return withPeriodAdded(period, -1);#627,17.92163788644891
+public Partial(DateTimeFieldType[] types, int[] values) {#174,17.893352357964766
+int index = indexOf(fieldType);#595,17.891006288074312
+break;#450,17.8908052444458
+if (loopUnitField.isSupported()) {#442,17.890775839487713
+throw new IllegalArgumentException("Types array must be in order largest-smallest: " +#219,17.88538498878479
+if (rangeField.compareTo(loopRangeField) > 0) {#449,17.88058653937446
+return true;#664,17.88052662936124
+super();#190,17.879408073425292
+int[] newValues = new int[size() - 1];#488,17.86891143798828
+buf.append(iTypes[i].getName());#770,17.867064595222473
+iTypes[i] = partial.getFieldType(i);#266,17.861839807950535
+DurationFieldType fieldType = period.getFieldType(i);#594,17.851374112642727
+for (; i < iTypes.length; i++) {#439,17.84361747215534
+iChronology = DateTimeUtils.getChronology(chrono).withUTC();#124,17.8423657581724
+lastUnitField = loopUnitField;#243,17.821741390228272
+iValues = values;#283,17.81666535597581
+newValues = getField().addWrapField(iPartial, iFieldIndex, newValues, valueToAdd);#918,17.80724691089831
+if (lastRangeField.compareTo(loopRangeField) < 0) {#233,17.78254692895072
+super();#153,17.78120651245117
+iChronology = chronology;#297,17.776486098766327
+private final Partial iPartial;#822,17.773352114359536
+private final Chronology iChronology;#76,17.76543147747333
+iValues = (int[]) values.clone();#248,17.760315192373174
+iValues = values;#299,17.754822437579815
+types[i - 1].getName() + " < " + loopType.getName());#229,17.743607180459158
+protected ReadablePartial getReadablePartial() {#852,17.741013765335083
+super();#280,17.73958616256714
+iTypes = partial.iTypes;#282,17.73639327287674
+buf.append(']');#774,17.733265127454484
+iChronology = chronology;#192,17.713283479213715
+newValues = getField().set(iPartial, iFieldIndex, newValues, value);#935,17.70305720242587
+types[i - 1].getName() + " < " + loopType.getName());#235,17.68220271383013
+throw new IllegalArgumentException("Values array must not be null");#197,17.678780115567722
+iValues[i] = partial.getValue(i);#267,17.67458572387695
+public int[] getValues() {#380,17.67147480357777
+super();#296,17.663976097106932
+return this;#469,17.65545508066813
+super();#123,17.648188400268555
+newValues = getField().set(iPartial, iFieldIndex, newValues, text, locale);#952,17.640678678240096
+return iTypes.length;#309,17.630760669708252
+Partial newPartial = new Partial(newChronology, iTypes, iValues);#405,17.626203260114117
+throw new IllegalArgumentException("Types array must be in order largest-smallest: " +#228,17.624060312906902
+return withPeriodAdded(period, 1);#614,17.59885459476047
+Partial newPartial = new Partial(iChronology, newTypes, newValues);#464,17.58694608749882
+newChronology = DateTimeUtils.getChronology(newChronology);#400,17.556451082229614
+throw new IllegalArgumentException("Types array must be in order largest-smallest: " +#234,17.553334673245747
+return true;#689,17.551401831886984
+chronology = DateTimeUtils.getChronology(chronology).withUTC();#191,17.55061082486753
+return iTypes[index];#344,17.542551858084543
+throw new IllegalArgumentException("Values array must be the same length as the types array");#200,17.532573946060673
+return setCopy(getMinimumValue());#994,17.530226373672484
+Partial newPartial = new Partial(iChronology, newTypes, newValues);#493,17.524458177628055
+super();#833,17.520172595977783
+iFieldIndex = fieldIndex;#835,17.492165615684108
+int compare = lastUnitField.compareTo(loopUnitField);#217,17.491621786548244
+iChronology = chronology;#155,17.488670527935028
+return setCopy(getMaximumValue());#981,17.482812118530273
+return DateTimeFormat.forPattern(pattern).withLocale(locale).print(this);#804,17.477570139128588
+public Partial(ReadablePartial partial) {#257,17.465216364179337
+private final DateTimeFieldType[] iTypes;#78,17.46471881866455
+StringBuilder buf = new StringBuilder(20 * size);#764,17.456159591674805
+FieldUtils.safeMultiply(period.getValue(i), scalar));#598,17.454673855803733
+return newPartial;#407,17.427851789137897
+iTypes = types;#203,17.42575746424058
+return new Property(this, indexOfSupported(type));#642,17.423588752746582
+int value = iTypes[i].getField(chrono).get(millis);#659,17.402348764481083
+return;#205,17.39828164236886
+return new Partial(this, newValues);#473,17.384256587308997
+return newPartial;#495,17.381230354309082
+return iPartial.getField(iFieldIndex);#844,17.379558165868122
+int[] newValues = iPartial.getValues();#951,17.377657214800518
+return new Partial(this, newValues);#570,17.35452584659352
+System.arraycopy(iTypes, i, newTypes, i + 1, newTypes.length - i - 1);#460,17.3528144736039
+iValues = values;#204,17.34874512167538
+newValues = getField(index).add(this, index, newValues, amount);#545,17.34760468094437
+int[] newValues = iPartial.getValues();#934,17.32388973236084
+chronology = DateTimeUtils.getChronology(chronology).withUTC();#154,17.323268289919252
+return iValues[index];#368,17.306024278913224
+newValues = getField(index).add(this, index, newValues,#597,17.302160479805686
+return new Partial(this, newValues);#522,17.290422327378216
+return new Partial(this, newValues);#546,17.288371759302475
+return new Partial(this, newValues);#601,17.26216478908763
+List<DateTimeFieldType> list = new ArrayList<DateTimeFieldType>(Arrays.asList(iTypes));#712,17.239187218422114
+public static class Property extends AbstractPartialFieldProperty implements Serializable {#816,17.23660659790039
+return this;#403,17.232340367635093
+int[] newValues = iPartial.getValues();#893,17.23216978708903
+newValues = getField(index).set(this, index, newValues, value);#521,17.22219862761321
+Partial(Chronology chronology, DateTimeFieldType[] types, int[] values) {#295,17.209455092748005
+private static final long serialVersionUID = 12324121189002L;#73,17.199743604660036
+private final int[] iValues;#80,17.187068419022992
+System.arraycopy(iTypes, 0, newTypes, 0, i);#456,17.18585494468952
+return iPartial.getValue(iFieldIndex);#871,17.17953932285309
+implements ReadablePartial, Serializable {#70,17.17780932258157
+newValues = getField(index).set(this, index, newValues, value);#472,17.151491430070664
+int[] newValues = iPartial.getValues();#917,17.150487462679546
+iPartial = partial;#834,17.134724881913925
+System.arraycopy(iValues, i, newValues, i + 1, newValues.length - i - 1);#461,17.130437926242227
+return iPartial;#853,17.126511742086972
+return iPartial;#862,17.123600623186896
+iChronology.validate(newPartial, newValues);#465,17.104668016786928
+extends AbstractPartial#69,17.094449520111084
+newChronology.validate(newPartial, iValues);#406,17.080851590191877
+return setCopy(text, null);#967,17.058737134933473
+return new Partial(iPartial, newValues);#953,17.048818546792734
+return iTypes[index].getField(chrono);#333,17.04519624710083
+return new Partial(iPartial, newValues);#919,17.034198968306832
+return new Partial(iPartial, newValues);#895,17.023217408553414
+return this;#590,17.019136174519858
+System.arraycopy(iTypes, index + 1, newTypes, index, newTypes.length - index);#490,17.018027570512558
+buf.append(iValues[i]);#772,17.013157299586705
+return new Partial(iPartial, newValues);#936,17.008667738541313
+public Partial(DateTimeFieldType[] types, int[] values, Chronology chronology) {#189,17.002641042073567
+this(type, value, null);#139,16.98448246717453
+iChronology.validate(newPartial, newValues);#494,16.964807545697248
+this(types, values, null);#175,16.94712609052658
+System.arraycopy(iTypes, 0, newTypes, 0, index);#489,16.908082304329707
+return newPartial;#466,16.884985474979175
+return f1.print(this);#750,16.88268369436264
+return DateTimeFormat.forPattern(pattern).print(this);#789,16.882611231370404
+Partial(Partial partial, int[] values) {#279,16.875669765472413
+System.arraycopy(iValues, 0, newValues, 0, i);#457,16.79903480924409
+private static final long serialVersionUID = 53278362873888L;#819,16.791741847991943
+newValues = getField(index).addWrapPartial(this, index, newValues, amount);#569,16.782726810824485
+System.arraycopy(iValues, index + 1, newValues, index, newValues.length - index);#492,16.699559370676678
+return this;#497,16.638418891213156
+System.arraycopy(iValues, 0, newValues, 0, index);#491,16.570743856758906
+chronology.validate(this, values);#247,16.458120081159805
+chronology.validate(this, iValues);#161,16.393632286473323
+public final class Partial#68,16.33499755859375

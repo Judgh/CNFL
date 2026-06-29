@@ -1,0 +1,347 @@
+public void setZone(DateTimeZone newZone) {#581,20.196791291236877
+if (newZone == originalZone) {#603,19.956228929407455
+public void setZoneRetainFields(DateTimeZone newZone) {#600,19.914512825012206
+private DateTimeField iField;#1260,19.74970270792643
+if (zone == null) {#118,19.742835235595702
+public void add(ReadableDuration duration, int scalar) {#521,19.736450725131565
+DateTimeZone zone = instantChrono.getZone();#959,19.691031637645903
+public void add(ReadablePeriod period, int scalar) {#548,19.68297014738384
+public DateTimeField getField() {#1297,19.64131611585617
+public void setDateTime(#998,19.5509822845459
+public void add(long duration) {#496,19.527410348256428
+if (type == null) {#1021,19.455065091451008
+if (instant instanceof ReadableDateTime) {#907,19.44735746383667
+if (duration != null) {#522,19.411334800720216
+public void add(ReadableDuration duration) {#508,19.398161479404994
+protected long getMillis() {#1306,19.389679209391275
+public Property secondOfMinute() {#1176,19.354239066441853
+public static MutableDateTime parse(String str, DateTimeFormatter formatter) {#160,19.347451375878375
+if (type == null) {#636,19.33019510904948
+public Property minuteOfDay() {#1149,19.30040030045943
+throw new NullPointerException("Zone must not be null");#119,19.288321380615233
+DateTimeZone originalZone = DateTimeUtils.getZone(getZone());#602,19.282450561523437
+public static MutableDateTime now(DateTimeZone zone) {#117,19.270132329728867
+if (chrono.getZone() != newZone) {#584,19.243575504847936
+private MutableDateTime iInstant;#1258,19.23985856771469
+public void setRounding(DateTimeField field, int mode) {#435,19.22438907623291
+if (zone != null) {#960,19.212997245788575
+public void setTime(#976,19.197480731540256
+if (type == null) {#621,19.1948366800944
+if (period != null) {#549,19.19224961598714
+private void writeObject(ObjectOutputStream oos) throws IOException {#1277,19.178302764892578
+public void addYears(final int years) {#659,19.145519937787736
+public MutableDateTime add(int value) {#1337,19.104254321048135
+DateTimeZone zone = instantChrono.getZone();#910,19.090791549682617
+public Property secondOfDay() {#1167,19.086489937522195
+public void addMinutes(final int minutes) {#815,19.077748998006186
+public void add(ReadablePeriod period) {#535,19.053651682535808
+public void add(DurationFieldType type, int amount) {#635,19.05070192673627
+public MutableDateTime getMutableDateTime() {#1325,19.030830907821656
+newZone = DateTimeUtils.getZone(newZone);#582,19.030648144808683
+public void addDays(final int days) {#763,19.028541360582626
+newZone = DateTimeUtils.getZone(newZone);#601,19.004934831099078
+public MutableDateTime(DateTimeZone zone) {#184,18.99456286430359
+public void addHours(final int hours) {#784,18.972016062055314
+public Property dayOfMonth() {#1119,18.96510089527477
+long instantMillis = DateTimeUtils.getInstantMillis(instant);#485,18.93255167741042
+setTime(instantMillis);#963,18.91065752506256
+public MutableDateTime(Object instant, DateTimeZone zone) {#279,18.89060878753662
+public DateTimeField getRoundingField() {#391,18.881042412349156
+public Property hourOfDay() {#1140,18.878526080738414
+public MutableDateTime set(int value) {#1374,18.85798298685174
+public void addMonths(final int months) {#701,18.85585619608561
+throw new IllegalArgumentException("Field must not be null");#622,18.85116500854492
+DateTimeZone zone) {#350,18.826985518137615
+public Property centuryOfEra() {#1045,18.81695779164632
+public void setDate(#927,18.806828180948894
+public void addWeeks(final int weeks) {#722,18.80479513804118
+public Property yearOfEra() {#1063,18.799209276835125
+public Property minuteOfHour() {#1158,18.798064145174894
+public Property monthOfYear() {#1090,18.794120181690563
+public MutableDateTime roundHalfFloor() {#1436,18.78745826921965
+public void setRounding(DateTimeField field) {#417,18.780738413333893
+public Property yearOfCentury() {#1054,18.77993090947469
+if (field.isSupported() == false) {#1025,18.77726509696559
+public MutableDateTime roundFloor() {#1413,18.76438003116184
+public void set(DateTimeFieldType type, int value) {#620,18.763760778639053
+throw new NullPointerException("Chronology must not be null");#134,18.76219431559245
+public String toString() {#1228,18.75347766876221
+throw new IllegalArgumentException("The DateTimeFieldType must not be null");#1022,18.746295008166083
+throw new IllegalArgumentException("Field must not be null");#637,18.7415678024292
+final int dayOfMonth) {#930,18.740266850120143
+public MutableDateTime add(long value) {#1349,18.73981877377159
+throw new IllegalArgumentException("Illegal rounding mode: " + mode);#437,18.731956039156234
+protected Chronology getChronology() {#1316,18.7291779237635
+public void setMillis(long instant) {#453,18.718764305114746
+public Property dayOfWeek() {#1130,18.714944579384543
+public Property dayOfYear() {#1108,18.709353880448774
+public MutableDateTime roundHalfEven() {#1460,18.708384037017822
+public void addMillis(final int millis) {#879,18.693720281124115
+long instant = getChronology().getDateTimeMillis(#1006,18.68460546840321
+public Property millisOfDay() {#1185,18.67780065536499
+public void setDate(final long instant) {#891,18.657473632267543
+public MutableDateTime set(String text) {#1401,18.6527422352841
+if (chronology == null) {#133,18.638365149497986
+DateTimeField field = type.getField(getChronology());#1024,18.637405644292418
+Chronology instantChrono = DateTimeUtils.getInstantChronology(instant);#958,18.633847828569085
+Chronology c = getChronology();#931,18.58461222929113
+try {#1215,18.56676149368286
+long instant = getChronology().getDateTimeMillis(#981,18.56471265446056
+public void addSeconds(final int seconds) {#846,18.559991772969564
+if (field != null && (mode < ROUND_NONE || mode > ROUND_HALF_EVEN)) {#436,18.55809908443027
+Property(MutableDateTime instant, DateTimeField field) {#1268,18.557371096177533
+ReadableDateTime rdt = (ReadableDateTime) instant;#908,18.54961723751492
+public void setDayOfMonth(final int dayOfMonth) {#743,18.544307655758328
+public Property year() {#1072,18.53749328189426
+return formatter.parseDateTime(str).toMutableDateTime();#161,18.53721062342326
+public Property property(DateTimeFieldType type) {#1020,18.531364568074544
+setDate(instantMillis);#915,18.52811348438263
+public MutableDateTime(Object instant) {#256,18.5210052217756
+long instantMillis = DateTimeUtils.getInstantMillis(instant);#957,18.513992896446815
+public Property era() {#1036,18.484417067633736
+@FromString#148,18.48424530029297
+private void readObject(ObjectInputStream oos) throws IOException, ClassNotFoundException {#1285,18.479893105370657
+public void setMinuteOfDay(final int minuteOfDay) {#795,18.478167584067897
+@ToString#1227,18.46616527012416
+public MutableDateTime set(String text, Locale locale) {#1388,18.455419664797574
+return new Property(this, getChronology().secondOfMinute());#1177,18.407038807868958
+public Property millisOfSecond() {#1194,18.40592885017395
+public int getRoundingMode() {#401,18.402615547180176
+long millis = originalZone.getMillisKeepLocal(newZone, getMillis());#607,18.402556930269515
+if (zone != null) {#911,18.40234881953189
+int secondOfMinute,#348,18.39830991956923
+return new MutableDateTime();#106,18.397595977783205
+public MutableDateTime(long instant, DateTimeZone zone) {#222,18.397587826377467
+instantMillis = zone.getMillisKeepLocal(DateTimeZone.UTC, instantMillis);#961,18.395925998687744
+return new Property(this, getChronology().yearOfCentury());#1055,18.38817052046458
+public MutableDateTime addWrapField(int value) {#1361,18.38625652139837
+public void setDayOfYear(final int dayOfYear) {#733,18.3710036277771
+public MutableDateTime() {#171,18.367588996887207
+public void setSecondOfMinute(final int secondOfMinute) {#836,18.360250234603882
+long instantMillis = DateTimeUtils.getInstantMillis(instant);#906,18.348135397984432
+throw new IllegalArgumentException("Field '" + type + "' is not supported");#1026,18.342141151428223
+public void setSecondOfDay(final int secondOfDay) {#826,18.341551568773056
+public void setDayOfWeek(final int dayOfWeek) {#753,18.33224254184299
+public void setTime(final ReadableInstant instant) {#956,18.32816481590271
+Chronology chrono = getChronology();#583,18.32337209913466
+int secondOfMinute,#377,18.318635940551758
+public void setMonthOfYear(final int monthOfYear) {#691,18.31045738855998
+return (MutableDateTime) clone();#1205,18.302392454708325
+instantMillis = zone.getMillisKeepLocal(getZone(), instantMillis);#912,18.30207565852574
+private DateTimeField iRoundingField;#93,18.2831701865563
+DateTimeFieldType type = (DateTimeFieldType) oos.readObject();#1287,18.268754959106445
+public void setMillisOfDay(final int millisOfDay) {#857,18.267132377624513
+public static MutableDateTime now(Chronology chronology) {#132,18.24467578687166
+return new Property(this, getChronology().minuteOfDay());#1150,18.232655110566512
+return new Property(this, getChronology().year());#1073,18.228399322146462
+return new MutableDateTime(zone);#121,18.227359603433047
+return iInstant;#1415,18.22703516483307
+extends BaseDateTime#73,18.220275561014812
+return new Property(this, getChronology().millisOfDay());#1186,18.215731342633564
+return new Property(this, getChronology().secondOfDay());#1168,18.210967437080715
+iRoundingField = (mode == ROUND_NONE ? null : field);#439,18.204169310056248
+public void setYear(final int year) {#649,18.203118188040598
+setDate(instantMidnight);#933,18.197700142860413
+public Property weekOfWeekyear() {#1099,18.181301434834797
+public void setMillis(ReadableInstant instant) {#484,18.18071448802948
+final int millisOfSecond) {#980,18.176619958877563
+return new Property(this, getChronology().hourOfDay());#1141,18.15998603986657
+return new Property(this, getChronology().yearOfEra());#1064,18.153901259104412
+public static MutableDateTime now() {#105,18.144903623140774
+long instantMidnight = c.getDateTimeMillis(year, monthOfYear, dayOfMonth, 0);#932,18.14002854896314
+return;#604,18.139749118259974
+iInstant = (MutableDateTime) oos.readObject();#1286,18.13734941129331
+return new Property(this, getChronology().centuryOfEra());#1046,18.123632311820984
+return new Property(this, getChronology().monthOfYear());#1091,18.117529495902684
+iField = type.getField(iInstant.getChronology());#1288,18.114396946770803
+public Property weekyear() {#1081,18.112224769592284
+public static final int ROUND_NONE = 0;#80,18.11191952228546
+public static MutableDateTime parse(String str) {#149,18.11070603132248
+return new Property(this, getChronology().weekOfWeekyear());#1100,18.110254367192585
+public void setHourOfDay(final int hourOfDay) {#774,18.076051500108505
+return new Property(this, getChronology().weekyear());#1082,18.066841862418435
+return iInstant.getMillis();#1307,18.057976913452148
+setMillis(getMillis());#441,18.056807696819305
+public MutableDateTime roundHalfCeiling() {#1448,18.054485058784486
+hourOfDay, minuteOfHour, secondOfMinute, millisOfSecond, zone);#352,18.050279589260327
+getMillis(), hour, minuteOfHour, secondOfMinute, millisOfSecond);#982,18.036375284194946
+public void setDate(final ReadableInstant instant) {#905,18.03405237197876
+public MutableDateTime(Chronology chronology) {#198,18.030174367568073
+add(FieldUtils.safeMultiply(duration.getMillis(), scalar));#523,18.025581747293472
+return new Property(this, getChronology().minuteOfHour());#1159,18.024971879046895
+return new Property(this, getChronology().dayOfWeek());#1131,18.023655269456945
+iRoundingMode = (field == null ? ROUND_NONE : mode);#440,18.019731448246883
+return new Property(this, getChronology().millisOfSecond());#1195,18.014079848925274
+return new Property(this, getChronology().dayOfMonth());#1120,18.009418404620625
+int monthOfYear,#318,17.999372482299805
+return super.clone();#1216,17.99283016429228
+return iInstant;#1426,17.982820630073547
+switch (iRoundingMode) {#454,17.978184521198273
+return new Property(this, getChronology().dayOfYear());#1109,17.976012229919434
+break;#471,17.975552982754177
+public void setChronology(Chronology chronology) {#562,17.967917071448433
+setMillis(getChronology().secondOfMinute().set(getMillis(), secondOfMinute));#837,17.965970704049774
+return iInstant.getChronology();#1317,17.959761029198056
+public MutableDateTime roundCeiling() {#1424,17.9594457525956
+setMillis(instant);#1008,17.953952026367187
+return new Property(this, getChronology().era());#1037,17.94441200438
+Chronology instantChrono = DateTimeUtils.getChronology(rdt.getChronology());#909,17.94165142162426
+final int hour,#977,17.939397633075714
+super(instant, (Chronology) null);#257,17.938393688201906
+public MutableDateTime(#316,17.927673244476317
+public void setMinuteOfHour(final int minuteOfHour) {#805,17.92638131191856
+public void setWeekOfWeekyear(final int weekOfWeekyear) {#712,17.922233867645264
+public static final int ROUND_CEILING = 2;#84,17.91534350900089
+private int iRoundingMode;#95,17.911145643754438
+public void setTime(final long millis) {#944,17.9109743754069
+setMillis(getChronology().minutes().add(getMillis(), minutes));#816,17.90856757760048
+iInstant.setMillis(getField().roundFloor(iInstant.getMillis()));#1414,17.908073705785416
+return iInstant;#1351,17.908006072044373
+public static final int ROUND_HALF_CEILING = 4;#88,17.904490243820916
+public MutableDateTime copy() {#1204,17.902096271514893
+public void setMillisOfSecond(final int millisOfSecond) {#867,17.896788549423217
+final int monthOfYear,#1000,17.89656247033013
+super(instant, zone);#223,17.8948694229126
+public MutableDateTime(long instant) {#209,17.893014362880162
+int dayOfMonth,#345,17.87313876432531
+setMillis(getChronology().days().add(getMillis(), days));#764,17.872260524380593
+iField = field;#1271,17.872200460994947
+int millisOfSecond) {#323,17.870092994288395
+return iInstant;#1390,17.863449811935425
+int dayOfMonth,#319,17.86198414073271
+public MutableDateTime(#342,17.86040735244751
+setMillis(instant);#983,17.85371513366699
+public void addWeekyears(final int weekyears) {#680,17.85292476415634
+setMillis(getChronology().seconds().add(getMillis(), seconds));#847,17.85259594455842
+setMillis(getChronology().months().add(getMillis(), months));#702,17.850785901469568
+year, monthOfYear, dayOfMonth, hourOfDay, minuteOfHour, secondOfMinute, millisOfSecond);#1007,17.846645021438597
+case ROUND_CEILING:#460,17.84568018913269
+return iInstant;#1462,17.84541392326355
+int dayOfMonth,#374,17.84189774008358
+final int secondOfMinute,#979,17.839666717930843
+return iInstant;#1450,17.836527824401855
+add(duration, 1);#509,17.830957617078507
+throw new InternalError("Clone error");#1218,17.82339059738886
+int monthOfYear,#373,17.81805408702177
+return iInstant;#1438,17.81652057170868
+return new Property(this, field);#1028,17.812110900878906
+public void setWeekyear(final int weekyear) {#670,17.811218798160553
+final int dayOfMonth,#1001,17.810835891299778
+int monthOfYear,#344,17.79470780316521
+super(instant, zone);#280,17.791643206278483
+instant = iRoundingField.roundHalfEven(instant);#470,17.790175851186117
+iInstant.setMillis(getField().roundHalfEven(iInstant.getMillis()));#1461,17.784102580126593
+setMillis(getChronology().years().add(getMillis(), years));#660,17.780401937423214
+final int minuteOfHour,#978,17.776925086975098
+setMillis(getChronology().secondOfDay().set(getMillis(), secondOfDay));#827,17.768068405889696
+return iInstant;#1339,17.767692923545837
+final int secondOfMinute,#1004,17.7534862317537
+int minuteOfHour,#347,17.74438700956457
+final int millisOfSecond) {#1005,17.743348693847658
+final int minuteOfHour,#1003,17.736674732632107
+super(instant);#210,17.73626943734976
+setMillis(getChronology().hours().add(getMillis(), hours));#785,17.735240321005545
+final int hourOfDay,#1002,17.713792324066162
+public MutableDateTime(#371,17.708945083618165
+setChronology(getChronology().withZone(newZone));  // set via this class not super#608,17.69996964931488
+super(zone);#185,17.68987576166789
+break;#462,17.680320421854656
+int millisOfDay = ISOChronology.getInstanceUTC().millisOfDay().get(millis);#945,17.678687124541312
+break;#465,17.675598250495064
+int hourOfDay,#346,17.67206865198472
+int year,#372,17.664830525716145
+setMillis(getChronology().minuteOfDay().set(getMillis(), minuteOfDay));#796,17.66231866036692
+int minuteOfHour,#376,17.66059196696562
+super(year, monthOfYear, dayOfMonth, hourOfDay, minuteOfHour, secondOfMinute, millisOfSecond);#324,17.65105618928608
+hourOfDay, minuteOfHour, secondOfMinute, millisOfSecond, chronology);#381,17.648983710152763
+iInstant.setMillis(getField().roundHalfFloor(iInstant.getMillis()));#1437,17.63732624053955
+oos.writeObject(iInstant);#1278,17.630708512805757
+int year,#317,17.630290603637697
+return iInstant;#1326,17.627869248390198
+iInstant = instant;#1270,17.621857250438016
+final int year,#999,17.6172616481781
+setMillis(getChronology().millisOfDay().set(getMillis(), millisOfDay));#858,17.61263067072088
+int hourOfDay,#375,17.608378298142377
+int minuteOfHour,#321,17.606292051427506
+setMillis(getChronology().millisOfDay().set(instant, getMillisOfDay()));#892,17.603628354914047
+setMillis(getChronology().add(period, getMillis(), scalar));  // set via this class not super#550,17.602648878097533
+int year,#343,17.599753697713215
+setMillis(instantMillis);  // set via this class not super#486,17.59637596130371
+setMillis(getChronology().hourOfDay().set(getMillis(), hourOfDay));#775,17.594581788586034
+return ISODateTimeFormat.dateTime().print(this);#1229,17.58841544931585
+int hourOfDay,#320,17.58836499382468
+setMillis(getChronology().millis().add(getMillis(), millis));#880,17.583826729745574
+int secondOfMinute,#322,17.579756524827744
+final int year,#928,17.576735079288483
+public Object clone() {#1214,17.573867268032497
+implements ReadWritableDateTime, Cloneable, Serializable {#74,17.55056581043062
+return iField;#1298,17.545960545539856
+super();#172,17.541329383850098
+case ROUND_NONE:#455,17.53986268294485
+setMillis(getChronology().weeks().add(getMillis(), weeks));#723,17.517145216464996
+case ROUND_HALF_CEILING:#466,17.516149878501892
+instant = iRoundingField.roundCeiling(instant);#461,17.50435306179908
+setMillis(getChronology().monthOfYear().set(getMillis(), monthOfYear));#692,17.4959296564902
+iInstant.setMillis(getField().add(iInstant.getMillis(), value));#1338,17.48698379054214
+public static final class Property extends AbstractReadableInstantFieldProperty {#1252,17.486483461716595
+setMillis(getChronology().weekyears().add(getMillis(), weekyears));#681,17.481597062313195
+setMillis(getChronology().dayOfMonth().set(getMillis(), dayOfMonth));#744,17.47447127680625
+setChronology(chrono.withZone(newZone));  // set via this class not super#585,17.4730845339158
+return iRoundingMode;#402,17.4661831174578
+return iInstant;#1376,17.459302246570587
+iInstant.setMillis(getField().add(iInstant.getMillis(), value));#1350,17.45909693746856
+setMillis(millis);#609,17.45761032104492
+setMillis(type.getField(getChronology()).add(getMillis(), amount));#639,17.447510010855538
+instant = iRoundingField.roundFloor(instant);#458,17.439514255523683
+iInstant.setMillis(getField().roundHalfCeiling(iInstant.getMillis()));#1449,17.42186925146315
+setMillis(getChronology().dayOfWeek().set(getMillis(), dayOfWeek));#754,17.401780528406942
+break;#459,17.400410334269207
+break;#468,17.397879600524902
+instant = iRoundingField.roundHalfFloor(instant);#464,17.392811467570642
+public class MutableDateTime#72,17.387189592633927
+iInstant.setMillis(getField().set(iInstant.getMillis(), text, locale));#1389,17.374207823617116
+private static final long serialVersionUID = -4481126543819298617L;#1255,17.366258723395212
+iInstant.setMillis(getField().set(iInstant.getMillis(), value));#1375,17.346471988793574
+return iInstant;#1363,17.33472031354904
+iInstant.setMillis(getField().roundCeiling(iInstant.getMillis()));#1425,17.330651310511996
+setMillis(getChronology().minuteOfHour().set(getMillis(), minuteOfHour));#806,17.304229305636497
+return new MutableDateTime(chronology);#136,17.304183853997124
+oos.writeObject(iField.getType());#1279,17.29846179485321
+final int monthOfYear,#929,17.298050827450222
+instant = iRoundingField.roundHalfCeiling(instant);#467,17.296966284513474
+setMillis(getChronology().dayOfYear().set(getMillis(), dayOfYear));#734,17.29285209409652
+return parse(str, ISODateTimeFormat.dateTimeParser().withOffsetParsed());#150,17.29210199158767
+return iRoundingField;#392,17.281689643859863
+iInstant.setMillis(getField().addWrapField(iInstant.getMillis(), value));#1362,17.28078293800354
+public MutableDateTime(Object instant, Chronology chronology) {#299,17.27501522867303
+setMillis(getChronology().millisOfSecond().set(getMillis(), millisOfSecond));#868,17.274145126342773
+setMillis(getChronology().weekOfWeekyear().set(getMillis(), weekOfWeekyear));#713,17.27060098359079
+public static final int ROUND_HALF_FLOOR = 3;#86,17.26972348349435
+return iInstant;#1403,17.261531114578247
+setMillis(getChronology().year().set(getMillis(), year));#650,17.250327710752135
+super(year, monthOfYear, dayOfMonth,#351,17.231873273849487
+setMillis(getChronology().millisOfDay().set(getMillis(), millisOfDay));#946,17.231436758330375
+super.setMillis(instant);#473,17.227662871865665
+add(period, 1);#536,17.226279394967214
+super(year, monthOfYear, dayOfMonth,#380,17.207364749908447
+super();#1269,17.20172051021031
+set(text, null);#1402,17.186477926042343
+setMillis(getChronology().weekyear().set(getMillis(), weekyear));#671,17.16178114660855
+Chronology chronology) {#379,17.15848705503676
+public static final int ROUND_HALF_EVEN = 5;#90,17.14383716583252
+int millisOfSecond,#378,17.13796509636773
+case ROUND_FLOOR:#457,17.116413164138795
+int millisOfSecond,#349,17.113502820332844
+public static final int ROUND_FLOOR = 1;#82,17.112451777738684
+setMillis(type.getField(getChronology()).set(getMillis(), value));#624,17.092096913245417
+break;#456,17.090758800506592
+setMillis(FieldUtils.safeAdd(getMillis(), duration));  // set via this class not super#497,17.063299641464695
+public MutableDateTime(long instant, Chronology chronology) {#236,17.05345374659488
+case ROUND_HALF_FLOOR:#463,16.903022090593975
+super(instant, DateTimeUtils.getChronology(chronology));#300,16.901951019580547
+setRounding(field, MutableDateTime.ROUND_FLOOR);#418,16.804059175344612
+private static final long serialVersionUID = 2852608688135209575L;#77,16.553567799654875
+case ROUND_HALF_EVEN:#469,16.549249275870945
+super(chronology);#199,16.457679601816032
+super(instant, chronology);#237,16.310349822044373
+super.setChronology(chronology);#563,15.581525378757053

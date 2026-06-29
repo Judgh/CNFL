@@ -1,0 +1,103 @@
+double p;#210,19.911136225650186
+double p1;#211,19.765834617614747
+clearResult();#128,19.31300059231845
+verifyInterval(min, max);#129,19.146563351154327
+p = dx * r3;#217,18.903216927139848
+double r2 = y1 / y2;#222,18.897406323750815
+double tolerance =#197,18.837748781840006
+if (Math.abs(y2) < Math.abs(y1)) {#180,18.8323673248291
+double dx = (x2 - x1);#196,18.809511531483043
+Math.max(relativeAccuracy * Math.abs(x1), absoluteAccuracy);#198,18.70003989083426
+if (Math.abs(y1) <= functionValueAccuracy) {#189,18.52076836994716
+if ((y1 > 0) == (y2 > 0)) {#255,18.490865884003817
+if (Math.abs(yMin) <= functionValueAccuracy) {#82,18.4891193707784
+delta = 0.5 * dx;#236,18.461133241653442
+if (Math.abs(delta) > tolerance) {#247,18.43756507873535
+delta = 0.5 * dx;#206,18.43147122859955
+oldDelta = delta;#207,18.405199459620885
+double yMax = f.value(max);#134,18.383009274800617
+p1 = -p1;#227,18.371153478269225
+private static final long serialVersionUID = -2136672307739067002L;#34,18.36190824923308
+if (2.0 * p >= 1.5 * dx * p1 - Math.abs(tolerance * p1) ||#231,18.35903629389676
+double sign = yMin * yMax;#137,18.340214673210593
+double r1 = y0 / y2;#221,18.324201583862305
+if ((Math.abs(oldDelta) < tolerance) ||#203,18.310168685913087
+p1 = 1.0 - r3;#218,18.20290406545003
+x1 = x1 + 0.5 * tolerance;#250,18.2001314503806
+p1 = (r1 - 1.0) * (r2 - 1.0) * (r3 - 1.0);#224,18.199072234484614
+if (x0 == x2) {#215,18.19624008178711
+y1 = f.value(x1);#254,18.1929348598827
+double r3 = y1 / y0;#209,18.128503799438477
+p = r3 * (dx * r1 * (r1 - r2) - (x1 - x0) * (r2 - 1.0));#223,18.116290335221723
+if (Math.abs(yInitial) <= functionValueAccuracy) {#75,18.088673909505207
+x1 = x1 + delta;#248,18.087403138478596
+double yMax = f.value(max);#93,18.081366486019558
+if (Math.abs(yMax) <= functionValueAccuracy) {#94,18.063188513120014
+if (yInitial * yMin < 0) {#88,18.02312479521099
+double yMin = f.value(min);#81,18.001807000901962
+("Function values at endpoints do not have different signs." +#142,18.000452074511298
+(Math.abs(y0) <= Math.abs(y1))) {#204,17.99799380431304
+x0 = x1;#244,17.993234210544163
+double yMin = f.value(min);#133,17.987718900044758
+y0 = y1;#185,17.986553192138672
+x0 = x1;#182,17.984815510836516
+x1 = x2;#183,17.88665346665816
+x2 = x0;#184,17.870675780556418
+p = -p;#229,17.870561790466308
+if (p > 0.0) {#226,17.858464431762695
+if (yInitial * yMax < 0) {#100,17.8393352910092
+if (Math.abs(dx) <= tolerance) {#199,17.822617093722027
+oldDelta = delta;#237,17.804058723449707
+y0 = y1;#245,17.749783356984455
+throw new IllegalArgumentException#141,17.73403245752508
+return result;#201,17.726109906246787
+if (sign >= 0) {#138,17.65431741078695
+return result;#194,17.64296757547479
+y1 = y2;#186,17.640014951879326
+"  Values: [" + yMin + "," + yMax + "]");#144,17.615623019990466
+FunctionEvaluationException {#126,17.60258252280099
+delta = p / p1;#240,17.601149135165745
+double ret = Double.NaN;#131,17.594185411930084
+i++;#261,17.576216425214493
+x1 = x1 - 0.5 * tolerance;#252,17.548174585614884
+double yInitial = f.value(initial);#74,17.469497044881184
+setResult(x1, i);#193,17.455057779947918
+" interval." + "  Initial: " + initial +#69,17.444267946131088
+oldDelta = delta;#239,17.437782974243163
+double oldDelta = delta;#176,17.424709183829172
+p >= Math.abs(0.5 * oldDelta * p1)) {#232,17.4227621264574
+if (((initial - min) * (max -initial)) < 0) {#67,17.40327980041504
+double delta = x1 - x0;#175,17.35139218498679
+super(f, 100, 1E-6);#42,17.311176952562835
+int i = 0;#178,17.264542212853065
+x2 = x0;#256,17.195376136086203
+"  Endpoints: [" + min + "," + max + "]" +#143,17.135241712842667
+return ret;#151,17.123628963123668
+delta = x1 - x0;#258,17.109589139620464
+y2 = y0;#187,17.079095883802935
+double x2, double y2)#172,17.06484574982614
+public double solve(double min, double max, double initial)#64,17.02735210867489
+y2 = y0;#257,17.027299404144287
+"  Endpoints: [" + min + "," + max + "]");#70,17.019176311981983
+setResult(yMax, 0);#95,16.99823126792908
+setResult(x1, i);#200,16.99792257944743
+ret = solve(min, yMin, max, yMax, min, yMin);#147,16.993722085029848
+throw new IllegalArgumentException("Initial guess is not in search" +#68,16.98644768750226
+while (i < maximalIterationCount) {#179,16.983839988708496
+private double solve(double x0, double y0,#170,16.810607433319092
+return result;#77,16.797349484761558
+throw new MaxIterationsExceededException(maximalIterationCount);#263,16.783803939819336
+throws MaxIterationsExceededException, FunctionEvaluationException {#65,16.740241216576617
+return result;#96,16.71908645629883
+public double solve(double min, double max) throws MaxIterationsExceededException,#125,16.714842001597088
+setResult(yMin, 0);#83,16.698228073120116
+public BrentSolver(UnivariateRealFunction f) {#41,16.6960928440094
+double x1, double y1,#171,16.65788815238259
+oldDelta = delta;#259,16.643776711963472
+return solve(min, yMin, max, yMax, initial, yInitial);#105,16.62878021827111
+setResult(initial, 0);#76,16.534445461473968
+return result;#84,16.50816478729248
+return solve(initial, yInitial, max, yMax, initial, yInitial);#101,16.17513920466105
+public class BrentSolver extends UnivariateRealSolverImpl {#31,16.10608012335641
+return solve(min, yMin, initial, yInitial, min, yMin);#89,16.08027302424113
+throws MaxIterationsExceededException, FunctionEvaluationException {#173,16.04787786383378

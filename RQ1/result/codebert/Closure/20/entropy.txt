@@ -1,0 +1,875 @@
+case '[':#1662,20.305880286476828
+case '\\':#1646,20.025054693222046
+final int precedence) {#1069,19.906258669766512
+case '/':#1649,19.769665457985617
+case '\r': case '\n': case '\u2028': case '\u2029':#1672,19.71516641974449
+StringBuilder sb = null;#1640,19.687892046841707
+case ']':#1667,19.60072676340739
+if (null == pattern || (null != flags && null != flags.getNext())) {#1457,19.56019349892934
+case Token.NAME:#426,19.450994051419773
+case Token.HOOK: {#1246,19.416065362783577
+case Token.WITH:#1053,19.38069588797433
+case Token.FOR:#1055,19.33855496920072
+case Token.NAME:#154,19.324061567133125
+case Token.EQ:#603,19.322670300801594
+static boolean containsUnicodeEscape(String s) {#1708,19.311239624023436
+case Token.NOT:#1129,19.2829552563754
+if (callTarget != null && callTarget.isName() &&#211,19.278864171769882
+case Token.HOOK:#114,19.265772978464764
+case Token.NOT: {#1132,19.20308881998062
+if (!mayHaveSideEffects(operand)) {#421,19.195165043785458
+String name = result.getString();#427,19.18261930677626
+case Token.NOT:#102,19.181624846024945
+case Token.WHILE:#1054,19.11225802557809
+&& pattern.getString().length() < 100#1469,19.068430529700386
+switch (ch) {#1645,18.966564178466797
+if (s.length() != 1) {#1578,18.952754080295563
+public boolean apply(Node input) {#1101,18.93519469669887
+if (follow == null && (n.isThrow() || result != null)) {#486,18.921375274658203
+case Token.IF:#106,18.898207924582742
+&& (null == flags || flags.isString())#1471,18.89509828467118
+private void addParameterAfter(Node parameterList, Node after) {#263,18.882943212985992
+for (int i = 0; i < s.length(); ++i) {#1643,18.882597015017556
+FoldArrayAction action = FoldArrayAction.NOT_SAFE_TO_FOLD;#1423,18.871335071066152
+switch (ch) {#1686,18.86298681894938
+&& (isEcmaScript5OrGreater()#1474,18.862405024076764
+case '\u2028': sb.append("\\u2028"); break;#1689,18.8585232457807
+String s = n.getString();#1638,18.85681462287903
+case Token.IF:#1046,18.855478286743164
+case Token.NEW:#134,18.852488777854226
+"Array",#1331,18.834721671210396
+if (null == sb) { sb = new StringBuilder(s.length() + 16); }#1680,18.82534847837506
+if (null == flags || "".equals(flags.getString())) {#1484,18.800097068150837
+if (type == Token.OR && !rval ||#1229,18.798421079462226
+if (bind.thisValue != null && !NodeUtil.isUndefined(bind.thisValue)) {#247,18.777975114186606
+public boolean apply(Node input) {#1072,18.77520833696638
+case Token.VOID:#419,18.764217581067765
+if (!leftParent.isNot()#1157,18.758797125382856
+if (!isEscaped && !inCharset) {#1656,18.752902569978133
+@SuppressWarnings("fallthrough")#76,18.748446385065716
+Node fixedIfCondition = IR.not(ifCondition)#189,18.74762706756592
+if (!isEscaped) {#1663,18.745133624357337
+if (follow == null && (n.isThrow() || exitExpr != null)) {#530,18.72762433687846
+private static enum FoldArrayAction {#1413,18.72371843126085
+case Token.WHILE:#118,18.72304900487264
+if (arg.getDouble() == 0) {#1437,18.719747952052526
+sb.append(s, pos, i - 1);#1682,18.718336486816405
+for (String cur : strings) {#1591,18.71722343989781
+case Token.FALSE:#131,18.715015331904095
+String[] delimiters = new String[]{" ", ";", ",", "{", "}", null};#1588,18.708779675619944
+case Token.SHEQ:#609,18.705018777113693
+if (name.equals("undefined")) {#428,18.696188517979213
+if (isEscaped) {#1681,18.69472307317397
+if (parameterList != null) {#264,18.678406421954815
+if (!isEscaped) {#1668,18.67824150534237
+if (null == sb) { return n.cloneTree(); }#1698,18.66957744799162
+return nodeThis.isEquivalentTo(nodeThat)#573,18.668922245502472
+if (!isPure(exitExpr)) {#524,18.652065932750702
+case Token.AND:#1140,18.63393522898356
+switch (notChild.getType()) {#602,18.63057752755972
+case Token.OR: {#1141,18.629009008407593
+case Token.ARRAYLIT:#1441,18.62606817483902
+Node left, right;#1152,18.61531056855854
+if (bind != null) {#237,18.608157071200285
+if (forCondition.isEmpty()) {#194,18.600882025326
+if (null == sb) { sb = new StringBuilder(s.length() + 16); }#1657,18.59472146715437
+if (saving <= 0) {#1542,18.593494155190207
+for (String s : strings) {#1577,18.591348965962727
+case Token.THROW: {#91,18.587507588522776
+case Token.NUMBER:#1435,18.584234305790492
+if ("RegExp".equals(className)) {#1379,18.57781145307753
+if (!late) {#169,18.5723967022366
+case Token.STRING:#1431,18.56830324445452
+"Invalid flags to RegExp constructor: {0}");#51,18.559441804885864
+default:#1193,18.556701513437126
+private boolean isLowerPrecedence(Node n, final int precedence) {#1084,18.547000143263077
+if (arg == null) {#1425,18.54463022405451
+if (maybeExpr.isExprResult()) {#926,18.544316816329957
+if (late) {#1509,18.54299195607503
+case Token.TRUE:#130,18.535972515741985
+pattern = makeForwardSlashBracketSafe(pattern);#1481,18.53268337249756
+"Object",#1330,18.532038688659668
+if (!NodeUtil.isForIn(node)) {#124,18.519267899649485
+if (cond.isNot() && !consumesDanglingElse(elseBranch)) {#736,18.508651574452717
+case '\r': sb.append("\\r"); break;#1687,18.508462870562518
+if (maybeIf.getChildCount() == 3) {#181,18.48481900351388
+Predicate<Node> isLowerPrecedencePredicate = new Predicate<Node>() {#1070,18.48454116821289
+case Token.FOR:#123,18.480480020696465
+if (!newNode.isEquivalentTo(n)) {#1315,18.471316786373364
+boolean rval = rightVal.toBoolean(true);#1225,18.46230423968771
+case Token.AND: {#1206,18.461204608281452
+case Token.THROW:#377,18.461100651667667
+case '\n': sb.append("\\n"); break;#1688,18.460702896118164
+if (maybeIf != null && maybeIf.isIf()) {#175,18.457509411705864
+Node elseExpr = elseOp.getLastChild();#783,18.454151391983032
+Node replacement = null;#1262,18.441540938157303
+default:#1058,18.433389091491698
+replacement = IR.not(condition);#1274,18.432149940066868
+return isEcmaScript5OrGreater() || flags.indexOf('g') < 0;#1631,18.427632408142088
+case Token.OR:#1205,18.425197167830035
+action == FoldArrayAction.SAFE_TO_FOLD_WITHOUT_ARGS) {#1394,18.42366600036621
+Node flags = null != pattern ? pattern.getNext() : null;  // e.g. gi#1455,18.41884023171884
+if (leftParent.isNot()) {#1171,18.412943881490957
+if (rightParent.isNot()) {#1177,18.40921741983165
+case Token.NE:#606,18.406907775185324
+if (action == FoldArrayAction.SAFE_TO_FOLD_WITH_ARGS ||#1393,18.39964720606804
+case '\u2029': sb.append("\\u2029"); break;#1690,18.39120138845136
+Node regexLiteral;#1483,18.384822209676106
+Node newStatement = IR.exprResult(right);#286,18.38148257311653
+return delimiters[i];#1598,18.377817500721324
+String esc = CodeGenerator.regexpEscape(s);#1709,18.373074029621325
+if (innerElseBranch == null &&#707,18.363568260556175
+addParameterAfter(bind.parameters, callTarget);#244,18.363456567128498
+if (replacement != null) {#1236,18.363423506418865
+case Token.DO:#119,18.361705433238637
+private boolean isHigherPrecedence(Node n, final int precedence) {#1091,18.358131143781875
+if (thenBranch.isEquivalentToTyped(nextThen)) {#318,18.357995880974663
+if (allStrings) {#1527,18.34733806956898
+switch (arg.getType()) {#1430,18.338016305650985
+case Token.CALL:#141,18.33532937367757
+for (int i = -1; (i = esc.indexOf("\\u", i + 1)) >= 0;) {#1710,18.33292981982231
+@Override#75,18.33197593688965
+if (late) {#272,18.32521692911784
+for (;!ControlFlowAnalysis.isBreakTarget(breakTarget, null /* no label */);#456,18.323320960998537
+&& maybeName1.getString().equals(name2.getString())) {#848,18.30829429626465
+&& name1.getString().equals(maybeName2.getString())) {#823,18.30599623713
+sb.append(s, pos, i);#1684,18.299252551534902
+if (!isPure(result)) {#480,18.294111319950648
+switch (result.getType()) {#418,18.29138857977731
+if ("Object".equals(className) && !constructorHasArgs) {#1385,18.289972928854134
+if (calledFn.isGetElem()) {#938,18.28278072675069
+if ((isLowerPrecedence(leftParent, NOT_PRECEDENCE)#1163,18.274920042823343
+sb.append(s, pos, i).append('\\');#1658,18.27315496515345
+Node call = IR.call(#1557,18.265179047217735
+if (// is pattern folded#1462,18.249778461456298
+if (!node.isCall()) {#136,18.248260855674744
+if (isReturnExpressBlock(thenBranch)) {#347,18.24816573749889
+Node right = n.getLastChild();#1208,18.246391969568588
+NEXT_DELIMITER: for (;delimiters[i] != null; i++) {#1590,18.234818049839564
+Node elseExpr = getBlockReturnExpression(elseBranch);#747,18.230613526843843
+@Override#1100,18.22601056098938
+if (prefinallyFollows != follow) {#478,18.21313082377116
+Bind bind = getCodingConvention().describeFunctionBind(callTarget, false);#236,18.21310283826745
+if (!late && isPropertyAssignmentInExpression(expr)) {#651,18.198975272800613
+if (NodeUtil.getPureBooleanValue(right) != TernaryValue.UNKNOWN) {#1222,18.197783291339874
+while (i - nSlashes > 0 && '\\' == esc.charAt(i - nSlashes - 1)) {#1712,18.19617852042703
+public boolean apply(Node input) {#56,18.1915070215861
+if (replacement != null) {#1285,18.185435354709625
+!mayEffectMutableState(lhs)) {#778,18.179902992248536
+if (result == node) {#143,18.178735224405923
+switch (n.getType()) {#376,18.178165435791016
+if (prefinallyFollows != follow) {#522,18.17718086242676
+if (!areValidRegexpFlags(flags.getString())) {#1489,18.176335136095684
+if (innerIf.isIf()) {#702,18.17550307825992
+TernaryValue rightVal = NodeUtil.getPureBooleanValue(right);#1221,18.171203931172688
+new Predicate<Node>() {#1099,18.164519667625427
+&& !rightParent.isNot()) {#1158,18.160053005924933
+|| getExceptionHandler(nodeThis) == getExceptionHandler(nodeThat));#575,18.159287657056534
+if (n.getChildCount() < 3) {#1047,18.153125459497627
+if (delimiter != null) {#1555,18.14855245443491
+pattern.isString()#1463,18.14765145228459
+action = FoldArrayAction.SAFE_TO_FOLD_WITH_ARGS;#1433,18.146396986643474
+if (NodeUtil.isStatementBlock(thenBranch) &&#698,18.145927968232527
+if (maybeExpr.getFirstChild().isCall()) {#933,18.142921408017475
+if (isLowerPrecedenceInExpression(cond, AND_PRECEDENCE) &&#678,18.13979724357868
+boolean result = nVal.not().toBoolean(true);#1196,18.1355384300495
+if (cur.contains(delimiters[i])) {#1592,18.134509086608887
+if (isLowerPrecedenceInExpression(cond, OR_PRECEDENCE) &&#660,18.130318426316784
+Node nextElse = nextThen.getNext();#317,18.128676462173463
+Node expr = NodeUtil.newExpr(assign);#789,18.1285751416133
+return newExpr;#694,18.12709008730375
+pos = i;#1659,18.12604945898056
+int pos = 0;#1641,18.123762554592556
+Node thenExpr = null;#345,18.120680135839127
+Node name2 = var.getFirstChild();#844,18.118907749652863
+Node not = IR.not(IR.number(n.isTrue() ? 0 : 1));#1510,18.11535711641665
+case Token.COMMA:#151,18.112274328867596
+reportCodeChange();#328,18.10711282491684
+if (nextNode != null && elseBranch == null#312,18.10667219161987
+n.putBooleanProp(Node.FREE_CALL, false);#254,18.10226825873057
+continue;#1052,18.09975282351176
+if (name2.hasChildren()#846,18.09885631288801
+if (name1.hasChildren()#821,18.097652980259486
+Node replacement = null;#1224,18.09451707204183
+Node newCallTarget = IR.getprop(#249,18.094121244218613
+|| !containsUnicodeEscape(pattern.getString()))) {#1475,18.092376182819233
+Node name1 = var.getFirstChild();#818,18.088012278079987
+switch (first.getType()) {#1131,18.087639570236206
+if(!late) {#1535,18.080285263061523
+if (result != node) {#85,18.077705891927085
+case Token.BLOCK:#380,18.077645142873127
+Node or = IR.or(#667,18.075433506685144
+error(INVALID_REGULAR_EXPRESSION_FLAGS, flags);#1490,18.073486839021957
+if (!areSafeFlagsToFold(flags.getString())) {#1493,18.07048825422923
+Node getExceptionHandler(Node n) {#587,18.068866122852672
+Node hookNode = IR.hook(cond, thenExpr, elseExpr)#852,18.068706108973576
+TernaryValue trueNodeVal = NodeUtil.getPureBooleanValue(trueNode);#1263,18.068621503895727
+case Token.ARRAYLIT:#160,18.06587185178484
+if (parent.isExprResult()#279,18.06286518390362
+callTarget.getString().equals("String")) {#212,18.061407392675225
+FoldArrayAction action = isSafeToFoldArrayConstructor(arg0);#1391,18.059936205546062
+return (input.isGetProp() &&#1102,18.057092947118424
+reportCodeChange();#1135,18.0552396774292
+Node elseExpr = nextNode.getFirstChild();#354,18.052328890020195
+if (maybeBreak != null && maybeBreak.isBreak()#177,18.04533210553621
+!(isLowerPrecedenceInExpression(cond, AND_PRECEDENCE) &&#708,18.038111711803236
+Node innerElseBranch = innerThenBranch.getNext();#705,18.033960782564602
+boolean constructorHasArgs = constructorNameNode.getNext() != null;#1383,18.03364533963411
+Node hookNode = IR.hook(cond, thenExpr, elseExpr).srcref(n);#786,18.032583345685687
+left = tryMinimizeCondition(left);#1212,18.02529744540944
+String className = constructorNameNode.getString();#1377,18.021502102122586
+Node falseNode = n.getLastChild();#1249,18.021038161383736
+if (action == FoldArrayAction.SAFE_TO_FOLD_WITH_ARGS) {#1397,18.020489501953126
+Node assign = new Node(thenOp.getType(), assignName, hookNode)#787,18.020343271891274
+return result;#149,18.016085624694824
+switch (n.getType()) {#1128,18.012440363566082
+action = FoldArrayAction.SAFE_TO_FOLD_WITHOUT_ARGS;#1426,18.012239350212944
+&& isHigherPrecedence(leftParent, op_precedence))#1164,18.01036047935486
+if (follow == null || areMatchingExits(n, follow)) {#493,18.009123438880557
+Node rightParent = first.getLastChild();#1151,18.006951292355854
+case Token.FUNCTION:#387,18.005605110755333
+Node nextNode = child.getNext();#310,18.00557512395522
+if (result != node) {#81,18.00071188608805
+&& thenBranch.isEquivalentToTyped(nextElse)) {#330,18.000469811757405
+Node maybeName2 = elseAssign.getFirstChild();#819,17.996174009222734
+private String pickDelimiter(String[] strings) {#1575,17.99128586905343
+@Override#1071,17.983741283416748
+Node expr = getBlockExpression(thenBranch);#650,17.979565954208375
+Node lastFalse = falseBranch.getLastChild();#906,17.978511598375107
+int type = n.getType();#1223,17.97526486714681
+if (!NodeUtil.isStatementBlock(parent)) {#892,17.975180906407974
+if (value != null) {#220,17.974648769085224
+String className = n.getFirstChild().getString();#1347,17.972646213713148
+Node hookNode = IR.hook(cond, thenExpr, elseExpr)#827,17.972168372227596
+if (lastTrue == null || lastFalse == null#907,17.964401245117188
+Node returnNode = IR.returnNode(#359,17.959708565159847
+if (first.isVar()) {#1021,17.95647430419922
+right = tryMinimizeCondition(right);#1213,17.95546812169692
+Node elseExpr = elseAssign.getLastChild().detachFromParent();#825,17.9553453372075
+IR.and(#712,17.94763435016979
+if (elseBranch == null) {#648,17.944320238553562
+&& !"".equals(pattern.getString())#1465,17.943682050704957
+&& maybeName2.isName()#822,17.94294065899319
+action = FoldArrayAction.SAFE_TO_FOLD_WITH_ARGS;#1443,17.941464773813884
+if (0 == (nSlashes & 1)) { return true; }#1717,17.940575382926248
+TernaryValue nVal = NodeUtil.getPureBooleanValue(first);#1194,17.940426737070084
+if (isASTNormalized() && Token.NAME == constructorNameNode.getType()) {#1375,17.936718980471294
+if (follow == null || areMatchingExits(n, follow)) {#537,17.936618895757768
+break;#1661,17.934534549713135
+inCharset = true;#1664,17.92928369421708
+switch (n.getType()) {#1045,17.91413954326085
+default:#1294,17.912159204483032
+char ch = s.charAt(i);#1644,17.911714255809784
+isEscaped = !isEscaped;#1647,17.910638658623945
+String delimiter = pickDelimiter(strings);#1554,17.908960405985514
+action = FoldArrayAction.SAFE_TO_FOLD_WITH_ARGS;#1428,17.9089213517996
+Node assignName = thenOp.removeFirstChild();#781,17.9086566178695
+IR.getprop(#1558,17.904989369710286
+Node expr = IR.exprResult(#801,17.899698529924667
+n.addChildAfter(bind.thisValue.cloneTree(), newCallTarget);#253,17.89903560051551
+return n;#1243,17.898831800981
+if (n.hasOneChild()) {#924,17.897805468241373
+&& isHigherPrecedence(rightParent, op_precedence))) {#1166,17.896389806592786
+if (newLiteralNode != null) {#1403,17.88946041307951
+ImmutableSet.of(#1329,17.8894323348999
+Node elseExpr = name2.removeChildren();#850,17.889100626895303
+if (allLength1) {#1584,17.885882290926848
+Predicate<Node> isPropertyAssignmentInExpressionPredicate =#1098,17.88301904577958
+n.addChildToBack(#711,17.875195049104235
+replacement = left;#1231,17.874404430389404
+int op_precedence = NodeUtil.precedence(first.getType());#1162,17.87186943160163
+replacement = condition;#1269,17.869900839669363
+if (first.isReturn()) {#986,17.86704784631729
+case Token.BLOCK:#157,17.862901608149212
+isReturnBlock(thenBranch) && isReturnExpression(nextNode)) {#344,17.862439314524334
+if (areNodesEqualForInlining(lhs, elseOp.getFirstChild()) &&#773,17.86142510175705
+elseExpr.detachFromParent();#357,17.85608612863641
+replacement = IR.or(condition, falseNode);#1278,17.851598603384836
+boolean result = nVal.toBoolean(true);#1298,17.84464021162553
+default:#1445,17.841793823242188
+&& falseNodeVal == TernaryValue.TRUE) {#1271,17.83914221250094
+@Override#55,17.834973017374676
+Node addition = IR.add(#221,17.829207928975425
+reportCodeChange();#364,17.826687812805176
+Node operand = result.getFirstChild();#420,17.821760129928588
+private final boolean late;#44,17.81822395324707
+Node leftParent = first.getFirstChild();#1150,17.81746244430542
+if (NodeUtil.isAssignmentOp(thenOp)) {#771,17.812173345814582
+if (breakTarget.isFunction() || breakTarget.isScript()) {#458,17.811455163088713
+int nSlashes = 0;#1711,17.807931826664852
+break;#1671,17.804736932118733
+isLowerPrecedenceInExpression(expr.getFirstChild(),#679,17.804418139987522
+if (child.isIf()){#306,17.804233142307826
+elseOp.removeChild(elseExpr);#784,17.80058830434626
+if (n.getFirstChild().isName()) {#1346,17.79805628458659
+return IR.string(sb.toString()).srcref(n);#1701,17.79692702293396
+TernaryValue nVal = NodeUtil.getPureBooleanValue(n);#1296,17.79600320038972
+left = IR.not(leftParent).srcref(leftParent);#1175,17.795675000836773
+return n;#1203,17.79413838820024
+if (thenBranchIsVar && elseBranchIsExpressionBlock &&#812,17.79341082572937
+follow = skipFinallyNodes(follow);#476,17.792870888343224
+if (thenOp.getType() == elseOp.getType()) {#769,17.789407556707207
+if (isReturnExpressBlock(thenBranch) && isReturnExpressBlock(elseBranch)) {#745,17.78628286948571
+if (n.hasChildren()) {#381,17.784412562847137
+int i = 0;#1589,17.78274875217014
+follow = skipFinallyNodes(follow);#521,17.781717227055477
+private static Node makeForwardSlashBracketSafe(Node n) {#1637,17.781420034520767
+Node innerIf = thenBranch.getFirstChild();#700,17.778321179476652
+return newOperator;#623,17.778074582417805
+Node nextThen = nextCond.getNext();#316,17.773335790634157
+callTarget.cloneTree(),#250,17.772946251763237
+&& falseNodeVal == TernaryValue.FALSE) {#1266,17.763591913076546
+TernaryValue falseNodeVal = NodeUtil.getPureBooleanValue(falseNode);#1264,17.762996640698663
+Node calledFn = maybeExpr.getFirstChild().getFirstChild();#934,17.758875649550866
+Node lastTrue = trueBranch.getLastChild();#905,17.756301509009468
+Node condition = n.getFirstChild();#1247,17.755844564998853
+Node newRoot = new Node(newOp, left, right);#1185,17.754892349243164
+var.detachFromParent();#829,17.750337409973145
+case Token.EXPR_RESULT:#110,17.747710927327475
+condition.detachFromParent();#1268,17.743209838867188
+Node newRoot = first.removeFirstChild();#1133,17.739874879519146
+action = FoldArrayAction.SAFE_TO_FOLD_WITHOUT_ARGS;#1438,17.73931514855587
+complementOperator = Token.EQ;#607,17.737768285414752
+Node value = callTarget.getNext();#219,17.736783281962076
+break;#1666,17.72493052482605
+Node right = n.getLastChild();#277,17.71597796220046
+n.putBooleanProp(Node.FREE_CALL, true);#256,17.715917229652405
+if (isFoldableExpressBlock(thenBranch)) {#649,17.712584733963013
+var.detachFromParent();#854,17.710870234171548
+if (!cur.isString()) {#1522,17.709806306021555
+private static boolean areValidRegexpFlags(String flags) {#1610,17.703265368938446
+if (trueNodeVal == TernaryValue.TRUE#1265,17.703156652904692
+int complementOperator;#601,17.70222536722819
+Node callTarget = n.getFirstChild();#235,17.69419731412615
+if (result != node) {#93,17.69151217142741
+DiagnosticType.error(#49,17.68564863204956
+&& nextNode.isIf()) {#314,17.685363864898683
+if (n.hasOneChild()) {#984,17.6815305074056
+String[] strings = new String[n.getChildCount()];#1546,17.67737563451131
+return n;#1322,17.677297728402273
+if (n.hasOneChild()) {#1019,17.67691644032796
+reportCodeChange();#539,17.674906158447264
+addParameterAfter(parameterList.getNext(), after);#266,17.674782100476715
+child.detachFromParent();#323,17.672827570061933
+inCharset = false;#1669,17.664514240465667
+&& maybeName1.isName()#847,17.662544356452095
+reportCodeChange();#692,17.660029729207356
+child.detachFromParent();#335,17.65767724890458
+if (nVal != TernaryValue.UNKNOWN) {#1195,17.657490341751664
+elseExpr.detachFromParent();#750,17.651577186584472
+newLiteralNode = IR.objectlit();#1387,17.6512998853411
+Node first = n.getFirstChild();#1130,17.644302031573126
+Node prefinallyFollows = follow;#475,17.64267365137736
+this.reportCodeChange();#496,17.642212788263958
+private boolean areSafeFlagsToFold(String flags) {#1630,17.639171409606934
+isLowerPrecedenceInExpression(expr.getFirstChild(),#661,17.635058731868348
+switch(node.getType()) {#78,17.634518305460613
+int idx = 0;#1547,17.63423357009888
+if (thenBranchIsExpressionBlock && elseBranchIsExpressionBlock) {#766,17.6340274810791
+&& (!isExceptionPossible(nodeThis)#574,17.632545895046658
+n = n.getLastChild();#1051,17.62850438223945
+Node thenExpr = thenOp.removeFirstChild();#782,17.626685897509258
+if (n.hasOneChild()) {#969,17.62576961517334
+return ControlFlowAnalysis.getExceptionHandler(n);#588,17.62015291849772
+Node ifCondition = maybeIf.removeFirstChild();#188,17.618110305384587
+int equivalentResult = result ? 1 : 0;#1299,17.61725058555603
+Node follow = ControlFlowAnalysis.computeFollowNode(n);#516,17.615976916419136
+|| !areNodesEqualForInlining(lastTrue, lastFalse)) {#908,17.61542296409607
+"RegExp",#1332,17.614605617523193
+static final DiagnosticType INVALID_REGULAR_EXPRESSION_FLAGS =#48,17.61375667935326
+callTarget = bind.target;#241,17.60907217172476
+&& !NodeUtil.isLValue(n)) {#400,17.59668136778332
+if (n.isBlock()) {#1018,17.594479481379192
+Node block = n.getLastChild();#173,17.590265934283916
+case Token.SHNE:#612,17.58525522549947
+Node follow = ControlFlowAnalysis.computeFollowNode(breakTarget);#464,17.58157263304058
+return newExpr;#674,17.577817726135255
+Node forCondition = NodeUtil.getConditionExpression(n);#193,17.575584867726203
+Node newCond = new Node(Token.OR, cond);#325,17.57413528442383
+sb.append(s, pos, s.length());#1700,17.567145964678595
+boolean isEscaped = false, inCharset = false;#1642,17.562370830112034
+= new Predicate<Node>() {#54,17.558485349019367
+if (result == node) {#145,17.557531244614545
+if (cond.isNot()) {#658,17.555501401424408
+reportCodeChange();#672,17.55317803791591
+Node elseOp = getBlockExpression(elseBranch).getFirstChild();#768,17.55139607968538
+Node nextCond = nextNode.getFirstChild();#315,17.551205180940173
+Node newExpr = NodeUtil.newExpr(or);#670,17.549349899291993
+return n;#500,17.545802525111608
+IR.string("call").srcref(callTarget));#251,17.543551365534466
+reportCodeChange();#717,17.54227860768636
+isLowerPrecedenceInExpression(innerCond, AND_PRECEDENCE))) {#709,17.542021604684685
+condition.detachFromParent();#1273,17.540933833402747
+return !input.isFunction();#57,17.540778453533466
+Node prefinallyFollows = follow;#520,17.53925657272339
+int newOp = (first.isAnd()) ? Token.OR : Token.AND;#1184,17.538515871221367
+n.replaceChild(callTarget, newCallTarget);#252,17.533655214309693
+Node var = getBlockVar(thenBranch);#815,17.533186575945685
+tryMinimizeCondition(NodeUtil.getConditionExpression(node));#120,17.52848454316457
+if (STANDARD_OBJECT_CONSTRUCTORS.contains(className)) {#1348,17.526998247419083
+private Node tryMinimizeCondition(Node n) {#1125,17.526149162879356
+Node var = getBlockVar(elseBranch);#840,17.514977062449734
+if (result != null) {#417,17.514447992498223
+return NodeUtil.precedence(input.getType()) < precedence;#1073,17.50981517791748
+return true;#379,17.50949088009921
+private Node tryMinimizeStringArrayLiteral(Node n) {#1534,17.507685156429517
+Node maybeExpr = n.getFirstChild();#925,17.507307855706465
+private boolean isReturnExpression(Node n) {#998,17.504565459031326
+Node thenExpr = name1.removeChildren();#824,17.50257175847104
+private boolean consumesDanglingElse(Node n) {#1043,17.502461433410645
+break;#425,17.494385878245037
+reportCodeChange();#1501,17.493570137023926
+Node innerCond = innerIf.getFirstChild();#703,17.493315489395805
+private void tryJoinForCondition(Node n) {#168,17.49292146242582
+cond,#713,17.490023692448933
+&& !parent.getParent().isLabel()) {#280,17.487920309367933
+case Token.RETURN:#378,17.479435920715332
+Node replacement = new Node(Token.AND);#197,17.479184913635255
+if (n.isBlock()) {#983,17.477131525675457
+int saving = numElements * 2 - STRING_SPLIT_OVERHEAD;#1541,17.472903624824855
+regexLiteral = IR.regexp(pattern);#1486,17.464424678257533
+boolean elseBranchIsVar = isVarBlock(elseBranch);#809,17.457060864097194
+IR.string("").srcref(callTarget),#222,17.456811946371328
+return NodeUtil.precedence(n.getType()) > precedence;#1092,17.454848244076683
+reportCodeChange();#622,17.45478892326355
+"JSC_INVALID_REGULAR_EXPRESSION_FLAGS",#50,17.45314576075627
+Node innerThenBranch = innerCond.getNext();#704,17.451874415079754
+Node elseBranch = thenBranch.getNext();#309,17.45047426223755
+Node arg0 = constructorNameNode.getNext();#1390,17.449788275219145
+return n == null#551,17.447225213050842
+private Node tryMinimizeArrayLiteral(Node n) {#1519,17.446483254432678
+Node newExpr = NodeUtil.newExpr(and);#690,17.44448230577552
+return node;#121,17.44181112809615
+falseNode = tryMinimizeCondition(falseNode);#1255,17.43739168267501
+n.removeChildren();#1396,17.43724542505601
+return node;#128,17.435611551458184
+static final Predicate<Node> DONT_TRAVERSE_FUNCTIONS_PREDICATE#53,17.434030570983886
+&& isReturnBlock(thenBranch)#313,17.433585348583403
+n.replaceChild(forCondition, replacement);#198,17.432344913482666
+private boolean statementMustExitParent(Node n) {#375,17.4319764650785
+Node thenExpr = thenAssign.getLastChild().detachFromParent();#849,17.4306311240563
+return n;#543,17.425609588623047
+replacement.addChildToBack(forCondition);#199,17.425443267822267
+n.detachChildren();#710,17.424757194519042
+newCond.addChildToBack(nextCond);#327,17.422789159028426
+return tryMinimizeNot(node);#104,17.418508291244507
+if (nVal != TernaryValue.UNKNOWN) {#1297,17.41843925822865
+child.detachChildren();#336,17.415647983551025
+return tryMinimizeIf(node);#108,17.414255261421204
+default:#388,17.408769011497498
+trueNode = tryMinimizeCondition(trueNode);#1254,17.405415133426065
+if (NodeUtil.isLiteralValue(cond, true)) {#641,17.398073060171946
+return n;#260,17.39807210649763
+private boolean isPropertyAssignmentInExpression(Node n) {#1097,17.3976731300354
+reportCodeChange();#1187,17.395808590783012
+if (isASTNormalized()) {#1345,17.395413796106975
+Node maybeName1 = thenAssign.getFirstChild();#843,17.392187319303815
+Node pattern = constructor.getNext();  // e.g.  ^foobar$#1454,17.391303684400476
+String template = Joiner.on(delimiter).join(strings);#1556,17.38587201725353
+child.detachChildren();#324,17.38586213853624
+n = n.getLastChild();#1056,17.384698337978786
+thenExpr = getBlockReturnExpression(thenBranch);#348,17.380034886873684
+while (true) {#904,17.37438784705268
+case Token.RETURN: {#79,17.374306898850662
+for (Node cur = n.getFirstChild(); cur != null; cur = cur.getNext()) {#1521,17.373542820965802
+|| (isLowerPrecedence(rightParent, NOT_PRECEDENCE)#1165,17.371312041031686
+return var;#833,17.369164380160246
+if (n.isBlock()) {#923,17.3672616481781
+reportCodeChange();#258,17.364688205718995
+calledFn.getLastChild().getString().startsWith("on")) {#941,17.363066254592525
+|| (!NodeUtil.canBeSideEffected(n)#552,17.360969283364035
+regexLiteral = IR.regexp(pattern, flags);#1497,17.360097802203633
+private boolean isLowerPrecedenceInExpression(Node n,#1068,17.357685983181
+return newRoot;#1138,17.355226622687447
+&& !NodeUtil.isLiteralValue(n.getLastChild(), true));#584,17.351132482290268
+return left;#293,17.349934577941895
+return NodeUtil.precedence(n.getType()) < precedence;#1085,17.346727325802757
+reportCodeChange();#791,17.34567403793335
+return n;#1291,17.339305790987883
+replacement = IR.and(condition, trueNode);#1282,17.337805793398903
+return n;#1567,17.33508355276925
+replacement = right;#1233,17.334567666053772
+return reduceTrueFalse(node);#132,17.333622868855795
+private static final ImmutableSet<String> STANDARD_OBJECT_CONSTRUCTORS =#1325,17.332229977562314
+for (Node cur = n.getFirstChild(); cur != null; cur = cur.getNext()) {#1548,17.330224284419305
+Node cond = child.getFirstChild();#307,17.326871479258816
+tryMinimizeCondition(NodeUtil.getConditionExpression(node));#126,17.326735679919903
+child != null; child = child.getNext()){#305,17.325520242963517
+return NodeUtil.has(n, isLowerPrecedencePredicate,#1077,17.318146296909877
+newLiteralNode = IR.arraylit();#1395,17.318012444869332
+call.copyInformationFromForTree(n);#1562,17.317046344280243
+reportCodeChange();#292,17.31409616470337
+"Error"#1333,17.314016554090713
+lastFalse.detachFromParent();#912,17.3127760887146
+boolean areMatchingExits(Node nodeThis, Node nodeThat) {#572,17.312184439765083
+thenBranch.hasOneChild()) {#699,17.31207175481887
+return n;#726,17.298443264431423
+private Node getBlockReturnExpression(Node n) {#1008,17.29378972734724
+private Node tryMinimizeNot(Node n) {#596,17.293051499586838
+break;#1440,17.293038447697956
+Node thenBranch = cond.getNext();#308,17.291847970750595
+&& !NodeUtil.mayHaveSideEffects(n));#553,17.28717353820801
+|| n.isNew());#1365,17.284630298614502
+return result;#82,17.283577258770283
+private static final Pattern REGEXP_FLAGS_RE = Pattern.compile("^[gmi]*$");#1601,17.27960084985804
+if (n.isReturn()) {#999,17.264174699783325
+return regexLiteral;#1502,17.256953875223797
+return newRoot;#1190,17.256490654415554
+if (n.isBlock()) {#968,17.256399393081665
+|| (n.hasChildren()#583,17.253568013509113
+Node thenExpr = getBlockReturnExpression(thenBranch);#746,17.24950645083473
+private Node getBlockExpression(Node n) {#958,17.249173897963303
+private Node getBlockVar(Node n) {#1033,17.24825406074524
+reportCodeChange();#857,17.247384627660114
+Node newCond = new Node(Token.AND,#337,17.246853745501973
+n.replaceChild(forCondition, fixedIfCondition);#195,17.24165864424272
+break;#605,17.24146099090576
+nextNode.replaceChild(nextCond, newCond);#326,17.240460753440857
+return action;#1448,17.238202367510116
+left = leftParent.removeFirstChild();#1172,17.237951431274414
+private Node reduceTrueFalse(Node n) {#1508,17.235076983769734
+return n;#1505,17.23506954738072
+reportCodeChange();#914,17.23296175003052
+Node left = n.getFirstChild();#1207,17.228414984310376
+nextNode.replaceChild(nextCond, newCond);#339,17.22395360469818
+IR.string(template),#1559,17.2185498714447
+return n;#655,17.217503254230206
+Node result = tryRemoveRedundantExit(node);#80,17.213063430786132
+reportCodeChange();#423,17.209416806697845
+PeepholeSubstituteAlternateSyntax(boolean late) {#68,17.20912191602919
+Node elseAssign = getBlockExpression(elseBranch).getFirstChild();#816,17.208932360013325
+getBlockExpression(elseBranch).getFirstChild().isAssign()) {#813,17.208586179293118
+Preconditions.checkNotNull(falseBranch);#902,17.208279013633728
+if (isASTNormalized()#398,17.20753574371338
+pos = i + 1;#1692,17.207524180412292
+reportCodeChange();#740,17.20631523132324
+return n.isThrow()#582,17.203395462036134
+Node constructor = n.getFirstChild();#1453,17.20320276113657
+name2.addChildrenToBack(hookNode);#855,17.20167747296785
+boolean isPure(Node n) {#550,17.20083646774292
+private final int STRING_SPLIT_OVERHEAD = ".split('.')".length();#46,17.194207274395488
+Node lhs = thenOp.getFirstChild();#772,17.186478478567942
+&& !maybeBreak.hasChildren()) {#178,17.183148133127315
+n.replaceChild(callTarget, bind.target);#240,17.178699917263454
+return n;#1516,17.17559596470424
+private static final int NOT_PRECEDENCE = NodeUtil.precedence(Token.NOT);#42,17.16979923248291
+return result;#86,17.16725576840914
+newStatement.copyInformationFrom(n);#287,17.16353136698405
+.srcref(thenOp);#788,17.161962560705238
+result = tryReplaceExitWithBreak(node);#84,17.160102292111045
+reportCodeChange();#341,17.152316629886627
+return call;#1565,17.15158091651069
+right = rightParent.removeFirstChild();#1178,17.151470603942872
+int equivalentResult = result ? 1 : 0;#1197,17.15119861602783
+default:#616,17.150847911834717
+reportCodeChange();#1317,17.148865509033204
+Node exitExpr = n.getFirstChild();#514,17.135997263590493
+break;#611,17.135667610168458
+complementOperator = Token.NE;#604,17.13173109292984
+n.putBooleanProp(Node.FREE_CALL, true);#1350,17.130419694460354
+return n;#1459,17.129989835951065
+type == Token.AND && rval) {#1230,17.124449888865154
+parent.replaceChild(n, newRoot);#1134,17.12290354569753
+parent.replaceChild(n, newExpr);#671,17.12201490856352
+return false;#939,17.11867551242604
+reportCodeChange();#1564,17.116570377349852
+break;#1434,17.116440614064533
+.srcref(ifCondition);#190,17.11451560572574
+return n;#406,17.11070360456194
+Node left = n.getFirstChild();#276,17.10842514038086
+boolean allStrings = true;#1520,17.107575503262606
+reportCodeChange();#403,17.107526206970213
+Node result = n.getFirstChild();#451,17.106309157151443
+n = ControlFlowAnalysis.computeFollowNode(n);#561,17.105776636224043
+return n;#863,17.102118492126465
+reportCodeChange();#804,17.098441314697265
+break;#608,17.096208763122558
+newOperator.setType(complementOperator);#620,17.09055095911026
+private boolean isReturnBlock(Node n) {#967,17.085813999176025
+return NodeUtil.has(n, isPropertyAssignmentInExpressionPredicate,#1107,17.084923536881156
+return n;#229,17.08463900429862
+return false;#385,17.08218938654119
+private boolean isVarBlock(Node n) {#1017,17.075764338175457
+Node returnNode = IR.returnNode(#755,17.074207496643066
+Node replacement = IR.breakNode();#494,17.073844705309188
+n.addChildrenToBack(innerThenBranch.detachFromParent());#716,17.0725100117345
+NOT_SAFE_TO_FOLD, SAFE_TO_FOLD_WITH_ARGS, SAFE_TO_FOLD_WITHOUT_ARGS}#1414,17.07106787659401
+return replacement;#497,17.069727261861164
+return node;#116,17.066361340609465
+Node first = n.getFirstChild();#1020,17.062660217285156
+return first.isReturn();#971,17.061491898127965
+n.detachChildren();#1237,17.059745523664688
+getBlockExpression(thenBranch).getFirstChild().isAssign()) {#838,17.059263156010555
+Node maybeIf = block.getFirstChild();#174,17.05774395806449
+replacement.addChildToBack(fixedIfCondition);#200,17.05537323724656
+private FoldArrayAction isSafeToFoldArrayConstructor(Node arg) {#1422,17.05359233053107
+++nSlashes;#1713,17.050418046804573
+return false;#1002,17.050208364214217
+leftParent.detachFromParent();#1174,17.047695597012837
+private Node maybeReplaceChildWithNumber(Node n, Node parent, int num) {#1313,17.04748907543364
+Node result = tryRemoveRedundantExit(node);#92,17.043075275421142
+Preconditions.checkArgument(n.isCall()#1364,17.03840210858513
+Node and = IR.and(cond, expr.removeFirstChild()).srcref(n);#689,17.038262071280645
+parent.replaceChild(n, newExpr);#691,17.036374794809444
+boolean elseBranchIsExpressionBlock = isFoldableExpressBlock(elseBranch);#764,17.036188284556072
+cond.detachFromParent();#356,17.027031281415155
+return node;#112,17.026096257296476
+Node falseBranch = trueBranch.getNext();#900,17.018499970436096
+reportCodeChange();#759,17.01716184616089
+tryMinimizeCondition(node.getFirstChild());#107,17.014792592901934
+private Node tryReplaceIf(Node n) {#302,17.014172554016113
+tryMinimizeCondition(node.getFirstChild());#111,17.012232228329307
+reportCodeChange();#1513,17.01187868118286
+Node newNode = IR.number(num);#1314,17.011867931910924
+private Node tryMinimizeIf(Node n) {#632,17.01044412759634
+|| n.isThrow());#581,17.010072095053538
+n.removeChild(cond);#780,17.009771096078975
+return n;#664,17.008832867940267
+for (Node child = n.getFirstChild();#304,17.00723171234131
+parent.replaceChild(n, expr);#790,17.00484089624314
+input.getParent().isAssign());#1103,17.00302573612758
+Node trueNode = n.getFirstChild().getNext();#1248,17.001804215567454
+lastTrue.detachFromParent();#911,17.00118909563337
+thenExpr.detachFromParent();#349,16.992441722324916
+continue;#1648,16.991247415542603
+return null;#540,16.989812956915962
+return not;#1514,16.988492012023926
+return tryMinimizeArrayLiteral(node);#161,16.98791669544421
+block.replaceChild(maybeIf,#182,16.98488971922133
+return "";#1585,16.981827100118
+Node first = n.getFirstChild();#985,16.980550597695743
+return n;#372,16.97963128771101
+IR.string("split")),#1560,16.97825390951974
+right = IR.not(rightParent).srcref(rightParent);#1181,16.976966519509592
+n.setType(Token.CALL);#1349,16.97532629966736
+Node maybeBreak = maybeIf.getChildAtIndex(1).getFirstChild();#176,16.96856125195821
+OR_PRECEDENCE)) {#662,16.964529440953182
+parent.replaceChild(n, var);#831,16.964084456948672
+Node result = n.getFirstChild();#415,16.95958849099966
+elseOp.detachFromParent();#800,16.959524427141464
+thenExpr = NodeUtil.newUndefinedNode(child);#351,16.95891076547128
+result = tryFoldSimpleFunctionCall(node);#144,16.957528432210285
+this.late = late;#69,16.956548595428465
+return addition;#226,16.953778006813742
+continue NEXT_DELIMITER;#1593,16.943680813438014
+Node callTarget = n.getFirstChild();#210,16.942567552839005
+name1.addChildrenToBack(hookNode);#830,16.942083157991107
+DONT_TRAVERSE_FUNCTIONS_PREDICATE);#1078,16.94130313873291
+parent.replaceChild(n, replacement);#1286,16.935575686003034
+.srcref(cond));#715,16.93484800202506
+DONT_TRAVERSE_FUNCTIONS_PREDICATE);#1108,16.93443790435791
+continue;#1057,16.92907651265462
+AND_PRECEDENCE)) {#680,16.92827582359314
+boolean isExceptionPossible(Node n) {#578,16.925781726837158
+return n;#741,16.923472510443794
+strings[idx++] = cur.getString();#1549,16.920152611202663
+private Node tryReplaceUndefined(Node n) {#396,16.916688919067383
+Node elseBranch = thenBranch.getNext();#646,16.91490525007248
+reportCodeChange();#225,16.907928625742596
+n.replaceChild(child, returnNode);#362,16.90724229812622
+Node constructorNameNode = n.getFirstChild();#1367,16.901928265889484
+cond.detachFromParent();#826,16.899337387084962
+complementOperator = Token.SHEQ;#613,16.894414371914333
+return tryReplaceUndefined(node);#155,16.890633807462805
+return n;#436,16.88669286455427
+not.copyInformationFromForTree(n);#1511,16.884946048259735
+private Node tryReduceReturn(Node n) {#414,16.88386968465952
+default:#163,16.882808089256287
+.srcref(child));#361,16.879667168571835
+&& NodeUtil.isUndefined(n)#399,16.879268545853463
+n.detachChildren();#1277,16.875255703926086
+reportCodeChange();#1239,16.875240683555603
+.srcref(n));#757,16.87101093091463
+return false;#975,16.861433846609934
+return n;#563,16.859653064182826
+child.removeChild(elseBranch);#366,16.856750237314326
+Node child = n.getLastChild();#382,16.853962496707315
+return n;#1410,16.853193283081055
+return n;#1356,16.85289124080113
+Node thenAssign = getBlockExpression(thenBranch).getFirstChild();#841,16.83085040251414
+return n;#642,16.82469866010878
+return var;#859,16.823107719421387
+return maybeReplaceChildWithNumber(n, parent, equivalentResult);#1300,16.822323989868163
+n.addChildAfter(elseBranch, child);#367,16.822260899977252
+return n;#295,16.818462265862358
+expr.removeFirstChild()).srcref(n);#669,16.815683951744667
+newCond.addChildToBack(nextCond);#340,16.810055318086043
+return trySplitComma(node);#152,16.80280363559723
+return tryReduceReturn(node);#88,16.802034437656403
+return false;#992,16.799405234200613
+parent.replaceChild(n, newRoot);#1186,16.796239813168842
+private static final int AND_PRECEDENCE = NodeUtil.precedence(Token.AND);#40,16.795251693725586
+IR.string("" + delimiter));#1561,16.79150757036711
+parent.replaceChild(n, var);#856,16.78253403831931
+after.getParent().addChildAfter(parameterList.cloneTree(), after);#267,16.782371997833252
+parent.replaceChild(n, replacement);#1238,16.782331648327055
+tryMinimizeCondition(node.getFirstChild());#115,16.77992434250681
+reportCodeChange();#203,16.773289839426678
+private static final int OR_PRECEDENCE = NodeUtil.precedence(Token.OR);#41,16.772398796081543
+reportCodeChange();#1405,16.767952714647567
+while (true) {#1044,16.766312811109756
+return n;#273,16.765616522894966
+Preconditions.checkNotNull(trueBranch);#901,16.755335569381714
+n.detachChildren();#1281,16.753284633159637
+cond.detachFromParent();#851,16.75306930541992
+.srcref(n);#853,16.750825685613297
+int numElements = n.getChildCount();#1539,16.742762756347656
+complementOperator = Token.SHNE;#610,16.741726819206686
+return REGEXP_FLAGS_RE.matcher(flags).matches();#1611,16.73191315787179
+.srcref(n);#828,16.731633214389575
+Node replacement = NodeUtil.newUndefinedNode(n);#401,16.729449129104616
+rightParent.detachFromParent();#1180,16.723910212516785
+return expr;#805,16.718099700080025
+tryMinimizeCondition(node.getFirstChild());#103,16.71446448878238
+while (n != null && NodeUtil.isTryFinallyNode(n.getParent(), n)) {#560,16.705666365446866
+private Node tryFoldImmediateCallToBoundFunction(Node n) {#232,16.705555068122017
+private boolean isReturnExpressBlock(Node n) {#982,16.704434468195988
+Node trueBranch = cond.getNext();#899,16.701804433550155
+innerCond.detachFromParent())#714,16.700958188374837
+reportCodeChange();#832,16.700073957443237
+boolean thenBranchIsVar = isVarBlock(thenBranch);#808,16.699137286136025
+return n;#685,16.69792630122258
+return statementMustExitParent(child);#383,16.697269757588703
+n.getParent().replaceChild(n, addition);#224,16.696481895446777
+Node skipFinallyNodes(Node n) {#559,16.695936759312946
+Node thenOp = getBlockExpression(thenBranch).getFirstChild();#767,16.692031901815664
+return tryReplaceIf(node);#158,16.68473130464554
+return replacement;#404,16.683706495496963
+return n;#1530,16.680839432610405
+parent.replaceChild(n, expr);#803,16.679945691426596
+return false;#1027,16.670433861868723
+reportCodeChange();#430,16.67040979862213
+return n;#1303,16.670391863042656
+Preconditions.checkState(n.isReturn()#580,16.655063688755035
+return n;#1543,16.65281211005317
+bind.target.detachFromParent();#239,16.652435239156087
+IR.hook(cond, thenExpr, elseExpr)#360,16.652386105578877
+return tryMinimizeStringArrayLiteral(n);#1528,16.646893395317925
+IR.not(cond).srcref(cond));#338,16.611507451092756
+reportCodeChange();#368,16.602674416133336
+return n;#488,16.602089564005535
+Node first = n.getFirstChild();#970,16.594626651090735
+return n.getFirstChild();#1035,16.59256042133678
+return false;#952,16.592017582484655
+Node newOperator = n.removeFirstChild();#619,16.586681365966797
+return returnNode;#760,16.582097911834715
+isEscaped = false;#1695,16.577662070592243
+return maybeReplaceChildWithNumber(n, parent, equivalentResult);#1198,16.571383666992187
+return n.getFirstChild();#960,16.57134905728427
+return;#170,16.569979667663574
+boolean allLength1 = true;#1576,16.564298803156074
+Node breakTarget = n;#455,16.56166820526123
+return true;#946,16.542918865497295
+n.getParent().replaceChild(n, newLiteralNode);#1404,16.539031982421875
+Node thenBranch = cond.getNext();#645,16.533991949898855
+Node result =  tryFoldLiteralConstructor(node);#142,16.53367046687914
+Node cond = n.getFirstChild();#636,16.524678303645207
+n = replacement;#1287,16.52271114076887
+return node; //Nothing changed#164,16.520120007651194
+tryJoinForCondition(node);#125,16.512826021979837
+result = tryFoldImmediateCallToBoundFunction(node);#146,16.506760597229004
+private void tryRemoveRepeatedStatements(Node n) {#888,16.505651728312174
+return n;#1167,16.502167928786506
+n.removeFirstChild();#422,16.480673789978027
+Node cond = n.getFirstChild();#898,16.479607288654034
+parent.addChildAfter(lastTrue, n);#913,16.47931671142578
+private Node tryReplaceExitWithBreak(Node n) {#450,16.470856030782063
+node = tryFoldStandardConstructors(node);#135,16.46832968059339
+parent.replaceChild(n, left);#284,16.451438077290852
+return result;#94,16.447507198040302
+return false;#948,16.44129180908203
+thenExpr.detachFromParent();#749,16.43942534128825
+private boolean isFoldableExpressBlock(Node n) {#922,16.437558110555013
+n.removeChild(nextNode);#363,16.42733425564236
+Node parent = n.getParent();#1452,16.417638142903645
+IR.hook(cond, thenExpr, elseExpr)#756,16.415271077837264
+parent.replaceChild(n, regexLiteral);#1500,16.408228397369385
+return expr;#793,16.403837203979492
+boolean thenBranchIsExpressionBlock = isFoldableExpressBlock(thenBranch);#763,16.40364356835683
+n.detachFromParent();#538,16.397944377018856
+break;#614,16.386172485351562
+return n;#532,16.37887371910943
+return n.hasOneChild();#1000,16.368149023789627
+Preconditions.checkState(isVarBlock(n));#1034,16.36067289464614
+IR.hook(cond, thenOp, elseOp).srcref(n));#802,16.353262265523274
+Node newLiteralNode = null;#1369,16.352497834425705
+return n;#1536,16.336469014485676
+return first.hasOneChild();#1022,16.32805841109332
+private Node tryFoldSimpleFunctionCall(Node n) {#208,16.320811080932618
+n.getParent().replaceChild(n, not);#1512,16.31946267022027
+return tryReplaceExitWithBreak(node);#96,16.314943260616726
+block.removeFirstChild();#185,16.30994075536728
+n.detachChildren();#282,16.30438741048177
+extends AbstractPeepholeOptimization {#38,16.296790383078836
+n.removeChild(cond);#798,16.29442860529973
+reportCodeChange();#1288,16.293810776301793
+return replacement;#1240,16.291902669270833
+private Node trySplitComma(Node n) {#271,16.29137266599215
+private Node tryRemoveRedundantExit(Node n) {#513,16.28334681193034
+return;#895,16.27287209033966
+class PeepholeSubstituteAlternateSyntax#37,16.26627492904663
+return n.getFirstChild().getFirstChild();#1010,16.263752237955728
+public Node optimizeSubtree(Node node) {#77,16.25973351796468
+breakTarget = breakTarget.getParent()) {#457,16.253616703881157
+n.addChildToBack(thenBranch);#739,16.247824724982767
+n.getParent().replaceChild(n, replacement);#495,16.24442762798733
+n.getParent().replaceChild(n, call);#1563,16.237888018290203
+return true;#1048,16.23767630259196
+return n;#720,16.22070665920482
+return n;#617,16.216212966225363
+cond.removeFirstChild(),#668,16.209442472457887
+Node parent = n.getParent();#634,16.201491832733154
+return false;#1719,16.197256224496023
+n.removeChild(cond);#688,16.191395314534507
+thenOp.detachFromParent();#799,16.18616090502058
+return newLiteralNode;#1406,16.182773253496954
+allLength1 = false;#1579,16.17585665839059
+maybeIf.getLastChild().detachFromParent());#183,16.167931446662315
+n.removeFirstChild();#429,16.166414578755695
+Node parent = n.getParent();#1126,16.159536600112915
+Node notChild = n.getFirstChild();#599,16.157806055886404
+Node parent = n.getParent();#275,16.15569535891215
+tryRemoveRepeatedStatements(n);#732,16.151379805344803
+return n;#482,16.147944363680754
+return first.hasOneChild();#987,16.14678943858427
+value.detachFromParent());#223,16.132363620557282
+break;#432,16.107969284057617
+Preconditions.checkState(isFoldableExpressBlock(n));#959,16.099967813491823
+reportCodeChange();#1351,16.09167323793684
+Preconditions.checkState(n.isCall());#234,16.07619720697403
+Node parent = n.getParent();#891,16.072682857513428
+newLiteralNode.addChildrenToFront(arg0);#1398,16.068240301949636
+return false;#1059,16.05190658569336
+return node;#137,16.04980358710656
+Preconditions.checkState(isReturnExpressBlock(n));#1009,16.0440608130561
+Preconditions.checkState(n.isNew());#1340,16.04184728860855
+return newNode;#1319,16.028466606140135
+return n;#526,16.024381204084918
+);#1334,16.023416927882604
+private Node tryFoldLiteralConstructor(Node n) {#1363,16.02162327485926
+return n;#1491,15.99885082244873
+Node parent = n.getParent();#597,15.99720017115275
+n.removeChild(thenBranch);#738,15.991700871785481
+break;#1596,15.977238059043884
+Preconditions.checkState(n.isIf());#889,15.958023965358734
+return false;#389,15.953425407409668
+n.removeChild(flags);#1496,15.917171859741211
+Preconditions.checkState(n.isCall());#209,15.869269609451294
+n.getParent().replaceChild(n, replacement);#402,15.849826018015543
+return n;#460,15.81907896562056
+n.removeChild(cond);#748,15.803501936105581
+parent.replaceChild(n, returnNode);#758,15.796588122844696
+break;#1693,15.751202980677286
+parent.replaceChild(n, newOperator);#621,15.729608408610027
+private Node tryFoldStandardConstructors(Node n) {#1339,15.721071688334147
+return tryFoldRegularExpressionConstructor(n);#1381,15.673885202407837
+break;#909,15.655659103393555
+private Node tryFoldRegularExpressionConstructor(Node n) {#1451,15.625778422636145
+return false;#942,15.61723939110251
+return n;#1494,15.604345835172213
+allStrings = false;#1523,15.600122588021415
+parent.getParent().addChildAfter(newStatement, parent);#291,15.568633079528809
+parent.replaceChild(n, newNode);#1316,15.539869725704193
+break;#1444,15.53343391418457
+n.replaceChild(cond, cond.removeFirstChild());#737,15.524746192129035
+break;#1580,15.455687236785888

@@ -1,0 +1,112 @@
+public class EventState {#42,17.588253657023113
+public void stepAccepted(final double t, final double[] y)#282,16.96170831981458
+private final double convergence;#51,16.779249297247993
+private boolean increasing;#80,16.768056392669678
+public void reinitializeBegin(final double tStart, final double[] yStart)#149,16.76154916936701
+(nextAction == EventHandler.RESET_DERIVATIVES);#330,16.758086808522542
+public boolean stop() {#303,16.74314562479655
+private boolean g0Positive;#63,16.71300437233665
+private int nextAction;#83,16.710770183139378
+private final int maxIterationCount;#54,16.640711625417072
+public boolean reset(final double t, final double[] y)#316,16.58338109184714
+nextAction = EventHandler.CONTINUE;#295,16.581603527069092
+public int getMaxIterationCount() {#137,16.51572220142071
+private boolean pendingEvent;#66,16.430158615112305
+t0 = t;#285,16.413175362807053
+private double previousEventTime;#72,16.38828420639038
+private double pendingEventTime;#69,16.334492206573486
+public boolean evaluateStep(final StepInterpolator interpolator)#167,16.327977348776425
+private double t0;#57,16.31361410352919
+private boolean forward;#75,16.258679389953613
+throws DerivativeException, EventException, ConvergenceException {#168,16.250163396199543
+private final EventHandler handler;#45,16.1736590385437
+public EventState(final EventHandler handler, final double maxCheckInterval,#94,16.09252314567566
+t0 = tStart;#151,15.9919068472726
+double tb = t0 + (interpolator.isForward() ? convergence : -convergence);#179,15.981461552211217
+final double gb = handler.g(tb, interpolator.getInterpolatedState());#185,15.980236568966427
+this.maxIterationCount = maxIterationCount;#99,15.97847776412964
+interpolator.setInterpolatedTime(tb);#184,15.929588454110283
+private final double maxCheckInterval;#48,15.928116083145142
+throw (DerivativeException) cause;#256,15.91137336730957
+public EventHandler getEventHandler() {#116,15.886158068974813
+nextAction        = handler.eventOccurred(t, y, !(increasing ^ forward));#292,15.808426856994629
+handler.resetState(t, y);#324,15.79732508886428
+if (nextAction == EventHandler.RESET_STATE) {#323,15.776973377574574
+return (nextAction == EventHandler.RESET_STATE) ||#329,15.752899083224209
+if ((cause != null) && (cause instanceof DerivativeException)) {#255,15.723762906830887
+final double t1 = interpolator.getCurrentTime();#173,15.693696538607279
+throw (EventException) cause;#258,15.685263011766517
+private double g0;#60,15.665534867180718
+final double h  = (t1 - t0) / n;#175,15.64301296516701
+g0 = handler.g(tStart, yStart);#152,15.63624363853818
+final double root = (ta <= tb) ? solver.solve(f, ta, tb) : solver.solve(f, tb, ta);#218,15.612955734647553
+public double getEventTime() {#270,15.594948508522727
+throws EventException {#317,15.588494062423706
+return nextAction == EventHandler.STOP;#304,15.58846706814236
+final int    n  = Math.max(1, (int) Math.ceil(Math.abs(t1 - t0) / maxCheckInterval));#174,15.580234794616699
+if (g0Positive ^ (gb >= 0)) {#188,15.564100660126785
+public double getConvergence() {#130,15.555285215377808
+nextAction        = EventHandler.CONTINUE;#109,15.53422908782959
+return handler.g(t, interpolator.getInterpolatedState());#207,15.520666142304739
+for (int i = 0; i < n; ++i) {#180,15.486031355681243
+throws EventException {#283,15.470664103825888
+pendingEvent      = false;#326,15.468282911512587
+pendingEventTime  = Double.NaN;#327,15.450400670369467
+g0 = handler.g(t, y);#286,15.443609589024595
+return maxIterationCount;#138,15.427651405334473
+tb += h;#183,15.38448783329555
+pendingEventTime = Double.NaN;#250,15.384150005522228
+g0Positive = g0 >= 0;#294,15.350870912725275
+solver.setAbsoluteAccuracy(convergence);#216,15.341166756369851
+interpolator.setInterpolatedTime(t);#206,15.338987749676372
+g0Positive        = increasing;#291,15.338473099928637
+previousEventTime = t;#290,15.328007168240017
+if (pendingEvent) {#288,15.317287254333497
+public double value(final double t) throws FunctionEvaluationException {#204,15.310213529146635
+final Throwable cause = e.getCause();#254,15.306941509246826
+return false;#320,15.277524630228678
+ta = tb;#222,15.26401947284567
+double ta = t0;#177,15.262526777055529
+solver.setMaximalIterationCount(maxIterationCount);#217,15.227637045724052
+return handler;#117,15.193322961980646
+return false;#251,15.18044974009196
+return convergence;#131,15.178855375810103
+pendingEventTime  = Double.NaN;#106,15.171338982052273
+return pendingEventTime;#271,15.15046134361854
+if (pendingEvent && (Math.abs(t1 - pendingEventTime) <= convergence)) {#227,15.108066869818646
+public double getMaxCheckInterval() {#123,15.091336213625395
+pendingEvent     = false;#249,15.084526697794596
+final UnivariateRealFunction f = new UnivariateRealFunction() {#203,15.077203498167151
+throw new EventException(e);#260,15.004027416831569
+this.maxCheckInterval  = maxCheckInterval;#97,14.991685958135696
+final double convergence, final int maxIterationCount) {#95,14.976966353023753
+pendingEvent      = false;#105,14.968583106994629
+ga = gb;#243,14.965836219787597
+g0Positive = g0 >= 0;#153,14.954576174418131
+return true;#237,14.943587126555267
+if ((Math.abs(root - ta) <= convergence) &&#219,14.934457274044261
+return maxCheckInterval;#124,14.92992673601423
+(Math.abs(previousEventTime - root) > convergence)) {#225,14.91675979533094
+throws EventException {#150,14.914833943049112
+previousEventTime = Double.NaN;#107,14.884179564083324
+increasing = gb >= ga;#201,14.839719454447428
+g0Positive        = true;#104,14.818414211273193
+throw new FunctionEvaluationException(e, t);#211,14.794929309324784
+if (! pendingEvent) {#319,14.782572610037667
+ta = tb;#242,14.757984733581543
+increasing        = true;#108,14.732084324485378
+ga = gb;#223,14.686393672022326
+(Math.abs(root - previousEventTime) <= convergence)) {#220,14.632276248931884
+final BrentSolver solver = new BrentSolver();#215,14.602164834737778
+forward = interpolator.isForward();#172,14.58833475112915
+double ga = g0;#178,14.571213669247097
+this.handler           = handler;#96,14.55706230799357
+throw new FunctionEvaluationException(e, t);#209,14.548330068588257
+pendingEvent = true;#236,14.534954432783456
+this.convergence       = Math.abs(convergence);#98,14.473573650632586
+try {#170,14.356413078308105
+pendingEventTime = root;#226,14.247339121500652
+t0                = Double.NaN;#102,14.152718851643224
+g0                = Double.NaN;#103,13.893703091529108
+try {#205,13.766742451985676
+return false;#232,13.739943412042432

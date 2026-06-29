@@ -1,0 +1,399 @@
+private static String appendPropForAlias(String root, String prop) {#960,19.882310081930722
+Scope scope = alias.scope;#207,19.664324613717888
+"incomplete alias created for namespace {0}");#80,19.634029933384486
+private void flattenReferencesTo(Name n, String alias) {#356,19.34541028738022
+for (Ref ref : refs) {#177,19.19496659671559
+Name n, String alias) {#312,19.02440181145301
+for (Name name : nameMap.values()) {#250,19.019980494181315
+case Token.VAR:#641,19.014553387959797
+String propAlias = appendPropForAlias(alias, p.getBaseName());#939,18.988853807802553
+ReferenceCollectingCallback.Reference aliasRef =#223,18.965885814867523
+String originalName) {#436,18.94827686656605
+String propAlias = appendPropForAlias(alias, propName);#863,18.92960891723633
+String qName = objlitName.getFullName() + '.' + propName;#857,18.92577796936035
+"dangerous use of 'this' in static method {0}");#89,18.899462790716264
+String propName = isJsIdentifier ?#853,18.877614720662436
+for (Ref ref : name.getRefs()) {#255,18.835785818099975
+if (isObjLit) {#709,18.822127750941686
+private void flattenSimpleStubDeclaration(Name name, String alias) {#333,18.794547482540732
+p.getDeclaration().node != null &&#514,18.761483452536844
+private void flattenNameRefAtDepth(String alias, Node n, int depth,#435,18.752718448638916
+while (!workList.isEmpty()) {#164,18.750778198242188
+private void warnAboutNamespaceAliasing(Name nameObj, Ref ref) {#286,18.74752310702675
+private AbstractCompiler compiler;#91,18.739577412605286
+ReferenceCollection aliasRefs = collector.getReferences(aliasVar);#215,18.728475475311278
+this.compiler = compiler;#113,18.711863691156562
+if (collapsePropertiesOnExternTypes) {#121,18.705712854862213
+p.getDeclaration() != null &&#512,18.705642427716935
+private void updateSimpleDeclaration(String alias, Name refName, Ref ref) {#535,18.69721794128418
+for (int i = 1; i < size; i++) {#222,18.697039214047518
+String propAlias = appendPropForAlias(alias, p.getBaseName());#316,18.693106319593348
+if (initialized) {#267,18.690802349763757
+if (key.isGetterDef() || key.isSetterDef()) {#842,18.67829390366872
+private void flattenPrefixes(String alias, Name n, int depth) {#396,18.678241062164307
+if (prop.indexOf('$') != -1) {#961,18.67783080206977
+String originalName) {#463,18.660361550071023
+GlobalNamespace namespace;#120,18.643086009555393
+private void warnAboutNamespaceRedefinition(Name nameObj, Ref ref) {#298,18.635929346084595
+if (isObjLit && n.canEliminate()) {#672,18.625192039891292
+if (aliasRefs.isWellDefined()#216,18.624720292932846
+Var aliasVar = scope.getVar(aliasParent.getString());#208,18.62017027537028
+private boolean inlineAliasIfPossible(Ref alias, GlobalNamespace namespace) {#199,18.599535540530557
+new ReferenceCollectingCallback(compiler,#210,18.592954535233346
+if (isObjLit) {#772,18.589113394419353
+boolean isJsIdentifier = !key.isNumber() &&#851,18.574334797106292
+if (isObjLit && n.canEliminate()) {#780,18.56992651286878
+final Name name) {#731,18.563542105934836
+private Map<String, Name> nameMap;#97,18.558826843897503
+if (docInfo == null ||#734,18.551658370278098
+if (decl == null) {#624,18.543657823042437
+if (isJsIdentifier && p != null) {#897,18.542243480682373
+private void inlineAliases(GlobalNamespace namespace) {#161,18.52183873312814
+String originalName = n.getFullName();#357,18.498765332358225
+p, appendPropForAlias(alias, p.getBaseName()));#509,18.49743345805577
+for (Name n : globalNames) {#141,18.487250548142654
+compiler.getCodingConvention(), alias, n, originalName);#473,18.482648103133492
+@Override#738,18.480681351252965
+if (r.getTwin() == null || r.isSet()) {#414,18.471103958461594
+if (ref == name.getDeclaration()) {#256,18.4649110521589
+for (Ref r : n.getRefs()) {#358,18.45548838376999
+if (info != null) {#696,18.45024695763221
+Name n, String alias, boolean canCollapseChildNames) {#622,18.44956741333008
+if (aliasParent.isName()) {#205,18.446925530066856
+boolean collapsePropertiesOnExternTypes, boolean inlineAliases) {#112,18.43428997766404
+if (isQName) {#444,18.419462724165484
+if (p != null && !p.canCollapse()) {#859,18.410019302368163
+Name objlitName, String alias, Node objlit, Node varNode,#830,18.409044049002908
+if (inlineAliasIfPossible(ref, namespace)) {#180,18.397927284240723
+if (initialized) {#261,18.392368765438306
+CollapseProperties(AbstractCompiler compiler,#111,18.39062190055847
+Node newNode = alias.node.cloneTree();#226,18.38607915242513
+if (nameToAddAfter != null) {#886,18.36365783214569
+if (decl.getTwin() != null) {#630,18.331334948539734
+for (; !currentParent.isScript() &&#585,18.330625814550064
+compiler.report(#741,18.322225618362427
+Node newVar = IR.var(nameNode)#941,18.32053484235491
+for (Name n : globalNames) {#134,18.316354238069973
+@Override#118,18.314828395843506
+ReferenceCollectingCallback collector =#209,18.312888304392498
+if (name.isNamespace() &&#251,18.309393246968586
+int size = aliasRefs.references.size();#220,18.305483531951904
+Node newVar = IR.var(nameNode)#884,18.28600810555851
+(r.getTwin() == null || r.isSet())) {#372,18.27472605528655
+private void flattenNameRef(String alias, Node n, Node parent,#462,18.27324061923557
+flattenNameRefAtDepth(alias, r.node, depth, originalName);#415,18.264121495760403
+String originalName = n.getFullName();#399,18.26082113810948
+p.canCollapse() &&#513,18.256430525528756
+compiler.getCodingConvention(), alias, ref.node,#336,18.252108400518242
+int arbitraryNameCounter = 0;#833,18.24551877108487
+DiagnosticType.warning(#83,18.23289680480957
+key.getString() : String.valueOf(++arbitraryNameCounter);#854,18.22331418309893
+flattenNameRefAtDepth(alias, decl.node, depth, originalName);#403,18.21373697121938
+boolean isObjLit = rvalue.isObjectLit();#669,18.21360805299547
+String fnName = ref.node.getString();#811,18.212465159098308
+Node nameToAddAfter, Node varParent) {#831,18.206598786746753
+Node nameNode = IR.name(propAlias);#940,18.206510543823242
+ref.type == Ref.Type.SET_FROM_LOCAL) {#266,18.200945546550134
+if (type != null) {#482,18.1890869140625
+for (Ref r : n.getRefs()) {#406,18.186844885349274
+if (r == decl) {#407,18.17803404881404
+p.getDeclaration().node.getParent() != null &&#515,18.17160360629742
+flattenPrefixes(alias, p, depth + 1);#421,18.16577503897927
+if (!discardKeys) {#898,18.16390266418457
+case Token.ASSIGN:#637,18.14793523152669
+String name = ref.node.getString();#764,18.147844246455602
+if (decl != null && decl.node != null &&#401,18.144577264785767
+if (p.needsToBeStubbed()) {#938,18.143393802642823
+compiler.reportCodeChange();#946,18.13760942220688
+DiagnosticType.warning(#78,18.13600222269694
+compiler.getCodingConvention(), alias, gramps.getFirstChild(),#547,18.13319511413574
+if (ref.type == Type.ALIASING_GET && ref.scope.isLocal()) {#178,18.111667662858963
+compiler.getCodingConvention(),#687,18.108725176917183
+case Token.FUNCTION:#644,18.105908980736366
+for (int i = 1; i < depth && n.hasChildren(); i++) {#445,18.100779571533202
+flattenReferencesTo(p, propAlias);#319,18.088301870558
+(info != null && info.isConstant())) {#692,18.079728002133578
+Name n, String alias, Node parent, Node addAfter) {#931,18.07862787246704
+Node stubVar = IR.var(nameNode.cloneTree())#592,18.069706201553345
+if (n.isThis()) {#740,18.0653940114108
+Ref newAlias =#899,18.06264434541975
+private void collapseDeclarationOfNameAndDescendants(Name n, String alias) {#497,18.05148320198059
+if (ref.type == Ref.Type.DELETE_PROP) {#260,18.0514691897801
+if (discardKeys) {#865,18.051413169273964
+class CollapseProperties implements CompilerPass {#74,18.04627123746005
+flattenReferencesToCollapsibleDescendantNames(p, propAlias);#324,18.03068594499068
+Name n, String alias, boolean canCollapseChildNames) {#659,18.01078243255615
+numChanges += declareVarsForObjLitValues(#773,18.00522740681966
+Name p = nameMap.get(qName);#858,18.000051835004022
+"namespace {0} should not be redefined");#85,17.986942421306264
+for (Name p : n.props) {#420,17.978889353135052
+static final DiagnosticType NAMESPACE_REDEFINED_WARNING =#82,17.977128580996865
+if ((name.type == Name.Type.OBJECTLIT ||#189,17.970423380533855
+(!docInfo.isConstructor() && !docInfo.hasThisType())) {#735,17.96996989073577
+declareVarsForObjLitValues(#710,17.9519941666547
+flattenPrefixes(alias, p, 1);#382,17.950761556625366
+Predicates.<Var>equalTo(aliasVar));#212,17.94662380218506
+Ref ref = Iterables.getOnlyElement(name.getRefs());#334,17.941514205932616
+boolean isObjLit = rvalue.isObjectLit();#769,17.936760902404785
+compiler.reportCodeChange();#891,17.93359645207723
+private int declareVarsForObjLitValues(#829,17.916014744685246
+Node varNode = IR.var(nameNode);#570,17.915948755600873
+JSError.make(ref.getSourceName(), ref.node,#288,17.895160446166994
+if (p.canCollapse()) {#318,17.87433401743571
+ref.type == Ref.Type.SET_FROM_GLOBAL ||#265,17.85946541447793
+for (Name p : n.props) {#506,17.85148744022145
+compiler.reportCodeChange();#233,17.849990436008998
+new NodeTraversal.AbstractShallowCallback() {#737,17.84926635568792
+name.aliasingGets == 0 && name.props != null) {#191,17.8480795401114
+addAfter = newVar;#944,17.829491078853607
+if (p.getRefs().get(0).node.getLastChild().getBooleanProp(#950,17.825185891353723
+p.getDeclaration().node.getParent().isAssign()) {#516,17.820328167506627
+(new NodeTraversal(compiler, collector)).traverseAtScope(scope);#213,17.79527168273926
+if (gramps.isExprResult()) {#551,17.794315020243328
+this.collapsePropertiesOnExternTypes = collapsePropertiesOnExternTypes;#114,17.790549651436184
+!currentParent.isBlock();#586,17.784893798828126
+compiler.reportCodeChange();#345,17.784087562561034
+if (name.globalSets == 1 && name.localSets == 0 &&#172,17.776472369829815
+boolean initialized = name.getDeclaration() != null;#254,17.770847702026366
+for (Name p : n.props) {#937,17.767303466796875
+for (Name p : n.props) {#381,17.76561944624957
+for (Name p : n.props) {#315,17.76381518046061
+nameMap = namespace.getNameIndex();#130,17.763120651245117
+if (inlineAliases) {#127,17.762673464688387
+compiler.report(#287,17.75222384929657
+if (ref.node.getLastChild().getBooleanProp(Node.IS_CONSTANT_NAME) ||#691,17.746868073940277
+if (!varNode.hasChildren()) {#782,17.743521563212077
+name.deleteProps > 0)) {#253,17.735890340805053
+globalNames = namespace.getNameForest();#131,17.72849178314209
+&& aliasRefs.firstReferenceIsAssigningDeclaration()#217,17.728033521901008
+if (!p.inExterns && canCollapseChildNames &&#511,17.716997727103855
+Node nameNode = IR.name(propAlias);#879,17.706611465005313
+flattenNameRef(alias, r.node, rParent, originalName);#373,17.694551429748536
+&& aliasRefs.isAssignedOnceInLifetime()) {#218,17.69273555755615
+JSError.make(ref.getSourceName(), ref.node,#300,17.683883895874022
+for (Node key = objlit.getFirstChild(), nextKey; key != null;#836,17.683684805165168
+private void flattenReferencesToCollapsibleDescendantNames(#311,17.666554578145345
+if (!varNode.hasChildren()) {#719,17.66042963663737
+namespace = new GlobalNamespace(compiler, root);#124,17.645745860205757
+"JSC_UNSAFE_NAMESPACE",#79,17.643953281900156
+Node varNode = new Node(Token.VAR);#666,17.643129765987396
+"JSC_NAMESPACE_REDEFINED",#84,17.639511187871296
+List<Ref> refs = Lists.newArrayList(name.getRefs());#176,17.637963471589266
+if (parent.isCall() && n == parent.getFirstChild()) {#475,17.627139000665572
+if (insertedVarNode) {#718,17.61961539586385
+private final boolean inlineAliases;#100,17.618805355495876
+Node varNode = IR.var(nameNode).copyInformationFrom(nameNode);#338,17.614375027743254
+compiler.reportCodeChange();#486,17.612559509277343
+Ref ref = n.getDeclaration();#763,17.60334293658917
+if (r == n.getDeclaration()) {#359,17.593772775986615
+initialized = true;#271,17.588849544525146
+Ref ref = n.getDeclaration();#664,17.58761061154879
+if (numChanges > 0) {#792,17.578027486801147
+flattenNameRef(alias, n.getFirstChild(), n, originalName);#449,17.57436337837806
+Node refNode = null;#864,17.570566415786743
+Ref ref = n.getDeclaration();#810,17.569827446570763
+name.aliasingGets > 0) {#173,17.568140745162964
+updateObjLitOrFunctionDeclarationAtAssignNode(#638,17.548440887814476
+boolean isObjKey = NodeUtil.isObjectLitKey(n);#442,17.548357282366073
+Preconditions.checkNotNull(ref.getTwin());#574,17.547396659851074
+Node current = gramps;#583,17.538264671961468
+UNSAFE_THIS, name.getFullName()));#743,17.537239280906885
+private List<Name> globalNames;#94,17.530417919158936
+compiler.reportCodeChange();#722,17.528765201568604
+switch (decl.node.getParent().getType()) {#636,17.52400712405934
+if (rvalue.isFunction()) {#680,17.51975898742676
+flattenReferencesToCollapsibleDescendantNames(n, n.getBaseName());#135,17.51588535308838
+namespace = new GlobalNamespace(compiler, externs, root);#122,17.501955032348633
+warnAboutNamespaceRedefinition(name, ref);#262,17.49291805120615
+compiler.reportCodeChange();#793,17.487717787424724
+UNSAFE_NAMESPACE_WARNING, nameObj.getFullName()));#289,17.484733676910402
+this.inlineAliases = inlineAliases;#115,17.482042380741664
+NAMESPACE_REDEFINED_WARNING, nameObj.getFullName()));#301,17.479129163230336
+refNode = IR.name(propAlias);#870,17.476662000020344
+collapseDeclarationOfNameAndDescendants(#508,17.47264497420367
+if (key.getBooleanProp(Node.IS_CONSTANT_NAME)) {#871,17.456834861210414
+newAlias.node = refNode;#901,17.454585870107014
+Node value = key.getFirstChild();#838,17.454157066345214
+public void visit(NodeTraversal t, Node n, Node parent) {#739,17.439377488761114
+prop = prop.replace("$", "$0");#965,17.43850466784309
+ref.node = null;#675,17.433385928471882
+(name.aliasingGets > 0 || name.localSets + name.globalSets > 1 ||#252,17.433041123782886
+appendPropForAlias(alias, p.getBaseName()), p, p.getDeclaration());#518,17.427721977233887
+nameToAddAfter = newVar;#892,17.427635260990687
+Set<Node> newNodes = Sets.newHashSetWithExpectedSize(size - 1);#221,17.426968256632488
+Ref decl = n.getDeclaration();#623,17.42398298703707
+parent.addChildAfter(newVar, addAfter);#943,17.42268805070357
+ref.node = null;#789,17.421454668045044
+if (n.hasChildren()) {#448,17.390303339276993
+private final boolean collapsePropertiesOnExternTypes;#99,17.376646041870117
+Deque<Name> workList = new ArrayDeque<Name>(namespace.getNameForest());#163,17.37639749967135
+private void checkNamespaces() {#249,17.376026577419704
+static final DiagnosticType UNSAFE_THIS = DiagnosticType.warning(#87,17.354060574581748
+if (n.props == null) return;#313,17.352474276224772
+Name name = workList.pop();#165,17.35072926112584
+compiler.reportCodeChange();#599,17.346947956085206
+aliasRef.getParent().replaceChild(aliasRef.getNode(), newNode);#227,17.3460944380079
+varParent.addChildAfter(newVar, nameToAddAfter);#887,17.34531075021495
+Node currentParent = gramps.getParent();#584,17.34077525138855
+"JSC_UNSAFE_THIS",#88,17.314642131328583
+addStubsForUndeclaredProperties(n, alias, varParent, varNode);#715,17.313553598192
+if (key.getBooleanProp(Node.IS_CONSTANT_NAME)) {#881,17.31191448064951
+Ref decl = n.getDeclaration();#400,17.311624086820164
+compiler.report(#299,17.307996153831482
+if (value.isFunction()) {#907,17.304963409900665
+Node aliasParent = alias.node.getParent();#204,17.30158869425456
+Node nameNode = NodeUtil.newName(#686,17.294982461368335
+Name n, boolean canCollapseChildNames) {#805,17.274262091692755
+int numVars = 0;#832,17.274092934348367
+return;#633,17.27226221561432
+name.type == Name.Type.FUNCTION) &&#190,17.264439821243286
+private void updateObjLitOrFunctionDeclarationAtAssignNode(#658,17.25059357811423
+Node ref = NodeUtil.newName(#472,17.23012215750558
+if (n.props != null) {#505,17.221442495073592
+if (canCollapseChildNames) {#708,17.220290404099686
+value.detachFromParent();#867,17.216948572794596
+if (rvalue != null && rvalue.isFunction()) {#541,17.21311855316162
+if (n.props != null) {#936,17.201492105211532
+JSType type = n.getJSType();#481,17.198876440525055
+Node.IS_CONSTANT_NAME)) {#951,17.19512571137527
+warnAboutNamespaceRedefinition(name, ref);#268,17.19131033237164
+boolean isQName = nType == Token.NAME || nType == Token.GETPROP;#441,17.185915184020995
+if (!NodeUtil.isObjectLitKey(r.node) &&#371,17.179927991784137
+updateObjLitOrFunctionDeclaration(n, alias, canCollapseChildNames);#502,17.16987865447998
+if (name.type == Name.Type.GET || name.type == Name.Type.SET) {#168,17.16815185546875
+parent.putBooleanProp(Node.FREE_CALL, true);#478,17.162201057780873
+aliasParent.replaceChild(alias.node, IR.nullNode());#232,17.156474859818168
+Node rvalue = ref.node.getFirstChild();#765,17.15157377719879
+p.getDeclaration().node = nameNode;#905,17.146126747131348
+private void checkForHosedThisReferences(Node function, JSDocInfo docInfo,#730,17.128044400896346
+warnAboutNamespaceAliasing(name, ref);#273,17.126017487567402
+Node gramps = varNode.getParent();#767,17.12409176145281
+numChanges += addStubsForUndeclaredProperties(n, name, gramps, varNode);#778,17.124075617109025
+addStubsForUndeclaredProperties(#812,17.115003077189126
+nameNode.putBooleanProp(Node.IS_CONSTANT_NAME, true);#882,17.101621389389038
+Name n, boolean canCollapseChildNames) {#758,17.09845604616053
+ref.node.getParent().isExprResult());#341,17.096965169906618
+varParent.addChildBefore(newVar, varNode);#889,17.093455587114608
+Node rvalue = ref.node.getNext();#665,17.07388032277425
+JSError.make(name.getDeclaration().getSourceName(), n,#742,17.06352493090507
+boolean insertedVarNode = false;#670,17.05895163796165
+private void updateObjLitOrFunctionDeclarationAtVarNode(#757,17.056088268756866
+Node rvalue = ref.node.getNext();#536,17.051273155212403
+varNode.setJSDocInfo(info);#697,17.0486757880763
+if (n.props != null) {#419,17.042655195508683
+nameNode.putBooleanProp(Node.IS_CONSTANT_NAME, true);#952,17.042021214962006
+private int addStubsForUndeclaredProperties(#930,17.040436363220216
+insertedVarNode = true;#676,17.03804882367452
+private void updateObjLitOrFunctionDeclaration(#621,17.036790114182693
+static final DiagnosticType UNSAFE_NAMESPACE_WARNING =#77,17.024537987179226
+return;#627,17.021166682243347
+ref.node = nameNode;#704,17.01952362060547
+n, alias, canCollapseChildNames);#639,17.012754917144775
+varParent.replaceChild(gramps, varNode);#674,17.01159879896376
+break;#640,17.007185554504396
+varParent.replaceChild(gramps, varNode);#701,17.004753165774876
+if (n.props != null) {#380,16.999485424586705
+int numChanges = 0;#770,16.99007205963135
+nameNode.putBooleanProp(Node.IS_CONSTANT_NAME, true);#693,16.98400858470372
+p.addRef(newAlias);#902,16.977516439225937
+checkForHosedThisReferences(rvalue, refName.docInfo, refName);#542,16.97365032196045
+Preconditions.checkArgument(NodeUtil.isStatementBlock(parent));#933,16.9723426211964
+refName.getFullName());#548,16.97143491109212
+Node nameNode = NodeUtil.newName(#546,16.970376459757485
+decl.node.isGetProp()) {#402,16.968910497777603
+Preconditions.checkState(isObjKey || isQName);#443,16.96627526534231
+n, alias, rvalue,#711,16.96617849249589
+updateObjLitOrFunctionDeclarationAtVarNode(n, canCollapseChildNames);#642,16.957404851913452
+if (!canCollapseChildNames) {#759,16.953538747934196
+return root + '$' + prop;#967,16.95292406815749
+Node varNode = ref.node.getParent();#766,16.9521183013916
+key = nextKey) {#837,16.936320940653484
+break;#643,16.916748428344725
+private void updateFunctionDeclarationAtFunctionNode(#804,16.881054560343426
+Node nameNode = NodeUtil.newName(#335,16.879762268066408
+flattenSimpleStubDeclaration(p, propAlias);#321,16.874163309733074
+return;#807,16.87061333656311
+alias, ref.node.getAncestor(2), n.getFullName());#688,16.86455752931792
+updateSimpleDeclaration(#517,16.85435562133789
+boolean discardKeys = !objlitName.shouldKeepKeys();#834,16.841254346510944
+ref.setJSType(type);#483,16.84075870513916
+if (!canCollapseChildNames) {#806,16.837580607487606
+return;#760,16.833194851875305
+int nType = n.getType();#440,16.823248276343712
+refNode.putBooleanProp(Node.IS_CONSTANT_NAME, true);#872,16.818982760111492
+collapseDeclarationOfNameAndDescendants(n, n.getBaseName());#142,16.802289423735246
+aliasRefs.references.get(i);#224,16.796207275390625
+if (n.canCollapse()) {#501,16.7956201846783
+Node rParent = r.node.getParent();#364,16.79327185013715
+Node parent = ref.node.getParent();#342,16.77800805228097
+currentParent = currentParent.getParent()) {}#588,16.76260684785389
+return numVars;#914,16.750581635369194
+public void process(Node externs, Node root) {#119,16.739121945699058
+n, fnName, ref.node.getAncestor(2), ref.node.getParent());#813,16.726588618370794
+name.getFullName());#337,16.72346571513585
+NodeUtil.copyNameAnnotations(ref.node.getLastChild(), nameNode);#549,16.717204014460247
+numStubs++;#945,16.71719319479806
+Node parent = ref.node.getParent();#537,16.711856501443044
+checkForHosedThisReferences(rvalue, n.docInfo, n);#681,16.679972076416014
+varNode.addChildToBack(nameNode);#699,16.672930380877325
+JSDocInfo info = ref.node.getParent().getJSDocInfo();#690,16.670868110656738
+NodeTraversal.traverse(compiler, function.getLastChild(),#736,16.670362389605977
+checkForHosedThisReferences(value, value.getJSDocInfo(), p);#908,16.667648512741614
+nextKey = key.getNext();#839,16.63809040614537
+TokenStream.isJSIdentifier(key.getString());#852,16.622718334197998
+p.getDeclaration().cloneAndReclassify(Ref.Type.ALIASING_GET);#900,16.605991654925877
+inlineAliases(namespace);#128,16.598121056189903
+.copyInformationFromForTree(key);#885,16.590377054716413
+Node varParent = ref.node.getAncestor(3);#667,16.579439163208008
+varNode.removeChild(ref.node);#781,16.568062007427216
+NodeUtil.copyNameAnnotations(n.getLastChild(), ref);#474,16.55196612221854
+return false;#242,16.55110740661621
+nameNode.addChildToFront(value);#880,16.540810108184814
+.copyInformationFromForTree(addAfter);#942,16.534340341885883
+continue;#257,16.533268247331893
+Node gramps = parent.getParent();#538,16.52580606020414
+Node gramps = ref.node.getAncestor(2);#668,16.510871234693024
+insertedVarNode = true;#705,16.50929601987203
+current = currentParent,#587,16.497266590595245
+ReferenceCollectingCallback.DO_NOTHING_BEHAVIOR,#211,16.49448273976644
+name.removeRef(ref);#181,16.493455387297132
+numChanges++;#785,16.484248479207356
+nameNode.addChildToFront(rvalue);#700,16.481569177964154
+n, name, rvalue, varNode, gramps.getChildBefore(varNode),#774,16.447528966267903
+.copyInformationFrom(nameNode);#593,16.42032045788235
+varNode, varParent.getChildBefore(varNode), varParent);#712,16.41400374685015
+gramps);#775,16.396109801072342
+checkNamespaces();#132,16.39347779750824
+Node gramps = parent.getParent();#343,16.35072187276987
+Node greatGramps = gramps.getParent();#539,16.349658266703287
+currentParent.addChildBefore(stubVar, current);#594,16.33779515718159
+key.replaceChild(value, refNode);#875,16.316478093465168
+nameNode.addChildToFront(rvalue);#568,16.314404207117416
+continue;#409,16.29839868545532
+boolean canCollapseChildNames = n.canCollapseUnannotatedChildNames();#498,16.288057457317006
+Preconditions.checkNotNull(addAfter);#934,16.280616505940756
+namespace.scanNewNodes(alias.scope, newNodes);#237,16.272978492405105
+greatGramps.replaceChild(gramps, varNode);#571,16.254618343554046
+varParent.removeChild(varNode);#720,16.208032944623163
+return numStubs;#957,16.161056094699436
+objlit.removeChild(key);#866,16.155089199543
+numVars++;#912,16.129044246673583
+parent.removeChild(rvalue);#567,16.113576344081334
+int numStubs = 0;#935,16.096376505765047
+n = n.getFirstChild();#446,16.046623528003693
+continue;#169,16.04137659072876
+Preconditions.checkState(#340,16.035184253345836
+return true;#238,16.008520993319426
+updateFunctionDeclarationAtFunctionNode(n, canCollapseChildNames);#645,16.001331130663555
+parent.replaceChild(ref.node, nameNode);#596,15.950512833065456
+parent.replaceChild(n, ref);#485,15.908278391911434
+gramps.removeChild(varNode);#783,15.88030450484332
+newNodes.add(newNode);#228,15.845107178939017
+Preconditions.checkState(n.canCollapseUnannotatedChildNames());#932,15.76350771297108
+continue;#860,15.757175254821778
+ref.node.getParent().removeChild(rvalue);#684,15.75150143472772
+continue;#361,15.739718341827393
+workList.addAll(name.props);#194,15.689180926272744
+continue;#843,15.626637363433838
+gramps.replaceChild(parent, varNode);#344,15.619108963012696
+break;#646,15.172878456115722

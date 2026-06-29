@@ -1,0 +1,748 @@
+private LocalScopeBuilder(Scope scope) {#1449,20.56183096078726
+private GlobalScopeBuilder(Scope scope) {#1330,20.43513298034668
+final Scope scope;#363,20.207416892051697
+private AbstractScopeBuilder(Scope scope) {#387,19.931640038123497
+private final class LocalScopeBuilder extends AbstractScopeBuilder {#1445,19.770748138427734
+private final class GlobalScopeBuilder extends AbstractScopeBuilder {#1328,19.763934722313515
+private final String ownerName;#1315,19.72719326019287
+AbstractScopeBuilder scopeBuilder = null;#161,19.724501530329388
+private String sourceName = null;#385,19.707706971602008
+Scope scopeToDeclareIn = scope;#898,19.700161361694335
+scopeBuilder = globalScopeBuilder;#167,19.498645929189827
+private final ObjectType thisType;#1262,19.49406124995305
+if (scopeToDeclareIn.isDeclared(variableName, false)) {#904,19.485785881678265
+GlobalScopeBuilder globalScopeBuilder = new GlobalScopeBuilder(newScope);#166,19.435886292230514
+if (scope.isDeclared(qName, false)) {#1233,19.424176953055643
+for (Node astParameter : astParameters.children()) {#1512,19.389443397521973
+Scope newScope = null;#160,19.224543380737305
+void resolve(Scope scope) {#134,19.174819599498402
+scopeToDeclareIn.declare(variableName, n, type, input, inferred);#913,19.14469317027501
+void build() {#1456,19.119445085525513
+if (scopeToDeclareIn.isGlobal() && type instanceof FunctionType) {#932,19.114256117078995
+String singletonGetterClassName =#1013,19.10355990273612
+case Token.VAR:#466,19.064495086669922
+if (ownerVar != null) {#1212,19.05466706412179
+"enum initializer must be an object literal or an enum");#101,19.0525019687155
+case Token.CATCH:#462,19.035490444728307
+case Token.FALSE:#330,19.010077794392902
+DelegateRelationship delegateRelationship) {#1054,19.002359782948215
+String fnName = fnNameNode.getString();#1483,19.00105156618006
+case Token.VOID:#317,18.988277594248455
+case Token.TRUE:#329,18.984293460845947
+if (rValue != null && rValue.isQualifiedName() && scope.isGlobal()) {#691,18.9805235181536
+ObjectType ownerType, String propName) {#769,18.9749632941352
+Node parent) {#414,18.969860394795734
+case Token.NULL:#313,18.968263366005637
+if (ownerType != null) {#1171,18.949285209178925
+!ownerType.isInstanceType())) {#1178,18.940535163879396
+"Typedef for {0} does not have any type information");#96,18.939345245361327
+case Token.VAR:#1352,18.925989423479354
+Scope s = new Scope(root, compiler);#210,18.90905291693551
+private final List<DeferredSetType> deferredSetTypes =#365,18.89524493497961
+if ((!ownerType.hasOwnProperty(propName) ||#1175,18.88698959350586
+if (ownerType != null &&#1243,18.88279825846354
+String qName = n.getQualifiedName();#1228,18.882385404486406
+if (shouldDeclareOnGlobalThis) {#915,18.881789260440403
+private final class CollectProperties#1260,18.879599189758302
+if (var != null && var.getType() instanceof EnumType) {#831,18.878296818052018
+FunctionParamBuilder functionParamBuilder =#1070,18.875754524679746
+Var var = scope.getVar(#731,18.859614849090576
+inferred = !(info.hasType() || info.hasEnumParameterType() ||#1158,18.852672223691588
+Var qVar = scope.getVar(qName);#1115,18.850602531433104
+LocalScopeBuilder localScopeBuilder = new LocalScopeBuilder(newScope);#171,18.84734040214902
+this.compiler = compiler;#145,18.834638422185723
+if (var != null) {#733,18.833316690781537
+if (functionType.isReturnTypeInferred() &&#647,18.822506809234618
+if (info != null) {#1156,18.815929119403545
+case Token.ASSIGN:#1272,18.813027381896973
+case Token.REF_SPECIAL:#338,18.81217336654663
+scopeBuilder = localScopeBuilder;#172,18.807480885432316
+type == null ?#921,18.80130515098572
+.inferTemplateTypeName(info)#747,18.80036226908366
+scopeToDeclareIn.declare(variableName + ".prototype", n,#936,18.800069545877392
+String propName = n.getLastChild().getString();#1229,18.792958168756392
+@VisibleForTesting#205,18.79286057608468
+if (propType instanceof FunctionType) {#773,18.785092055797577
+if (ownerType != null) {#735,18.78292007446289
+if (superClass != null && subClass != null) {#998,18.769925753275555
+case Token.CALL:#431,18.769822938101633
+if (var != null && var.getType() instanceof FunctionType) {#693,18.762196731567382
+if (qVar != null) {#1116,18.753940105438232
+if (info == null) {#656,18.719525082906088
+CollectProperties(ObjectType thisType) {#1264,18.716141164302826
+JSType delegateType = delegateName == null ?#1194,18.697275161743164
+if (ownerType instanceof FunctionType) {#1191,18.687939749823677
+ObjectType globalThis =#916,18.678639348347982
+if (name != null && !name.isEmpty()) {#840,18.67559142339797
+if (root.getType() == Token.NAME) {#952,18.672179623654014
+if (info != null) {#563,18.6547114054362
+if (inferred) {#919,18.64898431301117
+globalThis.defineInferredProperty(variableName,#920,18.647257639014203
+String functionName = name.getString();#644,18.64471385058235
+private ObjectType getObjectSlot(String slotName) {#1210,18.64431768655777
+this.scope = scope;#388,18.644076983133953
+String delegateName = codingConvention.getDelegateSuperclassName();#1193,18.64375015258789
+shouldDeclareOnGlobalThis = scope.isGlobal() &&#883,18.64003508431571
+if (singletonGetterClassName != null) {#1015,18.633599546220566
+if (info == null ||#1289,18.617225919451034
+case Token.GETPROP:#1275,18.606327458431846
+case Token.STRING:#321,18.602605899175007
+String qName = n.getQualifiedName();#1105,18.59828702141257
+.inferReturnType(info)#748,18.587728595733644
+case Token.NUMBER:#325,18.58710813522339
+case Token.VAR:#268,18.57505886895316
+parent.getType() == Token.VAR ||#880,18.559521136076555
+if (superCtor != null && subCtor != null) {#1006,18.559081153869627
+Scope createInitialScope(Node root) {#206,18.556884158741344
+String fnName = node.getQualifiedName();#500,18.55662354968843
+if (typedef != null) {#1415,18.54622236887614
+if (info != null) {#496,18.545944654024563
+if (relationship != null) {#993,18.545780863080704
+if (maybeAssign.getType() == Token.ASSIGN) {#277,18.545667024759148
+for (ObjectType iface :#778,18.54373073577881
+if ("prototype".equals(propName)) {#1114,18.542722758124857
+Var ownerVar = scope.getVar(slotName);#1211,18.530247529347736
+if (info != null && info.hasType()) {#972,18.522798750135635
+if (!inferred) {#909,18.522111688341415
+CompilerInput input = compiler.getInput(sourceName);#912,18.517921447753906
+String propName = n.getLastChild().getString();#1106,18.510819585699785
+private abstract class AbstractScopeBuilder#357,18.500855565071106
+CompilerInput input = compiler.getInput(sourceName);#658,18.4989480143008
+if (typedef == null) {#1383,18.494798278808595
+parent.getType() == Token.FUNCTION ||#879,18.485031684239704
+ObjectType ownerType = ObjectType.cast(var.getType());#734,18.484599148785627
+Node body = astParameters.getNext();#1506,18.484255091349283
+FunctionTypeBuilder builder =#507,18.46970729827881
+if (delegateType != null &&#1196,18.464837339189316
+case Token.REGEXP:#334,18.458757956822712
+boolean shouldDeclareOnGlobalThis = false;#876,18.455897510051727
+private final AbstractCompiler compiler;#108,18.455323643154568
+if (value != null) {#808,18.454905950106106
+TypedScopeCreator(AbstractCompiler compiler) {#139,18.4545544896807
+Var var = scope.getVar(value.getQualifiedName());#830,18.45040267944336
+((isExtern && !ownerType.isNativeObjectType()) ||#1177,18.44798002571895
+if (fnVar == null ||#1486,18.43371721903483
+if (info == null || !info.hasTypedefType()) {#1378,18.433079025962137
+private final boolean isExtern;#1314,18.427409345453437
+switch (n.getType()) {#1345,18.42186668940953
+compiler.report(JSError.make(sourceName, key, ENUM_DUP, keyName));#819,18.418970328110916
+case Token.ASSIGN:#1347,18.4170982497079
+switch (child.getType()) {#1271,18.41630612479316
+if (parent == null) {#162,18.41185829856179
+if (functionType != null) {#1021,18.40925947825114
+scope.declare(name, null, t, null, false);#254,18.407547097457083
+if (n.getType() == Token.NAME) {#877,18.397909264815482
+if (!qVar.isTypeInferred()) {#1117,18.3978454044887
+JSType ownerTypeOfThis = ((FunctionType) ownerType).getTypeOfThis();#1192,18.39567295710246
+if (jsDocParameter != null) {#1513,18.390476998828706
+Var oldVar = scopeToDeclareIn.getVar(variableName);#905,18.388635357220966
+static final String DELEGATE_PROXY_SUFFIX = "(Proxy)";#91,18.384706724257697
+functionParamBuilder.addRequiredParams(#1072,18.37430487181011
+if (enumType == null) {#837,18.37265055520194
+for (DeferredSetType deferred : deferredSetTypes) {#397,18.369792135138262
+new FunctionTypeBuilder(#508,18.36668160087184
+"function defined as standalone function when it is being " +#588,18.366277001120828
+(fnVar.getNameNode() != null &&#1490,18.36548208153766
+if (realType == null) {#1427,18.364744424819946
+if (functionType == null && info != null && info.hasType()) {#715,18.36391818005106
+Var var = scope.getVar(rValue.getQualifiedName());#692,18.362301270167034
+if (functionType != null) {#1508,18.35264982495989
+case Token.FUNCTION:#435,18.3469575881958
+if (objectType != null) {#1018,18.341592729091644
+private StubDeclaration(Node node, boolean isExtern, String ownerName) {#1317,18.341385277834807
+if (functionType == null) {#726,18.325932570866176
+if (enumType.hasOwnProperty(keyName)) {#818,18.318805541992187
+scope.undeclare(qVar);#1121,18.316915464401244
+case Token.ASSIGN:#449,18.315046991620743
+if (rValue != null) {#757,18.30737590789795
+if (realType == null) {#1393,18.306260108947754
+String keyName = NodeUtil.getStringValue(key);#816,18.305186638465294
+JSType getDeclaredTypeInAnnotation(String sourceName,#491,18.298432048998382
+if (jsType != null &&#1298,18.295090866088866
+if (!inferred) {#1169,18.288559357325237
+String variableName = n.getQualifiedName();#892,18.28710870181813
+ObjectType subClass = ObjectType.cast(#996,18.286947197384304
+if (objNode != null) {#517,18.281194898817276
+private void declareNativeType(Scope scope, String name, JSType t) {#253,18.27964553833008
+if (objectLiteralCast != null) {#1038,18.27933474148021
+if (delegatorObject != null &&#1061,18.273544947306316
+if (info != null && info.hasEnumParameterType()) {#286,18.271472658429825
+if (var != null) {#954,18.27031192779541
+ObjectType ownerType = getObjectSlot(ownerName);#1190,18.26695990562439
+if (inferred) {#1162,18.262864351272583
+void resolveTypes() {#395,18.2604554494222
+rhsValue.getType() == Token.TRUE) {#1188,18.258923649787903
+if (info != null && info.getType() != null) {#1423,18.2578182220459
+(parent.getType() == Token.VAR ||#884,18.253642519315083
+(name.getType() == Token.NAME || name.getType() == Token.STRING)) {#1299,18.242133331298827
+Node jsDocParameter = jsDocParameters.getFirstChild();#1511,18.24013776364534
+String ownerName = ownerNode.getQualifiedName();#1104,18.235261228349472
+ownerType.isPropertyTypeInferred(propName)) &&#1176,18.233716658183507
+jsType = info.getType().evaluate(scope, typeRegistry);#498,18.233640597416805
+JSType type = info.getType().evaluate(scope, typeRegistry);#716,18.23265504837036
+new FunctionTypeBuilder(name, compiler, errorRoot, sourceName,#743,18.23046440548367
+@Override#264,18.230125109354656
+validator.expectUndeclaredVariable(#906,18.225153170133893
+defineSlot(name, var, null);#649,18.222397402713174
+.inferInheritance(info)#749,18.220628465924943
+if (t.getInput() == null || !t.getInput().isExtern()) {#436,18.210550215936475
+boolean isExtern = input.isExtern();#918,18.21010566893078
+type = type.restrictByNotNullOrUndefined();#719,18.207379749843053
+thisType.defineDeclaredProperty(#1300,18.202342987060547
+for (Node name : n.children()) {#567,18.198657777574326
+if (value.getType() == Token.OBJECTLIT) {#809,18.195153673489887
+if (parent.getType() == Token.EXPR_RESULT &&#472,18.191465561206524
+switch (node.getType()) {#267,18.19121469770159
+Node jsDocParameters = functionType.getParametersNode();#1509,18.19040641784668
+if (type != null && type instanceof FunctionType) {#184,18.189168578700016
+if (parent.getType() != Token.ASSIGN &&#442,18.187986125116762
+JSType type = null;#655,18.187613169352215
+.inferThisType(info, owner)#750,18.186242363669656
+FunctionType fnType = (FunctionType) type;#933,18.18439987727574
+ObjectType superClass = ObjectType.cast(#994,18.18200667699178
+globalThis.defineDeclaredProperty(variableName, type, isExtern);#926,18.17952774310934
+(isExtern || ownerType.isFunctionPrototypeType())) {#1244,18.17090913227626
+if (info.hasType()) {#497,18.170677542686462
+declareNativeType(scope, t.getInstanceType().getReferenceName(), t);#243,18.16267897865989
+n,#1147,18.15845000743866
+if (fnType.isConstructor() || fnType.isInterface()) {#934,18.156962182786728
+if (firstChild.getType() == Token.GETPROP &&#455,18.156702041625977
+defineSlot(n, parent, valueType, inferred);#1186,18.15372214317322
+ObjectType unknownType = typeRegistry.getNativeObjectType(UNKNOWN_TYPE);#1240,18.153665860493977
+Node key = value.getFirstChild();#814,18.146891593933105
+if (jsDocParameters != null) {#1510,18.140425962560318
+scopeBuilder.resolveTypes();#177,18.13063031976873
+if (value != null && value.getType() == Token.FUNCTION) {#642,18.129892539978027
+while (vars.hasNext()) {#403,18.127336756388345
+Iterator<Var> vars = scope.getVars();#402,18.12496762275696
+Node fnRoot = isFnLiteral ? rValue : null;#710,18.12085806239735
+Scope.Var fnVar = scope.getVar(fnName);#1485,18.11393828825517
+delegateSuperObject != null) {#1063,18.111698038437787
+String typedef = codingConvention.identifyTypeDefAssign(candidate);#1414,18.111034393310547
+if (maybeOwner.isQualifiedName()) {#303,18.109514136063424
+this(compiler, compiler.getCodingConvention());#140,18.109349867876837
+.inferParameterTypes(parametersNode, info)#751,18.104575951894123
+for (Node child = node.getFirstChild();#269,18.099183718363445
+if (!fnName.isEmpty()) {#1484,18.098770268758138
+void defineDeclaredFunction(Node n, Node parent) {#580,18.096741564133588
+parentType != Token.NAME,#587,18.094590130974264
+ObjectType ownerType = getObjectSlot(ownerName);#1239,18.09292244911194
+final JSType type;#121,18.0905029296875
+private final CodingConvention codingConvention;#111,18.08554752667745
+private final Node node;#1313,18.081958240932888
+.inferFromOverriddenFunction(overriddenPropType, parametersNode)#746,18.07748450551714
+void assertDefinitionNode(Node n, int type) {#542,18.075636863708496
+(scope.isLocal() || parentType != Token.ASSIGN) &&#586,18.071240571828987
+return null;#1217,18.058385954962837
+JSTypeNative tId) {#249,18.055386883871897
+public Scope createScope(Node root, Scope parent) {#156,18.04998779296875
+return s;#238,18.046877316066197
+if (firstChild.getType() == Token.GETPROP &&#300,18.04661532810756
+private void declareNativeValueType(Scope scope, String name,#248,18.03802858988444
+void defineSlot(Node n, Node parent, JSType type, boolean inferred) {#872,18.03690060325291
+String ownerName = stub.ownerName;#1230,18.033003358279956
+if (n.getType() == Token.FUNCTION ||#415,18.032577896118163
+ObjectType delegateBaseObject = ObjectType.cast(#1057,18.030012916116153
+.setSourceNode(fnRoot)#745,18.026665353775023
+.inferTemplateTypeName(info)#510,18.026452479155168
+JSType realType = info.getTypedefType().evaluate(scope, typeRegistry);#1392,18.025722571781703
+super(scope);#1331,18.024999809265136
+CodingConvention codingConvention) {#144,18.023025957743325
+firstChild.isQualifiedName()) {#456,18.020312889762547
+if (valueType == null && rhsValue != null) {#1139,18.018825674057005
+inferred = !(rhsValue != null &&#1164,18.018819173177082
+if (delegatorCtor != null && delegateBaseCtor != null &&#1068,18.01796661376953
+DiagnosticType.warning(#94,18.017321586608887
+return getDeclaredTypeInAnnotation(t.getSourceName(), node, info);#488,18.016214179992676
+private final JSTypeRegistry registry;#258,18.01219345973088
+Node value, JSType elementsType) {#804,18.011567804548477
+if (valueType == null) {#1144,18.0077942439488
+DiagnosticType.warning(#99,18.00647536913554
+Node name = member.getLastChild();#1297,18.005545616149902
+if (n == scope.getRootNode()) return;#1469,18.001658545600044
+defineSlot(n, parent, unknownType, true);#1241,17.999188089370726
+if (n.getJSType() == null) {#343,17.99763756706601
+superClassCtor == null ||#939,17.99750759290612
+ObjectType ownerType = getObjectSlot(ownerName);#1170,17.991905832290648
+if (n.hasOneChild()) {#1354,17.988665229395817
+if (rvalue.getType() == Token.FUNCTION ||#617,17.981840133666992
+private void declareArguments(Node functionNode) {#1504,17.976297887166343
+if (objNode.getType() == Token.GETPROP &&#518,17.971369284170645
+if (type != null && type.getConstructor() != null) {#1041,17.96851909160614
+compiler.report(JSError.make(t.getSourceName(), n,#1044,17.96800445688182
+return (FunctionType) propType;#774,17.9667946100235
+if (!searchedForThisType) {#528,17.96523666381836
+fnName, compiler, node, sourceName, scope)#509,17.960642623901368
+private void defineName(Node name, Node var, Node parent, JSDocInfo info) {#639,17.956760025024415
+case Token.GETPROP:#470,17.954560852050783
+FunctionType getterType =#1022,17.95385323630439
+Preconditions.checkArgument(qName != null && ownerName != null);#1107,17.953831553459167
+.inferReturnType(info)#511,17.951816255396064
+!scope.isDeclared(qName, false));#1166,17.94832181930542
+Node rvalue = n.getLastChild();#614,17.946963906288147
+getNativeType(JSTypeNative.NO_TYPE) :#922,17.946719618404614
+if (type != null) {#624,17.946565119425454
+while (key != null) {#815,17.94460335899802
+identifyEnumInNameNode(#271,17.940925046017295
+Node node, JSDocInfo info) {#492,17.94084909227159
+ObjectType delegatorObject = ObjectType.cast(#1055,17.937944580526914
+@Override#426,17.93238099416097
+parent.getType() == Token.LP ||#881,17.93056886846369
+defineSlot(astParameter, functionNode,#1514,17.923248912977137
+String functionName = n.getFirstChild().getString();#590,17.917185883773
+type = getEnumType(name.getString(), var, value,#663,17.91595928485577
+FunctionType fnType = (FunctionType) type;#185,17.914226281015498
+lvalueNode.isQualifiedName()) {#730,17.9139968698675
+typeRegistry.getType(delegateRelationship.delegator));#1056,17.913379889268143
+extends AbstractShallowStatementCallback {#1261,17.91105276743571
+Node owner = null;#702,17.90530118075284
+boolean isExtern = t.getInput() != null && t.getInput().isExtern();#1174,17.89854919910431
+if (parent.getType() == Token.EXPR_RESULT) {#1145,17.894139671325682
+ObjectType fnThisType = fnType.getTypeOfThis();#186,17.89342520453713
+Node fnBlock = isFnLiteral ? parametersNode.getNext() : null;#713,17.891276983114388
+enumType = typeRegistry.createEnumType(name, elementsType);#811,17.88613082744457
+super(scope);#1450,17.88584985733032
+compiler.report(JSError.make(sourceName, parent, ENUM_INITIALIZER));#838,17.8834729050145
+switch (n.getType()) {#430,17.88173464366368
+ObjectType objectType = ObjectType.cast(#1016,17.88043366538154
+private final List<StubDeclaration> stubDeclarations =#379,17.87771146437701
+case Token.EXPR_RESULT:#275,17.87652074589449
+defineSlot(catchName, n, null);#553,17.87510222196579
+scope.isLocal()) {#648,17.873597357008194
+typeRegistry.getType(singletonGetterClassName));#1017,17.87232046860915
+if (delegateRelationship != null) {#1032,17.872221291065216
+return enumType;#845,17.869634532928465
+String propName = lvalueNode.getLastChild().getString();#736,17.865748832965718
+this.ownerName = ownerName;#1320,17.861609322684153
+private class DeferredSetType {#119,17.861217498779297
+name.getString(),#1301,17.857015358774287
+if (n.getType() == Token.EXPR_RESULT) {#1269,17.852249031066894
+JSType getDeclaredTypeInAnnotation(#486,17.850505765279134
+Preconditions.checkNotNull(input, sourceName);#659,17.843280087346617
+TypedScopeCreator(AbstractCompiler compiler,#143,17.837964864877556
+private FunctionType getFunctionType(String name,#686,17.83770309175764
+ownerType.defineDeclaredProperty(propName, valueType, isExtern);#1180,17.83664197921753
+scope)#744,17.835287200080025
+n.setJSType(getNativeType(NUMBER_TYPE));#326,17.834626873334248
+newScope = new Scope(parent, root);#170,17.833111941814423
+private void declareNativeFunctionType(Scope scope, JSTypeNative tId) {#241,17.832915115356446
+codingConvention.getSingletonGetterClassName(n);#1014,17.824891567230225
+key = (key == null) ? null : key.getNext();#827,17.824142738624854
+DiagnosticType.warning(#104,17.823436896006267
+Var var = scope.getVar(root.getString());#953,17.81291743687221
+Node maybeAssign = node.getFirstChild();#276,17.811394010271346
+type = input.isExtern() ?#660,17.81032321327611
+EnumType enumType = null;#805,17.808125291551864
+info.getEnumParameterType().evaluate(scope, typeRegistry));#623,17.80488637515477
+JSType jsType = getDeclaredTypeInAnnotation(t, member, info);#1296,17.803133147103445
+return null;#787,17.80166244506836
+private boolean isQnameRootedInGlobalScope(Node n) {#950,17.799087683359783
+n.getType() == Token.GETPROP &&#888,17.797415653864544
+ownerTypeOfThis.isSubtype(delegateType)) {#1197,17.796747275761195
+delegateSuperCtor != null) {#1069,17.795169734954833
+delegateBaseObject.getReferenceName() + DELEGATE_PROXY_SUFFIX,#1079,17.794133131844657
+if (info.isConstructor() && typeRegistry.getType(fnName) != null) {#503,17.793538758248992
+JSType propType = ownerType.getPropertyType(propName);#772,17.791931065646086
+JSType jsType = null;#493,17.790995870317733
+super.visit(t, n, parent);#1343,17.78787618524888
+"JSC_MALFORMED_TYPEDEF",#95,17.787818162337594
+private void defineSlot(Node name, Node parent, JSType type) {#856,17.78763348715646
+Node name = n.getFirstChild();#571,17.779619160820456
+return null;#308,17.779493059430802
+private List<ObjectType> delegateProxyPrototypes = Lists.newArrayList();#113,17.77919272372597
+case Token.OBJECTLIT:#342,17.777024507522583
+return jsType;#535,17.775842952728272
+"JSC_ENUM_INITIALIZER_NOT_ENUM",#100,17.771826846258982
+defineSlot(name, var, type);#671,17.769920349121094
+DiscoverEnums(JSTypeRegistry registry) {#260,17.767181396484375
+this.codingConvention = codingConvention;#147,17.766473134358723
+FunctionType functionType = (FunctionType) functionNode.getJSType();#1507,17.76426526774531
+private void handleFunctionInputs(Node fnNode) {#1480,17.75742495059967
+maybeDeclareQualifiedName(t, n.getJSDocInfo(),#457,17.754521863213903
+functionType = (FunctionType) var.getType();#694,17.75308149511164
+String typedef = candidate.getQualifiedName();#1382,17.751444872687845
+fnVar.getInitialValue() != fnNode)) {#1493,17.749561991010392
+compiler.report(JSError.make(sourceName, n, MULTIPLE_VAR_DEF));#565,17.746586322784424
+ObjectType delegateSuperObject = ObjectType.cast(#1059,17.74307088290944
+Node n, Node rhsValue) {#971,17.74301461612477
+Node firstChild = n.getFirstChild();#454,17.736217784881593
+this.thisType = thisType;#1265,17.73252135515213
+firstChild.getLastChild().getString().equals("prototype")) {#301,17.728331932654747
+if (propType instanceof FunctionType) {#781,17.723642778396606
+declareNativeFunctionType(s, SYNTAX_ERROR_FUNCTION_TYPE);#223,17.71709994475047
+ObjectType type = ObjectType.cast(#1039,17.716508584864
+Preconditions.checkArgument(inferred || type != null);#873,17.712542715526762
+assertDefinitionNode(n, Token.VAR);#560,17.709500425002155
+FunctionTypeBuilder.isFunctionTypeDeclaration(info));#1159,17.70910914738973
+if (lvalueNode != null) {#703,17.70902589162191
+declareNativeValueType(s, "undefined", VOID_TYPE);#226,17.70130033493042
+boolean searchedForThisType = false;#516,17.69713396496243
+Preconditions.checkArgument(!variableName.isEmpty());#893,17.696110770815896
+sourceName, n, parent, oldVar, variableName, type);#907,17.694525506761337
+this.node = node;#1318,17.694299856821697
+DeferredSetType(Node node, JSType type) {#123,17.692684120602078
+@Override#1362,17.691102981567383
+boolean inferred = true;#1155,17.689573287963867
+n.setJSType(getNativeType(UNKNOWN_TYPE));#339,17.681825598080952
+parent.getType() != Token.NAME) {#443,17.681289978027344
+if (n.getType() == Token.LP && parent == scope.getRootNode()) {#1471,17.67942735883925
+Node child = n.getFirstChild();#1270,17.675964506048906
+this.validator = compiler.getTypeValidator();#146,17.675906002521515
+static final DiagnosticType ENUM_INITIALIZER =#98,17.675663828849792
+FunctionType subCtor = subClass.getConstructor();#1000,17.67465288742729
+if (!fnThisType.isUnknownType()) {#187,17.67257595062256
+propName, unknownType, isExtern);#1248,17.672064622243244
+rValue != null && rValue.getType() == Token.FUNCTION;#709,17.66962436267308
+validator.expectSuperType(t, n, superClass, subClass);#1003,17.669399706522622
+this.type = type;#127,17.668254454930622
+declareNativeFunctionType(s, ERROR_FUNCTION_TYPE);#214,17.664652974982012
+static final DiagnosticType MALFORMED_TYPEDEF =#93,17.66335622002097
+private final List<Node> nonExternFunctions = Lists.newArrayList();#371,17.66265171224421
+void maybeDeclareQualifiedName(#1363,17.64683477083842
+defineCatch(n, parent);#463,17.641766018337673
+private void checkForClassDefiningCalls(#989,17.633525099073136
+defineSlot(name, parent, type, type == null);#857,17.62806264977706
+declareNativeFunctionType(s, NUMBER_OBJECT_FUNCTION_TYPE);#217,17.6278831233149
+null : ownerVarType.restrictByNotNullOrUndefined());#1215,17.625462072866934
+type = getFunctionType(name.getString(), value, info, name);#666,17.61838807000054
+Node errorRoot = rValue == null ? lvalueNode : rValue;#707,17.617705735293303
+delegateBaseObject != null &&#1062,17.61521625518799
+JSType realType = null;#1422,17.6150244474411
+switch (n.getType()) {#312,17.612679322560627
+getNativeType(U2U_CONSTRUCTOR_TYPE));#1073,17.61256616456168
+declareNativeFunctionType(s, URI_ERROR_FUNCTION_TYPE);#225,17.61026327950614
+n.getType() == Token.SCRIPT) {#416,17.606263290752064
+JSType valueType = getDeclaredGetPropType(t, info, n, rhsValue);#1138,17.60499273497483
+.inferParameterTypes(info)#512,17.602151090448555
+newScope = createInitialScope(root);#164,17.601894505818684
+if (parent == null) {#194,17.599389509721235
+defineSlot(name, var, functionType);#651,17.598881816864015
+n.setJSType(getNativeType(VOID_TYPE));#318,17.598414023717243
+info != null && info.isConstructor()) {#618,17.59610294160389
+private final TypeValidator validator;#110,17.591035842895508
+n.setJSType(getNativeType(BOOLEAN_TYPE));#331,17.58902799166166
+Node value = name.getFirstChild();#640,17.586832809448243
+propType = iface.getPropertyType(propName);#780,17.5864433205646
+defineName(name, n, parent,#572,17.585826985976276
+void defineCatch(Node n, Node parent) {#550,17.58555269241333
+ownerType.defineInferredProperty(#1247,17.584571573469375
+compiler.report(#821,17.58394744661119
+declareNativeFunctionType(s, ARRAY_FUNCTION_TYPE);#211,17.58289041519165
+searchedForThisType = true;#521,17.582500139872234
+if (functionType != null && functionType.isConstructor()) {#695,17.57813377380371
+typeRegistry.getType(codingConvention.getDelegateSuperclassName()));#1060,17.575703875223795
+realType = info.getType().evaluate(scope, typeRegistry);#1424,17.574510134183445
+n.setJSType(getNativeType(REGEXP_TYPE));#335,17.571169018745422
+boolean isFnLiteral =#708,17.570704664502824
+super.maybeDeclareQualifiedName(t, info, n, parent, rhsValue);#1367,17.568837342438876
+codingConvention.getClassesDefinedByCall(n);#992,17.5687153339386
+declareNativeFunctionType(s, RANGE_ERROR_FUNCTION_TYPE);#219,17.567773168737236
+member.getFirstChild().setJSType(thisType);#1295,17.567685213955965
+t.getSourceName(), candidate, MALFORMED_TYPEDEF, typedef));#1396,17.558927432910817
+if (candidate.getType() == Token.GETPROP) {#1400,17.556324005126953
+(parent.getType() == Token.ASSIGN ||#889,17.5555495818456
+break;#460,17.550581852595013
+fnType.getPrototype(), compiler.getInput(sourceName),#937,17.550497208872148
+declareNativeValueType(s, "ActiveXObject", NO_OBJECT_TYPE);#236,17.550372331038766
+JSType ownerVarType = ownerVar.getType();#1213,17.549560501461936
+private void identifyEnumInNameNode(Node nameNode, JSDocInfo info) {#285,17.542550683021545
+member.getType() != Token.GETPROP ||#1290,17.541396935780842
+Node member, Node nodeWithJsDocInfo) {#1283,17.54083824157715
+return getDeclaredTypeInAnnotation(t, n, info);#973,17.540802126345426
+if (type.isFunctionType()) {#720,17.538648829740637
+defineDeclaredFunction(n, parent);#444,17.53790128798712
+typeRegistry.getType(delegateRelationship.delegateBase));#1058,17.537606642796444
+return newScope;#198,17.537059903144836
+JSDocInfo info = nodeWithJsDocInfo.getJSDocInfo();#1284,17.535216368161716
+if (n.hasMoreThanOneChild()) {#562,17.530133936140274
+declareNativeFunctionType(s, TYPE_ERROR_FUNCTION_TYPE);#224,17.53005550021217
+propName, ownerType == null ? unknownType : ownerType);#1251,17.52686834335327
+if (NodeUtil.isFunctionDeclaration(n)) {#593,17.526864433288573
+private static final class StubDeclaration {#1312,17.52665309906006
+member.getFirstChild().getType() != Token.THIS) {#1291,17.525841183132595
+assertDefinitionNode(n, Token.CATCH);#551,17.523258321425494
+info.getEnumParameterType().evaluate(scope, typeRegistry));#664,17.519480228424072
+info = (info != null) ? info : rvalue.getJSDocInfo();#616,17.51925090789795
+Preconditions.checkNotNull(type);#125,17.519083440303802
+parent.getType() == Token.CATCH);#882,17.518859531568445
+type = getDeclaredTypeInAnnotation(sourceName, name, info);#668,17.516732886985498
+declareNativeType(scope, name, typeRegistry.getNativeType(tId));#250,17.51550985419232
+Node parametersNode = isFnLiteral ?#711,17.515443689682904
+Lists.newArrayList();#366,17.515194279806956
+rhsValue.getType() == Token.FUNCTION) {#977,17.513125495910643
+Preconditions.checkArgument(#887,17.510786831378937
+FunctionType overriddenPropType = null;#728,17.50782242943259
+declareNativeFunctionType(s, DATE_FUNCTION_TYPE);#213,17.506107759475707
+"assigned");#589,17.502635751451766
+return ObjectType.cast(ownerVarType == null ?#1214,17.501035594940184
+FunctionType functionType =#645,17.50035550044133
+n.isQualifiedName()) {#473,17.499944123354826
+ObjectLiteralCast objectLiteralCast =#1036,17.499349201426785
+defineVar(n, parent);#467,17.49207861283246
+void setDeferredType(Node node, JSType type) {#391,17.488678982383327
+declareNativeFunctionType(s, EVAL_ERROR_FUNCTION_TYPE);#215,17.486411094665527
+null : typeRegistry.getType(delegateName);#1195,17.484860243620695
+void resolveStubDeclarations() {#1224,17.483449300130207
+@Override#412,17.47990655899048
+n.setJSType(getNativeType(STRING_TYPE));#322,17.479228377342224
+return getDeclaredTypeInAnnotation(t, n, info);#980,17.4790738147238
+private void applyDelegateRelationship(#1053,17.4784418741862
+private final ErrorReporter typeParsingErrorReporter;#109,17.475192324320474
+declareNativeFunctionType(s, REFERENCE_ERROR_FUNCTION_TYPE);#220,17.47218202508014
+this.node = node;#126,17.471134185791016
+null, null, null);#1080,17.466968727111816
+declareNativeFunctionType(s, OBJECT_FUNCTION_TYPE);#218,17.454967880249022
+declareNativeFunctionType(s, REGEXP_FUNCTION_TYPE);#221,17.454717779159544
+compiler.report(#1428,17.454528740474156
+break;#1274,17.4512060880661
+t.getSourceName(), candidate, MALFORMED_TYPEDEF, typedef));#1430,17.445207595825195
+private static class DiscoverEnums extends AbstractShallowStatementCallback {#257,17.443035570780435
+DelegateRelationship delegateRelationship =#1030,17.441280841827393
+if (lvalueNode != null && lvalueNode.getType() == Token.GETPROP &&#729,17.43567088445028
+codingConvention.applyDelegateRelationship(#1083,17.434120655059814
+typeRegistry.getType(relationship.superclassName));#995,17.432627861316387
+typeRegistry.getType(relationship.subclassName));#997,17.429670700660118
+builder.inferThisType(info, (Node) null);#529,17.422336725088265
+assertDefinitionNode(n, Token.ASSIGN);#602,17.419455079471362
+deferredSetTypes.add(new DeferredSetType(node, type));#392,17.414268233559348
+declareNativeFunctionType(s, STRING_OBJECT_FUNCTION_TYPE);#222,17.41320452482804
+getFunctionType(functionName, value, info, null);#646,17.410179901123048
+typeRegistry, newScope, delegateProxyPrototypes);#196,17.40947216207331
+t.getInput() != null && t.getInput().isExtern(),#1148,17.40201113300939
+if (relationship.type == SubclassType.INHERITS) {#1002,17.391375908484825
+private FunctionType findOverriddenFunction(#768,17.389750321706135
+declareNativeFunctionType(s, FUNCTION_FUNCTION_TYPE);#216,17.384161313374836
+void defineVar(Node n, Node parent) {#559,17.378164863586427
+enumType = (EnumType) var.getType();#832,17.377207069396974
+private EnumType getEnumType(String name, Node parent,#803,17.376381121183698
+JSError.make(sourceName, key, ENUM_NOT_CONSTANT, keyName));#822,17.37254017875308
+assertDefinitionNode(n, Token.FUNCTION);#581,17.363981829749214
+child != null; child = child.getNext()) {#270,17.363618179603858
+typeRegistry.forwardDeclareType(typedef);#1419,17.359868776230584
+Lists.newArrayList();#380,17.358095714024135
+scopeBuilder.resolveStubDeclarations();#176,17.35561043875558
+if (n.getType() == Token.GETPROP) {#298,17.354126729463275
+Node lvalue = n.getFirstChild();#615,17.344390153884888
+compiler.report(#1394,17.33990756670634
+FunctionType superClassCtor = fnType.getSuperClassConstructor();#935,17.339160169873917
+.inferInheritance(info);#513,17.330689388772715
+node.getFirstChild() : null;#495,17.32976275996158
+JSType type = functionNode.getJSType();#183,17.32523079922325
+for (StubDeclaration stub : stubDeclarations) {#1225,17.32306711297286
+n.setJSType(getNativeType(NULL_TYPE));#314,17.322307628134023
+for (Node functionNode : scopeBuilder.nonExternFunctions) {#182,17.32198610305786
+objNode.getLastChild().getString().equals("prototype")) {#519,17.32107949256897
+new FunctionParamBuilder(typeRegistry);#1071,17.320858416349992
+typeRegistry.declareType(name, functionType.getInstanceType());#696,17.31925106048584
+defineName(name, n, parent, name.getJSDocInfo());#568,17.316223250495064
+Node rValue, JSDocInfo info, @Nullable Node lvalueNode) {#687,17.31294882739032
+FunctionType functionType = getFunctionType(functionName, n, info,#591,17.301611466841265
+CONSTRUCTOR_EXPECTED));#1045,17.297750069544865
+return null;#504,17.29459851582845
+break;#464,17.29375632603963
+parent.getType() == Token.EXPR_RESULT));#890,17.280972021597403
+Node ownerNode = n.getFirstChild();#1103,17.276740193367004
+declareNativeFunctionType(s, BOOLEAN_OBJECT_FUNCTION_TYPE);#212,17.27396869659424
+super.visit(t, n, parent);#1476,17.27199935913086
+JSDocInfo info = n.getJSDocInfo();#561,17.271019172668456
+scopeBuilder.new CollectProperties(fnThisType));#189,17.26141533484826
+private void checkForTypedef(#1376,17.2583749294281
+codingConvention.getObjectLiteralCast(t, n);#1037,17.25546573638916
+ownerType.getCtorImplementedInterfaces()) {#779,17.247994645436606
+Preconditions.checkState(sourceName != null);#543,17.247140142652725
+rhsValue.getType() == Token.FUNCTION &&#1165,17.24661706044124
+FunctionType delegatorCtor = delegatorObject.getConstructor();#1064,17.246383418207582
+.inferReturnStatementsAsLastResort(fnBlock)#752,17.24232130784255
+JSDocInfo info = candidate.getJSDocInfo();#1421,17.241781191392377
+setDeferredType(n, type);#910,17.239346102664346
+SubclassRelationship relationship =#991,17.238072872161865
+maybeDeclareQualifiedName(t, n.getJSDocInfo(), n, parent, null);#474,17.235019847324917
+jsDocParameter = jsDocParameter.getNext();#1516,17.23119647979736
+NodeTraversal.traverse(compiler, root, scopeBuilder);#168,17.229504758661445
+defineNamedTypeAssign(n, parent);#451,17.229173569452193
+return parent == null || parent.getType() != Token.FUNCTION ||#422,17.227817452472188
+"Constructor expected as first argument");#106,17.22562238905165
+static final DiagnosticType CONSTRUCTOR_EXPECTED =#103,17.221617889404296
+builder.inferThisType(info, objNode.getFirstChild());#520,17.2139892578125
+return false;#958,17.21313190460205
+typeRegistry.declareType(typedef, realType);#1433,17.211861361627992
+Preconditions.checkArgument(#878,17.207768440246582
+private JSType getNativeType(JSTypeNative nativeType) {#353,17.20430220497979
+Node maybeOwner = firstChild.getFirstChild();#302,17.201394332082646
+localScopeBuilder.build();#173,17.20072356859843
+parent.getType() == Token.FUNCTION);#885,17.196236305236816
+break;#1350,17.192346334457397
+typeRegistry.getType(objectLiteralCast.typeName));#1040,17.18808994974409
+defineSlot(astParameter, functionNode, null, true);#1518,17.18572877954554
+codingConvention.applySingletonGetter(functionType, getterType,#1024,17.182531060843633
+JSType type = getEnumType(lvalue.getQualifiedName(), n, rvalue,#622,17.18235335811492
+checkForOldStyleTypedef(t, n);#1349,17.175622073086824
+Node objNode = node.getType() == Token.GETPROP ?#494,17.167407859455455
+JSDocInfo info = n.getJSDocInfo();#603,17.166753673553465
+getNativeType(UNKNOWN_TYPE) : null;#661,17.166055092444786
+Node catchName = n.getFirstChild();#552,17.161459028720856
+Node parent = n.getParent();#1227,17.157328069210052
+FunctionType delegateSuperCtor = delegateSuperObject.getConstructor();#1066,17.156511306762695
+FunctionType functionType = objectType.getConstructor();#1019,17.15648906881159
+break;#274,17.15419324239095
+implements NodeTraversal.Callback {#358,17.14917414528983
+superClassCtor.getInstanceType().equals(#940,17.148117337908065
+typeRegistry.declareType(name, enumType.getElementsType());#841,17.132922445024764
+break;#447,17.128196239471436
+node.setJSType(type.resolve(typeParsingErrorReporter, scope));#135,17.125135353633336
+Node root = NodeUtil.getRootOfQualifiedName(n);#951,17.119740226052024
+defineSlot(candidate, candidate.getParent(),#1401,17.11960802580181
+Node nameNode = null;#266,17.119439045588177
+key = key.getNext();#826,17.117529116178815
+JSDocInfo info = n.getJSDocInfo();#583,17.114914178848267
+checkForClassDefiningCalls(t, n, parent);#432,17.10855754216512
+overriddenPropType = findOverriddenFunction(ownerType, propName);#737,17.10450007120768
+declareNativeValueType(s, "goog.typedef", NO_TYPE);#231,17.099798700083856
+return;#1292,17.098704020182293
+typeRegistry.forwardDeclareType(typedef);#1390,17.098411811025517
+Node n, Node parent, Node rhsValue) {#1102,17.09827551841736
+FunctionType functionType = null;#688,17.09443481151874
+return functionType;#762,17.087565994262697
+FunctionType delegateBaseCtor = delegateBaseObject.getConstructor();#1065,17.085612131201703
+Node astParameters = functionNode.getFirstChild().getNext();#1505,17.08321342468262
+functionType = (FunctionType) type;#721,17.08162378009997
+Node fnNameNode = fnNode.getFirstChild();#1482,17.080484708150227
+return functionType;#699,17.078100601832073
+builder.inferThisType(info, objNode.getJSType());#523,17.077100261565178
+child, NodeUtil.getInfoForNameNode(child));#272,17.077039909362792
+this.typeParsingErrorReporter = typeRegistry.getErrorReporter();#149,17.074473588362984
+return n.getJSType();#975,17.074105203151703
+typeRegistry.declareType(typedef, realType);#1399,17.06512083326067
+return var.isGlobal();#955,17.064522743225098
+break;#323,17.056046581268312
+stubDeclarations.add(new StubDeclaration(#1146,17.049954232715425
+NodeTraversal t, Node n, Node parent) {#990,17.045358884902228
+FunctionType t = typeRegistry.getNativeFunctionType(tId);#242,17.044351720809935
+Preconditions.checkNotNull(node);#124,17.024568676948547
+identifyEnumInNameNode(#278,17.02254867553711
+FunctionType superCtor = superClass.getConstructor();#999,17.017782999121625
+this.isExtern = isExtern;#1319,17.011250615119934
+break;#433,17.003533363342285
+functionType =#742,16.997361269864168
+typeRegistry.resolveTypesInScope(scope);#409,16.992555777231853
+defineSlot(n, parent, getNativeType(BOOLEAN_TYPE),#1198,16.990808773040772
+"JSC_REFLECT_CONSTRUCTOR_EXPECTED",#105,16.979467277526854
+maybeCollectMember(t, child.getFirstChild(), child);#1273,16.975295816149032
+isExtern);#924,16.97432041168213
+FunctionType findDelegate = typeRegistry.createFunctionType(#1074,16.97337778409322
+break;#468,16.961299419403076
+break;#319,16.960684490203857
+break;#332,16.952647304534914
+Preconditions.checkState(#585,16.949074891897347
+sourceName = (String) n.getProp(Node.SOURCENAME_PROP);#417,16.947714932759602
+boolean isExtern = stub.isExtern;#1231,16.930043270713405
+typeRegistry.registerPropertyOnType(#1250,16.927925812570674
+jsDocParameter.getJSType(), true);#1515,16.921859741210938
+this.registry = registry;#261,16.911038252023552
+private void attachLiteralTypes(Node n) {#311,16.904924733298166
+checkForTypedef(t, n, info);#1366,16.903507709503174
+type,#923,16.894980387254193
+Node n = stub.node;#1226,16.8874303817749
+NodeTraversal t, JSDocInfo info,#1364,16.88681788444519
+(info != null) ? info : name.getJSDocInfo());#573,16.88472315243312
+final Node node;#120,16.879295587539673
+FunctionType delegateProxy = typeRegistry.createConstructorType(#1078,16.8770188887914
+private JSType getDeclaredGetPropType(NodeTraversal t, JSDocInfo info,#970,16.87418051119204
+getNativeType(OBJECT_TYPE)));#941,16.869035402933758
+break;#340,16.859815406799317
+NodeTraversal.traverse(compiler, scope.getRootNode(), this);#1457,16.859323348999023
+Node n, Node parent, Node rhsValue) {#1365,16.854647302627562
+n == parent.getFirstChild() || parent == scope.getRootNode();#423,16.854515888072825
+private final JSTypeRegistry typeRegistry;#112,16.85212810222919
+int parentType = parent.getType();#584,16.828144073486328
+codingConvention.applySubclassRelationship(#1007,16.817709749395195
+node.setJSType(type);#131,16.81359494527181
+NodeTraversal t, Node candidate, JSDocInfo info) {#1377,16.811769008636475
+NodeTraversal t, Node node, JSDocInfo info) {#487,16.811119437217712
+break;#336,16.809237480163574
+codingConvention.getDelegateRelationship(n);#1031,16.804241050373424
+getFunctionType(lvalue.getQualifiedName(), rvalue, info,#619,16.800351333618163
+Preconditions.checkState(n.getType() == type);#544,16.793102945600236
+delegateProxy.setPrototypeBasedOn(delegateBaseObject);#1081,16.778921008110046
+ownerName));#1149,16.778740602381088
+void maybeDeclareQualifiedName(NodeTraversal t, JSDocInfo info,#1101,16.764288067817688
+enumType.defineElement(keyName);#824,16.757131493609883
+final class TypedScopeCreator implements ScopeCreator {#87,16.740308688237118
+false /* functions with implementations are not in externs */);#1303,16.71499029795329
+break;#327,16.712591552734374
+getNativeType(NO_TYPE), false);#1402,16.703571449626576
+break;#315,16.696496868133544
+NodeTraversal.traverse(compiler, root, new DiscoverEnums(typeRegistry));#208,16.68771398984469
+vars.next().resolveType(typeParsingErrorReporter);#404,16.687175750732422
+setDeferredType(objectLiteralCast.objectNode, type);#1042,16.67953216112577
+functionType.setJSDocInfo(info);#722,16.678677831377303
+valueType = rhsValue.getJSType();#1141,16.67614064216614
+rValue.getFirstChild().getNext() : null;#712,16.67452223404594
+registry.identifyEnumName(nameNode.getQualifiedName());#287,16.651696642239887
+null);#592,16.64725621541341
+return;#1379,16.64307107925415
+superCtor, subCtor, relationship.type);#1008,16.64064567429679
+private static Node getPrototypePropertyOwner(Node n) {#297,16.639173634847005
+declareArguments(fnNode);#1498,16.63591634310209
+setDeferredType(rValue, functionType);#758,16.629570358677913
+private void maybeCollectMember(NodeTraversal t,#1282,16.626902209387886
+attachLiteralTypes(n);#428,16.620891571044922
+scope, t.getPrototype().getReferenceName(), t.getPrototype());#245,16.617288827896118
+Node firstChild = n.getFirstChild();#299,16.614647030830383
+return rhsValue.getJSType();#978,16.614417023128933
+lvalueNode.getFirstChild().getQualifiedName());#732,16.599423938327366
+public void visit(NodeTraversal t, Node n, Node parent) {#1268,16.57759264241094
+return;#1384,16.573104476928712
+typeRegistry.getNativeObjectType(JSTypeNative.GLOBAL_THIS);#917,16.560980852912454
+codingConvention.defineDelegateProxyPrototypeProperties(#195,16.541741371154785
+void defineNamedTypeAssign(Node n, Node parent) {#601,16.53716634449206
+defineSlot(n.getFirstChild(), n, functionType);#594,16.53310454975475
+public void visit(NodeTraversal t, Node n, Node parent) {#427,16.530700184050062
+true);#1199,16.52171034283108
+NodeTraversal.traverse(compiler, functionNode.getLastChild(),#188,16.513144390923635
+searchedForThisType = true;#524,16.51018723987398
+private void checkForOldStyleTypedef(NodeTraversal t, Node candidate) {#1412,16.509018659591675
+objectType);#1025,16.490812903956364
+defineSlot(fnNameNode, fnNode, fnNode.getJSType(), false);#1494,16.490701643625894
+maybeAssign.getFirstChild(), maybeAssign.getJSDocInfo());#279,16.486515606150906
+jsType,#1302,16.47165792128619
+return (FunctionType) propType;#782,16.452100038528442
+checkForTypedef(t, n.getFirstChild(), n.getJSDocInfo());#1356,16.440107261433322
+@Override public void visit(NodeTraversal t, Node n, Node parent) {#1468,16.435802418252695
+declareNativeType(#244,16.434814929962158
+delegateSuperObject, delegateBaseObject, delegatorObject,#1084,16.42156329521766
+this.typeRegistry = compiler.getTypeRegistry();#148,16.364747664507696
+owner = getPrototypePropertyOwner(lvalueNode);#704,16.36169366836548
+functionParamBuilder.build());#1076,16.35128245353699
+maybeCollectMember(t, child, child);#1276,16.349477171897888
+jsType = builder.buildAndRegister();#532,16.33910520453202
+@Override public void visit(NodeTraversal t, Node n, Node parent) {#1342,16.329571475153383
+public void visit(NodeTraversal t, Node node, Node parent) {#265,16.31798930395217
+applyDelegateRelationship(delegateRelationship);#1033,16.28387481287906
+lvalue);#620,16.262786674499512
+checkForOldStyleTypedef(t, n);#1355,16.251925746599834
+return;#1473,16.214185523986817
+return typeRegistry.getNativeType(nativeType);#354,16.212185204029083
+return;#1119,16.144470623561315
+setDeferredType(lvalue, type);#625,16.103309679031373
+deferred.resolve(scope);#398,16.096058336893716
+typeRegistry.createFunctionType(objectType);#1023,16.075925685741282
+return maybeOwner;#304,16.074721268245153
+JSError.make(#1395,16.07465528186999
+handleFunctionInputs(parent);#1472,16.017020670572915
+n.setJSType(typeRegistry.createAnonymousObjectType());#344,16.004342739398663
+break;#281,15.989573319753012
+typeRegistry.createDefaultObjectUnion(delegateBaseObject),#1075,15.955790962491717
+continue;#1234,15.93756659825643
+firstChild, n, firstChild.getNext());#458,15.86730670928955
+return;#1152,15.864746189117431
+JSError.make(#1429,15.845020339602517
+break;#1358,15.825085560480753
+delegateProxyPrototypes.add(delegateProxy.getPrototype());#1086,15.805230293273926
+public final boolean shouldTraverse(NodeTraversal nodeTraversal, Node n,#413,15.801003041474715
+delegateProxy, findDelegate);#1085,15.78630274818057
+nonExternFunctions.add(n);#437,15.743639425797896
+break;#476,15.670949776967367
+.buildAndRegister();#753,15.63444502213422
+break;#346,15.535468864440919
+break;#1277,15.239012718200684

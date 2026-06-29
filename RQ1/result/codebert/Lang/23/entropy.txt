@@ -1,0 +1,216 @@
+if (registry != null) {#277,19.50838953256607
+int depth = 0;#381,19.474080599271336
+int fmtCount = 0;#157,19.39268834250314
+if (registry == null) {#146,19.38612425327301
+private String toPattern;#81,19.34204165140788
+if (coll == null || coll.size() == 0) {#495,19.2894886190241
+int depth = 1;#346,19.257221955519455
+if (escapingOn && c[start] == QUOTE) {#451,19.138266231702723
+boolean escapingOn) {#485,19.115441715016086
+int len = 0;#418,19.05198962871845
+boolean error = false;#304,19.03168032719539
+"Unterminated quoted string at position " + start);#474,19.02446801321847
+int fe = -1;#380,18.975018909999303
+private Format getFormat(String desc) {#276,18.950289799616886
+"Unterminated format element at position " + start);#332,18.923827852521622
+int lastHold = start;#455,18.906003543308803
+return true;#500,18.892207195884303
+int text = pos.getIndex();#345,18.8884454369545
+"Unterminated format element at position " + start);#364,18.884521075657435
+return appendTo == null ? null : appendTo.append(QUOTE);#453,18.88282745225089
+return false;#503,18.860598650845613
+StringBuilder appendTo, boolean escapingOn) {#448,18.790344801816072
+switch (c) {#384,18.736491315505084
+if (error) {#326,18.73234932239239
+if (containsElements(foundFormats)) {#196,18.72335042953491
+if (iter.next() != null) {#499,18.62781034816395
+if (c[pos.getIndex()] == START_FMT) {#172,18.627498944600422
+int i = 0;#200,18.614486806532916
+if (depth == 1) {#390,18.599241215249766
+@Override#252,18.593852361043293
+try {#316,18.59380096859402
+@Override#230,18.59214146931966
+private static final char START_FMT = ',';#76,18.579846441745758
+String args = null;#279,18.54699207754696
+for (int i = pos.getIndex(); i < pattern.length(); i++) {#456,18.541480311640985
+if (depth == 0) {#354,18.534408983976945
+int start = pos.getIndex();#343,18.514442920684814
+if (i > 0) {#281,18.476718250073883
+@Override#218,18.47389507293701
+int start = pos.getIndex();#301,18.465188920497894
+@Override#241,18.44969113667806
+public void setFormatByArgumentIndex(int argumentIndex, Format newFormat) {#231,18.437467748468574
+return appendTo == null ? null : appendTo.append(c, lastHold,#467,18.436861262601965
+throw new IllegalArgumentException(#331,18.427443504333496
+if ((c == START_FMT || c == END_FE) && result.length() > 0) {#315,18.40861047638787
+public String toPattern() {#135,18.407303047180175
+if (f != null) {#203,18.392010564389437
+throw new IllegalArgumentException(#473,18.391137313842773
+@Override#144,18.384641647338867
+do {#420,18.381562995910645
+depth++;#389,18.33283954196506
+"Unreadable format element at position " + start);#186,18.327607228205753
+private static final String DUMMY_PATTERN = "";#74,18.326555093129475
+if (!containsElements(customPatterns)) {#375,18.3199866771698
+if (c[pos.getIndex()] != END_FE) {#184,18.318655520677567
+private static final char START_FE = '{';#78,18.3132630666097
+while (pos.getIndex() < pattern.length()) {#382,18.298438526335218
+depth++;#350,18.273703045315212
+int start = pos.getIndex();#449,18.272799491882324
+public void setFormatsByArgumentIndex(Format[] newFormats) {#253,18.26858938307989
+throw new IllegalArgumentException(#363,18.26019547780355
+while (pos.getIndex() < pattern.length()) {#158,18.245019367762975
+return false;#496,18.230902608235677
+public final void applyPattern(String pattern) {#145,18.23088414328439
+if (factory != null) {#286,18.219252109527588
+fe++;#391,18.204990300265226
+return factory.getFormat(name, args, getLocale());#287,18.198861408233643
+String name = desc;#278,18.197055704453412
+StringBuffer result = new StringBuffer();#303,18.16785490512848
+ParsePosition pos = new ParsePosition(0);#155,18.162934446334837
+return null;#290,18.152822147716176
+@Override#134,18.149241129557293
+if (escapingOn && pattern.substring(i).startsWith(ESCAPED_QUOTE)) {#457,18.140243633373363
+String formatDescription = null;#171,18.135392492467705
+for (; pos.getIndex() < pattern.length(); next(pos)) {#347,18.112792015075684
+"Invalid format argument index at position " + start + ": "#328,18.11247486226699
+throw new UnsupportedOperationException();#243,18.10916207631429
+return Integer.parseInt(result.toString());#317,18.082595056103123
+appendQuotedString(pattern, pos, sb, false);#386,18.075168673197428
+case START_FE:#349,18.06602382659912
+throw new IllegalArgumentException(#327,18.0474661776894
+error = true;#311,18.04742709795634
+ParsePosition pos = new ParsePosition(0);#379,18.037942504882814
+if (c != START_FMT && c != END_FE) {#310,18.037734895944595
+appendTo.append(c, lastHold, pos.getIndex() - lastHold).append(#458,18.03714280515104
+continue;#312,18.031244798140094
+this.registry = registry;#127,18.02055117289225
+throw new UnsupportedOperationException();#220,18.018233998616537
+for (; !error && pos.getIndex() < pattern.length(); next(pos)) {#305,18.018043682493012
+throw new UnsupportedOperationException();#232,18.01076685587565
+int index = readArgumentIndex(pattern, next(pos));#167,18.00401407877604
+result.append(c);#324,17.997572633955215
+char c = pattern.charAt(pos.getIndex());#383,17.99034278869629
+pos.getIndex() - lastHold);#468,17.985222527475067
+c = pattern.charAt(pos.getIndex());#309,17.98084170477731
+private boolean containsElements(Collection<?> coll) {#494,17.95771875977516
+return toPattern;#136,17.955588499704998
+args = desc.substring(i + 1).trim();#283,17.954042148590087
+origFormats[i] = f;#204,17.93441726421488
+case END_FE:#352,17.930921161876004
+throw new UnsupportedOperationException();#254,17.916378593444826
+switch (c[pos.getIndex()]) {#159,17.910851063935652
+return pattern;#376,17.91026980082194
+name = desc.substring(0, i).trim();#282,17.905597813924153
+appendQuotedString(pattern, pos, null, escapingOn);#486,17.90341515974565
+char c = pattern.charAt(pos.getIndex());#306,17.901737022399903
+private static final String ESCAPED_QUOTE = "''";#75,17.897596677144367
+public void setFormats(Format[] newFormats) {#242,17.884749019847195
+char[] c = pattern.toCharArray();#156,17.877703030904133
+return pos;#434,17.872160824862394
+Format[] origFormats = getFormats();#197,17.852228251370516
+switch (c[pos.getIndex()]) {#464,17.8497314867766
+Format f = it.next();#202,17.84779465716818
+Format format = null;#170,17.846227872939338
+return sb.toString();#408,17.8454106648763
+public void setFormat(int formatElementIndex, Format newFormat) {#219,17.838787982338353
+Validate.isTrue(foundFormats.size() == fmtCount);#182,17.82683166861534
+return pattern.substring(text, pos.getIndex());#355,17.824762199864242
+private static final char END_FE = '}';#77,17.81703612009684
+private String insertFormats(String pattern, ArrayList<String> customPatterns) {#374,17.81288557467253
+public ExtendedMessageFormat(String pattern, Locale locale) {#101,17.790989258710077
+continue;#462,17.78767702314589
+depth--;#353,17.78717834071109
+this(pattern, Locale.getDefault());#91,17.783104949527317
+if (format == null) {#176,17.777997122870552
+public ExtendedMessageFormat(String pattern) {#90,17.777855286231407
+stripCustom.append(START_FMT).append(formatDescription);#177,17.773502826690674
+case START_FE:#388,17.77283505832448
+toPattern = super.toPattern();#148,17.764693641662596
+for (Iterator<Format> it = foundFormats.iterator(); it.hasNext(); i++) {#201,17.760397153742172
+case START_FE:#163,17.758267627042883
+return;#149,17.753575325012207
+setLocale(locale);#126,17.74925092061361
+fmtCount++;#164,17.748213215878135
+private void getQuotedString(String pattern, ParsePosition pos,#484,17.731347435399105
+appendQuotedString(pattern, pos, stripCustom, true);#161,17.721556631724038
+case QUOTE:#385,17.71662414073944
+error = !Character.isDigit(c);#323,17.71082923723304
+switch (pattern.charAt(pos.getIndex())) {#348,17.705170264610878
+private StringBuilder appendQuotedString(String pattern, ParsePosition pos,#447,17.69659056663513
+private void seekNonWs(String pattern, ParsePosition pos) {#417,17.687823998300654
+next(pos));#174,17.68415105342865
+sb.append(START_FE).append(#392,17.67629700899124
+QUOTE);#459,17.669907675849068
+case QUOTE:#160,17.668082118034363
+sb.append(c);#404,17.666865680528723
+readArgumentIndex(pattern, next(pos)));#393,17.662238669395446
+char[] c = pattern.toCharArray();#450,17.66146156522963
+next(pos);#452,17.660362005233765
+if (Character.isWhitespace(c)) {#307,17.655622998873394
+int i = desc.indexOf(START_FMT);#280,17.650469633249138
+private int readArgumentIndex(String pattern, ParsePosition pos) {#300,17.64882574081421
+next(pos);#470,17.645393800735473
+throw new IllegalArgumentException(#185,17.62740022164804
+private ParsePosition next(ParsePosition pos) {#432,17.60116070508957
+formatDescription = parseFormatDescription(pattern,#173,17.59849551628376
+foundDescriptions.add(format == null ? null : formatDescription);#181,17.5833420753479
+case END_FE:#400,17.58214563481948
+getQuotedString(pattern, pos, false);#359,17.570270714936434
+next(pos);#405,17.538510465621947
+break;#357,17.514778243170845
+lastHold = pos.getIndex();#461,17.493396282196045
+FormatFactory factory = registry.get(name);#285,17.48547497662631
+break;#387,17.48378912607829
+StringBuilder sb = new StringBuilder(pattern.length() * 2);#378,17.48329492410024
+pos.setIndex(pos.getIndex() + len);#422,17.474754943847657
+case QUOTE:#358,17.470385909080505
+private static final char QUOTE = '\'';#79,17.462780679975236
+if (customPattern != null) {#395,17.444554669516428
+sb.append(START_FMT).append(customPattern);#396,17.404561734199525
+String customPattern = customPatterns.get(fe);#394,17.400531470775604
+seekNonWs(pattern, pos);#344,17.397647857666016
+len = StrMatcher.splitMatcher().isMatch(buffer, pos.getIndex());#421,17.388602674007416
+private String parseFormatDescription(String pattern, ParsePosition pos) {#342,17.38397758885434
+break;#360,17.383838759528267
+int start = pos.getIndex();#166,17.367769598960876
+Validate.isTrue(foundDescriptions.size() == fmtCount);#183,17.36492024046002
+break;#162,17.356225861443413
+super.applyPattern(stripCustom.toString());#194,17.35079740223132
+default:#403,17.350010463169642
+pos.setIndex(i + ESCAPED_QUOTE.length());#460,17.345668017864227
+pos.setIndex(pos.getIndex() + 1);#433,17.33422179449172
+format = getFormat(formatDescription);#175,17.332969665527344
+case QUOTE:#465,17.330285906791687
+break;#351,17.320616298251682
+this(pattern, Locale.getDefault(), registry);#113,17.317615604400636
+stripCustom.append(c[pos.getIndex()]);#190,17.29670741640288
++ pattern.substring(start, pos.getIndex()));#329,17.281623022896902
+super(DUMMY_PATTERN);#125,17.266939534081352
+next(pos);#191,17.25100121498108
+private static final long serialVersionUID = -2362048321261811743L;#72,17.221893310546875
+depth--;#401,17.209495644820365
+default:#469,17.18654945918492
+toPattern = insertFormats(super.toPattern(), foundDescriptions);#195,17.14772689819336
+next(pos);#466,17.14317092895508
+default:#189,17.13247905458723
+StringBuilder stripCustom = new StringBuilder(pattern.length());#153,17.12107376825242
+public class ExtendedMessageFormat extends MessageFormat {#71,17.119254493713377
+stripCustom.append(START_FE).append(index);#168,17.100903224945068
+seekNonWs(pattern, pos);#302,17.100650131702423
+super.applyPattern(pattern);#147,17.06491766477886
+seekNonWs(pattern, pos);#308,17.0524556239446
+this(pattern, locale, null);#102,17.05096274614334
+break;#399,16.999716387854683
+applyPattern(pattern);#128,16.991028492267315
+foundFormats.add(format);#180,16.981783588727314
+for (Iterator<?> iter = coll.iterator(); iter.hasNext();) {#498,16.93359004534208
+char[] buffer = pattern.toCharArray();#419,16.786837418874104
+super.setFormats(origFormats);#207,16.70603795485063
+seekNonWs(pattern, pos);#165,16.705206791559856
+public ExtendedMessageFormat(String pattern, Locale locale, Map<String, ? extends FormatFactory> registry) {#124,16.688329185758317
+seekNonWs(pattern, pos);#169,16.679914116859436
+private final Map<String, ? extends FormatFactory> registry;#82,16.633933235617246
+ArrayList<String> foundDescriptions = new ArrayList<String>();#152,16.592379627227782
+public ExtendedMessageFormat(String pattern, Map<String, ? extends FormatFactory> registry) {#112,16.578288634618122
+ArrayList<Format> foundFormats = new ArrayList<Format>();#151,16.541821360588074

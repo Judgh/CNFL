@@ -1,0 +1,440 @@
+public Object clone() throws CloneNotSupportedException {#1244,20.79193094798497
+public String getLabel() {#341,20.121241188049318
+private boolean axisLineVisible;#215,20.07592669400302
+throws IOException, ClassNotFoundException {#1361,19.835273069493912
+public boolean hasListener(EventListener listener) {#1023,19.70133583886283
+private String labelURL;#212,19.638531790839302
+String axisLabel = getLabel();#1057,19.596410115559895
+public Plot getPlot() {#885,19.585680389404295
+private transient EventListenerList listenerList;#266,19.50667158762614
+float labely = (float) dataArea.getCenterY();#1159,19.43381044599745
+public String getLabelURL() {#520,19.43291074579412
+protected Axis(String label) {#273,19.411598032171074
+public String getLabelToolTip() {#492,19.399490356445312
+public double getLabelAngle() {#466,19.345334847768147
+private String label;#186,19.32764422893524
+protected void notifyListeners(AxisChangeEvent event) {#1034,19.320260608897488
+public float getTickMarkOutsideLength() {#803,19.276414394378662
+if (!(obj instanceof Axis)) {#1263,19.250325202941895
+Shape hotspot = null;#1111,19.248669147491455
+if ((label == null) || (label.equals(""))) {#1101,19.188294370969135
+public Font getTickLabelFont() {#661,19.183770399827225
+public float getTickMarkInsideLength() {#778,19.177167347499303
+public void addChangeListener(AxisChangeListener listener) {#999,19.168868569766772
+private transient Plot plot;#263,19.140855259365505
+if (axisLabel != null && !axisLabel.equals("")) {#1058,19.136021653811138
+private double fixedDimension;#257,19.11375160217285
+if (plotState != null && hotspot != null) {#1190,19.076535996936617
+double y = bounds.getCenterY();#1068,19.06075518471854
+private String labelToolTip;#205,19.02430067062378
+public Font getLabelFont() {#380,18.955740841952238
+public void setLabelAngle(double angle) {#478,18.91053148905436
+public boolean isAxisLineVisible() {#548,18.884869711739675
+public void removeChangeListener(AxisChangeListener listener) {#1010,18.872579350191003
+Line2D axisLine = null;#1213,18.865903615951538
+public abstract AxisSpace reserveSpace(Graphics2D g2, Plot plot,#950,18.855667659214564
+float labelx = (float) (state.getCursor()#1177,18.855583438166864
+private Font tickLabelFont;#230,18.846594047546386
+public static final boolean DEFAULT_TICK_LABELS_VISIBLE = true;#154,18.82133336500688
+Axis that = (Axis) obj;#1266,18.807651070987475
+float w = (float) labelBounds.getWidth();#1175,18.78989559173584
+String existing = this.label;#357,18.784383392333986
+public Paint getTickLabelPaint() {#693,18.782301698412216
+if (obj == this) {#1260,18.76739934285482
+float w = (float) labelBounds.getWidth();#1155,18.765913467407227
+private void writeObject(ObjectOutputStream stream) throws IOException {#1342,18.7526093588935
+if (this.tickMarkOutsideLength != that.tickMarkOutsideLength) {#1320,18.74805233001709
+if (listeners[i] == AxisChangeListener.class) {#1038,18.747203332406503
+private float tickMarkOutsideLength;#248,18.746343005787242
+public boolean isTickLabelsVisible() {#630,18.740024248758953
+public boolean isVisible() {#313,18.73746967315674
+Rectangle2D plotArea,#951,18.72832374946744
+double angle = getLabelAngle();#1063,18.722194957733155
+Axis clone = (Axis) super.clone();#1245,18.717884063720703
+if (this.tickMarkInsideLength != that.tickMarkInsideLength) {#1317,18.705018997192383
+else if (edge == RectangleEdge.LEFT) {#1222,18.70175416128976
+public void setTickLabelFont(Font font) {#673,18.6948544383049
+public RectangleInsets getTickLabelInsets() {#720,18.67519704033347
+Object[] listeners = this.listenerList.getListenerList();#1036,18.674100875854492
+if (insets == null) {#450,18.66393667459488
+this.tickLabelFont = DEFAULT_TICK_LABEL_FONT;#289,18.65609180010282
+private transient Paint axisLinePaint;#221,18.64505211512248
+float h = (float) labelBounds.getHeight();#1176,18.625726928710936
+float w = (float) labelBounds.getWidth();#1137,18.6192387008667
+public void setTickMarkOutsideLength(float length) {#815,18.611889109892005
+Font font = getLabelFont();#1105,18.609920501708984
+float labelx = (float) dataArea.getCenterX();#1121,18.601018758920524
+if (insets == null) {#733,18.595352590084076
+if (state == null) {#1097,18.593316396077473
+float w = (float) labelBounds.getWidth();#1119,18.590224800109862
+Rectangle2D dataArea,#972,18.58205997376215
+float h = (float) labelBounds.getHeight();#1156,18.578053970336914
+public double getFixedDimension() {#910,18.567502578099568
+public static final boolean DEFAULT_TICK_MARKS_VISIBLE = true;#168,18.560291290283203
+public boolean equals(Object obj) {#1259,18.53192909558614
+float labely = (float) (dataArea.getY() + dataArea.getHeight()#1179,18.528032766069686
+)) {#1311,18.51627559661865
+if (this.axisLineVisible != that.axisLineVisible) {#1291,18.512854652404783
+public boolean isTickMarksVisible() {#751,18.507845306396483
+else if (edge == RectangleEdge.BOTTOM) {#1218,18.507489637895063
+private float tickMarkInsideLength;#245,18.50108510797674
+else if (edge == RectangleEdge.LEFT) {#1149,18.496975399198988
+float labelx = (float) dataArea.getCenterX();#1139,18.49696845274705
+private double labelAngle;#198,18.483474922180175
+if (this.fixedDimension != that.fixedDimension) {#1329,18.48303060946257
+notifyListeners(new AxisChangeEvent(this));#591,18.481886763321725
+notifyListeners(new AxisChangeEvent(this));#817,18.47358633342542
+protected void drawAxisLine(Graphics2D g2, double cursor,#1210,18.462478399276733
+notifyListeners(new AxisChangeEvent(this));#618,18.45785241377981
+notifyListeners(new AxisChangeEvent(this));#426,18.45391203227796
+public RectangleInsets getLabelInsets() {#437,18.45192591349284
+notifyListeners(new AxisChangeEvent(this));#792,18.45190299184699
+else if (edge == RectangleEdge.RIGHT) {#1226,18.445242563883465
+private Font labelFont;#189,18.44413397047255
+float h = (float) labelBounds.getHeight();#1138,18.443508758544922
+notifyListeners(new AxisChangeEvent(this));#536,18.44240379333496
+public void setTickMarkInsideLength(float length) {#790,18.439069186939914
+double x = bounds.getCenterX();#1067,18.43161174229213
+public void setPlot(Plot plot) {#898,18.421548403226414
+public void setTickLabelPaint(Paint paint) {#705,18.42137845357259
+float labely = (float) (state.getCursor() - insets.getBottom()#1122,18.418434170314242
+float h = (float) labelBounds.getHeight();#1120,18.41715389251709
+notifyListeners(new AxisChangeEvent(this));#873,18.410533503482217
+if (!ObjectUtilities.equal(this.tickLabelFont, that.tickLabelFont)) {#1303,18.40848018383158
+notifyListeners(new AxisChangeEvent(this));#564,18.407700388055098
+public void setLabelURL(String url) {#534,18.40755844116211
+clone.plot = null;#1247,18.39120054244995
+public Paint getLabelPaint() {#409,18.389338572820026
+for (int i = listeners.length - 2; i >= 0; i -= 2) {#1037,18.38728060041155
+if (paint == null) {#422,18.387097537517548
+public void setLabelToolTip(String text) {#506,18.38608678181966
+float labelx = (float) (state.getCursor() - insets.getRight()#1157,18.382928371429443
+notifyListeners(new AxisChangeEvent(this));#508,18.38017513877467
+this.tickLabelsVisible = DEFAULT_TICK_LABELS_VISIBLE;#288,18.380073513303483
+notifyListeners(new AxisChangeEvent(this));#710,18.37726076025712
+AxisState state, PlotRenderingInfo plotState) {#1094,18.377186431884766
+if (paint == null) {#706,18.36830961704254
+if (edge == RectangleEdge.TOP) {#1214,18.363420185289886
+this.labelURL = null;#282,18.346785227457683
+public void setLabel(String label) {#355,18.339503361628605
+else {#364,18.336758422851563
+this.tickLabelInsets, that.tickLabelInsets#1310,18.32564064025879
+return this.axisLineVisible;#549,18.323300182819366
+notifyListeners(new AxisChangeEvent(this));#480,18.31858559658653
+float labely = (float) (state.getCursor() + insets.getTop()#1140,18.31748785291399
+public static final float DEFAULT_TICK_MARK_OUTSIDE_LENGTH = 2.0f;#180,18.317187966971563
+this.axisLinePaint = paint;#590,18.31388221067541
+if (paint == null) {#869,18.310890913009644
+public Paint getAxisLinePaint() {#574,18.29536247253418
+if (this.labelAngle != that.labelAngle) {#1282,18.292876533840012
+if (!ObjectUtilities.equal(this.label, that.label)) {#1270,18.282993812561035
+ChartRenderingInfo owner = plotState.getOwner();#1191,18.28253173828125
+else if (edge == RectangleEdge.RIGHT) {#1168,18.280746641613188
+this.axisLineStroke = DEFAULT_AXIS_LINE_STROKE;#286,18.26384346825736
+AxisState state,#988,18.246289684658958
+if (!existing.equals(label)) {#359,18.238469904119317
+this.labelFont = DEFAULT_AXIS_LABEL_FONT;#277,18.23431037902832
+public abstract AxisState draw(Graphics2D g2,#969,18.233074188232422
+public Stroke getAxisLineStroke() {#601,18.229695975780487
+Rectangle2D plotArea,#971,18.219565480254417
+this.tickLabelInsets = DEFAULT_TICK_LABEL_INSETS;#291,18.201070926807546
+this.labelAngle = 0.0;#280,18.19504933887058
+return this.axisLineStroke;#602,18.194720212151022
+public void setTickLabelsVisible(boolean flag) {#645,18.19288108223363
+public Paint getTickMarkPaint() {#856,18.18267433983939
+else if (edge == RectangleEdge.BOTTOM) {#1131,18.17539756948298
+private boolean tickMarksVisible;#242,18.174269994099934
+private boolean visible;#183,18.16748535633087
+if (paint == null) {#587,18.156943321228027
+public void setLabelFont(Font font) {#392,18.150945459093368
+public static final boolean DEFAULT_AXIS_VISIBLE = true;#134,18.149080728229723
+if (stroke == null) {#840,18.139420382181804
+public static final float DEFAULT_TICK_MARK_INSIDE_LENGTH = 0.0f;#177,18.135288579123362
+if (this.visible != that.visible) {#1267,18.13204870725933
+if (!ObjectUtilities.equal(this.axisLineStroke, that.axisLineStroke)) {#1294,18.130936420325078
+FontMetrics fm = g2.getFontMetrics();#1109,18.12237956307151
+public Stroke getTickMarkStroke() {#827,18.122158408164978
+private transient Stroke axisLineStroke;#218,18.118444647107804
+this.tickMarkOutsideLength = DEFAULT_TICK_MARK_OUTSIDE_LENGTH;#297,18.117021037686257
+if (font == null) {#675,18.10675875345866
+private void readObject(ObjectInputStream stream)#1360,18.104315757751465
+this.axisLineVisible = true;#284,18.098918746499454
+if (existing != null) {#358,18.097254689534505
+public void setFixedDimension(double dimension) {#927,18.089806493123373
+this.labelInsets = DEFAULT_AXIS_LABEL_INSETS;#279,18.086792432344875
+AffineTransform t = AffineTransform.getRotateInstance(#1114,18.083254153911884
+if (!this.tickLabelFont.equals(font)) {#679,18.082316745411266
+if (!ObjectUtilities.equal(this.labelFont, that.labelFont)) {#1273,18.082305484347874
+if (this.tickLabelsVisible != that.tickLabelsVisible) {#1300,18.059626791212295
+if (label != null) {#365,18.052728000440094
+if (font == null) {#393,18.050661913553874
+if (flag != this.tickLabelsVisible) {#647,18.04049237569173
+this.visible = DEFAULT_AXIS_VISIBLE;#276,18.038327262515114
+if (edge == RectangleEdge.TOP) {#1113,18.032815883034154
+public void setVisible(boolean flag) {#325,18.021831766764322
+throw new IllegalArgumentException("Null 'state' argument.");#1098,18.0210144336407
+if (entities != null) {#1193,18.017601092656452
+this.label = label;#275,18.017374174935476
+if (stroke == null) {#614,18.01684430440267
+this.listenerList = new EventListenerList();#1369,18.00473233273155
+AffineTransform t = AffineTransform.getRotateInstance(#1150,18.00022451694195
+protected Rectangle2D getLabelEnclosure(Graphics2D g2, RectangleEdge edge) {#1054,17.99811862065242
+AffineTransform t = AffineTransform.getRotateInstance(#1132,17.99742053105281
+double cursor,#970,17.9967454609118
+axisLine = new Line2D.Double(cursor, dataArea.getY(), cursor,#1223,17.992148679845474
+public void setTickLabelInsets(RectangleInsets insets) {#732,17.990586280822754
+private static final long serialVersionUID = 7719289504573298271L;#131,17.990228046070445
+private transient Paint tickLabelPaint;#233,17.990218718846638
+clone.listenerList = new EventListenerList();#1248,17.97114201595909
+public void setTickMarkStroke(Stroke stroke) {#839,17.970238828659056
+return this.tickLabelFont;#662,17.96517696380615
+public abstract class Axis implements Cloneable, Serializable {#128,17.96091349919637
+private RectangleInsets tickLabelInsets;#236,17.956735679081508
+AffineTransform transformer#1069,17.954339700586655
+public abstract List refreshTicks(Graphics2D g2,#987,17.95051293902927
+protected AxisState drawLabel(String label, Graphics2D g2,#1092,17.943866443634032
+if (!this.tickLabelInsets.equals(insets)) {#736,17.94279968738556
+if (flag != this.visible) {#326,17.9355868732228
+this.tickLabelPaint = paint;#709,17.924638187184055
+return this.tickLabelsVisible;#631,17.920479830573587
+this.tickLabelPaint = DEFAULT_TICK_LABEL_PAINT;#290,17.9160863381845
+g2.setStroke(this.axisLineStroke);#1231,17.915571093559265
+return this.axisLinePaint;#575,17.904084265232086
+this.axisLineStroke = stroke;#617,17.901870197719997
+public void setLabelPaint(Paint paint) {#421,17.89560180902481
+public void setAxisLineStroke(Stroke stroke) {#613,17.895197296142577
+if (!ObjectUtilities.equal(#1309,17.88923728466034
+g2.setPaint(getLabelPaint());#1108,17.886299896240235
+public void setAxisLinePaint(Paint paint) {#586,17.882811281416153
+if (!ObjectUtilities.equal(this.labelURL, that.labelURL)) {#1288,17.88072027983489
+this.tickMarkStroke = DEFAULT_TICK_MARK_STROKE;#294,17.86071198562096
+private RectangleInsets labelInsets;#195,17.858443406911995
+state.cursorUp(insets.getTop() + labelBounds.getHeight()#1128,17.85130281159372
+if (edge == RectangleEdge.LEFT || edge == RectangleEdge.RIGHT) {#1064,17.850709915161133
+public static final RectangleInsets DEFAULT_TICK_LABEL_INSETS#164,17.849391107973844
+AffineTransform t = AffineTransform.getRotateInstance(#1170,17.839687384091892
+if (!this.labelFont.equals(font)) {#396,17.83233724321638
+public void setTickMarksVisible(boolean flag) {#763,17.8275247373079
+Rectangle2D labelBounds = TextUtilities.getTextBounds(label, g2, fm);#1110,17.821029720884383
+this.tickMarkInsideLength = DEFAULT_TICK_MARK_INSIDE_LENGTH;#296,17.818316618601482
+state.cursorLeft(insets.getLeft() + labelBounds.getWidth()#1165,17.813538551330566
+state.cursorRight(insets.getLeft() + labelBounds.getWidth()#1186,17.809100208860457
+public void setTickMarkPaint(Paint paint) {#868,17.80857907401191
+g2.setPaint(this.axisLinePaint);#1230,17.806019219485197
+((AxisChangeListener) listeners[i + 1]).axisChanged(event);#1039,17.80581165082527
+this.listenerList = new EventListenerList();#301,17.80277959923995
+List list = Arrays.asList(this.listenerList.getListenerList());#1024,17.79758569929335
+if (this.tickMarksVisible != that.tickMarksVisible) {#1314,17.795614772372776
+g2.setFont(font);#1107,17.784131050109863
+Shape rotatedLabelBounds = t.createTransformedShape(labelBounds);#1135,17.77611758791167
+return this.tickLabelPaint;#694,17.775006353855133
+private boolean tickLabelsVisible;#227,17.77385703722636
+hotspot = new Rectangle2D.Float(labelx - w / 2.0f,#1144,17.77251922383028
+public void setAxisLineVisible(boolean visible) {#562,17.771483421325684
+hotspot = new Rectangle2D.Float(labelx - w / 2.0f,#1163,17.76763094172758
+bounds = insets.createOutsetRectangle(bounds);#1062,17.76652171061589
+this.tickMarksVisible = DEFAULT_TICK_MARKS_VISIBLE;#293,17.75789116168844
+this.labelToolTip = null;#281,17.756746888160706
+if (!PaintUtilities.equal(this.axisLinePaint, that.axisLinePaint)) {#1297,17.75315722823143
+Rectangle2D bounds = TextUtilities.getTextBounds(axisLabel, g2, fm);#1060,17.752881632910835
+this.axisLinePaint = DEFAULT_AXIS_LINE_PAINT;#285,17.745050320258507
+g2.draw(axisLine);#1232,17.74488854408264
+hotspot = new Rectangle2D.Float(labelx - w / 2.0f,#1126,17.744884182425107
+if (!this.tickMarkStroke.equals(stroke)) {#843,17.739074150721233
+if (flag != this.tickMarksVisible) {#764,17.737970897129603
+axisLine = new Line2D.Double(cursor, dataArea.getY(), cursor,#1227,17.728902283836813
+this.labelAngle = angle;#479,17.724953293800354
+if (!PaintUtilities.equal(this.tickLabelPaint, that.tickLabelPaint)) {#1306,17.72219690680504
+this.labelPaint = paint;#425,17.721483767032623
+if (!ObjectUtilities.equal(this.labelToolTip, that.labelToolTip)) {#1285,17.71983630081703
+dataArea.getMaxX(), cursor);#1216,17.705134053384104
+state.cursorDown(insets.getTop() + labelBounds.getHeight()#1146,17.701019836194586
+return this.tickMarkOutsideLength;#804,17.698917865753174
+configure();#900,17.697301197052003
+labely - h / 2.0f, w, h);#1145,17.696618570600236
+Shape rotatedLabelBounds = t.createTransformedShape(labelBounds);#1153,17.68434998084759
+hotspot = new Rectangle2D.Float(labelx - w / 2.0f,#1184,17.677414894104004
+this.labelPaint = DEFAULT_AXIS_LABEL_PAINT;#278,17.675788989433876
+FontMetrics fm = g2.getFontMetrics(getLabelFont());#1059,17.672092151641845
+RectangleInsets insets = getLabelInsets();#1061,17.664009014765423
+labelBounds = rotatedLabelBounds.getBounds2D();#1174,17.66137721803453
+if (!insets.equals(this.labelInsets)) {#453,17.656227526457414
+labely - h / 2.0f, w, h);#1185,17.654958261762346
+return this.tickLabelInsets;#721,17.64821434020996
+return this.tickMarkInsideLength;#779,17.64254981279373
+public static final RectangleInsets DEFAULT_AXIS_LABEL_INSETS#144,17.62978914509649
+Shape rotatedLabelBounds = t.createTransformedShape(labelBounds);#1173,17.625155744881464
+return this.labelURL;#521,17.625003542218888
+return this.label;#342,17.622667679419884
+labely - h / 2.0f, w, h);#1127,17.618497576032365
+return state;#1198,17.614201719110664
+dataArea.getMaxX(), cursor);#1220,17.612322653493575
+return this.fixedDimension;#911,17.61082731882731
+Shape rotatedLabelBounds = t.createTransformedShape(labelBounds);#1117,17.60832829310976
+labely - h / 2.0f, w, h);#1164,17.606741305759975
+this.axisLineVisible = visible;#563,17.606311854194193
+if (!PaintUtilities.equal(this.labelPaint, that.labelPaint)) {#1276,17.60547014872233
+this.listenerList.remove(AxisChangeListener.class, listener);#1011,17.59947967529297
++ insets.getLeft() + w / 2.0);#1178,17.597189517248246
+this.listenerList.add(AxisChangeListener.class, listener);#1000,17.5863858795166
+axisLine = new Line2D.Double(dataArea.getX(), cursor,#1215,17.58368449057302
+labelBounds = rotatedLabelBounds.getBounds2D();#1118,17.578876460040057
+EntityCollection entities = owner.getEntityCollection();#1192,17.57812004822951
+labelBounds = rotatedLabelBounds.getBounds2D();#1136,17.57715394761827
+labelBounds = rotatedLabelBounds.getBounds2D();#1154,17.571987434669776
+throw new IllegalArgumentException("Null 'paint' argument.");#588,17.570447476704917
+throw new IllegalArgumentException("Null 'insets' argument.");#451,17.56783437728882
+"SansSerif", Font.PLAIN, 12);#138,17.56058692932129
+getLabelAngle(), labelBounds.getCenterX(),#1115,17.553032370174634
+SerialUtilities.writeStroke(this.axisLineStroke, stream);#1346,17.55189867372866
+public void setLabelInsets(RectangleInsets insets) {#449,17.55140455145585
+return this.labelToolTip;#493,17.54185937245687
+return this.tickMarkStroke;#828,17.54110325084013
+this.tickMarkPaint = paint;#872,17.540276527404785
+Rectangle2D plotArea, Rectangle2D dataArea, RectangleEdge edge,#1093,17.537803262472153
+throw new IllegalArgumentException("Null 'stroke' argument.");#615,17.535755552094557
+getLabelAngle() - Math.PI / 2.0, labelBounds.getCenterX(),#1151,17.532234214073004
+return clone;#1249,17.532088539817117
+throw new IllegalArgumentException("Null 'paint' argument.");#870,17.531853322629576
+throw new IllegalArgumentException("Null 'insets' argument.");#734,17.52571123617667
+throw new IllegalArgumentException("Null 'paint' argument.");#707,17.525326199001736
+axisLine = new Line2D.Double(dataArea.getX(), cursor,#1219,17.525168203538463
+private transient Paint tickMarkPaint;#254,17.518694559733074
+this.labelToolTip, this.labelURL));#1195,17.51824278709216
+throw new IllegalArgumentException("Null 'stroke' argument.");#841,17.51104105435885
+public static final Font DEFAULT_AXIS_LABEL_FONT = new Font(#137,17.502515419669773
+throw new IllegalArgumentException("Null 'font' argument.");#394,17.502041669992302
+if (!ObjectUtilities.equal(this.labelInsets, that.labelInsets)) {#1279,17.498711585998535
+return this.labelAngle;#467,17.496985816955565
+if (!ObjectUtilities.equal(this.tickMarkStroke, that.tickMarkStroke)) {#1326,17.49024633927779
+this.tickMarkOutsideLength = length;#816,17.48933646258186
+throw new IllegalArgumentException("Null 'paint' argument.");#423,17.487126632973
+RectangleInsets insets = getLabelInsets();#1106,17.484767198562622
+/ 2.0);#1180,17.479761657714842
+throw new IllegalArgumentException("Null 'font' argument.");#676,17.479275886829083
+public static final Paint DEFAULT_TICK_MARK_PAINT = Color.gray;#174,17.473246534665424
+getLabelAngle() + Math.PI / 2.0,#1171,17.458505167279924
+return this.visible;#314,17.4431791305542
+public static final Stroke DEFAULT_AXIS_LINE_STROKE = new BasicStroke(1.0f);#151,17.441438883543015
+getLabelAngle(), labelBounds.getCenterX(),#1133,17.441251698662253
+PlotRenderingInfo plotState);#974,17.43484709983648
+return this.labelFont;#381,17.430355412619456
+public static final Stroke DEFAULT_TICK_MARK_STROKE = new BasicStroke(1);#171,17.426079432169598
+return this.tickMarksVisible;#752,17.422589638653925
+RectangleEdge edge);#990,17.41865428658419
+Rectangle2D dataArea,#989,17.41636784871419
+SerialUtilities.writePaint(this.axisLinePaint, stream);#1347,17.41562229156494
+TextAnchor.CENTER, getLabelAngle() - Math.PI / 2.0,#1161,17.406229617983797
+Rectangle2D dataArea, RectangleEdge edge) {#1211,17.404043769836427
+public static final Paint DEFAULT_TICK_LABEL_PAINT = Color.black;#161,17.392577171325684
+Font.PLAIN, 10);#158,17.3899867409154
+labelBounds.getCenterY());#1152,17.385727337428502
+this.labelURL = url;#535,17.38328437805176
+notifyListeners(new AxisChangeEvent(this));#455,17.362890119137973
+- w / 2.0);#1158,17.361679995501483
+this.axisLineStroke = SerialUtilities.readStroke(stream);#1365,17.34463451526783
+notifyListeners(new AxisChangeEvent(this));#328,17.344475787618887
+public abstract void configure();#935,17.335101657443577
+RectangleEdge edge,#952,17.330912122921067
+this.tickMarkPaint = DEFAULT_TICK_MARK_PAINT;#295,17.314000447591145
+notifyListeners(new AxisChangeEvent(this));#649,17.312990230062734
+public static final Paint DEFAULT_AXIS_LINE_PAINT = Color.gray;#148,17.312788631605066
+notifyListeners(new AxisChangeEvent(this));#766,17.311631492946457
+private transient Paint labelPaint;#192,17.307351545854047
+notifyListeners(new AxisChangeEvent(this));#398,17.29861773615298
+labelBounds.getCenterY());#1134,17.290037631988525
+return this.labelPaint;#410,17.29001096089681
+this.fixedDimension = dimension;#928,17.28942048549652
+this.axisLinePaint = SerialUtilities.readPaint(stream);#1366,17.28760555267334
+SerialUtilities.writePaint(this.tickLabelPaint, stream);#1345,17.283443145751953
+notifyListeners(new AxisChangeEvent(this));#361,17.27874939529984
+labelBounds.getCenterY());#1116,17.277006455830165
+return this.tickMarkPaint;#857,17.270569801330566
+TextAnchor.CENTER, getLabelAngle() + Math.PI / 2.0,#1182,17.26921332159708
+this.tickMarkInsideLength = length;#791,17.25841522216797
+return this.plot;#886,17.25147797511174
+- h / 2.0);#1123,17.250917293407298
+notifyListeners(new AxisChangeEvent(this));#681,17.239909628163215
+notifyListeners(new AxisChangeEvent(this));#738,17.22474724313487
+AxisSpace space);#953,17.2244105440505
+notifyListeners(new AxisChangeEvent(this));#845,17.223523430202317
+Shape labelBounds = transformer.createTransformedShape(bounds);#1071,17.22197663342511
+this.labelToolTip = text;#507,17.22032505273819
+return this.labelInsets;#438,17.21456095377604
+return list.contains(listener);#1025,17.209750231574564
+entities.add(new AxisLabelEntity(this, hotspot,#1194,17.20884222303118
+if (!PaintUtilities.equal(this.tickMarkPaint, that.tickMarkPaint)) {#1323,17.202186435461044
+TextUtilities.drawRotatedString(label, g2, labelx, labely,#1181,17.187208035412958
+TextUtilities.drawRotatedString(label, g2, labelx, labely,#1160,17.18569601283354
+RectangleEdge edge,#973,17.18385751247406
+public static final Paint DEFAULT_AXIS_LABEL_PAINT = Color.black;#141,17.183229565620422
+Rectangle2D result = new Rectangle2D.Double();#1056,17.177390402013604
+= new RectangleInsets(2.0, 4.0, 2.0, 4.0);#165,17.166402925763812
++ h / 2.0);#1141,17.162513909516512
+TextAnchor.CENTER, getLabelAngle(), TextAnchor.CENTER);#1143,17.149166758467512
+labelBounds.getCenterX(), labelBounds.getCenterY());#1172,17.131020545959473
+TextAnchor.CENTER, getLabelAngle(), TextAnchor.CENTER);#1125,17.12652564630276
+SerialUtilities.writePaint(this.labelPaint, stream);#1344,17.125944415728252
+this.plot = null;#299,17.12062876565116
+this.plot = plot;#899,17.108771119798934
+angle = angle - Math.PI / 2.0;#1065,17.08757254055568
+= new RectangleInsets(3.0, 3.0, 3.0, 3.0);#145,17.08184195927211
+return false;#1318,17.061747105916343
+= AffineTransform.getRotateInstance(angle, x, y);#1070,17.033688962459564
+public static final Font DEFAULT_TICK_LABEL_FONT = new Font("SansSerif",#157,17.02540032616977
+return true;#1332,17.018620664423164
+TextUtilities.drawRotatedString(label, g2, labelx, labely,#1124,17.01861552631154
+notifyListeners(new AxisChangeEvent(this));#367,17.017510202195908
+return result;#1075,17.005953355269
+TextUtilities.drawRotatedString(label, g2, labelx, labely,#1142,17.002373499028824
+return false;#1315,16.993302472432454
+dataArea.getMaxY());#1224,16.988297330922094
+TextAnchor.CENTER);#1162,16.978072268622263
+return false;#1304,16.969916598002115
+return false;#1274,16.969341977437338
+result = labelBounds.getBounds2D();#1072,16.96572144826253
+return false;#1289,16.95650068918864
+return false;#1301,16.94536647796631
+TextAnchor.CENTER);#1183,16.93848739351545
+return false;#1283,16.93436908721924
+return false;#1292,16.930204327901205
+this.label = label;#360,16.923743638125334
+return false;#1277,16.912834231058756
+stream.defaultWriteObject();#1343,16.910201685769216
+stream.defaultReadObject();#1362,16.887524945395334
+this.tickMarkStroke = SerialUtilities.readStroke(stream);#1367,16.87798598960594
+return false;#1298,16.865166346232098
+return false;#1295,16.859679222106934
+return false;#1307,16.85143127441406
+SerialUtilities.writeStroke(this.tickMarkStroke, stream);#1348,16.84446366628011
+this.tickLabelPaint = SerialUtilities.readPaint(stream);#1364,16.833601417541505
+return false;#1271,16.828273264567056
+SerialUtilities.writePaint(this.tickMarkPaint, stream);#1349,16.82592639923096
+return false;#1286,16.78028596242269
+private transient Stroke tickMarkStroke;#251,16.75541196550642
+return false;#1268,16.75427379608154
+this.tickLabelFont = font;#680,16.749817943573
+this.tickLabelsVisible = flag;#648,16.74868379939686
+return false;#1321,16.744134203592935
+this.labelPaint = SerialUtilities.readPaint(stream);#1363,16.72623296578725
+dataArea.getMaxY());#1228,16.709016438188225
+return false;#1312,16.6946870803833
+return false;#1280,16.690129661560057
+return false;#1264,16.65734208424886
+this.labelFont = font;#397,16.62461822911313
+this.tickMarkStroke = stroke;#844,16.597637046467174
+this.tickMarksVisible = flag;#765,16.554003368724477
+this.label = label;#366,16.502180966463957
++ insets.getRight());#1166,16.482853960107875
+this.tickLabelInsets = insets;#737,16.471276369961824
+this.tickMarkPaint = SerialUtilities.readPaint(stream);#1368,16.423141479492188
+this.visible = flag;#327,16.416313489278156
++ insets.getBottom());#1129,16.38957182566325
+return true;#1261,16.344474856058756
++ insets.getBottom());#1147,16.34418159061008
++ insets.getRight());#1187,16.33954973574038
+return false;#1330,16.30098336537679
+this.labelInsets = insets;#454,16.21409761338007
+return false;#1324,16.210787963867187
+return false;#1327,16.152519289652506
+return state;#1102,16.13632977803548

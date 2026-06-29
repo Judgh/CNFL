@@ -1,0 +1,146 @@
+if (str == null) {#164,20.069668324788413
+boolean whitespace = true;#459,19.881591933114187
+if (str == null) {#607,19.855472056070962
+if (str == null || str.length() == 0) {#539,19.84430118040605
+if (str == null || str.length() == 0 || delimLen == 0) {#277,19.753183435510707
+if (str == null || str.length() == 0 || delimLen == 0) {#407,19.69408377894649
+if (str == null || (strLen = str.length()) == 0) {#454,19.665188642648552
+if (str == null || str.length() == 0 || delimLen == 0) {#351,19.64642482333713
+boolean capitalizeNext = true;#282,19.61341646739415
+char tmp = 0;#461,19.540060336773212
+boolean lastWasGap = true;#548,19.48426103591919
+if (str.length() == 0) {#610,19.4336765077379
+if (delimiters == null) {#573,19.37744352552626
+boolean uncapitalizeNext = true;#412,19.305183859432447
+if (newLineStr == null) {#167,19.264555426204907
+if (delimiters != null && delimiters.length == 0) {#542,19.21329619334294
+if (index == -1) {#628,19.1992769241333
+int offset = 0;#174,19.18353535578801
+char ch = 0;#460,19.023390183081993
+return str;#352,18.93695411682129
+if (upper == -1 || upper > str.length()) {#618,18.92654210870916
+if (wrapLength < 1) {#170,18.92491728067398
+if (spaceToWrapAt >= offset) {#184,18.901423329892367
+public static String abbreviate(String str, int lower, int upper, String appendToEnd) {#605,18.8276916885376
+if (upper < lower) {#622,18.818375460306804
+if (str.charAt(offset) == ' ') {#178,18.814989750201885
+if (ch == delimiters[i]) {#577,18.748141164365023
+public static String wrap(String str, int wrapLength, String newLineStr, boolean wrapLongWords) {#163,18.72500599755181
+int count = 0;#547,18.712238238408016
+upper = lower;#623,18.66847050189972
+private static boolean isDelimiter(char ch, char[] delimiters) {#572,18.667708830399945
+for (int i = 0, isize = delimiters.length; i < isize; i++) {#576,18.65688344836235
+int delimLen = (delimiters == null ? -1 : delimiters.length);#406,18.640702444931556
+int delimLen = (delimiters == null ? -1 : delimiters.length);#276,18.628361274456157
+for (int i = 0; i < strLen; i++) {#463,18.59863513448964
+for (int i = 0; i < strLen; i++) {#549,18.589520951975945
+return "";#543,18.566191228230796
+return true;#578,18.53415248268529
+for (int i = 0; i < strLen; i++) {#283,18.524616739024285
+for (int i = 0; i < strLen; i++) {#413,18.48166685519011
+offset++;#179,18.465454419453938
+public WordUtils() {#43,18.455639934539796
+if (upper != str.length()) {#631,18.453498159136092
+if (isDelimiter(ch, delimiters)) {#286,18.439090105203483
+if (isDelimiter(ch, delimiters)) {#416,18.438578789050762
+public static String initials(String str) {#507,18.437444906968338
+int strLen;#453,18.428709030151367
+public static String capitalizeFully(String str) {#319,18.3981595993042
+int delimLen = (delimiters == null ? -1 : delimiters.length);#350,18.395507352105504
+newLineStr = SystemUtils.LINE_SEPARATOR;#168,18.370943069458008
+public static String wrap(String str, int wrapLength) {#141,18.368131357080795
+if (isDelimiter(ch, delimiters)) {#552,18.36727996972891
+public static String uncapitalize(String str) {#376,18.355872333049774
+int strLen = str.length();#545,18.337872803211212
+if (wrapLongWords) {#192,18.33172035217285
+ch = str.charAt(i);#464,18.307070641290572
+return null;#608,18.28677635192871
+return str;#540,18.24264907836914
+return false;#581,18.2298807664351
+public class WordUtils {#33,18.224745205470494
+wrapLength = 1;#171,18.22065891939051
+int inputLineLength = str.length();#173,18.220070838928223
+public static String initials(String str, char[] delimiters) {#538,18.21884140215422
+int strLen = str.length();#410,18.218832790851593
+int strLen = str.length();#280,18.215008437633514
+public static String capitalize(String str) {#242,18.213757735032303
+return str;#455,18.167533365885415
+if (whitespace) {#470,18.145424013552457
+offset = inputLineLength;#206,18.14069013595581
+return str;#408,18.121890767415366
+upper = str.length();#619,18.115012062920464
+wrappedLine.append(newLineStr);#187,18.10726001739502
+continue;#180,18.102874437967937
+char[] buf = new char[strLen / 2 + 1];#546,18.100762714039195
+char ch = str.charAt(i);#414,18.10028886795044
+int spaceToWrapAt = str.lastIndexOf(' ', wrapLength + offset);#182,18.09895610809326
+return result.toString();#641,18.090586253574916
+char ch = str.charAt(i);#284,18.07528439435092
+str = str.toLowerCase();#354,18.064620971679688
+public static String uncapitalize(String str, char[] delimiters) {#405,18.04358434677124
+spaceToWrapAt = str.indexOf(' ', wrapLength + offset);#199,18.022272651259964
+return str;#278,18.012056477864583
+char ch = str.charAt(i);#550,17.996259342540394
+return uncapitalize(str, null);#377,17.992115656534832
+StringBuffer result = new StringBuffer();#626,17.9906205534935
+return StringUtils.EMPTY;#611,17.964164400100707
+wrappedLine.append(newLineStr);#202,17.962157538442902
+if (spaceToWrapAt >= 0) {#200,17.95987283029864
+offset = spaceToWrapAt + 1;#203,17.954401717466467
+StringBuffer buffer = new StringBuffer(strLen);#457,17.93593396638569
+wrappedLine.append(str.substring(offset, spaceToWrapAt));#186,17.93239739361931
+public static String capitalizeFully(String str, char[] delimiters) {#349,17.931138674418133
+wrappedLine.append(str.substring(offset));#205,17.92194234000312
+result.append(StringUtils.defaultString(appendToEnd));#632,17.91795490634057
+wrappedLine.append(newLineStr);#195,17.90566480570826
+public static String swapCase(String str) {#452,17.89561598641532
+offset = spaceToWrapAt + 1;#188,17.88557188327496
+return capitalize(str, delimiters);#355,17.87748897776884
+return capitalizeFully(str, null);#320,17.87305248484892
+tmp = Character.toTitleCase(ch);#471,17.848375384012858
+public static String capitalize(String str, char[] delimiters) {#275,17.815441282171953
+if (Character.isUpperCase(ch)) {#465,17.80529010295868
+return new String(buf, 0, count);#561,17.804010338253445
+return wrap(str, wrapLength, null, false);#142,17.778355073928832
+return capitalize(str, null);#243,17.76909294128418
+lastWasGap = false;#556,17.74843232528023
+wrappedLine.append(str.substring(offset, spaceToWrapAt));#201,17.74501977648054
+StringBuffer buffer = new StringBuffer(strLen);#281,17.711929421675833
+result.append(str.substring(0, upper));#629,17.70217800140381
+return initials(str, null);#508,17.676801045735676
+StringBuffer buffer = new StringBuffer(strLen);#411,17.672647024455824
+while ((inputLineLength - offset) > wrapLength) {#177,17.645334470839728
+uncapitalizeNext = true;#418,17.637537956237793
+int index = StringUtils.indexOf(str, " ", lower);#627,17.634443998336792
+buf[count++] = ch;#555,17.618356664975483
+capitalizeNext = true;#288,17.61714894430978
+buffer.append(ch);#293,17.613588506525215
+tmp = ch;#476,17.610711765289306
+return null;#165,17.604812749226888
+wrappedLine.append(str.substring(offset));#213,17.599296522140502
+result.append(StringUtils.defaultString(appendToEnd));#639,17.581863438641584
+tmp = Character.toLowerCase(ch);#468,17.574061760535606
+lastWasGap = true;#553,17.555525572403617
+buffer.append(ch);#423,17.551535606384277
+buffer.append(tmp);#478,17.545218467712402
+tmp = Character.toUpperCase(ch);#473,17.53840160369873
+result.append(str.substring(0, index));#638,17.537486763000487
+return buffer.toString();#296,17.533245291028702
+return buffer.toString();#426,17.531223160879954
+result.append(str.substring(0, upper));#635,17.51739189147949
+tmp = Character.toLowerCase(ch);#466,17.515511732835037
+return buffer.toString();#481,17.428083964756556
+wrappedLine.append(str.substring(offset, wrapLength + offset));#194,17.41777244774071
+uncapitalizeNext = false;#421,17.41458237171173
+capitalizeNext = false;#291,17.406127975100564
+offset += wrapLength;#196,17.383770484924316
+result.append(StringUtils.defaultString(appendToEnd));#636,17.369732009039986
+buffer.append(ch);#287,17.325639941475607
+return wrappedLine.toString();#215,17.288777351379395
+return Character.isWhitespace(ch);#574,17.27258907664906
+buffer.append(ch);#417,17.269117832183838
+StringBuffer wrappedLine = new StringBuffer(inputLineLength + 32);#175,17.230557897816535
+buffer.append(Character.toTitleCase(ch));#290,17.20707627705165
+whitespace = Character.isWhitespace(ch);#479,17.185711940129597
+super();#44,17.042292952537537
+buffer.append(Character.toLowerCase(ch));#420,16.81159850529262

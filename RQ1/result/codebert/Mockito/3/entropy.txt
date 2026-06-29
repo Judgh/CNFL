@@ -1,0 +1,73 @@
+return !overloadedButSameArgs;#90,17.881595015525818
+return this.invocation;#46,17.708132198878697
+@SuppressWarnings("unchecked")#21,17.675490032542836
+this.invocation = invocation;#29,17.478659184773765
+return out;#149,17.465268655256793
+return false;#106,17.44271042767693
+return false;#111,17.44192513552579
+String wantedMethodName = getMethod().getName();#76,17.393545552303916
+for (int position = 0; position < matchers.size(); position++) {#134,17.36905101249958
+return invocation.getLocation();#115,17.294399125235422
+Class[] params2 = m2.getParameterTypes();#102,17.28266091780229
+LinkedList<InvocationMatcher> out = new LinkedList<InvocationMatcher>();#145,17.280335998535158
+return invocation.getMethod();#42,17.273000989641464
+Method m2 = candidate.getMethod();#97,17.2535639370189
+String currentMethodName = candidate.getMethod().getName();#77,17.22945499420166
+if (m1.getName() != null && m1.getName().equals(m2.getName())) {#99,17.20545509126451
+for (int position = 0; position < indexOfVararg; position++) {#121,17.15890627893908
+return true;#108,17.122391939163208
+if (params1.length == params2.length) {#103,17.0634067784185
+Matcher m = matchers.get(position);#122,17.055922313972754
+if (m instanceof CapturesArguments) {#136,17.00906976064046
+Method m1 = invocation.getMethod();#96,17.00799633474911
+if (m instanceof CapturesArguments) {#123,16.964303935015643
+final boolean mockIsTheSame = getInvocation().getMock() == candidate.getMock();#81,16.954149786631266
+return invocation.getMock().equals(actual.getMock())#58,16.948606093724568
+public List<Matcher> getMatchers() {#49,16.946105448404946
+if (!methodNameEquals || !isUnverified || !mockIsTheSame) {#84,16.945290327072144
+public Invocation getInvocation() {#45,16.942242701848347
+Matcher m = matchers.get(position);#135,16.9257678632383
+public Location getLocation() {#114,16.91118621826172
+Matcher m = matchers.get(position);#128,16.90210317682337
+this.matchers = ArgumentsProcessor.argumentsToMatchers(invocation.getArguments());#31,16.878521619524275
+return new ArgumentsComparator().argumentsMatch(this, actualArgs);#65,16.869645527430944
+if (m instanceof CapturesArguments) {#129,16.868629738136573
+public Method getMethod() {#41,16.85296850204468
+final boolean isUnverified = !candidate.isVerified();#80,16.8252441666343
+Class[] params1 = m1.getParameterTypes();#101,16.75935515490445
+((CapturesArguments) m).captureFrom(invocation.getArgumentAt(position, Object.class));#124,16.73516681919927
+for (int position = indexOfVararg; position < matchers.size(); position++) {#127,16.732198506593704
+final boolean overloadedButSameArgs = !methodEquals && safelyArgumentsMatch(candidate.getArguments());#88,16.699108362197876
+if (invocation.getMethod().isVarArgs()) {#119,16.66768823351179
+private final List<Matcher> matchers;#26,16.658737386975968
+public static List<InvocationMatcher> createFrom(List<Invocation> invocations) {#144,16.65105758666992
+if (matchers.isEmpty()) {#30,16.646895240334903
+for (int i = 0; i < params1.length; i++) {#104,16.60735336939494
+final boolean methodNameEquals = wantedMethodName.equals(currentMethodName);#79,16.60343072964595
+return false;#67,16.59825522104899
+return this.matchers;#50,16.589825425829208
+((CapturesArguments) m).captureFrom(invocation.getArgumentAt(position, Object.class));#137,16.54622857466988
+public InvocationMatcher(Invocation invocation) {#37,16.498634147644044
+this(invocation, Collections.<Matcher>emptyList());#38,16.46011293502081
+for (Invocation i : invocations) {#146,16.457011222839355
+public InvocationMatcher(Invocation invocation, List<Matcher> matchers) {#28,16.447422317836594
+public String toString() {#53,16.444367027282716
+public boolean matches(Invocation actual) {#57,16.435509241544285
+((CapturesArguments) m).captureFrom(invocation.getRawArguments()[position - indexOfVararg]);#130,16.40054366985957
+&& new ArgumentsComparator().argumentsMatch(this, actual);#60,16.3725452884551
+try {#64,16.360388469696044
+int indexOfVararg = invocation.getRawArguments().length - 1;#120,16.351860736978466
+return new PrintSettings().print(matchers, invocation);#54,16.28860971927643
+final boolean methodEquals = hasSameMethod(candidate);#82,16.252202397301083
+private static final long serialVersionUID = -3047126096857467610L;#24,16.25170191474583
+out.add(new InvocationMatcher(i));#147,16.224489569664
+public boolean hasSimilarMethod(Invocation candidate) {#75,16.194783147176107
+public class InvocationMatcher implements DescribedInvocation, CapturesArgumensFromInvocation, Serializable {#22,16.14784362792969
+public boolean hasSameMethod(Invocation candidate) {#93,16.1164493560791
+return false;#85,16.108936564127603
+if (params1[i] != params2[i])#105,16.089195211728413
+private final Invocation invocation;#25,15.785044384002685
+&& hasSameMethod(actual)#59,15.741356891134512
+private boolean safelyArgumentsMatch(Object[] actualArgs) {#63,15.615617359385771
+this.matchers = matchers;#33,15.475897979736327
+public void captureArgumentsFrom(Invocation invocation) {#118,15.22276896238327

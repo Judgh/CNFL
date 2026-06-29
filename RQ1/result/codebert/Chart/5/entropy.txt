@@ -1,0 +1,204 @@
+public Object clone() throws CloneNotSupportedException {#633,20.845772879464285
+public List getItems() {#195,20.074412536621093
+throws CloneNotSupportedException {#650,19.982315880911692
+public Number getY(int index) {#475,19.69947389455942
+public XYSeries(Comparable key) {#124,19.64714637169471
+public XYSeries createCopy(int start, int end)#649,19.640207171440125
+public double[][] toArray() {#610,19.57013981158917
+public int getItemCount() {#185,19.436900572343305
+protected List data;#106,19.389782667160034
+public int getMaximumItemCount() {#206,19.37286615371704
+public int hashCode() {#709,19.3268684387207
+public boolean getAutoSort() {#166,19.293348399075594
+public Number getX(int index) {#464,19.26503482231727
+int index = indexOf(x);#547,19.20303452014923
+public XYDataItem addOrUpdate(Number x, Number y) {#540,19.15896054318077
+public XYSeries(Comparable key, boolean autoSort) {#136,19.084542386672076
+public boolean getAllowDuplicateXValues() {#176,19.07673085530599
+Number y = getY(i);#615,18.999598693847656
+if (this.allowDuplicateXValues != that.allowDuplicateXValues) {#695,18.98851825451029
+public void delete(int start, int end) {#403,18.969631958007813
+if (!(obj instanceof XYSeries)) {#682,18.968784014383953
+public void add(XYDataItem item) {#242,18.967561517442977
+if (count > 0) {#714,18.93375498453776
+public void add(Number x, Number y) {#313,18.913091278076173
+int index = indexOf(x);#504,18.895553946495056
+if (count > 1) {#718,18.882587178548178
+public XYDataItem getDataItem(int index) {#453,18.88112223148346
+if (x == null) {#541,18.84942366282145
+if (getItemCount() > this.maximumItemCount) {#388,18.845550060272217
+public int indexOf(Number x) {#588,18.841781616210938
+public XYDataItem addOrUpdate(double x, double y) {#526,18.829932915536983
+int result = super.hashCode();#710,18.816813111305237
+public void add(double x, double y) {#254,18.80013427734375
+public void add(XYDataItem item, boolean notify) {#346,18.774210256688736
+else {#558,18.758044242858887
+else {#508,18.74818115234375
+catch (CloneNotSupportedException e) {#553,18.736195694316518
+if (this.allowDuplicateXValues) {#358,18.71387563432966
+public XYDataItem remove(int index) {#418,18.700000013623917
+private boolean autoSort;#112,18.690881305270725
+public void add(Number x, Number y, boolean notify) {#331,18.688307656182182
+public void updateByIndex(int index, Number y) {#488,18.685738956227024
+result[0][i] = this.getX(i).doubleValue();#614,18.678885920294398
+for (int i = 0; i < itemCount; i++) {#613,18.67886559859566
+if (obj == this) {#679,18.669537925720213
+if (this.autoSort) {#563,18.668042802810668
+public void clear() {#439,18.664219432406956
+public void update(Number x, Number y) {#503,18.66166133880615
+public boolean equals(Object obj) {#678,18.64816912015279
+if (!this.allowDuplicateXValues) {#378,18.61826952298482
+XYSeries that = (XYSeries) obj;#688,18.587833192613388
+if (y != null) {#616,18.549054999100534
+public XYDataItem remove(Number x) {#432,18.538938317980087
+else {#357,18.535040174211776
+public void add(double x, Number y) {#280,18.517694409688314
+int count = getItemCount();#713,18.516528828938803
+if (count > 2) {#722,18.51645024617513
+public void add(double x, Number y, boolean notify) {#295,18.483490149180096
+else {#566,18.46571704319545
+private boolean allowDuplicateXValues;#115,18.460521331200233
+else {#377,18.454786682128905
+public void add(double x, double y, boolean notify) {#268,18.42420260111491
+public void setMaximumItemCount(int maximum) {#224,18.410282707214357
+static final long serialVersionUID = -5908509288197150436L;#99,18.3930116380964
+int itemCount = getItemCount();#611,18.387539446353912
+XYSeries copy = (XYSeries) super.clone();#652,18.331060791015624
+XYSeries clone = (XYSeries) super.clone();#634,18.322412538528443
+result = 29 * result + (this.autoSort ? 1 : 0);#727,18.31917456785838
+if (this.autoSort) {#589,18.315967440605164
+if (item == null) {#348,18.313806343078614
+try {#550,18.309601375034877
+if (index >= 0 && !this.allowDuplicateXValues) {#548,18.30922477722168
+if (getItemCount() > this.maximumItemCount) {#570,18.303323929126446
+if (this.maximumItemCount != that.maximumItemCount) {#689,18.30288153109343
+private int maximumItemCount = Integer.MAX_VALUE;#109,18.30066293478012
+for (int i = start; i <= end; i++) {#404,18.286792928522285
+if (index < 0) {#354,18.26545981356972
+if (this.autoSort) {#352,18.262059330940247
+this.allowDuplicateXValues = allowDuplicateXValues;#156,18.258207480112713
+existing.setY(y);#556,18.255136991802015
+&& item.compareTo(this.data.get(index)) == 0) {#362,18.252204397450324
+else {#592,18.238646507263184
+double[][] result = new double[2][itemCount];#612,18.19050680507313
+if (index < 0) {#505,18.189894104003905
+result = 29 * result + item.hashCode();#716,18.165462950001594
+for (int i = 0; i < this.data.size(); i++) {#593,18.162146790822348
+result = 29 * result + (this.allowDuplicateXValues ? 1 : 0);#728,18.118748835154943
+boolean allowDuplicateXValues) {#152,18.11181140768117
+if (this.autoSort != that.autoSort) {#692,18.101619765872048
+if (this.data.size() > 0) {#440,18.101364374160767
+if (notify) {#391,18.08097423825945
+result = 29 * result + this.maximumItemCount;#726,18.054439353942872
+return this.allowDuplicateXValues;#177,18.053356806437176
+else {#372,18.039448102315266
+throw new IllegalArgumentException("Null 'item' argument.");#349,18.032302159529465
+return remove(indexOf(x));#433,18.03064900636673
+for (int index = start; index <= end; index++) {#655,18.02489581474891
+throw new IllegalArgumentException("Null 'x' argument.");#542,18.017942648667557
+public class XYSeries extends Series implements Cloneable, Serializable {#96,18.000252519335067
+if (!super.equals(obj)) {#685,17.99267095989651
+catch (SeriesException e) {#661,17.971987226734992
+if (this.data.size() > 0) {#654,17.933742380142213
+XYDataItem existing = (XYDataItem) this.data.get(index);#549,17.907029374440512
+int index = Collections.binarySearch(this.data, item);#353,17.89144387611976
+return getDataItem(index).getY();#476,17.865280363294815
+int size = this.data.size();#360,17.85869420807937
+XYDataItem clone = (XYDataItem) item.clone();#657,17.832552909851074
+try {#658,17.819294876522488
+add(x, y, true);#315,17.817611813545227
+while (this.data.size() > maximum) {#227,17.80623416900635
+public XYSeries(Comparable key,#150,17.78036665916443
+XYDataItem item = (XYDataItem) this.data.get(i);#594,17.780258711646585
+return result;#623,17.770799376747824
+this.data.add(-index - 1, new XYDataItem(x, y));#564,17.76058363233294
+XYDataItem item = (XYDataItem) this.data.get(index);#656,17.7527600737179
+return (XYDataItem) this.data.get(index);#454,17.749122272838246
+if (!ObjectUtilities.equal(this.data, that.data)) {#698,17.743018074035646
+if (index < this.data.size()) {#365,17.739916986034764
+return addOrUpdate(new Double(x), new Double(y));#527,17.731710143711258
+return result;#729,17.724998907609418
+boolean autoSort,#151,17.70626441637675
+result = 29 * result + item.hashCode();#720,17.685353527898375
+return this.maximumItemCount;#207,17.65180886586507
+item.setY(y);#490,17.632767105102538
+return Collections.binarySearch(this.data, new XYDataItem(x, null));#590,17.625497941047914
+add(new Double(x), new Double(y), true);#255,17.622613603418525
+else {#619,17.606954710824148
+else {#368,17.599361939863726
+return result;#421,17.592062516645953
+return this.autoSort;#167,17.5828469821385
+return getDataItem(index).getX();#465,17.577458381652832
+if (item.getX().equals(x)) {#595,17.557885630377406
+this.maximumItemCount = maximum;#225,17.550075590610504
+XYDataItem item = getDataItem(count - 1);#719,17.54241611480713
+index++;#363,17.529100087972786
+this.autoSort = autoSort;#155,17.47387045621872
+fireSeriesChanged();#420,17.456976254781086
+this(key, true, true);#125,17.452074766159058
+return Collections.unmodifiableList(this.data);#196,17.43613996505737
+throw new SeriesException("No observation for x = " + x);#506,17.419041413527268
+int index = indexOf(item.getX());#381,17.411906666225857
+this.data = new java.util.ArrayList();#154,17.399483013153077
+if (dataRemoved) {#231,17.386148044041224
+result = 29 * result + item.hashCode();#724,17.384616893270742
+return this.data.size();#186,17.362641461690266
+if (index >= 0) {#382,17.360760025356125
+XYDataItem result = (XYDataItem) this.data.remove(index);#419,17.347397547501785
+add(item, true);#244,17.312888417925155
+result[1][i] = y.doubleValue();#617,17.30134153366089
+add(new Double(x), new Double(y), notify);#269,17.299966248598967
+XYDataItem item = new XYDataItem(x, y);#333,17.257930148731578
+super(key);#153,17.246480385462444
+return clone;#636,17.24024625258012
+copy.data = new java.util.ArrayList();#653,17.21557674407959
+XYDataItem item = getDataItem(index);#489,17.21008431284051
+fireSeriesChanged();#407,17.202663501103718
+return true;#701,17.19181303544478
+clone.data = (List) ObjectUtilities.deepClone(this.data);#635,17.180840704176163
+fireSeriesChanged();#574,17.174124717712402
+throw new SeriesException("X-value already exists.");#373,17.163523644208908
+XYDataItem item = getDataItem(0);#715,17.130886824234672
+XYDataItem overwritten = null;#546,17.08987319469452
+item.setY(y);#510,17.068949699401855
+fireSeriesChanged();#491,17.067412932713825
+add(item, notify);#334,17.055150713239396
+overwritten = (XYDataItem) existing.clone();#551,16.999036039624894
+while (index < size#361,16.996171760559083
+this(key, autoSort, true);#137,16.99552614548627
+return copy;#666,16.98193576119163
+boolean dataRemoved = false;#226,16.98096248081752
+return -1;#599,16.980643212795258
+add(new Double(x), y, notify);#296,16.928188574941533
+XYDataItem item = getDataItem(count / 2);#723,16.923928146362304
+this.data.add(-index - 1, item);#355,16.912814242499216
+add(new Double(x), y);#281,16.89391742033117
+this.data.add(new XYDataItem(x, y));#567,16.861100104547315
+throw new SeriesException("Couldn't clone XYDataItem!");#554,16.827906608581543
+XYDataItem item = getDataItem(index);#509,16.759361723194953
+this.data.add(item);#386,16.746883630752563
+return overwritten;#575,16.699321111043293
+return false;#683,16.697575441996257
+this.data.add(index, item);#366,16.684704864726346
+throw new SeriesException("X-value already exists.");#383,16.65174028277397
+result[1][i] = Double.NaN;#620,16.62546440533229
+this.data.add(item);#369,16.603822380304337
+return false;#686,16.590233039855956
+return true;#680,16.549542872111
+return false;#690,16.5436253229777
+return false;#693,16.54267717997233
+this.data.remove(0);#389,16.424914836883545
+return false;#696,16.389963722229005
+fireSeriesChanged();#392,16.284179270267487
+copy.add(clone);#659,16.273441498096172
+this.data.clear();#441,16.268344190385605
+fireSeriesChanged();#442,16.22448444366455
+this.data.remove(start);#405,16.11285548210144
+fireSeriesChanged();#511,16.10253930091858
+this.data.remove(0);#228,16.086640930175783
+System.err.println("Unable to add cloned data item.");#662,16.081074052386814
+fireSeriesChanged();#232,16.04671573638916
+return false;#699,16.007587496439616
+return i;#596,15.900997410649838
+this.data.remove(0);#571,15.692746917406717
+dataRemoved = true;#229,15.584710177253275

@@ -1,0 +1,147 @@
+weightMatrixSqrt = squareRoot(getWeight());#508,19.0294997215271
+protected double[] objective;#102,19.003564834594727
+public double[] computeSigma(double[] params,#400,18.716550827026367
+final double[] target = getTarget();#541,18.636540114879608
+protected double[] point;#97,18.557391590542263
+protected double cost;#113,18.49658691883087
+return weightMatrixSqrt.multiply(MatrixUtils.createRealMatrix(jacobianData));#190,18.469088435173035
+return cost * cost;#250,18.38209607050969
+protected double[] computeResiduals(double[] objectiveValue) {#540,18.363282103287546
+return weightMatrixSqrt.copy();#260,18.354631592245664
+private RealMatrix weightMatrixSqrt;#119,18.3507441007174
+final double[] res = computeResiduals(objective);#206,18.346318765120074
+cost = computeCost(res);#209,18.343080902099608
+protected void setCost(double cost) {#269,18.22944296323336
+protected RealMatrix computeWeightedJacobian(double[] params) {#167,18.21637953652276
+final RealMatrix jTj = j.transpose().multiply(j);#333,18.206025930551384
+public RealMatrix getWeightSquareRoot() {#259,18.202647942763107
+errors[i] = FastMath.sqrt(covar[i][i]) * c;#380,18.140158204471362
+orders[j] = 1;#184,18.139745214711066
+final RealMatrix j = computeWeightedJacobian(params);#330,18.082745007106237
+public double getRMS() {#239,18.075785463506524
+if (objectiveValue.length != target.length) {#542,18.074524834042503
+protected double[] weightedResiduals;#107,18.060252996591423
+public double[] guessParametersErrors() {#371,18.040963099553036
+sig[i] = FastMath.sqrt(cov[i][i]);#406,18.01990645726522
+final double[][] cov = computeCovariances(params, covarianceSingularityThreshold);#404,18.0175905863444
+weightedResiduals = weightMatrixSqrt.operate(residuals).toArray();#213,18.013966098908455
+protected void updateJacobian() {#153,18.003295291553844
+final double c = FastMath.sqrt(getChiSquare() / (rows - cols));#377,18.001648648579916
+jF = FunctionUtils.toMultivariateDifferentiableVectorFunction((DifferentiableMultivariateVectorFunction) getObjectiveFunction());#516,17.972495406014577
+return optimizeInternal(maxEval,#423,17.947065353393555
+return FastMath.sqrt(getChiSquare() / rows);#240,17.942156377046004
+protected void updateResidualsAndCost() {#204,17.935383860270182
+return FastMath.sqrt(r.dotProduct(getWeight().operate(r)));#226,17.90573103674527
+final ArrayRealVector r = new ArrayRealVector(residuals);#225,17.890759309132893
+jacobianData[i][j] = dsValue[i].getPartialDerivative(orders);#185,17.824271792457218
+protected double[][] weightedResidualJacobian;#82,17.80207884311676
+double[][] covar = computeCovariances(point, 1e-14);#378,17.784433364868164
+new Target(target),#425,17.773884644379486
+return dec.getSquareRoot();#563,17.764911952771637
+FunctionUtils.toMultivariateDifferentiableVectorFunction(f),#424,17.712703248728875
+new Target(target),#460,17.711149602322966
+final MultivariateDifferentiableVectorFunction f,#456,17.695260486602784
+final DerivativeStructure[] dsPoint = new DerivativeStructure[params.length];#170,17.68467820485433
+for (int j = 0; j < nC; ++j) {#183,17.65446318898882
+final double[][] jacobianData = new double[nR][nC];#180,17.641087804521835
+return super.optimizeInternal(maxEval, FunctionUtils.toDifferentiableMultivariateVectorFunction(f), optData);#496,17.613568014568752
+final DerivativeStructure[] dsValue = jF.value(dsPoint);#175,17.611742302223487
+weightedResidualJacobian = weightedJacobian.scalarMultiply(-1).getData();#155,17.608671680573494
+orders[j] = 0;#186,17.596871210181195
+protected double computeCost(double[] residuals) {#224,17.595096842447916
+private MultivariateDifferentiableVectorFunction jF;#115,17.583569867270334
+objective = computeObjectiveValue(point);#205,17.571550369262695
+private RealMatrix squareRoot(RealMatrix m) {#561,17.549024264017742
+final double[] sig = new double[nC];#403,17.54670434249075
+final double[] residuals = new double[target.length];#547,17.52793366568429
+final DifferentiableMultivariateVectorFunction f,#420,17.51846460342407
+jacobianEvaluations = 0;#505,17.510168446434868
+public PointVectorValuePair optimize(int maxEval,#419,17.49194049835205
+return optimizeInternal(maxEval, f,#459,17.46701208750407
+double[] errors = new double[cols];#376,17.44839933183458
+public double[][] getCovariances(double threshold) {#306,17.419928851880524
+extends BaseAbstractMultivariateVectorOptimizer<DifferentiableMultivariateVectorFunction>#64,17.392133576529368
+public double[][] computeCovariances(double[] params,#327,17.38189391085976
+++jacobianEvaluations;#168,17.364022850990295
+int[] orders = new int[nC];#182,17.31438818844882
+residuals[i] = target[i] - objectiveValue[i];#549,17.308276857648575
+@Override#500,17.301701227823894
+for (int i = 0; i < nR; ++i) {#181,17.237012306849163
+super.setUp();#502,17.203358503488396
+public double getChiSquare() {#249,17.181334336598713
+private int jacobianEvaluations;#117,17.175025871821813
+public int getJacobianEvaluations() {#140,17.164503710610525
+new Weight(weights),#426,17.156370008313978
+public double[][] getCovariances() {#284,17.143250107765198
+new Weight(weights),#461,17.142380559766615
+throw new DimensionMismatchException(target.length,#543,17.13451898097992
+return solver.getInverse().getData();#338,17.114853206433747
+final ArrayRealVector residuals = new ArrayRealVector(res);#212,17.09899984706532
+for (int i = 0; i < target.length; i++) {#548,17.083635171254475
+public PointVectorValuePair optimize(final int maxEval,#455,17.034981939527725
+protected AbstractLeastSquaresOptimizer(ConvergenceChecker<PointVectorValuePair> checker) {#133,17.019973341623942
+return getCovariances(DEFAULT_SINGULARITY_THRESHOLD);#285,16.98355439731053
+private static final double DEFAULT_SINGULARITY_THRESHOLD = 1e-14;#71,16.97901648741502
+return sig;#408,16.971276023171164
+return errors;#382,16.945339983159844
+if (dsValue.length != nR) {#177,16.937073205646715
+final RealMatrix weightedJacobian = computeWeightedJacobian(point);#154,16.934762457142707
+point = getStartPoint();#519,16.93171991620745
+final int nR = getTarget().length;#176,16.925775157080757
+return jacobianEvaluations;#141,16.91914384505328
+for (int i = 0; i < nC; ++i) {#172,16.91170601050059
+implements DifferentiableMultivariateVectorOptimizer {#65,16.89979124069214
+rows = getTarget().length;#520,16.896244303385416
+protected PointVectorValuePair optimizeInternal(final int maxEval,#491,16.889082607470062
+for (int i = 0; i < errors.length; ++i) {#379,16.885782585144042
+final EigenDecomposition dec = new EigenDecomposition(m);#562,16.864470120134026
+@Deprecated#91,16.862638064793178
+final double[] startPoint) {#458,16.837385594844818
+new InitialGuess(startPoint));#427,16.83404630422592
+final double[] startPoint) {#422,16.820372601350147
+@Override#417,16.802671273549397
+@Deprecated#96,16.795268331255233
+final int nC = params.length;#171,16.794606377096738
+final double[] target, final double[] weights,#457,16.784622491574755
+this.cost = cost;#270,16.782838548932755
+protected int rows;#92,16.77513062953949
+final double[] target, final double[] weights,#421,16.74273068297143
+dsPoint[i] = new DerivativeStructure(nC, 1, i, params[i]);#173,16.691834217793232
+super(checker);#134,16.690084897554836
+new InitialGuess(startPoint));#462,16.626672291755675
+@Deprecated#101,16.609053747994558
+throw new NumberIsTooSmallException(LocalizedFormats.NO_DEGREES_OF_FREEDOM,#373,16.59469792781732
+for (int i = 0; i < nC; ++i) {#405,16.551027337710064
+throw new DimensionMismatchException(dsValue.length, nR);#178,16.539643594196864
+objectiveValue.length);#544,16.524005907553214
+if (rows <= cols) {#372,16.511471271514893
+final int nC = params.length;#402,16.5098035475787
+return computeCovariances(point, threshold);#307,16.440086189069245
+= new QRDecomposition(jTj, threshold).getSolver();#337,16.436147163654194
+final MultivariateDifferentiableVectorFunction f,#492,16.422764074606974
+@Deprecated#86,16.391761779785156
+public abstract class AbstractLeastSquaresOptimizer#63,16.381827116012573
+@Deprecated#106,16.3545652117048
+rows, cols, false);#374,16.348311909762295
+protected void setUp() {#501,16.299801731109618
+protected AbstractLeastSquaresOptimizer() {}#128,16.2917781829834
+final DecompositionSolver solver#336,16.22527974843979
+@Deprecated#81,16.111908231462753
+double covarianceSingularityThreshold) {#401,16.104239009675524
+protected int cols;#87,15.993622991773817
+return residuals;#552,15.976068099339804
+double threshold) {#328,15.914694786071777
+@Deprecated#152,15.896996089390345
+@Deprecated#112,15.856326920645577
+@Deprecated#418,15.776441029139928
+@Deprecated#283,15.676497323172432
+@Deprecated#127,15.667997632707868
+@Deprecated#305,15.65337221963065
+OptimizationData... optData) {#493,15.565858300526937
+cols = point.length;#521,15.494092559814453
+@Deprecated#70,15.299393653869629
+@Deprecated#62,15.22172737121582
+@Deprecated#454,15.167191641671318
+@Deprecated#370,15.16631167275565
+@Deprecated#203,15.15046569279262
+@Deprecated#490,15.14612865447998

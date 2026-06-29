@@ -1,0 +1,42 @@
+public class MultiDirectional extends DirectSearchOptimizer {#34,16.380918502807617
+throws FunctionEvaluationException, OptimizationException, IllegalArgumentException {#62,15.116110265254974
+private RealPointValuePair evaluateNewSimplex(final RealPointValuePair[] original,#110,14.57422653834025
+protected void iterateSimplex(final Comparator<RealPointValuePair> comparator)#61,14.569565296173096
+throws FunctionEvaluationException, OptimizationException {#113,14.14147494968615
+final RealPointValuePair contracted = evaluateNewSimplex(original, gamma, comparator);#89,14.10072672367096
+private final double khi;#37,13.97829990386963
+if (comparator.compare(reflected, best) < 0) {#74,13.757251358032226
+private final double gamma;#40,13.701685269673666
+public MultiDirectional(final double khi, final double gamma) {#54,13.646234107017516
+final int n = xSmallest.length;#116,13.636964956919352
+final double[] xSmallest = original[0].getPointRef();#115,13.595936484958814
+final RealPointValuePair reflected = evaluateNewSimplex(original, 1.0, comparator);#73,13.538021957173067
+public MultiDirectional() {#45,13.390305519104004
+final RealPointValuePair expanded = evaluateNewSimplex(original, khi, comparator);#78,13.347386952993032
+if (comparator.compare(reflected, expanded) <= 0) {#79,13.290802226347083
+if (comparator.compare(contracted, best) < 0) {#90,13.173733027776082
+@Override#60,13.156222979227701
+simplex[i] = new RealPointValuePair(xTransformed, Double.NaN, false);#127,13.004624181323582
+simplex = new RealPointValuePair[n + 1];#119,12.760311343453147
+for (int i = 1; i <= n; ++i) {#121,12.760106667228367
+for (int j = 0; j < n; ++j) {#124,12.75047132703993
+final RealPointValuePair[] reflectedSimplex = simplex;#77,12.643809858957926
+final RealPointValuePair best = original[0];#70,12.643292665481567
+while (true) {#64,12.603477184589092
+xTransformed[j] = xSmallest[j] + coeff * (xSmallest[j] - xOriginal[j]);#125,12.468664345533952
+evaluateSimplex(comparator);#131,12.430497884750366
+final RealPointValuePair[] original = simplex;#69,12.364678740501404
+final double[] xOriginal    = original[i].getPointRef();#122,12.320427532853751
+final double[] xTransformed = new double[n];#123,12.17046586672465
+final Comparator<RealPointValuePair> comparator)#112,11.60365523322154
+incrementIterationsCounter();#66,11.419981956481934
+this.gamma = gamma;#56,11.361715284983317
+simplex[0] = original[0];#120,11.291682243347168
+return;#84,11.097816043429905
+return simplex[0];#132,11.023118836539131
+simplex = reflectedSimplex;#81,10.89936312922725
+this.gamma = 0.5;#47,10.621813016779283
+this.khi   = khi;#55,10.487667640050253
+final double coeff,#111,10.40774066775453
+this.khi   = 2.0;#46,10.16818242324026
+return;#94,9.84512013859219

@@ -1,0 +1,14 @@
+public class Weight implements OptimizationData {#32,19.030994203355576
+weightMatrix = org.apache.commons.math3.linear.MatrixUtils.createRealMatrix(dim, dim);#43,16.408533940996442
+for (int i = 0; i < dim; i++) {#44,15.72566504911943
+public Weight(RealMatrix weight) {#54,15.66261068979899
+private final RealMatrix weightMatrix;#34,15.647601994601162
+weightMatrix = weight.copy();#60,15.62121976216634
+public RealMatrix getWeight() {#68,15.511107358065518
+final int dim = weight.length;#42,15.504170179367065
+if (weight.getColumnDimension() != weight.getRowDimension()) {#55,15.447677245506874
+public Weight(double[] weight) {#41,15.375965197881063
+throw new NonSquareMatrixException(weight.getColumnDimension(),#56,15.32265068934514
+return weightMatrix.copy();#69,14.99662174497332
+weightMatrix.setEntry(i, i, weight[i]);#45,14.831071010002724
+weight.getRowDimension());#57,14.505066783339888

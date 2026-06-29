@@ -1,0 +1,447 @@
+public Object clone() throws CloneNotSupportedException {#1030,20.795833383287704
+private String range;#130,20.504797220230103
+throws CloneNotSupportedException {#1089,20.283923830304825
+public TimeSeries(Comparable name, String domain, String range) {#185,20.21078119779888
+public String getRangeDescription() {#230,20.183921467174184
+public String getDomainDescription() {#204,20.100936369462445
+private String domain;#127,20.06504988670349
+public double getMinY() {#344,20.03497721932151
+public TimeSeries(Comparable name) {#168,19.887267919687126
+public double getMaxY() {#359,19.820168235085227
+private double minY;#152,19.794137742784287
+public List getItems() {#263,19.72676248550415
+public long getMaximumItemAge() {#309,19.578693151474
+throws CloneNotSupportedException {#1049,19.51460732354058
+public TimeSeries createCopy(int start, int end)#1048,19.46413826942444
+public int getItemCount() {#253,19.37832294810902
+public int getMaximumItemCount() {#276,19.33601999282837
+TimeSeriesDataItem getRawDataItem(int index) {#428,19.316847857306986
+public int hashCode() {#1176,19.293588733673097
+protected List data;#136,19.25717031955719
+if (!(obj instanceof TimeSeries)) {#1139,19.234352429707844
+private double maxY;#159,19.232662836710613
+Iterator iterator = this.data.iterator();#1248,19.201315455966526
+if (start.compareTo(end) > 0) {#1097,19.199516209689055
+public Number getValue(int index) {#534,19.18062973022461
+public TimeSeriesDataItem getDataItem(int index) {#388,19.096205206478345
+public void delete(int start, int end) {#986,19.071424166361492
+public void update(int index, Number value) {#720,19.00909735361735
+String msg = "You are trying to add data where the time "#817,19.00838411771334
+public TimeSeriesDataItem addOrUpdate(TimeSeriesDataItem item) {#807,18.98341646194458
+public TimeSeries addAndOrUpdate(TimeSeries series) {#750,18.96968303007238
+for (int i = 0; i <= (end - start); i++) {#1003,18.966011657714844
+public void setRangeDescription(String description) {#242,18.939322062901088
+private double minIgnoreNaN(double a, double b) {#1264,18.934617745248897
+if (added) {#626,18.91856839106633
+private long maximumItemAge;#145,18.904062366485597
+for (int i = 0; i < getItemCount(); i++) {#484,18.895748098691303
+int count = getItemCount();#1161,18.89431317647298
+else {#1291,18.89113826751709
+if (getItemCount() > 1) {#877,18.88289827770657
+if (emptyRange) {#1117,18.8736149924142
+else {#1268,18.8735071182251
+if (count > 1) {#1190,18.868247350056965
+if (count > 0) {#1186,18.857014338175457
+private double maxIgnoreNaN(double a, double b) {#1287,18.775982003462943
+public void setDomainDescription(String description) {#217,18.767652988433838
+if (endIndex < 0) {             // end period is not in original series#1110,18.763850847880047
+public void delete(int start, int end, boolean notify) {#999,18.763564003838432
+public void setMaximumItemAge(long periods) {#325,18.750944264729817
+int result = super.hashCode();#1177,18.7384974360466
+int count = getItemCount();#597,18.730185572306315
+private void findBoundsByIteration() {#1245,18.711708000728063
+private void updateBoundsForAddedItem(TimeSeriesDataItem item) {#1210,18.70012149810791
+catch (InvocationTargetException e) {#925,18.688317579381607
+public void add(TimeSeriesDataItem item, boolean notify) {#575,18.680762820773655
+if (end == null) {#1094,18.66442127227783
+if (getMaximumItemCount() != that.getMaximumItemCount()) {#1158,18.66406222184499
+if (obj == this) {#1136,18.651019477844237
+if (item.getPeriod().compareTo(last) > 0) {#604,18.637565708160402
+if (index >= 0) {#548,18.631078910827636
+protected static final String DEFAULT_DOMAIN_DESCRIPTION = "Time";#121,18.621767568588258
+if (end < start) {#1053,18.62084706624349
+TimeSeries copy = (TimeSeries) super.clone();#1056,18.61337375640869
+else {#847,18.606283378601074
+that.getDomainDescription())) {#1144,18.60148008664449
+public void add(TimeSeriesDataItem item) {#563,18.596126492818197
+else if (value != null) {#734,18.59373104572296
+public void clear() {#949,18.584520022074383
+while (iterator.hasNext()) {#1249,18.58368182182312
+private static final long serialVersionUID = -5032960206869675528L;#118,18.583637693653937
+b.append(", but the TimeSeries is expecting an instance of ");#589,18.58207208769662
+Number value) {#792,18.58051005653713
+catch (NoSuchMethodException e) {#919,18.562550320344812
+if (start < 0) {#1050,18.55233949025472
+if (start == null) {#1091,18.552291297912596
+if (end < start) {#1000,18.538929812113444
+if (count > 2) {#1194,18.538488070170086
+else if (item.getValue() != null) {#841,18.53413720925649
+if (removed) {#937,18.53377137865339
+if (startIndex < 0) {#1103,18.532222032546997
+else if (!this.timePeriodClass.equals(c)) {#584,18.51736064751943
+long index = Long.MAX_VALUE;#909,18.512879988726446
+else {#602,18.512391662597658
+if (index >= 0) {#825,18.509030532836913
+if (getItemCount() > this.maximumItemCount) {#853,18.502958297729492
+if (this.timePeriodClass == null) {#813,18.500854682922363
+TimeSeries that = (TimeSeries) obj;#1142,18.47353442509969
+that.getRangeDescription())) {#1148,18.470937569936115
+if (index >= 0) {#969,18.46879177093506
+while (getItemCount() > 0 && (index#932,18.46721197429456
+else {#608,18.458398001534597
+if (!Double.isNaN(oldY)) {#834,18.458097736040752
+result = 29 * result + (int) this.maximumItemAge;#1199,18.455226856729258
+if (count != that.getItemCount()) {#1162,18.452404975891113
+if (Double.isNaN(b)) {#1292,18.44019247137982
+int count = getItemCount();#1185,18.43801523844401
+private int maximumItemCount;#139,18.433438110351563
+StringBuffer b = new StringBuffer();#585,18.43095455169678
+if (index >= 0) {#447,18.427570152282716
+for (int i = 0; i < series.getItemCount(); i++) {#753,18.427044354952297
+e.printStackTrace();#920,18.42134380340576
+public boolean equals(Object obj) {#1135,18.417251586914062
+if ((endIndex < 0)  || (endIndex < startIndex)) {#1114,18.41616588592529
+this.range = range;#188,18.410613196236746
+if (getMaximumItemAge() != that.getMaximumItemAge()) {#1155,18.40775763988495
+Collection result = new java.util.ArrayList();#483,18.406373877274362
+if (count == 0) {#598,18.402022298177084
+for (int i = 0; i < series.getItemCount(); i++) {#500,18.40043907899123
+if (index >= 0) {#407,18.39389762878418
+public class TimeSeries extends Series implements Cloneable, Serializable {#115,18.387576784406388
+if (iterate) {#838,18.3872872988383
+if (removed) {#885,18.37240113152398
+e.printStackTrace();#923,18.35750805704217
+result = 29 * result + (this.range != null ? this.range.hashCode() : 0);#1180,18.347370793742517
+b.append("You are trying to add data where the time period class ");#586,18.34551061432937
+if (getItemCount() > this.maximumItemCount) {#629,18.337721604567307
+TimeSeriesDataItem item = (TimeSeriesDataItem) this.data.remove(#970,18.322858874003092
+if (item == null) {#576,18.321448008219402
+this.minY = minIgnoreNaN(this.minY, yy);#736,18.319560666238107
+findBoundsByIteration();#1006,18.291906992594402
+if (!Double.isNaN(y)) {#1231,18.286668031112008
+public void add(RegularTimePeriod period, Number value, boolean notify) {#691,18.283381462097168
+private void updateBoundsForRemovedItem(TimeSeriesDataItem item) {#1227,18.282553720474244
+if (!ObjectUtilities.equal(getDomainDescription(),#1143,18.266962862014772
+if (Double.isNaN(a)) {#1265,18.265695170352334
+long latest = getTimePeriod(getItemCount() - 1).getSerialIndex();#878,18.263348763988866
+if (this.timePeriodClass == null) {#581,18.25558042526245
+public Collection getTimePeriods() {#482,18.25455430837778
+throw new IllegalArgumentException("Null 'end' argument.");#1095,18.251819610595703
+if (Double.isNaN(b)) {#1269,18.250256870103918
+public void add(RegularTimePeriod period, double value, boolean notify) {#664,18.24947048368908
+TimeSeries clone = (TimeSeries) super.clone();#1031,18.23867874145508
+findBoundsByIteration();#938,18.234563576547725
+TimeSeriesDataItem dummy = new TimeSeriesDataItem(#522,18.23237247467041
+if (item.getValue() != null) {#1212,18.22602061221474
+result = 29 * result + (this.timePeriodClass != null#1181,18.222785493601922
+else {#614,18.222022268507217
+public void add(RegularTimePeriod period, Number value) {#678,18.220741589864094
+int startIndex = getIndex(start);#1102,18.2156462949865
+else {#1122,18.215260124206544
+else if (!this.timePeriodClass.equals(periodClass)) {#816,18.210473098754882
+public void add(RegularTimePeriod period, double value) {#651,18.207613309224445
+double value) {#776,18.20691890301912
+if (this.data.isEmpty()) {#1007,18.206188943650986
+if (this.data.size() > 0) {#950,18.204906225204468
+if (item == null) {#809,18.19428195953369
+protected static final String DEFAULT_RANGE_DESCRIPTION = "Value";#124,18.188331365585327
+public Collection getTimePeriodsUniqueToOtherSeries(TimeSeries series) {#498,18.18673565274193
+return this.maxY;#360,18.18615130015782
+this.maximumItemAge = Long.MAX_VALUE;#192,18.1810302734375
+public void setMaximumItemCount(int maximum) {#291,18.180058352152507
+throw new IllegalArgumentException("Null 'start' argument.");#1092,18.17571673026452
+try {#910,18.175127601623537
+new Date(latest), TimeZone.getDefault()});#916,18.164830803871155
+RegularTimePeriod last = getTimePeriod(getItemCount() - 1);#603,18.159856923421223
+if (notify) {#1010,18.158819130488805
+"createInstance", new Class[] {Class.class, Date.class,#912,18.158791277143692
+if (this.data.isEmpty()) {#905,18.157670762803818
+if (iterate) {#731,18.147602694375173
+result = 29 * result + this.maximumItemCount;#1198,18.147536420822142
+if (Double.isNaN(a)) {#1288,18.13922109101948
+this.minY = minIgnoreNaN(this.minY, y);#1214,18.13557742436727
+TimeZone.class});#913,18.135347480773927
+b.append("is ");#587,18.13404534992419
+item = (TimeSeriesDataItem) item.clone();#848,18.126414736111958
+if (notify) {#939,18.124734454684788
+if (yN != null) {#1229,18.124221444129944
+return this.minY;#345,18.12364067350115
+super(name);#186,18.118436018625896
+else {#1295,18.114731516156876
+catch (SeriesException e) {#1066,18.10864137566608
+public Number getValue(RegularTimePeriod period) {#546,18.103000819683075
+endIndex = -(endIndex + 1); // this is first item AFTER end period#1111,18.099075444539388
+Collection result = new java.util.ArrayList();#499,18.09405924144544
+for (int index = start; index <= end; index++) {#1059,18.09267282485962
+item = (TimeSeriesDataItem) item.clone();#579,18.092109394073486
+int endIndex = getIndex(end);#1109,18.08703893773696
+public TimeSeriesDataItem getDataItem(RegularTimePeriod period) {#405,18.067356443405153
+if (startIndex == this.data.size()) {#1105,18.064522743225098
+if (y <= this.minY || y >= this.maxY) {#1232,18.059878436001863
+if (!ObjectUtilities.equal(getRangeDescription(),#1147,18.055129194259642
+TimeSeriesDataItem clone = (TimeSeriesDataItem) item.clone();#1062,18.052966475486755
+this.timePeriodClass = null;#189,18.046245238360235
+startIndex = -(startIndex + 1);#1104,18.03983038122004
+boolean emptyRange = false;#1101,18.039785657610214
+else {#551,18.03874092102051
+public RegularTimePeriod getTimePeriod(int index) {#462,18.03669521543715
+this.domain = domain;#187,18.034167562212264
+if (index < 0) {#707,18.02273483276367
+result = 29 * result + item.hashCode();#1188,18.017088931539785
+public int getIndex(RegularTimePeriod period) {#518,17.992390275001526
+boolean added = false;#596,17.98737225165734
+result = 29 * result + (this.domain != null ? this.domain.hashCode()#1178,17.962169102260045
+this.maximumItemCount = Integer.MAX_VALUE;#191,17.960389947891237
+TimeSeriesDataItem getRawDataItem(RegularTimePeriod period) {#445,17.958137035369873
+String old = this.range;#243,17.94962984720866
+e.printStackTrace();#926,17.942097914846318
+try {#1063,17.93266174528334
+if (count > maximum) {#297,17.92855593363444
+protected Class timePeriodClass;#133,17.91786037791859
+TimeSeries overwritten = new TimeSeries("Overwritten values from: "#751,17.915511960568637
+TimeSeriesDataItem existing#826,17.914067043977624
+TimeSeriesDataItem item = (TimeSeriesDataItem) this.data.get(index);#721,17.90561352457319
+TimeSeriesDataItem item = series.getRawDataItem(i);#754,17.904029139765985
+RegularTimePeriod newest = (RegularTimePeriod) m.invoke(#914,17.900376285825455
++ ", but the TimeSeries is expecting an instance of "#819,17.892587393522263
+int count = this.data.size();#296,17.883960723876953
+TimeSeriesDataItem item = getRawDataItem(count - 1);#1191,17.883335325453018
+if (index < 0) {#610,17.88120924908182
+this.minY = minIgnoreNaN(this.minY, yy);#843,17.879845210484095
+this.minY = Double.NaN;#1246,17.87897237141927
+TimeSeriesDataItem item#1060,17.871516500200546
+updateBoundsForAddedItem(item);#627,17.869500251043412
+while ((latest - getTimePeriod(0).getSerialIndex())#880,17.85983537744593
+int index = getIndex(period);#547,17.85838407278061
+else {#1272,17.858201231275284
+this.maxY = maxIgnoreNaN(this.maxY, yy);#737,17.857672322180964
+if (this.data.size() > 0) {#1058,17.85766806602478
+public TimeSeriesDataItem addOrUpdate(RegularTimePeriod period,#775,17.85689630006489
+if (notify) {#637,17.851524300045437
+updateBoundsForAddedItem(item);#850,17.844844545636857
+if (!Double.isNaN(oldY)) {#726,17.82446042696635
+int index = getIndex(period);#406,17.81791716814041
+this.maxY = Double.NaN;#1247,17.81472068362766
+b.append("You are attempting to add an observation for ");#616,17.814122901243323
+overwritten = (TimeSeriesDataItem) existing.clone();#828,17.81285469055176
+public void delete(RegularTimePeriod period) {#967,17.81093432108561
+if (period == null) {#519,17.804742685953777
+return result;#507,17.80314965681596
+public Class getTimePeriodClass() {#373,17.800950050354004
+Number yN = item.getValue();#1211,17.80029717613669
+TimeSeriesDataItem temp = new TimeSeriesDataItem(period, value);#705,17.79984203974406
+TimeSeriesDataItem item = (TimeSeriesDataItem) iterator.next();#1250,17.79730360848563
+Number oldYN = existing.getValue();#832,17.79319141024635
+Method m = RegularTimePeriod.class.getDeclaredMethod(#911,17.792037504690665
+endIndex = endIndex - 1;    // so this is last item BEFORE end#1112,17.788458639575587
+b.append(" but the series already contains an observation");#619,17.783036589622498
+throw new IllegalArgumentException("Null 'item' argument.");#577,17.78082961302537
+this.maxY = minIgnoreNaN(this.maxY, yy);#844,17.779998506818497
+public TimeSeriesDataItem addOrUpdate(RegularTimePeriod period,#791,17.774772593849583
+TimeSeriesDataItem item = new TimeSeriesDataItem(period, value);#666,17.772643248240154
+b.append("the time period ");#617,17.767736204739276
+if (maximum < 0) {#292,17.76510016123454
+int index = getIndex(period);#968,17.762462973594666
+StringBuffer b = new StringBuffer();#615,17.758418117250717
+result = 29 * result + item.hashCode();#1192,17.758360448090926
+this.maxY = maxIgnoreNaN(this.maxY, y);#1215,17.75264965693156
+this.data = new java.util.ArrayList();#190,17.752258205413817
+- getTimePeriod(0).getSerialIndex()) > this.maximumItemAge) {#933,17.75080641110738
+catch (IllegalAccessException e) {#922,17.750748129451978
+TimeSeries copy = (TimeSeries) super.clone();#1118,17.73797833919525
+return b;#1266,17.734246253967285
+if (oldYN != null) {#724,17.730218708515167
+public TimeSeries createCopy(RegularTimePeriod start, RegularTimePeriod end)#1088,17.726686824451793
+TimeSeriesDataItem oldItem = addOrUpdate(item.getPeriod(),#755,17.726301686517125
+TimeSeriesDataItem item = new TimeSeriesDataItem(period, value);#693,17.725085934003193
+if (!ObjectUtilities.equal(this.data, that.data)) {#1165,17.71508476257324
+b.append(" for that time period. Duplicates are not ");#620,17.707223565237864
+if (oldItem != null) {#757,17.706621360778808
+return (TimeSeriesDataItem) item.clone();#390,17.70262492330451
+int index = Collections.binarySearch(this.data, item);#609,17.696876017252603
+> this.maximumItemAge) {#881,17.6898580959865
+if (this.data.isEmpty()) {#973,17.687983512878418
+throw new IllegalArgumentException("Negative 'maximum' argument.");#293,17.682536195825648
+TimeSeriesDataItem d = (TimeSeriesDataItem) this.data.remove(0);#630,17.681490474277073
+return b;#1289,17.671192042032878
+return this.maximumItemAge;#310,17.670453707377117
+throw new IllegalArgumentException("Requires start >= 0.");#1051,17.65547477722168
+int index = Collections.binarySearch(this.data, item);#824,17.65228809009899
+return result;#1200,17.644156802784313
+return result;#487,17.642432993108574
+TimeSeriesDataItem overwritten = null;#823,17.634993160472195
+return this.maximumItemCount;#277,17.63386122385661
+Number yN = item.getValue();#1228,17.631981681374942
+else {#450,17.630667781829835
+else {#410,17.624346351623537
+int index = getIndex(period);#446,17.619827151298523
+TimeSeriesDataItem item = (TimeSeriesDataItem) this.data.get(index);#389,17.615070853914535
+this.range = description;#244,17.614990711212158
+existing.setValue(item.getValue());#837,17.612021749669854
+this(name, DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION);#169,17.600801054636637
+: 0);#1179,17.600011725174753
+throw new IllegalArgumentException(#1098,17.59877119566265
+period, Integer.MIN_VALUE);#523,17.595143014734443
+throw new IllegalArgumentException("Negative 'periods' argument.");#327,17.59415820666722
+public RegularTimePeriod getNextTimePeriod() {#472,17.593307971954346
+public void update(RegularTimePeriod period, Number value) {#704,17.585167513953316
+this.maximumItemCount = maximum;#295,17.581265091896057
+int index = Collections.binarySearch(this.data, temp);#706,17.559270425276324
+if (periods < 0) {#326,17.55504208803177
+throw new IllegalArgumentException("Null 'period' argument.");#810,17.553754109602707
+double y = yN.doubleValue();#1230,17.550798234485445
+this.minY = Double.NaN;#193,17.548592196570503
+findBoundsByIteration();#886,17.544670519621477
+public void removeAgedItems(boolean notify) {#874,17.528737485408783
+double yy = item.getValue().doubleValue();#842,17.524530615125382
+if (notify) {#887,17.518515543504193
+TimeSeriesDataItem item = getRawDataItem(0);#1187,17.517136688232423
+add(item, true);#564,17.51047604424613
+double yy = value.doubleValue();#735,17.499158950079057
+throw new SeriesException(msg);#821,17.494139119198447
+this.minY = Double.NaN;#953,17.47037545117465
+return (TimeSeriesDataItem) this.data.get(index);#429,17.469964566438094
+result = 29 * result + item.hashCode();#1196,17.4674886205922
+String old = this.domain;#218,17.4611177444458
+return getRawDataItem(index).getValue();#535,17.459839569894893
+added = true;#606,17.459733772277833
+throw new IllegalArgumentException("Requires start <= end.");#1054,17.444890823364258
+this.maxY = Double.NaN;#194,17.439466423458523
+return this.data.size();#254,17.4272362391154
+if (index < 0) {#503,17.422821747629268
+this.timePeriodClass, new Object[] {this.timePeriodClass,#915,17.41285063091077
+return this.range;#231,17.395974159240723
+public void removeAgedItems(long latest, boolean notify) {#904,17.3951063685947
+return false;#1145,17.394981129964194
+throw new IllegalArgumentException("Null 'period' argument.");#520,17.391392487746018
+if (!ObjectUtilities.equal(this.timePeriodClass,#1151,17.38522193742835
+int index = getIndex(period);#502,17.382630491256712
+return addOrUpdate(new TimeSeriesDataItem(period, value));#793,17.374359130859375
+this.domain = description;#219,17.374211379459926
+this.timePeriodClass = null;#952,17.372824487232027
++ "specified 'period'.");#709,17.367947755036532
+RegularTimePeriod last = getTimePeriod(getItemCount() - 1);#473,17.3607010107774
+throw new SeriesException("There is no existing value for the "#708,17.358934631347655
+boolean removed = false;#879,17.3546662050135
++ "period class is " + periodClass.getName()#818,17.35421524625836
+added = true;#600,17.346015572547913
++ getKey());#752,17.34307508468628
+return;  // nothing to do#906,17.32942802027652
+return this.timePeriodClass;#374,17.327322483062744
+emptyRange = true;  // start is after last data item#1106,17.322106821783656
+copy.data = new java.util.ArrayList();#1057,17.30605239868164
+return false;#1149,17.29146366119385
+TimeSeriesDataItem d = (TimeSeriesDataItem) this.data.remove(0);#854,17.291288985146416
+return Collections.unmodifiableList(this.data);#265,17.29005093574524
+double oldY = oldYN != null ? oldYN.doubleValue() : Double.NaN;#833,17.275661020567924
+this.data.add(-index - 1, item);#849,17.25781838099162
+clone.data = (List) ObjectUtilities.deepClone(this.data);#1032,17.248181060508447
+boolean iterate = false;#831,17.245366467369927
+added = true;#612,17.242260535558064
+b.append(this.timePeriodClass.getName());#590,17.239281984475944
+this.maximumItemAge = periods;#329,17.236762583255768
+delete(start, end, true);#987,17.23594069480896
+RegularTimePeriod period = series.getTimePeriod(i);#501,17.22726277951841
+return clone;#1033,17.222172303633258
+this.maxY = Double.NaN;#954,17.21378551829945
+item.setValue(value);#730,17.209997367858886
+return addOrUpdate(period, new Double(value));#777,17.20411558151245
+return last.next();#474,17.198903523958645
+return getRawDataItem(index).getPeriod();#463,17.183726930618285
+b.append(item.getPeriod().toString());#618,17.18051138791171
+b.append(item.getPeriod().getClass().getName());#588,17.1700336592538
+"Requires start on or before end.");#1099,17.16843716851596
+Class c = item.getPeriod().getClass();#580,17.168074226379396
+TimeSeriesDataItem item = getRawDataItem(count / 2);#1195,17.16428604832402
+double oldY = oldYN.doubleValue();#725,17.16098473288796
+return createCopy(startIndex, endIndex);#1123,17.142036047848787
+Number oldYN = item.getValue();#723,17.141699959250058
+this.data.clear();#951,17.136717955271404
+index = newest.getSerialIndex();#917,17.132947778701784
+that.timePeriodClass)) {#1152,17.120737195014954
+index);#971,17.11345100402832
+return super.equals(obj);#1168,17.11011892557144
+add(item, notify);#667,17.108928544180735
+add(period, value, true);#653,17.108826637268066
+return this.domain;#205,17.106913639948917
+Class periodClass = item.getPeriod().getClass();#812,17.103585061572847
+throw new IllegalArgumentException("Requires start <= end.");#1001,17.088939666748047
+return false;#1140,17.08637466430664
+iterate = oldY <= this.minY || oldY >= this.maxY;#835,17.0592351096017
+add(period, value, true);#680,17.049048125743866
+boolean iterate = false;#722,17.04800115312849
+removed = true;#883,17.041283416748048
+removeAgedItems(false);  // remove old items if necessary, but#634,17.03614374569484
+firePropertyChange("Range", old, description);#245,17.029220316145157
+this.timePeriodClass = periodClass;#814,17.02582849155773
+fireSeriesChanged();#739,17.020681222279865
+e.printStackTrace();#1067,17.011376486884224
+copy.data = new java.util.ArrayList();#1119,17.001567761103313
+findBoundsByIteration();#732,16.99948064904464
+return copy;#1071,16.998293269764293
+updateBoundsForRemovedItem(item);#972,16.98126138959612
+findBoundsByIteration();#839,16.978810476220172
+add(item, notify);#694,16.966604369027273
+? this.timePeriodClass.hashCode() : 0);#1182,16.963113657633464
+throw new SeriesException(b.toString());#592,16.955608411268756
+double y = yN.doubleValue();#1213,16.94343952905564
+return false;#1153,16.930821418762207
+return false;#1156,16.91905968983968
++ this.timePeriodClass.getName() + ".";#820,16.91431952885219
+this.data.remove(0);#882,16.876652121543884
+this.data.add(-index - 1, item);#611,16.873524218797684
+return null;#552,16.865578524271648
+boolean removed = false;#931,16.863648047814003
+return Collections.binarySearch(this.data, dummy);#524,16.86183109283447
+this.timePeriodClass = c;#582,16.85330767858596
+update(index, value);#711,16.84183359146118
+b.append(".");#591,16.83440293206109
+= (TimeSeriesDataItem) this.data.get(index);#1061,16.833049529638046
+return a;#1270,16.81213419060958
+b.append("permitted.  Try using the addOrUpdate() method.");#621,16.811628818511963
+return (TimeSeriesDataItem) this.data.get(index);#448,16.81158736900047
+firePropertyChange("Domain", old, description);#220,16.808024459415012
+emptyRange = true;#1115,16.796424360836255
+removeAgedItems(false);  // remove old items if necessary, but#858,16.781864802042644
+delete(0, count - maximum - 1);#298,16.727292581038043
+return a;#1293,16.719663519608346
+return true;#1137,16.712243207295735
+return null;#451,16.690237108866373
+return overwritten;#761,16.657039483388264
+iterate = oldY <= this.minY || oldY >= this.maxY;#727,16.63496537889753
+return false;#1159,16.613725852966308
+fireSeriesChanged();#861,16.61169672012329
+return false;#1163,16.609563891092936
+= (TimeSeriesDataItem) this.data.get(index);#827,16.606471633911134
+return null;#411,16.590381813049316
+result.add(getTimePeriod(i));#485,16.588962472003438
+removed = true;#935,16.58859646320343
+this.data.remove(0);#934,16.54134020805359
+throw new SeriesException(b.toString());#622,16.522032515207925
+updateBoundsForAddedItem(item);#1251,16.48752462296259
+fireSeriesChanged();#976,16.476360857486725
+this.data.remove(start);#1004,16.406660079956055
+findBoundsByIteration();#1233,16.322654053016944
+return Math.min(a, b);#1273,16.32179656982422
+return Math.max(a, b);#1296,16.27510467529297
+this.timePeriodClass = null;#1008,16.272352627345494
+return getValue(index);#549,16.264518472883438
+removeAgedItems(true);  // remove old items and notify if necessary#330,16.23477904001872
+fireSeriesChanged();#1011,16.21461373567581
+return copy;#1120,16.20880298614502
+fireSeriesChanged();#955,16.191084325313568
+return getDataItem(index);#408,16.17418344397294
+item.getValue());#756,16.14645767211914
+return overwritten;#862,16.058667580286663
+updateBoundsForRemovedItem(d);#631,16.039038848876952
+copy.add(clone);#1064,16.02594232559204
+fireSeriesChanged();#638,15.98091983795166
+this.data.add(item);#605,15.955646554629007
+fireSeriesChanged();#940,15.934142971038819
+return false;#1166,15.926278114318848
+updateBoundsForRemovedItem(d);#855,15.903634452819825
+fireSeriesChanged();#888,15.88416330019633
+this.timePeriodClass = null;#974,15.877555656433106
+this.data.add(item);#599,15.814829015731812
+result.add(period);#504,15.605801408941096
+overwritten.add(oldItem);#758,15.505860447883606

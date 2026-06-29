@@ -1,0 +1,30 @@
+if (lookup != null) {#49,20.045190513134003
+int _longest = 0;#48,19.93851661682129
+int max = longest;#70,19.36793928879958
+private final int longest;#33,19.123146375020344
+if (index + longest > input.length()) {#71,18.62585328754626
+int _shortest = Integer.MAX_VALUE;#47,18.61177830947073
+return 0;#83,18.542627334594727
+final int sz = seq[0].length();#52,18.40978509408456
+if (result != null) {#78,18.361777255409642
+return i;#80,18.344073446173418
+for (int i = max; i >= shortest; i--) {#75,18.34090460901675
+public int translate(final CharSequence input, final int index, final Writer out) throws IOException {#69,18.234550072596623
+max = input.length() - index;#72,18.226728484744118
+for (final CharSequence[] seq : lookup) {#50,18.171550909678142
+longest = _longest;#62,18.139000620160783
+final CharSequence subSeq = input.subSequence(index, index + i);#76,18.121077686548233
+private final int shortest;#32,18.118990474277073
+final CharSequence result = lookupMap.get(subSeq);#77,18.017284040097838
+_shortest = sz;#54,17.98926251022904
+_longest = sz;#57,17.983767756709344
+@Override#68,17.964502175649006
+if (sz < _shortest) {#53,17.87316259971032
+if (sz > _longest) {#56,17.839068192702072
+shortest = _shortest;#61,17.51215362548828
+out.write(result.toString());#79,17.495828094482423
+public class LookupTranslator extends CharSequenceTranslator {#29,17.481986795152938
+public LookupTranslator(final CharSequence[]... lookup) {#45,17.350007910477487
+lookupMap = new HashMap<CharSequence, CharSequence>();#46,17.160592317581177
+private final HashMap<CharSequence, CharSequence> lookupMap;#31,16.714870071411134
+this.lookupMap.put(seq[0], seq[1]);#51,16.683152616024017

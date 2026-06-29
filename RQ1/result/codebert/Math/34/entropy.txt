@@ -1,0 +1,59 @@
+throw new NullArgumentException();#91,18.36155088324296
+throw new NullArgumentException();#66,18.315310829564144
+public List<Chromosome> getChromosomes() {#119,17.903700527391937
+public void setChromosomes(final List<Chromosome> chromosomes) {#89,17.831394693125848
+public Iterator<Chromosome> iterator() {#208,17.7591712474823
+public void addChromosomes(final Collection<Chromosome> chromosomeColl) {#107,17.622179905573528
+throw new NumberIsTooSmallException(populationLimit, chromosomes.size(), true);#181,17.550999246794603
+return Collections.unmodifiableList(chromosomes);#120,17.47620940208435
+protected List<Chromosome> getChromosomeList() {#127,17.46693949699402
+throw new NumberIsTooLargeException(LocalizedFormats.LIST_OF_CHROMOSOMES_BIGGER_THAN_POPULATION_SIZE,#72,17.4526732308524
+throw new NumberIsTooLargeException(LocalizedFormats.LIST_OF_CHROMOSOMES_BIGGER_THAN_POPULATION_SIZE,#139,17.410809828310597
+Chromosome bestChromosome = this.chromosomes.get(0);#151,17.388433774312336
+throw new NumberIsTooLargeException(LocalizedFormats.LIST_OF_CHROMOSOMES_BIGGER_THAN_POPULATION_SIZE,#94,17.38409727446887
+throw new NumberIsTooLargeException(LocalizedFormats.LIST_OF_CHROMOSOMES_BIGGER_THAN_POPULATION_SIZE,#109,17.371315138680593
+this.chromosomes = new ArrayList<Chromosome>(populationLimit);#76,17.353989527775692
+return this.chromosomes.toString();#199,17.332835303412544
+public void addChromosome(final Chromosome chromosome) {#137,17.298811260022614
+chromosomes.size(), populationLimit, false);#110,17.272455081605074
+chromosomes.size(), populationLimit, false);#140,17.248686690079538
+this(Collections.<Chromosome> emptyList(), populationLimit);#52,17.24511941274007
+return this.populationLimit;#166,17.208059992109025
+public Chromosome getFittestChromosome() {#149,17.20084132088555
+bestChromosome = chromosome;#155,17.183099905649822
+return bestChromosome;#158,17.156922403971354
+this.chromosomes.add(chromosome);#142,17.107392024993896
+this.chromosomes.clear();#97,17.097505569458008
+this.populationLimit = populationLimit;#75,17.03256618976593
+this.populationLimit = populationLimit;#183,17.023261308670044
+chromosomes.size(), populationLimit, false);#95,17.017398549799335
+if (chromosome.compareTo(bestChromosome) > 0) {#153,16.990404576063156
+private List<Chromosome> chromosomes;#40,16.983686787741526
+this.chromosomes.addAll(chromosomeColl);#112,16.957392172379926
+chromosomes.size(), populationLimit, false);#73,16.93795239297967
+throw new NotPositiveException(LocalizedFormats.POPULATION_LIMIT_NOT_POSITIVE, populationLimit);#69,16.925299303872244
+this.chromosomes.addAll(chromosomes);#77,16.895514987763903
+this.chromosomes.addAll(chromosomes);#98,16.845674605596635
+return this.chromosomes.size();#191,16.79948279436897
+return chromosomes;#128,16.773198821327902
+throw new NotPositiveException(LocalizedFormats.POPULATION_LIMIT_NOT_POSITIVE, populationLimit);#178,16.714645204089937
+private int populationLimit;#43,16.679273817274307
+public String toString() {#198,16.664949703216553
+if (chromosomes.size() >= populationLimit) {#138,16.52617277417864
+if (chromosomes.size() + chromosomeColl.size() > populationLimit) {#108,16.503913384896737
+for (Chromosome chromosome : this.chromosomes) {#152,16.479632958121922
+if (chromosomes.size() > populationLimit) {#93,16.410821097237722
+return chromosomes.iterator();#209,16.392813829275276
+@Override#197,16.345506191253662
+if (chromosomes.size() > populationLimit) {#71,16.263193175906228
+public ListPopulation(final List<Chromosome> chromosomes, final int populationLimit) {#64,16.193719625473022
+public int getPopulationLimit() {#165,16.14028635892001
+public abstract class ListPopulation implements Population {#37,15.963688638475206
+if (chromosomes == null) {#90,15.908412091872272
+public int getPopulationSize() {#190,15.897844748063521
+public void setPopulationLimit(final int populationLimit) {#176,15.87600862979889
+if (populationLimit <= 0) {#177,15.86774057149887
+if (chromosomes == null) {#65,15.82371077818029
+if (populationLimit <= 0) {#68,15.525768637657166
+public ListPopulation(final int populationLimit) {#51,15.525075503758021
+if (populationLimit < chromosomes.size()) {#180,15.212754832373726

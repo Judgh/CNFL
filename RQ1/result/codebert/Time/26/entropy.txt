@@ -1,0 +1,328 @@
+public DateTimeZone getZone() {#85,20.172985553741455
+public boolean isPrecise() {#293,20.06652437845866
+if (zone == getParam()) {#97,19.887306571006775
+if (zone == null) {#94,19.821580123901366
+if (zone == DateTimeZone.UTC) {#100,19.77870208338687
+DateTimeZone zone = getZone();#139,19.743083953857422
+final boolean iTimeField;#280,19.741732869829452
+{#128,19.71301383972168
+if (field == null || !field.isSupported()) {#212,19.651643843877885
+public Chronology withZone(DateTimeZone zone) {#93,19.629377603530884
+public long getUnitMillis() {#297,19.623667120933533
+if (field == null || !field.isSupported()) {#200,19.553374517531623
+if (offset != zone.getOffset(instant)) {#142,19.5268649600801
+if (zone == null) {#63,19.502352015177408
+{#109,19.451766586303712
+zone = DateTimeZone.getDefault();#95,19.393029258364724
+public int getMinimumValue() {#549,19.390315755208334
+{#118,19.3308895111084
+if (obj instanceof ZonedChronology == false) {#240,19.281341726129707
+ZonedDurationField(DurationField field, DateTimeZone zone) {#283,19.24455451965332
+public int getMaximumValue() {#566,19.220344924926756
+if (this == obj) {#237,19.21628475189209
+throw new IllegalArgumentException("DateTimeZone must not be null");#64,19.200614046167445
+public long add(long instant, int value) {#428,19.19116261130885
+if (base == null) {#60,19.169413121541343
+final boolean iTimeField;#380,19.15161895751953
+if (base == null) {#56,19.13040720621745
+static boolean useTimeArithmetic(DurationField field) {#69,19.123439073562622
+ZonedDateTimeField(DateTimeField field,#384,19.1109753658897
+public long add(long instant, long value) {#440,19.098825454711914
+public final DurationField getDurationField() {#498,19.053643731509936
+public boolean equals(Object obj) {#236,19.048022190729778
+ZonedDateTimeField zonedField =#218,19.047695440404556
+public String getAsShortText(int fieldValue, Locale locale) {#424,19.046547293663025
+public long set(long instant, int value) {#464,19.04131999768709
+final DateTimeZone iZone;#281,19.036530876159667
+int offset = zone.getOffsetFromLocal(instant);#140,19.027962321326847
+private int getOffsetToAdd(long instant) {#343,19.022384242007607
+private ZonedChronology(Chronology base, DateTimeZone zone) {#81,19.01966381072998
+return field;#201,19.01290117899577
+public String toString() {#264,18.971528816223145
+public int get(long instant) {#405,18.970847129821777
+public final DurationField getLeapDurationField() {#516,18.960409264815482
+ZonedDurationField zonedField = new ZonedDurationField(field, getZone());#206,18.949176399796098
+throws IllegalArgumentException#108,18.929738484896145
+throws IllegalArgumentException#117,18.90245980482835
+public final DurationField getRangeDurationField() {#502,18.900031089782715
+return (DateTimeZone)getParam();#86,18.881694625405704
+public long getMillis(int value, long instant) {#309,18.876619793119886
+public boolean isLenient() {#401,18.86308962504069
+public long roundFloor(long instant) {#520,18.838100221421982
+return field;#213,18.829572423299155
+private long addOffset(long instant) {#363,18.81800651550293
+return getBase();#90,18.805630366007488
+final DateTimeZone iZone;#378,18.789708836873373
+private int getOffsetFromLocalToSubtract(long instant) {#353,18.785761542942215
+throw new IllegalArgumentException#143,18.766127586364746
+return getBase();#101,18.75155472755432
+throw new ArithmeticException("Adding time zone offset caused overflow");#596,18.73416653994856
+private int getOffsetToAdd(long instant) {#591,18.722735254388105
+DurationField leapDurationField) {#388,18.71974984337302
+public int getValue(long duration, long instant) {#301,18.699691390991212
+iRangeDurationField = rangeDurationField;#397,18.698474520728702
+public long addWrapField(long instant, int value) {#452,18.693630825389516
+public String getAsText(int fieldValue, Locale locale) {#420,18.692452845366105
+public long add(long instant, int value) {#317,18.684340778150055
+throws IllegalArgumentException#127,18.668942084679237
+return (DurationField)converted.get(field);#204,18.657190402348835
+static class ZonedDurationField extends BaseDurationField {#276,18.652965354919434
+public long getMillis(long value, long instant) {#313,18.639709018525622
+public long set(long instant, String text, Locale locale) {#477,18.62912986589515
+base = base.withUTC();#59,18.62165412902832
+return "ZonedChronology[" + getBase() + ", " + getZone().getID() + ']';#265,18.608619072858026
+public static ZonedChronology getInstance(Chronology base, DateTimeZone zone) {#55,18.60491352081299
+iZone = zone;#394,18.570524215698242
+public int getMaximumShortTextLength(Locale locale) {#587,18.56830256325858
+public long add(long instant, long value) {#323,18.564901301735325
+static final class ZonedDateTimeField extends BaseDateTimeField {#374,18.546546353234184
+return (DateTimeField)converted.get(field);#216,18.546508712768556
+int offset = getOffsetToAdd(instant);#534,18.543999601293493
+fields.centuries = convertField(fields.centuries, converted);#158,18.53375708538553
+protected void assemble(Fields fields) {#150,18.525230701153095
+instant -= offset;#141,18.517338275909424
+ZonedChronology chrono = (ZonedChronology) obj;#243,18.515664520263673
+int offset = getOffsetToAdd(instant);#454,18.488849816498934
+if (!field.isSupported()) {#285,18.478910636901855
+public long getValueAsLong(long duration, long instant) {#305,18.471477898684416
+public long getDateTimeMillis(long instant,#124,18.470570882161457
+if (get(result) != value) {#468,18.431910558180377
+public long getDateTimeMillis(int year, int monthOfYear, int dayOfMonth,#114,18.43078468322754
+throw new IllegalArgumentException();#286,18.42608227937118
+int offset = getOffsetToAdd(instant);#442,18.415120760599773
+int offset = getOffsetToAdd(instant);#522,18.408442744502313
+public boolean isLeap(long instant) {#506,18.40391116672092
+public int getMaximumTextLength(Locale locale) {#583,18.403105974197388
+int offset = getOffsetToAdd(instant);#430,18.394786728752983
+if (iTimeField) {#533,18.39476319363243
+iZone = zone;#290,18.393825643202838
+return true;#238,18.384440867106118
+long localInstant = iZone.convertUTCToLocal(instant);#545,18.378761461802892
+final DurationField iRangeDurationField;#381,18.362191438674927
+public long roundCeiling(long instant) {#532,18.354213112278988
+public long remainder(long instant) {#544,18.353157103061676
+return false;#241,18.338863881429038
+getBase().equals(chrono.getBase()) &&#245,18.338002433776854
+return new ZonedChronology(getBase(), zone);#103,18.337814603533065
+if (converted.containsKey(field)) {#215,18.33566470146179
+iField = field;#393,18.334715450511258
+return field != null && field.getUnitMillis() < DateTimeConstants.MILLIS_PER_HOUR * 12;#72,18.325981604086387
+new ZonedDateTimeField(field, getZone(),#219,18.324371059735615
+fields.yearOfCentury = convertField(fields.yearOfCentury, converted);#175,18.32293206674081
+return instant;#147,18.310147892345082
+int offset = getOffsetToAdd(instant);#324,18.30766474682352
+fields.eras = convertField(fields.eras, converted);#157,18.30701429947563
+final DurationField iDurationField;#379,18.303838348388673
+final DateTimeField iField;#377,18.302683321634927
+long localInstant = iZone.convertUTCToLocal(instant);#465,18.28379705974034
+if (iTimeField) {#453,18.281748018766706
+int offset = getOffsetToAdd(instant);#318,18.274451587511145
+return new ZonedChronology(base, zone);#66,18.264739322662354
+if (iTimeField) {#441,18.2573521262721
+private long localToUTC(long instant) {#138,18.25178759438651
+throw new IllegalArgumentException("Must supply a chronology");#57,18.24888927459717
+if (!field.isSupported()) {#390,18.24793424606323
+fields.halfdayOfDay = convertField(fields.halfdayOfDay, converted);#196,18.226829316880966
+public String getAsText(long instant, Locale locale) {#410,18.220798188989814
+if (iTimeField) {#429,18.209172700580798
+return localToUTC(getBase().getDateTimeMillis#129,18.208236103966122
+if ((instant ^ diff) < 0 && (instant ^ offset) < 0) {#357,18.20296946167946
+throw new IllegalArgumentException("UTC chronology must not be null");#61,18.202468730785228
+public int getMinimumValue(long instant) {#553,18.197680632273357
+public long getDateTimeMillis(int year, int monthOfYear, int dayOfMonth,#106,18.193961563110353
+public int getLeapAmount(long instant) {#511,18.19210433959961
+return zonedField;#208,18.190302041860726
+final DurationField iField;#279,18.18809952054705
+if (iTimeField) {#521,18.186119581523695
+return 326565 + getZone().hashCode() * 11 + getBase().hashCode() * 7;#256,18.18171319653911
+throw new ArithmeticException("Adding time zone offset caused overflow");#348,18.1779324104046
+public Chronology withUTC() {#89,18.17148867520419
+long localInstant = iZone.convertUTCToLocal(instant);#512,18.169889790671213
+long localInstant = iZone.convertUTCToLocal(instant);#406,18.160908596856252
+public int getMaximumValue(long instant) {#570,18.158586714002823
+throw new ArithmeticException("Subtracting time zone offset caused overflow");#358,18.15456223487854
+iTimeField = useTimeArithmetic(field);#289,18.15292445473049
+return#244,18.14264467027452
+long result = iZone.convertLocalToUTC(localInstant, false);#467,18.138728602179164
+iDurationField = durationField;#395,18.137128528795746
+long localInstant = iZone.convertUTCToLocal(instant);#507,18.133358682904923
+public String getAsShortText(long instant, Locale locale) {#415,18.130410443181578
+if (converted.containsKey(field)) {#203,18.120729780197145
+int offset = this.iZone.getOffsetFromLocal(instant);#354,18.115784611020768
+throw new IllegalArgumentException();#391,18.091651750647504
+fields.secondOfMinute = convertField(fields.secondOfMinute, converted);#188,18.082293934292263
+if ((instant ^ sum) < 0 && (instant ^ offset) >= 0) {#347,18.077162504196167
+iField = field;#288,18.071746994467343
+converted.put(field, zonedField);#207,18.06253565682305
+return iZone.convertUTCToLocal(instant);#364,18.05418514251709
+return zonedField;#224,18.049169540405273
+int millisOfDay)#107,18.048682427406312
+final DurationField iLeapDurationField;#382,18.041471088633816
+long localInstant = iZone.convertUTCToLocal(instant);#554,18.037949425833567
+instant = iField.roundFloor(instant + offset);#523,18.0300651550293
+public int getDifference(long minuendInstant, long subtrahendInstant) {#484,18.025983492533367
+long localInstant = iZone.convertUTCToLocal(instant);#458,18.02405259013176
+fields.weekyearOfCentury = convertField(fields.weekyearOfCentury, converted);#184,18.021697504767054
+long diff = instant - offset;#355,18.021417266444157
+fields.halfdays = convertField(fields.halfdays, converted);#165,18.017934343089227
+fields.era = convertField(fields.era, converted);#177,18.013305436997186
+return localToUTC(getBase().getDateTimeMillis#119,18.00423749287923
+return iField.getMinimumValue();#550,17.987137746810912
+public int getDifference(long minuendInstant, long subtrahendInstant) {#329,17.979622982166433
+iTimeField = useTimeArithmetic(durationField);#396,17.977325042088825
+return localToUTC(getBase().getDateTimeMillis#110,17.9769652230399
+long localInstant = iZone.convertUTCToLocal(instant);#416,17.97077250480652
+long localInstant = iZone.convertUTCToLocal(instant);#446,17.962823406342537
+fields.seconds = convertField(fields.seconds, converted);#168,17.961776415507
+public int getMaximumValue(ReadablePartial instant, int[] values) {#579,17.956633071899414
+converted.put(field, zonedField);#223,17.956592506832546
+" (" + iZone.getID() + ")");#472,17.954344893946793
+long localInstant = iZone.convertUTCToLocal(instant);#411,17.954200778688705
+fields.year = convertField(fields.year, converted);#173,17.95001320611863
+int offset = this.iZone.getOffset(instant);#344,17.949850485875057
+if ((instant ^ sum) < 0 && (instant ^ offset) >= 0) {#595,17.946583777666092
+fields.yearOfEra = convertField(fields.yearOfEra, converted);#174,17.945081428245263
+long localInstant = iZone.convertUTCToLocal(instant);#571,17.933495794023788
+DateTimeFormat.forPattern("yyyy-MM-dd'T'HH:mm:ss.SSS").print(new Instant(instant)));#145,17.925268879643195
+return iField.getUnitMillis();#298,17.913830166771298
+fields.millisOfDay = convertField(fields.millisOfDay, converted);#187,17.89098146226671
+public int getMaximumValue(ReadablePartial instant) {#575,17.88976360502697
+super(field.getType());#389,17.889229272541247
+iLeapDurationField = leapDurationField;#398,17.887639002366498
+private DateTimeField convertField(DateTimeField field, HashMap<Object, Object> converted) {#211,17.87690070959238
+long localInstant = iZone.convertUTCToLocal(instant);#538,17.875761449337006
+long localInstant = iField.add(instant + offset, value);#443,17.873919308185577
+fields.clockhourOfHalfday = convertField(fields.clockhourOfHalfday, converted);#195,17.858932100493334
+long localInstant = iZone.convertUTCToLocal(instant);#479,17.854920966284617
+public int getMinimumValue(ReadablePartial instant, int[] values) {#562,17.852666206359864
+return instant - (iTimeField ? offset : getOffsetFromLocalToSubtract(instant));#320,17.84745906381046
+return iField.getMaximumValue(instant);#576,17.84451215163521
+long localInstant = iZone.convertUTCToLocal(instant);#434,17.8359892137589
+long localInstant = iField.add(instant + offset, value);#431,17.827532023191452
+instant = iField.add(instant + offset, value);#325,17.809903988471397
+return iLeapDurationField;#517,17.806284352352744
+fields.millisOfSecond = convertField(fields.millisOfSecond, converted);#186,17.803630299038357
+fields.minutes = convertField(fields.minutes, converted);#167,17.7973980281664
+long sum = instant + offset;#345,17.794962782608835
+fields.secondOfDay = convertField(fields.secondOfDay, converted);#189,17.79424629211426
+public int getMinimumValue(ReadablePartial instant) {#558,17.788183938889276
+long localInstant = iZone.convertUTCToLocal(instant);#526,17.776242077350616
+private static final long serialVersionUID = -485345310999208286L;#277,17.771185838259182
+super(field.getType());#284,17.767942428588867
+return iDurationField;#499,17.75798158084645
+int offset = this.iZone.getOffset(instant);#592,17.755858494685246
+fields.years = convertField(fields.years, converted);#159,17.754507064819336
+public long getDifferenceAsLong(long minuendInstant, long subtrahendInstant) {#336,17.743666583094104
+throw new IllegalFieldValueException(iField.getType(), new Integer(value),#469,17.730152214274685
+fields.dayOfWeek = convertField(fields.dayOfWeek, converted);#178,17.718829383850096
+return iField.getDifference#331,17.714763641357422
+return iField.getMaximumValue(instant, values);#580,17.704458045959473
+return iField.getMinimumValue(instant);#559,17.702674824258555
+return iTimeField ? iField.isPrecise() : iField.isPrecise() && this.iZone.isFixed();#294,17.698131631060345
+fields.millis = convertField(fields.millis, converted);#169,17.696819388348125
+fields.clockhourOfDay = convertField(fields.clockhourOfDay, converted);#194,17.694631223325377
+return iField.getDifference#486,17.687716484069824
+fields.dayOfMonth = convertField(fields.dayOfMonth, converted);#179,17.68756462097168
+fields.minuteOfDay = convertField(fields.minuteOfDay, converted);#191,17.6808825302124
+fields.weekyear = convertField(fields.weekyear, converted);#183,17.67337413456129
+return iField.getMaximumValue();#567,17.672515964508058
+return iField.getDifferenceAsLong#338,17.66004090082078
+return iRangeDurationField;#503,17.658643616570366
+fields.weeks = convertField(fields.weeks, converted);#162,17.658464887867805
+return instant - offset;#536,17.65746988568987
+DateTimeZone zone,#385,17.656545162200928
+return iField.getValue(duration, addOffset(instant));#302,17.652148246765137
+fields.centuryOfEra = convertField(fields.centuryOfEra, converted);#176,17.648937154699254
+getZone().equals(chrono.getZone());#246,17.644511779149372
+instant = iField.add(instant + offset, value);#319,17.623239297133225
+fields.dayOfYear = convertField(fields.dayOfYear, converted);#180,17.62197467803955
+return result;#474,17.6165953318278
+return offset;#350,17.591631571451824
+public long getDifferenceAsLong(long minuendInstant, long subtrahendInstant) {#491,17.57509889273808
+long localInstant = iField.addWrapField(instant + offset, value);#455,17.572304480416435
+int secondOfMinute, int millisOfSecond)#116,17.572286854619566
+return iZone.convertLocalToUTC(localInstant, false);#460,17.561726262492517
+return localInstant - offset;#456,17.560411019758746
+return instant - offset;#524,17.55305408296131
+return iField.getValueAsLong(duration, addOffset(instant));#306,17.551936083826526
+fields.hourOfHalfday = convertField(fields.hourOfHalfday, converted);#193,17.547170215182835
+int offset = getOffsetToAdd(subtrahendInstant);#337,17.53804168701172
+return iField.getMaximumShortTextLength(locale);#588,17.537833480834962
+fields.days = convertField(fields.days, converted);#163,17.533131826491584
+fields.monthOfYear = convertField(fields.monthOfYear, converted);#181,17.528196601867677
+return iField.getMaximumTextLength(locale);#584,17.523730635643005
+fields.weekOfWeekyear = convertField(fields.weekOfWeekyear, converted);#182,17.522298071119522
+fields.hours = convertField(fields.hours, converted);#166,17.503100349789573
+(year, monthOfYear, dayOfMonth, millisOfDay));#111,17.50156023388817
+return instant - (iTimeField ? offset : getOffsetFromLocalToSubtract(instant));#326,17.5004163349376
+return iField.getMinimumValue(instant, values);#563,17.49951889038086
+return iZone.convertLocalToUTC(localInstant, false);#540,17.49328382553593
+return localInstant - offset;#444,17.49092370813543
+return iField.getMillis(value, addOffset(instant));#314,17.485022647040232
+return iField.getDifferenceAsLong#493,17.480888185046968
+hourOfDay, minuteOfHour, secondOfMinute, millisOfSecond));#121,17.471558888753254
+long sum = instant + offset;#593,17.466565734461735
+return this;#98,17.46324857076009
+"Illegal instant due to time zone offset transition: " +#470,17.45366940353856
+int secondOfMinute, int millisOfSecond)#126,17.452664209448773
+fields.months = convertField(fields.months, converted);#160,17.446111088707333
+localInstant = iField.roundFloor(localInstant);#527,17.43684531902445
+return localInstant - offset;#432,17.436438170346346
+fields.weekyears = convertField(fields.weekyears, converted);#161,17.433961743893832
+int offset = getOffsetToAdd(subtrahendInstant);#492,17.422405624389647
+return iField.getAsShortText(fieldValue, locale);#425,17.421650409698486
+("Illegal instant due to time zone offset transition: " +#144,17.41927850657496
+fields.hourOfDay = convertField(fields.hourOfDay, converted);#192,17.413801193237305
+public int hashCode() {#255,17.40734906196594
+localInstant = iField.set(localInstant, value);#466,17.398996963500977
+return iField.getMillis(value, addOffset(instant));#310,17.393045834132604
+return offset;#360,17.384419631958007
+private DurationField convertField(DurationField field, HashMap<Object, Object> converted) {#199,17.37925676504771
+hourOfDay, minuteOfHour, secondOfMinute, millisOfSecond));#131,17.377336162990993
+int offset = getOffsetToAdd(subtrahendInstant);#330,17.36415111541748
+localInstant = iField.add(localInstant, value);#435,17.34602015359061
+(year, monthOfYear, dayOfMonth,#120,17.341103754545514
+private static final long serialVersionUID = -1079258847191166848L;#45,17.329750100771587
+(minuendInstant + (iTimeField ? offset : getOffsetToAdd(minuendInstant)),#332,17.304682658268856
+return iZone.convertLocalToUTC(localInstant, false);#528,17.30392345305412
+(instant + getZone().getOffset(instant),#130,17.303131519219814
+return iField.get(localInstant);#407,17.29496024903797
+localInstant = iField.addWrapField(localInstant, value);#459,17.2919979095459
+instant = iField.roundCeiling(instant + offset);#535,17.28498443480461
+subtrahendInstant + offset);#495,17.26974606513977
+private static final long serialVersionUID = -3968986277775529794L;#375,17.267887468691224
+int offset = getOffsetToAdd(subtrahendInstant);#485,17.253169326782228
+localInstant = iField.add(localInstant, value);#447,17.24542454310826
+return iField.getMaximumValue(localInstant);#572,17.245288724484652
+return iField.getAsText(fieldValue, locale);#421,17.24232894897461
+return iField.remainder(localInstant);#546,17.240172676418137
+super(base, zone);#82,17.231092861720494
+localInstant = iField.roundCeiling(localInstant);#539,17.22371400197347
+return iField.getMinimumValue(localInstant);#555,17.222708121589992
+(minuendInstant + (iTimeField ? offset : getOffsetToAdd(minuendInstant)),#487,17.217185289431843
+return iZone.convertLocalToUTC(localInstant, false);#436,17.214616775512695
+fields.minuteOfHour = convertField(fields.minuteOfHour, converted);#190,17.208586349487305
+return iZone.convertLocalToUTC(localInstant, false);#448,17.2052446047465
+subtrahendInstant + offset);#340,17.180270155270893
+localInstant = iField.set(localInstant, text, locale);#480,17.17858699516014
+convertField(field.getLeapDurationField(), converted));#222,17.175343215465546
+int hourOfDay, int minuteOfHour,#125,17.15599070895802
+return offset;#598,17.144430923461915
+DurationField durationField,#386,17.12971106171608
+DurationField rangeDurationField,#387,17.120390198447488
+return iZone.convertLocalToUTC(localInstant, false);#481,17.095287676210756
+(minuendInstant + (iTimeField ? offset : getOffsetToAdd(minuendInstant)),#339,17.092990508446327
+int hourOfDay, int minuteOfHour,#115,17.075297355651855
+return iField.getAsText(localInstant, locale);#412,17.058610725402833
+subtrahendInstant + offset);#333,17.046473542849224
+return iField.getAsShortText(localInstant, locale);#417,17.030581804422233
+DateTimeFormat.forPattern("yyyy-MM-dd'T'HH:mm:ss.SSS").print(new Instant(localInstant)) +#471,17.027189978846796
+return iField.getLeapAmount(localInstant);#513,16.987720767656963
+return iField.isLenient();#402,16.956300926208495
+return iField.isLeap(localInstant);#508,16.908124218816344
+subtrahendInstant + offset);#488,16.860803524653118
+(minuendInstant + (iTimeField ? offset : getOffsetToAdd(minuendInstant)),#494,16.847474220471504
+convertField(field.getDurationField(), converted),#220,16.815567783687424
+public final class ZonedChronology extends AssembledChronology {#42,16.732796893400305
+convertField(field.getRangeDurationField(), converted),#221,16.530633175626715
+HashMap<Object, Object> converted = new HashMap<Object, Object>();#153,16.118260933802677

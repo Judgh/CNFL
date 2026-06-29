@@ -1,0 +1,1261 @@
+public DateTimeFormatterBuilder append(DateTimeFormatter formatter) {#208,20.470660638809203
+{#1907,20.284119500054253
+if (f == null) {#1102,20.169451268514
+public DateTimeFormatter toFormatter() {#103,20.114335196358816
+static class UnpaddedNumber extends NumberFormatter {#1358,19.971449915568034
+if (formatter == null) {#209,19.881577134132385
+public void printTo(#2605,19.810258791996883
+if (fraction == 0) {#1923,19.769268369674684
+private boolean isFormatter(Object f) {#1146,19.764090742383683
+if (text == null) {#370,19.74137280782064
+if (length == 0) {#1324,19.720333099365234
+if (fieldType == null) {#448,19.706722855567932
+if (printer != null) {#273,19.68674737215042
+public void printTo(#1636,19.678029207082893
+private Object getFormatter() {#1099,19.660489949313078
+if (fieldType == null) {#396,19.627301633358
+if (parsers == null) {#276,19.597168249242447
+if (parser == null) {#319,19.59332021077474
+if (fieldType == null) {#532,19.568558156490326
+public void printTo(#2624,19.555372971754807
+public void printTo(#2168,19.534772946284367
+public void printTo(#2109,19.533669911898098
+if (fieldType == null) {#426,19.512032985687256
+public void printTo(#2454,19.501380333533653
+{#2082,19.49943733215332
+public void printTo(#1648,19.498881560105545
+if (fieldType == null) {#478,19.466882646083832
+if (displayZone == null) {#2461,19.42243938446045
+if (f instanceof DateTimeParser) {#1137,19.415604008568657
+if (fieldType == null) {#511,19.415033280849457
+if (displayZone == null) {#2112,19.414370727539062
+public DateTimeFormatterBuilder appendTimeZoneName() {#979,19.407932937145233
+public void printTo(#1735,19.404654796306904
+public void printTo(#1433,19.39635188762958
+public void printTo(#1444,19.39612836104173
+if (displayZone == null) {#2171,19.380503511428834
+if (length == 0) {#1565,19.370104499485183
+public void printTo(#2448,19.358328085679275
+if (length == 0) {#2050,19.35663584658974
+public DateTimeFormatterBuilder appendTimeZoneOffset(#1077,19.34944101969401
+private DateTimeFormatterBuilder append0(Object element) {#335,19.345006998847513
+public void printTo(#1725,19.320746641892654
+public boolean canBuildFormatter() {#166,19.300550937652588
+public void printTo(#1370,19.298351287841797
+int displayOffset, DateTimeZone displayZone, Locale locale) throws IOException {#2456,19.297879695892334
+public void printTo(#1381,19.2929655955388
+static {#2504,19.291556930541994
+public DateTimeFormatterBuilder appendTimeZoneId() {#1029,19.286822855472565
+int displayOffset, DateTimeZone displayZone, Locale locale) throws IOException {#1883,19.284775144913617
+if (f instanceof DateTimePrinter) {#1127,19.26592314870734
+public DateTimeFormatterBuilder appendTimeZoneOffset(#1050,19.253034146626792
+if (printer == null) {#330,19.25006228685379
+if (fieldType == null) {#496,19.24375593662262
+long n = field.getDurationField().getUnitMillis() * 10;#2035,19.23969867311675
+private DateTimeFormatterBuilder append0(#343,19.231693487900955
+if (buf != null) {#1982,19.20965576171875
+public void printTo(#1871,19.196434094355656
+if (printer != null || parser != null) {#113,19.18520531654358
+private String print(long instant, DateTimeZone displayZone, Locale locale) {#2460,19.18458784543551
+return isFormatter(getFormatter());#167,19.184294981115006
+if (newPos != expectedPos) {#1493,19.174779074532644
+long rangeMillis = field.getDurationField().getUnitMillis();#1990,19.169362000056676
+int displayOffset, DateTimeZone displayZone, Locale locale) throws IOException {#1383,19.16599641126745
+position += 2;#2305,19.16043472290039
+private long[] getFractionData(long fraction, DateTimeField field) {#1989,19.151734085083007
+if (a != b) {#1209,19.150289234362152
+boolean isOptional = false;#2770,19.14403004116482
+public DateTimeFormatterBuilder appendTimeZoneShortName() {#1004,19.14308239431942
+if (count == 0 && !expectSeparators) {#2390,19.13980182011922
+protected FixedNumber(DateTimeFieldType fieldType, int numDigits, boolean signed) {#1483,19.123246022633143
+public void printTo(#2516,19.104411858778732
+public void clear() {#195,19.098393970065647
+static class PaddedNumber extends NumberFormatter {#1418,19.096414021083287
+public void printTo(#1881,19.08318218818078
+public DateTimeFormatterBuilder appendShortText(DateTimeFieldType fieldType) {#510,19.081813292069867
+if (newPos < 0) {#1489,19.079842472076415
+if (length >= 9) {#1329,19.06865988279644
+int displayOffset, DateTimeZone displayZone, Locale locale) throws IOException {#2524,19.06481627856984
+public void printTo(#2522,19.05725435110239
+protected Fraction(DateTimeFieldType fieldType, int minDigits, int maxDigits) {#1856,19.055778471628823
+NumberFormatter(DateTimeFieldType fieldType,#1279,19.0451438301488
+private final boolean iShowSeparators;#2075,19.042055130004883
+int maxLength = 0;#1793,19.03710873921712
+return append0(new TimeZoneOffset#1080,19.036922097206116
+int displayOffset, DateTimeZone displayZone, Locale locale) throws IOException {#1185,19.03399408564848
+public void printTo(#1246,19.033623695373535
+public void printTo(#1183,19.032753284160908
+int displayOffset, DateTimeZone displayZone, Locale locale) throws IOException {#1248,19.032569941352396
+boolean isParser() {#2698,19.030248641967773
+if (displayOffset == 0 && iZeroOffsetPrintText != null) {#2115,19.024771315710886
+int length = parsers.length;#279,19.01729929447174
+if (length == 1) {#280,19.010105514526366
+throw new IllegalArgumentException("No formatter supplied");#210,19.003297686576843
+throw new IllegalArgumentException("Field type must not be null");#512,19.002618936391976
+int length = 0;#2036,19.000624488381778
+public DateTimeFormatterBuilder append(DateTimePrinter printer) {#223,18.987775802612305
+return append0(TimeZoneId.INSTANCE, TimeZoneId.INSTANCE);#1030,18.986596180842472
+private final int iPivot;#1519,18.980338641575404
+public void printTo(#1240,18.97840507213886
+if (count == 0 && !expectSeparators) {#2360,18.977455298105877
+int offset;#2297,18.976091639200845
+int displayOffset, DateTimeZone displayZone, Locale locale) throws IOException {#2626,18.967955308801987
+int est = 0;#2748,18.9678295359892
+{#1424,18.962400436401367
+int displayOffset, DateTimeZone displayZone, Locale locale) {#2518,18.95980634996968
+if (elements == null) {#2645,18.95917601585388
+if (displayOffset == 0 && iZeroOffsetPrintText != null) {#2174,18.958257062094553
+if (elements == null) {#2662,18.95362296104431
+{#1362,18.950686772664387
+public DateTimeFormatterBuilder appendText(DateTimeFieldType fieldType) {#495,18.945461727323988
+if (count == 0 && !expectSeparators) {#2330,18.945115661621095
+if (iZeroOffsetParseText.length() == 0) {#2244,18.93893620275682
+static class FixedNumber extends PaddedNumber {#1481,18.93098970559927
+int displayOffset, DateTimeZone displayZone, Locale locale) throws IOException {#1737,18.93063447054695
+int displayOffset, DateTimeZone displayZone, Locale locale) {#1372,18.924453089314124
+if (f == null) {#1116,18.922541016026546
+private int digitCount(String text, int position, int amount) {#2414,18.922363488570504
+int displayOffset, DateTimeZone displayZone, Locale locale) throws IOException {#2170,18.897687996135037
+static void printUnknownString(Writer out, int len) throws IOException {#1156,18.89708571434021
+int bestInvalidPos = position;#2775,18.896134225945723
+if (elements == null) {#2628,18.894514894485475
+int displayOffset, DateTimeZone displayZone, Locale locale) throws IOException {#1446,18.893301515018237
+if (numDigits <= 0) {#429,18.892614981707403
+if (buf != null) {#1950,18.892065918963887
+if (elements == null) {#2609,18.88957781791687
+int displayOffset, DateTimeZone displayZone, Locale locale) {#1638,18.88689930208268
+switch (text.length()) {#373,18.885531425476074
+return append0(new TimeZoneOffset#1053,18.87824320793152
+public void printTo(#1177,18.877674469581017
+Object f = getFormatter();#104,18.873108609517416
+public DateTimeFormatterBuilder appendSecondOfMinute(int minDigits) {#646,18.87212497537786
+Object f = getFormatter();#132,18.868120129903158
+public DateTimeFormatterBuilder appendPattern(String pattern) {#1093,18.863608584684485
+if (expectSeparators) {#2381,18.8598038482666
+if (expectSeparators) {#2351,18.857562217712402
+public DateTimeFormatterBuilder appendMinuteOfDay(int minDigits) {#676,18.855832013216887
+int length = 0;#1544,18.837916056315105
+int length = 0;#1295,18.832942401661594
+throw new IllegalArgumentException("Field type must not be null");#497,18.831350546616775
+public DateTimeFormatterBuilder appendCenturyOfEra(int minDigits, int maxDigits) {#906,18.83010540689741
+int displayOffset, DateTimeZone displayZone, Locale locale) throws IOException {#1650,18.829413049361285
+int displayOffset, DateTimeZone displayZone, Locale locale) {#2450,18.82929555831417
+private boolean isPrinter(Object f) {#1126,18.828152997153147
+public DateTimeFormatterBuilder appendHalfdayOfDayText() {#916,18.826990922292072
+Object f = getFormatter();#152,18.8182035446167
+amount = 0;#2416,18.81216025352478
+implements DateTimeParser {#2740,18.812154433306524
+if (year < 0) {#1652,18.81027276892411
+public DateTimeFormatterBuilder appendDayOfMonth(int minDigits) {#736,18.808879034859793
+private boolean isParser(Object f) {#1136,18.805295870854305
+int year;#1599,18.80190569559733
+if (length < str.length()) {#1968,18.80061336517334
+implements DateTimePrinter, DateTimeParser {#2499,18.796580704775725
+if (iShowSeparators) {#2100,18.794506890433176
+if (numDigits <= 0) {#481,18.792854196885052
+DateTimeField parseField = new PreciseDateTimeField(#2058,18.79254741668701
+public DateTimeFormatterBuilder appendDayOfWeek(int minDigits) {#726,18.79173991793678
+public int parseInto(DateTimeParserBucket bucket, String text, int position) {#2681,18.790985924857004
+if (c == '-') {#2269,18.789773082733156
+if (displayOffset >= 0) {#2119,18.788123893737794
+for (i = 0; i < length - 1; i++) {#289,18.786192893981934
+int displayOffset, DateTimeZone displayZone, Locale locale) {#1435,18.78504131686303
+private final int iParsedLengthEstimate;#2743,18.7842272122701
+protected UnpaddedNumber(DateTimeFieldType fieldType,#1360,18.78322206224714
+boolean isPrinter() {#2694,18.778161593845912
+public DateTimeFormatterBuilder appendDayOfWeekShortText() {#937,18.77672709359063
+public DateTimeFormatterBuilder appendSecondOfDay(int minDigits) {#656,18.77661219097319
+if (displayOffset == 0 && iMinFields == 3) {#2217,18.776512817100244
+while (length < digits) {#1949,18.773133830020303
+implements DateTimePrinter, DateTimeParser {#1227,18.760468352924693
+public int parseInto(DateTimeParserBucket bucket, String text, int position) {#2029,18.76021545273917
+if (displayOffset >= 0) {#2178,18.75816168785095
+public void printTo(Writer out, ReadablePartial partial, Locale locale) throws IOException {#1467,18.757599925994874
+if (c < '0' || c > '9') {#1601,18.754957785973183
+int t;#1619,18.753656260172527
+public DateTimeFormatterBuilder appendEraText() {#968,18.75308519601822
+if (parserList.size() <= 0) {#2585,18.7511101598325
+if (year < 0) {#1684,18.743888654206927
+position++;#2278,18.74343694959368
+return appendText(DateTimeFieldType.halfdayOfDay());#917,18.739027153361928
+if (year < 0) {#1640,18.736440658569336
+long value = 0;#2034,18.7344871969784
+if (c == '-' || c == '+') {#1496,18.734253449873492
+long scalar;#1991,18.730559468269348
+int displayOffset, DateTimeZone displayZone, Locale locale) {#1242,18.729369778786936
+if (limit <= 1) {#2263,18.727821751644736
+if (buf != null) {#1969,18.720325469970703
+return false;#1133,18.713084827769887
+if (((rangeMillis * scalar) / scalar) == rangeMillis) {#2015,18.711765660179985
+if (length == 0 && (c == '-' || c == '+') && iSigned) {#1298,18.71070314065004
+int digits = maxDigits;#1948,18.710072467201634
+public DateTimeFormatterBuilder appendDayOfWeekText() {#926,18.710052995120776
+return append0(new TextField(fieldType, true));#514,18.708081926618302
+public DateTimeFormatterBuilder appendDayOfYear(int minDigits) {#746,18.706643467857724
+public int parseInto(DateTimeParserBucket bucket, String text, int position) {#2765,18.704985005514963
+int length = parsers.length;#2767,18.703852653503418
+boolean negative = false;#1294,18.7031411002664
+int displayOffset, DateTimeZone displayZone, Locale locale) {#1727,18.700493166523596
+int value;#1328,18.699353663126626
+if (length == 0 && (c == '-' || c == '+')) {#1547,18.69704469045003
+public void printTo(Writer out, ReadablePartial partial, Locale locale) throws IOException {#1898,18.696715291341146
+iFormatter = null;#196,18.696370192936488
+private Object iFormatter;#76,18.69610252380371
+if (position >= text.length()) {#1202,18.693349838256836
+public DateTimeFormatterBuilder appendFractionOfMinute(int minDigits, int maxDigits) {#575,18.692343405314855
+public DateTimeFormatterBuilder append(DateTimeParser parser) {#236,18.69116497039795
+return isPrinter(getFormatter());#177,18.687800744000604
+if (c < '0' || c > '9') {#1606,18.685731667738693
+if (year < 0) {#1674,18.684491006951582
+while (length < limit) {#1296,18.683333095751312
+char c = text.charAt(position);#1600,18.67788332158869
+private void checkParser(DateTimeParser parser) {#318,18.677325121561687
+implements DateTimePrinter, DateTimeParser {#2430,18.675973588770088
+long nn = n / 10;#2043,18.67392381032308
+implements DateTimePrinter, DateTimeParser {#1708,18.672551241787996
+int displayOffset, DateTimeZone displayZone, Locale locale) {#1179,18.669339303047426
+public DateTimeFormatterBuilder appendFraction(#530,18.66898570741926
+private int getTwoDigitYear(ReadablePartial partial) {#1692,18.668648139290188
+int len = elements.length;#2687,18.667447642276162
+public DateTimeFormatterBuilder appendYearOfCentury(int minDigits, int maxDigits) {#894,18.66711711883545
+public void printTo(Writer out, ReadablePartial partial, Locale locale) throws IOException {#1404,18.665458965301514
+public DateTimeFormatterBuilder append(DateTimePrinter printer, DateTimeParser[] parsers) {#272,18.66250570003803
+private final int iType;#2436,18.66093553815569
+public DateTimeFormatterBuilder appendYearOfEra(int minDigits, int maxDigits) {#882,18.65837800061261
+if (displayOffset == 0 && iMinFields == 2) {#2204,18.65689652054398
+public DateTimeFormatterBuilder appendYear(int minDigits, int maxDigits) {#790,18.652477343877155
+if (displayOffset == 0 && iMinFields == 1) {#2191,18.648877885606552
+limit -= 2;#2304,18.646241903305054
+static void appendUnknownString(StringBuffer buf, int len) {#1150,18.64494620429145
+public DateTimeFormatterBuilder appendTwoDigitYear(int pivot) {#812,18.643551349639893
+int displayOffset, DateTimeZone displayZone, Locale locale) {#2607,18.639006768503496
+if (iZeroOffsetParseText != null) {#2243,18.63667905330658
+iFormatter = null;#336,18.633248805999756
+public DateTimeFormatterBuilder appendOptional(DateTimeParser parser) {#306,18.632521227786416
+if (hasSignChar || length != 2) {#1569,18.630141929343896
+return new DateTimeFormatter(printer, parser);#114,18.62952474753062
+if (limit <= 0) {#2311,18.628973836484164
+int displayOffset, DateTimeZone displayZone, Locale locale) {#1873,18.62675808322045
+return append0(new TextField(fieldType, false));#499,18.623738970075333
+return append0(new StringLiteral(text));#379,18.622668879372732
+public DateTimeFormatterBuilder appendMonthOfYearText() {#948,18.619579792022705
+if (parser == null) {#2779,18.61529022714366
+return (DateTimeParser) f;#154,18.615067958831787
+return i;#1841,18.61073991526728
+int len = elements.length;#2637,18.60744998329564
+boolean negative;#2267,18.60564905802409
+throws IOException#1906,18.605184173583986
+DateTimeFieldType fieldType, int minDigits, int maxDigits) {#531,18.603997484842935
+throw new IllegalArgumentException("Field type must not be null");#427,18.602126048161434
+boolean expectSeparators;#2315,18.597689628601074
+implements DateTimePrinter, DateTimeParser {#1850,18.597548614848744
+if (printerList.size() <= 0) {#2570,18.597245295842487
+if (minDigits < digits) {#1959,18.595509438287642
+DateTimeFieldType fieldType, int minDigits, int maxDigits) {#395,18.59490505854289
+TextField(DateTimeFieldType fieldType, boolean isShort) {#1715,18.593724499578062
+DateTimeField field = iFieldType.getField(bucket.getChronology());#2030,18.592335045337677
+public DateTimeParser toParser() {#151,18.591216166814167
+implements DateTimePrinter, DateTimeParser {#1164,18.58954195542769
+if (isPrinter(f)) {#106,18.58861020032097
+private final DateTimeFieldType iFieldType;#1852,18.588287671407063
+if (bucket.getPivotYear() != null) {#1613,18.585520377525917
+public void printTo(Writer out, ReadablePartial partial, Locale locale) throws IOException {#1682,18.579336229960123
+if (innerMap == null) {#1796,18.573145469029743
+return (DateTimePrinter) f;#134,18.572713579450333
+char b = iValue;#1207,18.572346687316895
+public DateTimeFormatterBuilder appendFractionOfDay(int minDigits, int maxDigits) {#609,18.57076998110171
+int len = elements.length;#2618,18.569762079339277
+if (buf != null) {#1915,18.56957195116126
+throw new IllegalArgumentException("Literal must not be null");#371,18.569516075981987
+if (elements == null) {#2683,18.567792320251463
+if (low >= 0) {#1620,18.563429631684954
+private final int iMaxFields;#2077,18.561023950576782
+private final DateTimeFieldType iType;#1517,18.55873825970818
+public void printTo(Writer out, ReadablePartial partial, Locale locale) throws IOException {#1753,18.552074464162192
+if (length + 1 >= limit ||#1302,18.55098744096427
+return appendText(DateTimeFieldType.dayOfWeek());#927,18.548466909499396
+if (locale == null) {#2613,18.547084283828735
+if (hours > 23) {#2300,18.54647485833419
+return appendShortText(DateTimeFieldType.dayOfWeek());#938,18.542988603765313
+while (true) {#1993,18.54116495917825
+public int estimatePrintedLength() {#1429,18.537091553211212
+if (parsers[0] == null) {#281,18.536616881688435
+public DateTimeFormatterBuilder appendMillisOfDay(int minDigits) {#636,18.536588061939586
+if (element instanceof DateTimePrinter) {#2710,18.5362895683006
+DateTimeFieldType fieldType, int minDigits, int maxDigits) {#447,18.535682042439777
+iParsers = parsers;#2747,18.532826172678096
+if (array == null) {#1801,18.53177132813827
+public DateTimeFormatterBuilder appendTwoDigitYear(int pivot, boolean lenientParse) {#830,18.52741501881526
+private final boolean iShort;#1713,18.52681337084089
+printer = (DateTimePrinter) f;#107,18.526122613386676
+throw new IllegalArgumentException("Field type must not be null");#479,18.52343926062951
+int max = 0;#2505,18.521507150986615
+if (iMaxFields == 3) {#2213,18.520080176266756
+public DateTimeFormatterBuilder appendMinuteOfHour(int minDigits) {#666,18.519363750110973
+public DateTimeFormatterBuilder appendLiteral(String text) {#369,18.518799430445622
+return "";  // no zone#2462,18.518332025279168
+int len = elements.length;#2671,18.51694819801732
+if (parsePos >= text.length() ||#2790,18.516737769631778
+public int parseInto(DateTimeParserBucket bucket, String text, int position) {#1291,18.51264350754874
+if (iMaxFields == 3) {#2154,18.510890657251533
+return false;#1143,18.510851773348723
+return append0(formatter.getPrinter(), formatter.getParser());#212,18.510105781555175
+protected int iMaxDigits;#1854,18.509655062357584
+Object f = iFormatter;#1100,18.508155186971027
+char a = text.charAt(position);#1206,18.50758032365279
+DateTimeFieldType fieldType, int numDigits) {#425,18.505173645019532
+return appendText(DateTimeFieldType.monthOfYear());#949,18.505128179277694
+String str;#1936,18.504177856445313
+limit--;#2277,18.501778411865235
+Object bestValidState = null;#2773,18.501127192848607
+implements DateTimePrinter, DateTimeParser {#1274,18.500238158486106
+char c = text.charAt(position);#2268,18.498801361430775
+int maxDigits = (int) fractionData[1];#1939,18.495272903442384
+if (minDigits <= 1) {#457,18.495200269362506
+public void printTo(Writer out, ReadablePartial partial, Locale locale) throws IOException {#2660,18.49410524368286
+private void checkPrinter(DateTimePrinter printer) {#329,18.493411232443417
+@SuppressWarnings("unchecked")#1787,18.492282231648762
+implements DateTimePrinter, DateTimeParser {#2554,18.492139859633014
+if (iShowSeparators) {#2162,18.491865703037806
+public int parseInto(DateTimeParserBucket bucket, String text, int position) {#1788,18.49157769339425
+return append0(pp, pp);#1020,18.49123877286911
+public DateTimeFormatterBuilder appendFixedSignedDecimal(#476,18.49117598814123
+if (c < '0' || c > '9') {#2419,18.489532788594563
+if (c < '0' || c > '9') {#1318,18.48939609527588
+if (minDigits <= 1) {#405,18.48860684563132
+if (locale == null) {#2649,18.488037014007567
+try {#1891,18.487367357526505
+if (text.charAt(position) != '.' && text.charAt(position) != ',') {#2382,18.486952845255534
+public DateTimeFormatterBuilder appendSignedDecimal(#446,18.48645043373108
+public int parseInto(DateTimeParserBucket bucket, String text, int position) {#2239,18.486206224986486
+public int parseInto(DateTimeParserBucket bucket, String text, int position) {#1533,18.48486852645874
+int bestValidPos = position;#2772,18.484688658463327
+if (iShowSeparators) {#2196,18.484461193992978
+if (locale == null) {#2632,18.480210304260254
+public DateTimeFormatterBuilder appendFractionOfSecond(int minDigits, int maxDigits) {#558,18.47692768662064
+iFormatter = null;#345,18.4750759942191
+if (minDigits < 0 || maxDigits <= 0) {#402,18.47468554455301
+public DateTimeFormatterBuilder appendHourOfDay(int minDigits) {#686,18.473457018534344
+implements DateTimePrinter, DateTimeParser {#1514,18.469944173639472
+implements DateTimePrinter, DateTimeParser {#2071,18.466050971638072
+offset = hours * DateTimeConstants.MILLIS_PER_HOUR;#2303,18.465937232971193
+if (minDigits < 0 || maxDigits <= 0) {#454,18.46405215885328
+public DateTimeFormatterBuilder append(DateTimePrinter printer, DateTimeParser parser) {#249,18.4632883866628
+public DateTimeFormatterBuilder appendDecimal(#394,18.455797331673757
+public DateTimeFormatterBuilder appendMonthOfYearShortText() {#958,18.45502456029256
+if (iShowSeparators) {#2137,18.45334125700451
+return appendShortText(DateTimeFieldType.monthOfYear());#959,18.45241759040139
+displayOffset -= hours * (int)DateTimeConstants.MILLIS_PER_HOUR;#2131,18.4520920865676
+DateTimeFieldType fieldType, int numDigits) {#477,18.451263885498047
+return append0(pp, pp);#994,18.451167404651642
+throw new IllegalArgumentException("Field type must not be null");#397,18.448292658879208
+return isParser(getFormatter());#187,18.445113599300385
+if (printer != null) {#1107,18.44478984673818
+if (c == '-' || c == '+') {#2248,18.44363833762504
+if ("en".equals(locale.getLanguage()) && iFieldType == DateTimeFieldType.era()) {#1820,18.443115420963455
+private final String iZeroOffsetParseText;#2074,18.44219446182251
+public void printTo(Writer out, ReadablePartial partial, Locale locale) throws IOException {#1193,18.440375773111978
+if (limit <= 0) {#2377,18.438854922419008
+throw new IllegalArgumentException("Field type must not be null");#449,18.433820174290585
+if (parsePos < 0) {#2801,18.431859765733993
+if (value > Integer.MAX_VALUE) {#2054,18.43121852045474
+displayOffset -= hours * (int)DateTimeConstants.MILLIS_PER_HOUR;#2190,18.431192678563736
+if (isParser(f)) {#110,18.430227041244507
+public int parseInto(DateTimeParserBucket bucket, String text, int position) {#1201,18.429604121616908
+int seconds = displayOffset / DateTimeConstants.MILLIS_PER_SECOND;#2149,18.429475396871567
+private String print(long instant, Chronology chrono, Locale locale) {#1761,18.429438171386717
+int seconds = displayOffset / DateTimeConstants.MILLIS_PER_SECOND;#2208,18.42901512980461
+int len = elements.length;#2654,18.42736183969598
+return appendTwoDigitYear(pivot, false);#813,18.426810264587402
+static class TimeZoneName#2429,18.426414489746094
+if (length >= 9) {#1571,18.425755076938206
+throw new IllegalArgumentException("Field type must not be null");#533,18.425249136411228
+public boolean canBuildPrinter() {#176,18.42460028330485
+private int getTwoDigitYear(long instant, Chronology chrono) {#1660,18.42165367126465
+public void printTo(Writer out, ReadablePartial partial, Locale locale) throws IOException {#2231,18.41879784266154
+char c = text.charAt(position + length);#1297,18.418570348194667
+throw new IllegalArgumentException("No parser supplied");#282,18.418102123119212
+public int parseInto(DateTimeParserBucket bucket, String text, int position) {#2540,18.41607975959778
+if (minDigits < 0 || maxDigits <= 0) {#538,18.41573433254076
+if (locale == null) {#2666,18.41480827331543
+if (isPrinter(f)) {#133,18.413687649895163
+public void printTo(Writer out, ReadablePartial partial, Locale locale) throws IOException {#1256,18.413671747843424
+pivot = bucket.getPivotYear().intValue();#1614,18.413094418389456
+return new long[] {fraction * scalar / rangeMillis, maxDigits};#2022,18.407689986690396
+public DateTimeFormatterBuilder appendFixedDecimal(#424,18.403456179300942
+if (limit <= 0) {#2347,18.40342903137207
+parse: {#2307,18.402868207295736
+if (parsePos >= position) {#2788,18.40186615784963
+private final DateTimeFieldType iFieldType;#1712,18.398500972323948
+public DateTimeFormatterBuilder appendFractionOfHour(int minDigits, int maxDigits) {#592,18.39819833967421
+public void printTo(Writer out, ReadablePartial partial, Locale locale) throws IOException {#2477,18.39782412846883
+public int parseInto(DateTimeParserBucket bucket, String text, int position) {#2485,18.397199732916697
+int length = str.length();#1947,18.395210366500052
+return ~position;#1216,18.39084655897958
+if (buf != null) {#1924,18.387145913165547
+public DateTimePrinter toPrinter() {#131,18.38542870112828
+if (length <= 1 || str.charAt(length - 1) != '0') {#1962,18.38241057395935
+bucket.setZone(DateTimeZone.forID(id));#2544,18.38178477567785
+public void printTo(Writer out, ReadablePartial partial, Locale locale) throws IOException {#2532,18.380498758951823
+if (iShowSeparators) {#2209,18.376535642714728
+for (int i=0; i<length; i++) {#2777,18.37508509709285
+return append0(new UnpaddedNumber(fieldType, maxDigits, true));#458,18.373751732610888
+public int estimatePrintedLength() {#1366,18.372326254844666
+public DateTimeFormatterBuilder appendTimeZoneName(Map<String, DateTimeZone> parseLookup) {#992,18.371973173958914
+synchronized (cParseCache) {#1794,18.37179265022278
+public DateTimeFormatterBuilder appendWeekyear(int minDigits, int maxDigits) {#768,18.37133991241455
+return append0(new UnpaddedNumber(fieldType, maxDigits, false));#406,18.370835119678127
+for (String name : iParseLookup.keySet()) {#2487,18.369202907268818
+public DateTimeFormatterBuilder appendClockhourOfDay(int minDigits) {#696,18.369088519703258
+boolean negative = false;#1543,18.367375146775018
+int limit = text.length() - position;#1534,18.356257351962004
+if (maxDigits < minDigits) {#399,18.355866683156865
+while (length < limit) {#2037,18.3540274469476
+public DateTimeFormatterBuilder appendMonthOfYear(int minDigits) {#778,18.352860541570756
+if (digitCount(text, position, 2) < 2) {#2292,18.352071656121147
+public int parseInto(DateTimeParserBucket bucket, String text, int position) {#1487,18.351256370544434
+if (maxDigits < minDigits) {#451,18.351097006546823
+if (iShowSeparators) {#2150,18.349797158014205
+public int estimatePrintedLength() {#1632,18.347190499305725
+return append0(new PaddedNumber(fieldType, maxDigits, false, minDigits));#408,18.34480069665348
+int pivot = iPivot;#1611,18.34322182337443
+if (printer == parser || parser == null) {#1108,18.34298750758171
+return appendDecimal(DateTimeFieldType.secondOfMinute(), minDigits, 2);#647,18.339371286589525
+year = c - '0';#1604,18.33652205216257
+if (a != b) {#1212,18.33633219677469
+switch (iType) {#2464,18.333764923943413
+int displayOffset, DateTimeZone displayZone, Locale locale) {#2111,18.333246692534416
+if (displayOffset == 0 && iMinFields <= 3) {#2158,18.33292685614692
+(i + 1) >= length || parsers[i + 1] == null) {#2791,18.331623767284636
+if (iMaxFields == 2) {#2141,18.326713518662885
+if (f instanceof Composite) {#1138,18.326580667495726
+if (isParser(f)) {#153,18.325301110744476
+if (iMaxFields == 2) {#2200,18.32471934231845
+int hours = displayOffset / DateTimeConstants.MILLIS_PER_HOUR;#2126,18.321774423122406
+for (String id : ALL_IDS) {#2506,18.320843306454744
+buf.append(displayZone != null ? displayZone.getID() : "");#2519,18.320400714874268
+if (f instanceof Composite) {#1128,18.320356798171996
+int hours = displayOffset / DateTimeConstants.MILLIS_PER_HOUR;#2185,18.315568506717682
+if (iShort) {#1763,18.312137603759766
+int limit = text.length() - position;#2240,18.30804360996593
+long scaled = fractionData[0];#1938,18.30475273132324
+long[] fractionData = getFractionData(fraction, field);#1937,18.30369829248499
+public DateTimeFormatterBuilder appendTwoDigitWeekyear(int pivot) {#852,18.29942126501174
+return appendText(DateTimeFieldType.era());#969,18.297393296894274
+DateTimeParser parser = null;#109,18.29573122660319
+if (displayOffset == 0 && iMinFields <= 1) {#2132,18.294417946426957
+public DateTimeFormatterBuilder appendWeekOfWeekyear(int minDigits) {#756,18.293646292252973
+return appendDecimal(DateTimeFieldType.yearOfCentury(), minDigits, maxDigits);#895,18.292810716936664
+return append0(new TimeZoneName(TimeZoneName.SHORT_NAME, null), null);#1005,18.292649205525716
+displayOffset -= minutes * DateTimeConstants.MILLIS_PER_MINUTE;#2144,18.288305128774336
+if (max - min > 32) {  // protect against invalid fields#1807,18.28671428135463
+public DateTimeFormatterBuilder() {#82,18.286285320917766
+DateTimeField field = iFieldType.getField(chrono);#1762,18.285541852315266
+return f;#1123,18.283138621937145
+DateTimePrinter printer = null;#105,18.28028517961502
+parser = (DateTimeParser) f;#111,18.279990968250093
+throw new IllegalArgumentException("Incomplete parser array");#291,18.279055084500992
+public DateTimeFormatterBuilder appendTimeZoneShortName(Map<String, DateTimeZone> parseLookup) {#1018,18.278186863866345
+int minFields, int maxFields) {#1052,18.277575161146082
+if (element instanceof DateTimeParser) {#2719,18.277321925530067
+public int estimatePrintedLength() {#2512,18.27516132593155
+return appendFraction(DateTimeFieldType.secondOfDay(), minDigits, maxDigits);#559,18.27131897608439
+return append0(null, new MatchingParser(parsers));#309,18.26881504058838
+return append0(printer, null);#225,18.267873932333554
+while (length < limit) {#1545,18.266568681468133
+value = text.charAt(i++) - '0';#1339,18.263369878133137
+if (c < '0' || c > '9') {#2039,18.261741479237873
+public DateTimeFormatterBuilder appendMillisOfSecond(int minDigits) {#626,18.261627717451617
+public DateTimeFormatterBuilder appendTwoDigitWeekyear(int pivot, boolean lenientParse) {#870,18.260112833093714
+private final boolean iLenientParse;#1520,18.25810224869672
+int minutes = displayOffset / DateTimeConstants.MILLIS_PER_MINUTE;#2195,18.257237523794174
+static class TimeZoneOffset#2070,18.256475660536026
+if (array != null) {#2730,18.25452543559827
+int minutes = displayOffset / DateTimeConstants.MILLIS_PER_MINUTE;#2136,18.253597050905228
+return appendFraction(DateTimeFieldType.minuteOfDay(), minDigits, maxDigits);#576,18.253574562072753
+try {#1338,18.248646524217392
+zeroOffset:#2242,18.247046788533527
+displayOffset -= minutes * DateTimeConstants.MILLIS_PER_MINUTE;#2203,18.24483133131458
+length++;#2042,18.24367470211453
+protected int iMinDigits;#1853,18.23705908457438
+offset += text.charAt(position++) - '0';#2401,18.236922006349307
+if (c == ':') {#2317,18.236618200937908
+checkParser(parser);#237,18.232321959275467
+public int estimatePrintedLength() {#2444,18.23171716928482
+public int estimatePrintedLength() {#1867,18.231649518013
+private final int iParsedLengthEstimate;#2560,18.227498319413925
+if (maxDigits < minDigits) {#535,18.22743370658473
+if (iShowSeparators) {#2221,18.226379076639812
+return position + name.length();#2490,18.226272300437646
+if (displayOffset == 0 && iMinFields <= 2) {#2145,18.225860666345667
+throw new IllegalArgumentException();#539,18.224946273000615
+DateTimeParser[] parsers = iParsers;#2766,18.22427148404329
+return append0(new PaddedNumber(fieldType, maxDigits, true, minDigits));#460,18.222758545595056
+public DateTimeFormatterBuilder appendHourOfHalfday(int minDigits) {#706,18.22191485491666
+int est = 1 + iMinFields << 1;#2099,18.221874634424847
+return ~position;#1203,18.22074074745178
+public int estimateParsedLength() {#2025,18.219682020299576
+if (!iLenientParse) {#1536,18.218472617013113
+return append0(new FixedNumber(fieldType, numDigits, true));#484,18.214726982116698
+displayOffset -= seconds * DateTimeConstants.MILLIS_PER_SECOND;#2157,18.212493158155873
+return displayZone.getName(instant, locale);#2466,18.211293905973434
+maxLength = 3;#1826,18.210745186641297
+int maxParsedDigits, boolean signed)#1361,18.20909017675063
+return iPrinters != null;#2695,18.209021518104954
+if (str.startsWith(name)) {#2488,18.20793526260941
+if (iZeroOffsetPrintText != null && iZeroOffsetPrintText.length() > est) {#2103,18.20746716331033
+int minFields, int maxFields) {#1079,18.206281496130902
+if (iMaxFields == 1) {#2128,18.205825112082742
+public void printTo(StringBuffer buf, ReadablePartial partial, Locale locale) {#1392,18.205184085028513
+return append0(new TwoDigitYear(DateTimeFieldType.year(), pivot, lenientParse));#831,18.203016221523285
+displayOffset = -displayOffset;#2123,18.198303720225457
+public void printTo(StringBuffer buf, ReadablePartial partial, Locale locale) {#1455,18.194726364953176
+for (int i=parsers.length; --i>=0 ;) {#2749,18.194139258066812
+return append0(new CharacterLiteral(text.charAt(0)));#377,18.194070114808923
+out.write(displayZone != null ? displayZone.getID() : "");#2525,18.193910948435466
+if ((scaled & 0x7fffffff) == scaled) {#1941,18.19206923025626
+public void printTo(StringBuffer buf, ReadablePartial partial, Locale locale) {#1887,18.189860309873307
+public int estimatePrintedLength() {#1236,18.188020527362823
+offset += seconds * DateTimeConstants.MILLIS_PER_SECOND;#2371,18.184032888973462
+private String print(ReadablePartial partial, Locale locale) {#1770,18.183596859807555
+private final String iValue;#1229,18.182024887629918
+if (a != b) {#1215,18.181435690985786
+displayOffset = -displayOffset;#2182,18.18010844355044
+int maxParsedDigits, boolean signed) {#1280,18.17809247970581
+public int estimatePrintedLength() {#1721,18.177797853946686
+DateTimeParser[] copyOfParsers = new DateTimeParser[length];#287,18.17637092590332
+return displayZone.getShortName(instant, locale);#2468,18.168381777676668
+public void printTo(StringBuffer buf, ReadablePartial partial, Locale locale) {#1672,18.162861858095443
+return appendFraction(DateTimeFieldType.hourOfDay(), minDigits, maxDigits);#593,18.15982894897461
+if (limit < 2) {#1538,18.15913498919943
+if (year < 0) {#1696,18.158163317927606
+try {#1436,18.158032417297363
+return append0(new FixedNumber(fieldType, numDigits, false));#432,18.156590156555175
+if (iMaxFields == 1) {#2187,18.15608718178489
+return appendDecimal(DateTimeFieldType.yearOfEra(), minDigits, maxDigits);#883,18.154070300440633
+public int parseInto(DateTimeParserBucket bucket, String text, int position) {#1264,18.153997250965663
+static enum TimeZoneId#2498,18.151034779018826
+return appendDecimal(DateTimeFieldType.clockhourOfDay(), minDigits, 2);#697,18.150748417295258
+return append0(printer, parsers[0]);#284,18.149856368700664
+throw new IllegalArgumentException();#403,18.148806019833213
+value = ((value << 3) + (value << 1)) + text.charAt(i++) - '0';#1345,18.14826537238227
+if (minutes > 59) {#2338,18.14739414056142
+public boolean canBuildParser() {#186,18.14728728207675
+public int estimatePrintedLength() {#2098,18.14518243074417
+throw new IllegalArgumentException();#455,18.143080460397822
+buf.append(iValue);#1243,18.1429678766351
+return position + iValue.length();#1266,18.142370859781902
+TwoDigitYear(DateTimeFieldType type, int pivot, boolean lenientParse) {#1522,18.14214696555302
+iPrinters = new DateTimePrinter[size];#2575,18.138137374605453
+int low = pivot - 50;#1617,18.137732254831416
+value = Integer.parseInt(text.substring(position, position += length));#1574,18.136630943843297
+value = -value;#1590,18.136628584428266
+return position + iZeroOffsetParseText.length();#2257,18.13461035490036
+TimeZoneName(int type, Map<String, DateTimeZone> parseLookup) {#2438,18.13183297429766
+try {#1580,18.130795112022987
+private final char iValue;#1166,18.129951068333217
+value += (c - '0') * nn;#2044,18.12927402768816
+public DateTimeFormatterBuilder appendClockhourOfHalfday(int minDigits) {#716,18.129093709199324
+throw new UnsupportedOperationException("Printing is not supported");#136,18.12664186386835
+try {#1912,18.126240798405238
+DateTimeField field = iFieldType.getField(partial.getChronology());#1772,18.124383790152415
+if (c < '0' || c > '9') {#1559,18.123430925257065
+offset += (text.charAt(position++) - '0') * 10;#2399,18.122501063991237
+for (int i = len; --i >= 0;) {#1151,18.12249686501243
+buf.append('.');#2163,18.120029492811724
+boolean signed, int minPrintedDigits)#1423,18.11917105028706
+TimeZoneName pp = new TimeZoneName(TimeZoneName.SHORT_NAME, parseLookup);#1019,18.116640475488477
+protected final DateTimeFieldType iFieldType;#1275,18.116468535529243
+public int estimatePrintedLength() {#2601,18.116329610347748
+static final int LONG_NAME = 0;#2432,18.114610391504623
+try {#1754,18.11172785077776
+try {#1874,18.11169195175171
+int maxDigits = iMaxDigits;#1992,18.110050071369518
+for (String id : ALL_IDS) {#2542,18.1098407832059
+offset += (text.charAt(position++) - '0') * 100;#2397,18.10820504390832
+int max = property.getMaximumValueOverall();#1806,18.107554944356284
+public int estimateParsedLength() {#2761,18.10666331122903
+offset += minutes * DateTimeConstants.MILLIS_PER_MINUTE;#2341,18.105823180254767
+printTo(buf, null, millis, partial.getChronology());#1892,18.10571150346236
+expectSeparators = false;#2322,18.104557249281143
+private final int iPrintedLengthEstimate;#2559,18.102767520480686
+value /= 10;#2048,18.10098143184886
+try {#1746,18.098779269627162
+public int estimateParsedLength() {#1287,18.096840746262494
+appendUnknownString(buf, minDigits);#1916,18.09627062479655
+buf.append(iValue);#1180,18.09152522839998
+for (int i=0; i<length; i++) {#1970,18.08917115864001
+int value;#1570,18.08803641277811
+int parseEst = 0;#2591,18.086767976934258
+int year = partial.get(iType);#1695,18.08525625864665
+year = -year;#1697,18.08515476358348
+return iParsers != null;#2699,18.084232129548724
+year = -year;#1664,18.081248817443846
+public int estimateParsedLength() {#2677,18.081110954284668
+iFieldType = fieldType;#1858,18.071515434666683
+for (int i = limit; i > position; i--) {#1837,18.071096632215713
+static abstract class NumberFormatter#1273,18.07105941772461
+public int estimatePrintedLength() {#1173,18.069836139678955
+public void printTo(StringBuffer buf, ReadablePartial partial, Locale locale) {#1745,18.069044862474716
+bestInvalidPos = parsePos;#2804,18.06879972730364
+DateTimeField field = iFieldType.getField(chrono);#1908,18.068027390374077
+return ~position;#1607,18.06631374359131
+boolean hasSignChar = false;#1542,18.06570998482082
+return;  // no zone#2172,18.063771507956766
+public void printTo(StringBuffer buf, ReadablePartial partial, Locale locale) {#2643,18.0634800025395
+position += 2;#2343,18.06081895828247
+return appendTwoDigitWeekyear(pivot, false);#853,18.059474808829172
+char c = text.charAt(position + length);#2038,18.056441443307058
+if (negative) {#1308,18.055249633789064
+break;#2420,18.054846850308504
+return appendSignedDecimal(DateTimeFieldType.centuryOfEra(), minDigits, maxDigits);#907,18.05459892388546
+MutableDateTime dt = new MutableDateTime(0L, DateTimeZone.UTC);#1803,18.053408055078414
+long fraction;#1911,18.053304545084636
+return "";#2470,18.051473999023436
+throw new IllegalArgumentException("No printer supplied");#331,18.048782473025113
+try {#1394,18.04735491010878
+if (negative) {#1335,18.046155021304177
+if (seconds > 59) {#2368,18.0460786819458
+if (text.charAt(position) != ':') {#2352,18.04418877994313
+limit -= 2;#2372,18.042534160614014
+Property property = dt.property(iFieldType);#1804,18.038389563560486
+MatchingParser(DateTimeParser[] parsers) {#2745,18.036702108383178
+public void printTo(StringBuffer buf, ReadablePartial partial, Locale locale) {#2227,18.03627300262451
+return appendDecimal(DateTimeFieldType.secondOfDay(), minDigits, 5);#657,18.03624507359096
+return;  // no zone#2113,18.028966643593527
+est = iZeroOffsetPrintText.length();#2104,18.028533348670372
+public int estimateParsedLength() {#1197,18.027444334591138
+copyOfParsers[i] = parsers[i];#294,18.02654621817849
+try {#1738,18.02637549809047
+return ~newPos;#1505,18.025926666259764
+f = printer;#1109,18.02261870247977
+return append0(new TimeZoneName(TimeZoneName.LONG_NAME, null), null);#980,18.022124417622884
+bucket.setZone(iParseLookup.get(name));#2489,18.021501541137695
+char c = text.charAt(position + length);#1546,18.02007767558098
+try {#1457,18.015895419650608
+c = text.charAt(position);#2316,18.015442123413084
+throw new UnsupportedOperationException("Parsing is not supported");#156,18.013605811379172
+limit -= 2;#2342,18.012850761413574
+return append0(new TwoDigitYear(DateTimeFieldType.weekyear(), pivot, lenientParse));#871,18.010061553030305
+c = text.charAt(position + 1);#1605,18.00914490741232
+int i;#288,18.008609078147195
+public int estimateParsedLength() {#2481,18.007233956280878
+public void printTo(StringBuffer buf, ReadablePartial partial, Locale locale) {#2473,18.007172516414098
+protected final boolean iSigned;#1277,18.005724716186524
+return appendDecimal(DateTimeFieldType.hourOfDay(), minDigits, 2);#687,18.00468557221549
+try {#1694,18.00440502166748
+for (int i = 0; i < len; i++) {#2638,18.002136597266563
+est = len;#2754,18.00170108250209
+DateTimeParser parser = parsers[i];#2778,18.001084877894474
+fraction = field.remainder(instant);#1913,17.997480710347492
+est += iMinFields - 1;#2101,17.994782752990723
+position += 2;#2373,17.992193841934203
+public DateTimeFormatterBuilder appendLiteral(char c) {#358,17.9921740481728
+array = new Object[] {validValues, Integer.valueOf(maxLength)};#1828,17.99205692190873
+length++;#1562,17.991911628029563
+if (iSigned) {#1494,17.99013150256613
+try {#1447,17.988921846662247
+return position + id.length();#2545,17.985727416144478
+int parsePos = parser.parseInto(bucket, text, position);#2787,17.985099879178133
+iMaxFields = maxFields;#2095,17.98486732301258
+break zeroOffset;#2249,17.98448544740677
+public void printTo(StringBuffer buf, ReadablePartial partial, Locale locale) {#1189,17.98385054724557
+return appendDecimal(DateTimeFieldType.weekOfWeekyear(), minDigits, 2);#757,17.981790707029145
+maxFields = 4;#2092,17.98147253556685
+buf.append(print(instant - displayOffset, displayZone, locale));#2451,17.980875738735858
+digits--;#1965,17.979401878688645
+DateTimePrinter printer, DateTimeParser parser) {#344,17.97875948746999
+public void printTo(StringBuffer buf, ReadablePartial partial, Locale locale) {#2528,17.978190898895264
+private final String iZeroOffsetPrintText;#2073,17.977570365456973
+try {#1661,17.976719856262207
+appendUnknownString(buf, iMinPrintedDigits);#1440,17.976529121398926
+return appendDecimal(DateTimeFieldType.hourOfHalfday(), minDigits, 2);#707,17.975944025763148
+throw new IllegalArgumentException("Illegal number of digits: " + numDigits);#430,17.97589677379977
+return appendDecimal(DateTimeFieldType.clockhourOfHalfday(), minDigits, 2);#717,17.974825541178387
+for (int i=0; i<size; i++) {#2577,17.974365456899008
+negative = c == '-';#1299,17.974301514802157
+return ~bestInvalidPos;#2819,17.973612361484104
+if (iElementPairs.size() == 2) {#1103,17.971321792602538
+TimeZoneOffset(String zeroOffsetPrintText, String zeroOffsetParseText,#2079,17.968159370422363
+displayOffset -= seconds * DateTimeConstants.MILLIS_PER_SECOND;#2216,17.967727230441184
+if (str.startsWith(id)) {#2543,17.967434141370987
+value = Integer.parseInt(text.substring(position, position += length));#1332,17.96669884289012
+if (negative) {#1550,17.964464713787212
+negative = c == '-';#1549,17.96425296414283
+isOptional = true;#2784,17.964097442626954
+int year = getTwoDigitYear(instant, chrono);#1651,17.964022318522137
+if (year < 0) {#1663,17.96264188185982
+i++;#1336,17.962510282343086
+public void printTo(StringBuffer buf, ReadablePartial partial, Locale locale) {#1252,17.959148134504044
+for (int i = len; --i >= 0;) {#1157,17.957745942202482
+length++;#1321,17.957620196872288
+private final Map<String, DateTimeZone> iParseLookup;#2435,17.957448254460875
+char c = text.charAt(position);#1495,17.956848621368408
+String zeroOffsetPrintText, String zeroOffsetParseText, boolean showSeparators,#1078,17.956690634450606
+throw new IllegalArgumentException("Illegal number of digits: " + numDigits);#482,17.956176480939313
+(c = text.charAt(position + length + 1)) < '0' || c > '9')#1303,17.955148339271545
+return appendDecimal(DateTimeFieldType.millisOfDay(), minDigits, 8);#637,17.95508240009176
+DateTimeParser[] parsers = new DateTimeParser[] {parser, null};#308,17.95205665588379
+return ~position;#1602,17.950888538360594
+int i = position;#1576,17.950769588865082
+long millis = partial.getChronology().set(partial, 0L);#1901,17.94777660369873
+return appendDecimal(DateTimeFieldType.minuteOfDay(), minDigits, 4);#677,17.947545869009836
+position += length;#1343,17.94721612930298
+public int estimateParsedLength() {#1260,17.946263930376837
+int i = position;#1334,17.941972187587194
+int printEst = 0;#2576,17.941347642378375
+try {#1373,17.941279343196324
+digits--;#1956,17.940916161788138
+year = ((year << 3) + (year << 1)) + c - '0';#1609,17.940722896206765
+private final int iMinFields;#2076,17.939486265182495
+static class TextField#1707,17.936310291290283
+iValue = value;#1233,17.93315943549661
+return (isPrinter(f) || isParser(f));#1147,17.931786970658735
+bucket.saveField(iFieldType, match, locale);#1840,17.929534420822606
+out.write('\ufffd');#1757,17.927329738934834
+public int estimateParsedLength() {#2536,17.926819745232077
+return append0(printer, new MatchingParser(copyOfParsers));#296,17.925710027034466
+value = ((value << 3) + (value << 1)) + text.charAt(i++) - '0';#1587,17.925026965591144
+return field.getAsShortText(instant, locale);#1764,17.922842223068763
+if (minFields <= 0 || maxFields < minFields) {#2087,17.92117007025357
+DateTimePrinter printer = (DateTimePrinter) printerList.get(i);#2578,17.920817301823543
+public int estimateParsedLength() {#1529,17.91760478300207
+return ((Composite)f).isParser();#1139,17.916057056850857
+static final int MAX_LENGTH;#2503,17.912701547145844
+if (negative) {#1577,17.911563380011195
+return ~position;#1583,17.908611804246902
+return appendFraction(DateTimeFieldType.dayOfYear(), minDigits, maxDigits);#610,17.90733423233032
+return appendSignedDecimal(DateTimeFieldType.year(), minDigits, maxDigits);#791,17.903751182556153
+throw new IllegalArgumentException("No parsers supplied");#277,17.903281768163044
+if (newPos > expectedPos) {#1500,17.89789207458496
+int min = property.getMinimumValueOverall();#1805,17.897721099853516
+return appendDecimal(DateTimeFieldType.monthOfYear(), minDigits, 2);#779,17.897500651223318
+out.write('.');#2222,17.89323802427812
+static class Fraction#1849,17.892876863479614
+if (partial.isSupported(iType)) {#1693,17.892150049624234
+if (parser != null) {#2751,17.891023884648863
+throw new UnsupportedOperationException("Both printing and parsing not supported");#116,17.89041077006947
+n = nn;#2045,17.889757247198197
+for (int i = min; i <= max; i++) {#1811,17.88710069656372
+private final DateTimeParser[] iParsers;#2557,17.886476357777912
+static final int SHORT_NAME = 1;#2433,17.885958671569824
+for (int i = 0; i < len; i++) {#2619,17.88344852740948
+DateTimeParser[] elements = iParsers;#2682,17.878585381941363
+value = text.charAt(i++) - '0';#1581,17.878313413480434
+buf.append('\ufffd');#1152,17.876759195327757
+printTo(null, out, millis, partial.getChronology());#1902,17.875315863510657
+throw new UnsupportedOperationException();#2684,17.8750580082769
+for (int i=0; i<len && position >= 0; i++) {#2688,17.87345593770345
+public int estimateParsedLength() {#2235,17.873056580038632
+private final DateTimePrinter[] iPrinters;#2556,17.870907532541377
+return true;#1131,17.8703556060791
+checkPrinter(printer);#224,17.86968288421631
+if ((copyOfParsers[i] = parsers[i]) == null) {#290,17.86842381954193
+long millis = partial.getChronology().set(partial, 0L);#1890,17.868383598327636
+return appendDecimal(DateTimeFieldType.dayOfMonth(), minDigits, 2);#737,17.867739813668386
+return appendDecimal(DateTimeFieldType.dayOfYear(), minDigits, 3);#747,17.864704813276017
+int year = getTwoDigitYear(instant, chrono);#1639,17.863288278932924
+position++;#2320,17.862517096779563
+iZeroOffsetPrintText = zeroOffsetPrintText;#2084,17.860661009083625
+return appendDecimal(DateTimeFieldType.minuteOfHour(), minDigits, 2);#667,17.860072340284074
+return ~position;#2264,17.85750460624695
+try {#1469,17.85391002231174
+element = elementPairs.get(i + 1);#2718,17.853086062840053
+iShowSeparators = showSeparators;#2086,17.851093292236328
+INSTANCE;#2501,17.84897856278853
+if (minFields > 4) {#2090,17.846238363356818
+boolean showSeparators,#2080,17.845204328235827
+public int estimateParsedLength() {#1783,17.84468662037569
+throw new IllegalArgumentException("No parser supplied");#320,17.844131096549656
+for (int i=0; i<len; i++) {#2655,17.84353340589083
+DateTimeParser parser = parsers[i];#2750,17.840880614060623
+length--;#1966,17.83925023286239
+int newPos = super.parseInto(bucket, text, position);#1488,17.83845825853019
+if (negative) {#1589,17.838233684671337
+while (minDigits < digits) {#1961,17.83730712890625
+checkParser(parser);#251,17.835684556227463
+protected PaddedNumber(DateTimeFieldType fieldType, int maxParsedDigits,#1422,17.832602398736135
+while (--minDigits >= 0) {#1925,17.832376861572264
+if (element instanceof Composite) {#2720,17.831261362348283
+buf.append('\ufffd');#1397,17.830876554761613
+try {#1728,17.82907513209752
+int year = getTwoDigitYear(partial);#1683,17.824991060339887
+try {#1406,17.821292241414387
+FormatUtils.appendUnpaddedInteger(buf, field.get(instant));#1375,17.81888038090297
+return append0(new Fraction(fieldType, minDigits, maxDigits));#541,17.818858605844003
+return newPos;#1508,17.81724488735199
+checkPrinter(printer);#250,17.814659881591798
+buf.append('\ufffd');#1749,17.813817739486694
+expectedPos++;#1497,17.813812185216833
+return ((Composite)f).isPrinter();#1129,17.812627008983068
+protected final int iMaxParsedDigits;#1276,17.811501904537803
+i++;#1578,17.810855038960774
+if (maxDigits > 18) {#1860,17.809309686933243
+return ~position;#2493,17.804259479045868
+throw new UnsupportedOperationException();#2663,17.804211740908414
+int minutes = FormatUtils.parseTwoDigits(text, position);#2337,17.803154200315475
+if (element instanceof Composite) {#2711,17.80303226198469
+return appendDecimal(DateTimeFieldType.dayOfWeek(), minDigits, 1);#727,17.801607745034353
+case 0:#374,17.801332855224608
+maxLength = property.getMaximumTextLength(locale);#1810,17.799761367566656
+iType = type;#1524,17.798190733965704
+int minDigits = iMinDigits;#1909,17.79720536145297
+int year = getTwoDigitYear(partial);#1673,17.793431406435758
+super();#2083,17.791630336216517
+int expectedPos = position + iMaxParsedDigits;#1492,17.78953981399536
+case 18: scalar = 1000000000000000000L; break;#2013,17.78927751949855
+locale = Locale.getDefault();#2634,17.788328806559246
+int limit = Math.min(text.length(), position + maxLength);#1836,17.78685188293457
+iFormatter = f;#1120,17.786809497409397
+DateTimePrinter[] elements = iPrinters;#2627,17.78599560779074
+buf.append(iValue);#1253,17.78376709787469
+StringLiteral(String value) {#1231,17.781556409948013
+char c = text.charAt(position);#2247,17.78026861302993
+bestValidPos = parsePos;#2797,17.779054580196256
+if (parsePos > bestInvalidPos) {#2803,17.778763939352597
+return -1;#1702,17.77707350254059
+iPivot = pivot;#1525,17.775691817788516
+elements[i].printTo(out, partial, locale);#2673,17.77491460997483
+buf.append('\ufffd');#1377,17.770551443099976
+FormatUtils.writeUnpaddedInteger(out, field.get(instant));#1386,17.76678098951067
+String str = text.substring(position);#2486,17.766432545401834
+expectSeparators = true;#2318,17.764773333514178
+if (limit > 0) {#2246,17.762025691844798
+iZeroOffsetParseText = zeroOffsetParseText;#2085,17.757312660217284
+position++;#2356,17.7564152804288
+limit = Math.min(limit + 1, text.length() - position);#1315,17.755838033315296
+DateTimePrinter[] elements = iPrinters;#2661,17.75562642968219
+return appendSignedDecimal(DateTimeFieldType.weekyear(), minDigits, maxDigits);#769,17.75458154370708
+if (parsePos > bestValidPos) {#2789,17.754504203796387
+TimeZoneName pp = new TimeZoneName(TimeZoneName.LONG_NAME, parseLookup);#993,17.753559773968114
+return append0(new CharacterLiteral(c));#359,17.752978801727295
+buf.append(str.charAt(i));#1971,17.75013551956568
+super();#83,17.749638175964357
+Locale locale = bucket.getLocale();#1789,17.749135060743853
+buf.append(iValue);#1190,17.747420561941045
+out.write(print(instant - displayOffset, displayZone, locale));#2457,17.743685755236395
+static class MatchingParser#2739,17.74035570356581
+break;#2016,17.73947065526789
+return append0(printer, parser);#252,17.73885788637049
+DateTimePrinter[] elements = iPrinters;#2608,17.738577303679094
+DateTimeFieldType.millisOfSecond(),#2059,17.736209062429573
+return ~position;#2548,17.73508256673813
+addArrayToList(printerList, ((Composite)element).iPrinters);#2712,17.734930190173063
+locale = Locale.getDefault();#2651,17.730586012204487
+minDigits--;#1955,17.726817358107795
+return "\ufffd";#1779,17.72635300954183
+iType = type;#2440,17.725937226239374
+parserList.add(element);#2723,17.72402261918591
+break;#2040,17.722253105857156
+maxLength = ((Integer) array[1]).intValue();#1832,17.721845597931832
+return field.getAsText(instant, locale);#1766,17.721632923398698
+cParseCache.put(locale, innerMap);#1798,17.719456730466902
+try {#1384,17.717525141579763
+for (int i=0; i<length; i++) {#1974,17.717012681459124
+if (bestValidPos > position || (bestValidPos == position && isOptional)) {#2811,17.71656128668016
+if (partial.isSupported(iFieldType)) {#1771,17.71081801255544
+while (--minDigits >= 0) {#1929,17.70947898228963
+return field.getAsText(partial, locale);#1776,17.70853676334504
+hasSignChar = true;#1548,17.708402824401855
+position++;#1312,17.706952975346493
+return ~position;#2274,17.704331636428833
+{#1304,17.70361546107701
+iPrinters[i] = printer;#2580,17.700837760136046
+int year = iType.getField(chrono).get(instant);#1662,17.699960910912715
+iParsedLengthEstimate = 0;#2587,17.699890861511232
+printUnknownString(out, iMinPrintedDigits);#1451,17.699501004712335
+DateTimeField field = iFieldType.getField(chrono);#1374,17.698322972943707
+maxDigits = 18;#1861,17.696870370344683
+return iValue.length();#1261,17.69656255510118
+char c = text.charAt(position + amount);#2418,17.695878267288208
+return newPos;#1490,17.694439792633055
+case 1:  scalar = 10L; break;#1996,17.69295300756182
+out.write('\ufffd');#1388,17.692038933436077
+String str = text.substring(position);#2541,17.691775452006947
+throw new UnsupportedOperationException();#2629,17.69168804002845
+bucket.setOffset(Integer.valueOf(0));#2252,17.68957144021988
+locale = Locale.getDefault();#2668,17.689330577850342
+return ~position;#1808,17.684907742909022
+DateTimePrinter[] elements = iPrinters;#2644,17.680537762849227
+return;#2146,17.680357509189182
+int seconds = FormatUtils.parseTwoDigits(text, position);#2367,17.68018874526024
+position++;#2386,17.680130004882812
+validValues.add(property.getAsShortText(locale));#1813,17.6783110056168
+iParsers = new DateTimeParser[size];#2590,17.675428178575302
+FormatUtils.writeUnpaddedInteger(out, partial.get(iFieldType));#1407,17.674754071235657
+for (int i=0; i<len; i++) {#2672,17.67266398209792
+return append0(null, parser);#238,17.672379791736603
+Object[] array = innerMap.get(iFieldType);#1800,17.670973284491176
+DateTimeField field = iFieldType.getField(chrono);#1437,17.67051395293205
+return ~position;#1844,17.66996794939041
+if (len > est) {#2753,17.66935309657344
+iFieldType = fieldType;#1282,17.668709654557077
+DateTimeFormat.appendPatternTo(this, pattern);#1094,17.666037225723265
+if (text.regionMatches(true, position, iValue, 0, iValue.length())) {#1265,17.664479123221504
+MAX_LENGTH = max;#2509,17.663069072522614
+DateTimeParser parser = (DateTimeParser) parserList.get(i);#2593,17.661071081419248
+Composite(List<Object> elementPairs) {#2562,17.660790292840254
+DateTimeField field = iFieldType.getField(chrono);#1448,17.659477756869407
+if (partial.isSupported(iFieldType)) {#1405,17.65838901201884
+return;#2192,17.65830813513862
+if (validValues.contains(match)) {#1839,17.654384118539316
+return field.getAsShortText(partial, locale);#1774,17.65322118997574
+return appendDecimal(DateTimeFieldType.millisOfSecond(), minDigits, 3);#627,17.651985332883637
+(zeroOffsetText, zeroOffsetText, showSeparators, minFields, maxFields));#1054,17.650658946567113
+private void addArrayToList(List<Object> list, Object[] array) {#2729,17.64990410437951
+throw new UnsupportedOperationException();#2646,17.64848675935165
+position += length;#1585,17.648401260375977
+return position;#1595,17.64747661093007
+position++;#1554,17.644395764668783
+return ~(expectedPos + 1);#1502,17.642358745847428
+Object element = elementPairs.get(i);#2709,17.641633528250235
+buf.append('0');#1951,17.640891038454495
+return iValue.length();#1237,17.639431953430176
+buf.append(iZeroOffsetPrintText);#2116,17.63942395723783
+break parse;#2353,17.637257258097332
+appendUnknownString(buf, iMinPrintedDigits);#1460,17.636000633239746
+iPrinters = null;#2571,17.63423642245206
+elements[i].printTo(out, instant, chrono, displayOffset, displayZone, locale);#2639,17.634036616275186
+for (int i=0; i<size; i++) {#2592,17.63271074295044
+break parse;#2312,17.629956245422363
+out.write('0');#1953,17.627359573657696
+amount++;#2422,17.627120229933
+int limit = Math.min(text.length() - position, amount);#2415,17.626718963895524
+return;#2205,17.62643273671468
+bucket.saveField(iFieldType, value);#1352,17.625699540843133
+if (bestValidPos <= position) {#2781,17.623908865040747
+static final Set<String> ALL_IDS = DateTimeZone.getAvailableIDs();#2502,17.616275787353516
+length++;#1309,17.615269037393425
+bucket.setOffset(Integer.valueOf(0));#2256,17.613213688135147
+iParsers = null;#2586,17.612084475430574
+private final DateTimeParser[] iParsers;#2742,17.611042579015095
+(zeroOffsetPrintText, zeroOffsetParseText, showSeparators, minFields, maxFields));#1081,17.61064813534419
+maxDigits = minDigits;#536,17.61025333404541
+limit--;#2385,17.6099681024966
+return true;#1141,17.608886210123696
+checkPrinter(printer);#274,17.608670736614027
+throw new UnsupportedOperationException();#2610,17.60805660745372
+bucket.saveField(iType, value);#1594,17.60732297897339
+return ~position;#1325,17.606131505966186
+Object printer = iElementPairs.get(0);#1104,17.604155915124075
+validValues.add(property.getAsShortText(locale).toLowerCase(locale));#1814,17.60235713875812
+buf.append('\ufffd');#1731,17.59877856572469
+if (count > 1) {#2398,17.597639664359715
+printTo(buf, null, instant, chrono);#1875,17.594635827200754
+int limit = Math.min(iMaxDigits, text.length() - position);#2032,17.5918185018724
+return position;#2782,17.588388019137913
+locale = Locale.getDefault();#2615,17.58752139409383
+String zeroOffsetText, boolean showSeparators,#1051,17.583088377247687
+int size = elementPairs.size();#2707,17.58241044907343
+protected void printTo(StringBuffer buf, Writer out, long instant, Chronology chrono)#1905,17.582290138517106
+elements[i].printTo(buf, instant, chrono, displayOffset, displayZone, locale);#2620,17.580127716064453
+break parse;#2383,17.575969095583314
+out.write('0');#1930,17.57416124343872
+Object parser = iElementPairs.get(1);#1105,17.573065485273087
+printUnknownString(out, iMinPrintedDigits);#1472,17.570660562226266
+String match = text.substring(position, i);#1838,17.569345712661743
+parsePos = ~parsePos;#2802,17.569023286142656
+int minFields, int maxFields)#2081,17.567058154514857
+validValues = (Set<String>) array[0];#1831,17.56690502166748
+iPrintedLengthEstimate = 0;#2572,17.56632396697998
+return parsePos;#2795,17.566180676221848
+validValues.add(property.getAsText(locale).toLowerCase(locale));#1817,17.56573952568902
+iMinFields = minFields;#2094,17.564799036298478
+limit--;#2355,17.560543226159137
+iShort = isShort;#1718,17.560185697343613
+length++;#1551,17.55991554260254
+int hours = FormatUtils.parseTwoDigits(text, position);#2299,17.55889207976205
+super();#1857,17.558770179748535
+break;#1963,17.55634124462421
+validValues.add(property.getAsText(locale));#1816,17.5560050512615
+return;#2133,17.547269609239365
+validValues.add(property.getAsShortText(locale).toUpperCase(locale));#1815,17.546797874126028
+return 2;#1633,17.54332135518392
+for (int i=0; i<size; i+=2) {#2708,17.543285369873047
+break parse;#2324,17.542835318523906
+return;#2159,17.54260211520725
+if (bestValidState != null) {#2813,17.54175724029541
+if (partial.isSupported(iFieldType)) {#1468,17.53622019290924
+break parse;#2348,17.534875289253566
+FormatUtils.appendUnpaddedInteger(buf, partial.get(iFieldType));#1395,17.533425521850585
+appendUnknownString(buf, iMinPrintedDigits);#1463,17.532207620554956
+DateTimeField field = iFieldType.getField(chrono);#1385,17.530505549523138
+t = 99 + ((low + 1) % 100);#1623,17.529406104769027
+iValue = value;#1170,17.52890749538646
+iParsedLengthEstimate = est;#2758,17.526750882466633
+throw new IllegalArgumentException();#2088,17.52165529002314
+final Object originalState = bucket.saveState();#2769,17.51848502592607
+maxDigits--;#2019,17.516090529305593
+printerList.add(element);#2714,17.51494982934767
+protected final int iMinPrintedDigits;#1420,17.512360678778755
+out.write('\ufffd');#1409,17.509041173117502
+if (partial.isSupported(iFieldType)) {#1393,17.508368571599323
+year += low + ((year < t) ? 100 : 0) - t;#1626,17.507188205061286
+a = Character.toLowerCase(a);#1213,17.505762132008872
+return ~position;#2051,17.505118942260744
+limit--;#2319,17.505095274552055
+case 2:  scalar = 100L; break;#1997,17.504735469818115
+out.write('\ufffd');#1158,17.504569721221923
+buf.append('\ufffd');#1400,17.504460374514263
+iFieldType = fieldType;#1717,17.502297451621608
+f = new Composite(iElementPairs);#1117,17.50101514963003
+private void decompose(List<Object> elementPairs, List<Object> printerList, List<Object> parserList) {#2706,17.500592602623833
+static class StringLiteral#1226,17.500069999694823
+buf.append('\ufffd');#1642,17.4994162718455
+position = elements[i].parseInto(bucket, text, position);#2689,17.49848357113925
+default: scalar = 1L; break;#1995,17.496855075542744
+case 5:  scalar = 100000L; break;#2000,17.493584863070783
+return this;#1095,17.492719997059215
+out.write(str.charAt(i));#1975,17.490226476620403
+FormatUtils.appendPaddedInteger(buf, displayOffset, 3);#2165,17.488606895719254
+negative = false;#2272,17.48778691291809
+for (; limit > 0; limit--) {#2417,17.484025457630988
+return iMaxDigits;#2026,17.478641086154514
+if (partial.isSupported(iFieldType)) {#1456,17.477807362874348
+addArrayToList(parserList, ((Composite)element).iParsers);#2721,17.476408568295565
+break;#1319,17.475041476162996
+while (i < position) {#1344,17.474698066711426
+out.write(iValue);#1257,17.472192764282227
+break parse;#2378,17.471468344978664
+super();#2746,17.47071123123169
+out.write(iValue);#1249,17.470397346898128
+buf.append(str);#1983,17.46738715605302
+break parse;#2391,17.466440366662066
+innerMap.put(iFieldType, array);#1829,17.466081342389508
+return ~position;#2369,17.464639107386272
+return ~position;#1268,17.463944256305695
+value = -value;#1348,17.46155937194824
+public class DateTimeFormatterBuilder {#71,17.460927963256836
+return position;#2253,17.460911004439645
+break parse;#2361,17.459009999814242
+break;#1305,17.458833877856915
+while (i < position) {#1586,17.45812846768287
+bucket.saveField(parseField, (int) value);#2063,17.45557445526123
+buf.append('\ufffd');#1676,17.454594254493713
+return this;#340,17.449595624750312
+int len = parser.estimateParsedLength();#2752,17.439919978380203
+return ~position;#2301,17.4361611366272
+new HashMap<Locale, Map<DateTimeFieldType, Object[]>>();#1711,17.43523527446546
+return ~position;#2294,17.434027767181398
+printUnknownString(out, iMinPrintedDigits);#1475,17.432044621171624
+return ~position;#1566,17.431206703186035
+iMaxDigits = maxDigits;#1864,17.430626415071032
+out.write(iValue);#1194,17.42871063633969
+return ~position;#2334,17.428065220514934
+FormatUtils.writePaddedInteger(out, hours, 2);#2186,17.426322901690448
+printUnknownString(out, minDigits);#1918,17.419281164805096
+iElementPairs.add(element);#339,17.418297992033118
+return position;#1353,17.417543919881187
+buf.append('0');#1926,17.409006373087564
+printTo(null, out, instant, chrono);#1884,17.406726360321045
+return position + 2;#1629,17.40314483642578
+iElementPairs.add(element);#338,17.401782821206485
+int size = printerList.size();#2574,17.400930285453796
+int count = digitCount(text, position, 2);#2329,17.397935220173427
+negative = true;#2270,17.397630167007446
+buf.append(print(partial, locale));#1747,17.397128912118767
+case 4:  scalar = 10000L; break;#1999,17.39536040169852
+super();#2563,17.395186832972936
+out.write(iValue);#1186,17.39359238273219
+return ~position;#2339,17.393386522928875
+buf.append('\ufffd');#1641,17.39163887500763
+return ~position;#2394,17.39129928747813
+buf.append('\ufffd');#1675,17.388004819552105
+elements[i].printTo(buf, partial, locale);#2656,17.38628127657134
+checkParser(parser);#307,17.38301211137038
+if (negative) {#1347,17.382552237737748
+super(fieldType, numDigits, signed, numDigits);#1484,17.380853900202997
+buf.append(print(instant, chrono, locale));#1729,17.380849202473957
+bestValidState = bucket.saveState();#2798,17.375892754757043
+FormatUtils.writePaddedInteger(out, minutes, 2);#2199,17.37583273428458
+if (count > 2) {#2400,17.373122179949725
+for (int i=0; i<array.length; i++) {#2731,17.371489107608795
+return est;#2106,17.370801544189455
+FormatUtils.appendPaddedInteger(buf, hours, 2);#2127,17.366582375985605
+case 16: scalar = 10000000000000000L; break;#2011,17.365156403903303
+out.write('\ufffd');#1741,17.3630135456721
+a = Character.toUpperCase(a);#1210,17.359562732555247
+int limit = Math.min(iMaxParsedDigits, text.length() - position);#1292,17.357593031490552
+return 1;#1198,17.351362864176433
+validValues.add(property.getAsText(locale).toUpperCase(locale));#1818,17.348484764928404
+f = parser;#1112,17.341850598653156
+field.getDurationField());#2061,17.341782960024748
+return iMaxDigits;#1868,17.340203444163006
+FormatUtils.appendPaddedInteger(buf, minutes, 2);#2140,17.339624334264684
+validValues.add("CE");#1824,17.33726199980705
+return ~position;#1341,17.33649257818858
+maxDigits = minDigits;#400,17.33598909378052
+property.set(i);#1812,17.335310713450113
+return position;#2407,17.330956013997397
+innerMap = new HashMap<DateTimeFieldType, Object[]>();#1797,17.329977525605095
+return position + 1;#1221,17.32966972799862
+bucket.restoreState(originalState);#2808,17.32694637298584
+out.write(print(instant, chrono, locale));#1739,17.32528953552246
+iElementPairs.clear();#197,17.323801867167155
+continue;#1557,17.322246881631706
+FormatUtils.writePaddedInteger(out, seconds, 2);#2212,17.322142177157932
+return ~position;#1539,17.32197121779124
+validValues.add("ce");#1825,17.32192959324006
+Map<DateTimeFieldType, Object[]> innerMap = cParseCache.get(locale);#1795,17.31938824286828
+private static Map<Locale, Map<DateTimeFieldType, Object[]>> cParseCache =#1710,17.314298597971597
+b = Character.toLowerCase(b);#1214,17.309428914388022
+return amount;#2424,17.309069061279295
+buf.append(':');#2151,17.304786508733574
+if (iShort) {#1773,17.30279371955178
+return bestValidPos;#2816,17.29669661748977
+FormatUtils.appendPaddedInteger(buf, seconds, 2);#2153,17.293825538070113
+case 17: scalar = 100000000000000000L; break;#2012,17.293663024902344
+return ~position;#2364,17.29140309492747
+return position + length;#2065,17.29103037890266
+limit--;#1555,17.287861054943455
+int size = parserList.size();#2589,17.281959811846416
+return -1;#1668,17.280280971527098
+out.write(iZeroOffsetPrintText);#2175,17.279531662280743
+str = Integer.toString((int) scaled);#1942,17.274960765132196
+super();#1281,17.27410731996809
+count = digitCount(text, position, 3);#2389,17.27357578277588
+out.write('\ufffd');#1412,17.271987716356914
+case 15: scalar = 1000000000000000L; break;#2010,17.264985610698833
+iElementPairs.add(parser);#347,17.26400089263916
+iParsedLengthEstimate = parseEst;#2597,17.261641172262337
+return (iType == SHORT_NAME ? 4 : 20);#2445,17.259603647085335
+FormatUtils.appendPaddedInteger(buf, field.get(instant), iMinPrintedDigits);#1438,17.254818148729278
+iMinDigits = minDigits;#1863,17.254092534383137
+super();#1716,17.25351939882551
+FormatUtils.writePaddedInteger(out, field.get(instant), iMinPrintedDigits);#1449,17.25240905110429
+out.write('\ufffd');#1686,17.25128956635793
+return;#2176,17.24961969587538
+CharacterLiteral(char value) {#1168,17.246445824118222
+case 7:  scalar = 10000000L; break;#2002,17.246216412248284
+t = low % 100;#1621,17.2442403273149
+return;#2201,17.24173598819309
+return this;#375,17.23869800567627
+return this;#348,17.23711282556707
+validValues.add("bce");#1823,17.23228758573532
+break;#1560,17.23204414661114
+FormatUtils.appendPaddedInteger(buf, partial.get(iFieldType), iMinPrintedDigits);#1458,17.231984884842582
+super();#1523,17.230500085013254
+iSigned = signed;#1284,17.227655993567573
+FormatUtils.appendPaddedInteger(buf, year, 2);#1644,17.22634143214072
+count = digitCount(text, position, 2);#2359,17.226253862734193
+iElementPairs.add(printer);#346,17.2243169148763
+bucket.restoreState(bestValidState);#2814,17.224227809906004
+buf.append(':');#2138,17.22176673195579
+return (iType == SHORT_NAME ? 4 : 20);#2482,17.21865125802847
+return;#2117,17.21780522664388
+FormatUtils.writePaddedInteger(out, year, 2);#1688,17.216581006203928
+return;#2142,17.21615695953369
+maxDigits = minDigits;#452,17.21597261428833
+validValues.add("BCE");#1822,17.215721279382706
+iPrintedLengthEstimate = printEst;#2582,17.211106300354004
+StringBuffer buf, long instant, Chronology chrono,#1637,17.209939990724838
+out.write('\ufffd');#1685,17.208274046579998
+FormatUtils.writePaddedInteger(out, displayOffset, 3);#2224,17.204971279416764
+iLenientParse = lenientParse;#1526,17.200847915981125
+continue;#1316,17.20022977482189
+return;#1978,17.199270855296742
+break parse;#2331,17.189346520797066
+return iParsedLengthEstimate;#2678,17.177980804443358
+FormatUtils.writePaddedInteger(out, year, 2);#1656,17.175539109014696
+out.write('\ufffd');#1654,17.168569723765057
+default:#378,17.167656626020158
+decompose(elementPairs, printerList, parserList);#2568,17.167590827941893
+FormatUtils.appendPaddedInteger(buf, year, 2);#1678,17.166637051490046
+StringBuffer buf, long instant, Chronology chrono,#2517,17.163131066731044
+case 9:  scalar = 1000000000L; break;#2004,17.161698144057702
+return;#1920,17.1564113828871
+out.write('\ufffd');#1653,17.140657146771748
+bucket.saveField(iType, year);#1628,17.136988813226875
+return ~position;#2055,17.135253047943117
+buf.append('-');#2122,17.132629004391756
+super();#2439,17.130084582737513
+break;#2785,17.128829782659356
+case 13: scalar = 10000000000000L; break;#2008,17.128537375351478
+str = Long.toString(scaled);#1944,17.12808531981248
+if (text.regionMatches(true, position, iZeroOffsetParseText, 0, iZeroOffsetParseText.length())) {#2255,17.124205271402996
+buf.append('+');#2120,17.12083318016746
+iParseLookup = parseLookup;#2441,17.11760361989339
+return 1;#1174,17.113537979125976
+Writer out, long instant, Chronology chrono,#2523,17.10984781053331
+out.write(str);#1985,17.107716690410268
+return year % 100;#1666,17.106518972487677
+iMaxParsedDigits = maxParsedDigits;#1283,17.099563633954084
+return;#2218,17.086506525675457
+case 8:  scalar = 100000000L; break;#2003,17.08434121362094
+return iMaxParsedDigits;#1367,17.082793054126558
+case 12: scalar = 1000000000000L; break;#2007,17.076425371498896
+bucket.setOffset(Integer.valueOf(negative ? -offset : offset));#2406,17.06964295485924
+Writer out, long instant, Chronology chrono,#1882,17.064636654324
+list.add(array[i]);#2732,17.060595784868514
+Set<String> validValues = null;#1792,17.05892512911842
+return;#2214,17.058026207817925
+max = Math.max(max, id.length());#2507,17.057932955878123
+Writer out, long instant, Chronology chrono,#1247,17.05758900112576
+return;#1933,17.053855631086563
+b = Character.toUpperCase(b);#1211,17.052342626783584
+case 3:  scalar = 1000L; break;#1998,17.0503214768001
+validValues = new HashSet<String>(32);#1802,17.049204303372292
+StringBuffer buf, long instant, Chronology chrono,#2606,17.047047751290457
+FormatUtils.writePaddedInteger(out, partial.get(iFieldType), iMinPrintedDigits);#1470,17.038351100424062
+Writer out, long instant, Chronology chrono,#1184,17.0323508227313
+return iLenientParse ? 4 : 2;#1530,17.025302472321883
+Writer out, long instant, Chronology chrono,#2455,17.023023852595575
+return year % 100;#1699,17.02189247131348
+iParsers[i] = parser;#2595,17.02078806120774
+limit = Math.min(2, limit);#1537,17.016219762655403
+out.write(':');#2210,17.012538823214445
+return iPrintedLengthEstimate;#2602,17.00967946052551
+case 6:  scalar = 1000000L; break;#2001,17.006945478505102
+out.write(print(partial, locale));#1755,17.005705760075497
+return iShort ? 6 : 20;#1722,17.00455069541931
+switch (maxDigits) {#1994,17.001539727915887
+case 11: scalar = 100000000000L; break;#2006,16.99041014704211
+StringBuffer buf, long instant, Chronology chrono,#2449,16.95814742360796
+out.write(':');#2197,16.958117094906893
+out.write('-');#2181,16.94071526960893
+StringBuffer buf, long instant, Chronology chrono,#1241,16.92919339452471
+case 1:#376,16.928786087036134
+minFields = 4;#2091,16.923205288973723
+return MAX_LENGTH;#2513,16.917074150509304
+return;#2155,16.91543589697944
+case 14: scalar = 100000000000000L; break;#2009,16.910689090860302
+Writer out, long instant, Chronology chrono,#1445,16.901627893801088
+out.write('+');#2179,16.90120727365667
+Writer out, long instant, Chronology chrono,#1649,16.879915131462944
+return iParsedLengthEstimate;#2762,16.878222036361695
+case 10: scalar = 10000000000L; break;#2005,16.87624910899571
+StringBuffer buf, long instant, Chronology chrono,#1178,16.86155867576599
+super();#1232,16.860245364052908
+Writer out, long instant, Chronology chrono,#2625,16.85774446416784
+return iMaxParsedDigits;#1430,16.84993026370094
+Writer out, long instant, Chronology chrono,#1382,16.845962171201354
+StringBuffer buf, long instant, Chronology chrono,#1371,16.844639165060862
+parseEst += parser.estimateParsedLength();#2594,16.828539192676544
+Writer out, long instant, Chronology chrono,#2169,16.82452127668593
+StringBuffer buf, long instant, Chronology chrono,#2110,16.81413119179862
+Writer out, long instant, Chronology chrono,#1736,16.802937966805917
+StringBuffer buf, long instant, Chronology chrono,#1872,16.801898990358627
+return iMaxParsedDigits;#1288,16.79704520815895
+return position;#2691,16.782513364156088
+iElementPairs = new ArrayList<Object>();#84,16.773451447486877
+return;#2129,16.7710026635064
+return;#2188,16.7470367219713
+StringBuffer buf, long instant, Chronology chrono,#1434,16.72961299760001
+static class TwoDigitYear#1513,16.726265907287598
+super();#1169,16.696852820260183
+StringBuffer buf, long instant, Chronology chrono,#1726,16.68803378513881
+case SHORT_NAME:#2467,16.687004349448465
+iMinPrintedDigits = minPrintedDigits;#1426,16.62919689178467
+List<Object> printerList = new ArrayList<Object>();#2565,16.626788781239437
+case LONG_NAME:#2465,16.592358997889928
+List<Object> parserList = new ArrayList<Object>();#2566,16.584369989541862
+super(fieldType, maxParsedDigits, signed);#1363,16.581121114584114
+return MAX_LENGTH;#2537,16.574142297108967
+return estimatePrintedLength();#2236,16.54968441857232
+static class CharacterLiteral#1163,16.530992698669433
+static class Composite#2553,16.52835382734026
+return estimatePrintedLength();#1784,16.521298938327366
+private ArrayList<Object> iElementPairs;#74,16.518749523162843
+printEst += printer.estimatePrintedLength();#2579,16.473982103409305
+MillisDurationField.INSTANCE,#2060,16.466192483901978
+super(fieldType, maxParsedDigits, signed);#1425,16.356969906733585

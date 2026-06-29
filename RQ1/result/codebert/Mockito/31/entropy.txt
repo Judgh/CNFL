@@ -1,0 +1,23 @@
+return invocation.getMethod().getName() + "()";#60,17.789630385006177
+return null;#75,17.22399581562389
+this.invocation = invocation;#47,17.168293049460964
+return ClassImposterizer.INSTANCE.imposterise(new ThrowingInterceptor(invocation), type);#73,17.053192641999985
+public class ReturnsSmartNulls implements Answer<Object>, Serializable {#38,16.993756039937338
+Object defaultReturnValue = delegate.answer(invocation);#67,16.912406253814698
+if (new ObjectMethodsGuru().isToString(method)) {#51,16.74647122842294
+return "SmartNull returned by unstubbed " + formatMethodCall()  + " method on mock";#52,16.674194059873884
+if (ClassImposterizer.INSTANCE.canImposterise(type)) {#72,16.644470801720253
+private final Answer<Object> delegate = new ReturnsMoreEmptyValues();#64,16.612706396314834
+Class<?> type = invocation.getMethod().getReturnType();#71,16.56651358170943
+return defaultReturnValue;#69,16.560791408314426
+private static final long serialVersionUID = 7618312406617949441L;#40,16.548960425636984
+new Reporter().smartNullPointerException(location);#55,16.54743074334186
+return null;#56,16.50500030517578
+private final InvocationOnMock invocation;#43,16.420316415674545
+if (defaultReturnValue != null) {#68,16.409509602714987
+private String formatMethodCall() {#59,16.35606575012207
+public Object answer(final InvocationOnMock invocation) throws Throwable {#66,16.278047704696654
+public Object intercept(Object obj, Method method, Object[] args, MethodProxy proxy) throws Throwable {#50,16.102825705210368
+private ThrowingInterceptor(InvocationOnMock invocation) {#46,15.802995204925537
+private final class ThrowingInterceptor implements MethodInterceptor {#42,15.782424747943878
+private final Location location = new Location();#44,15.53873586654663

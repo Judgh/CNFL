@@ -1,0 +1,128 @@
+private static final long serialVersionUID = 7694577816772532779L;#41,18.010630317356277
+throw MathRuntimeException.createIllegalArgumentException(#137,17.999818483988445
+oldDelta = delta;#313,17.9443785349528
+double delta = x1 - x0;#229,17.884072191574994
+oldDelta = delta;#293,17.85883720397949
+x1 = x1 + delta;#302,17.803398688634235
+delta = x1 - x0;#312,17.754459420839947
+p = dx * r3;#271,17.66927143379494
+throw MathRuntimeException.createIllegalArgumentException(#188,17.66040539741516
+public class BrentSolver extends UnivariateRealSolverImpl {#33,17.637545858110702
+double oldDelta = delta;#230,17.53929478781564
+x1 = x1 - 0.5 * tolerance;#306,17.49827262333461
+oldDelta = delta;#261,17.45672371273949
+oldDelta = delta;#291,17.451419105529784
+delta = 0.5 * dx;#290,17.42678008760725
+x1 = x1 + 0.5 * tolerance;#304,17.425458942140853
+setResult(yMax, 0);#127,17.424174356460572
+return solve(f, initial, yInitial, max, yMax, initial, yInitial);#133,17.408403366804123
+ret = max;#199,17.39327964782715
+double ret = Double.NaN;#171,17.392715394496918
+delta = p / p1;#294,17.38809790434661
+setResult(x1, i);#247,17.38456376393636
+p >= Math.abs(0.5 * oldDelta * p1)) {#286,17.38438543459264
+public double solve(final UnivariateRealFunction f,#98,17.365486653645835
+delta = 0.5 * dx;#260,17.36508293946584
+double dx = x2 - x1;#250,17.36460867382231
+x0 = x1;#236,17.36237196488814
+x0 = x1;#298,17.350193129645454
+x1 = x2;#237,17.34728752483021
+x2 = x0;#310,17.34086782282049
+public double solve(final UnivariateRealFunction f,#163,17.3231808980306
+clearResult();#102,17.316269267689098
+clearResult();#168,17.313609556718305
+double r2 = y1 / y2;#276,17.31336301167806
+setResult(x1, i);#254,17.30767885843913
+setResult(initial, 0);#108,17.27371843237626
+x2 = x0;#238,17.25605856288563
+p = -p;#283,17.209068641662597
+ret = max;#185,17.168945217132567
+p1 = (r1 - 1.0) * (r2 - 1.0) * (r3 - 1.0);#278,17.168781728160624
+y2 = y0;#311,17.16462343389338
+"function values at endpoints do not have different signs.  " +#37,17.161945218625277
+y1 = y2;#240,17.153097672895953
+p = r3 * (dx * r1 * (r1 - r2) - (x1 - x0) * (r2 - 1.0));#277,17.150657671148128
+double yMax = f.value(max);#174,17.14292441474067
+i++;#315,17.136834689549037
+(Math.abs(y0) <= Math.abs(y1))) {#258,17.1330407374614
+double r3 = y1 / y0;#263,17.098646053901085
+y2 = y0;#241,17.080858750776812
+Math.max(relativeAccuracy * Math.abs(x1), absoluteAccuracy);#252,17.06594227382115
+p1 = -p1;#281,17.0448972913954
+double sign = yMin * yMax;#177,17.017937660217285
+if ((Math.abs(oldDelta) < tolerance) ||#257,17.0112663269043
+y0 = y1;#239,17.008037090301514
+setResult(max, 0);#184,17.00670860124671
+y0 = y1;#299,16.981360753377277
+double r1 = y0 / y2;#275,16.980358346303305
+return result;#109,16.972634569803873
+"Endpoints: [{0}, {1}], Values: [{2}, {3}]";#38,16.964279236332064
+throws MaxIterationsExceededException, FunctionEvaluationException {#67,16.954789659251336
+ret = min;#197,16.93341326713562
+throws MaxIterationsExceededException,#165,16.92028606639189
+private double solve(final UnivariateRealFunction f,#223,16.91127452850342
+if (Math.abs(y2) < Math.abs(y1)) {#234,16.891273244222006
+@Deprecated#72,16.88218375614711
+return ret;#203,16.88021911274303
+public BrentSolver() {#60,16.870506286621094
+double yMax = f.value(max);#125,16.8643233511183
+return result;#255,16.860373798169586
+setResult(min, 0);#181,16.855358538420305
+return result;#248,16.828068080701325
+return solve(f, min, yMin, max, yMax, initial, yInitial);#142,16.795644538743154
+NON_BRACKETING_MESSAGE, min, max, yMin, yMax);#189,16.793466505797014
+setResult(yMin, 0);#115,16.78616533279419
+if (Math.abs(dx) <= tolerance) {#253,16.78501005967458
+int i = 0;#232,16.781585986797626
+NON_BRACKETING_MESSAGE, min, max, yMin, yMax);#138,16.756251299381255
+double x1, double y1,#225,16.754259369590066
+throw new MaxIterationsExceededException(maximalIterationCount);#317,16.750463644663494
+p1 = 1.0 - r3;#272,16.746723238627116
+double tolerance =#251,16.744249852498374
+return result;#128,16.74124902089437
+ret = min;#182,16.735109424591066
+@Deprecated#65,16.733583041599818
+return result;#116,16.73073393503825
+double x2, double y2)#226,16.729493401267312
+public BrentSolver(UnivariateRealFunction f) {#53,16.718981862068176
+if (Math.abs(yInitial) <= functionValueAccuracy) {#107,16.678518335024517
+verifySequence(min, initial, max);#103,16.67826403511895
+throws MaxIterationsExceededException, FunctionEvaluationException {#74,16.66917141624119
+double yInitial = f.value(initial);#106,16.667422347598606
+if (Math.abs(yMax) <= functionValueAccuracy) {#126,16.655123194058735
+@Deprecated#52,16.635885374886648
+y1 = f.value(x1);#308,16.628089731389824
+return solve(f, min, max, initial);#75,16.59577545366789
+final double min, final double max, final double initial)#99,16.584597667058308
+super(100, 1E-6);#61,16.572949409484863
+if (2.0 * p >= 1.5 * dx * p1 - Math.abs(tolerance * p1) ||#285,16.566749486056242
+while (i < maximalIterationCount) {#233,16.559700542026096
+double p;#264,16.554097376371686
+if (yInitial * yMax < 0) {#132,16.488621761924342
+double x0, double y0,#224,16.4734830567331
+double p1;#265,16.420621585845947
+super(f, 100, 1E-6);#54,16.397461288853695
+if (Math.abs(delta) > tolerance) {#301,16.387929916381836
+if (Math.abs(y1) <= functionValueAccuracy) {#243,16.383916275841848
+throws MaxIterationsExceededException, FunctionEvaluationException {#100,16.353203773498535
+return solve(f, min, max);#68,16.32737013872932
+throws MaxIterationsExceededException, FunctionEvaluationException {#227,16.31727735619796
+final double min, final double max)#164,16.2589812874794
+ret = solve(f, min, yMin, max, yMax, min, yMin);#193,16.25565228317723
+if (Math.abs(yMin) <= functionValueAccuracy) {#114,16.248228232065838
+if (x0 == x2) {#269,16.22899814605713
+if (yMin * yMax > 0) {#136,16.140366052326403
+FunctionEvaluationException {#166,16.070705277579172
+if ((y1 > 0) == (y2 > 0)) {#309,15.896091284575286
+if (Math.abs(yMin) <= functionValueAccuracy) {#180,15.861158064433507
+verifyInterval(min, max);#169,15.775646805763245
+public double solve(double min, double max, double initial)#73,15.746084830340218
+if (p > 0.0) {#280,15.73093147277832
+return solve(f, min, yMin, initial, yInitial, min, yMin);#121,15.71564718335867
+private static final String NON_BRACKETING_MESSAGE =#36,15.629314804077149
+if (yInitial * yMin < 0) {#120,15.628104511060213
+double yMin = f.value(min);#113,15.61039290163252
+if (sign > 0) {#178,15.450126457214356
+public double solve(double min, double max)#66,15.433470385415214
+if (yMin == 0.0) {#196,15.421374949541958
+double yMin = f.value(min);#173,15.39944252702925

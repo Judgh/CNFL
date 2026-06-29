@@ -1,0 +1,1285 @@
+public class BOBYQAOptimizer#52,16.499913128939543
+extends BaseAbstractMultivariateSimpleBoundsOptimizer<MultivariateFunction>#53,15.810531330108642
+private ArrayRealVector modelSecondDerivativesValues;#202,15.639596366882325
+public BOBYQAOptimizer(int numberOfInterpolationPoints,#224,15.431600960818203
+public BOBYQAOptimizer(int numberOfInterpolationPoints) {#210,15.228481085404105
+implements MultivariateOptimizer {#54,15.214797540144486
+private ArrayRealVector gradientAtTrustRegionCenter;#140,15.095220361437116
+private final double stoppingTrustRegionRadius;#86,14.986958503723145
+private ArrayRealVector modelSecondDerivativesParameters;#167,14.867792065938314
+private Array2DRowRealMatrix zMatrix;#113,14.814529146466937
+private ArrayRealVector currentBest;#94,14.767275723544033
+private ArrayRealVector trustRegionCenterOffset;#134,14.765906700721153
+private ArrayRealVector upperDifference;#162,14.71610951423645
+private Array2DRowRealMatrix bMatrix;#106,14.705825056348528
+protected RealPointValuePair doOptimize() {#234,14.638262049357097
+final ArrayRealVector hcol = new ArrayRealVector(npt);#1266,14.627295245294986
+private ArrayRealVector alternativeNewPoint;#186,14.626649856567383
+int nfsav = getEvaluations();#423,14.60539452234904
+private ArrayRealVector lagrangeValuesAtNewPoint;#197,14.53926232655843
+private ArrayRealVector newPoint;#178,14.521196885542436
+modelSecondDerivativesParameters = new ArrayRealVector(numberOfInterpolationPoints);#2429,14.507126596238878
+private double initialTrustRegionRadius;#82,14.431485176086426
+final RealVector tmp = interpolationPoints.operate(s).ebeMultiply(modelSecondDerivativesParameters);#2255,14.392519290630634
+private static void printMethod() {#2464,14.369380083951084
+final ArrayRealVector work = new ArrayRealVector(npt + n);#2307,14.360048154989878
+throw new OutOfRangeException(LocalizedFormats.NUMBER_OF_INTERPOLATION_POINTS,#2397,14.352595999434188
+final double sqrtDenom = Math.sqrt(denom);#2351,14.347407548323922
+private double bobyqa(double[] lowerBound,#285,14.336606089274088
+private ArrayRealVector lowerDifference;#151,14.322729269663492
+final ArrayRealVector glag = new ArrayRealVector(n);#1265,14.261993408203125
+double stpsav = 0;#1309,14.254807281494141
+private static final double HALF = ONE / 2;#69,14.243922360738118
+private static final double ONE_OVER_A_THOUSAND = ONE / 1000;#73,14.237729376012629
+final int ndim = bMatrix.getRowDimension();#1588,14.222898937406994
+newPoint.setEntry(-ibdsav - 1, lowerDifference.getEntry(-ibdsav - 1));#1423,14.216745376586914
+final double tmp = trustRegionCenterOffset.getEntry(i) + stpsav * (interpolationPoints.getEntry(ksav, i) - trustRegionCenterOffset.getEntry(i));#1418,14.193576472146171
+private double bobyqb(double[] lowerBound,#374,14.175405621528625
+final double rhosq = initialTrustRegionRadius * initialTrustRegionRadius;#1590,14.174302046115582
+final ArrayRealVector work3 = new ArrayRealVector(npt);#386,14.140173994976541
+isMinimize = (getGoalType() == GoalType.MINIMIZE);#241,14.127255516052246
+if (ibdsav > 0) {#1425,14.118751638075885
+private ArrayRealVector trialStepPoint;#192,14.094134251276651
+modelSecondDerivativesValues = new ArrayRealVector(dimension * (dimension + 1) / 2);#2434,14.087616602579752
+public static final int MINIMUM_PROBLEM_DIMENSION = 2;#56,14.082443396250406
+final double value = bobyqa(lowerBound, upperBound);#244,14.081183867021041
+newPoint.setEntry(ibdsav - 1, upperDifference.getEntry(ibdsav - 1));#1426,14.075276065517116
+private ArrayRealVector originShift;#124,14.070365212180398
+private static final double ONE_OVER_FOUR = ONE / 4;#70,14.048144290321751
+if (lowerDifference.getEntry(j) >= -initialTrustRegionRadius) {#302,14.040117859840393
+final int nptm = npt - np;#381,14.028709913554945
+private static final double ONE_OVER_TEN = ONE / 10;#72,14.015173811661569
+gradientAtTrustRegionCenter = new ArrayRealVector(dimension);#2426,14.001466614859444
+final int nptm = npt - n - 1;#2304,13.97856244586763
+bMatrix = new Array2DRowRealMatrix(dimension + numberOfInterpolationPoints,#2417,13.953408990587507
+final ArrayRealVector xbdi = new ArrayRealVector(n);#483,13.950279942265263
+final double d2 = zMatrix.getEntry(knew, 0) / sqrtDenom;#2353,13.947911024093628
+zMatrix = new Array2DRowRealMatrix(numberOfInterpolationPoints,#2419,13.9343372124892
+final ArrayRealVector work2 = new ArrayRealVector(n);#1269,13.925674113360317
+return bobyqb(lowerBound, upperBound);#332,13.91653823852539
+private boolean isMinimize;#88,13.907842445373536
+fAtInterpolationPoints = new ArrayRealVector(numberOfInterpolationPoints);#2424,13.906561074433503
+private ArrayRealVector fAtInterpolationPoints;#129,13.905559825897218
+if (predsq > presav) {#1407,13.879388514019194
+final double tmp1 = adelt * adelt - wfixsq;#1455,13.866826622574418
+final ArrayRealVector hred = new ArrayRealVector(n);#486,13.842155915040236
+if (f <= fopt + ONE_OVER_TEN * vquad) {#1103,13.841813468933106
+final ArrayRealVector work1 = new ArrayRealVector(n);#1268,13.839453957297586
+private double[] boundDifference;#96,13.838034889914773
+final ArrayRealVector work1 = new ArrayRealVector(n);#384,13.827441475608133
+double dhd, dhs, cth, shs, sth, ssq, beta=0, sdec, blen;#1823,13.816178979100409
+private Array2DRowRealMatrix interpolationPoints;#118,13.810756556193034
+final ArrayRealVector gnew = new ArrayRealVector(n);#482,13.80540814766517
+final int numEval = getEvaluations(); // nfm + 1#1685,13.802454267229352
+int itcsav = 0;#1832,13.78923905690511
+beta = dx * dx + dsq * (xoptsq + dx + dx + HALF * dsq) + beta - bsum; // Original#732,13.788857565985786
+private double[] trsbox(#1804,13.784307393160733
+super(PATH_IS_EXPLORED + " " + BOBYQAOptimizer.caller(3));#2479,13.782042674529247
+final double pqold = modelSecondDerivativesParameters.getEntry(knew);#941,13.773902031683154
+final int n = currentBest.getDimension();#289,13.767361640930176
+if (stplen < blen) {#2013,13.765640843998302
+final ArrayRealVector work2 = new ArrayRealVector(npt);#385,13.757701314013937
+private int trustRegionCenterInterpolationPointIndex;#100,13.756673622131348
+lagrangeValuesAtNewPoint = new ArrayRealVector(dimension + numberOfInterpolationPoints);#2433,13.755077197633941
+final int n = currentBest.getDimension();#1814,13.75483583149157
+final double f = isMinimize ? objectiveValue : -objectiveValue;#1684,13.749960660934448
+lagrangeValuesAtNewPoint.setEntry(knew, lagrangeValuesAtNewPoint.getEntry(knew) - ONE);#2347,13.748108657630715
+private static void printState(int s) {#2460,13.744262967790876
+if (getEvaluations() <= nfsav + 2) {#502,13.74089268715151
+currentBest = new ArrayRealVector(getStartPoint());#242,13.740076923370362
+trustRegionCenterOffset = new ArrayRealVector(dimension);#2425,13.735359621047973
+final double predsq = vlag * vlag * (vlag * vlag + ha * tmp * tmp);#1406,13.72872969839308
+this.stoppingTrustRegionRadius = stoppingTrustRegionRadius;#229,13.724012623662533
+public static final double DEFAULT_STOPPING_RADIUS = 1E-8;#60,13.699838418226976
+private static final String PATH_IS_EXPLORED#2475,13.694175519441304
+final double d1 = stplen * (ggsav - HALF * stplen * shs);#1988,13.689340518071102
+final double objectiveValue = computeObjectiveValue(currentBest.toArray());#1683,13.68457179410117
+if (dsq <= xoptsq * ONE_OVER_A_THOUSAND) {#556,13.67771628408721
+final StackTraceElement[] elements = t.getStackTrace();#2455,13.677651343138322
+final ArrayRealVector hs = new ArrayRealVector(n);#485,13.670984910084652
+final int n = currentBest.getDimension();#2302,13.656356409976357
+private static class PathIsExploredException extends RuntimeException {#2472,13.65458369255066
+for (int j = 1; j < nptm; j++) {#2320,13.651455263296763
+for (int j = 0, max = npt - n - 1; j < max; j++) {#1274,13.64812837108489
+upperDifference.setEntry(j, upperBound[j] - currentBest.getEntry(j));#301,13.641998958587646
+if (interpolationPoints.getEntry(nfm, j) == upperDifference.getEntry(j)) {#1678,13.628847667149135
+if (dimension < MINIMUM_PROBLEM_DIMENSION) {#2390,13.626242884883174
+private static final double ONE_OVER_EIGHT = ONE / 8;#71,13.611764355709678
+final int n = currentBest.getDimension();#1586,13.611198902130127
+private static double[] fillNewArray(int n,#2445,13.608055114746094
+if (minDiff < requiredMinDiff) {#2412,13.60761406686571
+if (ibdsav < 0) {#1422,13.607349788441377
+if (interpolationPoints.getEntry(nfm, j) == lowerDifference.getEntry(j)) {#1675,13.60400356565203
+final double[] dsqCrvmin = trsbox(delta, gnew, xbdi, s,#488,13.599209257074305
+final ArrayRealVector s = new ArrayRealVector(n);#484,13.5850830078125
+@Override#233,13.58503786722819
+final double d4 = (-beta * work.getEntry(jp) - tau * lagrangeValuesAtNewPoint.getEntry(jp)) / denom;#2365,13.578272718064328
+private static final double MINUS_ONE = -ONE;#68,13.567809283733368
+final double d1 = tau / sqrtDenom;#2352,13.562201545352028
+private final int numberOfInterpolationPoints;#78,13.560796397072929
+int ibdsav = 0;#1308,13.551817830403646
+double cauchy = Double.NaN;#1435,13.53736670811971
+final int n = currentBest.getDimension();#378,13.535095490907368
+double crvmin = Double.NaN;#1818,13.53091091579861
+final int n = currentBest.getDimension();#1262,13.507390950855456
+interpolationPoints = new Array2DRowRealMatrix(numberOfInterpolationPoints,#2421,13.499095598856607
+for (int k = 0; k < npt; k++) {#1310,13.497157760288404
+final double bigstp = adelt + adelt;#1433,13.47465796470642
+for (int k = 0; k < npt; k++) {#852,13.474312746966326
+return new RealPointValuePair(currentBest.getDataRef(),#246,13.47429843570875
+final int tmp1 = (nfm - np) / n;#1653,13.474211041132609
+for (int k = 0; k < npt; k++) {#1288,13.468767746635105
+prelim(lowerBound, upperBound);#407,13.465911090373993
+if (curv > -gw &&#1518,13.451773143949962
+for (int k = 0; k < npt; k++) {#1609,13.451212261034096
+final double d3 = (alpha * lagrangeValuesAtNewPoint.getEntry(jp) - tau * work.getEntry(jp)) / denom;#2364,13.450218576066037
+private static final double TWO_HUNDRED_FIFTY = 250d;#67,13.448046770962803
+final double fracsq = xoptsq * ONE_OVER_FOUR;#557,13.441661091411815
+final int nfmm = nfm - 1;#1626,13.434327146281367
+final double[] alphaCauchy = altmov(knew, adelt);#672,13.433750661214193
+for (int k = 0; k < npt; k++) {#1120,13.421034177144369
+double presav = ZERO;#1305,13.41926352183024
+for (int m = 0; m < nptm; m++) {#701,13.415685108729772
+modelSecondDerivativesValues.setEntry(ih, (fbeg - fAtInterpolationPoints.getEntry(ipt) - fAtInterpolationPoints.getEntry(jpt) + f) / tmp);#1751,13.41442188849816
+sdec = sth * (angt * dredg - sredg - HALF * sth * temp);#2180,13.41336219375198
+for (int k = 0; k < npt; k++) {#687,13.406079433582446
+gradientAtTrustRegionCenter.setEntry(i, gradientAtTrustRegionCenter.getEntry(i) + modelSecondDerivativesValues.getEntry(ih) * trialStepPoint.getEntry(j));#998,13.395153536312822
+final double tau = lagrangeValuesAtNewPoint.getEntry(knew);#2346,13.38048109641442
+if (fAtInterpolationPoints.getEntry(trustRegionCenterInterpolationPointIndex) <= fsave) {#1196,13.376681691721865
+if (getEvaluations() > npt) {#457,13.376607179641724
+double rho = initialTrustRegionRadius;#424,13.374784416622585
+if (rho > stoppingTrustRegionRadius) {#1171,13.365179657936096
+for (int k = 0; k < npt; k++) {#1508,13.362838550850197
+final double tmp = step * (ONE - step) * distsq;#1405,13.356171301433019
+for (int m = 0; m < nptm; m++) {#950,13.349885259355817
+double crvmin = Double.NaN;#391,13.325824128256905
+if (csave > cauchy) {#1550,13.325262387593588
+hs.setEntry(i, hs.getEntry(i) + modelSecondDerivativesValues.getEntry(ih) * s.getEntry(j));#2251,13.324284386216549
+alternativeNewPoint = new ArrayRealVector(dimension);#2431,13.319789585314298
+lagrangeValuesAtNewPoint.setEntry(trustRegionCenterInterpolationPointIndex,#736,13.319351227052751
+upperDifference = new ArrayRealVector(dimension);#2428,13.310951032136616
+final double fopt = fAtInterpolationPoints.getEntry(trustRegionCenterInterpolationPointIndex);#838,13.309953610102335
+if (gredsq * delsq <= qred * 1e-4 * qred) {#1905,13.306216283278031
+lowerDifference.setEntry(j, lowerBound[j] - currentBest.getEntry(j));#300,13.302072743007114
+double xoptsq = ZERO;#408,13.297132043277516
+double rdprev = 0, rdnext = 0, stplen = 0, stepsq = 0;#1833,13.293664872646332
+if (iact >= 0 && isav == iu) {#2203,13.29093784552354
+modelSecondDerivativesValues.setEntry(ih, TWO * (tmp - gradientAtTrustRegionCenter.getEntry(nfxm)) / diff);#1716,13.279108335387033
+private static final double SIXTEEN = 16d;#66,13.276366740465164
+final int[] nPointsInterval = { dimension + 2, (dimension + 2) * (dimension + 1) / 2 };#2394,13.267242213657925
+gradientAtTrustRegionCenter.setEntry(nfxm, (gradientAtTrustRegionCenter.getEntry(nfxm) * stepb - tmp * stepa) / diff);#1717,13.266387648501638
+rednew = sth * (angt * dredg - sredg - HALF * sth * temp);#2156,13.255476881818074
+temp = Math.sqrt(stepsq * resid + ds * ds);#1933,13.250841395060222
+final double ha = HALF * alpha;#1281,13.248492998235365
+for (int k = 0; k < npt; k++) {#965,13.248333030276829
+private static final long serialVersionUID = 745350979634801853L;#2473,13.246579243586613
+bMatrix.setEntry(nfm, nfxm, -HALF / interpolationPoints.getEntry(nfm - n, nfxm));#1730,13.241353388185855
+private double[] altmov(#1256,13.241128921508789
+modelSecondDerivativesValues.setEntry(ih, modelSecondDerivativesValues.getEntry(ih) + temp * interpolationPoints.getEntry(knew, j));#946,13.240725662748693
+zMatrix.setEntry(nfm, nfxm, Math.sqrt(HALF) / rhosq);#1734,13.239382662671678
+final double tmp = interpolationPoints.getEntry(nfm, ipt - 1) * interpolationPoints.getEntry(nfm, jpt - 1);#1750,13.23642495099236
+gradientAtTrustRegionCenter.setEntry(i,  gradientAtTrustRegionCenter.getEntry(i) + modelSecondDerivativesValues.getEntry(ih) * trustRegionCenterOffset.getEntry(j));#453,13.236319340450663
+lowerDifference = new ArrayRealVector(dimension);#2427,13.227481641267476
+double cauchy = Double.NaN;#388,13.226766003502739
+if (trustRegionCenterOffset.getEntry(i) <= lowerDifference.getEntry(i)) {#1851,13.22560292652675
+if (Math.max(delta, dnorm) > rho) {#1162,13.223227862654062
+final double diff = f - fopt - vquad;#858,13.21960018078486
+if (isav < 0) {#2170,13.200847244262695
+crvmin = MINUS_ONE;#1868,13.199413467856015
+if (trustRegionCenterInterpolationPointIndex != kbase) {#446,13.194815158843994
+for (int k = 0; k < npt; k++) {#2256,13.192582077450222
+for (int k = 0; k < npt; k++) {#2310,13.189373617586883
+newPoint = new ArrayRealVector(dimension);#2430,13.1892532242669
+throw new MathIllegalStateException(LocalizedFormats.SIMPLE_MESSAGE, "bobyqb");#1217,13.17927839817145
+final int nfm = getEvaluations();#1624,13.17853901603005
+originShift = new ArrayRealVector(dimension);#2423,13.178192244635689
+if (Math.min(trustRegionCenterOffset.getEntry(i) - lowerDifference.getEntry(i), glagValue) > ZERO ||#1443,13.176625061035157
+if (numberOfInterpolationPoints < nPointsInterval[0] ||#2395,13.17490364074707
+final Throwable t = new Throwable();#2454,13.168447438408347
+currentBest.setEntry(j, Math.min(Math.max(lowerBound[j],#1672,13.16545718425029
+this.numberOfInterpolationPoints = numberOfInterpolationPoints;#227,13.162377993265787
+trialStepPoint = new ArrayRealVector(dimension);#2432,13.159979820251465
+double requiredMinDiff = 2 * initialTrustRegionRadius;#2406,13.155310017721993
+final double d3 = d2 - diff * slbd;#1372,13.140647098935883
+final double d1 = zMatrix.getEntry(knew, j);#2321,13.137851340430123
+gnew.setEntry(i, gnew.getEntry(i) + (cth - ONE) * hred.getEntry(i) + sth * hs.getEntry(i));#2192,13.135658168792725
+final int np = n + 1;#1592,13.122218906879425
+for (int k = 0; k < npt; k++) {#766,13.112033659412015
+f = computeObjectiveValue(currentBest.toArray());#826,13.110133094787598
+public static final double DEFAULT_INITIAL_RADIUS = 10.0;#58,13.108193198839823
+final double min = Math.min(trustRegionCenterOffset.getEntry(i) + trialStepPoint.getEntry(i),#2222,13.10379526831887
+final int npt = numberOfInterpolationPoints;#1815,13.099158024787902
+if (slbd * tmp > upperDifference.getEntry(i) - trustRegionCenterOffset.getEntry(i)) {#1343,13.092908451954523
+final double d1 = Math.min(ONE_OVER_TEN * dist, delta);#1151,13.085380527708265
+for (int k = 0; k < npt; k++) {#1002,13.08394907366845
+stplen = blen;#1939,13.083039986459832
+numberOfInterpolationPoints > nPointsInterval[1]) {#2396,13.079099478545013
+double vlag = Double.NaN;#1361,13.072974977039156
+zMatrix.setEntry(0, nfxm, Math.sqrt(TWO) / (stepa * stepb));#1733,13.070088386535645
+temp = (rdnext - rdprev) / (redmax + redmax - rdprev - rdnext);#2174,13.068732363837105
+final double alpha = hcol.getEntry(knew);#1280,13.068166528429304
+if (stplen > ZERO) {#1967,13.063048232685436
+int itest = 0;#421,13.062183380126953
+final int kbase = 0;#416,13.05245755513509
+interpolationPoints.setEntry(nfm, jptMinus1, interpolationPoints.getEntry(jpt, jptMinus1));#1665,13.049973130226135
+double fbeg = Double.NaN;#1622,13.044421513875326
+int isav;#1827,13.043692191441854
+if (shs > ZERO) {#1940,13.043147541227794
+if (ntrits > 0) {#868,13.042808260236468
+if (temp <= qred * 1e-4 * qred) {#2064,13.025617292949132
+trustRegionCenterInterpolationPointIndex = 0;#405,13.025222677933542
+throw new MathIllegalStateException(LocalizedFormats.SIMPLE_MESSAGE, "trsbox");#2275,13.01943359876934
+for (int k = 0; k < npt; k++) {#1271,13.019376858420994
+alternativeNewPoint.setEntry(i, Math.max(lowerDifference.getEntry(i), min));#1491,13.019210815429688
+if (newPoint.getEntry(i) == upperDifference.getEntry(i)) {#821,13.01682034054318
+newPoint.setEntry(i, Math.max(min, lowerDifference.getEntry(i)));#2224,13.013044738769532
+final double tmp = zMatrix.getEntry(knew, j);#1275,13.00999136324282
+if (denom < cauchy && cauchy > ZERO) {#747,13.005510792587742
+private static String caller(int n) {#2453,13.005050292381874
+final double temp = fracsq - HALF * sum;#569,13.000213854240648
+throw new NumberIsTooSmallException(dimension, MINIMUM_PROBLEM_DIMENSION, true);#2391,12.99004370287845
+private void prelim(double[] lowerBound,#1582,12.987850482647236
+for (int k = 0; k < npt; k++) {#1032,12.983680571279217
+if (Math.abs(d5) > Math.abs(vlag)) {#1376,12.977983286506252
+for (int m = 0; m < nptm; m++) {#585,12.976551741361618
+final int nh = n * np / 2;#382,12.975533585799369
+if (newPoint.getEntry(i) == lowerDifference.getEntry(i)) {#818,12.968620364730423
+final int nfx = nfm - n;#1625,12.967209815979004
+double resid = 0, delsq = 0, ggsav = 0, tempa = 0, tempb = 0,#1830,12.96384578592637
+final double[] upperBound = getUpperBound();#236,12.954813028636732
+lowerDifference.setEntry(i, lowerDifference.getEntry(i) - trustRegionCenterOffset.getEntry(i));#638,12.954078479688995
+final double boundDiff = boundDifference[j];#299,12.952288959337318
+if (upperDifference.getEntry(j) <= ZERO) {#315,12.94463562965393
+modelSecondDerivativesParameters.setEntry(knew, ZERO);#942,12.941330637250628
+double diffb = ZERO;#427,12.939488093058268
+if (trustRegionCenterOffset.getEntry(i) == lowerDifference.getEntry(i)) {#1048,12.934579516566076
+this(numberOfInterpolationPoints,#211,12.93366533167222
+PathIsExploredException() {#2478,12.926657994588217
+final double frhosq = rho * ONE_OVER_EIGHT * rho;#515,12.922279490364922
+for (int j = 0; j < n; j++) {#1597,12.920261664824052
+gradientAtTrustRegionCenter.setEntry(j, gradientAtTrustRegionCenter.getEntry(j) + modelSecondDerivativesValues.getEntry(ih) * trialStepPoint.getEntry(i));#996,12.920212131657012
+int itermax = 0;#1834,12.918383598327637
+trialStepPoint.setEntry(i, newPoint.getEntry(i) - trustRegionCenterOffset.getEntry(i));#2231,12.914347475225275
+if (newPoint.getEntry(j) == upperDifference.getEntry(j)) {#526,12.91089041640119
+newPoint.setEntry(i, Math.max(lowerDifference.getEntry(i),#1419,12.909664067355068
+trialStepPoint.setEntry(i, trialStepPoint.getEntry(i) + stplen * s.getEntry(i));#1985,12.907582969665528
+bMatrix.setEntry(npt + nfmm, nfmm, -HALF * rhosq);#1709,12.904565086364746
+Math.max(trustRegionCenterOffset.getEntry(i) - upperDifference.getEntry(i), glagValue) < ZERO) {#1444,12.90230297592451
+if (iact == -1 && temp > ZERO) {#1970,12.896977519989013
+for (int j = 0; j < nptm; j++) {#1023,12.896232426166534
+if (lowerDifference.getEntry(j) >= ZERO) {#303,12.89454647898674
+final int npt = numberOfInterpolationPoints;#2303,12.880961322784424
+for (int k = 0; k < npt; k++) {#1599,12.877747553366202
+for (int i = 0, max = n * np / 2; i < max; i++) {#1606,12.875699774424236
+final int npt = numberOfInterpolationPoints;#1587,12.875682878494263
+if (slbd * tmp < lowerDifference.getEntry(i) - trustRegionCenterOffset.getEntry(i)) {#1332,12.87141646941503
+stepb = Math.max(-TWO * initialTrustRegionRadius, lowerDifference.getEntry(nfxm));#1647,12.865490352406221
+private static final double TWO = 2d;#64,12.863797738001896
+final double[] lowerBound = getLowerBound();#235,12.86217541164822
+for (int k = 0; k < npt; k++) {#561,12.860881990002047
+crvmin = dsqCrvmin[1];#491,12.858201464017233
+modelSecondDerivativesParameters.setEntry(k, modelSecondDerivativesParameters.getEntry(k) + temp * zMatrix.getEntry(k, m));#953,12.854027940515886
+for (int j = 0; j < n; j++) {#298,12.852971423755992
+final double errbig = Math.max(deltaOne, diffc);#514,12.851994514465332
+for (int i = 0; i < npt; i++) {#2342,12.851915400961172
+d1 = trustRegionCenterOffset.getEntry(i) - lowerDifference.getEntry(i);#2103,12.851331200710563
+upperDifference.setEntry(i, upperDifference.getEntry(i) - trustRegionCenterOffset.getEntry(i));#639,12.85056616335499
+final int npt = numberOfInterpolationPoints;#1263,12.849375200271606
+return e.getMethodName() + " (at line " + e.getLineNumber() + ")";#2457,12.847984865307808
+for (int i = 0; i < npt; i++) {#2354,12.842630904653799
+if (gqsq < TEN * gisq) {#1077,12.837056573232015
+if (Math.abs(vlag) < ONE_OVER_FOUR) {#1394,12.83220941142032
+gradientAtTrustRegionCenter.setEntry(nfmm, (f - fbeg) / stepa);#1704,12.832200180400502
+bMatrix.setEntry(0, nfxm, -(stepa + stepb) / (stepa * stepb));#1729,12.831775387128195
+for (int j = 0; j < n; j++) {#2361,12.828730193051426
+double subd = adelt / Math.sqrt(distsq);#1321,12.826479400907244
+double denom = ZERO;#432,12.824210611979167
+slbd = (upperDifference.getEntry(i) - trustRegionCenterOffset.getEntry(i)) / tmp;#1344,12.814232059553557
+final int npt = numberOfInterpolationPoints;#379,12.81192226409912
+if (ntrits == -1) {#830,12.809273372996937
+private static final double ZERO = 0d;#62,12.799500158854894
+if (subd * tmp > upperDifference.getEntry(i) - trustRegionCenterOffset.getEntry(i)) {#1336,12.79840017358462
+for (int j = 0, max = npt - np; j < max; j++) {#1611,12.795460079655502
+zMatrix.setEntry(jpt, nfxm, -recip);#1747,12.793829946806937
+final double d1 = trialStepPoint.getEntry(iact);#2002,12.791951748632616
+trustRegionCenterOffset.setEntry(i, interpolationPoints.getEntry(trustRegionCenterInterpolationPointIndex, i));#410,12.787360143661498
+final int jptMinus1 = jpt;#1663,12.78594230722498
+if (Math.abs(tmp) > Math.abs(vlag)) {#1388,12.785876606449936
+stepb = Math.min(TWO * initialTrustRegionRadius, upperDifference.getEntry(nfxm));#1643,12.78520367192287
+double curv = modelSecondDerivativesValues.getEntry((j + j * j) / 2);#530,12.783417069393655
+final double d4 = originShift.getEntry(i) + newPoint.getEntry(i);#814,12.783201769778604
+if (nact >= n - 1) {#2035,12.780300942334263
+ArrayRealVector gnew,#1806,12.778615580664741
+final double deltaOne = lowerBound[j] - currentBest.getEntry(j);#322,12.778507599463829
+if (xbdi.getEntry(i) != ZERO) {#1860,12.777940326266819
+for (int j = 0; j < n; j++) {#714,12.777312425466684
+gradientAtTrustRegionCenter.setEntry(j,  gradientAtTrustRegionCenter.getEntry(j) + modelSecondDerivativesValues.getEntry(ih) * trustRegionCenterOffset.getEntry(i));#451,12.77674347559611
+delta = Math.min(ONE_OVER_TEN * delta, HALF * dist);#1143,12.775157654285431
+gnew.setEntry(i, gradientAtTrustRegionCenter.getEntry(i));#1864,12.774934953258883
+for (int j = 0; j < nptm; j++) {#2311,12.770758424486433
+if (isav < iu) {#2173,12.770466804504395
+if (rednew > redmax) {#2157,12.769879970550537
+for (int j = 0; j < n; j++) {#841,12.769248852362999
+throw new MathIllegalStateException(LocalizedFormats.TRUST_REGION_STEP_FAILED, vquad);#870,12.767394582430521
+final double glagValue = glag.getEntry(i);#1486,12.765188789367675
+final int nfxm = nfx - 1;#1627,12.764368015786875
+if (dnorm > rho) {#862,12.764085020337786
+if (ggfree == ZERO) {#1450,12.760435376848493
+for (int k = 0; k < npt; k++) {#1019,12.759468755414408
+while (true) {#1437,12.757582150972807
+if (dnorm < HALF * rho) {#497,12.754423081874847
+if (ntrits == 0) {#644,12.75399807521275
+double ztest = ZERO;#2309,12.753724988301595
+vquad += HALF * modelSecondDerivativesParameters.getEntry(k) * d2;#856,12.753288745880127
+int nact = 0;#1825,12.752976621900286
+double diffc = ZERO;#428,12.751942825317382
+if (subd * tmp < lowerDifference.getEntry(i) - trustRegionCenterOffset.getEntry(i)) {#1347,12.746275355418524
+private static final double ONE = 1d;#63,12.745315625117374
+lagrangeValuesAtNewPoint.setEntry(k, fAtInterpolationPoints.getEntry(k) - fAtInterpolationPoints.getEntry(trustRegionCenterInterpolationPointIndex));#1020,12.742588371038437
+tempb = upperDifference.getEntry(i) - trustRegionCenterOffset.getEntry(i) - trialStepPoint.getEntry(i);#2087,12.739660802877173
+final int iptMinus1 = ipt;#1662,12.73505652392352
+if (crvmin != ZERO) {#2263,12.731817505576394
+if (ratio <= ONE_OVER_TEN) {#874,12.729750666125067
+dnorm = Math.min(deltaOne, deltaTwo);#496,12.729739886063795
+if (nfm <= 2 * n) {#1630,12.729729609055953
+hred.setEntry(i, cth * hred.getEntry(i) + sth * hs.getEntry(i));#2200,12.727257819885903
+if (sum > distsq) {#1127,12.726550426483154
+for (int i = 0; i < n; i++) {#979,12.724630245795616
+final double recip = 1d / rhosq;#1591,12.723305250469007
+final double d4 = originShift.getEntry(i) + trustRegionCenterOffset.getEntry(i);#1201,12.720098842274059
+for (int j = 0; j < n; j++) {#1671,12.71821979375986
+stplen = Math.min(blen, gredsq / shs);#1942,12.717872549505795
+for (int j = 0; j < n; j++) {#2245,12.716087818145752
+double minDiff = Double.POSITIVE_INFINITY;#2407,12.71122932434082
+if (newPoint.getEntry(j) == lowerDifference.getEntry(j)) {#523,12.710371273319895
+if (trustRegionCenterOffset.getEntry(i) == lowerDifference.getEntry(i)) {#1205,12.707917856615643
+for (int m = 0; m < nptm; m++) {#967,12.703256502747536
+hs.setEntry(j, hs.getEntry(j) + modelSecondDerivativesValues.getEntry(ih) * s.getEntry(i));#2249,12.703230240305917
+if (ntrits == -1) {#1156,12.703174807808615
+double angt = 0, qred;#1826,12.702333955203786
+glag.setEntry(i, bMatrix.getEntry(knew, i));#1286,12.697778486436412
+if (iact >= 0) {#1995,12.697691392898559
+work1.setEntry(j, -HALF * sumpq * trustRegionCenterOffset.getEntry(j));#621,12.69745480760615
+for (int j = 0; j < n; j++) {#989,12.694728056589762
+final double tmp = interpolationPoints.getEntry(k, i) - trustRegionCenterOffset.getEntry(i);#1317,12.691482702891031
+final double alpha = work.getEntry(knew);#2345,12.688226699829102
+double sum = (fracsq * sumz - HALF * sumw) * trustRegionCenterOffset.getEntry(j);#594,12.683878018305851
+int ksav = 0;#1307,12.676420620509557
+newPoint.setEntry(i, newPoint.getEntry(i) - trustRegionCenterOffset.getEntry(i));#637,12.671547970873243
+if (trustRegionCenterOffset.getEntry(i) == upperDifference.getEntry(i)) {#1208,12.667496636856434
+jpt = nfm - tmp1 * n - n;#1654,12.666943615880506
+temp = shs + angt * (angt * dhd - dhs - dhs);#2179,12.662856101989746
+for (int k = 0; k < npt; k++) {#703,12.659026592008528
+for (int k = 0; k < npt; k++) {#897,12.655322851453509
+int ntrits = 0;#420,12.650567889213562
+sth = (angt + angt) / (ONE + angt * angt);#2178,12.648644834756851
+redmax = 0, dredsq = 0, redsav = 0, gredsq = 0, rednew = 0;#1831,12.646400451660156
+double ratio = ZERO;#433,12.646006652287074
+curv < -gw * (ONE + Math.sqrt(TWO))) {#1519,12.64273952035343
+if (ntrits == 0) {#1100,12.641238121759324
+if (modelSecondDerivativesParameters.getEntry(k) != ZERO) {#2257,12.637763159615654
+double adelt = ZERO;#431,12.637226231892903
+vquad += modelSecondDerivativesValues.getEntry(ih) * temp;#848,12.637203241649427
+final double tmp = interpolationPoints.getEntry(k, i) - trustRegionCenterOffset.getEntry(i);#1330,12.63707497006371
+final double d1 = gw + HALF * curv;#1531,12.637061053308948
+isav = -1;#2149,12.636770566304525
+interpolationPoints.setEntry(nfm, iptMinus1, interpolationPoints.getEntry(ipt, iptMinus1));#1664,12.636157319900837
+double diffa = ZERO;#426,12.633908081054688
+double step = Double.NaN;#1306,12.632365107536316
+if (upperDifference.getEntry(nfxm) == ZERO) {#1646,12.630228318666157
+double beta = ZERO;#430,12.628232479095459
+for (int k = 0; k < npt; k++) {#707,12.6280915352606
+upperDifference.setEntry(j, Math.max(deltaOne, initialTrustRegionRadius));#312,12.62393237269202
+final double d6 = zMatrix.getEntry(knew, j) / d4;#2329,12.62331755956014
+if (numEval <= 2 * n + 1) {#1701,12.62238395690918
+vquad += trialStepPoint.getEntry(j) * gradientAtTrustRegionCenter.getEntry(j);#842,12.617298924922943
+final double den = beta * hdiag + d2 * d2;#778,12.615227275424534
+for (int i = 0; i < n; i++) {#1849,12.614090551029552
+for (int i = 0, max = Math.max(npt, nh); i < max; i++) {#1081,12.613999967989715
+gradientAtTrustRegionCenter.setEntry(i, gradientAtTrustRegionCenter.getEntry(i) + diff * work1.getEntry(i));#980,12.613122356181242
+if (temp < stplen) {#1957,12.612493745211896
+final double scale = -gw / curv;#1520,12.612342541034405
+final double temp = diff * zMatrix.getEntry(knew, m);#951,12.60917920777292
+temp = Math.sqrt(temp);#2067,12.60907336643764
+originShift.setEntry(j, currentBest.getEntry(j));#1598,12.606540713991437
+if (iterc > itcsav) {#2266,12.605982780456543
+final double tmp = trustRegionCenterOffset.getEntry(i) + scale * work1.getEntry(i);#1522,12.605950429704453
+gnew.setEntry(i, gnew.getEntry(i) + stplen * hs.getEntry(i));#1979,12.604808963074976
+double dsq = Double.NaN;#390,12.603669054367963
+case 90: {#554,12.603312889734903
+ggsav = gredsq;#1976,12.601358691851297
+work.setEntry(jp, bMatrix.getEntry(knew, j));#2363,12.599549674987793
+final double glagValue = glag.getEntry(i);#1441,12.598677523930867
+ipt = jpt + tmp1;#1655,12.59687313079834
+if (Math.abs(d1) > Math.abs(vlag)) {#1366,12.594242095947266
+final double d4 = distsq / delsq;#787,12.59407363831997
+bMatrix.setEntry(npt + i, j, bMatrix.getEntry(npt + j, i));#631,12.585883121490479
+lagrangeValuesAtNewPoint.setEntry(k, lagrangeValuesAtNewPoint.getEntry(k) + sum * zMatrix.getEntry(k, m));#708,12.583643980193557
+if (sdec <= ZERO) {#2181,12.578738030933199
+++ntrits;#545,12.57605676090016
+fAtInterpolationPoints.setEntry(nfm, f);#1686,12.574927188732007
+for (int k = 0; k < npt; k++) {#1276,12.574394508644387
+if (f < fopt) {#985,12.574334526062012
+if (bdtest < bdtol) {#529,12.568008534113567
+if (ntrits == 0) {#743,12.56375081198556
+currentBest.setEntry(i, Math.min(d1, d2));#817,12.563502704395967
+slbd = (lowerDifference.getEntry(i) - trustRegionCenterOffset.getEntry(i)) / tmp;#1333,12.562224967806946
+if (!isMinimize)#828,12.560389863120186
+final double dist = Math.sqrt(distsq);#1140,12.557708806005017
+ratio = rho / stoppingTrustRegionRadius;#1173,12.553595436943901
+for (int i = 0; i < n; i++) {#676,12.553361305823692
+if (f < fopt) {#890,12.552574157714844
+for (int m = 0; m < nptm; m++) {#771,12.547123697068956
+private static final double TEN = 10d;#65,12.54637326513018
+if (Math.abs(d1) > ztest) {#2322,12.543313026428223
+double dsq = Double.NaN;#1817,12.542163624482995
+final double d7 = d5 * zMatrix.getEntry(i, 0) + d6 * zMatrix.getEntry(i, j);#2331,12.541875353226295
+nact = 0;#1848,12.538046543414776
+if (ratio > ZERO) {#1159,12.53737990061442
+redsav = ZERO;#2150,12.53459448284573
+distsq = deltaOne * deltaOne;#501,12.53100508909959
+double temp = 0, xsav = 0, xsum = 0, angbd = 0, dredg = 0, sredg = 0;#1828,12.529498332586044
+ArrayRealVector xbdi,#1807,12.5275660314058
+double deltaTwo = Math.sqrt(dsq);#495,12.525970935821533
+boundDifference[i] = upperBound[i] - lowerBound[i];#2409,12.525284576416016
+vlag = slbd * (dderiv - slbd * diff);#1364,12.524157285690308
+double curv = ZERO;#1507,12.522868739234077
+final double d4 = d2 - diff * subd;#1373,12.522166548104122
+for (int j = 0; j < n; j++) {#521,12.519195206960042
+lowerDifference.setEntry(j, -initialTrustRegionRadius);#309,12.516431053479513
+int iact = -1;#1824,12.514784940083821
+for (int i = 0; i < n; i++) {#409,12.511413855986161
+final double d5 = zMatrix.getEntry(knew, 0) / d4;#2328,12.51136224799686
+modelSecondDerivativesParameters.setEntry(k, ZERO);#1610,12.510348072758427
+double dnorm = ZERO;#434,12.509274228413899
+double alpha = Double.NaN;#389,12.508561670780182
+rho = Math.sqrt(ratio) * stoppingTrustRegionRadius;#1177,12.506742979350843
+gradientAtTrustRegionCenter.setEntry(i, gradientAtTrustRegionCenter.getEntry(i) + temp * interpolationPoints.getEntry(k, i));#1009,12.505240519841513
+final double d2 = HALF * dderiv;#1371,12.503684418542045
+if (ntrits == -1) {#1190,12.502903938293457
+resid = delsq;#1918,12.50263926562141
+for (int i = 0; i < n; i++) {#1485,12.500895940340483
+ratio = (f - fopt) / vquad;#872,12.500894035611834
+alternativeNewPoint.setEntry(i, Math.max(lowerDifference.getEntry(i),#1523,12.50072990145002
+currentBest.setEntry(j, lowerBound[j] + initialTrustRegionRadius);#308,12.500065541267395
+zMatrix.setEntry(i, j, d5 * zMatrix.getEntry(i, j) - d6 * zMatrix.getEntry(i, 0));#2332,12.493098359358939
+final double deltaOne = upperBound[j] - currentBest.getEntry(j);#311,12.488619400904728
+final double densav = denom;#892,12.486564942768641
+private void update(#2295,12.485705614089966
+final double d1 = HALF * gw * scale;#1527,12.48083283983428
+beta = gredsq / ggsav;#2020,12.480242142310509
+final double hDelta = HALF * delta;#873,12.479637127656202
+trialStepPoint.setEntry(i, cth * trialStepPoint.getEntry(i) + sth * s.getEntry(i));#2194,12.479480385780334
+bMatrix.setEntry(nfm - n, nfxm,#1731,12.479164559500559
+final double d1 = subd * (dderiv - subd * diff);#1365,12.47822093963623
+double fsave = fAtInterpolationPoints.getEntry(0);#415,12.476663251717886
+if (lowerDifference.getEntry(nfxm) == ZERO) {#1642,12.475946476584987
+final double d1 = Math.max(ZERO, gradientAtTrustRegionCenter.getEntry(i));#1059,12.473620323424644
+final double d4 = Math.sqrt(d2 * d2 + d3 * d3);#2327,12.472496308778462
+work.setEntry(i, zMatrix.getEntry(knew, 0) * zMatrix.getEntry(i, 0));#2343,12.470431234778427
+int isbd = ilbd;#1360,12.469635009765625
+sredg = -temp;#2075,12.469633805124383
+if (ntrits > 0) {#1018,12.46163899557931
+currentBest.setEntry(j, upperBound[j] - initialTrustRegionRadius);#320,12.460286808013915
+if (upperDifference.getEntry(nfmm) == ZERO) {#1634,12.456094566144442
+default: {#2274,12.45393774726174
+dx += trialStepPoint.getEntry(j) * trustRegionCenterOffset.getEntry(j);#729,12.453654941759611
+diffa = Math.abs(diff);#861,12.451069332304455
+if (xbdi.getEntry(i) == MINUS_ONE) {#2225,12.450319723649459
+for (int i = 0; i < n; i++) {#1285,12.450220108032227
+case 360: {#808,12.448349475860596
+int ipt = 0;#1620,12.448170730045863
+final double tmp = subd * (ONE - subd);#1387,12.441599451262375
+if (s.getEntry(iact) < ZERO) {#1998,12.440539913792763
+double csave = ZERO;#1436,12.435796419779459
+for (int i = 0; i < n; i++) {#2041,12.430412732637846
+tempa = trustRegionCenterOffset.getEntry(i) + trialStepPoint.getEntry(i) - lowerDifference.getEntry(i);#2086,12.430094458022207
+final double d3 = zMatrix.getEntry(knew, j);#2326,12.429468840360641
+this.initialTrustRegionRadius = initialTrustRegionRadius;#228,12.429156996987082
+modelSecondDerivativesValues.setEntry(i, ZERO);#1607,12.426332049899631
+final double d3 = interpolationPoints.getEntry(k, j) - trustRegionCenterOffset.getEntry(j);#782,12.426293504004384
+if (sdec > qred * .01) {#2212,12.424541433652243
+if (iflag == 1) {#1515,12.424387979507447
+double f = ZERO;#429,12.41862576348441
+for (int i = 0; i < n; i++) {#1949,12.416224406315731
+final double diff = dderiv - ONE;#1363,12.414571597025944
+temp *= modelSecondDerivativesParameters.getEntry(k);#1007,12.413941383361816
+minDiff = Math.min(minDiff, boundDifference[i]);#2410,12.413407598223005
+for (int i = 0; i < n; i++) {#2191,12.412988736079289
+double biglsq = ZERO;#436,12.412774085998535
+if (tmp1 > ZERO) {#1456,12.407382193065825
+for (int i = 0; i < n; i++) {#2084,12.406121840843788
+if (resid <= ZERO) {#1930,12.405743689764114
+final int ih = nfx * (nfx + 1) / 2 - 1;#1713,12.40326207723373
+lowerDifference.setEntry(j, Math.min(deltaOne, deltaTwo));#324,12.403155660629272
+for (int k = 0; k < npt; k++) {#719,12.401048306495912
+lagrangeValuesAtNewPoint.setEntry(k, work2.getEntry(k) * zMatrix.getEntry(k, m));#590,12.400885547291148
+crvmin = Math.min(crvmin,temp);#1971,12.400820563821231
+double scaden = ZERO;#435,12.399704297383627
+for (int j = 0; j < n; j++) {#971,12.398601881663005
+for (int k = 0; k < npt; k++) {#952,12.394978953946021
+if (stepsq == ZERO) {#1898,12.3932283946446
+temp = gredsq * dredsq - dredg * dredg;#2063,12.390364788196704
+gisq += d2 * d2;#1055,12.389274078256944
+nfsav = getEvaluations();#1183,12.389100494384765
+if (beta == ZERO) {#1901,12.387140321731568
+presav = predsq;#1408,12.38443608717485
+d1 = upperDifference.getEntry(i) - trustRegionCenterOffset.getEntry(i);#2114,12.38378915121389
+qred += sdec;#2202,12.381022930145264
+case 190: {#2216,12.380390405654907
+currentBest.setEntry(i, Math.min(d1, d2));#1204,12.37893859963668
+-bMatrix.getEntry(0, nfxm) - bMatrix.getEntry(nfm, nfxm));#1732,12.378523810965117
+final double tmp2 = trustRegionCenterOffset.getEntry(i) - step * glag.getEntry(i);#1461,12.375344333648682
+case 90: {#2024,12.374082485834757
+final int ih = ipt * (ipt - 1) / 2 + jpt - 1;#1749,12.373535478437269
+case 50: {#1916,12.371831019719442
+for (int k = 0; k < npt; k++) {#588,12.371674728393554
+double distsq = ZERO;#437,12.370669186115265
+final double temp = Math.max(ONE, d4 * d4);#788,12.370358255174425
+for (int k = 0; k < npt; k++) {#599,12.369661820240509
+double hdiag = ZERO;#770,12.368884904044014
+if (gradientAtTrustRegionCenter.getEntry(i) >= ZERO) {#1852,12.367559727500467
+for (int i = 0; i < n; i++) {#1978,12.366244220733643
+if (delta <= rho * 1.5) {#884,12.36603516545789
+if (xbdi.getEntry(i) == ZERO) {#2085,12.365309023088024
+final double bdtol = errbig / rho;#520,12.364084839820862
+for (int i = 0; i < n; i++) {#1329,12.362849107155434
+if (xbdi.getEntry(i) == ZERO) {#2042,12.361462162386987
+if (gradientAtTrustRegionCenter.getEntry(i) <= ZERO) {#1856,12.359453762278838
+final double d5 = d2 * d2 / diff;#1375,12.358882557262074
+trialStepPoint.setEntry(i, newPoint.getEntry(i) - trustRegionCenterOffset.getEntry(i));#677,12.357037435878407
+double dderiv = ZERO;#1314,12.356723976135253
+if (work1.getEntry(i) == bigstp) {#1487,12.355272382497787
+printMethod(); // XXX#1812,12.353111707247221
+double distsq = ZERO;#1315,12.351921844482423
+gredsq = ZERO;#2040,12.342008992245322
+for (int i = 0; i < n; i++) {#2219,12.341728723966158
+final double sumin = Math.min(ONE, subd);#1325,12.340707063674927
+shs = ZERO;#1920,12.3377882109748
+for (int k = 0; k < npt; k++) {#1044,12.336460168021066
+printState(100); // XXX#2034,12.333392946343674
+gradientAtTrustRegionCenter.setEntry(i, gradientAtTrustRegionCenter.getEntry(i) + temp * interpolationPoints.getEntry(k, i));#465,12.332203328609467
+for (int i = 0; i < n; i++) {#810,12.331674355726976
+final double d1 = Math.min(ZERO, gradientAtTrustRegionCenter.getEntry(i));#1051,12.327976094915511
+final double d1 = Math.max(d3, d4);#815,12.323149342690744
+curv += hcol.getEntry(k) * tmp * tmp;#1513,12.322746615256033
+double sum = -HALF * xoptsq;#563,12.322633642138857
+-zMatrix.getEntry(0, nfxm) - zMatrix.getEntry(nfm, nfxm));#1737,12.321667108379426
+alternativeNewPoint.setEntry(i, lowerDifference.getEntry(i));#1495,12.32042744285182
+final int np = n + 1;#380,12.3198601603508
+final double temp = pqold * interpolationPoints.getEntry(knew, i);#944,12.317115055190193
+iact = -1;#2083,12.315646224551731
+s.setEntry(i, (dredg * trialStepPoint.getEntry(i) - dredsq * gnew.getEntry(i)) / temp);#2070,12.313798802239555
+double bsum = ZERO;#712,12.31095404373972
+if (subd > HALF) {#1393,12.306634712219239
+final StackTraceElement e = elements[n];#2456,12.30358808919003
+suma += zMatrix.getEntry(knew, m) * zMatrix.getEntry(k, m);#968,12.300723701053196
+zMatrix.setEntry(nfm, nfxm, recip);#1745,12.299185752868652
+for (int i = 0; i < n; i++) {#1316,12.297516345977783
+iact = -1;#1948,12.296950605180529
+if (temp * den > scaden) {#789,12.295199871063232
+work1.setEntry(j, work1.getEntry(j) + modelSecondDerivativesParameters.getEntry(k) * interpolationPoints.getEntry(k, j));#623,12.294808204357441
+for (int j = 0; j < n; j++) {#620,12.29304895401001
+double temp = trialStepPoint.getEntry(i) * trialStepPoint.getEntry(j);#844,12.292228607904343
+work3.setEntry(k, suma * (HALF * suma + sumb));#696,12.287643683584113
+final double min = Math.min(upperDifference.getEntry(i),#1489,12.287363052368164
+vlag *= dderiv;#1400,12.285671750704447
+fAtInterpolationPoints.setEntry(nfm, fAtInterpolationPoints.getEntry(nfm - n));#1720,12.285370366913932
+if (crvmin > ZERO &&#516,12.28515842437744
+for (int j = 0; j < n; j++) {#1290,12.284871413157536
+if (npt < numEval + n) {#1705,12.283322110772133
+case 100: {#2033,12.282965024312338
+final double d1 = lagrangeValuesAtNewPoint.getEntry(knew);#745,12.282896013820872
+case 60: {#480,12.28233782450358
+for (int i = 0; i < n; i++) {#1417,12.278398101980036
+final double delsq = delta * delta;#762,12.276698265075684
+double gw = ZERO;#1484,12.27577445381566
+alternativeNewPoint.setEntry(i, upperDifference.getEntry(i));#1497,12.275145380120529
+diffb = diffa;#860,12.274646282196045
+cauchy = alphaCauchy[1];#674,12.273165288178816
+final double d2 = lagrangeValuesAtNewPoint.getEntry(k);#777,12.27314499262217
+final double d3 = distsq / delsq;#915,12.268002907435099
+final int jp = npt + j;#723,12.264856118422289
+double wfixsq = ZERO;#1438,12.264711856842041
+gredsq = ZERO;#2190,12.26333939401727
+dsq = dsqCrvmin[0];#490,12.26303295467211
+stepb = -initialTrustRegionRadius;#1641,12.262571907043457
+qred = ZERO;#1867,12.261613028390068
+case 150: {#2131,12.259808858235678
+vlag = slbd * (ONE - slbd);#1386,12.25721263885498
+final double d1 = interpolationPoints.getEntry(k, j) - trustRegionCenterOffset.getEntry(j);#1124,12.257001552175968
+glag.setEntry(i, glag.getEntry(i) + tmp * interpolationPoints.getEntry(k, i));#1295,12.255919373553732
+distsq = Math.max(d1 * d1, d2 * d2);#1115,12.255634188652039
+fAtInterpolationPoints.setEntry(knew,  f);#960,12.251904691968646
+printMethod(); // XXX#2300,12.251174706679125
+for (int k = 0; k < npt; k++) {#458,12.250442613874164
+lagrangeValuesAtNewPoint.setEntry(i, sum * interpolationPoints.getEntry(k, i) + temp * trustRegionCenterOffset.getEntry(i));#572,12.248193856208555
+lagrangeValuesAtNewPoint.getEntry(trustRegionCenterInterpolationPointIndex) + ONE);#737,12.247738897800446
+stpsav = step;#1410,12.240965323014693
+if (k == trustRegionCenterInterpolationPointIndex) {#1311,12.238438624602098
+xoptsq += deltaOne * deltaOne;#413,12.237868806590205
+for (int j = 0; j < n; j++) {#1510,12.231702629725138
+interpolationPoints.setEntry(nfm, nfmm, stepa);#1638,12.231221199035645
+for (int i = 0; i < n; i++) {#1440,12.229714100177471
+if (s.getEntry(i) != ZERO) {#1950,12.228402709960937
+double dx = ZERO;#713,12.227982070710924
+) {#2299,12.22764253616333
+for (int i = 0; i < n; i++) {#961,12.225759469545805
+final int ip = npt + i;#573,12.224966829473322
+ntrits = 0;#1148,12.223587782486625
+if (scaden <= HALF * biglsq) {#928,12.223084912155613
+temp = (upperDifference.getEntry(i) - xsum) / s.getEntry(i);#1953,12.222778290510178
+for (int k = 0; k < npt; k++) {#1028,12.221811267307826
+if (knew >= 0) {#1139,12.220728397369385
+xsum = trustRegionCenterOffset.getEntry(i) + trialStepPoint.getEntry(i);#1951,12.218523025512695
+for (int i = 0; i < n; i++) {#1921,12.217957643362192
+for (int i = 0; i < n; i++) {#1042,12.216779152552286
+itcsav = iterc;#2055,12.215380718833522
+lowerDifference.setEntry(j, -boundDiff);#317,12.215277729612408
+double deltaOne = delta;#494,12.213059955173069
+dderiv += glag.getEntry(i) * tmp;#1318,12.212410388454314
+if (ipt > n) {#1656,12.211675436600395
+blen = (temp - ds) / stepsq;#1935,12.206234241354055
+final double den = beta * hdiag + d1 * d1;#906,12.204725003242492
+if (sdec <= qred * .01) {#2017,12.20185957636152
+sumb += interpolationPoints.getEntry(k, j) * trustRegionCenterOffset.getEntry(j);#693,12.20011207792494
+++nact;#2093,12.199498891830444
+for (int i = 0; i < n; i++) {#1197,12.195344893137614
+zMatrix.setEntry(ipt, nfxm, -recip);#1746,12.194620430469513
+for (int k = 0; k < npt; k++) {#1025,12.194541263580323
+cauchy = d1 * d1;#1528,12.192902014805721
+f = fAtInterpolationPoints.getEntry(trustRegionCenterInterpolationPointIndex);#1212,12.190894668166703
+case 720: {#1194,12.190350691477457
+int knew = 0;#422,12.188692092895508
+double d2 = s.getEntry(i);#2100,12.187754354169291
+iu = (int) (angbd * 17. + 3.1);#2151,12.18773080562723
+final double d1 = trialStepPoint.getEntry(j);#716,12.18629355430603
+gw += glagValue * work1.getEntry(i);#1499,12.186132461793962
+(lowerDifference.getEntry(i) - trustRegionCenterOffset.getEntry(i)) / tmp);#1350,12.185611307621002
+work1.setEntry(i, lowerDifference.getEntry(i) - trustRegionCenterOffset.getEntry(i));#1463,12.180451103619166
+final double tmp = (f - fbeg) / stepb;#1714,12.179075568062919
+final double d2 = zMatrix.getEntry(knew, 0);#2324,12.170016378164291
+) {#1259,12.169991334279379
+double ds;#1821,12.168819109598795
+alternativeNewPoint.setEntry(i, trustRegionCenterOffset.getEntry(i));#1493,12.168568048721704
+upperDifference.setEntry(j, initialTrustRegionRadius);#325,12.167719841003418
+bMatrix.setEntry(jp, (i - npt), bMatrix.getEntry(i, j));#2370,12.166542454199357
+diffc = diffb;#859,12.165630022684732
+temp = Math.sqrt(temp) - s.getEntry(i);#2106,12.164895464734334
+dredsq = ZERO;#2038,12.163996325598823
+modelSecondDerivativesValues.setEntry(ih,#627,12.162031367018416
+printState(90); // XXX#555,12.161324752004523
+for (int m = 0; m < nptm; m++) {#899,12.157671546936035
+work1.setEntry(i, upperDifference.getEntry(i) - trustRegionCenterOffset.getEntry(i));#1468,12.156529426574707
+case 230: {#685,12.153240442276001
+private void setup(double[] lowerBound,#2382,12.150129685035118
+printState(720); // XXX#1195,12.149952085394608
+double[] init = getStartPoint();#2386,12.147053182125092
+crvmin = ZERO;#2026,12.14640326248972
+temp = shs / stepsq;#1969,12.143608252207438
+bMatrix.setEntry(nfm, nfmm, oneOverStepA);#1708,12.14130213147118
+final double d2 = interpolationPoints.getEntry(k, j) - newPoint.getEntry(j);#910,12.139649966977677
+upperDifference.setEntry(j, boundDiff);#306,12.13867101073265
+for (int i = 0; i < n; i++) {#1521,12.138670094807942
+if (d3 * d4 < ZERO) {#1374,12.137431195804051
+int jpt = 0;#1621,12.13680178778512
+double gisq = ZERO;#1041,12.134344299634298
+ztest = Math.max(ztest, Math.abs(zMatrix.getEntry(k, j)));#2313,12.133662747173775
+if (xbdi.getEntry(i) == ZERO) {#1922,12.13208241616526
+for (int j = 0; j <= i; j++) {#945,12.131543731689453
+++itest;#1076,12.127958822250367
+xoptsq += d1 * d1;#993,12.12781460054459
+deltaOne = Math.max(diffa, diffb);#513,12.127087839718524
+dredg += trialStepPoint.getEntry(i) * gnew.getEntry(i);#2046,12.126000939345941
+cauchy = ZERO; // XXX Useful statement?#752,12.125127673149109
+cth = (ONE - angt * angt) / (ONE + angt * angt);#2177,12.123635123757754
+int ih = 0;#840,12.123571607801649
+for (int i = 0; i < ndim; i++) {#1602,12.12270379949499
+if (angbd * temp > tempa) {#2107,12.122478348868233
+dredg += trialStepPoint.getEntry(i) * gnew.getEntry(i);#2195,12.120337672349883
+printState(360); // XXX#809,12.116398911727103
+ggfree += glagValue * glagValue;#1447,12.114501059055328
+redmax = ZERO;#2148,12.113836659325493
+if (xbdi.getEntry(i) == ZERO) {#2193,12.113216492437548
+ztest *= 1e-20;#2316,12.110406651216394
+if (xbdi.getEntry(i) == ZERO) {#2137,12.109520481478784
+temp = shs + angt * (angt * dhd - dhs - dhs);#2155,12.108635361130172
+for(;;) {#1877,12.107792927668644
+final double diff = stepb - stepa;#1715,12.10730725924174
+final int jp = npt + j;#2362,12.104407592253251
+trustRegionCenterOffset.setEntry(j, newPoint.getEntry(j));#990,12.10338544845581
+sum += bMatrix.getEntry(k, j) * trialStepPoint.getEntry(j);#694,12.099970806212653
+for (int j = 0; j < n; j++) {#448,12.09927806854248
+for (int i = 0; i < n; i++) {#2136,12.099242228728075
+for (int j = 0; j < n; j++) {#1122,12.099179983139038
+tmp *= hcol.getEntry(k);#1293,12.098195221113121
+interpolationPoints.setEntry(k, j, interpolationPoints.getEntry(k, j) - trustRegionCenterOffset.getEntry(j));#624,12.094153839245177
+sdec = ZERO;#1966,12.088488631778294
+case 650: {#1117,12.085264603296915
+trialStepPoint.setEntry(i, newPoint.getEntry(i) - trustRegionCenterOffset.getEntry(i));#750,12.08396891447214
+vlag = ONE_OVER_FOUR;#1396,12.081909319933724
+for (int j = 0; j < n; j++) {#691,12.08149921099345
+final double d1 = gradientAtTrustRegionCenter.getEntry(i);#1066,12.08118999004364
+double vquad = ZERO;#839,12.077286318728799
+delta = Math.min(hDelta, dnorm);#876,12.07552333176136
+originShift.setEntry(i, originShift.getEntry(i) + trustRegionCenterOffset.getEntry(i));#636,12.073369198657097
+final double deltaOne = trustRegionCenterOffset.getEntry(i);#412,12.073152383168539
+case 20: {#1879,12.072760502497355
+throw new PathIsExploredException(); // XXX#1648,12.069251032436595
+for (int k = 0; k < npt; k++) {#622,12.06600889478411
+boundDifference = new double[dimension];#2404,12.062600696788115
+if (itest >= 3) {#1080,12.062222242355347
+) {#1811,12.061174472173056
+final double d2 = d1 * d1; // "d1" must be squared first to prevent test failures.#855,12.06076132378927
+for (int i = 0; i < n; i++) {#943,12.0595472409175
+printMethod(); // XXX#287,12.057253617506762
+upperDifference.setEntry(j, ZERO);#318,12.054522603750229
+final double d2 = Math.min(ZERO, sum);#1054,12.051100580315842
+modelSecondDerivativesValues.setEntry(i, ZERO);#1089,12.05012209470882
+int ilbd = 0;#1323,12.048837423324585
+int iflag = 0;#1434,12.04750919342041
+angt = angbd * (isav + HALF * temp) / iu;#2175,12.046228000095912
+for (int i = 0; i < npt; i++) {#2330,12.044563201165968
+for (int i = 0; i < n; i++) {#1459,12.043680747350058
+final double d5 = lagrangeValuesAtNewPoint.getEntry(k);#796,12.041924102886304
+final double d1 = trustRegionCenterOffset.getEntry(j);#992,12.036199351719448
+final double deltaTwo = -initialTrustRegionRadius;#323,12.035723969340324
+final double d1 = trialStepPoint.getEntry(i);#2233,12.034830856323243
+if (vquad >= ZERO) {#869,12.033180046081544
+if (nfm >= 1 &&#1631,12.03270839608234
+for (int i = 0; i < n; i++) {#2068,12.032465146138119
+if (numEval == 1) {#1688,12.032135327657064
+redsav = rednew;#2164,12.032108133489436
+sumpq += modelSecondDerivativesParameters.getEntry(k);#562,12.02982857492235
+return new double[] { dsq, crvmin };#2236,12.029022216796875
+double stepb = 0;#1629,12.028937074873182
+final double d3 = lowerBound[i];#813,12.028144983144907
+double delta = rho;#425,12.026100839887347
+if (f < fAtInterpolationPoints.getEntry(nfm - n)) {#1719,12.025862628763372
+double d1 = trialStepPoint.getEntry(i);#2098,12.02449573170055
+if (xbdi.getEntry(i) == ONE) {#2228,12.023524729410807
+xbdi.setEntry(iact, ONE);#1997,12.02312513760158
+gradientAtTrustRegionCenter.setEntry(i, lagrangeValuesAtNewPoint.getEntry(npt + i));#1083,12.017357684947827
+case 210: {#659,12.01590347290039
+xbdi.setEntry(i, ZERO);#1850,12.00848913192749
+for (int i = 0; i < n; i++) {#1886,12.00812138043917
+angbd = ONE;#2082,12.003227458280676
+xoptsq = ZERO;#987,12.00239622592926
+delsq = delta * delta;#1866,12.00115795135498
+case 30: {#1883,11.999990701675415
+(upperDifference.getEntry(i) - trustRegionCenterOffset.getEntry(i)) / tmp);#1339,11.998505756258965
+int iterc;#1829,11.997770547866821
+if (s.getEntry(i) > ZERO) {#1952,11.995568008983836
+if (xbdi.getEntry(i) == ZERO) {#2069,11.991701387589977
+temp = (lowerDifference.getEntry(i) - xsum) / s.getEntry(i);#1955,11.990741223096848
+newPoint.setEntry(i, alternativeNewPoint.getEntry(i));#749,11.988650508043243
+final double delsq = delta * delta;#893,11.985765358497357
+lagrangeValuesAtNewPoint.setEntry(jp, sum);#727,11.983780638376873
+int iu;#1822,11.980684558550516
+for (int j = 0; j < n; j++) {#780,11.980033678167006
+printState(30); // XXX#1884,11.978355106554533
+printMethod(); // XXX#2384,11.976067249591534
+temp = Math.sqrt(temp) + s.getEntry(i);#2117,11.972978650069818
+for (int i = 0; i < n; i++) {#635,11.97063234647115
+printMethod(); // XXX#1260,11.970184032733624
+return new double[] { alpha, cauchy };#1557,11.96829308961567
+lagrangeValuesAtNewPoint.setEntry(k, sum);#697,11.968117046356202
+if (temp * den > scaden) {#917,11.96771063524134
+setup(lowerBound, upperBound);#239,11.967140316963196
+for (int i = 0; i < iu; i++) {#2152,11.965356809121591
+double slbd = -subd;#1322,11.962504458427428
+temp = ssq - d1 * d1;#2104,11.960994074421544
+interpolationPoints.setEntry(nfm - n, nfxm, stepb);#1725,11.959230565010234
+bsum += sum * trialStepPoint.getEntry(j);#722,11.959028244018555
+final double temp = suma * sumb;#974,11.957095512977013
+lagrangeValuesAtNewPoint.setEntry(npt + i, sum);#1070,11.955543956241092
+hs.setEntry(i, hs.getEntry(i) + tmp.getEntry(k) * interpolationPoints.getEntry(k, i));#2259,11.953364666302999
+final int tmp2 = jpt;#1657,11.953362328665596
+if (numEval >= 2 &&#1702,11.951810399691263
+DEFAULT_INITIAL_RADIUS,#212,11.947954559326172
+zMatrix.setEntry(nfm - n, nfxm,#1736,11.946669033595494
+for (int i = 0; i < dimension; i++) {#2408,11.942988048900258
+bsum += sum * trialStepPoint.getEntry(j);#728,11.94061082204183
+if (ds < ZERO) {#1934,11.939824867248536
+if (iflag == 0) {#1539,11.939622735977172
+dhs += trialStepPoint.getEntry(i) * hs.getEntry(i);#2139,11.938327859087687
+beta -= sum * sum;#706,11.929972345178777
+if (k == trustRegionCenterInterpolationPointIndex) {#767,11.929787495557
+for (int j = 0; j < n; j++) {#593,11.929711201611687
+zMatrix.setEntry(0, nfxm, recip);#1744,11.927545515696208
+bMatrix.getEntry(i, j) + d3 * lagrangeValuesAtNewPoint.getEntry(i) + d4 * work.getEntry(i));#2368,11.925187829715103
+if (ntrits == -1) {#1141,11.924778241377611
+printMethod(); // XXX#1584,11.924344869760366
+final double d2 = TEN * rho;#1114,11.923743082129437
+double ggfree = ZERO;#1439,11.918902564048768
+work3.setEntry(k, work3.getEntry(k) + sum * zMatrix.getEntry(k, j));#1029,11.917687721972195
+if (tmp > ZERO) {#1331,11.915735801060995
+final double d1 = trialStepPoint.getEntry(i);#1924,11.911675986121683
+ssq = d1 * d1 + d2 * d2;#2101,11.910696751730782
+if (iterc == itermax) {#2014,11.910393751584566
+delta = Math.max(hDelta, dnorm);#879,11.909335613250732
+int ih = 0;#2244,11.908599535624186
+hcol.setEntry(k, hcol.getEntry(k) + tmp * zMatrix.getEntry(k, j));#1277,11.907331180572509
+if (xbdi.getEntry(i) != ZERO) {#1887,11.905078088083576
+gredsq = ZERO;#1977,11.90493450994077
+xoptsq = ZERO;#642,11.902592301368713
+final double d2 = Math.max(ZERO, sum);#1062,11.901597198687101
+if (delsq <= ZERO) {#2004,11.900077929863563
+stepa = initialTrustRegionRadius;#1633,11.892660519172406
+printState(90); // XXX#2025,11.892171408000745
+suma += interpolationPoints.getEntry(k, j) * trialStepPoint.getEntry(j);#692,11.891374046152288
+final double d1 = lagrangeValuesAtNewPoint.getEntry(k);#905,11.889915419787895
+newPoint.setEntry(i, upperDifference.getEntry(i));#2229,11.889610857576937
+sumb += interpolationPoints.getEntry(k, j) * trustRegionCenterOffset.getEntry(j);#972,11.887672085232206
++ trustRegionCenterOffset.getEntry(i) * work1.getEntry(j));#630,11.887071464742933
+sth = (angt + angt) / (ONE + angt * angt);#2154,11.886861152119106
+s.setEntry(i, trialStepPoint.getEntry(i));#2050,11.886389255523682
+printState(210); // XXX#660,11.883482933044434
+glag.setEntry(i, -glag.getEntry(i));#1541,11.882818067396009
+if (i < npt) {#1085,11.8792185485363
+xsav = MINUS_ONE;#2110,11.878026300006443
+printState(230); // XXX#686,11.877631388212505
+ArrayRealVector s,#1808,11.876182892743278
+if (crvmin == MINUS_ONE) {#1972,11.875137209892273
+update(beta, denom, knew);#938,11.875088873363676
+printState(190); // XXX#2217,11.872522103159051
+temp = ssq - d1 * d1;#2115,11.872135900682018
+xbdi.setEntry(i, ONE);#2094,11.868977110726492
+step = slbd;#1359,11.86819631913129
+itermax = iterc + n - nact;#1903,11.86805898802621
+if (xbdi.getEntry(i) == ZERO) {#1980,11.866319574628557
+modelSecondDerivativesValues.getEntry(ih)#628,11.865653296311697
+final double d1 = s.getEntry(i);#1895,11.8625020640237
+temp *= modelSecondDerivativesParameters.getEntry(k);#463,11.860843817392984
+final int dimension = init.length;#2387,11.856988489627838
+final double d1 = Math.max(d3, d4);#1202,11.856199182782854
+throw new PathIsExploredException(); // XXX#468,11.85570306777954
+final double d1 = glag.getEntry(i);#1474,11.853925204858548
+case 20: {#444,11.851661523183187
+gisq += d2 * d2;#1063,11.851050881778493
+final double d3 = lowerBound[i];#1200,11.849996757507324
+if (temp > ZERO) {#2105,11.849037834576198
+shs += s.getEntry(i) * hs.getEntry(i);#1927,11.848270734151205
+final double temp = Math.max(ONE, d3 * d3);#916,11.845519518852234
+work2.setEntry(i, alternativeNewPoint.getEntry(i));#1542,11.844322539664603
+sum += bMatrix.getEntry(jp, i) * trialStepPoint.getEntry(i);#725,11.843505643662953
+rho *= ONE_OVER_TEN;#1179,11.842268943786621
+final double d4 = lagrangeValuesAtNewPoint.getEntry(k);#924,11.84130038284674
+work1.setEntry(i, bMatrix.getEntry(knew, i));#963,11.839902114868163
+for (int i = 0; i < n; i++) {#1551,11.83981675368089
+delta = Math.max(hDelta, 2 * dnorm);#882,11.838245812584372
+zMatrix.setEntry(knew, j, ZERO);#2336,11.838233434236967
+printState(680); // XXX#1170,11.836190073113693
+trustRegionCenterInterpolationPointIndex = nfm;#1692,11.835219281060356
+if (i >= npt) {#2369,11.82781179745992
+fAtInterpolationPoints.setEntry(nfm - n, f);#1721,11.827388191223145
+newPoint.setEntry(i, lowerDifference.getEntry(i));#2226,11.82590559366587
+throw new PathIsExploredException(); // XXX#540,11.822945216122795
+sum += zMatrix.getEntry(k, j) * lagrangeValuesAtNewPoint.getEntry(k);#1026,11.82266816314386
+modelSecondDerivativesParameters.setEntry(i, work2.getEntry(i));#1086,11.822627365589142
+double d1 = trialStepPoint.getEntry(i);#2044,11.822555513092965
+interpolationPoints.setEntry(knew, i, newPoint.getEntry(i));#962,11.82066692246331
+trustRegionCenterInterpolationPointIndex = 0;#1690,11.815032853020561
+printMethod(); // XXX#376,11.813986264742338
+delta = Math.max(delta, rho);#1181,11.811262318066188
+lagrangeValuesAtNewPoint.getEntry(k) + interpolationPoints.getEntry(k, i) * work3.getEntry(k);#1046,11.807550836781987
+trialStepPoint.setEntry(i, ZERO);#1863,11.804702679316202
+final double d1 = TWO * delta;#1112,11.802293300628662
+Math.min(upperDifference.getEntry(i), tmp)));#1524,11.798650064776021
+gqsq += d1 * d1;#1067,11.796844903160544
+dredg = ZERO;#2189,11.79397111468845
+nfsav = getEvaluations();#863,11.792425537109375
+if (angbd * temp > tempb) {#2118,11.788942990984236
+final int ksav = knew;#891,11.78884258976689
+interpolationPoints.setEntry(nfm, nfxm, stepb);#1650,11.787293975417679
++ lagrangeValuesAtNewPoint.getEntry(i) * work1.getEntry(j));#578,11.787113055586815
+for (int k = 0; k < npt; k++) {#531,11.786404511867426
+throw new PathIsExploredException(); // XXX#1710,11.785796502057243
+final double oneOverStepA = ONE / stepa;#1706,11.785134183035957
+bMatrix.setEntry(0, nfmm, -oneOverStepA);#1707,11.779825210571289
+shs = ZERO;#2133,11.779442098405626
+s.setEntry(i, beta * s.getEntry(i) - gnew.getEntry(i));#1892,11.776802974277073
+biglsq = Math.max(biglsq, d5);#926,11.774956629826473
+bdtest += HALF * curv * rho;#536,11.774712642033895
+for (int j = 0; j < n; j++) {#1034,11.773456615560194
+double sum = ZERO;#718,11.773241996765137
+for(;;) switch (state) {#443,11.769880911883186
+printState(50); // XXX#1917,11.765457253707083
+ntrits = 0;#1182,11.764990143153979
+++nact;#2089,11.76429568018232
+trustRegionCenterOffset.setEntry(i, ZERO);#640,11.761969075058445
+ilbd = -i - 1;#1334,11.761940062046051
+d1 * zMatrix.getEntry(i, 0) - d2 * lagrangeValuesAtNewPoint.getEntry(i));#2356,11.761537395824085
++ work1.getEntry(i) * lagrangeValuesAtNewPoint.getEntry(j)#577,11.757085114717484
+step = Math.sqrt(tmp1 / ggfree);#1457,11.754333114624023
+state = 230; break;#647,11.754279984368218
+curv += modelSecondDerivativesParameters.getEntry(k) * (d1 * d1);#534,11.75028663635254
+knew = -1;#1119,11.750037698184743
+double stepa = 0;#1628,11.744709650675455
+subd = Math.max(sumin,#1338,11.743141230414896
+for (int i = 0; i <= jp; i++) {#2366,11.742794743290654
+xbdi.setEntry(i, MINUS_ONE);#2090,11.740740211386429
+lowerDifference.setEntry(j, ZERO);#305,11.740518659353256
+delsq -= d1 * d1;#2003,11.738578910827636
+ds += s.getEntry(i) * trialStepPoint.getEntry(i);#1926,11.736364603042603
+= "If this exception is thrown, just remove it from the code";#2476,11.736308345088252
+printState(650); // XXX#1118,11.735614876998099
+xbdi.setEntry(iact, xsav);#2205,11.73152206683981
+interpolationPoints.setEntry(nfm, nfxm, stepa);#1726,11.728152508205838
+biglsq = Math.max(biglsq, temp * (d5 * d5));#797,11.718878234305032
+Arrays.fill(ds, value);#2448,11.717543882482191
+double sumb = ZERO;#970,11.713767466337785
+for (int i = 0; i < n; i++) {#724,11.712617270151775
+case 680: {#1169,11.710605144500732
+if (tempa <= ZERO) {#2088,11.709503699993265
+wfixsq += d1 * d1;#1466,11.701056781568026
+scaden = ZERO;#763,11.70066061886874
+s.setEntry(i, -gnew.getEntry(i));#1890,11.700628757476807
+rho = stoppingTrustRegionRadius;#1175,11.70050699957486
+trustRegionCenterInterpolationPointIndex = knew;#986,11.698760032653809
+dsq = ZERO;#2218,11.698568026224772
++ work1.getEntry(i) * trustRegionCenterOffset.getEntry(j)#629,11.69720276764461
++ sum * zMatrix.getEntry(k, m));#602,11.696724146062678
+trustRegionCenterInterpolationPointIndex = nfm - n;#1723,11.694885098415872
+printState(210); // XXX#2243,11.694502077604595
+final double d1 = gnew.getEntry(i);#1982,11.694382074716929
+blen = resid / (temp + ds);#1937,11.692718982696533
+for (int i = 0; i < n; i++) {#2269,11.692460683675913
+iterc = 0;#1847,11.69172661121075
+if (ratio <= SIXTEEN) {#1174,11.686669490955493
+state = 100; break;#2091,11.684831619262695
+final double d1 = zMatrix.getEntry(k, m);#773,11.682301863645895
+final double d2 = upperBound[i];#1203,11.681788603464762
+adelt = Math.max(d1, rho);#1152,11.678817716138116
+if (work1.getEntry(i) == bigstp) {#1460,11.674316750632393
+double gqsq = ZERO;#1040,11.673077901204428
+knew = 0;#896,11.67300796508789
+for (int j = 0; j <= i; j++) {#574,11.670647219607705
+final int ip = i + npt;#606,11.669735099330094
+shs += s.getEntry(i) * hs.getEntry(i);#2138,11.667982957301996
+if (tmp2 <= lowerDifference.getEntry(i)) {#1462,11.667853269821558
+default: {#1216,11.66520846973766
+dredg = ZERO;#2039,11.665080123477512
+throw new PathIsExploredException(); // XXX#1660,11.663909816741944
+sum += interpolationPoints.getEntry(k, j) * trustRegionCenterOffset.getEntry(j);#1035,11.663577934106192
+beta = ZERO;#700,11.663196171031279
+dsq = ZERO;#711,11.661284181806776
+if (trustRegionCenterInterpolationPointIndex == nfm) {#1722,11.659700704175373
+for (int i = 0; i <= j; i++) {#843,11.657952690124512
+if (temp > ZERO) {#2116,11.657095500401088
+ih = 0;#940,11.654113096349379
+gqsq += d1 * d1;#1060,11.646709414089427
+initialTrustRegionRadius = minDiff / 3.0;#2413,11.646541786193847
+final double d1 = gnew.getEntry(i);#2197,11.64319049950802
+final double d1 = work2.getEntry(k);#854,11.642675564206879
+s.setEntry(i, ZERO);#1888,11.642257038752238
+case 120: {#2060,11.639031211535135
+printState(60); // XXX#481,11.631770635906019
+if (k == knew) {#1362,11.629925602360776
+++iterc;#2062,11.625813007354736
+ArrayRealVector hred#1810,11.622862647561465
+throw new PathIsExploredException(); // XXX#1636,11.621273152968463
+bMatrix.setEntry(ip, j,#575,11.620394581242612
+ds = ZERO;#1919,11.620117664337158
+for (int i = 0; i <= j; i++) {#626,11.620116907007555
+knew = 0;#765,11.615715217590331
+alternativeNewPoint.setEntry(i, work2.getEntry(i));#1552,11.610960454651803
+for (int i = 0; i < n; i++) {#570,11.609555833479938
+rdprev = redsav;#2160,11.609255861352992
+for (int i = 0; i < n; i++) {#1294,11.606242491648747
+double sum = ZERO;#690,11.59771880236539
+final double d2 = upperBound[i];#816,11.596659935437716
+curv = -curv;#1516,11.596260634335605
+bMatrix.getEntry(ip, j)#576,11.59382491845351
+redmax = rednew;#2158,11.593395489912767
+++nact;#1996,11.591939449310303
+sum += zMatrix.getEntry(k, m) * work3.getEntry(k);#704,11.590250317643328
+gredsq += d1 * d1;#2049,11.58963311513265
+dhd += trialStepPoint.getEntry(i) * hred.getEntry(i);#2140,11.589340023878144
+work1.setEntry(i, -step * glagValue);#1488,11.580582196371896
+ntrits = -1;#498,11.57743481794993
+printState(20); // XXX#445,11.57714883904708
+for (int j = 0; j < n; j++) {#908,11.575886826766165
+printState(150); // XXX#2132,11.573344883165861
+sum += lagrangeValuesAtNewPoint.getEntry(k) * interpolationPoints.getEntry(k, j);#596,11.573169646439728
+double sum = ZERO;#1121,11.570837714455344
+subd = Math.max(sumin,#1349,11.568866785834818
+if (delta <= rho * 1.5) {#1144,11.5677897568905
+for (int i = 0; i < n; i++) {#1540,11.567026297251383
+double sum = ZERO;#1033,11.566932384784405
+for (int i = 0; i < n; i++) {#975,11.56434318224589
+dhs = ZERO;#2134,11.563519371880425
+if (stepa * stepb < ZERO) {#1718,11.556703001260757
+tmp += interpolationPoints.getEntry(k, j) * trustRegionCenterOffset.getEntry(j);#1291,11.556036341190339
+if (i < n) {#1082,11.55529446755686
+state = 100; break;#2095,11.555075518290202
+stepsq = ZERO;#1885,11.554361290401882
+isav = i;#2159,11.549877586364746
+ih = 0;#988,11.542232558840798
+final double d1 = zMatrix.getEntry(k, m);#901,11.542229219924572
+ilbd = i + 1;#1345,11.53929356605776
+sumw += lagrangeValuesAtNewPoint.getEntry(k);#591,11.53520393371582
+ipt = tmp2;#1659,11.53495480464055
+currentBest.setEntry(j, upperBound[j]);#316,11.534286932511764
+throw new PathIsExploredException(); // XXX#1752,11.530206313500038
+step = HALF;#1395,11.528568136280981
+cauchy = d1 * d1;#1532,11.527945921971249
+for (int k = 0; k < npt; k++) {#595,11.524939708220654
+dhd = ZERO;#2135,11.522728761037191
+if (i < nh) {#1088,11.518377095460892
+distsq += d3 * d3;#783,11.517955078798181
+DEFAULT_STOPPING_RADIUS);#213,11.511497350839468
+gisq += sum * sum;#1068,11.511036187410355
+distsq += tmp * tmp;#1319,11.508480032285055
+work3.setEntry(k, sum * work3.getEntry(k));#1038,11.500105406108656
+int state = 20;#442,11.498660967900204
+deltaOne = TEN * rho;#500,11.496081619262695
+rdnext = rednew;#2162,11.49499006624575
+d1 = gnew.getEntry(i);#2048,11.49441171461536
+final double d1 = work1.getEntry(i);#1470,11.494001202467011
+ibdsav = isbd;#1411,11.488980334738027
+iubd = -i - 1;#1351,11.481685118241744
+ksav = k;#1409,11.481331779843284
+biglsq = ZERO;#764,11.477058866749639
+numberOfInterpolationPoints - dimension - 1);#2420,11.476171829082348
+final double d5 = temp * (d4 * d4);#925,11.47610888983074
+int state = 20;#1876,11.475771500514103
+ArrayRealVector hs,#1809,11.475077788035074
+double sum = ZERO;#1024,11.474282814906193
+double hdiag = ZERO;#898,11.472529828548431
+for (int i = 0; i < n; i++) {#1008,11.46677334168378
+printState(20); // XXX#1880,11.464941175360428
+for (int i = 0; i < n; i++) {#564,11.46469095174004
+step = d2 / diff;#1377,11.461712991037677
+final double d1 = work1.getEntry(i);#1465,11.455475353613132
+work1.setEntry(i, work1.getEntry(i) + temp * interpolationPoints.getEntry(k, i));#976,11.45476640701294
+currentBest.setEntry(j, lowerBound[j]);#304,11.452796762639826
+work1.setEntry(j, sum);#598,11.450174387763528
+double sumw = ZERO;#587,11.450101499204282
+throw new PathIsExploredException(); // XXX#1644,11.449892969692455
+int iubd = 0;#1324,11.44439360969945
+for (int i = 0; i < n; i++) {#748,11.443886504453772
+errbig > frhosq * crvmin) {#517,11.443781260288123
+for (int j = 0; j < n; j++) {#1004,11.442028887131634
+distsq = ZERO;#779,11.437305450439453
+biglsq = ZERO;#895,11.430168469746908
+printState(120); // XXX#2061,11.419286878485428
+hred.setEntry(i, hs.getEntry(i));#2270,11.416305631399155
+double sum = ZERO;#702,11.415238250385631
+double sumpq = ZERO;#558,11.412796119848887
+double sum = ZERO;#1043,11.411486405592699
+for (int j = 0; j <= i; j++) {#608,11.405496772966886
+temp += interpolationPoints.getEntry(k, j) * trialStepPoint.getEntry(j);#1005,11.40425716562474
+final double temp = work1.getEntry(i);#607,11.399377452002632
+distsq += d2 * d2;#911,11.39911769565783
+case 210: {#2242,11.394637743631998
+gredsq = stepsq;#1902,11.394482861394467
+work1.setEntry(i, bigstp);#1445,11.38882514834404
+csave = cauchy;#1544,11.384295629418414
+for (int i = 0; i <= j; i++) {#2247,11.378021717071533
+double suma = ZERO;#966,11.377396583557129
+scaden = ZERO;#894,11.373919670398418
+double bdtest = bdtol;#522,11.370674034644818
+jpt = ipt - n;#1658,11.365891524723597
+dredsq += d1 * d1;#2045,11.363779199534449
+dsq = adelt * adelt;#1153,11.361924781799317
+hs.setEntry(j, ZERO);#2246,11.3604523340861
+currentBest.setEntry(i, upperBound[i]);#1209,11.357217066996807
+stepa = interpolationPoints.getEntry(nfx, nfxm);#1640,11.356729378571382
+denom = den;#920,11.355441931522254
+sumz += zMatrix.getEntry(k, m);#589,11.352062225341797
+++iterc;#1968,11.349491286277772
+for (int i = 0; i < n; i++) {#605,11.349372863769531
+stepa = -stepa;#1635,11.336032113721293
+double tmp = ZERO;#1289,11.331766658359104
+denom = den;#792,11.33055358097471
+temp += interpolationPoints.getEntry(k, j) * trustRegionCenterOffset.getEntry(j);#461,11.330193886390099
+sum += bMatrix.getEntry(k, i) *#1045,11.326774197655755
+denom = d1 * d1 + alpha * beta;#746,11.325335173771299
+double tmp = ZERO;#1509,11.324512828480113
+state = 20; break;#2007,11.324013796719639
+scaden = temp * den;#790,11.316769722969301
+if (bdtest < bdtol) {#537,11.312907906139598
+sum += d1 * d1;#1125,11.312256370271955
+bMatrix.setEntry(k, j,#600,11.311773124494051
+state = 210; break;#1914,11.306323422325981
+numEval <= n + 1) {#1703,11.297912170147073
+iubd = i + 1;#1340,11.294516921043396
+alpha = alphaCauchy[0];#673,11.284456389290947
+qred += sdec;#1990,11.283273436806418
+xbdi.setEntry(iact, MINUS_ONE);#1999,11.280497373853411
+gqsq += d1 * d1;#1052,11.275139065349803
+currentBest.setEntry(j, upperBound[j]);#1679,11.273985443693219
+double[] ds = new double[n];#2447,11.266129785113865
+double temp = ZERO;#1003,11.26535646732037
+final double d1 = interpolationPoints.getEntry(k, j);#533,11.265322370962663
+zMatrix.setEntry(i, 0, d7);#2333,11.265193577968713
+Math.min(upperDifference.getEntry(i), tmp)));#1420,11.260242091284859
+sum += interpolationPoints.getEntry(k, i) * trustRegionCenterOffset.getEntry(i);#565,11.26016961534818
+trustRegionCenterOffset.getEntry(i) + work1.getEntry(i));#1490,11.256251762162394
+gredsq += d1 * d1;#1983,11.25109313516056
+work2.setEntry(k, suma);#698,11.248164565474898
+sum += work3.getEntry(k) * bMatrix.getEntry(k, j);#720,11.247368707889464
+stepsq += d1 * d1;#1896,11.24585105895996
+double sumb = ZERO;#689,11.243501518083656
+bMatrix.setEntry(i, j,#2367,11.238749907566952
+originShift.getEntry(j) + interpolationPoints.getEntry(nfm, j)),#1673,11.238508405564707
+delta = HALF * rho;#1172,11.23556645711263
+state = 90; break;#1154,11.231018890034068
+work2.setEntry(k, work3.getEntry(k));#1037,11.228537109163073
+state = 680; break;#543,11.225927006114613
+zMatrix.setEntry(i, 0,#2355,11.220194188031284
+work1.setEntry(i, ZERO);#1442,11.21869585249159
+state = 230; break;#753,11.21550490305974
+currentBest.setEntry(j, lowerBound[j]);#1676,11.215385335864443
+for (int j = 0; j < n; j++) {#460,11.215117354142038
+work1.setEntry(i, bMatrix.getEntry(k, i));#571,11.215107781546456
+itest = 0;#1091,11.2094349039012
+bMatrix.setEntry(ip, j,#609,11.206596976832339
+denom = densav;#930,11.203272151947022
+for (int i = 0; i <= j; i++) {#994,11.196186388240141
+work2.setEntry(k, sum);#568,11.195493666330973
+tmp += interpolationPoints.getEntry(k, j) * work1.getEntry(j);#1511,11.19022992679051
+int ih = 0;#619,11.178063956173984
+++nact;#2204,11.17717456817627
+cauchy = csave;#1554,11.175656670018247
+bMatrix.getEntry(ip, j)#610,11.17288455596337
+double suma = ZERO;#688,11.164581941521686
+ggfree += d1 * d1;#1475,11.162917538693076
+distsq = ZERO;#907,11.162127771685201
+wfixsq += d1 * d1;#1471,11.158797803678011
+double sumz = ZERO;#586,11.156078373944318
+resid -= d1 * d1;#1925,11.148540667125157
+hdiag += d1 * d1;#774,11.142769855611464
+for (int i = 0; i < n; i++) {#464,11.130430761136507
+gredsq += d1 * d1;#2198,11.12859910329183
+xbdi.setEntry(i, ONE);#1857,11.128448701673939
+vlag = tmp;#1390,11.126394786834716
+angbd = tempa / temp;#2108,11.123540878295898
+stplen = temp;#1958,11.09531569480896
+currentBest.setEntry(i, upperBound[i]);#822,11.092020497177586
+for (int i = 0; i < n; i++) {#2258,11.088882474338307
+angbd = tempb / temp;#2119,11.087025112575954
+iflag = 1;#1545,11.084141050066266
+dimension);#2422,11.071511921129728
+vlag = d1;#1368,11.070321523226225
+int ih = 0;#447,11.067596543918956
+isbd = iubd;#1391,11.062691264682346
+currentBest.setEntry(i, lowerBound[i]);#1206,11.05981714661057
+upperBound[j]));#1674,11.045799047296697
+isMinimize ? value : -value);#247,11.039638214922967
+angt = angbd * i / iu;#2153,11.038632922702366
+beta = ZERO;#1881,11.035691149094525
+dsq += d1 * d1;#717,11.035258522033692
+sdec = Math.max(d1, ZERO);#1989,11.031887893019052
+s.setEntry(i, ZERO);#2052,11.031626097361247
+isbd = 0;#1397,11.030919732718631
+state = 210; break;#2056,11.027991029951307
+double temp = ZERO;#459,11.003533140818279
+bMatrix.getEntry(k, j)#601,10.989201894173256
+hdiag += d1 * d1;#902,10.984060801957783
+double delta,#1805,10.983852704366049
+itest = 0;#1078,10.982297134399413
+iact = i;#2109,10.98199393532493
+xbdi.setEntry(i, MINUS_ONE);#1853,10.972350849824792
+state = 210; break;#2129,10.970462958017984
+currentBest.setEntry(i, lowerBound[i]);#819,10.958907185178814
+do {#1623,10.943339729309082
+isbd = iubd;#1369,10.932168430752224
+f = -f;#829,10.9315215973627
+scaden = temp * den;#918,10.924690655299596
+state = 650; break;#518,10.899432952587421
+upperDifference.getEntry(i));#2223,10.896720076506993
+xsav = ONE;#2121,10.889212984027285
+for (int i = 0; i <= j; i++) {#449,10.885463560328764
+hs, hred);#489,10.884709926751944
+dimension);#2418,10.86521479288737
+nfm <= n) {#1632,10.859125320728008
+state = 60; break;#1160,10.858372991735285
+bdtest = -work1.getEntry(j);#527,10.857034502802668
+state = 120; break;#2272,10.849068641662598
+vlag = d5;#1378,10.84853752454122
+if (i == j) {#845,10.835739418312356
+state = 30; break;#2021,10.833345369859176
+state = 190; break;#2171,10.831184040416371
+double denom,#2297,10.830468446016312
+iact = i;#1959,10.824068283212595
+state = 60; break;#1104,10.821509968150746
+knew = ksav;#929,10.815907445447198
+knew = k;#919,10.813374817371368
+fsave = f;#831,10.802119754609608
+numberOfInterpolationPoints,#2398,10.794123746910874
+state = 190; break;#2018,10.790848548595722
+double beta,#2296,10.779167620340983
+knew = k;#1128,10.763736128807068
+iact = i;#2120,10.75193775061405
+return ds;#2449,10.737183411916098
+s.setEntry(i, ZERO);#2072,10.734409459431966
+zMatrix.setEntry(k, j, ZERO);#1612,10.724235485339987
+nPointsInterval[1]);#2400,10.720772704299616
+return f;#1214,10.702373695373534
++ temp * work1.getEntry(j));#611,10.69505294763817
+state = 100; break;#2206,10.690111377022482
+work3.setEntry(k, ZERO);#1021,10.677798671107139
+knew = k;#791,10.67378398350307
+state = 60; break;#1163,10.667634400454434
+distsq = sum;#1129,10.667264278118427
+temp *= HALF;#846,10.664128430684407
+nPointsInterval[0],#2399,10.661420880531779
+ggfree = ZERO;#1458,10.657781165579092
+state = 190; break;#2005,10.647716595576359
+isbd = 0;#1379,10.642541359210837
+state = 190; break;#1899,10.640659895810215
+if (i < j) {#995,10.640518803750314
+ih++;#454,10.633240417197898
+state = 190; break;#2015,10.6324023100046
+interpolationPoints.setEntry(k, j, ZERO);#1600,10.632133801778158
+state = 60; break;#1101,10.622543334960938
+state = 60; break;#1184,10.616852153431285
+if (i < j) {#2248,10.586164951324463
+state = 190; break;#1906,10.57706269350919
+state = 50; break;#2264,10.573084787888961
+double stoppingTrustRegionRadius) {#226,10.570960358210973
+ih++;#999,10.560323644567418
+state = 720; break;#832,10.545739043842662
+state = 190; break;#2182,10.544038382443516
+if (i < j) {#450,10.54372073758033
+dsq += d1 * d1;#2234,10.532223453521729
+ih++;#632,10.485644340515137
+crvmin = temp;#1973,10.483845980962117
+double adelt#1258,10.471795018513998
+bdtest = work1.getEntry(j);#524,10.471742947896322
+delta = rho;#885,10.453678874969482
+state = 360; break;#1191,10.449451229789041
+double[] upperBound) {#2383,10.443003983333194
+fbeg = f;#1689,10.424654353748668
+state = 650; break;#538,10.419567725237679
+hcol.setEntry(k, ZERO);#1272,10.382777981136156
+step = subd;#1389,10.379988479614259
+double[] upperBound) {#286,10.374561041593552
+bMatrix.setEntry(i, j, ZERO);#1603,10.353410079561431
+state = 680; break;#1157,10.345413251356645
+return new double[] { alpha, ZERO };#1451,10.344972408734835
+step = subd;#1367,10.331873245239258
+double[] upperBound) {#1583,10.252693637212117
+ih++;#2252,10.240684405617092
+switch (state) {#1878,10.225394080666934
+delta = rho;#1145,10.22432332203306
+state = 90; break;#1931,10.215271082791416
+state = 190; break;#2065,10.208281191912564
+double[] upperBound) {#375,10.19059282541275
+state = 120; break;#2213,10.162256847728383
+state = 150; break;#2267,10.161621397191828
+state = 190; break;#2036,10.155133594166148
+state = 210; break;#645,10.152786536650224
+state = 650; break;#503,10.131721533261812
+continue;#768,10.121625423431396
+++nact;#1861,10.10859432220459
+ih++;#849,10.09286988299826
+double value) {#2446,9.977471415201823
+break;#1547,9.888086689843071
+int knew,#1257,9.858027744293214
+double initialTrustRegionRadius,#225,9.805074944215662
+ih++;#947,9.611344130142875
+int knew#2298,9.458406788962227
+continue;#1312,8.598203632566664

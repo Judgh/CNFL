@@ -1,0 +1,173 @@
+if (javaVersions == null || javaVersions.length == 0) {#1752,19.807699991309125
+private static float toVersionFloat(int[] javaVersions) {#1751,19.774332383099726
+private static int toVersionInt(int[] javaVersions) {#1791,19.747762231265796
+if (version == null) {#1716,19.696353848775228
+private static float getJavaVersionAsFloat() {#1363,19.439920357295446
+private static int getJavaVersionAsInt() {#1387,19.346900054386683
+if (javaVersions == null) {#1792,19.33934074640274
+int intVersion = 0;#1795,19.338405200413295
+return javaVersions[0];#1756,19.32222514682346
+intVersion = javaVersions[0] * 100;#1798,19.316323736439582
+public static boolean isJavaVersionAtLeast(float requiredVersion) {#1533,19.284762231927168
+static float toJavaVersionInt(String version) {#1672,19.20396105448405
+if (osName == null || osVersion == null) {#1597,19.20166519709996
+return 0f;#1753,19.180242896080017
+int len = javaVersions.length;#1796,19.160032987594604
+static float toJavaVersionFloat(String version) {#1645,19.086057790120442
+if (version == null) {#1574,19.035674730936687
+public static boolean isJavaVersionAtLeast(int requiredVersion) {#1555,19.019371133101615
+return 0f;#1767,19.01072657108307
+if (javaVersions.length == 1) {#1755,18.964309533437092
+int j = 0;#1721,18.940402837900017
+if (len >= 3) {#1803,18.91279474894206
+intVersion += javaVersions[1] * 10;#1801,18.89032911217731
+if (osName == null) {#1616,18.887123703956604
+if (len >= 2) {#1800,18.88468755086263
+private static String getJavaVersionTrimmed() {#1409,18.85321763356527
+public static final boolean IS_OS_LINUX = getOSMatchesName("Linux") || getOSMatchesName("LINUX");#1108,18.84813271146832
+for (int i = 0; i < strings.length && j < limit; i++) {#1722,18.83491243634905
+public static boolean isJavaAwtHeadless() {#1512,18.833665148417154
+if (JAVA_VERSION != null) {#1410,18.806763950147126
+if (len >= 1) {#1797,18.801682980855308
+return false;#1598,18.795560963948567
+public static final boolean IS_OS_HP_UX = getOSMatchesName("HP-UX");#1082,18.747643617483284
+return false;#1617,18.698717244466145
+public static File getUserHome() {#1499,18.637357314427693
+public static File getJavaHome() {#1323,18.613128185272217
+return false;#1575,18.584777959187825
+private static int[] toJavaVersionIntArray(String version, int limit) {#1715,18.584263937813894
+for (int i = 1; i < javaVersions.length; i++) {#1761,18.566825828552247
+private static boolean getJavaVersionMatches(String versionPrefix) {#1400,18.513379297758405
+try {#1461,18.496566200256346
+ints[j++] = Integer.parseInt(s);#1725,18.47844206492106
+if (ch >= '0' && ch <= '9') {#1413,18.47615385055542
+try {#1764,18.45028772354126
+public static final int JAVA_VERSION_INT = getJavaVersionAsInt();#964,18.44140317223289
+public static final boolean IS_OS_MAC = getOSMatchesName("Mac");#1121,18.439670996232465
+public static final boolean IS_OS_WINDOWS_NT = getOSMatchesName(OS_NAME_WINDOWS_PREFIX + " NT");#1268,18.43316593170166
++ "'; the SystemUtils property value will default to null.");#1466,18.40873317718506
+String s = strings[i];#1723,18.405543578298467
+private static String getSystemProperty(String property) {#1460,18.394974263509116
+public static final boolean IS_OS_OS2 = getOSMatchesName("OS/2");#1147,18.387544212341307
+return 0;#1793,18.387460708618164
+intVersion += javaVersions[2];#1804,18.377707052230836
+private static boolean getOSMatchesName(String osNamePrefix) {#1441,18.361961078643798
+static boolean isJavaVersionMatch(String version, String versionPrefix) {#1573,18.361823892593385
+builder.append('.');#1760,18.32534190586635
+return toJavaVersionIntArray(version, Integer.MAX_VALUE);#1696,18.322390763655953
+public static final boolean IS_OS_WINDOWS_95 = getOSMatches(OS_NAME_WINDOWS_PREFIX + " 9", "4.0");#1226,18.28256188906156
+public static final boolean IS_OS_IRIX = getOSMatchesName("Irix");#1095,18.258567849795025
+public static final boolean IS_JAVA_1_2 = getJavaVersionMatches("1.2");#991,18.24798481804984
+System.err.println("Caught a SecurityException reading the system property '" + property#1465,18.246019301875943
+public static final boolean IS_OS_WINDOWS_98 = getOSMatches(OS_NAME_WINDOWS_PREFIX + " 9", "4.1");#1240,18.237901785434822
+static int[] toJavaVersionIntArray(String version) {#1695,18.23522943608901
+for (int i = 0; i < JAVA_VERSION.length(); i++) {#1411,18.220764368772507
+public static final boolean IS_JAVA_1_7 = getJavaVersionMatches("1.7");#1048,18.1953182220459
+public static final boolean IS_JAVA_1_3 = getJavaVersionMatches("1.3");#1002,18.185341256005422
+builder.append(javaVersions[0]);#1759,18.17739537182976
+public static File getUserDir() {#1483,18.176740805308025
+static boolean isOSNameMatch(String osName, String osNamePrefix) {#1615,18.174817323684692
+public static final boolean IS_JAVA_1_1 = getJavaVersionMatches("1.1");#980,18.170703683580673
+static boolean isOSMatch(String osName, String osVersion, String osNamePrefix, String osVersionPrefix) {#1596,18.160918912579938
+public static final boolean IS_OS_AIX = getOSMatchesName("AIX");#1069,18.14715325832367
+return ArrayUtils.EMPTY_INT_ARRAY;#1717,18.13464042663574
+return ints;#1728,18.128982464472454
+return null;#1418,18.124057509682395
+private static final String USER_HOME_KEY = "user.home";#64,18.1136616230011
+return JAVA_VERSION.substring(i);#1414,18.105641931295395
+private static boolean getOSMatches(String osNamePrefix, String osVersionPrefix) {#1430,18.10347110748291
+public static final boolean IS_JAVA_1_4 = getJavaVersionMatches("1.4");#1013,18.069764035088674
+if (s.length() > 0) {#1724,18.0594144300981
+public static final boolean IS_OS_WINDOWS_VISTA = getOSMatches(OS_NAME_WINDOWS_PREFIX, "6.0");#1296,18.04058265686035
+return new File(System.getProperty(JAVA_HOME_KEY));#1324,18.016521873474122
+public static final boolean IS_OS_WINDOWS_ME = getOSMatches(OS_NAME_WINDOWS_PREFIX, "4.9");#1254,18.01069376203749
+public static final boolean IS_JAVA_1_5 = getJavaVersionMatches("1.5");#1024,17.99661115237645
+return new File(System.getProperty(USER_HOME_KEY));#1500,17.973888065503992
+return null;#1467,17.94251600901286
+public static final boolean IS_OS_WINDOWS_XP = getOSMatches(OS_NAME_WINDOWS_PREFIX, "5.1");#1282,17.94127255015903
+public SystemUtils() {#1820,17.935585689544677
+public static final boolean IS_OS_MAC_OSX = getOSMatchesName("Mac OS X");#1134,17.92149865185773
+public static final boolean IS_OS_WINDOWS_2000 = getOSMatches(OS_NAME_WINDOWS_PREFIX, "5.0");#1213,17.91712170177036
+return JAVA_AWT_HEADLESS != null ? JAVA_AWT_HEADLESS.equals(Boolean.TRUE.toString()) : false;#1513,17.90634704672772
+char ch = JAVA_VERSION.charAt(i);#1412,17.898476854960123
+return Float.parseFloat(builder.toString());#1765,17.894624295442
+public static final boolean IS_JAVA_1_6 = getJavaVersionMatches("1.6");#1035,17.881656782967703
+public static final boolean IS_OS_WINDOWS = getOSMatchesName(OS_NAME_WINDOWS_PREFIX);#1200,17.8813351949056
+public static final String JAVA_HOME = getSystemProperty(JAVA_HOME_KEY);#340,17.872030221498928
+return JAVA_VERSION_INT >= requiredVersion;#1556,17.871852445602418
+public static final float JAVA_VERSION_FLOAT = getJavaVersionAsFloat();#943,17.869852781295776
+public static final boolean IS_OS_WINDOWS_7 = getOSMatches(OS_NAME_WINDOWS_PREFIX, "6.1");#1309,17.86739706993103
+private static final String USER_DIR_KEY = "user.dir";#69,17.86570978164673
+public static final boolean IS_OS_SUN_OS = getOSMatchesName("SunOS");#1173,17.8301221040579
+return new File(System.getProperty(JAVA_IO_TMPDIR_KEY));#1340,17.824759516222723
+int[] ints = new int[Math.min(limit, strings.length)];#1720,17.783296938295717
+public static final String FILE_ENCODING = getSystemProperty("file.encoding");#127,17.782309905342434
+public static final boolean IS_OS_SOLARIS = getOSMatchesName("Solaris");#1160,17.740963752453144
+private static final String OS_NAME_WINDOWS_PREFIX = "Windows";#55,17.73791245051793
+return new File(System.getProperty(USER_DIR_KEY));#1484,17.73250227389128
+public static File getJavaIoTmpDir() {#1339,17.729682087898254
+public static final String JAVA_VENDOR_URL = getSystemProperty("java.vendor.url");#533,17.70706163603684
+return System.getProperty(property);#1462,17.640895652770997
+return intVersion;#1806,17.637361844380695
+return toVersionFloat(toJavaVersionIntArray(version, JAVA_VERSION_TRIM_SIZE));#1646,17.613631546497345
+builder.append(javaVersions[i]);#1762,17.591870534987677
+public static final String OS_ARCH = getSystemProperty("os.arch");#724,17.573014497756958
+return toVersionInt(toJavaVersionIntArray(version, JAVA_VERSION_TRIM_SIZE));#1673,17.57094931602478
+public static final String PATH_SEPARATOR = getSystemProperty("path.separator");#781,17.562312374944273
+public static final String USER_TIMEZONE = getSystemProperty("user.timezone");#899,17.56146188577016
+private static final String JAVA_HOME_KEY = "java.home";#79,17.560594059172132
+public static final String USER_HOME = getSystemProperty(USER_HOME_KEY);#841,17.558437637660813
+public static final String FILE_SEPARATOR = getSystemProperty("file.separator");#146,17.49622332531473
+public static final String JAVA_VERSION_TRIMMED = getJavaVersionTrimmed();#917,17.495285835266113
+public static final String JAVA_VENDOR = getSystemProperty("java.vendor");#514,17.46905227661133
+return JAVA_VERSION_FLOAT >= requiredVersion;#1534,17.434449195861816
+return isOSNameMatch(OS_NAME, osNamePrefix);#1442,17.43153358542401
+public static final String USER_DIR = getSystemProperty(USER_DIR_KEY);#822,17.407429570737094
+public static final String LINE_SEPARATOR = getSystemProperty("line.separator");#705,17.3873175745425
+public static final String OS_VERSION = getSystemProperty("os.version");#762,17.372909545898438
+public static final String OS_NAME = getSystemProperty("os.name");#743,17.33853507041931
+|| IS_OS_SUN_OS;#1187,17.33042812347412
+public static final String JAVA_VERSION = getSystemProperty("java.version");#552,17.31452785838734
+public static final String USER_NAME = getSystemProperty("user.name");#880,17.305923053196498
+return version.startsWith(versionPrefix);#1577,17.304433119924443
+return osName.startsWith(osNamePrefix);#1619,17.29790451413109
+public static final String JAVA_COMPILER = getSystemProperty("java.compiler");#283,17.29754976125864
+public static final String JAVA_VM_INFO = getSystemProperty("java.vm.info");#572,17.289000657888558
+: getSystemProperty("user.country");#803,17.249838601975213
+StringBuilder builder = new StringBuilder();#1758,17.243042171001434
+public static final boolean IS_OS_UNIX = IS_OS_AIX || IS_OS_HP_UX || IS_OS_IRIX || IS_OS_LINUX || IS_OS_MAC_OSX || IS_OS_SOLARIS#1186,17.224798280684674
+String[] strings = Pattern.compile("[^\\d]").split(version);#1719,17.21829485010218
+public static final String JAVA_AWT_HEADLESS = getSystemProperty("java.awt.headless");#206,17.217915503184
+private static final int JAVA_VERSION_TRIM_SIZE = 3;#50,17.213334174383256
+public static final String JAVA_VM_VENDOR = getSystemProperty("java.vm.vendor");#667,17.20779145997146
+return isJavaVersionMatch(JAVA_VERSION_TRIMMED, versionPrefix);#1401,17.19282180922372
+return toVersionFloat(toJavaVersionIntArray(SystemUtils.JAVA_VERSION, JAVA_VERSION_TRIM_SIZE));#1364,17.16248722076416
+public static final String USER_COUNTRY = getSystemProperty("user.country") == null ? getSystemProperty("user.region")#802,17.15964766109691
+return isOSMatch(OS_NAME, OS_VERSION, osNamePrefix, osVersionPrefix);#1431,17.135969392714962
+return osName.startsWith(osNamePrefix) && osVersion.startsWith(osVersionPrefix);#1600,17.124666550580194
+return toVersionInt(toJavaVersionIntArray(SystemUtils.JAVA_VERSION, JAVA_VERSION_TRIM_SIZE));#1388,17.11660854816437
+public static final String JAVA_VM_VERSION = getSystemProperty("java.vm.version");#686,17.09546892459576
+public static final String JAVA_IO_TMPDIR = getSystemProperty(JAVA_IO_TMPDIR_KEY);#359,17.080991436453427
+public static final String JAVA_AWT_GRAPHICSENV = getSystemProperty("java.awt.graphicsenv");#184,17.005247901467715
+public class SystemUtils {#48,17.005193165370397
+super();#1821,16.983625221252442
+public static final String JAVA_EXT_DIRS = getSystemProperty("java.ext.dirs");#321,16.962174313408987
+public static final String JAVA_VM_NAME = getSystemProperty("java.vm.name");#591,16.952296880575325
+public static final String JAVA_AWT_PRINTERJOB = getSystemProperty("java.awt.printerjob");#225,16.91426118214925
+public static final String JAVA_CLASS_PATH = getSystemProperty("java.class.path");#244,16.863048736865704
+public static final String USER_LANGUAGE = getSystemProperty("user.language");#861,16.83634825547536
+public static final String JAVA_CLASS_VERSION = getSystemProperty("java.class.version");#263,16.828686457413895
+public static final String JAVA_UTIL_PREFS_PREFERENCES_FACTORY = getSystemProperty("java.util.prefs.PreferencesFactory");#495,16.800124940418062
+public static final String JAVA_SPECIFICATION_VENDOR = getSystemProperty("java.specification.vendor");#456,16.774723529815674
+public static final String JAVA_AWT_FONTS = getSystemProperty("java.awt.fonts");#165,16.774200839381063
+public static final String JAVA_RUNTIME_NAME = getSystemProperty("java.runtime.name");#398,16.744530200958252
+private static final String JAVA_IO_TMPDIR_KEY = "java.io.tmpdir";#74,16.73930971963065
+public static final String JAVA_RUNTIME_VERSION = getSystemProperty("java.runtime.version");#418,16.73483967781067
+public static final String JAVA_ENDORSED_DIRS = getSystemProperty("java.endorsed.dirs");#302,16.720065146684647
+public static final String JAVA_VM_SPECIFICATION_VENDOR = getSystemProperty("java.vm.specification.vendor");#629,16.687060991923016
+public static final String AWT_TOOLKIT = getSystemProperty("awt.toolkit");#104,16.597419995528
+public static final String JAVA_SPECIFICATION_VERSION = getSystemProperty("java.specification.version");#475,16.484961082195415
+public static final String JAVA_VM_SPECIFICATION_VERSION = getSystemProperty("java.vm.specification.version");#648,16.48319469798695
+public static final String JAVA_VM_SPECIFICATION_NAME = getSystemProperty("java.vm.specification.name");#610,16.475713354168516
+public static final String JAVA_SPECIFICATION_NAME = getSystemProperty("java.specification.name");#437,16.444237117109626
+public static final String JAVA_LIBRARY_PATH = getSystemProperty("java.library.path");#378,16.405538627079554

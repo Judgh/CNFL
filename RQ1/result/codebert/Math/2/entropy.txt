@@ -1,0 +1,103 @@
+double ret = probability(x0);#253,18.791409015655518
+double p = (double) sampleSize / (double) populationSize;#202,18.734109030829536
+double q = (double) (populationSize - sampleSize) / (double) populationSize;#203,18.66986572742462
+double p2 =#206,18.502151250839233
+private static final long serialVersionUID = -436928820673516179L;#37,18.267790089482848
+double ret;#196,18.14604733207009
+private boolean numericalVarianceIsCalculated = false;#47,18.079111099243164
+double p3 =#209,17.936338663101196
+numericalVariance = calculateNumericalVariance();#280,17.898944564487625
+double ret;#115,17.89508966966109
+return (double) (getSampleSize() * getNumberOfSuccesses()) / (double) getPopulationSize();#268,17.883734434843063
+double p1 = SaddlePointExpansion.logBinomialProbability(x,#204,17.858779311180115
+ret += probability(x0);#256,17.75991786153693
+public boolean isSupportConnected() {#331,17.746228377024334
+public double probability(int x) {#195,17.735803922017414
+if (numberOfSuccesses > populationSize) {#99,17.73550399981047
+int[] domain = getDomain(populationSize, numberOfSuccesses, sampleSize);#198,17.733486542334923
+int[] domain = getDomain(populationSize, numberOfSuccesses, sampleSize);#117,17.723507147568924
+if (numberOfSuccesses < 0) {#90,17.713606781429714
+double ret;#225,17.711619117043234
+getSampleSize() + getNumberOfSuccesses() - getPopulationSize());#309,17.70544299212369
+return numericalVariance;#283,17.701285802401028
+super(rng);#84,17.687749055715706
+private double numericalVariance = Double.NaN;#45,17.648442395528157
+if (sampleSize > populationSize) {#103,17.62974789563347
+final double m = getNumberOfSuccesses();#293,17.598425918155247
+this(new Well19937c(), populationSize, numberOfSuccesses, sampleSize);#63,17.584971604523837
+if (sampleSize < 0) {#94,17.579894185066223
+public int getSupportLowerBound() {#307,17.565406878789265
+if (populationSize <= 0) {#86,17.561184346675873
+return populationSize;#170,17.558133045832317
+return true;#332,17.491708148609508
+public double getNumericalMean() {#267,17.451324462890625
+protected double calculateNumericalVariance() {#291,17.449654170445033
+public double getNumericalVariance() {#278,17.446600028446742
+while (x0 != x1) {#254,17.4462230906767
+return FastMath.min(getNumberOfSuccesses(), getSampleSize());#321,17.42452049255371
+return sampleSize;#179,17.421600500742596
+final int[] domain = getDomain(populationSize, numberOfSuccesses, sampleSize);#227,17.409458972789622
+return numberOfSuccesses;#161,17.381416184561594
+throw new NotPositiveException(LocalizedFormats.NUMBER_OF_SUCCESSES,#91,17.34522813909194
+ret = innerCumulativeProbability(domain[1], x, -1);#233,17.34475258857973
+int populationSize,#80,17.333444572630384
+return ret;#258,17.316448818553578
+SaddlePointExpansion.logBinomialProbability(sampleSize - x,#207,17.298238999503
+ret = 1.0;#229,17.26745065053304
+private final int numberOfSuccesses;#39,17.21823064486186
+throw new NotStrictlyPositiveException(LocalizedFormats.POPULATION_SIZE,#87,17.197465279523065
+ret = FastMath.exp(p1 + p2 - p3);#211,17.186800752367294
+throw new NotPositiveException(LocalizedFormats.NUMBER_OF_SAMPLES,#95,17.16738195130319
+x0 += dx;#255,17.13322302874397
+SaddlePointExpansion.logBinomialProbability(sampleSize, populationSize, p, q);#210,17.124681615829466
+ret = 1.0;#121,17.119512399037678
+private final int sampleSize;#43,17.114574241638184
+public int getSampleSize() {#178,17.093101328069512
+public int getSupportUpperBound() {#320,17.090452707730808
+this.numberOfSuccesses = numberOfSuccesses;#108,17.085590076446532
+if (x < domain[0] || x > domain[1]) {#199,17.08524473508199
+final double N = getPopulationSize();#292,17.068677484989166
+ret = 0.0;#231,17.06399944093492
+return FastMath.max(0, m - (n - k));#152,17.057973239732824
+numberOfSuccesses, p, q);#205,17.056212786970466
+public double upperCumulativeProbability(int x) {#224,17.04191690021091
+public double cumulativeProbability(int x) {#114,16.978990427652995
+throw new NumberIsTooLargeException(LocalizedFormats.NUMBER_OF_SUCCESS_LARGER_THAN_POPULATION_SIZE,#100,16.97533557812373
+ret = innerCumulativeProbability(domain[0], x, 1);#123,16.9631503423055
+if (!numericalVarianceIsCalculated) {#279,16.94075937271118
+private final int populationSize;#41,16.92451066970825
+if (x < domain[0]) {#118,16.919004496406107
+public int getNumberOfSuccesses() {#160,16.9092195217426
+populationSize);#88,16.877274795814795
+if (x <= domain[0]) {#228,16.85287144604851
+public int getPopulationSize() {#169,16.84162070534446
+ret = 0.0;#119,16.836585362752277
+throws NotPositiveException, NotStrictlyPositiveException, NumberIsTooLargeException {#62,16.826194842656452
+return (n * m * (N - n) * (N - m)) / (N * N * (N - 1));#295,16.822085791163975
+sampleSize, populationSize, true);#105,16.819708909307206
+return FastMath.max(0,#308,16.810408234596252
+final double n = getSampleSize();#294,16.77215152978897
+numericalVarianceIsCalculated = true;#281,16.75446823665074
+return FastMath.min(k, m);#191,16.753843625386555
+numberOfSuccesses, populationSize, true);#101,16.730724597799366
+sampleSize);#96,16.716019257255223
+numberOfSuccesses);#92,16.704726199309032
+return ret;#126,16.695486068725586
+throw new NumberIsTooLargeException(LocalizedFormats.SAMPLE_SIZE_LARGER_THAN_POPULATION_SIZE,#104,16.68911064754833
+return ret;#236,16.677506186745383
+populationSize - numberOfSuccesses, p, q);#208,16.668590933084488
+return new int[] { getLowerDomain(n, m, k), getUpperDomain(m, k) };#139,16.667854337981254
+private int getUpperDomain(int m, int k) {#190,16.541813320583767
+public HypergeometricDistribution(int populationSize, int numberOfSuccesses, int sampleSize)#61,16.532437286376954
+int sampleSize)#82,16.493690763201034
+throws NotPositiveException, NotStrictlyPositiveException, NumberIsTooLargeException {#83,16.486554741859436
+private int[] getDomain(int n, int m, int k) {#138,16.420213747024537
+return ret;#214,16.386176282709297
+private double innerCumulativeProbability(int x0, int x1, int dx) {#252,16.097950348487267
+private int getLowerDomain(int n, int m, int k) {#151,15.982700061798095
+int numberOfSuccesses,#81,15.904034744609486
+this.sampleSize = sampleSize;#110,15.849194824695587
+this.populationSize = populationSize;#109,15.726872503757477
+ret = 0.0;#200,15.701594352722168
+public class HypergeometricDistribution extends AbstractIntegerDistribution {#35,15.684864180428642
+public HypergeometricDistribution(RandomGenerator rng,#79,15.45507116878734

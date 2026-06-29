@@ -1,0 +1,570 @@
+throw new MatrixIndexException(#612,18.202482011583115
+final double[] out = new double[nrows];#816,18.14813312731291
+throw new IllegalArgumentException(#177,18.133609269794665
+throw new IllegalArgumentException(#667,18.073623607033177
+throw new IllegalArgumentException(#207,18.06897715518349
+for (int i=0;i<nrows;i++) {#817,17.99304559956426
+throw new IllegalArgumentException(#182,17.970646908408717
+return m.multiply(this);#466,17.95806884765625
+throw new IllegalArgumentException(#212,17.946238367181074
+throw new IllegalArgumentException#99,17.943604045444065
+"All input rows must have the same length.");#188,17.91423105310511
+ret = ret * 31 + nRows;#1317,17.858739852905273
+throw new MatrixIndexException#662,17.84757765601663
+private static final long serialVersionUID = -1011428905656140431L;#53,17.836599225583285
+throw new IllegalArgumentException("Matrix must have at least one row.");#147,17.820800550056227
+"All input rows must have the same length.");#218,17.812768441659433
+public BigDecimal getTrace() throws IllegalArgumentException {#967,17.792106363508438
+final double d[][] = new double[nRows][nCols];#491,17.7871492092426
+final int nRows = in.length;#1440,17.77726936340332
+throw new IllegalArgumentException(#672,17.765119552612305
+("row and column dimensions must be positive");#100,17.75609543209984
+return !(row < 0 || row >= nRows || col < 0 || col >= nCols);#1463,17.746252182991274
+for (int row = 0; row < nRows; row++) {#237,17.741151849428814
+throw new IllegalArgumentException(#217,17.73254274285358
+public int hashCode() {#1313,17.728810501098632
+for (int r = 1; r < nRows; r++) {#675,17.727956175804138
+throw new IllegalArgumentException(#187,17.696010506671406
+throw new IllegalArgumentException("All input rows must have the same length.");#155,17.692823203834326
+throw new NullPointerException();#143,17.688011127969492
+throw new IllegalArgumentException(#677,17.67571034638778
+parity = -parity;#1235,17.67525395480069
+StringBuffer res = new StringBuffer();#1254,17.66596668958664
+throw new MatrixIndexException(#585,17.655593872070312
+final int nRows = in.length;#1420,17.642961078219944
+for (int row = 0; row < nRows; row++) {#729,17.633078058560688
+return solve(MatrixUtils.createBigIdentityMatrix(getRowDimension()));#892,17.619858070656104
+"All input rows must have the same length.");#678,17.6169209656892
+permutation[row] = row;#1181,17.607976293563844
+public boolean isSingular() {#928,17.600946166298606
+throw new IllegalArgumentException("vector has wrong length");#1027,17.58097505569458
+for (int i = startRow; i <= endRow; i++) {#590,17.575096249580383
+final int nRows = v.length;#235,17.569861729939777
+for (int row = 1; row < nRows; row++) {#185,17.563216129938763
+for (int row = 0; row < nRows; row++) {#1060,17.562618533770245
+throw new IllegalArgumentException("Matrices are not multiplication compatible.");#438,17.5598526707402
+out[row] = sum;#997,17.55123349239952
+outDataRow[col] = dataRow[col].multiply(d);#390,17.550892549402572
+for (int row = 1; row < nRows; row++) {#215,17.547312418619793
+throw new IllegalArgumentException("Incorrect row dimension");#1098,17.53641927242279
+for (int j = 0; j < nCols; j++) {#1446,17.533795595169067
+final double[] out = new double[ncols];#771,17.532409524917604
+data = new BigDecimal[nRows][nCols];#1442,17.516362978064496
+"Matrix must have at least one row.");#178,17.514269123906676
+ret = ret * 31 + (11 * (row+1) + 17 * (col+1)) *#1322,17.513046550750733
+new BigDecimal[endRow - startRow + 1][endColumn - startColumn + 1];#589,17.50853818835634
+throw new IllegalArgumentException("vector has wrong length");#987,17.50842805703481
+"Matrix must have at least one row.");#208,17.507344660551652
+data = new BigDecimal[nRows][nCols];#684,17.503911901403356
+protected int[] getPermutation() {#1377,17.502164107102615
+for (int i=0;i<ncols;i++) {#772,17.4839768409729
+"Matrix must have at least one row.");#668,17.482655276422914
+largest = sum.abs();#1213,17.46977501649123
+for (int row = col + 1; row < nRows; row++) {#1240,17.467851416269937
+data = d;#158,17.463027477264404
+max = row;#1214,17.462661862373352
+public BigDecimal[] solve(double[] b) throws IllegalArgumentException, InvalidMatrixException {#1077,17.454311866760253
+return res.toString();#1272,17.441311291285924
+for (int j = 0; j < nCols; j++) {#493,17.439709629331315
+"Matrix must have at least one column.");#183,17.43374662813933
+bpI[j] = bpI[j].subtract(bp[col][j].multiply(luI[col]));#1126,17.43358235988977
+data = new BigDecimal[nRows][nCols];#1422,17.43247314121412
+final BigDecimal[][] out = new BigDecimal[nRows][1];#728,17.430016978033656
+for (int j = 0; j < nColB; j++) {#1141,17.424435436725616
+throw new IllegalArgumentException("Matrix must have at least one column.");#151,17.413012302283086
+for (int j = 0; j < nCols; j++) {#1426,17.412532874516078
+"Matrix must have at least one column.");#213,17.41101198611052
+ret = ret * 31 + nCols;#1318,17.40501748190986
+return det;#912,17.4047425587972
+final BigDecimal[][] outData = new BigDecimal[nRows][nCols];#443,17.40022333206669
+throw new MatrixIndexException("illegal row argument");#747,17.39686952937733
+return new BigMatrixImpl(this.copyOut(), false);#248,17.39536998385475
+for (int r = 1; r < nRows; r++) {#153,17.393667357308523
+for (int i = 0; i < nRows; i++) {#492,17.392430663108826
+luDecompose();#1360,17.391198370191788
+return out;#752,17.385528391057793
+public void luDecompose() throws InvalidMatrixException {#1169,17.37098772385541
+return data;#508,17.36682961203835
+outDataRow[col] = sum;#422,17.362411466138116
+bpI[j] = bpI[j].subtract(bp[col][j].multiply(luI[col]));#1142,17.34982409567203
+endColumn - startColumn + 1);#593,17.347638504845754
+final BigDecimal[][] outData = new BigDecimal[nRows][nCols];#413,17.345994431631905
+startColumn < 0 || startColumn > endColumn ||#583,17.342708199112504
+outDataRow[col] = sum;#452,17.33869625091553
+out[col] = sum;#1036,17.336882490860788
+final BigDecimal[] out = new BigDecimal[nRows];#793,17.328216910362244
+new BigDecimal[selectedRows.length][selectedColumns.length];#616,17.32651276424013
+public BigDecimal[] operate(double[] v) throws IllegalArgumentException {#1009,17.321906180608842
+throw new IllegalArgumentException("Matrices are not multiplication compatible.");#408,17.319252537142845
+throw new MatrixIndexException(#689,17.308135138617622
+final int nRows = d.length;#145,17.306753028522838
+public BigDecimal[] operate(BigDecimal[] v) throws IllegalArgumentException {#985,17.303176921346914
+throw new MatrixIndexException("illegal row argument");#768,17.301495595411822
+lu = null;#1220,17.300457409449987
+final int[] out = new int[permutation.length];#1378,17.300244240533736
+outDataRow[col] = dataRow[col].subtract(getEntry(row, col));#325,17.291788056839344
+for (int j = 0; j < selectedColumns.length; j++) {#621,17.284912894753848
+throw new IllegalArgumentException("matrix is not square");#969,17.27516258239746
+subI[j] = dataSelectedI[selectedColumns[j]];#622,17.274988977532637
+final BigDecimal[][] out = new BigDecimal[1][ncols];#710,17.267228586920375
+throw new InvalidMatrixException("LU decomposition requires that the matrix be square.");#1174,17.263535006292933
+lu[col][i] = tmp;#1230,17.262705898284914
+public double[][] getDataAsDoubleArray() {#488,17.257912158966064
+public BigDecimal[] solve(BigDecimal[] b) throws IllegalArgumentException, InvalidMatrixException {#1052,17.256716834174263
+for (int row = col; row < nRows; row++) {#1203,17.254376343318395
+for (int j = 0; j < nColB; j++) {#1125,17.253513664007187
+permutation = new int[nRows];#1179,17.244153287675644
+for (int col = 0; col < nCols; col++) {#878,17.243934426988876
+data = new BigDecimal[nRows][1];#236,17.24329158238002
+throw new InvalidMatrixException("matrix is not square");#903,17.234436233838398
+final BigDecimal[][] outData = new BigDecimal[nCols][nRows];#875,17.234281355334865
+for (int j = 0; j < nColB; j++) {#1135,17.23308753967285
+final BigDecimal[][] bp = new BigDecimal[nRowB][nColB];#1112,17.228299694676554
+for (int i = 0; i < nRows; i++) {#794,17.22788659731547
+return d;#497,17.227312261408027
+for (int col = 0; col < columnCount; col++) {#324,17.22512602036999
+final BigDecimal[] out = new BigDecimal[nRows];#1059,17.217110872268677
+"Matrix must have at least one column.");#673,17.214292775029723
+return out;#1380,17.213628248734906
+for (int row = 0; row < rowCount; row++) {#293,17.21313833153766
+for (int col = 0; col < columnCount; col++) {#271,17.210590116439327
+if (startRow < 0 || startRow > endRow || endRow > data.length ||#582,17.20979298864092
+this.copyIn(d);#119,17.20956064860026
+for (int i = 0; i < nRows; i++) {#1423,17.20708151658376
+final BigDecimal[] outDataRow = outData[row];#369,17.20580012981708
+int ret = 7;#1314,17.20536342033973
+final BigDecimal[] out = new BigDecimal[ncols];#750,17.204270720481873
+for (int row = 0; row < rowCount; row++) {#346,17.202527709629226
+return copyOut();#477,17.199331442515057
+for (int col = 0; col < nCols; col++) {#1321,17.19828905378069
+final BigDecimal[] outDataRow = outData[row];#388,17.197758491222675
+outDataRow[col] = dataRow[col].subtract(mRow[col]);#351,17.194753157125938
+for (int row = 0; row < nRowB; row++) {#1113,17.189740538597107
+final int nRows = d.length;#205,17.18375317255656
+for (int col = 0; col < columnCount; col++) {#350,17.179669874685782
+for (int row = 0; row < nRows; row++) {#1319,17.179022073745728
+final int nRows = d.length;#175,17.178436491224502
+sum = sum.subtract(luRow[i].multiply(lu[i][col]));#1195,17.17800370129672
+final int nRowB = b.getRowDimension();#1109,17.177812122163317
+for (int i = 0; i < nRows; i++) {#1443,17.17462956905365
+outDataRow[col] = dataRow[col].add(d);#371,17.170521914958954
+for (int row = 0; row < rowCount; row++) {#367,17.16745845131252
+for (int row = 0; row < rowCount; row++) {#386,17.163680740024734
+res.append(",");#1264,17.16239554087321
+subMatrixData[i - startRow], 0,#592,17.16229054235643
+final BigDecimal[] outDataRow = outData[row];#323,17.160946782430013
+public BigDecimal[] preMultiply(BigDecimal[] v) throws IllegalArgumentException {#1024,17.154762524824875
+public BigMatrix getSubMatrix(int[] selectedRows, int[] selectedColumns)#609,17.152423775714375
+final int nrows = this.getRowDimension();#815,17.150352334976198
+final BigDecimal[] outDataRow = outData[row];#270,17.14945634206136
+throw new MatrixIndexException("illegal row argument");#707,17.147667277943004
+for (int row = 0; row < rowCount; row++) {#321,17.1460441659998
+for (int row = 0; row < nRows; row++) {#444,17.143269578615826
+public BigMatrix solve(BigMatrix b) throws IllegalArgumentException, InvalidMatrixException  {#1096,17.141094485918682
+for (int i = 0; i < selectedRows.length; i++) {#618,17.14012549718221
+for (int row = 0; row < rowCount; row++) {#268,17.134695865489817
+throws MatrixIndexException {#660,17.133169386121963
+for (int i = 0; i < nRows; i++) {#1394,17.132478555043537
+private static final BigDecimal TOO_SMALL = new BigDecimal(10E-12);#76,17.128261932959923
+for (int col = 0; col < columnCount; col++) {#370,17.126579531916864
+sum = sum.subtract(luRow[i].multiply(lu[i][col]));#1207,17.126439853148028
+final BigDecimal[][] out = new BigDecimal[nRows][this.getColumnDimension()];#1392,17.121863140779382
+parity = 1;#1183,17.12175186475118
+res.append(",");#1259,17.119026477520283
+for (int row = 0; row < nRows; row++) {#1297,17.116100271542866
+for (int row = 0; row < nRows; row++) {#876,17.115977883338928
+for (int col = 0; col < columnCount; col++) {#297,17.113020543698912
+bd[i] = new BigDecimal(b[i]);#1080,17.111963307415998
+out[row] = solution[row][0];#1061,17.10758167764415
+final int rowCount    = getRowDimension();#340,17.10454650152297
+"invalid row or column index selection");#586,17.10353401729039
+throw new MatrixIndexException("illegal column argument");#813,17.101700045845725
+for (int row = 0; row < nRows; row++) {#414,17.100720371518815
+public double[] getRowAsDoubleArray(int row) throws MatrixIndexException {#766,17.099473362877255
+final int rowCount    = getRowDimension();#315,17.097210388183594
+return out;#820,17.09587001800537
+return out;#775,17.094980413263496
+final int rowCount    = getRowDimension();#262,17.093735656738282
+det = det.multiply(lu[i][i]);#910,17.091089312235514
+throw new InvalidMatrixException("Matrix is singular.");#1104,17.087566583052926
+public String toString() {#1253,17.08545055389404
+bd[i] = new BigDecimal(v[i]);#1012,17.083241745277686
+final int rowCount    = getRowDimension();#287,17.08276280902681
+outData[col][row] = dataRow[col];#879,17.082439751460633
+final BigDecimal[] dataRow    = data[row];#322,17.07631504920221
+for (int i = 0; i < bd.length; i++) {#1011,17.075855484008787
+return operate(bd);#1014,17.073428594149075
+int startColumn, int endColumn)#580,17.07124507994879
+protected int[] permutation = null;#64,17.066230217615765
+final BigDecimal[] dataRow    = data[row];#269,17.064049505418346
+throw new IllegalArgumentException("constant vector has wrong length");#1055,17.062626288487362
+public double[] getColumnAsDoubleArray(int col) throws MatrixIndexException {#811,17.061822073800222
+for (int col = 0; col < nCols; col++) {#447,17.059131860733032
+for (int row = 0; row < nRows; row++) {#992,17.057167490323383
+final BigDecimal[] luRow = lu[row];#1241,17.05661303202311
+for (int row = 0; row < this.getRowDimension(); row++) {#559,17.05349479183074
+for (int row = 0; row < nRows; row++) {#1180,17.052427609761555
+final int nCols = d[0].length;#210,17.052341270446778
+final int nCols = d[0].length;#180,17.050872325897217
+throw new MatrixIndexException("illegal column argument");#790,17.049023324793037
+for (int col = 0; col < nCols; col++) {#1299,17.04861797605242
+final int nRows = this.getRowDimension();#873,17.045038132440474
+final int rowCount    = getRowDimension();#383,17.043209802536737
+return out;#797,17.042999961159445
+for (int col = nCol - 1; col >= 0; col--) {#1132,17.040519310877873
+for (int i = 0; i < bd.length; i++) {#1079,17.038116455078125
+final int rowCount    = getRowDimension();#364,17.0349364507766
+System.arraycopy(data[row], 0, out, 0, ncols);#751,17.03360917833116
+tmp = lu[max][i];#1228,17.028537289849645
+final BigDecimal[][] outData = new BigDecimal[rowCount][columnCount];#292,17.027929108718347
+throw new InvalidMatrixException("matrix is singular");#1221,17.025262267501265
+outDataRow[col] = dataRow[col].add(mRow[col]);#298,17.02456921168736
+final int nRows = this.getRowDimension();#440,17.02364444732666
+public BigMatrix add(BigMatrix m) throws IllegalArgumentException {#258,17.020436086152728
+for (int i = 0; i < nRows; i++) {#691,17.017008940378826
+final BigDecimal[] outDataRow = outData[row];#349,17.014710719768818
+for (int col = 0; col < nColB; col++) {#1115,17.01405099460057
+(nCols + column > this.getColumnDimension()))#688,17.013298175953054
+dataI[j] = new BigDecimal(inI[j]);#1447,17.012335240840912
+final BigDecimal[][] outData = new BigDecimal[rowCount][columnCount];#345,17.011906788266938
+throw new MatrixIndexException("illegal column argument");#725,17.011224009773947
+sum = sum.add(data[row][i].multiply(v[i]));#995,17.010501861572266
+out[row][0] = data[row][column];#730,17.00765682220459
+System.arraycopy(permutation, 0, out, 0, permutation.length);#1379,17.007495526914244
+public BigMatrix preMultiply(BigMatrix m) throws IllegalArgumentException {#465,17.007492498918012
+final BigDecimal[] out = new BigDecimal[nCols];#1030,17.00740150610606
+outDataRow[col] = dataRow[col].add(m.getEntry(row, col));#272,17.006936095481695
+final int nCols = this.getColumnDimension();#1029,17.004649253118608
+protected int parity = 1;#67,17.004189014434814
+return true;#934,17.00192762676038
+final BigDecimal[] outDataRow = outData[row];#296,16.993715506333572
+data[row][0] = v[row];#238,16.99310240538224
+final BigDecimal[][] outData = new BigDecimal[rowCount][columnCount];#320,16.99281779202548
+final BigDecimal[] mRow       = m.data[row];#348,16.99234277009964
+return data[row][column];#841,16.991998772872122
+luRow[col] = sum;#1197,16.991603660583497
+final BigDecimal[][] outData = new BigDecimal[rowCount][columnCount];#267,16.99066890369762
+this.copyIn(d);#191,16.988202476501463
+return subtract((BigMatrixImpl) m);#313,16.98759564899263
+dataI[j] = new BigDecimal(inI[j]);#1427,16.98583871126175
+throw new IllegalArgumentException("matrix dimension mismatch");#318,16.98147623879569
+for (int i = 0; i < nRows; i++) {#1033,16.97990104130336
+final BigDecimal[] dataRow    = data[row];#387,16.976479954189724
+this.copyIn(d);#221,16.975823656717935
+for (int col = 0; col < columnCount; col++) {#389,16.97567802005344
+final BigDecimal bd[] = new BigDecimal[b.length];#1078,16.975055198669434
+return ret;#1326,16.971692258661445
+for (int row = 0; row < col; row++) {#1191,16.969915830172024
+private BigDecimal[][] copyOut() {#1390,16.968277422587075
+throw new IllegalArgumentException("matrix dimension mismatch");#265,16.965683153697423
+return data.length;#947,16.962410706740158
+if (nRows == 0) {#176,16.962148610283347
+final BigDecimal[] mRow       = m.data[row];#295,16.961828500032425
+BigDecimal det = (parity == 1) ? ONE : ONE.negate();#908,16.960667979332708
+return add((BigMatrixImpl) m);#260,16.95777198246547
+final int nRows = this.getRowDimension();#1461,16.955658594767254
+for (int col = 0; col < nCols; col++) {#417,16.953391790390015
+throws MatrixIndexException {#581,16.951539773207443
+"invalid row or column index selection");#690,16.95045735836029
+final int nRows = subMatrix.length;#665,16.941344210976048
+if (nRows == 0) {#206,16.94101905822754
+luDecompose();#931,16.938919067382812
+final int nRows = this.getRowDimension();#989,16.93875485374814
+final BigDecimal[] outDataRow = outData[row];#446,16.937678887293888
+final int nRows = this.getRowDimension();#1391,16.93719110034761
+for (int col = 0; col < nCol; col++) {#1121,16.93510391401208
+final BigDecimal[] dataRow    = data[row];#294,16.932466118424028
+final BigDecimal[][] solution = ((BigMatrixImpl) (solve(bMatrix))).getDataRef();#1058,16.930896198048313
+throw new IllegalArgumentException("matrix dimension mismatch");#343,16.93062472343445
+final BigDecimal[] dataRow    = data[row];#368,16.926639521563494
+for (int i = col + 1; i < nCol; i++) {#1122,16.92609185185926
+return ZERO;#906,16.92576563358307
+if (nRows == 0) {#666,16.9251792010139
+out[i] = data[row][i].doubleValue();#773,16.922519830557015
+throws MatrixIndexException {#610,16.92101654639611
+final int ncols = this.getColumnDimension();#709,16.917687733968098
+for (int col = 0; col < nCols; col++) {#1186,16.91663670539856
+System.arraycopy(data[row], 0, out[0], 0, ncols);#711,16.916419884254193
+BigDecimal sum = ZERO;#558,16.916095209121703
+throw new IllegalArgumentException("matrix dimension mismatch");#290,16.915855328241985
+final int nRows = this.getRowDimension();#792,16.91532293955485
+final BigDecimal[][] outData = new BigDecimal[rowCount][columnCount];#385,16.914427494180615
+final String[] inI = in[i];#1445,16.913695205341686
+final BigMatrix bMatrix = new BigMatrixImpl(b);#1057,16.91024026416597
+final BigDecimal[][] outData = new BigDecimal[rowCount][columnCount];#366,16.908931995260303
+luRow[col] = luRow[col].divide(luDiag, scale, roundingMode);#1242,16.90642629018644
+final int nCol = this.getColumnDimension();#1107,16.903825664520262
+lu[max][i] = lu[col][i];#1229,16.90337974003383
+return out;#1063,16.90172256122936
+if (nRows != nCols) {#1173,16.900431131061755
+final BigDecimal[] luRow = lu[row];#1204,16.896326096852622
+return false;#1301,16.896325940671176
+public BigMatrix subtract(BigMatrix m) throws IllegalArgumentException {#311,16.895311807331286
+luRow[col] = sum;#1209,16.894530029296874
+return solve(bd);#1082,16.89332705277663
+final BigDecimal[] luRow = lu[row];#1192,16.892448393503823
+"selected row and column index arrays must be non-empty");#613,16.889254646301268
+final BigDecimal[] dataI = data[i];#1444,16.887996037801106
+permutation[col] = temp;#1234,16.882535219192505
+sum = luRow[col];#1193,16.88046085834503
+final BigDecimal[] bpI = bp[i];#1139,16.87897008260091
+for (int col = 0; col < nCols; col++) {#1031,16.877344091733296
+final BigDecimal[] dataI = data[i];#1424,16.872931679089863
+public BigMatrix multiply(BigMatrix m) throws IllegalArgumentException {#403,16.871686282910797
+bpCol[j] = bpCol[j].divide(luDiag, scale, roundingMode);#1136,16.870784782781833
+for (int j = 0; j < data[0].length; j++) {#1262,16.869446698357077
+lu = this.getData();#1176,16.868397533893585
+throw new InvalidMatrixException("coefficient matrix is not square");#1101,16.866964797973633
+final BigDecimal[] dataRow    = data[row];#415,16.865474639400357
+public BigDecimal[] getRow(int row) throws MatrixIndexException {#745,16.865413761138917
+public BigDecimal[][] getDataRef() {#507,16.862399518489838
+final BigDecimal[] luI = lu[i];#1124,16.861160119374592
+final BigDecimal[] dataRow    = data[row];#347,16.85978850611934
+final int nCols = this.getColumnDimension();#1462,16.858036041259766
+final BigDecimal[] outDataRow = outData[row];#416,16.856776364644368
+final BigDecimal bd[] = new BigDecimal[v.length];#1010,16.852333869934082
+final int nRows = this.getRowDimension();#727,16.850945381891158
+final int nCols = this.getColumnDimension();#874,16.850451287769136
+return true;#1286,16.85033899943034
+for (int i = 0; i < nCols; i++) {#994,16.849492618015834
+final BigDecimal[] bpI = bp[i];#1123,16.844019095102947
+return out;#1038,16.842759219082918
+if (((nRows + row) > this.getRowDimension()) ||#687,16.838104284726658
+System.arraycopy(subMatrix[i], 0, data[row + i], column, nCols);#692,16.837227132585312
+final int ncols = this.getColumnDimension();#749,16.835243679228284
+("invalid row or column index selection");#663,16.832236936015466
+final int nRows = this.getRowDimension();#1171,16.81688117980957
+sum = luRow[col];#1205,16.81665790081024
+final int nRows = getRowDimension();#489,16.814672068545693
+final BigDecimal[] luI = lu[i];#1140,16.80795052846273
+if (rowDimension <=0 || columnDimension <=0) {#98,16.807812110237453
+return out;#1397,16.806062611666594
+sum = sum.add(data[i][col].multiply(v[i]));#1034,16.80298346442145
+bpRow[col] = b.getEntry(permutation[row], col);#1116,16.80090879712786
+copyIn(d);#140,16.800633879268872
+res.append("}");#1268,16.79881238937378
+final int nRows = this.getRowDimension();#410,16.795214347839355
+for (int col = 0; col < this.getColumnDimension(); col++) {#557,16.794628920378507
+permutation[max] = permutation[col];#1233,16.79209698571099
+d[i][j] = data[i][j].doubleValue();#494,16.789758533239365
+final BigDecimal[] out = new BigDecimal[v.length];#991,16.786391456921894
+final BigDecimal[] dataSelectedI = data[selectedRows[i]];#620,16.785337230137415
+for (int i = 0; i < col; i++) {#1138,16.784888634314903
+return out;#999,16.78238972750577
+final double[] inI = in[i];#1425,16.78231885216453
+final int ncols = this.getColumnDimension();#770,16.781580152965727
+sum = sum.add(dataRow[i].multiply(m.getEntry(i, col)));#420,16.780600022296515
+return false;#932,16.777017894544098
+for (int i = 0; i < nSum; i++) {#449,16.773878497462118
+if (v.length != nRows) {#1026,16.773824340418766
+throws MatrixIndexException {#839,16.7735661400689
+final int nCols = this.getColumnDimension();#990,16.769397962661017
+public BigDecimal getDeterminant() throws InvalidMatrixException {#901,16.76850461959839
+for (int i = 0; i < this.getRowDimension(); i++) {#909,16.76462677986391
+return scale;#537,16.75603857907382
+for (int i = 0; i < row; i++) {#1194,16.752120717366537
+final BigDecimal[] dataRow = data[row];#1320,16.74931724866231
+for (int i = 0; i < nSum; i++) {#419,16.748927661350795
+sum = sum.add(data[row][col].abs());#560,16.74813610712687
+if (selectedRows.length * selectedColumns.length == 0) {#611,16.747052688598632
+final int nCols = d[0].length;#149,16.743384917577107
+private int roundingMode = BigDecimal.ROUND_HALF_UP;#70,16.743197311054576
+endColumn > data[0].length ) {#584,16.74318218231201
+return false;#1295,16.741287358601888
+final int nCols = this.getColumnDimension();#1172,16.73966525849842
+BigDecimal sum = ZERO;#418,16.737793241228378
+return false;#1289,16.735196812947592
+return trace;#975,16.73476401242343
+public BigMatrixImpl multiply(BigMatrixImpl m) throws IllegalArgumentException {#436,16.73176438467843
+public BigMatrixImpl(BigDecimal[][] d, boolean copyArray) {#138,16.724601182070646
+if (m.getColumnDimension() != nCols || m.getRowDimension() != nRows) {#1294,16.711089106968473
+dataRow[col].hashCode();#1323,16.71046221256256
+public BigMatrix transpose() {#872,16.7092116095803
+throw new MatrixIndexException("matrix entry does not exist");#843,16.707154426574707
+res.append("{");#1261,16.70530215176669
+final int nColB = b.getColumnDimension();#1108,16.70312009538923
+final BigDecimal[] dataRow    = data[row];#445,16.702880859375
+BigDecimal tmp = ZERO;#1226,16.69885551929474
+sum = sum.add(dataRow[i].multiply(m.data[i][col]));#450,16.69578556580977
+public BigMatrix inverse() throws InvalidMatrixException {#891,16.69405848639352
+final BigDecimal[] dataRow = data[row];#1298,16.693947394688923
+System.arraycopy(data[i], startColumn,#591,16.691021124521892
+out[i] = data[i][col];#795,16.686764053676438
+BigDecimal sum = ZERO;#1032,16.68233118057251
+for (int i = 1; i < this.getRowDimension(); i++) {#972,16.677891024836786
+return data[0].length;#956,16.669830131530762
+private int scale = 64;#73,16.668389511108398
+final int nRows = getRowDimension();#1292,16.667791015223454
+int temp = permutation[max];#1232,16.664327541987102
+BigDecimal sum = ZERO;#1188,16.66154541969299
+final BigDecimal[] dataRow = data[row];#877,16.661207755406696
+final int nRows = this.getRowDimension();#1053,16.661180587041947
+for (int i = 0; i < nCols; i++) {#1227,16.658515483140945
+return new BigMatrixImpl(outData, false);#425,16.646765874779742
+this.scale = scale;#546,16.645674296787806
+BigDecimal sum = ZERO;#993,16.64502868652344
+if (b.length != nRows) {#1054,16.6432759134393
+out[i] = data[i][col].doubleValue();#818,16.641131511101356
+public BigMatrixImpl add(BigMatrixImpl m) throws IllegalArgumentException {#286,16.640830721173966
+public BigMatrix scalarMultiply(BigDecimal d) {#382,16.637553014253314
+final BigDecimal[] bpCol = bp[col];#1133,16.637240556570198
+BigDecimal sum = ZERO;#448,16.636890451113384
+return multiply((BigMatrixImpl) m);#405,16.631664730253675
+this.roundingMode = roundingMode;#527,16.62814235687256
+lu = null;#120,16.624307485727165
+final int nCols = m.getColumnDimension();#441,16.62235673268636
+if (lu[max][col].abs().compareTo(TOO_SMALL) <= 0) {#1219,16.619764698876274
+for (int i = 0; i < col; i++) {#1206,16.619617335001628
+public double getEntryAsDouble(int row, int column) throws MatrixIndexException {#863,16.61850859902122
+if (nRows == 0) {#146,16.615963163829985
+lu = null;#160,16.613873628469612
+final BigDecimal[] subI = subMatrixData[i];#619,16.610881582895914
+return (this.getColumnDimension() == this.getRowDimension());#921,16.60989719390869
+throw new MatrixIndexException("matrix dimension mismatch");#627,16.609486331110414
+return false; // so the matrix is not singular#937,16.59830665588379
+final int nCols = in[0].length;#1441,16.591009902954102
+static final BigDecimal ZERO = new BigDecimal(0);#79,16.589028207879316
+final int columnCount = getColumnDimension();#316,16.584998044100676
+final int columnCount = getColumnDimension();#263,16.584270520643756
+public BigMatrixImpl subtract(BigMatrixImpl m) throws IllegalArgumentException {#339,16.581680207025435
+final int nRows = getRowDimension();#1315,16.580643603676243
+final int nRows = this.getRowDimension();#1025,16.575351033891952
+if (sum.abs().compareTo(largest) == 1) {#1212,16.57501459121704
+catch (ArrayIndexOutOfBoundsException e) {#626,16.559098386764525
+final int nSum = this.getColumnDimension();#442,16.55697627067566
+for (int i = 0; i < data.length; i++) {#1257,16.555589062826975
+final int nCols = subMatrix[0].length;#670,16.555346988496325
+final int nCols = getColumnDimension();#490,16.554962660136976
+public void setSubMatrix(BigDecimal[][] subMatrix, int row, int column)#659,16.55468174127432
+final BigDecimal[] bpRow = bp[row];#1114,16.553681043478157
+return new BigMatrixImpl(outData, false);#328,16.54717959528384
+final BigDecimal luDiag = lu[col][col];#1239,16.54207386289324
+if (columnCount != m.getColumnDimension() || rowCount != m.getRowDimension()) {#289,16.539367467164993
+res.append(data[i][j]);#1266,16.539006392161053
+final int nCols = in[0].length;#1421,16.53591604232788
+static final BigDecimal ONE = new BigDecimal(1);#81,16.53552876578437
+return new BigMatrixImpl(outData, false);#275,16.525437355041504
+try {#930,16.522797788892472
+public boolean isSquare() {#920,16.52272500991821
+return true;#1305,16.52210114218972
+if (columnCount != m.getColumnDimension() || rowCount != m.getRowDimension()) {#342,16.51881891489029
+maxColSum = maxColSum.max(sum);#562,16.517043828964233
+System.arraycopy(subMatrix, 0, data, 0, subMatrix.length);#685,16.514131359937714
+if (columnCount != m.getColumnDimension() || rowCount != m.getRowDimension()) {#264,16.50968821843465
+final int nCols = m.getColumnDimension();#411,16.509311485290528
+res.append("BigMatrixImpl{");#1255,16.50785261041978
+int max = col; // permutation row#1201,16.505873680114746
+final BigDecimal luDiag = lu[col][col];#1134,16.504684618541173
+final BigMatrix m = (BigMatrix) object;#1291,16.501355773524235
+lu = null;#192,16.497524921710674
+BigDecimal largest = ZERO;#1202,16.493659734725952
+return new BigMatrixImpl(outData, false);#393,16.483377607245195
+return new BigMatrixImpl(out, false);#712,16.48316192626953
+if (columnCount != m.getColumnDimension() || rowCount != m.getRowDimension()) {#317,16.477350897259182
+public BigDecimal[][] getData() {#476,16.475179862976074
+return new BigMatrixImpl(lu);#1362,16.46867424249649
+final int nCols = getColumnDimension();#1293,16.45306562122546
+lu = null;#222,16.443857999948357
+if (d[r].length != nCols) {#154,16.439845118029364
+("matrix must be initialized to perfom this method");#683,16.43962486584981
+lu = null;#694,16.439065566429726
+data = new BigDecimal[rowDimension][columnDimension];#102,16.434954974962316
+lu = null;#1450,16.432160450862003
+final int nSum = this.getColumnDimension();#412,16.422725955645245
+lu = null;#103,16.42204937568078
+System.arraycopy(data[i], 0, out[i], 0, data[i].length);#1395,16.417235319955008
+if (j > 0) {#1263,16.415654641610605
+public BigDecimal[] getColumn(int col) throws MatrixIndexException {#788,16.413699340820312
+if ((row > 0)||(column > 0)) throw new MatrixIndexException#682,16.409574541552313
+final int nCols = getColumnDimension();#1316,16.408080502560264
+if (lu == null) {#1359,16.40242468516032
+public BigDecimal getNorm() {#555,16.399689038594563
+if (nCols == 0) {#211,16.38128589181339
+protected BigMatrix getLUMatrix() throws InvalidMatrixException {#1358,16.38028245502048
+if (nCols == 0) {#181,16.37919319377226
+if ((row < 0) || (column < 0)){#661,16.378507659548806
+if (this.getColumnDimension() != m.getRowDimension()) {#407,16.376789061228433
+return new BigMatrixImpl(outData, false);#882,16.36741798802426
+if (nCols == 0) {#671,16.364548627068014
+if (!dataRow[col].equals(m.getEntry(row, col))) {#1300,16.363003187709385
+return new BigMatrixImpl(outData, false);#301,16.361113698858965
+final int columnCount = getColumnDimension();#288,16.343782318962944
+return maxColSum;#564,16.343465438255897
+return new BigMatrixImpl(outData, false);#374,16.337292018689606
+final int columnCount = getColumnDimension();#341,16.330716292063396
+lu = null;#1430,16.32595319014329
+return new BigMatrixImpl(out, false);#732,16.318846967485214
+BigDecimal maxColSum = ZERO;#556,16.312508583068848
+private void copyIn(BigDecimal[][] in) {#1410,16.303619861602783
+if (object == this ) {#1285,16.292176564534504
+if (this.getColumnDimension() != m.getRowDimension()) {#437,16.287649448101337
+return new BigMatrixImpl(outData, false);#455,16.286384783293073
+public BigMatrix scalarAdd(BigDecimal d) {#363,16.281529538771686
+if (d[row].length != nCols) {#216,16.27840938568115
+if (isSingular()) {   // note: this has side effect of attempting LU decomp if lu == null#905,16.27431141246449
+if (d[row].length != nCols) {#186,16.270061225891112
+return getEntry(row,column).doubleValue();#864,16.260695859005576
+return new BigMatrixImpl(subMatrixData, false);#595,16.259258842468263
+final int columnCount = getColumnDimension();#384,16.257084369659424
+public BigMatrix getSubMatrix(int startRow, int endRow,#579,16.255827652780635
+try {#840,16.247039318084717
+final BigDecimal[][] subMatrixData =#615,16.23593817259136
+if (nCols == 0) {#150,16.222573689052037
+return new BigMatrixImpl(outData, false);#354,16.22108474530672
+final BigDecimal[][] subMatrixData =#588,16.20324963017514
+public int getRowDimension() {#946,16.202141443888348
+try  {#617,16.195698738098145
+BigDecimal trace = data[0][0];#971,16.186938436407793
+public BigMatrix getRowMatrix(int row) throws MatrixIndexException {#705,16.182126597354287
+public BigMatrix getColumnMatrix(int column) throws MatrixIndexException {#723,16.171961784362793
+final int columnCount = getColumnDimension();#365,16.168913947211372
+return roundingMode;#518,16.16615915298462
+trace = trace.add(data[i][i]);#973,16.133140405019123
+private void copyIn(double[][] in) {#1419,16.11467707157135
+if (b.getRowDimension() != this.getRowDimension()) {#1097,16.11041281773494
+public BigMatrixImpl(BigDecimal[][] d) {#118,16.106956322987873
+res.append("}");#1271,16.0892812865121
+setSubMatrix(in,0,0);#1411,16.078672250111897
+if (d == null) {#142,16.07658657274748
+public int getScale() {#536,16.06648006439209
+if (this.isSingular()) { // side effect: compute LU decomp#1103,16.064432223637898
+private void copyIn(String[][] in) {#1439,16.023392617702484
+public BigMatrixImpl(BigDecimal[] v) {#234,16.01828181743622
+public int getRoundingMode() {#517,16.00315268834432
+public BigMatrix copy() {#247,15.990961742401122
+return new BigMatrixImpl(subMatrixData, false);#629,15.960846042633056
+protected BigDecimal data[][] = null;#56,15.959530448913574
+if ( !isValidCoordinate( row, 0 ) ) {#767,15.957557808269154
+if ( !isValidCoordinate( row, 0 ) ) {#746,15.935139439322732
+if (subMatrix[r].length != nCols) {#676,15.932455686422495
+private boolean isValidCoordinate(int row, int col) {#1460,15.928180747561985
+return new BigMatrixImpl(bp, false);#1147,15.919457382626003
+if (max != col) {#1225,15.903545630605597
+public int getColumnDimension() {#955,15.893246491750082
+if ( !isValidCoordinate( row, 0)) {#706,15.883144787379674
+protected BigDecimal lu[][] = null;#61,15.865827023983002
+if (lu == null) {#929,15.832656288146973
+try {#312,15.809786891937256
+public BigMatrixImpl(double[][] d) {#174,15.802202641963959
+public BigDecimal getEntry(int row, int column)#838,15.779200441697064
+if (i > 0) {#1258,15.778089730635934
+if (copyArray) {#139,15.771293027060372
+try {#259,15.770518398284912
+public BigMatrixImpl(String[][] d) {#204,15.702268481254578
+if (v.length != this.getColumnDimension()) {#986,15.686511863361705
+if (!this.isSquare()) {#1100,15.684369802474976
+public BigMatrixImpl(int rowDimension, int columnDimension) {#97,15.668303966522217
+if ( !isValidCoordinate( 0, column)) {#724,15.643923895699638
+if ( !isValidCoordinate(0, col) ) {#789,15.602431904185902
+if (!isSquare()) {#968,15.566840853009905
+public void setScale(int scale) {#545,15.555671251737154
+try {#404,15.548328113555907
+if ( !isValidCoordinate( 0, col ) ) {#812,15.544867905703457
+if (!isSquare()) {#902,15.50995431627546
+if (data == null) {#681,15.390492884318034
+public boolean equals(Object object) {#1284,15.387625853220621
+if (object instanceof BigMatrixImpl == false) {#1288,15.361417436599732
+public BigMatrixImpl() {#86,15.28292007446289
+if (data != null) {#1256,15.263597615559895
+public void setRoundingMode(int roundingMode) {#526,15.01643455028534
+public class BigMatrixImpl implements BigMatrix, Serializable {#50,14.922218322753906

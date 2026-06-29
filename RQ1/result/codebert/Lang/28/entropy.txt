@@ -1,0 +1,22 @@
+boolean isHex = false;#39,19.008357499775133
+int entityValue;#52,18.860641598701477
+int end = start;#47,18.797656227560605
+if(input.charAt(index) == '&' && input.charAt(index + 1) == '#') {#37,18.72227152188619
+end++;#49,18.717079374525284
+if(firstChar == 'x' || firstChar == 'X') {#42,18.694340876170568
+return 0;#66,18.573382290926848
+public int translate(CharSequence input, int index, Writer out) throws IOException {#35,18.55425842948582
+while(input.charAt(end) != ';') {#48,18.48263953282283
+try {#53,18.420715195792063
+char firstChar = input.charAt(start);#41,18.34111342222794
+isHex = true;#44,18.30543700131503
+@Override#34,18.182900269826252
+int start = index + 2;#38,17.943778088218288
+entityValue = Integer.parseInt(input.subSequence(start, end).toString(), 10);#57,17.91558589491733
+start++;#43,17.722032864888508
+entityValue = Integer.parseInt(input.subSequence(start, end).toString(), 16);#55,17.63536351226097
+public class NumericEntityUnescaper extends CharSequenceTranslator {#29,17.474692625157974
+return 0;#60,17.458173350283975
+if(isHex) {#54,17.385789124862008
+return 2 + (end - start) + (isHex ? 1 : 0) + 1;#64,17.380804813269414
+out.write(entityValue);#63,17.048476841138758

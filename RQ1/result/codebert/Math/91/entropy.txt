@@ -1,0 +1,196 @@
+return 37 * (37 * 17 + getNumerator()) + getDenominator();#335,17.42113328863073
+private final int denominator;#48,16.868682765960692
+private static final long serialVersionUID = 3071409609509774764L;#45,16.836194471879438
+int d1 = MathUtils.gcd(denominator, fraction.denominator);#427,16.752601294681945
+int d2 = (tmodd1==0)?d1:MathUtils.gcd(tmodd1, d1);#448,16.697770369680303
+private Fraction(double value, double epsilon, int maxDenominator, int maxIterations)#136,16.692656057852286
+return ZERO; // normalize zero.#527,16.671356882367814
+int gcd = MathUtils.gcd(numerator, denominator);#544,16.65615602640005
+denominator /= gcd;#546,16.640608978271484
+this(value, 0, maxDenominator, 100);#102,16.577437019348146
+int tmodd1 = t.mod(BigInteger.valueOf(d1)).intValue();#447,16.47157866160075
+public Fraction(double value, int maxDenominator)#99,16.455355139339673
+public static final Fraction MINUS_ONE = new Fraction(-1, 1);#42,16.430019508708607
+this(value, 1.0e-5, 100);#60,16.365043276832218
+public boolean equals(Object other) {#282,16.3008975982666
+this(value, epsilon, Integer.MAX_VALUE, maxIterations);#82,16.28489721738375
+return new Fraction(-numerator, denominator);#365,16.257647705078124
+public static final Fraction ONE = new Fraction(1, 1);#36,16.241711917676422
+BigInteger w = t.divide(BigInteger.valueOf(d2));#451,16.240600109100342
+int d1 = MathUtils.gcd(numerator, fraction.denominator);#480,16.233659020785627
+(MathUtils.mulAndCheck(numerator/d1, fraction.numerator/d2),#483,16.224154780892764
+int d2 = MathUtils.gcd(fraction.numerator, denominator);#481,16.17740933648471
+public int getDenominator() {#318,16.17643443743388
+BigInteger t = isAdd ? uvp.add(upv) : uvp.subtract(upv);#444,16.171664041631363
+public class Fraction extends Number implements Comparable<Fraction> {#30,16.16319548288981
+public static final Fraction TWO = new Fraction(2, 1);#33,16.14789134577701
+public static final Fraction ZERO = new Fraction(0, 1);#39,16.14031629562378
+return (nOd < dOn) ? -1 : ((nOd > dOn) ? +1 : 0);#261,16.139468928745814
+if (Math.abs(a0 - value) < epsilon) {#148,16.117548065185545
+denominator = -denominator;#541,16.103091859817503
+return denominator;#319,16.102705319722492
+numerator /= gcd;#545,16.098069127400716
+this.denominator = 1;#150,16.052013540267943
+int uvp = MathUtils.mulAndCheck(numerator, fraction.denominator);#430,16.02358046940395
+MathUtils.mulAndCheck(denominator/d2, fraction.denominator/d1));#484,16.002163607899735
+if (d1==1) {#428,15.994435667991638
+p2 = (a1 * p1) + p0;#168,15.991047712472769
+public Fraction negate() {#360,15.990941905975342
+if (denominator == 0) {#521,15.974561242496266
+return isAdd ? fraction : fraction.negate();#420,15.973879150722338
+MathUtils.mulAndCheck(denominator/d1,#457,15.966961167075418
+if (n < maxIterations && Math.abs(convergent - value) > epsilon && q2 < maxDenominator) {#175,15.963878328149969
+boolean stop = false;#163,15.946801405686598
+return multiply(fraction.reciprocal());#506,15.942617893218994
+throw MathRuntimeException.createArithmeticException("overflow, numerator too large after multiply: {0}",#453,15.924666033850777
+int d = MathUtils.gcd(num, den);#223,15.918794241818516
+public Fraction(double value, double epsilon, int maxIterations)#79,15.915045556567964
+return ZERO;#476,15.910929560661316
+numerator/=2; denominator/=2;#531,15.904204885164896
+public static Fraction getReducedFraction(int numerator, int denominator) {#520,15.882782438526982
+den *= -1;#232,15.877566390567356
+public Fraction(int num, int den) {#208,15.859557978312175
+return (double)numerator / (double)denominator;#270,15.841827060865318
+if (denominator < 0) {#533,15.822967080508962
+stop = true;#183,15.812288284301758
+double nOd = doubleValue();#259,15.811222612857819
+this.denominator = (int) q1;#196,15.78986688454946
+throw new IllegalArgumentException("The fraction must not be null");#473,15.786084285149208
+double convergent = (double)p2 / (double)q2;#174,15.782057353428431
+public Fraction divide(Fraction fraction) {#497,15.775580269949776
+return new Fraction(denominator, numerator);#373,15.760861444473267
+if ((p2 > overflow) || (q2 > overflow)) {#170,15.738418791029188
+ret = true;#286,15.723229825496674
+throw new IllegalArgumentException("The fraction must not be null");#499,15.719733274899996
+MathUtils.mulAndCheck(denominator, fraction.denominator));#435,15.703188604778713
+int upv = MathUtils.mulAndCheck(fraction.numerator, denominator);#431,15.70178258078439
+throw MathRuntimeException.createArithmeticException("zero denominator in fraction {0}/{1}",#211,15.695810781206404
+this.denominator = den;#235,15.690983533859253
+.multiply(BigInteger.valueOf(denominator/d1));#443,15.689891558427076
+private Fraction addSub(Fraction fraction, boolean isAdd) {#414,15.681424743250796
+throw new IllegalArgumentException("The fraction must not be null");#416,15.66950119458712
+if (num == Integer.MIN_VALUE || den == Integer.MIN_VALUE) {#215,15.66849499364053
+throw MathRuntimeException.createArithmeticException("overflow in fraction {0}/{1}, cannot negate",#362,15.658600701226128
+public Fraction reciprocal() {#372,15.644888210296632
+if (n >= maxIterations) {#187,15.639598958632526
+this.denominator = (int) q2;#193,15.628083984057108
+.multiply(BigInteger.valueOf(fraction.denominator/d1));#441,15.625375254400845
+return ret;#302,15.625296852805398
+do {#164,15.625002384185791
+public Fraction multiply(Fraction fraction) {#471,15.622019222804479
+den /= d;#226,15.618235812467688
+public int getNumerator() {#326,15.599910895029703
+(denominator == rhs.denominator);#295,15.584332287311554
+throw MathRuntimeException.createArithmeticException("overflow in fraction {0}/{1}, cannot negate",#216,15.56952543258667
+if (den == 0) {#210,15.549129676818847
+return addSub(fraction, true /* add */);#387,15.531709575653077
+long p2 = 0;#159,15.513597079685756
+if (q2 < maxDenominator) {#191,15.505561427066201
+long overflow = Integer.MAX_VALUE;#139,15.50537244011374
+if (d > 1) {#224,15.502414957682292
+long p1 = a0;#156,15.49973258972168
+private final int numerator;#51,15.49677734375
+public Fraction abs() {#242,15.496342277526855
+MathUtils.subAndCheck(uvp, upv),#434,15.450266745782667
+ret = false;#288,15.44923597574234
+throw new FractionConversionException(value, maxIterations);#188,15.439558982849121
+BigInteger uvp = BigInteger.valueOf(numerator)#440,15.430975789609162
+ret = false;#298,15.428979396820068
+this.numerator = (int) p2;#192,15.42313571770986
+if (w.bitLength() > 31) {#452,15.422243519833213
+int n = 0;#162,15.413450681246244
+return (long)doubleValue();#353,15.410842831929525
+"the fraction to divide by must not be zero: {0}/{1}",#503,15.402021163549179
+throw MathRuntimeException.createArithmeticException(#502,15.399151368574662
+BigInteger upv = BigInteger.valueOf(fraction.numerator)#442,15.391797689291147
+return addSub(fraction, false /* subtract */);#401,15.391369247436524
+if (denominator==Integer.MIN_VALUE && (numerator&1)==0) {#530,15.383149023978941
+"overflow in fraction {0}/{1}, cannot negate",#537,15.379065146813026
+if (numerator==Integer.MIN_VALUE ||#534,15.378634254137674
+return (float)doubleValue();#311,15.369415092468262
+if (den < 0) {#214,15.366907056172689
+this.numerator = (int) p1;#195,15.365338683128357
+public long longValue() {#352,15.360450649261475
+(isAdd ? MathUtils.addAndCheck(uvp, upv) :#433,15.35179747475518
+return this;#423,15.350826454162597
+long q2 = 1;#160,15.347331047058105
+public int compareTo(Fraction object) {#258,15.337039402553014
+if (numerator == 0 || fraction.numerator == 0) {#475,15.328069572448731
+public Fraction add(Fraction fraction) {#386,15.326942580086845
+den = -den;#220,15.31989305159625
+double dOn = object.doubleValue();#260,15.271772833431468
+num /= d;#225,15.26826420952292
+throw MathRuntimeException.createArithmeticException(#522,15.259356151927602
+public Fraction subtract(Fraction fraction) {#400,15.255391597747803
+long a1 = (long)Math.floor(r1);#167,15.253741924579327
+num *= -1;#231,15.244139830271402
+return new Fraction(numerator, denominator);#547,15.230283975601196
+double r1 = 1.0 / (r0 - a0);#166,15.229400175589102
+return (int)doubleValue();#344,15.214157549540202
+"zero denominator in fraction {0}/{1}",#523,15.209855949177461
+throw new FractionConversionException(value, a0, 1l);#143,15.208428042275566
+return getReducedFraction#482,15.200669901711601
+public int intValue() {#343,15.193599510192872
+p0 = p1;#176,15.191095915707676
+return;#151,15.182284014565605
+public Fraction(double value) throws FractionConversionException {#59,15.181480990515816
+fraction.denominator/d2));#458,15.17421950715961
+long q1 = 1;#157,15.166196141924177
+if (fraction.numerator == 0) {#422,15.150407409667968
+q2 = (a1 * q1) + q0;#169,15.14839506149292
+this.numerator = num;#234,15.147050499916077
+long p0 = 1;#154,15.143436636243548
+public double doubleValue() {#269,15.138009738922118
+if (den < 0) {#230,15.134429359436036
+fraction.numerator, fraction.denominator);#504,15.12819755077362
+double r0 = value;#140,15.104657173156738
+if (fraction == null) {#415,15.100076377391815
+if (numerator == 0) {#419,15.065342790940228
+if (fraction == null) {#472,15.053227603435516
+throw MathRuntimeException.createArithmeticException(#536,15.038091219388521
+this.numerator = (int) a0;#149,15.03178040186564
+if (fraction.numerator == 0) {#501,15.017720460891724
+long q0 = 0;#155,15.010662760053362
+numerator = -numerator;#540,15.005945587158203
+throw new FractionConversionException(value, p2, q2);#171,15.00212076306343
+return new Fraction#432,14.97582471370697
+ret = negate();#247,14.973586797714233
+numerator, denominator);#538,14.97257308959961
+boolean ret;#283,14.964073874733664
+Fraction rhs = (Fraction)other;#293,14.9618624581231
+if (this == other) {#285,14.958905696868896
+++n;#165,14.955450375874838
+numerator, denominator);#524,14.953753544734074
+p1 = p2;#177,14.952452009374445
+denominator==Integer.MIN_VALUE) {#535,14.93088493347168
+return numerator;#327,14.92952569325765
+if (fraction == null) {#498,14.923985064029694
+if (a0 > overflow) {#142,14.907443821430206
+return new Fraction (w.intValue(),#456,14.903987583361173
+long a0 = (long)Math.floor(r0);#141,14.900270375338467
+if (numerator==0) {#526,14.83426986021154
+num = -num;#219,14.786067457760081
+return ret;#249,14.745458201358193
+a0 = a1;#180,14.730243336070668
+throws FractionConversionException#137,14.65364122390747
+try {#290,14.629428522927421
+if (numerator >= 0) {#244,14.6189827077529
+r0 = r1;#181,14.618923967534846
+{#138,14.549297332763672
+if (numerator==Integer.MIN_VALUE) {#361,14.54867494673956
+ret = (numerator == rhs.numerator) &&#294,14.546351740437169
+q0 = q1;#178,14.511902592398904
+ret = this;#245,14.485766649246216
+super();#209,14.4056321144104
+q1 = q2;#179,14.387957746332342
+throws FractionConversionException#80,14.27652815410069
+num, den);#212,14.261640603991522
+{#101,14.240237617492676
+{#81,14.24005355834961
+throws FractionConversionException#100,14.23105491910662
+public float floatValue() {#310,14.21451711654663
+Fraction ret;#243,14.190526167551676
+numerator, denominator);#363,14.180449458914744
+num, den);#217,13.954423381857676
+public int hashCode() {#334,13.944634532928466
+w);#454,13.728384601536082

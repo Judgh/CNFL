@@ -1,0 +1,366 @@
+@Override public String toString() {#836,19.680563529332478
+String sourceName = n.getSourceFileName();#614,19.587080597877502
+ObjectType instance, ObjectType implementedInterface, String prop) {#610,19.271352868331107
+@Override public int hashCode() {#832,19.20206904411316
+Iterator<Node> paramItB = fnTypeB.getParameters().iterator();#680,19.174256722132366
+JSType caseType) {#299,19.1653749025785
+ObjectType instance = type.getInstanceType();#594,19.141576835087367
+"original definition at {2}:{3} with type {4}");#96,19.08045607346755
+private JSError report(JSError error) {#791,19.06714230775833
+Scope s = var.getScope();#555,19.063480734825134
+!newType.isEquivalentTo(varType)) {#576,19.04765205383301
+ObjectType subObject) {#469,19.04192852973938
+String msg, JSType found, JSType required) {#649,19.0285002306888
+"variable {0} redefined with type {1}, " +#95,19.02053240935008
+if (!argType.canAssignTo(paramType)) {#428,19.014839225345188
+!declaredSuper.isEquivalentTo(superObject)) {#476,18.996862281452525
+"invalid cast - must be a subtype or supertype\n" +#79,18.950459833498353
+final JSError src;#808,18.945523782209918
+@Override public boolean equals(Object object) {#821,18.927177224840438
+TypeValidator(AbstractCompiler compiler) {#136,18.91731635729472
+for (String prop :#597,18.91593683682955
+"mismatch of the {0} property type and the type " +#100,18.91505399117103
+"to  : {1}");#81,18.873983965979683
+FunctionType type) {#593,18.85358359596946
+!(superObject instanceof UnknownType) &&#475,18.85292450586955
+"property {0} on interface {1} is not implemented by type {2}");#108,18.849845294294685
+if (!leftType.isNoType() && !rightType.canAssignTo(leftType)) {#365,18.84016909422698
+"{0}");#86,18.7994863646371
+"{0}\n" +#73,18.771108468373615
+private static final String FOUND_REQUIRED =#72,18.769875306349533
+if (varType != null &&#545,18.763226769187234
+if (declaredSuper.isEquivalentTo(getNativeType(OBJECT_TYPE))) {#477,18.74888430701362
+JSType leftType, String msg) {#403,18.74666130542755
+"mismatch of the {0} property type and the type " +#113,18.746307690938313
+if (found.isFunctionType() &&#675,18.740660447340744
+if (!found.canAssignTo(required)) {#633,18.738984902699787
+while (objectType != null && !objectType.hasOwnProperty(propName)) {#732,18.71890248923466
+String msg, JSType found, JSTypeNative required) {#654,18.703757628416405
+Iterator<Node> paramItA = fnTypeA.getParameters().iterator();#679,18.680432041486103
+if (declaredSuper != null &&#474,18.673823436101276
+"of the property it overrides from superclass {1}\n" +#101,18.63675462282621
+private boolean containsForwardDeclaredUnresolvedName(JSType type) {#283,18.629879700510127
+DUP_VAR_DECLARATION,#129,18.618764877319336
+newVar = s.declare(variableName, n, varType, input, false);#557,18.607230833598546
+if (!rightType.canAssignTo(leftType)) {#404,18.58655881881714
+if (!type.matchesNumberContext() && !type.isSubtype(allValueTypes)) {#231,18.581790410555325
+if (objectType != null) {#724,18.57219784600394
+Var newVar = var;#528,18.57068042755127
+varType != typeRegistry.getNativeType(UNKNOWN_TYPE) &&#546,18.562255401611328
+if (!type.isNoType() && !type.isUnknownType() &&#257,18.55529530843099
+if (object instanceof TypeMismatch) {#822,18.55026923908907
+sourceName = sourceName == null ? "" : sourceName;#615,18.535032071565325
+void expectStringOrNumber(#241,18.525814533233643
+if ((leftType.isConstructor() || leftType.isEnumType()) && (rightType.isConstructor() || rightType.isEnumType())) {#366,18.523196610537443
+if (found.canAssignTo(required) || required.canAssignTo(found)) {#670,18.520785808563232
+private void registerMismatch(JSType found, JSType required, JSError error) {#665,18.507720360389122
+"override: {3}");#116,18.506479501724243
+private final AbstractCompiler compiler;#60,18.493771341111923
+"override: {3}");#103,18.48643445968628
+this.compiler = compiler;#137,18.4751409183849
+newType != typeRegistry.getNativeType(UNKNOWN_TYPE)) {#548,18.47098705291748
+final JSType typeB;#807,18.465134013782848
+"assignment to property " + propName + " of " +#382,18.444599787394207
+if (var.input == null) {#554,18.427379862467447
+"JSC_INTERFACE_METHOD_NOT_IMPLEMENTED",#107,18.425420430990364
+"Missing @extends tag on type {0}");#91,18.417658632451836
+Var expectUndeclaredVariable(String sourceName, CompilerInput input,#526,18.401002733330976
+String msg, JSType found, JSType required) {#659,18.396596481925563
+String.format("actual parameter %d of %s does not match " +#430,18.396444283998928
+if (!type.matchesStringContext()) {#209,18.380139214651926
+if (objectType != null &&#739,18.37640724182129
+if (dereference) {#748,18.360373063520953
+if ((leftType.isConstructor() || leftType.isEnumType()) && (rightType.isConstructor() || rightType.isEnumType())) {#405,18.348200234499846
+if (!(allowDupe ||#574,18.33724416097005
+variableName, newType.toString(), var.getInputName(),#578,18.331968307495117
+!containsForwardDeclaredUnresolvedName(type)) {#259,18.330097241835162
+"original: {2}\n" +#102,18.329631002325762
+JSType varType = var.getType();#540,18.328393491109214
+if (ownerFn.isInterface() &&#375,18.31483432981703
+if (!anyObjectType.isSubtype(type) && !type.isEmptyType()) {#198,18.309901809692384
+if (found != null && required != null &&#693,18.295401981898717
+HIDDEN_INTERFACE_PROPERTY_MISMATCH, prop,#638,18.27640875454607
+"from: {0}\n" +#80,18.26922903562847
+String propName = n.getLastChild().getString();#725,18.26851222628639
+static final DiagnosticType DUP_VAR_DECLARATION =#93,18.266947521882898
+if (!type.matchesNumberContext() && !type.matchesStringContext()) {#243,18.265592201896336
+mismatch(t, n, "only arrays or objects can be accessed",#343,18.26550927369491
+!found.canAssignTo(required)) {#694,18.243126618234736
+!caseType.autoboxesTo().isSubtype(switchType))) {#306,18.232498550415038
+if (propSlot == null) {#612,18.223654905954998
+Node n, Node parent, Var var, String variableName, JSType newType) {#527,18.21605605345506
+JSType indexType) {#324,18.214611976377427
+JSType paramType, Node callNode, int ordinal) {#427,18.209930964878627
+if (!overridingType.canAssignTo(hiddenType)) {#452,18.200178146362305
+if (dereferenced != null && dereferenced.getIndexType() != null) {#335,18.198026821531098
+castType.toString(), type.toString())));#508,18.197006557298742
+mismatch(t.getSourceName(), n,#481,18.18953932656182
+ObjectType dereferenced = objType.dereference();#334,18.181860303878786
+ObjectType dereferenced = type.dereference();#749,18.178142497414036
+if (shouldReport) {#792,18.17148904800415
+"of the property it overrides from interface {1}\n" +#114,18.151925501616105
+if (info == null) {#533,18.119298714857834
+"JSC_TYPE_MISMATCH",#85,18.116499948501588
+if (n.getFirstChild() != null) {#561,18.116414763710715
+"original: {2}\n" +#115,18.11394842933206
+JSType required) {#703,18.113235155741375
+if (!type.matchesNumberContext()) {#220,18.107793603624618
+JSType found, JSType required, JSError error) {#692,18.106809408768363
+if (!type.canAssignTo(castType) && !castType.canAssignTo(type)) {#506,18.09917295390162
+while (paramItA.hasNext() && paramItB.hasNext()) {#681,18.09851586818695
+TypeMismatch(JSType a, JSType b, JSError src) {#815,18.095535425039436
+DiagnosticType.warning(#106,18.0949448744456
+if (jsType == null) {#776,18.093133529027302
+INTERFACE_METHOD_NOT_IMPLEMENTED,#131,18.07884915669759
+final JSType typeA;#806,18.069789713079278
+JSType required#629,18.06511058807373
+mismatch(t, n, msg, type, expectedType);#277,18.060234120017604
+INVALID_CAST,#126,18.043194850285847
+JSType leftType, Node owner, String propName) {#363,18.04146409034729
+private final List<TypeMismatch> mismatches = Lists.newArrayList();#69,18.03609380722046
+private String formatFoundRequired(String description, JSType found,#702,18.028892040252686
+if (n.isGetProp() ||#530,18.015061671917255
+FunctionType constructor =#635,18.011571645736694
+if (containsForwardDeclaredUnresolvedName(alt)) {#286,18.008351574773375
+TYPE_MISMATCH_WARNING,#127,18.005808421543666
+if (n.isGetProp() &&#272,17.99834213256836
+private boolean shouldReport = true;#63,17.995065053304035
+s.undeclare(var);#556,17.98791565614588
+constructor.getTopMostDefiningType(prop).toString(),#639,17.977689412923958
+if (parent.isVar()) {#560,17.968258559703827
+castType = castType.restrictByNotNullOrUndefined();#503,17.960939357155247
+prop, implementedInterface.toString(), instance.toString())));#619,17.959421463012696
+if (dereferenced != null) {#750,17.956112637239343
+"JSC_MISSING_EXTENDS_TAG",#90,17.955582936604817
+DiagnosticType.warning("JSC_DUP_VAR_DECLARATION",#94,17.948750862708458
+static final DiagnosticType TYPE_MISMATCH_WARNING =#83,17.941521072387694
+static final DiagnosticType INTERFACE_METHOD_NOT_IMPLEMENTED =#105,17.940771604839124
+this.src = src;#818,17.933913469314575
+return Objects.hashCode(typeA, typeB);#833,17.93179045783149
+!t.inGlobalScope() && type.isNullType()) {#273,17.930251045227052
+type.isSubtype(nullOrUndefined) &&#258,17.928041458129883
+if (!switchType.canTestForShallowEqualityWith(caseType) &&#304,17.921281987970527
+if (objType.isUnknownType()) {#331,17.920372690473283
+private void mismatch(String sourceName, Node n,#658,17.919125997103176
+return (that.typeA.isEquivalentTo(this.typeA)#824,17.91092430114746
+DiagnosticType.warning(#111,17.899692217508953
+overridingType.toString())));#456,17.899223232269286
+"mismatch in declaration of superclass type",#482,17.898098240727965
+mismatch(t, n, msg, type, allValueTypes);#232,17.897754669189453
+newType != null &&#547,17.895626288193924
+if (objectType.getConstructor() != null &&#726,17.888442039489746
+DiagnosticType.warning(#84,17.87449359893799
+FunctionType ownerFn = ownerType.toObjectType().getOwnerFunction();#374,17.869797134399413
+TypeMismatch that = (TypeMismatch) object;#823,17.86932303688743
+report(JSError.make(sourceName, n, DUP_VAR_DECLARATION,#577,17.868909443126004
+void setShouldReport(boolean report) {#155,17.867077589035034
+if (implemented.getImplicitPrototype() != null) {#596,17.86521950635043
+argType, paramType);#433,17.860292077064514
+mismatch(t, n, msg, type, anyObjectType);#199,17.83987913131714
+static final DiagnosticType ILLEGAL_PROPERTY_ACCESS =#121,17.835140830592106
+"JSC_HIDDEN_INTERFACE_PROPERTY_MISMATCH",#112,17.833491713912398
+FunctionType fnTypeB = required.toMaybeFunctionType();#678,17.827800349185342
+mismatch(t.getSourceName(), n, msg, found, required);#650,17.823996353149415
+NodeTraversal t, Node n, JSType type, String msg, JSType expectedType) {#256,17.818835099538166
+boolean expectNotNullOrUndefined(#255,17.814181423187257
+mismatch(t, n, msg, rightType, leftType);#408,17.812741708755492
+String getReadableJSTypeName(Node n, boolean dereference) {#718,17.811820030212402
+boolean allowDupe = false;#529,17.807792143388227
+required = required.restrictByNotNullOrUndefined();#669,17.806300780352423
+void expectString(NodeTraversal t, Node n, JSType type, String msg) {#208,17.80035126209259
+JSType ownerType = getJSType(owner);#372,17.784599354392604
+boolean expectObject(NodeTraversal t, Node n, JSType type, String msg) {#174,17.78185013930003
+required = required.restrictByNotNullOrUndefined();#632,17.769709737677324
+this.typeB = b;#817,17.75684980245737
+rightType.isFunctionType() && leftType.isFunctionType()) {#376,17.753691809517996
+n.setJSType(varType);#559,17.75298876232571
+JSType hiddenType, String propertyName, JSType ownerType) {#451,17.751528449680496
+ILLEGAL_PROPERTY_ACCESS, "'[]'", "struct"));#329,17.74498584996099
+Iterable<TypeMismatch> getMismatches() {#151,17.743674993515015
+"case expression doesn't match switch",#308,17.73710865444607
+void expectNumber(NodeTraversal t, Node n, JSType type, String msg) {#219,17.737106323242188
+if (!type.matchesObjectContext()) {#175,17.736140659877233
+caseType, switchType);#309,17.732280135154724
+(type.toObjectType() != null &&#757,17.72558307647705
+DiagnosticType.warning(#89,17.72549072901408
+for (JSType alt : type.toMaybeUnionType().getAlternates()) {#285,17.72250564575195
+String.valueOf(var.nameNode.getLineno()),#579,17.708152803881415
+"required: {2}";#75,17.6948058788593
+void expectAnyObject(NodeTraversal t, Node n, JSType type, String msg) {#196,17.68973087310791
+void expectValidTypeofName(NodeTraversal t, Node n, String found) {#164,17.687229459935967
+ILLEGAL_PROPERTY_ACCESS);#134,17.683613618214924
+ObjectType declaredSuper =#472,17.67280038197835
+ObjectType objectType = getJSType(n.getFirstChild()).dereference();#723,17.671099309568053
+t.makeError(n, MISSING_EXTENDS_TAG_WARNING, subObject.toString())));#479,17.656442767695378
+String qualifiedName = n.getQualifiedName();#755,17.64376074473063
+if (objType.isStruct()) {#327,17.642483124366173
+type = type.restrictByNotNullOrUndefined();#504,17.640322404749252
+report(JSError.make(t.getSourceName(), n, UNKNOWN_TYPEOF_VALUE, found));#165,17.637700947848234
+INTERFACE_METHOD_NOT_IMPLEMENTED,#618,17.631698738444936
+this.typeA = a;#816,17.624985988323505
+if (!subCtor.hasCachedValues()) {#487,17.61282714207967
+found = found.restrictByNotNullOrUndefined();#631,17.61118753332841
+(caseType.autoboxesTo() == null ||#305,17.60158089229039
+report(JSError.make(sourceName, n,#617,17.586350083351135
+required.isFunctionType()) {#676,17.585463841756184
+found = found.restrictByNotNullOrUndefined();#668,17.57843365388758
+objectType = FunctionType.getTopDefiningInterface(#728,17.558520273728803
+required.toString(), found.toString())));#640,17.557621161142986
+allowDupe =#536,17.556475162506104
+for (ObjectType implemented : type.getAllImplementedInterfaces()) {#595,17.552836418151855
+objectType.getConstructor().isInterface()) {#727,17.542168078215227
+private final JSType allValueTypes;#62,17.539422208612617
+expectCanAssignTo(t, indexNode, indexType, dereferenced.getIndexType(),#336,17.536629799873598
+HIDDEN_PROPERTY_MISMATCH,#130,17.529311021169026
+HIDDEN_INTERFACE_PROPERTY_MISMATCH,#132,17.528805460248673
+return error;#795,17.513296263558523
+DiagnosticType.warning("JSC_ILLEGAL_PROPERTY_ACCESS",#122,17.502606025108925
+mismatch(t, n.getFirstChild(),#307,17.49335265159607
+NodeTraversal t, Node n, JSType type, String msg) {#242,17.487080256144207
+JSType anyObjectType = getNativeType(NO_OBJECT_TYPE);#197,17.468426487662576
+NULL_TYPE, VOID_TYPE);#142,17.467224569881665
+return MessageFormat.format(FOUND_REQUIRED, description, found, required);#704,17.465262661809508
+formatFoundRequired(msg, found, required))));#662,17.461846202611923
+var.getParentNode().isExprResult()) ||#575,17.457488940312313
+report(JSError.make(t.getSourceName(), indexNode,#328,17.445820649464924
+static final DiagnosticType MISSING_EXTENDS_TAG_WARNING =#88,17.44579267501831
+void expectBitwiseable(NodeTraversal t, Node n, JSType type, String msg) {#230,17.44433039885301
+static final DiagnosticGroup ALL_DIAGNOSTICS = new DiagnosticGroup(#125,17.442011547088622
+mismatch(t, n, msg, type, STRING_TYPE);#210,17.430230004446848
+STRING_TYPE, NUMBER_TYPE, BOOLEAN_TYPE, NULL_TYPE, VOID_TYPE);#140,17.4217970791985
+mismatch(t, n, msg, type, NUMBER_STRING);#244,17.41634889082475
+static final DiagnosticType HIDDEN_INTERFACE_PROPERTY_MISMATCH =#110,17.406473116441205
+return type.isNoResolvedType();#291,17.406011434701774
+"found   : {1}\n" +#74,17.405980727251837
+static class TypeMismatch {#805,17.389234436882866
+paramItB.next().getJSType(), error);#683,17.3711918258667
+mismatch(t, n, msg, type, OBJECT_TYPE);#188,17.36255777449835
+DiagnosticType.warning("JSC_INVALID_CAST",#78,17.362152372087753
+"Cannot do {0} access on a {1}");#123,17.361481799635776
+FunctionType fnTypeA = found.toMaybeFunctionType();#677,17.357639664097835
+registerIfMismatch(paramItA.next().getJSType(),#682,17.35656150817871
+if (type.isUnionType()) {#284,17.348670592674843
+return true;#280,17.3466922215053
+mismatch(t, n,#429,17.33512306213379
+type.toObjectType().getConstructor() != null)) {#758,17.333927196005117
+return jsType;#783,17.333701038360594
+mismatch(t, n, msg, type, NUMBER_TYPE);#221,17.3314243044172
+registerMismatch(superObject, declaredSuper, report(#478,17.330439794631232
+report(t.makeError(n, HIDDEN_PROPERTY_MISMATCH, propertyName,#454,17.328273632947138
+mismatch(t, n, msg, found, getNativeType(required));#655,17.327971982955933
+expectInterfaceProperty(t, n, instance, implemented, prop);#599,17.319663405418396
+mismatch(t, n, msg, type, OBJECT_TYPE);#176,17.311468578520277
+JSType type = getJSType(n);#747,17.300383687019348
+MISSING_EXTENDS_TAG_WARNING,#128,17.29496669769287
+ownerType.toString(), hiddenType.toString(),#455,17.290230353673298
+private JSType getNativeType(JSTypeNative typeId) {#787,17.285030312008328
+static final DiagnosticType INVALID_CAST =#77,17.27964635995718
+return true;#179,17.273659297398158
+return newVar;#585,17.272945404052734
+JSType found = propSlot.getType();#628,17.272580595577466
+&& that.typeB.isEquivalentTo(this.typeB))#825,17.268484950065613
+return mismatches;#152,17.265941739082336
+if (n.isGetProp()) {#722,17.25916209587684
+objectType.isFunctionPrototypeType())) {#741,17.242970804373424
+implicitProto == null ? null : implicitProto.getImplicitPrototype();#473,17.240957810328556
+return getNativeType(UNKNOWN_TYPE);#781,17.2402526140213
+private void registerIfMismatch(#691,17.2350604057312
+return qualifiedName;#761,17.231425476074218
+registerMismatch(found, required, report(#660,17.231202824910483
+class TypeValidator {#58,17.22848876317342
+fnTypeA.getReturnType(), fnTypeB.getReturnType(), error);#687,17.221471309661865
+return true;#412,17.218272481645858
+return true;#388,17.21418421609061
+varType.toString()));#580,17.203277133759997
+if (!type.isObject()) {#187,17.203229904174805
+JSDocInfo info = n.getJSDocInfo();#532,17.202831411361693
+ObjectType implicitProto = subObject.getImplicitPrototype();#471,17.202758839255885
+|| (that.typeB.isEquivalentTo(this.typeA)#826,17.197166541527057
+(objectType.getConstructor() != null ||#740,17.18603847337806
+parent.setJSType(varType);#566,17.184752655029296
+private final JSType nullOrUndefined;#64,17.170510133107502
+return objectType.toString() + "." + propName;#742,17.170020540555317
+Node indexNode = n.getLastChild();#326,17.154441084180558
+registerMismatch(instance, implementedInterface,#616,17.15337198972702
+registerMismatch(overridingType, hiddenType,#453,17.14784918333355
+void expectCanCast(NodeTraversal t, Node n, JSType type, JSType castType) {#502,17.14397406578064
+DiagnosticType.warning("JSC_UNKNOWN_TYPEOF_VALUE", "unknown type: {0}");#119,17.13877599889582
+expectStringOrNumber(t, indexNode, indexType, "property access");#332,17.137332791867465
+null : propSlot.getDeclaration().getNode();#622,17.13440296866677
+this.shouldReport = report;#156,17.12942886352539
+DiagnosticType.warning("JSC_HIDDEN_PROPERTY_MISMATCH",#99,17.121846834818523
+mismatch(t, n,#381,17.100088278452557
+expectNumber(t, indexNode, indexType, "array access");#339,17.09422310538914
+objType,#344,17.0907101949056
+void expectActualObject(NodeTraversal t, Node n, JSType type, String msg) {#186,17.090487736922043
+if (type.isFunctionPrototypeType() ||#756,17.07821776072184
+registerMismatch(type, castType, report(t.makeError(n, INVALID_CAST,#507,17.05851681001725
+registerMismatch(found, required, report(t.makeError(propNode,#637,17.045453566092032
+if (ownerType.isFunctionPrototypeType()) {#373,17.042983373006184
+private JSType getJSType(Node n) {#774,17.03465201059977
+private final JSTypeRegistry typeRegistry;#61,17.028513248150166
+return false;#278,17.017031139797634
+"formal parameter", ordinal,#431,17.016915668140758
+registerMismatch(rightType, leftType, null);#367,17.015145755949476
+Node propNode = propSlot.getDeclaration() == null ?#621,17.003314638137816
+rightType, leftType);#384,17.001516044139862
+&& that.typeA.isEquivalentTo(this.typeB));#827,16.999986052513123
+return type.toString();#766,16.99891487757365
+boolean expectCanAssignToPropertyOf(NodeTraversal t, Node n, JSType rightType,#362,16.9972464121305
+objectType, propName);#729,16.995845460891722
+return type.toString();#759,16.993035872777302
+NodeUtil.isObjectLitKey(n, parent)) {#531,16.988162579743758
+type = dereferenced;#751,16.95772933959961
+getReadableJSTypeName(callNode.getFirstChild(), false)),#432,16.948721578044275
+StaticSlot<JSType> propSlot = instance.getSlot(prop);#611,16.93077464330764
+implemented.getImplicitPrototype().getOwnPropertyNames()) {#598,16.929501392223216
+static final DiagnosticType UNKNOWN_TYPEOF_VALUE =#118,16.917974920833814
+JSError.make(sourceName, n, TYPE_MISMATCH_WARNING,#661,16.904500927243912
+static final DiagnosticType HIDDEN_PROPERTY_MISMATCH =#98,16.903125311198988
+getReadableJSTypeName(owner, true),#383,16.857068278572775
+void expectCanOverride(NodeTraversal t, Node n, JSType overridingType,#450,16.856831333853982
+registerIfMismatch(#686,16.849545399347942
+return false;#829,16.846836513943142
+registerMismatch(rightType, leftType, null);#406,16.83340649377732
+void expectSuperType(NodeTraversal t, Node n, ObjectType superObject,#468,16.82906050909133
+propNode = propNode == null ? n : propNode;#626,16.816365543164704
+FunctionType subCtor = subObject.getConstructor();#470,16.815314909991095
+void expectArgumentMatchesParameter(NodeTraversal t, Node n, JSType argType,#426,16.802731590270994
+n.getFirstChild().setJSType(varType);#562,16.77676248550415
+JSType jsType = n.getJSType();#775,16.77515630161061
+"restricted index type");#337,16.77057103549733
+Preconditions.checkState(parent.isFunction());#565,16.764783902601764
+return "(" + typeA + ", " + typeB + ")";#837,16.75640973177823
+info != null && info.getSuppressions().contains("duplicate");#537,16.72071041379656
+boolean expectCanAssignTo(NodeTraversal t, Node n, JSType rightType,#402,16.719594081242878
+mismatches.add(new TypeMismatch(found, required, error));#674,16.71654178982689
+expectString(t, indexNode, indexType, "property access");#341,16.68554285298223
+return false;#386,16.62898890177409
+objectType = objectType.getImplicitPrototype();#733,16.619794329007465
+this.typeRegistry = compiler.getTypeRegistry();#138,16.61381216610179
+return "function";#764,16.584230422973633
+void expectSwitchMatchesCase(NodeTraversal t, Node n, JSType switchType,#298,16.55876100063324
+void expectIndexMatch(NodeTraversal t, Node n, JSType objType,#323,16.554396065798674
+info = parent.getJSDocInfo();#534,16.5538665983412
+registerMismatch(found, required, error);#695,16.54936425826129
+Preconditions.checkState(n.isGetElem());#325,16.53945302963257
+return false;#410,16.46484438578288
+UNKNOWN_TYPEOF_VALUE,#133,16.464589059352875
+typeRegistry.createUnionType(ARRAY_TYPE, OBJECT_TYPE));#345,16.44765761693319
+implementedInterface.toObjectType().getConstructor();#636,16.434432195580523
+return false;#177,16.37942780388726
+return;#671,16.3773010969162
+return true;#274,16.31065117229115
+= implementedInterface.getImplicitPrototype().getPropertyType(prop);#630,16.247912590320293
+this.allValueTypes = typeRegistry.createUnionType(#139,16.244908650716145
+compiler.report(error);#793,16.183927138646443
+return typeRegistry.getNativeType(typeId);#788,16.162751138210297
+superObject, declaredSuper);#483,16.142489009433323
+return true;#287,16.141430928156925
+private void mismatch(NodeTraversal t, Node n,#653,16.134819793701173
+void expectAllInterfaceProperties(NodeTraversal t, Node n,#592,16.041842725541855
+private void expectInterfaceProperty(NodeTraversal t, Node n,#609,16.031985507291907
+private void mismatch(NodeTraversal t, Node n,#648,16.01243667602539
+subCtor.setPrototypeBasedOn(superObject);#488,16.00359603336879
+this.nullOrUndefined = typeRegistry.createUnionType(#141,15.910036488583213
+return true;#377,15.709770202636719

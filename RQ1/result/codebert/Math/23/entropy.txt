@@ -1,0 +1,135 @@
+v = w;#262,19.822810581752233
+double a;#125,19.78498666936701
+double b;#126,19.775407097556375
+w = u;#264,19.760703495570592
+w = x;#250,19.601741870244343
+Precision.equals(w, x)) {#261,19.515573613783893
+v = w;#248,19.394583622614544
+double p = 0;#161,19.356198083786737
+x = u;#252,19.343374768892925
+double u = 0;#164,19.33537732987177
+p < q * (b - x) &&#182,19.299564417670755
+double q = 0;#162,19.118897937593005
+a = x;#246,19.11402337891715
+double fu = computeObjectiveValue(u);#226,19.034782006190373
+fv = fw;#249,18.97640584065364
+double fx = computeObjectiveValue(x);#140,18.966988714117754
+double v = x;#136,18.94304708334116
+q = 2 * (q - r);#170,18.934484547582166
+double r = 0;#163,18.91975875127883
+final double m = 0.5 * (a + b);#154,18.910799865722655
+u = x + tol1;#218,18.9102765917778
+u = x + d;#186,18.90827201207479
+a = u;#256,18.907971007483347
+fw = fx;#251,18.889952219449558
+fv = fw;#263,18.889744758605957
+if (u < x) {#255,18.881165539776838
+double x = mid;#135,18.861788749694824
+e = b - x;#208,18.839454650878906
+p = -p;#173,18.82191723790662
+d = p / q;#185,18.810385576883952
+if (checker != null) {#235,18.782779892285664
+double d = 0;#138,18.726950645446777
+if (u < x) {#243,18.70621066623264
+double e = 0;#139,18.703774232130783
+b = x;#244,18.662800891058787
+final double hi = getMax();#119,18.624854151407877
+if (p > q * (a - x) &&#181,18.620766580104828
+if (x < m) {#207,18.614494924192076
+double w = x;#137,18.606794137221115
+e = a - x;#201,18.568820981418384
+if (d >= 0) {#217,18.55914529164632
+e = d;#179,18.547298272450764
+final double tol2 = 2 * tol1;#156,18.53938941160838
+fw = fu;#265,18.513404287140943
+if (!isMinim) {#227,18.512256083281144
+r = e;#178,18.49502722422282
+if (q > 0) {#172,18.490066563641584
+fx = fu;#253,18.485159492492677
+if (FastMath.abs(d) < tol1) {#216,18.460873819166615
+e = a - x;#210,18.449337577819826
+e = b - x;#199,18.441071173724005
+p = (x - v) * q - (x - w) * r;#169,18.39612744983874
+FastMath.abs(p) < FastMath.abs(0.5 * q * r)) {#183,18.390632028165072
+q = -q;#175,18.386167690671723
+if (x < m) {#198,18.380306059314357
+q = (x - v) * (fx - fw);#168,18.376655045677634
+d = GOLDEN_SECTION * e;#203,18.36202845853918
+d = GOLDEN_SECTION * e;#212,18.32120354970296
+return#274,18.316553059746237
+d = -tol1;#193,18.24443895388872
+v = u;#269,18.22954773902893
+if (FastMath.abs(e) > tol1) { // Fit parabola.#166,18.193206039634912
+d = tol1;#191,18.161931715513532
+u = x + d;#223,18.159058497502254
+if (fu <= fw ||#260,18.11306490721526
+final double mid = getStartValue();#118,18.10605216026306
+private static final double GOLDEN_SECTION = 0.5 * (3 - FastMath.sqrt(5));#48,18.09793653159306
+b = u;#258,18.06639688355582
+if (fu <= fx) {#242,18.04350729783376
+return a.getValue() <= b.getValue() ? a : b;#305,18.003306915020122
+if (checker.converged(iter, previous, current)) {#236,17.99350420633952
+final boolean stop = FastMath.abs(x - m) <= tol2 - 0.5 * (b - a);#159,17.992823282877605
+if (x <= m) {#190,17.921340479169572
+r = (x - w) * (fx - fv);#167,17.875805546255673
+u = x - tol1;#220,17.87534323334694
+final boolean isMinim = getGoalType() == GoalType.MINIMIZE;#116,17.837090492248535
+Precision.equals(v, w)) {#268,17.819611665679187
+if (lo < hi) {#127,17.8154203414917
+Precision.equals(v, x) ||#267,17.78309468525212
+final double lo = getMin();#117,17.77724157969157
+isMinim);#277,17.7403222322464
+previous = current;#232,17.725976276397706
+current = new UnivariatePointValuePair(u, isMinim ? fu : -fu);#233,17.71525372685613
+b = hi;#129,17.69860178232193
+a = hi;#131,17.65953642129898
+while (true) {#153,17.6539667569674
+UnivariatePointValuePair previous = null;#147,17.60586627324422
+final double tol1 = relativeThreshold * FastMath.abs(x) + absoluteThreshold;#155,17.604594342848834
+UnivariatePointValuePair current#148,17.60035368601481
+private final double absoluteThreshold;#60,17.541044755415484
+double fw = fx;#145,17.530109659830728
+best(current,#275,17.511117428541183
+double fv = fx;#144,17.50765018463135
+if (!isMinim) {#141,17.50631186167399
+if (u - a < tol2 || b - u < tol2) {#189,17.47258680920268
+if (abs <= 0) {#86,17.464873186747234
+if (a == null) {#297,17.41577746073405
+return a.getValue() >= b.getValue() ? a : b;#307,17.41427622170284
+if (isMinim) {#304,17.39555327097575
+return best(current, previous, isMinim);#237,17.384080641610282
+fv = fu;#270,17.32488257309486
+if (!stop) {#160,17.306857950547162
+super(checker);#81,17.220490528987003
+throw new NotStrictlyPositiveException(abs);#87,17.160425662994385
+int iter = 0;#152,17.155155475323017
+private UnivariatePointValuePair best(UnivariatePointValuePair a,#294,17.109735670543852
+++iter;#279,17.09895394643148
+fu = -fu;#228,17.087200546264647
+this(rel, abs, null);#110,17.048335433006287
+a = lo;#128,17.005507349967957
+private final double relativeThreshold;#56,17.001397306268867
+if (b == null) {#300,16.946667925516763
+final ConvergenceChecker<UnivariatePointValuePair> checker#122,16.830739974975586
+@Override#114,16.752497514088947
+= new UnivariatePointValuePair(x, isMinim ? fx : -fx);#149,16.624931422146883
+return a;#301,16.623666508992514
+previous,#276,16.61391577039446
+protected UnivariatePointValuePair doOptimize() {#115,16.554088354110718
+ConvergenceChecker<UnivariatePointValuePair> checker) {#80,16.42105620247977
+private static final double MIN_RELATIVE_TOLERANCE = 2 * FastMath.ulp(1d);#52,16.37412714958191
+double abs,#79,16.36184057696112
+double abs) {#109,16.306644121805828
+if (rel < MIN_RELATIVE_TOLERANCE) {#83,16.272558668385383
+b = lo;#132,16.255836486816406
+throw new NumberIsTooSmallException(rel, MIN_RELATIVE_TOLERANCE, true);#84,16.22609301174388
+public BrentOptimizer(double rel,#108,16.129787151630108
+absoluteThreshold = abs;#91,16.05213839667184
+return b;#298,15.93233871459961
+= getConvergenceChecker();#123,15.804811000823975
+public BrentOptimizer(double rel,#78,15.768956037668081
+boolean isMinim) {#296,15.670897583166758
+fx = -fx;#142,15.64395809173584
+UnivariatePointValuePair b,#295,15.482841815948486
+public class BrentOptimizer extends BaseAbstractUnivariateOptimizer {#44,15.220990508794785
+relativeThreshold = rel;#90,15.039940629686628

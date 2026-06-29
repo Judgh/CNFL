@@ -1,0 +1,755 @@
+private CodeGenerator(CodeConsumer consumer) {#54,20.525389750798542
+StringBuilder sb = new StringBuilder();#1172,20.177715961749737
+static String identifierEscape(String s) {#1165,20.107000827789307
+throws IOException {#1270,19.92776222229004
+case '\u000B':#1055,19.871065394083658
+String regexpEscape(String s) {#1035,19.81484301884969
+StringBuilder sb, char c) {#1252,19.811505381266276
+private final CodeConsumer cc;#47,19.765124797821045
+case '<':#1112,19.711283206939697
+private Context getContextForNonEmptyExpression(Context currentContext) {#1234,19.674101885627298
+String singlequoteEscape,#1044,19.602166573206585
+private String strEscape(#1040,19.574196338653564
+private  Context getContextForNoInOperator(Context context) {#1243,19.531822821673224
+static CodeGenerator forCostEstimation(CodeConsumer consumer) {#61,19.521065771579742
+CodeConsumer consumer,#66,19.505716705322264
+= { '0', '1', '2', '3', '4', '5', '6', '7',#44,19.426968902349472
+case '=':#1076,19.42407512664795
+'8', '9', 'a', 'b', 'c', 'd', 'e', 'f' };#45,19.37711328778948
+case '>':#1093,19.37658468882243
+String doublequoteEscape,#1043,19.368136008580525
+String backslashEscape,#1045,19.33932245694674
+void add(String str) {#91,19.324871063232422
+char quote,#1042,19.302948633829754
+case Token.LABEL:#734,19.281627893447876
+String regexpEscape(String s, CharsetEncoder outputCharsetEncoder) {#1021,19.279788613319397
+case Token.POS: {#253,19.277818202972412
+(s.charAt(i - 1) == ']' && s.charAt(i - 2) == ']'))) {#1106,19.240909931271574
+case Token.HOOK: {#277,19.218640034015362
+if (ambiguousElseClause) {#545,19.196005316341626
+if (preferLineBreaks) {#402,19.189052732367266
+((s.charAt(i - 1) == '-' && s.charAt(i - 2) == '-') ||#1105,19.173275266374862
+CompilerOptions options) {#67,19.15683889389038
+case '&':#1085,19.14107624689738
+final String START_COMMENT = "!--";#1124,19.13359761238098
+case Token.DEBUGGER:#602,19.133207718531292
+String s,#1041,19.126784218682182
+case Token.LABEL_NAME:#205,19.101878711155482
+if (c != first) {#674,19.09642769308651
+if (c.isGetterDef() || c.isSetterDef()) {#678,19.0959449836186
+if (count == 1) {#845,19.08409617497371
+case Token.NOT:#251,19.078256433660332
+case Token.NAME:#210,19.072233546863902
+START_COMMENT.length())) {#1130,19.022628203682277
+case Token.VOID:#250,19.021673997243244
+if (!c.isQuotedString() &&#685,19.0212554064664
+case Token.NULL:#569,19.019150127064098
+private String jsString(String s, boolean useSlashV) {#990,19.018233804141772
+StringBuilder sb = new StringBuilder(s.length() + 2);#1049,19.008997535705568
+if (c > 0x1f && c < 0x7f) {#1150,18.99991670148126
+case Token.BITNOT:#252,18.997415781021118
+case Token.CONTINUE:#589,18.988141279954178
+END_SCRIPT.length())) {#1127,18.983661358173077
+if (hasElse) {#553,18.974838665553502
+switch (c) {#1053,18.971031362360176
+quote = '\'';#1006,18.969039396806195
+add("{");#672,18.954664548238117
+add("in");#431,18.951061929975236
+add(")");#174,18.94619019826253
+private void addIdentifier(String identifier) {#95,18.936240514119465
+case Token.EMPTY:#458,18.934016942977905
+String name = n.getString();#346,18.932145714759827
+if (ambiguousElseClause) {#564,18.930742432089414
+add(")");#496,18.92857050895691
+for (int index = 0; index < len; index++) {#785,18.91325839360555
+if (preferSingleQuotes ?#1003,18.908629850907758
+if (childCount == 1) {#190,18.907275319099426
+if (c < '0' || c > '9') {#787,18.883236360549926
+add("return");#189,18.88207483291626
+case '\f': sb.append("\\f"); break;#1064,18.87862023063328
+case Token.VAR:#198,18.85520323117574
+default:#1136,18.848310661315917
+if (outputCharsetEncoder.canEncode(c)) {#1140,18.843159369059972
+case Token.TRUE:#584,18.8424870967865
+add(")");#453,18.838167508443195
+String escapeToDoubleQuotedJsString(String s) {#1028,18.832393964131672
+case Token.DEC: {#502,18.82200034459432
+if (count == 0) {#835,18.814184188842773
+int codePoint, Appendable out)#1269,18.80569356282552
+add(")");#715,18.80394498507182
+(singleq <= doubleq) : (singleq < doubleq)) {#1004,18.786492188771565
+add("(");#234,18.781826496124268
+case Token.INC:#501,18.780269969593395
+add(parameters);#368,18.77077264052171
+CodeGenerator(#65,18.764721393585205
+if (!first.isString() ||#289,18.763128519058228
+if (i >= 2 &&#1104,18.762957453727722
+case Token.NUMBER:#244,18.75320776303609
+case '\u2028': sb.append("\\u2028"); break;#1073,18.752517135054976
+add(")");#424,18.74375663484846
+if (first.isVar()) {#415,18.743038442399765
+add(")");#445,18.739517211914062
+case Token.THIS:#574,18.731266888705168
+case '\t': sb.append("\\t"); break;#1067,18.725285861803137
+if (getNonEmptyChildCount(n, 2) == 1) {#894,18.72420108318329
+TokenStream.isJSIdentifier(name) &&#353,18.714910714522652
+case Token.WITH:#492,18.714833974838257
+if (first.isComma()) {#217,18.70589155899851
+case Token.THROW:#178,18.70119263575627
+case '\b': sb.append("\\b"); break;#1063,18.6874245768008
+char quote;#1002,18.67555604662214
+if (outputCharsetEncoder != null) {#1139,18.67174517024647
+if (childCount == 1) {#611,18.666806161403656
+case Token.NEW:#627,18.66572484103116
+if (!first.isLabelName()) {#612,18.659127636959678
+add("(");#746,18.657821257909138
+case '\\': sb.append(backslashEscape); break;#1068,18.657714004516603
+switch (type) {#147,18.657243516710068
+case '"': doubleq++; break;#996,18.656600335065058
+cc.addIdentifier(identifierEscape(identifier));#96,18.644813961452908
+case Token.WHILE:#449,18.644625902175903
+if (c > 0x1F && c < 0x7F) {#1178,18.639840665070906
+case Token.CASE:#721,18.636114676793415
+int precedence = NodeUtil.precedence(type);#629,18.633589608328684
+if (next != null) {#642,18.631642278035482
+case Token.FALSE:#579,18.62900487581889
+Context rhsContext = getContextForNoInOperator(context);#124,18.626417886643182
+Context rhsContext, int leftPrecedence, int rightPrecedence) {#767,18.622355063756306
+for (int i = 0; i < s.length(); i++) {#1051,18.6212073802948
+if (lastWasEmpty) {#957,18.617322401566938
+add(")");#551,18.605687936147053
+Node n, Context context, boolean allowNonBlockChild) {#824,18.60553144153796
+add(")");#236,18.604554494222004
+if (childCount == 1) {#592,18.603142619132996
+add("with(");#494,18.592769622802734
+case Token.CATCH:#170,18.592493851979572
+case '\"': sb.append(doublequoteEscape); break;#1069,18.587371110916138
+if (funcNeedsParens) {#322,18.586753527323406
+addNonEmptyStatement(#454,18.583575762235203
+if (childCount == 3) {#163,18.57958447933197
+case '\'': sb.append(singlequoteEscape); break;#1070,18.577732429504394
+if (first == null || first.isEmpty()) {#211,18.576163673400877
+add("}");#705,18.575297117233276
+case Token.IF:#541,18.57023386521773
+"Bad binary operator \"%s\": expected 2 arguments but got %s",#118,18.570169412172756
+if (!first.isLabelName()) {#593,18.57002740157278
+add("[");#228,18.569894949595135
+addNonEmptyStatement(#554,18.567937405904136
+add("(");#536,18.565929492314655
+return new CodeGenerator(consumer);#62,18.565296332041424
+try {#796,18.564850091934204
+add("continue");#591,18.562362273534138
+if (useSlashV) {#1056,18.56191349029541
+String regexp = regexpEscape(first.getString(), outputCharsetEncoder);#294,18.56146026479787
+case '\0': sb.append("\\x00"); break;#1054,18.557947039604187
+case Token.TRY: {#148,18.54879355430603
+String key = c.getString();#682,18.547139406204224
+if (count > 1) {#863,18.546987020052395
+if (last.getType() == type &&#129,18.54387140274048
+add(":");#740,18.533510367075603
+for (int i = 0; i < s.length(); i++) {#1173,18.525657844543456
+Node body = fn.getLastChild();#349,18.52408487656537
+add(")");#433,18.517056601388113
+case Token.FOR:#412,18.510294740850274
+if (c.isVar()) {#392,18.502896520826553
+if (alwaysWrapInBlock || isOneExactlyFunctionOrDo(firstAndOnlyChild)) {#851,18.49509331275677
+case Token.CALL:#518,18.487187544504803
+case '\'': singleq++; break;#997,18.485851923624676
+type == Token.SCRIPT ||#383,18.48533901415373
+private void addExpr(Node n, int minPrecedence, Context context) {#907,18.48341383252825
+static boolean isSimpleNumber(String s) {#783,18.48270543416341
+cc.beginBlock();#716,18.480553773733284
+case Token.SWITCH:#712,18.476675430933636
+add("for(");#429,18.469973754882812
+if (first != null) {#199,18.469649823506675
+quote = '\"';#1011,18.467067458412863
+return len > 0 && s.charAt(0) != '0';#791,18.465102863311767
+case '\u2029': sb.append("\\u2029"); break;#1074,18.457721639562536
+String doublequote, singlequote;#1001,18.45477329600941
+switch (s.charAt(i)) {#995,18.439276933670044
+add(")");#538,18.438310623168945
+add(";");#420,18.43683726446969
+try {#1253,18.433237711588543
+String o = type == Token.INC ? "++" : "--";#504,18.42989448706309
+Node parameters = fn.getChildAtIndex(1);#348,18.429215002059937
+singlequote = "\\\'";#1008,18.42271452683669
+case '\r': sb.append("\\r"); break;#1066,18.41921557550845
+add("throw");#180,18.418654918670654
+if (childCount == 4) {#413,18.41777402162552
+private void addNonEmptyStatement(#823,18.413884692721897
+cc.addOp(opstr, true);#132,18.412592040167915
+if (funcNeedsParens) {#311,18.411055194007027
+.append(HEX_CHARS[(codePoint >>> 12) & 0xf])#1282,18.40630199291088
+if (cached == null) {#982,18.405122348240443
+add(name);#357,18.40062713623047
+case Token.DO:#439,18.40002224662087
+if (needsParens) {#706,18.39835423231125
+throw new RuntimeException(ex);#1257,18.393669568575344
+final String END_SCRIPT = "/script";#1121,18.3930034160614
+addExpr(first, p + 1, context);#280,18.383372020721435
+boolean preferLineBreaks =#382,18.383256844111852
+add(";");#422,18.380996022905624
+if (useSlashV) {#978,18.372987190882366
+if (!cc.continueProcessing()) {#104,18.363037916330192
+(type == Token.BLOCK &&#384,18.357471418380737
+case '\n': sb.append("\\n"); break;#1065,18.350249622179113
+cc.addOp("?", true);#281,18.346385180950165
+int singleq = 0, doubleq = 0;#991,18.343485641479493
+int count = getNonEmptyChildCount(n, 2);#834,18.338684634158486
+if (childCount == 2) {#297,18.329896926879883
+case Token.PARAM_LIST:#233,18.32696751185826
+.append(HEX_CHARS[(codePoint >>> 8) & 0xf])#1283,18.325576499656396
+case Token.SCRIPT:#372,18.321843942006428
+if (postProp != 0) {#508,18.31894600391388
+cc.addOp("=", true);#216,18.315420953850996
+if (c.isFunction()) {#396,18.30892350938585
+add("switch(");#713,18.3042751458975
+private final boolean preferSingleQuotes;#51,18.304064326816135
+addNonEmptyStatement(#497,18.303879811213566
+Context lhsContext) {#927,18.297580855233328
+case Token.DEFAULT_CASE:#728,18.29756825764974
+if (preserveBlock) {#406,18.2953737894694
+if (cc.shouldPreserveExtraBlocks()) {#836,18.294144379465205
+if (preserveBlock) {#378,18.28809992472331
+if (!first.isLabelName()) {#736,18.286178701064166
+add("if(");#549,18.281780022841232
+double d = getSimpleNumber(name);#360,18.280850310074655
+add("debugger");#604,18.279784422654373
+case Token.SETTER_DEF:#328,18.274644987923757
+cc = consumer;#55,18.27461338043213
+case Token.CAST:#745,18.271328752691094
+cc.addOp(":", true);#283,18.265459677752325
+if (nodeToProcess.isVar()) {#875,18.261443257331848
+case Token.NEG: {#261,18.260065665611855
+void addCaseBody(Node caseBody) {#962,18.258253415425617
+if (!n.isQuotedString() &&#352,18.25345007578532
+addArrayList(first);#229,18.25100544520787
+add(")");#912,18.247386074066164
+add(first);#452,18.244742552439373
+add(first);#316,18.241756598154705
+sb.append(c);#1087,18.240697358783923
+cc.endBlock(cc.breakAfterBlockFor(n, context == Context.STATEMENT));#855,18.238818445513324
+cc.maybeLineBreak();#854,18.237530052661896
+add(":");#701,18.23284363746643
+case Token.TYPEOF:#249,18.231140749795095
+if (opstr != null && first != last) {#115,18.23112040758133
+addNonEmptyStatement(#425,18.231054941813152
+if (needsParens) {#669,18.227189242839813
+((context == Context.IN_FOR_INIT_CLAUSE) && n.isIn())){#909,18.224900799412882
+childCount == 2,#117,18.224525769551594
+addNonEmptyStatement(#557,18.224420229593914
+sb.append(c);#1109,18.224095997057464
+add("for(");#414,18.224009132385255
+for (int i = 0; i < s.length(); i++) {#994,18.22372179031372
+if (!Double.isNaN(d)) {#361,18.221169380914596
+if (n.isLabel()) {#886,18.21349859237671
+add(first);#495,18.20673696200053
+cc.beginBlock();#852,18.20330702463786
+if (isFirst) {#930,18.202303647994995
+if (c.isBlock()) {#1207,18.20063236781529
+add(c);#679,18.200436890125275
+add("get ");#338,18.195212237040202
+!TokenStream.isKeyword(key) &&#686,18.1907800745081
+if (type == Token.GETTER_DEF) {#335,18.188808298110963
+long l = Long.parseLong(s);#797,18.18790102005005
+enum Context {#1222,18.18704490661621
+i += getNonEmptyChildCount(c, maxCount-i);#1196,18.186408623405125
+add(c, Context.STATEMENT);#389,18.182351313139264
+addList(first, false, getContextForNoInOperator(context));#201,18.180188850120263
+int p = NodeUtil.precedence(type);#120,18.178330822994834
+add("while(");#443,18.162351388197678
+case Token.REGEXP:#288,18.1619774500529
+add(first);#173,18.160435994466145
+if (c.isBlock()) {#1195,18.158253737858363
+case Token.FUNCTION:#305,18.15767603654128
+if (catchblock != null) {#159,18.155478417873383
+case Token.BREAK:#608,18.15334900220235
+Node n, int op, String opStr, Context context,#766,18.151594663921156
+if (needsParens) {#474,18.14766013622284
+add(first);#739,18.144407590230305
+add(")");#748,18.144325335820515
+case Token.STRING:#655,18.14157263437907
+addNonEmptyStatement(#741,18.138541588416466
+add("do");#441,18.138242324193318
+add("[");#487,18.133172353108723
+TokenStream.isJSIdentifier(key) &&#687,18.131092883922435
+START_OF_EXPR,#1225,18.12831670587713
+sb.append(c);#1079,18.122068154184444
+case Token.BLOCK: {#373,18.121605432950535
+add(first);#430,18.12119926725115
+String s = n.getString();#976,18.120213588078816
+add("while(");#451,18.11528961475079
+add(first);#181,18.110585530598957
+addExpr(first, p, context);#131,18.104249053531223
+addList(first);#235,18.10379094343919
+add(")");#532,18.099562304360525
+add(")");#475,18.090160506112234
+sb.append(LT_ESCAPED);#1128,18.090028514032777
+add("]");#230,18.086865186691284
+class CodeGenerator {#36,18.082995891571045
+childCount == 0, "A string may not have children");#657,18.082299842834473
+addExpr(first, NodeUtil.precedence(type), context);#473,18.082248651064358
+addExpr(first, precedence, Context.OTHER);#638,18.078319358825684
+add(")");#707,18.07367958341326
+add(last);#444,18.06617784500122
+if (n.getFirstChild().isNumber()) {#267,18.059856986999513
+char c = s.charAt(i);#1052,18.05892014503479
+add("catch(");#172,18.05609578352708
+boolean needsParens = (context == Context.START_OF_EXPR);#668,18.055924945407444
+case Token.COMMA:#239,18.054402192433674
+case Token.ARRAYLIT:#227,18.0511611529759
+add("delete ");#663,18.050387162428635
+for (Node c = first; c != null; c = c.getNext()) {#388,18.04747779281051
+addExpr(firstNonOperator, leftPrecedence, context);#773,18.04300880432129
+if (nodeToProcess.isEmpty()) {#868,18.04211916242327
+if (isSimpleNumber(s)) {#795,18.03338388296274
+addExpr(last, p, rhsContext);#133,18.031921005249025
+case Token.OBJECTLIT: {#667,18.026625696818034
+add(nodeToProcess, context);#871,18.023420197623118
+if ((NodeUtil.precedence(n.getType()) < minPrecedence) ||#908,18.020216575035683
+cc.addOp(o, false);#512,18.015042907313298
+childCount == 1, "Object lit key must have 1 child");#651,18.011517708118145
+break;#1111,18.011001269022625
+if (n.getClass() != Node.class) {#374,18.004850296747115
+for (Node c = first; c != null; c = c.getNext()) {#673,18.004361187970197
+if (n.getClass() != Node.class) {#306,18.002635138375418
+add(first);#724,17.999098777770996
+addNonEmptyStatement(#434,17.998928197224934
+cc = consumer;#68,17.99862229824066
+char c = s.charAt(i);#1174,17.99609386920929
+boolean ambiguousElseClause =#543,17.99591568538121
+if (needsParens) {#470,17.994508922100067
+add(key);#691,17.99074501461453
+cc.endStatement();#618,17.98876718374399
+cc.endBlock(cc.breakAfterBlockFor(n, context == Context.STATEMENT));#838,17.97796683157644
+Node fn = first;#347,17.977399826049805
+add("break");#610,17.972009420394897
+if (!Double.isNaN(d)) {#695,17.97194896697998
+int len = s.length();#784,17.971480629660867
+add("case ");#723,17.968800398019646
+cc.addOp(opstr, true);#137,17.96658123864068
+case Token.GETTER_DEF:#327,17.964167186192103
+addExpr(first, 0, getContextForNoInOperator(context));#222,17.962774181365965
+cc.addOp(o, false);#510,17.960104440387926
+int p = NodeUtil.precedence(type);#279,17.959533464340936
+private final CharsetEncoder outputCharsetEncoder;#49,17.957119703292847
+OTHER#1231,17.955480575561523
+Preconditions.checkState(childCount == 1);#729,17.937599754333498
+addExpr(first, p, context);#136,17.934937530093723
+out.append("\\u")#1281,17.933657472783867
+add("else");#556,17.933603763580322
+String opstr = NodeUtil.opToStr(type);#109,17.932283931308323
+private static final String LT_ESCAPED = "\\x3c";#37,17.931330892774795
+char c = s.charAt(index);#786,17.925961077213287
+boolean funcNeedsParens = (context == Context.START_OF_EXPR);#310,17.922873497009277
+sb.append(c);#1151,17.91927855355399
+private static int getNonEmptyChildCount(Node n, int maxCount) {#1191,17.91708113017835
+add("(0,");#530,17.916687071323395
+boolean lastWasEmpty = false;#948,17.91360447623513
+CharsetEncoder outputCharsetEncoder,#1046,17.91133255428738
+if (!allowNonBlockChild && !n.isBlock()) {#827,17.90823772218492
+addExpr(last, 1, Context.OTHER);#284,17.905717849731445
+doublequote = "\"";#1007,17.900150378545124
+void addList(Node firstInList, boolean isArrayOrFunctionArgument) {#922,17.896782875061035
+childCount == 2,#464,17.893785027896655
+Preconditions.checkState(childCount == 0);#580,17.893549346923827
+boolean useSlashV,#1047,17.892120679219563
+private final boolean trustedStrings;#52,17.891381051805283
+case Token.STRING_KEY:#649,17.88955886023385
+.append(HEX_CHARS[(codePoint >>> 4) & 0xf])#1284,17.888939362985116
+return (context == Context.IN_FOR_INIT_CLAUSE#1244,17.884917911730316
+break;#1091,17.87842893600464
+cc.endFunction(context == Context.STATEMENT);#320,17.875682878494263
+add(firstAndOnlyChild, Context.STATEMENT);#853,17.875339117917147
+if (n.isBlock()) {#833,17.87228536605835
+addExpr(first, NodeUtil.precedence(type), context);#486,17.87084982945369
+cc.beginCaseBody();#963,17.870069980621338
+Preconditions.checkState(childCount == 0);#570,17.86969494819641
+cc.addConstant("false");#581,17.863540291786194
+return strEscape(s, '"',  "\\\"", "\'", "\\\\", null, false, false);#1029,17.852521127270116
+cc.addConstant("null");#571,17.85088038444519
+add("(");#670,17.8463750566755
+while (firstNonOperator.getType() == op) {#769,17.842864831288654
+addList(firstInList, isArrayOrFunctionArgument, Context.OTHER);#923,17.836539615284313
+case Token.GETPROP: {#462,17.836526325770787
+add(".");#477,17.836126963297527
+Preconditions.checkState(childCount == 2);#722,17.836123132705687
+Preconditions.checkState(childCount == 0);#575,17.834823274612425
+int i = 0;#1192,17.834124247233074
+add("default");#730,17.828488270441692
+addNonEmptyStatement(first, Context.OTHER, false);#442,17.82577741713751
+add("this");#576,17.825658241907757
+add(")");#645,17.824851172310964
+boolean needsParens = (first.isNumber());#469,17.822361421585082
+Preconditions.checkState(childCount <= 1);#590,17.818513441085816
+sb.append(quote);#1161,17.818409312855113
+Preconditions.checkState(childCount == 2);#240,17.81182007789612
+add("]");#489,17.811107953389484
+unrollBinaryOperator(n, type, opstr, context, rhsContext, p, p + 1);#140,17.8063567385954
+addIdentifier(n.getString());#212,17.805107066505833
+if (l < NodeUtil.MAX_POSITIVE_INTEGER_NUMBER) {#798,17.80031483968099
+Preconditions.checkState(childCount == 2);#735,17.799746608734132
+return strEscape(s, '/', "\"", "'", "\\", outputCharsetEncoder, false, true);#1022,17.79764151573181
+last, getContextForNonEmptyExpression(context), false);#498,17.797416503612812
+add(first);#550,17.782280683517456
+Node firstAndOnlyChild = getFirstNonEmptyChild(n);#849,17.779996048320424
+void addAllSiblings(Node n) {#968,17.779598156611126
+sb.append(c);#1133,17.77858453047903
+add("function");#315,17.776231447855633
+Node next = first.getNext();#641,17.776014506816864
+outputCharsetEncoder, useSlashV, false);#1017,17.775656526738945
+STATEMENT,#1223,17.775429589407786
+add("new ");#628,17.775032116816593
+addExpr(first, NodeUtil.precedence(type), context);#509,17.774678809302195
+case Token.EXPR_RESULT:#621,17.774079259236654
+Preconditions.checkState(childCount == 1);#179,17.77135396003723
+NodeUtil.isLatin(name)) {#356,17.764437155290082
+return strEscape(s, quote, doublequote, singlequote, "\\\\",#1016,17.764132152904164
+if (trustedStrings || isRegexp) {#1086,17.76395250403363
+private static Node getFirstNonEmptyChild(Node n) {#1205,17.763044293721517
+sb.append(c);#1141,17.76298123314267
+add(" ");#596,17.762614522661483
+if (result != null) {#1209,17.7621306737264
+return isOneExactlyFunctionOrDo(getFirstNonEmptyChild(n));#895,17.75980619283823
+add(first);#714,17.759419282277424
+Node labeledStatement = n.getLastChild();#887,17.75793844461441
+this.preferSingleQuotes = options.preferSingleQuotes;#80,17.75567192501492
+cc.endStatement();#195,17.755589998685398
+sb.append(GT_ESCAPED);#1107,17.753442805746328
+cc.addConstant("true");#586,17.751532316207886
+addCaseBody(last);#725,17.748156479426793
+Node last = n.getLastChild();#112,17.748147524320164
+sb.append(quote);#1050,17.748109470714223
+boolean preserveBlock = context == Context.PRESERVE_BLOCK;#377,17.742056888082754
+sb.append("\\x26");#1089,17.738517170860653
+if (!trustedStrings && !isRegexp) {#1113,17.7362056573232
+if (!trustedStrings && !isRegexp) {#1094,17.734347065289814
+add(first, Context.IN_FOR_INIT_CLAUSE);#416,17.73255399295262
+addIdentifier(n.getString());#215,17.730523761950042
+Preconditions.checkState(childCount == 0);#585,17.727092027664185
+void add(Node n, Context context) {#103,17.72596788406372
+cc.beginBlock();#379,17.72261225382487
+return isOneExactlyFunctionOrDo(labeledStatement);#889,17.721427059173585
+return null;#1216,17.72058037349156
+add("(");#643,17.71840340750558
+add(" ");#615,17.71472426823207
+if (!labeledStatement.isBlock()) {#888,17.714563965797424
+add(first.getNext());#432,17.71204163046444
+cc.endStatement();#605,17.71160147740291
+addExpr(last, p, rhsContext);#138,17.71150999069214
+private boolean isOneExactlyFunctionOrDo(Node n) {#885,17.706232833862305
+add("'use strict';");#88,17.705637671730734
+for (; c != null && i < maxCount; c = c.getNext()) {#1194,17.703317046165466
+return regexpEscape(s, null);#1036,17.701767240251815
+case Token.GETELEM:#482,17.700181007385254
+cc.endBlock(cc.breakAfterBlockFor(n, context == Context.STATEMENT));#407,17.696438389439738
+cc.endBlock(context == Context.STATEMENT);#718,17.694602489471436
+cc.listSeparator();#675,17.692222846181767
+add(first.getNext());#421,17.688188721151914
+return sb.toString();#1184,17.686417839743875
+add(first, Context.START_OF_EXPR);#623,17.684025287628174
+unrollBinaryOperator(n, Token.COMMA, ",", context, Context.OTHER, 0, 0);#241,17.683828353881836
+cc.addOp(NodeUtil.opToStrNoFail(type), false);#256,17.68310617517542
+cc.maybeLineBreak();#397,17.681507852342392
+addExpr(c.getFirstChild(), 1, Context.OTHER);#702,17.68137546948024
+case Token.DELPROP:#661,17.677318913596018
+Preconditions.checkState(childCount == 1);#503,17.676416540145873
+cc.endStatement();#624,17.6762511913593
+if (NodeUtil.containsType(#634,17.673060946994358
+static double getSimpleNumber(String s) {#794,17.672899564107258
+Preconditions.checkState(childCount == 2);#450,17.672244596481324
+addJsString(n);#652,17.67052037375314
+add(first.getNext());#318,17.669784800211588
+addExpr(n, isArrayOrFunctionArgument ? 1 : 0, lhsContext);#931,17.667633582805767
+void addArrayList(Node firstInList) {#947,17.665818801293007
+Preconditions.checkState(childCount == 1);#622,17.660705518722533
+if (s.regionMatches(true, i + 1, END_SCRIPT, 0,#1126,17.65526307013727
+addExpr(first, 0, Context.IN_FOR_INIT_CLAUSE);#418,17.65188241004944
+Preconditions.checkState(childCount == 1);#662,17.649651098251343
+sb.append("\\x3d");#1081,17.648687102577902
+add(first);#747,17.646814187367756
+int childCount = n.getChildCount();#110,17.645653452192033
+if (outputCharset == null || outputCharset == Charsets.US_ASCII) {#71,17.644316605159215
+addExpr(first, NodeUtil.precedence(type), context);#534,17.643941606794083
+addExpr(first.getNext(), 1, Context.OTHER);#282,17.64347569838814
+Preconditions.checkState(childCount == 1);#255,17.638736057281495
+addIdentifier(n.getString());#207,17.63815470302806
+default:#751,17.633966326713562
+add("var ");#200,17.63383617401123
+Preconditions.checkState(childCount <= 1);#609,17.63035101890564
+double d = getSimpleNumber(key);#694,17.629130778105363
+last.isString(),#467,17.627196143655215
+Node result = getFirstNonEmptyChild(c);#1208,17.625448427702253
+boolean hasElse = childCount == 3;#542,17.622967383440802
+add("(");#910,17.621733474731446
+cc.endStatement();#599,17.617912439199593
+add(cached);#986,17.614455569874156
+sb.append("\\v");#1057,17.612859296798707
+if (trustedStrings || isRegexp) {#1078,17.609283861906633
+return n.isName() && "eval".equals(n.getString()) &&#812,17.60618777897047
+Preconditions.checkState(childCount == 0);#603,17.603957319259642
+void addList(Node firstInList, boolean isArrayOrFunctionArgument,#926,17.601450468364515
+add(")");#323,17.601324149540492
+addCaseBody(first);#731,17.600490706307546
+cc.listSeparator();#958,17.599467350886417
+"Bad GETPROP: expected 2 children, but got %s", childCount);#465,17.598383967081705
+if (isIndirectEval(first)#528,17.59757645924886
+throw new Error("Unexpected token type. Should be LABEL_NAME.");#737,17.592163937432424
+Preconditions.checkState(childCount == 2);#440,17.588987398147584
+int type = n.getType();#108,17.58768884340922
+throw new Error("Expected children to be strings");#291,17.58637037731352
+Preconditions.checkState(childCount == 1);#214,17.58502734791149
+precedence = NodeUtil.precedence(first.getType()) + 1;#636,17.58393199103219
+cc.addOp(NodeUtil.opToStrNoFail(type), false);#270,17.58107142612852
+addIdentifier(last.getString());#478,17.578349281759824
+lastWasEmpty = n.isEmpty();#954,17.57299550374349
+cc.endCaseBody();#965,17.563852882385255
+return sb.toString();#1162,17.563031283291902
+Preconditions.checkState(childCount == 1);#330,17.559636068344116
+Preconditions.checkState(childCount == 1);#262,17.552775573730468
+this.outputCharsetEncoder = outputCharset.newEncoder();#78,17.552745819091797
+last, getContextForNonEmptyExpression(context), true);#742,17.55195903778076
+add(first);#616,17.547822202954972
+add(first, Context.PRESERVE_BLOCK);#154,17.54606128874279
+sb.append(GT_ESCAPED);#1095,17.544443545134172
+add(body, Context.PRESERVE_BLOCK);#369,17.53867181142171
+add(jsString(n.getString(), useSlashV));#979,17.53693335396903
+Preconditions.checkState(c.isStringKey());#681,17.534469413757325
+childCount == 2,#484,17.52845926845775
+if (n != firstInList) {#950,17.527977244059244
+cc.endStatement();#446,17.527191895705002
+case Token.RETURN:#188,17.523932377497356
+last, getContextForNonEmptyExpression(context), false);#455,17.51766245181744
+addAllSiblings(first.getNext());#717,17.51467212041219
+boolean alwaysWrapInBlock = cc.shouldPreserveExtraBlocks();#850,17.514158787934676
+String cached = ESCAPED_JS_STRINGS.get(s);#981,17.511514056812633
+break;#1135,17.511202732721966
+addExpr(first, NodeUtil.precedence(type), Context.OTHER);#257,17.510185650416783
+do {#776,17.50734043121338
+private static final String GT_ESCAPED = "\\x3e";#38,17.507209406958687
+Preconditions.checkState(!first.getChildAtIndex(1).hasChildren());#337,17.501437505086262
+Preconditions.checkState(childCount >= 2 && childCount <= 3);#151,17.497793617248536
+NodeUtil.isAssociative(type)) {#130,17.496447693217885
+Preconditions.checkState(childCount == 3);#428,17.496104110370982
+return (n.isFunction() || n.isDo());#903,17.49466263620477
+Preconditions.checkState(first.getFirstChild().getString().isEmpty());#334,17.492799441019695
+Preconditions.checkState(first.getNext().isBlock() &&#149,17.49097756544749
+add(first);#664,17.481646299362183
+add("set ");#342,17.481530125935873
+private final Map<String, String> ESCAPED_JS_STRINGS = Maps.newHashMap();#41,17.47583885192871
+outputCharsetEncoder = null;#56,17.474198194650505
+Preconditions.checkState(childCount == 2);#171,17.473248386383055
+break;#1083,17.47292669614156
+if (NodeUtil.isLatin(s)) {#1167,17.471103489398956
+singlequote = "\'";#1013,17.470638513565063
+private boolean isIndirectEval(Node n) {#811,17.463526453290665
+addExpr(n, isArrayOrFunctionArgument ? 1 : 0, Context.OTHER);#934,17.462244362666688
+Preconditions.checkState(childCount == 3);#309,17.459121799468996
+cc.listSeparator();#951,17.454641151428223
+last, getContextForNonEmptyExpression(context), false);#558,17.454472643988474
+cc.addOp(opStr, true);#778,17.45131814479828
+addExpr(first, NodeUtil.precedence(Token.COMMA), Context.OTHER);#531,17.446044141596015
+Preconditions.checkState(childCount == 0);#245,17.444996929168703
+Preconditions.checkState(childCount == 3);#278,17.439673519134523
+Preconditions.checkState(childCount == 2);#493,17.432327556610108
+add(first);#597,17.432320594787598
+add(first.getNext().getNext());#423,17.421125507354738
+throw new Error("Unexpected Node subclass.");#375,17.417574548721312
+addJsString(n);#658,17.41426399775914
+boolean isRegexp) {#1048,17.414099619938778
+throw new Error("Unexpected token type. Should be LABEL_NAME.");#594,17.41356703440348
+cc.endStatement(true);#185,17.397389221191407
+Preconditions.checkState(#463,17.397363980611164
+cc.beginBlock();#837,17.394402058919272
+int postProp = n.getIntProp(Node.INCRDECR_PROP);#505,17.393632411956787
+Charset outputCharset = options.getOutputCharset();#70,17.38442521095276
+last, getContextForNonEmptyExpression(context), false);#426,17.383216619491577
+sb.append(LT_ESCAPED);#1131,17.381574755129606
+if (Character.isSupplementaryCodePoint(codePoint)) {#1271,17.378152476416695
+addExpr(n, 1, Context.OTHER);#953,17.376943588256836
+for (Node c = n; c != null; c = c.getNext()) {#969,17.373077475506328
+cc.notePreferredLineBreak();#403,17.369561004638673
+this.outputCharsetEncoder = null;#76,17.36275813158821
+|| n.getBooleanProp(Node.FREE_CALL) && NodeUtil.isGet(first)) {#529,17.36121900458085
+private void addJsString(Node n) {#975,17.361024777094524
+appendHexJavaScriptRepresentation(sb, c);#1144,17.360495273883526
+add(last, Context.PRESERVE_BLOCK);#319,17.357912245250883
+doublequote = "\\\"";#1012,17.356584255511944
+current = current.getParent();#777,17.353041061988243
+add(n, Context.OTHER);#911,17.34921884536743
+NodeUtil.isLatin(key)) {#690,17.348006358513466
+add(c);#970,17.343145656585694
+throw new Error("Unexpected token type. Should be LABEL_NAME.");#613,17.33586908976237
+void add(Node n) {#99,17.33077833387587
+void addList(Node firstInList) {#918,17.325096368789673
+addExpr(c, 1, Context.OTHER);#698,17.31825774056571
+addList(firstInList, true, Context.OTHER);#919,17.317885230569278
+sb.append(LT_ESCAPED);#1114,17.31182334734046
+cc.beginBlock();#546,17.311560694376627
+!preserveBlock &&#385,17.302220162891206
+throw new Error("Unknown type " + type + "\n" + n.toStringTree());#752,17.301175798688615
+addNonEmptyStatement(first.getNext(), Context.OTHER, false);#560,17.299135428208572
+break;#231,17.297333908081054
+PRESERVE_BLOCK,#1226,17.292309067466043
+sb.append("\\x0B");#1059,17.28888476978649
+add(regexp + last.getString());#298,17.288584482102166
+add(last, Context.PRESERVE_BLOCK);#175,17.28759851909819
+break;#196,17.283032608032226
+Node current = firstNonOperator;#775,17.28151782353719
+addExpr(first, NodeUtil.precedence(Token.ASSIGN), Context.OTHER);#218,17.280582591465542
+first, Token.CALL, NodeUtil.MATCH_NOT_FUNCTION)) {#635,17.278294852285676
+add(n, context);#914,17.273222764333088
+Node nodeToProcess = n;#825,17.267819924788043
+add("(");#471,17.264861583709717
+for (Node c = n.getFirstChild(); c != null; c = c.getNext()) {#1206,17.260480103669344
+!last.isString()) {#290,17.25134197034334
+Preconditions.checkState(!n.getString().isEmpty());#206,17.241605361302693
+add("finally");#164,17.239774831136067
+Preconditions.checkState(#650,17.22222989400228
+cc.addNumber(d);#362,17.220616842571058
+Preconditions.checkState(first.getChildAtIndex(1).hasOneChild());#341,17.217569700876872
+throw new Error("Unexpected Node subclass.");#307,17.21486086845398
+cc.listSeparator();#933,17.211675453186036
+cached = jsString(n.getString(), useSlashV);#983,17.1927490234375
+add("try");#153,17.192381540934246
+Preconditions.checkState(#466,17.190497716267902
+break;#186,17.187967681884764
+Preconditions.checkState(#656,17.18264865875244
+context == Context.BEFORE_DANGLING_ELSE && !hasElse;#544,17.168891937501968
+cc.endStatement();#393,17.151899057276108
+Preconditions.checkState(childCount == 1);#300,17.148327567360617
+"Bad GETELEM: expected 2 children but got %s", childCount);#485,17.141812896728517
+return i;#1201,17.13655580793108
+Preconditions.checkState(childCount == 0);#459,17.135404205322267
+private void unrollBinaryOperator(#765,17.134925668889824
+Preconditions.checkState(childCount == 0);#193,17.128974784504283
+appendHexJavaScriptRepresentation(c, sb);#1254,17.121929670635023
+private static void appendHexJavaScriptRepresentation(#1268,17.121813113872822
+break;#539,17.117276763916017
+break;#225,17.102180385589598
+cc.startSourceMapping(n);#145,17.10198798546424
+Preconditions.checkState(#116,17.091777948232796
+? Context.IN_FOR_INIT_CLAUSE : Context.OTHER);#1245,17.091685791015625
+return c;#1213,17.087181958285246
+cc.endStatement(true);#869,17.08701984698956
+cc.addNumber(-n.getFirstChild().getDouble());#268,17.086958646774292
+last, getContextForNonEmptyExpression(context), false);#435,17.081850051879883
+they want Latin/ASCII characters only.#1033,17.07859080178397
+add(first.getNext());#488,17.078269386291502
+break;#619,17.07506904602051
+addList(first.getNext());#537,17.048216998577118
+return;#842,17.043807411193846
+i++;#1198,17.039944171905518
+break;#237,17.032676219940186
+cc.addNumber(d);#696,17.02861848084823
+return;#1279,17.026506900787354
+add(n, Context.OTHER);#100,17.019449472427368
+break;#647,17.01801977157593
+Preconditions.checkState(n.getParent().isObjectLit());#329,17.015636405944825
+break;#515,17.01537380218506
+break;#572,17.015026569366455
+Preconditions.checkState(childCount == 2);#561,17.013877218419854
+Node first = n.getFirstChild();#111,17.011589710529034
+n.getParent() != null &&#386,16.998488783836365
+break;#732,16.997335720062257
+add("(");#312,16.99285418646676
+addExpr(first, NodeUtil.precedence(type), Context.OTHER);#271,16.989604155222576
+preferSingleQuotes = false;#57,16.98599452972412
+addExpr(current.getFirstChild().getNext(), rightPrecedence, rhsContext);#779,16.984675918306625
+add(first);#191,16.984013284955704
+break;#567,16.978400421142577
+break;#653,16.97563362121582
+sb.append(c);#1179,16.9683479309082
+break;#1061,16.96632409095764
+Node catchblock = first.getNext().getFirstChild();#158,16.962627819606237
+break;#203,16.94034080505371
+public void tagAsStrict() {#87,16.938020706176758
+cc.endStatement(true);#840,16.92908343146829
+return s;#1168,16.925127241346573
+.append(HEX_CHARS[codePoint & 0xf]);#1285,16.909060851387355
+return;#856,16.899431467056274
+Preconditions.checkState(first.isFunction());#331,16.897286939620972
+nodeToProcess = firstAndOnlyChild;#859,16.888539063303096
+add(caseBody);#964,16.88486385345459
+break;#600,16.88120174407959
+"Bad GETPROP: RHS should be STRING");#468,16.880878295898437
+context = Context.PRESERVE_BLOCK;#864,16.879383589092054
+char[] surrogates = Character.toChars(codePoint);#1276,16.877685403823854
+private static void appendHexJavaScriptRepresentation(#1251,16.87598683283879
+break;#208,16.865835762023927
+cc.endBlock();#565,16.861617024739584
+Preconditions.checkState(#483,16.85863971710205
+break;#625,16.849642753601074
+appendHexJavaScriptRepresentation(sb, c);#1181,16.840244245529174
+cc.endSourceMapping(n);#755,16.838559957650993
+add(first);#513,16.83364043916975
+break;#409,16.818666076660158
+Node firstNonOperator = n.getFirstChild();#768,16.80869448184967
+addList(next);#644,16.800258954366047
+!n.getBooleanProp(Node.DIRECT_EVAL);#813,16.79912046591441
+break;#577,16.797144412994385
+first.getNext(), Context.BEFORE_DANGLING_ELSE, false);#555,16.792758240419275
+opstr, childCount);#119,16.79164493083954
+break;#749,16.784993171691895
+break;#665,16.78352060317993
+break;#582,16.77510976791382
+break;#726,16.77021179199219
+break;#242,16.75359239578247
+return currentContext == Context.BEFORE_DANGLING_ELSE ?#1235,16.74298604329427
+BEFORE_DANGLING_ELSE, // a hack to resolve the else-clause ambiguity#1224,16.73735248565674
+Node c = n.getFirstChild();#1193,16.733418464660645
+add(regexp);#301,16.733254969120026
+break;#659,16.728980159759523
+break;#606,16.728555583953856
+break;#499,16.693874168395997
+return;#142,16.693869709968567
+break;#370,16.690342330932616
+break;#1096,16.678829669952393
+throw new Error("Missing BLOCK child.");#828,16.67502135038376
+add(last, Context.PRESERVE_BLOCK);#165,16.671890880750574
+break;#743,16.671029567718506
+break;#303,16.669208145141603
+break;#437,16.665028285980224
+break;#447,16.6583309173584
+break;#167,16.652121448516844
+boolean isFirst = n == firstInList;#929,16.63542240858078
+appendHexJavaScriptRepresentation(surrogates[0], out);#1277,16.6271654475819
+cc.add(str);#92,16.625782680511474
+private static final char[] HEX_CHARS#43,16.613744735717773
+cc.addNumber(n.getDouble());#246,16.604474279615616
+ESCAPED_JS_STRINGS.put(s, cached);#984,16.600519470546555
+boolean useSlashV = n.getBooleanProp(Node.SLASH_V);#977,16.590090076128643
+cc.endStatement();#876,16.588298137371357
+trustedStrings = true;#58,16.581441783905028
+IN_FOR_INIT_CLAUSE,#1230,16.576518399374827
+addJsString(n);#364,16.565698623657227
+return result;#1210,16.558390030494103
+break;#456,16.553837776184082
+break;#490,16.53983497619629
+break;#479,16.537491893768312
+add(catchblock);#160,16.52432982126872
+appendHexJavaScriptRepresentation(sb, c);#1156,16.519750705132118
+break;#325,16.518979263305663
+break;#587,16.517949104309082
+break;#709,16.504146671295167
+return;#105,16.497281193733215
+firstNonOperator = firstNonOperator.getFirstChild();#770,16.49338059425354
+return Double.NaN;#805,16.487294578552245
+appendHexJavaScriptRepresentation(surrogates[1], out);#1278,16.485746817155317
+break;#460,16.47746295928955
+for (Node n = firstInList; n != null; n = n.getNext()) {#949,16.462641487121584
+Context.BEFORE_DANGLING_ELSE : Context.OTHER;#1236,16.443312530517577
+break;#1115,16.421183381761825
+break;#719,16.419629192352296
+for (Node n = firstInList; n != null; n = n.getNext()) {#928,16.403956451416015
+!first.getNext().hasMoreThanOneChild());#150,16.38794964757459
+break;#176,16.298934078216554
+break;#258,16.242142391204833
+return l;#799,16.206316287700947
+n.getParent().isScript());#387,16.119847416877747
+break;#247,16.092525005340576
+break;#285,15.948156261444092
+break;#274,15.842160511016846
+return false;#788,15.79720046303489
+return false;#899,15.784666208120493
+this.trustedStrings = options.trustedStrings;#81,15.462878015306261

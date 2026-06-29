@@ -1,0 +1,350 @@
+if (start == null || end == null) {#257,19.990184482775238
+if (days == 0) {#1104,19.737131118774414
+if (hours == 0) {#1122,19.72557875315348
+if (seconds == 0) {#1158,19.724028142293296
+if (field == null) {#873,19.718509229024253
+if (period == null) {#1024,19.70874570210775
+if (period == null) {#1203,19.63189442952474
+public int getMinutes() {#782,19.604115226052024
+if (field == null) {#854,19.58647041320801
+public int getDays() {#763,19.5543420791626
+long millis = getMillis();  // assign to a long#1469,19.536518877202813
+public int getWeeks() {#754,19.525030916387383
+if (minutes == 0) {#1140,19.515145182609558
+public Period multipliedBy(int scalar) {#1333,19.507891995566233
+public int getMillis() {#800,19.499006097966973
+if (value == 0) {#876,19.486508051554363
+if (years != 0 || months != 0) {#1627,19.470977983976667
+if (months == 0) {#1068,19.44882125854492
+if (years == 0) {#1050,19.431783167521157
+public Period toPeriod() {#726,19.321975014426492
+long millis = getMillis();  // assign to a long#1438,19.30438449166038
+if (period == null) {#834,19.289001973470054
+long millis = getMillis();  // assign to a long#1377,19.28827077692205
+long millis = getMillis();  // assign to a long#1407,19.269697015935723
+public int getHours() {#773,19.25811653137207
+if (millis == 0) {#1176,19.215449452400208
+public static Period parse(String str, PeriodFormatter formatter) {#91,19.206834993864362
+if (weeks == 0) {#1086,19.154393017292023
+public Period withField(DurationFieldType field, int value) {#853,19.14318874147203
+public Period withFieldAdded(DurationFieldType field, int value) {#872,19.08694116692794
+if (getYears() != 0) {#1549,19.053393363952637
+public int getYears() {#736,19.05143222808838
+if (getMonths() != 0) {#1546,19.032747798495823
+public Period plusMinutes(int minutes) {#1139,19.020432472229004
+public Period plusYears(int years) {#1049,19.00632667541504
+public static Period seconds(int seconds) {#211,18.92877564063439
+public Period plusDays(int days) {#1103,18.916799765366775
+int years = getYears();#1625,18.901287623814174
+public Period plusHours(int hours) {#1121,18.88651833167443
+public static Period months(int months) {#126,18.83600293673002
+public Period withMinutes(int minutes) {#969,18.829325335366384
+public Minutes toStandardMinutes() {#1467,18.828858772913616
+throw new IllegalArgumentException("Field must not be null");#855,18.82201877593994
+public static Period minutes(int minutes) {#194,18.821014551016
+if (this == ZERO || scalar == 1) {#1334,18.796263558523997
+public Period withDays(int days) {#939,18.794759163489708
+public static Period years(int years) {#109,18.791473682110126
+public Period plusWeeks(int weeks) {#1085,18.778496197291783
+public Period minusMinutes(int minutes) {#1293,18.77651677812849
+public static Period hours(int hours) {#177,18.76860207777757
+public Period plus(ReadablePeriod period) {#1023,18.757114919026694
+return new Period(new int[] {0, months, 0, 0, 0, 0, 0, 0}, PeriodType.standard());#127,18.732454738101445
+throw new IllegalArgumentException("Field must not be null");#874,18.729524154663086
+public Period withFields(ReadablePeriod period) {#833,18.719189138973462
+public static Period days(int days) {#160,18.71353061382587
+public int getSeconds() {#791,18.710380467501555
+public Hours toStandardHours() {#1436,18.708150776949797
+public Period withPeriodType(PeriodType type) {#815,18.700939851648666
+public Period withWeeks(int weeks) {#924,18.691589219229563
+return new Period(values, getPeriodType());#1215,18.68934571115594
+return new Period(values, getPeriodType());#1036,18.67645509619462
+public Period withMillis(int millis) {#999,18.672204717000326
+return result;#1637,18.650645169344816
+public int getMonths() {#745,18.650432673367586
+for (int i = 0, isize = start.size(); i < isize; i++) {#265,18.6444673538208
+int months = getMonths();#1626,18.626414680480956
+public Period minusHours(int hours) {#1280,18.624512452345627
+long seconds = getMillis() / DateTimeConstants.MILLIS_PER_SECOND;#1500,18.608268356323244
+public Weeks toStandardWeeks() {#1375,18.604506015777588
+public Period minus(ReadablePeriod period) {#1202,18.59828472137451
+public Period minusYears(int years) {#1228,18.571951939509464
+throw new UnsupportedOperationException("Cannot convert to " + destintionType + " as this period contains months and months vary in length");#1547,18.570409979139054
+return new Period(new int[] {0, 0, weeks, 0, 0, 0, 0, 0}, PeriodType.standard());#144,18.565458065754658
+public static Period weeks(int weeks) {#143,18.552518917964054
+public Period minusDays(int days) {#1267,18.550451425405647
+public Period withYears(int years) {#894,18.548352755033054
+return new Period(new int[] {years, 0, 0, 0, 0, 0, 0, 0, 0}, PeriodType.standard());#110,18.53575865427653
+public Period plusMillis(int millis) {#1175,18.532393900553384
+long minutes = millis / DateTimeConstants.MILLIS_PER_MINUTE;#1471,18.53005657877241
+return new Period(new int[] {0, 0, 0, 0, 0, 0, seconds, 0}, PeriodType.standard());#212,18.5211357425999
+public Period withHours(int hours) {#954,18.51650017958421
+public Period minusWeeks(int weeks) {#1254,18.516082286834717
+long hours = millis / DateTimeConstants.MILLIS_PER_HOUR;#1441,18.511688232421875
+int hours, int minutes, int seconds, int millis) {#328,18.505997002124786
+return new Duration(millis);#1536,18.496578979492188
+public Period negated() {#1351,18.494154262542725
+return new Period(new int[] {0, 0, 0, 0, 0, minutes, 0, 0}, PeriodType.standard());#195,18.488425357921702
+private void checkYearsAndMonths(String destintionType) {#1545,18.47780870136462
+long weeks = ((long) getWeeks()) + millis / DateTimeConstants.MILLIS_PER_WEEK;#1382,18.474578036202324
+throw new UnsupportedOperationException("Cannot convert to " + destintionType + " as this period contains years and years vary in length");#1550,18.467109067099436
+public Period(Object period) {#653,18.463477048006926
+public Period plusMonths(int months) {#1067,18.461360454559326
+checkYearsAndMonths("Duration");#1529,18.455993831157684
+if (i > 0 && types[i - 1] == types[i]) {#270,18.451329962412515
+@FromString#79,18.442040034702845
+return new Period(values, getPeriodType());#1341,18.43109010395251
+return new Period(values, getPeriodType());#1055,18.422711924502725
+public Period(int hours, int minutes, int seconds, int millis) {#311,18.409652755374
+long days = millis / DateTimeConstants.MILLIS_PER_DAY;#1411,18.409629609849716
+checkYearsAndMonths("Minutes");#1468,18.408936668844785
+return new Period(values, getPeriodType());#1109,18.40858474530672
+return new Period(values, getPeriodType());#1127,18.405545385260332
+return new Period(new int[] {0, 0, 0, 0, 0, 0, 0, millis}, PeriodType.standard());#226,18.40399112199482
+return new Period(new int[] {0, 0, 0, 0, hours, 0, 0, 0}, PeriodType.standard());#178,18.40359945554991
+return new Period(newValues, getPeriodType());#839,18.403113269805907
+return new Period(values, getPeriodType());#1181,18.402012122304814
+return new Period(values, getPeriodType());#1073,18.400486845719186
+return new Period(values, getPeriodType());#1145,18.394553485669586
+return new Period(values, getPeriodType());#1091,18.392194948698346
+return new Period(values, getPeriodType());#912,18.39154559687564
+return new Period(values, getPeriodType());#927,18.38870028445595
+if (start.size() != end.size()) {#260,18.38194055557251
+return new Period(values, getPeriodType());#987,18.38126704567357
+return new Period(values, getPeriodType());#1163,18.380119624890778
+return new Period(values, getPeriodType());#972,18.37910617025275
+return new Period(new int[] {0, 0, 0, days, 0, 0, 0, 0}, PeriodType.standard());#161,18.378765054651208
+return new Period(values, getPeriodType());#897,18.37718898371646
+public Period withSeconds(int seconds) {#984,18.37606293814523
+return new Period(values, getPeriodType());#957,18.374996436269658
+public Duration toStandardDuration() {#1528,18.37060434168035
+return new Period(values, getPeriodType());#942,18.37003190893876
+millis += ((long) getSeconds()) * DateTimeConstants.MILLIS_PER_SECOND;#1470,18.369555386629973
+long millis = getMillis();  // no overflow can happen, even with Integer.MAX_VALUEs#1530,18.36663959872338
+if (type.equals(getPeriodType())) {#817,18.3655686378479
+return new Period(newValues, getPeriodType());#859,18.360070323944093
+long millis = getMillis();  // no overflow can happen, even with Integer.MAX_VALUEs#1618,18.344436891617313
+return this;#818,18.3404998143514
+public Period plusSeconds(int seconds) {#1157,18.33671419961112
+return new Period(values, getPeriodType());#1002,18.332008110849483
+if (years != 0) {#1630,18.319496355558698
+return new Period(newValues, getPeriodType());#881,18.29402360916138
+public Period minusMillis(int millis) {#1319,18.279524739583334
+return formatter.parsePeriod(str);#92,18.277907371520996
+millis += ((long) getSeconds()) * DateTimeConstants.MILLIS_PER_SECOND;#1439,18.275305661288176
+for (int i = 0; i < values.length; i++) {#1338,18.26994252204895
+int hours, int minutes, int seconds, int millis, PeriodType type) {#351,18.26447441703395
+throw new IllegalArgumentException("ReadablePartial objects must not have overlapping fields");#271,18.259846070233515
+millis += ((long) getSeconds()) * DateTimeConstants.MILLIS_PER_SECOND;#1408,18.247141173391633
+throw new IllegalArgumentException("ReadablePartial objects must have the same set of fields");#267,18.246809270646835
+public Period minusMonths(int months) {#1241,18.235542024884904
+public Period withMonths(int months) {#909,18.23119960512434
+return plusMinutes(-minutes);#1294,18.22755402326584
+public Days toStandardDays() {#1405,18.225519960576836
+millis += ((long) getSeconds()) * DateTimeConstants.MILLIS_PER_SECOND;#1378,18.2247608647202
+throw new IllegalArgumentException("ReadablePartial objects must not be null");#258,18.21839289829649
+return Minutes.minutes(FieldUtils.safeToInt(minutes));#1476,18.198754959106445
+return this;#1051,18.183396339416504
+return this;#1335,18.17401008605957
+return this;#1069,18.173596954345705
+return plusDays(-days);#1268,18.172173636300222
+checkYearsAndMonths("Weeks");#1376,18.170303176431094
+return this;#1123,18.159804598490396
+public Period normalizedStandard(PeriodType type) {#1616,18.147912788391114
+if (months != 0) {#1633,18.147401056791608
+seconds = FieldUtils.safeAdd(seconds, ((long) getWeeks()) * ((long) DateTimeConstants.SECONDS_PER_WEEK));#1505,18.139580271460794
+days = FieldUtils.safeAdd(days, getDays());#1412,18.139464465054598
+return this;#1141,18.131554985046385
+public static Period parse(String str) {#80,18.129415365365837
+public Period(long duration) {#381,18.122304742986504
+return this;#1159,18.113338279724122
+checkYearsAndMonths("Seconds");#1499,18.106898139504825
+return this;#1087,18.106699244181314
+return this;#1177,18.103412691752116
+throw new IllegalArgumentException("ReadablePartial objects must have the same set of fields");#261,18.09897530078888
+return this;#1105,18.08336550394694
+public Period() {#297,18.07617485523224
+millis += ((long) getHours()) * DateTimeConstants.MILLIS_PER_HOUR;#1410,18.071193426847458
+return this;#835,18.051219304402668
+result = result.withYears(years);#1631,18.04570743560791
+checkYearsAndMonths("Hours");#1437,18.04502534866333
+super(0, 0, 0, 0, hours, minutes, seconds, millis, PeriodType.standard());#312,18.024643540382385
+return this;#877,18.01729901631673
+millis += ((long) getHours()) * DateTimeConstants.MILLIS_PER_HOUR;#1380,18.01315352320671
+return plusHours(-hours);#1281,18.000891413007462
+months = months % 12;#1629,18.00046083662245
+public Period normalizedStandard() {#1580,17.996974563598634
+values[i] = end.getValue(i) - start.getValue(i);#273,17.99602136015892
+implements ReadablePeriod, Serializable {#59,17.991522171918085
+public static Period millis(int millis) {#225,17.98850466410319
+public Period minusSeconds(int seconds) {#1306,17.982205322810582
+return Days.days(FieldUtils.safeToInt(days));#1414,17.9580777209738
+millis += ((long) getMinutes()) * DateTimeConstants.MILLIS_PER_MINUTE;#1409,17.949748241540156
+millis += ((long) getMinutes()) * DateTimeConstants.MILLIS_PER_MINUTE;#1379,17.93991452997381
+checkYearsAndMonths("Days");#1406,17.929066836833954
+return Seconds.seconds(FieldUtils.safeToInt(seconds));#1506,17.92571494890296
+millis += ((long) getMinutes()) * DateTimeConstants.MILLIS_PER_MINUTE;#1440,17.912912513270523
+return Hours.hours(FieldUtils.safeToInt(hours));#1445,17.909064292907715
+millis += (((long) getWeeks()) * ((long) DateTimeConstants.MILLIS_PER_WEEK));#1535,17.895442936871504
+minutes = FieldUtils.safeAdd(minutes, ((long) getWeeks()) * ((long) DateTimeConstants.MINUTES_PER_WEEK));#1475,17.895275433858234
+return plusMonths(-months);#1242,17.8930419921875
+minutes = FieldUtils.safeAdd(minutes, getMinutes());#1472,17.88941474755605
+int[] values = getValues();  // cloned#895,17.882571672138415
+int[] values = getValues();  // cloned#955,17.882260874698037
+hours = FieldUtils.safeAdd(hours, ((long) getWeeks()) * ((long) DateTimeConstants.HOURS_PER_WEEK));#1444,17.879406862480696
+seconds = FieldUtils.safeAdd(seconds, ((long) getHours()) * ((long) DateTimeConstants.SECONDS_PER_HOUR));#1503,17.869728443234465
+extends BasePeriod#58,17.86443583170573
+millis += ((long) getDays()) * DateTimeConstants.MILLIS_PER_DAY;#1381,17.859439572980328
+int[] values = getValues();  // cloned#970,17.85865969406931
+int[] values = getValues();  // cloned#910,17.8569974899292
+return this;#1204,17.851771545410156
+int[] values = getValues();  // cloned#1337,17.85125601919074
+int[] values = getValues();  // cloned#925,17.8499453193263
+int[] values = getValues();  // cloned#940,17.840844405324834
+seconds = FieldUtils.safeAdd(seconds, ((long) getDays()) * ((long) DateTimeConstants.SECONDS_PER_DAY));#1504,17.82923375992548
+int[] values = getValues();  // cloned#985,17.828013871845446
+millis += (((long) getWeeks()) * ((long) DateTimeConstants.MILLIS_PER_WEEK));#1623,17.82580313811431
+return this;#1025,17.814915720621745
+days = FieldUtils.safeAdd(days, ((long) getWeeks()) * ((long) DateTimeConstants.DAYS_PER_WEEK));#1413,17.813771647076273
+type = DateTimeUtils.getPeriodType(type);#816,17.812108863483775
+return plusMillis(-millis);#1320,17.80162101984024
+millis += (((long) getSeconds()) * ((long) DateTimeConstants.MILLIS_PER_SECOND));#1619,17.7943371953191
+result = result.withMonths(months);#1634,17.792631296011116
+int[] values = getValues();  // cloned#1027,17.792464858607243
+int[] values = new int[start.size()];#264,17.792187213897705
+public Period(Object period, PeriodType type) {#670,17.790994517008464
+int[] values = getValues();  // cloned#1206,17.7479113528603
+seconds = FieldUtils.safeAdd(seconds, ((long) getMinutes()) * ((long) DateTimeConstants.SECONDS_PER_MINUTE));#1502,17.742188562046397
+int[] values = getValues();  // cloned#1000,17.740668899134587
+millis += (((long) getHours()) * ((long) DateTimeConstants.MILLIS_PER_HOUR));#1621,17.738864368862576
+int[] values = getValues();  // cloned#1071,17.735420678791247
+millis += (((long) getDays()) * ((long) DateTimeConstants.MILLIS_PER_DAY));#1622,17.732967104230607
+millis += (((long) getSeconds()) * ((long) DateTimeConstants.MILLIS_PER_SECOND));#1531,17.732109327574033
+return normalizedStandard(PeriodType.standard());#1581,17.731543011135525
+int[] values = getValues();  // cloned#1125,17.724976288644893
+public Period(ReadableDuration duration, ReadableInstant endInstant, PeriodType type) {#637,17.72268597976021
+int[] values = getValues();  // cloned#1143,17.718460434361507
+int[] values = getValues();  // cloned#1089,17.716935007195723
+type = DateTimeUtils.getPeriodType(type);#1617,17.711883761666037
+int[] values = getValues();  // cloned#1053,17.70988032692357
+int[] values = getValues();  // cloned#1161,17.708744601199502
+int[] newValues = getValues();  // cloned#857,17.70783667564392
+int[] values = getValues();  // cloned#1179,17.689392240423906
+if (start.getFieldType(i) != end.getFieldType(i)) {#266,17.683121651411057
+return getPeriodType().getIndexedField(this, PeriodType.SECOND_INDEX);#792,17.677441438039143
+public Seconds toStandardSeconds() {#1498,17.677017132441204
+public Period(ReadableInstant startInstant, ReadableDuration duration) {#605,17.671081593162135
+int[] values = getValues();  // cloned#1107,17.66801693564967
+return this;#727,17.655873125249688
+types[i] = start.getFieldType(i).getDurationType();#269,17.649851437272698
+return plusYears(-years);#1229,17.64723518916539
+minutes = FieldUtils.safeAdd(minutes, ((long) getHours()) * ((long) DateTimeConstants.MINUTES_PER_HOUR));#1473,17.64560742811723
+public Period(int years, int months, int weeks, int days,#350,17.645331784298545
+millis += (((long) getHours()) * ((long) DateTimeConstants.MILLIS_PER_HOUR));#1533,17.639141215218437
+public static final Period ZERO = new Period();#65,17.635574545179093
+hours = FieldUtils.safeAdd(hours, ((long) getDays()) * ((long) DateTimeConstants.HOURS_PER_DAY));#1443,17.635513282403714
+return plusWeeks(-weeks);#1255,17.630021274089813
+minutes = FieldUtils.safeAdd(minutes, ((long) getDays()) * ((long) DateTimeConstants.MINUTES_PER_DAY));#1474,17.61929988861084
+private Period(int[] values, PeriodType type) {#715,17.619101405143738
+millis += (((long) getDays()) * ((long) DateTimeConstants.MILLIS_PER_DAY));#1534,17.617804745265417
+values[i] = FieldUtils.safeMultiply(values[i], scalar);#1339,17.615330493811406
+hours = FieldUtils.safeAdd(hours, getHours());#1442,17.61438443443992
+getPeriodType().addIndexedField(this, PeriodType.SECOND_INDEX, values, period.get(DurationFieldType.SECONDS_TYPE));#1034,17.610136201646593
+return getPeriodType().getIndexedField(this, PeriodType.HOUR_INDEX);#774,17.604692268371583
+public Period(int years, int months, int weeks, int days,#327,17.604097767880088
+return getPeriodType().getIndexedField(this, PeriodType.WEEK_INDEX);#755,17.599727312723797
+millis += (((long) getMinutes()) * ((long) DateTimeConstants.MILLIS_PER_MINUTE));#1620,17.599009565404945
+millis += (((long) getMinutes()) * ((long) DateTimeConstants.MILLIS_PER_MINUTE));#1532,17.59237106426342
+return new Period(values, PeriodType.forFields(types));#275,17.58538946898087
+int[] newValues = getValues();  // cloned#837,17.580795669555663
+Period result = new Period(millis, type, ISOChronology.getInstanceUTC());#1624,17.576430014201573
+public Period(ReadableInstant startInstant, ReadableDuration duration, PeriodType type) {#616,17.565493293430496
+int[] newValues = getValues();  // cloned#879,17.54164800643921
+return plusSeconds(-seconds);#1307,17.53894386291504
+return getPeriodType().getIndexedField(this, PeriodType.YEAR_INDEX);#737,17.537616475423178
+return getPeriodType().getIndexedField(this, PeriodType.MONTH_INDEX);#746,17.52368205388387
+getPeriodType().addIndexedField(this, PeriodType.SECOND_INDEX, values, -period.get(DurationFieldType.SECONDS_TYPE));#1213,17.520471552143928
+return getPeriodType().getIndexedField(this, PeriodType.MINUTE_INDEX);#783,17.518904590606688
+public Period(long duration, PeriodType type) {#401,17.51848252614339
+public Period(Object period, Chronology chrono) {#687,17.517603516578674
+getPeriodType().addIndexedField(this, PeriodType.HOUR_INDEX, values, period.get(DurationFieldType.HOURS_TYPE));#1032,17.510034105994485
+return multipliedBy(-1);#1352,17.493875912257604
+newValues = super.mergePeriodInto(newValues, period);#838,17.48466567993164
+DurationFieldType[] types = new DurationFieldType[start.size()];#263,17.471976200739544
+super(duration);#382,17.470897912979126
+public Period(ReadableDuration duration, ReadableInstant endInstant) {#626,17.456395249617728
+years = FieldUtils.safeAdd(years, months / 12);#1628,17.454506697478116
+return getPeriodType().getIndexedField(this, PeriodType.DAY_INDEX);#764,17.4332123789294
+seconds = FieldUtils.safeAdd(seconds, getSeconds());#1501,17.425867909970492
+getPeriodType().addIndexedField(this, PeriodType.HOUR_INDEX, values, -period.get(DurationFieldType.HOURS_TYPE));#1211,17.380280600653755
+getPeriodType().addIndexedField(this, PeriodType.MILLI_INDEX, values, period.get(DurationFieldType.MILLIS_TYPE));#1035,17.320543372112773
+getPeriodType().addIndexedField(this, PeriodType.WEEK_INDEX, values, period.get(DurationFieldType.WEEKS_TYPE));#1030,17.31589461432563
+getPeriodType().addIndexedField(this, PeriodType.MONTH_INDEX, values, period.get(DurationFieldType.MONTHS_TYPE));#1029,17.313951619466145
+super(start, end, null);#562,17.3127259016037
+return getPeriodType().getIndexedField(this, PeriodType.MILLI_INDEX);#801,17.30866978245397
+return Weeks.weeks(FieldUtils.safeToInt(weeks));#1383,17.2908895111084
+super(0L, null, null);#298,17.286802460165585
+getPeriodType().addIndexedField(this, PeriodType.MONTH_INDEX, values, -period.get(DurationFieldType.MONTHS_TYPE));#1208,17.272550147512685
+super(duration, type, null);#402,17.269872725009918
+private static final long serialVersionUID = 741052353876488155L;#68,17.262174379257928
+getPeriodType().addIndexedField(this, PeriodType.WEEK_INDEX, values, -period.get(DurationFieldType.WEEKS_TYPE));#1209,17.242030433986496
+super(period, null, null);#654,17.23975020647049
+getPeriodType().addIndexedField(this, PeriodType.SECOND_INDEX, values, seconds);#1162,17.239408406344328
+getPeriodType().addIndexedField(this, PeriodType.YEAR_INDEX, values, period.get(DurationFieldType.YEARS_TYPE));#1028,17.199760394626193
+super(duration, endInstant, null);#627,17.194647564607507
+getPeriodType().addIndexedField(this, PeriodType.MILLI_INDEX, values, -period.get(DurationFieldType.MILLIS_TYPE));#1214,17.173928139057566
+getPeriodType().addIndexedField(this, PeriodType.MONTH_INDEX, values, months);#1072,17.16124712337147
+getPeriodType().addIndexedField(this, PeriodType.WEEK_INDEX, values, weeks);#1090,17.146368214578338
+getPeriodType().addIndexedField(this, PeriodType.HOUR_INDEX, values, hours);#1126,17.145977468201608
+return parse(str, ISOPeriodFormat.standard());#81,17.13248298281715
+getPeriodType().setIndexedField(this, PeriodType.SECOND_INDEX, values, seconds);#986,17.124646576968107
+getPeriodType().addIndexedField(this, PeriodType.YEAR_INDEX, values, -period.get(DurationFieldType.YEARS_TYPE));#1207,17.116866381272025
+public Period(Object period, PeriodType type, Chronology chrono) {#705,17.103784370422364
+return new Period(this, type);#820,17.102802872657776
+getPeriodType().addIndexedField(this, PeriodType.MINUTE_INDEX, values, minutes);#1144,17.099072528607916
+public Period(long startInstant, long endInstant, PeriodType type) {#465,17.091211366653443
+getPeriodType().setIndexedField(this, PeriodType.HOUR_INDEX, values, hours);#956,17.08149261185617
+getPeriodType().addIndexedField(this, PeriodType.YEAR_INDEX, values, years);#1054,17.07497534607396
+super.addFieldInto(newValues, field, value);#880,17.06763965433294
+getPeriodType().addIndexedField(this, PeriodType.DAY_INDEX, values, period.get(DurationFieldType.DAYS_TYPE));#1031,17.055239633072254
+getPeriodType().setIndexedField(this, PeriodType.MINUTE_INDEX, values, minutes);#971,17.040468302640047
+public Period(long startInstant, long endInstant) {#454,17.035413801670074
+getPeriodType().setIndexedField(this, PeriodType.WEEK_INDEX, values, weeks);#926,17.021703965736158
+getPeriodType().setIndexedField(this, PeriodType.MONTH_INDEX, values, months);#911,17.006614424965598
+getPeriodType().addIndexedField(this, PeriodType.MINUTE_INDEX, values, period.get(DurationFieldType.MINUTES_TYPE));#1033,16.994353146023222
+getPeriodType().setIndexedField(this, PeriodType.YEAR_INDEX, values, years);#896,16.992349089998186
+getPeriodType().addIndexedField(this, PeriodType.DAY_INDEX, values, -period.get(DurationFieldType.DAYS_TYPE));#1210,16.99118627201427
+getPeriodType().addIndexedField(this, PeriodType.MINUTE_INDEX, values, -period.get(DurationFieldType.MINUTES_TYPE));#1212,16.97085065427034
+getPeriodType().addIndexedField(this, PeriodType.MILLI_INDEX, values, millis);#1180,16.958200468335832
+super(start, end, type);#596,16.95193374156952
+getPeriodType().addIndexedField(this, PeriodType.DAY_INDEX, values, days);#1108,16.946169584989548
+super(startInstant, duration, null);#606,16.9393705480239
+super.setFieldInto(newValues, field, value);#858,16.906683401627973
+public Period(ReadableInstant startInstant, ReadableInstant endInstant, PeriodType type) {#527,16.893457531929016
+super(period, type, null);#671,16.86950021982193
+super(values, type);#716,16.82406861441476
+super(startInstant, endInstant, null, null);#455,16.80246639251709
+getPeriodType().setIndexedField(this, PeriodType.DAY_INDEX, values, days);#941,16.779122963547707
+public Period(ReadableInstant startInstant, ReadableInstant endInstant) {#508,16.768511867523195
+public static Period fieldDifference(ReadablePartial start, ReadablePartial end) {#256,16.747648020585377
+public Period(long duration, Chronology chronology) {#422,16.747017085552216
+getPeriodType().setIndexedField(this, PeriodType.MILLI_INDEX, values, millis);#1001,16.742116451263428
+public Period(long duration, PeriodType type, Chronology chronology) {#443,16.686277151107788
+super(years, months, weeks, days, hours, minutes, seconds, millis, PeriodType.standard());#329,16.68605014681816
+super(duration, endInstant, type);#638,16.681617736816406
+public Period(long startInstant, long endInstant, Chronology chrono) {#477,16.655084337506974
+super(years, months, weeks, days, hours, minutes, seconds, millis, type);#352,16.586168387840534
+super(startInstant, endInstant, type, null);#466,16.543663597106935
+super(startInstant, duration, type);#617,16.539318028618307
+super(duration, null, chronology);#423,16.535994866315058
+public Period(long startInstant, long endInstant, PeriodType type, Chronology chrono) {#489,16.48210632324219
+super(startInstant, endInstant, null);#509,16.408671643998886
+public Period(ReadablePartial start, ReadablePartial end, PeriodType type) {#595,16.40668757756551
+public Period(ReadablePartial start, ReadablePartial end) {#561,16.252097654342652
+super(period, null, chrono);#688,16.216825429131003
+super(startInstant, endInstant, null, chrono);#478,16.199710800534202
+super(duration, type, chronology);#444,16.137438269222486
+super(startInstant, endInstant, type);#528,16.13415919409858
+super(startInstant, endInstant, type, chrono);#490,16.034755298069545
+super(period, type, chrono);#706,15.837680199567009
+public final class Period#57,14.780679321289062

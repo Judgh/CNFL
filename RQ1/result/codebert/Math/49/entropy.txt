@@ -1,0 +1,446 @@
+double value = values[key];#138,19.311494224949886
+public void setValue(double value) {#880,19.066828727722168
+public OpenMapRealVector(double[] values) {#122,18.8802152633667
+private static final long serialVersionUID = 8772222695580707260L;#38,18.870089530944824
+double value = values[key].doubleValue();#167,18.859837445345793
+double test = other.getEntry(iter.key());#823,18.824452598889668
+public OpenMapRealVector(Double[] values) {#151,18.79376074473063
+final double value = iter.value();#593,18.7928418636322
+double res = 0;#435,18.779637190011833
+double norm = getNorm();#758,18.757105827331543
+result = prime * result + (int) (temp ^ (temp >>> 32));#787,18.738133049011232
+double d = 0;#323,18.735338504497822
+result = prime * result + virtualSize;#788,18.728647344252643
+double max = 0;#577,18.726119848398064
+if (Double.isNaN(value)) {#594,18.693185806274414
+@Override#873,18.692805290222168
+public double[] toArray() {#771,18.68653730912642
+public double getValue() {#874,18.66692120688302
+double delta;#439,18.65738162994385
+public boolean hasNext() {#910,18.6502879687718
+double max = 0;#541,18.638027851398174
+if (Double.isInfinite(value)) {#597,18.62488261513088
+double max = 0;#526,18.61480140686035
+temp = Double.doubleToLongBits(epsilon);#786,18.607036633925006
+double test = iter.value();#831,18.58625928979171
+public class OpenMapRealVector extends AbstractRealVector#33,18.582137714732777
+iter.advance();#552,18.579962001127356
+double max = 0;#493,18.568085817190315
+double value = iter.value();#640,18.568043558221113
+entries.put(key, value);#197,18.55087435245514
+iter.advance();#592,18.546660535475787
+double value = v.getEntry(key);#195,18.529774579134855
+public void set(double value) {#691,18.511212984720867
+double delta = FastMath.abs(getEntry(i) - v[i]);#579,18.453814474741616
+delta = iter.value() - v.getEntry(key);#440,18.449051526876595
+entries.put(key, value);#140,18.44583209355672
+iter.advance();#608,18.39635719972498
+@Override#879,18.392679500579835
+public OpenMapRealVector(RealVector v) {#190,18.385068702697755
+entries.put(key, value);#169,18.342506130536396
+iter.advance();#445,18.332515043370865
+checkVectorDimensions(v.length);#381,18.307756704442642
+checkIndex(index + n - 1);#394,18.293681649600757
+double res = 0;#469,18.293673441960262
+checkVectorDimensions(v.length);#525,18.288093118106616
+if (isDefaultValue(norm)) {#759,18.282668338102454
+result = prime * result + (int) (temp ^ (temp >>32));#793,18.280208686302448
+iter.advance();#544,18.266556347117703
+checkVectorDimensions(v.getDimension());#226,18.264089885510895
+iter.advance();#710,18.248677197624655
+checkVectorDimensions(v.length);#468,18.23670067506678
+checkVectorDimensions(v.getDimension());#566,18.236550531889264
+checkVectorDimensions(v.length);#356,18.22825386944939
+checkVectorDimensions(v.length);#576,18.218456829295437
+@Override#617,18.214513460795086
+max = iter.value();#556,18.200557745420017
+double[] res = new double[virtualSize];#411,18.196981853908962
+protected OpenMapEntry(Iterator iter) {#868,18.175015561720905
+iter.advance();#502,18.158721026252298
+public double getDistance(RealVector v) {#457,18.136327743530273
+double delta = FastMath.abs(iter.value() - v.getEntry(iter.key()));#545,18.133473423549106
+while (iter.hasNext()) {#436,18.13161987066269
+checkVectorDimensions(v.getDimension());#515,18.127226076628034
+if (!isDefaultValue(value)) {#664,18.12188299964456
+OpenMapRealVector res = copyThis ? this.copy() : v.copy();#246,18.119532915262077
+checkVectorDimensions(v.length);#734,18.11521821863511
+iter.advance();#830,18.112633424646713
+protected OpenMapSparseIterator() {#904,18.105207204818726
+public void remove() {#921,18.09182834625244
+iter.advance();#399,18.09124750249526
+iter.advance();#250,18.08896463057574
+checkVectorDimensions(v.getDimension());#458,18.08595165453459
+public OpenMapRealVector(OpenMapRealVector v) {#179,18.072707849390365
+public double getL1Distance(RealVector v) {#514,18.066677629947662
+if (randomAccess.containsKey(key)) {#252,18.063421487808228
+if (entries.containsKey(key)) {#712,18.058761437733967
+private final OpenIntToDoubleHashMap entries;#40,18.055393082754954
+public OpenMapRealVector(double[] values, double epsilon) {#133,18.052630281448366
+checkVectorDimensions(v.getDimension());#724,18.04253773940237
+temp = Double.doubleToLongBits(iter.value());#792,18.034456436450665
+d += iter.value() * larger.get(iter.key());#326,18.02666123708089
+if (Double.doubleToLongBits(epsilon) !=#816,18.023271602133047
+@Override#885,18.0172739982605
+public OpenMapRealVector(Double[] values, double epsilon) {#162,18.009102630615235
+public OpenMapRealVector subtract(RealVector v) {#723,18.007985413074493
+while (iter.hasNext()) {#398,18.00783807039261
+while(iter.hasNext()) {#324,18.005610406398773
+return append(v.getData());#281,18.004672050476074
+public RealVector add(RealVector v) {#225,18.00420681635539
+public boolean equals(Object obj) {#805,18.003964980443318
+checkVectorDimensions(v.getDimension());#319,17.987841606140137
+iter.advance();#496,17.9863618962905
+iter.advance();#822,17.9764882256003
+while (iter.hasNext()) {#607,17.976356506347656
+iter.advance();#437,17.97572674470789
+while (iter.hasNext()) {#543,17.974368453025818
+public double[] getData() {#410,17.973763119090687
+Iterator iter = entries.iterator();#412,17.97115260362625
+while (iter.hasNext()) {#591,17.967944741249084
+if (Double.doubleToLongBits(test) != Double.doubleToLongBits(getEntry(iter.key()))) {#832,17.966325283050537
+while (iter.hasNext()) {#371,17.96506816148758
+private final Iterator iter;#899,17.95999206815447
+private final Iterator iter;#861,17.95886366707938
+res.setEntry(key, entries.get(key) - iter.value());#713,17.957707012400906
+while (iter.hasNext()) {#495,17.950327396392822
+if (v instanceof OpenMapRealVector) {#278,17.949941434358294
+while (iter.hasNext()) {#359,17.94911390542984
+while (iter.hasNext()) {#384,17.944674253463745
+int key = iter.key();#251,17.940810605099326
+while (iter.hasNext()) {#346,17.92742222547531
+while (iter.hasNext()) {#821,17.926071763038635
+checkVectorDimensions(v.getDimension());#244,17.923194282933284
+checkVectorDimensions(v.getDimension());#343,17.919951338517038
+iter.advance();#638,17.918732306536505
+OpenMapRealVector other = (OpenMapRealVector) obj;#812,17.906233007257637
+public OpenMapRealVector copy() {#305,17.90534170468648
+public java.util.Iterator<Entry> sparseIterator() {#850,17.903873611898984
+res.setEntry(key, randomAccess.get(key) + iter.value());#253,17.898378045218333
+public OpenMapRealVector() {#55,17.89745218103582
+int key = iter.key();#711,17.897211827729876
+entries.put(iter.key(), iter.value() / norm);#765,17.89640016908999
+protected boolean isDefaultValue(double value) {#219,17.89420189176287
+checkIndex(index + v.length - 1);#683,17.888521144264622
+if (Double.isNaN(iter.value())) {#609,17.88771544969999
+for (int key = 0; key < values.length; key++) {#166,17.887449741363525
+if (Double.doubleToLongBits(test) != Double.doubleToLongBits(iter.value())) {#824,17.886478301806328
+public RealVector projection(RealVector v) {#649,17.882814952305385
+return (OpenMapRealVector) projection(new OpenMapRealVector(v));#658,17.87727783203125
+Iterator iter = entries.iterator();#789,17.874915599822998
+public OpenMapRealVector append(RealVector v) {#277,17.87099039554596
+checkIndex(index);#393,17.865346321692833
+while (iter.hasNext()) {#637,17.858912229537964
+while (iter.hasNext()) {#444,17.85835188627243
+if (iter.value() > max) {#555,17.85588576243474
+return subtract(v.getData());#728,17.852226734161377
+if (v instanceof OpenMapRealVector) {#459,17.852036877682334
+for (int key = 0; key < virtualSize; key++) {#194,17.84900996996009
+int key = iter.key();#553,17.84487106925563
+if (v instanceof OpenMapRealVector) {#567,17.84165778912996
+long temp;#785,17.837028330022637
+if (entries.containsKey(i)) {#737,17.83036478360494
+Iterator iter = entries.iterator();#762,17.826948404312134
+return FastMath.sqrt(res);#474,17.824989879832547
+double delta = FastMath.abs(getEntry(i) - v[i]);#528,17.82424561182658
+checkVectorDimensions(v.length);#657,17.818569576039035
+Iterator iter = entries.iterator();#542,17.818302392959595
+while (iter.hasNext()) {#413,17.818174183368683
+OpenMapRealVector res = copy();#707,17.81782865524292
+public OpenMapRealVector append(double[] a) {#292,17.81147873401642
+checkVectorDimensions(v.getDimension());#368,17.806790452254447
+checkVectorDimensions(v.getDimension());#706,17.802565373872454
+public double getDistance(double[] v) {#467,17.800492695399694
+Iterator iter = entries.iterator();#494,17.798156440258026
+public double getL1Distance(double[] v) {#524,17.797897338867188
+public double getLInfDistance(RealVector v) {#565,17.795937955379486
+for (int key = 0; key < values.length; key++) {#137,17.793857256571453
+entries.put(iter.key(), value);#881,17.787555998021904
+if (v instanceof OpenMapRealVector) {#516,17.7855325498079
+if (key >= index && key < end) {#401,17.780487019082774
+Iterator iter = entries.iterator();#606,17.777343928813934
+for (int i = 0; i < virtualSize; i++) {#625,17.776064167851988
+while (iter.hasNext()) {#709,17.767637610435486
+while (iter.hasNext()) {#501,17.760915160179138
+Iterator iter = entries.iterator();#590,17.75675642490387
+while (iter.hasNext()) {#829,17.755286872386932
+public OpenMapRealVector(int dimension, double epsilon) {#74,17.754789051256683
+res += delta * delta;#472,17.752530574798584
+return false;#833,17.752440854122764
+Iterator iter = entries.iterator();#636,17.742402493953705
+if (!isDefaultValue(value)) {#196,17.7410242443993
+Iterator iter = entries.iterator();#397,17.732143938541412
+public OpenMapRealVector mapAddToSelf(double d) {#624,17.73073297076755
+public void setEntry(int index, double value) {#662,17.72927635908127
+while (iter.hasNext()) {#551,17.727823793888092
+public OpenMapRealVector(int dimension) {#64,17.72465685435704
+int key = iter.key();#400,17.724268812882272
+Iterator iter = thisIsSmaller  ? entries.iterator() : v.entries.iterator();#321,17.714606062571207
+Double.doubleToLongBits(other.epsilon)) {#817,17.712399200156884
+if (!(obj instanceof OpenMapRealVector)) {#809,17.711894989013672
+int result = 1;#784,17.706913287823017
+Iterator iter = entries.iterator();#434,17.702528715133667
+checkIndex(index);#663,17.702435713547928
+int key = iter.key();#446,17.701256400660466
+if(v instanceof OpenMapRealVector) {#334,17.701084689090127
+res += value * value;#449,17.689595222473145
+return getL1Distance((OpenMapRealVector) v);#517,17.686952323913573
+implements SparseRealVector, Serializable {#34,17.68422170785757
+return FastMath.sqrt(res);#452,17.683121793410358
+Iterator iter = copyThis ? v.entries.iterator() : entries.iterator();#247,17.682978630065918
+if (v instanceof OpenMapRealVector) {#725,17.677555184615287
+return getDistance(v.getData());#462,17.672161663279812
+while (iter.hasNext()) {#249,17.665088534355164
+while (iter.hasNext()) {#269,17.664019465446472
+double delta = FastMath.abs(iter.value() - v.getEntry(iter.key()));#497,17.652064296177457
+@Override#849,17.645079453786213
+int key = iter.key();#438,17.640107506199886
+if (!isDefaultValue(value)) {#168,17.63802174159459
+@Override#748,17.635505199432373
+return max;#584,17.635451663624156
+res.setEntry(key - index, iter.value());#402,17.629709473971662
+res.setEntry(iter.key(), iter.value() * v.getEntry(iter.key()));#373,17.629534112082588
+while (iter.hasNext()) {#763,17.620147943496704
+double delta = FastMath.abs(iter.value());#505,17.614697183881486
+return true;#836,17.613116697831586
+OpenIntToDoubleHashMap randomAccess = copyThis ? entries : v.entries;#248,17.612577438354492
+if (!isDefaultValue(value)) {#139,17.612061273484002
+virtualSize = values.length;#163,17.611994171142577
+return add((OpenMapRealVector) v);#228,17.611039638519287
+res.setEntry(i, entries.get(i) - v[i]);#738,17.607632440679215
+public OpenMapRealVector(int dimension, int expectedSize) {#98,17.60446982913547
+res.setEntry(iter.key() + virtualSize, iter.value());#271,17.60247122008225
+res += delta * delta;#441,17.594343450334335
+return getL1Distance(v.getData());#519,17.593745532788727
+while (iter.hasNext()) {#790,17.592161118984222
+res.setEntry(iter.key(), iter.value() / v.getEntry(iter.key()));#348,17.590051465564304
+int key = iter.key();#503,17.588572702909772
+public OpenMapRealVector subtract(double[] v) {#733,17.58648818731308
+OpenMapRealVector res = new OpenMapRealVector(this, a.length);#293,17.58064974271334
+if (delta > max) {#580,17.574904251098634
+double delta = entries.get(i) - v[i];#471,17.573620906242958
+protected OpenMapRealVector(OpenMapRealVector v, int resize) {#86,17.567995595932008
+virtualSize = values.length;#134,17.567444547017416
+return max;#560,17.562652587890625
+Iterator iter = entries.iterator();#820,17.56015557050705
+private final Entry current;#901,17.551110120920036
+iter.advance();#414,17.541075145497043
+entries = new OpenIntToDoubleHashMap(v.getEntries());#181,17.533181349436443
+OpenMapRealVector res = new OpenMapRealVector(this);#735,17.53222508863969
+public Entry next() {#915,17.5239529976478
+public void setSubVector(int index, double[] v) {#681,17.522361013624405
+Iterator iter = res.entries.iterator();#358,17.52074452450401
+int end = index + n;#396,17.512988726298016
+checkIndex(index);#682,17.506684816800632
+return max;#531,17.505173076282848
+res.setEntry(i + virtualSize, a[i]);#295,17.502984267014725
+return append((OpenMapRealVector) v);#279,17.502038175409492
+entries.put(index, value);#665,17.497155141830444
+boolean infiniteFound = false;#589,17.495983055659703
+Iterator iter = res.entries.iterator();#370,17.49558549178274
+if (!entries.containsKey(key)) {#554,17.49188741048177
+public void setSubVector(int index, RealVector v) {#673,17.491286118825276
+@Override#304,17.48931900660197
+iter.advance();#325,17.489145391127643
+iter.advance();#270,17.482357530032886
+return getLInfDistance(v.getData());#570,17.480800779242266
+iter.advance();#764,17.47940383237951
+OpenMapRealVector res = copy();#750,17.47489708662033
+public double getLInfDistance(double[] v) {#575,17.469464242458344
+res.setEntry(iter.key(), iter.value() * v[iter.key()]);#386,17.457452369458746
+if (v instanceof OpenMapRealVector) {#227,17.454177304318076
+iter.advance();#791,17.453795937930835
+iter.advance();#347,17.453513482037714
+return subtract((OpenMapRealVector) v);#726,17.449875311418012
+if (!entries.containsKey(key)) {#504,17.438740173975628
+boolean copyThis = entries.size() > v.entries.size();#245,17.434770305951435
+return getDistance((OpenMapRealVector) v);#460,17.434458815533183
+OpenMapRealVector res = new OpenMapRealVector(this, v.getDimension());#267,17.426681075777328
+res.setEntry(iter.key(), iter.value() / v[iter.key()]);#361,17.42652465357925
+max = delta;#581,17.42645092010498
+checkVectorDimensions(v.getDimension());#650,17.424972032245837
+if (virtualSize != other.virtualSize) {#813,17.423900503861276
+return virtualSize;#422,17.420292139053345
+OpenMapRealVector res = new OpenMapRealVector(this);#357,17.41536469893022
+Iterator iter = res.entries.iterator();#345,17.406729547600996
+public OpenMapRealVector append(double d) {#285,17.402517573038736
+OpenIntToDoubleHashMap larger = thisIsSmaller  ? v.entries : entries;#322,17.400238267306623
+OpenMapRealVector res = new OpenMapRealVector(this);#382,17.39780954881148
+iter.advance();#385,17.39566488826976
+OpenMapRealVector res = new OpenMapRealVector(this);#344,17.392384095625445
+entries = new OpenIntToDoubleHashMap(v.entries);#88,17.390206046726394
+for (int i = 0; i < v.length; i++) {#578,17.387940287590027
+iter.advance();#360,17.38489532470703
+public void unitize() {#757,17.382805728912352
+return new OpenMapRealVector(this);#306,17.38081118639778
+public double getL1Distance(OpenMapRealVector v) {#492,17.380534807840984
+iter.advance();#372,17.379159422481763
+return dotProduct((OpenMapRealVector)v);#335,17.37579694001571
+Iterator iter = res.entries.iterator();#383,17.369520739505166
+res.setEntry(key, iter.value());#255,17.368966102600098
+if (!entries.containsKey(key)) {#447,17.366561770439148
+return getLInfDistance((OpenMapRealVector) v);#568,17.36481502532959
+if (delta > max) {#546,17.361114168167113
+private final int virtualSize;#42,17.36077013015747
+for (int i = 0; i < v.length; i++) {#527,17.359731992085774
+for (int i = 0; i < v.length; i++) {#736,17.35855762163798
+return max;#509,17.352738293734465
+public boolean isNaN() {#605,17.35251660780473
+for (int i = 0; i < virtualSize; i++) {#692,17.347715750984523
+RealMatrix res = new OpenMapRealMatrix(virtualSize, n);#635,17.346249621847402
+for (int i = 0; i < v.length; i++) {#470,17.327243089675903
+checkIndex(index + v.getDimension() - 1);#675,17.325511758977715
+public boolean isInfinite() {#588,17.3206188028509
+public OpenMapRealVector(int dimension, int expectedSize, double epsilon) {#110,17.31875286931577
+public OpenMapRealVector projection(double[] v) {#656,17.314469754695892
+res[iter.key()] = iter.value();#415,17.313489317893982
+max += delta;#529,17.30445808172226
+Iterator iter = v.entries.iterator();#268,17.298591864736455
+public double getSparsity() {#844,17.296145872636274
+public OpenMapRealVector unitVector() {#749,17.292891795818623
+int row = iter.key();#639,17.286834415636566
+if (this == obj) {#806,17.284042612711588
+entries = new OpenIntToDoubleHashMap(0.0);#135,17.280559583143756
+OpenMapRealVector res = new OpenMapRealVector(this);#369,17.27568704431707
+iter = v.getEntries().iterator();#443,17.27517769071791
+res.setEntry(virtualSize, d);#287,17.273469554053413
+public OpenMapRealVector subtract(OpenMapRealVector v) {#705,17.26808187696669
+@Override#655,17.263675371805828
+entries = new OpenIntToDoubleHashMap(0.0);#164,17.263457038185813
+entries = new OpenIntToDoubleHashMap(expectedSize, 0.0);#112,17.262834968566896
+virtualSize = dimension;#75,17.262679686913124
+return true;#610,17.261211997584294
+for (int i = 0; i < a.length; i++) {#294,17.252090096473694
+@Override#804,17.25039068857829
+return infiniteFound;#601,17.249209801356
+@Override#770,17.245763778686523
+@Override#224,17.241341590881348
+checkIndex(index);#674,17.233963012695312
+OpenMapRealVector res = new OpenMapRealVector(this, 1);#286,17.230071385701496
+@Override#623,17.225375811258953
+public double getEntry(int index) {#478,17.223778064434345
+return entries;#208,17.218367749994453
+public double getDistance(OpenMapRealVector v) {#433,17.213898062705994
+iter.advance();#916,17.211446369395535
+public OpenMapRealVector append(OpenMapRealVector v) {#266,17.208674165937637
+entries = new OpenIntToDoubleHashMap(0.0);#192,17.205921519886363
+return getData();#772,17.202648639678955
+iter = v.getEntries().iterator();#500,17.19247833887736
+public OpenMapRealVector mapAdd(double d) {#618,17.191858530044556
+virtualSize = dimension;#111,17.186232053316555
+return new OpenMapSparseIterator();#851,17.18501853942871
+private OpenIntToDoubleHashMap getEntries() {#207,17.17438679933548
+virtualSize = v.getDimension() + resize;#87,17.16846618652344
+setEntry(i, value);#693,17.15385783346076
+return super.add(v);#230,17.151378330431488
+return false;#595,17.14323585911801
+public OpenMapRealVector ebeMultiply(double[] v) {#380,17.14122896194458
+public OpenMapRealVector ebeMultiply(RealVector v) {#367,17.138601446151732
+setSubVector(index, v.getData());#676,17.136693452533923
+public OpenMapRealVector ebeDivide(RealVector v) {#342,17.127265277661774
+@Override#756,17.117108980814617
+return res;#258,17.115553682500664
+iter = v.getEntries().iterator();#550,17.113942093319363
+return false;#613,17.110578883777965
+checkIndex(index);#479,17.104652258066032
+max +=  FastMath.abs(delta);#506,17.102982697663485
+OpenMapRealVector res = new OpenMapRealVector(n);#395,17.09835399280895
+return result;#795,17.094264203851875
+max += delta;#498,17.089869022369385
+res.setEntry(key, -iter.value());#715,17.07630055291312
+private final double epsilon;#44,17.07433726570823
+public OpenMapRealVector add(OpenMapRealVector v) {#243,17.06744114557902
+public double dotProduct(RealVector v) {#333,17.064642429351807
+final double value = iter.value();#448,17.060609698295593
+return false;#818,17.047676213582356
+public OpenMapRealVector ebeDivide(double[] v) {#355,17.040512486508018
+Iterator iter = v.getEntries().iterator();#708,17.034662342071535
+return iter.key();#887,17.02980888591093
+return res;#297,17.013286677273836
+@Override#466,17.008445580800373
+throw new MathArithmeticException(LocalizedFormats.ZERO_NORM);#760,17.007221285502116
+return v.mapMultiply(dotProduct(v) / v.dotProduct(v));#651,17.00641734024574
+@Override#564,17.0000483194987
+for (int i = 0; i < v.length; i++) {#684,16.998148560523987
+return this;#628,16.9975116036155
+@Override#781,16.996426105499268
+boolean thisIsSmaller  = entries.size() < v.entries.size();#320,16.996031407956725
+setEntry(i, getEntry(i) + d);#626,16.97813919067383
+res.setEntry(i, -v[i]);#740,16.975263254983084
+private double getLInfDistance(OpenMapRealVector v) {#540,16.97291941112942
+return false;#814,16.970140965779624
+@Override#672,16.955494085947674
+return res;#405,16.954693534157492
+entries = new OpenIntToDoubleHashMap(0.0);#76,16.949000922116365
+@Override#574,16.93876568476359
+this.epsilon = epsilon;#165,16.937425560421413
+@Override#379,16.933873653411865
+this.epsilon = epsilon;#136,16.926141050126816
+@Override#632,16.925852457682293
+res.unitize();#751,16.917110149676983
+public int getIndex() {#886,16.916882719312394
+infiniteFound = true;#598,16.913125583103724
+iter = other.getEntries().iterator();#828,16.91277191374037
+return res;#645,16.912579276344992
+@Override#722,16.90724531809489
+@Override#523,16.898098468780518
+return iter.hasNext();#911,16.89568583170573
+return res;#273,16.891754150390625
+@Override#409,16.88848416010539
+@Override#456,16.886253039042156
+iter = entries.iterator();#905,16.886149088541668
+return iter.value();#875,16.885742524090936
+@Override#354,16.844816207885742
+@Override#680,16.84353431065877
+@Override#332,16.82815424601237
+return false;#825,16.825243698923213
+public RealMatrix outerProduct(double[] v) {#633,16.817469215393068
+@Override#513,16.81020736694336
+return res;#752,16.775190179998223
+return res;#288,16.756047335537996
+this(values, DEFAULT_ZERO_TOLERANCE);#123,16.752848334934402
+res.setEntry(row, col, value * v[col]);#642,16.74163664540937
+@Override#732,16.74068307876587
+return entries.get(index);#480,16.735155614217124
+protected class OpenMapEntry extends Entry {#859,16.730035066604614
+return res;#718,16.711087660356
+this(values, DEFAULT_ZERO_TOLERANCE);#152,16.705671186032504
+return res;#417,16.685692266984418
+protected class OpenMapSparseIterator implements java.util.Iterator<Entry> {#897,16.674290929521835
+return res;#363,16.650963349775836
+@Override#690,16.65032656987508
+entries.remove(index);#667,16.64840751224094
+this(dimension, expectedSize, DEFAULT_ZERO_TOLERANCE);#99,16.6464005616995
+setEntry(i + index, v[i]);#685,16.61491812830386
+return FastMath.abs(value) < epsilon;#220,16.60688709077381
+this(dimension, DEFAULT_ZERO_TOLERANCE);#65,16.60094339951225
+virtualSize = v.getDimension();#191,16.58521141725428
+return super.dotProduct(v);#337,16.578511190414428
+current = new OpenMapEntry(iter);#906,16.573710123697918
+return res;#388,16.568250569430266
+return copy().mapAddToSelf(d);#619,16.54816140068902
+return true;#807,16.545651880900063
+this.iter = iter;#869,16.529854244656033
+return false;#810,16.5113956451416
+return res;#743,16.49030694094571
+public static final double DEFAULT_ZERO_TOLERANCE = 1.0e-12;#36,16.48245642735408
+public int hashCode() {#782,16.480455112457275
+virtualSize = v.getDimension();#180,16.47818671955782
+return res;#375,16.43092406879772
+max = delta;#547,16.422300720214842
+public OpenMapRealVector getSubVector(int index, int n) {#392,16.419450426101683
+for (int col = 0; col < n; col++) {#641,16.39439448943505
+return res;#350,16.39201658422297
+final int n = v.length;#634,16.38355141878128
+return d;#328,16.352831146933816
+throw new UnsupportedOperationException("Not supported");#922,16.314640608700838
+this.epsilon = epsilon;#113,16.30243184831407
+this(0, DEFAULT_ZERO_TOLERANCE);#56,16.287538777226988
+epsilon = DEFAULT_ZERO_TOLERANCE;#193,16.283493290776793
+final int prime = 31;#783,16.22198384148734
+return (double)entries.size()/(double)getDimension();#845,16.20118769009908
+public double dotProduct(OpenMapRealVector v) {#318,16.189826488494873
+this.epsilon = epsilon;#77,16.17264397939046
+epsilon = v.epsilon;#182,16.09050835503472
+public int getDimension() {#421,15.993363207036799
+epsilon = v.epsilon;#89,15.987856653001574
+return current;#917,15.823225911458334

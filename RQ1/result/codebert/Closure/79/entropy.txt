@@ -1,0 +1,132 @@
+VarCheck(AbstractCompiler compiler) {#85,19.374137011441317
+private final AbstractCompiler compiler;#77,19.37332026163737
+if (varModule != currModule && varModule != null && currModule != null) {#177,19.339822387695314
+JSModule varModule = varInput.getModule();#175,19.3264341990153
+case Token.VAR:#231,19.310821175575256
+"module {0} cannot reference {2}, defined in " +#42,19.275073337554932
+"module {0} cannot reference {2}, defined in " +#52,19.206169271469115
+JSModuleGraph moduleGraph = compiler.getModuleGraph();#176,19.193768858909607
+case Token.LP:#233,19.182699902852377
+default:#246,19.054691473642986
+Scope scope = t.getScope();#249,19.028725719451906
+"variable {0} is undefined");#38,19.01665449142456
+if (moduleGraph.dependsOn(varModule, currModule)) {#182,19.00049403861717
+Scope scope = t.getScope();#143,18.999529600143433
+if (var == null) {#240,18.91628478822254
+if (var == null) {#251,18.878668885481986
+"missing module dependency; module {0} should depend " +#47,18.851734964471113
+"on module {1} because it references {2}");#48,18.788601473758096
+scope.getGlobalScope().declare(varName, n,#159,18.77468466758728
+if (moduleGraph.dependsOn(currModule, varModule)) {#178,18.77344106591266
+case Token.FUNCTION:#232,18.764057271620807
+if (!sanityCheck && scope.isGlobal()) {#181,18.693383598327635
+Scope.Var var = scope.getVar(varName);#144,18.667870072757495
+VarCheck(AbstractCompiler compiler, boolean sanityCheck) {#89,18.646487363179524
+String varName = n.getString();#118,18.635411702669582
+"module {1}, since {1} loads after {0}");#43,18.622275806608656
+CompilerInput varInput = var.input;#167,18.610374246324813
+this.compiler = compiler;#90,18.585852189497515
+if (sanityCheck) {#155,18.55167776743571
+Scope scope = t.getScope();#238,18.541419549421832
+case Token.GETPROP:#236,18.515528791091022
+Scope.Var var = scope.getVar(n.getString());#250,18.48299750575313
+for (String varName : varsToDeclareInExterns) {#107,18.478764942714147
+currModule.getName(), varModule.getName(), varName);#185,18.467425604124326
+JSModule currModule = currInput.getModule();#174,18.457415244158575
+"accessing name {0} in externs has no effect");#58,18.436889739263627
+"module {1}");#53,18.368122100830078
+if (var == null) {#145,18.359027515758168
+if (compiler.getCodingConvention().isConstant(varName)) {#214,18.340793692547344
+if ((parent.getType() == Token.VAR ||#134,18.321197565864114
+if (varName.isEmpty()) {#121,18.31991371741662
+t.report(n, VIOLATED_MODULE_DEP_ERROR,#184,18.29675427798567
+switch (parent.getType()) {#230,18.27960604429245
+throw new IllegalStateException("Unexpected variable " + varName);#156,18.245619495709736
+Scope.Var var = scope.getVar(n.getString());#239,18.241772487245758
+break;#245,18.225797176361084
+if (currInput == varInput || currInput == null || varInput == null) {#168,18.20774959564209
+private Set<String> varsToDeclareInExterns = Sets.newHashSet();#75,18.11352306863536
+CompilerInput currInput = t.getInput();#166,18.098633468151093
+currModule.getName(), varModule.getName(), varName);#191,18.098545796162373
+if (n.getType() != Token.NAME) {#114,18.09439967660343
+if (n.getType() == Token.NAME) {#229,18.070508505168714
+Node nameNode = Node.newString(Token.NAME, varName);#206,18.06715145111084
+if (!sanityCheck) {#101,18.06455421447754
+static final DiagnosticType MISSING_MODULE_DEP_ERROR = DiagnosticType.warning(#45,18.045788101528
+currModule.getName(), varModule.getName(), varName);#195,18.029660197666715
+static final DiagnosticType VIOLATED_MODULE_DEP_ERROR = DiagnosticType.error(#40,18.027345697085064
+static final DiagnosticType NAME_REFERENCE_IN_EXTERNS_ERROR =#55,18.015554700578964
+static final DiagnosticType UNDEFINED_VAR_ERROR = DiagnosticType.error(#36,17.96866238635519
+DiagnosticType.warning(#56,17.956884956359865
+"name {0} is not undefined in the externs.");#63,17.95243839990525
+"JSC_MISSING_MODULE_DEPENDENCY",#46,17.928393636431014
+"JSC_STRICT_MODULE_DEPENDENCY",#51,17.926434564590455
+t.report(n, NAME_REFERENCE_IN_EXTERNS_ERROR, n.getString());#247,17.88188661111368
+this(compiler, false);#86,17.880642370744184
+if (n == parent.getFirstChild()) {#237,17.87251729550569
+t.report(n, MISSING_MODULE_DEP_ERROR,#190,17.85620399883815
+@Override#112,17.813045740127563
+static final DiagnosticType UNDEFINED_EXTERN_VAR_ERROR =#60,17.743764114379882
+@Override#96,17.741386890411377
+DiagnosticType.warning(#61,17.739404010772706
+"JSC_VIOLATED_MODULE_DEPENDENCY",#41,17.7290499096825
+"JSC_NAME_REFERENCE_IN_EXTERNS",#57,17.70854126323353
+"JSC_UNDEFINED_VARIABLE",#37,17.705548572540284
+t.report(n, UNDEFINED_VAR_ERROR, varName);#152,17.68891768619932
+t.report(n, UNDEFINED_EXTERN_VAR_ERROR, n.getString());#241,17.660789966583252
+if (!strictExternCheck || !t.getInput().isExtern()) {#151,17.59121647587529
+varsToDeclareInExterns.contains(varName)) {#136,17.590776748657227
+static final DiagnosticType STRICT_MODULE_DEP_ERROR = DiagnosticType.disabled(#50,17.563863671344258
+private CompilerInput synthesizedExternsInput = null;#69,17.51217924753825
+static final DiagnosticType INVALID_FUNCTION_DECL =#65,17.472259680430096
+private void createSynthesizedExternVar(String varName) {#205,17.455540921952988
+if (NodeUtil.isFunctionExpression(parent)) {#146,17.443947410583498
+"Syntax error: function declaration must have a name");#67,17.429116821289064
+t.report(n, STRICT_MODULE_DEP_ERROR,#194,17.40607947569627
+private class NameRefInExternsCheck extends AbstractPostOrderCallback {#227,17.38496903812184
+new Node(Token.VAR, nameNode));#219,17.364330843875283
+"JSC_UNDEFINED_EXTERN_VAR_ERROR",#62,17.319666862487793
+if (!NodeUtil.isFunctionExpression(parent)) {#126,17.318652868270874
+compiler.newExternInput("{SyntheticVarsDeclar}");#264,17.29166172168873
+compiler, Lists.newArrayList(externs, root), this);#106,17.263595183690388
+this.strictExternCheck = compiler.getErrorLevel(#91,17.253937880198162
+break;#235,17.22006872722081
+varsToDeclareInExterns.remove(varName);#220,17.218178397730778
+JSError.make("", 0, 0, UNDEFINED_EXTERN_VAR_ERROR)) == CheckLevel.ERROR;#92,17.20603664104755
+n.addSuppression("duplicate");#139,17.1264551281929
+class VarCheck extends AbstractPostOrderCallback implements CompilerPass {#34,17.11371452467782
+t.report(n, INVALID_FUNCTION_DECL);#127,17.063260116577148
+NodeUtil.isFunctionDeclaration(parent)) &&#135,17.054561978294736
+createSynthesizedExternVar(varName);#158,17.020182782953437
+createSynthesizedExternVar(varName);#137,16.993780665927464
+varsToDeclareInExterns.add(n.getString());#252,16.942384135338568
+nameNode.putBooleanProp(Node.IS_CONSTANT_NAME, true);#215,16.89922549174382
+if (synthesizedExternsRoot == null) {#271,16.864863925509983
+DiagnosticType.error("JSC_INVALID_FUNCTION_DECL",#66,16.85289700826009
+return;#163,16.839935064315796
+return;#115,16.783408880233765
+private CompilerInput getSynthesizedExternsInput() {#261,16.756159894606647
+if (synthesizedExternsInput == null) {#262,16.69125986099243
+return;#129,16.665182948112488
+createSynthesizedExternVar(varName);#108,16.645577960544163
+private Node synthesizedExternsRoot = null;#70,16.6050627048199
+varsToDeclareInExterns.add(n.getString());#242,16.604481379191082
+Preconditions.checkState(NodeUtil.isFunction(parent));#122,16.516685875979338
+this.sanityCheck = sanityCheck;#93,16.51173386206994
+public void process(Node externs, Node root) {#97,16.50343850453695
+public void visit(NodeTraversal t, Node n, Node parent) {#228,16.439594041733514
+private final boolean sanityCheck;#80,16.420669078826904
+public void visit(NodeTraversal t, Node n, Node parent) {#113,16.34121955068488
+NodeTraversal.traverse(compiler, externs, new NameRefInExternsCheck());#102,16.292247358957926
+synthesizedExternsRoot = synthesizedExterns.getAstRoot(compiler);#273,16.193746640132023
+return synthesizedExternsRoot;#275,16.13743297259013
+return;#170,16.110957503318787
+break;#254,16.110692637307302
+private Node getSynthesizedExternsRoot() {#270,16.044743919372557
+CompilerInput synthesizedExterns = getSynthesizedExternsInput();#272,16.028994369506837
+private boolean strictExternCheck;#83,16.01665751139323
+return synthesizedExternsInput;#266,15.918527126312256
+null, getSynthesizedExternsInput());#160,15.711489347311167
+synthesizedExternsInput =#263,15.685832610497108
+NodeTraversal.traverseRoots(#105,15.548164572034564
+getSynthesizedExternsRoot().addChildToBack(#218,15.509376827039217

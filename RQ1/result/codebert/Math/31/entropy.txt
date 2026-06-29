@@ -1,0 +1,65 @@
+scaleFactor *= scale;#155,18.99621163881742
+double q2 = a * q1 + b * dPrev;#144,18.75928651369535
+final double scale = FastMath.max(a,b);#149,18.680861801936707
+if (a != 0.0 && a > b) {#156,18.202958424886067
+if (Double.isInfinite(hN)) {#172,18.18908627827962
+for (int i = 0; i < maxPower; i++) {#153,18.120075010484264
+double p0 = 1.0;#134,18.116463243961334
+final double a = getA(n, x);#140,18.116391679515008
+final double b = getB(n, x);#141,18.111440119536027
+final double small = 1e-50;#124,18.10510596107034
+if (Double.isNaN(hN)) {#176,18.09253700574239
+double cN = a * hPrev + b * p0;#143,18.03467475450956
+double q1 = 1.0;#135,18.014494359493256
+break;#164,18.002295384040245
+if (Double.isInfinite(cN) || Double.isInfinite(q2)) {#145,17.97881011401906
+lastScaleFactor = scaleFactor;#154,17.959746961240416
+q2 = q1 / lastScaleFactor + (b / scaleFactor * dPrev);#158,17.920993383540665
+public double evaluate(double x) {#72,17.910192648569744
+double hPrev = getA(0, x);#125,17.888288196764496
+cN = (a / scaleFactor * hPrev) + p0 / lastScaleFactor;#160,17.823781338605013
+if (!(Double.isInfinite(cN) || Double.isInfinite(q2))) {#163,17.80393194597821
+protected abstract double getA(int n, double x);#55,17.76932543516159
+q2 = (a / scaleFactor * q1) + dPrev / lastScaleFactor;#161,17.662050745703958
+while (n < maxIterations) {#139,17.65486229167265
+double dPrev = 0.0;#133,17.633797764778137
+protected abstract double getB(int n, double x);#64,17.613464832305908
+if (scale <= 0) {  // Can't scale#150,17.552627665655955
+throw new ConvergenceException(LocalizedFormats.CONTINUED_FRACTION_INFINITY_DIVERGENCE, x);#151,17.544704378867635
+throw new ConvergenceException(LocalizedFormats.CONTINUED_FRACTION_INFINITY_DIVERGENCE,#173,17.52269558573878
+double lastScaleFactor = 1d;#147,17.522482474644978
+double scaleFactor = 1d;#146,17.495348059612773
+if (FastMath.abs(deltaN - 1.0) < epsilon) {#181,17.476058931061715
+break;#182,17.455917888217503
+x);#178,17.454125229193238
+cN = hPrev / lastScaleFactor + (b / scaleFactor * p0);#157,17.445239643717922
+final double deltaN = cN / q2 / cPrev;#169,17.438426127800575
+x);#174,17.428257416705694
+if (n >= maxIterations) {#193,17.408144670374252
+public double evaluate(double x, int maxIterations) {#94,17.395755599526797
+return evaluate(x, DEFAULT_EPSILON, Integer.MAX_VALUE);#73,17.371040414880824
+if (Precision.equals(hPrev, 0.0, small)) {#128,17.358021149268517
+dPrev = q1;#185,17.348453786638046
+p0 = hPrev;#187,17.293478594885933
+final int maxPower = 5;#148,17.275094446928605
+throw new ConvergenceException(LocalizedFormats.CONTINUED_FRACTION_NAN_DIVERGENCE,#177,17.262665998368036
+return evaluate(x, DEFAULT_EPSILON, maxIterations);#95,17.248727531433104
+double cPrev = hPrev;#136,17.2429448445638
+n++;#190,17.208515848432267
+public double evaluate(double x, double epsilon) {#83,17.180017639608945
+private static final double DEFAULT_EPSILON = 10e-9;#39,17.12499436878023
+cPrev = cN / q2;#186,17.12059552328927
+return evaluate(x, epsilon, Integer.MAX_VALUE);#84,17.064589334570844
+int n = 1;#132,17.062070479759804
+hN = cPrev * deltaN;#170,16.911303293137323
+q1 = q2;#189,16.798013581169975
+super();#45,16.792366409301756
+maxIterations, x);#195,16.7875102714256
+public double evaluate(double x, double epsilon, int maxIterations) {#123,16.722756602547385
+throw new MaxCountExceededException(LocalizedFormats.NON_CONVERGENT_CONTINUED_FRACTION,#194,16.58829925173805
+double hN = hPrev;#137,16.562375450134276
+return hN;#198,16.37410871187846
+protected ContinuedFraction() {#44,16.298775482177735
+hPrev = cN;#188,16.148518827226425
+public abstract class ContinuedFraction {#37,15.8635892868042
+hPrev = small;#129,15.385856628417969

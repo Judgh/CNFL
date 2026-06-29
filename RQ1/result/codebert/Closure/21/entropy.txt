@@ -1,0 +1,94 @@
+private final AbstractCompiler compiler;#188,19.688739169727672
+private final AbstractCompiler compiler;#53,19.439631356133354
+StripProtection(AbstractCompiler compiler) {#190,19.14116314479283
+String msg = "This code lacks side-effects. Is there a bug?";#132,18.95327203170113
+"Suspicious code. {0}");#45,18.817750334739685
+if (isResultUsed) {#114,18.75545597076416
+@Override#194,18.74257532755534
+msg = "Is there a missing '+' on the previous line?";#134,18.62871265411377
+this.compiler = compiler;#59,18.523251793601297
+msg = "The result of the '" + Token.name(n.getType()).toLowerCase() +#136,18.42919346780488
+if (n.isEmpty() ||#89,18.411487738291424
+if (#130,18.322914441426594
+private void protectSideEffects() {#155,18.31384319729275
+(isSimpleOp || !NodeUtil.mayHaveSideEffects(n, t.getCompiler()))) {#131,18.178481593276516
+Node var = IR.var(name);#173,18.174537511972282
+"' operator is not being used.";#137,18.169048261642455
+if (n.isString()) {#133,18.158261367252894
+if (target.isName() && target.getString().equals(PROTECTOR_FN)) {#205,18.141206085681915
+boolean protectSideEffectFreeCode) {#58,18.137615271977015
+if (protectSideEffectFreeCode) {#73,18.119632207430325
+CheckSideEffects(AbstractCompiler compiler, CheckLevel level,#57,18.06763521830241
+this.compiler = compiler;#191,18.0641817679772
+@Override#199,18.055599689483643
+@Override#78,18.04248809814453
+if (parent == null) {#94,17.96324097026478
+@Override#64,17.959710597991943
+Node target = n.getFirstChild();#202,17.905746459960938
+if (n.isQualifiedName() && n.getJSDocInfo() != null) {#107,17.899142081920917
+static final DiagnosticType USELESS_CODE_ERROR = DiagnosticType.warning(#43,17.888864170421254
+Node replacement = IR.call(name).srcref(n);#161,17.888504201715644
+replacement.putBooleanProp(Node.FREE_CALL, true);#162,17.8626887400945
+@Override#83,17.831871271133423
+if (ancestorType == Token.COMMA) continue;#120,17.82860465844472
+private void addExtern() {#170,17.819998105367024
+int ancestorType = an.getType();#119,17.79492980555484
+if (n == parent.getLastChild()) {#117,17.773838940788718
+implements HotSwapCompilerPass {#41,17.75517988204956
+if (parent.getType() == Token.COMMA) {#113,17.738038486904568
+if (n.isCall()) {#201,17.736312253134592
+if (! (parent.getType() == Token.FOR && parent.getChildCount() == 4 && (n == parent.getFirstChild() || n == parent.getFirstChild().getNext().getNext()))) {#126,17.73278393568816
+Node expr = n.getLastChild();#206,17.717575625369424
+if (!NodeUtil.isStatement(n)) {#144,17.714359124501545
+name.putBooleanProp(Node.IS_CONSTANT_NAME, true);#160,17.677340330900968
+compiler.reportCodeChange();#180,17.676126194000243
+compiler.reportCodeChange();#166,17.645245393117268
+static class StripProtection extends AbstractPostOrderCallback implements CompilerPass {#186,17.642570944393384
+private final boolean protectSideEffectFreeCode;#55,17.63301840695468
+"JSC_USELESS_CODE",#44,17.506350966060864
+JSDocInfoBuilder builder = new JSDocInfoBuilder(false);#175,17.50431799888611
+n.isComma()) {#90,17.477966817220054
+boolean isResultUsed = NodeUtil.isExpressionResultUsed(n);#111,17.47731454031808
+this.protectSideEffectFreeCode = protectSideEffectFreeCode;#61,17.458293120066326
+var.setJSDocInfo(builder.build(var));#177,17.441939300960964
+builder.recordNoAlias();#176,17.424296379089355
+if (ancestorType != Token.EXPR_RESULT && ancestorType != Token.BLOCK) return;#121,17.331983757019042
+if (n.isExprResult()) {#101,17.316908768245153
+private final List<Node> problemNodes = Lists.newArrayList();#51,17.29435894224379
+name.putBooleanProp(Node.IS_CONSTANT_NAME, true);#172,17.26240162227465
+public void process(Node externs, Node root) {#195,17.254685177522546
+Node name = IR.name(PROTECTOR_FN).srcref(n);#159,17.214197971202708
+static final String PROTECTOR_FN = "JSCOMPILER_PRESERVE";#47,17.194620795871902
+t.makeError(n, level, USELESS_CODE_ERROR, msg));#141,17.192319901784263
+t.getCompiler().report(#140,17.11731563295637
+return;#115,17.019067001342773
+return;#91,16.975674510002136
+addExtern();#157,16.964574337005615
+Node name = IR.name(PROTECTOR_FN);#171,16.9461956553989
+for (Node an : parent.getAncestors()) {#118,16.910572279067267
+protectSideEffects();#74,16.889248657226563
+for (Node n : problemNodes) {#158,16.864405393600464
+boolean isSimpleOp = NodeUtil.isSimpleOperatorType(n.getType());#112,16.864230473836262
+NodeTraversal.traverse(compiler, root, this);#196,16.831250009082613
+final class CheckSideEffects extends AbstractPostOrderCallback#40,16.797375852411445
+private final CheckLevel level;#49,16.764020562171936
+return;#95,16.70794677734375
+public void hotSwapScript(Node scriptRoot, Node originalRoot) {#79,16.690053939819336
+return;#102,16.65460479259491
+input.getAstRoot(compiler).addChildrenToBack(var);#179,16.64930191040039
+return;#108,16.584631204605103
+this.level = level;#60,16.545960521698
+NodeTraversal.traverse(compiler, root, this);#66,16.51242120642411
+public void process(Node externs, Node root) {#65,16.499128150939942
+NodeTraversal.traverse(compiler, scriptRoot, this);#80,16.49815149307251
+n.getParent().replaceChild(n, replacement);#163,16.48158049583435
+CompilerInput input = compiler.getSynthesizedExternsInput();#178,16.438910348074778
+public void visit(NodeTraversal t, Node n, Node parent) {#84,16.406434962623997
+parent.replaceChild(n, expr);#208,16.39897602482846
+public void visit(NodeTraversal t, Node n, Node parent) {#200,16.387382734389533
+if (!problemNodes.isEmpty()) {#156,16.269807406834193
+replacement.addChildToBack(n);#164,16.231633747325223
+n.detachChildren();#207,16.195334553718567
+else break;#122,16.190222886892464
+return;#127,16.050370693206787
+problemNodes.add(n);#145,14.776330828666687

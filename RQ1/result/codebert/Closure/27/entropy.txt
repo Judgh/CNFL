@@ -1,0 +1,340 @@
+case Token.NAME:#555,19.93764521858909
+case Token.INC:#548,19.869275093078613
+case Token.HOOK:#546,19.863980770111084
+case Token.LABEL:#490,19.77164602279663
+case Token.DEC:#537,19.643689589066938
+case Token.EQ:#540,19.6433744430542
+case Token.NULL:#561,19.570425120267
+case Token.FALSE:#541,19.565210262934368
+for (Node param : params) {#75,19.551891803741455
+case Token.DIV:#539,19.52797135439786
+case Token.POS:#564,19.523047013716265
+case Token.MOD:#553,19.481329744512383
+case Token.NOT:#559,19.47484371878884
+case Token.DEBUGGER:#485,19.37001649538676
+case Token.BITNOT:#533,19.362085660298664
+case Token.NEW:#558,19.35292321985418
+case Token.WITH:#497,19.349328597386677
+private IR() {}#51,19.314069430033367
+for (Node param : params) {#84,19.310546875
+case Token.VAR:#495,19.277337392171223
+case Token.CONTINUE:#484,19.27436197721041
+public static Node paramList(Node param) {#68,19.2712086836497
+case Token.CALL:#535,19.26493962605794
+case Token.IN:#547,19.234337026422676
+case Token.WHILE:#496,19.229092121124268
+case Token.LE:#550,19.218675179914996
+case Token.FOR:#488,19.19829160516912
+case Token.TRY:#494,19.187891960144043
+case Token.EMPTY:#475,19.16585922241211
+case Token.DO:#486,19.14781986583363
+public static Node stringKey(String s) {#420,19.138786951700848
+Node paramList = paramList();#74,19.121305899186567
+case Token.SUB:#570,19.115734100341797
+case Token.GE:#542,19.09684554013339
+Node paramList = paramList();#83,19.09219993244518
+case Token.NE:#556,19.07391964305531
+case Token.VOID:#575,19.060847918192547
+case Token.MUL:#554,19.053260644276936
+case Token.ADD:#516,18.992167993025348
+case Token.SWITCH:#492,18.983405749003094
+case Token.OR:#563,18.9726467999545
+case Token.GT:#545,18.967068151994184
+case Token.THIS:#571,18.96077026020397
+case Token.IF:#489,18.946701396595348
+public static Node string(String s) {#416,18.940113241022285
+case Token.TRUE:#573,18.916166464487713
+case Token.AND:#517,18.906797062266957
+case Token.BREAK:#482,18.883955637613933
+case Token.ASSIGN_SUB:#527,18.878798294067384
+public static Node paramList() {#64,18.870148340861004
+case Token.LT:#552,18.82649499719793
+case Token.LSH:#551,18.82490340868632
+case Token.REGEXP:#565,18.81947684288025
+public static Node paramList(Node ... params) {#73,18.801980312053974
+case Token.THROW:#493,18.795301877535305
+case Token.NUMBER:#560,18.778345902760822
+public static Node paramList(List<Node> params) {#82,18.77325572967529
+case Token.SHEQ:#567,18.70349487891564
+case Token.CONST:#483,18.68580150604248
+case Token.BITOR:#532,18.67348837852478
+case Token.ASSIGN_MUL:#528,18.65989023844401
+case Token.INSTANCEOF:#549,18.65341567993164
+case Token.COMMA:#536,18.64419897397359
+case Token.OBJECTLIT:#562,18.625773157392228
+public static Node assign(Node target, Node expr) {#308,18.608197484697616
+case Token.NEG:#557,18.58516573905945
+case Token.BITXOR:#534,18.581368372990536
+case Token.ASSIGN:#519,18.561753193537395
+case Token.EXPR_RESULT:#487,18.560126113891602
+case Token.RSH:#566,18.547048568725586
+public static Node number(double d) {#424,18.526920838789508
+case Token.STRING:#569,18.514809290568035
+public static Node sheq(Node expr1, Node expr2) {#347,18.496053976171158
+public static Node labelName(String name) {#218,18.486533006032307
+for (Node arg : args) {#276,18.484054962793987
+case Token.ARRAYLIT:#518,18.4825861794608
+case Token.ASSIGN_MOD:#530,18.47557326725551
+case Token.FUNCTION:#476,18.47517380347619
+for (Node arg : args) {#285,18.452342589696247
+return binaryOp(Token.EQ, expr1, expr2);#341,18.44100927051745
+case Token.GETELEM:#544,18.429816450391495
+case Token.ASSIGN_RSH:#524,18.42980410257975
+return binaryOp(Token.SUB, expr1, expr2);#368,18.42626707177413
+public static Node regexp(Node expr, Node flags) {#410,18.39942035675049
+case Token.BITAND:#531,18.393868923187256
+private static Node unaryOp(int token, Node expr) {#452,18.387139558792114
+case Token.BLOCK:#481,18.36761220296224
+public static Node block() {#91,18.35934066772461
+public static Node thisNode() {#428,18.35494984520806
+case Token.GETPROP:#543,18.350334020761345
+public static Node name(String name) {#292,18.34844797307795
+private static Node binaryOp(int token, Node expr1, Node expr2) {#446,18.33338041305542
+return paramList;#88,18.33215367794037
+return paramList;#79,18.276649117469788
+case Token.ASSIGN_DIV:#529,18.269052233014786
+public static Node function(Node name, Node params, Node body) {#57,18.26421563765582
+public static Node defaultCase(Node body) {#204,18.261046806971233
+case Token.FUNCTION:#511,18.215650998629055
+case Token.TYPEOF:#572,18.17909731183733
+case Token.ASSIGN_BITXOR:#521,18.177388429641724
+public static Node call(Node target, Node ... args) {#274,18.154633458455404
+for (Node caseNode : cases) {#190,18.152313012343186
+case Token.URSH:#574,18.1469300587972
+return call;#280,18.1359680720738
+case Token.RETURN:#491,18.13365888595581
+public static Node empty() {#53,18.127671003341675
+for (Node expr : exprs) {#398,18.127058542691746
+public static Node pos(Node expr1) {#359,18.12569808959961
+public static Node getprop(Node target, Node prop) {#296,18.121257146199543
+public static Node var(Node name) {#129,18.108337922529742
+public static Node trueNode() {#432,18.107922554016113
+Preconditions.checkState(init.isVar() || mayBeExpressionOrEmpty(init));#180,18.097330753619854
+switch (n.getType()) {#474,18.090489625930786
+return new Node(Token.FOR, init, cond, incr, body);#184,18.089183262416295
+public static Node objectlit(Node ... propdefs) {#374,18.084637260437013
+case Token.ASSIGN_BITOR:#520,18.073758697509767
+case Token.ASSIGN_LSH:#523,18.072277196248372
+public static Node add(Node expr1, Node expr2) {#363,18.06255352497101
+return binaryOp(Token.SHEQ, expr1, expr2);#348,18.052237272262573
+public static Node regexp(Node expr) {#405,18.051758130391438
+case Token.ASSIGN_ADD:#526,18.03759833744594
+return binaryOp(Token.ADD, expr1, expr2);#364,18.027975771162247
+public static Node arraylit(Node ... exprs) {#396,17.986561911446707
+default:#578,17.979064226150513
+return new Node(token, expr1, expr2);#449,17.978236436843872
+return new Node(Token.FUNCTION, name, params, body);#61,17.966428756713867
+return binaryOp(Token.OR, expr1, expr2);#330,17.943806913163925
+for (Node propdef : propdefs) {#376,17.939797147115073
+return new Node(Token.PARAM_LIST, param);#70,17.931048168855554
+case Token.ASSIGN_BITAND:#522,17.925948333740234
+public static Node sub(Node expr1, Node expr2) {#367,17.91996520757675
+public static Node forIn(Node target, Node cond, Node body) {#172,17.9142640431722
+case Token.ASSIGN_URSH:#525,17.91256421407064
+public static Node or(Node expr1, Node expr2) {#329,17.90793937444687
+private static boolean mayBeStatement(Node n) {#473,17.89781819857084
+return n.isName() || n.isGetProp() || n.isGetElem();#462,17.896715850830077
+case Token.DELPROP:#538,17.890973772321427
+public static Node comma(Node expr1, Node expr2) {#321,17.88756889104843
+public static Node neg(Node expr1) {#355,17.876203139623005
+return binaryOp(Token.AND, expr1, expr2);#326,17.85614119635688
+default:#500,17.835442304611206
+public static Node not(Node expr1) {#333,17.834953149159748
+return new Node(Token.CONTINUE, name);#268,17.8333922624588
+switch (n.getType()) {#510,17.830607811609905
+propdef.isStringKey() ||#378,17.827438407474094
+private static boolean mayBeExpression(Node n) {#509,17.823142732892716
+return new Node(Token.CASE, expr, body);#201,17.81426166085636
+return newcall;#289,17.81031334400177
+return binaryOp(Token.COMMA, expr1, expr2);#322,17.804881196273
+return new Node(Token.ASSIGN, target, expr);#311,17.7889404296875
+return new Node(token, expr);#454,17.78591497739156
+private static boolean mayBeExpressionOrEmpty(Node n) {#457,17.78224629163742
+public static Node and(Node expr1, Node expr2) {#325,17.779524207115173
+return objectlit;#383,17.77846121788025
+public static Node eq(Node expr1, Node expr2) {#340,17.763637840747833
+private static boolean isAssignmentTarget(Node n) {#461,17.740219048091344
+return new Node(Token.REGEXP, expr, flags);#413,17.738068524528952
+public static Node propdef(Node string, Node value) {#388,17.73507086435954
+public static Node caseNode(Node expr, Node body) {#197,17.726536560058594
+return new Node(Token.CATCH, expr, body);#248,17.70866377213422
+return arraylit;#402,17.703099846839905
+public static Node getelem(Node target, Node elem) {#302,17.6951483558206
+return new Node(Token.VAR, name);#131,17.67914587656657
+public static Node forNode(Node init, Node cond, Node incr, Node body) {#179,17.678811636838045
+return unaryOp(Token.NOT, expr1);#334,17.677802801132202
+return new Node(Token.DEFAULT_CASE, body);#207,17.674187342325848
+return string;#393,17.673960958208358
+return new Node(Token.FOR, target, cond, body);#176,17.67226134406196
+return new Node(Token.THROW, expr);#145,17.664352774620056
+return block;#108,17.663406780787877
+Node tryBody, Node catchNode, Node finallyBody) {#238,17.660365205062064
+public static Node throwNode(Node expr) {#143,17.659319003423054
+return block;#215,17.65887532915388
+return Node.newString(Token.LABEL_NAME, name);#220,17.65148202996505
+return unaryOp(Token.POS, expr1);#360,17.64586251974106
+return new Node(Token.CONTINUE);#262,17.63907895769392
+return Node.newString(Token.NAME, name);#293,17.63719016313553
+public static Node exprResult(Node expr) {#148,17.625284751256306
+public static Node tryFinally(Node tryBody, Node finallyBody) {#223,17.616671506096335
+case Token.SHNE:#568,17.610310713450115
+return new Node(Token.TRY, tryBody, catchBody, finallyBody);#227,17.607838494437082
+Preconditions.checkState(#377,17.59625816345215
+public static Node voidNode(Node expr1) {#351,17.588334523714504
+return var(name);#126,17.56631639268663
+Node call = new Node(Token.CALL, target);#275,17.53885605755974
+return true;#479,17.536521998318758
+Preconditions.checkState(target.isVar() || mayBeExpression(target));#173,17.500552535057068
+Preconditions.checkState(mayBeExpressionOrEmpty(incr));#182,17.48233395531064
+return new Node(Token.TRY, tryBody, catchBody);#234,17.481200006273056
+Preconditions.checkState(params.isParamList());#59,17.469528815325567
+public static Node switchNode(Node cond, Node ... cases) {#187,17.46803367137909
+return unaryOp(Token.VOID, expr1);#352,17.44806901146384
+public static Node catchNode(Node expr, Node body) {#245,17.446133041381835
+public static Node continueNode(Node name) {#265,17.437732378641766
+Preconditions.checkState(finallyBody.isLabelName());#225,17.434676521702816
+public static Node continueNode() {#261,17.433583471510147
+public static Node newNode(Node target, Node ... args) {#283,17.421814799308777
+public static Node returnNode(Node expr) {#138,17.41020965576172
+return new Node(Token.FALSE);#437,17.395309228163498
+return new Node(Token.EXPR_RESULT, expr);#150,17.392316076490616
+return new Node(Token.EMPTY);#54,17.389728692861702
+public static Node hook(Node cond, Node trueval, Node falseval) {#314,17.385889153731497
+return Node.newNumber(d);#425,17.38276243209839
+public static Node returnNode() {#134,17.37569257948134
+return Node.newString(s);#417,17.37375768025716
+Node block = new Node(Token.LABEL, name, stmt);#214,17.362421226501464
+return new Node(Token.TRUE);#433,17.360356917748085
+public static Node falseNode() {#436,17.354632801479763
+return block;#119,17.33646093096052
+return block;#93,17.331076077052526
+public class IR {#49,17.329371833801268
+Node catchBody = block().copyInformationFrom(tryBody);#226,17.32761848674101
+Node newcall = new Node(Token.NEW, target);#284,17.318001915426816
+return switchNode;#194,17.299130082130432
+return block;#99,17.294911248343332
+public static Node var(Node name, Node value) {#122,17.29163830620902
+paramList.addChildToBack(param);#77,17.28737312555313
+return new Node(Token.THIS);#429,17.2748916943868
+for (Node stmt : stmts) {#115,17.268479983011883
+return new Node(Token.PARAM_LIST);#65,17.247891998291017
+return new Node(Token.NULL);#441,17.23214880625407
+return new Node(Token.DO, body, cond);#169,17.207140266895294
+Node objectlit = new Node(Token.OBJECTLIT);#375,17.195235146416557
+return new Node(Token.BREAK, name);#258,17.181732114156087
+Node switchNode = new Node(Token.SWITCH, cond);#189,17.176104333665634
+public static Node nullNode() {#440,17.15917820400662
+return true;#514,17.151664213700727
+Node arraylit = new Node(Token.ARRAYLIT);#397,17.144903659820557
+return new Node(Token.RETURN, expr);#140,17.137509727478026
+return new Node(Token.HOOK, cond, trueval, falseval);#318,17.12950797308059
+return new Node(Token.REGEXP, expr);#407,17.11139259338379
+for (Node stmt : stmts) {#104,17.105705960591635
+return new Node(Token.IF, cond, then, elseNode);#163,17.09125398334704
+return unaryOp(Token.NEG, expr1);#356,17.091052335851334
+Preconditions.checkState(param.isName());#76,17.089057816399468
+Preconditions.checkState(caseNode.isCase() || caseNode.isDefaultCase());#191,17.08011277516683
+paramList.addChildToBack(param);#86,17.078424096107483
+return new Node(Token.GETELEM, target, elem);#305,17.070775699615478
+body.putBooleanProp(Node.SYNTHETIC_BLOCK_PROP, true);#200,17.070496735749423
+Node block = new Node(Token.SCRIPT);#114,17.068691889444988
+public static Node script(Node ... stmts) {#112,17.046921457563126
+public static Node block(Node stmt) {#96,17.04289221763611
+Preconditions.checkState(mayBeExpressionOrEmpty(cond));#181,17.03642144203186
+return new Node(Token.IF, cond, then);#156,17.031929194927216
+Preconditions.checkState(mayBeExpression(target));#297,17.019231690300835
+return new Node(Token.GETPROP, target, prop);#299,17.01164372762044
+Preconditions.checkState(mayBeExpression(elem));#304,17.009204061407793
+Preconditions.checkState(isAssignmentTarget(target));#309,16.998624748653835
+public static Node block(Node ... stmts) {#102,16.987099443163192
+public static Node ifNode(Node cond, Node then, Node elseNode) {#159,16.98051307075902
+Preconditions.checkState(param.isName());#69,16.97286033630371
+return n.isEmpty() || mayBeExpression(n);#458,16.947049034966362
+return true;#576,16.945865284312855
+public static Node breakNode(Node name) {#255,16.945555369059246
+return Node.newString(Token.STRING_KEY, s);#421,16.94412562721654
+Preconditions.checkState(mayBeExpression(expr));#310,16.925978872511124
+Preconditions.checkState(mayBeExpressionOrEmpty(expr));#399,16.923103419217195
+public static Node breakNode() {#251,16.91865825653076
+return tryNode;#242,16.917834758758545
+return true;#498,16.91749806837602
+public static Node ifNode(Node cond, Node then) {#153,16.90496088663737
+body.putBooleanProp(Node.SYNTHETIC_BLOCK_PROP, true);#206,16.901757310937953
+Preconditions.checkState(mayBeExpression(target));#303,16.88783926433987
+public static Node tryCatch(Node tryBody, Node catchNode) {#230,16.88631576961941
+Preconditions.checkState(mayBeExpression(falseval));#317,16.884489260221784
+Preconditions.checkState(name.isName());#58,16.87877744436264
+return new Node(Token.BREAK);#252,16.876219456012432
+Preconditions.checkState(name.isName() && !name.hasChildren());#123,16.871268438256305
+Preconditions.checkState(mayBeExpression(cond));#315,16.863331900702583
+public static Node doNode(Node body, Node cond) {#166,16.86123784383138
+Preconditions.checkState(mayBeExpression(expr2));#448,16.852343358491595
+public static Node label(Node name, Node stmt) {#210,16.843441073099772
+propdef.isGetterDef() || propdef.isSetterDef());#379,16.839784728156197
+Preconditions.checkState(param.isName());#85,16.838233047061497
+Preconditions.checkState(mayBeExpression(arg));#277,16.825967836380006
+tryNode.addChildToBack(finallyBody);#241,16.81603914499283
+Preconditions.checkState(name.isLabelName());#212,16.815491788527545
+Node block = new Node(Token.BLOCK);#92,16.814033381144206
+Node catchBody = block(catchNode).copyInformationFrom(catchNode);#233,16.79126105308533
+Preconditions.checkState(mayBeExpression(arg));#286,16.79091172218323
+Preconditions.checkState(tryBody.isLabelName());#224,16.766988118489582
+Preconditions.checkState(mayBeExpression(value));#391,16.759725676642525
+Preconditions.checkState(name.isLabelName());#257,16.758919884176816
+Node block = new Node(Token.BLOCK, stmt);#98,16.73802004920112
+return new Node(Token.RETURN);#135,16.72309053861178
+call.addChildToBack(arg);#278,16.71639264424642
+Node block = new Node(Token.BLOCK);#103,16.716254552205402
+Preconditions.checkState(mayBeExpression(value));#124,16.692976739671494
+Preconditions.checkState(expr.isString());#406,16.661896228790283
+Preconditions.checkState(mayBeExpression(trueval));#316,16.651331851356908
+Preconditions.checkState(!name.isEmpty());#219,16.63253599054673
+Preconditions.checkState(mayBeStatement(stmt));#116,16.63088722229004
+Preconditions.checkState(flags.isString());#412,16.586607575416565
+Preconditions.checkState(body.isBlock());#199,16.569489300251007
+Preconditions.checkState(body.isBlock());#60,16.563084602355957
+Preconditions.checkState(name.isLabelName());#267,16.561673500958612
+Preconditions.checkState(mayBeExpression(expr1));#447,16.55963370674535
+Preconditions.checkState(mayBeExpression(cond));#174,16.549255741967094
+Preconditions.checkState(finallyBody.isBlock());#239,16.53365484873454
+public static Node tryCatchFinally(#237,16.530749893188478
+Preconditions.checkState(mayBeExpression(expr));#198,16.530281914605034
+Preconditions.checkState(string.isStringKey());#389,16.529430333305807
+Preconditions.checkState(mayBeExpression(cond));#154,16.52865086661445
+arraylit.addChildToBack(expr);#400,16.52350026369095
+Preconditions.checkState(mayBeStatement(stmt));#213,16.522835148705376
+Preconditions.checkState(mayBeExpression(cond));#160,16.520191616482204
+string.addChildToFront(value);#392,16.502318675701435
+Preconditions.checkState(mayBeExpression(expr));#144,16.490372869703506
+Preconditions.checkState(expr.isString());#411,16.484914362430573
+Preconditions.checkState(mayBeStatement(stmt));#97,16.481387509240044
+Preconditions.checkState(mayBeStatement(stmt));#105,16.467717599868774
+Preconditions.checkState(body.isBlock());#247,16.455781161785126
+Preconditions.checkState(mayBeExpression(expr));#139,16.447015073564316
+newcall.addChildToBack(arg);#287,16.442146837711334
+Preconditions.checkState(mayBeExpression(expr));#453,16.441764884524876
+Preconditions.checkState(mayBeExpression(expr));#149,16.42971674601237
+Preconditions.checkState(expr.isName());#246,16.412937998771667
+Preconditions.checkState(mayBeExpression(cond));#168,16.386649661593967
+Preconditions.checkState(prop.isString());#298,16.38512420654297
+Preconditions.checkState(body.isBlock());#183,16.358874917030334
+Preconditions.checkState(elseNode.isBlock());#162,16.347756161409265
+Preconditions.checkState(name.isName());#130,16.330519139766693
+objectlit.addChildToBack(propdef);#381,16.32929235346177
+Preconditions.checkState(body.isBlock());#175,16.30571335554123
+Node tryNode = tryCatch(tryBody, catchNode);#240,16.257567087809246
+Preconditions.checkState(body.isBlock());#205,16.242125272750854
+Preconditions.checkState(!string.hasChildren());#390,16.237649524913113
+Preconditions.checkState(catchNode.isCatch());#232,16.202492872873943
+Preconditions.checkState(tryBody.isBlock());#231,16.20044012630687
+Preconditions.checkState(mayBeExpression(cond));#188,16.19259410434299
+Preconditions.checkState(then.isBlock());#161,16.139719009399414
+block.addChildToBack(stmt);#117,16.13634568452835
+Preconditions.checkState(body.isBlock());#167,16.11869376897812
+Preconditions.checkState(then.isBlock());#155,16.107639133930206
+block.addChildToBack(stmt);#106,16.08368307352066
+name.addChildToFront(value);#125,16.058705036456768
+return false;#579,15.968355265530674
+switchNode.addChildToBack(caseNode);#192,15.939795269685632
+return false;#501,15.908515149896795
+Preconditions.checkState(propdef.hasOneChild());#380,15.847989749908447

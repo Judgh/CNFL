@@ -1,0 +1,694 @@
+String getSourceName() {#1268,20.624717140197752
+String getFullName() {#934,20.202262306213377
+JSModule getModule() {#1264,20.09538459777832
+@Override public String toString() {#1149,20.05001958211263
+public String getName() {#930,20.04331874847412
+boolean isDeclaredType() {#1125,19.9592755057595
+Ref getTwin() {#1272,19.889640140533448
+String prefix;#798,19.83388794793023
+case Token.NAME:  // a variable declaration#741,19.8117506980896
+String getBaseName() {#925,19.785389709472657
+final Scope scope;#180,19.72281265258789
+case Token.POS:#648,19.72196184794108
+case Token.DEC:#393,19.686817570736533
+case CALL_GET:#1015,19.673203404744466
+private Ref twin = null;#1215,19.672710609436034
+final Scope scope;#1205,19.66110396385193
+private final AbstractCompiler compiler;#1311,19.65292878584428
+private Ref declaration;#891,19.639099597930908
+case Token.NOT:#646,19.63121337890625
+case PROTOTYPE_GET:#1007,19.599006758795845
+case Token.POS:#728,19.59421310424805
+case Token.DEC:#367,19.57382739217658
+private Ref(Type type, int index) {#1240,19.54577582223075
+case DELETE_PROP:#1019,19.54006078508165
+case Token.WHILE:#722,19.527949571609497
+case Token.BITNOT:#727,19.52713143825531
+case Token.NOT:#726,19.49512882232666
+if (isGlobalScope(scope)) {#422,19.489658692303827
+public Ref getDeclaration() {#939,19.487614024769176
+case Token.HOOK:#521,19.465651988983154
+case CALL_GET:#974,19.46007882631742
+case Token.VOID:#725,19.458323419094086
+case Token.IF:#721,19.438018798828125
+case Token.FOR:#723,19.43228562672933
+private final String baseName;#886,19.41670455932617
+case Token.VAR:#720,19.407458543777466
+callGets++;#975,19.40630599430629
+case ALIASING_GET:#1011,19.399001906899844
+private Ref(Ref original, Type type, int index) {#1230,19.395134813645306
+boolean canEliminate() {#1039,19.390202522277832
+case PROTOTYPE_GET:#966,19.374574899673462
+public StaticSourceFile getSourceFile() {#1255,19.353248422796074
+case Token.VOID:#645,19.348821580410004
+case Token.INC:#392,19.347331950539036
+case ALIASING_GET:#970,19.347027015686034
+case Token.BITNOT:#647,19.343169808387756
+case Token.SETTER_DEF:#334,19.34031023979187
+String name;#309,19.320265663994682
+case Token.HOOK:#731,19.315168261528015
+final JSModule module;#1201,19.313951280381943
+void addRef(Ref ref) {#953,19.28256344795227
+private boolean isGlobalScope(Scope s) {#275,19.281874497731526
+void removeRef(Ref ref) {#986,19.276986757914226
+boolean isNamespace() {#1137,19.27287197113037
+case Token.HOOK:#674,19.244975805282593
+default:#685,19.24008385340373
+@param stream The stream to print logs to.#1318,19.22999107136446
+callGets--;#1016,19.224443435668945
+static void markTwins(Ref a, Ref b) {#1280,19.207372665405273
+this.scope = scope;#1226,19.20235776901245
+case Token.INC:#366,19.188963789688913
+static class Tracker implements CompilerPass {#1310,19.174251651763917
+switch (refParent.getType()) {#1166,19.1692720301011
+case DELETE_PROP:#978,19.150421798229218
+void addRefInternal(Ref ref) {#1032,19.136406311622032
+case Token.NAME:#460,19.135138511657715
+private boolean isGlobalNameReference(String name, Scope s) {#237,19.120201468467712
+final JSModule module;#179,19.120162540011936
+if (declaredType) {#1090,19.116688654972958
+case Token.CALL:#651,19.113931715488434
+JSModule module, Scope scope, Node parent, String name) {#714,19.111723162911154
+globalSets++;#961,19.103500366210938
+if (!isGlobalNameReference(name, scope)) {#417,19.086241828070747
+case DIRECT_GET:#1008,19.074140548706055
+private String getTopVarName(String name) {#248,19.073647058927097
+case Token.AND:#667,19.068163108825683
+if (passName == null) {#1340,19.063389982495988
+static Ref createRefForTesting(Type type) {#1297,19.058036295572915
+final StaticSourceFile source;#1202,19.05773247612847
+Map<String, Name> getNameIndex() {#169,19.05568137535682
+default:#337,19.05109432765416
+for (Ref maybeNewDecl : refs) {#991,19.030329538428266
+case Token.VAR:#345,19.022022104263307
+i = name.indexOf('.', i + 11);#809,19.017083077203658
+boolean isSet() {#1276,19.014805687798393
+case Token.NEG:#729,19.011165142059326
+for (Name n : props) {#1045,18.95636695623398
+private List<Ref> refs;#894,18.95523468653361
+case Token.NAME:#341,18.942740660447342
+enum Type {#1190,18.940918241228378
+case Token.GETTER_DEF:#331,18.93596143722534
+case SET_FROM_LOCAL:#1004,18.907717855353106
+if (name != null) {#493,18.89668706747202
+case Token.OR:#666,18.892449315388998
+aliasingGets--;#1012,18.889700571695965
+case DIRECT_GET:#967,18.882958558889534
+List<Ref> getRefs() {#1028,18.87904005784255
+case Token.INSTANCEOF:#643,18.876260704464382
+String passName = compiler.getLastPassName();#1339,18.87343900343951
+if (ref == declaration) {#988,18.8729497273763
+if (refs != null) {#990,18.867808394961887
+@Override#943,18.86053466796875
+this.scope = scope;#185,18.857237418492634
+private AbstractCompiler compiler;#56,18.85473370552063
+case Token.NEG:#649,18.851030945777893
+this.compiler = compiler;#98,18.848071791908957
+Tracker(AbstractCompiler compiler, PrintStream stream,#1322,18.84539534250895
+case Token.CALL:#746,18.844289898872375
+break;#1014,18.842463970184326
+return null;#950,18.835344314575195
+case Token.VAR:#1170,18.832265615463257
+private Scope externsScope;#60,18.824225743611652
+private final Predicate<String> isInterestingSymbol;#1313,18.82098669164321
+Ref(JSModule module, Scope scope, Node node, Name name, Type type, int index) {#1220,18.819970277639534
+public JSType getType() {#949,18.813344558080036
+Predicate<String> isInterestingSymbol) {#1323,18.812049627304077
+private boolean isGlobalVarReference(String name, Scope s) {#261,18.811019837856293
+GlobalNamespace(AbstractCompiler compiler, Node root) {#82,18.809571329752604
+public boolean isTypeInferred() {#944,18.806878566741943
+if (i >= 0) {#855,18.79706598917643
+@Override#929,18.784350713094074
+globalSets--;#1002,18.778175914988797
+totalGets++;#972,18.77145903451102
+case Token.TYPEOF:#644,18.766200330522324
+enum Type {#878,18.765854699271067
+case Token.INSTANCEOF:#718,18.76353841357761
+case Token.IF:#642,18.75799700419108
+AstChange(JSModule module, Scope scope, Node node) {#183,18.755344443851047
+public void collect(JSModule module, Scope scope, Node n) {#306,18.749012194181745
+private Map<String, Name> nameMap = new HashMap<String, Name>();#74,18.739693278358097
+Name getOrCreateName(String name) {#851,18.737071786608016
+if (TokenStream.isJSIdentifier(key)) {#495,18.73574620201474
+switch (ref.type) {#955,18.734000499431904
+this.compiler = compiler;#1324,18.720709067124588
+if (aliasingGets > 0) {#1101,18.71874964237213
+String name;#458,18.70389832390679
+switch (ref.type) {#1000,18.700945154825845
+aliasingGets++;#971,18.6951629002889
+boolean isSimpleName() {#1145,18.68927173614502
+default:#371,18.68232363462448
+default:#399,18.680976271629333
+if (!name.equals(anc.getString())) {#742,18.680780997643105
+public Name getSlot(String name) {#118,18.67866498773748
+@Override#117,18.670048713684082
+default:#1022,18.669323444366455
+BuildGlobalNamespace() {#286,18.668206787109376
+boolean shouldKeepKeys() {#1109,18.662583923339845
+case Token.FUNCTION:#358,18.65644323258173
+@Override#938,18.647401173909504
+case Token.OR:#514,18.64598927131066
+case Token.TYPEOF:#724,18.630015267266167
+if (name.endsWith(".prototype")) {#799,18.629706326652975
+BuildGlobalNamespace builder = new BuildGlobalNamespace();#196,18.628764748573303
+if (ref.node != null) {#1164,18.62535222371419
+@Override#289,18.617830594380695
+case Token.NEW:#661,18.617689514160155
+totalGets++;#968,18.6163592338562
+void setDeclaredType() {#1117,18.613506057045676
+if (declaration.getTwin() != null) {#1086,18.610070077996504
+if (ref.node.getParent() != null &&#1057,18.605802011489867
+case SET_FROM_LOCAL:#963,18.599272166981418
+this.source = null;#1243,18.591640551884968
+case Token.STRING_KEY:#328,18.589560556411744
+@Override#122,18.58203625679016
+@Override#128,18.57760524749756
+BuildGlobalNamespace builder, JSModule module, Scope scope, Node n) {#207,18.571319216773624
+if (i == -1) {#804,18.571046471595764
+@Override#1259,18.568654378255207
+if (!generated) {#151,18.565914789835613
+case Token.ASSIGN:#1168,18.559015035629272
+int i = name.lastIndexOf('.');#854,18.55665021193655
+@Override#133,18.55242919921875
+@Override#1254,18.549588839213055
+switch (parent.getType()) {#344,18.547936296463014
+totalGets--;#1017,18.54469938839183
+if (refs != null && refs.remove(ref)) {#987,18.532669476100377
+private boolean hasDeclaredTypeDescendant = false;#898,18.53089853922526
+public JSType getTypeOfThis() {#129,18.530524333318073
+private List<Name> globalNames = new ArrayList<Name>();#71,18.530363699969122
+return !inExterns && !isGetOrSetDefinition() && (declaredType ||#1066,18.527327170738808
+if (greatGramps == null || !greatGramps.isVar()) {#465,18.524686460141783
+@Override#293,18.51190757751465
+return isGlobalVarReference(topVarName, s);#239,18.51062035560608
+Name addProperty(String name, boolean inExterns) {#916,18.50423738691542
+case Token.SETTER_DEF:#316,18.500855922698975
+this.scope = null;#1244,18.499246915181477
+if (name == null) {#323,18.498635011560776
+Name.Type t = getValueType(second);#524,18.491997900463286
+case Token.FUNCTION:#512,18.490777206420898
+boolean isGetOrSetDefinition() {#1072,18.490636587142944
+case Token.GETPROP:#356,18.485290027800062
+totalGets--;#1009,18.48285961151123
+case Token.EXPR_RESULT:#719,18.477060518766706
+break;#1010,18.475719111306326
+@Override#112,18.47178888320923
+this.scope = original.scope;#1236,18.470246723720006
+if (greatGramps != null &&#483,18.470019552442764
+case Token.GETPROP:#397,18.466633978344145
+if (refs == null) {#1033,18.465783255440847
+case Token.ASSIGN:#350,18.455318546295167
+@Override#139,18.455157041549683
+addRefInternal(ref);#954,18.453792969385784
+totalGets++;#976,18.45369747706822
+if (type == Type.OTHER || isGetOrSetDefinition()#1077,18.447796678543092
+if (declaration == null) {#957,18.447225676642525
+public Iterable<Ref> getReferences(Name slot) {#134,18.445656522115073
+if (name == null) {#408,18.44266476350672
+private final PrintStream stream;#1312,18.440347957611085
+final Type type;#1204,18.43035387992859
+if (parent != null) {#640,18.42093225625845
+if (parent != null && parent.isObjectLit()) {#320,18.418708841005962
+if (anc.getFirstChild() == prev) {#732,18.41559322675069
+class GlobalNamespace#52,18.414242553710938
+case SET_FROM_GLOBAL:#1001,18.413626670837402
+return new Ref(this, type, this.preOrderIndex);#1294,18.411762857437132
+if (anc.getFirstChild() != prev) {#747,18.41067047913869
+String getNameForObjLitKey(Node n) {#448,18.409812085768756
+PROTOTYPE_GET,#1193,18.407744554372933
+case Token.ASSIGN:#736,18.406582176685333
+break;#333,18.398772180080414
+totalGets--;#1013,18.397440910339355
+case Token.ASSIGN:#470,18.396939277648926
+@Override#107,18.394490718841553
+final Name name;#1203,18.39309573173523
+String key = n.getString();#494,18.39281439781189
+case Token.FUNCTION:#1167,18.392505309161017
+Name(String name, Name parent, boolean inExterns) {#909,18.3907793446591
+void handleSetFromGlobal(JSModule module, Scope scope,#547,18.388580266167136
+while (i >= 0) {#810,18.383370208740235
+switch (anc.getType()) {#717,18.380971372127533
+if (isSet) {#421,18.379928668340046
+private int currentPreOrderIndex = 0;#68,18.377906452525746
+default:#490,18.376227855682373
+localSets++;#964,18.375348159245082
+int i = name.indexOf(".prototype.");#803,18.3697687625885
+if (getRefs().size() == 1) {#1055,18.364319059583877
+public Name getOwnSlot(String name) {#123,18.35484027862549
+private static JSDocInfo getDocInfoForDeclaration(Ref ref) {#1163,18.34681628999256
+@Override#948,18.336256345113117
+int globalSets = 0;#899,18.333923426541414
+this.module = module;#1223,18.329500993092854
+case Token.STRING_KEY:#478,18.326723098754883
+break;#1018,18.324983188084193
+List<Name> getNameForest() {#160,18.32174318486994
+if (!name.equals(anc.getFirstChild().getQualifiedName())) {#737,18.30993875861168
+case Token.DELPROP:#682,18.3035790125529
+switch (parent.getType()) {#384,18.302616596221924
+@Override#1249,18.29574426015218
+return this;#141,18.290238789149694
+this.source = original.source;#1234,18.289876529148646
+private boolean isClassDefiningCall(Node callNode) {#694,18.287169119890997
+case Token.ASSIGN:#385,18.26860384941101
+switch (n.getType()) {#327,18.266650093926323
+return new Ref(type, -1);#1298,18.266154988606772
+switch (parent.getType()) {#641,18.264740109443665
+prefix = name.substring(0, i);#807,18.257717985855905
+String name, Ref.Type type) {#771,18.255076015696805
+return declaration;#940,18.249244583977593
+GlobalNamespace(AbstractCompiler compiler, Node externsRoot, Node root) {#97,18.244357381548202
+if (props != null) {#1044,18.24361174447196
+for (String name : namespace.getNameIndex().keySet()) {#1333,18.243053027561732
+public Node getNode() {#1250,18.24154977798462
+int callGets = 0;#903,18.229195508089933
+Ref ref = refs.get(0);#1056,18.222366915808784
+case Token.STRING_KEY:#317,18.21752780675888
+void handleGet(JSModule module, Scope scope,#633,18.216488329569497
+this.stream = stream;#1325,18.210896889368694
+switch (n.getType()) {#509,18.20974384035383
+type = n == parent.getFirstChild()#662,18.207223285328258
+if (n == parent.getFirstChild()) {#652,18.20622199514638
+public StaticScope<JSType> getParentScope() {#113,18.20562547047933
+return null;#114,18.201297487531388
+break;#1003,18.198785509381974
+break;#973,18.197091738382976
+type = Ref.Type.DELETE_PROP;#683,18.1835701751709
+break;#660,18.17841829572405
+break;#1006,18.17275401524135
+return source == null ? "" : source.getName();#1269,18.16878546608819
+@Override#1155,18.166331609090168
+name = null;#319,18.157776832580566
+if (node == null) {#853,18.15149321922889
+if (gramps == null) {#453,18.149039336613246
+default:#412,18.14843578338623
+@Override#144,18.147778034210205
+private boolean isTypeDeclaration(Node n, Node parent) {#583,18.13602950837877
+if (n != parent.getFirstChild()) {#675,18.13598918914795
+if (parent.getFirstChild() == n) {#351,18.134969881602697
+switch (n.getType()) {#314,18.131949969700404
+case Token.GETTER_DEF:#315,18.129447102546692
+this.source = node.getStaticSourceFile();#1224,18.12247544527054
+name = gramps.getString();#468,18.12004762225681
+break;#962,18.118615706761677
+Node n, Node parent, String name) {#634,18.117396142747666
+default:#981,18.10456199645996
+return getOwnSlot(name);#119,18.103542154485528
+this.module = null;#1242,18.10137669245402
+return getFullName() + " (" + type + "): globalSets=" + globalSets +#1150,18.0993595463889
+if (parent != null) {#383,18.08938553754021
+return info != null && valueNode != null &&#587,18.075846254825592
+type = Ref.Type.CALL_GET;#654,18.07381675720215
+Name nameObj = getOrCreateName(name);#772,18.069912742165958
+switch (gramps.getType()) {#459,18.06281089782715
+StaticSymbolTable<GlobalNamespace.Name, GlobalNamespace.Ref> {#54,18.06028331409801
+this.node = node;#1221,18.05810236930847
+declaration = null;#989,18.047800268445695
+if (!info.node.isQualifiedName() && !NodeUtil.isObjectLitKey(info.node)) {#199,18.04261115018059
+if (n.isName() || n.isGetProp()) {#209,18.042286521510075
+return hasDeclaredTypeDescendant && type == Type.OBJECTLIT;#1138,18.03988672339398
+declaration = ref;#958,18.038403391838074
+if (t != Name.Type.OTHER) {#525,18.037279265267507
+case SET_FROM_GLOBAL:#956,18.02749644385444
+Ref set = new Ref(module, scope, n, nameObj,#610,18.022176697140647
+name = getNameForObjLitKey(gramps);#485,18.021241493225098
+return refs == null ? ImmutableList.<Ref>of() : refs;#1029,18.014207522074383
+if (maybeNewDecl.type == Ref.Type.SET_FROM_GLOBAL) {#992,18.013391945097183
+String topVarName = getTopVarName(name);#238,18.009961664676666
+parent.getFirstChild() == n) {#401,18.008789126078288
+if (parent != null) {#343,18.005046844482422
+new Ref(module, scope, n, nameObj, type, currentPreOrderIndex++));#776,18.00167268117269
+Type type;#896,18.000816072736466
+if (v == null && externsScope != null) {#263,17.999976529015434
+Ref get = new Ref(module, scope, n, nameObj,#616,17.99868110988451
+case Token.OBJECTLIT:#510,17.993964433670044
+deleteProps++;#979,17.98652948651995
+public JSDocInfo getJSDocInfo() {#1156,17.986284017562866
+this(compiler, null, root);#83,17.984115527226376
+this.type = type;#1225,17.98274572690328
+for (Name ancestor = parent; ancestor != null;#1119,17.976571700152228
+boolean isSet = false;#310,17.97602343559265
+Name node = new Name(name, this, inExterns);#920,17.975817862011137
+info.isInterface() && valueNode.isFunction() ||#589,17.975703592653627
+boolean isPropAssign, Name.Type type) {#549,17.969883108139037
+deleteProps--;#1020,17.963539235732135
+this.name = name;#1222,17.962991793950398
+return false;#945,17.959338506062824
+private boolean declaredType = false;#897,17.958996165882457
+case Token.GETPROP:#381,17.955711809794106
+Ref cloneAndReclassify(Type type) {#1293,17.955590629577635
+for (int i = 0; i < numLevelsToRemove; i++) {#822,17.954708099365234
+name = n.getQualifiedName();#407,17.948976466530247
+public StaticScope<JSType> getScope(Name slot) {#140,17.948750495910645
+boolean canCollapse() {#1065,17.9437162399292
+break;#355,17.943329069349502
+private Set<String> previousSymbolsInTree = ImmutableSet.of();#1315,17.939527424899016
+this.isInterestingSymbol = isInterestingSymbol;#1326,17.923744010925294
+type = determineGetTypeForHookOrBooleanExpr(module, scope, parent, name);#672,17.92224662444171
+final int preOrderIndex;#1206,17.916944122314455
+FUNCTION,#880,17.907167053222658
+collect(t.getModule(), t.getScope(), n);#301,17.90245575904846
+if (externsRoot != null) {#219,17.894655772617885
+return firstDotIndex == -1 ? name : name.substring(0, firstDotIndex);#250,17.88915291538945
+return parent == null ? baseName : parent.getFullName() + '.' + baseName;#935,17.886257454201026
+GlobalNamespace namespace = new GlobalNamespace(compiler, externs, root);#1330,17.885402603149416
+break;#681,17.884249959673202
+parent.getFirstChild() == n) {#373,17.883829243977864
+prefix = name.substring(0, name.length() - 10);#801,17.88209867477417
+break;#969,17.88197120030721
+break;#735,17.87612588065011
+break;#740,17.87211009434291
+Ref.Type.SET_FROM_LOCAL, currentPreOrderIndex++);#611,17.871378421783447
+this.name = null;#1245,17.867454767227173
+name = lvalue.getQualifiedName();#476,17.860213136672975
+public StaticSlot<JSType> getSymbol() {#1260,17.86008694592644
+Node lvalue = gramps.getFirstChild();#475,17.8599244980585
+return null;#499,17.856382264031303
+localSets--;#1005,17.855507233563593
+break;#330,17.853986978530884
+if (props == null) {#917,17.853961603982107
+return getFullName();#931,17.8537821336226
+return;#357,17.853168540530735
+if (parent != null && parent.shouldKeepKeys()) {#1096,17.85217561219868
+case Token.DELPROP:#751,17.84613545735677
+boolean isSimpleStubDeclaration() {#1054,17.844213632436897
+isSet = true;#363,17.843315578642347
+break;#673,17.834508759634836
+return name;#1261,17.832965321011013
+break;#965,17.83147160212199
+boolean hasExternsRoot() {#103,17.825819301605225
+if (parent.getFirstChild() == n) {#386,17.824379886899674
+this.module = module;#184,17.822866519292194
+List<Name> props;#888,17.81895694732666
+break;#365,17.811336464352078
+return module;#1265,17.80847888522678
+this.type = type;#1241,17.80561621983846
+Ref set = new Ref(module, scope, n, nameObj, Ref.Type.SET_FROM_GLOBAL,#557,17.80125612371108
+name = n.getString();#379,17.797918431899127
+handleSetFromGlobal(module, scope, n, parent, name, isPropAssign, type);#423,17.792254984378815
+isSet = true;#394,17.790848187037877
+return v != null && !v.isLocal();#266,17.77891902923584
+Node prev = parent;#715,17.778400507840242
+this.inExterns = inExterns;#913,17.765561474694145
+Name nameObj = getOrCreateName(name);#609,17.76379815269919
+Node n, Node parent, String name) {#792,17.76286374198066
+refs.add(ref);#1036,17.7613708789532
+Name nameObj = getOrCreateName(name);#554,17.759981548084934
+OBJECTLIT,#879,17.750890124927867
+OTHER,#883,17.747061491012573
+stream.println(String.format("%s: Added by %s", sym, passName));#1346,17.74080556438815
+Ref get = new Ref(module, scope, n, nameObj, Ref.Type.ALIASING_GET,#563,17.739684480609316
+if (!n.canCollapse()) {#1046,17.739556814494886
+isSet = true;#326,17.736438751220703
+break;#469,17.73541808128357
+int aliasingGets = 0;#901,17.73412847518921
+return;#398,17.730948872036404
+int firstDotIndex = name.indexOf('.');#249,17.728714606341192
+break;#977,17.7279900709788
+if (maybeHandlePrototypePrefix(module, scope, n, parent, name)) {#635,17.723413467407227
+return source;#1256,17.723407639397514
+type = Name.Type.GET;#332,17.719201131300494
+return Ref.Type.DIRECT_GET;#730,17.71239050951871
+this.type = type;#1235,17.709757566452026
+Node node;#1200,17.70190211704799
+if (parent != null && NodeUtil.isObjectLitKey(n)) {#816,17.701431350708006
+i = name.indexOf('.', i + 1);#812,17.693316749904465
+for (String sym : currentSymbols) {#1344,17.691497129552506
+int deleteProps = 0;#904,17.685089631514117
+this.name = original.name;#1232,17.684191363198416
+Name.Type getValueType(Node n) {#508,17.681442960103354
+type = Ref.Type.ALIASING_GET;#658,17.67983524615948
+type = Name.Type.SET;#335,17.67873460596258
+name = getNameForObjLitKey(n);#321,17.678634921709698
+this.preOrderIndex = index;#1227,17.676186289106095
+nameObj.setDeclaredType();#569,17.666824400424957
+String name) {#604,17.66584187746048
+if (isInterestingSymbol.apply(name)) {#1334,17.66322744460333
+Node rvalue = n.getFirstChild();#347,17.662364592918983
+return true;#1051,17.661619186401367
+int totalGets = 0;#902,17.66088797829368
+return Collections.unmodifiableCollection(getNameIndex().values());#147,17.657697253757053
+if (maybeHandlePrototypePrefix(module, scope, n, parent, name)) {#605,17.65693162037776
+if (maybeHandlePrototypePrefix(module, scope, n, parent, name)) {#550,17.655383366804855
+b.twin = a;#1286,17.650160642770622
+declaredType = true;#1118,17.649034413424406
+break;#391,17.648818969726562
+handleGet(module, scope, n, parent, prefix, Ref.Type.PROTOTYPE_GET);#827,17.644343160813854
+private boolean generated = false;#61,17.64357042312622
+private boolean inExterns;#59,17.642622205946182
+final Node node;#181,17.63457441329956
+String parentName = name.substring(0, i);#856,17.63077619801397
+boolean maybeHandlePrototypePrefix(JSModule module, Scope scope,#791,17.630740316290606
+throw new IllegalStateException();#982,17.626831531524658
+return globalSets == 0 && localSets > 0;#1114,17.621614456176758
+this.module = original.module;#1233,17.619795526776993
+break;#396,17.61690198050605
+return twin;#1273,17.611546834309895
+static class Ref implements StaticReference<JSType> {#1186,17.598765441349574
+type = rvalue == null ? Name.Type.OTHER : getValueType(rvalue);#348,17.594611194398666
+this.preOrderIndex = index;#1237,17.593310356140137
+type = Ref.Type.DIRECT_GET;#656,17.5813419342041
+void handleSetFromLocal(JSModule module, Scope scope, Node n, Node parent,#603,17.580392215562902
+ancestor.hasDeclaredTypeDescendant = true;#1121,17.577552695023385
+handleGet(module, scope, n, parent, name, type);#691,17.575708570934477
+Scope.Var v = s.getVar(name);#262,17.571719586849213
+|| globalSets != 1 || localSets != 0 || deleteProps != 0) {#1078,17.57097578048706
+return s.getParent() == null;#276,17.565374080951397
+node = parent.addProperty(name.substring(i + 1), inExterns);#858,17.55644469107351
+return declaredType;#1126,17.55579948425293
+docInfo = getDocInfoForDeclaration(ref);#959,17.55441419283549
+void handleGet(JSModule module, Scope scope, Node n, Node parent,#770,17.55368468874977
+return globalNames;#162,17.549120664596558
+currentPreOrderIndex++);#558,17.54903769493103
+for (AstChange info : newNodes) {#198,17.546090253194173
+break;#745,17.54305042539324
+info.hasEnumParameterType() && valueNode.isObjectLit());#590,17.541879776985414
+return classes != null;#697,17.54044498096813
+Ref.markTwins(set, get);#566,17.537430551317
+break;#684,17.53581462587629
+if (NodeUtil.isAssignmentOp(parent) &&#372,17.534333197275796
+isSet = true;#368,17.53257637932187
+a.twin = b;#1285,17.53099830334003
+int localSets = 0;#900,17.524672161449086
+if (gramps == null || NodeUtil.isFunctionExpression(parent)) {#360,17.52048980167934
+this.preOrderIndex = index;#1246,17.519546849387034
+props = new ArrayList<Name>();#918,17.50827693939209
+return externsRoot != null;#104,17.505630493164062
+throw new IllegalStateException("unexpected:" + n);#338,17.500624069800743
+generated = true;#226,17.498484015464783
+for (String sym : previousSymbolsInTree) {#1350,17.496943273042376
+(parent == null || parent.canCollapseUnannotatedChildNames()) &&#1067,17.494717880531592
+break;#340,17.48769203821818
+return true;#303,17.480880631340874
+type = determineGetTypeForHookOrBooleanExpr(module, scope, parent, name);#679,17.479267332288956
+this.node = original.node;#1231,17.468659741537913
+return parent == null;#1146,17.46710387143222
+stream.println(String.format("%s: Removed by %s", sym, passName));#1352,17.460982414983935
+scanFromNode(builder, info.module, info.scope, info.node);#202,17.452919483184814
+private void ensureGenerated() {#150,17.449745178222656
+return false;#1041,17.445749109441582
+throw new IllegalStateException();#1023,17.441159778171116
+props.add(node);#921,17.440903584162395
+JSDocInfo docInfo = null;#907,17.430376052856445
+Name node = nameMap.get(name);#852,17.428628981113434
+final boolean inExterns;#905,17.42424739490856
+if (isNestedAssign(parent)) {#614,17.422183429493625
+return node;#922,17.421390215555828
+return docInfo;#1157,17.420576095581055
+break;#477,17.420423189798992
+return getValueType(n.getLastChild());#520,17.419214339483354
+handleGet(module, scope, n, parent, name);#428,17.415820394243514
+(info.isConstructor() && valueNode.isFunction() ||#588,17.413110698972428
+return type == Type.OBJECTLIT && aliasingGets > 0;#1110,17.412854401961617
+break;#665,17.412293706621444
+return false;#1062,17.40986940595839
+handleSetFromLocal(module, scope, n, parent, name);#425,17.405169944763184
+type = Name.Type.OTHER;#369,17.405019481976826
+node = new Name(name, null, inExterns);#860,17.3942125638326
+inExterns = false;#223,17.3939226323908
+return parent.isAssign() &&#840,17.387828486306326
+return Name.Type.OBJECTLIT;#511,17.381159496307372
+return;#324,17.3745025907244
+nameObj.type = type;#555,17.37423221881573
+passName = "[Unknown pass]";#1341,17.37020242214203
+if (NodeUtil.isAssignmentOp(parent) &&#400,17.354400571187337
+break;#349,17.353394985198975
+return null;#454,17.352549639615145
+Ref.Type type = Ref.Type.DIRECT_GET;#639,17.3417245388031
+return baseName;#926,17.335382080078126
+type = Name.Type.FUNCTION;#364,17.334228625664345
+builder.collect(module, scope, n);#212,17.32874005181449
+break;#650,17.326687812805176
+Node n, Node parent, String name,#548,17.32420809128705
+type = Name.Type.OTHER;#395,17.320105353991192
+return nameMap;#171,17.316003441810608
+compiler.getCodingConvention().getClassesDefinedByCall(callNode);#696,17.314208392439216
+break;#370,17.313242382473415
+private class BuildGlobalNamespace implements NodeTraversal.Callback {#284,17.312795281410217
+if (!canCollapseUnannotatedChildNames() || totalGets > 0) {#1040,17.312451553344726
+Node second = n.getFirstChild().getNext();#523,17.311038103970613
+SET_FROM_LOCAL,#1192,17.308492183685303
+nameMap.put(name, node);#863,17.300607512978946
+boolean needsToBeStubbed() {#1113,17.296798485975998
+implements StaticScope<JSType>,#53,17.287753502527874
+boolean isNestedAssign(Node parent) {#839,17.28669605255127
+if (isNestedAssign(parent)) {#561,17.28635075513054
+Preconditions.checkArgument(#1281,17.2803099496024
+private final Node root;#57,17.276885850088938
+Ref.Type.ALIASING_GET, currentPreOrderIndex++);#617,17.274267401014054
+declaration = maybeNewDecl;#993,17.270621473138984
+boolean isPropAssign = false;#312,17.27017136982509
+this.node = node;#186,17.265604098637898
+Node gramps = parent.getParent();#359,17.26484691619873
+return;#361,17.264588642120362
+greatGramps.isObjectLit()) {#484,17.249893585840862
+int numLevelsToRemove;#797,17.24163370866042
+nameObj.addRef(set);#612,17.241200923919678
+Set<String> currentSymbols = Sets.newTreeSet();#1332,17.240057445707777
+break;#380,17.237003723780315
+if (externsRoot != null && n == externsRoot) {#297,17.235354506451152
+prev = anc;#754,17.212462425231934
+(a.type == Type.SET_FROM_GLOBAL || a.type == Type.SET_FROM_LOCAL ||#1283,17.20965964794159
+break;#1021,17.20936550412859
+(a.type == Type.ALIASING_GET || b.type == Type.ALIASING_GET) &&#1282,17.204220480389065
+isSet = true;#387,17.20407315959101
+return null;#1176,17.199136839972603
+Preconditions.checkState(parent.isObjectLit());#450,17.198900175094604
+public Node getRootNode() {#108,17.196949428982204
+nameObj.addRef(set);#559,17.192215578896658
+type = getValueType(n.getNext());#388,17.184953327836663
+ancestor = ancestor.parent) {#1120,17.180006345113117
+return Name.Type.FUNCTION;#513,17.176608336599248
+currentPreOrderIndex++);#564,17.161660353342693
+this.root = root;#100,17.158399295806884
+static class Name implements StaticSlot<JSType> {#877,17.15785469327654
+Node third = second.getNext();#528,17.150971677568222
+return type == Type.SET_FROM_GLOBAL || type == Type.SET_FROM_LOCAL;#1277,17.14982506632805
+Preconditions.checkNotNull(declaration);#1085,17.145632295047534
+isSet = true;#346,17.133331026349747
+ref.node.getParent().isExprResult()) {#1058,17.127951545715334
+if (!previousSymbolsInTree.contains(sym)) {#1345,17.125030001004536
+", aliasingGets=" + aliasingGets + ", callGets=" + callGets;#1152,17.124166905879974
+type = getValueType(n.getFirstChild());#329,17.122500603015606
+ensureGenerated();#135,17.11332380771637
+(globalSets > 0 || localSets > 0) &&#1068,17.10630722840627
+isPropAssign = true;#389,17.105810394287108
+GET,#881,17.10562825202942
+return this.type == Type.GET || this.type == Type.SET;#1073,17.103955393252164
+SET,#882,17.100130200386047
+return nameMap.get(name);#125,17.0887664159139
+Name parent = getOrCreateName(parentName);#857,17.081595284598215
+isSet = true;#352,17.063844888106637
+break;#336,17.061256885528564
+ensureGenerated();#124,17.05968749523163
+Ref.markTwins(set, get);#619,17.059658421410454
+DIRECT_GET,       // Prevents a name from being completely eliminated#1195,17.0572749710083
+if (!currentSymbols.contains(sym)) {#1351,17.05324481782459
+return Ref.Type.ALIASING_GET;#756,17.04850404402789
+return (parent == null || parent.canCollapseUnannotatedChildNames());#1105,17.046026727427606
+this.type = Type.OTHER;#912,17.039108140128
+return true;#828,17.03613016340468
+public Iterable<Name> getAllSymbols() {#145,17.03194433848063
+Node refParent = ref.node.getParent();#1165,17.029727433857165
+Node valueNode = NodeUtil.getRValueOfLValue(n);#584,17.020088859226394
+ensureGenerated();#161,17.017119765281677
+final Name parent;#887,17.01625370979309
+refs = Lists.newArrayList();#1034,17.014819145202637
+this.baseName = name;#910,16.98682190821721
+return node;#1251,16.983256022135418
+break;#411,16.979503472646076
+return Ref.Type.ALIASING_GET;#738,16.97582130432129
+return name + '.' + key;#496,16.96669997109307
+deleteProps == 0);#1069,16.96532827615738
+ensureGenerated();#170,16.96484398841858
+ALIASING_GET,     // Prevents a name's properties from being collapsed#1194,16.950591527498684
+b.type == Type.SET_FROM_GLOBAL || b.type == Type.SET_FROM_LOCAL));#1284,16.947180128097536
+return Collections.unmodifiableList(slot.getRefs());#136,16.941755453745525
+return compiler.getTypeRegistry().getNativeObjectType(GLOBAL_THIS);#130,16.939469876496688
+private void process() {#218,16.938742773873464
+this.parent = parent;#911,16.934094190597534
+return Name.Type.OTHER;#531,16.927768047039326
+nameObj.addRef(get);#565,16.922686994075775
+for (Node anc : parent.getAncestors()) {#716,16.920067954063416
+scanFromNode(builder, module, scope, n.getParent());#210,16.913724445161364
+type = Ref.Type.ALIASING_GET;#686,16.910548051198322
+return;#636,16.909110927581786
+Ref.Type determineGetTypeForHookOrBooleanExpr(#713,16.894228282727692
+Node gramps = parent.getParent();#452,16.88328399658203
+JSDocInfo info = NodeUtil.getBestJSDocInfo(n);#585,16.882069931030273
+return;#418,16.880233097076417
+externsScope = t.getScope();#298,16.87761714723375
+return;#409,16.87403188432966
+", localSets=" + localSets + ", totalGets=" + totalGets +#1151,16.863433774312337
+@Override public void process(Node externs, Node root) {#1329,16.863219763103285
+return node;#865,16.855164739820694
+return getValueType(third);#529,16.843549728393555
+Name.Type type = Name.Type.OTHER;#311,16.843437307021198
+static class AstChange {#178,16.841094289507186
+refParent.getJSDocInfo() : ref.node.getJSDocInfo();#1172,16.836903678046333
+ensureGenerated();#146,16.810311794281006
+type = getValueType(n.getNext());#353,16.80861032420191
+return Ref.Type.DELETE_PROP;#752,16.782340844472248
+: Ref.Type.ALIASING_GET;#664,16.778312110900877
+SET_FROM_GLOBAL,#1191,16.748570187886557
+return null;#487,16.740777079264323
+nameObj.addRef(get);#618,16.74065738916397
+public void visit(NodeTraversal t, Node n, Node parent) {}#290,16.738446553548176
+return null;#491,16.730200033921463
+this.externsRoot = externsRoot;#99,16.729017674922943
+return false;#1079,16.68751196427779
+private final Node externsRoot;#58,16.671697902679444
+return null;#466,16.661269187927246
+Node parent = n.getParent();#307,16.660228661128453
+CALL_GET,         // Prevents a name from being collapsed if never set#1196,16.658944031287884
+return refParent.getJSDocInfo();#1169,16.657410621643066
+return Ref.Type.ALIASING_GET;#743,16.643841667175295
+isSet = true;#374,16.633677980174188
+public boolean shouldTraverse(NodeTraversal t, Node n, Node parent) {#294,16.629551431407098
+nameObj.addRef(#775,16.624618848164875
+boolean canCollapseUnannotatedChildNames() {#1076,16.622006098429363
+break;#489,16.62173366546631
+break;#980,16.61579505602519
+inExterns = true;#220,16.606414281404934
+Node greatGramps = gramps.getParent();#457,16.599536839653464
+SubclassRelationship classes =#695,16.576767524083454
+v = externsScope.getVar(name);#264,16.55954435136583
+return Ref.Type.DIRECT_GET;#733,16.558355172475178
+numLevelsToRemove = 1;#800,16.557253003120422
+return Ref.Type.ALIASING_GET;#748,16.555392875671387
+previousSymbolsInTree = currentSymbols;#1356,16.547701517740887
+type = Name.Type.OTHER;#375,16.54286736708421
+Node parent = n.getParent();#449,16.534151009150914
+return root.getParent();#109,16.521488857269286
+isSet = true;#402,16.505422053129777
+numLevelsToRemove = 2;#808,16.503277122974396
+break;#750,16.494704791477748
+NodeTraversal.traverse(compiler, root, new BuildGlobalNamespace());#225,16.443429407866105
+return;#413,16.429750045140583
+numLevelsToRemove++;#811,16.414955139160156
+DELETE_PROP,      // Prevents a name from being collapsed at all.#1197,16.3953600587516
+return false;#1087,16.356464992869984
+private void scanFromNode(#206,16.349454522132874
+break;#994,16.327724032931858
+type = Name.Type.OTHER;#403,16.325964890993557
+return t;#526,16.285060183207193
+return;#551,16.2838173866272
+n = n.getFirstChild();#824,16.250675559043884
+return false;#1102,16.230989542874422
+!parent.getParent().isExprResult();#841,16.20182780424754
+return;#606,16.145380592346193
+NodeTraversal.traverse(compiler, externsRoot, new BuildGlobalNamespace());#221,16.11942492212568
+return false;#1097,16.100463260303844
+return true;#1091,16.09262145649303
+? Ref.Type.DIRECT_GET#663,16.077372687203543
+return false;#805,16.047222137451172
+void scanNewNodes(List<AstChange> newNodes) {#195,16.039028220706516
+globalNames.add(node);#861,15.99178263720344
+return false;#1047,15.97478853861491
+process();#152,15.963886499404907
+return true;#819,15.953813986344771
+return ref.node == refParent.getFirstChild() ?#1171,15.898874130249023
+continue;#200,15.856290054321288
+parent = n;#823,15.811359405517578
+return true;#1059,15.688808587881235
+currentSymbols.add(name);#1335,15.330871632224635
+break;#687,15.121163095746722

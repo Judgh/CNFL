@@ -1,0 +1,56 @@
+public class RectangularCholeskyDecomposition {#45,15.867656230926514
+public RectangularCholeskyDecomposition(RealMatrix matrix, double small)#62,15.272920177096413
+private final RealMatrix root;#48,15.034163570404052
+public RealMatrix getRootMatrix() {#159,14.859652439753214
+throws NonPositiveDefiniteMatrixException {#63,14.734344482421875
+final int order = matrix.getRowDimension();#65,13.705184610266434
+root = MatrixUtils.createRealMatrix(order, r);#144,13.522474202242764
+final double sqrt = FastMath.sqrt(c[ir][ir]);#121,13.227674946640477
+if (swap[r] != r) {#90,13.069333988687266
+throw new NonPositiveDefiniteMatrixException(c[index[i]][index[i]], i, small);#109,13.057028636932372
+throw new NonPositiveDefiniteMatrixException(c[ir][ir], ir, small);#101,12.915654349327088
+public int getRank() {#170,12.871295356750489
+for (boolean loop = true; loop;) {#76,12.856055951118469
+private int rank;#51,12.787317991256714
+final double[][] c = matrix.getData();#66,12.751257038116455
+if (c[ir][ir] < small) {#98,12.699848969777426
+if (c[index[i]][index[i]] < -small) {#106,12.587009919317145
+final double inverse  = 1 / sqrt;#123,12.573703949268047
+final double[][] b = new double[order][order];#67,12.457940795204856
+for (int i = r + 1; i < order; ++i) {#80,12.391633559917581
+for (int j = 0; j < r; ++j) {#146,12.27254092251813
+index[swap[r]] = tmp;#93,12.24230355482835
+for (int i = 0; i < order; ++i) {#145,12.23977980406388
+b[r][r] = sqrt;#122,12.215995531815748
+for (int i = r; i < order; ++i) {#105,12.168483057329732
+for (int i = 0; i < order; ++i) {#71,12.148618159086809
+final double f = c[ii][ij] - e * b[j][r];#131,12.139928108037905
+for (int j = r + 1; j < i; ++j) {#129,12.064857431360194
+for (int i = r + 1; i < order; ++i) {#124,12.015252228939172
+final double e = inverse * c[ii][ir];#126,11.988840743899345
+int ir = index[r];#97,11.88236201436896
+final int ii = index[i];#125,11.711898752621241
+index[r] = index[swap[r]];#92,11.69020073989342
+++r;#115,11.599907875061035
+if (r == 0) {#100,11.546297695325768
+c[ii][ii] -= e * e;#128,11.491072762397028
+c[ij][ii] = f;#133,11.460625966389975
+int isi = index[swap[i]];#82,11.440469026565552
+root.setEntry(index[i], j, b[i][j]);#147,11.419638113542037
+if (c[ii][ii] > c[isi][isi]) {#83,11.387727126479149
+c[ii][ij] = f;#132,11.37431053681807
+int r = 0;#75,11.275550475487343
+final int ij = index[j];#130,11.246798313025272
+int[] index = new int[order];#70,11.234316377078786
+rank = r;#143,11.2152472337087
+loop = false;#116,11.138023805618285
+int[] swap  = new int[order];#69,11.087802833980984
+int tmp = index[r];#91,10.934266422105873
+b[i][r] = e;#127,10.879378351671942
+swap[r] = r;#79,10.795210085417095
+return root;#160,10.760867508974941
+loop = ++r < order;#138,10.344295190728229
+swap[r] = i;#84,10.276366021898058
+int ii  = index[i];#81,10.127631107966105
+return rank;#171,9.653197288513184
+index[i] = i;#72,9.48546236439755

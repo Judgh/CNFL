@@ -1,0 +1,490 @@
+if (zone == getZone()) {#319,20.362308144569397
+public DateTimeZone getZone() {#290,20.075726588567097
+{#328,20.05191116333008
+if (zone == null) {#316,20.029297002156575
+{#549,19.965011596679688
+public Chronology withZone(DateTimeZone zone) {#315,19.835589468479156
+{#353,19.804553985595703
+if ((base = getBase()) != null) {#330,19.774822486074346
+{#965,19.64861848619249
+{#525,19.599567413330078
+{#540,19.559064441257053
+{#534,19.54899109734429
+private long iGapDuration;#260,19.548989035866477
+if ((base = getBase()) != null) {#292,19.489525343242445
+if (getBase() != null) {#485,19.477234952590045
+if ((base = getBase()) != null) {#355,19.46825253336053
+public int getMaximumValue() {#832,19.465499623616537
+{#575,19.419768651326496
+zone = DateTimeZone.getDefault();#317,19.38226150331043
+public DurationField getLeapDurationField() {#796,19.317120393117268
+public int getMinimumValue() {#801,19.316099294026692
+{#953,19.305330912272137
+throws IllegalArgumentException#352,19.250021127554085
+public int get(long instant) {#652,19.24840122461319
+return withZone(DateTimeZone.UTC);#306,19.245377434624565
+long newInstant;#95,19.227605024973553
+if (this == obj) {#417,19.21713021596273
+public DurationField getDurationField() {#772,19.188289284706116
+public long add(long instant, int value) {#973,19.183978231329668
+if (zone == DateTimeZone.UTC) {#214,19.153371769448984
+if (valueToAdd == 0) {#695,19.125748089381627
+public boolean equals(Object obj) {#416,19.089435895284016
+public long add(long instant, long value) {#995,19.073150433992083
+throws IllegalArgumentException#327,19.058991212111252
+public static GJChronology getInstance(DateTimeZone zone) {#155,19.052018928527833
+public long add(long instant, int value) {#684,19.043919462906686
+public long set(long instant, int value) {#718,19.034478187561035
+public String getAsShortText(int fieldValue, Locale locale) {#680,19.02156114578247
+public long add(long instant, int value) {#1098,19.0081181777151
+private long iCutoverMillis;#259,19.002644856770832
+public DurationField getRangeDurationField() {#776,18.99827693490421
+return base.getZone();#293,18.99121814303928
+public int getMaximumValue(long instant) {#838,18.98950958251953
+public String toString() {#447,18.978456687927245
+if (getMinimumDaysInFirstWeek() != 4) {#464,18.96959940592448
+if (obj instanceof GJChronology) {#420,18.95792245864868
+return newInstant;#100,18.90395991007487
+public String getAsText(int fieldValue, Locale locale) {#668,18.9023205301036
+public long add(long instant, long value) {#688,18.8997355511314
+protected DurationField iDurationField;#612,18.892856979370116
+if (durationField == null) {#967,18.891333961486815
+if (instant >= iCutover) {#996,18.881917693398215
+public int getMinimumValue(long instant) {#1067,18.854729228549534
+sb.append(getZone().getID());#451,18.82269939623381
+synchronized (cCache) {#199,18.816028663090297
+GJChronology chrono;#198,18.812954545021057
+public long roundFloor(long instant) {#872,18.81236113442315
+if (iCutoverMillis != DEFAULT_CUTOVER.getMillis()) {#453,18.774836199624197
+public long add(long instant, long value) {#1102,18.771647603888262
+zone = DateTimeUtils.getZone(zone);#190,18.75014262199402
+private class CutoverField extends BaseDateTimeField {#604,18.734944534301757
+public int getMinimumValue(long instant) {#815,18.72745402654012
+long instant;#362,18.716778321699664
+if (gregorianCutover == null) {#192,18.71121729744805
+public int getMinimumDaysInFirstWeek() {#404,18.693631649017334
+throw new IllegalArgumentException();#490,18.68854472511693
+if (instant >= iCutover) {#750,18.675979007374156
+if (rangeField == null) {#642,18.66393756866455
+public int getMaximumShortTextLength(Locale locale) {#907,18.66055402301607
+public long set(long instant, String text, Locale locale) {#749,18.660480748052183
+public long getDateTimeMillis(int year, int monthOfYear, int dayOfMonth,#349,18.65486083984375
+long cutoverMillis, boolean convertByWeekyear) {#631,18.634631689857034
+public int getMaximumValue(long instant) {#1075,18.629821989271377
+public boolean isLeap(long instant) {#780,18.628996955023872
+public boolean isLenient() {#648,18.628798039754233
+return iGregorianField.getMaximumValue(instant);#840,18.615569739506164
+if (instant >= iCutover) {#888,18.614077351310037
+getMinimumDaysInFirstWeek() == chrono.getMinimumDaysInFirstWeek() &&#423,18.610045310778496
+public static GJChronology getInstance(#240,18.60424028124128
+protected long julianToGregorian(long instant) {#912,18.598963601248606
+sb.append("GJChronology");#449,18.596684706838506
+DateTimeFormatter printer;#455,18.582825978597004
+public int getMaximumTextLength(Locale locale) {#902,18.581333923339844
+return DateTimeZone.UTC;#295,18.577897389729817
+return to.getDateTimeMillis#84,18.57276713848114
+if (instant < iCutoverMillis) {#378,18.56436824798584
+if (gregorianCutover == DEFAULT_CUTOVER.getMillis()) {#246,18.56260331471761
+sb.append('[');#450,18.561393864949544
+if (chronos == null) {#201,18.552946090698242
+int millisOfDay)#326,18.549486875534058
+if (instant >= iCutover) {#974,18.5468900420449
+protected DurationField iRangeDurationField;#613,18.544453024864197
+return iJulianField.getMinimumValue(instant);#817,18.52588150419038
+if (instant >= iCutover) {#719,18.523244164206766
+instant = julianToGregorian(instant);#1010,18.50993249151442
+if (gregorian.millisOfDay().get(iCutoverMillis) == 0) {#506,18.4899143854777
+instant = gregorianToJulian(instant);#755,18.482385661866928
+private Object readResolve() {#286,18.481452335010875
+public int getLeapAmount(long instant) {#788,18.476113520170514
+try {#363,18.473282527923583
+instant = julianToGregorian(instant);#988,18.470687097973293
+if (get(instant) != value) {#727,18.46453340591923
+DateTimeZone zone,#241,18.45398240930894
+DateTimeZone zone,#186,18.449023415060605
+public String getAsText(long instant, Locale locale) {#660,18.44858273592862
+private final ImpreciseCutoverField iField;#1091,18.44500762537906
+if (instant >= iCutover) {#873,18.440976186232135
+instant = julianToGregorian(instant);#895,18.43830982844035
+private static class LinkedDurationField extends DecoratedDurationField {#1088,18.433974530961777
+long instant = 0L;#862,18.4294007619222
+iDurationField = durationField;#970,18.409305723089922
+iRangeDurationField = rangeField;#645,18.407883882522583
+DurationField durationField, long cutoverMillis)#952,18.405750856166932
+Instant cutoverInstant) {#269,18.399603166887836
+Instant cutoverInstant) {#279,18.39765557935161
+rangeField = julianField.getRangeDurationField();#643,18.39371835774389
+instant = julianToGregorian(instant);#764,18.38987551795112
+final boolean iConvertByWeekyear;#610,18.363051919376147
+if (monthOfYear != 2 || dayOfMonth != 29) {#368,18.35848984894929
+newInstant = to.millisOfDay().set(newInstant, from.millisOfDay().get(instant));#99,18.35446379525321
+if (get(instant) != value) {#740,18.353589057922363
+julian.dayOfYear(), fields.dayOfYear, cutover);#537,18.344553658456512
+instant = gregorianToJulian(instant);#979,18.329657210244072
+public static synchronized GJChronology getInstance(#185,18.32603391011556
+for (int i = 0, isize = partial.size(); i < isize; i++) {#863,18.32416040757123
+if (instant >= iCutover) {#839,18.315236958590422
+return;#486,18.31254986354283
+if (DateTimeUtils.isContiguous(partial)) {#698,18.31107920866746
+instant = gregorianToJulian(instant);#1001,18.308105919096207
+long instant = iGregorianChronology.getDateTimeMillis#335,18.296927617943805
+sb.append(getMinimumDaysInFirstWeek());#466,18.2961167494456
+private final class ImpreciseCutoverField extends CutoverField {#936,18.2956985367669
+int max = iJulianField.getMaximumValue(instant);#843,18.290627550195765
+fields.dayOfMonth = cf;#579,18.28855323791504
+if (values[i] <= field.getMaximumValue(instant)) {#865,18.281989646680426
+public int getDifference(long minuendInstant, long subtrahendInstant) {#1017,18.279897972389502
+protected void assemble(Fields fields) {#473,18.278803238501915
+return "GJ".hashCode() * 11 + getZone().hashCode() +#436,18.278041546161358
+final DateTimeField iJulianField;#607,18.275668873506433
+julian.weekOfWeekyear(), fields.weekOfWeekyear, cutover, true);#543,18.271299697257376
+if (instant < iCutoverMillis) {#337,18.265827465057374
+public static GJChronology getInstance() {#139,18.259020614624024
+iDurationField = gregorianField.getDurationField();#639,18.253510932922364
+fields.weekyearOfCentury = new ImpreciseCutoverField(#568,18.253175531114852
+if (instant - iGapDuration >= iCutover) {#986,18.250222587585448
+durationField = new LinkedDurationField(iDurationField, this);#968,18.24410032456921
+if (instant >= iCutover) {#734,18.240580008580135
+if (minDaysInFirstWeek == chrono.getMinimumDaysInFirstWeek() &&#207,18.23625647716033
+printer = ISODateTimeFormat.dateTime();#459,18.234677844577366
+if (instant >= iCutover) {#984,18.23161818430974
+public static GJChronology getInstance(#170,18.226341247558594
+return julianToGregorianByYear(instant);#916,18.220566026095685
+instant = field.set(instant, values[i]);#866,18.21940956693707
+iJulianChronology = julian;#481,18.211835158498662
+JulianChronology julian = (JulianChronology)params[0];#476,18.208082340381765
+sb.append(",mdfw=");#465,18.203833953193996
+public String getAsShortText(long instant, Locale locale) {#672,18.203146022299062
+iField = dateTimeField;#1095,18.20217554192794
+fields.centuries = fields.centuryOfEra.getDurationField();#560,18.20138192176819
+private JulianChronology iJulianChronology;#255,18.200513184070587
+return getMaximumValue(instant);#869,18.19050736427307
+if (instant + iGapDuration < iCutover) {#754,18.1794554574149
+return instant;#346,18.171431281349875
+if (instant - iGapDuration >= iCutover) {#736,18.164705739702498
+int minDaysInFirstWeek) {#188,18.163849973678587
+public long getDifferenceAsLong(long minuendInstant, long subtrahendInstant) {#1037,18.160576557290966
+return sb.toString();#470,18.156889406840005
+private GJChronology(Chronology base,#276,18.15564477443695
+fields.dayOfYear = new CutoverField(#536,18.15511475438657
+return true;#418,18.15169932047526
+if (instant < iCutover) {#816,18.150024284016002
+instant = julianToGregorian(instant);#737,18.14838761753506
+instant = iJulianChronology.getDateTimeMillis#339,18.14560941549448
+iGregorianField.getMaximumTextLength(locale));#904,18.138398635678175
+return iJulianField.getLeapAmount(instant);#792,18.131649939219155
+fields.yearOfCentury = new ImpreciseCutoverField(#555,18.13087064248544
+if (instant - iGapDuration >= iCutover) {#763,18.125850187029158
+if (instant >= iCutover) {#1068,18.12581170688976
+if (instant >= iCutover) {#653,18.116580789739434
+return gregorianToJulianByYear(instant);#924,18.111610083744445
+return getInstance(zone, DEFAULT_CUTOVER, 4);#156,18.106703136278234
+if (instant + iGapDuration < iCutover) {#723,18.099584061758858
+if (minuendInstant >= iCutover) {#1018,18.09684149424235
+return false;#426,18.095243453979492
+return iJulianField.get(instant);#656,18.09461318122016
+GJChronology chrono = (GJChronology) obj;#421,18.09452510702199
+minuendInstant = julianToGregorian(minuendInstant);#1052,18.090968507708926
+private Instant iCutoverInstant;#257,18.090537418018688
+DurationField rangeField = gregorianField.getRangeDurationField();#641,18.089635919641566
+public Chronology withUTC() {#305,18.089581142772328
+fields.weekyears = fields.weekyear.getDurationField();#570,18.085551005143387
+iGregorianChronology = gregorian;#482,18.08037737796181
+LinkedDurationField(DurationField durationField, ImpreciseCutoverField dateTimeField) {#1093,18.076977006320295
+return getMaximumValue(instant);#857,18.076896238327027
+newInstant = to.dayOfWeek().set(newInstant, from.dayOfWeek().get(instant));#98,18.075250192122027
+if (instant >= iCutover) {#789,18.069940740411933
+if (instant >= iCutover) {#661,18.066862539811567
+public static GJChronology getInstanceUTC() {#123,18.058255434036255
+for (int i = 0, isize = partial.size(); i < isize; i++) {#700,18.05675318366603
+int min = iGregorianField.getMinimumValue(instant);#820,18.041407055324978
+return getInstance(DateTimeZone.UTC, DEFAULT_CUTOVER, 4);#124,18.0410382659347
+return getInstance(DateTimeZone.getDefault(), DEFAULT_CUTOVER, 4);#140,18.03653601237706
+if (instant + iGapDuration < iCutover) {#1000,18.03331674848284
+public long getDateTimeMillis(int year, int monthOfYear, int dayOfMonth,#325,18.032129211425783
+if (instant >= iCutover) {#781,18.02866441553289
+hourOfDay, minuteOfHour, secondOfMinute, millisOfSecond);#382,18.027637454441617
+if (minuendInstant >= iCutover) {#1038,18.0247403383255
+instant = iJulianField.add(instant, value);#983,18.017742411295572
+if (instant >= iCutover) {#848,18.01592679457231
+instant = iJulianField.add(instant, value);#1005,18.01475191116333
+if (instant < iCutover) {#825,18.007381785999645
+public long roundCeiling(long instant) {#887,18.005824841951068
+if (instant - iGapDuration >= iCutover) {#1008,18.003837421962192
+instant = gregorianToJulian(instant);#878,17.99846076965332
+getZone().equals(chrono.getZone());#424,17.996556103229523
+return super.add(partial, fieldIndex, values, valueToAdd);#706,17.993935853242874
+if (instant - iGapDuration >= iCutover) {#894,17.987964030674526
+fields.yearOfEra = new ImpreciseCutoverField(#553,17.9864747789171
+return iGregorianField.get(instant);#654,17.985454312077277
+if (instant + iGapDuration < iCutover) {#978,17.984803444998605
+long instant = GJChronology.getInstanceUTC().set(partial, 0L);#856,17.98321634531021
+return julianToGregorianByWeekyear(instant);#914,17.975642903645834
+return iRangeDurationField;#777,17.973030620151096
+public int getMaximumValue(ReadablePartial partial, int[] values) {#860,17.972471656799318
+if (instant >= iCutover) {#673,17.97005440972068
+Instant cutoverInstant;#191,17.961019075833836
+public int getMaximumValue(ReadablePartial partial) {#855,17.955667268662225
+if (instant < iCutover) {#875,17.95124754538903
+public int getMinimumValue(ReadablePartial partial, int[] values) {#811,17.948271560668946
+private GJChronology(JulianChronology julian,#267,17.94748282432556
+public int getMinimumValue(ReadablePartial partial) {#807,17.94682402837844
+instant = iJulianChronology.getDateTimeMillis#380,17.946489297426663
+public int[] add(ReadablePartial partial, int fieldIndex, int[] values, int valueToAdd) {#692,17.944652875264484
+return iDurationField;#773,17.9439557019402
+hourOfDay, minuteOfHour, secondOfMinute, millisOfSecond);#358,17.937493569510323
+final DateTimeField iGregorianField;#608,17.931210349587833
+fields.years = fields.year.getDurationField();#552,17.928396622339886
+if (instant + iGapDuration < iCutover) {#877,17.923181670052664
+if (instant >= iCutover) {#1006,17.9229164490333
+return iJulianField.getMaximumValue(instant);#1079,17.917305157102387
+fields.weekyear = new ImpreciseCutoverField(#566,17.916100883483885
+if (julian.getMinimumDaysInFirstWeek() != gregorian.getMinimumDaysInFirstWeek()) {#489,17.91212609234978
+protected long gregorianToJulian(long instant) {#920,17.911351658049085
+fields.weekOfWeekyear = new CutoverField(#542,17.910927414894104
+instant = iGregorianField.set(instant, min);#824,17.90840321320754
+return iJulianField.getMinimumValue(instant);#1071,17.902851565130824
+long julianToGregorianByYear(long instant) {#583,17.898762967851425
+return iGregorianChronology.getMinimumDaysInFirstWeek();#405,17.89666416334069
+return iJulianField.getAsText(instant, locale);#664,17.89458662463773
+public int getDifference(long minuendInstant, long subtrahendInstant) {#710,17.891945203145344
+sb.append(']');#468,17.889086278279624
+instant = iJulianField.roundFloor(instant);#882,17.88384110132853
+DateTimeZone zone,#171,17.8822899425731
+Instant cutoverInstant;#245,17.88166222205529
+instant = iGregorianField.roundFloor(instant);#874,17.88123369216919
+fields.halfdayOfDay = new CutoverField(julian.halfdayOfDay(), fields.halfdayOfDay, iCutoverMillis);#521,17.880494718966276
+return iJulianField.isLeap(instant);#784,17.879227835556556
+return min;#829,17.87805150349935
+Instant cutoverInstant = (Instant)params[2];#478,17.877591562271117
+long instant = 0L;#699,17.870930151505902
+fields.year = new ImpreciseCutoverField(#550,17.870338280995686
+public long getDifferenceAsLong(long minuendInstant, long subtrahendInstant) {#714,17.86809464158683
+if (withUTC().dayOfYear().remainder(iCutoverMillis) == 0) {#456,17.864983749389648
+julian.monthOfYear(), fields.monthOfYear, iCutoverMillis);#563,17.859252214431763
+if (instant >= iCutover) {#761,17.85850319495568
+return iGregorianField.getDifferenceAsLong(minuendInstant, subtrahendInstant);#1040,17.85836835134597
+int minDaysInFirstWeek) {#243,17.851122331619262
+if (instant >= iCutover) {#1076,17.849556055935945
+instant = iGregorianChronology.getDateTimeMillis#371,17.849537702707146
+ImpreciseCutoverField(DateTimeField julianField, DateTimeField gregorianField, long cutoverMillis) {#942,17.846528404637386
+private static final long serialVersionUID = 3410248757173576441L;#937,17.844078100644627
+newInstant = to.weekyear().set(0, from.weekyear().get(instant));#96,17.841322231292725
+julian.year(), fields.year, iCutoverMillis);#551,17.836392492055893
+fields.secondOfMinute = new CutoverField(julian.secondOfMinute(), fields.secondOfMinute, iCutoverMillis);#512,17.833344791246496
+instant = gregorianToJulian(instant);#724,17.832794507344563
+ImpreciseCutoverField(DateTimeField julianField, DateTimeField gregorianField,#962,17.830129531122022
+fields.monthOfYear = new ImpreciseCutoverField(#562,17.82975849738488
+newInstant = to.weekOfWeekyear().set(newInstant, from.weekOfWeekyear().get(instant));#97,17.82768271309989
+instant = add(instant, valueToAdd);#703,17.827660666571724
+if (instant >= iCutover) {#892,17.827517142662636
+if (instant < iCutover) {#998,17.826389679541954
+instant = iGregorianField.add(instant, value);#997,17.81522487004598
+fields.clockhourOfHalfday = new CutoverField(julian.clockhourOfHalfday(),#519,17.813364219665527
+Chronology base;#354,17.801097472508747
+CutoverField cf = new CutoverField#576,17.795790990193684
+return iGregorianField.getLeapDurationField();#797,17.795414447784424
+if (instant < iCutover) {#976,17.794248690971962
+Chronology chrono = GJChronology.getInstanceUTC();#861,17.792411380343967
+printer = ISODateTimeFormat.date();#457,17.789783000946045
+if (instant >= iCutoverMillis) {#341,17.789016167322796
+hourOfDay, minuteOfHour, secondOfMinute, millisOfSecond);#366,17.786259514944895
+julian.weekyearOfCentury(), fields.weekyearOfCentury, fields.weekyears, iCutoverMillis);#569,17.785940318637422
+return instant;#992,17.784365463256837
+if (instant < iCutover) {#721,17.78324688397921
+if (instant >= iCutoverMillis) {#374,17.780291199684143
+return max;#852,17.779756291707358
+minuendInstant = julianToGregorian(minuendInstant);#1032,17.77758774612889
+(julian.dayOfMonth(), fields.dayOfMonth, iCutoverMillis);#577,17.776707932755755
+return iJulianField.getMinimumValue();#804,17.775246966968883
+hourOfDay, minuteOfHour, secondOfMinute, millisOfSecond);#373,17.774129894801547
+if (instant < iCutover) {#752,17.77340206733117
+cutoverInstant = DEFAULT_CUTOVER;#193,17.77050851738971
+fields.months = fields.monthOfYear.getDurationField();#564,17.770091753739578
+return chrono;#210,17.766719545636857
+if (instant >= iCutoverMillis) {#383,17.765583793322246
+instant = iGregorianField.add(instant, value);#975,17.764809354146323
+fields.centuryOfEra = new ImpreciseCutoverField(#558,17.764653347156667
+iGregorianField.getMaximumShortTextLength(locale));#909,17.76408495221819
+julian.yearOfEra(), fields.yearOfEra, fields.years, iCutoverMillis);#554,17.761892523084367
+julian.yearOfCentury(), fields.yearOfCentury, fields.years, iCutoverMillis);#556,17.753387564704532
+cf.iRangeDurationField = fields.months;#578,17.747374576071035
+Chronology base;#329,17.739813168843586
+julian.weekyear(), fields.weekyear, null, iCutoverMillis, true);#567,17.717149358046683
+return iGregorianField.getMinimumValue(instant);#1069,17.711652262457484
+return base.getDateTimeMillis(year, monthOfYear, dayOfMonth, millisOfDay);#331,17.71142684088813
+long julianToGregorianByWeekyear(long instant) {#591,17.71128579189903
+instant = iGregorianChronology.getDateTimeMillis#364,17.71009657933162
+cutoverInstant = null;#247,17.7065200275845
+if (subtrahendInstant >= iCutover) {#1019,17.705028125217982
+public int hashCode() {#435,17.704089736938478
+DateTimeField field = partial.getFieldType(i).getField(chrono);#864,17.702294622148788
+return iGregorianField.getAsShortText(instant, locale);#674,17.70135134458542
+julian.centuryOfEra(), fields.centuryOfEra, iCutoverMillis);#559,17.69369067643818
+fields.copyFieldsFrom(gregorian);#500,17.69297167989943
+return gregorianToJulianByWeekyear(instant);#922,17.689157899220785
+sb.append(",cutover=");#454,17.687463023445822
+ArrayList<GJChronology> chronos = cCache.get(zone);#200,17.68180207283266
+instant = iJulianField.set(instant, value);#733,17.679366652170817
+for (int i = chronos.size(); --i >= 0;) {#205,17.67729476003936
+return getInstance(getZone(), iCutoverInstant, getMinimumDaysInFirstWeek());#287,17.676624156810618
+return iGregorianField.getMaximumValue();#835,17.67655676061457
+from.millisOfDay().get(instant));#88,17.6744966506958
+return false;#649,17.673484547932944
+min = iGregorianField.get(iCutover);#826,17.667673670012377
+return iJulianField.getAsShortText(instant, locale);#676,17.662360727787018
+CutoverField(DateTimeField julianField, DateTimeField gregorianField, long cutoverMillis) {#620,17.654881177629743
+fields.era = new CutoverField(julian.era(), fields.era, iCutoverMillis);#526,17.653822409140098
+return iField.add(instant, value);#1103,17.65317257590916
+instant = iJulianField.set(instant, text, locale);#760,17.6517151594162
+fields.secondOfDay = new CutoverField(julian.secondOfDay(), fields.secondOfDay, iCutoverMillis);#513,17.649158943531123
+iJulianField = julianField;#633,17.64007650722157
+chrono = new GJChronology#215,17.633349418640137
+return iGregorianField.getMaximumValue(instant);#1077,17.63158314803551
+throw new IllegalArgumentException("Specified date does not exist");#343,17.63145710627238
+throw new IllegalArgumentException("Specified date does not exist");#385,17.62737356821696
+return Math.max(iJulianField.getMaximumShortTextLength(locale),#908,17.625022642074093
+iGapDuration = iCutoverMillis - julianToGregorianByYear(iCutoverMillis);#494,17.62449476298164
+CutoverField(DateTimeField julianField, DateTimeField gregorianField,#630,17.623599188668386
+return instant;#1014,17.621158091227212
+int hourOfDay, int minuteOfHour,#350,17.62046172402122
+fields.clockhourOfDay = new CutoverField(julian.clockhourOfDay(), fields.clockhourOfDay, iCutoverMillis);#518,17.616438430288564
+Chronology base;#291,17.61582891146342
+GregorianChronology gregorian = (GregorianChronology)params[1];#477,17.61406397819519
+instant = iGregorianField.set(instant, value);#720,17.60806245803833
+instant = iGregorianField.roundCeiling(instant);#889,17.601980578514837
+return iGregorianField.getLeapAmount(instant);#790,17.589274152119955
+this(julianField, gregorianField, null, cutoverMillis, false);#943,17.584001685633805
+(from.year().get(instant),#85,17.5812254819003
+cCache.put(zone, chronos);#203,17.580325383406418
+return iGregorianField.getDifference(minuendInstant, subtrahendInstant);#1020,17.580109977722167
+ImpreciseCutoverField(DateTimeField julianField, DateTimeField gregorianField,#951,17.579935043088852
+iGregorianField = gregorianField;#634,17.579900784925982
+return convertByYear(instant, iJulianChronology, iGregorianChronology);#584,17.578766123453775
+(iJulianField.getType(), Integer.valueOf(value), null, null);#742,17.5762743751208
+(year, monthOfYear, dayOfMonth, millisOfDay);#336,17.574952125549316
+if (subtrahendInstant >= iCutover) {#1039,17.574876649039133
+chrono = new GJChronology#221,17.572558326721193
+instant = iJulianField.set(instant, max);#847,17.56973516024076
+private GregorianChronology iGregorianChronology;#256,17.565780751845416
+public int getDifference(long minuendInstant, long subtrahendInstant) {#1106,17.558172049345792
+return instant;#746,17.555574798583983
+return iJulianField.getDifference(minuendInstant, subtrahendInstant);#1028,17.553774416446686
+return iGregorianField.getDifferenceAsLong(minuendInstant, subtrahendInstant);#1053,17.55295645563226
+instant = iGregorianField.set(instant, text, locale);#751,17.552895456552505
+return iJulianField.getDifferenceAsLong(minuendInstant, subtrahendInstant);#1048,17.552048592340377
+return iGregorianField.getAsText(instant, locale);#662,17.545142327585527
+long gregorianToJulianByYear(long instant) {#587,17.54457293616401
+fields.minuteOfDay = new CutoverField(julian.minuteOfDay(), fields.minuteOfDay, iCutoverMillis);#515,17.540177589239075
+super(durationField, durationField.getType());#1094,17.537897192913555
+return instant;#884,17.534269078572592
+Object[] params = (Object[])getParam();#474,17.53060521577534
+if (subtrahendInstant < iCutover) {#1027,17.52897575923375
+fields.hourOfDay = new CutoverField(julian.hourOfDay(), fields.hourOfDay, iCutoverMillis);#516,17.528487759967184
+return iGregorianField.isLeap(instant);#782,17.52254657087655
+return values;#696,17.52015545493678
+return instant;#388,17.519167293201793
+if (subtrahendInstant < iCutover) {#1047,17.5120484488351
+return Math.max(iJulianField.getMaximumTextLength(locale),#903,17.51163975397746
+throw ex;#369,17.503489644903887
+getMinimumDaysInFirstWeek() + iCutoverInstant.hashCode();#437,17.496206924319267
+return getInstance(zone, iCutoverInstant, getMinimumDaysInFirstWeek());#322,17.49007951296293
+public long getDifferenceAsLong(long minuendInstant, long subtrahendInstant) {#1110,17.489547597950903
+minuendInstant = gregorianToJulian(minuendInstant);#1024,17.48918683601148
+private static long convertByYear(long instant, Chronology from, Chronology to) {#83,17.487625246462613
+long cutoverMillis, boolean convertByWeekyear)#964,17.486626806713286
+iConvertByWeekyear = convertByWeekyear;#636,17.485363880793255
+minuendInstant = gregorianToJulian(minuendInstant);#1044,17.478803634643555
+return this;#320,17.471108309427898
+final long iCutover;#609,17.46981920514788
+(JulianChronology.getInstance(zone, minDaysInFirstWeek),#216,17.46780596281353
+if (iConvertByWeekyear) {#913,17.459272384643555
+StringBuffer sb = new StringBuffer(60);#448,17.45681888178775
+return iJulianField.getMinimumValue(partial, values);#812,17.453908700209396
+fields.millisOfDay = new CutoverField(julian.millisOfDay(), fields.millisOfDay, iCutoverMillis);#511,17.453169947085172
+return iField.add(instant, value);#1099,17.4529853903729
+(iGregorianField.getType(), Integer.valueOf(value), null, null);#729,17.449608246485393
+return iJulianField.getDifferenceAsLong(minuendInstant, subtrahendInstant);#1045,17.449447857706172
+iCutoverMillis = cutoverInstant.getMillis();#479,17.445089600302957
+return iGregorianField.add(instant, value);#689,17.443622817993162
+GregorianChronology gregorian,#268,17.434616397408877
+private static long convertByWeekyear(final long instant, Chronology from, Chronology to) {#94,17.43267833709717
+chrono = getInstance(DateTimeZone.UTC, cutoverInstant, minDaysInFirstWeek);#220,17.420458592866595
+return base.getDateTimeMillis#356,17.419957971572877
+instant = iJulianField.roundCeiling(instant);#891,17.416188209287583
+fields.millisOfSecond = new CutoverField(julian.millisOfSecond(), fields.millisOfSecond, iCutoverMillis);#510,17.40830087661743
+return iGregorianField.getDifference(minuendInstant, subtrahendInstant);#1033,17.40603568818834
+fields.hourOfHalfday = new CutoverField(julian.hourOfHalfday(), fields.hourOfHalfday, iCutoverMillis);#517,17.405073621998664
+return instant;#769,17.402487246195474
+(year, monthOfYear, dayOfMonth, millisOfDay);#340,17.401005446910858
+this(julianField, gregorianField, durationField, cutoverMillis, false);#954,17.396684730754178
+ReadableInstant gregorianCutover) {#172,17.392186641693115
+return iGregorianField.getAsText(fieldValue, locale);#669,17.38888270766647
+private static final long serialVersionUID = 4097975388007713084L;#1089,17.378849286299484
+return instant;#899,17.375350443522134
+return iGregorianField.getDifferenceAsLong(minuendInstant, subtrahendInstant);#715,17.365493718315573
+return getInstance(zone, cutoverInstant, minDaysInFirstWeek);#251,17.364914298057556
+JulianChronology julian,#277,17.356313358653676
+long gregorianToJulianByWeekyear(long instant) {#595,17.34657302655672
+return convertByYear(instant, iGregorianChronology, iJulianChronology);#588,17.34375114440918
+return iJulianField.getDifference(minuendInstant, subtrahendInstant);#1025,17.33874906433953
+static final Instant DEFAULT_CUTOVER = new Instant(-12219292800000L);#106,17.332016110420227
+super(gregorianField.getType());#632,17.31201680501302
+from.monthOfYear().get(instant),#86,17.31171751022339
+return iGregorianField.add(instant, value);#685,17.301164894104005
+private static final Map<DateTimeZone, ArrayList<GJChronology>> cCache = new HashMap<DateTimeZone, ArrayList<GJChronology>>();#109,17.29523388175077
+return GJChronology.this.get(partial, instant);#704,17.29183812295237
+if (iConvertByWeekyear) {#921,17.288932496851142
+int secondOfMinute, int millisOfSecond)#351,17.288901349772576
+iCutoverInstant = cutoverInstant;#483,17.284146645489862
+this(julianField, gregorianField, cutoverMillis, false);#621,17.275908500917495
+return iField.getDifferenceAsLong(minuendInstant, subtrahendInstant);#1111,17.275032222270966
+public Instant getGregorianCutover() {#395,17.270474653977615
+(ZonedChronology.getInstance(chrono, zone),#222,17.26971569061279
+(year, monthOfYear, dayOfMonth,#381,17.264446788363987
+return iGregorianField.getAsShortText(fieldValue, locale);#681,17.256738560540335
+private static final long serialVersionUID = -2545574827706931671L;#78,17.24344213803609
+return iJulianField.getMinimumValue(partial);#808,17.243391235669453
+DurationField durationField,#963,17.24318994794573
+return convertByWeekyear(instant, iJulianChronology, iGregorianChronology);#592,17.24145326306743
+cutoverInstant = new Instant(gregorianCutover);#249,17.23907196521759
+from.dayOfMonth().get(instant),#87,17.232010165850323
+return chrono;#229,17.22605021794637
+return iGregorianField.getDifference(minuendInstant, subtrahendInstant);#711,17.215646028518677
+return getInstance(zone, gregorianCutover, 4);#174,17.211496526544746
+return iField.getDifference(minuendInstant, subtrahendInstant);#1107,17.20560334523519
+max = iJulianField.get(iJulianField.add(iCutover, -1));#849,17.20054509089543
+printer.withChronology(withUTC()).printTo(sb, iCutoverMillis);#461,17.19860851063448
+fields.minuteOfHour = new CutoverField(julian.minuteOfHour(), fields.minuteOfHour, iCutoverMillis);#514,17.19100302319194
+(year, monthOfYear, dayOfMonth,#357,17.152672555711533
+fields.clockhourOfHalfday, iCutoverMillis);#520,17.15008182256994
+cutoverInstant.equals(chrono.getGregorianCutover())) {#208,17.143491256804694
+return iCutoverInstant;#396,17.136364459991455
+return convertByWeekyear(instant, iGregorianChronology, iJulianChronology);#596,17.11647824318178
+GregorianChronology.getInstance(zone, minDaysInFirstWeek),#217,17.05875956384759
+throw new IllegalFieldValueException#741,17.055551594701306
+chrono = chronos.get(i);#206,17.048037624359132
+cutoverInstant = gregorianCutover.toInstant();#195,17.04031410217285
+long cutover = gregorian.weekyear().roundCeiling(iCutoverMillis);#541,17.033440856372607
+instant = partial.getFieldType(i).getField(GJChronology.this).set(instant, values[i]);#701,17.025811367034912
+long cutover = gregorian.year().roundCeiling(iCutoverMillis);#535,17.00992858771122
+super(julianField, gregorianField, cutoverMillis, convertByWeekyear);#966,16.995136681724997
+throw new IllegalFieldValueException#728,16.986238193511962
+chrono.iCutoverInstant);#225,16.98484045883705
+long gregorianCutover,#242,16.93102324636359
+GregorianChronology gregorian,#278,16.928787007051355
+private static final long serialVersionUID = 3528501219481026402L;#605,16.90424787081205
+chronos = new ArrayList<GJChronology>(2);#202,16.901653920450517
+chrono.iJulianChronology,#223,16.876106046861217
+iCutover = cutoverMillis;#635,16.838394346691313
+super(null, new Object[] {julian, gregorian, cutoverInstant});#270,16.83462701525007
+super(base, new Object[] {julian, gregorian, cutoverInstant});#280,16.78331913266863
+throw ex;#375,16.769822321440046
+cutoverInstant);#218,16.739419021606444
+(year, monthOfYear, dayOfMonth,#365,16.709357720834237
+return iCutoverMillis == chrono.iCutoverMillis &&#422,16.681576354163035
+(year, monthOfYear, 28,#372,16.67786750793457
+chronos.add(chrono);#227,16.677833366394044
+ReadableInstant gregorianCutover,#187,16.659791991824196
+chrono.iGregorianChronology,#224,16.58990398530037
+public final class GJChronology extends AssembledChronology {#75,16.448484364677878

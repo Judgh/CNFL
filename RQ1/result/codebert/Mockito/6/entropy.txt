@@ -1,0 +1,109 @@
+public static String matches(String regex) {#737,17.48544715001033
+public static short eq(short value) {#579,17.36213808793288
+return (Set) reportMatcher(Any.ANY).returnSet();#392,17.255472266155742
+@SuppressWarnings("unchecked")#105,17.25288235057484
+return reportMatcher(new Matches(regex)).returnString();#738,17.223938983419668
+return reportMatcher(new Equals(value)).returnZero();#580,17.22220902009444
+return reportMatcher(new Equals(value)).returnZero();#541,17.209595030004326
+return reportMatcher(new Equals(value)).returnZero();#502,17.20266901363026
+return reportMatcher(new ReflectionEquals(value, excludeFields)).<T>returnNull();#617,17.20250465023902
+public static double eq(double value) {#527,17.18776746896597
+public static Set anySet() {#372,17.176635915582832
+return reportMatcher(new Equals(value)).returnZero();#554,17.136018406261098
+return reportMatcher(new Equals(value)).returnZero();#528,17.08788776397705
+return reportMatcher(new Contains(substring)).returnString();#725,17.077073140577838
+return reportMatcher(new Equals(value)).returnZero();#567,17.07277133248069
+public static byte eq(byte value) {#501,17.059396670414852
+return reportMatcher(Any.ANY).returnSet();#373,16.998833990097047
+public static short anyShort() {#226,16.992118401960894
+return reportMatcher(new Equals(value)).returnFalse();#489,16.833181728016246
+public static String endsWith(String suffix) {#750,16.8039995602199
+return reportMatcher(matcher).returnZero();#875,16.766610095375462
+return reportMatcher(Any.ANY).returnZero();#227,16.72169256210327
+public static String contains(String substring) {#724,16.71535634994507
+public static double anyDouble() {#211,16.711386247114703
+return (List) reportMatcher(Any.ANY).returnList();#358,16.707928077034328
+public static long eq(long value) {#566,16.69038207714374
+return reportMatcher(Any.ANY).returnZero();#182,16.68524832725525
+public static short shortThat(Matcher<Short> matcher) {#826,16.6816083506534
+public static int eq(int value) {#553,16.67623395186204
+return reportMatcher(Any.ANY).returnMap();#427,16.673759031295777
+public static String anyString() {#323,16.669515523043547
+return reportMatcher(Any.ANY).returnZero();#167,16.66559557914734
+return reportMatcher(matcher).returnZero();#839,16.65355732566432
+public static String startsWith(String prefix) {#763,16.647137096949987
+return reportMatcher(Any.ANY).returnZero();#137,16.634953498840332
+return reportMatcher(matcher).returnZero();#851,16.619495592619245
+return reportMatcher(matcher).returnZero();#827,16.612018535011693
+return reportMatcher(Any.ANY).returnString();#324,16.590585708618164
+return reportMatcher(matcher).returnZero();#815,16.583464923657868
+public static boolean booleanThat(Matcher<Boolean> matcher) {#802,16.570469760894774
+return reportMatcher(new EndsWith(suffix)).returnString();#751,16.566736013992973
+return reportMatcher(Any.ANY).returnList();#339,16.557461404800414
+return reportMatcher(Any.ANY).returnMap();#407,16.552298259735107
+return reportMatcher(Any.ANY).returnZero();#212,16.545194911956788
+return reportMatcher(matcher).returnZero();#863,16.544888797559235
+return reportMatcher(Any.ANY).returnList();#442,16.495113325119018
+return reportMatcher(new Equals(value)).returnChar();#515,16.495090419595893
+public static double doubleThat(Matcher<Double> matcher) {#874,16.488007696051348
+return (Collection) reportMatcher(Any.ANY).returnList();#461,16.481980489647906
+public static <K, V>  Map<K, V> anyMapOf(Class<K> keyClazz, Class<V> valueClazz) {#426,16.46824227846586
+public static char eq(char value) {#514,16.46734853891226
+public static boolean anyBoolean() {#121,16.4622004032135
+return reportMatcher(new StartsWith(prefix)).returnString();#764,16.45901463248513
+return reportMatcher(matcher).returnFalse();#803,16.444666812294408
+return reportMatcher(Any.ANY).returnFalse();#122,16.44184536933899
+public static float eq(float value) {#540,16.438679401691143
+return reportMatcher(Any.ANY).returnZero();#197,16.430380392074586
+return MOCKING_PROGRESS.getArgumentMatcherStorage().reportMatcher(matcher);#879,16.39049154712308
+return reportMatcher(Null.NULL).returnNull();#643,16.383172845840456
+private static HandyReturnValues reportMatcher(Matcher<?> matcher) {#878,16.34839950908314
+return (T) reportMatcher(Any.ANY).returnNull();#244,16.32566447879957
+public static List anyList() {#338,16.203712116588246
+public static Collection anyCollection() {#441,16.201029777526855
+public static char charThat(Matcher<Character> matcher) {#790,16.192834552965667
+return (T) reportMatcher(Null.NULL).returnNull();#656,16.17973099584165
+public static byte byteThat(Matcher<Byte> matcher) {#814,16.17863614935624
+return notNull();#697,16.170834461847942
+public static long anyLong() {#181,16.159544337879527
+public static <T> Set<T> anySetOf(Class<T> clazz) {#391,16.15199863433838
+public static boolean eq(boolean value) {#488,16.146170343671525
+public static int intThat(Matcher<Integer> matcher) {#838,16.145791455319053
+public static long longThat(Matcher<Long> matcher) {#850,16.138223045750667
+return (T) reportMatcher(new Equals(value)).<T>returnFor(value);#593,16.136633110046386
+return reportMatcher(NotNull.NOT_NULL).returnNull();#669,16.13031005859375
+return (T) reportMatcher(new Same(value)).<T>returnFor(value);#632,16.13003549904659
+public static Object isNull() {#642,16.129784063859418
+public static byte anyByte() {#136,16.102165048772637
+return (T) reportMatcher(NotNull.NOT_NULL).returnNull();#684,16.075214826143704
+return reportMatcher(matcher).<T>returnNull();#779,16.06542374870994
+public static Map anyMap() {#406,16.02516815879128
+public static <T> T refEq(T value, String... excludeFields) {#616,16.01095465819041
+return reportMatcher(Any.ANY).returnChar();#152,16.00032835006714
+public static float anyFloat() {#196,15.922895258123225
+return (T) reportMatcher(AnyVararg.ANY_VARARG).returnNull();#271,15.887754567464192
+return reportMatcher(matcher).returnChar();#791,15.848099482686896
+public static float floatThat(Matcher<Float> matcher) {#862,15.848077422694155
+return (T) anyObject();#309,15.831491661071777
+public static Object isNotNull() {#696,15.819851557413736
+public static <T> List<T> anyListOf(Class<T> clazz) {#357,15.818722305297852
+return reportMatcher(new InstanceOf(clazz)).<T>returnFor(clazz);#476,15.81853912671407
+public static int anyInt() {#166,15.815829190340908
+public static Object notNull() {#668,15.776546218178488
+return (T) reportMatcher(Any.ANY).returnFor(clazz);#292,15.753071308135986
+private static final MockingProgress MOCKING_PROGRESS = new ThreadSafeMockingProgress();#108,15.74054428100586
+return notNull(clazz);#712,15.607509676615397
+public static <T> T anyObject() {#243,15.60047551563808
+public static <T> T eq(T value) {#592,15.564821898937225
+public static <T> Collection<T> anyCollectionOf(Class<T> clazz) {#460,15.537984237670898
+public static <T> T same(T value) {#631,15.53764533996582
+public static <T> T isNull(Class<T> clazz) {#655,15.503471419924782
+public static <T> T any() {#308,15.442577288700985
+public class Matchers {#106,15.34526014328003
+public static <T> T any(Class<T> clazz) {#291,15.335837459564209
+public static <T> T isNotNull(Class<T> clazz) {#711,15.257567145607688
+public static <T> T argThat(Matcher<T> matcher) {#778,15.222981366244229
+public static <T> T notNull(Class<T> clazz) {#683,15.220707938784646
+public static <T> T isA(Class<T> clazz) {#475,15.1555753889538
+public static <T> T anyVararg() {#270,15.153164800008138
+public static char anyChar() {#151,14.949849258769643

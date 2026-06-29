@@ -1,0 +1,94 @@
+public int getCount(int ... c) throws OutOfRangeException {#259,14.360750499524569
+public int getDimension() {#204,14.131760077043014
+public Iterator iterator() {#195,13.914774703979493
+public class Iterator implements java.util.Iterator<Integer> {#71,13.781272729237875
+public class MultidimensionalCounter implements Iterable<Integer> {#46,13.752576759883336
+private final int totalSize;#62,13.694923686981202
+public int getCount(int dim) {#146,13.655070136575137
+private final int last;#66,13.606300671895346
+public int[] getCounts(int index) {#216,13.581294441223145
+private final int[] uniCounterOffset;#54,13.45546370286208
+public boolean hasNext() {#92,13.386192321777344
+public MultidimensionalCounter(int ... size) {#165,13.359655888875325
+private int count = -1;#79,13.356945355733236
+public int[] getCounts() {#131,13.296585381031036
+public int getSize() {#280,13.274300956726075
+public Integer next() {#105,13.203875284928541
+public int getCount() {#123,13.20384430885315
+public int[] getSizes() {#288,13.068895936012268
+private final int dimension;#50,13.01243782043457
+@Override#295,12.943783442179361
+private final int[] counter = new int[dimension];#75,12.836446912665116
+private final int[] size;#58,12.824084568023682
+Iterator() {#85,12.751888354619345
+while (count < index) {#238,12.698473358154297
+final int offset = uniCounterOffset[i];#227,12.676175843114438
+sb.append("[").append(getCount(i)).append("]");#299,12.49652616182963
+uniCounterOffset = new int[dimension];#169,12.493196540408665
+for (int i = last; i >= 0; i--) {#106,12.464699851142036
+uniCounterOffset[last] = 0;#181,12.458510716756185
+final StringBuilder sb = new StringBuilder();#297,12.439687305026585
+this.size = MathUtils.copyOf(size);#167,12.401446047283354
+public String toString() {#296,12.370859622955322
+for (int i = 0; i < last; i++) {#225,12.345442815260453
+final int[] indices = new int[dimension];#222,12.20906008614434
+throw new UnsupportedOperationException();#154,12.188295665540194
+throw new OutOfRangeException(index, 0, size[i] - 1);#268,12.1802979777841
+while (count <= index) {#228,12.17918933065314
+dimension = size.length;#166,12.176666872841972
+public void remove() {#153,12.17369215305035
+if (c.length != dimension) {#260,12.167407316320082
+throw new DimensionMismatchException(c.length, dimension);#261,12.13500501559331
+for (int j = i + 1; j < dimension; j++) {#175,12.124083808490209
+throw new OutOfRangeException(index, 0, totalSize);#219,12.099658892704891
+if (counter[i] == size[i] - 1) {#107,12.091196167853571
+last = dimension - 1;#171,12.083155155181885
+throw new NotStrictlyPositiveException(tS);#184,12.081075210571289
+if (index < 0 ||#217,12.02299976348877
+int tS = size[last];#172,12.02002239227295
+int idx = 1;#237,11.936008521488734
+for (int i = 0; i < last; i++) {#173,11.827421578493984
+for (int i = 0; i < dimension; i++) {#264,11.78346737948331
+if (counter[i] != size[i] - 1) {#94,11.775707183345672
+for (int i = 0; i < dimension; i++) {#93,11.722203951615553
+indices[last] = idx;#243,11.67544311285019
+count += uniCounterOffset[i] * c[i];#270,11.665717400037325
+return count + c[last];#272,11.615926678975423
+if (tS <= 0) {#183,11.60753870010376
+for (int i = 0; i < dimension; i++) {#298,11.605783007361673
+return MathUtils.copyOf(size);#289,11.56730612119039
+int count = 0;#224,11.428268579336313
+counter[last] = -1;#86,11.40882887840271
+return indices;#245,11.408824097026478
+final int index = c[i];#265,11.376914048194886
+index >= totalSize) {#218,11.327083746592203
+--idx;#242,11.19581969579061
+return new Iterator();#196,11.168455417339619
+return ++count;#115,11.163105547428131
+int count = 0;#263,11.136545768150917
+totalSize = tS;#187,11.127791813441686
+uniCounterOffset[i] = count;#178,11.10357462276112
+count += idx;#239,11.086044592015883
+int idx = 0;#226,11.083538903130425
+count -= offset;#233,11.064132034778595
+return MathUtils.copyOf(counter);#132,11.059342471036045
+indices[i] = idx;#234,11.020533561706543
+if (index < 0 ||#266,11.012876245710585
+return sb.toString();#301,10.952854919433594
+return false;#98,10.897527567545573
+--idx;#232,10.828525811433792
+counter[i] = 0;#108,10.794199307759603
+index >= size[i]) {#267,10.793418137923531
+tS *= size[i];#179,10.656358098983764
+return counter[dim];#147,10.434355062596937
+int count = 1;#174,10.431807405808392
+++idx;#240,10.412912130355835
+return count;#124,10.381974983215333
+return totalSize;#281,10.359708984692892
+count += offset;#229,10.197009754180907
+++counter[i];#110,10.056674003601074
+count *= size[j];#176,9.984914655270783
+++idx;#230,9.911741685867309
+return true;#95,9.738737666088602
+return dimension;#205,9.633498451926492
+break;#111,9.581812836907126

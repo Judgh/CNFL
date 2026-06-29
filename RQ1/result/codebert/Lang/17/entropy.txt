@@ -1,0 +1,36 @@
+if (out == null) {#76,20.19849510192871
+if (input == null) {#79,19.858248011271158
+if (input == null) {#54,19.705143292744953
+while (pos < len) {#84,19.552379163106284
+if (consumed == 0) {#86,19.43668966293335
+int pos = 0;#82,19.37462219825158
+else {#90,19.13414532797677
+public final void translate(CharSequence input, Writer out) throws IOException {#75,18.572126070658367
+for (int pt = 0; pt < consumed; pt++) {#93,18.50505256652832
+try {#57,18.486389636993408
+pos++;#102,18.352963856288365
+if (pos < len - 2) {#94,18.241490068106817
+pos++;#97,18.219025758596565
+throw new IllegalArgumentException("The Writer must not be null");#77,18.19611468681922
+public final String translate(CharSequence input) {#53,18.160987917582194
+public static String hex(int codepoint) {#127,18.10587323506673
+return null;#55,18.103211720784504
+public abstract int translate(CharSequence input, int index, Writer out) throws IOException;#46,18.07527728875478
+int len = Character.codePointCount(input, 0, input.length());#83,17.96163906097412
+public final CharSequenceTranslator with(CharSequenceTranslator... translators) {#113,17.942445920861285
+newArray[0] = this;#115,17.72807079553604
+char[] c = Character.toChars(Character.codePointAt(input, pos));#87,17.707099596659344
+int consumed = translate(input, pos, out);#85,17.686982984128207
+pos--;#100,17.684865750764544
+CharSequenceTranslator[] newArray = new CharSequenceTranslator[translators.length + 1];#114,17.646913081407547
+return new AggregateTranslator(newArray);#117,17.609137958950466
+return;#80,17.59904384613037
+StringWriter writer = new StringWriter(input.length() * 2);#58,17.519412217316805
+out.write(c);#88,17.47474041852084
+pos += Character.charCount(Character.codePointAt(input, pos));#95,17.330948974146988
+System.arraycopy(translators, 0, newArray, 1, translators.length);#116,17.288462244231127
+public abstract class CharSequenceTranslator {#32,17.272355461120604
+return writer.toString();#60,17.104953394995796
+throw new RuntimeException(ioe);#63,17.065336322784425
+return Integer.toHexString(codepoint).toUpperCase(Locale.ENGLISH);#128,17.044091939926147
+translate(input, writer);#59,16.685892475975884

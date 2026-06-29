@@ -1,0 +1,348 @@
+public static byte sign(final byte x) {#1081,15.078429630824498
+public static byte indicator(final byte x) {#622,15.060555730547224
+public static short indicator(final short x) {#682,14.981220517839704
+private static final short NS = (short)-1;#45,14.979884401957195
+public static short sign(final short x) {#1161,14.807246616908483
+public final class MathUtils {#30,14.780372142791748
+private static final byte  NB = (byte)-1;#42,14.77963411808014
+public static long sign(final long x) {#1146,14.735519204820905
+public static long mulAndCheck(long a, long b) {#765,14.706388473510742
+public static long indicator(final long x) {#671,14.67836516244071
+return x == y || (x < y && (x + eps) >= y) || (x > y && x <= (y + eps));#384,14.48999757033128
+private static double roundUnscaled(double unscaled, double sign,#1000,14.405480886760511
+public static double indicator(final double x) {#634,14.356815610613141
+private static final short PS = (short)1;#51,14.350787353515624
+private static final short ZS = (short)0;#57,14.263561069965363
+public static long addAndCheck(long a, long b) {#97,14.20962127049764
+public static boolean equals(double x, double y) {#370,14.198527574539185
+public static double scalb(final double d, final int scaleFactor) {#876,14.175730991363526
+case BigDecimal.ROUND_HALF_EVEN : {#1030,14.136444568634033
+public static double sign(final double x) {#1097,14.12480708530971
+public static int mulAndCheck(int x, int y) {#747,14.117141034868029
+public static float indicator(final float x) {#648,14.095941952296666
+public static long subAndCheck(long a, long b) {#1204,14.073656029171413
+private static long addAndCheck(long a, long b, String msg) {#112,14.058961459568568
+public static int sign(final int x) {#1132,14.054158960069929
+public static double binomialCoefficientDouble(final int n, final int k) {#249,14.046862933946693
+public static long binomialCoefficient(final int n, final int k) {#172,14.04678960279985
+case BigDecimal.ROUND_HALF_DOWN : {#1020,14.019351834836213
+private static final byte  ZB = (byte)0;#54,14.013284907621497
+public static double round(double x, int scale, int roundingMethod) {#942,13.98969202041626
+case BigDecimal.ROUND_UNNECESSARY :#1057,13.954006628556685
+public static double binomialCoefficientLog(final int n, final int k) {#297,13.907957989236582
+public static float sign(final float x) {#1115,13.904355798448835
+private static final byte  PB = (byte)1;#48,13.903057873249054
+public static double cosh(double x) {#358,13.89568029131208
+public static int indicator(final int x) {#661,13.854606560298375
+if ((d == 0) || Double.isNaN(d) || Double.isInfinite(d)) {#879,13.84986653472438
+case BigDecimal.ROUND_UP :#1062,13.791083176930746
+case BigDecimal.ROUND_HALF_UP : {#1047,13.767609388931938
+public static int subAndCheck(int x, int y) {#1186,13.727535671657986
+if (x.length != y.length) {#401,13.708758203606857
+return (x == ZB) ? ZB : (x > ZB) ? PB : NB;#1082,13.698233604431152
+case BigDecimal.ROUND_DOWN :#1010,13.695703294542101
+String msg = "overflow: multiply";#767,13.692614835851332
+public static int addAndCheck(int x, int y) {#79,13.663796530829536
+public static double log(double base, double x) {#733,13.639815092086792
+if (Double.isNaN(d) || Double.isInfinite(d)) {#830,13.632505893707275
+public static double nextAfter(double d, double direction) {#827,13.627850588630228
+String msg = "overflow: subtract";#1206,13.617802283343147
+final long newBits = rest | (exponent + (((long) scaleFactor) << 52));#889,13.614938767751058
+private MathUtils() {#65,13.606812953948975
+return (x == ZS) ? ZS : (x > ZS) ? PS : NS;#1162,13.60057365099589
+public static float round(float x, int scale) {#966,13.575738668441772
+public static double sinh(double x) {#1172,13.572742325919014
+public static boolean equals(double x, double y, double eps) {#383,13.562199211120605
+{1, 1, 2, 6, 24, 120, 720, 5040, 40320, 362880, 3628800, 39916800,#414,13.558715748786927
+public static double round(double x, int scale) {#926,13.547936737537384
+while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are#558,13.540625068876478
+public static double factorialDouble(final int n) {#472,13.538697183132172
+private static final double TWO_PI = 2 * Math.PI;#60,13.380530834197998
+public static double factorialLog(final int n) {#495,13.37408173084259
+case BigDecimal.ROUND_FLOOR :#1013,13.367712163925171
+return ((Double.isNaN(x) && Double.isNaN(y)) || x == y);#371,13.3581523001194
+public static long factorial(final int n) {#441,13.34389394124349
+long mantissa = bits & 0x000fffffffffffffL;#842,13.334808536197828
+final long rest     = bits & 0x800fffffffffffffL;#886,13.3200650744968
+final long exponent = bits & 0x7ff0000000000000L;#885,13.305055249821056
+public static float round(float x, int scale, int roundingMethod) {#982,13.259010124206544
+public static boolean equals(double[] x, double[] y) {#397,13.22536744011773
+case BigDecimal.ROUND_CEILING :#1003,13.18868112564087
+return round(x, scale, BigDecimal.ROUND_HALF_UP);#927,13.187113029616219
+return round(x, scale, BigDecimal.ROUND_HALF_UP);#967,13.181576081684657
+private static final long[] factorials = new long[]#413,13.173415127922507
+int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;#571,13.124630523450447
+if (m < Integer.MIN_VALUE || m > Integer.MAX_VALUE) {#749,13.118782820524993
+unscaled = Math.floor(nextAfter(unscaled, Double.NEGATIVE_INFINITY));#1011,13.10936294661628
+return (x == 0) ? 0 : (x > 0) ? 1 : -1;#1133,13.084060668945312
+if (v > 0) {#553,13.058104578653971
+unscaled = nextAfter(unscaled, Double.NEGATIVE_INFINITY);#1021,13.04656907916069
+int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b));#713,13.041415616869926
+public static int lcm(int a, int b) {#709,13.03024320041432
+public static double normalizeAngle(double a, double center) {#913,13.015565776824952
+for (int i = 0; i < x.length; ++i) {#404,12.996664390563964
+if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {#1188,12.994677402355054
+if (mantissa == 0x000fffffffffffffL) {#846,12.974267333745956
+public static final double SAFE_MIN = 0x1.0p-1022;#39,12.939455571381941
+if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {#81,12.926278361567745
+if ((x == null) || (y == null)) {#398,12.901414099193754
+unscaled = nextAfter(unscaled, Double.POSITIVE_INFINITY);#1048,12.871720433235168
+double fraction = unscaled - Math.floor(unscaled);#1022,12.870751564319317
+double fraction = unscaled - Math.floor(unscaled);#1031,12.843478331199059
+public static int gcd(final int p, final int q) {#539,12.841865489357396
+long exponent = bits & 0x7ff0000000000000L;#841,12.83939486458188
+if ((k == 1) || (k == n - 1)) {#184,12.82433153235394
+return (x == 0L) ? 0L : (x > 0L) ? 1L : -1L;#1147,12.809138413631555
+public static int hash(double value) {#600,12.776607880225548
+double fraction = unscaled - Math.floor(unscaled);#1049,12.752637789799618
+public static int hash(double[] value) {#611,12.74703700201852
+if ((k == 1) || (k == n - 1)) {#309,12.69642046223516
+return Math.floor(Math.exp(factorialLog(n)) + 0.5);#479,12.695856503077916
+479001600, 6227020800l, 87178291200l, 1307674368000l, 20922789888000l,#415,12.67403793334961
+if ((k == 1) || (k == n - 1)) {#261,12.667173364888066
+return a - TWO_PI * Math.floor((a + Math.PI - center) / TWO_PI);#914,12.662302710793234
+for (int j = 1, i = n - k + 1; j <= k; i++, j++) {#205,12.660998279983932
+if (k > n / 2) {#329,12.597055659574622
+while ((t & 1) == 0) { // while t is even..#577,12.579720190593175
+long sign     = bits & 0x8000000000000000L;#840,12.568839887777964
+if ((n == k) || (k == 0)) {#181,12.544286092122396
+throw new IllegalArgumentException("Invalid rounding method.");#1066,12.540655493736267
+return Math.log(x)/Math.log(base);#734,12.530067920684814
+if ((n == k) || (k == 0)) {#258,12.522216433570499
+unscaled = Math.ceil(nextAfter(unscaled, Double.POSITIVE_INFINITY));#1015,12.519161596530822
+return addAndCheck(a, b, "overflow: add");#98,12.517576798148777
+throw new IllegalArgumentException(#178,12.509818503731175
+if ((u == 0) || (v == 0)) {#542,12.50769213267735
+return (x >= ZB) ? PB : NB;#623,12.476188254356384
+for (int i = n - k + 1; i <= n; i++) {#339,12.469977415524996
+if ((n == k) || (k == 0)) {#306,12.4684659412929
+throw MathRuntimeException.createArithmeticException(#565,12.459660269997336
+unscaled = Math.ceil(nextAfter(unscaled,  Double.POSITIVE_INFINITY));#1063,12.454307004025107
+if (Double.isInfinite(x)) {#949,12.44314546170442
+throw new IllegalArgumentException(#303,12.411615622671027
+throw new IllegalArgumentException(#255,12.40613169419138
+if (Long.MIN_VALUE / b <= a) {#782,12.394527319705848
+if (a <= Long.MAX_VALUE - b) {#137,12.383625819765289
+public static final double EPSILON = 0x1.0p-53;#33,12.381911391303653
+if (b == Long.MIN_VALUE) {#1207,12.37614581459447
+if (unscaled != Math.floor(unscaled)) {#1058,12.374177862096715
+unscaled = Math.floor(nextAfter(unscaled, Double.NEGATIVE_INFINITY));#1005,12.333115601539612
+return (x >= ZS) ? PS : NS;#683,12.328682160377502
+return (x == 0.0F) ? 0.0F : (x > 0.0F) ? 1.0F : -1.0F;#1119,12.319620343141777
+throw new ArithmeticException(msg);#785,12.316028743982315
+355687428096000l, 6402373705728000l, 121645100408832000l,#416,12.303749697549003
+for (int j = 1, i = n - k + 1; j <= k; i++, j++) {#199,12.273195266723633
+return binomialCoefficient(n, n - k);#189,12.270126132965087
+if (a <= Long.MAX_VALUE / b) {#797,12.268747987418338
+return (Math.exp(x) - Math.exp(-x)) / 2.0;#1173,12.26426897730146
+if (!equals(x[i], y[i])) {#405,12.260940163223832
+default :#1065,12.260038471221923
+if (fraction > 0.5) {#1032,12.23991625959223
+throw new IllegalArgumentException(#174,12.22850741838154
+final long bits     = Double.doubleToLongBits(d);#884,12.213326674241285
+if (Double.isNaN(x)) {#1098,12.201084111866198
+"must have n >= 0 for binomial coefficient (n,k)");#179,12.19971626996994
+for (int j = 1, i = n - k + 1; j <= k; i++, j++) {#219,12.199315586605588
+if (n <= 61) {#197,12.197114022572835
+if (k > n/2) {#264,12.192257768967572
+throw new IllegalArgumentException(#299,12.189409356368216
+long s = (long)x - (long)y;#1187,12.169531572432746
+if (a==0 || b==0){#710,12.156523916456434
+long m = ((long)x) * ((long)y);#748,12.156472487883134
+return Double.longBitsToDouble(sign |#860,12.155668394906181
+for (int i = 2; i <= k; i++) {#344,12.154820919036865
+throw new IllegalArgumentException(#251,12.138528372112074
+if (k > n / 2)#188,12.133733749389648
+unscaled = Math.floor(nextAfter(unscaled, Double.NEGATIVE_INFINITY));#1017,12.127921307086945
+return Math.log(binomialCoefficient(n,k));#318,12.120137921086064
+"must have n >= 0 for binomial coefficient (n,k)");#304,12.119617700576782
+return Double.longBitsToDouble(newBits);#890,12.118668465387254
+"must have n >= 0 for binomial coefficient (n,k)");#256,12.118133068084717
+if (a >= Long.MAX_VALUE / b) {#775,12.117911743395256
+if (Float.isNaN(x)) {#1116,12.116887720007645
+if (d * (direction - d) >= 0) {#844,12.115188371567498
+unscaled = Math.ceil(nextAfter(unscaled, Double.POSITIVE_INFINITY));#1007,12.106642083423894
+return (Math.exp(x) + Math.exp(-x)) / 2.0;#359,12.095497744424003
+return Math.log(binomialCoefficientDouble(n, k));#326,12.093298128673009
+return (x == 0.0) ? 0.0 : (x > 0.0) ? 1.0 : -1.0;#1101,12.084026349218268
+return Arrays.hashCode(value);#612,12.080262184143066
+throw new ArithmeticException("overflow: subtract");#1189,12.069256616675336
+return (float)roundUnscaled(x * factor, sign, roundingMethod) / factor;#985,12.062468693174164
+if (Double.isNaN(x)) {#635,12.062393514733566
+if (mantissa == 0L) {#855,12.058505021608793
+if (u > 0) {#550,12.053150049845378
+if (n < 67) {#267,12.034866841634114
+return new Double(value).hashCode();#601,12.032518022200641
+if (fraction > 0.5) {#1023,12.01863542470065
+return (x >= 0) ? 1 : -1;#662,12.011363887786866
+throw new ArithmeticException("overflow: mul");#750,12.005763095358144
+if (Math.floor(unscaled) / 2.0 == Math.floor(Math#1038,12.005466169781155
+"must have n >= k for binomial coefficient (n,k)");#175,12.003385484218597
+"must have n >= k for binomial coefficient (n,k)");#300,12.002398669719696
+"must have n >= k for binomial coefficient (n,k)");#252,11.991209149360657
+long result = 1;#196,11.991207416240986
+"overflow: gcd({0}, {1}) is 2^31",#566,11.976740321597537
+if (Float.isNaN(x)) {#649,11.972817998183402
+t /= 2; // cast out twos#578,11.965616006117601
+return Double.longBitsToDouble(sign |#856,11.965192985534667
+if (sign == -1) {#1014,11.940670919418334
+t = (v - u) / 2;#587,11.938679478385232
+throw new ArithmeticException("Inexact result from rounding");#1059,11.9301925692065
+return (direction < 0) ? -Double.MIN_VALUE : Double.MIN_VALUE;#833,11.92085403866238
+if (Long.MIN_VALUE - b <= a) {#123,11.912330569642963
+return (new BigDecimal#944,11.906162208980984
+long s = (long)x + (long)y;#80,11.87825261978876
+if (a > b) {#768,11.86440372467041
+return binomialCoefficientDouble(n, n - k);#265,11.857445129981407
+v /= 2;#561,11.850873330060173
+int roundingMethod) {#1001,11.850020408630371
+float factor = (float)Math.pow(10.0f, scale) * sign;#984,11.848397452255774
+throw new ArithmeticException(msg);#126,11.840055212378502
+result = mulAndCheck((result / (j / d)), (i / d));#221,11.839509627398323
+if (n < 0) {#177,11.834944979349773
+long bits     = Double.doubleToLongBits(d);#839,11.83299596786499
+if (n < 0) {#254,11.822682253519694
+if (a < 0) {#120,11.820766147814298
+return Double.longBitsToDouble(sign |#847,11.81776488167899
+return binomialCoefficientLog(n, n - k);#330,11.80243681027339
+if (a > b) {#114,11.79878635406494
+throw new IllegalArgumentException("must have n >= 0 for n!");#443,11.798017944608416
+for (int i = 2; i <= n; i++) {#503,11.797729882326992
+if (n < 1030) {#325,11.786712169647217
+u /= 2;#560,11.78514020583209
+return Double.longBitsToDouble(sign |#850,11.782542174203055
+if (t > 0) {#581,11.77435568759316
+if (n < 0) {#302,11.77006556193034
+float sign = indicator(x);#983,11.763017495473227
+throw new ArithmeticException(msg);#778,11.759772971272469
+if (n > 20) {#445,11.756028811136881
+if (fraction >= 0.5) {#1050,11.747845649719238
+result = (result / (j / d)) * (i / d);#213,11.742087960243225
+return (x >= 0.0F) ? 1.0F : -1.0F;#652,11.738785628614755
+"factorial value is too large to fit in a long");#447,11.737004988121264
+double logSum = 0;#336,11.71854043006897
+.floor(unscaled) / 2.0)) { // even#1039,11.716194098336356
+if (k == 31) {#564,11.716099325815836
+exponent | (mantissa + 1));#851,11.715617491274465
+return (x >= 0.0) ? 1.0 : -1.0;#638,11.713783557598408
+k++; // cast out twos.#562,11.713161277770997
+throw new ArithmeticException(msg);#800,11.706056254250663
+int k = 0;#557,11.696467032799355
+return !((x == null) ^ (y == null));#399,11.682520999908448
+if (sign == -1) {#1004,11.680806303024292
+throw new ArithmeticException("overflow: add");#82,11.680408664371656
+return (x >= 0L) ? 1L : -1L;#672,11.657015821208125
+long ret;#113,11.643425594676625
+throw new ArithmeticException(msg);#140,11.642332196235657
+for (int i = 1; i <= k; i++) {#272,11.62156453999606
+long ret;#766,11.620704304088246
+throw new IllegalArgumentException("must have n >= 0 for n!");#474,11.606604150363378
+if (n < k) {#250,11.579369417826335
+if (n < 21) {#499,11.578811486562094
+if (n < k) {#298,11.563424428304037
+break;#1012,11.558735643114362
+if (n < k) {#173,11.555680592854818
+if (a < 0) {#772,11.538103454991392
+return (Math.abs(u) + Math.abs(v));#543,11.513223224216038
+try {#943,11.490244293212891
+ret = addAndCheck(b, a, msg);#116,11.483428279558817
+throw new IllegalArgumentException("must have n > 0 for n!");#497,11.47778424194881
+throw new ArithmeticException(#446,11.475025945239597
+switch (roundingMethod) {#1002,11.471555201212565
+long ret;#1205,11.466133377768777
+(exponent + 0x0010000000000000L));#848,11.455684287875306
+return unscaled;#1068,11.418774048487345
+break;#1019,11.412723541259766
+return ret;#1217,11.401149489662863
+return logSum;#348,11.383743127187094
+ret = mulAndCheck(b, a);#770,11.377589204094626
+if (n < 67) {#317,11.36253828160903
+int v = q;#541,11.348914036383995
+unscaled = Math.floor(unscaled);#1035,11.344040941309046
+unscaled = Math.ceil(unscaled);#1024,11.336751801627022
+if (n < 0) {#496,11.333068148295085
+if (n < 0) {#442,11.33227793375651
+unscaled = Math.ceil(unscaled);#1051,11.321500948497228
+unscaled = Math.floor(unscaled);#1040,11.302125669294789
+break;#1009,11.297607558114189
+return factorials[n];#449,11.276613553365072
+exponent | (mantissa - 1));#861,11.273222242082868
+unscaled = Math.ceil(unscaled);#1033,11.262130158288139
+(exponent - 0x0010000000000000L) |#857,11.243000525694628
+return true;#409,11.234600240534002
+if (n < 21) {#476,11.201249758402506
+0x000fffffffffffffL);#858,11.199840117473991
+ret = addAndCheck(a, -b, msg);#1215,11.190764503479004
+return Math.floor(result + 0.5);#276,11.189906973587838
+double logSum = 0;#502,11.187774079186577
+unscaled = Math.ceil(unscaled);#1042,11.175389856100082
+return binomialCoefficient(n,k);#268,11.1703200340271
+do {#574,11.147510147094726
+break;#1045,11.147176538194929
+result *= (double)(n - k + i) / (double)i;#273,11.137142181396484
+return (int)m;#752,11.136482988085065
+ret = a * b;#783,11.115699354807536
+return ret;#144,11.105996131896973
+return result;#224,11.089424653486772
+return (int)s;#1191,11.086403131484985
+double result = 1d;#271,11.06996236528669
+return (int)s;#84,11.05973482131958
+new Object[] { p, q });#567,11.045782974788121
+return ret;#807,11.010352351448752
+return -u * (1 << k); // gcd is u*2^k#591,10.984807858100304
+if (a < 0) {#1208,10.979532266917982
+if (b < 0) {#121,10.973282565241275
+if (n < 0) {#473,10.97000961303711
+ret = a + b;#130,10.95437634908236
+2432902008176640000l};#417,10.94616550207138
+throw new ArithmeticException(msg);#1211,10.93226577838262
+ret = a * b;#776,10.929404926300048
+break;#1028,10.833859511784144
+return Math.log(factorial(n));#500,10.808351560072465
+u = -t;#582,10.808223542712984
+v = -v;#554,10.775352197534898
+.setScale(scale, roundingMethod))#946,10.754146371568952
+if (b < 0) {#773,10.743525297745414
+return logSum;#506,10.74090607961019
+long d = gcd(i, j);#220,10.719834144298847
+return lcm;#714,10.703498363494873
+ret = a + b;#138,10.69487318625817
+ret = a + b;#124,10.689499727884929
+int u = p;#540,10.612958871401274
+return Math.log((double) n);#310,10.609742164611816
+unscaled = Math.floor(unscaled);#1053,10.598867027847856
+(Double.toString(x))#945,10.598376309430158
+long d = gcd(i, j);#212,10.592571331904484
+ret = 0;#790,10.583647310733795
+break;#1055,10.57271773474557
+unscaled = Math.floor(unscaled);#1026,10.509841565732602
+break;#1061,10.464988231658936
+super();#66,10.446135139465332
+ret = a * b;#798,10.392787493192232
+return x;#950,10.33335619959338
+v = t;#584,10.322423648834228
+.doubleValue();#947,10.230503165203592
+ret = a - b;#1209,10.19174354726618
+return n;#185,10.169672012329102
+logSum += Math.log((double)i);#504,10.070402311242145
+break;#1064,10.065739631652832
+return Double.NaN;#952,10.014813574877651
+logSum -= Math.log((double) i);#345,9.942615571229354
+return n;#262,9.901651287078858
+logSum += Math.log((double) i);#340,9.891735657401707
+return 1;#182,9.831401379903157
+return Float.NaN;#1117,9.816421058442858
+result = result * i / j;#200,9.815998136997223
+ret = 0;#804,9.807637310028076
+return Float.NaN;#650,9.746917698118422
+return factorial(n);#477,9.699813074535793
+u = -u;#551,9.68339179543888
+return 0;#307,9.502446619669596
+return Double.NaN;#1099,9.397041426764595
+return Double.NaN;#636,9.362225850423178
+return 1d;#259,9.353802621364594
+return d;#880,9.098368644714355
+return false;#402,9.088986746470134
+return false;#406,8.887286487378573
+return d;#831,8.30552625656128
+return 0;#711,7.912434450785319

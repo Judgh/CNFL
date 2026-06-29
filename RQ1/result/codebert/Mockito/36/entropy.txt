@@ -1,0 +1,109 @@
+public Integer getSequenceNumber() {#92,17.975650946299236
+public MockitoMethod getMethod() {#80,17.918540477752686
+return sequenceNumber;#93,17.70372207959493
+return false;#162,17.66559548811479
+@SuppressWarnings("unchecked")#27,17.47349314256148
+this.sequenceNumber = sequenceNumber;#50,17.45678037405014
+return new ObjectMethodsGuru().isToString(invocation.getMethod());#150,17.444132957458496
+String method = qualifiedMethodName();#124,17.40837574005127
+public String getMethodName() {#181,17.406097412109375
+System.arraycopy(args, 0, newArgs, 0, nonVarArgsCount);#71,17.341431264524108
+Class<?> throwableClass = throwable.getClass();#155,17.286475272405717
+return mock;#77,17.27523439580744
+return newArgs;#73,17.22214190165202
+protected String toString(List<Matcher> matchers, PrintSettings printSettings) {#122,17.16441809612772
+System.arraycopy(varArgs, 0, newArgs, nonVarArgsCount, varArgsCount);#72,17.10092830657959
+return toString(argumentsToMatchers(), printSettings);#206,17.08775161561512
+public class Invocation implements PrintableInvocation, InvocationOnMock, PrintingFriendlyInvocation {#28,17.082842951235563
+String invocation = method + matchersPrinter.getArgumentsLine(matchers, printSettings);#125,17.067555789289802
+if (arg != null && arg.getClass().isArray()) {#140,17.045894834730362
+return args == null ? new Object[0] : args;#58,17.011464805603026
+matchers.add(new ArrayEquals(arg));#141,16.97961269106184
+Class<?>[] exceptions = this.getMethod().getExceptionTypes();#154,16.97010682976764
+if (printSettings.isMultiline() || (!matchers.isEmpty() && invocation.length() > MAX_LINE_LENGTH)) {#126,16.969854021072386
+if (exception.isAssignableFrom(throwableClass)) {#157,16.947853428976877
+return toString(argumentsToMatchers(), new PrintSettings());#119,16.921065070412375
+return verifiedInOrder;#97,16.915367419903095
+protected List<Matcher> argumentsToMatchers() {#137,16.91026473045349
+return new MockUtil().getMockName(mock) + "." + method.getName();#134,16.900755851499497
+return arguments;#85,16.89800453186035
+return verified;#89,16.894246794960715
+if (o == null || !o.getClass().equals(this.getClass())) {#101,16.87934776941935
+Invocation other = (Invocation) o;#105,16.86695957183838
+return matchers;#146,16.846766312917072
+final int nonVarArgsCount = args.length - 1;#61,16.842664991106307
+for (Class<?> exception : exceptions) {#156,16.839646975199383
+return method + matchersPrinter.getArgumentsBlock(matchers, printSettings);#127,16.834972504646547
+this.method = mockitoMethod;#45,16.82166749238968
+return method.getReturnType().isPrimitive();#186,16.809681691621478
+return true;#158,16.802515782808
+return method.getName();#182,16.796489579336985
+public String toString(PrintSettings printSettings) {#205,16.763301213582356
+this.arguments = expandVarArgs(mockitoMethod.isVarArgs(), args);#48,16.747443641935075
+private String qualifiedMethodName() {#133,16.73005520213734
+return false;#102,16.72018960316976
+return method;#81,16.710514675487172
+return this.method.getReturnType() == Void.TYPE;#174,16.698115652257744
+MatchersPrinter matchersPrinter = new MatchersPrinter();#123,16.682603338490363
+return Arrays.equals(arguments, this.arguments);#111,16.671038917873215
+return realMethod.invoke(mock, rawArguments);#202,16.632674603235152
+return arguments.length;#194,16.60488686194787
+public Location getLocation() {#189,16.593273735046388
+this.verifiedInOrder = true;#215,16.587935209274292
+this.mock = mock;#46,16.58411153157552
+throw new RuntimeException("hashCode() is not implemented");#115,16.574835062026978
+varArgs = ArrayEquals.createObjectArray(args[nonVarArgsCount]);#67,16.574614365895588
+matchers.add(new Equals(arg));#143,16.568105980202002
+public Invocation(Object mock, MockitoMethod mockitoMethod, Object[] args, int sequenceNumber, RealMethod realMethod) {#44,16.561665952205658
+return this.rawArguments;#198,16.53058344523112
+public String toString() {#118,16.511101818084718
+public String printMethodReturnType() {#177,16.48677142461141
+return method.getReturnType().isAssignableFrom(clazz);#169,16.461661781583512
+Object[] newArgs = new Object[nonVarArgsCount + varArgsCount];#70,16.438952293395996
+this.rawArguments = args;#49,16.430617332458496
+return method.getReturnType().getSimpleName();#178,16.426259392186214
+return this.mock.equals(other.mock) && this.method.equals(other.method) && this.equalArguments(other.arguments);#107,16.407557705174323
+List<Matcher> matchers = new ArrayList<Matcher>(arguments.length);#138,16.395734480449132
+public boolean isVoid() {#173,16.383565816012297
+final int varArgsCount = varArgs.length;#69,16.381816964400443
+return Primitives.primitiveTypeOf(clazz) == method.getReturnType();#167,16.37201746048466
+public Object callRealMethod() throws Throwable {#201,16.361729962485178
+return location;#190,16.315183292735707
+for (Object arg : arguments) {#139,16.259459018707275
+Object[] varArgs;#62,16.25301896608793
+return invocation;#129,16.24277203877767
+public boolean equals(Object o) {#100,16.23329186439514
+public boolean isVerified() {#88,16.22964269464666
+public static boolean isToString(InvocationOnMock invocation) {#149,16.17583952452007
+public Object getMock() {#76,16.171229795976117
+if (args[nonVarArgsCount] == null) {#63,16.148037274678547
+if (!isVarArgs || args[args.length - 1] != null && !args[args.length - 1].getClass().isArray()) {#57,16.144387908098174
+public boolean isVerifiedInOrder() {#96,16.09730493105375
+public boolean returnsPrimitive() {#185,16.07838691364635
+private final int sequenceNumber;#32,16.072079563140868
+if (method.getReturnType().isPrimitive()) {#166,16.026048069908505
+private final MockitoMethod method;#34,16.023965922268953
+private static final int MAX_LINE_LENGTH = 45;#31,16.006760849672204
+varArgs = new Object[] { null };#65,16.004246711730957
+markVerified();#214,15.972970008850098
+this.verified = true;#210,15.96519490650722
+private static final long serialVersionUID = 8240069639250980199L;#30,15.93780465747999
+void markVerifiedInOrder() {#213,15.924458742141724
+public boolean isValidReturnType(Class clazz) {#165,15.905091404914856
+public int hashCode() {#114,15.741486549377441
+this.realMethod = realMethod;#47,15.71215432882309
+void markVerified() {#209,15.683590030670166
+this.location = new Location();#51,15.651622072855632
+public int getArgumentsCount() {#193,15.620171149571737
+private final Object mock;#33,15.5659515592787
+private boolean verifiedInOrder;#40,15.539386653900147
+public Object[] getRawArguments() {#197,15.522952006413387
+public Object[] getArguments() {#84,15.512712876001993
+private static Object[] expandVarArgs(final boolean isVarArgs, final Object[] args) {#56,15.330532113711039
+final RealMethod realMethod;#42,15.232405853271484
+public boolean isValidException(Throwable throwable) {#153,15.131828129291534
+private boolean equalArguments(Object[] arguments) {#110,14.899777285257976
+private final Object[] rawArguments;#36,14.892887830734253
+private boolean verified;#39,14.795971870422363
+private final Location location;#38,14.76178010304769
+private final Object[] arguments;#35,14.304632949829102

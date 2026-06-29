@@ -1,0 +1,432 @@
+boolean roundUp = false;#991,20.305234500340053
+public boolean hasNext() {#1843,19.886494091578893
+if (cal1 == null || cal2 == null) {#259,19.83534290677025
+if (date == null) {#803,19.760107231140136
+if(calendar == null) {#1671,19.75916039943695
+if (date == null) {#832,19.756054878234863
+if (date == null) {#920,19.749035008748372
+if (date == null) {#890,19.733925120035806
+if (cal1 == null || cal2 == null) {#239,19.719659532819474
+if (date == null) {#485,19.695329475402833
+if (date == null) {#863,19.658312606811524
+boolean done = false;#958,19.655337260319637
+if (date == null) {#708,19.631244468688966
+if (date.getTime() != time) {#985,19.626766505994294
+if (cal1 == null || cal2 == null) {#200,19.620993387131463
+if (focus == null) {#1138,19.60661729176839
+if (date == null) {#670,19.600669606526694
+if (date == null) {#747,19.600412050882976
+if (date == null) {#777,19.594321505228677
+long time = date.getTime();#957,19.53191375732422
+switch (fragment) {#1687,19.518051020304362
+if (date == null) {#614,19.49745553334554
+Date date = val.getTime();#956,19.455340147018433
+if (focus == null) {#1105,19.439315668741862
+if (focus == null) {#1229,19.43484732309977
+if(date == null) {#1651,19.41696573893229
+boolean offsetSet = false;#1030,19.37945334116618
+if (date1 == null || date2 == null) {#176,19.355187461489724
+long result = 0;#1675,19.340327923114483
+if (date1 == null || date2 == null) {#221,19.32961604708717
+switch (fragment) {#1678,19.31086680094401
+throw new IllegalArgumentException("The date must not be null");#486,19.275468056018536
+done = true;#975,19.27121126651764
+private static long getFragment(Date date, int fragment, int unit) {#1650,19.208905719575426
+switch (field) {#1032,19.200169619391946
+if (!offsetSet) {#1062,19.186640315585667
+public static Date round(Date date, int field) {#669,19.172415256500244
+for (int j = 0; j < fields[i].length; j++) {#993,19.152256361643474
+done = true;#966,19.124829649925232
+public static Date round(Object date, int field) {#746,19.114816427230835
+public Calendar next() {#1852,19.08516106238732
+throw  new IllegalArgumentException("The date must not be null");#1652,19.075775605660898
+if (str == null || parsePatterns == null) {#328,19.053813253130233
+public static long getFragmentInHours(Date date, int fragment) {#1394,19.036640930175782
+throw new IllegalArgumentException("The date must not be null");#1106,19.028941264519325
+throw new IllegalArgumentException("The date must not be null");#864,19.026009412912224
+boolean lenient) throws ParseException {#327,19.02414240155901
+switch (unit) {#1796,19.023265471825233
+throw new IllegalArgumentException("The date must not be null");#240,19.011805901160606
+if (fields[i][j] == field) {#994,19.007695606776647
+if (field == Calendar.SECOND) {#965,19.004828135172527
+throw new IllegalArgumentException("The date must not be null");#804,18.991898169884315
+throw new IllegalArgumentException("The date must not be null");#891,18.98896862910344
+throw new IllegalArgumentException("The date must not be null");#177,18.985499932215763
+throw new ArithmeticException("Calendar value too large for accurate calculations");#943,18.984996407120317
+if (date instanceof Date) {#835,18.97066640853882
+Calendar end = null;#1142,18.97039354764498
+throw new IllegalArgumentException("The date must not be null");#222,18.968503071711613
+throw new IllegalArgumentException("The date must not be null");#709,18.963040571946365
+throw new IllegalArgumentException("The date must not be null");#778,18.948958910428562
+throw new IllegalArgumentException("The date must not be null");#671,18.935755949753982
+public static long getFragmentInDays(Date date, int fragment) {#1434,18.904759073257445
+throw new IllegalArgumentException("The date must not be null");#615,18.898694588587833
+throw  new IllegalArgumentException("The date must not be null");#1672,18.89752800124032
+if (date instanceof Date) {#923,18.87883621454239
+int offset = 0;#1029,18.877748040591968
+private static long getMillisPerUnit(int unit) {#1794,18.868754667394303
+if (date instanceof Date) {#750,18.857834339141846
+throw new IllegalArgumentException("Date and Patterns must not be null");#329,18.840463708948207
+for (int i = 0; i < fields.length; i++) {#992,18.838642120361328
+if (field == Calendar.MINUTE) {#974,18.828154934777153
+throw new IllegalArgumentException("The date must not be null");#260,18.82691302666297
+public static long getFragmentInMilliseconds(Date date, int fragment) {#1274,18.8119271885265
+throw new IllegalArgumentException("The date must not be null");#1139,18.810166358947754
+public static long getFragmentInMinutes(Date date, int fragment) {#1354,18.80658095223563
+throw new IllegalArgumentException("The date must not be null");#201,18.805813642648552
+throw new IllegalArgumentException("The date must not be null");#921,18.802250091846172
+public static Date truncate(Date date, int field) {#776,18.79012887618121
+return date;#355,18.780623285393965
+throw new IllegalArgumentException("The field " + field + " is not supported");#1075,18.76356000166673
+public static Calendar round(Calendar date, int field) {#707,18.747186324175665
+switch (rangeStyle) {#1145,18.738407816205704
+private static long getFragment(Calendar calendar, int fragment, int unit) {#1670,18.726734854958274
+public void remove() {#1866,18.725068605863132
+public static Date truncate(Object date, int field) {#831,18.72387190426097
+private static Date add(Date date, int calendarField, int amount) {#484,18.711107683181762
+public static long getFragmentInSeconds(Date date, int fragment) {#1314,18.684217498415993
+time = time - millisecs;#963,18.644583350733708
+throw new IllegalArgumentException("The date must not be null");#833,18.633718197162334
+throw new IllegalArgumentException("The date must not be null");#748,18.632143534146824
+long millisPerUnit = getMillisPerUnit(unit);#1674,18.626751249486748
+public static Date ceiling(Object date, int field) {#919,18.622357845306396
+public static boolean truncatedEquals(Date date1, Date date2, int field) {#1742,18.609386324882507
+public static long getFragmentInHours(Calendar calendar, int fragment) {#1593,18.592843691507976
+if (parsePatterns[i].endsWith("ZZ")) {#340,18.57528935945951
+if (val.get(Calendar.DATE) == 1) {#1001,18.573885050686922
+if (offset != 0) {#1071,18.55693234895405
+Calendar start = null;#1141,18.549811950096718
+public static Date ceiling(Date date, int field) {#862,18.548260807991028
+public static final TimeZone UTC_TIME_ZONE = TimeZone.getTimeZone("GMT");#60,18.536281051635743
+private static void modify(Calendar val, int field, int modType) {#941,18.53380961645217
+throw new IllegalArgumentException("The date must not be null");#1230,18.525513355548565
+public static long getFragmentInDays(Calendar calendar, int fragment) {#1635,18.52380793435233
+if (val.get(Calendar.HOUR_OF_DAY) == 0) {#1012,18.51065142949422
+public static Date addMinutes(Date date, int amount) {#441,18.50916009479099
+public static Date addWeeks(Date date, int amount) {#399,18.507316695319282
+if (focus instanceof Date) {#1232,18.50651752948761
+public static Date addDays(Date date, int amount) {#413,18.503366638632382
+int seconds = val.get(Calendar.SECOND);#970,18.495050021580287
+public static Calendar truncate(Calendar date, int field) {#802,18.488989724053276
+public static long getFragmentInMinutes(Calendar calendar, int fragment) {#1553,18.472564047033135
+public static Date addYears(Date date, int amount) {#371,18.46086036457735
+private static Date set(Date date, int calendarField, int amount) {#613,18.450325441360473
+if (val.get(Calendar.YEAR) > 280000000) {#942,18.44504138946533
+return c.getTime();#622,18.442164966038295
+if (fields[i][0] == Calendar.DATE) {#1034,18.425349725995744
+if (parsePatterns[i].endsWith("ZZ")) {#349,18.417593992673435
+int startCutoff = Calendar.SUNDAY;#1143,18.41563515914114
+public DateUtils() {#157,18.410459136962892
+public static Date addHours(Date date, int amount) {#427,18.40843733619241
+Calendar truncatedCal2 = truncate(cal2, field);#1762,18.39174222946167
+public static Date addMilliseconds(Date date, int amount) {#469,18.390609289470472
+Calendar truncatedCal1 = truncate(cal1, field);#1761,18.39057913693515
+public static Date parseDateStrictly(String str, String... parsePatterns) throws ParseException {#307,18.38105791586417
+return gval.getTime();#869,18.374525197347005
+Calendar cal2 = Calendar.getInstance();#181,18.35911464691162
+cal1.get(Calendar.YEAR) == cal2.get(Calendar.YEAR) &&#204,18.35649001598358
+return c.getTime();#491,18.347191878727504
+date.setTime(time);#986,18.34293064318205
+private static final int[][] fields = {#88,18.33535759789603
+throw new ParseException("Unable to parse the date: " + str, -1);#358,18.334900208881923
+return;#947,18.33359009878976
+return truncatedCompareTo(cal1, cal2, field) == 0;#1726,18.33254737854004
+if (fields[i][0] == Calendar.HOUR_OF_DAY) {#1050,18.330918825589695
+if (date != null && pos.getIndex() == str2.length()) {#354,18.32672863006592
+public static long getFragmentInSeconds(Calendar calendar, int fragment) {#1513,18.314936291087758
+return gval.getTime();#783,18.310948753356932
+return gval.getTime();#676,18.29317766825358
+Calendar c = Calendar.getInstance();#618,18.291259944438934
+ParsePosition pos = new ParsePosition(0);#334,18.288762855529786
+if (field == Calendar.MILLISECOND) {#946,18.288342294238863
+c.setTime(date);#620,18.278675206502278
+throw new IllegalArgumentException("The range style " + rangeStyle + " is not valid.");#1186,18.27225386129843
+Calendar cal1 = Calendar.getInstance();#179,18.270750943352194
+Calendar ceiled = (Calendar) date.clone();#893,18.262152433395386
+Calendar c = Calendar.getInstance();#488,18.25636327266693
+return (cal1.get(Calendar.ERA) == cal2.get(Calendar.ERA) &&#203,18.256137520074844
+public static boolean truncatedEquals(Calendar cal1, Calendar cal2, int field) {#1725,18.253982849121094
+gval.setTime(date);#781,18.223947525024414
+return getFragment(calendar, fragment, unit);#1656,18.217900466918945
+public static Date addMonths(Date date, int amount) {#385,18.216986974080402
+public static Calendar ceiling(Calendar date, int field) {#889,18.21451052497415
+int endCutoff = Calendar.SATURDAY;#1144,18.19587016105652
+Calendar c = Calendar.getInstance();#635,18.17650669813156
+int minutes = val.get(Calendar.MINUTE);#979,18.176305180504208
+return date1.getTime() == date2.getTime();#224,18.17548114603216
+gval.setTime(date);#674,18.17336368560791
+for (int i = 0; i < parsePatterns.length; i++) {#335,18.172415770017185
+if (offset >= 15) {#1041,18.169628143310547
+public static Date setYears(Date date, int amount) {#505,18.16152572631836
+public static long getFragmentInMilliseconds(Calendar calendar, int fragment) {#1474,18.155485062372115
+gval.setTime(date);#867,18.153887271881104
+String str2 = str;#347,18.152488708496094
+public static boolean isSameDay(Date date1, Date date2) {#175,18.15036654472351
+offset = val.get(Calendar.DATE) - 1;#1038,18.142443167857635
+Calendar truncated = (Calendar) date.clone();#806,18.140091848373412
+if (offset >= 12) {#1054,18.13074198076802
+public static Date setDays(Date date, int amount) {#535,18.127301552716425
+public static Date parseDate(String str, String... parsePatterns) throws ParseException {#287,18.12629226843516
+roundUp = offset >= 6;#1057,18.12323078032463
+if (modType == MODIFY_CEILING || (modType == MODIFY_ROUND && roundUp)) {#996,18.123151699701946
+private final Calendar endFinal;#1822,18.113713809422084
+return truncatedCompareTo(date1, date2, field) == 0;#1743,18.1133411026001
+Calendar rounded = (Calendar) date.clone();#711,18.108848872937653
+long result = Long.MAX_VALUE;#1795,18.108248542336856
+public static Date addSeconds(Date date, int amount) {#455,18.107353846232098
+int min = val.getActualMinimum(fields[i][0]);#1063,18.107004016637802
+switch (rangeStyle) {#1167,18.10354622927579
+str2 = str.replaceAll("([-+][0-9][0-9]):([0-9][0-9])$", "$1$2");#350,18.095631509456993
+public static int truncatedCompareTo(Date date1, Date date2, int field) {#1780,18.092369834582012
+offset = val.get(Calendar.HOUR_OF_DAY);#1053,18.088995337486267
+int max = val.getActualMaximum(fields[i][0]);#1064,18.08488216996193
+case RANGE_WEEK_RELATIVE:#1175,18.0838804880778
+if (MODIFY_TRUNCATE == modType || millisecs < 500) {#962,18.080862249646867
+c.setTime(date);#489,18.075659942626952
+val.setTime(date);#987,18.073895303826582
+time = time - (seconds * 1000L);#972,18.07374030893499
+default: throw new IllegalArgumentException("The fragment " + fragment + " is not supported");#1707,18.073509799109566
+if (endCutoff < Calendar.SUNDAY) {#1194,18.07135450272333
+return cal1.getTime().getTime() == cal2.getTime().getTime();#242,18.068204607282365
+public static boolean isSameInstant(Date date1, Date date2) {#220,18.066334581375123
+return getFragment(calendar, fragment, Calendar.HOUR_OF_DAY);#1594,18.065530247158474
+gval.setTime(focus);#1109,18.064430952072144
+public static Date setHours(Date date, int amount) {#551,18.0632105995627
+time = time - (minutes * 60000L);#981,18.05890456835429
+if (endCutoff > Calendar.SATURDAY) {#1197,18.05660022388805
+throw new NoSuchElementException();#1854,18.0536236141039
+return getFragment(date, fragment, Calendar.HOUR_OF_DAY);#1395,18.05126435940082
+if (startCutoff < Calendar.SUNDAY) {#1188,18.04808825538272
+roundUp = offset > 7;#1045,18.041417306469334
+public static Date setMilliseconds(Date date, int amount) {#596,18.039610561571624
+if (!done && (MODIFY_TRUNCATE == modType || seconds < 30)) {#971,18.032252184549968
+if (!done && (MODIFY_TRUNCATE == modType || minutes < 30)) {#980,18.02648687362671
+c.setTime(date);#636,18.017128880818685
+if (rangeStyle == RANGE_MONTH_MONDAY) {#1155,18.015360683202744
+private final Calendar spot;#1823,18.0024477151724
+result += (calendar.get(Calendar.DAY_OF_MONTH) * MILLIS_PER_DAY) / millisPerUnit;#1683,17.99026511112849
+if (field == DateUtils.SEMI_MONTH) {#997,17.98739287853241
+public static Date setMinutes(Date date, int amount) {#566,17.985904057820637
+DateIterator(Calendar startFinal, Calendar endFinal) {#1831,17.98343158903576
+val.add(fields[i][0], 1);#1022,17.982464289665224
+case RANGE_WEEK_RELATIVE:#1162,17.982394261793658
+endCutoff = Calendar.SUNDAY;#1157,17.966345882415773
+return new DateIterator(start, end);#1206,17.964588782366583
+while (end.get(Calendar.DAY_OF_WEEK) != endCutoff) {#1203,17.964176877339682
+offset = val.get(fields[i][0]) - min;#1066,17.962573236034764
+endCutoff = focus.get(Calendar.DAY_OF_WEEK) + 3;#1181,17.950309986538358
+Calendar gval = Calendar.getInstance();#780,17.942569115582636
+if (spot.equals(endFinal)) {#1853,17.94250372181768
+spot = startFinal;#1834,17.937672783346738
+Calendar gval = Calendar.getInstance();#866,17.936156048494226
+public static Iterator<Calendar> iterator(Date focus, int rangeStyle) {#1104,17.9340764392506
+if (startCutoff > Calendar.SATURDAY) {#1191,17.931468573483553
+cal2.setTime(date2);#182,17.925041254828958
+result += (calendar.get(Calendar.DAY_OF_YEAR) * MILLIS_PER_DAY) / millisPerUnit;#1680,17.9235467116038
+return result;#1709,17.922909649935637
+{Calendar.SECOND},#90,17.91782088028757
+public static Date setMonths(Date date, int amount) {#520,17.906583097245957
+c.set(calendarField, amount);#621,17.902763737572563
+Calendar gval = Calendar.getInstance();#673,17.902120253619024
+cal1.get(Calendar.ERA) == cal2.get(Calendar.ERA) &&#268,17.900379080521432
+public final static int MODIFY_CEILING= 2;#146,17.898751894632976
+Calendar gval = Calendar.getInstance();#1108,17.891801104826087
+{Calendar.ERA}};#98,17.886222889548854
+break;#1684,17.88335461086697
+Calendar calendar = Calendar.getInstance();#1654,17.86797606945038
+result += (calendar.get(Calendar.HOUR_OF_DAY) * MILLIS_PER_HOUR) / millisPerUnit;#1695,17.861846554036042
+calendar.setTime(date);#1655,17.861491775512697
+{Calendar.HOUR_OF_DAY, Calendar.HOUR},#92,17.861263138907297
+return getFragment(date, fragment, Calendar.DAY_OF_YEAR);#1435,17.848318099975586
+case RANGE_WEEK_MONDAY:#1161,17.84758356343145
+while (start.get(Calendar.DAY_OF_WEEK) != startCutoff) {#1200,17.843761761983234
+startCutoff = focus.get(Calendar.DAY_OF_WEEK) - 3;#1180,17.842109319898817
+Date truncatedDate2 = truncate(date2, field);#1782,17.839796369726006
+case Calendar.AM_PM:#1049,17.83942463086999
+startCutoff = focus.get(Calendar.DAY_OF_WEEK);#1176,17.82941046215239
+cal1.get(Calendar.HOUR) == cal2.get(Calendar.HOUR) &&#265,17.826097226142885
+startCutoff = Calendar.MONDAY;#1156,17.819820213317872
+String pattern = parsePatterns[i];#337,17.816996574401855
+break;#1182,17.814679365891678
+return parseDateWithLeniency(str, parsePatterns, true);#288,17.811883055645488
+public final static int RANGE_MONTH_MONDAY = 6;#128,17.807929468154907
+public static Date setSeconds(Date date, int amount) {#581,17.807089275783962
+public static int truncatedCompareTo(Calendar cal1, Calendar cal2, int field) {#1760,17.804611434936522
+break;#1170,17.80387753706712
+return getFragment(date, fragment, Calendar.SECOND);#1315,17.80258135362105
+public final static int RANGE_WEEK_RELATIVE = 3;#113,17.794734402706748
+return getFragment(calendar, fragment, Calendar.DAY_OF_YEAR);#1636,17.789285624468768
+roundUp = offset > ((max - min) / 2);#1068,17.789170594050965
+pos.setIndex(0);#345,17.788517951965332
+modify(gval, field, MODIFY_CEILING);#868,17.783150465592094
+val.add(Calendar.HOUR_OF_DAY, -12);#1015,17.782983974534638
+public final static int RANGE_WEEK_MONDAY = 2;#108,17.781617450714112
+return c;#637,17.780378688465465
+return result;#1815,17.77668250690807
+break;#1178,17.77655762892503
+return getFragment(calendar, fragment, Calendar.SECOND);#1514,17.771149842635445
+return (cal1.get(Calendar.MILLISECOND) == cal2.get(Calendar.MILLISECOND) &&#262,17.767657256126405
+public static Calendar toCalendar(Date date) {#634,17.7605037689209
+endCutoff -= 7;#1198,17.750567966037327
+public class DateUtils {#55,17.748016357421875
+return getFragment(date, fragment, Calendar.MILLISECOND);#1275,17.747156340500403
+return rounded;#713,17.73628078807484
+startCutoff -= 7;#1192,17.73371124267578
+case RANGE_WEEK_MONDAY:#1171,17.731225044496597
+public static boolean isSameInstant(Calendar cal1, Calendar cal2) {#238,17.73041647956485
+pattern = pattern.substring(0, pattern.length() - 1);#341,17.72708347439766
+public static boolean isSameDay(Calendar cal1, Calendar cal2) {#199,17.715619586762926
+return getFragment(date, fragment, Calendar.MINUTE);#1355,17.71443358334628
+return add(date, Calendar.DAY_OF_MONTH, amount);#414,17.711355328559875
+val.set(fields[i][0], val.get(fields[i][0]) - offset);#1072,17.708882967631023
+cal1.setTime(date1);#180,17.706371363471536
+int millisecs = val.get(Calendar.MILLISECOND);#961,17.704645614624024
+return round((Calendar) date, field).getTime();#753,17.7017419052124
+offset -= 15;#1042,17.69714492559433
+public static final long MILLIS_PER_SECOND = 1000;#65,17.69207541147868
+end.add(Calendar.DATE, 1);#1204,17.69205379486084
+return parseDateWithLeniency(str, parsePatterns, false);#308,17.691880433455758
+result += (calendar.get(Calendar.SECOND) * MILLIS_PER_SECOND) / millisPerUnit;#1701,17.69175902472602
+public static boolean isSameLocalTime(Calendar cal1, Calendar cal2) {#258,17.69156906821511
+throw new UnsupportedOperationException();#1867,17.689695860210218
+return iterator(gval, rangeStyle);#1110,17.680614808026483
+return truncated;#808,17.67868932088216
+start.add(Calendar.DATE, -1);#1201,17.676646156311037
+c.add(calendarField, amount);#490,17.672389613257515
+return getFragment(calendar, fragment, Calendar.MINUTE);#1554,17.662727977918543
+offsetSet = true;#1046,17.65632626105999
+result = 1;#1811,17.65155611038208
+endCutoff = Calendar.SUNDAY;#1173,17.650420918184167
+return round((Date) date, field);#751,17.64995693025135
+val.add(Calendar.HOUR_OF_DAY, 12);#1013,17.64967219034831
+end = (Calendar) start.clone();#1151,17.63938254576463
+default: throw new IllegalArgumentException("The unit " + unit + " cannot be represented is milleseconds");#1813,17.63743815550933
+public static final long MILLIS_PER_DAY = 24 * MILLIS_PER_HOUR;#80,17.634213371276857
+cal1.get(Calendar.SECOND) == cal2.get(Calendar.SECOND) &&#263,17.63369562625885
+offsetSet = true;#1058,17.629410546401452
+return add(date, Calendar.WEEK_OF_YEAR, amount);#400,17.626343612670897
+public static final long MILLIS_PER_HOUR = 60 * MILLIS_PER_MINUTE;#75,17.625877600449783
+case RANGE_WEEK_SUNDAY:#1168,17.625594631318123
+startCutoff = Calendar.MONDAY;#1172,17.621596168069278
+endCutoff += 7;#1195,17.609141031901043
+return truncatedCal1.compareTo(truncatedCal2);#1763,17.60679256916046
+case Calendar.HOUR_OF_DAY:#1801,17.604161869395863
+modify(ceiled, field, MODIFY_CEILING);#894,17.602484620135762
+throw new ClassCastException("Could not round " + date);#755,17.599750480651856
+return add(date, Calendar.HOUR_OF_DAY, amount);#428,17.595725695292156
+this.endFinal = endFinal;#1833,17.59503240585327
+{Calendar.MINUTE},#91,17.589947650307103
+Date date = parser.parse(str2, pos);#353,17.58952486515045
+cal1.get(Calendar.DAY_OF_YEAR) == cal2.get(Calendar.DAY_OF_YEAR) &&#266,17.58864019314448
+val.add(Calendar.MONTH, 1);#1005,17.58310970393094
+{Calendar.DATE, Calendar.DAY_OF_MONTH, Calendar.AM_PM#93,17.581855100743912
+return (Calendar) spot.clone();#1857,17.568192391168502
+startCutoff += 7;#1189,17.56239324145847
+default:#1185,17.56089918954032
+end.add(Calendar.DATE, -1);#1153,17.555425512379614
+cal1.get(Calendar.YEAR) == cal2.get(Calendar.YEAR) &&#267,17.551148867607118
+result += (calendar.get(Calendar.MINUTE) * MILLIS_PER_MINUTE) / millisPerUnit;#1698,17.541084713406033
+return ceiling((Calendar) date, field).getTime();#926,17.54107231140137
+Date truncatedDate1 = truncate(date1, field);#1781,17.537816047668457
+cal1.get(Calendar.DAY_OF_YEAR) == cal2.get(Calendar.DAY_OF_YEAR));#205,17.53395175933838
+return spot.before(endFinal);#1844,17.530018711090086
+offset -= 12;#1055,17.5274415910244
+public static Iterator<?> iterator(Object focus, int rangeStyle) {#1228,17.5246488571167
+cal1.getClass() == cal2.getClass());#269,17.518286540590484
+case RANGE_WEEK_SUNDAY:#1160,17.511960693027664
+endCutoff = startCutoff - 1;#1177,17.51047372817993
+super();#158,17.50796756744385
+break;#1048,17.503844781355426
+throw new ClassCastException("Could not truncate " + date);#840,17.49466433891883
+val.add(Calendar.DATE, 1);#1016,17.487797086889092
+return set(date, Calendar.DAY_OF_MONTH, amount);#536,17.482709368069965
+public final static int RANGE_MONTH_SUNDAY = 5;#123,17.481214666366576
+modify(gval, field, MODIFY_ROUND);#675,17.478135499087248
+return truncatedDate1.compareTo(truncatedDate2);#1783,17.47454071044922
+throw new ClassCastException("Could not find ceiling of for type: " + date.getClass());#928,17.470537561358828
+case Calendar.DATE:#1694,17.468037287394207
+case Calendar.HOUR_OF_DAY:#1697,17.440474206751045
+result += (calendar.get(Calendar.MILLISECOND) * 1) / millisPerUnit;#1704,17.437138307662238
+break;#1681,17.429360177781845
+case Calendar.DAY_OF_YEAR:#1693,17.426697254180908
+end.add(Calendar.MONTH, 1);#1152,17.419846262250626
+result = MILLIS_PER_DAY;#1799,17.418003463745116
+case RANGE_WEEK_CENTER:#1163,17.4151986729015
+val.add(Calendar.DATE, -15);#1004,17.39855030907525
+public static final long MILLIS_PER_MINUTE = 60 * MILLIS_PER_SECOND;#70,17.397430713360126
+SimpleDateFormat parser = new SimpleDateFormat();#332,17.39058510462443
+result = MILLIS_PER_HOUR;#1802,17.386252660017746
+case RANGE_WEEK_CENTER:#1179,17.381674766540527
+spot.add(Calendar.DATE, 1);#1856,17.379016081492107
+public final static int SEMI_MONTH = 1001;#86,17.37342099582448
+case Calendar.DATE:#1798,17.366544723510742
+return getFragment(calendar, fragment, Calendar.MILLISECOND);#1475,17.360064853321422
+return truncate((Calendar) date, field).getTime();#838,17.352551680344803
+val.add(Calendar.DATE, 15);#1002,17.348551034927368
+public static Iterator<Calendar> iterator(Calendar focus, int rangeStyle) {#1137,17.34779154736063
+break;#1174,17.343400184924786
+return add(date, Calendar.SECOND, amount);#456,17.339477920532225
+modify(rounded, field, MODIFY_ROUND);#712,17.339102245512464
+return isSameDay(cal1, cal2);#183,17.332371862311113
+case Calendar.SECOND:#1807,17.328327708774143
+public final static int RANGE_WEEK_CENTER = 4;#118,17.32240747150622
+result = MILLIS_PER_MINUTE;#1805,17.318036042726956
+parser.applyPattern(pattern);#344,17.316834750928376
+public final static int RANGE_WEEK_SUNDAY = 1;#103,17.301316881179808
+return set(date, Calendar.HOUR_OF_DAY, amount);#552,17.287007331848145
+break;#1803,17.283844259050156
+return ceiled;#895,17.281089464823406
+result = MILLIS_PER_SECOND;#1808,17.278866657843956
+break;#1806,17.275597890218098
+cal1.get(Calendar.MINUTE) == cal2.get(Calendar.MINUTE) &&#264,17.273750376701354
+break;#1184,17.272964477539062
+break;#1159,17.272453784942627
+throw new ClassCastException("Could not iterate based on " + focus);#1237,17.270402124949864
+spot.add(Calendar.DATE, -1);#1835,17.26687267303467
+case Calendar.YEAR:#1689,17.24985959794786
+case RANGE_MONTH_MONDAY:#1147,17.244453181391176
+parser.setLenient(lenient);#333,17.220038918887866
+break;#1809,17.21932390001085
+super();#1832,17.212930543082102
+return ceiling((Date) date, field);#924,17.207171667189826
+case RANGE_MONTH_SUNDAY:#1146,17.20051209822945
+case DateUtils.SEMI_MONTH:#1033,17.187491144452775
+{Calendar.YEAR},#97,17.18404493833843
+return truncate((Date) date, field);#836,17.177944226698443
+c.setLenient(false);#619,17.163958847522736
+return;#1025,17.15462771329013
+return add(date, Calendar.MONTH, amount);#386,17.144221305847168
+return add(date, Calendar.MINUTE, amount);#442,17.142722415924073
+start = truncate(focus, Calendar.MONTH);#1149,17.130003452301025
+return add(date, Calendar.YEAR, amount);#372,17.12626338005066
+{Calendar.MONTH, DateUtils.SEMI_MONTH},#96,17.12035280863444
+case Calendar.MONTH:#1690,17.102780024210613
+end = truncate(focus, Calendar.DATE);#1166,17.096292734146118
+return iterator((Calendar) focus, rangeStyle);#1235,17.08135932424794
+public final static int MODIFY_TRUNCATE = 0;#134,17.076508220873382
+private static Date parseDateWithLeniency(String str, String[] parsePatterns,#326,17.074249484322287
+public final static int MODIFY_ROUND = 1;#140,17.06820992862477
+return iterator((Date) focus, rangeStyle);#1233,17.064577839591287
+case Calendar.MINUTE:#1804,17.059943464067246
+{Calendar.MILLISECOND},#89,17.057660232890736
+case Calendar.MINUTE:#1700,17.05714072121514
+break;#1812,17.055387920803494
+break;#1800,17.05256223678589
+modify(gval, field, MODIFY_TRUNCATE);#782,17.03345473607381
+case Calendar.SECOND:#1703,17.021287070380318
+break;#1060,17.014118671417236
+return set(date, Calendar.SECOND, amount);#582,17.00556206703186
+case Calendar.DAY_OF_YEAR:#1797,17.0025859746066
+case Calendar.MONTH:#1682,16.99924988216824
+break;#1705,16.98668972651164
+start = truncate(focus, Calendar.DATE);#1165,16.94801242010934
+return set(date, Calendar.MONTH, amount);#521,16.93837089538574
+return add(date, Calendar.MILLISECOND, amount);#470,16.903810252314027
+case Calendar.YEAR:#1679,16.82970926496718
+return set(date, Calendar.YEAR, amount);#506,16.820644474029542
+static class DateIterator implements Iterator<Calendar> {#1821,16.799312323331833
+return set(date, Calendar.MINUTE, amount);#567,16.76687741279602
+modify(truncated, field, MODIFY_TRUNCATE);#807,16.658475761413573
+case Calendar.MILLISECOND:#1810,16.611922127859934
+case Calendar.MILLISECOND: break;//never useful#1706,16.60228857627282
+return set(date, Calendar.MILLISECOND, amount);#597,16.52950850777004

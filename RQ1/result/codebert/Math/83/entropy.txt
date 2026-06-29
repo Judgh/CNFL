@@ -1,0 +1,203 @@
+private LinearConstraint normalize(final LinearConstraint constraint) {#210,16.131381845474245
+public List<LinearConstraint> getNormalizedConstraints() {#197,15.653593131474086
+protected void subtractRow(final int minuendRow, final int subtrahendRow,#385,15.646567634914232
+protected transient RealMatrix tableau;#78,15.637995980002664
+protected final int getNegativeDecisionVariableOffset() {#457,15.607235252857208
+class SimplexTableau implements Serializable {#63,15.606796646118164
+private int getConstraintTypeCounts(final Relationship relationship) {#233,15.498573604382967
+SimplexTableau(final LinearObjectiveFunction f,#101,15.470256567001343
+private final Collection<LinearConstraint> constraints;#72,15.375976264476776
+Integer negativeVarBasicRow = getBasicRow(getNegativeDecisionVariableOffset());#341,15.263833920160929
+protected final int getSlackVariableOffset() {#432,15.175879955291748
+List<LinearConstraint> constraints = getNormalizedConstraints();#126,15.138135986328125
+protected final int getArtificialVariableOffset() {#440,15.1276935168675
+private final LinearObjectiveFunction f;#69,15.077532609303793
+List<LinearConstraint> normalized = new ArrayList<LinearConstraint>();#198,15.051676191132644
+return new LinearConstraint(constraint.getCoefficients(),#216,15.035866242188673
+protected final int getNumObjectiveFunctions() {#224,15.024448521931966
+protected static double getInvertedCoeffiecientSum(final RealVector coefficients) {#259,15.018182422803795
+protected RealPointValuePair getSolution() {#339,14.911373683384486
+protected final int getNumDecisionVariables() {#471,14.902026875813801
+return new LinearConstraint(constraint.getCoefficients().mapMultiply(-1),#212,14.892617649502224
+protected final int numDecisionVariables;#81,14.769663370572603
+private Integer getBasicRow(final int col, boolean ignoreObjectiveRows) {#290,14.760054198178379
+protected final int numSlackVariables;#84,14.703326592078575
+protected final int getOriginalNumDecisionVariables() {#480,14.685701549053192
+double mostNegative = negativeVarBasicRow == null ? 0 : getEntry(negativeVarBasicRow, getRhsOffset());#342,14.612355868021647
+protected final int getWidth() {#397,14.5659517808394
+copyArray(objectiveCoefficients.getData(), matrix[zIndex], getNumObjectiveFunctions());#140,14.564365606050234
+int zIndex = (getNumObjectiveFunctions() == 1) ? 0 : 1;#136,14.53756822858538
+maximize ? f.getCoefficients().mapMultiply(-1) : f.getCoefficients();#139,14.511285731666966
+this.numArtificialVariables = getConstraintTypeCounts(Relationship.EQ) +#112,14.497320359753024
+protected final int getNumArtificialVariables() {#496,14.458046785990398
+this.tableau = new Array2DRowRealMatrix(createTableau(goalType == GoalType.MAXIMIZE));#114,14.454043224879674
+protected final int getNumSlackVariables() {#488,14.42460594177246
+protected final void setEntry(final int row, final int column,#423,14.417708661821154
+return new RealPointValuePair(coefficients, f.getValue(coefficients));#357,14.412866910298666
+protected void divideRow(final int dividendRow, final double divisor) {#369,14.38040928613572
+return Boolean.valueOf(restrictToNonNegative).hashCode() ^#542,14.361466369628907
+Integer basicRow = getBasicRow(getNumObjectiveFunctions() + i);#345,14.360503026417323
+if (getNumObjectiveFunctions() == 2) {#133,14.331177688780285
+protected final double getEntry(final int row, final int column) {#414,14.31386265001799
+protected final int getHeight() {#405,14.265609741210938
+protected void discardArtificialVariables() {#306,14.232442855834961
+private Integer getBasicRowForSolution(final int col) {#281,14.207273819867302
+this.numDecisionVariables   = getNumVariables() + (restrictToNonNegative ? 0 : 1);#109,14.191728644900852
+numArtificialVariables + getNumObjectiveFunctions() + 1; // + 1 is for RHS#128,14.180608226406958
+private Integer getBasicRow(final int col) {#272,14.177040227254231
+Set<Integer> basicRows = new HashSet<Integer>();#343,14.0941344669887
+MatrixUtils.deserializeRealMatrix(this, "tableau", ois);#570,14.07848072052002
+return getNumObjectiveFunctions() + getOriginalNumDecisionVariables();#458,14.015588076218314
+protected final double epsilon;#90,13.975567904385654
+protected int numArtificialVariables;#87,13.9501899878184
+throws ClassNotFoundException, IOException {#568,13.949204381306966
+protected final int getRhsOffset() {#448,13.916059787456806
+int height = constraints.size() + getNumObjectiveFunctions();#129,13.887301362079123
+private final boolean restrictToNonNegative;#75,13.844730450556828
+return (restrictToNonNegative  == rhs.restrictToNonNegative) &&#523,13.840285301208496
+RealVector objectiveCoefficients =#138,13.820464372634888
+return restrictToNonNegative ? numDecisionVariables : numDecisionVariables - 1;#481,13.784421082200675
+this.numSlackVariables      = getConstraintTypeCounts(Relationship.LEQ) +#110,13.747387369473776
+return f.getCoefficients().getDimension();#190,13.720765636080788
+SimplexTableau rhs = (SimplexTableau) other;#522,13.720636100769044
+for (LinearConstraint constraint : constraints) {#199,13.71653311252594
+for (final LinearConstraint constraint : constraints) {#235,13.707910203933716
+int width = numDecisionVariables + numSlackVariables +#127,13.700616380442744
+if (constraint.getValue() < 0) {#211,13.651772907802037
+private static final long serialVersionUID = -1369660067587938365L;#66,13.628566700479258
+private void readObject(ObjectInputStream ois)#567,13.591111882527668
+protected double[][] createTableau(final boolean maximize) {#123,13.587392859988743
+this.tableau = new Array2DRowRealMatrix(matrix);#319,13.569273789723715
+Double.valueOf(epsilon).hashCode() ^#546,13.543343135288783
+System.arraycopy(src, 0, dest, getNumObjectiveFunctions(), src.length);#331,13.534582414934713
+copyArray(constraint.getCoefficients().getData(), matrix[row], 1);#157,13.532925310589018
+double[] coefficients = new double[getOriginalNumDecisionVariables()];#340,13.522707093845714
+return getNumObjectiveFunctions() + numDecisionVariables + numSlackVariables;#441,13.50611999117095
+private void writeObject(ObjectOutputStream oos)#556,13.471797370910645
+for (int artificialVar = 0; artificialVar < numArtificialVariables; artificialVar++) {#248,13.429288831250421
+@Override#540,13.414916197458902
+public int getNumVariables() {#189,13.393723567326864
+MatrixUtils.serializeRealMatrix(tableau, oos);#559,13.344666315161664
+public int hashCode() {#541,13.33753423690796
+this.restrictToNonNegative  = restrictToNonNegative;#107,13.326565325260162
+if (MathUtils.equals(getEntry(i, col), 1.0, epsilon) && (row == null)) {#294,13.276740318120913
+getInvertedCoeffiecientSum(constraint.getCoefficients());#162,13.272805978854498
+@Override#509,13.243679364522299
+public boolean equals(Object other) {#510,13.235939502716064
+int start = getNumObjectiveFunctions();#292,13.230191442701551
+matrix[zIndex][zIndex] = maximize ? 1 : -1;#137,13.209466894467672
+int width = getWidth() - numArtificialVariables - 1;#310,13.206884010978367
+if (constraint.getRelationship() == Relationship.LEQ) {#169,13.178385592795706
+if ((constraint.getRelationship() == Relationship.EQ) ||#176,13.137753950582969
+int row = getBasicRow(getArtificialVariableOffset() + artificialVar);#249,13.091603657294964
+(numDecisionVariables   == rhs.numDecisionVariables) &&#524,13.073285871081882
+if (constraint.getRelationship() == relationship) {#236,13.071069680727446
+final Collection<LinearConstraint> constraints,#102,13.047864611943563
+(numArtificialVariables == rhs.numArtificialVariables) &&#526,13.040691403781667
+return getNumObjectiveFunctions() + numDecisionVariables;#433,13.039722691411557
+if (other == null) {#516,12.962486267089844
+private void initialize() {#247,12.945965396033394
+for (int i = 0; i < coefficients.length; i++) {#344,12.926404562863437
+final GoalType goalType, final boolean restrictToNonNegative,#103,12.89619304194595
+matrix[row][getSlackVariableOffset() + slackVar++] = -1; // excess#172,12.864693684048122
+protected final double[][] getData() {#504,12.850926876068115
+(basicRow == null ? 0 : getEntry(basicRow, getRhsOffset())) -#353,12.828528942205967
+int height = getHeight() - 1;#311,12.824882787816664
+getInvertedCoeffiecientSum(objectiveCoefficients);#146,12.824769903973836
+for (double coefficient : coefficients.getData()) {#261,12.800779518328214
+maximize ? f.getConstantTerm() : -1 * f.getConstantTerm();#142,12.75339420636495
+if (numArtificialVariables == 0) {#307,12.731430656031558
+matrix[row][getSlackVariableOffset() + slackVar++] = 1;  // slack#170,12.721860482957627
+(restrictToNonNegative ? 0 : mostNegative);#354,12.719709247350693
+(numSlackVariables      == rhs.numSlackVariables) &&#525,12.707797246101576
+if (basicRows.contains(basicRow)) {#346,12.696122667063838
+if (!restrictToNonNegative) {#160,12.671809482574464
+tableau.setEntry(dividendRow, j, tableau.getEntry(dividendRow, j) / divisor);#371,12.670428065366524
+private void copyArray(final double[] src, final double[] dest,#329,12.651416979337993
+numDecisionVariables ^#543,12.64627842676072
+if (!restrictToNonNegative) {#144,12.59574215228741
+for (int j = 0; j < getWidth(); j++) {#387,12.560553592184316
+return tableau.getColumnDimension();#398,12.557293835808249
+matrix[zIndex][width - 1] =#141,12.550636898387562
+numArtificialVariables ^#545,12.550042969839913
+numSlackVariables ^#544,12.546879859197707
+tableau.setEntry(minuendRow, j, tableau.getEntry(minuendRow, j) -#388,12.499765824048946
+matrix[i][width - 1] = getEntry(i + 1, getRhsOffset());#317,12.498496200099137
+for (int j = 0; j < width - 1; j++) {#314,12.492444787706647
+matrix[row][getSlackVariableOffset() - 1] =#161,12.489185697153994
+return this.numArtificialVariables > 0 ? 2 : 1;#225,12.45033649776293
+(epsilon                == rhs.epsilon) &&#527,12.435323482089572
+(constraint.getRelationship() == Relationship.GEQ)) {#177,12.435004556179047
+int row = getNumObjectiveFunctions() + i;#154,12.426149454983799
+matrix[row][getArtificialVariableOffset() + artificialVar++] = 1;#179,12.417812813160031
+matrix[zIndex][getSlackVariableOffset() - 1] =#145,12.41738497870309
+double[][] matrix = new double[height][width];#130,12.414516676039923
+constraints.equals(rhs.constraints) &&#529,12.405181471506754
+tableau.setEntry(row, column, value);#425,12.350845503807069
+for (int j = 0; j < getWidth(); j++) {#370,12.343011814615
+for (int i = 0; i < constraints.size(); i++) {#152,12.340811431407928
+double[][] matrix = new double[height][width];#312,12.298573630196708
+this.numArtificialVariables = 0;#320,12.259526994493273
+oos.defaultWriteObject();#558,12.241158485412598
+ois.defaultReadObject();#569,12.222049522399903
+f.hashCode() ^#547,12.182655924842472
+matrix[row][width - 1] = constraint.getValue();#166,12.170233782599954
+for (int i = start; i < getHeight(); i++) {#293,12.15335404354593
+this.constraints            = constraints;#106,12.113314628601074
+return tableau.getRowDimension();#406,12.101224562701058
+return tableau.getEntry(row, column);#415,12.057480536009136
+return numDecisionVariables;#472,11.99691333770752
+Integer row = null;#291,11.906650213094858
+matrix[0][getArtificialVariableOffset() + artificialVar] = 1;#178,11.883520784832182
+LinearConstraint constraint = constraints.get(i);#153,11.868058308959007
+return getBasicRow(col, true);#273,11.847153495339786
+multiple * tableau.getEntry(subtrahendRow, j));#389,11.842456232417714
+constraint.getRelationship(), constraint.getValue());#217,11.826673203326287
+for (int i = 0; i < height; i++) {#313,11.824426954442805
+this.epsilon                = epsilon;#108,11.750425280946674
+int artificialVar = 0;#151,11.746911439028652
+int slackVar = 0;#150,11.638117226687344
+getConstraintTypeCounts(Relationship.GEQ);#111,11.631043855960552
+getConstraintTypeCounts(Relationship.GEQ);#113,11.624788706119244
+return tableau.getData();#505,11.61086727778117
+if (this == other) {#512,11.608089685440063
+tableau.hashCode();#549,11.605578331720261
+f.equals(rhs.f) &&#528,11.588136996541705
+constraints.hashCode() ^#548,11.587662106468564
+return getBasicRow(col, false);#282,11.546969469855814
+normalized.add(normalize(constraint));#200,11.477918189504873
+return numSlackVariables;#489,11.47324768702189
+try {#520,11.47116506099701
+return row;#300,11.451926144686611
+return numArtificialVariables;#497,11.355019601186116
+double sum = 0;#260,11.338007780221792
+tableau.equals(rhs.tableau);#530,11.281153300712848
+coefficients[i] =#352,11.244756397448088
+constraint.getRelationship().oppositeRelationship(),#213,11.240112005495558
+final double epsilon) {#104,11.157858298375057
+return count;#240,11.131497209722346
+matrix[i][j] = getEntry(i + 1, j + 1);#315,11.091470269595876
+initialize();#115,11.084499835968018
+throws IOException {#557,11.013453960418701
+coefficients[i] = 0;#349,10.96917978922526
+this.f                      = f;#105,10.845216573987688
+return getWidth() - 1;#449,10.794933223724366
+basicRows.add(basicRow);#351,10.791766560595969
+int count = 0;#234,10.72903325007512
+return normalized;#202,10.699248617345637
+subtractRow(0, row, 1.0);#250,10.614399267279584
+-1 * constraint.getValue());#214,10.58749238650004
+final double multiple) {#386,10.436498641967773
+final int destPos) {#330,10.361805207801588
+return sum;#264,10.348769404671408
+return false;#517,10.253811792893844
+final double value) {#424,10.232017028026092
+return matrix;#183,10.1849264345671
+matrix[0][0] = -1;#134,10.05861041762612
+return false;#534,9.998137107262245
+return true;#513,9.804815855893223
+row = i;#295,9.72426118850708
+sum -= coefficient;#262,9.41559612751007
+return null;#297,9.151183228743704
+++count;#237,8.859875478242573
+return;#308,8.767115558896746

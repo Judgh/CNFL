@@ -1,0 +1,97 @@
+public abstract class AbstractEstimator implements Estimator {#33,15.741448329045223
+protected void initializeEstimate(EstimationProblem problem) {#223,14.888582110404968
+public final void setMaxCostEval(int maxCostEval) {#47,14.793922996520996
+public final int getJacobianEvaluations() {#65,14.735921223958334
+protected final void incrementJacobianEvaluationsCounter() {#87,14.670438706874847
+private int jacobianEvaluations;#299,14.649502141135079
+++jacobianEvaluations;#88,14.562877927507673
+protected double[] jacobian;#273,14.559897502263388
+protected WeightedMeasurement[] measurements;#261,14.36451538403829
+public final int getCostEvaluations() {#56,14.34902470452445
+public double getChiSquare(EstimationProblem problem) {#141,14.281812106861787
+protected AbstractEstimator() {#38,14.261243213306773
+public double[] guessParametersErrors(EstimationProblem problem)#199,14.237984152401195
+public abstract void estimate(EstimationProblem problem)#257,14.152468476976667
+protected void updateJacobian() {#72,14.131062160838734
+private int maxCostEval;#293,14.052503499117764
+final double c = Math.sqrt(getChiSquare(problem) / (m - p));#208,14.050528478622436
+throws EstimationException {#97,14.046441766950819
+throws EstimationException {#159,14.016875873912465
+final int cols = problem.getAllParameters().length;#166,14.011966886974516
+if (++costEvaluations > maxCostEval) {#99,13.974937113848599
+final int rows = problem.getMeasurements().length;#165,13.94591326713562
+protected void updateResidualsAndCost()#96,13.943398680005755
+protected int cols;#276,13.924867312113443
+throws EstimationException {#200,13.887972961772572
+throws EstimationException;#258,13.871301333109537
+return Math.sqrt(criterion / wm.length);#133,13.775429877367886
+public double[][] getCovariances(EstimationProblem problem)#158,13.753772974014282
+public double getRMS(EstimationProblem problem) {#126,13.675088047981262
+throw new EstimationException("unable to compute covariances: singular problem",#184,13.611741164634967
+protected double[] residuals;#287,13.580562305450439
+private int costEvaluations;#296,13.486018094149502
+Arrays.fill(jacobian, 0);#74,13.444577593552438
+jacobianEvaluations = 0;#227,13.423863781823052
+int m = problem.getMeasurements().length;#201,13.419982182352166
+WeightedMeasurement[] wm = problem.getMeasurements();#127,13.408035321669145
+WeightedMeasurement[] wm = problem.getMeasurements();#142,13.396696264093572
+return new RealMatrixImpl(jTj).inverse().getData();#182,13.313739810671125
+protected double cost;#290,13.301663041114807
+double[] errors = new double[problem.getAllParameters().length];#207,13.215019060217816
+for (int i = 0; i < errors.length; ++i) {#210,13.158471794128419
+throw new EstimationException("maximal number of evaluations exceeded ({0})",#100,13.149576936449323
+for (int i = 0; i < wm.length; ++i) {#144,13.129993255321796
+protected EstimatedParameter[] parameters;#264,13.120323657989502
+incrementJacobianEvaluationsCounter();#73,13.08025074005127
+double[][] jTj = new double[cols][cols];#168,13.070738830566405
+double[][] covar = getCovariances(problem);#209,13.05555828757908
+this.maxCostEval = maxCostEval;#48,12.930219793319703
+protected int rows;#279,12.88959288597107
+for (int i = 0, index = 0; i < rows; i++, index += cols) {#105,12.879935592412949
+for (int i = 0; i < wm.length; ++i) {#129,12.864955315223106
+residuals[i] = Math.sqrt(wm.getWeight()) * residual;#108,12.82974826135943
+int p = problem.getAllParameters().length;#202,12.807696116598029
+measurements = problem.getMeasurements();#230,12.766865611076355
+updateJacobian();#162,12.753753741582235
+for (int i = 0; i < cols; ++i) {#169,12.706928988297781
+throw new EstimationException("no degrees of freedom ({0} measurements, {1} parameters)",#204,12.606727093458176
+criterion += wm[i].getWeight() * residual * residual;#131,12.556513768655282
+chiSquare += residual * residual / wm[i].getWeight();#146,12.472271883929217
+return jacobianEvaluations;#66,12.389528667225557
+for (int j = 0; j < cols; ++j) {#78,12.382128170558385
+cost = Math.sqrt(cost);#111,12.26111785103293
+for (int j = i; j < cols; ++j) {#170,12.23043509892055
+jacobian  = new double[rows * cols];#236,12.206252726641567
+cost += wm.getWeight() * residual * residual;#109,12.190204277038575
+for (int i = 0, index = 0; i < rows; i++) {#75,12.184742524073673
+parameters   = problem.getUnboundParameters();#231,12.097961927715101
+final int max  = cols * rows;#167,12.058946106168959
+cost = Double.POSITIVE_INFINITY;#239,12.057793188095093
+for (int k = 0; k < max; k += cols) {#172,12.019885149869053
+errors[i] = Math.sqrt(covar[i][i]) * c;#211,11.99234339685151
+jacobian[index++] = factor * wm.getPartial(parameters[j]);#79,11.95136537307348
+WeightedMeasurement wm = measurements[i];#106,11.758183251256527
+double residual = wm.getResidual();#107,11.754514901534371
+double residual = wm[i].getResidual();#145,11.753151969909668
+if (m <= p) {#203,11.724359385172527
+double factor = -Math.sqrt(wm.getWeight());#77,11.692540663939257
+double residual = wm[i].getResidual();#130,11.653462104797363
+WeightedMeasurement wm = measurements[i];#76,11.626567612523617
+residuals = new double[rows];#237,11.60480409860611
+sum += jacobian[k + i] * jacobian[k + j];#173,11.55045461654663
+jTj[j][i] = sum;#176,11.50182928862395
+double chiSquare = 0;#143,11.487593242100306
+costEvaluations     = 0;#226,11.370497703552246
+jTj[i][j] = sum;#175,11.36943025942202
+return errors;#213,11.331577734513717
+cols      = parameters.length;#235,11.303876686096192
+double criterion = 0;#128,11.188555130591759
+cost = 0;#104,11.130062103271484
+try {#180,11.058281898498535
+double sum = 0;#171,11.015826316106887
+return chiSquare;#148,10.964860995610556
+return costEvaluations;#57,10.913543360573906
+rows      = measurements.length;#234,10.892352154380397
+new Object[] { new Integer(maxCostEval) });#101,10.533179127086292
+new Object[0]);#185,10.2391941293757
+new Object[] { new Integer(m), new Integer(p)});#205,10.211055203487998

@@ -1,0 +1,68 @@
+private long stopTime = -1;#79,19.458123048146565
+public String toString() {#246,19.449256706237794
+public void unsplit() {#159,19.35626255382191
+private long startTime = -1;#75,19.28369903564453
+public void start() {#95,19.124177085028755
+startTime = -1;#130,19.071089472089493
+public void stop() {#114,19.012306425306534
+stopTime = -1;#131,18.975520951407297
+public void split() {#143,18.95877350701226
+stopTime = -1;#163,18.93501308986119
+stopTime = -1;#196,18.91929817199707
+stopTime = -1;#102,18.855286189488
+public String toSplitString() {#259,18.846650990572844
+public void suspend() {#175,18.820360077752007
+private int runningState = STATE_UNSTARTED;#65,18.782132029533386
+public void resume() {#191,18.778990851508247
+throw new IllegalStateException("Stopwatch is not running. ");#116,18.770387136019192
+throw new IllegalStateException("Stopwatch is not running. ");#145,18.76101431479821
+throw new IllegalStateException("Stopwatch must be suspended to resume. ");#193,18.71477178164891
+private static final int STATE_UNSTARTED = 0;#53,18.705377466538373
+throw new IllegalStateException("Stopwatch must be running to suspend. ");#177,18.637180737086705
+public long getTime() {#208,18.611679363250733
+throw new RuntimeException("Illegal running state has occured. ");#218,18.54409010513969
+throw new IllegalStateException("Stopwatch must be split to get the split time. ");#233,18.43268499066753
+throw new IllegalStateException("Stopwatch has not been split. ");#161,18.392977326004594
+private static final int STATE_SPLIT   = 11;#60,18.389822218153213
+if(this.runningState == STATE_STOPPED) {#96,18.384139890256137
+stopTime = System.currentTimeMillis();#118,18.352280356667258
+private static final int STATE_STOPPED   = 2;#55,18.34363811894467
+stopTime = System.currentTimeMillis();#147,18.32567596435547
+public void reset() {#127,18.303449842664932
+stopTime = System.currentTimeMillis();#179,18.273619651794434
+return 0;#213,18.24173100789388
+throw new IllegalStateException("Stopwatch already started. ");#100,18.218439559936524
+if(this.runningState == STATE_UNSTARTED) {#212,18.164514583090078
+private static final int STATE_UNSPLIT = 10;#59,18.1562183043536
+private static final int STATE_RUNNING   = 1;#54,18.149323595894707
+private int splitState   = STATE_UNSPLIT;#70,18.094112131330704
+public StopWatch() {#84,18.093939569261337
+public long getSplitTime() {#231,18.05977049740878
+return this.stopTime - this.startTime;#210,18.042767980824348
+if(this.runningState == STATE_RUNNING) {#215,18.037816632877696
+startTime = System.currentTimeMillis();#103,18.024134318033855
+throw new IllegalStateException("Stopwatch must be reset before being restarted. ");#97,17.94218807220459
+return System.currentTimeMillis() - this.startTime;#216,17.933270050929142
+this.runningState = STATE_STOPPED;#119,17.923292446136475
+this.runningState = STATE_UNSTARTED;#128,17.887384128570556
+this.runningState = STATE_RUNNING;#104,17.84780979156494
+if(this.splitState != STATE_SPLIT) {#232,17.837420810352672
+this.runningState = STATE_RUNNING;#197,17.825701261821546
+if(this.runningState != STATE_UNSTARTED) {#99,17.80565344769022
+private static final int STATE_SUSPENDED = 3;#56,17.790507092195398
+if(this.runningState != STATE_RUNNING && this.runningState != STATE_SUSPENDED) {#115,17.779503485735724
+return this.stopTime - this.startTime;#235,17.74552109366969
+if(this.runningState == STATE_STOPPED || this.runningState == STATE_SUSPENDED) {#209,17.710385949271068
+if(this.runningState != STATE_RUNNING) {#176,17.667458620938387
+this.splitState = STATE_SPLIT;#148,17.61310110594097
+if(this.runningState != STATE_RUNNING) {#144,17.60596030408686
+this.splitState   = STATE_UNSPLIT;#129,17.59782279621471
+if(this.runningState != STATE_SUSPENDED) {#192,17.578734480816387
+return DurationFormatUtils.formatDurationHMS(getTime());#247,17.53565636548129
+this.runningState = STATE_SUSPENDED;#180,17.516994428634643
+startTime += (System.currentTimeMillis() - stopTime);#195,17.459760831749957
+if(this.splitState != STATE_SPLIT) {#160,17.409996921365913
+this.splitState = STATE_UNSPLIT;#164,17.352581286430357
+return DurationFormatUtils.formatDurationHMS(getSplitTime());#260,17.274202180945355
+super();#85,17.268106937408447
+public class StopWatch {#50,16.212685585021973

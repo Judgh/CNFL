@@ -1,0 +1,147 @@
+protected double acceptStep(final AbstractStepInterpolator interpolator,#274,15.569520261552599
+public Collection<StepHandler> getStepHandlers() {#114,15.404185056686401
+public double getCurrentSignedStepsize() {#163,14.983128207070488
+public Collection<EventHandler> getEventHandlers() {#144,14.901453673839569
+protected Collection<StepHandler> stepHandlers;#53,14.892622538975306
+public abstract class AbstractIntegrator implements FirstOrderIntegrator {#50,14.721865433913012
+final double threshold = 1000 * FastMath.ulp(FastMath.max(FastMath.abs(equations.getTime()),#384,14.648362106747097
+public void computeDerivatives(final double t, final double[] y, final double[] yDot)#247,14.511424276563856
+protected boolean isLastStep;#62,14.510354614257812
+public double getCurrentStepStart() {#158,14.293952226638794
+public void setMaxEvaluations(int maxEvaluations) {#168,14.218645798532586
+public String getName() {#104,14.218342685699463
+protected boolean resetOccurred;#65,14.207564449310302
+private transient ExpandableStatefulODE expandable;#80,14.178224018641881
+public double integrate(final FirstOrderDifferentialEquations equations,#196,14.16982863931095
+SortedSet<EventState> occuringEvents = new TreeSet<EventState>(new Comparator<EventState>() {#292,14.148084395971054
+public int getEvaluations() {#178,14.103800137837728
+protected void sanityChecks(final ExpandableStatefulODE equations, final double t)#381,14.072133194316518
+protected void resetEvaluations() {#184,14.071673154830933
+if (y.length != equations.getDimension()) {#203,14.055707454681396
+private final String name;#74,14.036850929260254
+private Collection<EventState> eventsStates;#68,14.029120371891903
+public int getMaxEvaluations() {#173,14.011306322537935
+throws MathIllegalStateException, MathIllegalArgumentException {#198,13.977785587310791
+public void addStepHandler(final StepHandler handler) {#109,13.934180974960327
+final List<EventHandler> list = new ArrayList<EventHandler>();#145,13.925809959570566
+protected void setStateInitialized(final boolean stateInitialized) {#260,13.898281276226044
+protected void setEquations(final ExpandableStatefulODE equations) {#191,13.875999450683594
+final int orderingSign = interpolator.isForward() ? +1 : -1;#291,13.870442215601603
+evaluations.setMaximalCount((maxEvaluations < 0) ? Integer.MAX_VALUE : maxEvaluations);#169,13.83234282100902
+if (y0.length != equations.getDimension()) {#200,13.823878873478282
+stepHandlers = new ArrayList<StepHandler>();#87,13.79495928287506
+protected double stepSize;#59,13.793655819363064
+public void clearEventHandlers() {#153,13.760547558466593
+public void clearStepHandlers() {#119,13.760446747144064
+protected double stepStart;#56,13.681451161702475
+final double dt = FastMath.abs(equations.getTime() - t);#386,13.63467209427445
+final ExpandableStatefulODE expandableODE = new ExpandableStatefulODE(equations);#208,13.616541130202156
+final double currentT = interpolator.getGlobalCurrentTime();#279,13.595422077178956
+throw new NumberIsTooSmallException(LocalizedFormats.TOO_SMALL_INTEGRATION_INTERVAL,#388,13.59041471970387
+throws MathIllegalStateException {#276,13.555837949117025
+private boolean statesInitialized;#71,13.52515337202284
+throw new DimensionMismatchException(y0.length, equations.getDimension());#201,13.493018750221498
+for (final StepHandler handler : stepHandlers) {#327,13.48293147768293
+while (!occuringEvents.isEmpty()) {#308,13.470481113954024
+System.arraycopy(expandableODE.getPrimaryState(), 0, y, 0, y.length);#216,13.459743171930313
+protected AbstractIntegrator() {#99,13.400059413909911
+for (StepHandler handler : stepHandlers) {#368,13.378798443338145
+public void addEventHandler(final EventHandler handler,#124,13.365263748168946
+public abstract void integrate(ExpandableStatefulODE equations, double t)#238,13.353491735458373
+expandable.computeDerivatives(t, y, yDot);#250,13.348465728759766
+throw new DimensionMismatchException(y.length, equations.getDimension());#204,13.339474312464397
+for (final EventState state : eventsStates) {#301,13.316478480463443
+public AbstractIntegrator(final String name) {#85,13.303435802459717
+isLastStep = isLastStep || Precision.equals(currentT, tEnd, 1);#365,13.235264460245768
+interpolator.setInterpolatedTime(currentT);#359,13.211392800013224
+public void addEventHandler(final EventHandler handler,#134,13.182776514689127
+final double[] currentY = interpolator.getInterpolatedState();#360,13.098819891611734
+computeDerivatives(eventT, y, yDot);#341,13.059981682721306
+if (isLastStep) {#331,13.059468932773756
+final Iterator<EventState> iterator = occuringEvents.iterator();#311,13.04665216322868
+eventsStates = new ArrayList<EventState>();#90,13.02768672140021
+final double[] eventY = interpolator.getInterpolatedState();#322,12.97930468282392
+throws MathIllegalStateException, MathIllegalArgumentException;#239,12.953414743596857
+for (final EventState state : eventsStates) {#361,12.895672777424688
+final double eventT = currentEvent.getEventTime();#316,12.842916437557765
+eventsStates.add(new EventState(handler, maxCheckInterval, convergence,#139,12.827330350875854
+final EventState currentEvent = iterator.next();#312,12.724113519375141
+double previousT = interpolator.getGlobalPreviousTime();#278,12.703193227450052
+for (EventState state : eventsStates) {#146,12.69929806391398
+addEventHandler(handler, maxCheckInterval, convergence,#128,12.698313168116979
+if (! statesInitialized) {#283,12.629736741383871
+if (currentEvent.evaluateStep(interpolator)) {#352,12.596452088191592
+setMaxEvaluations(-1);#93,12.579285204410553
+private Incrementor evaluations;#77,12.571806526184082
+System.arraycopy(eventY, 0, y, 0, y.length);#340,12.561825501291375
+public int compare(EventState es0, EventState es1) {#295,12.546075759395476
+new BracketingNthOrderBrentSolver(convergence, 5));#130,12.536473047165643
+stepStart = Double.NaN;#88,12.53358370065689
+if (currentEvent.reset(eventT, eventY)) {#337,12.450578625996908
+integrate(expandableODE, t);#213,12.389937905704274
+interpolator.setInterpolatedTime(eventT);#321,12.385388442448207
+return Collections.unmodifiableCollection(list);#149,12.349879423777262
+final UnivariateRealSolver solver) {#138,12.339704990386963
+throws MaxCountExceededException {#248,12.32981663942337
+System.arraycopy(eventY, 0, y, 0, y.length);#333,12.316484225423713
+for (EventState state : eventsStates) {#284,12.297340301366953
+currentEvent.stepAccepted(eventT, eventY);#323,12.242913147498822
+expandableODE.setPrimaryState(y0);#210,12.241365683706183
+if (state.evaluateStep(interpolator)) {#302,12.221843447004046
+return Collections.unmodifiableCollection(stepHandlers);#115,12.217383909225465
+handler.handleStep(interpolator, isLastStep);#369,12.198455300824396
+resetEvaluations();#94,12.193965324988731
+interpolator.setSoftCurrentTime(currentT);#349,12.169990539550781
+interpolator.setSoftCurrentTime(eventT);#318,12.155381626553005
+if (dt <= threshold) {#387,12.119581349690755
+isLastStep = currentEvent.stop();#324,12.116041679382324
+throws NumberIsTooSmallException {#382,12.053831990559896
+return expandableODE.getTime();#217,12.048240602016449
+expandableODE.setTime(t0);#209,11.990033679538303
+handler.handleStep(interpolator, isLastStep);#328,11.955977988965584
+this.name = name;#86,11.914805684770856
+interpolator.setSoftPreviousTime(previousT);#317,11.91032600402832
+interpolator.setSoftPreviousTime(eventT);#348,11.885547284726742
+stepHandlers.add(handler);#110,11.83307659626007
+stepSize  = Double.NaN;#89,11.803543483509737
+previousT = eventT;#347,11.789495251395486
+return orderingSign * Double.compare(es0.getEventTime(), es1.getEventTime());#296,11.788950698320257
+this.expandable = equations;#192,11.784825682640076
+isLastStep = isLastStep || state.stop();#363,11.732412372316633
+final double[] y, final double[] yDot, final double tEnd)#275,11.679229094057668
+state.reinitializeBegin(interpolator);#285,11.585731091037873
+final double t0, final double[] y0, final double t, final double[] y)#197,11.564135720332464
+final int maxIterationCount) {#127,11.563142395019531
+resetOccurred = true;#342,11.561117245600773
+return evaluations.getMaximalCount();#174,11.558900654315948
+state.stepAccepted(currentT, currentY);#362,11.522939273289271
+final double maxCheckInterval,#135,11.522179823655348
+stepHandlers.clear();#120,11.517334972109113
+evaluations = new Incrementor();#92,11.498481051127117
+resetOccurred = false;#280,11.49095148510403
+return currentT;#372,11.41027683019638
+iterator.remove();#313,11.401074028015136
+statesInitialized = false;#91,11.341485757094164
+this(null);#100,11.205295244852701
+eventsStates.clear();#154,11.192040553459755
+occuringEvents.add(currentEvent);#354,11.123848520476242
+evaluations.incrementCount();#249,11.031844956534249
+this.statesInitialized = stateInitialized;#261,11.029932618141174
+return evaluations.getCount();#179,10.998177494321551
+return eventT;#334,10.96112048625946
+final double convergence,#136,10.955779367023045
+final double maxCheckInterval,#125,10.853930913485014
+occuringEvents.add(state);#304,10.838092616626195
+return eventT;#343,10.797166069348654
+list.add(state.getEventHandler());#147,10.766487641768022
+dt, threshold, false);#389,10.753458994085138
+maxIterationCount,#129,10.677268225571204
+final int maxIterationCount,#137,10.57937597617125
+maxIterationCount, solver));#140,10.547515233357748
+statesInitialized = true;#287,10.529158455984932
+return name;#105,10.524903644214977
+evaluations.resetCount();#185,10.48242473602295
+final double convergence,#126,10.381234725316366
+FastMath.abs(t)));#385,10.233320906355575
+return stepStart;#159,9.885580460230509
+return stepSize;#164,9.857381423314413

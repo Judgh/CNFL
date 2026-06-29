@@ -1,0 +1,186 @@
+private static Line[] boxBoundary(final double xMin, final double xMax,#108,16.97079476443204
+private void addContribution(final SubHyperplane<Euclidean2D> sub, final boolean reversed) {#446,16.85047623605439
+private List<ComparableSegment> followLoop(final AVLTree<ComparableSegment>.Node node,#293,16.76080710547311
+private static class SegmentsBuilder implements BSPTreeVisitor<Euclidean2D> {#411,16.75971202850342
+public class PolygonsSet extends AbstractRegion<Euclidean2D, Euclidean1D> {#42,16.69293186187744
+public PolygonsSet() {#49,16.500595699657094
+public AVLTree<ComparableSegment> getSorted() {#468,16.461567712866742
+final boolean open = segment.getStart() == null;#304,16.447432804107667
+public PolygonsSet(final Collection<SubHyperplane<Euclidean2D>> boundary) {#86,16.40182117179588
+while ((end != null) && (open || (globalStart.distance(end) > 1.0e-10))) {#306,16.394153349740165
+protected void computeGeometricalProperties() {#130,16.394095965794154
+public ComparableSegment(final Vector2D start, final double dx, final double dy) {#379,16.358471245601258
+final ComparableSegment lowerLeft        = new ComparableSegment(end, -1.0e-10, -1.0e-10);#312,16.300573984781902
+public Vector2D[][] getVertices() {#206,16.292902886867523
+public PolygonsSet buildNew(final BSPTree<Euclidean2D> tree) {#124,16.26350137922499
+public PolygonsSet(final BSPTree<Euclidean2D> tree) {#62,16.2217760848999
+public PolygonsSet(final double xMin, final double xMax,#96,16.193026494979858
+public ComparableSegment(final Vector2D start, final Vector2D end, final Line line) {#363,16.191027549005323
+final AVLTree<ComparableSegment> sorted = visitor.getSorted();#215,16.18087437573601
+private static class ComparableSegment extends Segment implements Comparable<ComparableSegment> {#353,16.138340671857197
+public void visitLeafNode(final BSPTree<Euclidean2D> node) {#439,16.131044483184816
+public void visitInternalNode(final BSPTree<Euclidean2D> node) {#427,16.122737391241664
+return new PolygonsSet(tree);#125,16.056400803958667
+addContribution(attribute.getPlusInside(), true);#434,16.04857955660139
+if ((loop.size() == 2) && !open) {#339,16.039858731356535
+AVLTree<ComparableSegment>.Node selectedNode = null;#309,16.03615704289189
+final ComparableSegment upperRight       = new ComparableSegment(end, +1.0e-10, +1.0e-10);#313,16.014151172637938
+private AVLTree<ComparableSegment> sorted;#414,16.00942349433899
+public boolean equals(final Object other) {#391,15.994565571055693
+node.delete();#301,15.991889794667562
+public Order visitOrder(final BSPTree<Euclidean2D> node) {#422,15.989931753703527
+return Order.MINUS_SUB_PLUS;#423,15.911459366480509
+while (!sorted.isEmpty()) {#220,15.910279655456543
+addContribution(attribute.getPlusOutside(), false);#431,15.888385432107109
+if (vertices == null) {#207,15.878517091274261
+return loop;#348,15.832396420565518
+final Vector2D[][] v = getVertices();#132,15.825643312363397
+final BSPTree<Euclidean2D> tree = getTree(false);#135,15.81100703823951
+ComparableSegment segment = node.getElement();#297,15.782083511352539
+final BoundaryAttribute<Euclidean2D> attribute = (BoundaryAttribute<Euclidean2D>) node.getAttribute();#429,15.774419773456662
+super(tree);#63,15.74739408493042
+if ((end == null) && !open) {#344,15.744013736122533
+private Vector2D[][] vertices;#45,15.74296052115304
+final double factor = x0 * y1 - y0 * x1;#163,15.727436092164782
+loop.add(segment);#298,15.678456370035807
+for (AVLTree<ComparableSegment>.Node n = sorted.getNotSmaller(lowerLeft);#314,15.663224697113037
+final Vector2D[] array = new Vector2D[loop.size() + 2];#243,15.658663150876068
+setSize(Double.POSITIVE_INFINITY);#146,15.640899848937988
+final AVLTree<ComparableSegment>.Node node = sorted.getSmallest();#221,15.637757227971004
+setBarycenter(Vector2D.NaN);#147,15.633398413658142
+setBarycenter(new Vector2D(0, 0));#142,15.630663363138835
+if (getTree(false).getCut() == null) {#208,15.620097233698917
+sumY += factor * (y0 + y1);#166,15.592733442783356
+public int compareTo(final ComparableSegment o) {#385,15.585219337826683
+for (Vector2D[] loop : v) {#155,15.567665473274563
+getTree(true).visit(visitor);#214,15.567250569661459
+return sorted;#469,15.561352984110515
+final Line line      = (Line) sub.getHyperplane();#450,15.56017452875773
+final Vector2D minMin = new Vector2D(xMin, yMin);#110,15.558223430926983
+if (attribute.getPlusInside() != null) {#433,15.531736890474955
+@Override#129,15.528432369232178
+Vector2D end = segment.getEnd();#300,15.528286563025581
+final Vector2D globalStart = segment.getStart();#299,15.527552032470703
+if (selectedDistance > 1.0e-10) {#326,15.526505661010741
+double y1 = loop[loop.length - 1].getY();#157,15.494535200057491
+return sortingKey.compareTo(o.sortingKey);#386,15.489079365363487
+return null;#341,15.487524032592773
+vertices = new Vector2D[loops.size()][];#229,15.48713804060413
+if ((Boolean) tree.getAttribute()) {#136,15.472209640171217
+return false;#397,15.472023863541452
+if (v.length == 0) {#134,15.465096698087805
+for (final Vector2D point : loop) {#158,15.456249201739276
+(n != null) && (n.getElement().compareTo(upperRight) <= 0);#315,15.4555575297429
+if (attribute.getPlusOutside() != null) {#430,15.45421588420868
+x1 = point.getX();#161,15.427725383213588
+setBarycenter(Vector2D.NaN);#173,15.420167548315865
+sorted = new AVLTree<ComparableSegment>();#418,15.39799015045166
+final Vector2D maxMin = new Vector2D(xMax, yMin);#112,15.3805450292734
+sortingKey = new OrderedTuple(start.getX() + dx, start.getY() + dy);#381,15.372616278158652
+double x1 = loop[loop.length - 1].getX();#156,15.372337372072282
+final Vector2D[] array = new Vector2D[loop.size()];#270,15.35381058948796
+getLine().hashCode() ^ sortingKey.hashCode();#405,15.34920448064804
+sumX += factor * (x0 + x1);#165,15.339196145534515
+super(boxBoundary(xMin, xMax, yMin, yMax));#98,15.31840991973877
+return null;#330,15.3161520205046
+(AbstractSubHyperplane<Euclidean2D, Euclidean1D>) sub;#449,15.28649768313846
+return vertices.clone();#282,15.279101644243513
+line.toSpace(new Vector1D(+Float.MAX_VALUE))#239,15.276228353712295
+final Vector2D maxMax = new Vector2D(xMax, yMax);#113,15.266399126786451
+@SuppressWarnings("unchecked")#428,15.251088445836848
+loops.add(loop);#224,15.25003620783488
+return true;#393,15.244853069907741
+final double x0 = x1;#159,15.244537319455828
+return getStart().hashCode() ^ getEnd().hashCode() ^#404,15.239444273489493
+final double y0 = y1;#160,15.23317449433463
+final Vector2D minMax = new Vector2D(xMin, yMax);#111,15.213813341580904
+final SegmentsBuilder visitor = new SegmentsBuilder();#213,15.21223258972168
+setBarycenter(Vector2D.NaN);#139,15.211265053067889
+vertices = new Vector2D[0][];#209,15.197025016502097
+setSize(Double.POSITIVE_INFINITY);#172,15.195901476103684
+final AbstractSubHyperplane<Euclidean2D, Euclidean1D> absSub =#448,15.18413953220143
+segment = n.getElement();#317,15.14907405687415
+for (final Interval i : intervals) {#452,15.149001121520996
+sorted.insert(new ComparableSegment(start, end, line));#460,15.14476376109653
+if (sum < 0) {#170,15.143968030026084
+final List<ComparableSegment> loop = followLoop(node, sorted);#222,15.13786050435659
+private OrderedTuple sortingKey;#356,15.127415895462036
+final List<Interval> intervals = ((IntervalsSet) absSub.getRemainingRegion()).asList();#451,15.118876328339448
+setSize(sum / 2);#175,15.111506959666377
+final Vector2D end   = Double.isInfinite(i.getUpper()) ?#455,15.105318017908045
+selectedNode.delete();#335,15.082422144272748
+@Override#123,15.063655058542887
+selectedDistance = distance;#322,15.057996253967286
+super(null, null, null);#380,15.054972171783447
+final double distance = end.distance(segment.getStart());#318,15.05073947906494
+setSize(Double.POSITIVE_INFINITY);#138,15.03617053196348
+for (final List<ComparableSegment> loop : loops) {#232,15.027998524327431
+sum  += factor;#164,15.027109184265136
+super(boundary);#87,15.023441461416391
+double sumX = 0;#152,15.018863413068983
+return compareTo((ComparableSegment) other) == 0;#395,15.01614309946696
+setBarycenter(new Vector2D(sumX / (3 * sum), sumY / (3 * sum)));#176,15.011354268983354
+y1 = point.getY();#162,14.995797089168004
+if (loop.size() < 2) {#233,14.98161735534668
+selectedNode     = n;#320,14.979575584674704
+n = n.getNext()) {#316,14.9572314453125
+if (loop != null) {#223,14.940337498982748
+double                  selectedDistance = Double.POSITIVE_INFINITY;#311,14.916458440381428
+if (reversed) {#457,14.913275718688965
+null : (Vector2D) line.toSpace(new Vector1D(i.getUpper()));#456,14.911622401206724
+array[j++] = segment.getLine().toSpace(new Vector1D(x));#252,14.886164413308197
+ComparableSegment       selectedSegment  = null;#310,14.88453559217782
+if (distance < selectedDistance) {#319,14.867289980252584
+loop.add(selectedSegment);#334,14.86505355834961
+double sum  = 0;#151,14.862647162543404
+public SegmentsBuilder() {#417,14.840935979570661
+selectedSegment  = segment;#321,14.822716501024034
+@SuppressWarnings("unchecked")#447,14.821869936856357
+sorted.insert(new ComparableSegment(end, start, line.getReverse()));#458,14.818828310285296
+throw new MathInternalError();#345,14.808017783694797
+double sumY = 0;#153,14.807330131530762
+int i = 0;#230,14.805822417849587
+new Line(minMax, minMin)#118,14.783390998840332
+final AVLTree<ComparableSegment> sorted) {#294,14.775820970535278
+array[j++] = segment.getLine().toSpace(new Vector1D(x));#264,14.775524895146209
+end = selectedSegment.getEnd();#333,14.76605106535412
+@Override#390,14.755393886566162
+line.toSpace(new Vector1D(-Float.MAX_VALUE)),#238,14.734302173961293
+x -= FastMath.max(1.0, FastMath.abs(x / 2));#250,14.728473920088549
+new OrderedTuple(start.getX(), start.getY());#367,14.708241113802282
+return new Line[] {#114,14.667266368865967
+if (this == other) {#392,14.662762240359658
+final ArrayList<List<ComparableSegment>> loops = new ArrayList<List<ComparableSegment>>();#219,14.642507948526521
+final ArrayList<ComparableSegment> loop = new ArrayList<ComparableSegment>();#296,14.610928420362802
+if (j < (array.length - 1)) {#255,14.60451033115387
+public int hashCode() {#403,14.590605463300433
+setSize(0);#141,14.555946758815221
+x += FastMath.max(1.0, FastMath.abs(x / 2));#263,14.553513270158033
+for (Segment segment : loop) {#272,14.55194987672748
+new OrderedTuple(Double.NEGATIVE_INFINITY, Double.NEGATIVE_INFINITY) :#366,14.547625394967886
+null : (Vector2D) line.toSpace(new Vector1D(i.getLower()));#454,14.539034937248855
+vertices[i++] = new Vector2D[] {#236,14.513107274029705
+array[j++] = segment.getStart();#273,14.513037241422213
+if (j == (array.length - 1)) {#260,14.512679505348206
+@Override#402,14.512198638916015
+array[j++] = segment.getEnd();#257,14.510003688723542
+double x = segment.getLine().toSubSpace(segment.getEnd()).getX();#249,14.491394131271928
+double x = segment.getLine().toSubSpace(segment.getStart()).getX();#262,14.487576325734457
+final Vector2D start = Double.isInfinite(i.getLower()) ?#453,14.476838392369887
+vertices[i++] = array;#275,14.46296975106904
+for (Segment segment : loop) {#245,14.462273019732852
+final double yMin, final double yMax) {#97,14.446665343116312
+super(start, end, line);#364,14.420350694656372
+final double yMin, final double yMax) {#109,14.38723795754569
+sortingKey = (start == null) ?#365,14.380949429103307
+final Line line = loop.get(0).getLine();#235,14.352304149318385
+int j = 0;#244,14.344035904982995
+vertices[i++] = array;#268,14.236127304308342
+array[j++] = null;#251,14.200148606300354
+super();#50,14.162464427947999
+new Line(minMin, maxMin),#115,14.12232544308617
+if (j == 0) {#247,14.092433493477957
+new Line(maxMax, minMax),#117,14.047639892214821
+int j = 0;#271,13.891948009359426
+new Line(maxMin, maxMax),#116,13.891613369896298
+null,#237,13.57524159749349

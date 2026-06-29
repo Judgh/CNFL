@@ -1,0 +1,60 @@
+public class UnivariateRealSolverUtils {#29,16.31462912126021
+private UnivariateRealSolverUtils() {#33,15.347656318119594
+UnivariateRealSolver solver = LazyHolder.FACTORY.newDefaultSolver();#78,14.923413944244384
+throws ConvergenceException, FunctionEvaluationException {#52,14.892624982198079
+throws ConvergenceException, FunctionEvaluationException {#126,14.832215309143066
+public static double[] bracket(UnivariateRealFunction function,#165,14.664598941802979
+public static double[] bracket(UnivariateRealFunction function,#124,14.513144493103027
+public static double solve(UnivariateRealFunction f, double x0, double x1,#73,14.491438160771908
+public static double solve(UnivariateRealFunction f, double x0, double x1)#51,14.331187725067139
+private static void setup(UnivariateRealFunction f) {#226,14.278210759162903
+if (initial < lowerBound || initial > upperBound || lowerBound >= upperBound) {#177,14.207806834468135
+private static final UnivariateRealSolverFactory FACTORY =#237,13.93090397971017
+public static double midpoint(double a, double b) {#217,13.64008897893569
+throw MathRuntimeException.createIllegalArgumentException(#178,13.552925368150076
+private static class LazyHolder {#235,13.38893985748291
+return LazyHolder.FACTORY.newDefaultSolver().solve(f, x0, x1);#54,13.365398112465353
+throw MathRuntimeException.createIllegalArgumentException(#174,13.202494839827219
+throw MathRuntimeException.createIllegalArgumentException("function is null");#171,13.16688140801021
+solver.setAbsoluteAccuracy(absoluteAccuracy);#79,12.907856146494547
+throw MathRuntimeException.createIllegalArgumentException("function is null");#228,12.855475868497576
+"initial={2}, lower bound={3}, upper bound={4}, final a value={5}, " +#201,12.85119489034017
+"invalid bracketing parameters:  lower bound={0},  initial={1}, upper bound={2}",#179,12.811024620419456
+"number of iterations={0}, maximum iterations={1}, " +#200,12.802279922697279
+if (function == null) {#170,12.769872919718425
+double a = initial;#182,12.715626056377705
+double b = initial;#183,12.629382867079515
+throw new ConvergenceException(#199,12.589350355996025
+int numIterations = 0 ;#186,12.565217590332031
+"bad value for maximum iterations number: {0}", maximumIterations);#175,12.516967997831458
+FunctionEvaluationException {#168,12.325168026818169
+UnivariateRealSolverFactory.newInstance();#238,12.287439779801803
+return bracket( function, initial, lowerBound, upperBound,#127,12.283916745867048
+double fb;#185,12.220219532648722
+if (maximumIterations <= 0)  {#173,12.10312885708279
+return solver.solve(f, x0, x1);#80,12.042177988135297
+((a > lowerBound) || (b < upperBound)));#196,12.024854850769042
+b = Math.min(b + 1.0, upperBound);#190,11.979257265726725
+"final b value={6}, f(a)={7}, f(b)={8}",#202,11.972837643189864
+int maximumIterations) throws ConvergenceException,#167,11.949476407921832
+a = Math.max(a - 1.0, lowerBound);#189,11.932361373194942
+double fa;#184,11.89902418309992
+return new double[]{a, b};#207,11.616386133081773
+double initial, double lowerBound, double upperBound)#125,11.489664316177368
+numIterations++ ;#194,11.485188175650205
+numIterations, maximumIterations, initial,#203,11.475761950016022
+double absoluteAccuracy) throws ConvergenceException,#74,11.414636611938477
+double initial, double lowerBound, double upperBound,#166,11.392387747764587
+fa = function.value(a);#191,11.362969756126404
+FunctionEvaluationException {#75,11.359645540064031
+if (f == null) {#227,11.245288276672364
+return (a + b) * .5;#218,11.22608036465115
+if (fa * fb >= 0.0 ) {#198,11.124483633041383
+lowerBound, upperBound, a, b, fa, fb);#204,11.117635623828784
+Integer.MAX_VALUE ) ;#128,11.103617166218005
+fb = function.value(b);#193,11.006091640109108
+lowerBound, initial, upperBound);#180,10.64997386932373
+do {#188,10.483179950714112
+setup(f);#77,10.384150822957357
+super();#34,9.782571411132812
+setup(f);#53,9.43346651395162

@@ -1,0 +1,70 @@
+public Vector2D intersection(final SubLine subLine, final boolean includeEndPoints) {#110,16.968359864276387
+return ((loc1 != Location.OUTSIDE) && (loc2 != Location.OUTSIDE)) ? v2D : null;#126,16.770778562964463
+return ((loc1 == Location.INSIDE) && (loc2 == Location.INSIDE)) ? v2D : null;#128,16.600761804825222
+public class SubLine extends AbstractSubHyperplane<Euclidean2D, Euclidean1D> {#40,16.428404273986818
+return (global < -1.0e-10) ? Side.MINUS : ((global > 1.0e-10) ? Side.PLUS : Side.HYPER);#162,16.38996038249895
+public List<Segment> getSegments() {#80,16.241361999511717
+protected AbstractSubHyperplane<Euclidean2D, Euclidean1D> buildNew(final Hyperplane<Euclidean2D> hyperplane,#146,16.1976881980896
+private static IntervalsSet buildIntervalSet(final Vector2D start, final Vector2D end) {#138,16.187462947986745
+Location loc2 = subLine.getRemainingRegion().checkPoint(line2.toSubSpace(v2D));#123,16.13555975521312
+Location loc1 = getRemainingRegion().checkPoint(line1.toSubSpace(v2D));#120,16.131219956182665
+final Vector2D crossing  = thisLine.intersection(otherLine);#157,16.117506623268127
+return new SubLine(hyperplane, remainingRegion);#148,16.10665256098697
+public SubLine(final Vector2D start, final Vector2D end) {#55,16.095033509390696
+public SplitSubHyperplane<Euclidean2D> split(final Hyperplane<Euclidean2D> hyperplane) {#174,16.072837464949664
+public SubLine(final Hyperplane<Euclidean2D> hyperplane,#46,16.050541400909424
+return getRemainingRegion().side(new OrientedPoint(x, direct));#168,16.048797035217284
+final Vector2D crossing  = thisLine.intersection(otherLine);#178,16.044071793556213
+final SubHyperplane<Euclidean1D> subMinus = new OrientedPoint(x,  direct).wholeHyperplane();#192,16.012559768481132
+@Override#145,16.002402146657307
+Vector2D v2D = line1.intersection(line2);#117,15.978335936864218
+final Vector1D x = thisLine.toSubSpace(crossing);#167,15.97712755203247
+final Line    otherLine = (Line) hyperplane;#177,15.944096435200084
+final SubHyperplane<Euclidean1D> subPlus  = new OrientedPoint(x, !direct).wholeHyperplane();#191,15.925554813482822
+new SplitSubHyperplane<Euclidean2D>(this, null);#185,15.895330243640476
+return new SplitSubHyperplane<Euclidean2D>(new SubLine(thisLine.copySelf(), new IntervalsSet(plusTree)),#204,15.872914028167724
+final Line    otherLine = (Line) hyperplane;#156,15.864247972315008
+super(hyperplane, remainingRegion);#48,15.788476586341858
+Line line2 = (Line) subLine.getHyperplane();#114,15.77929956262762
+final BSPTree<Euclidean1D> splitTree = getRemainingRegion().getTree(false).split(subMinus);#194,15.742078854487492
+public SubLine(final Segment segment) {#62,15.656608377184186
+@Override#173,15.64140017827352
+final Line    thisLine  = (Line) getHyperplane();#176,15.620683073997498
+return segments;#92,15.618512587113814
+final BSPTree<Euclidean1D> plusTree  = getRemainingRegion().isEmpty(splitTree.getPlus()) ?#195,15.610698039715107
+@Override#152,15.588345686594645
+final Line    thisLine  = (Line) getHyperplane();#155,15.58372708161672
+if (crossing == null) {#180,15.582626581192017
+Line line1 = (Line) getHyperplane();#113,15.517658584996274
+final Line line = (Line) getHyperplane();#82,15.51182350359465
+return new IntervalsSet(line.toSubSpace(start).getX(),#140,15.5037255859375
+final Vector2D start = line.toSpace(new Vector1D(interval.getInf()));#87,15.503572300502233
+final boolean direct = FastMath.sin(thisLine.getAngle() - otherLine.getAngle()) < 0;#189,15.497428866795131
+if (includeEndPoints) {#125,15.475869178771973
+final double global = otherLine.getOffset(thisLine);#161,15.46417465209961
+final Vector2D end   = line.toSpace(new Vector1D(interval.getSup()));#88,15.453481029819798
+public Side side(final Hyperplane<Euclidean2D> hyperplane) {#153,15.442034389661705
+final boolean direct = FastMath.sin(thisLine.getAngle() - otherLine.getAngle()) < 0;#166,15.413998876299177
+super(segment.getLine(), buildIntervalSet(segment.getStart(), segment.getEnd()));#63,15.37785902890292
+new BSPTree<Euclidean1D>(subMinus, new BSPTree<Euclidean1D>(Boolean.FALSE),#201,15.363639690257886
+final BSPTree<Euclidean1D> minusTree = getRemainingRegion().isEmpty(splitTree.getMinus()) ?#199,15.356223057477902
+if (crossing == null) {#159,15.338966250419617
+new BSPTree<Euclidean1D>(subPlus, new BSPTree<Euclidean1D>(Boolean.FALSE),#197,15.325835824012756
+final List<Segment> segments = new ArrayList<Segment>();#84,15.295060276985168
+final double global = otherLine.getOffset(thisLine);#182,15.264241371154785
+final Vector1D x      = thisLine.toSubSpace(crossing);#190,15.252348472332132
+segments.add(new Segment(start, end, line));#89,15.229904284844032
+final Line line = new Line(start, end);#139,15.18991716284501
+return (global < -1.0e-10) ?#183,15.18803394317627
+for (final Interval interval : list) {#86,15.16830751630995
+line.toSubSpace(end).getX());#141,15.162925321002339
+new SplitSubHyperplane<Euclidean2D>(null, this) :#184,15.159611392665553
+final Region<Euclidean1D> remainingRegion) {#47,15.021946011167584
+final List<Interval> list = ((IntervalsSet) getRemainingRegion()).asList();#83,14.919240188598632
+super(new Line(start, end), buildIntervalSet(start, end));#56,14.864618117992695
+new BSPTree<Euclidean1D>(Boolean.FALSE) :#196,14.59943085005789
+new SubLine(thisLine.copySelf(), new IntervalsSet(minusTree)));#205,14.510772119249616
+final Region<Euclidean1D> remainingRegion) {#147,14.505237433489631
+new BSPTree<Euclidean1D>(Boolean.FALSE) :#200,14.103985569693826
+splitTree.getMinus(), null);#202,13.935925212907202
+splitTree.getPlus(), null);#198,12.567548620700837

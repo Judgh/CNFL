@@ -1,0 +1,815 @@
+NameInformation referring, String referringName) {#950,20.612936917473288
+StringBuilder sb = new StringBuilder();#1133,20.527409993685207
+StringBuilder out = new StringBuilder();#238,20.339212281363352
+private String nameLink(String name) {#1208,20.031381433660332
+public String toString() {#237,20.005715370178223
+case Token.LABEL:#1658,19.873104731241863
+if (!bNameWasShortened &&#1389,19.796663403511047
+Iterator<DiGraphEdge<JsName, RefType>> toIter = refersTo.iterator();#1172,19.683379450151996
+RemoveListener listener = new RemoveListener();#1114,19.680694103240967
+private static enum RefType {#159,19.63208556175232
+boolean hasInstanceOfReference = false;#229,19.5884637037913
+case Token.HOOK:#1727,19.45744276046753
+String prototypeProperty = null;#200,19.451999282836915
+String referringName = "";#866,19.43355147043864
+if (!maybeRecordAlias(name, parent, referring, referringName)) {#908,19.38063708941142
+@Override#968,19.37471342086792
+private void recordAlias(String fromName, String toName) {#1057,19.36214518547058
+for (String s : globalNames) {#1476,19.32356702364408
+case Token.FOR:#1729,19.319566639986906
+Iterator<DiGraphEdge<JsName, RefType>> fromIter = refersTo.iterator();#1185,19.318685470088834
+public JsName name() {#306,19.295867919921875
+Iterator<String> pIter = prototypeNames.iterator();#244,19.264583496820357
+case Token.NAME:#1774,19.262088602239434
+private int countOf(TriState isClass, TriState referenced) {#1572,19.253047438228833
+String name;#214,19.2384489604405
+case Token.NAME:#1722,19.220800919966265
+String name;#188,19.212362834385463
+public JsName name() {#402,19.17733244462447
+@Override#705,19.151134872436522
+private static final String WINDOW = "window";#106,19.14047329242413
+case Token.WHILE:#1732,19.140358924865723
+implements SideEffectAccumulator {#966,19.119357617696128
+private final AbstractCompiler compiler;#79,19.10416825612386
+case Token.FOR:#1657,19.087275071577594
+private void appendListItem(StringBuilder sb, String text) {#1204,19.071566301233627
+case Token.NAME:#1386,19.06887739354914
+public boolean classDefiningCallsHaveSideEffects() {#969,19.051206800672745
+if (ref != null) {#1511,19.050414432178844
+private void calculateReferences() {#1540,19.025551080703735
+public boolean apply(Node input) {#706,19.009861052036285
+private boolean isExternallyReferenceable(Scope scope, String name) {#1469,18.998467389275046
+private final Set<String> globalNames;#119,18.997746034102008
+Node node) {#674,18.994557936986286
+if (t.inGlobalScope()) {#599,18.985767300923666
+NameAnalyzer(AbstractCompiler compiler, boolean removeUnreferenced) {#1023,18.981047429536517
+case Token.VAR:#316,18.96143170765468
+boolean bNameWasShortened = false;#1326,18.953277661250187
+@Override#973,18.912879824638367
+parent.isWhile() ||#802,18.896312040441178
+case Token.VAR:#1669,18.891193707784016
+List<DiGraphEdge<JsName, RefType>> refersTo =#1168,18.890968447146207
+default:#1660,18.88091254234314
+case Token.IF:#1731,18.878771261735395
+if (parent.isFor() && !NodeUtil.isForIn(parent)) {#518,18.878313000996908
+for (int i = 0; i < replacements.size() - 1; i++) {#1626,18.870263824462892
+{#1785,18.856629689534504
+parent.isExprResult() ||#795,18.855463981628418
+case Token.DO:#1734,18.84864442998713
+@Override#978,18.848217964172363
+private void recordWriteOnProperties(String parentName) {#684,18.847084045410156
+String name = "";#1324,18.837318844265408
+compiler, n,#1600,18.83324972788493
+final class NameAnalyzer implements CompilerPass {#76,18.8248216455633
+Iterator<String> protoIter = node.prototypeNames.iterator();#1158,18.81541745559029
+this.compiler = compiler;#1024,18.80486739765514
+String prototypeClass = null;#197,18.80406951904297
+if (name.indexOf('.') == 0) {#1408,18.802832976631496
+if (!isGlobalRef) {#1440,18.800226731733844
+private DiGraph<JsName, RefType> referenceGraph =#85,18.79999262491862
+if (t.inGlobalScope()) {#1406,18.78366195454317
+String getHtmlReport() {#1132,18.766854180230034
+if (!NodeUtil.isForIn(n)) {#779,18.755431402297248
+if ((parent.isName() ||#951,18.752128192356654
+if (parent.isVar() ||#794,18.732305799211776
+private class NodeAccumulator#965,18.731903171539308
+compiler, n,#742,18.731768199375697
+@Override#508,18.71392885843913
+if (functionScope != null) {#902,18.708613336086273
+if ((parent.isIf() ||#801,18.704874651772634
+case Token.FUNCTION:#320,18.703266461690266
+AliasSet(String name1, String name2) {#148,18.701900201685287
+case Token.SCRIPT:#1656,18.687896887461346
+List<String> prototypeNames = Lists.newArrayList();#217,18.686756863313562
+"prototype".equals(n.getLastChild().getString())) {#1392,18.682164488167597
+implements EdgeCallback<JsName, RefType> {#168,18.680472766651828
+if (parent.isInstanceOf() &&#849,18.680467478434245
+if (input.isCall()) {#707,18.680357138315838
+JsName window = getName(WINDOW, true);#1541,18.677724108976477
+if (ns != null) {#478,18.671219092149002
+case Token.OR:#1726,18.662549452348188
+String nodeName = n.getQualifiedName();#840,18.651171583878366
+if (nameInfo == null) {#826,18.65072304861886
+private void recordReference(String fromName, String toName,#1094,18.64664166768392
+case Token.FUNCTION:#1771,18.64628366323618
+if (containingNode.isExprResult()) {#324,18.63354169754755
+String superclass = null;#203,18.628260612487793
+private void createName(String name) {#1238,18.625813137401234
+if (parent != null) {#1518,18.619910326871004
+@Override#236,18.615851402282715
+JsName name();#266,18.608917236328125
+if (parent.isCall() && t.inGlobalScope()) {#1364,18.608092809978285
+private void referenceAliases() {#1272,18.60666847229004
+@Override#1030,18.605505228042603
+if (ns != null && ns.onlyAffectsClassDef) {#634,18.600850383440655
+if (!t.inGlobalScope()) {#510,18.598526573181154
+private static final int PROTOTYPE_SUBSTRING_LEN =#100,18.59668475703189
+if (ns != null) {#624,18.596563847859702
+if (toNameAliasSet == null && fromNameAliasSet == null) {#1072,18.595784368969145
+if (ns != null) {#607,18.592437968534583
+(parent.isExprResult() ||#754,18.585355357119912
+@Override#305,18.58347225189209
+recordDepScope(n, ns);#539,18.582880437374115
+for (Map.Entry<String, AliasSet> entry : aliases.entrySet()) {#1273,18.578367988268536
+public void remove() {#461,18.5769231584337
+private boolean maybeRecordAlias(#948,18.573801040649414
+if (ref != null) {#1490,18.55256799551157
+if (removeUnreferenced) {#1049,18.551461146428036
+public void keepSubTree(Node original) {#974,18.550688087940216
+aliases.put(toName, resultSet);#1088,18.544017587389266
++ countOf(TriState.TRUE, TriState.TRUE));#1148,18.53942068417867
+maybeRecordAlias(name, parent, referring, referringName);#887,18.539276577177503
+JsName to) {#172,18.538772281847503
+List<DiGraphEdge<JsName, RefType>> referencedBy =#1181,18.537784576416016
+if (refersTo.size() > 0) {#1170,18.533995628356934
+if (referencedBy.size() > 0) {#1183,18.532043002900622
+private void recordDepScope(Node node, NameInformation name) {#556,18.530702696906197
+switch (parent.getType()) {#1721,18.530386288960774
+String name, Scope scope, Node rootNameNode) {#1433,18.526589499579536
+parent.isReturn())) {#756,18.52574708726671
+String singletonGetterClass =#1375,18.52348070878249
+private static final String PROTOTYPE_SUBSTRING = ".prototype.";#98,18.520984268188478
+@Override#1005,18.51858441034953
+new Predicate<Node>() {#704,18.517580100468226
+if (compiler.getCodingConvention().isExported(name)) {#1470,18.514263846657492
+if (name != null) {#636,18.511837117812213
+JsName jsn = getName(name, true);#652,18.511828974673623
+private enum TriState {#1556,18.5078490121024
+String rootName = rootNameNode.getString();#1435,18.506780497233073
+if (nodeName != null) {#841,18.506652355194092
+FindReferences() {#727,18.49853551387787
+recordDepScope(n, ns);#542,18.488622188568115
+switch (parent.getType()) {#1654,18.48165734608968
+if (parentName.indexOf('.') == -1) {#695,18.47816463138746
+public void remove() {#311,18.473379347059463
+int count = 0;#1573,18.47323332892524
+JsName to = getName(toName, true);#1102,18.472163200378418
+bNameWasShortened = true;#1334,18.471375306447346
+if (nameInfo.onlyAffectsClassDef) {#831,18.46832521338212
+if (rep.isExprResult()) {#1748,18.461967766284943
+{#1792,18.460332446628147
+@Override#310,18.458434740702312
+case Token.ASSIGN:#323,18.454686777932302
+if (prototypeNames.size() > 0) {#241,18.453408802256863
+if (fromName.equals(toName)) {#1096,18.452827215194702
+while (toIter.hasNext()) {#1173,18.451829157377546
+if (from.referenced && !to.referenced) {#173,18.444321155548096
+case Token.AND:#1725,18.43780144778165
+private void recordSet(String name, Node node) {#651,18.431476891040802
+String name = nameInfo.name;#873,18.41047545841762
+private JsName getName(String name, boolean canCreate) {#1225,18.403223262113684
+int idx = name.indexOf(PROTOTYPE_SUBSTRING);#1447,18.399986108144123
+if (NodeUtil.isVarDeclaration(n)) {#600,18.399153882806953
+case Token.FUNCTION:#1668,18.396317848792442
+if (ns != null) {#517,18.396105829874674
+for (String alias : entry.getValue().names) {#1276,18.386421793983097
+public void remove() {#429,18.384818183051216
+private final boolean removeUnreferenced;#116,18.373876918445934
+private final Map<String, AliasSet> aliases = Maps.newHashMap();#134,18.37160849571228
+String name, Node parent,#949,18.36841481072562
+private final Map<String, JsName> allNames = Maps.newTreeMap();#82,18.363771166120255
+appendListItem(sb, "Total Classes: "#1141,18.36025708516439
+new GatherSideEffectSubexpressionsCallback(#1601,18.357754283481174
+if (referring != null) {#894,18.35001704272102
+private static final String FUNCTION = "Function";#109,18.348534143888035
+nameInfo.onlyAffectsClassDef = true;#1370,18.3456937789917
+if (ns != null && ns.onlyAffectsClassDef) {#547,18.339168389638264
+if (gramps.isExprResult()) {#358,18.335533871370203
+{#1775,18.33195071750217
+if (elseHasSideEffects) {#997,18.330063104629517
+JsName nameInfo = getName(nameNode.getString(), true);#608,18.327125713743012
+Node parent) {#1321,18.318922996520996
+case Token.BLOCK:#1655,18.316672484079998
+if (thenHasSideEffects) {#994,18.314980804920197
+private static class ReferencePropagationCallback#167,18.30865535736084
+throw new IllegalArgumentException(#1676,18.302602132161457
+name = name.substring(0, name.length() - PROTOTYPE_SUFFIX_LEN);#1395,18.301734020835475
+if (scope.isLocal()) {#1473,18.299612363179524
+JsName name;#277,18.299241065979004
+case Token.VAR:#1791,18.29640793800354
+if (expr == null) {#1753,18.294904488783615
+boolean referenced = false;#223,18.291360749138725
+default:#1675,18.29037880897522
++ countOf(TriState.BOTH, TriState.TRUE));#1146,18.287177960077923
+idx + PROTOTYPE_SUBSTRING_LEN);#1452,18.286771847651554
+appendListItem(sb, "Referenced Classes: "#1147,18.285557690788718
+boolean isGlobalRef = (v != null && v.isGlobal()) || isExtern ||#1438,18.283212741216023
+switch (parent.getType()) {#315,18.282690865652903
+for (Node child : n.children()) {#1795,18.279875564575196
+if (parent.isExprResult()) {#431,18.275636792182922
+NameInformation ns = null;#472,18.26534938812256
+@Override#570,18.261016527811687
+case Token.THIS:#1405,18.257985895330254
+if (!referenceGraph.isConnectedInDirection(from, depType, to)) {#1105,18.254849890004035
+compiler, new NodeAccumulator()));#744,18.243663912234098
+JsName name = getName(className, true);#675,18.24263653002287
+while (curName.indexOf('.') != -1) {#1295,18.236836978367396
+String parentName = curName.substring(0, curName.lastIndexOf('.'));#1296,18.233219475581727
+Node step = pred.getNext();#782,18.230323844485813
+NameInformation referring = getDependencyScope(n);#865,18.22925270928277
+interface RefNode {#265,18.22870143254598
+nameInfo.name = name;#1397,18.224084502772282
+if (maybeHiddenAlias(name, n)) {#879,18.22394836650175
+window.referenced = true;#1542,18.22167992591858
+while (fromIter.hasNext()) {#1186,18.2182896262721
+if (toIter.hasNext()) {#1175,18.213666053045365
+if (node.prototypeNames.size() > 0) {#1156,18.212336490028783
+if (rhs != null) {#1778,18.211583879258896
+JsName from = getName(fromName, true);#1101,18.20869187747731
+if (parent.isName()) {#1525,18.207068852015905
+RefType depType) {#1095,18.204847954414987
+boolean externallyDefined = false;#220,18.199756709012117
+if (singletonGetterClass != null) {#1377,18.18882936589858
+RefType callSite,#171,18.187837214083284
+CodingConvention convention = compiler.getCodingConvention();#1365,18.187718772888182
+JsName name;#374,18.18488332960341
+parent.isWith() ||#803,18.184828141156366
+@Override#470,18.181071599324543
+if (canCreate) {#1226,18.178643703460693
+parent.getLastChild() == n &&#850,18.176485111838893
+private String nameAnchor(String name) {#1212,18.176280168386604
+if (classes != null) {#1367,18.174812683692345
+void removeUnreferenced() {#1113,18.169245719909668
+for (String name : fromNameAliasSet.names) {#1077,18.167911127993936
+if (name.hasWrittenDescendants || name.hasInstanceOfReference) {#1275,18.167219286379606
+if (!(n.isName() ||#819,18.165769322713217
+NameInformation ns = createNameInformation(t, n, parent);#601,18.162368456522625
+INHERITANCE,#161,18.160618040296768
+switch (n.getType()) {#1666,18.16053541501363
+if (referring != null) {#867,18.15505002339681
+while (pIter.hasNext()) {#245,18.15213326846852
+private static final int PROTOTYPE_SUFFIX_LEN = ".prototype".length();#103,18.14507297847582
+throw new IllegalArgumentException(#1661,18.14248390197754
+NameInformation nameInfo = new NameInformation();#1368,18.14039196687586
+"window", "goog.global");#113,18.137725512186687
++ countOf(TriState.TRUE, TriState.BOTH));#1142,18.13700012365977
+aliases.put(fromName, resultSet);#1087,18.134719984872
+if (ns != null) {#613,18.133009742288028
+if (parent.isDo() && parent.getLastChild() == n) {#810,18.132177750269573
+@Override public void remove() {#356,18.125799785960805
+AliasSet toNameAliasSet = aliases.get(toName);#1069,18.124355968676117
+RefType depType = referring.onlyAffectsClassDef ?#909,18.124326944351196
+NameInformation nameInfo = createNameInformation(t, n, parent);#825,18.119309879484632
+NameInformation ns = createNameInformation(t, n, parent);#538,18.116791335019197
+NameInformation ns = createNameInformation(t, n, parent);#612,18.109848697980244
+case Token.ASSIGN:#1671,18.105066537857056
+case Token.OBJECTLIT:#330,18.101895332336426
+for (JsName name : allNames.values()) {#1574,18.088141977787018
+NameInformation nameInfo = new NameInformation();#1396,18.0816619963873
+if (objLitParent.isAssign()) {#1345,18.077931356430053
+AliasSet fromNameAliasSet = aliases.get(fromName);#1070,18.077919156927813
+appendListItem(sb, "Referenced Functions: "#1149,18.075573304120233
+if (node.isGetElem()) {#658,18.066767930984497
+NameInformation ns = createNameInformation(t, nameNode, n);#516,18.065662508425504
++ countOf(TriState.FALSE, TriState.BOTH));#1144,18.062593738238018
+appendListItem(sb, "Total Names: " + countOf(TriState.BOTH, TriState.BOTH));#1140,18.06103632527013
+boolean elseHasSideEffects) {#989,18.059936240867334
+return name;#307,18.05920558505588
+NameInformation nameInfo = new NameInformation();#1407,18.054491996765137
+if (nameInfo.superclass != null) {#832,18.052110922963994
+Set<Node> nodesToKeep;#726,18.05071711540222
+do {#685,18.049421072006226
+private void addAllChildren(Node n) {#731,18.04407869066511
+parent.isSwitch() ||#804,18.04081698024974
+appendListItem(sb, "Total Static Functions: "#1143,18.040785312652588
+JsName checkedClass = getName(nameInfo.name, true);#853,18.040554801623028
+Var v = scope.getVar(rootName);#1436,18.03617509206136
+name = rootNameNode.getString() + name;#1394,18.03296895821889
+recordAlias(name, WINDOW);#880,18.0312998715569
+case Token.ASSIGN:#1784,18.03066611289978
+NameInformation ns = createNameInformation(t, nameNode, n);#606,18.028079643249512
+nameInfo.name = name.substring(1);  // strip leading "."#1409,18.02627331415812
+PROTOTYPE_SUBSTRING.length();#101,18.018878142038982
+if (protoIter.hasNext()) {#1161,18.015666437149047
+return Collections.emptyList();#1773,18.015399387904576
+if (NodeUtil.isVarDeclaration(n)) {#572,18.014640951156615
+if (value != null) {#750,18.012843894958497
+appendListItem(sb, "Referenced Names: "#1145,18.011157148024616
+nameInfo.onlyAffectsClassDef = true;#1380,18.00064949989319
+this.changeProxy = new AstChangeProxy();#1027,18.00016164779663
+for (Node child : n.children()) {#757,17.999289512634277
+this.name = name;#395,17.99860151608785
+Node expr = null;#1746,17.9953367445204
+parent.isReturn() ||#796,17.992319583892822
+if (name.startsWith(s)) {#1477,17.990892802967746
+JsNameRefNode(JsName name, Node node) {#299,17.990557776557075
+scopes.get(parent) == referring) {#954,17.985939979553223
+private class FindReferences implements Callback {#725,17.97813425064087
+if (fromIter.hasNext()) {#1189,17.978052729652042
+Node node;#284,17.977812903267996
+JsName parent = getName(parentName, true);#686,17.974949836730957
+AliasSet resultSet = null;#1071,17.974278688430786
+private final Set<String> externalNames = Sets.newHashSet();#125,17.97129445917466
+String curName = name.name;#1293,17.968594482966832
+switch (n.getType()) {#1767,17.96843107541402
+if (pIter.hasNext()) {#247,17.962550012688887
+private boolean maybeHiddenAlias(String name, Node n) {#934,17.95965632270364
+n.isGetProp() &&#1390,17.953554906343157
+if (referenceGraph.hasNode(node)) {#1167,17.951481145970963
+sb.append(nameLink(toIter.next().getDestination().getValue().name));#1174,17.94821517607745
+while (protoIter.hasNext()) {#1159,17.947112136416965
+private class JsNameRefNode implements RefNode {#275,17.94542385981633
+NameInformation nameInfo = new NameInformation();#1444,17.942260008591873
+private static class AliasSet {#144,17.941640006171333
+case Token.EXPR_RESULT:#1667,17.94061737060547
+if (nameInfo.isExternallyReferenceable) {#885,17.937858687506782
+@Override#595,17.937464396158855
+private class FindDeclarationsAndSetters extends AbstractPostOrderCallback {#593,17.937087774276733
+if (createNameInformation(t, n.getFirstChild(), n) != null) {#1393,17.93541226387024
+if (NodeUtil.isVarDeclaration(n)) {#473,17.933981800079344
+Node gramps) {#423,17.93189415564904
+compiler.reportCodeChange();#1007,17.931363423665363
+return nameInfo;#1458,17.92957639694214
+resultSet = toNameAliasSet;#1081,17.927331856318883
+changeProxy.registerListener(listener);#1115,17.923154537494366
+if (rootNameNode.isGetProp()) {#1330,17.913576527645713
+private class RemoveListener implements AstChangeProxy.ChangeListener {#1004,17.91200746808733
+NameInformation ns = createNameInformation(t, nameNode, callNode);#546,17.891597231229145
+return parent.getLastChild() == n;#1735,17.89096917046441
+jsn = new JsName();#1241,17.890931470053538
+if (parent.isVar()) {#748,17.8870301927839
+if (!globalNames.contains(parentName)) {#1297,17.884614086151124
+recordDepScope(n, ns);#534,17.88446044921875
+if (NodeUtil.isGet(rootNameNode)) {#1328,17.882264041900633
+recordDepScope(n, ns);#529,17.881253589283336
+if (parent == null) {#770,17.87603598374587
+recordReference(fromName, toName, RefType.REGULAR);#1058,17.87285804748535
+return null;#1416,17.87216264551336
+Node prop = rootNameNode.getLastChild();#1329,17.87205645912572
+this.name = name;#300,17.8717999458313
+return count;#1590,17.86971296582903
+@Override#401,17.865439573923748
+n.isQualifiedName()) {#852,17.865235593583847
+List<Node> nodes = Lists.newArrayList();#1794,17.865135843103584
+return nameInfo;#1398,17.8647381067276
+@Override#256,17.863567511240642
+Node pred = decl.getNext();#781,17.86121564441257
+if (function == null) {#1506,17.86074161529541
+name = "." + prop.getString() + name;#1331,17.86045509835948
+|| (name.referenced && referenced == TriState.TRUE)#1583,17.85847858282236
+for (JsName node : allNames.values()) {#1154,17.854929268360138
+calculateReferences();#1047,17.84990746634347
+@Override#428,17.84823401769002
+this.node = node;#396,17.84590180714925
+new GatherSideEffectSubexpressionsCallback(#743,17.845630359649657
+JsName name = refNode.name();#1118,17.841470777988434
+private class PrototypeSetNode extends JsNameRefNode {#343,17.835106372833252
+sb.append(#1187,17.831725737627814
+NameInformation ns = createNameInformation(t, nameNode, n);#633,17.82880928205407
+checkedClass.hasInstanceOfReference = true;#857,17.826415432824028
+JsName function = getName(FUNCTION, true);#1543,17.82469590504964
+if (n.isFor()) {#778,17.822187900543213
+default:#1736,17.821119785308838
+private static class JsName implements Comparable<JsName> {#212,17.819017708301544
+Preconditions.checkNotNull(ns, "NameInformation is null");#574,17.81516130765279
+private class InstanceOfCheckNode extends SpecialReferenceNode {#444,17.810765402657644
+for (RefNode refNode : refNodes) {#1117,17.808997809886932
+if (idx != -1) {#1448,17.805974080012394
+NodeUtil.isGet(n) && !parent.isGetProp())) {#820,17.80543481149981
+|| (nodeIsClass && isClass == TriState.TRUE)#1579,17.80504901885986
+if (ns.isPrototype) {#625,17.8007197129099
+@Override#460,17.798491954803467
+private final Map<Node, NameInformation> scopes = Maps.newHashMap();#95,17.797092580795287
+@Override#817,17.79413080215454
+if (valueConsumedByParent(n, parent)) {#1621,17.790013201096478
+Node rhs = n.getFirstChild();#1777,17.788293838500977
+JsName curJsName = name;#1294,17.78431879679362
+out.append(name);#239,17.783647934595745
+recordReference(WINDOW, name, RefType.REGULAR);#886,17.781024195931174
+NameInformation ns = createNameInformation(t, nameNode, n);#623,17.778153834135637
+NameInformation ns = createNameInformation(t, n, parent);#573,17.77578592300415
+compiler, root, new HoistVariableAndFunctionDeclarations());#1035,17.775266828991118
+sb.append("<li>REFERS TO: ");#1171,17.767175753911335
+recordSet(ns.name, n);#603,17.760884284973145
+Node objLitParent = objLit.getParent();#1344,17.756378264654252
+return parent.getFirstChild() == n;#1728,17.75536256366306
+if (parent.getFirstChild().getNext() != n) {#528,17.753248002794052
+@Override#169,17.750245094299316
+private class HoistVariableAndFunctionDeclarations#567,17.748296650973234
+while (parent.isHook()) {#1521,17.74565715789795
+this.node = node;#301,17.74021029472351
++ "ul {margin-top:2px; margin-left:0px; padding-left:1em;} "#1136,17.738636746126062
+Set<String> names = Sets.newHashSet();#145,17.733869552612305
++ countOf(TriState.FALSE, TriState.TRUE));#1150,17.728912075360615
+return false;#970,17.722414103421297
+changeProxy.unregisterListener(listener);#1124,17.721401487077987
+for (Node rep : replacements) {#1747,17.714826901753742
+NameInformation nameInfo = new NameInformation();#1378,17.714139657862045
+resultSet = new AliasSet(toName, fromName);#1073,17.710806369781494
+List<Node> replacements = Lists.newArrayList();#1682,17.707020938396454
+if (parent.hasWrittenDescendants) {#687,17.70682801140679
+PrototypeSetNode(JsName name, Node parent) {#350,17.696982085704803
++ "padding-bottom: 4px}</style>");#1138,17.690590676807222
+Node nameNode = callNode.getFirstChild();#545,17.685302031667607
+rootNameNode, rootNameNode.getParent())) {#1339,17.68463031105373
+name = "." + rootNameNode.getString() + name;#1340,17.682802283245586
+resultSet = fromNameAliasSet;#1084,17.673381192343577
+return replacements;#1610,17.673139027186803
+private NameInformation getDependencyScope(Node n) {#1487,17.66628297170003
+Node decl = n.getFirstChild();#787,17.662136429234554
+case Token.EXPR_RESULT:#1768,17.65621280670166
+if (n.isAssign()) {#514,17.655801900227864
+@Override#768,17.654924392700195
+referenceGraph.createNode(to);#1104,17.648335854212444
+parent.isThrow()) {#797,17.647082448005676
+JsName jsName = getName(ns.name, true);#479,17.647022330242656
+private static final Predicate<Node> NON_LOCAL_RESULT_PREDICATE =#703,17.645668029785156
+return parent.getFirstChild() == n;#1733,17.641769250233967
+new CopySideEffectSubexpressions(compiler, subexpressions)));#1603,17.64112659863063
+Node gramps) {#394,17.639561286339394
+recordReference(WINDOW, name, RefType.REGULAR);#905,17.63833753267924
+NameInformation ns = createNameInformation(t, n.getFirstChild(), n);#541,17.635297738588772
+rootNameNode = objLitParent;#1350,17.633165911624307
+@Override#986,17.63074278831482
+JsName name = getName(ns.name, false);#635,17.630218744277954
+recordAlias(referringName, name);#955,17.623878531985813
+default:#1417,17.623363256454468
+case Token.RETURN:#1723,17.622991959253948
+compiler,#1602,17.613946233476913
+RefType.INHERITANCE : RefType.REGULAR;#910,17.610187939235143
+return name;#403,17.607689327663845
+if (!name.referenced && !name.externallyDefined) {#1119,17.606358652529508
+parent.getFirstChild() == n) {#806,17.606214427947997
+private void recordPrototypeSet(String className, String prototypeProperty,#673,17.603806294892962
+out.append(" (CLASS)\n");#242,17.602898597717285
+Node valueExpr = replacements.get(replacements.size() - 1);#1629,17.597640742426332
+Node nameNode = n.getFirstChild();#605,17.596879959106445
+Node condition = original.getFirstChild();#980,17.59324141109691
+private final AstChangeProxy changeProxy;#122,17.587684059143065
+if (replacements.isEmpty()) {#1689,17.587140210469563
+NameInformation functionScope = getEnclosingFunctionDependencyScope(t);#901,17.58653175354004
+if (parent.isFor()) {#1687,17.583792289098103
+out.append(pIter.next());#246,17.579812953346654
++ "body, td, p {font-family: Arial; font-size: 83%} "#1135,17.57915690637404
+public int compareTo(JsName rhs) {#257,17.57593364715576
+return createNameInformation(#1403,17.570613861083984
+if (n.isAssign()) {#620,17.570376841227212
+private final List<RefNode> refNodes = Lists.newArrayList();#128,17.565248188219574
+Node replacement = n.getLastChild();#1640,17.562435658772788
+return null;#1495,17.560682705470494
+referring != null &&#953,17.559197902679443
+resultSet = toNameAliasSet;#1075,17.546556404658727
++ "li {margin-top:3px; margin-left:24px; padding-left:0px;"#1137,17.54473619750052
+if (NodeUtil.isAssignmentOp(ancestor) ||#919,17.544571839846096
+if (parent.isAssign()) {#1529,17.54381726582845
+return nodes;#1798,17.538862521831806
+return parent.getLastChild() == n;#1718,17.53537768125534
+Node thenBranch = condition.getNext();#981,17.535355885823567
+break;#319,17.526788393656414
+sb.append(protoIter.next());#1160,17.523664020356676
+this.removeUnreferenced = removeUnreferenced;#1025,17.52361382378472
+jsName.externallyDefined = true;#480,17.52127922905816
+parentName = parentName.substring(0, parentName.lastIndexOf('.'));#698,17.519854954310826
+return sb.toString();#1201,17.514186945828524
+createName(ns.name);#575,17.511646779378257
+rootNameNode.getString() + name, t.getScope(), rootNameNode);#1404,17.50957073703889
+nameInfo.name = classes.subclassName;#1369,17.506898327877646
+if (jsn == null) {#1240,17.506554047266643
+private void referenceParentNames() {#1287,17.500949647691513
+createName(name);#1227,17.4936185316606
+private NameInformation createNameInformation(#1432,17.49106438954671
+Node objLit = rootNameNode.getParent();#1343,17.490785121917725
+boolean onlyAffectsClassDef = false;#206,17.490184443337576
+Node condition = hook.getFirstChild();#990,17.489765952615176
+|| (!name.referenced && referenced == TriState.FALSE);#1584,17.489688616532547
+|| (!nodeIsClass && isClass == TriState.FALSE);#1580,17.486737060546876
+while (true) {#1327,17.484160317314995
+void remove();#267,17.48397445678711
+Node decl = n.getFirstChild();#780,17.478171248185006
+to.referenced = true;#174,17.476534962654114
+recordReference(functionScope.name, name, RefType.REGULAR);#903,17.473897970639744
+parent.isExprResult()) {#761,17.471813125610353
+recordReference(WINDOW, name, RefType.REGULAR);#921,17.468391858614407
+Node node;#377,17.465240750994003
+break;#322,17.464898427327473
+Node callNode = n.getFirstChild();#544,17.462123076121014
+return;#511,17.461492443084715
+Preconditions.checkNotNull(ns, "NameInformation is null");#579,17.458357016245525
+Node nameNode = n.getFirstChild();#632,17.45476500193278
+addSimplifiedExpression(step, n);#785,17.453219459170388
+JsNameRefNode nameRefNode = new JsNameRefNode(jsn, node);#653,17.45204982051143
+JsName jsn = allNames.get(name);#1239,17.447525024414062
+out.append(" - FUNCTIONS: ");#243,17.445940318860504
+Node gramps;#383,17.445481657981873
+Node thenBranch = condition.getNext();#991,17.43973461786906
+nameInfo.name = singletonGetterClass;#1379,17.434832422356855
+if (nodesToKeep.contains(n)) {#900,17.434665428964717
+referenceGraph.connect(from, depType, to);#1106,17.433998690711128
+if (classMatch && referenceMatch && !name.externallyDefined) {#1586,17.433657729107402
+return null;#1534,17.420122964041575
+List<Node> newReplacements = Lists.newArrayList();#1625,17.41970524787903
+ns = createNameInformation(t, n, parent);#474,17.4194815158844
+JsName name = getName(entry.getKey(), false);#1274,17.41503819965181
+expr = IR.comma(expr, rep);#1756,17.40788023095382
+Preconditions.checkNotNull(ns);#602,17.402521705627443
+Node elseBranch = thenBranch.getNext();#992,17.400637912750245
+addSimplifiedExpression(decl, n);#783,17.400489352998278
+switch (rootNameNode.getType()) {#1385,17.398687294551305
+nodesToKeep = Sets.newHashSet();#728,17.39279806613922
+aliases.put(name, resultSet);#1078,17.390754587510052
+return expr;#1760,17.384957994733536
+SubclassRelationship classes = convention.getClassesDefinedByCall(parent);#1366,17.381473501523335
+for (Node subexpression : subexpressions) {#1607,17.37466360727946
+isExtern || isExternallyReferenceable(scope, name);#1457,17.374650738456033
+Node parent;#380,17.374134744916642
+recordDepScope(nameNode, ns);#531,17.374106780342434
+default:#1800,17.37310767173767
+referenceAliases();#1045,17.36725163459778
+nameInfo.prototypeProperty = name.substring(#1451,17.36664873010972
+return out.toString();#253,17.366520245869953
+Node lhs = n.getFirstChild();#1787,17.360691213607787
+@SuppressWarnings("unused")#283,17.329646791730607
+sb.append("<li>REFERENCED BY: ");#1184,17.329013897822453
+nameInfo.isExternallyReferenceable = true;#1413,17.328138124375116
+Lists.newArrayListWithExpectedSize(subexpressions.size());#1606,17.325736085573833
+Token.name(parent.getType()));#1663,17.324050903320312
+return this.name.compareTo(rhs.name);#258,17.323648738861085
+return nameInfo;#1372,17.3226584593455
+Preconditions.checkState(parent.isInstanceOf());#457,17.315815222890752
+boolean nodeIsClass = name.prototypeNames.size() > 0;#1576,17.313130560375395
+public void nodeRemoved(Node n) {#1006,17.308228199298565
+name.prototypeNames.add(prototypeProperty);#676,17.305687606334686
+addAllChildren(condition);#993,17.305209841047013
+scopes.put(node, name);#557,17.302318382263184
+recordReference(referringName, name, depType);#911,17.29873404295548
+Node nameNode = n.getFirstChild();#515,17.28938627243042
+private boolean valueConsumedByParent(Node n, Node parent) {#1716,17.28930462107939
+recordReference(alias, entry.getKey(), RefType.REGULAR);#1277,17.288992698375996
+Node iter = decl.getNext();#788,17.282405376434326
+for (Node ancestor : n.getAncestors()) {#918,17.279873984200613
+this.parent = parent;#397,17.278375228246052
+nameInfo.name, nodeName, RefType.REGULAR);#843,17.27641143117632
+Token.name(n.getType()));#1678,17.27341482856057
+private abstract class SpecialReferenceNode implements RefNode {#372,17.273298660914104
+if (NodeUtil.isAssignmentOp(parent)) {#1717,17.26805437935723
+ns = createNameInformation(t, n.getFirstChild(), n);#476,17.262048085530598
+Preconditions.checkArgument(parent.isFor(),#1672,17.261303038824174
+ancestor.isFunction()) {#920,17.25934295654297
+? n.getFirstChild() : parent.getLastChild();#938,17.256462757404034
+TRUE,#1558,17.254811604817707
+boolean classMatch = isClass == TriState.BOTH#1578,17.250503540039062
+function.referenced = true;#1544,17.248679876327515
+super(name, node, parent, gramps);#455,17.24549904991599
+if (NodeUtil.isVarOrSimpleAssignLhs(n, parent)) {#936,17.241937380570633
+recordReference(referringName, name, RefType.REGULAR);#895,17.238252309652474
+boolean isExternallyReferenceable = false;#191,17.237116960378792
+Node value = n.getFirstChild();#749,17.23664121066823
+return "<a href=\"#" + name + "\">" + name + "</a>";#1209,17.236306457519532
+for (Node child = n.getFirstChild();#733,17.232483302845676
+super(name, parent.getFirstChild());#351,17.23032236099243
+return true;#814,17.222187678019207
+parent.getLastChild().cloneTree());#364,17.2206406011814
+return false;#1474,17.218278461032444
+addSimplifiedExpression(pred, n);#784,17.217679114568803
+return false;#958,17.217341634962295
+removeUnreferenced();#1050,17.217294216156006
+"Unsupported assignment in replaceWithRhs. parent: %s", Token.name(parent.getType()));#1673,17.2160931922294
+recordPrototypeSet(ns.prototypeClass, ns.prototypeProperty, n);#626,17.213257690955853
+private class ClassDefiningFunctionNode extends SpecialReferenceNode {#413,17.209934166499547
+Node nameNode = n.getFirstChild();#621,17.204604625701904
+return parent.getFirstChild().getNext() == n;#1730,17.204047657194593
+nameInfo.name = name;#1411,17.185534778394196
+recordWriteOnProperties(className);#678,17.176859855651855
+private static class NameInformation {#186,17.175805926322937
+rhs, NON_LOCAL_RESULT_PREDICATE));#940,17.171734707696096
+return false;#942,17.167216300964355
+rootNameNode = objLitParent.getFirstChild();#1347,17.165508353191875
+rootNameNode = objLitParent;#1353,17.162900824295846
+break;#329,17.157710870107014
+boolean thenHasSideEffects,#988,17.15195164590512
+List<Node> subexpressions = Lists.newArrayList();#1598,17.150330861409504
+addAllChildren(decl);#789,17.14935576915741
+jsn.name = name;#1242,17.14304879995493
+for (JsName name : allNamesCopy) {#1292,17.142790031433105
+return true;#1471,17.142340342203777
+parent.isCase()) &&#805,17.14029598236084
+addAllChildren(condition);#982,17.131549085889542
+JsName parentJsName = getName(parentName, true);#1299,17.129531173706056
+parent.isFor() ||#755,17.12313242519603
+NameInformation ns = createNameInformation(t, nameNode, n);#578,17.122591350389563
+public boolean traverseEdge(JsName from,#170,17.120420235853928
+return Collections.emptyList();#1781,17.119536717732746
+return ref;#1512,17.118490007188583
+nameInfo.name, nameInfo.superclass, RefType.INHERITANCE);#834,17.117266076983828
+referringName = referring.isPrototype#868,17.117019057273865
+super(name, node, parent, gramps);#424,17.11385384727927
+Node rhs = (parent.isVar())#937,17.10706615447998
+return null;#1400,17.102147165934245
+Node expr = collapseReplacements(replacements);#1692,17.09992175632053
+Node gramps = parent.getParent();#357,17.09469680786133
+parent.isAssign()) &&#952,17.092907456790698
+NameInformation ref = scopes.get(function);#1510,17.091498819986978
+boolean isExtern = (v == null && externalNames.contains(rootName));#1437,17.08951187133789
+static final Set<String> DEFAULT_GLOBAL_NAMES = ImmutableSet.of(#112,17.08301893870036
+Node rhs = lhs.getNext();#1788,17.077438354492188
+allNames.put(name, jsn);#1243,17.07474583387375
+recordReference(parentJsName.name, curJsName.name, RefType.REGULAR);#1302,17.071474813645885
+nameInfo.prototypeClass = name.substring(0, idx);#1450,17.07070931521329
+return;#828,17.06852207183838
+nameInfo.superclass = classes.superclassName;#1371,17.062667179107667
+return "<a name=\"" + name + "\">" + name + "</a>";#1213,17.060795585314434
+name = "";#1335,17.0388080733163
+if (NodeUtil.isVarOrSimpleAssignLhs(n, parent)) {#893,17.03552825634296
+public void keepSimplifiedShortCircuitExpression(Node original) {#979,17.02826270190152
+Set<JsName> allNamesCopy = Sets.newHashSet(allNames.values());#1290,17.01718298594157
+return (rhs != null && !NodeUtil.evaluatesToLocalValue(#939,17.014918107252853
+InstanceOfCheckNode(JsName name, Node node, Node parent, Node gramps) {#454,17.011638679504394
+rootNameNode = rootNameNode.getFirstChild();#1337,17.004583024978636
+Node rootNameNode = n;#1325,17.003257057883523
+nodesToKeep.add(n);#732,17.002084255218506
+replacements.add(NodeUtil.newExpr(subexpression));#1608,16.99329862140474
+return null;#1507,16.993152300516766
+sb.append("<li>" + nameAnchor(node.name) + "<ul>");#1155,16.99074288072257
+sb.append("<li>PROTOTYPES: ");#1157,16.990068753560383
+boolean isPrototype = false;#194,16.987771814519707
+recordDepScope(n, ns);#548,16.984625763363308
+nameLink(fromIter.next().getDestination().getValue().name));#1188,16.982189033970688
+extends NodeTraversal.AbstractShallowCallback {#568,16.97871488683364
+replaceWithRhs(containingNode, parent);#321,16.97499899864197
+return Lists.newArrayList(rhs);#1779,16.973465659401633
+recordWriteOnProperties(name);#659,16.971503853797913
+recordWriteOnProperties(name.substring(0, name.lastIndexOf('.')));#661,16.970126660664878
+return nameInfo;#1414,16.96878801073347
+throw new IllegalArgumentException("AstChangeProxy::getRhs " + n);#1801,16.964864767514744
+NameInformation ref = scopes.get(node);#1489,16.964354290681726
+return;#846,16.962134170532227
+parent.isAssign() &&#1391,16.95875418813605
+replaceWithRhs(containingNode, parent);#318,16.953102779388427
+Node parent;#290,16.947317668369838
+return true;#771,16.946077346801758
+Node nameNode = n.getFirstChild();#577,16.94537115097046
+recordSet(nameInfo.name, nameNode);#609,16.939171998397164
+sb.append(", ");#1176,16.93622840534557
+return nameInfo;#1381,16.923543691635132
+private void addSimplifiedChildren(Node n) {#740,16.9198140501976
+checkedClass, n, parent, parent.getParent()));#856,16.906473028248755
+replacements.add(IR.empty());#1690,16.905411779880524
+private Node collapseReplacements(List<Node> replacements) {#1745,16.89895725250244
+boolean hasWrittenDescendants = false;#226,16.892241319020588
+rootName.equals(WINDOW);#1439,16.892053548027487
+boolean referenceMatch = referenced == TriState.BOTH#1582,16.88936362547033
+return;#897,16.887456512451173
+return true;#1724,16.884861165826972
+private List<Node> getSideEffectNodes(Node n) {#1597,16.882219819461596
+return;#696,16.87272063891093
+private void addSimplifiedExpression(Node n, Node parent) {#747,16.85715231895447
+sb.append(", ");#1190,16.855713800950483
+addSimplifiedChildren(thenBranch);#983,16.85553863313463
+public void visit(NodeTraversal t, Node n, Node parent) {#571,16.85351508004325
+parent.hasWrittenDescendants = true;#692,16.852782600804378
+nameInfo.name = name;#1455,16.851979168978605
+private NameInformation getEnclosingFunctionDependencyScope(NodeTraversal t) {#1504,16.849328431216154
+name, n, parent, parent.getParent()));#638,16.843099777515118
+? referring.prototypeClass#869,16.841548248573584
+valueExpr.detachFromParent();#1630,16.841008631388345
+recordReference(curJsName.name, parentJsName.name, RefType.REGULAR);#1301,16.84093084642964
+new InstanceOfCheckNode(#855,16.832566261291504
+return;#690,16.8316547870636
+changeProxy.replaceWith(parent, n, replacement);#1642,16.83067258199056
+public void visit(NodeTraversal t, Node n, Node parent) {#596,16.827055022830056
+names.add(name2);#150,16.823968153733475
+Preconditions.checkState(parent.hasOneChild());#317,16.821689356928285
+replacement.detachFromParent();#1641,16.81787732931284
+FixedPointGraphTraversal.newTraversal(new ReferencePropagationCallback())#1547,16.817615799281906
+createName(nameNode.getString());#580,16.81643020405489
+FALSE,#1560,16.808205604553223
+addAllChildren(iter);#790,16.803076684474945
+Node function = t.getEnclosingFunction();#1505,16.782965723673502
+sb.append("ALL NAMES<ul>\n");#1153,16.779200236002605
+return null;#1441,16.76311821407742
+sb.append("</ul></li>");#1196,16.759961689219754
+return Lists.newArrayList(lhs, rhs);#1789,16.755212120387863
+convention.getSingletonGetterClassName(parent);#1376,16.740958083759654
+return null;#1418,16.725914001464844
+Node containingNode = parent.getParent();#314,16.72179832458496
+changeProxy.replaceWith(parent, node, IR.voidNode(IR.number(0)));#434,16.71800603866577
+SpecialReferenceNode(JsName name, Node node, Node parent,#393,16.704806062910293
+sb.append("</li>");#1195,16.701674779256184
+Preconditions.checkState(node.isCall());#430,16.695613225301106
+parent, n, collapseReplacements(newReplacements));#1633,16.695471720262006
+addAllChildren(original);#975,16.69341938836234
+sb.append("</ul>");#1151,16.690167133624737
+.computeFixedPoint(referenceGraph);#1548,16.68534834244672
+sb.append(", ");#1162,16.679594421386717
+this.parent = node.getParent();#302,16.677568499247233
+return true;#713,16.671601955707256
+sb.append("</ul>");#1198,16.666078714224007
+return false;#708,16.66102803548177
+sb.append("<li>" + text + "</li>\n");#1205,16.657862316478383
+referenceGraph.getInEdges(node);#1182,16.655058297243986
+Preconditions.checkState(node.isCall());#425,16.648091475168865
+return false;#1481,16.636189324515207
+recordReference(#833,16.63597033574031
+for (Node node : n.getAncestors()) {#1488,16.632949829101562
+return null;#1355,16.632813747112568
+nameInfo.isExternallyReferenceable =#1456,16.62193885216346
+List<Node> replacements =#1605,16.62112874984741
+out.append(", ");#248,16.611016072724993
+refNodes.add(new PrototypeSetNode(name, node));#677,16.604191462198894
+addSimplifiedChildren(n);#762,16.600789070129395
+return allNames.get(name);#1229,16.599565585454304
+curName = parentName;#1306,16.59806626183646
+public void visit(NodeTraversal t, Node n, Node parent) {#509,16.595327740623837
+ClassDefiningFunctionNode(JsName name, Node node, Node parent,#422,16.572823429107665
+public void keepSimplifiedHookExpression(Node hook,#987,16.5723925113678
+Preconditions.checkState(node.isQualifiedName());#456,16.563131427764894
+public void visit(NodeTraversal t, Node n, Node parent) {#471,16.561260405040922
+private NameInformation createNameInformation(NodeTraversal t, Node n,#1320,16.55928013059828
+replacements.clear();#1693,16.558064381281536
+public void visit(NodeTraversal t, Node n, Node parent) {#818,16.557824407305038
+newReplacements.addAll(getSideEffectNodes(replacements.get(i)));#1627,16.553871878262225
+public boolean shouldTraverse(NodeTraversal t, Node n, Node parent) {#769,16.53229224163553
+this.gramps = gramps;#398,16.53082581928798
+sb.append("</body></html>");#1199,16.529671096801756
+recordSet(ns.name, n);#614,16.52870650518508
+changeProxy.replaceWith(gramps, parent,#363,16.52790526339882
+"Unsupported node type in replaceWithRhs " +#1677,16.50530542929967
+child = child.getNext()) {#735,16.50117432443719
+Preconditions.checkState(parent.isAssign());#353,16.499932088349993
+BOTH#1562,16.49841006596883
+names.add(name1);#149,16.496726476229153
+return;#822,16.494840145111084
+count++;#1587,16.494176387786865
+addAllChildren(n);#807,16.491146768842423
+refNodes.add(new ClassDefiningFunctionNode(#637,16.48947823565939
+this.globalNames = DEFAULT_GLOBAL_NAMES;#1026,16.4860617988988
+resultSet.names.addAll(fromNameAliasSet.names);#1076,16.479220299493697
+Node parent = n.getParent();#935,16.474339825766428
+referenceGraph.createNode(from);#1103,16.47050404548645
+private class FindDependencyScopes extends AbstractPostOrderCallback {#507,16.465204894542694
+for (Node rhs : getRhsSubexpressions(n)) {#1683,16.45859169960022
+: referring.name;#870,16.45716776671233
+private List<Node> getRhsSubexpressions(Node n) {#1766,16.45708073510064
+break;#1674,16.453958797454835
+addSimplifiedExpression(n, parent);#798,16.44824710645174
+addAllChildren(child);#736,16.446550846099854
+recordReference(#842,16.445155437176044
+return ref;#1491,16.432002154263582
+resultSet.names.add(fromName);#1082,16.428116738796234
+resultSet.names.add(toName);#1085,16.42469972372055
+break;#1670,16.41275510787964
+recordSet(ns.name, nameNode);#628,16.40171072699807
+parent = parent.getParent();#1522,16.396160825093588
+return;#888,16.383446788787843
+addSimplifiedChildren(thenBranch);#995,16.381903743743898
+break;#1659,16.37941722869873
+newReplacements.add(valueExpr);#1631,16.37851071357727
+Node parent = function.getParent();#1517,16.375863711039226
+REGULAR,#160,16.36860179901123
+changeProxy.replaceWith(gramps, parent, IR.falseNode());#462,16.357428680766713
+refNodes.add(#854,16.35598455156599
+NodeTraversal.traverse(compiler, root, new FindDeclarationsAndSetters());#1036,16.351515350341796
+public void process(Node externs, Node root) {#1031,16.34522883097331
+"Unsupported parent node type in replaceWithRhs " +#1662,16.333258266448976
+changeProxy.replaceWith(parent, n, replacements);#1698,16.33190768957138
+replaceWithRhs(containingNode.getParent(), containingNode);#325,16.320149935208836
+return false;#177,16.319730845364656
+sb.append("<html><body><style type=\"text/css\">"#1134,16.311418641697276
+return true;#956,16.30407567457719
+return true;#175,16.282058715820312
+changeProxy.removeChild(gramps.getParent(), gramps);#360,16.266862330229387
+referenceGraph.getOutEdges(node);#1169,16.266281041232023
+expr = rep;#1754,16.255959113438923
+replacements.add(expr);#1694,16.25526782444545
+addSimplifiedChildren(child);#758,16.249549282921684
+NodeTraversal.traverse(compiler, root, new FindReferences());#1037,16.246979123070126
+refNodes.add(nameRefNode);#654,16.246469974517822
+changeProxy.removeChild(gramps, parent);#432,16.24055706827264
+return true;#1478,16.23316617445512
+return;#1098,16.2144433259964
+refNode.remove();#1120,16.214170455932617
+List<Node> replacements = getRhsSubexpressions(n);#1624,16.212265196300688
+return getRhsSubexpressions(n.getFirstChild());#1770,16.204463091763582
+return scopes.get(parent);#1526,16.20005089044571
+return scopes.get(parent);#1530,16.199584543704987
+rep.detachFromParent();#1750,16.1960662206014
+private class ProcessExternals extends AbstractPostOrderCallback {#469,16.191113131386892
+sb.append("OVERALL STATS<ul>");#1139,16.174351692199707
+child != null;#734,16.1713560740153
+replacements.addAll(getSideEffectNodes(rhs));#1684,16.142016220092774
+nameInfo.isPrototype = true;#1449,16.113704617818197
+referenceParentNames();#1041,16.10616886615753
+rep = rep.getFirstChild();#1749,16.101217687129974
+return;#858,16.098435974121095
+addAllChildren(n);#764,16.071969849722727
+addSimplifiedChildren(elseBranch);#998,16.065815448760986
+changeProxy.replaceWith(#1632,16.04917550086975
+addAllChildren(n);#811,16.037760462079728
+break;#1358,16.01810750961304
+LinkedDirectedGraph.createWithoutAnnotations();#86,16.006071090698242
+return false;#1737,16.00124601884322
+NodeTraversal.traverse(#741,15.999586514064244
+replaceWithRhs(containingNode, parent);#327,15.9920410676436
+addSimplifiedChildren(value);#751,15.990135563744438
+NodeTraversal.traverse(compiler, root, new FindDependencyScopes());#1033,15.956809768676758
+NodeTraversal.traverse(#1034,15.92370859781901
+nodes.addAll(getRhsSubexpressions(child));#1796,15.89266169988192
+private void replaceTopLevelExpressionWithRhs(Node parent, Node n) {#1652,15.865831875801087
+NodeTraversal.traverse(compiler, externs, new ProcessExternals());#1032,15.843677520751953
+replaceTopLevelExpressionWithRhs(parent, n);#1644,15.717212501325106
+NodeTraversal.traverse(#1599,15.715105056762695
+curJsName = parentJsName;#1304,15.658645100063747
+externalNames.add(ns.name);#481,15.647421388065114
+private void replaceWithRhs(Node parent, Node n) {#1620,15.633154213428497
+break;#922,15.335979393550328
+break;#334,15.177108844121298

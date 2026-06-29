@@ -1,0 +1,362 @@
+public class LevenbergMarquardtOptimizer extends AbstractLeastSquaresOptimizer {#106,16.294590618299402
+public void setCostRelativeTolerance(double costRelativeTolerance) {#200,15.562778518313454
+public LevenbergMarquardtOptimizer() {#166,14.899683054755716
+public void setParRelativeTolerance(double parRelativeTolerance) {#211,14.836669286092123
+protected VectorialPointValuePair doOptimize()#241,14.763482332229614
+private void qrDecomposition() throws OptimizationException {#783,14.725448776693906
+private double costRelativeTolerance;#136,14.600727478663126
+throws FunctionEvaluationException, OptimizationException, IllegalArgumentException {#242,14.5482151110967
+private double parRelativeTolerance;#139,14.484175125757853
+VectorialPointValuePair current = new VectorialPointValuePair(point, objective);#268,14.408395195007325
+public void setOrthoTolerance(double orthoTolerance) {#222,14.10647177696228
+for (int j = 0; j < lmDir.length; ++j) {#755,14.088721257668954
+private double orthoTolerance;#143,13.969378124583852
+throw new OptimizationException(LocalizedFormats.UNABLE_TO_PERFORM_QR_DECOMPOSITION_ON_JACOBIAN,#809,13.806822683129992
+if (Double.isInfinite(norm2) || Double.isNaN(norm2)) {#808,13.781635723615947
+if (((Math.abs(actRed) <= costRelativeTolerance) &&#436,13.779311445024279
+for (int j = 0; j < cols; ++j) {#328,13.756891216550555
+private double qrRankingThreshold;#146,13.755506148705116
+for (int countdown = 10; countdown >= 0; --countdown) {#573,13.74559235572815
+dxNorm = Math.sqrt(dxNorm);#517,13.688541663320441
+public void setInitialStepBoundFactor(double initialStepBoundFactor) {#190,13.674661134418688
+jacobian[j][permutation[j]] = lmDir[j];#728,13.670937876547537
+double gNorm = Math.sqrt(sum2);#559,13.654009485244751
+for (int j = 0; j < solvedCols; ++j) {#511,13.628300437927246
+double coeff2 = lmPar * lmNorm * lmNorm / pc2;#390,13.606320672565037
+for (int j = 0; j < solvedCols; ++j) {#672,13.603350296020508
+private double lmPar;#127,13.58616600036621
+public void setQRRankingThreshold(final double threshold) {#235,13.573799875047472
+for (int k = 0; k < solvedCols; ++k) {#281,13.531963249732708
+for (int k = rank - 1; k >= 0; --k) {#499,13.51653163909912
+for (int j = 0; j < solvedCols; ++j) {#550,13.509788932800292
+permutation[nextColumn] = permutation[k];#822,13.49242385228475
+for (int k = 0; k < cols; ++k) {#786,13.471970280011496
+if (maxCosine <= orthoTolerance) {#322,13.460013349850973
+for (int j = 0; j < solvedCols; ++j) {#535,13.458581464043979
+throw new OptimizationException(LocalizedFormats.TOO_SMALL_COST_RELATIVE_TOLERANCE,#450,13.434361815452576
+for (int j = 0; j < solvedCols; ++j) {#662,13.421122856140137
+for (int k = 0; k < cols; ++k) {#797,13.420693635940552
+for (int dk = cols - 1 - k; dk > 0; --dk) {#836,13.38675831345951
+this.costRelativeTolerance = costRelativeTolerance;#201,13.385752114382656
+for (int j = 0; j < solvedCols; ++j) {#618,13.373233466312803
+for (int j = k; j < jacobian.length; ++j) {#804,13.367128411928812
+for (int j = 0; j < solvedCols; ++j) {#735,13.362672042846679
+boolean firstIteration = true;#267,13.3537779490153
+lmDiag[j] = jacobian[j][permutation[j]];#727,13.350307796940658
+for (int j = 0; j < solvedCols; ++j) {#587,13.340055038189066
+private double[] lmDir;#130,13.334663651206277
+for (int k = j; k < solvedCols; ++k) {#687,13.329926622324976
+private void determineLMParameter(double[] qy, double delta, double[] diag,#488,13.313396568298339
+for (int j = 0; j < solvedCols; ++j) {#605,13.30972799761542
+for (int i = 0; i < jacobian.length; ++i) {#789,13.302147060632706
+for (int j = 0; j < solvedCols; ++j) {#530,13.28960655475485
+for (int j = 0; j < rank; ++j) {#493,13.280847342117973
+private int solvedCols;#109,13.273785400390626
+double qtbpj = 0;#686,13.271643209457398
+for (int j = rank; j < cols; ++j) {#496,13.271045585473379
+throw new OptimizationException(LocalizedFormats.TOO_SMALL_ORTHOGONALITY_TOLERANCE,#456,13.261155342569156
+for (int j = 0; j < solvedCols; ++j) {#580,13.245923831545074
+private int[] permutation;#121,13.245285129547119
+throw new OptimizationException(LocalizedFormats.TOO_SMALL_PARAMETERS_RELATIVE_TOLERANCE,#453,13.239549560546875
+for (int j = 0; j < solvedCols; ++j) {#609,13.230552903537092
+@Override#240,13.223172346750895
+private void qTy(double[] y) {#858,13.212436539786202
+if (ak2 <= qrRankingThreshold) {#817,13.207889747619628
+for (int j = k; j < jacobian.length; ++j) {#838,13.165404081344604
+for (int j = nSing - 1; j >= 0; --j) {#744,13.161102708180746
+if ((Math.abs(actRed) <= 2.2204e-16) && (preRed <= 2.2204e-16) && (ratio <= 2.0)) {#449,13.157787707813998
+for (int j = 0; j < solvedCols; ++j) {#385,13.152128812038537
+private double[] diagR;#112,13.148637251420455
+double ak2 = Double.NEGATIVE_INFINITY;#801,13.130365518423227
+dxNorm = Math.sqrt(dxNorm);#593,13.112045329550039
+while (true) {#269,13.106388018681454
+double fp = dxNorm - delta;#518,13.099787123063031
+qrDecomposition();#275,13.066413561503092
+if ((lmDiag[j] == 0) && (nSing == solvedCols)) {#736,13.058064629049863
+for (int k = 0; k < cols; ++k) {#859,13.030689438184103
+if ((Math.abs(fp) <= 0.1 * delta) ||#599,12.982339824948992
+for (double ratio = 0; ratio < 1.0e-4;) {#333,12.98009336789449
+for (int j = k; j < jacobian.length; ++j) {#842,12.972770849863688
+private int rank;#124,12.966586351394653
+for (int j = 0; j < solvedCols; ++j) {#376,12.954958164330685
+private double[] jacNorm;#115,12.920497287403453
+if (rank == solvedCols) {#529,12.918021650875316
+double dirDer = -(coeff1 + coeff2);#392,12.916226657231649
+private double[] beta;#118,12.915401882595486
+for (int j = 0; j < solvedCols; ++j) {#336,12.910849759072969
+jacobian[j][permutation[k + dk]] -= gamma * jacobian[j][pk];#843,12.880292157332102
+private double initialStepBoundFactor;#133,12.876936652443625
+this.parRelativeTolerance = parRelativeTolerance;#212,12.867971810427578
+private void determineLMDirection(double[] qy, double[] diag,#657,12.86733309427897
+current = new VectorialPointValuePair(point, objective);#365,12.865995653213993
+for (int i = k; i < cols; ++i) {#802,12.836709260940552
+((parl == 0) && (fp <= previousFP) && (previousFP < 0))) {#600,12.825153010232109
+(preRed <= costRelativeTolerance) &&#437,12.81461696624756
+for (int k = 0; k < cols; ++k) {#291,12.802720338106155
+double alpha = (akk > 0) ? -Math.sqrt(ak2) : Math.sqrt(ak2);#827,12.782514894008637
+setCostRelativeTolerance(1.0e-10);#174,12.768928029320456
+for (int j = 0; j < solvedCols; ++j) {#350,12.761612082972672
+if (checker==null) {#435,12.742457548777262
+jacobian[i][pj] = jacobian[j][permutation[i]];#665,12.727025520801543
+delta = (xNorm == 0) ? initialStepBoundFactor : (initialStepBoundFactor * xNorm);#303,12.705651307717348
+if (Math.abs(rkk) < Math.abs(lmDiag[k])) {#697,12.703809627266818
+setQRRankingThreshold(MathUtils.SAFE_MIN);#177,12.700077255566915
+ratio = (preRed == 0) ? 0 : (actRed / preRed);#395,12.694732133079977
+for (int j = 0; j < solvedCols; ++j) {#310,12.682298602479877
+gamma += jacobian[j][pk] * jacobian[j][permutation[k + dk]];#839,12.676915441240583
+lmNorm = Math.sqrt(lmNorm);#357,12.664115560465845
+final double temp = cos * work[k] + sin * qtbpj;#710,12.604737181412546
+int nextColumn = -1;#800,12.574898017080207
+updateJacobian();#274,12.539712965488434
+setParRelativeTolerance(1.0e-10);#175,12.525538964705033
+(delta <= parRelativeTolerance * xNorm)) {#439,12.518779690201217
+setConvergenceChecker(null);#172,12.517742549671846
+for (int i = j + 1; i < solvedCols; ++i) {#664,12.51710561013991
+xNorm = Math.sqrt(xNorm);#420,12.509477769174884
+VectorialPointValuePair previous = current;#273,12.50570127238398
+int nSing = solvedCols;#734,12.504285514354706
+int pj = permutation[j];#676,12.502425920395623
+jacobian[k][pk] -= alpha;#833,12.498038063049316
+jacNorm[k] = Math.sqrt(norm2);#793,12.495929859302661
+determineLMParameter(oldRes, delta, diag, work1, work2, work3);#346,12.488539328941933
+xNorm = Math.sqrt(xNorm);#300,12.482598728603786
+if (norm2 > ak2) {#812,12.460705795288085
+qTy(residuals);#278,12.452629327774048
+determineLMDirection(qy, work1, work2, work3);#584,12.44297665563123
+double dxNorm = 0;#510,12.440147399902344
+if (ratio >= 1.0e-4) {#412,12.439150136092614
+if (checker.converged(getIterations(), previous, current)) {#443,12.423545812305651
+double sPar = Math.sqrt(lmPar);#579,12.408789825439452
+lmDir[permutation[i]] -= ypk * jacobian[i][pk];#503,12.39373483657837
+for (int i = 0; i < k; ++i) {#502,12.38790769930239
+permutation = new int[cols];#249,12.386209544013528
+updateResidualsAndCost();#263,12.373951971530914
+double previousFP = fp;#594,12.370554371883994
+double paru = gNorm / delta;#560,12.36374678331263
+qtbpj = -sin * work[k] + cos * qtbpj;#711,12.361942768096924
+for (int j = 0; j < solvedCols; ++j) {#427,12.361748592273608
+maxCosine = Math.max(maxCosine, Math.abs(sum) / (s * cost));#318,12.358209609985352
+(actRed < 0) ? (0.5 * dirDer / (dirDer + 0.5 * actRed)) : 0.5;#400,12.356873044100675
+lmDiag[j] = dpj;#681,12.355330467224121
+if (fp <= 0.1 * delta) {#519,12.347427895194606
+double lmNorm = 0;#349,12.344282938086469
+double preRed = coeff1 + 2 * coeff2;#391,12.333241844177246
+lmPar = Math.min(paru, Math.max(lmPar, parl));#568,12.326416826248169
+for (int k = 0; k < cols; ++k) {#416,12.309184551239014
+this.orthoTolerance = orthoTolerance;#223,12.280066394805909
+lmPar = 0;#266,12.279172488621303
+if (nSing > 0) {#743,12.27859741449356
+double sum2;#527,12.269951025644938
+fp = dxNorm - delta;#595,12.266820430755615
+double s = diag[pj] * lmDir[pj];#589,12.263415827895656
+double s = diag[pj] * lmDir[pj];#513,12.232944258328143
+setMaxIterations(1000);#169,12.231934865315756
+double previousCost = cost;#340,12.209827184677124
+if (0.1 * cost < previousCost) {#369,12.209459577287946
+double coeff1 = 0;#384,12.195329749065897
+double[] diag    = new double[cols];#255,12.181177962910045
+double s = (work1[pj] - sum) / diagR[pj];#541,12.16853853174158
+(ratio <= 2.0)) ||#438,12.165887832641602
+double[] oldX    = new double[cols];#256,12.161904009905728
+if (nSing < solvedCols) {#739,12.156566533175381
+work1[pj] = work3[pj] * diag[pj] / dxNorm;#607,12.142269361019135
+double akk   = jacobian[k][pk];#826,12.13606859956469
+if (lmDiag[k] != 0) {#692,12.13077975963724
+coeff1 = coeff1 / pc2;#389,12.127916124131945
+diag[j] = Math.max(diag[j], jacNorm[j]);#329,12.120140720058131
+int pj = permutation[j];#663,12.117777824401855
+for (int i = 0; i <= j; ++i) {#553,12.11241732703315
+double aki = jacobian[j][permutation[i]];#805,12.108685583681673
+for (int i = k; i < rows; ++i) {#866,12.09782854715983
+jacobian[k][pk] = cos * rkk + sin * lmDiag[k];#709,12.085633669959174
+sum2 = 0;#617,12.071863511029411
+double parl = 0;#528,12.063426630837577
+solvedCols  = Math.min(rows, cols);#245,12.060878103429621
+if (firstIteration) {#286,12.05899133180317
+lmDir[permutation[j]] = work[j];#756,12.056970302875225
+double maxCosine = 0;#308,12.055448481911107
+point[pj] = oldX[pj] + lmDir[pj];#353,12.050154328346252
+lmDir[permutation[j]] = qy[j];#494,12.047760663209138
+double dpj = diag[pj];#677,12.031293786090353
+work1[permutation[i]] -= jacobian[i][pj] * tmp;#614,12.022702285221644
+for (int i = k + 1; i < solvedCols; ++i) {#715,12.020453844314966
+rank = solvedCols;#849,11.989589827401298
+double[] tmpVec = residuals;#341,11.982026996612548
+double actRed = -1.0;#368,11.959154815673829
+for (int i = k; i < rows; ++i) {#862,11.955092147544578
+double[] oldRes  = new double[rows];#257,11.9405870688589
+double correction = fp / (delta * sum2);#622,11.936642246246338
+double s = work1[permutation[j]];#619,11.905941895076207
+updateResidualsAndCost();#364,11.904365022977194
+Arrays.fill(lmDiag, j + 1, lmDiag.length, 0);#679,11.894770218775822
+for (int i = j + 1; i < solvedCols; ++i) {#613,11.891288076128278
+double ypk = lmDir[pk] / diagR[pk];#501,11.886608496308327
+for (int i = 0; i < j; ++i) {#538,11.878356041446809
+if (dpj != 0) {#678,11.86932315826416
+double rkk = jacobian[k][pk];#696,11.863085690666647
+int pj = permutation[j];#588,11.857880725860596
+double pc2 = previousCost * previousCost;#388,11.856798300376305
+double[] work3   = new double[cols];#260,11.839619863600959
+if (firstIteration) {#359,11.825007894764775
+delta = 2 * lmNorm;#407,11.821167230606079
+sum += jacobian[i][pj] * work1[permutation[i]];#539,11.81954710824149
+double tmp =#399,11.809298432391623
+int pj = permutation[j];#512,11.808381852649507
+sum2 = 0;#534,11.807776058421416
+if (ratio <= 0.25) {#398,11.796236771803637
+work1[pj] *= diag[pj] / dxNorm;#532,11.795163126552806
+setOrthoTolerance(1.0e-10);#176,11.792900388891047
+final double tan = lmDiag[k] / rkk;#702,11.775068552066118
+int pk                  = permutation[nextColumn];#821,11.770106388972355
+final double temp2 = cos * rik + sin * lmDiag[i];#717,11.765445265659066
+this.qrRankingThreshold = threshold;#236,11.762822778601395
+xNorm = 0;#415,11.75478302001953
+int pj = permutation[j];#551,11.736124856131417
+work[j] = (work[j] - sum) / lmDiag[j];#750,11.732662458677549
+sum2 = 0;#549,11.717737417954664
+double betak = 1.0 / (ak2 - akk * alpha);#828,11.715242057011045
+double s = diag[pj] * lmDir[pj];#354,11.696241559209051
+lmPar /= tmp;#405,11.69213802583756
+jacobian[i][pk] = temp2;#719,11.690398529956216
+lmDiag[i] = -sin * rik + cos * lmDiag[i];#718,11.677639474260046
+dxNorm = 0;#586,11.67757724313175
+int pj = permutation[j];#610,11.658423442840576
+for (int i = j + 1; i < nSing; ++i) {#747,11.651585003908943
+lmDir[permutation[j]] = 0;#497,11.647009213765463
+delta = Math.min(delta, lmNorm);#360,11.646897633870443
+if (lmPar == 0) {#569,11.645953486947452
+xNorm = 0;#290,11.645267441159202
+delta = tmp * Math.min(delta, 10.0 * lmNorm);#404,11.644499501516652
+final double cos;#695,11.638245304425558
+gamma *= betak;#841,11.636643929914994
+xNorm    += xK * xK;#418,11.62953551610311
+int pj = permutation[j];#377,11.628978170197586
+double dirJ = lmDir[pj];#378,11.620917689415716
+sum2 += sum * sum;#557,11.61709263450221
+final double cotan = rkk / lmDiag[k];#698,11.611652898788453
+lmDir       = new double[cols];#250,11.590022325515747
+sum /= diag[pj];#556,11.586423646836053
+lmDir[j] = diagR[pj];#667,11.577151812039888
+double r = cost / previousCost;#370,11.575964757374354
+if ((0.1 * cost >= previousCost) || (tmp < 0.1)) {#401,11.573234764012424
+costRelativeTolerance);#451,11.57183868744794
+double xK = diag[k] * point[k];#417,11.552133346858778
+double[] work1   = new double[cols];#258,11.551989873250326
+double norm2 = 0;#788,11.5448846022288
+double rik = jacobian[i][pk];#716,11.539702942496852
+jacNorm     = new double[cols];#247,11.521618799729781
+int pj = permutation[j];#351,11.521481398878427
+y[i] -= gamma * jacobian[i][pk];#867,11.518463019168738
+double[] work2   = new double[cols];#259,11.516268730163574
+int pj = permutation[j];#428,11.513679417696865
+lmPar = gNorm / dxNorm;#570,11.497428373856978
+dxNorm += s * s;#591,11.496264167453932
+parRelativeTolerance);#454,11.490666052874397
+int pj = permutation[j];#745,11.489548110961914
+if (cost != 0) {#309,11.484031878019634
+final double sin;#694,11.463718016942343
+sum += jacobian[i][pj] * residuals[i];#316,11.463098785151606
+double gamma = 0;#837,11.461765743437267
+int pj = permutation[j];#536,11.457502632141113
+incrementIterationsCounter();#270,11.454567544600543
+diagR       = new double[cols];#246,11.442489266395569
+int pk = permutation[k];#860,11.434769766671318
+tmpVec    = residuals;#431,11.432006676991781
+this.initialStepBoundFactor = initialStepBoundFactor;#191,11.425809836387634
+int pk = permutation[k];#688,11.403773517608643
+residuals = oldRes;#342,11.400154807350852
+lmPar = Math.max(parl, lmPar + correction);#632,11.394364768061145
+lmDir[pj] = -lmDir[pj];#352,11.385048151016235
+oldRes    = tmpVec;#433,11.381541124979655
+int pj = permutation[j];#337,11.368392023546942
+gamma += jacobian[i][pk] * y[i];#863,11.365066759514086
+double norm2 = 0;#803,11.359835798090154
+double   xNorm   = 0;#254,11.351323127746582
+for (int i = 0; i <= j; ++i) {#380,11.343297454289027
+point[pj] = oldX[pj];#429,11.337651517656115
+sin   = 1.0 / Math.sqrt(1.0 + cotan * cotan);#699,11.334063296415367
+int pk = permutation[k];#500,11.332356589181083
+double akk = jacobian[i][k];#790,11.32235753947291
+cost = previousCost;#426,11.320987701416016
+if (fp > 0) {#625,11.312856071873716
+jacobian[k][pk] = diagR[pk];#283,11.309582415749045
+double sum = 0;#537,11.302135308583578
+double tmp = work1[pj];#612,11.2999973487854
+work1[i] += jacobian[i][pj] * dirJ;#381,11.29386154088107
+double sum = 0;#552,11.291235082289752
+cos = 1.0 / Math.sqrt(1.0 + tan * tan);#703,11.289224868596987
+lmPar *= 0.5;#408,11.282921593764733
+if (paru == 0) {#561,11.268248975276947
+int pj = permutation[j];#606,11.266863861083984
+firstIteration = false;#414,11.255705466637245
+residuals = oldRes;#432,11.246725375835712
+gamma *= beta[pk];#865,11.236514711380005
+paru = 2.2251e-308 / Math.min(delta, 0.1);#563,11.234343206181245
+setInitialStepBoundFactor(100.0);#173,11.219189723332724
+double dk = jacNorm[k];#292,11.211853170394898
+if (lmPar == 0) {#576,11.20944763365246
+work1[pj] /= work2[j];#611,11.208981661960996
+if (dk == 0) {#293,11.205073515574137
+parl = fp / (delta * sum2);#545,11.191169815063477
+dxNorm += s * s;#515,11.189402680648001
+sum2 += s * s;#620,11.187881511190664
+oldX[pj] = point[pj];#338,11.187635838985443
+double[] lmDiag, double[] work) {#658,11.159011046091715
+lmNorm  += s * s;#355,11.15628849226853
+actRed = 1.0 - r * r;#371,11.150948063019783
+coeff1 += work1[j] * work1[j];#386,11.145412840162004
+xNorm  += xk * xk;#297,11.128231652577718
+orthoTolerance);#457,11.122650233182041
+lmDir[pk] = ypk;#505,11.107852220535278
+double sum = 0;#746,11.098768302372523
+sum += jacobian[i][pj] * work[i];#748,11.0953680244652
+sin = cos * tan;#704,11.081786632537842
+sum += jacobian[i][pj] * qy[i];#554,11.053634853924022
+double[] work1, double[] work2, double[] work3) {#489,11.051950250353132
+work1[pj] = sPar * diag[pj];#582,11.044335275888443
+for (int i = 0; i <= j; ++i) {#315,11.030913524138622
+permutation[k]          = pk;#823,11.02360143661499
+int    pj = permutation[j];#311,11.014546990394592
+int pj = permutation[j];#581,10.989713325500489
+work[k] = temp;#712,10.971439750106246
+double gamma = 0;#861,10.970436152289896
+oldRes    = tmpVec;#343,10.95237687917856
+work[j]  = qy[j];#668,10.94918041643889
+beta        = new double[cols];#248,10.948117712269658
+lmPar = Math.max(2.2251e-308, 0.001 * paru);#577,10.925239465175531
+diagR[pk]        = alpha;#832,10.924308661756845
+permutation[k] = k;#787,10.886331248283387
+norm2 += aki * aki;#806,10.875250898558518
+double xk = dk * point[k];#296,10.874504443137877
+cos   = sin * cotan;#700,10.872559771818274
+double s  = jacNorm[pj];#312,10.845727166821879
+nextColumn = i;#813,10.832353210449218
+int pj = permutation[j];#531,10.812932529449462
+return current;#324,10.796760408501877
+sum2 += s * s;#543,10.790768125782842
+work3[pj] = s;#590,10.784142570495606
+rows, cols);#810,10.770628669045188
+return;#819,10.758951081169975
+int pk = permutation[k];#282,10.738796520233155
+work1[j] = 0;#379,10.73730857031686
+if (s != 0) {#313,10.718001754195601
+beta[pk]     = betak;#829,10.677557983398437
+double   delta   = 0;#253,10.670434446895824
+return current;#440,10.650246363419752
+norm2 += akk * akk;#791,10.631324996948242
+diag[k] = dk;#298,10.59575261740849
+tmp = 0.1;#402,10.53867751009324
+paru = Math.min(paru, lmPar);#628,10.528584432601928
+double sum = 0;#314,10.523930714048188
+work1[pj] = s;#514,10.522492000034877
+lmPar = 0;#520,10.498212761349148
+parl = Math.max(parl, lmPar);#626,10.49168291091919
+work1[pj] = s;#542,10.460605278015137
+rank = k;#818,10.436600160598754
+ak2        = norm2;#814,10.423293662793709
+return current;#444,10.28782535482336
+return;#601,10.224679787953695
+dk = 1.0;#294,10.17574825594502
+work[j] = 0;#740,9.871495910312818
+return;#521,9.672880377088275
+nSing = j;#737,9.41870235261463

@@ -1,0 +1,88 @@
+CollapseVariableDeclarations(AbstractCompiler compiler) {#103,19.204680102212087
+private final AbstractCompiler compiler;#66,19.172170639038086
+return var != null#202,18.81838264465332
+class CollapseVariableDeclarations implements CompilerPass {#64,18.756927728652954
+@Override#136,18.614115079243977
+if (redeclaration) {#239,18.551565442766464
+if (!n.isVar() && !canBeRedeclared(n, t.getScope())) return;#143,18.472320079803467
+this.compiler = compiler;#105,18.42654765735973
+private void applyCollapses() {#209,18.27074760860867
+&& var.getScope() == s#203,18.254577583736843
+private final Set<Var> blacklistedVars = Sets.newHashSet();#134,18.24186915443057
+@Override#108,18.22213363647461
+if (n.isVar()) {#223,18.218720614910126
+final Node startNode;#74,18.201960457695854
+for (Collapse collapse : collapses) {#210,18.179603576660156
+private final List<Collapse> collapses = Lists.newArrayList();#94,18.173906101899988
+(n.isVar() || canBeRedeclared(n, t.getScope()))) {#162,18.10187579646255
+if (n.isVar()) {#164,18.041106462478638
+final Node parent;#82,17.985143899917603
+if (parent.isIf()) return;#150,17.95329195658366
+if (child.getFirstChild() == null) {#184,17.948176860809326
+final Node endNode;#79,17.928615676032173
+private final Set<Node> nodesToCollapse = Sets.newHashSet();#101,17.90011877762644
+while (n != null &&#161,17.884790023167927
+private boolean canBeRedeclared(Node n, Scope s) {#190,17.884592819213868
+while(n.hasChildren()) {#224,17.866867065429688
+Node var = new Node(Token.VAR);#212,17.81840430988985
+Node assign = n.getFirstChild();#228,17.808153855173213
+if (n.isVar()) {#138,17.788852827889578
+private static class Collapse {#69,17.719711542129517
+for (Node child = varNode.getFirstChild();#182,17.717941019270157
+Node varNode = n;#152,17.67057792345683
+compiler.reportCodeChange();#117,17.658488591512043
+Node next = n.getNext();#218,17.60804110765457
+if (!collapses.isEmpty()) {#115,17.55606013077956
+Node rhs = assign.getLastChild();#231,17.55213360786438
+JSDocInfo info = new JSDocInfo();#240,17.545078325271607
+if (!lhs.isName()) {#197,17.52151610056559
+nodesToCollapse.clear();#111,17.482670523903586
+Collapse(Node startNode, Node endNode, Node parent) {#84,17.482044320357474
+boolean hasVar = n.isVar();#154,17.481854820251463
+Node lhs = assign.getFirstChild();#229,17.466569662094116
+var.setJSDocInfo(info);#242,17.457321802775066
+Var var = s.getVar(lhs.getString());#201,17.43622965812683
+this.startNode = startNode;#85,17.407928330557688
+Preconditions.checkState(var.getNext() == n);#220,17.39836423293404
+if (hasNodesToCollapse && hasVar) {#175,17.38997539721037
+if (!NodeUtil.isExprAssign(n)) {#191,17.36399609701974
+var.copyInformationFrom(collapse.startNode);#213,17.348130173153347
+Node assign = n.getFirstChild();#194,17.281644948323567
+private class GatherCollapses extends AbstractPostOrderCallback {#128,17.24029622759138
+Preconditions.checkState(lhs.isName());#230,17.234569259311844
+var.addChildToBack(lhs.detachFromParent());#233,17.230772399902342
+boolean redeclaration = false;#216,17.22368343059833
+this.endNode = endNode;#86,17.192326954432897
+if (nodesToCollapse.contains(n)) return;#146,17.149624824523926
+blacklistedVars.add(t.getScope().getVar(child.getString()));#185,17.1376950663905
+blacklistStubVars(t, n);#139,17.025052282545303
+info.addSuppression("duplicate");#241,17.024534914228653
+n = next;#236,17.022002299626667
+private void blacklistStubVars(NodeTraversal t, Node varNode) {#181,16.977080013441004
+Node lhs = assign.getFirstChild();#195,16.970467746257782
+return false;#198,16.92907255346125
+collapses.add(new Collapse(varNode, n, parent));#177,16.873088878134023
+child != null; child = child.getNext()) {#183,16.854726584061332
+blacklistStubVars(t, n);#165,16.803710222244263
+nodesToCollapse.add(n);#169,16.78805429795209
+return false;#192,16.78257066553289
+lhs.addChildToBack(rhs.detachFromParent());#232,16.778580592228817
+hasNodesToCollapse = true;#170,16.750744651345645
+this.parent = parent;#87,16.709004481633503
+nodesToCollapse.add(varNode);#176,16.694495254092747
+collapses.clear();#110,16.687321424484253
+public void visit(NodeTraversal t, Node n, Node parent) {#137,16.653911953880673
+&& !blacklistedVars.contains(var);#204,16.6334792917425
+boolean hasNodesToCollapse = false;#159,16.626626551151276
+n = n.getNext();#157,16.561195373535156
+NodeTraversal.traverse(compiler, root, new GatherCollapses());#113,16.463462456412937
+var.addChildToBack(n.removeFirstChild());#225,16.45634189605713
+public void process(Node externs, Node root) {#109,16.405662790934244
+applyCollapses();#116,16.38461055755615
+hasVar = true;#166,16.37147439320882
+for (Node n = collapse.startNode; n != collapse.endNode;) {#217,16.361807174682617
+Preconditions.checkState(!compiler.getLifeCycleStage().isNormalized());#104,16.346271514892578
+collapse.parent.removeChildAfter(var);#221,16.322350449032253
+n = n.getNext();#172,16.319217173258462
+redeclaration = true;#234,16.087560713291168
+collapse.parent.addChildBefore(var, collapse.startNode);#214,15.875213486807686

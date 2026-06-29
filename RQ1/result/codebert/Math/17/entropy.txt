@@ -1,0 +1,1176 @@
+break;#1212,19.352216508653427
+rh = 1;  // carry in to aid the subtraction#1781,19.25364948141164
+a.sign = sign;#1109,19.179560629526772
+sign = (byte) 1;#362,19.16209632471988
+extra = extra - rh * RADIX;#1237,19.146192101871264
+sign = (byte) 1;#350,19.07303860313014
+buffer[p++] = '0';#2190,19.066924867175874
+dividend[0] = 0;#1842,19.065934030633223
+break;#1209,19.065624872843426
+public boolean strictlyPositive() {#847,19.0519306009466
+outputbuffer[q++] = '.';#2109,19.05039509859952
+break;#1093,19.044199856844816
+sign = (byte) -1;#356,19.04273142814636
+{#382,19.03593635559082
+exponent++;#279,19.032298496791295
+break;#1100,19.024055654352363
+double x = Double.longBitsToDouble(bits);#2478,18.997573670886812
+break;#2009,18.989874415927464
+result.sign = sign;#1905,18.981465763515896
+case 1:#1210,18.93148333231608
+sign = 1;#338,18.92178289095561
+break;#1215,18.904324425591362
+outputbuffer[q++] = rawdigits[p++];#2108,18.88526865152212
+sign = (byte) -1;#295,18.877285798390705
+result.exp = exp + x.exp + md - 2 * mant.length + 1;#1575,18.875675133296422
+case ROUND_CEIL:#1095,18.863081144249957
+p++;#451,18.856771998935276
+int q;#2078,18.85641756924716
+public static final byte SNAN = 2;#119,18.847454364483173
+a = newInstance(getOne());#1108,18.846862852573395
+rh = r / RADIX;#1776,18.84241690459075
+result.exp = a.exp;#1348,18.841982126235962
+q--;#470,18.80744753385845
+outputbuffer[q++] = '.';#2116,18.79767907749523
+def.sign = result.sign;#2270,18.789474419185094
+outputbuffer[q++] = (char)(ae / p + '0');#2143,18.786289741253032
+buffer[p++] = '0';#2191,18.785132271902903
+sign = 1;#260,18.780585447947185
+p++;#424,18.779597282409668
+outputbuffer[q++] = '0';#2115,18.77296257019043
+result.exp = result.exp - ERR_SCALE;#2278,18.76340929667155
+case ROUND_UP:#1424,18.760053369734024
+case 2:#1213,18.758392969767254
+if (a.exp < b.exp) {#974,18.74285440859587
+if (x.exp < -1 || x.exp > 1) {#1998,18.741832892100017
+outputbuffer[q++] = 'e';#2123,18.739415486653645
+break;#2012,18.727248350779217
+buffer[p++] = '0';#2171,18.725473630995978
+long mask = 0xffffffffc0000000L;#2494,18.716387397364567
+a = newInstance(getOne());#1115,18.71152475476265
+result.sign = (byte) (sign * x.sign);#1526,18.710114192962646
+break;#2006,18.704263316260445
+result.sign = rsign;#1349,18.69147008260091
+outputbuffer[q++] = '0';#2117,18.68842840194702
+q++;#461,18.687044961111887
+long bits = Double.doubleToLongBits(x);#265,18.68118109021868
+sign = 1;#183,18.675885279973347
+buffer[p++] = (char) (((mant[i] / 10) % 10) + '0');#2181,18.668848916103965
+p++;#462,18.65797492436
+break;#2265,18.654577891031902
+a.sign = sign;#1116,18.644052092234293
+result.sign = (byte) (sign * x.sign);#1520,18.639589468638103
+int p;#2077,18.636625636707652
+public double[] toSplitDouble() {#2492,18.627477248509724
+protected byte sign;#167,18.62461829185486
+int rh = 0;#1772,18.611331394740514
+result.sign = (byte)((sign == x.sign)?1:-1);#1576,18.6028780570397
+buffer[p++] = '0';#2172,18.590023086184548
+boolean negate = false;#2417,18.585606575012207
+buffer[p++] = '0';#2192,18.584265391031902
+{#384,18.584105603835162
+result.exp = result.exp + ERR_SCALE;#2274,18.583692836761475
+buffer[p++] = (char) (((mant[i] / 100) % 10) + '0');#2180,18.57427070015355
+buffer[p++] = '0';#2173,18.5700717653547
+byte rsign = bsign;#1307,18.55902322133382
+striped[q] = fpdecimal.charAt(p);#460,18.556900448269314
+if (a.equals(half) && result.exp > 0 && (result.mant[mant.length-result.exp]&1) != 0) {#1114,18.555493913847826
+if (a.exp > b.exp) {#978,18.550957223643426
+inc.sign = this.sign;#2359,18.548716688156127
+buffer[p++] = (char) ((mant[i] / 1000) + '0');#2179,18.548150595496683
+char outputbuffer[] = new char[mant.length * 4 + 20];#2076,18.54643569946289
+case ROUND_DOWN:#1420,18.535522249009873
+final int r = rl*RADIX + result.mant[i];#1924,18.522192764282227
+final int r = (dm * trial) + rh;#1775,18.52151119709015
+inc.exp = this.exp-mant.length+1;#2358,18.51876283574987
+result = newInstance(getZero());#1719,18.513882994651794
+result.sign = (byte) - result.sign;#1401,18.509111070632933
+result.mant[0] = aextradigit+bextradigit;#1371,18.504351880815292
+its a good one if it is less than the divisor */#1805,18.503357315063475
+default:#1103,18.501597616407608
+result.exp = 0;#1379,18.501152992248535
+def.sign = result.sign;#2238,18.494107325871784
+Dfp result = newInstance(getZero());#1904,18.492492112246428
+if (field.getRadixDigits() != x.field.getRadixDigits()) {#1254,18.492356808980308
+if (field.getRadixDigits() != x.field.getRadixDigits()) {#2333,18.48838529586792
+sign = (byte) 1;#292,18.483194060947586
+y = y.multiply(newInstance(4503599627370496l)).rint();#2456,18.483092439585718
+rh = r / RADIX;#1784,18.482872468453866
+int bextradigit = 0;#1325,18.48259370467242
+case 0:#2004,18.47774092356364
+final int excp = result.round(aextradigit + bextradigit);#1388,18.46946877446668
+if (result.sign == 1) {#1096,18.465225976088952
+aextradigit = a.align(b.exp);#1327,18.46517302439763
+max = trial-1;#1791,18.460971245398888
+result.sign = (byte) (sign * divisor.sign);#1707,18.458963334560394
+break;#2275,18.449997266133625
+inc.sign = this.sign;#2369,18.44692454338074
+if (field.getRadixDigits() != d.field.getRadixDigits()) {#597,18.444581762949625
+int exponent = (int) ((bits & 0x7ff0000000000000L) >> 52) - 1023;#267,18.44370061159134
+buffer[0] = ' ';#2162,18.430586218833923
+result.sign = (byte) (sign * x.sign);#1532,18.424223804473876
+if (a.greaterThan(half)) {#1107,18.416129767894745
+result.sign = (byte) (sign * divisor.sign);#1713,18.415690451860428
+if (a.exp < b.exp) {#1326,18.40832559685958
+split[0] = Double.longBitsToDouble(Double.doubleToLongBits(toDouble()) & mask);#2496,18.4068026133946
+long bits = mantissa | ((exponent + 1023L) << 52);#2477,18.402950477600097
+Dfp result = newInstance(getZero());#1297,18.402753406100803
+buffer[p++] = (char) (((mant[i]) % 10) + '0');#2182,18.39736486162458
+final char[] striped = new char[getRadixDigits() * rsize + offset * 2];#346,18.39308910369873
+if (field.getRadixDigits() != x.field.getRadixDigits()) {#1499,18.39278882344564
+if (a.sign != b.sign) {#951,18.389763731705514
+q = 1;#2203,18.388407071431477
+if (mantissa == 4503599627370496L) {#2461,18.385006946066152
+break;#2282,18.384136305914986
+result = newInstance(getZero());#1627,18.376718004544575
+outputbuffer[q++] = 'e';#2118,18.372911496595904
+break;#472,18.372681270946156
+long mantissa = bits & 0x000fffffffffffffL;#266,18.371020151221234
+if (remainder[mant.length] != 0) {#1816,18.36848375874181
+remainder[i] = r - rh * RADIX;#1777,18.36691129207611
+p = 0;#2084,18.3598149617513
+for (p = 1000000000; p > ae; p /= 10) {#2134,18.35885579769428
+if (this.equals(getZero())) {#2361,18.357038895289104
+striped[0] = '0';#433,18.35501253604889
+final int r = ((RADIX-1) - remainder[i]) + dividend[i] + rh;#1783,18.347201390699908
+a.sign = 1;#1303,18.34324938910348
+if (adiff > (mant.length + 1)) {#711,18.338622960177336
+break;#1438,18.327927536434597
+if (field.getRadixDigits() != x.field.getRadixDigits()) {#781,18.315943304697672
+striped[1] = '0';#434,18.309929490089417
+significantDigits--;#475,18.30902603149414
+char buffer[] = new char[mant.length*4 + 20];#2156,18.308303594589233
+sign = (byte) 1;#298,18.301526359889817
+p++;#456,18.300739977094864
+break;#1833,18.300045490264893
+mantissa &= 0x000fffffffffffffL;#286,18.299546737670898
+continue;#1792,18.296256412159313
+case DfpField.FLAG_INVALID:#2236,18.295411234316617
+result.sign = (byte) (sign * divisor.sign);#1730,18.295267615999496
+if (diff < 0) {#723,18.294791322005423
+q = 0;#2101,18.292812426884968
+if (rh == 0) {#1789,18.290508933689285
+break;#1434,18.286866029103596
+exp = 0;#261,18.286839326222736
+int exponent = (int)(y.log10() * 3.32);#2428,18.2810404698054
+long mantissa = Long.parseLong(str);#2459,18.274146782724483
+striped[2] = '0';#435,18.271396338939667
+switch (rmode) {#1087,18.271032916174995
+d = d.multiply(10);#1211,18.265959923083965
+if (buffer[q] == '.') {#2207,18.262771656638698
+shiftRight();#734,18.262710019161826
+dividend[mant.length] = 0;#1742,18.26133304172092
+int excp;       // exceptions#1683,18.2565797328949
+result = result.add(getOne());#1098,18.25383299047297
+final int r = mant[i] * x + rh;#1645,18.249685592651367
+result.shiftLeft();#1369,18.2494935428395
+case 0:#1208,18.2490566889445
+def = newInstance(getZero());#2245,18.24762381826128
+final int excp = result.round(rl * RADIX / divisor);  // do the rounding#1939,18.241150917545443
+a.sign = 1;            // force positive (take abs)#1106,18.239213184876874
+outputbuffer[q++] = '0';#2119,18.23289663141424
+def.sign = result.sign;#2280,18.23285718758901
+if (field.getRadixDigits() != x.field.getRadixDigits()) {#756,18.23196932474772
+result.mant[i] = 0;#1083,18.225580648942426
+if ((bits & 0x8000000000000000L) != 0) {#308,18.222541560297426
+case 2:#2007,18.221399307250977
+buffer[p++] = '0';#2193,18.220915431068057
+this.sign    = sign;#544,18.217491262099323
+if (s.equals(NEG_INFINITY_STRING)) {#355,18.21647834777832
+if (exp > MAX_EXP) {#1476,18.215700822718002
+break;#1430,18.21388398276435
+private static final String MULTIPLY_TRAP = "multiply";#137,18.213813191368466
+int aextradigit = 0;#1324,18.208189403309543
+if (divisor.mant[i] > remainder[i]) {#1808,18.20789674810461
+if (s.equals(POS_INFINITY_STRING)) {#349,18.198715476989747
+Should be faster than doing a natural logarithm.  */#2427,18.19243858171546
+case ROUND_FLOOR:#1088,18.191845178604126
+private static final String DIVIDE_TRAP = "divide";#140,18.188106838025544
+if (p != rawdigits.length) {#2106,18.187458690844085
+r = r + product[i+j] + rh;  // add to the product digit with carry in#1552,18.182175122774563
+if (lostdigit != 0) {#728,18.18158197402954
+inc.exp = this.exp-mant.length;#2372,18.17945986780627
+quotient[qd] = trial;#1826,18.179206893557595
+field.setIEEEFlagsBits(DfpField.FLAG_INVALID);#1988,18.177796671467444
+break;#2240,18.17475684483846
+for (int i = 0; i < mant.length + 1; i++) {#1782,18.17061887067907
+result = newInstance(getZero());#1539,18.169086297353108
+if (field.getRadixDigits() != divisor.field.getRadixDigits()) {#1686,18.166821777820587
+significantDigits++;#463,18.162527084350586
+result = result.add(newInstance(-1));#1091,18.16059785570417
+rawdigits[p++] = (char) ((mant[i] / 1000) + '0');#2086,18.15706655714247
+field.setIEEEFlagsBits(DfpField.FLAG_INVALID);#1977,18.156562123979842
+if (a.mant[i] > b.mant[i]) {#985,18.155748049418133
+private static final String NEW_INSTANCE_TRAP = "newInstance";#161,18.154673480987547
+if (isNaN()) {#887,18.14821090698242
+inc.exp = this.exp;#2368,18.147056913375856
+result.exp = exp - divisor.exp + md - mant.length;#1863,18.14638456931481
+result = newInstance(this);#1989,18.14083867324026
+remainder[i] = r - rh * RADIX;#1785,18.140793830156326
+if (p == (fpdecimal.length())) {#439,18.14070598602295
+public static final byte INFINITE = 1;#116,18.139920711517334
+changed |= result.mant[i] != 0;#1082,18.138189086914064
+str = str.substring(0, str.length()-1);#2458,18.137675126393635
+boolean up = false;#2341,18.137000890878532
+by the formula dx = (y - x*x) / (2x); */#2020,18.136947364807128
+default:#1449,18.13470717838832
+mant[mant.length - 1] = (int) (x % RADIX);#235,18.131087087815807
+case ROUND_CEIL:#1444,18.126818255374307
+trial = (min+max)/2;#1769,18.123733978271485
+final byte bsign = b.sign;#1301,18.122501934275906
+int md=0;       // most sig digit in result#1682,18.116459579467772
+striped[3] = '0';#436,18.11585384607315
+if (exp < MIN_EXP) {#1470,18.11321813919965
+public boolean isZero() {#885,18.10787992477417
+while ( (mantissa & 0x0010000000000000L) == 0) {#282,18.107684294382732
+mant[i] = r - rh * RADIX;#1460,18.105878012520925
+while (x.unequal(px)) {#2024,18.104848013983833
+if (compare(a, b) > 0) {#1308,18.103761536734446
+if ( (result.exp+mant.length) < MIN_EXP) {#2268,18.10289503546322
+int md = mant.length * 2 - 1;  // default, in case result is zero#1561,18.099857262202672
+extra = RADIX-extra;#1231,18.09184373219808
+if (fpdecimal.charAt(p) == '.') {#420,18.09086046900068
+rawdigits[p++] = (char) (((mant[i] / 100) %10) + '0');#2087,18.076898312568666
+dx = dx.divide(2);#2028,18.076236043657577
+protected byte nans;#173,18.075982093811035
+for (int i = 0; i < mant.length + 1; i++) {#1773,18.075443772708667
+p = 0;#407,18.07489601771037
+x = x.add(dx);#2031,18.069758081436156
+while ((p - q) < (mant.length * rsize)) {#509,18.068291053771972
+if ((bits & 0x8000000000000000L) != 0) {#273,18.067514419555664
+mant = new int[field.getRadixDigits()];#337,18.06740210273049
+Dfp result;#1986,18.06664741039276
+mant[i]++;#245,18.065531730651855
+buffer[p++] = '0';#2165,18.064109847659157
+if (isNaN()) {#804,18.06361815134684
+rh = r / RADIX;#1459,18.063208911729895
+if (minadj >= 2) {#1799,18.060807744661968
+break;#1442,18.058121098412407
+dx = dx.add(this.divide(x));#2027,18.057662582397462
+nans = INFINITE;#296,18.057131435560144
+int rh = 0; /* acts as a carry */#1342,18.05050694315057
+rawdigits[p++] = (char) (((mant[i] / 10) % 10) + '0');#2088,18.04842460155487
+Arrays.fill(mant, 0);#713,18.047113115137275
+case 3:#2010,18.045750172932944
+return 17 + (sign << 8) + (nans << 16) + exp + Arrays.hashCode(mant);#923,18.044068445478167
+def = newInstance(getZero());#2269,18.038957493645803
+mant[i] = (striped[q]   - '0') * 1000 +#518,18.038648337125778
+public boolean positiveOrNull() {#832,18.037673690102316
+trialgood = true;#1809,18.037477986565953
+result = add(inc);#2365,18.035217973921036
+final int r = mant[i] + rh;#1458,18.031728355972856
+if (isNaN()) {#819,18.0271479288737
+dotrap(DfpField.FLAG_INEXACT, ALIGN_TRAP, this, this);#717,18.026850727626254
+if (x.equals(ppx)) {#2033,18.02555457405422
+if (isNaN()) {#834,18.02145226796468
+boolean negative = false;#379,18.01929344850428
+exp = 0;#339,18.018985191981
+field.setIEEEFlagsBits(DfpField.FLAG_DIV_ZERO);#1903,18.016323685646057
+final Dfp x = (Dfp) other;#905,18.010199588278066
+field.setIEEEFlagsBits(DfpField.FLAG_INVALID);#1913,18.009152104777673
+result.nans = INFINITE;#1906,18.00743025825137
+result = newInstance(getZero());#1729,18.00730061531067
+outputbuffer[q++] = '-';#2103,18.006986314600166
+result = result.add(a);#1117,18.006611943244934
+result = dotrap(DfpField.FLAG_INVALID, SQRT_TRAP, null, result);#1979,18.005400169186476
+int e;#2079,17.999467156150125
+result.mant[i] = r - rh * RADIX;#1647,17.99829309957999
+if (quotient[i] != 0) {#1851,17.9974311987559
+result = newInstance(getZero());#1637,17.99724488258362
+d.exp = e / 4 + 1;#1202,17.996405124664307
+mant[i] = r - rh * RADIX;#1241,17.99626894791921
+int nsqd;       // number of significant quotient digits we have#1678,17.995698622294835
+final int r = a.mant[i]+b.mant[i]+rh;#1344,17.994545698165894
+return Double.POSITIVE_INFINITY;#2408,17.993789778815376
+if (divisor < 0 || divisor >= RADIX) {#1912,17.991645057996113
+if (nans == SNAN) {#1974,17.99037942432222
+decimalPos = significantDigits;#450,17.989637084629226
+if (isNaN()) {#849,17.984346199035645
+rh = r / RADIX;#1554,17.983449479807977
+quotient while we are at it */#1748,17.98275229136149
+return exp * 4 - 1;#1183,17.97715407923648
+def.sign = (byte)(sign*oper.sign);#2246,17.97712161324241
+if (asign != bsign) {#1333,17.974143308751724
+int r = mant[i] * x.mant[j];    // multiply the 2 digits#1551,17.971313549922062
+Dfp result = newInstance(getZero());#1914,17.969774116169322
+if (nans == INFINITE && x == 0) {#1625,17.967047397906963
+if (isInfinite()) {#2404,17.965869649251303
+break;#1119,17.965385393662885
+if (x < 0 || x >= RADIX) {#1635,17.96292052268982
+if (fpdecimal.charAt(p) == '.') {#448,17.960262264524186
+mant = new int[field.getRadixDigits()];#212,17.960143652829256
+round((striped[q] - '0')*1000);#530,17.955136335813084
+int rh = 0;  // acts as a carry#1549,17.95461356121561
+return Double.NEGATIVE_INFINITY;#2406,17.95454336095739
+field.setIEEEFlagsBits(DfpField.FLAG_INVALID);#1636,17.952777524148264
+Dfp result = newInstance(getZero());#1285,17.952727574568527
+y = y.divide(DfpMath.pow(getTwo(), exponent));#2442,17.951382813630282
+field.setIEEEFlagsBits(DfpField.FLAG_INVALID);#1538,17.946950149536132
+if (asign != bsign) {#1381,17.945438748314267
+inc = newInstance(getOne());#2357,17.945092487335206
+result = newInstance(this);#1978,17.941597109255582
+result = newInstance(getZero());#1712,17.939253091812134
+case DfpField.FLAG_DIV_ZERO:#2242,17.93752058347066
+product[i+j] = r - rh * RADIX;#1555,17.9354913075765
+result.sign = (byte) ((sign == divisor.sign) ? 1 : -1);#1864,17.93504193623861
+if (isNaN()) {#1510,17.933902238544665
+result.sign = 1;#864,17.93371112006051
+result.mant[i] = r - rh * RADIX;#1346,17.931509194550692
+if (isNaN()) {#1263,17.931413248965615
+buffer[p++] = '.';#2199,17.931383359999884
+def = newInstance(getZero());#2252,17.92805504798889
+Dfp result = newInstance(this);#1612,17.92488754496855
+private static final String SQRT_TRAP = "sqrt";#143,17.923667007022434
+if (isNaN()) {#1697,17.92272673155132
+result = dotrap(DfpField.FLAG_INVALID, MULTIPLY_TRAP, x, result);#1541,17.922479585159657
+break;#1422,17.919255362616646
+result = dotrap(DfpField.FLAG_INVALID, ADD_TRAP, x, result);#1287,17.917680788040162
+if (rounded.greaterThan(newInstance(2147483647))) {#1140,17.91558912065294
+if (rh != 0) {#1651,17.912165768941243
+result.nans = QNAN;#1720,17.911861228942872
+split[1] = subtract(newInstance(split[0])).toDouble();#2497,17.911507092989407
+if (nsqd > mant.length) {#1836,17.910210485043734
+if (excp != 0) {#1662,17.907005846500397
+switch (type) {#2235,17.90560825054462
+public boolean negativeOrNull() {#802,17.904215292497113
+while (p > q) {#496,17.903775278727213
+String str = y.toString();#2457,17.9029757976532
+for (int i = 0; i < mant.length; i++) {#1457,17.902083226612636
+if (nans == INFINITE && x != 0) {#1620,17.900586715111366
+int q;#2158,17.90050116452304
+if (result.classify() == INFINITE && this.classify() != INFINITE) {#2384,17.899418430943644
+if (nans == INFINITE || nans == SNAN) {#2261,17.8990698158741
+case ROUND_HALF_UP:#1428,17.894026452844795
+continue;#452,17.890934944152832
+mant = new int[field.getRadixDigits()];#259,17.887744643471457
+Dfp result = newInstance(this);#1080,17.88587250429041
+result = dotrap(DfpField.FLAG_INVALID, MULTIPLY_TRAP, newInstance(getZero()), result);#1629,17.884287854035694
+if (isNaN()) {#1047,17.883862431844076
+int ae;#2080,17.8826007048289
+private static final String ALIGN_TRAP = "align";#146,17.882399783414954
+if (divisor.isNaN()) {#1701,17.882337321405824
+dx.sign = -1;#2026,17.88082684968647
+return dotrap(DfpField.FLAG_INVALID, ADD_TRAP, x, result);#1258,17.878198051452635
+int p = s.indexOf("e");#368,17.87705087661743
+if (isNaN()) {#1616,17.875429053055612
+if (a.nans == INFINITE && b.nans == INFINITE) {#968,17.875426588387324
+x.exp = this.exp / 2;#1999,17.874632575295188
+switch (field.getRoundingMode()) {#1419,17.872186766730415
+remainder[mant.length] = 0;#1745,17.871634165445965
+def = newInstance(getZero());#2237,17.86664678653081
+if (this.equals(getZero())) {#2377,17.86661156018575
+field.setIEEEFlagsBits(DfpField.FLAG_INEXACT);  // signal inexact#1122,17.865872303644817
+p = significantDigits-1+offset;#494,17.86562262641059
+of the zero number equal to the other one.  This avoids an alignment#1313,17.86532887545499
+d = d.multiply(100);#1214,17.864214126880352
+field.setIEEEFlagsBits(DfpField.FLAG_INVALID);#1255,17.86282044072305
+buffer[p++] = '0';#2174,17.858018284752255
+trialgood = false;  // assume false#1806,17.85282154083252
+int max = (divMsb + 1) / divisor.mant[mant.length-1];#1764,17.85251625164135
+public static final byte QNAN = 3;#122,17.85159969329834
+Dfp result;#2355,17.850443204243977
+nans = QNAN;#293,17.849498209745988
+buffer[p++] = '.';#2166,17.84557633172898
+int dm = (i<mant.length)?divisor.mant[i]:0;#1774,17.84500126506007
+if (a.nans == INFINITE && b.nans == FINITE) {#960,17.842615093503678
+outputbuffer[q++] = rawdigits[p++];#2112,17.84207913080851
+minadj = (remainder[mant.length] * RADIX)+remainder[mant.length-1];#1796,17.8412088914351
+if (rounded.lessThan(newInstance(-2147483648))) {#1144,17.83986784861638
+for (int i = 0; i < mant.length-result.exp; i++) {#1081,17.838377271379745
+result = dotrap(DfpField.FLAG_INVALID, SQRT_TRAP, null, result);#1991,17.837669707633353
+if (x.isNaN()) {#1267,17.832105409531366
+if (isNaN()) {#1892,17.83204796439723
+if (trial != 0 || nsqd != 0) {#1827,17.830854568481445
+break;#1446,17.830360412597656
+result.shiftRight();#1356,17.829899507410385
+result = dotrap(DfpField.FLAG_INVALID, DIVIDE_TRAP, divisor, result);#1721,17.8285409970717
+if (isNaN() || x.isNaN() || field.getRadixDigits() != x.field.getRadixDigits()) {#906,17.827311868252963
+if (exp > mant.length || exp < -1) {#2063,17.823147080161355
+result = dotrap(excp, MULTIPLY_TRAP, x, result);#1591,17.819612622261047
+inc = newInstance(getOne());#2367,17.819089460372926
+if (x.isNaN()) {#1514,17.81768004099528
+for (int i = 0; i < mant.length; i++) {#1644,17.816821257273357
+if (a.mant[mant.length-1] == 0) {#1319,17.816711022303654
+field.setIEEEFlagsBits(DfpField.FLAG_INVALID);#1718,17.816350964137484
+if (product[i] != 0) {#1563,17.81136109612205
+if (adiff < 0) {#703,17.81098973751068
+while (p<rawdigits.length) {#2111,17.80967903137207
+Dfp a = newInstance(this);#1293,17.807894538430606
+bextradigit = b.complement(bextradigit);#1335,17.807812343944203
+final Dfp result = newInstance(getZero());#783,17.806937798209812
+return (sign < 0) ? NEG_INFINITY_STRING : POS_INFINITY_STRING;#2057,17.80510389237177
+return dotrap(DfpField.FLAG_INVALID, MULTIPLY_TRAP, x, result);#1503,17.804581868021113
+def = newInstance(getZero());#2257,17.804297038487025
+final Dfp result = newInstance(getZero());#1501,17.80257395039434
+aextradigit = 0;#1372,17.80099646250407
+return result;#1127,17.79978691447865
+result.nans = QNAN;#1628,17.79830997467041
+dividend[i] = mant[i];#1751,17.798215956914994
+Dfp result = newInstance(this);#863,17.79800022349638
+public boolean strictlyNegative() {#817,17.793911587108266
+field.setIEEEFlagsBits(DfpField.FLAG_INEXACT);#716,17.791681074327037
+case ROUND_HALF_EVEN:#1102,17.791371804696542
+final Dfp result = newInstance(getZero());#1256,17.78953054676885
+if (compare(this, x) == 0) {#2346,17.78747304280599
+if (result.sign == -1) {#1089,17.786883544921874
+return;#276,17.78297472000122
+if (fpexp.charAt(i) == '-')#383,17.780837212839433
+exp = 0;#232,17.777214129765827
+if (striped[q] == '0') {#474,17.776603766850062
+result.nans = QNAN;#1286,17.775712852478026
+final Dfp result = this.subtract(this.divide(d).rint().multiply(d));#1029,17.773563581354477
+switch (x.mant[mant.length-1] / 2000) {#2003,17.77320931507991
+if (nans == INFINITE && sign == 1) {#1965,17.770437497359055
+break;#1426,17.76928080452813
+if (result.mant[mant.length-1] != 0) {#1366,17.767308870951336
+return;#301,17.765453474862234
+int decimalPos = 0;#410,17.764332839420863
+b.sign = 1;#1304,17.76402235031128
+result.shiftLeft();#1932,17.761443923501407
+Dfp result = newInstance(getZero());#1064,17.760343118147418
+final Dfp result = newInstance(getZero());#758,17.759666318478793
+mant = new int[field.getRadixDigits()];#182,17.75932823527943
+field.setIEEEFlagsBits(DfpField.FLAG_INVALID);#1626,17.757594490051268
+int qd;         // current quotient digit we're working with#1677,17.754098168734846
+Dfp result = newInstance(getZero());#1506,17.75195052888658
+field.setIEEEFlagsBits(DfpField.FLAG_INVALID);#1284,17.750053215026856
+return dotrap(DfpField.FLAG_INVALID, DIVIDE_TRAP, divisor, result);#1690,17.749576470790764
+Dfp result = newInstance(this);#1400,17.74886075188132
+public String toString() {#2053,17.747275638580323
+result = result * RADIX + rounded.mant[i];#1149,17.746341448563797
+public boolean unequal(final Dfp x) {#930,17.746099540165492
+if (fpdecimal.indexOf("-") !=  -1) {#402,17.746049308776854
+for (qd = mant.length+1; qd >= 0; qd--) {#1758,17.745796861319707
+field.setIEEEFlagsBits(DfpField.FLAG_INVALID);#2334,17.74115808548466
+for (int i = 0; i < mant.length; i++) {#1232,17.74106041590373
+for (p = 0; p < rawdigits.length; p++) {#2093,17.739783744812012
+return -1;#953,17.735975074768067
+Dfp result = x.newInstance(x);#2320,17.73491046303197
+break;#1812,17.733295403994045
+dotrap(DfpField.FLAG_INVALID, GREATER_THAN_TRAP, x, result);#785,17.729579975730495
+Dfp result = newInstance(getZero());#1693,17.728960461086697
+for (int i = 0; i < mant.length; i++) {#1750,17.728368600209553
+field.setIEEEFlagsBits(DfpField.FLAG_INVALID);#782,17.726918282047397
+exponent--;#2438,17.72562139684504
+for (int i = mant.length - 1; i >= 0; i--) {#1807,17.7234956741333
+final byte asign = a.sign;#1300,17.723374927745144
+(striped[q+2] - '0') * 10   +#520,17.722292117583446
+trialgood = false;#1766,17.72214766109691
+d.exp = (e + 1) / 4;#1204,17.722058018048603
+if (this.lessThan(x)) {#2342,17.719443672581722
+dividend[i + 1] = remainder[i];#1844,17.718100477147985
+if (q == mant.length*rsize+offset+1) {#444,17.717251777648926
+if (mant[i] != 0) {#244,17.716509183247883
+field.setIEEEFlagsBits(DfpField.FLAG_INVALID);#598,17.715635730374245
+case ROUND_HALF_DOWN:#1432,17.714839805256236
+quotient[mant.length] = 0;#1743,17.712292370043304
+Dfp a = subtract(result);  // difference between this and result#1105,17.71123629978725
+final Dfp result = newInstance(getZero());#1688,17.709985733032227
+public double toDouble() {#2402,17.708840465545656
+if (exp < 0) {#1062,17.707230695088704
+if (divisor.nans == INFINITE && nans == FINITE) {#1711,17.706989139318466
+field.setIEEEFlagsBits(DfpField.FLAG_INVALID);#888,17.70394217583441
+boolean trialgood; // Flag to indicate a good trail digit#1681,17.702743339538575
+final String fpdecimal;#373,17.70116678873698
+return exp * 4 - 2;#1186,17.70020570253071
+ppx = px;#2029,17.696607059902615
+if (exp >= mant.length) {#1073,17.693938928491928
+def = newInstance(getZero());#2262,17.693326507295883
+for (int i = 0; i < mant.length; i++) {#1238,17.692023396492004
+rawdigits[p++] = (char) (((mant[i]) % 10) + '0');#2089,17.69105506587673
+fpdecimal = s.substring(0, p);#377,17.690797915825478
+while (p > 0) {#2142,17.690764745076496
+final int rh = r / divisor;#1925,17.689928791739725
+result.mant[mant.length-1] = rh;#1357,17.68834940592448
+final int r = mant[i] + rh;#1239,17.68582244541334
+remainder = new int[mant.length+1]; // one extra digit needed#1738,17.68564121246338
+int rh = 1;#1456,17.683355668011835
+if (nans == INFINITE || nans == QNAN) {#2256,17.681101047631465
+rl = r - rh * divisor;#1926,17.67725480121115
+Dfp ppx = getZero();#2023,17.67707735300064
+if (nans == QNAN) {#1970,17.6766526482322
+private static final String POS_INFINITY_STRING = "Infinity";#128,17.67549587431408
+if (rh != 0) {#1463,17.67238120028847
+result.nans = QNAN;#1540,17.672085647583007
+dividend = new int[mant.length+1];  // one extra digit needed#1736,17.669416941129246
+public boolean isInfinite() {#871,17.669147057966754
+return (sign > 0) || ((mant[mant.length - 1] == 0) && !isInfinite());#840,17.66904285975865
+for (int i = 0; i < adiff; i++) {#722,17.66881092734959
+result = dotrap(excp, MULTIPLY_TRAP, result, result);#1663,17.666271448135376
+minadj = minadj / (divisor.mant[mant.length-1]+1);#1797,17.666257173587116
+if (a.nans == FINITE && b.nans == INFINITE) {#964,17.663407938820974
+field.setIEEEFlagsBits(DfpField.FLAG_INVALID);#1687,17.662917937001875
+return false;#913,17.662090821699664
+protected int[] mant;#164,17.661296526590984
+return exp * 4 - 4;#1191,17.660354359944662
+return (sign < 0) || ((mant[mant.length - 1] == 0) && !isInfinite());#810,17.65842797415597
+dotrap(DfpField.FLAG_INVALID, LESS_THAN_TRAP, x, result);#760,17.658186360409385
+if (p == -1) { // try upper case?#369,17.656336103166854
+result.sign = sign;#1033,17.654051038953995
+continue;#386,17.651220971887764
+if (up) {#2356,17.649014766399677
+for (int i = 0; i < mant.length; i++) {#1365,17.64765457312266
+exp = (decimalPos+sciexp) / rsize;#526,17.6448161913001
+return 0;#994,17.642660401084207
+mantissa <<= 1;#284,17.642506079240277
+trialgood = false;#1817,17.640762710571288
+uses shiftRight() */#677,17.639031219482423
+if (isNaN() || x.isNaN()) {#790,17.63734938881614
+if (n != 0) {#1482,17.634368578592937
+boolean inc = false;#1418,17.63407721886268
+for (int i = 0; i < mant.length - 1; i++) {#243,17.632120100657144
+if (x.nans == INFINITE && nans == INFINITE) {#1530,17.63203885478358
+if (excp != 0) {#1389,17.631955325603485
+if (mant[mant.length-1] > 10) {#1188,17.62968174616496
+if (excp != 0) {#1359,17.628164052963257
+field.setIEEEFlagsBits(DfpField.FLAG_INEXACT);#1063,17.62722642960087
+return dotrap(DfpField.FLAG_INVALID, NEW_INSTANCE_TRAP, d, result);#601,17.62419934021799
+mant[0] = 0;#672,17.623750305175783
+if (x.nans == INFINITE && nans == INFINITE && sign != x.sign) {#1283,17.623320373328955
+bextradigit = b.align(a.exp);#1329,17.622829473935642
+lostdigit = mant[0];#732,17.622655288032863
+int i = ((rsize * 100) - decimalPos - sciexp % rsize) % rsize;#504,17.62009984254837
+if (x != x) {#291,17.618756595410797
+if (divisor.nans == INFINITE && nans == INFINITE) {#1717,17.61811213059859
+x /= RADIX;#236,17.61658689710829
+return (sign > 0) && ((mant[mant.length - 1] != 0) || isInfinite());#855,17.613689506755154
+if (excp != 0) {#1876,17.613415956497192
+if (isNaN()) {#2412,17.611666107177733
+if (excp != 0) {#1590,17.61133646965027
+for (int i = 0; i < mant.length; i++) {#1843,17.611255850110734
+result.nans = QNAN;#784,17.61114756266276
+break;#246,17.610838543285023
+Dfp result;#1975,17.610669898986817
+def = newInstance(getZero());#2279,17.610283851623535
+boolean changed = false;#1045,17.610026432917667
+exp = 0;#184,17.60967707633972
+if (lessThan(getZero())) {#2405,17.609529412311055
+Dfp d = newInstance(getOne());#1173,17.60767348607381
+public static final byte FINITE = 0;#113,17.605691616351788
+result = dotrap(DfpField.FLAG_INVALID, DIVIDE_TRAP, result, result);#1916,17.605196275209124
+(striped[q+1] - '0') * 100  +#519,17.601295370804635
+field.setIEEEFlagsBits(DfpField.FLAG_INVALID);#757,17.600316447596395
+return (mant[mant.length - 1] == 0) && !isInfinite();#893,17.600151686832824
+def.nans = QNAN;#2253,17.597938537597656
+if (striped[p] != '0') {#497,17.596393823623657
+if (isNaN() || x.isNaN() || field.getRadixDigits() != x.field.getRadixDigits()) {#931,17.596083277747745
+for (int i = mant.length - 1; i >= mant.length - rounded.exp; i--) {#1148,17.59548247944225
+field.setIEEEFlagsBits(DfpField.FLAG_INEXACT);#2385,17.59442944680491
+for (int i = 0; i < mant.length; i++) {#1570,17.59260638554891
+if (lessThan(getZero())) {#2350,17.592300415039062
+if (x.nans == INFINITE && nans == FINITE) {#1275,17.592004203796385
+case ROUND_HALF_EVEN:#1436,17.584461917047914
+return negate ? Double.NEGATIVE_INFINITY : Double.POSITIVE_INFINITY;#2452,17.584356907435826
+outputbuffer[q++] = '-';#2139,17.58358790657737
+int significantDigits=0;#437,17.58221327463786
+result = newInstance(x);#1525,17.57938293788744
+public static final int MIN_EXP = -32767;#103,17.578949987888336
+if (q < striped.length) {#528,17.57889814937816
+return field.getOne().divide(this);#1950,17.578877298455488
+buffer[--q] = '-';#2218,17.578054609752837
+for (int i=0; i<fpexp.length(); i++)#381,17.577539148001836
+final int excp = result.round(lostdigit);#1358,17.575064420700073
+if (a.sign == -1) {#952,17.57452245192094
+case ROUND_FLOOR:#1448,17.57414026260376
+x.mant[mant.length-1] = 1500;#2008,17.572529515912457
+if (nans == INFINITE && divisor.nans == FINITE) {#1705,17.57237157225609
+x = -x;#227,17.57170245226692
+result.nans = QNAN;#1915,17.569121769496373
+mantissa >>>= 1;#2474,17.567428959740532
+xdfp = xdfp.divide(new Dfp(field, 4503599627370496l)).add(field.getOne());  // Divide by 2^52, then add one#305,17.56630635729023
+if (a.mant[i] < b.mant[i]) {#989,17.56288897196452
+md = mant.length;  // default#1849,17.562299840590534
+String fpexp = s.substring(p+1);#378,17.56191950577956
+return (sign < 0) && ((mant[mant.length - 1] != 0) || isInfinite());#825,17.561561836915857
+field.setIEEEFlagsBits(DfpField.FLAG_INVALID);#1500,17.559194564819336
+final int r = rl * RADIX;        // compute the next digit and put it in#1933,17.557444597545423
+final int rsize = 4;   // size of radix in decimal digits#344,17.556668319702148
+field.setIEEEFlagsBits(DfpField.FLAG_INVALID);#850,17.552738066642515
+result = dotrap(excp, DIVIDE_TRAP, divisor, result);#1877,17.55242292808764
+result.nans = QNAN;#759,17.551128251211985
+(striped[q+3] - '0');#521,17.54989694146549
+Dfp d = newInstance(getOne());#1199,17.549780050913494
+boolean isLongMin = false;#216,17.549560165405275
+if (rh != 0 && (asign == bsign)) {#1354,17.549393697218463
+break;#1838,17.54933108223809
+for (int j=0; j<mant.length; j++) {#1550,17.548305708786536
+rh = r / RADIX;#1240,17.545337375841644
+buffer[p++] = '.';#2184,17.54361328125
+if (nans == INFINITE && x.nans == FINITE) {#1271,17.54065186182658
+return result;#1156,17.539713165976785
+Dfp b = newInstance(x);#1294,17.53850050533519
+if (this.equals(inc)) {#2371,17.536933768879283
+return result;#1124,17.534152603149415
+final Dfp result = newInstance(getZero());#2335,17.532400836115297
+char rawdigits[]    = new char[mant.length * 4];#2075,17.532033284505207
+default:#1216,17.53007330213274
+private static final String NEG_INFINITY_STRING = "-Infinity";#131,17.52872757478194
+return field.getRadixDigits();#642,17.52768623127657
+result.mant[i] = rh;#1927,17.527452035383746
+switch ((e % 4 + 4) % 4) {#1207,17.527381801605223
+return a.sign;#986,17.525528953188942
+result.nans = QNAN;#1638,17.5221978142148
+excp = result.round(quotient[md-mant.length]);#1871,17.519677225748698
+int min = divMsb       / (divisor.mant[mant.length-1]+1);#1763,17.519669669015066
+public int getRadixDigits() {#641,17.517960108243503
+if (isNaN() || x.isNaN()) {#765,17.516451228748668
+result.nans = QNAN;#1990,17.516195070175897
+shiftRight();#1464,17.514995223597477
+ae = e;#2128,17.512096845186672
+return result;#1036,17.50979891690341
+while (buffer[q] == '0') {#2204,17.508451411598607
+public static final int ERR_SCALE = 32760;#110,17.50788340849035
+result = dotrap(DfpField.FLAG_INVALID, MULTIPLY_TRAP, result, result);#1639,17.507498105367024
+result = dotrap(DfpField.FLAG_DIV_ZERO, DIVIDE_TRAP, getZero(), result);#1907,17.506710958480834
+for (int i = a.mant.length - 1; i >= 0; i--) {#984,17.505467573801678
+field.setIEEEFlagsBits(DfpField.FLAG_INVALID);#791,17.504968673952163
+result.nans = QNAN;#1257,17.503162384033203
+mant[i] = RADIX-mant[i]-1;#1233,17.502811997025102
+if (divisor.mant[i] < remainder[i]) {#1811,17.500973392177272
+return compare(this, x) > 0;#796,17.49860594007704
+result = result.add(a);#1110,17.497455686330795
+sign  = d.sign;#324,17.4972785949707
+if (sign == -1) {#1984,17.496900022029877
+int result = 0;#1136,17.496583718519943
+result = newInstance(this);#1706,17.496459048727285
+for (int i = 0; i < mant.length; i++) {#1343,17.49594322840373
+if (rawdigits[p] != '0') {#2094,17.49534061431885
+if (exponent < -1074) {#2447,17.491346147325302
+quotient[mant.length+1] = 0;#1744,17.490973290942964
+result = newInstance(this);#1519,17.490963272426438
+if (p != -1) {#375,17.488736033439636
+xdfp = xdfp.multiply(DfpMath.pow(field.getTwo(), exponent));#306,17.48806849647971
+if (x < 0) {#225,17.48712724049886
+return dotrap(DfpField.FLAG_INVALID, NEXT_AFTER_TRAP, x, result);#2337,17.486925727442692
+this.mant    = new int[field.getRadixDigits()];#543,17.484132971082413
+final Dfp result = newInstance(getZero());#599,17.483165616574496
+dotrap(DfpField.FLAG_INVALID, LESS_THAN_TRAP, this, newInstance(getZero()));#889,17.48100147690884
+field.setIEEEFlagsBits(DfpField.FLAG_INVALID);#835,17.478272837977254
+if (i == 0) {#1370,17.47457840568141
+result = newInstance(this);#1531,17.47416948235553
+if (exponent > 1023) {#2451,17.471832050996667
+if (x.nans == INFINITE && nans == INFINITE && sign == x.sign) {#1279,17.47125736442772
+q -= i;#505,17.468530416488647
+if (dx.mant[mant.length-1] == 0) {#2040,17.467958799997966
+if (mant[mant.length-1] == 0) {#1055,17.4675137201945
+if (asign == rsign) {#1334,17.466528574625652
+e = exp * 4 - shf - 1;#2127,17.465992576197575
+aextradigit = a.complement(aextradigit);#1337,17.46593981078177
+if (mant[mant.length-1] > 1000) {#1182,17.46505856513977
+x.mant[mant.length-1] = 2200;#2011,17.4649441242218
+for (int i = mant.length - 1; i >= 0; i--) {#2085,17.463051478068035
+private static final String NEXT_AFTER_TRAP = "nextAfter";#152,17.462890958786012
+if (nans == FINITE && mant[mant.length-1] != 0) {#2243,17.461554656157624
+product[i+mant.length] = rh;#1557,17.457344094912212
+return -a.sign;#975,17.45590829849243
+if (nans == FINITE && mant[mant.length-1] == 0) {#2250,17.455527228278083
+def.nans = QNAN;#2263,17.45412326681203
+x.mant[mant.length-1] = x.mant[mant.length-1]/2+1;#2005,17.453902804333232
+if (b.mant[mant.length-1] == 0) {#1315,17.453459923083965
+return trap(type, what, oper, def, result);#2287,17.453314690362838
+if (result.mant[mant.length-1] == 0) {#1578,17.452507385840782
+dotrap(DfpField.FLAG_INEXACT, ALIGN_TRAP, this, this);#742,17.451573644365585
+dotrap(DfpField.FLAG_INVALID, LESS_THAN_TRAP, this, newInstance(getZero()));#851,17.449554975642716
+exponent++;#2473,17.44641133717128
+public Dfp newInstance(final double x) {#585,17.445886357625326
+int rh = 0;#1643,17.445621783916767
+if (mant[mant.length-1] > 100) {#1185,17.445273836453755
+negative = true;#385,17.44441290696462
+if (decimalFound && significantDigits == 0) {#483,17.444068272908527
+if (x.nans == INFINITE && nans == FINITE && mant[mant.length-1] != 0) {#1524,17.443015552702406
+return extra;#1244,17.442823843522504
+dotrap(DfpField.FLAG_INVALID, GREATER_THAN_TRAP, x, newInstance(getZero()));#792,17.438886110172714
+field.setIEEEFlagsBits(DfpField.FLAG_INEXACT);#741,17.43679178914716
+field.setIEEEFlagsBits(DfpField.FLAG_INVALID);#820,17.436004823254002
+inc.exp = this.exp-mant.length+1;#2374,17.435841775709584
+striped[++p] = '0';#511,17.43577625274658
+int p = 1;#2157,17.43441552382249
+return new Dfp(getField(), x);#586,17.4338444603814
+if (b.mant[b.mant.length-1] != 0 && a.mant[b.mant.length-1] != 0) {#973,17.433158916897245
+this(field, (long) x);#194,17.428652314578784
+for (int i = mant.length * 2 - 1; i >= 0; i--) {#1562,17.427011785836054
+return x;#2045,17.42654089494185
+result.nans = QNAN;#1502,17.426309676397416
+this(field, (long) x);#202,17.425878468681784
+if (md > (mant.length-1)) {#1584,17.424073037647066
+return -a.sign;#990,17.422177054665305
+which would cause catastropic loss of precision */#1314,17.421491791220273
+result = -result;#1153,17.419109905467312
+default: def = result; break;#2284,17.418667221069335
+if (md > (mant.length-1)) {#1870,17.418096360706148
+result = dotrap(DfpField.FLAG_INEXACT, TRUNC_TRAP, this, result);#1065,17.4152922881277
+default:#2013,17.41516957964216
+if (fpdecimal.charAt(p) >= '1' && fpdecimal.charAt(p) <= '9') {#412,17.414846575537393
+final int divMsb = dividend[mant.length]*RADIX+dividend[mant.length-1];#1762,17.413414210807986
+return result;#1622,17.41296813362523
+int rh = extra / RADIX;#1236,17.41156440973282
+result = dotrap(excp, ADD_TRAP, x, result);#1390,17.407321732619714
+if (exponent > -1023) {#2443,17.406893253326416
+for(;;) {#438,17.406518642718975
+if (x == 0) {#271,17.405996222245065
+dotrap(DfpField.FLAG_INVALID, LESS_THAN_TRAP, this, newInstance(getZero()));#821,17.405908651130144
+if (excp != 0) {#1940,17.405383110046387
+for (int i = mant.length + 1; i >= 0; i--) {#1850,17.403054237365723
+if (result.equals(getZero()) && this.equals(getZero()) == false) {#2389,17.402845690327307
+exp   = d.exp;#325,17.402705490589142
+px = x;#2030,17.401867698220645
+this.field = field;#214,17.401458944593156
+result = dotrap(DfpField.FLAG_INEXACT, TRUNC_TRAP, this, result);#1123,17.397990226745605
+return compare(this, x) == 0;#910,17.397536147724498
+field.setIEEEFlagsBits(DfpField.FLAG_INVALID);#766,17.39455173861596
+return sign < 0 ? -0.0 : +0.0;#2420,17.39362865024143
+if (nans == INFINITE) {#2056,17.39345832304521
+for (int i = mant.length - 1; i > 0; i--) {#669,17.38945628978588
+for (int i = mant.length-1; i >= 0; i--) {#1923,17.38878059387207
+break;#1367,17.38793706893921
+if (nans != FINITE) {#1891,17.386709718143237
+System.arraycopy(mant, mant.length - exp, mant, mant.length - 1 - exp, exp);#234,17.385835421712773
+return 0;#1488,17.38300323486328
+for (int i = 0; i < mant.length; i++) {#1548,17.381564021110535
+return x;#2484,17.37747712568803
+return -2147483648;#1145,17.377470874786376
+inexact = true;#729,17.37637638092041
+remainder[i] = 0;#1753,17.376370179025752
+int lostdigit = 0;#1650,17.375696931566512
+if (e < 0) {#2138,17.37453409830729
+public Dfp newInstance(final byte sig, final byte code) {#623,17.374492193523206
+if (divisor.mant[mant.length-1] == 0) {#1727,17.37081745692662
+result = newInstance(this);#1621,17.370539582293965
+field.setIEEEFlagsBits(DfpField.FLAG_INVALID);#805,17.367841597526304
+mant[i] = mant[i+1];#682,17.36342886219854
+if (negative) {#393,17.362867635839127
+final int lostdigit = result.mant[0];#1355,17.36068880558014
+decimalPos += i;#506,17.359550182635967
+def.nans = QNAN;#2258,17.35929150416933
+inc = sign == 1 && n != 0;  // round ceil#1445,17.35814577533353
+return new Dfp(getField(), x);#562,17.356261094411213
+if (result.mant[mant.length-1] == 0) { // if result is zero, set exp to zero#1657,17.354312896728516
+while (x != 0) {#233,17.35390288035075
+field.setIEEEFlagsBits(DfpField.FLAG_DIV_ZERO);#1728,17.35358515381813
+lostdigit = result.mant[0];#1652,17.35352100025524
+if (fpdecimal.charAt(p) < '0' || fpdecimal.charAt(p) > '9') {#455,17.349436693413313
+Dfp x = newInstance(this);#1995,17.347387089448816
+return;#358,17.344405310494558
+return compare(this, x) < 0;#771,17.34414333767361
+return new Dfp(getField(), x);#570,17.34362114800347
+dotrap(DfpField.FLAG_INVALID, LESS_THAN_TRAP, this, newInstance(getZero()));#806,17.342106464297274
+if (e <= 0) {#2164,17.33941783905029
+for (int i = mant.length - 1; i >= 0; i--) {#2178,17.338965274669505
+return result;#1944,17.337968306107953
+dotrap(DfpField.FLAG_INVALID, LESS_THAN_TRAP, this, newInstance(getZero()));#836,17.336710153624068
+sign = 1;#229,17.332046031951904
+return new Dfp(getField(), x);#578,17.33192910088433
+this.exp     = 0;#545,17.331861390007866
+mant[mant.length - 1] = 0;#684,17.32829370498657
+if (a.mant[a.mant.length - 1] == 0 && b.mant[b.mant.length - 1] == 0 &&#946,17.320776419206098
+result.nans = INFINITE;#1731,17.32034951164609
+dotrap(DfpField.FLAG_INVALID, LESS_THAN_TRAP, x, newInstance(getZero()));#767,17.318866086560625
+final int rh = r / divisor;#1934,17.31477065519853
+sciexp = sciexp * 10 + fpexp.charAt(i) - '0';#389,17.314425778943438
+if (nans == INFINITE && x.nans == FINITE && x.mant[mant.length-1] != 0) {#1518,17.310974672105576
+return exp * 4 - 3;#1189,17.31040728719611
+for (int i=0; i<mant.length; i++) {#1858,17.310016288757325
+return result;#1594,17.309896035627887
+if (divisor == 0) {#1902,17.30941738801844
+public int classify() {#2309,17.309186087714302
+rl = r - rh * divisor;#1935,17.293724060058594
+if (result.mant[mant.length-1] == 0) {#1378,17.29304753817045
+while (tempDfp.lessThan(y) || tempDfp.equals(y)) {#2434,17.292458780350223
+if (decimalFound && q != offset) {#468,17.29207400271767
+decimalFound = true;#449,17.291504814511253
+break;#2035,17.289806789822048
+if (isLongMin) {#240,17.287588691711427
+if (nans != FINITE) {#1615,17.287321651683133
+exponent--;#283,17.286746727792842
+rh = r / RADIX;#1646,17.28613110592491
+if (sign == -1) {#2102,17.28556740283966
+for (int i = 0; i < mant.length - 1; i++) {#681,17.27416284267719
+Dfp result = newInstance(this);#1920,17.273651796228744
+int cmp0 = compare(this, getZero());#2418,17.269264268875123
+while (!trialgood) {#1767,17.267904811435276
+private static final String ADD_TRAP = "add";#134,17.266025006771088
+mant[i] = mant[i-1];#670,17.263786523238473
+rh = r / RADIX;#1345,17.260183735897666
+result = dotrap(excp, DIVIDE_TRAP, result, result);#1941,17.25943027004119
+d.exp = e + 1;#1174,17.259235382080078
+quotient = new int[mant.length+2];  // two extra digits needed 1 for overflow, 1 for rounding#1737,17.25852741914637
+case DfpField.FLAG_UNDERFLOW:#2267,17.25801881154378
+result.nans = QNAN;#1689,17.25744610741025
+double split[] = new double[2];#2493,17.253666428958667
+int remainder[];// remainder#1676,17.251941204071045
+return newInstance(this);#1961,17.25074444876777
+exp++;#237,17.24922227859497
+final int excp = result.round(lostdigit);#1661,17.246652936935426
+return;#352,17.24521521159581
+result = dotrap(excp, ADD_TRAP, x, result);#1360,17.244578390410453
+def.nans = INFINITE;#2247,17.244382825391046
+inc.exp = MIN_EXP-mant.length;#2362,17.240508770120556
+if (s.equals(NAN_STRING)) {#361,17.23972567644986
+return field.getOne();#656,17.239304065704346
+field.setIEEEFlagsBits(DfpField.FLAG_UNDERFLOW);#1472,17.239207357168198
+nsqd = 0;#1757,17.232449327196395
+field.setIEEEFlagsBits(DfpField.FLAG_INEXACT);#1484,17.23065130172237
+def.nans = INFINITE;#2281,17.23060173034668
+this.field = field;#263,17.227775709969656
+inc = n > 5000 || (n == 5000 && (mant[0] & 1) == 1);  // round half-even#1437,17.22691338857015
+mantissa = 0;#2463,17.225185618681067
+quotient[i] = 0;#1752,17.222645425796507
+protected int complement(int extra) {#1229,17.21749218304952
+if (result.mant[mant.length-1] == 0) {#1930,17.21419404103206
+return result;#865,17.21253134987571
+rounded = rint();#1138,17.208609140836277
+if (--e == 0) {#2183,17.203742504119873
+if (nans == INFINITE) {#1896,17.202257546511564
+p--;#500,17.201543680826823
+return new String(outputbuffer, 0, q);#2148,17.201509224741084
+sign = -1;#226,17.20116923837101
+p = p / 10;#2145,17.199029392666286
+dx = newInstance(x);#2025,17.192329958865518
+public Dfp newInstance(final byte x) {#561,17.185913022359212
+break;#477,17.18372188914906
+while (exponent < -1023) {#2472,17.181329250335693
+int rl = 0;#1922,17.17763750893729
+for (;;) {#411,17.17647750561054
+case DfpField.FLAG_OVERFLOW:#2277,17.174080060875934
+if (result.mant[mant.length-1] == 0) {#1032,17.171912596775936
+negate = true;#2423,17.17063194513321
+return field;#635,17.16079148379239
+if (cmp0 == 0) {#2419,17.16046440601349
+if (decimalFound && fpdecimal.charAt(p) == '0') {#416,17.159572630217582
+return trunc(DfpField.RoundingMode.ROUND_CEIL);#1020,17.159567756652834
+public boolean isNaN() {#878,17.159465182911266
+d = d.multiply(1000);#1217,17.159203382638786
+a.exp = b.exp;#1320,17.158843660354613
+shiftLeft();#736,17.157649692736175
+result = dotrap(DfpField.FLAG_INEXACT, NEXT_AFTER_TRAP, x, result);#2386,17.155285150576862
+for (;;) {#469,17.153816054849063
+return false;#907,17.15228637896086
+private static final String LESS_THAN_TRAP = "lessThan";#155,17.149321512742475
+sign = -1;#274,17.145966186523438
+nans = INFINITE;#357,17.14373749180844
+private static final String GREATER_THAN_TRAP = "greaterThan";#158,17.135142243426777
+for (i = mant.length - 1; i >= 0; i--) {#517,17.132390132317177
+excp = result.round(product[md-mant.length]);#1585,17.13124806540353
+return 0;#948,17.13112761179606
+return add(x.negate());#1410,17.13098281621933
+if (p == fpdecimal.length()) {#426,17.13085397084554
+if (diff == 0) {#707,17.126893679300945
+Dfp def = result;#2233,17.126680033547537
+int[] product = new int[mant.length*2];  // Big enough to hold even the largest result#1546,17.125712037086487
+y = negate();#2422,17.12483322620392
+if (nans == FINITE && mant[mant.length-1] == 0) {#1959,17.124105190408642
+result.mant[mant.length - i - 1] = product[md - i];#1571,17.12343166813706
+this.field = field;#341,17.12023333140782
+result.nans = QNAN;#600,17.12013258252825
+if (other instanceof Dfp) {#904,17.117756506975958
+return result;#1714,17.11381811844675
+excp = result.round(0); // has no effect except to check status#1587,17.110614776611328
+inc = n >= 5000;  // round half up#1429,17.109070354037815
+if (exponent <= -1023) {#2468,17.107735951741535
+result = dotrap(DfpField.FLAG_DIV_ZERO, DIVIDE_TRAP, divisor, result);#1732,17.106193426178724
+public Dfp reciprocal() {#1949,17.10584602355957
+return exp - 1;#1165,17.105613488417404
+def.nans = QNAN;#2239,17.10547332763672
+field.setIEEEFlagsBits(DfpField.FLAG_OVERFLOW);#1478,17.104265489885883
+Dfp tempDfp = DfpMath.pow(getTwo(), exponent);#2433,17.103747294499325
+return newInstance(this);#1967,17.103339542042125
+inc.exp = MIN_EXP-mant.length;#2378,17.099406998732995
+result.mant[mant.length-1] = rh;#1654,17.086584938897026
+inc = n > 5000 || (n == 5000 && (mant[0] & 1) == 0);  // round half-odd#1441,17.08610447777642
+@Override#921,17.082667350769043
+if ( (x.nans == INFINITE && nans == FINITE && mant[mant.length-1] == 0) ||#1536,17.079783572707065
+exponent++;#2464,17.076101439339773
+nans = INFINITE;#299,17.076093507849652
+return result;#1708,17.07607610602128
+while (buffer[p-1] == '0') {#2212,17.07162112281436
+if (e < 0) {#2129,17.07132714589437
+exp = e;#714,17.06959354877472
+continue;#1801,17.068987456235018
+return newInstance(this);#1897,17.068070021542635
+return new String(buffer, q, p - q);#2221,17.06730399131775
+result.exp = 0;#1658,17.0631906191508
+return multiplyFast(x);#1603,17.062283833821613
+shf = p;#2098,17.055185904869667
+return result;#1666,17.05454228141091
+return result;#1908,17.054351170857746
+return result;#1880,17.054307850924406
+int dividend[]; // current status of the dividend#1674,17.049655119578045
+return result;#2322,17.048218553716485
+public Dfp subtract(final Dfp x) {#1409,17.04744510650635
+bextradigit = 0;#1373,17.047282814979553
+return x;#1280,17.04005903946726
+result.nans = QNAN;#2336,17.03645896911621
+while (e < 0) {#2170,17.033961168924968
+if (fpexp.charAt(i) >= '0' && fpexp.charAt(i) <= '9') {#388,17.033561913863473
+case ROUND_HALF_ODD:#1440,17.03013042781664
+return result;#1402,17.029542229392312
+if (result.mant[mant.length-1] == 0) { // if result is zero, set exp to zero#1866,17.028076516257393
+result = dotrap(DfpField.FLAG_INEXACT, NEXT_AFTER_TRAP, x, result);#2391,17.026496911660217
+return x;#1276,17.026488103364642
+return 2147483647;#1141,17.024752215335244
+for (i = 0; i < rsize; i++) {#510,17.02177961056049
+if (sign < 0) {#2217,17.020641581217447
+System.arraycopy(xdfp.mant, 0, mant, 0, mant.length);#312,17.01962572733561
+int sciexp = 0;#374,17.01631768544515
+return nans;#2310,17.015199184417725
+field.setIEEEFlagsBits(DfpField.FLAG_INEXACT);#2390,17.014523875328802
+sign = xdfp.sign;#313,17.01315039396286
+result.sign = y.sign;#2321,17.012903690338135
+public Dfp sqrt() {#1956,17.01016599481756
+if (q == offset) {#471,17.007684375928797
+if (trialgood == false) {#1820,17.005757689476013
+public DfpField getField() {#634,17.005433241526287
+boolean pointInserted = false;#2160,17.004308700561523
+private final DfpField field;#176,17.002301996404473
+return lostdigit;#745,17.002275625864666
+decimalPos--;#417,17.001475048065185
+while (e > 0) {#2189,16.99912738800049
+continue;#457,16.983336554633247
+return field.getZero();#649,16.982403414590017
+if (nans != FINITE) {#1964,16.98149159375359
+break;#1853,16.981105115678574
+if (changed) {#1086,16.977362706111027
+nans = FINITE;#213,16.976899691990443
+result.mant[mant.length-i-1] = quotient[md-i];#1859,16.974270035238828
+isLongMin = true;#220,16.974139319525825
+final int offset = 4;  // Starting offset into Striped#345,16.97359462011428
+return result;#2394,16.970307263461027
+x.mant[mant.length-1] = 3000;#2014,16.97012181435862
+return greaterThan(x) || lessThan(x);#935,16.96839189529419
+return result;#1527,16.967077255249023
+return result;#1521,16.967007135090075
+inc = n > 5000;  // round half down#1433,16.962703810797798
+return newInstance(this);#1971,16.96042468331077
+nans = INFINITE;#351,16.95507355740196
+final Dfp half = newInstance("0.5");#1104,16.953736573457718
+if (field.getRoundingMode() == DfpField.RoundingMode.ROUND_DOWN && nsqd == mant.length) {#1831,16.953607320785522
+if (e >= 0) {#1201,16.950358835856118
+if (inexact) {#740,16.945514710744224
+break;#1451,16.941878583696152
+tempDfp = tempDfp.multiply(2);#2435,16.936750155228836
+return false;#852,16.933881441752117
+if (nans != FINITE || divisor.nans != FINITE) {#1696,16.928075083979852
+result.sign = 1;  // Per IEEE 854-1987 Section 6.3#1383,16.927340675802792
+(nans == INFINITE && x.nans == FINITE && x.mant[mant.length-1] == 0) ) {#1537,16.927165895138145
+return new Dfp(getField());#554,16.925739586353302
+mant  = d.mant.clone();#323,16.918683263990616
+return -b.sign;#965,16.91594584782918
+public boolean greaterThan(final Dfp x) {#778,16.915939331054688
+public boolean equals(final Object other) {#902,16.915839268611027
+int minadj;     // minimum adjustment#1680,16.914612268146715
+public Dfp getTwo() {#662,16.910573265769266
+md = i;#1564,16.909514808654784
+return;#364,16.90685592378889
+public Dfp negate() {#1399,16.904734802246093
+if (nans != FINITE || x.nans != FINITE) {#1509,16.901846084594727
+public Dfp getOne() {#655,16.89966652610085
+break;#413,16.896443102094864
+if (nans != FINITE || x.nans != FINITE) {#1262,16.891910591125487
+decimalPos = 0;#484,16.885812142316034
+public static final int MAX_EXP =  32768;#107,16.88577139377594
+this.nans    = nans;#546,16.88148051814029
+inc = sign == -1 && n != 0;  // round floor#1450,16.875062142649004
+if (nans != FINITE) {#2054,16.8672939749325
+return def;#2303,16.866051240400836
+return false;#890,16.865169588724772
+min = trial+minadj;  // update the minimum#1800,16.864560216665268
+return a.sign;#979,16.862909089951287
+protected Dfp trap(int type, String what, Dfp oper, Dfp def, Dfp result) {#2302,16.861251967293875
+protected void shiftLeft() {#668,16.85095853805542
+return field.getTwo();#663,16.850604397909983
+def = newInstance(result);  // gradual underflow#2272,16.838368207216263
+return field.newDfp(sig, code);#624,16.837585115432738
+return result;#1992,16.832456080118813
+result.mant[0] = rh;#1936,16.829721580852162
+break;#1565,16.827845361497666
+md = i;#1852,16.824565887451172
+nsqd++;#1828,16.820013904571532
+mant[mant.length-1] = rh;#1465,16.817320244652883
+return new String(outputbuffer, 0, 5);#2120,16.814084965249766
+return result;#1066,16.81335792541504
+break;#445,16.813299232059055
+public Dfp newInstance(final Dfp d) {#594,16.813153624534607
+if (negate) {#2480,16.81307349886213
+++x;#221,16.812779808044432
+return result;#1393,16.810961029746316
+protected int exp;#170,16.807511925697327
+if (nans == INFINITE) {#1051,16.80337429046631
+return a.sign;#961,16.800340259776394
+return false;#932,16.799348704020183
+final int excp;#1583,16.79773374704214
+public int log10K() {#1164,16.797339699485086
+public Dfp newInstance() {#553,16.79018159346147
+return trunc(DfpField.RoundingMode.ROUND_FLOOR);#1012,16.78661845280574
+b.exp = a.exp;#1316,16.781334924697877
+adiff = -adiff;#704,16.778445193642064
+return x;#1268,16.777043543363874
+result = this.subtract(inc);#2381,16.775969592007723
+exponent--;#2469,16.775730705261232
+if (x == Long.MIN_VALUE) {#217,16.77451771184018
+break;#498,16.760735564761692
+return result;#1533,16.76059461894788
+public Dfp newInstance(final long x) {#577,16.758707110087077
+break;#2041,16.758522086673313
+final Dfp inc;#2354,16.752108280475323
+int trial=0;    // trial quotient digit#1679,16.750271433875675
+return 0;#708,16.749342091878255
+int e = exp;#2159,16.748511387751652
+boolean inexact = false;#698,16.746254239763534
+public Dfp remainder(final Dfp d) {#1027,16.746155738830566
+q++;#2205,16.745224475860596
+nans  = d.nans;#326,16.745148434358484
+return split;#2499,16.742594198747113
+break;#440,16.73696978886922
+return nans == INFINITE;#872,16.72930282354355
+protected Dfp(final DfpField field, final byte sign, final byte nans) {#541,16.727988680203755
+return 0;#719,16.72737216949463
+decimalPos = q-offset;#489,16.72580673820094
+public Dfp newInstance(final String s) {#613,16.722314198811848
+if (exponent == 1024) {#289,16.719739496707916
+int q = offset;#432,16.716784770672138
+y = y.subtract(getOne());#2444,16.70584143763003
+if (inc) {#1454,16.691536536583534
+result.exp = 0;#1580,16.690199004279243
+exp++;#685,16.68968324661255
+int lostdigit = 0;#697,16.68766757420131
+public Dfp abs() {#862,16.686558532714844
+private static final String NAN_STRING = "NaN";#125,16.684325377146404
+return (nans == QNAN) || (nans == SNAN);#879,16.683838882446288
+public Dfp multiply(final int x) {#1602,16.682413237435476
+public int hashCode() {#922,16.667982006072997
+Dfp xdfp = new Dfp(field, mantissa);#304,16.66755539437999
+private static final String TRUNC_TRAP = "trunc";#149,16.660143249913265
+public boolean lessThan(final Dfp x) {#753,16.659265756607056
+return DfpField.FLAG_INEXACT;#1485,16.655551495759383
+return result;#1542,16.655220784639056
+decimalFound = true;#421,16.65407721201579
+return result;#1917,16.65040906270345
+int adiff = diff;#702,16.647629056658065
+public Dfp getZero() {#648,16.642490647055887
+e++;#2175,16.62765325818743
+protected Dfp trunc(final DfpField.RoundingMode rmode) {#1044,16.623421759832475
+protected void shiftRight() {#680,16.623386669158936
+int shf;#2081,16.62201205889384
+return x;#1515,16.615507728175114
+sign = -1;#403,16.614421059103574
+exponent++;#2436,16.610841274261475
+this.field = field;#542,16.60983487537929
+q = offset;  // set q to point to first sig digit#493,16.60400169545954
+return result;#1733,16.601733907063803
+public Dfp dotrap(int type, String what, Dfp oper, Dfp result) {#2232,16.59702377319336
+return 0;#2448,16.596075185139973
+Dfp y = this;#2416,16.59048788888114
+return result;#1288,16.583734662909258
+return this;#1272,16.57829425209447
+int diff = exp - e;#700,16.56236966451009
+fpdecimal = s;#398,16.560933916192305
+return false;#807,16.545494079589844
+min = trial+1;#1821,16.535006816570576
+return 0;#969,16.53412742614746
+public class Dfp implements FieldElement<Dfp> {#96,16.53086625612699
+public Dfp multiply(final Dfp x) {#1496,16.524592208862305
+result.shiftRight();#1653,16.523340730106128
+public Dfp floor() {#1011,16.51570930480957
+@Override#901,16.51430066426595
+result.exp = 0;#1867,16.5126191245185
+nans = FINITE;#262,16.511671543121338
+q += 4;#522,16.511216461658478
+if (rounded.sign == -1) {#1152,16.509058051639133
+public int log10()  {#1181,16.508640202608976
+q--;#2208,16.50851847330729
+return newInstance(this);#1057,16.50576400756836
+exp  = xdfp.exp;#314,16.505185519947727
+exp--;#673,16.50257648121227
+public Dfp divide(Dfp divisor) {#1673,16.50248497724533
+sciexp = -sciexp;#394,16.502433128356934
+return result;#1630,16.49485101197895
+p = s.indexOf("E");#370,16.486671901884534
+public static final int RADIX = 10000;#99,16.485133244441105
+return d;#1220,16.484671766107734
+if (exponent == -1023) {#269,16.483916123708088
+return dfp2string();#2067,16.48348876408168
+int quotient[]; // quotient#1675,16.480356633663177
+if (exponent < 0) {#2429,16.474595844745636
+a.nans == FINITE && b.nans == FINITE) {#947,16.47376096659693
+return d;#1175,16.46974026073109
+p--;#2213,16.461515045166017
+return trunc(DfpField.RoundingMode.ROUND_HALF_EVEN);#1004,16.456126541926942
+field = d.field;#327,16.451198714120046
+return false;#822,16.446687126159667
+return result;#1640,16.44246597290039
+public Dfp newInstance(final int x) {#569,16.428673044840494
+return dfp2sci();#2064,16.42594618267483
+Dfp px  = getZero();#2022,16.42485461515539
+boolean decimalFound = false;#343,16.4135684967041
+if (!decimalFound) {#488,16.411836942036945
+return newInstance(this);#1052,16.410563892788357
+inc = n != 0;       // round up if n!=0#1425,16.409418132570053
+Dfp dx = newInstance(x);#2017,16.405632467830884
+nans = FINITE;#185,16.395305156707764
+return 1;#955,16.394844506916247
+return false;#837,16.394234530131023
+protected Dfp(final DfpField field, byte x) {#193,16.390393522050644
+inc = false;#1421,16.385336065292357
+if (!pointInserted) {#2197,16.38218421936035
+return false;#793,16.380917739868163
+Dfp rounded;#1135,16.375200510025024
+return this;#1893,16.36807918548584
+nans = FINITE;#340,16.36700780051095
+break;#2095,16.362182723151314
+break;#427,16.33203347524007
+return this;#1264,16.32325719532214
+public Dfp rint() {#1003,16.320620103315875
+return divisor;#1702,16.319899059477308
+pointInserted = true;#2185,16.317153800617564
+this.field = field;#186,16.29719693320138
+e--;#2194,16.284421094258626
+@Override#2052,16.28375832239787
+return Double.NaN;#2413,16.277364836798775
+exponent--;#2430,16.276505978902183
+public Dfp power10K(final int e) {#1172,16.276075541973114
+x = -x;#2481,16.267717866336596
+return result;#1980,16.26586447264019
+return newInstance(this);#1074,16.261000527275932
+return result;#1722,16.257304844103363
+return false;#768,16.24321041107178
+up = true;#2343,16.238061606884003
+nans = QNAN;#363,16.228501621045563
+nans = xdfp.nans;#315,16.22615957260132
+return new Dfp(field, s);#614,16.22486142551198
+private static int compare(final Dfp a, final Dfp b) {#944,16.2132089138031
+rsign = asign;#1309,16.202586121029324
+public Dfp nextAfter(final Dfp x) {#2330,16.18887358903885
+return new Dfp(d);#604,16.177897516886393
+public Dfp power10(final int e) {#1198,16.168163426717122
+public int intValue() {#1134,16.163784217834472
+return newInstance(this);#1048,16.1314598719279
+protected String dfp2sci() {#2074,16.127317428588867
+xdfp = xdfp.negate();#309,16.114845317343008
+ae = ae % p;#2144,16.096190547943117
+public Dfp ceil() {#1019,16.082781531594016
+return this;#1617,16.07154645417866
+public Dfp add(final Dfp x) {#1251,16.069595464070638
+protected String dfp2string() {#2155,16.06005867322286
+return this;#1698,16.059864244962995
+public static Dfp copysign(final Dfp x, final Dfp y) {#2319,16.030238607655402
+return NAN_STRING;#2059,16.01772573719854
+excp = result.round(0);#1873,16.011056763785227
+return false;#761,16.004004923502603
+return this;#1511,15.991781033967671
+return false;#786,15.984290568033854
+return newInstance(x);#2347,15.982944541507297
+protected Dfp(final DfpField field, double x) {#256,15.969322045644125
+return DfpField.FLAG_OVERFLOW;#1479,15.95105100714642
+protected Dfp(final DfpField field) {#181,15.934688059488932
+protected int round(int n) {#1417,15.90995971361796
+return DfpField.FLAG_UNDERFLOW;#1473,15.869703531265259
+protected Dfp(final DfpField field, int x) {#201,15.733888838026258
+pointInserted = true;#2167,15.731720023685032
+private Dfp multiplyFast(final int x) {#1611,15.72860647837321
+up = !up;#2351,15.658556601580452
+protected Dfp(final DfpField field, long x) {#209,15.640329149034288
+public Dfp(final Dfp d) {#322,15.639180047171456
+protected Dfp(final DfpField field, final String s) {#334,15.617504521420127
+public Dfp divide(int divisor) {#1888,15.609799130757649
+protected int align(int e) {#696,15.488066752751669
+ae = -e;#2130,15.347992791069878

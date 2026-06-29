@@ -1,0 +1,616 @@
+private boolean isMinimize = true;#153,17.275347073872883
+public class CMAESOptimizer#91,17.1309601465861
+public static final boolean DEFAULT_ISACTIVECMA = true;#99,17.12589258896677
+private int mu; //#173,17.11563852098253
+private boolean generateStatistics = false;#155,17.041855205189098
+boolean hsig = normps /#650,17.015844583511353
+@Deprecated#283,16.970934322902135
+public static final int DEFAULT_DIAGONALONLY = 0;#103,16.872193427312943
+private double cc;#185,16.86653697490692
+public static final int DEFAULT_CHECKFEASABLECOUNT = 0;#95,16.86582589149475
+oldFac += 1. - ccov1Sep - ccovmuSep;#674,16.84765601158142
+private double stopTolHistFun;#169,16.839919646581013
+private double ccovmuSep;#199,16.838863546198066
+private boolean updateEvolutionPaths(RealMatrix zmean, RealMatrix xold) {#645,16.81106592261273
+ccovmuSep = Math.min(1 - ccov1, ccovmu * (dimension + 1.5) / 3.);#614,16.768411862222774
+private boolean isActiveCMA;#123,16.760919831015848
+private void updateBD(double negccov) {#775,16.73285528818766
+private double stopTolFun;#167,16.706068472428754
+private double stopTolX;#165,16.697785117409445
+private double ccovmu;#193,16.685107517242432
+private double[] inputSigma;#140,16.655995108864524
+private double stopTolUpX;#163,16.645655234654743
+if (ccov1 + ccovmu + negccov > 0 &&#776,16.610173106193542
+this.inputSigma = inputSigma == null ? null : (double[]) inputSigma.clone();#315,16.60681927204132
+public static final double DEFAULT_STOPFITNESS = 0;#97,16.598479006025528
+protected PointValuePair doOptimize() {#355,16.59097719192505
+private double cs;#187,16.5760395526886
+private static RealMatrix selectColumns(final RealMatrix m, final int[] cols) {#1108,16.57313644886017
+private int maxIterations;#159,16.571038913726806
+private int diagonalOnly = 0;#151,16.531283725391734
+private double logMu2;#175,16.531178283691407
+public static final RandomGenerator DEFAULT_RANDOMGENERATOR = new MersenneTwister();#105,16.522022247314453
+if (ccov1 + ccovmu > 0) {#705,16.496812366303942
+private double damps;#189,16.469283527798122
+this.maxIterations = maxIterations;#316,16.460918320549858
+private double sigma;#183,16.459138870239258
+mu = lambda / 2; // number of parents/points for recombination#588,16.45123278576395
+arnorms = divide(arnormsReverse, arnormsSorted);#731,16.443924794878278
+private int dimension;#142,16.43167793750763
+private static RealMatrix times(final RealMatrix m, final RealMatrix n) {#1078,16.42865498860677
+isMinimize = getGoalType().equals(GoalType.MINIMIZE);#358,16.423704257378212
+public static final int DEFAULT_MAXITERATIONS = 30000;#101,16.423312990288984
+ccov1 = 2. / ((dimension + 1.3) * (dimension + 1.3) + mueff);#610,16.419095393589565
+private RealMatrix xmean;#203,16.418623161315917
+historySize = 10 + (int) (3. * 10. * dimension / lambda);#630,16.41738616095649
+private static RealMatrix triu(final RealMatrix m, int k) {#1123,16.393694591522216
+ccov1Sep = Math.min(1, ccov1 * (dimension + 1.5) / 3.);#613,16.391420083887436
+private double normps;#209,16.388188150193955
+private double ccov1;#191,16.381503963470458
+private int lambda; // population size#115,16.350397283380683
+ccovmu = Math.min(1 - ccov1, 2. * (mueff - 2. + 1. / mueff) /#611,16.34997930759337
+normps = ps.getFrobeniusNorm();#624,16.347177982330322
+public CMAESOptimizer(int lambda, double[] inputSigma,#308,16.294324920290993
+private static RealMatrix divide(final RealMatrix m, final RealMatrix n) {#1093,16.292290188017347
+private double mueff; //#179,16.287792205810547
+double[][] d = new double[n * rd][m * cd];#1230,16.286689061384934
+EigenDecomposition eig = new EigenDecomposition(C);#781,16.285291474441003
+this.generateStatistics = generateStatistics;#322,16.285248307620776
+if (inputSigma != null) {#546,16.271288759568158
+normps = ps.getFrobeniusNorm();#649,16.263049793243407
+private int iterations;#223,16.256142139434814
+private double stopFitness;#161,16.249616622924805
+public CMAESOptimizer(int lambda, double[] inputSigma,#284,16.23596445719401
+xmean = MatrixUtils.createColumnRealMatrix(guess); // objective#618,16.2250874710083
+private void updateCovarianceDiagonalOnly(boolean hsig,#669,16.22216996692476
+this.stopFitness = stopFitness;#317,16.217127111223007
+private static class DoubleIndex implements Comparable<DoubleIndex> {#842,16.215343419243307
+RealMatrix arnormsSorted = selectColumns(arnorms, idxnorms);#728,16.192963857908506
+private RealMatrix diagD;#217,16.17611009424383
+private int historySize;#228,16.17246913909912
+private List<RealMatrix> statisticsDHistory = new ArrayList<RealMatrix>();#240,16.170683817429975
+public CMAESOptimizer() {#245,16.166288449214054
+(iterations % 1. / (ccov1 + ccovmu + negccov) / dimension / 10.) < 1.) {#777,16.159799491034615
+this(lambda, inputSigma, maxIterations, stopFitness, isActiveCMA,#288,16.147653513941272
+public List<RealMatrix> getStatisticsDHistory() {#349,16.144739508628845
+double oldFac = hsig ? 0 : ccov1Sep * cc * (2. - cc);#673,16.125559837587417
+private RealMatrix D;#213,16.120525360107422
+private List<Double> statisticsSigmaHistory = new ArrayList<Double>();#234,16.114903268359956
+push(fitnessHistory, bestValue);#366,16.110869632047766
+private RealMatrix diagC;#221,16.105182214216754
+B = eig.getV(); // eigen decomposition, B==normalized eigenvectors#782,16.10439945669735
+this.checkFeasableCount = checkFeasableCount;#320,16.096004962921143
+private void updateCovariance(boolean hsig, final RealMatrix bestArx,#702,16.084503364562988
+damps = (1. + 2. * Math.max(0, Math.sqrt((mueff - 1.) /#605,16.084223402871025
+private double ccov1Sep;#197,16.074269554831766
+boolean hasInfiniteBounds = false;#519,16.07079876170439
+RealMatrix arpos = bestArx.subtract(repmat(xold, 1, mu))#706,16.065512312783135
+private static RealMatrix ones(int n, int m) {#1189,16.063421978670007
+stopTolHistFun = 1e-13;#585,16.058730627361097
+this.isActiveCMA = isActiveCMA;#318,16.055825757980347
+private RealMatrix BD;#215,16.054287910461426
+updateBD(negccov);#767,16.054183578491212
+private RandomGenerator random;#231,16.051257801055907
+private RealMatrix C;#219,16.04677931467692
+private static RealMatrix eye(int n, int m) {#1202,16.04467975392061
+private double[] fitnessHistory;#226,16.044662189483642
+arzneg = times(arzneg, repmat(arnormsInv, dimension, 1));#740,16.037969840200322
+private void checkParameters() {#504,16.031503200531006
+return new Array2DRowRealMatrix(d, false);#1366,16.026771727062407
+RealMatrix insigma = new Array2DRowRealMatrix(sigmaArray, false);#578,16.016095514650697
+private int checkFeasableCount;#129,16.015602111816406
+stopTolFun = 1e-12;#584,16.012200196584065
+private List<RealMatrix> statisticsMeanHistory = new ArrayList<RealMatrix>();#236,16.003534358480703
+private static RealMatrix repmat(final RealMatrix mat, int n, int m) {#1227,16.00016050753386
+boundaries = null;#543,15.996874809265137
+private static void copyColumn(final RealMatrix m1, int col1, RealMatrix m2, int col2) {#1178,15.994149780273437
+return new Array2DRowRealMatrix(d, false);#1209,15.991751625424339
+final RealMatrix arz, final int[] arindex, final RealMatrix xold) {#703,15.980309455625472
+this(lambda, null, DEFAULT_MAXITERATIONS, DEFAULT_STOPFITNESS,#253,15.954142189025879
+private RealMatrix randn1(int size, int popSize) {#1359,15.950319942675138
+public boolean isFeasible(final double[] x) {#972,15.950148764110747
+return new Array2DRowRealMatrix(d, false);#1236,15.946940694536481
+sumwq += w * w;#596,15.94362564086914
+public List<Double> getStatisticsSigmaHistory() {#328,15.941437304019928
+ps = zeros(dimension, 1); // B defines the coordinate system#623,15.934782194054645
+return new Array2DRowRealMatrix(d, false);#1130,15.933823085966564
+return new Array2DRowRealMatrix(d, false);#1253,15.932366734459286
+public double[] repairAndDecode(final double[] x) {#928,15.92679704319347
+return new Array2DRowRealMatrix(d, false);#1194,15.916442961919875
+oldFac += 1. - ccov1 - ccovmu;#712,15.912443747887245
+return new Array2DRowRealMatrix(d, false);#1085,15.910358111063639
+return new Array2DRowRealMatrix(d, false);#1146,15.907053811209542
+return new Array2DRowRealMatrix(d, false);#1070,15.904941922142392
+public List<Double> getStatisticsFitnessHistory() {#342,15.901032269001007
+return new Array2DRowRealMatrix(d, false);#1040,15.900918006896973
+for (int c = 0; c < cols.length; c++) {#1111,15.899750183368552
+logMu2 = Math.log(mu + 0.5);#589,15.896513895554977
+return new Array2DRowRealMatrix(d, false);#1115,15.891828582400368
+return new Array2DRowRealMatrix(d, false);#1100,15.886936823527018
+private RealMatrix B;#211,15.886752552456326
+return new Array2DRowRealMatrix(d, false);#1055,15.885164624168759
+this.lambda = lambda;#314,15.880666187831334
+double[][] d = new double[m.getRowDimension()][cols.length];#1109,15.87897621790568
+private static RealMatrix zeros(int n, int m) {#1217,15.870711061689589
+if (m.getColumnDimension() == 1) {#1155,15.864546503339495
+boolean hsig = updateEvolutionPaths(zmean, xold);#411,15.860423030275287
+this.diagonalOnly = diagonalOnly;#319,15.852180312661563
+this(lambda, inputSigma, DEFAULT_MAXITERATIONS, DEFAULT_STOPFITNESS,#263,15.8396135866642
+private void initializeCMA(double[] guess) {#568,15.83918031056722
+PointValuePair optimum = new PointValuePair(getStartPoint(),#367,15.836755434672037
+(1. - 1. / (4. * dimension) + 1 / (21. * dimension * dimension));#616,15.83580811023712
+double max = -Double.MAX_VALUE;#1261,15.834157678816053
+if (stopFitness != 0) { // only if stopFitness is defined#435,15.833097891374068
+if (negccov > negcovMax) {#737,15.830172640936715
+private static RealMatrix sequence(double start, double end, double step) {#1245,15.811100721359253
+return hsig;#658,15.804196651165302
+private double penalty(final double[] x, final double[] repaired) {#1017,15.801719706991445
+PointValuePair lastResult = null;#369,15.801011253805722
+private static double min(final RealMatrix m) {#1277,15.79796937306722
+for (int c = 0; c < m.getColumnDimension(); c++) {#1081,15.793778973241006
+return optimum;#498,15.79268386147239
+extends BaseAbstractMultivariateSimpleBoundsOptimizer<MultivariateFunction>#92,15.79175853729248
+cs = (mueff + 2.) / (dimension + mueff + 3.);#604,15.787757294518608
+for (int c = 0; c < m * cd; c++) {#1232,15.780117545809064
+public List<RealMatrix> getStatisticsMeanHistory() {#335,15.774465560913086
+private boolean isRepairMode;#899,15.770193290710449
+for (int i = 0; i < mu; i++) {#593,15.769892519170588
+double oldFac = hsig ? 0 : ccov1 * cc * (2. - cc);#711,15.769588246065027
+for (int i = 0; i < historySize; i++) {#632,15.76363642319389
+public boolean equals(Object other) {#864,15.763511538505554
+DEFAULT_ISACTIVECMA, DEFAULT_DIAGONALONLY,#264,15.76347694974957
+for (int c = 0; c < m.getColumnDimension(); c++) {#1096,15.7608853924659
+return reverse;#1339,15.756806546991522
+private RealMatrix weights;#177,15.750588628980848
+return repaired;#1009,15.746086184183756
+for (int c = 0; c < m.getColumnDimension(); c++) {#1036,15.74501182186988
+cc = (4. + mueff / dimension) /#602,15.741426694960822
+public CMAESOptimizer(int lambda, double[] inputSigma) {#262,15.735229188745672
+Math.sqrt(1. - Math.pow(1. - cs, 2. * iterations)) /#651,15.731815973917643
+private double chiN;#195,15.727618429395887
+implements MultivariateOptimizer {#93,15.726737889376553
+for (int c = 0; c < popSize; c++) {#1362,15.718796129579898
+new SimpleValueChecker());#290,15.712464432967337
+diagonalOnly, checkFeasableCount, random, generateStatistics,#289,15.708277843616626
+for (int r = 0; r < n * rd; r++) {#1231,15.703885078430176
+return new Array2DRowRealMatrix(d, false);#1160,15.696769256591796
+isMinimize ? bestValue : -bestValue);#368,15.694295671251085
+return new Array2DRowRealMatrix(d, false);#1166,15.69033290863037
+sigma *= Math.exp(Math.min(1.0,(normps/chiN - 1.)*cs/damps));#418,15.688314072629238
+private class FitnessFunction {#892,15.685208320617676
+private RealMatrix ps;#207,15.68356270260281
+negccov = negcovMax;#738,15.680130892786487
+private int[] sortedIndices(final double[] doubles) {#825,15.678628977607278
+diagD = insigma.scalarMultiply(1. / sigma);#620,15.677363906587873
+oldFac += negalphaold * negccov;#744,15.676933818393284
+for (int c = 0; c < m.getColumnDimension(); c++) {#1051,15.676677457747921
+private static RealMatrix sumRows(final RealMatrix m) {#1137,15.671415540907118
+private static RealMatrix diag(final RealMatrix m) {#1154,15.667106740614948
+pc = zeros(dimension, 1); // evolution paths for C and sigma#622,15.667023735046387
+D = eig.getD();#783,15.665373849868775
+double max = -Double.MAX_VALUE;#1295,15.658536275227865
+d[r][c] = r <= c - k ? m.getEntry(r, c) : 0;#1127,15.654737984261862
+double negccov = 0;#704,15.650070190429688
+for (int c = 0; c < m.getColumnDimension(); c++) {#1126,15.646939277648926
+d[r][c] = random.nextGaussian();#1363,15.646127635035022
+private int index;#846,15.640183925628662
+private List<Double> statisticsFitnessHistory = new ArrayList<Double>();#238,15.639958290826707
+for (int r = 0; r < n; r++) {#1191,15.632140809839422
+return (int) ((1438542 ^ (bits >>> 32) ^ bits) & 0xffffffff);#882,15.630990546090262
+for (int r = 0; r < m.length; r++) {#1296,15.627099792162577
+(Math.pow(dimension + 2., 1.5) + 2. * mueff);#716,15.624926516884251
+if (bestValue > bestFitness) {#421,15.624589369847225
+private static RealMatrix log(final RealMatrix m) {#1033,15.617640316486359
+return new Array2DRowRealMatrix(n, m);#1218,15.60773804074242
+d[r][0] = value;#1250,15.60760988507952
+double min = Double.MAX_VALUE;#1309,15.593499688541188
+for (int c = 0; c < m.getColumnDimension(); c++) {#1280,15.584202551072643
+D = ones(dimension, 1); // diagonal D defines the scaling#627,15.581884514201771
+return statisticsSigmaHistory;#329,15.579918043954033
+sumw += w;#595,15.579173424664665
+private static double max(final RealMatrix m) {#1260,15.577085177103678
+((dimension + 2.) * (dimension + 2.) + mueff));#612,15.575958013534546
+private static RealMatrix sqrt(final RealMatrix m) {#1048,15.57531743891099
+int rd = mat.getRowDimension();#1228,15.575078462299548
+RealMatrix bestArz = selectColumns(arz, MathArrays.copyOf(arindex, mu));#409,15.574357474722513
+if (boundaries != null && isRepairMode) {#956,15.560646514892579
+final double[] uB = getUpperBound();#507,15.55986610211824
+for (int r = 0; r < m.length; r++) {#1310,15.556467334429422
+value += step;#1251,15.553968012332916
+sigmaArray[i][0]   = ((inputSigma == null) ? 0.3 : inputSigma[i]) / range;#576,15.549288966438986
+return inverse;#1327,15.548916296525435
+value = CMAESOptimizer.this#958,15.546341565939096
+public double value(final double[] point) {#954,15.541981644100613
+updateCovarianceDiagonalOnly(hsig, bestArz, xold);#415,15.536360471676558
+sigma = sigma * Math.exp(0.2+cs/damps);#482,15.535019067617563
+private static double min(final double[] m) {#1308,15.530912590026855
+DEFAULT_ISACTIVECMA, DEFAULT_DIAGONALONLY,#254,15.529737414735736
+(1e-6 + Math.min(maxIterations, getMaxEvaluations() /#608,15.527549574110243
+final double[] guess = fitfun.encode(getStartPoint());#360,15.525690203127654
+for (int c = 0; c < m.getColumnDimension(); c++) {#1263,15.525381949640089
+RealMatrix arnormsInv = selectColumns(arnorms, idxInv);#733,15.5249205998012
+d[r][c] = mat.getEntry(r % rd, c % cd);#1233,15.521241780873892
+DEFAULT_CHECKFEASABLECOUNT, DEFAULT_RANDOMGENERATOR, false);#265,15.51621036529541
+for (iterations = 1; iterations <= maxIterations; iterations++) {#374,15.514359406062535
+checkParameters();#356,15.51239048350941
+for (int c = 0; c < m.getColumnDimension(); c++) {#1065,15.511576683290544
+Arrays.fill(d[r], 1.0);#1192,15.510368461608886
+private RealMatrix pc;#205,15.50754419962565
+fitnessHistory[i] = Double.MAX_VALUE;#633,15.506915807723999
+d[r][c] = e * e;#1067,15.500857317889178
+RealMatrix arnormsReverse = selectColumns(arnorms, idxReverse);#730,15.500442309257311
+if (diagonalOnly > 1 && iterations > diagonalOnly) {#682,15.49977666681463
+for (int r = 0; r < n; r++) {#1204,15.499603531577371
+diagD = sqrt(diagD); // D contains standard deviations now#801,15.49844241964406
+value = CMAESOptimizer.this#962,15.492618010594295
+private static int[] reverse(final int[] indices) {#1334,15.491862177848816
+private double[] repair(final double[] x) {#998,15.490180316724276
+return indices;#835,15.486833398992365
+for (int c = 0; c < m.getColumnDimension(); c++) {#1139,15.485527886284721
+negccov = (1. - ccovmu) * 0.25 * mueff /#715,15.484772939939756
+int size = (int) ((end - start) / step + 1);#1246,15.481548229853312
+double min = Double.MAX_VALUE;#1278,15.479275927824133
+diagC = diagC.scalarMultiply(oldFac) // regard old matrix#675,15.478839842478434
+BD = times(B, repmat(diagD.transpose(), dimension, 1));#628,15.47673327582223
+this.index = index;#854,15.472027778625488
+final FitnessFunction fitfun = new FitnessFunction();#359,15.470234129163954
+stopTolX = 1e-11 * max(insigma);#583,15.468913119772207
+d[r][c] = m.getEntry(r, cols[c]);#1112,15.460437992640903
+RealMatrix bestArx = selectColumns(arx, MathArrays.copyOf(arindex, mu));#407,15.460064515834901
+for (int r = 0; r < size; r++) {#1249,15.456728024916215
+for (int r = 0; r < m.getRowDimension(); r++) {#1279,15.455299907260471
+final double[] lB = getLowerBound();#506,15.453791247473823
+private static RealMatrix square(final RealMatrix m) {#1062,15.451400756835938
+boolean isActiveCMA, int diagonalOnly, int checkFeasableCount,#286,15.448694961015569
+throw new DimensionMismatchException(inputSigma.length, init.length);#548,15.44385461246266
+.add((times(diagC, square(bestArz).multiply(weights)))#679,15.441990543056178
+weights = log(sequence(1, mu, 1)).scalarMultiply(-1.).scalarAdd(logMu2);#590,15.440430340014005
+iterations = 0;#364,15.43750524520874
+if (inputSigma.length != init.length) {#547,15.434750785827637
+double negcovMax = (1. - negminresidualvariance) /#735,15.433253015790667
+private double[][] boundaries;#134,15.431096943941983
+weights = weights.scalarMultiply(1. / sumw);#598,15.430009803771974
+for (int i = 0; i < size; i++) {#1348,15.42884566567161
+for (int r = 0; r < size; r++) {#1361,15.426582726565274
+return statisticsMeanHistory;#336,15.423784596579415
+if (bestFitness < (isMinimize ? stopFitness : -stopFitness)) {#436,15.419767123896902
+if (boundaries == null) {#913,15.417733907699585
+if (boundaries == null) {#973,15.411238288879394
+final double range =  (boundaries == null) ? 1.0 : boundaries[1][i] - boundaries[0][i];#575,15.41044072407048
+for (int r = 0; r < m.getRowDimension(); r++) {#1125,15.409975051879883
+private static double max(final double[] m) {#1294,15.408014361063639
+randn[i] = random.nextGaussian();#1349,15.399423480033875
+return isMinimize ? value : -value;#965,15.391479708931662
+double negminresidualvariance = 0.66;#717,15.387767002500336
+for (int r = 0; r < m.getRowDimension(); r++) {#1050,15.382348837675872
+private static int[] inverse(final int[] indices) {#1322,15.379978775978088
+sigma = sigma * Math.exp(0.2+cs/damps);#486,15.37972354888916
+for (int r = 0; r < m.getRowDimension(); r++) {#1064,15.376910845438639
+for (int r = 0; r < m.getRowDimension(); r++) {#1035,15.376487060829445
+DEFAULT_CHECKFEASABLECOUNT, DEFAULT_RANDOMGENERATOR, false);#255,15.375071934291295
+double[][] d = new double[m.getRowDimension()][m.getColumnDimension()];#1124,15.373921596642697
+d[r][c] = m.getEntry(r, c) / n.getEntry(r, c);#1097,15.372454416184198
+if (boundaries == null) {#939,15.37200117111206
+private static void push(double[] vals, double val) {#812,15.369522359636095
+if (getConvergenceChecker().converged(iterations, optimum, lastResult)) {#428,15.369308139966881
+return Double.compare(value, o.value);#859,15.368774573008219
+RealMatrix zmean = bestArz.multiply(weights);#410,15.368265890306041
+for (int k = 0; k < lambda; k++) {#380,15.367803128560384
+d[r][c] = m.getEntry(r, c) * n.getEntry(r, c);#1082,15.366719541095552
+double[][] d = new double[m.getRowDimension()][m.getColumnDimension()];#1063,15.366237524783973
+for (int r = 0; r < m.getRowDimension(); r++) {#1262,15.360068215264214
+updateCovariance(hsig, bestArx, arz, arindex, xold);#413,15.357321875435966
+for (int r = 0; r < m.getRowDimension(); r++) {#1095,15.354433377583822
+public CMAESOptimizer(int lambda) {#252,15.354161858558655
+generationLoop:#373,15.348745606162332
+double[][] d = new double[m.getRowDimension()][m.getColumnDimension()];#1079,15.34455732865767
+if (getConvergenceChecker() != null) {#470,15.33842895770895
+double[][] d = new double[m.getRowDimension()][m.getColumnDimension()];#1094,15.337420665856564
+boolean hasFiniteBounds = false;#510,15.33675345252542
+return randn;#1351,15.334075927734375
+.computeObjectiveValue(decode(point));#963,15.333748075697157
+double diff = boundaries[1][i] - boundaries[0][i];#944,15.332338213920593
+chiN < 1.4 + 2. / (dimension + 1.);#652,15.32938888669014
+for (int r = 0; r < m.getRowDimension(); r++) {#1080,15.326061460706923
+if (sigma*sqrtDiagC[i] > stopTolUpX) {#451,15.324425650805962
+mueff = sumw * sumw / sumwq; // variance-effectiveness of sum w_i x_i#599,15.321928678240095
+diagD = sqrt(diagC); // replaces eig(C)#681,15.313331640683687
+for (int r = 0; r < m.getRowDimension(); r++) {#1110,15.310754634715893
+for (int i = vals.length-1; i > 0; i--) {#813,15.304360015051705
+penalty += diff * valueRange;#1021,15.303038431250531
+double[][] d = new double[m.getRowDimension()][m.getColumnDimension()];#1049,15.301284790039062
+double[][] d = new double[m.getRowDimension()][m.getRowDimension()];#1156,15.296675553192964
+for (int i = 0; i < indices.length; i++) {#1336,15.294324119885763
+double[][] sigmaArray = new double[guess.length][1];#573,15.293550491333008
+hasInfiniteBounds = true;#524,15.288533517292567
+C = C.scalarMultiply(oldFac) // regard old matrix#758,15.283400535583496
+this.valueRange = valueRange;#991,15.27924633026123
+arxk = xmean.add(BD.multiply(arz.getColumnMatrix(k))#384,15.276448231477003
+.computeObjectiveValue(decode(repaired)) +#959,15.275530564157586
+int cd = mat.getColumnDimension();#1229,15.275213506486681
+for (int i = 0; i < indices.length; i++) {#1324,15.275171279907227
+double[][] d = new double[m.getRowDimension()][m.getColumnDimension()];#1034,15.273833419337418
+stopTolUpX = 1e3 * max(insigma);#582,15.27131988691247
+public void setValueRange(double valueRange) {#990,15.270219903243216
+int[] idxnorms = sortedIndices(arnorms.getRow(0));#727,15.26818749639723
+for (int i = 0; i < guess.length; i++) {#574,15.267503261566162
+return statisticsDHistory;#350,15.265029687147875
+double negalphaold = 0.5; // where to make up for the variance#720,15.262504606535941
+for (int r = 0; r < m.getRowDimension(); r++) {#1141,15.261195275091357
+return false;#874,15.257450612386068
+boundaries[0] = lB;#536,15.249685446421305
+double diff = boundaries[1][i] - boundaries[0][i];#918,15.240875244140625
+return res;#921,15.240787061055501
+isRepairMode = true;#905,15.239558370489823
+Math.sqrt(cc * (2. - cc) * mueff) / sigma));#656,15.239498138427734
+private double valueRange;#894,15.238339864290678
+arxk = xmean.add(times(diagD,arz.getColumnMatrix(k))#387,15.235893176152157
+double[][] d = new double[m.getRowDimension()][1];#1162,15.23415574719829
+boolean isActiveCMA, int diagonalOnly, int checkFeasableCount,#310,15.232808645381484
+if (getConvergenceChecker() != null && lastResult != null) {#427,15.2321346935473
+statisticsSigmaHistory.add(sigma);#492,15.231657377878825
+double bestValue = fitfun.value(guess);#365,15.231547546386718
+ConvergenceChecker<PointValuePair> checker) {#312,15.225591659545898
+this.random = random;#321,15.225500788007464
+boundaries[1] = uB;#537,15.2242880264918
+boundaries = new double[2][];#535,15.222567359606424
+BD = times(B, repmat(diagD.transpose(), dimension, 1)); // O(n^2)#802,15.222290601485815
+RealMatrix xold = xmean; // for speed up of Eq. (2) and (3)#406,15.214732928153795
+double[][] d = new double[1][m.getColumnDimension()];#1138,15.212044927808973
+break;#515,15.210197713640001
+historyWorst-historyBest < stopTolHistFun) {#462,15.210138571889777
+throw new NotPositiveException(inputSigma[i]);#552,15.208190889069527
+RealMatrix artmp = BD.multiply(arzneg);#741,15.201056049716088
+reverse[i] = indices[indices.length - i - 1];#1337,15.201019423348564
+for (int i = 0; i < doubles.length; i++) {#832,15.200298388799032
+double[] repaired = new double[x.length];#999,15.189777291339377
+if (boundaries != null) {#554,15.18826953570048
+for (int i = 0; i < lB.length; i++) {#511,15.181099700927735
+initializeCMA(guess);#363,15.181092262268066
+int[] inverse = new int[indices.length];#1323,15.180151844024659
+for (int i = 0; i < x.length; i++) {#1000,15.176151377814156
+double[][] d = new double[size][popSize];#1360,15.17522634159435
+max = e;#1266,15.166342576344809
+fitfun.repairAndDecode(bestArx.getColumn(0)),#425,15.16324840121799
+diagD = diagD.add(ones(dimension, 1).scalarMultiply(tfac));#793,15.159226485661097
+lambda = 4 + (int) (3. * Math.log(dimension));#570,15.158461998248923
+for (int i = 0; i < m1.getRowDimension(); i++) {#1179,15.15752479008266
+return min;#1287,15.157036001032049
+if (hasInfiniteBounds) {#529,15.154745351700555
+for (int i = 0; i < x.length; i++) {#943,15.15452664239066
+getConvergenceChecker().converged(iterations, current, lastResult)) {#475,15.154061035676436
+if (min > m[r]) {#1311,15.152410053071522
+DoubleIndex[] dis = new DoubleIndex[doubles.length];#826,15.151744013247283
+int[] reverse = new int[indices.length];#1335,15.147504854202271
+d[r][c] = Math.sqrt(m.getEntry(r, c));#1052,15.145620114094502
+return true;#974,15.142230887162057
+double sumw = 0;#591,15.140935012272426
+C = triu(C, 0).add(triu(C, 1).transpose());#779,15.140541510148482
+if (hasFiniteBounds) {#520,15.13644650403191
+for (int i = 0; i < x.length; i++) {#976,15.13444631440299
+RandomGenerator random, boolean generateStatistics,#311,15.128833035060337
+.scalarMultiply(ccov1); // rank one update#709,15.123587396409777
+double tfac = max(diagD) / 1e14;#791,15.120112572946857
+d[r][r] = 1;#1206,15.11590648651123
+RealMatrix arzneg#724,15.115440959022159
+sigma = max(insigma); // overall standard deviation#579,15.105869579315186
+for (int i = 0; i < x.length; i++) {#917,15.102441617420741
+min = e;#1283,15.10038717587789
+return x;#940,15.095070889121608
+fitfun.setValueRange(worstFitness-bestFitness);#490,15.089936379463442
+double[][] d = new double[n][m];#1203,15.086684499468122
+if (diagonalOnly <= 0) {#412,15.08622573852539
+m2.setEntry(i, col2, m1.getEntry(i, col1));#1180,15.082792422350716
+RealMatrix roneu = pc.multiply(pc.transpose())#708,15.07874268498914
+hasFiniteBounds = true;#514,15.077309807141622
+fitnessHistory = new double[historySize]; // history of fitness values#631,15.075749093836004
+.scalarMultiply(1. / sigma); // mu difference vectors#707,15.07329679790296
+statisticsFitnessHistory.add(bestFitness);#493,15.069137357896373
+break generationLoop;#400,15.065078701291766
+throw new MathUnsupportedOperationException();#532,15.064903219540914
+private double[] randn(int size) {#1346,15.063738686697823
+d[r][c] = Math.log(m.getEntry(r, c));#1037,15.062055746714273
+public int compareTo(DoubleIndex o) {#858,15.060180770026314
+for (int i = 0; i < x.length; i++) {#1019,15.055530139378138
+final double[] init = getStartPoint();#505,15.054729461669922
+bestValue = bestFitness;#422,15.054021340829355
+break generationLoop;#452,15.052030290876116
+statisticsMeanHistory.add(xmean.transpose());#494,15.049784689238578
+return statisticsFitnessHistory;#343,15.048495769500732
+return max;#1270,15.048282449895686
+@Override#354,15.045361200968424
+.scalarMultiply(ccovmuSep));#680,15.038912618482435
+for (int i = 0; i < doubles.length; i++) {#827,15.037968675295511
+xmean = bestArx.multiply(weights);#408,15.037137064440497
+return true;#867,15.033690201608758
+push(fitnessHistory,bestFitness);#489,15.032706150641808
+public double[] encode(final double[] x) {#912,15.023569910149826
+if (bestValue == fitness[arindex[(int)(0.1+lambda/4.)]]) {#481,15.022814774513245
+double e = m.getEntry(r, c);#1066,15.020549127033778
+for (int i = 0; i < m.getRowDimension(); i++) {#1157,15.013575615421418
+super(checker);#313,15.005984453054575
+private double value;#844,15.005434036254883
+return res;#947,15.000722503662109
+times(repmat(weights, 1, dimension),#763,15.000379892495962
+if (lambda <= 0) {#569,14.997017987569173
+@Override#863,14.996605014801025
+for (int i = 0; i < init.length; i++) {#550,14.996010337557111
+if (isActiveCMA) {#713,14.995414876937867
+if (sigma*(Math.max(Math.abs(pcCol[i]), sqrtDiagC[i])) > stopTolX) {#443,14.991319396279074
+inverse[indices[i]] = i;#1325,14.991041877053
+diagD = diagD.add(ones(dimension, 1).scalarMultiply(tfac));#798,14.989589600335984
+for (int i = 0; i < lB.length; i++) {#521,14.989567296258334
+C = C.add(eye(dimension, dimension).scalarMultiply(tfac));#797,14.987930925268875
+break;#525,14.98591171611439
+lastResult = current;#478,14.97838321685791
+res[i] = diff * x[i] + boundaries[0][i];#945,14.976657054003548
+for (int i = 0; i < checkFeasableCount+1; i++) {#382,14.975425291061402
+if (max < m[r]) {#1297,14.97417604355585
+double[][] d = new double[n][m];#1190,14.973700069245838
+double value;#955,14.972287623087565
+max = m[r];#1298,14.971732312982732
+C = C.add(eye(dimension, dimension).scalarMultiply(tfac));#792,14.965942131845575
+(dimension + 4. + 2. * mueff / dimension);#603,14.960664626090757
+for (int i = 0; i < m.getColumnDimension(); i++) {#1163,14.959983025827716
+break generationLoop;#463,14.95301111539205
+break generationLoop;#447,14.95014146396092
+public FitnessFunction() {#903,14.94717656649076
+int[] idxInv = inverse(idxnorms);#732,14.945773913942535
+double value = start;#1248,14.943830049954927
+int[] indices = new int[doubles.length];#831,14.928336597624279
+return x;#914,14.927924256575736
+return min;#1315,14.926774458451705
+throw new OutOfRangeException(inputSigma[i], 0, boundaries[1][i] - boundaries[0][i]);#556,14.919826470888578
+return true;#984,14.916497039794923
+.subtract(Cneg.scalarMultiply(negccov));#755,14.908907601999681
+copyColumn(arxk, 0, arx, k);#396,14.903949092416202
+DoubleIndex(double value, int index) {#852,14.898526456620958
+RealMatrix arx = zeros(dimension, lambda);#377,14.89815548488072
+Math.sqrt(cs * (2. - cs) * mueff)));#648,14.894525173098542
+double[] fitness = new double[lambda];#378,14.893669967651368
+for (int i = 0; i < dimension; i++) {#450,14.891608587900798
+diagD.setEntry(i, 0, 0.);#788,14.891006795983566
+ps = ps.scalarMultiply(1. - cs).add(#646,14.889248041006235
+min = m[r];#1312,14.888113498687744
+repaired[i] = x[i];#1006,14.885768758839575
+if (generateStatistics) {#491,14.882635697074559
+return false;#981,14.881343883016836
+diagonalOnly = 0;#684,14.875673069673425
+RealMatrix arnorms = sqrt(sumRows(square(arzneg)));#726,14.870378812154135
+indices[i] = dis[i].index;#833,14.86980098226796
+break generationLoop;#459,14.86902916431427
+if (iterations > 2 && Math.max(historyWorst, worstFitness) -#457,14.867311583624947
+sum += m.getEntry(r, c);#1142,14.864947707564742
+int[] idxReverse = reverse(idxnorms);#729,14.861073155556955
+break generationLoop;#437,14.859873294830322
+public double[] decode(final double[] x) {#938,14.854723679391961
+.scalarMultiply(sigma)); // m + sig * Normal(0,C)#385,14.846923926780963
+RealMatrix arxk = null;#381,14.845944813319615
+if (r < m) {#1205,14.843772888183594
+double[] repaired = repair(point);#957,14.84283443291982
+break generationLoop;#476,14.838122538157872
+if (inputSigma[i] > boundaries[1][i] - boundaries[0][i]) {#555,14.82899634782658
+C = diag(diagC);#687,14.824819882710775
+double w = weights.getEntry(i, 0);#594,14.824222723642984
+artmp.transpose());#743,14.822723801930746
+return false;#978,14.817984954170559
+if (diagonalOnly <= 0) {#383,14.817809625105424
+C = B.multiply(diag(square(D)).multiply(B.transpose())); // covariance#629,14.817805025312635
+int[] arindex = sortedIndices(fitness);#404,14.816793748310634
+return isMinimize ? penalty : -penalty;#1023,14.816710928212041
+res[i] = (x[i] - boundaries[0][i]) / diff;#919,14.816193262736002
+C = C.scalarMultiply(oldFac)#745,14.794784545898438
+break generationLoop;#467,14.794418493906656
+if (other instanceof DoubleIndex) {#870,14.790837015424456
+if (inputSigma[i] < 0) {#551,14.787670714514595
+ccovmu + (1. - negalphaold) * negccov)#751,14.787070799847038
+double worstFitness = fitness[arindex[arindex.length-1]];#420,14.782384030959186
+double[] randn = new double[size];#1347,14.78012482325236
+RealMatrix arz = randn1(dimension, lambda);#376,14.775649564019565
+diagD = diag(D);#784,14.769955907549177
+if (min(diagD) <= 0) {#785,14.76271148522695
+B = eye(dimension, dimension);#626,14.753727793693542
+d[0][c] = sum;#1144,14.750695955185662
+d[i][0] = m.getEntry(i, i);#1164,14.746167123317719
+Arrays.sort(dis);#830,14.744464302062989
+.add(square(pc).scalarMultiply(ccov1Sep))#677,14.740020779200963
+Math.max(0.3, 1. - dimension /#607,14.739994509466763
+double[] res = new double[x.length];#916,14.738170623779297
+for (int i = 0; i < dimension; i++) {#442,14.734392166137695
+return Double.compare(value, ((DoubleIndex) other).value) == 0;#871,14.731122589111328
+lastResult = optimum;#423,14.726443672180176
+double[] res = new double[x.length];#942,14.726034247356912
+int maxIterations, double stopFitness,#285,14.715686029858059
+vals[0] = val;#816,14.71084052324295
+dimension = guess.length;#362,14.705113547188896
+double diff = Math.abs(x[i] - repaired[i]);#1020,14.704495191574097
+if (min > e) {#1282,14.704476895539656
+if (hsig) {#654,14.702320848192487
+= selectColumns(arz, MathArrays.copyOf(arReverseIndex, mu));#725,14.701206473417061
+B.multiply(zmean).scalarMultiply(#647,14.700354635715485
+if (!Double.isInfinite(lB[i]) ||#512,14.698497038621168
+isMinimize ? bestFitness : -bestFitness);#426,14.696343608018829
+d[i][i] = m.getEntry(i, 0);#1158,14.684097468852997
+double bestFitness = fitness[arindex[0]];#419,14.68386643508385
+double e = m.getEntry(r, c);#1281,14.682930537632533
+double historyWorst = max(fitnessHistory);#456,14.677229987250435
+return boundaries != null && isRepairMode ?#929,14.671233003789728
+Math.min(historyBest, bestFitness) < stopTolFun) {#458,14.671158404577346
+break generationLoop;#429,14.669821739196777
+statisticsDHistory.add(diagD.transpose().scalarMultiply(1E5));#495,14.665566184303977
+repaired[i] = 1.0;#1004,14.663726707984662
+return max;#1301,14.661964243108576
+double[][] d = new double[size][1];#1247,14.66067899976458
+for (int i = 0; i < dimension; i++) {#786,14.656716314951579
+double tfac = max(diagD) / 1e14 - min(diagD);#796,14.654710047953838
+double e = m.getEntry(r, c);#1264,14.640498638153076
+double historyBest = min(fitnessHistory);#455,14.628168509556698
+if (i >= checkFeasableCount || fitfun.isFeasible(arxk.getColumn(0))) {#390,14.622642186971811
+pc = pc.add(xmean.subtract(xold).scalarMultiply(#655,14.61733570098877
+if (max < e) {#1265,14.607895851135254
+valueRange = 1.0;#904,14.606142144454154
+final RealMatrix xold) {#671,14.605654230657613
+if (iterations > 2 && Math.max(historyWorst, bestFitness) -#484,14.60501503944397
+lambda))) + cs; // minor increment#609,14.600248432159423
+if (lastResult != null &&#474,14.58955266740587
+int maxIterations, double stopFitness,#309,14.577521589067247
+dis[i] = new DoubleIndex(doubles[i], i);#828,14.566089399929705
+isMinimize ? bestFitness : -bestFitness);#473,14.552290005154079
+!Double.isInfinite(uB[i])) {#513,14.537072785695393
+diagC = square(diagD);#621,14.517971356709799
+BD = diag(diagD);#686,14.511189188276019
+pc = pc.scalarMultiply(1. - cc);#653,14.506385008494059
+if (diagD.getEntry(i, 0) < 0) {#787,14.502102027068267
+.scalarMultiply(sigma));#388,14.500922750919424
+times(repmat(weights, 1, dimension),#753,14.499044253275944
+fitness[k] = fitfun.value(arx.getColumn(k)); // compute fitness#398,14.491362635294596
+.add(roneu)#759,14.490367857615153
+chiN = Math.sqrt(dimension) *#615,14.468235818963302
+this.value = value;#853,14.460914187961155
+B = eye(dimension, dimension);#685,14.452902936935425
+double sumwq = 0;#592,14.449742126464844
+arz.setColumn(k, randn(dimension));#394,14.440198717890558
+this(0);#246,14.425145467122396
+penalty(point, repaired);#960,14.420107173919678
+diagC = diag(C);#800,14.415912219456263
+RealMatrix Cneg = artmp.multiply(diag(weights)).multiply(#742,14.392154126553923
+optimum = new PointValuePair(#424,14.388814858027867
+if (max(diagD) > 1e14 * min(diagD)) {#795,14.380910128355026
+.add(arpos.scalarMultiply(ccovmu) // plus rank mu update#761,14.371275818866232
+@Override#879,14.347857856750489
+if (x[i] > 1.0) {#980,14.34665196282523
+if (x[i] < 0) {#977,14.337799769181471
+break;#444,14.335438581613394
+PointValuePair current =#471,14.330499208890474
+if (iterations > fitnessHistory.length &&#461,14.315317924206074
+Math.min(historyBest, bestFitness) == 0) {#485,14.307743806105394
+if (i >= dimension-1) {#446,14.285101791908001
+double penalty = 0;#1018,14.255266357870664
+repaired[i] = 0;#1002,14.244884314360442
+double[] sqrtDiagC = sqrt(diagC).getColumn(0);#440,14.22179028722975
+RandomGenerator random, boolean generateStatistics) {#287,14.180340660942925
+if (Double.isInfinite(lB[i]) ||#522,14.178054650624594
+decode(x);#931,14.176718807220459
+square(arnormsInv).multiply(weights).getEntry(0, 0);#736,14.174662633375688
+long bits = Double.doubleToLongBits(value);#881,14.17410650253296
+Double.isInfinite(uB[i])) {#523,14.17229363412568
+vals[i] = vals[i-1];#814,14.171999778747558
+if (this == other) {#866,14.140153684114155
+break;#391,14.126740709940593
+if (max(diagD)/min(diagD) > 1e7) {#466,14.12405088212755
+public int hashCode() {#880,14.095595053264073
+decode(repair(x)) :#930,14.094429264897885
+new PointValuePair(bestArx.getColumn(0),#472,14.083013461186336
+double sum = 0;#1140,14.063511960646686
+if (x[i] < 0) {#1001,14.034554151388315
+final RealMatrix bestArz,#670,14.03390519124157
+arpos.transpose())))#754,14.004601149125532
+arpos.transpose())));#764,13.986367974962507
+.add(roneu)#747,13.97164618174235
+int[] arReverseIndex = reverse(arindex);#723,13.871931339132376
+double[] pcCol = pc.getColumn(0);#441,13.865469796316964
+(dimension + 1.)) - 1.)) *#606,13.754534933302137
+.add(arpos.scalarMultiply(#749,13.727856661822345
+.multiply(#762,13.553299259495091
+try {#397,13.51233959197998
+.multiply(#752,13.299976271552008

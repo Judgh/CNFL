@@ -1,0 +1,99 @@
+case Token.HOOK:#117,19.419798578534806
+Node exprParent) {#47,19.265009099786933
+if (leftSide.isName() ||#171,19.239490910580283
+case Token.NAME:#135,19.14302737896259
+if (isCollapsibleValue(leftValue, true) &&#50,19.04466946919759
+if (value.isQualifiedName() &&#138,19.017654288898814
+case Token.IF:#118,18.99186919285701
+case Token.NAME:#85,18.959861061789773
+case Token.OR:#116,18.943981610811672
+case Token.VAR:#126,18.8986919266837
+String nextName = next.getQualifiedName();#137,18.89017909506093
+if (isNameAssignedTo(name, c)) {#228,18.776740977638646
+&& next.isEquivalentTo(value)) {#184,18.74732593536377
+if (next.isQualifiedName()) {#136,18.659222841262817
+switch (next.getType()) {#114,18.647213663373673
+case Token.AND:#115,18.55303771679218
+if (!isSafeReplacement(next, assign)) {#145,18.401828032273514
+nextName.equals(value.getQualifiedName())) {#139,18.35976102275233
+private boolean isNameAssignedTo(String name, Node node) {#226,18.272327198701745
+case Token.EXPR_RESULT:#120,18.263956238241757
+if (name.equals(node.getString())) {#236,18.238052931698885
+return false;#132,18.22557544708252
+&& isNameAssignedTo(node.getString(), replacement)) {#215,18.181183607681938
+default:#182,18.15489501953125
+if (node.isName()#214,18.135015574368563
+if (node.isName()) {#233,18.06865620613098
+if (next.getFirstChild().hasChildren()) {#127,18.06421947479248
+Node value) {#109,18.002832317352294
+case Token.GETPROP:#134,17.919252141316733
+case Token.ASSIGN:#157,17.88506419318063
+return false;#155,17.87346986623911
+if (NodeUtil.isImmutableValue(next)#183,17.865467278853707
+case Token.RETURN:#119,17.86510181427002
+switch (value.getType()) {#77,17.833828687667847
+private static boolean isCollapsibleValue(Node value, boolean isLValue) {#76,17.817511463165282
+case Token.GETPROP:#78,17.779058016263523
+expr.removeChild(assign);#189,17.72734065055847
+return !isLValue || value.getFirstChild().isThis();#83,17.698919545049254
+if (parent.isAssign() && parent.getFirstChild() == node) {#235,17.689818077087402
+while (next != null) {#113,17.68705922907049
+@Override#31,17.676930904388428
+Node leftSide = next.getFirstChild();#170,17.675538730621337
+collapseAssignEqualTo(expr, exprParent, leftValue)) {#51,17.673925320307415
+parent = next;#175,17.657229721546173
+return subtree;#40,17.655933618545532
+reportCodeChange();#52,17.602114772796632
+next = next.getFirstChild();#123,17.59912263022529
+parent = next;#122,17.58073595591954
+if (node.isName()) {#208,17.57292405764262
+parent = next.getFirstChild();#128,17.53033275604248
+if (NodeUtil.isExprAssign(child)) {#35,17.47583734421503
+for (Node c = node.getFirstChild(); c != null; c = c.getNext()) {#227,17.430599601180464
+break;#124,17.40690342585246
+collapseAssignEqualTo(expr, exprParent, rightValue)) {#54,17.373021682103474
+next = leftSide.getNext();#176,17.368244218826295
+break;#177,17.362122058868408
+private boolean isSafeReplacement(Node node, Node replacement) {#206,17.360661923885345
+for (Node child = subtree.getFirstChild(); child != null;) {#33,17.3382362018932
+Node rightValue = leftValue.getNext();#49,17.323389666421072
+expr.removeChild(assign);#150,17.315062176097523
+Node next = expr.getNext();#112,17.29260245958964
+leftSide.isGetProp() &&#172,17.240873553536154
+Node parent = exprParent;#111,17.229579067230226
+return true;#219,17.22884096418108
+exprParent.removeChild(expr);#188,17.22164707183838
+reportCodeChange();#55,17.207057571411134
+next = parent.getFirstChild();#129,17.198061370849608
+Node next = child.getNext();#34,17.192940167018346
+return false;#179,17.174087142944337
+private boolean collapseAssignEqualTo(Node expr, Node exprParent,#108,17.02746608522203
+leftSide.getFirstChild().isThis()) {#173,17.012480545043946
+default:#88,16.987579584121704
+exprParent.removeChild(expr);#149,16.983945759859953
+Node assign = expr.getFirstChild();#110,16.983546257019043
+Node optimizeSubtree(Node subtree) {#32,16.975410143534344
+Node leftValue = assign.getFirstChild();#48,16.941706793648855
+return true;#209,16.84518877665202
+return true;#152,16.828348271987018
+parent.replaceChild(next, assign);#190,16.809464045933314
+class ExploitAssigns extends AbstractPeepholeOptimization {#29,16.7975292801857
+Preconditions.checkArgument(node.isGetProp());#211,16.784316274854874
+return true;#86,16.74095344543457
+return NodeUtil.isImmutableValue(value);#89,16.715393257141113
+return false;#198,16.664543969290598
+collapseAssign(rightValue, expr, exprParent);#58,16.660353872511124
+return false;#146,16.611097386008815
+Node parent = node.getParent();#234,16.55182252611433
+parent.replaceChild(next, assign);#151,16.513800538104512
+child = next;#38,16.470826148986816
+node = node.getFirstChild();#213,16.462522711072648
+collapseAssign(child.getFirstChild(), child, subtree);#36,16.454969613448434
+break;#130,16.375627449580602
+return false;#242,16.362553460257395
+return false;#194,16.343222251305214
+return false;#216,16.342470698886448
+return true;#229,16.33988267725164
+private void collapseAssign(Node assign, Node expr,#46,16.218869073050364
+return true;#191,15.950281524658203
+return true;#237,15.790055421682505

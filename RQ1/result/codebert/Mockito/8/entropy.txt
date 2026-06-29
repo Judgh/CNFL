@@ -1,0 +1,231 @@
+@Override#473,17.886192417144777
+Type[] upperBounds = wildcard.getUpperBounds();#588,17.674005013925058
+@Override#609,17.6398063659668
+@Override#344,17.56988697052002
+for (Class currentExploredClass = clazz;#257,17.55348939480989
+@Override#282,17.526183319091796
+Type[] lowerBounds = wildcard.getLowerBounds();#587,17.461189636817345
+currentExploredClass != null && currentExploredClass != Object.class;#258,17.452927878408723
+System.arraycopy(typeVariable.getBounds(), 1, interfaceBounds, 0, typeVariable.getBounds().length - 1);#539,17.439030691634777
+return rawExtraInterfaces.toArray(new Class[rawExtraInterfaces.size()]);#439,17.409057170152664
+@Override#313,17.40768756866455
+return lowerBounds.length != 0 ? lowerBounds[0] : upperBounds[0];#590,17.405152797698975
+return actualFirstBound;#455,17.402912094479515
+@Override#600,17.375197219848634
+return (Class) genericSuperclass;#271,17.35677390098572
+@Override#552,17.349756050109864
+if (o == null || getClass() != o.getClass()) return false;#603,17.34474401473999
+@Override#614,17.34010181427002
+if (o == null || getClass() != o.getClass()) return false;#546,17.336098639170327
+List<Class<?>> rawExtraInterfaces = new ArrayList<Class<?>>();#431,17.295518811543783
+@Override#382,17.28250217437744
+Checks.checkNotNull(type, "type");#229,17.245584939655505
+@Override#410,17.229815196990966
+readTypeParameters();#367,17.17758983373642
+return "{firstBound=" + firstBound() + ", interfaceBounds=[]}";#616,17.170873006184895
+@Override#543,17.155367183685303
+readTypeParameters();#332,17.135148227214813
+return "{firstBound=" + firstBound() + ", interfaceBounds=" + Arrays.deepToString(interfaceBounds()) + '}';#559,17.114483522814375
+public Type[] interfaceBounds() {#537,17.09133279323578
+return rawType;#387,17.09108680486679
+Type genericSuperclass = currentExploredClass.getGenericSuperclass();#266,17.08907477060954
+if (this == o) return true;#545,17.086801211039226
+if (!(actualFirstBound instanceof BoundedType)) {#452,17.084047383275525
+@Override#557,17.08113327026367
+return (Class) rawType;#269,17.062446925951086
+if (this == o) return true;#602,17.040698550996325
+public Class<?>[] rawExtraInterfaces() {#429,17.03625764344868
+this.contextualActualTypeParameters = source.contextualActualTypeParameters;#365,17.011383724212646
+readActualTypeParameters();#305,17.005758391486275
+if (typeParameter.getBounds()[0] instanceof TypeVariable) {#105,16.992184932415302
+public Type[] interfaceBounds() {#596,16.956326961517334
+Type[] interfaceBounds = new Type[typeVariable.getBounds().length - 1];#538,16.956313088536263
+public Type firstBound() {#586,16.907908167157853
+readTypeVariables();#368,16.901550012476303
+return (Class<?>) type;#392,16.89262352819028
+this.contextualActualTypeParameters = source.contextualActualTypeParameters;#330,16.888821125030518
+return extractActualBoundedTypeOf(contextualActualTypeParameters.get(type));#448,16.88231348991394
+if(!rawType().equals(rawInterface)) {#435,16.87747129900702
+If type is a TypeVariable, then it is needed to gather data elsewhere. Usually TypeVariables are declared#445,16.861687735507363
+return Collections.emptyList();#144,16.859570571354457
+return extractRawTypeOf(contextualActualTypeParameters.get(type));#405,16.851313359809645
+if (type instanceof Class) {#230,16.84543013572693
+public Class<?>[] rawExtraInterfaces() {#150,16.84276123046875
+List<Type> extraInterfaces = extraInterfaces();#430,16.839489817619324
+public List<Type> extraInterfaces() {#411,16.831960519154865
+Type actualFirstBound = extractActualBoundedTypeOf(((BoundedType) type).firstBound());#451,16.80629806029491
+this.typeParameters = typeParameters;#329,16.800492525100708
+return;#68,16.79928125653948
+return boundsOf((TypeVariable) typeParameter.getBounds()[0]);#106,16.77675543160274
+this.typeVariable = typeVariable;#364,16.772501277923585
+currentExploredClass = superClassOf(currentExploredClass)#259,16.76840409924907
+throw new MockitoException("Cannot extract extra-interfaces from '" + typeVariable + "' : '" + type + "'");#422,16.76293296348758
+contextualActualTypeParameters.put(typeVariable, boundsOf(typeVariable));#94,16.748079299926758
+public String toString() {#558,16.746113981519425
+this.parameterizedType = parameterizedType;#328,16.74467833145805
+return interfaceBounds;#540,16.74100746827967
+if (type instanceof TypeVariable) {#400,16.74070508139474
+this.clazz = clazz;#255,16.73283967971802
+public String toString() {#615,16.700766495295934
+contextualActualTypeParameters.put(typeParameter, boundsOf((WildcardType) actualTypeArgument));#78,16.69893100934151
+return Arrays.asList(((BoundedType) type).interfaceBounds());#414,16.682189492618335
+return Collections.singletonList(type);#417,16.66516794204712
+this.typeParameters = typeParameters;#363,16.654749703407287
+return type;#188,16.64938649264249
+if (genericSuperclass instanceof ParameterizedType) {#267,16.64856731414795
+public boolean hasRawExtraInterfaces() {#157,16.64606006328876
+if (type instanceof TypeVariable) {#443,16.635446593874978
+if (type instanceof Class) {#419,16.6210458278656
+if (rawType == null) {#384,16.619902563095092
+return Collections.emptyList();#420,16.608517733487215
+return clazz;#284,16.58144450187683
+return rawExtraInterfaces().length > 0;#158,16.58018006218804
+Type rawType = ((ParameterizedType) genericSuperclass).getRawType();#268,16.573687784599535
+readTypeVariables();#333,16.571969088386087
+) {#260,16.558634016248917
+Class<?> rawInterface = extractRawTypeOf(extraInterface);#433,16.55215737024943
+this.parameterizedType = parameterizedType;#304,16.550739039545473
+if (!contextualActualTypeParameters.containsKey(typeVariable)) {#93,16.540659217834474
+if (type instanceof Class) {#391,16.538801383972167
+public Class<?> rawType() {#283,16.537717282772064
+actualTypeArguments.put(typeParameter, actualType);#174,16.537303199768065
+return new ParameterizedReturnType(this, method.getTypeParameters(), (ParameterizedType) method.getGenericReturnType());#207,16.53718852996826
+public Type firstBound() {#526,16.496780191149032
+on the class definition, such as such as List<E>.#446,16.49573253763133
+if (type instanceof ParameterizedType) {#416,16.4955994564554
+this.wildcard = wildcard;#580,16.494892501831053
+return wildcard;#620,16.49374759197235
+Type actualType = getActualTypeArgumentFor(typeParameter);#172,16.487476136949326
+if (type instanceof TypeVariable) {#183,16.46943950653076
+if (genericReturnType instanceof TypeVariable) {#209,16.442517230385228
+if (genericReturnType instanceof Class) {#203,16.441482014126247
+registerTypeVariablesOn(clazz.getGenericSuperclass());#276,16.43988770705003
+public boolean equals(Object o) {#601,16.431654393672943
+public Class<?> rawType() {#345,16.42814391851425
+throw new MockitoException("Raw extraction not supported for : '" + type + "'");#407,16.42725710715017
+return wildcard.hashCode();#611,16.420675980417354
+private final Class<?> clazz;#252,16.41426968574524
+public Class<?> rawType() {#474,16.412004828453064
+return actualTypeArguments;#178,16.408933026450022
+Type type = this.contextualActualTypeParameters.get(typeParameter);#182,16.397134342193603
+throw new MockitoException("Ouch, it shouldn't happen, type '" + genericReturnType.getClass().getCanonicalName() + "' on method : '" + method.toGenericString() + "' is not supported : " + genericReturnType);#213,16.392631912231444
+return returnType;#475,16.390228033065796
+Type firstBound();#490,16.383645216623943
+if (wildCardBoundedType.firstBound() instanceof TypeVariable) {#124,16.379748344421387
+public Class<?> rawType() {#314,16.37965852022171
+public int hashCode() {#553,16.378013815198624
+if (type instanceof ParameterizedType) {#233,16.374843647605495
+public Class<?> rawType() {#383,16.36621904373169
+public TypeVariable typeVariable() {#562,16.360981241861978
+return typeVariable.getBounds()[0]; //#527,16.35880398750305
+Type type = extractActualBoundedTypeOf(typeVariable);#412,16.3311775464278
+if (type instanceof ParameterizedType) {#394,16.32905615930972
+Type[] interfaceBounds();#492,16.328332015446254
+return typeVariable.hashCode();#554,16.32784226066188
+return (Class<?>) parameterizedType.getRawType();#315,16.32137065887451
+for (Type genericInterface : clazz.getGenericInterfaces()) {#277,16.321043703291153
+if (type instanceof BoundedType) {#413,16.320086739280008
+public boolean equals(Object o) {#544,16.315066635608673
+this.typeVariable = typeVariable;#520,16.31332998275757
+for (Type extraInterface : extraInterfaces) {#432,16.311436611673106
+return wildcard.equals(((TypeVarBoundedType) o).typeVariable);#605,16.303754760373025
+return extractRawTypeOf(((BoundedType) type).firstBound());#398,16.300980001688004
+if (actualTypeArgument instanceof WildcardType) {#77,16.30051956176758
+if (type instanceof BoundedType) {#397,16.296611309051514
+for (int i = 0; i < actualTypeArguments.length; i++) {#73,16.279688234682435
+rawExtraInterfaces.add(rawInterface);#436,16.264097531636555
+return new FromClassGenericMetadataSupport((Class<?>) type);#231,16.257460575837356
+if (genericReturnType instanceof ParameterizedType) {#206,16.24191611153739
+public List<Type> extraInterfaces() {#143,16.234150750296457
+private void readActualTypeParameters() {#308,16.226275079390582
+return type; // irrelevant, we don't manage other types as they are not bounded.#457,16.22627223332723
+registerTypeParametersOn(clazz.getTypeParameters());#275,16.20066738128662
+registerTypeVariablesOn(getActualTypeArgumentFor(typeVariable));#379,16.188841655336578
+return (Class<?>) parameterizedType.getRawType();#346,16.186259307861327
+public int hashCode() {#610,16.16261863708496
+if (type instanceof BoundedType) {#450,16.13692925193093
+return new Class[0];#151,16.081323896135604
+readActualTypeParametersOnDeclaringClass(currentExploredClass);#261,16.07515884214832
+registerTypeParametersOn(typeParameters);#372,16.06695952415466
+public FromClassGenericMetadataSupport(Class<?> clazz) {#254,16.000370979309082
+rawType = extractRawTypeOf(typeVariable);#385,15.988149219089085
+public WildcardType wildCard() {#619,15.980118691921234
+private void readTypeParameters() {#371,15.97825558980306
+return boundsOf((TypeVariable) wildCardBoundedType.firstBound());#125,15.961947543280465
+LinkedHashMap<TypeVariable, Type> actualTypeArguments = new LinkedHashMap<TypeVariable, Type>();#168,15.960817691258022
+returnType = (Class<?>) genericReturnType;#470,15.933942960656207
+ParameterizedType parameterizedType = (ParameterizedType) classType;#70,15.930158694585165
+contextualActualTypeParameters.put(typeParameter, actualTypeArgument);#80,15.92734207212925
+private Class superClassOf(Class currentExploredClass) {#265,15.924654506501698
+for (Type type : typeVariable.getBounds()) {#376,15.891739807128907
+Type actualTypeArgument = actualTypeArguments[i];#75,15.875825805664062
+TypeVariable typeVariable = (TypeVariable) type;#184,15.871559184530508
+private void readTypeParameters() {#336,15.865415382385255
+private void readActualTypeParametersOnDeclaringClass(Class<?> clazz) {#274,15.864179399278429
+registerTypeParametersOn(typeParameters);#337,15.860233545303345
+return typeVariable;#563,15.856765568256378
+registerTypeVariablesOn(parameterizedType.getRawType());#309,15.847233630992749
+private void readTypeVariables() {#375,15.842417538166046
+private static class FromClassGenericMetadataSupport extends GenericMetadataSupport {#251,15.839607263866224
+if (!(classType instanceof ParameterizedType)) {#67,15.836611157371884
+return typeVariable.equals(((TypeVarBoundedType) o).typeVariable);#548,15.834788507030856
+private final Class<?> returnType;#467,15.8336261510849
+return new TypeVariableReturnType(this, method.getTypeParameters(), (TypeVariable) genericReturnType);#210,15.831870215279716
+private void readTypeVariables() {#340,15.825667977333069
+return new Type[0];#597,15.803502824571398
+public FromParameterizedTypeGenericMetadataSupport(ParameterizedType parameterizedType) {#303,15.790626635918251
+private final WildcardType wildcard;#576,15.786871910095215
+public interface BoundedType extends Type {#489,15.745803833007812
+return new FromParameterizedTypeGenericMetadataSupport((ParameterizedType) type);#234,15.745297135977909
+registerTypeVariableIfNotPresent(typeVariable);#88,15.74461631341414
+private Class<?> rawType;#358,15.733854293823242
+return (Class<?>) ((ParameterizedType) type).getRawType();#395,15.731265395879745
+public abstract Class<?> rawType();#136,15.716092348098755
+registerTypeVariablesOn(genericInterface);#278,15.708897094726563
+public GenericMetadataSupport resolveGenericReturnType(Method method) {#199,15.703833315107557
+TypeVariable typeParameter = typeParameters[i];#74,15.702943390065974
+public abstract class GenericMetadataSupport {#56,15.685847282409668
+registerTypeVariablesOn(type);#377,15.669398268063864
+return getActualTypeArgumentFor(typeVariable);#185,15.645999670028687
+Type genericReturnType = method.getGenericReturnType();#200,15.642367362976074
+protected Map<TypeVariable, Type> contextualActualTypeParameters = new HashMap<TypeVariable, Type>();#63,15.623626436506
+private static class FromParameterizedTypeGenericMetadataSupport extends GenericMetadataSupport {#300,15.617768015180316
+Type[] actualTypeArguments = parameterizedType.getActualTypeArguments();#72,15.603993709270771
+for (TypeVariable typeVariable : typeParameters) {#87,15.602577611019736
+private final TypeVariable typeVariable;#516,15.570027605692546
+for (TypeVariable typeParameter : typeParameters) {#170,15.539824435585423
+public Map<TypeVariable, Type> actualTypeArguments() {#166,15.509404023488363
+return type; // avoid going one step further, ie avoid : O(TypeVar) -> K(TypeVar) -> Some ParamType#453,15.477617422739664
+throw new MockitoException("Type meta-data for this Type (" + type.getClass().getCanonicalName() + ") is not supported : " + type);#237,15.470496336619059
+return wildCardBoundedType;#128,15.456516075134278
+private final ParameterizedType parameterizedType;#301,15.435147762298584
+private final ParameterizedType parameterizedType;#324,15.407991197374132
+public WildCardBoundedType(WildcardType wildcard) {#579,15.402719194238836
+public ParameterizedReturnType(GenericMetadataSupport source, TypeVariable[] typeParameters, ParameterizedType parameterizedType) {#327,15.391023794809977
+private final TypeVariable typeVariable;#356,15.388144556681315
+private Type extractActualBoundedTypeOf(Type type) {#442,15.349145239049738
+TypeVariable[] typeParameters = rawType().getTypeParameters();#167,15.334386870974587
+TypeVariable[] typeParameters = ((Class<?>) parameterizedType.getRawType()).getTypeParameters();#71,15.300226872967135
+private static class TypeVariableReturnType extends GenericMetadataSupport {#355,15.29384080101462
+registerTypeVariablesOn(parameterizedType);#310,15.19852530437967
+return new TypeVarBoundedType(typeParameter);#108,15.17878898821379
+private Class<?> extractRawTypeOf(Type type) {#390,15.167625972202845
+public static GenericMetadataSupport inferFrom(Type type) {#228,15.14731008866254
+private final TypeVariable[] typeParameters;#325,15.098197996616364
+private static class ParameterizedReturnType extends GenericMetadataSupport {#323,15.076742225223118
+public static class WildCardBoundedType implements BoundedType {#575,15.031240968143239
+WildCardBoundedType wildCardBoundedType = new WildCardBoundedType(wildCard);#123,15.005911268036941
+registerTypeVariablesOn(parameterizedType);#341,14.994696596394414
+return new NotGenericReturnTypeSupport(genericReturnType);#204,14.942445655663809
+private final TypeVariable[] typeParameters;#357,14.803799003362656
+public TypeVariableReturnType(GenericMetadataSupport source, TypeVariable[] typeParameters, TypeVariable typeVariable) {#362,14.773454070091248
+private BoundedType boundsOf(WildcardType wildCard) {#116,14.758931106991238
+public NotGenericReturnTypeSupport(Type genericReturnType) {#469,14.70156174614316
+public TypeVarBoundedType(TypeVariable typeVariable) {#519,14.639154320671445
+public static class TypeVarBoundedType implements BoundedType {#515,14.545284439535703
+private static class NotGenericReturnTypeSupport extends GenericMetadataSupport {#466,14.506689813401964
+private BoundedType boundsOf(TypeVariable typeParameter) {#104,14.499888027415556
+protected Type getActualTypeArgumentFor(TypeVariable typeParameter) {#181,14.457679438591004
+protected void registerTypeParametersOn(TypeVariable[] typeParameters) {#86,14.355479054980808
+protected void registerTypeVariablesOn(Type classType) {#66,14.088557523839613
+private void registerTypeVariableIfNotPresent(TypeVariable typeVariable) {#92,13.814116377579538

@@ -1,0 +1,60 @@
+public class Line implements Embedding<Euclidean3D, Euclidean1D> {#41,18.627321823783543
+final Vector3D n = new Vector3D(1.0, d, -d.dotProduct(direction), direction);#164,17.844297736031667
+throw new MathIllegalArgumentException(LocalizedFormats.ZERO_NORM);#77,17.832016617059708
+return FastMath.abs(offset);#184,17.811285078525543
+final Vector3D closest = closestPoint(line);#215,17.7260352184898
+this.direction = new Vector3D(1.0 / FastMath.sqrt(norm2), delta);#79,17.71376797556877
+return new Vector3D(1.0, zero, abscissa, direction);#121,17.709535598754883
+this.zero      = line.zero;#65,17.68886847723098
+this.direction = line.direction;#64,17.478414833545685
+zero = new Vector3D(1.0, p1, -p1.dotProduct(delta) / norm2, delta);#80,17.47257523787649
+final double b        = delta0.dotProduct(line.direction);#203,17.444125570099928
+final Vector3D d = p.subtract(zero);#163,17.43203102458607
+final double a        = delta0.dotProduct(direction);#202,17.424840114734792
+public Line(final Vector3D p1, final Vector3D p2) throws MathIllegalArgumentException {#54,17.35140899132038
+return line.contains(closest) ? closest : null;#216,17.32726880778437
+public void reset(final Vector3D p1, final Vector3D p2) throws MathIllegalArgumentException {#73,17.273663171132405
+return new Vector1D(getAbscissa((Vector3D) point));#128,17.268078994750976
+return new Vector3D(1, zero, (a - b * cos) / n, direction);#205,17.251232719421388
+return new SubLine(this, new IntervalsSet());#223,17.222741270065306
+final double angle = Vector3D.angle(direction, line.direction);#146,17.197979013125103
+final Vector3D normal = Vector3D.crossProduct(direction, line.direction);#174,17.182784221790456
+final double cos = direction.dotProduct(line.direction);#194,17.171732085091726
+return direction;#95,17.141925118186258
+public Vector1D toSubSpace(final Vector<Euclidean3D> point) {#127,17.122495040893554
+return pointAt(((Vector1D) point).getX());#135,17.09576767141169
+public Vector3D toSpace(final Vector<Euclidean1D> point) {#134,17.073646823565166
+return zero;#198,17.064912605285645
+final Vector3D delta0 = line.zero.subtract(zero);#201,17.041284561157227
+public Vector3D closestPoint(final Line line) {#192,17.027722418308258
+private Vector3D zero;#47,17.018669891357423
+reset(p1, p2);#55,16.983811676502228
+return distance(line.zero);#178,16.960606575012207
+return point.subtract(zero).dotProduct(direction);#113,16.959165182980623
+return zero;#102,16.938756682656027
+final double norm2 = delta.getNormSq();#75,16.89186587333679
+final double offset = line.zero.subtract(zero).dotProduct(normal) / n;#182,16.89099515279134
+final Line reverted = new Line(zero, zero.subtract(direction));#87,16.864073066711427
+final double n = normal.getNorm();#175,16.862166797413547
+final double n = 1 - cos * cos;#195,16.848402500152588
+final Vector3D delta = p2.subtract(p1);#74,16.840461293856304
+public Vector3D getDirection() {#94,16.830922566927395
+public Vector3D pointAt(final double abscissa) {#120,16.77873118718465
+private Vector3D direction;#44,16.778390884399414
+return n.getNorm();#165,16.724767208099365
+public double getAbscissa(final Vector3D point) {#112,16.714155462053085
+return distance(p) < 1.0e-10;#155,16.629696709769114
+return reverted;#88,16.625405051491477
+public Vector3D getOrigin() {#101,16.473530133565266
+public double distance(final Vector3D p) {#162,16.423631858825683
+return ((angle < 1.0e-10) || (angle > (FastMath.PI - 1.0e-10))) && contains(line.zero);#147,16.41621157180431
+public boolean isSimilarTo(final Line line) {#145,16.412687683105467
+public Line revert() {#86,16.28705819447835
+public Line(final Line line) {#63,16.272379795710247
+public double distance(final Line line) {#172,16.258341495807354
+public boolean contains(final Vector3D p) {#154,16.145370801289875
+public Vector3D intersection(final Line line) {#214,16.114841906229653
+if (norm2 == 0.0) {#76,16.021777047051323
+if (n < Precision.SAFE_MIN) {#176,15.932379531860352
+if (n < Precision.EPSILON) {#196,15.893011713027954
+public SubLine wholeLine() {#222,15.73393509604714

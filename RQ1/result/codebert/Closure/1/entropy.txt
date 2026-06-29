@@ -1,0 +1,421 @@
+private final Scope scope;#876,20.416697396172417
+private static boolean isModifiableCallSite(UseSite site) {#627,19.79314841164483
+if (callSiteOptimizer != null) {#160,19.503478940327962
+Continuation(Node node, Scope scope) {#878,19.409690311976842
+implements CompilerPass, OptimizeCalls.CallGraphCompilerPass {#70,19.38717746734619
+private final AbstractCompiler compiler;#417,19.352100805802777
+if (isModifiableCallSite(site)) {#543,19.31426198858964
+AbstractCompiler compiler,#124,19.303605166348543
+private final AbstractCompiler compiler;#72,19.205694410536026
+if (var != null) {#216,19.176248101627124
+case Token.NAME:#261,19.145966269753195
+if (current.isGetProp() &&#950,19.114425827475156
+if (isModifiableCallSite(site)) {#519,19.073705221477308
+if (!isModifiableCallSite(site)) {#571,19.072642577321904
+Scope fnScope =#342,19.066325664520264
+if (param != null) {#473,19.065961837768555
+Node param, int paramIndex,#471,19.063688278198242
+this.scope = scope;#880,19.055018186569214
+Scope scope, Node function, Set<Var> referenced,#470,19.047266292572022
+private CallSiteOptimizer callSiteOptimizer;#121,19.03488084248134
+if (modifyAllCallSites) {#486,19.028777503967284
+if (codingConvention.isExported(var.getName())) {#319,18.985579057173297
+private class Continuation {#874,18.98008292061942
+for (UseSite site : useSites) {#643,18.967918339897604
+if (var != null) {#286,18.928921867819394
+CallSiteOptimizer(#422,18.920721817016602
+public void applyChanges() {#445,18.914273929595947
+final int argIndex) {#589,18.90802710396903
+if (modifyCallSites) {#155,18.904763735257664
+if (arg != null && NodeUtil.mayHaveSideEffects(arg, compiler)) {#523,18.901032638549804
+if (modifyCallSites) {#144,18.893589166494515
+for (Iterator<Var> it = maybeUnreferenced.iterator(); it.hasNext(); ) {#804,18.881314984074347
+if (value != null && var != null && isRemovableVar(var) &&#265,18.8565194947379
+for (int current = 0; current < maybeUnreferenced.size(); current++) {#729,18.84665771631094
+Var var = it.next();#805,18.842716510479267
+switch (type) {#195,18.838294559054905
+void apply() {#883,18.818365454673767
+if (modifiedVar != null && modifiedVar.isGlobal()#252,18.815523647126696
+if (current.isGetElem()) {#976,18.81348032951355
+this.compiler = compiler;#128,18.81306873668324
+if (!NodeUtil.mayHaveSideEffects(arg)) {#576,18.802846749623615
+if (!modifyCallers) {#391,18.790782769521076
+if (var != null && isRemovableVar(var)) {#203,18.751005259427156
+if ((assignedToUnknownValue || maybeEscaped) && hasPropertyAssign) {#762,18.74815010202342
+Var var = scope.getVar(param.getString());#479,18.735295341128396
+private boolean markUnreferencedFunctionArgs(#469,18.732583590916224
+Var var = maybeUnreferenced.get(current);#730,18.71087410336449
+continuations.put(modifiedVar, new Continuation(n, scope));#256,18.692545083852913
+if (toRemove.isParamList() &&#831,18.676572263240814
+String className = codingConvention.getSingletonGetterClassName(n);#242,18.648873703820364
+if (maybeAssign != null) {#212,18.642733630012064
+for (Continuation c : continuations.get(var)) {#789,18.626443672180176
+this.compiler = compiler;#425,18.615563759436974
+private void collectMaybeUnreferencedVars(Scope scope) {#354,18.610416917239917
+private boolean markReferencedVar(Var var) {#787,18.602246148245676
+Var var = null;#194,18.594562106662327
+private final Set<Var> referenced = Sets.newHashSet();#83,18.587045907974243
+if (arg != null) {#545,18.585159918841192
+if (modifyAllCallSites || !hasFollowing) {#495,18.54413366317749
+private static class CallSiteOptimizer {#416,18.53879096291282
+public void optimize(Scope fnScope, Set<Var> referenced) {#429,18.52865941900956
+!NodeUtil.mayHaveSideEffects(value, compiler)) {#266,18.527514161734747
+case Token.CALL:#232,18.502793550491333
+continuations.put(var, new Continuation(n, scope));#270,18.50247220639829
+for (UseSite site : defFinder.getUseSites(definition)) {#518,18.500396609306335
+!NodeUtil.isForIn(var.getParentNode().getParent())) {#739,18.496264710145837
+while (arg != null) {#575,18.483941650390626
+if (!referenced.contains(var)) {#396,18.4792179107666
+if (className != null) {#243,18.472506788041855
+Node value = var.getInitialValue();#740,18.471848533267067
+for (UseSite site : defFinder.getUseSites(definition)) {#542,18.463345011075337
+Var var = it.next();#356,18.46069438640888
+for (Assign assign : assignsByVar.get(var)) {#776,18.45893925114682
+if ("arguments".equals(n.getString()) && scope.isLocal()) {#277,18.454998429616293
+if (assign.isPropertyAssign) {#751,18.449118531268574
+if (isRemovableVar(var)) {#290,18.44447422027588
+for (UseSite site : defFinder.getUseSites(definition)) {#570,18.44426465034485
+CodingConvention convention = compiler.getCodingConvention();#638,18.43867745399475
+if (isRemovableVar(var) &&#220,18.43554908579046
+if (assign.maybeAliased) {#757,18.43256850676103
+if (toRemove.getChildCount() == 1) {#851,18.378233727954683
+if (!SimpleDefinitionFinder.isCallOrNewSite(site)) {#661,18.365087032318115
+if (isRemovableVar(var)) {#357,18.363387286663055
+if (parent.isCall() &&#655,18.35175108909607
+private final Multimap<Var, Continuation> continuations =#116,18.342524230480194
+private final List<Var> maybeUnreferenced = Lists.newArrayList();#88,18.32895369529724
+convention.getClassesDefinedByCall(parent) != null) {#656,18.325882502964564
+assignsByVar.put(var, maybeAssign);#217,18.3175546725591
+toRemove.isParamList() &&#827,18.314746061960857
+toRemove.isFunction() ||#826,18.304125056547278
+for (Assign assign : assignsByVar.get(var)) {#750,18.30228145599365
+if (NodeUtil.isGet(current)) {#946,18.300932089487713
+if (!NodeUtil.mayHaveSideEffects(arg, compiler)#555,18.298077090033168
+if (!(parent.isGetProp() &&#662,18.292623853683473
+classDefiningCalls.put(modifiedVar, parent);#255,18.277608788531758
+current--;#733,18.270434086139385
+Definition definition = getFunctionDefinition(function);#637,18.260002009073894
+@Override#139,18.254822731018066
+Node lastArg;#393,18.252590560913085
+private final List<Node> toReplaceWithZero = Lists.newArrayList();#420,18.24567664753307
+scope, function, referenced, param.getNext(), paramIndex+1,#476,18.24354590688433
+private Definition getFunctionDefinition(Node function) {#690,18.2429256439209
+Collection<UseSite> useSites = defFinder.getUseSites(definition);#642,18.23707628250122
+continuations.put(var, new Continuation(n, scope));#204,18.236412620544435
+if (defSite == null) {#608,18.236266953604563
+Definition definition = defSite.definition;#612,18.229433672768728
+Definition definition = getFunctionDefinition(function);#569,18.228986930847167
+if (current.isName()) {#958,18.22547653743199
+var = scope.getVar(maybeAssign.nameNode.getString());#215,18.22226987061677
+Definition definition = getFunctionDefinition(function);#515,18.217788569132487
+Node arg = getArgumentForCallOrNewOrDotCall(site, argIndex);#544,18.21668831507365
+replacement = IR.comma(#977,18.211261297527113
+if (referenced.contains(var)) {#731,18.210016822814943
+&& !referenced.contains(modifiedVar)) {#253,18.190317726135255
+toRemove.isVar() ||#825,18.187938129200656
+private void traverseFunction(Node n, Scope parentScope) {#334,18.187785466512043
+if (canModifyAllSites#549,18.187605953216554
+if (parent == null) {#650,18.181770451863606
+if (!referenced.contains(var)) {#480,18.16771321296692
+callSiteOptimizer = new CallSiteOptimizer(compiler, defFinder);#157,18.167168397169846
+if (mayHaveSecondarySideEffects) {#969,18.162419617176056
+void remove() {#967,18.16155457496643
+case Token.ASSIGN:#210,18.1574547290802
+toRemove.getChildCount() > 1) {#857,18.156152089436848
+boolean hasFollowing = markUnreferencedFunctionArgs(#475,18.15027141571045
+Definition definition = getFunctionDefinition(function);#540,18.143709437052408
+markReferencedVar(scope.getVar(a.getString()));#280,18.142112239714592
+continuations.put(var, new Continuation(n, scope));#225,18.138988231790478
+for (Iterator<Var> it = scope.getVars(); it.hasNext(); ) {#355,18.134022674560548
+&& !NodeUtil.mayHaveSideEffects(arg, compiler))) {#551,18.117468542522854
+if (parent.isExprResult()) {#986,18.11437283621894
+boolean isPropAssign = false;#944,18.114008835383824
+Collection<Definition> singleSiteDefinitions =#677,18.107020153718835
+&& (!arg.isNumber() || arg.getDouble() != 0)) {#556,18.10447703770229
+private void removeUnreferencedFunctionArgs(Scope fnScope) {#369,18.10394360037411
+if (var.getParentNode().isVar() &&#738,18.101598913019355
+Node arg = getArgumentForCallOrNewOrDotCall(site, argIndex + 1);#574,18.083383083343506
+private final SimpleDefinitionFinder defFinder;#418,18.076395784105575
+if (referenced.contains(var)) {#314,18.070155024528503
+if (!preserveFunctionExpressionNames) {#836,18.057765748765732
+private final CodingConvention codingConvention;#74,18.056732813517254
+assign.assignNode.getLastChild(), true)) {#754,18.049956551913557
+AbstractCompiler compiler,#423,18.038787768437313
+if (parent.isVar()) {#263,18.038285970687866
+for (Node exprCallNode : classDefiningCalls.get(var)) {#809,18.03324047724406
+return null;#961,18.03048292795817
+boolean modifyCallSites) {#127,18.02929584796612
+!maybeAssign.mayHaveSecondarySideEffects) {#221,18.028565900079137
+for (Node current = assignNode.getFirstChild();#973,18.023621845245362
+Var modifiedVar = null;#233,18.02061653137207
+boolean canModifyCallers(Node function) {#602,18.016690254211426
+var = scope.getVar(n.getString());#262,18.014072799682616
+isPropAssign = true;#948,18.004885864257812
+compiler.addToDebugLog("Unreferenced var: " + var.name);#819,18.003636779785158
+current.getLastChild().getString().equals("prototype")) {#951,18.003129217359756
+Scope scope = new SyntacticScopeCreator(compiler).createScope(root, null);#169,18.00166743993759
+private final List<Node> toRemove = Lists.newArrayList();#419,17.998381564491673
+for (Node n : toRemove) {#446,17.991285514831542
+private boolean canRemoveArgFromCallSites(Node function, int argIndex) {#514,17.990013556046918
+private final Multimap<Var, Assign> assignsByVar =#98,17.96377114688649
+boolean canChangeSignature) {#472,17.961309814453124
+Node arg = getArgumentForCallOrNewOrDotCall(site, argIndex);#520,17.955926386515298
+private static Node getArgumentForCallOrNewOrDotCall(UseSite site,#588,17.953655450240426
+if (referenced.add(var)) {#788,17.948565101623537
+if (subclassRelationship != null) {#238,17.947391827901203
+if (NodeUtil.isFunctionDeclaration(node)) {#884,17.943519258499144
+Definition definition = definitionSite.definition;#694,17.94209841319493
+NodeUtil.mayHaveSideEffects(nameNode.getFirstChild(), compiler)) {#847,17.936197149342505
+changes = markReferencedVar(var) || changes;#763,17.932887153625487
+do {#723,17.932507197062176
+for (Node n : toReplaceWithZero) {#450,17.929957495795357
+private final List<Scope> allFunctionScopes = Lists.newArrayList();#93,17.92471448998702
+final Node nameNode;#899,17.91858673095703
+while ((lastArg = argList.getLastChild()) != null) {#394,17.91798621957952
+assignedToUnknownValue = value != null &&#741,17.916703905378068
+for (Node child = node.getFirstChild();#887,17.91348728380705
+hasPropertyAssign = true;#752,17.904581841968355
+Var var = fnScope.getVar(lastArg.getString());#395,17.903294231580652
+Node value = n.getFirstChild();#264,17.90177781958329
+return new Assign(assignNode, current, isPropAssign);#959,17.88653830687205
+markUnreferencedFunctionArgs(#437,17.886260713849747
+compiler.reportCodeChange();#861,17.87826633453369
+|| (arg.getNext() == null#550,17.86785182952881
+CodingConvention convention = codingConvention;#802,17.864208153315953
+this.codingConvention = compiler.getCodingConvention();#129,17.863487946359736
+tryRemoveArgFromCallSites(function, paramIndex, modifyAllCallSites);#491,17.862689659513276
+SubclassRelationship subclassRelationship =#236,17.857828557491302
+&& callSiteOptimizer.canModifyCallers(function);#390,17.854505041371223
+return true;#500,17.852209437977184
+boolean hasPropertyAssign = false;#736,17.8519803153144
+for (Scope fnScope : allFunctionScopes) {#178,17.85033255815506
+boolean modifyAllCallSites = canChangeSignature || !hasFollowing;#485,17.848017692565918
+current = current.getFirstChild();#947,17.832443833351135
+this.assignNode = assignNode;#921,17.82715784708659
+this.isPropertyAssign = isPropertyAssign;#923,17.81872092352973
+continue; // Ignore it.#651,17.803517043590546
+DefinitionSite defSite = defFinder.getDefinitionForFunction(function);#607,17.802498080513693
+traverseNode(c, n, scope);#303,17.795521036783853
+case Token.FUNCTION:#196,17.787141799926758
+boolean changes = false;#722,17.779456032647026
+private boolean canChangeSignature(Node function) {#636,17.766553497314455
+compiler.reportCodeChange();#778,17.764890273412068
+private boolean isRemovableVar(Var var) {#307,17.764424690833458
+if (NodeUtil.isFunctionDeclaration(n)) {#199,17.76144621588967
+NodeUtil.mayHaveSideEffects(assignNode.getFirstChild()) ||#928,17.760020358221873
+private final Node node;#875,17.759536425272625
+private boolean preserveFunctionExpressionNames;#78,17.75549030303955
+SimpleDefinitionFinder defFinder) {#424,17.748682190390195
+final boolean isPropertyAssign;#903,17.740701588717375
+private void removeUnreferencedVars() {#801,17.733650280879093
+DefinitionSite definitionSite = defFinder.getDefinitionForFunction(#691,17.722475624084474
+if (NodeUtil.isGetOrSetKey(function.getParent())) {#383,17.72240854346234
+current = current.getFirstChild()) {#975,17.712790445847943
+Assign maybeAssign = Assign.maybeCreateAssign(n);#211,17.707129796346027
+private final Multimap<Var, Node> classDefiningCalls =#109,17.703756862216526
+for (Node a = lp.getFirstChild(); a != null; a = a.getNext()) {#279,17.69748862584432
+boolean assignedToUnknownValue = false;#735,17.682111263275146
+parent.getChildCount() < 4) {#843,17.677387714385986
+Preconditions.checkState(body.getNext() == null &&#339,17.67499918686716
+Node replacement = assignNode.getLastChild().detachFromParent();#970,17.670435407887336
+if (!assignsByNode.containsKey(n)) {#291,17.66970522650357
+this.node = node;#879,17.666425466537476
+removeUnreferencedVars();#177,17.66244951883952
+private boolean modifyCallSites;#119,17.652177174886067
+this.modifyCallSites = modifyCallSites;#132,17.644634751712573
+maybeUnreferenced.remove(current);#732,17.64276294708252
+modifiedVar = scope.getVar(subclassRelationship.subclassName);#239,17.6351921999896
+NodeUtil.isFunctionObjectCall(parent.getParent()))) {#663,17.629351584116616
+if (NodeUtil.isFunctionObjectApply(parent)) {#668,17.61446016485041
+traverseNode(root, null, scope);#170,17.608794359060433
+assignsByNode.put(maybeAssign.nameNode, maybeAssign);#218,17.603868944891566
+Assign(Node assignNode, Node nameNode, boolean isPropertyAssign) {#919,17.598436442288484
+private static Node getFunctionArgList(Node function) {#412,17.596890108925955
+if (NodeUtil.isVarArgsFunction(function)) {#603,17.596474742889406
+Node argParent = arg.getParent();#546,17.58131658463251
+private void traverseNode(Node n, Node parent, Scope scope) {#192,17.577139405643237
+private void tryRemoveAllFollowingArgs(Node function, final int argIndex) {#568,17.566109475635347
+Node function, int argIndex, boolean canModifyAllSites) {#539,17.56563913822174
+return SimpleDefinitionFinder.isCallOrNewSite(site)#628,17.556582069396974
+nameNode.hasChildren() &&#846,17.554676616893094
+Node nameNode = var.nameNode;#820,17.54470221201579
+compiler.reportCodeChange();#448,17.54449919291905
+callSiteOptimizer.optimize(fnScope, referenced);#404,17.540428400039673
+parent.isFor() &&#842,17.532654881477356
+!current.isName();#974,17.5208605716103
+Node lp = scope.getRootNode().getFirstChild().getNext();#278,17.510849656729864
+private void removeAllAssigns(Var var) {#775,17.506693499428884
+boolean preserveFunctionExpressionNames,#126,17.495855551499588
+if (NodeUtil.isFunctionObjectCall(parent)) {#592,17.491372632980347
+this.defFinder = defFinder;#426,17.490529000759125
+callSiteOptimizer.applyChanges();#161,17.484886741638185
+Node function = fnScope.getRootNode();#430,17.482889652252197
+boolean modifyCallers = modifyCallSites#389,17.47724415705754
+return true;#323,17.470849445887975
+private void tryRemoveArgFromCallSites(#538,17.470479079655238
+collectMaybeUnreferencedVars(scope);#173,17.459002214319565
+final boolean maybeAliased;#917,17.43450050354004
+codingConvention.getClassesDefinedByCall(n);#237,17.43432540159959
+static Assign maybeCreateAssign(Node assignNode) {#936,17.43321755353142
+compiler.reportCodeChange();#398,17.432871878147125
+int type = n.getType();#193,17.423802932103474
+final boolean mayHaveSecondarySideEffects;#914,17.414445656996506
+final Node body = n.getLastChild();#338,17.410589013780868
+Preconditions.checkState(singleSiteDefinitions.size() == 1);#679,17.40703170776367
+this.mayHaveSecondarySideEffects =#926,17.396384493509927
+int adjustedArgIndex = argIndex;#590,17.38773305075509
+Node current = assignNode.getFirstChild();#945,17.38151979446411
+current = current.getFirstChild();#954,17.38120354546441
+this.preserveFunctionExpressionNames = preserveFunctionExpressionNames;#131,17.37068271636963
+boolean maybeEscaped = false;#749,17.36896021225873
+Node externs, Node root, SimpleDefinitionFinder defFinder) {#154,17.359735779140305
+final Node assignNode;#897,17.359152370029026
+for (Node c = n.getFirstChild(); c != null; c = c.getNext()) {#302,17.35192041043882
+traverseFunction(node, scope);#885,17.343722534179687
+this.nameNode = nameNode;#922,17.341065543038503
+if (!SimpleDefinitionFinder.isSimpleFunctionDeclaration(function)) {#616,17.341012651270088
+if (removeGlobals) {#172,17.33929403622945
+this.maybeAliased = NodeUtil.isExpressionResultUsed(assignNode);#925,17.321193621708797
+private final Map<Node, Assign> assignsByNode = Maps.newHashMap();#104,17.318862778799875
+parent.isFunction()) {#832,17.31552630662918
+if (!removeGlobals && var.isGlobal()) {#309,17.313972865833957
+collectMaybeUnreferencedVars(fnScope);#346,17.313105762004852
+compiler.reportCodeChange();#838,17.31013947725296
+assignedToUnknownValue = true;#746,17.30284143749036
+return;#208,17.30177593231201
+Node parent = toRemove.getParent();#822,17.29567616780599
+NodeUtil.mayHaveSideEffects(assignNode.getLastChild());#929,17.293584011219167
+markReferencedVar(var);#295,17.269021120938387
+return true;#531,17.26200951470269
+compiler.reportCodeChange();#864,17.249954019274032
+boolean changeCallSignature = canChangeSignature(function);#436,17.245441085413884
+SimpleDefinitionFinder defFinder = null;#142,17.241065910884313
+defFinder = new SimpleDefinitionFinder(compiler);#146,17.224568166230853
+changes = false;#724,17.22439670562744
+Node argList = getFunctionArgList(function);#432,17.21928052341237
+modifiedVar = scope.getVar(className);#244,17.217087289561395
+Node parent = site.node.getParent();#644,17.21456480026245
+"We should only declare vars and functions and function args");#829,17.211144779039465
+return;#271,17.20790297644479
+assignedToUnknownValue = true;#755,17.174248967851913
+toRemove.getFirstChild().setString("");#837,17.163180260431197
+Node nameNode = site.node;#676,17.16227525472641
+compiler.reportCodeChange();#854,17.16197669506073
+replacement.copyInformationFrom(current);#979,17.160478591918945
+modifyAllCallSites = canRemoveArgFromCallSites(#487,17.152654134310207
+Preconditions.checkState(NodeUtil.isAssignmentOp(assignNode));#937,17.133720728067253
+toRemove.add(arg);#552,17.12283366067069
+traverseNode(body, n, fnScope);#344,17.113606929779053
+traverseFunction(n, scope);#206,17.113394288455737
+var = scope.getVar(n.getFirstChild().getString());#200,17.11072687002329
+!NodeUtil.isLiteralValue(value, true);#742,17.106071625986406
+return definition;#697,17.10456297132704
+break;#259,17.099958419799805
+argList.getFirstChild(), 0, changeCallSignature);#439,17.099128405253094
+private void interpretAssigns() {#721,17.0969500541687
+new SyntacticScopeCreator(compiler).createScope(n, parentScope);#343,17.08814079944904
+Node toRemove = nameNode.getParent();#821,17.073932230472565
+markReferencedVar(var);#292,17.07188121477763
+parent.replaceChild(assignNode, replacement);#983,17.066953659057617
+return NodeUtil.getArgumentForCallOrNew(parent, adjustedArgIndex);#595,17.06494415283203
+tryRemoveAllFollowingArgs(function, paramIndex-1);#504,17.05500704901559
+class RemoveUnusedVars#69,17.051814896719797
+maybeAliased ||#927,17.02882582800729
+removeAllAssigns(var);#817,17.013245514460973
+traverseNode(child, node, scope);#889,17.00860063653243
+compiler.reportCodeChange();#811,16.998087882995605
+function, paramIndex);#488,16.997075307936896
+Node argList = getFunctionArgList(function);#388,16.99669386545817
+return false;#794,16.989148139953613
+body.isBlock());#340,16.98673921472886
+function);#692,16.97552235921224
+Preconditions.checkState(singleSiteDefinitions.contains(definition));#680,16.96926010131836
+@Override#152,16.967751264572144
+Preconditions.checkNotNull(var);#481,16.960616302490234
+Node parent = assignNode.getParent();#968,16.95273412068685
+current--;#765,16.936726633707682
+Preconditions.checkNotNull(defFinder);#156,16.934264289008247
+break;#230,16.931202602386474
+removeUnreferencedFunctionArgs(fnScope);#179,16.92936139948228
+Preconditions.checkNotNull(definitionSite);#693,16.897170852212344
+Node gramps = parent.getParent();#985,16.894553352804746
+Preconditions.checkState(NodeUtil.isAssignmentOp(assignNode));#920,16.8890339411222
+return true;#683,16.879218525356716
+maybeUnreferenced.remove(current);#764,16.8559514392506
+compiler.reportCodeChange();#452,16.85203960963658
+parent.replaceChild(assignNode,#989,16.836194439938193
+current.getLastChild().detachFromParent(), replacement);#978,16.831205433812634
+private static class Assign {#895,16.815985798835754
+return;#257,16.813167413075764
+Preconditions.checkState(!definition.isExtern());#640,16.809660482406617
+boolean removeGlobals,#125,16.797070026397705
+toRemove.add(param);#496,16.794883426867035
+Node parent = site.node.getParent();#591,16.79237949848175
+maybeEscaped = true;#758,16.781879234313966
+return false;#315,16.780249277750652
+Preconditions.checkState(#824,16.77972015967736
+fnScope, function, referenced,#438,16.758920781752643
+private final boolean removeGlobals;#76,16.740223979949953
+maybeUnreferenced.add(var);#358,16.71635823779636
+ArrayListMultimap.create();#110,16.71289873123169
+Preconditions.checkState(n.getChildCount() == 3);#335,16.701385974884033
+Preconditions.checkState(!definitionSite.inExterns);#695,16.700824434107002
+parent.isFunction(),#828,16.696628061930337
+child != null; child = child.getNext()) {#888,16.69219051361084
+return false;#505,16.69208136471835
+RemoveUnusedVars(#123,16.68476366996765
+return hasFollowing;#497,16.67327392101288
+Node function = fnScope.getRootNode();#380,16.671914168766566
+return defFinder.canModifyDefinition(definition);#620,16.67077022128635
+ArrayListMultimap.create();#99,16.66702365875244
+continue;#572,16.659108241399128
+private void traverseAndRemoveUnusedReferences(Node root) {#168,16.65519119898478
+ArrayListMultimap.create();#117,16.630721637180873
+adjustedArgIndex++;#593,16.629434903462727
+return false;#310,16.622582753499348
+parent.replaceChild(toRemove,#852,16.565511332617866
+continue;#657,16.544044812520344
+&& !NodeUtil.isFunctionObjectApply(site.node.getParent());#629,16.543814829417638
+Preconditions.checkState(definition.getRValue() == function);#696,16.543239853598855
+public void process(Node externs, Node root) {#140,16.516519165039064
+return true;#792,16.50749577416314
+return function.getFirstChild().getNext();#413,16.463265419006348
+Preconditions.checkState(function.isFunction());#431,16.453086535135906
+n.getParent().replaceChild(n, IR.number(0).srcref(n));#451,16.447740752121497
+c.apply();#790,16.439614057540894
+return false;#609,16.435558925975453
+IR.exprResult(nameNode.removeFirstChild()));#853,16.432249810960556
+canChangeSignature);#477,16.409743589513443
+return false;#320,16.40292474958632
+argList.removeChild(lastArg);#397,16.376538226478978
+NodeUtil.removeChild(exprCallNode.getParent(), exprCallNode);#810,16.364660263061523
+defFinder.getDefinitionsReferencedAt(nameNode);#678,16.364084950199835
+return false;#527,16.345223133380596
+toRemove.removeChild(nameNode);#860,16.306185834548053
+return false;#669,16.301327558664177
+traverseAndRemoveUnusedReferences(root);#159,16.282349293048565
+return false;#604,16.240455280650746
+defFinder.process(externs, root);#147,16.235947185092503
+toReplaceWithZero.add(arg);#557,16.22955190218412
+interpretAssigns();#176,16.21361753675673
+NodeUtil.removeChild(parent, toRemove);#863,16.213248205184936
+return false;#617,16.188499277288262
+assign.remove();#777,16.17056589126587
+process(externs, root, defFinder);#149,16.159898817539215
+Preconditions.checkState(compiler.getLifeCycleStage().isNormalized());#141,16.158798376719158
+return;#385,16.15386927127838
+gramps.removeChild(parent);#987,16.086950567033554
+arg = arg.getNext();#579,16.081665319554947
+return false;#524,16.024495379130045
+n.getParent().removeChild(n);#447,16.02233992682563
+return false;#664,15.974632708231608
+assignNode.getLastChild().detachFromParent());#990,15.924019850217379
+break;#299,15.905423069000244
+Preconditions.checkState(n.isFunction());#336,15.866632640361786
+toRemove.add(arg);#577,15.838418709604364
+Preconditions.checkState(function.isFunction());#382,15.82603371143341
+return;#226,15.819151937961578
+allFunctionScopes.add(fnScope);#347,15.651111057826451
+break;#400,15.59599765141805
+this.removeGlobals = removeGlobals;#130,15.250590145587921
+public void process(#153,15.227290789286295

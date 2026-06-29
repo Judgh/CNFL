@@ -1,0 +1,317 @@
+String deprecationInfo#298,19.97572968222878
+case Token.NAME:#216,19.365554029291328
+(deprecatedDepth > 0) ||#564,19.128091744014196
+(currentClass == null || ownerType.differsFrom(currentClass))) {#470,19.08620258857464
+if (sameInput) {#466,19.041434015546525
+boolean isOverride = t.inGlobalScope() &&#416,19.010961644789752
+"Variable {0} has been deprecated: {1}");#54,19.008956808792917
+"Property {0} of type {1} has been deprecated: {2}");#62,19.0053475300471
+private int deprecatedDepth = 0;#106,18.987493726942276
+"Access to private variable {0} not allowed outside file {1}.");#75,18.986428508052118
+if (isOverride) {#444,18.977171421051025
+"Variable {0} has been deprecated.");#50,18.949265241622925
+"Access to private property {0} of {1} not allowed here.");#80,18.932721279285573
+boolean sameInput =#440,18.871617126464844
+return ((FunctionType) type).getInstanceType();#200,18.837971855612363
+if (var != null) {#325,18.83654819835316
+private final AbstractCompiler compiler;#102,18.833693504333496
+private int methodDepth = 0;#107,18.813982221815323
+if (deprecationInfo != null &&#241,18.813313039143882
+if (!t.inGlobalScope()) {#144,18.806258715116062
+if (objectType.isInstanceType()) {#387,18.801620721817017
+case Token.NEW:#225,18.801577828147195
+JSDocInfo prototypeInfo#390,18.773507714271545
+methodDepth--;#151,18.761727333068848
+"Access to protected property {0} of {1} not allowed here.");#85,18.760115128976327
+"Class {0} has been deprecated: {1}");#70,18.696029562699167
+Visibility overridingVisibility = overridingInfo == null ?#448,18.67332558882864
+if (!t.inGlobalScope()) {#129,18.668223967918983
+methodDepth++;#139,18.657765282524956
+if (currentClass == null || !currentClass.isSubtype(ownerType)) {#490,18.640541043774835
+if (prototype != null) {#389,18.63042507171631
+private static String getTypeDeprecationInfo(JSType type) {#592,18.62192376454671
+if (docInfo.isConstructor() &&#471,18.611370468139647
+if (methodDepth == 0) {#136,18.602242606026785
+if (deprecationInfo != null &&#301,18.599105707804362
+static final DiagnosticType PRIVATE_OVERRIDE =#87,18.591733805338542
+if (docInfo != null &&#429,18.588088099161784
+"Property {0} of type {1} has been deprecated.");#58,18.571783020382835
+if (lValueType != null && lValueType.isConstructor()) {#169,18.55269824133979
+(getTypeDeprecationInfo(t.getScope().getTypeOfThis()) != null) ||#566,18.536609649658203
+return ((FunctionType) lValueType).getInstanceType();#172,18.53296070098877
+Node parent) {#235,18.521316909790038
+if (methodDepth == 0) {#152,18.520358153751918
+overridingVisibility != visibility) {#459,18.50438569721423
+if (isOverride) {#422,18.501516262690227
+Node getprop) {#351,18.500973874872383
+if (t.inGlobalScope()) {#533,18.49891009697547
+if (info != null && info.isDeprecated()) {#598,18.48296406689812
+if (docInfo != null && docInfo.isDeprecated() &&#269,18.466102098163805
+if (!deprecationInfo.isEmpty()) {#244,18.45887901908473
+if (isDeprecatedFunction(n, parent)) {#132,18.44641309314304
+if (objectType != null) {#297,18.44038399060567
+if (isDeprecatedFunction(n, parent)) {#147,18.437841680314804
+"JSC_PRIVATE_OVERRIDE",#89,18.427579576318916
+String deprecationInfo = getTypeDeprecationInfo(type);#239,18.42388107663109
+this.compiler = compiler;#113,18.416487260298297
+if (prototypeInfo != null && prototypeInfo.isConstant()#392,18.414514581362408
+if (objType != null) {#605,18.40539773305257
+CheckAccessControls(AbstractCompiler compiler) {#112,18.404700132516716
+propertyName,#481,18.387239410763694
+compiler.report(#460,18.38653346470424
+String prop) {#620,18.384179097955876
+if (docInfo != null) {#327,18.376051698412216
+private JSType currentClass = null;#108,18.354698614640668
+if (docInfo.isConstructor() &&#332,18.33214693069458
+if (objectType != null) {#364,18.320475737253826
+"Class {0} has been deprecated.");#66,18.31126469373703
+if (visibility == Visibility.PRIVATE && !sameInput) {#454,18.293035774230958
+"JSC_BAD_PROTECTED_PROPERTY_ACCESS",#84,18.29281185413229
+objectType.toString()));#457,18.29095771789551
+if (!deprecationInfo.isEmpty()) {#304,18.2776595165855
+deprecatedDepth++;#133,18.25457460230047
+"JSC_BAD_PRIVATE_PROPERTY_ACCESS",#79,18.24562474659511
+if (objectType == null) {#435,18.226133550916398
+if (info != null && info.isDeprecated()) {#622,18.210880840525906
+private static String getPropertyDeprecationInfo(ObjectType type,#619,18.198299944400787
+@Override#118,18.195290565490723
+if (oType.hasReferenceName()) {#367,18.18536138534546
+Node getprop, Node parent) {#408,18.17845630645752
+while (oType != null) {#366,18.160879271371023
+compiler.report(#273,18.1517120997111
+return;#468,18.150846640268963
+deprecatedDepth--;#148,18.140736897786457
+if (objectType != null) {#413,18.13382641474406
+oType.getReferenceName(), propertyName)) {#369,18.130144316574622
+compiler.report(#478,18.122535160609655
+@Override#123,18.120258331298828
+Node scopeRoot = t.getScopeRoot();#560,18.11319371632167
+if (type != null) {#238,18.09668844396418
+compiler.report(#455,18.086144583565847
+ObjectType objectType =#293,18.084626621670193
+static final DiagnosticType DEPRECATED_NAME = DiagnosticType.disabled(#48,18.084040546417235
+compiler.report(#245,18.043588399887085
+ObjectType objectType =#359,18.037970119052464
+JSDocInfo overridingInfo = parent.getJSDocInfo();#447,18.03745336117952
+if (type == null) {#593,18.03139001672918
+&& objectType.hasReferenceName()) {#381,18.029612741972272
+for (; objectType != null;#426,18.027387619018555
+if (parent.getType() == Token.NEW) {#289,18.023287885329303
+if (type == null || type.isUnknownType()) {#197,18.01819700353286
+shouldEmitDeprecationWarning(t, n, parent)) {#242,18.01758270263672
+static final DiagnosticType BAD_PRIVATE_PROPERTY_ACCESS =#77,18.0163471698761
+t.makeError(getprop, VISIBILITY_MISMATCH,#461,18.013531239827476
+if (implicitProto != null) {#607,17.99806272983551
+private final Multimap<String, String> initializedConstantProperties;#110,17.987512429555256
+if (!((parent.getType() == Token.CALL && parent.getFirstChild() == n) ||#534,17.974276224772137
+private JSType normalizeClassType(JSType type) {#196,17.963890131782083
+"JSC_DEPRECATED_VAR",#49,17.96271256839528
+compiler.report(#370,17.958885550498962
+!t.getInput().getName().equals(docInfo.getSourceName())) {#331,17.958044543410793
+compiler.report(#305,17.952762126922607
+compiler.report(#337,17.947335515703475
+if (parent.getType() == Token.FUNCTION || parent.getType() == Token.VAR ||#261,17.936719960179822
+compiler.report(#491,17.92815512418747
+static final DiagnosticType DEPRECATED_NAME_REASON = DiagnosticType.disabled(#52,17.924976348876953
+(scopeRootParent != null && scopeRootParent.getType() == Token.ASSIGN &&#568,17.9178115771367
+String propertyName = n.getLastChild().getString();#295,17.91487345975988
+ObjectType oType = objectType;#365,17.904191902705602
+"Overriding private property of {0}.");#90,17.903885884718463
+private final TypeValidator validator;#103,17.90180673599243
+getClassOfMethod(scopeRoot, scopeRootParent)) != null);#570,17.897862214308518
+t.makeError(getprop, PRIVATE_OVERRIDE,#456,17.896138159434
+if (info.getDeprecationReason() != null) {#599,17.885989046096803
+ObjectType objectType =#409,17.88470458984375
+if (lValue.getType() == Token.GETPROP) {#166,17.884596904118855
+"JSC_BAD_PRIVATE_GLOBAL_ACCESS",#74,17.875247750963485
+static final DiagnosticType BAD_PRIVATE_GLOBAL_ACCESS =#72,17.863079595565797
+if (visibility == Visibility.PRIVATE &&#330,17.862100696563722
+return null;#611,17.855079105922155
+DiagnosticType.disabled(#73,17.84919015566508
+ObjectType objType = ObjectType.cast(type);#604,17.825853526592255
+&& (parent.getType() != Token.INC) && (parent.getType() != Token.DEC)) {#355,17.822461677320074
+if (docInfo.getDeprecationReason() != null) {#272,17.821110498337518
+return null;#633,17.809836660112655
+parent.getType() == Token.NAME) {#185,17.807738120739277
+private static JSType dereference(JSType type) {#639,17.8034188747406
+BAD_PRIVATE_PROPERTY_ACCESS,#480,17.78986410940847
+"JSC_DEPRECATED_VAR_REASON",#53,17.78327374458313
+t.makeError(getprop,  BAD_PROTECTED_PROPERTY_ACCESS,#492,17.776721220750076
+class CheckAccessControls implements ScopedCallback, HotSwapCompilerPass {#46,17.771857208675808
+DiagnosticType.disabled(#78,17.76913324991862
+n.getType() == Token.NEW)) {#535,17.765718116760254
+if (lValue.isQualifiedName()) {#165,17.762035369873047
+ObjectType prototype = objectType.getImplicitPrototype();#388,17.76005081903367
+String propertyName = getprop.getLastChild().getString();#361,17.758411672380234
+type.toString(), deprecationInfo));#247,17.758020877838135
+compiler.report(#310,17.747909682137625
+parent.getType() == Token.NEW) {#262,17.74311045596474
+Var var = t.getScope().getVar(name.getString());#324,17.742200803756713
+return#562,17.736185836791993
+checkPropertyVisibility(t, n, parent);#222,17.73339803595292
+static final DiagnosticType DEPRECATED_CLASS = DiagnosticType.disabled(#64,17.727943706512452
+if (implicitProto != null) {#630,17.72402334213257
+"constant property {0} assigned a value more than once");#100,17.721527663144197
+if (info != null && info.isConstant()#380,17.70998191833496
+DiagnosticType.disabled(#93,17.709901014963787
+checkNameDeprecation(t, n, parent);#217,17.70971703529358
+shouldEmitDeprecationWarning(t, n, parent)) {#302,17.70809410095215
+"Overriding {0} property of {1} with {2} property.");#95,17.707754463985047
+= getPropertyDeprecationInfo(objectType, propertyName);#299,17.705867091814678
+return type == null ? null : type.dereference();#640,17.69887138815487
+if (type != null) {#579,17.697226230914776
+static final DiagnosticType DEPRECATED_CLASS_REASON = DiagnosticType.disabled(#68,17.68732896058456
+String propertyName = getprop.getLastChild().getString();#411,17.676346884833443
+checkNameVisibility(t, n, parent);#218,17.660105002553838
+if (parent.getType() == Token.ASSIGN) {#163,17.659149487813313
+if (initializedConstantProperties.containsEntry(#368,17.658585114912555
+JSType ownerType = normalizeClassType(objectType);#443,17.654259204864502
+Visibility visibility = docInfo.getVisibility();#442,17.650457774891574
+Visibility.INHERITED : overridingInfo.getVisibility();#449,17.63219191477849
+case Token.GETPROP:#220,17.630344464228703
+name.getString(), docInfo.getSourceName()));#339,17.628316048652895
+private boolean shouldEmitDeprecationWarning(#526,17.622041702270508
+if (info.getDeprecationReason() != null) {#623,17.61776418685913
+static final DiagnosticType BAD_PROTECTED_PROPERTY_ACCESS =#82,17.610717546372186
+DiagnosticType.disabled(#83,17.60797905921936
+Visibility visibility = docInfo.getVisibility();#329,17.604709273890446
+switch (n.getType()) {#215,17.5950501759847
+DiagnosticType.disabled(#88,17.5894451936086
+JSType lValueType = lValue.getJSType();#168,17.587641372680665
+checkPropertyDeprecation(t, n, parent);#221,17.58171591758728
+getTypeDeprecationInfo(#569,17.57507692064558
+propertyName,#493,17.571384098218836
+Node scopeRootParent = scopeRoot.getParent();#561,17.568107986450194
+"JSC_DEPRECATED_CLASS_REASON",#69,17.560465310749255
+return !canAccessDeprecatedTypes(t);#546,17.54686450958252
+&& prototype.hasReferenceName()) {#393,17.542074767026033
+"JSC_VISIBILITY_MISMATCH",#94,17.539857517589223
+private static boolean isDeprecatedFunction(Node n, Node parent) {#576,17.53492899502025
+JSDocInfo docInfo = var == null ? null : var.getJSDocInfo();#267,17.532295112609862
+return getPropertyDeprecationInfo(implicitProto, prop);#631,17.52854737781343
+overridingVisibility.name()));#463,17.527487335205077
+initializedConstantProperties.put(objectType.getReferenceName(),#382,17.520952805228855
+this.validator = compiler.getTypeValidator();#114,17.515986621379852
+t.makeError(n, DEPRECATED_PROP_REASON, propertyName,#306,17.483196204049246
+visibility.name(), objectType.toString(),#462,17.47773654120309
+DiagnosticType.warning(#98,17.473766088485718
+t.makeError(getprop,#479,17.4681077003479
+shouldEmitDeprecationWarning(t, n, parent)) {#270,17.460052656090777
+JSDocInfo docInfo = null;#425,17.459819094340006
+return parent.getType() != Token.NEW;#517,17.457324028015137
+docInfo.getVisibility() != Visibility.INHERITED) {#430,17.43725769860404
+Node n = t.getScopeRoot();#145,17.420470682779946
+static final DiagnosticType DEPRECATED_PROP = DiagnosticType.disabled(#56,17.419186819167365
+initializedConstantProperties.put(prototype.getReferenceName(),#394,17.41679837153508
+return;#473,17.397589206695557
+return null;#189,17.396280424935476
+getprop.getFirstChild(), true)));#495,17.384311647976148
+objectType = objectType.getImplicitPrototype()) {#427,17.376264095306396
+getprop.getFirstChild(), true)));#483,17.372971415519714
+Scope.Var var = t.getScope().getVar(n.getString());#266,17.371541890231047
+compiler.report(#249,17.370094094957626
+"JSC_DEPRECATED_CLASS",#65,17.36304610967636
+if (n.getType() == Token.FUNCTION) {#577,17.36098475205271
+static final DiagnosticType DEPRECATED_PROP_REASON = DiagnosticType.disabled(#60,17.357915083567303
+private JSType getClassOfMethod(Node n, Node parent) {#162,17.35681634479099
+currentClass = getClassOfMethod(n, parent);#137,17.350386333465575
+Node n = t.getScopeRoot();#130,17.342064094543456
+JSDocInfo docInfo = var.getJSDocInfo();#326,17.33425798870268
+return null;#594,17.308905389573837
+compiler.report(#277,17.3026708761851
+if (owner.isConstructor()) {#203,17.25599848429362
+FunctionType owner = ((FunctionPrototypeType) type).getOwnerFunction();#202,17.24457918513905
+public void enterScope(NodeTraversal t) {#128,17.24428108760289
+parent.getType() == Token.ASSIGN &&#417,17.23963178907122
+t.makeError(n, DEPRECATED_NAME, n.getString()));#278,17.234975039958954
+"JSC_DEPRECATED_PROP_REASON",#61,17.231130027770995
+private boolean canAccessDeprecatedTypes(NodeTraversal t) {#559,17.224165635950424
+static final DiagnosticType VISIBILITY_MISMATCH =#92,17.221300188700358
+t.getInput().getName().equals(docInfo.getSourceName());#441,17.218251058033534
+checkConstantProperty(t, n);#223,17.212237806881177
+return getTypeDeprecationInfo(type) != null;#580,17.207411766052246
+validator.getReadableJSTypeName(n.getFirstChild(), true),#307,17.2046960108989
+if (n.getType() == Token.GETPROP && n == parent.getFirstChild() &&#541,17.203641573588055
+"JSC_DEPRECATED_PROP",#57,17.201313916374655
+"JSC_CONSTANT_PROPERTY_REASSIGNED_VALUE",#99,17.197556177775066
+ObjectType implicitProto = objType.getImplicitPrototype();#606,17.1842656816755
+JSDocInfo info = objectType.getOwnPropertyJSDocInfo(propertyName);#379,17.179000084216778
+JSType type = n.getJSType();#236,17.175511121749878
+JSDocInfo info = type.getJSDocInfo();#597,17.15904320610894
+return normalizeClassType(lValue.getFirstChild().getJSType());#176,17.14785410563151
+return owner.getInstanceType();#204,17.13803825378418
+return getTypeDeprecationInfo(implicitProto);#608,17.11695148831322
+t.makeError(n, DEPRECATED_NAME_REASON, n.getString(),#274,17.104258761686438
+ObjectType.cast(dereference(getprop.getFirstChild().getJSType()));#410,17.09753131866455
+isValidPrivateConstructorAccess(parent)) {#472,17.095697045326233
+JSDocInfo info = type.getOwnPropertyJSDocInfo(prop);#621,17.092036203904584
+return;#290,17.081511855125427
+docInfo.getDeprecationReason()));#275,17.073532287891094
+deprecationInfo));#308,17.072711654331375
+t.makeError(n, DEPRECATED_CLASS, type.toString()));#250,17.049754226908963
+ObjectType.cast(dereference(n.getFirstChild().getJSType()));#294,17.049237876102843
+ObjectType.cast(dereference(getprop.getFirstChild().getJSType()));#360,17.031435421534947
+JSType type = n.getJSType();#578,17.02550485399034
+= prototype.getOwnPropertyJSDocInfo(propertyName);#391,16.981781225938064
+break;#224,16.981556510925294
+if (!(NodeUtil.isAssignmentOp(parent) && parent.getFirstChild() == getprop)#354,16.980150288548963
+return normalizeClassType(lValue.getJSType());#181,16.97284483909607
+currentClass = null;#153,16.971743950477013
+return "";#602,16.96525213453505
+return;#334,16.962451798575266
+return;#263,16.96223509311676
+Node lValue = parent.getFirstChild();#164,16.953260719776154
+t.makeError(n, DEPRECATED_CLASS_REASON,#246,16.94715488318241
+docInfo = objectType.getOwnPropertyJSDocInfo(propertyName);#428,16.942140159606932
+return;#437,16.911572551727296
+return type;#198,16.860637770758736
+return true;#211,16.858776773725236
+ObjectType implicitProto = type.getImplicitPrototype();#629,16.858235994974773
+public void exitScope(NodeTraversal t) {#143,16.844698565346853
+NodeUtil.isAssignmentOp(parent)) {#542,16.818878507614137
+validator.getReadableJSTypeName(#494,16.81403923034668
+private void checkNameVisibility(NodeTraversal t, Node name, Node parent) {#323,16.799539999528363
+public void hotSwapScript(Node scriptRoot) {#124,16.792128699166433
+Node parent = n.getParent();#131,16.789526326315745
+return false;#584,16.789062772478378
+static final DiagnosticType CONST_PROPERTY_REASSIGNED_VALUE =#97,16.78377887180873
+private static boolean isValidPrivateConstructorAccess(Node parent) {#516,16.76401150226593
+return type;#207,16.758707318987167
+Node parent = n.getParent();#146,16.74336964743478
+t.makeError(n, DEPRECATED_PROP, propertyName,#311,16.735963374376297
+validator.getReadableJSTypeName(#482,16.72156675930681
+validator.getReadableJSTypeName(n.getFirstChild(), true)));#312,16.69390186510588
+NodeTraversal t, Node n, Node parent) {#527,16.685233367116826
+objectType = objectType.getImplicitPrototype();#423,16.67831435203552
+return false;#543,16.666980531480576
+isValidPrivateConstructorAccess(parent)) {#333,16.665648063023884
+this.initializedConstantProperties = HashMultimap.create();#115,16.661144758525648
+break;#219,16.6254282951355
+propertyName);#383,16.605194028218587
+propertyName));#372,16.592134185459305
+t.makeError(name, BAD_PRIVATE_GLOBAL_ACCESS,#338,16.577779741848218
+public void process(Node externs, Node root) {#119,16.563963254292805
+NodeTraversal.traverse(compiler, root, this);#120,16.538670238695648
+private void checkNameDeprecation(NodeTraversal t, Node n, Node parent) {#259,16.53397850368334
+return "";#627,16.526538848876953
+NodeTraversal.traverse(compiler, scriptRoot, this);#125,16.518642044067384
+oType = oType.getImplicitPrototype();#376,16.506088495254517
+t.makeError(getprop, CONST_PROPERTY_REASSIGNED_VALUE,#371,16.48896433177747
+propertyName);#395,16.446988758287933
+private void checkPropertyDeprecation(NodeTraversal t, Node n, Node parent) {#287,16.41070382491402
+public boolean shouldTraverse(NodeTraversal t, Node n, Node parent) {#210,16.409111522492907
+return normalizeClassType(n.getJSType());#186,16.386401678386488
+return;#356,16.38407552242279
+return info.getDeprecationReason();#600,16.351618317996753
+public void visit(NodeTraversal t, Node n, Node parent) {#214,16.325105616920872
+parent.getFirstChild() == getprop;#418,16.297126960754394
+return info.getDeprecationReason();#624,16.264002295101392
+break;#373,16.16193131038121
+return false;#536,16.11450836875222
+private void checkPropertyVisibility(NodeTraversal t,#407,16.06911652882894
+checkConstructorDeprecation(t, n, parent);#226,16.060805275326683
+break;#431,15.988198518753052
+Node parent = getprop.getParent();#353,15.932846216055063
+private void checkConstantProperty(NodeTraversal t,#350,15.860843086242676
+private void checkConstructorDeprecation(NodeTraversal t, Node n,#234,15.401317501068116
+break;#227,15.002253818511964

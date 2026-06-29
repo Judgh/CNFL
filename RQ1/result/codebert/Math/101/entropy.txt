@@ -1,0 +1,180 @@
+private char parseNextCharacter(String source, ParsePosition pos) {#410,15.068160458614951
+public class ComplexFormat extends Format implements Serializable {#36,14.967612353238193
+public NumberFormat getImaginaryFormat() {#265,14.751787287848336
+public String getImaginaryCharacter() {#257,14.732570574833797
+if( Double.isNaN(value) || Double.isInfinite(value) ) {#211,14.654104002590838
+public StringBuffer format(Object obj, StringBuffer toAppendTo,#174,14.59662191491378
+public NumberFormat getRealFormat() {#291,14.545490463574728
+private Number parseNumber(String source, NumberFormat format, ParsePosition pos) {#470,14.318542610515248
+private static NumberFormat getDefaultNumberFormat() {#236,14.243281841278076
+public ComplexFormat(String imaginaryCharacter, NumberFormat realFormat,#108,14.242997898774988
+public static Locale[] getAvailableLocales() {#226,14.212478001912435
+public StringBuffer format(Complex complex, StringBuffer toAppendTo,#136,14.205247688293458
+int n = getImaginaryCharacter().length();#374,14.193170095744886
+public Object parseObject(String source, ParsePosition pos) {#498,14.152989281548393
+Number im = parseNumber(source, getRealFormat(), pos);#364,14.11513241854581
+private static final String DEFAULT_IMAGINARY_CHARACTER = "i";#42,14.11418458689814
+private void parseAndIgnoreWhitespace(String source, ParsePosition pos) {#398,14.103096381477688
+public void setRealFormat(NumberFormat realFormat) {#535,14.101682543754578
+private static NumberFormat getDefaultNumberFormat(Locale locale) {#247,14.056999153561062
+private Number parseNumber(String source, double value, ParsePosition pos) {#439,14.055866014389764
+private StringBuffer formatDouble(double value, NumberFormat format,#209,14.044977580799776
+public void setImaginaryFormat(NumberFormat imaginaryFormat) {#521,14.022519164615208
+private NumberFormat imaginaryFormat;#48,14.00061092376709
+public void setImaginaryCharacter(String imaginaryCharacter) {#507,13.931403272292194
+private NumberFormat realFormat;#51,13.90690221786499
+this(DEFAULT_IMAGINARY_CHARACTER, realFormat, imaginaryFormat);#78,13.899868522371564
+public ComplexFormat(NumberFormat realFormat,#76,13.870679195110615
+this(DEFAULT_IMAGINARY_CHARACTER, getDefaultNumberFormat());#58,13.85541131761339
+formatDouble(re, getRealFormat(), toAppendTo, pos);#144,13.719985644022623
+public static ComplexFormat getInstance(Locale locale) {#282,13.707723259925842
+if (imaginaryCharacter == null || imaginaryCharacter.length() == 0) {#508,13.69633430480957
+public ComplexFormat(String imaginaryCharacter, NumberFormat format) {#96,13.67080862381879
+sb.append('(');#443,13.625611877441406
+public static ComplexFormat getInstance() {#273,13.585176547368368
+private String imaginaryCharacter;#45,13.559560351901585
+public Complex parse(String source, ParsePosition pos) {#320,13.495574838974896
+private static final long serialVersionUID = -6337346779577272306L;#39,13.482387145360311
+double im = complex.getImaginary();#147,13.460936652289497
+Number re = parseNumber(source, getRealFormat(), pos);#327,13.419906182722611
+public static String formatComplex( Complex c ) {#123,13.380357805887858
+public ComplexFormat(String imaginaryCharacter) {#86,13.348900501544659
+char c = parseNextCharacter(source, pos);#338,13.343809428967928
+public Complex parse(String source) throws ParseException {#303,13.327049493789673
+return new Complex(re.doubleValue(), im.doubleValue() * sign);#388,13.261270065307617
+this(DEFAULT_IMAGINARY_CHARACTER, format);#67,13.25208067893982
+public ComplexFormat() {#57,13.233836279975044
+public ComplexFormat(NumberFormat format) {#66,13.163813737722544
+this(imaginaryCharacter, format, (NumberFormat)format.clone());#97,13.14253713687261
+parseAndIgnoreWhitespace(source, pos);#361,13.140967178344727
+formatDouble(-im, getImaginaryFormat(), toAppendTo, pos);#150,13.043800926208496
+formatDouble(im, getImaginaryFormat(), toAppendTo, pos);#154,13.037506850560506
+if (im == null) {#365,13.004406102498372
+double[] special = {Double.NaN, Double.POSITIVE_INFINITY, Double.NEGATIVE_INFINITY};#478,13.003790514809745
+StringBuffer sb = new StringBuffer();#442,12.962026371675378
+sb.append(')');#445,12.931297111511231
+parseAndIgnoreWhitespace(source, pos);#324,12.885649764537812
+if (re == null) {#328,12.873597081502279
+double re = complex.getReal();#143,12.829376071691513
+NumberFormat nf = NumberFormat.getInstance(locale);#248,12.796153957193548
+setImaginaryCharacter(imaginaryCharacter);#111,12.79310909907023
+for (int i = 0; i < special.length; ++i) {#479,12.776823339791134
+return getDefaultNumberFormat(Locale.getDefault());#237,12.753831911087037
+StringBuffer ret = null;#177,12.747910840170723
+Number number = format.parse(source, pos);#472,12.747751436735454
+setImaginaryFormat(imaginaryFormat);#112,12.742692947387695
+if (endIndex < source.length()) {#450,12.672298007541233
+this(imaginaryCharacter, getDefaultNumberFormat());#87,12.667120230825324
+NumberFormat f = getDefaultNumberFormat(locale);#283,12.661807417869568
+int n = source.length();#412,12.605281263589859
+if (source.substring(startIndex, endIndex).compareTo(sb.toString()) == 0) {#451,12.576260165164346
+case '+' :#348,12.556353569030762
+source.substring(startIndex, endIndex).compareTo(#378,12.541952221481889
+toAppendTo.append(getImaginaryCharacter());#151,12.516646156311035
+Number ret = null;#440,12.508120316725512
+case '-' :#345,12.46587852636973
+default :#351,12.441745567321778
+int sign = 0;#339,12.431329873891977
+int n = sb.length();#447,12.428382337093353
+return getInstance(Locale.getDefault());#274,12.410763263702393
+int initialIndex = pos.getIndex();#321,12.404978639939252
+ParsePosition parsePosition = new ParsePosition(0);#304,12.396883101690383
+if (parsePosition.getIndex() == 0) {#306,12.39161033630371
+"Cannot format given Object as a Date");#186,12.360968626462496
+if (imaginaryFormat == null) {#522,12.349980073816637
+this.imaginaryFormat = imaginaryFormat;#526,12.312309713924632
+ret = format( (Complex)obj, toAppendTo, pos);#180,12.306166385782175
+char ret = 0;#413,12.3047696522304
+int startIndex = pos.getIndex();#337,12.296526964973001
+throw new IllegalArgumentException(#185,12.28546795092131
+return toAppendTo;#158,12.270336491721016
+pos.setIndex(pos.getIndex() - 1);#400,12.270057610103063
+toAppendTo.append(getImaginaryCharacter());#155,12.263799362182617
+pos.setEndIndex(0);#140,12.263735055923462
+getImaginaryCharacter()) != 0) {#379,12.258688579906117
+return NumberFormat.getAvailableLocales();#227,12.243467330932617
+if (realFormat == null) {#536,12.215823501348495
+setRealFormat(realFormat);#113,12.155535316467285
+if (obj instanceof Complex) {#179,12.152334332466125
+startIndex = pos.getIndex();#375,12.114025712013245
+int index = pos.getIndex();#411,12.106418441323672
+this.imaginaryCharacter = imaginaryCharacter;#512,12.105600525351132
+int startIndex = pos.getIndex();#471,12.091274598065544
+if (im < 0.0) {#148,12.073025703430176
+sb.append(value);#444,12.059665648142497
+this.realFormat = realFormat;#540,12.051578342914581
+if (startIndex == endIndex) {#476,11.966008522931267
+int endIndex = pos.getIndex();#473,11.877805541543399
+StringBuffer toAppendTo, FieldPosition pos) {#210,11.876434028148651
+int startIndex = pos.getIndex();#448,11.837827962987562
+pos.setIndex(endIndex);#386,11.834745407104492
+ret = format( new Complex(((Number)obj).doubleValue(), 0.0),#182,11.82442751238423
+throw new IllegalArgumentException(#537,11.791379803105405
+toAppendTo.append('(');#212,11.791145415533157
+FieldPosition pos) {#175,11.756564476910759
+nf.setMaximumFractionDigits(2);#249,11.754075121879577
+throw new ParseException("Unparseable complex number: \"" + source +#307,11.689008712768555
+sign = -1;#346,11.668343712301816
+throw new IllegalArgumentException(#523,11.660431636007209
+pos.setIndex(initialIndex);#355,11.652328968048096
+toAppendTo.append(" - ");#149,11.648171923377298
+if (index < n) {#415,11.642849743366241
+Complex result = parse(source, parsePosition);#305,11.638492981592814
+pos.setBeginIndex(0);#139,11.621463596820831
+return ret;#189,11.588682087984951
+parseNextCharacter(source, pos);#399,11.576545625925064
+return toAppendTo;#218,11.550567695072719
+FieldPosition pos) {#137,11.54911355411305
+return getInstance().format( c );#124,11.544338077306747
+pos.setErrorIndex(startIndex);#356,11.537536711919875
+toAppendTo.append(')');#214,11.524924051193963
+throw new IllegalArgumentException(#509,11.517551447215833
+case 0 :#341,11.515315315940164
+int endIndex = startIndex + n;#376,11.48451976215138
+return number;#487,11.477139126170766
+sign = 1;#349,11.472793579101562
+toAppendTo.append(" + ");#153,11.444733251224864
+format.format(value, toAppendTo, pos);#216,11.434718227386474
+if (#377,11.419191932678222
+pos.setIndex(index);#420,11.408326601982116
+return ret;#427,11.396458983421326
+number = parseNumber(source, special[i], pos);#480,11.39134193288869
+return ret;#457,11.306427218697287
+break;#350,11.298672267368861
+pos.setErrorIndex(startIndex);#383,11.281070572989327
+return new Complex(re.doubleValue(), 0.0);#344,11.2529585647583
+NumberFormat imaginaryFormat) {#109,11.250913990868462
+int endIndex = startIndex + n;#449,11.209608106052174
+pos.setIndex(initialIndex);#382,11.19315218925476
+pos.setIndex(initialIndex);#369,11.189391040802002
+pos.setIndex(initialIndex);#332,11.185689306259155
+"\"", parsePosition.getErrorIndex());#308,11.125818325923039
+return null;#370,11.123673756917318
+NumberFormat imaginaryFormat) {#77,11.116603745354546
+"imaginaryCharacter must be a non-empty string.");#510,11.093329873578302
+switch (c) {#340,11.055419261638935
+break;#347,11.031586715153285
+return new ComplexFormat(f);#284,11.010247611999512
+char c;#416,10.972072035074234
+if (number != null) {#481,10.970091446586277
+if (index < n) {#422,10.959085869789124
+"imaginaryFormat can not be null.");#524,10.808163844622099
+toAppendTo.append(value);#213,10.79963986078898
+return null;#357,10.758782450358073
+ret = new Double(value);#452,10.647807059080705
+return imaginaryCharacter;#258,10.629218538602194
+return parse(source, pos);#499,10.628460343678793
+c = source.charAt(index++);#418,10.614710966746012
+return result;#310,10.582360397685658
+return realFormat;#292,10.562240759531656
+toAppendTo, pos);#183,10.529321711996328
+return null;#333,10.521751499176025
+pos.setIndex(endIndex);#453,10.471019327640533
+"realFormat can not be null.");#538,10.467885780334473
+return imaginaryFormat;#266,10.42126758893331
+return nf;#250,10.381121039390564
+super();#110,10.33242359161377
+return null;#384,10.17380797068278
+do {#417,9.485060532887777
+ret = c;#423,9.444389979044596
+break;#482,9.268724203109741

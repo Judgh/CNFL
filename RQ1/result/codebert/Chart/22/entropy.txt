@@ -1,0 +1,149 @@
+public Object clone() throws CloneNotSupportedException {#453,20.532341820853098
+public List getColumnKeys() {#197,19.860671390186656
+private List columnKeys;#66,19.749060312906902
+public int getColumnCount() {#98,19.60203673622825
+private List rowKeys;#63,19.50260003407796
+Iterator iterator = this.rows.iterator();#458,19.305410597059463
+public Comparable getColumnKey(int column) {#173,19.24703178405762
+private List rows;#69,19.238201141357422
+for (int c = 0; c < colCount; c++) {#414,19.177247435958297
+Iterator iterator = this.rows.iterator();#375,19.17567205429077
+public int hashCode() {#437,19.153772830963135
+public List getRowKeys() {#160,19.11583935130726
+for (int r = 0; r < rowCount; r++) {#413,19.02686297375223
+public int getRowCount() {#87,19.02323124625466
+public int getColumnIndex(Comparable key) {#186,19.001828956604005
+public Object getObject(int row, int column) {#112,18.89146649837494
+int rowCount = getRowCount();#405,18.87871640920639
+if (rowCount != that.getRowCount()) {#406,18.84970760345459
+if (obj == this) {#391,18.845800844828286
+public void removeColumn(int columnIndex) {#355,18.828364644731796
+Object result = null;#113,18.78025275010329
+int result;#438,18.776597716591574
+else {#273,18.73463382720947
+while (iterator.hasNext()) {#459,18.732016503810883
+if (colCount != that.getColumnCount()) {#410,18.619877433776857
+public boolean equals(Object obj) {#390,18.595067977905273
+public int getRowIndex(Comparable key) {#149,18.593880526224773
+if (!getColumnKeys().equals(that.getColumnKeys())) {#402,18.585216178894044
+while (iterator.hasNext()) {#376,18.57694762945175
+public Object getObject(Comparable rowKey, Comparable columnKey) {#214,18.434485149383544
+Comparable columnKey) {#248,18.404083304935032
+public Comparable getRowKey(int row) {#136,18.40378189086914
+if (rowKey == null) {#215,18.402617633342743
+public KeyedObjects2D() {#74,18.400451513437126
+private static final long serialVersionUID = -1015873563138522374L;#60,18.389878148617953
+if (row >= 0) {#231,18.361897468566895
+int colCount = getColumnCount();#409,18.332410097122192
+public void removeColumn(Comparable columnKey) {#369,18.32571531931559
+throw new IllegalArgumentException("Null 'rowKey' argument.");#216,18.255648577654803
+int row = this.rowKeys.indexOf(rowKey);#221,18.24778734553944
+item++) {#305,18.243850529193878
+throw new IllegalArgumentException("Null 'columnKey' argument.");#266,18.222187536734122
+if (rowKey == null) {#262,18.219796419143677
+Comparable columnKey) {#260,18.208994918399387
+if (index < 0) {#371,18.19971930185954
+if (row.getObject(item) != null) {#306,18.19834144592285
+if (!(obj instanceof KeyedObjects2D)) {#394,18.194732666015625
+clone.rowKeys = new java.util.ArrayList(this.rowKeys);#456,18.194567570319542
+result = 29 * result + this.columnKeys.hashCode();#440,18.191352800889447
+clone.columnKeys = new java.util.ArrayList(this.columnKeys);#455,18.126023329221287
+else {#422,18.114530192481148
+if (columnKey == null) {#218,18.111280977725983
+public void removeRow(Comparable rowKey) {#343,18.100472704569498
+if (v1 == null) {#417,18.089808424313862
+public void removeRow(int rowIndex) {#329,18.087934357779368
+Object v1 = getObject(r, c);#415,18.081109435470015
+throw new IllegalArgumentException("Null 'rowKey' argument.");#263,18.080853426897967
+if (columnKey == null) {#265,18.07710099220276
+if (allNull) {#312,18.076400552477157
+Object v2 = that.getObject(r, c);#416,18.05893375133646
+if (row < 0) {#222,18.042871030171714
+if (rowIndex >= 0) {#270,18.03909134864807
+int rowIndex = getRowIndex(rowKey);#301,18.029382354334782
+throw new IllegalArgumentException("Null 'columnKey' argument.");#219,18.02454517505787
+int column = this.columnKeys.indexOf(columnKey);#226,17.990007270466197
+if (!getRowKeys().equals(that.getRowKeys())) {#399,17.982189102172853
+Comparable columnKey = (Comparable) this.columnKeys.get(column);#116,17.957384045918783
+if (rowData != null) {#115,17.953691005706787
+if (columnKey != null) {#117,17.943004846572876
+public void removeObject(Comparable rowKey, Comparable columnKey) {#296,17.933858776092528
+int columnIndex = this.columnKeys.indexOf(columnKey);#279,17.926021575927734
+result = 29 * result + this.rows.hashCode();#441,17.89842360360282
+return result;#442,17.86815573952415
+if (column < 0) {#227,17.86797555287679
+this.rowKeys = new java.util.ArrayList();#75,17.849845522925968
+int rowIndex = this.rowKeys.indexOf(rowKey);#269,17.848630614902664
+result = this.rowKeys.hashCode();#439,17.79123041364882
+this.columnKeys = new java.util.ArrayList();#76,17.77498236156645
+for (int item = 0, itemCount = row.getItemCount(); item < itemCount;#304,17.77277240753174
+if (v2 != null) {#418,17.763796431677683
+int index = getColumnIndex(columnKey);#370,17.7546526061164
+clone.rows = new java.util.ArrayList(this.rows.size());#457,17.72694360292875
+this.rows = new java.util.ArrayList();#77,17.702904748916627
+return (Comparable) this.rowKeys.get(row);#137,17.673984397541393
+return result;#124,17.63084298914129
+return (Comparable) this.columnKeys.get(column);#174,17.628958875482734
+throw new UnknownKeyException("Column key (" + columnKey#228,17.489011154174804
+setObject(null, rowKey, columnKey);#297,17.483882703279193
++ ") not recognised.");#373,17.465138894540292
+KeyedObjects2D clone = (KeyedObjects2D) super.clone();#454,17.45372932297843
+KeyedObjects rowData = (KeyedObjects) this.rows.get(row);#114,17.446031110040074
+KeyedObjects row = (KeyedObjects) this.rows.get(rowIndex);#302,17.429186525015997
++ ") not recognised.");#224,17.42780918545193
+return this.columnKeys.size();#99,17.426645576953888
+public void setObject(Object object, Comparable rowKey,#259,17.407019509209526
+if (index >= 0) {#119,17.396891428076703
+KeyedObjects2D that = (KeyedObjects2D) obj;#398,17.39468812942505
+if (columnIndex < 0) {#280,17.391685485839844
+KeyedObjects row;#268,17.380775383540563
+return this.rowKeys.size();#88,17.378088533878326
++ ") not recognised.");#229,17.34198142864086
+throw new UnknownKeyException("Column key (" + columnKey#372,17.34032314300537
+if (!v1.equals(v2)) {#423,17.336764574050903
+public void addObject(Object object, Comparable rowKey,#247,17.32495207256741
+throw new UnknownKeyException("Row key (" + rowKey#223,17.315257873535156
+return Collections.unmodifiableList(this.columnKeys);#198,17.294315292721702
+row.setObject(columnKey, object);#278,17.28194040722317
+public class KeyedObjects2D implements Cloneable, Serializable {#57,17.25987410545349
+setObject(object, rowKey, columnKey);#249,17.23430367519981
+return this.columnKeys.indexOf(key);#187,17.228504532261898
+return true;#429,17.227389855818316
+return Collections.unmodifiableList(this.rowKeys);#161,17.218232518150693
+else {#235,17.20552177429199
+return clone;#463,17.184414690191094
+KeyedObjects rowData = (KeyedObjects) this.rows.get(row);#232,17.154944584287446
+return this.rowKeys.indexOf(key);#150,17.137870085866826
+int index = getRowIndex(rowKey);#344,17.13219674428304
+KeyedObjects rowData = (KeyedObjects) iterator.next();#377,17.056501914714946
+Comparable columnKey = getColumnKey(columnIndex);#356,16.988995409011842
+boolean allNull = true;#300,16.98388413020543
+return false;#411,16.972516123453776
+KeyedObjects row = (KeyedObjects) iterator.next();#460,16.92195395060948
+row = (KeyedObjects) this.rows.get(rowIndex);#271,16.856902582892054
+this.rows.remove(rowIndex);#331,16.853814629947436
+return false;#407,16.824216715494792
+this.rowKeys.remove(rowIndex);#330,16.747762150234646
+int index = rowData.getIndex(columnKey);#118,16.74546320097787
+this.columnKeys.remove(columnKey);#380,16.672698815663654
+removeColumn(columnKey);#357,16.670789105551584
+row = new KeyedObjects();#275,16.58975772857666
+return null;#236,16.589265314737954
+return false;#395,16.587914403279623
+removeRow(index);#345,16.582966070908768
+return true;#392,16.524355697631837
+return false;#403,16.508200263977052
+return false;#400,16.50587100982666
+this.rows.add(row);#276,16.505490732192992
+return false;#419,16.505447034482604
+return rowData.getObject(columnKey);#233,16.27622764760798
+this.rowKeys.remove(rowIndex);#313,16.15539130297574
+this.rows.remove(rowIndex);#314,16.107529276893253
+return false;#424,16.069535361395943
+this.rowKeys.add(rowKey);#274,16.024712779305197
+result = rowData.getObject(columnKey);#120,15.983216900979318
+clone.rows.add(row.clone());#461,15.890518795360219
+this.columnKeys.add(columnKey);#281,15.464478796178645
+allNull = false;#307,15.415844417753673
+break;#308,15.276426421271431
+rowData.removeValue(columnKey);#378,15.208061866760254

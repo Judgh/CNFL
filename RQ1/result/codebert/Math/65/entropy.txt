@@ -1,0 +1,136 @@
+protected double[] targetValues;#71,19.17507162094116
+double sum = 0;#281,19.03098982856387
+double chiSquare = 0;#255,18.91957868848528
+final double factor = -Math.sqrt(residualsWeights[i]);#192,18.914097570603893
+protected double cost;#89,18.85073184967041
+double criterion = 0;#240,18.805808287400467
+protected double[] objective;#83,18.718985557556152
+if (++objectiveEvaluations > maxEvaluations) {#208,18.575230556985606
+sum += jacobian[k][i] * jacobian[k][j];#283,18.569552956557857
+return inverse.getData();#294,18.496416727701824
+errors[i] = Math.sqrt(covar[i][i]) * c;#321,18.424001346934926
+final double c = Math.sqrt(getChiSquare() / (rows - cols));#318,18.31244652846764
+double[][] covar = getCovariances();#319,18.285592215401785
+return Math.sqrt(criterion / rows);#245,18.265122212861712
+if (target.length != weights.length) {#332,18.23365397202341
+for (int k = 0; k < rows; ++k) {#282,18.211008687173166
+protected double[] point;#80,18.17698245578342
+protected double[] residuals;#86,18.176033782958985
+private DifferentiableMultivariateVectorialFunction function;#107,18.06725025177002
+if (objective.length != rows) {#213,18.05981339348687
+cost = Double.POSITIVE_INFINITY;#355,18.003087711334228
+RealMatrix inverse =#292,17.98968231678009
+protected double[] residualsWeights;#77,17.965609629948933
+public double[] guessParametersErrors()#310,17.96125332514445
+protected void updateResidualsAndCost()#205,17.897507463182723
+cost = 0;#217,17.893253882726032
+if (++iterations > maxIterations) {#173,17.8901727074071
+if (jacobian.length != rows) {#186,17.873228223700274
+return iterations;#134,17.860634890469637
+final double residual = targetValues[i] - objective[i];#220,17.81876802444458
+updateJacobian();#275,17.813536882400513
+for (int i = 0; i < rows; i++) {#219,17.787158662622627
+try {#290,17.76345739364624
+final double[] ji = jacobian[i];#191,17.762499084472655
+jTj[i][j] = sum;#285,17.759951768098055
+return chiSquare;#260,17.731335004170734
+protected double[][] jacobian;#59,17.722677162715367
+residuals[i] = residual;#221,17.708235359191896
+criterion += residual * residual * residualsWeights[i];#243,17.655658226013184
+cost = Math.sqrt(cost);#225,17.648979467504166
+chiSquare += residual * residual / residualsWeights[i];#258,17.642706394195557
+double[] errors = new double[cols];#317,17.59523497687446
+setMaxEvaluations(Integer.MAX_VALUE);#119,17.590411567687987
+private int iterations;#95,17.582568049430847
+double[][] jTj = new double[cols][cols];#278,17.565556716918945
+protected void updateJacobian() throws FunctionEvaluationException {#183,17.560269860660327
+public double getRMS() {#239,17.53824858231978
+cost += residualsWeights[i] * residual * residual;#222,17.52200486109807
+public void setMaxEvaluations(int maxEvaluations) {#138,17.426571695428144
+protected void incrementIterationsCounter()#171,17.4117958762429
+for (int i = 0; i < rows; i++) {#190,17.395076231522992
+++jacobianEvaluations;#184,17.38642007112503
+jTj[j][i] = sum;#286,17.357438052142108
+targetValues     = target.clone();#345,17.35311558372096
+objective = function.value(point);#212,17.35252872109413
+return objectiveEvaluations;#149,17.323493548801967
+for (int j = i; j < cols; ++j) {#280,17.309756551470077
+final double residual = residuals[i];#257,17.302251043773833
+for (int i = 0; i < cols; ++i) {#279,17.299901366233826
+throw new FunctionEvaluationException(new MaxEvaluationsExceededException(maxEvaluations),#209,17.2921452658517
+this.residuals   = new double[target.length];#348,17.280897339185078
+return maxIterations;#129,17.257410269517166
+return jacobianEvaluations;#154,17.24389081842759
+final double residual = residuals[i];#242,17.24353531428746
+function         = f;#343,17.23954701423645
+return maxEvaluations;#144,17.238699640546525
+jacobianEvaluations  = 0;#340,17.23507339075992
+return checker;#164,17.23483371734619
+private int maxEvaluations;#98,17.22003711353649
+ji[j] *= factor;#194,17.214805335998534
+this.maxEvaluations = maxEvaluations;#139,17.212220621109008
+for (int i = 0; i < rows; ++i) {#256,17.165164657261062
+private int maxIterations;#92,17.151207828521727
+public double[][] getCovariances()#271,17.14036032358805
+protected abstract VectorialPointValuePair doOptimize()#368,17.129477893604953
+private int jacobianEvaluations;#104,17.11860227584839
+for (int j = 0; j < cols; ++j) {#193,17.111285414014542
+throws FunctionEvaluationException {#206,17.111033312479655
+for (int i = 0; i < rows; ++i) {#241,17.08674434993578
+jacobian = jF.value(point);#185,17.06552004814148
+final double[] startPoint)#329,17.033668365478515
+throw new OptimizationException(LocalizedFormats.UNABLE_TO_COMPUTE_COVARIANCE_SINGULAR_PROBLEM);#296,17.032653331756592
+return errors;#323,17.031645081259988
+for (int i = 0; i < errors.length; ++i) {#320,17.02524742126465
+public double getChiSquare() {#254,17.022180477778118
+int index = 0;#218,17.015341612008903
+jacobian  = new double[rows][cols];#353,16.995072278109465
+new LUDecompositionImpl(MatrixUtils.createRealMatrix(jTj)).getSolver().getInverse();#293,16.95759758082303
+public int getMaxIterations() {#128,16.933255275090534
+public int getMaxEvaluations() {#143,16.93119687300462
+setConvergenceChecker(new SimpleVectorialValueChecker());#117,16.91306742032369
+throw new OptimizationException(LocalizedFormats.DIMENSIONS_MISMATCH_SIMPLE,#333,16.884169742039273
+this.maxIterations = maxIterations;#124,16.874340269300674
+if (rows <= cols) {#312,16.84321516752243
+private MultivariateMatrixFunction jF;#110,16.824784596761067
+public VectorialConvergenceChecker getConvergenceChecker() {#163,16.82157666342599
+objectiveEvaluations = 0;#339,16.81811269124349
+LocalizedFormats.NO_DEGREES_OF_FREEDOM,#314,16.799998381198982
+throw new FunctionEvaluationException(point, LocalizedFormats.DIMENSIONS_MISMATCH_SIMPLE,#214,16.7971926958133
+jF               = f.jacobian();#344,16.79631716205228
+this.checker = convergenceChecker;#159,16.77773941264433
+throw new OptimizationException(new MaxIterationsExceededException(maxIterations));#174,16.766225261072957
+rows      = target.length;#351,16.76123177377801
+public void setMaxIterations(int maxIterations) {#123,16.748798370361328
+residualsWeights = weights.clone();#346,16.740254177766687
+this.point       = startPoint.clone();#347,16.7099959746651
+public int getJacobianEvaluations() {#153,16.6772655078343
+throws FunctionEvaluationException, OptimizationException, IllegalArgumentException {#330,16.648642818133037
+protected AbstractLeastSquaresOptimizer() {#116,16.61589412689209
+public int getIterations() {#133,16.60495523972945
+public int getEvaluations() {#148,16.593519290288288
+public void setConvergenceChecker(VectorialConvergenceChecker convergenceChecker) {#158,16.56802162757287
+setMaxIterations(DEFAULT_MAX_ITERATIONS);#118,16.559852209958162
+final double[] target, final double[] weights,#328,16.54281814010055
+throw new FunctionEvaluationException(point, LocalizedFormats.DIMENSIONS_MISMATCH_SIMPLE,#187,16.534836573478504
+throws FunctionEvaluationException, OptimizationException {#311,16.533871901662724
+cols      = point.length;#352,16.51878652572632
+private int objectiveEvaluations;#101,16.507956851612438
+protected int rows;#65,16.445186138153076
+protected VectorialConvergenceChecker checker;#50,16.42793083190918
+public abstract class AbstractLeastSquaresOptimizer implements DifferentiableMultivariateVectorialOptimizer {#44,16.42203410466512
+public VectorialPointValuePair optimize(final DifferentiableMultivariateVectorialFunction f,#327,16.40133056640625
+throw new OptimizationException(#313,16.360184139675564
+return doOptimize();#357,16.351864227881798
+point);#210,16.298113566178543
+iterations           = 0;#338,16.294531648809258
+throws FunctionEvaluationException, OptimizationException {#272,16.287678066052887
+target.length, weights.length);#334,16.27435278892517
+objective.length, rows);#215,16.224282332829066
+jacobian.length, rows);#188,16.175946413460423
+rows, cols);#315,16.089192352294923
+public static final int DEFAULT_MAX_ITERATIONS = 100;#47,16.083225952951533
+throws FunctionEvaluationException, OptimizationException, IllegalArgumentException;#369,16.038837989171345
+index += cols;#223,15.886482575360466
+protected int cols;#62,15.761803732977974
+throws OptimizationException {#172,15.239053139319786

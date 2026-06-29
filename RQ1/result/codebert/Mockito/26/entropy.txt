@@ -1,0 +1,43 @@
+@SuppressWarnings("unchecked")#10,17.571687698364258
+primitiveValues.put(short.class, (short) 0);#62,17.155796072699808
+return wrapperReturnValues.containsKey(type);#21,17.110237974869577
+primitiveValues.put(double.class, 0);#66,16.960640003806667
+wrapperReturnValues.put(Short.class, (short) 0);#51,16.904697107232135
+return (Class<T>) primitiveTypes.get(clazz);#17,16.842498605901543
+primitiveValues.put(byte.class, (byte) 0);#61,16.818890875036065
+primitiveTypes.put(Character.class, Character.TYPE);#38,16.770503543672106
+primitiveTypes.put(Integer.class, Integer.TYPE);#41,16.741082009815035
+if(clazz.isPrimitive()) {#14,16.690017541249592
+wrapperReturnValues.put(Integer.class, 0);#52,16.673343420028687
+wrapperReturnValues.put(Float.class, 0F);#54,16.65130392710368
+primitiveTypes.put(Double.class, Double.TYPE);#44,16.638875053042458
+primitiveTypes.put(Short.class, Short.TYPE);#40,16.63812818981352
+wrapperReturnValues.put(Boolean.class, false);#48,16.61019025530134
+wrapperReturnValues.put(Long.class, 0L);#53,16.57345676422119
+primitiveValues.put(float.class, 0F);#65,16.56945056915283
+primitiveTypes.put(Float.class, Float.TYPE);#43,16.55689357575916
+primitiveValues.put(long.class, 0L);#64,16.531747150421143
+wrapperReturnValues.put(Byte.class, (byte) 0);#50,16.4978578194328
+primitiveTypes.put(Long.class, Long.TYPE);#42,16.44108735947382
+primitiveValues.put(boolean.class, false);#59,16.41599335670471
+return clazz;#15,16.393176794052124
+primitiveTypes.put(Boolean.class, Boolean.TYPE);#37,16.324693051251497
+primitiveValues.put(int.class, 0);#63,16.28486933206257
+wrapperReturnValues.put(Double.class, 0D);#55,16.22553371247791
+public static boolean isPrimitiveWrapper(Class<?> type) {#20,16.17173154730546
+wrapperReturnValues.put(Character.class, '\u0000');#49,16.15779167672862
+primitiveValues.put(char.class, '\u0000');#60,16.145926995710894
+primitiveTypes.put(Byte.class, Byte.TYPE);#39,16.110209147135418
+private static Map<Class<?>, Object> primitiveValues = new HashMap<Class<?>, Object>();#34,16.092426520127518
+private static Map<Class<?>, Class<?>> primitiveTypes = new HashMap<Class<?>, Class<?>>();#32,16.025224004473007
+private static Map<Class<?>, Class<?>> wrapperTypes = new HashMap<Class<?>, Class<?>>();#31,15.96687820979527
+return (T) wrapperReturnValues.get(type);#25,15.881788158416748
+private static Map<Class<?>, Object> wrapperReturnValues = new HashMap<Class<?>, Object>();#33,15.86330117119683
+return (T) primitiveValues.get(primitiveType);#29,15.615554355439686
+public static <T> Class<T> primitiveTypeOf(Class<T> clazz) {#13,15.405525588989258
+static {#36,14.984865188598633
+static {#47,14.827255407969156
+public static <T> T primitiveValueOrNullFor(Class<T> primitiveType) {#28,14.81008013089498
+public class Primitives {#11,14.79677677154541
+public static <T> T primitiveWrapperOf(Class<T> type) {#24,14.718241995031184
+static {#58,14.693323135375977

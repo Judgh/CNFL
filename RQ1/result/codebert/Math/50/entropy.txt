@@ -1,0 +1,116 @@
+private AllowedSolution allowed;#56,17.807676315307617
+this.allowed = AllowedSolution.ANY_SIDE;#101,17.240896406627837
+protected static final double DEFAULT_ABSOLUTE_ACCURACY = 1e-6;#53,17.191421508789062
+this.allowed = AllowedSolution.ANY_SIDE;#84,16.997019813174294
+final double atol = getAbsoluteAccuracy();#150,16.862709145796927
+public abstract class BaseSecantSolver#48,16.75126690334744
+this.allowed = AllowedSolution.ANY_SIDE;#69,16.706029755728586
+final double x = x1 - ((f1 * (x1 - x0)) / (f1 - f0));#160,16.564836803235504
+final double rtol = getRelativeAccuracy();#151,16.562113428115843
+super(relativeAccuracy, absoluteAccuracy, functionValueAccuracy);#100,16.524868405383565
+this.allowed = allowedSolution;#116,16.521428871154786
+public double solve(final int maxEval, final UnivariateRealFunction f,#113,16.352437745957147
+return solve(maxEval, f, min, max, startValue, AllowedSolution.ANY_SIDE);#124,16.28936753128514
+protected BaseSecantSolver(final double relativeAccuracy,#96,16.272478299982406
+public double solve(final int maxEval, final UnivariateRealFunction f,#106,16.27010577065604
+protected BaseSecantSolver(final double absoluteAccuracy, final Method method) {#67,16.257886799899016
+protected BaseSecantSolver(final double relativeAccuracy,#80,16.208054149852078
+protected final double doSolve() {#128,16.133627971013386
+final double ftol = getFunctionValueAccuracy();#149,16.087557140149567
+if (f1 * fx < 0) {#171,16.03648438660995
+extends AbstractUnivariateRealSolver#49,16.02920774980025
+double f1 = computeObjectiveValue(x1);#133,16.000390195846556
+public double solve(final int maxEval, final UnivariateRealFunction f,#122,15.90068617321196
+return x0;#139,15.877206265926361
+return x1;#142,15.86905974149704
+protected enum Method {#256,15.841073632240295
+private final Method method;#59,15.838859664069282
+while (true) {#158,15.81488719353309
+super(relativeAccuracy, absoluteAccuracy);#83,15.805402490827772
+case REGULA_FALSI:#185,15.794641609191894
+REGULA_FALSI,#262,15.78551185131073
+if (f1 == 0.0) {#141,15.779159280988905
+return super.solve(maxEval, f, min, max, startValue);#117,15.768267737494575
+return solve(maxEval, f, min, max, min + 0.5 * (max - min), allowedSolution);#109,15.765171650477818
+final double fx = computeObjectiveValue(x);#161,15.712075193723043
+super(absoluteAccuracy);#68,15.622382913316999
+@Override#121,15.619600137074789
+if (FastMath.abs(f1) <= ftol) {#204,15.564753355803314
+if (f0 == 0.0) {#138,15.551168971591526
+case ABOVE_SIDE:#223,15.5486048857371
+return (f1 <= 0) ? x1 : x0;#245,15.540519910700182
+implements BracketedUnivariateRealSolver<UnivariateRealFunction> {#50,15.534180307388306
+boolean inverted = false;#155,15.528692832359901
+x0 = 0.5 * (x0 + x1 - FastMath.max(rtol * FastMath.abs(x1), atol));#188,15.492828469527396
+f0 *= f1 / (f1 + fx);#183,15.476279230678783
+case BELOW_SIDE:#218,15.453475778753107
+if (fx == 0.0) {#166,15.449153809320359
+return (f1 >= 0) ? x1 : x0;#247,15.442901863771326
+case RIGHT_SIDE:#213,15.424312418157404
+double x1 = getMax();#131,15.377830251057942
+case ANY_SIDE:#206,15.369078506122936
+this.method = method;#85,15.357304845537458
+case LEFT_SIDE:#208,15.35660291754681
+return inverted ? x0 : x1;#243,15.354322828095535
+if (FastMath.abs(x1 - x0) < FastMath.max(rtol * FastMath.abs(x1),#235,15.341413043794178
+final AllowedSolution allowedSolution) {#108,15.3117855489254
+f0 *= 0.5;#180,15.23525367464338
+return inverted ? x1 : x0;#241,15.217233394754343
+f1 = fx;#199,15.216789192623562
+double f0 = computeObjectiveValue(x0);#132,15.193748903274535
+x1 = x;#198,15.177589584799374
+case RIGHT_SIDE:#242,15.123761263760654
+return x;#167,15.120798412122225
+final double min, final double max, final double startValue) {#123,15.105840582596628
+case ANY_SIDE:#238,15.09983422539451
+this.method = method;#102,15.090608051845006
+final AllowedSolution allowedSolution) {#115,15.082888185977936
+return x1;#225,15.082260131835938
+double x0 = getMin();#130,15.07728983561198
+throw new MathInternalError();#249,15.076169160696177
+return x1;#239,15.062363862991333
+case LEFT_SIDE:#240,15.056641744530719
+case BELOW_SIDE:#244,15.037589506669478
+this.method = method;#70,15.002103533063616
+f0 = computeObjectiveValue(x0);#189,14.956396511622838
+return x1;#210,14.95191376549857
+inverted = !inverted;#176,14.926579388705166
+final double min, final double max, final double startValue,#114,14.918559564126504
+case PEGASUS:#182,14.891456473957408
+return x1;#220,14.888626950127739
+verifyBracketing(x0, x1);#146,14.885209083557129
+case ABOVE_SIDE:#246,14.84426478544871
+return x1;#207,14.82719866434733
+case ILLINOIS:#179,14.825384746898305
+switch (allowed) {#205,14.726596014840263
+final double absoluteAccuracy,#97,14.719271092801481
+f0 = f1;#175,14.687162832780318
+x0 = x1;#174,14.664701028303666
+final double functionValueAccuracy,#98,14.65358641273097
+switch (allowed) {#237,14.633934111822219
+throw new MathInternalError();#194,14.623635548811693
+final double min, final double max,#107,14.58714210987091
+if (x == x1) {#187,14.581591708319527
+if (f1 <= 0) {#219,14.568327256611415
+switch (method) {#178,14.48297863914853
+if (inverted) {#209,14.457809411562407
+PEGASUS;#268,14.412002930274376
+final double absoluteAccuracy,#81,14.402343414925241
+return x1;#215,14.396746260779244
+if (f1 >= 0) {#224,14.38614194733756
+default:#228,14.336024125417074
+break;#184,14.30107558857311
+throw new MathInternalError();#229,14.288190768315243
+default:#248,14.287930806477865
+default:#192,14.192166911231148
+ILLINOIS,#265,14.156371189997746
+final Method method) {#99,14.133902258343166
+if (!inverted) {#214,14.116900737469013
+break;#181,14.105087193575772
+break;#212,14.016608801755039
+break;#227,13.909681623632258
+break;#191,13.90308596871116
+final Method method) {#82,13.89546185069614
+break;#222,13.857060302387584
+break;#217,13.839915665713223
+atol)) {#236,13.745300543935675

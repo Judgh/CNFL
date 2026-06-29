@@ -1,0 +1,207 @@
+boolean inUnicode = false;#304,20.339614748954773
+if (str == null) {#265,20.13781019846598
+if (str == null) {#514,20.095355224609374
+if (out == null) {#172,20.093683624267577
+if (str == null) {#442,20.03030687967936
+if (str == null) {#149,20.019125111897786
+if (out == null) {#295,20.009968058268228
+if (str == null) {#175,19.98211237589518
+if (str == null) {#681,19.910753059387208
+if (str == null) {#298,19.756933784484865
+if (str == null) {#655,19.73323853810628
+if (str == null) {#605,19.62823549906413
+if (string == null) {#551,19.525704511006673
+if (inUnicode) {#307,19.449951553344725
+if (string == null) {#490,19.439744504292808
+if (str == null) {#633,19.433300399780272
+boolean hadSlash = false;#303,19.425484212239585
+if (str == null) {#581,19.406928380330402
+if (writer == null ) {#630,19.261867968241372
+if (writer == null ) {#578,19.22958580652873
+if (writer == null ) {#487,19.152113978068034
+if (writer == null ) {#548,19.127571678161623
+return null;#656,18.80558090209961
+public static void unescapeJava(Writer out, String str) throws IOException {#294,18.795503570919944
+if (hadSlash) {#371,18.77372538248698
+if (hadSlash) {#326,18.769117305153294
+if (unicode.length() == 4) {#311,18.720882839626736
+public static void unescapeHtml(Writer writer, String string) throws IOException {#547,18.7050613490018
+private static void escapeJavaStyleString(Writer out, String str, boolean escapeSingleQuote) throws IOException {#171,18.698198247838903
+return null;#606,18.663543065388996
+public static void escapeHtml(Writer writer, String string) throws IOException {#486,18.643782388596307
+public static void escapeJava(Writer out, String str) throws IOException {#96,18.637021923065184
+public static void unescapeJavaScript(Writer out, String str) throws IOException {#409,18.62414927916093
+for (int i = 0; i < sz; i++) {#180,18.563867444577426
+public static String unescapeJava(String str) {#264,18.508641497294107
+private static String escapeJavaStyleString(String str, boolean escapeSingleQuotes) {#148,18.50576046534947
+for (int i = 0; i < sz; i++) {#305,18.495849526446797
+int sz = str.length();#301,18.489639937877655
+if (ch > 0xfff) {#184,18.466251736595517
+char ch = str.charAt(i);#306,18.434203364632346
+public static String escapeJava(String str) {#80,18.420742716108048
+throw new IllegalArgumentException ("The Writer must not be null.");#488,18.417691513344092
+return null;#159,18.407896296183267
+throw new IllegalArgumentException ("The Writer must not be null.");#549,18.403528849283855
+throw new IllegalArgumentException ("The Writer must not be null.");#631,18.39155613934552
+throw new IllegalArgumentException ("The Writer must not be null.");#579,18.355187204149033
+unicode.append(ch);#310,18.354348929032035
+try {#314,18.34574179215865
+return null;#275,18.3418275197347
+int sz;#178,18.315452973047893
+public static String escapeHtml(String str) {#441,18.292236455281575
+try {#517,18.28292465209961
+public static String unescapeHtml(String str) {#513,18.27208000421524
+public static void escapeJavaScript(Writer out, String str) throws IOException {#137,18.25845395951044
+throw new IllegalArgumentException("The Writer must not be null");#296,18.24131657527043
+return null;#525,18.237455495198567
+try {#445,18.235361289978027
+public static void unescapeXml(Writer writer, String str) throws IOException {#629,18.187118010087445
+sz = str.length();#179,18.18598003387451
+return null;#453,18.177810923258463
+switch (ch) {#191,18.160695575532458
+return null;#682,18.16045570373535
+try {#268,18.149820423126222
+throw new IllegalArgumentException("The Writer must not be null");#173,18.137171305142918
+int value = Integer.parseInt(unicode.toString(), 16);#315,18.123226284980774
+return;#634,18.10575975690569
+return;#491,18.09930842263358
+return null;#150,18.097239049275718
+return;#552,18.09122862134661
+throw new NestableRuntimeException("Unable to parse unicode value: " + unicode, nfe);#321,18.09045544076473
+char ch = str.charAt(i);#181,18.07631995461204
+public static void escapeXml(Writer writer, String str) throws IOException {#577,18.06898221515474
+inUnicode = false;#318,18.05694635452763
+try {#152,18.039473724365234
+public static String escapeSql(String str) {#680,18.029962921142577
+return null;#443,18.029624684651694
+return;#582,18.029622622898646
+hadSlash = false;#319,18.023501936594645
+out.write(ch);#361,17.99841651916504
+hadSlash = false;#328,17.983992836692117
+public static String escapeJavaScript(String str) {#121,17.980170822143556
+return escapeJavaStyleString(str, false);#81,17.966490586598713
+return null;#266,17.952054341634113
+private static String hex(char ch) {#251,17.939398545485275
+public static String unescapeJavaScript(String str) {#389,17.938341975212097
+switch (ch) {#221,17.934472810654412
+return StringUtils.replace(str, "'", "''");#684,17.886671976609662
+return unescapeJava(str);#390,17.884714380900064
+inUnicode = true;#357,17.874301065717425
+escapeJavaStyleString(out, str, false);#97,17.87196289865594
+StringBuffer unicode = new StringBuffer(4);#302,17.85984280234889
+escapeJavaStyleString(out, str, true);#138,17.81412430813438
+return escapeJavaStyleString(str, true);#122,17.796152856614853
+e.printStackTrace();#452,17.790002421328897
+case 'u':#354,17.789658228556316
+return null;#515,17.753988647460936
+unescapeJava(out, str);#410,17.72399491071701
+switch (ch) {#329,17.71061188834054
+e.printStackTrace();#524,17.707821143300908
+if (escapeSingleQuote) {#223,17.685018477901334
+public static String unescapeXml(String str) {#654,17.67208880186081
+public static String escapeXml(String str) {#604,17.66103432973226
+if (ch > 0xf) {#213,17.59226280450821
+ioe.printStackTrace();#158,17.59184136390686
+break;#353,17.5861595593966
+ioe.printStackTrace();#274,17.578591918945314
+public StringEscapeUtils() {#53,17.578121105829876
+return;#299,17.550812040056503
+out.write(ch);#237,17.547958501180013
+StringWriter writer = new StringWriter(str.length() * 2);#153,17.5273270783601
+StringWriter writer = new StringWriter ((int)(str.length() * 1.5));#446,17.52501610786684
+case '\r':#208,17.508834533691406
+case 'b':#351,17.507171471913654
+case '"':#228,17.472819964090984
+StringWriter writer = new StringWriter ((int)(str.length() * 1.5));#518,17.456411853913337
+hadSlash = true;#366,17.448744600469414
+break;#332,17.443710767305813
+case '\f':#204,17.430294647216797
+continue;#324,17.42578845553928
+case 'f':#342,17.418236255645752
+out.write(ch);#369,17.418164518144394
+break;#335,17.409489778371956
+case '\\':#232,17.368982474009197
+case 'r':#339,17.356837034225464
+break;#211,17.337265088008
+case '\n':#196,17.3344592666626
+out.write("\\u0" + hex(ch));#187,17.325554781946643
+out.write("\\u00" + hex(ch));#214,17.32491939823802
+break;#238,17.315459691561184
+break;#338,17.315331605764534
+break;#231,17.311294665703407
+out.write((char) value);#316,17.303943306207657
+{#355,17.303121795654295
+case '\t':#200,17.301594467163085
+break;#218,17.297496575575607
+default :#212,17.291930198669434
+return writer.toString();#520,17.289876566992866
+out.write("\\u00" + hex(ch));#189,17.28886916719634
+out.write('\\');#374,17.286483817630344
+break;#207,17.28217517412626
+break;#227,17.281220802894005
+unicode.setLength(0);#317,17.276959270238876
+StringWriter writer = new StringWriter(str.length());#269,17.27183945973714
+super();#54,17.25373911857605
+return;#176,17.249883106776647
+out.write('\\');#224,17.233197957277298
+break;#199,17.232733689821682
+break;#350,17.226941989018368
+break;#344,17.214537767263558
+case 'n':#348,17.2111390431722
+break;#341,17.181061487931473
+return writer.toString();#271,17.180948469373917
+break;#235,17.176789430471565
+case '\"':#336,17.171233256657917
+out.write('r');#210,17.169040044148762
+out.write("\\u" + hex(ch));#185,17.16892773764474
+break;#347,17.158511088444637
+break;#358,17.15399522781372
+case '\b':#192,17.144672241210937
+out.write('\\');#234,17.139845911661784
+out.write("\\u000" + hex(ch));#216,17.134360034291337
+return Integer.toHexString(ch).toUpperCase();#252,17.132411708002504
+break;#203,17.12911503131573
+break;#362,17.124642225412224
+break;#195,17.11456533578726
+return writer.toString();#448,17.110305945078533
+out.write('\\');#193,17.102347564697265
+continue;#364,17.073528289794922
+case '\\':#330,17.07240891456604
+case 't':#345,17.05563275019328
+default :#360,16.979153459722344
+out.write('b');#194,16.97173760732015
+out.write('\b');#352,16.960692621046498
+out.write('f');#206,16.954614957173664
+return writer.toString();#155,16.917911582522922
+out.write('\\');#197,16.89072535832723
+unescapeJava(writer, str);#270,16.878821086883544
+out.write('\\');#209,16.858774026234943
+continue;#367,16.85370858510335
+out.write('\\');#201,16.852576160430907
+escapeJavaStyleString(writer, str, escapeSingleQuotes);#154,16.848197059631346
+out.write('\\');#233,16.837888590494792
+out.write('\\');#205,16.803555138905843
+out.write('\'');#226,16.801137032047397
+out.write('\n');#349,16.764508555012366
+out.write('"');#337,16.75381269454956
+out.write('\r');#340,16.74149482480941
+out.write('"');#230,16.72919880549113
+out.write('\\');#331,16.719634342193604
+default :#236,16.704220685091887
+out.write('t');#202,16.678810946146648
+out.write('\f');#343,16.67015694033715
+out.write('\\');#229,16.666860008239745
+case '\'':#333,16.648954391479492
+out.write('\'');#334,16.62597047128985
+out.write('\t');#346,16.608951322494015
+unescapeHtml(writer, str);#519,16.543119839259557
+case '\'':#222,16.54179988861084
+return Entities.XML.unescape(str);#658,16.541602993011473
+return Entities.XML.escape(str);#608,16.526457184239437
+out.write('n');#198,16.474532508850096
+Entities.HTML40.unescape(writer, string);#554,16.47058087303525
+escapeHtml(writer, str);#447,16.422094583511353
+Entities.HTML40.escape(writer, string);#493,16.341110610961913
+public class StringEscapeUtils {#41,16.232740084330242
+Entities.XML.unescape(writer, str);#636,15.865240028926305
+Entities.XML.escape(writer, str);#584,15.757370734214783

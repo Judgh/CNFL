@@ -1,0 +1,24 @@
+int boundIndex = (int) FastMath.ceil((1.0 - this.getElitismRate()) * oldChromosomes.size());#82,16.881596193080995
+Collections.sort(oldChromosomes);#79,16.757805188496906
+public class ElitisticListPopulation extends ListPopulation {#33,16.727253675460815
+for (int i=boundIndex; i<oldChromosomes.size(); i++) {#83,16.69431531840357
+List<Chromosome> oldChromosomes = this.getChromosomes();#78,16.54250112073175
+nextGeneration.addChromosome(oldChromosomes.get(i));#84,16.522165179252625
+public void setElitismRate(final double elitismRate) {#97,16.449227544996475
+private double elitismRate = 0.9;#36,16.414859431130544
+public ElitisticListPopulation(final int populationLimit, final double elitismRate) {#63,16.412042742190152
+return nextGeneration;#86,16.328137104327862
+public Population nextGeneration() {#74,16.30267758802934
+public ElitisticListPopulation(final List<Chromosome> chromosomes,#47,16.233203115917387
+throw new OutOfRangeException(LocalizedFormats.ELITISM_RATE, elitismRate, 0, 1);#99,16.04231927333734
+if (elitismRate < 0 || elitismRate > 1) {#98,15.915632994278617
+ElitisticListPopulation nextGeneration = new ElitisticListPopulation(this.getPopulationLimit(), this.getElitismRate());#76,15.816780631606644
+public double getElitismRate() {#108,15.712279717127482
+return this.elitismRate;#109,15.688721084594727
+this.elitismRate = elitismRate;#101,15.675377898746067
+this.elitismRate = elitismRate;#51,15.487289534674751
+this.elitismRate = elitismRate;#65,15.364702383677164
+super(chromosomes, populationLimit);#50,15.208269231459674
+super(populationLimit);#64,13.85850165440486
+final double elitismRate) {#49,13.824403081621442
+final int populationLimit,#48,13.67373559474945

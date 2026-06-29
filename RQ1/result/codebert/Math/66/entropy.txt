@@ -1,0 +1,116 @@
+v = w;#226,20.56518738610404
+|| w == x) {#225,20.209002876281737
+w = x;#214,19.608317732810974
+v = w;#212,19.383420427640278
+x = u;#216,19.379410703976948
+double u = 0;#137,19.273383140563965
+double p = 0;#134,19.246511958894274
+w = u;#228,19.23586998667036
+fv = fw;#227,19.231612332661946
+a = x;#210,19.041553565434047
+&& p < q * (b - x)#155,19.031124647925882
+a = u;#220,19.02022419657026
+double q = 0;#135,19.017175992329914
+double m = 0.5 * (a + b);#128,19.01578152179718
+fv = fw;#213,18.97640584065364
+d = p / q;#158,18.961474800109862
+if (p > q * (a - x)#154,18.950946315642327
+p = -p;#146,18.93741670148126
+q = 2 * (q - r);#143,18.927929582266973
+|| b - u < tol2) {#163,18.852625395122327
+if (u - a < tol2#162,18.850026101777047
+&& Math.abs(p) < Math.abs(0.5 * q * r)) {#156,18.8383508682251
+e = b - x;#182,18.824903170267742
+if (u < x) {#219,18.811463744552047
+double v = x;#115,18.799137042118954
+e = d;#152,18.79525911808014
+fw = fx;#215,18.772439846625694
+b = u;#222,18.738853454589844
+if (u < x) {#207,18.728298045970774
+double r = 0;#136,18.721996670677548
+double e = 0;#118,18.71772942176232
+double x = mid;#114,18.710773321298454
+double d = 0;#117,18.706533358647274
+u = x + d;#159,18.687685012817383
+if (x < m) {#181,18.684435738457573
+double w = x;#116,18.638481580294094
+fx = fu;#217,18.60327266693115
+r = e;#151,18.59217913945516
+if (q > 0) {#145,18.58095765996862
+e = a - x;#175,18.568820981418384
+fw = fu;#229,18.54778003692627
+b = x;#208,18.545022010803223
+if (Math.abs(d) < tol1) {#190,18.5209033648173
+u = x + tol1;#192,18.509613752365112
+q = -q;#148,18.457391278497106
+e = b - x;#173,18.441071173724005
+e = a - x;#184,18.438907559712728
+if (fu <= fw#224,18.41044620367197
+double fu = computeObjectiveValue(f, u);#200,18.397882052830287
+p = (x - v) * q - (x - w) * r;#142,18.382364975778682
+if (x < m) {#172,18.380306059314357
+d = -tol1;#167,18.36624945127047
+d = GOLDEN_SECTION * e;#177,18.36202845853918
+d = GOLDEN_SECTION * e;#186,18.34380251566569
+v = u;#233,18.33155584335327
+q = (x - v) * (fx - fw);#141,18.33112932653988
+double fx = computeObjectiveValue(f, x);#119,18.316980679829914
+|| v == x#231,18.3162659236363
+final double tol2 = 2 * tol1;#130,18.31579852104187
+if (d >= 0) {#191,18.30177300064652
+private static final double GOLDEN_SECTION = 0.5 * (3 - Math.sqrt(5));#38,18.25715787070138
+if (Math.abs(e) > tol1) { // Fit parabola.#139,18.19788712925381
+d = tol1;#165,18.167628589429352
+final double tol1 = eps * Math.abs(x) + t;#129,18.1634033203125
+if (fu <= fx) {#206,18.103066047032673
+r = (x - w) * (fx - fv);#140,18.08198351018569
+setAbsoluteAccuracy(1E-10);#46,18.062270164489746
+b = hi;#108,18.05320519208908
+if (lo < hi) {#106,18.046902338663738
+clearResult();#60,18.03650257804177
+if (Math.abs(x - m) > tol2 - 0.5 * (b - a)) {#133,18.026762008666992
+setMaxEvaluations(Integer.MAX_VALUE);#44,17.99475016593933
+u = x + d;#197,17.987158665290245
+if (x <= m) {#164,17.980551365443638
+u = x - tol1;#194,17.935926526784897
+double a, b;#105,17.75382430736835
+|| v == w) {#232,17.716025429802972
+if (goalType == GoalType.MAXIMIZE) {#201,17.705612083961224
+int count = 0;#126,17.645733393155613
+fu = -fu;#202,17.63251663208008
+double fw = fx;#124,17.471774991353353
+if (goalType == GoalType.MAXIMIZE) {#120,17.455788657778786
+return x;#239,17.411734681380423
+getRelativeAccuracy(), getAbsoluteAccuracy());#63,17.399912728203667
+++count;#241,17.38881778717041
+double fv = fx;#123,17.36234760284424
+a = hi;#110,17.338496267795563
+protected double doOptimize()#55,17.324632835388183
+fv = fu;#234,17.298012470376904
+if (t <= 0) {#102,17.28996187845866
+UnivariateRealFunction f,#94,17.267014559577493
+a = lo;#107,17.23343151807785
+setMaximalIterationCount(100);#45,17.139477000517005
+GoalType goalType,#95,17.10793399810791
+setRelativeAccuracy(1.0e-14);#47,17.072920935494558
+public double optimize(final UnivariateRealFunction f, final GoalType goalType, final double min, final double max, final double startValue) throws MaxIterationsExceededException, FunctionEvaluationException {#59,17.051234089598363
+public double optimize(final UnivariateRealFunction f, final GoalType goalType, final double min, final double max) throws MaxIterationsExceededException, FunctionEvaluationException {#65,17.045489354567096
+while (count < maximalIterationCount) {#127,17.02436351776123
+setResult(x, (goalType == GoalType.MAXIMIZE) ? -fx : fx, count);#238,16.988914722349584
+if (eps <= 0) {#99,16.97261486053467
+throws MaxIterationsExceededException, FunctionEvaluationException {#98,16.93112547501274
+throw new MaxIterationsExceededException(maximalIterationCount);#243,16.806113402048748
+throw new NotStrictlyPositiveException(eps);#100,16.760781447092693
+return localMin(getGoalType() == GoalType.MINIMIZE,#61,16.756467660268147
+return optimize(f, goalType, min, max, min + GOLDEN_SECTION * (max - min));#66,16.70291776368112
+throw new NotStrictlyPositiveException(t);#103,16.60909632841746
+double eps, double t)#97,16.606057929992676
+throw new UnsupportedOperationException();#57,16.586738459269206
+private double localMin(boolean isMinim,#93,16.552425448099772
+public BrentOptimizer() {#43,16.240175593983043
+b = lo;#111,16.085146188735962
+throws MaxIterationsExceededException, FunctionEvaluationException {#56,16.015645151552945
+double lo, double mid, double hi,#96,15.766121812768885
+f, goalType, min, startValue, max,#62,15.718064308166504
+fx = -fx;#121,15.711636119418674
+public class BrentOptimizer extends AbstractUnivariateRealOptimizer {#34,14.806818127632141

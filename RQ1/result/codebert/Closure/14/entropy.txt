@@ -1,0 +1,528 @@
+case Token.LABEL:#349,19.96826108296712
+case Token.LABEL:#267,19.897417885916575
+case Token.WITH:#259,19.57011536189488
+case Token.WHILE:#258,19.460410799298966
+case Token.LABEL:#805,19.432589530944824
+case Token.VAR:#274,19.38991778237479
+case Token.CONTINUE:#271,19.3849334081014
+case Token.CASE:#265,19.366717066083634
+case Token.CONTINUE:#340,19.332850602956917
+case Token.WHILE:#940,19.312403678894043
+case Token.CASE:#513,19.275722435542516
+case Token.WHILE:#959,19.269212245941162
+case Token.WITH:#346,19.258195718129475
+boolean isForward) {#1028,19.250683564406174
+case Token.SWITCH:#264,19.24347448348999
+for (Node handler : exceptionHandler) {#833,19.213617769877114
+case Token.BREAK:#272,19.20596354348319
+case Token.IF:#257,19.192696131192722
+case Token.CATCH:#266,19.17908579962594
+case Token.NEW:#916,19.17718133059415
+Node toNode) {#819,19.172781684181906
+case Token.THROW:#276,19.156071790059407
+case Token.FOR:#938,19.129407015713777
+case Token.DEC:#919,19.126264398748223
+ControlFlowAnalysis(AbstractCompiler compiler,#137,19.126019564541902
+case Token.TRY:#514,19.101667624253494
+case Token.TRY:#945,19.095318100669168
+public int compare(#1032,19.081884111676896
+default:#516,19.079169464111327
+case Token.CATCH:#334,19.059587160746258
+case Token.INC:#918,19.057667212052777
+case Token.BREAK:#337,19.056559960047405
+case Token.THROW:#328,19.043194477374737
+case Token.FOR:#957,19.041456482627176
+case Token.FOR:#800,19.006771781227805
+case Token.IF:#721,18.99658827348189
+case Token.WHILE:#300,18.993719577789307
+case Token.FOR:#252,18.9728181545551
+case Token.SWITCH:#941,18.97099033991496
+case Token.DO:#261,18.9506494815533
+if (compiler.isIdeMode()) {#584,18.945924123128254
+case Token.FOR:#739,18.942006718028676
+case Token.SWITCH:#309,18.93770654996236
+this.compiler = compiler;#139,18.934357556429777
+case Token.FOR:#306,18.924160437150434
+private static boolean matchLabel(Node target, String label) {#894,18.886226717631022
+private Map<Node, Integer> astPosition;#62,18.86733913421631
+case Token.CASE:#312,18.857156197230022
+case Token.WHILE:#745,18.856621662775677
+case Token.DO:#958,18.853374741294168
+private final AbstractCompiler compiler;#58,18.84765879313151
+for (int type : types) {#864,18.84412751879011
+case Token.IF:#944,18.838408903642133
+case Token.TRY:#331,18.83668717471036
+astPositionCounter = 0;#151,18.81925811767578
+case Token.FUNCTION:#269,18.8046511332194
+public int compare(#1040,18.784080573490687
+private int astPositionCounter;#79,18.778205513954163
+final class ControlFlowAnalysis implements Callback, CompilerPass {#41,18.77481596810477
+case Token.TRY:#278,18.76065290891207
+public static boolean isBreakTarget(Node target, String label) {#877,18.759129106998444
+if (isForward) {#1029,18.7496710618337
+if (!ControlFlowGraph.isEnteringNewCfgNode(c) && mayThrowException(c)) {#926,18.739002577463786
+if (NodeUtil.isForIn(parent)) {#740,18.72286524091448
+case Token.CASE:#723,18.688002347946167
+case Token.DEFAULT_CASE:#512,18.68533218608183
+default:#351,18.66675329208374
+case Token.ASSIGN:#917,18.66445763905843
+while (target.isLabel()) {#898,18.65653944015503
+case Token.TRY:#748,18.65486006303267
+case Token.THROW:#915,18.65195736518273
+case Token.INSTANCEOF:#920,18.64613219669887
+&& cur.getLastChild() != previous) {#574,18.634939012073335
+case Token.DO:#303,18.63085243918679
+ControlFlowGraph<Node> getCfg() {#144,18.625457030076248
+case Token.SCRIPT:#319,18.621711174647015
+case Token.CALL:#912,18.613980372746784
+&& cur.getLastChild() != previous) {#616,18.609729948497954
+case Token.IF:#297,18.603592785921965
+astPosition.put(null, ++astPositionCounter); // the implicit return is last.#157,18.60159562981647
+case Token.DO:#939,18.583416245200418
+if (cfa != null) {#765,18.574399577246773
+if (lastJump == cfgNode) {#847,18.567082118988036
+@Override#1021,18.561065038045246
+if (label == null) {#895,18.560953053561125
+case Token.DO:#798,18.557820840315387
+Node target, Node parent, String label) {#887,18.50581043958664
+@Override#294,18.48624277114868
+Node lastJump;#608,18.483126401901245
+case Token.DO:#746,18.477743408896707
+if (NodeUtil.hasFinally(parent)) { // and have FINALLY block.#758,18.47235423120959
+if (block.isBlock() &&#988,18.462252219518025
+for (Iterator<Node> iter = exceptionHandler.iterator(); iter.hasNext();) {#641,18.445722897847492
+return new Comparator<DiGraphNode<Node, Branch>>() {#1030,18.438855046811312
+private Map<DiGraphNode<Node, Branch>, Integer> nodePriorities;#65,18.435930352461966
+return false;#277,18.432179157550518
+private final Map<DiGraphNode<Node, Branch>, Integer> priorities;#1005,18.422649765014647
+case Token.BLOCK:#943,18.420640865961712
+if (parent.getNext().isCase()) {#728,18.41729736328125
+String label = null;#552,18.396437538994682
+private int getPosition(DiGraphNode<Node, Branch> n) {#1052,18.38830347061157
+lastJump = cur;#581,18.384411591749924
+case Token.FUNCTION:#322,18.375137622539814
+if (node.isBlock() && parent != null &&#487,18.365486562252045
+case Token.TRY:#229,18.36357134038752
+if (mayThrowException(target) && !exceptionHandler.isEmpty()) {#831,18.362672805786133
+case Token.EXPR_RESULT:#273,18.36019162570729
+switch (parent.getType()) {#719,18.360047260920208
+if (NodeUtil.hasFinally(parent)) { // and have FINALLY block.#751,18.359702077405206
+if (lastJump == node) {#575,18.348720908164978
+if (next != null) { // Found a CASE#457,18.33481369018555
+String label = null;#602,18.332244661119248
+@Override#1031,18.329153537750244
+if (parent != null) {#250,18.3275673606179
+switch (parent.getType()) {#511,18.32491397857666
+if (parent == null) {#583,18.316631610576923
+while (!worklist.isEmpty()) {#201,18.302743838383602
+return new Comparator<DiGraphNode<Node, Branch>>() {#1038,18.299862198207688
+if (NodeUtil.isForIn(n)) {#801,18.288408551897323
+default:#947,18.277722120285034
+private static boolean isContinueTarget(#886,18.277319696214462
+Map<DiGraphNode<Node, Branch>, Integer> priorities,#1014,18.273511019620027
+private void prioritizeFromEntryNode(DiGraphNode<Node, Branch> entry) {#196,18.273302030563354
+boolean edgeAnnotations) {#1015,18.26882771083287
+private final Comparator<DiGraphNode<Node, Branch>> priorityComparator =#70,18.26811664982846
+if (lastJump == node) {#617,18.262429535388947
+handleCase(n);#313,18.260855014507587
+case Token.DEFAULT_CASE:#315,18.26080258687337
+if (parent.getNext() != null) {#727,18.249836269177887
+if (lastJump == cfgNode) {#841,18.247346067428587
+case Token.BLOCK:#318,18.228898684183758
+if (value != null && value.isFunction()) {#170,18.227475690841676
+case Token.GETELEM:#914,18.214631421225413
+switch (n.getType()) {#956,18.213268995285034
+case Token.DEFAULT_CASE:#724,18.206823984781902
+Node cur;#557,18.20606245313372
+@Override#1039,18.196935017903645
+handleThrow(n);#329,18.194417219895584
+if (NodeUtil.hasCatchHandler(s)) {#992,18.187896728515625
+case Token.FUNCTION:#922,18.170850607065056
+Node cur;#606,18.166803087506974
+switch (n.getType()) {#937,18.16204071044922
+case Token.RETURN:#275,18.159614903586252
+nodePriorities.put(current, ++priorityCounter);#207,18.145333025190567
+default:#961,18.126100301742554
+switch (parent.getType()) {#251,18.12032515662057
+return;#311,18.1191876411438
+if (c.getType() == type) {#865,18.11630530106394
+if (node.isBlock() && node.isSyntheticBlock()) {#517,18.113842328389484
+DiGraphNode<Node, Branch> entry = cfg.getEntry();#162,18.109190702438354
+if (lastJump == null) {#661,18.106177886327107
+if (handler.isFunction()) {#834,18.101004660129547
+DiGraphNode<Node, Branch> a, DiGraphNode<Node, Branch> b) {#74,18.090877269876415
+if (elseBlock == null) {#362,18.08711298306783
+if (lastJump == null) {#647,18.08586096763611
+@Override#148,18.083585739135742
+connectToPossibleExceptionHandler(init, init);#415,18.071080600514133
+if (!NodeUtil.hasCatchHandler(catchBlock)) { // No catch but a FINALLY.#840,18.06656991281817
+private int priorityCounter;#80,18.061926977975027
+return;#330,18.060532760620116
+return;#333,18.059175872802733
+return;#336,18.058489990234374
+case Token.FUNCTION:#223,18.04933760716365
+Node lastJump;#559,18.03208363056183
+if (next != null) { // Has at least one CASE or EMPTY#439,18.01767153739929
+return;#305,18.01319580078125
+return n == parent.getLastChild();#254,18.009355645430716
+handleFor(n);#307,18.00793273632343
+if (NodeUtil.hasFinally(curHandler)) {#646,18.007267199064557
+return;#339,17.998732471466063
+return;#342,17.9908353805542
+for (DiGraphNode<Node, Branch> candidate : successors) {#211,17.986877759297688
+return;#308,17.985217475891112
+return n != parent.getFirstChild();#260,17.977426830090973
+priorityCounter = 0;#161,17.97675567203098
+case Token.GETPROP:#913,17.975784521836502
+createEdge(forNode, Branch.ON_TRUE, computeFallThrough(body));#406,17.972336921691895
+createEdge(lastJump, Branch.UNCOND, computeFallThrough(#576,17.96988234153161
+createEdge(forNode, Branch.ON_TRUE, computeFallThrough(body));#426,17.968514137268066
+!isContinueTarget(cur, parent, label);#613,17.954183628684596
+return;#345,17.952623558044433
+return;#317,17.951203727722167
+if (forNode.getChildCount() == 4) {#396,17.946094176348517
+handleContinue(n);#341,17.945718031663162
+return getPosition(n1) - getPosition(n2);#1034,17.941511117495022
+if (child != null) {#503,17.93978873166171
+finallyMap.put(lastJump, computeFallThrough(cur.getLastChild()));#579,17.937355304586475
+switch (n.getType()) {#797,17.93597189585368
+return;#324,17.931870651245116
+case Token.RETURN:#343,17.92543848355611
+return;#327,17.924385452270506
+handleSwitch(n);#310,17.918265489431526
+new Comparator<DiGraphNode<Node, Branch>>() {#71,17.913577461242674
+if (parent == null || parent.isFunction() ||#713,17.913253903388977
+private final Deque<Node> exceptionHandler = new ArrayDeque<Node>();#95,17.911860752105714
+Node previous = null;#607,17.909223980373806
+switch (n.getType()) {#911,17.907771666844685
+DiGraphNode<Node, Branch> n1, DiGraphNode<Node, Branch> n2) {#1033,17.905796875824798
+private static Node getNextSiblingOfType(Node first, int ... types) {#862,17.902685022354127
+if (nextSibling != null) {#783,17.90049772996169
+Node fromNode, Node node, ControlFlowAnalysis cfa) {#693,17.894308280944824
+(cfa != null && node == cfa.root)) {#714,17.8843299258839
+while (child != null && child.isFunction()) {#499,17.882502794265747
+createEdge(cfgNode, Branch.ON_EX, handler.getLastChild());#842,17.882326316833495
+return;#321,17.87739477157593
+return null;#870,17.875215530395508
+return n != parent.getFirstChild();#268,17.87375309592799
+finallyMap.put(lastJump, handler.getLastChild());#844,17.863924466646633
+if (target.getFirstChild().getString().equals(label)) {#899,17.857496468917184
+return;#302,17.856172561645508
+cur.getLastChild()));#577,17.855015209742955
+createEdge(node, Branch.ON_TRUE,#374,17.855002999305725
+return;#314,17.85437536239624
+@Override#72,17.85364866256714
+for (Node cur = n;#972,17.84800269386985
+if (parent != null) {#510,17.842995036732066
+return;#348,17.838150405883788
+return;#299,17.837826442718505
+handleWhile(n);#301,17.831181379464958
+Node lastJump = null;#640,17.829837989807128
+PriorityQueue<DiGraphNode<Node, Branch>> worklist =#197,17.82711278067695
+private ControlFlowGraph<Node> cfg;#60,17.82253662745158
+computeFollowNode(node, this)); // not taken branch#364,17.822461691769686
+if (parent.getFirstChild() == node) {#750,17.81900486946106
+if (cur.isTry() && NodeUtil.hasFinally(cur)#615,17.81857963230299
+return null;#980,17.816231863839285
+if (cur.getChildCount() == 4) {#628,17.816209971904755
+handleCatch(n);#335,17.81027569089617
+switch (n.getType()) {#296,17.8088796933492
+Node body = collection.getNext();#422,17.808536733899796
+default:#807,17.807290077209473
+handleIf(n);#298,17.803433344914364
+public Comparator<DiGraphNode<Node, Branch>> getOptionalNodeComparator(#1027,17.799710230393842
+!cur.isScript() && !cur.isFunction();#973,17.795433680216473
+return null;#997,17.788130351475306
+handleExpr(n);#326,17.785284519195557
+handleTry(n);#332,17.781660006596493
+astPosition.put(n, astPositionCounter++);#220,17.77882468700409
+for (cur = node, lastJump = node;#612,17.776075681050617
+public static boolean mayThrowException(Node n) {#910,17.77438134413499
+if (nodePriorities.containsKey(current)) {#203,17.767970486691123
+previous = cur;#592,17.762203025817872
+DiGraphNode<Node, Branch> n1, DiGraphNode<Node, Branch> n2) {#1041,17.758556881466426
+for (Node finallyNode : cfa.finallyMap.get(parent)) {#766,17.75792891184489
+handleDo(n);#304,17.743623293363132
+handleReturn(n);#344,17.73887663621169
+true /* node annotations */, edgeAnnotations);#1017,17.72804546356201
+Node value = candidate.getValue();#169,17.722448408603668
+handleBreak(n);#338,17.721542578477127
+case Token.EXPR_RESULT:#325,17.7212584177653
+cfg.connectIfNotFound(fromNode, branch, toNode);#822,17.713590002059938
+cfg = new AstControlFlowGraph(computeFallThrough(root), nodePriorities,#154,17.707401951154072
+if (catchNode != null) {#976,17.702935695648193
+block.getParent().getFirstChild() == block) {#990,17.702568281264533
+private void handleThrow(Node node) {#539,17.70039515061812
+createEdge(node, Branch.UNCOND, curHandler.getLastChild());#648,17.699334348951066
+createEdge(node, Branch.ON_TRUE, computeFallThrough(thenBlock));#360,17.697023060010828
+lastJump = handler;#854,17.693545194772575
+previous = cur;#625,17.686339855194092
+createEdge(init, Branch.UNCOND, forNode);#404,17.684321784973143
+Node previous = null;#558,17.67791239420573
+private void handleCase(Node node) {#451,17.671934734691273
+createEdge(node, Branch.ON_TRUE,#453,17.67075139284134
+handleWith(n);#347,17.664834682758038
+Node curHandler = iter.next();#642,17.6621584211077
+!NodeUtil.hasCatchHandler(node)) {#490,17.65665967123849
+handleFunction(n);#323,17.651180340693546
+exceptionHandler.pop();#531,17.64997016059028
+if (curHandler.isFunction()) {#643,17.645377413431802
+switch (n.getType()) {#222,17.64241401354472
+createEdge(lastJump, Branch.UNCOND, cur.getLastChild());#618,17.63943362236023
+return computeFollowNode(fromNode, parent, cfa);#722,17.638046037583123
+List<DiGraphNode<Node, Branch>> successors =#209,17.631782478756374
+public int compare(#73,17.626306653022766
+handleDefault(n);#316,17.62558540931115
+private void connectToPossibleExceptionHandler(Node cfgNode, Node target) {#830,17.625505447387695
+!isBreakTarget(cur, label);#571,17.62323553421918
+if (node.hasChildren()) {#554,17.615238348642986
+connectToPossibleExceptionHandler(#368,17.614300294355914
+createEdge(node, Branch.ON_TRUE, computeFallThrough(node.getFirstChild()));#387,17.60986077343976
+return astPosition.get(a.getValue()) - astPosition.get(b.getValue());#75,17.609853097370692
+if (node.getFirstChild().getNext() != null) {#442,17.608618872506277
+Node next = getNextSiblingOfType(#437,17.604090350014822
+static Node computeFollowNode(Node node, ControlFlowAnalysis cfa) {#674,17.59867392645942
+connectToPossibleExceptionHandler(#391,17.594173604791816
+if (lastJump == node) {#594,17.591898679733276
+if (node.hasChildren()) {#657,17.578887542088825
+connectToPossibleExceptionHandler(#380,17.572898691350762
+new PriorityQueue<DiGraphNode<Node, Branch>>(10, priorityComparator);#198,17.570858460885507
+return;#350,17.569501304626463
+return getPosition(n2) - getPosition(n1);#1042,17.569157490363487
+if (node.hasChildren()) {#603,17.566528876622517
+@Override#217,17.565557956695557
+if (lastJump == node) {#632,17.564499537150066
+DiGraphNode<Node, Branch> current = worklist.remove();#202,17.557473228091286
+finallyMap.put(lastJump, computeFallThrough(cur.getLastChild()));#620,17.55005349784062
+lastJump = cur;#622,17.544900013850285
+createEdge(cfgNode, Branch.ON_EX, catchBlock);#848,17.544565765946
+createEdge(lastJump, Branch.UNCOND, computeFollowNode(cur, this));#595,17.54251216008113
+for (cur = node, lastJump = node;#570,17.5413117090861
+Node catchBlock = NodeUtil.getCatchBlock(handler);#838,17.53991467019786
+nodePriorities.put(cfg.getImplicitReturn(), ++priorityCounter);#189,17.524895395551408
+private void handleExpr(Node node) {#534,17.524736404418945
+connectToPossibleExceptionHandler(iter, iter);#417,17.52336030847886
+private void handleWhile(Node node) {#372,17.518012566999957
+return priority;#1055,17.514365726047092
+return null;#715,17.5056578318278
+if (deflt != null) { // Has a DEFAULT#464,17.49885990745143
+return computeFallThrough(n.getLastChild());#806,17.4939354846352
+boolean shouldTraverseFunctions, boolean edgeAnnotations) {#138,17.490515056409333
+computeFollowNode(node, this));#379,17.48987525701523
+return computeFallThrough(n.getFirstChild());#799,17.489499845002825
+if (cur.isTry() && NodeUtil.hasFinally(cur)#573,17.48614904154902
+nodePriorities = Maps.newHashMap();#153,17.481064864567347
+createEdge(node, Branch.UNCOND, computeFallThrough(child));#504,17.480607696201492
+if (n == parent.getFirstChild().getNext()) {#285,17.479382673899334
+return parent;#747,17.478141611272637
+private void handleCatch(Node node) {#547,17.476147015889484
+return n != parent.getFirstChild().getNext();#262,17.474974849007346
+createEdge(collection, Branch.UNCOND, forNode);#424,17.473371458053588
+private void handleDefault(Node node) {#473,17.471375378695402
+Node collection = item.getNext();#421,17.470145429883683
+static Node getCatchHandlerForBlock(Node block) {#987,17.469855308532715
+return true;#896,17.465298970540363
+computeFallThrough(curHandler.getLastChild()));#651,17.455172575437107
+if (!nodePriorities.containsKey(candidate)) {#183,17.45291962623596
+Node init = forNode.getFirstChild();#398,17.44953227043152
+super(entry,#1016,17.449093723297118
+finallyMap.put(lastJump, computeFollowNode(cur, this));#597,17.445239890705455
+createEdge(node, Branch.UNCOND, next);#440,17.437718943545693
+Node body = iter.getNext();#401,17.436801978519984
+createEdge(node, Branch.ON_FALSE, next);#459,17.431615114212036
+lastJump = curHandler;#653,17.404737745012557
+prioritizeFromEntryNode(entry);#163,17.404302076859906
+createEdge(node, Branch.ON_FALSE, computeFallThrough(elseBlock));#366,17.403785629272463
+return computeFollowNode(fromNode, parent, cfa);#736,17.399752616882324
+createEdge(forNode, Branch.ON_FALSE,#428,17.394757421393145
+return computeFollowNode(fromNode, parent, cfa);#754,17.3839493560791
+return cfg;#145,17.377050280570984
+computeFollowNode(node, this));#390,17.376132428646088
+private void handleContinue(Node node) {#601,17.370228593999688
+for (Node c = first; c != null; c = c.getNext()) {#863,17.36971092224121
+Preconditions.checkState(exceptionHandler.peek() == parent);#286,17.352621999280206
+connectToPossibleExceptionHandler(forNode, cond);#416,17.35047721862793
+private static class AstControlFlowGraph extends ControlFlowGraph<Node> {#1004,17.3498254663804
+static Node computeFollowNode(Node node) {#678,17.346082766850788
+return isContinueStructure(target) && matchLabel(parent, label);#888,17.344699907302857
+for (Node c = n.getFirstChild(); c != null; c = c.getNext()) {#925,17.344566451178657
+computeFollowNode(forNode, this));#429,17.343277178312604
+return computeFollowNode(node, node, cfa);#675,17.337287724018097
+private void handleIf(Node node) {#357,17.331031972711738
+return computeFallThrough(parent.getLastChild());#752,17.329549374787703
+createEdge(forNode, Branch.ON_FALSE,#408,17.328868364032946
+edgeAnnotations);#155,17.320043162295693
+private void handleWith(Node node) {#478,17.319463816556063
+private AstControlFlowGraph(Node entry,#1013,17.314430970412033
+createEdge(node, Branch.UNCOND, null);#662,17.314188706247432
+node, NodeUtil.getConditionExpression(node));#369,17.30943993159703
+createEdge(node, Branch.UNCOND, computeFollowNode(node, this));#506,17.302044258117675
+Node cond = init.getNext();#399,17.301679679325648
+static Node computeFallThrough(Node n) {#796,17.294967492421467
+return computeFallThrough(n.getFirstChild());#804,17.2949319638704
+handleStmtList(n);#320,17.284062512715657
+computeFallThrough(node.getFirstChild().getNext()));#375,17.28203318335793
+createEdge(node, Branch.UNCOND, computeFollowNode(node, this));#535,17.274621217147164
+Node lastJump = cfgNode;#832,17.272066933768137
+for (DiGraphNode<Node, Branch> candidate : cfg.getDirectedGraphNodes()) {#168,17.254337277905694
+createEdge(node, Branch.ON_FALSE,#363,17.234921243455673
+return true;#942,17.234396934509277
+cur = cur.getParent()) {#974,17.232731640338898
+createEdge(node, Branch.UNCOND,#528,17.230085563659667
+for (DiGraphNode<Node, Branch> candidate : cfg.getDirectedGraphNodes()) {#182,17.229665932831942
+node, NodeUtil.getConditionExpression(node));#381,17.22076656704857
+node, NodeUtil.getConditionExpression(node));#392,17.220080693562824
+computeFollowNode(forNode, this));#409,17.21878548672325
+node.getFirstChild().getNext(), Token.CASE, Token.EMPTY);#438,17.20997902199074
+createEdge(node, Branch.UNCOND, computeFollowNode(node, this));#670,17.20254537333613
+astPosition = Maps.newHashMap();#152,17.201831817626953
+static Node getExceptionHandler(Node n) {#971,17.19826340675354
+this.priorities = priorities;#1018,17.18353428159441
+Node catchNode = getCatchHandlerForBlock(cur);#975,17.180135425768402
+private void handleSwitch(Node node) {#434,17.172604300759055
+private void handleFunction(Node node) {#525,17.172576904296875
+Preconditions.checkState(false, "Not reachable");#733,17.17199945449829
+private void handleTry(Node node) {#543,17.17058988050981
+break;#738,17.169974422454835
+return isBreakStructure(target, label != null) &&#878,17.16896130056942
+Node item = forNode.getFirstChild();#420,17.168938755989075
+createEdge(node, Branch.UNCOND, computeFollowNode(node, this));#445,17.167838237903737
+return computeFollowNode(node, node, null);#679,17.160744603474935
+nodePriorities.put(candidate, ++priorityCounter);#184,17.158453260149276
+private void handleBreak(Node node) {#551,17.15357676419345
+createEdge(node, Branch.ON_FALSE,#378,17.151101291179657
+Preconditions.checkState(exceptionHandler.peek() == node);#530,17.12933617546445
+createEdge(iter, Branch.UNCOND, forNode);#414,17.121689081192017
+createEdge(node, Branch.ON_FALSE,#389,17.117397844791412
+block.getParent().isTry() &&#989,17.114708732156192
+if (shouldTraverseFunctions || n == cfg.getEntry().getValue()) {#224,17.1125876222338
+createEdge(node, Branch.UNCOND, node.getLastChild());#548,17.111486662001838
+private void handleReturn(Node node) {#639,17.1084623336792
+Node next = getNextSiblingOfType(node.getNext(), Token.CASE);#456,17.10630476474762
+static boolean isBreakStructure(Node n, boolean labeled) {#936,17.102412462234497
+break;#515,17.101954301198322
+connectToPossibleExceptionHandler(node, node);#536,17.100898933410644
+private void handleDo(Node node) {#384,17.090075059370562
+return labeled;#946,17.085950244556773
+createEdge(node, Branch.UNCOND, node.getLastChild());#480,17.081879842849006
+Integer priority = priorities.get(n);#1053,17.076125144958496
+while (nextSibling != null && nextSibling.isFunction()) {#779,17.072624683380127
+private static Node computeFollowNode(#692,17.06847275627984
+Node deflt = getNextSiblingOfType(#462,17.06534901787253
+static boolean isContinueStructure(Node n) {#955,17.055121935330906
+finallyMap.put(lastJump, null);#664,17.044406950473785
+return computeFallThrough(nextSibling);#784,17.041686248779296
+!nodePriorities.containsKey(candidate) || candidate == entry);#172,17.031936522453062
+connectToPossibleExceptionHandler(node, node);#540,17.025175921122234
+connectToPossibleExceptionHandler(forNode, collection);#430,17.020935482449
+return computeFollowNode(fromNode, parent, cfa);#787,17.0064418190404
+parent.isTry() &&#488,17.00633450916835
+NodeUtil.getCatchBlock(parent) == node &&#489,17.00151153044267
+return false;#228,16.997967113148082
+return false;#904,16.99334294455392
+return true;#960,16.993243564258922
+connectToPossibleExceptionHandler(node, node);#671,16.992284520467123
+parent.getFirstChild().getNext(), Token.DEFAULT_CASE);#463,16.99197608947754
+for (Node s = block.getNext(); s != null; s = s.getNext()) {#991,16.987860986164637
+finallyMap.put(lastJump, catchBlock);#851,16.980100507321566
+return computeFallThrough(node.getNext());#759,16.956221277063545
+return computeFollowNode(fromNode, parent, cfa);#761,16.953218421936036
+connectToPossibleExceptionHandler(node, node.getFirstChild());#470,16.948069622642116
+return n == parent.getFirstChild().getNext().getNext();#270,16.92702713012695
+createEdge(node, Branch.ON_FALSE, computeFollowNode(node, this));#467,16.92290599005563
+Preconditions.checkState(handler.isTry());#837,16.907390689849855
+Node iter = cond.getNext();#400,16.904157911028182
+exceptionHandler.push(n);#230,16.892192776997884
+public boolean shouldTraverse(#218,16.890732049942017
+cur = parent, parent = parent.getParent()) {#572,16.885826206207277
+Preconditions.checkState(parent != null, "Cannot find continue target.");#624,16.883795928955077
+return true;#291,16.8793146950858
+connectToPossibleExceptionHandler(node, node.getFirstChild());#481,16.873318471406634
+throw new IllegalStateException("Cannot find break target.");#589,16.870357637820035
+connectToPossibleExceptionHandler(node, node.getFirstChild());#448,16.86703149895919
+createEdge(node, Branch.UNCOND, node.getFirstChild());#475,16.85920610881987
+private void handleStmt(Node node) {#668,16.85006594657898
+matchLabel(target.getParent(), label);#879,16.846561431884766
+cur = parent, parent = parent.getParent()) {#614,16.838591241836546
+return parent.getNext().getFirstChild();#731,16.835005500099875
+return computeFollowNode(fromNode, parent, cfa);#770,16.828534084817637
+createEdge(node, Branch.UNCOND, iter);#633,16.808622410422878
+Node nextSibling = node.getNext();#776,16.799605778285436
+this.edgeAnnotations = edgeAnnotations;#141,16.7859377179827
+return parent;#741,16.78245727832501
+return false;#930,16.769228390284947
+return;#849,16.763628210340226
+createEdge(node, Branch.UNCOND, node.getFirstChild());#544,16.753837358383905
+Node parent = node.getParent();#461,16.746326310294016
+target = target.getParent();#902,16.736806282630333
+private void handleStmtList(Node node) {#484,16.728855426494892
+computeFallThrough(node.getFirstChild().getNext().getNext()));#529,16.725096588134765
+Node iter = cur;#627,16.717839770846897
+private void createEdge(Node fromNode, ControlFlowGraph.Branch branch,#818,16.715154898794072
+if (shouldTraverseFunctions) {#165,16.714816313523514
+label = node.getFirstChild().getString();#604,16.70225238800049
+private void handleFor(Node forNode) {#395,16.700849771499634
+createEdge(node, Branch.ON_FALSE, deflt);#465,16.69907395736031
+this.root = root;#150,16.692480945587157
+label = node.getFirstChild().getString();#555,16.674214306999655
+return;#835,16.672040780385334
+Node child = node.getFirstChild();#495,16.65266051659217
+return true;#921,16.649089899930086
+Preconditions.checkState(node.getChildCount() >= 3);#527,16.64342074394226
+Node parent = node.getParent();#560,16.62007514635722
+createEdge(node, Branch.UNCOND, node.getFirstChild().getNext());#443,16.616308076041086
+NodeTraversal.traverse(compiler, root, this);#156,16.605679512023926
+Preconditions.checkState(next.isCase());#458,16.605133904351128
+return c;#866,16.588985956632175
+connectToPossibleExceptionHandler(node, node.getFirstChild());#658,16.584986913771857
+Node elseBlock = thenBlock.getNext();#359,16.584602560315812
+return parent.getNext().getFirstChild().getNext();#729,16.5821427154541
+Node parent = node.getParent();#611,16.574055910110474
+return;#491,16.570655703544617
+finallyMap.put(lastJump, iter);#635,16.562917172908783
+return false;#948,16.562265569513496
+cfg.createNode(toNode);#821,16.54556076343243
+prioritizeFromEntryNode(candidate);#173,16.538139237297905
+finallyMap.put(lastJump,#650,16.538065274556477
+return;#587,16.526894728342693
+private final boolean edgeAnnotations;#83,16.507444911532932
+cfa.createEdge(fromNode, Branch.UNCOND, finallyNode);#767,16.50135800242424
+Preconditions.checkNotNull(priority);#1054,16.495951771736145
+exceptionHandler.pop();#287,16.495641035192154
+exceptionHandler.push(n);#225,16.492031882790958
+return false;#962,16.43027973175049
+child = child.getNext();#500,16.425139793982872
+worklist.add(entry);#199,16.405992074446246
+return true;#231,16.382122473283246
+createEdge(node, Branch.SYN_BLOCK, computeFollowNode(node, this));#518,16.377290176622797
+handleStmt(n);#352,16.35811812537057
+Node parent = node.getParent();#712,16.33675241470337
+node.getFirstChild().getNext());#454,16.327687656178195
+public void process(Node externs, Node root) {#149,16.295766639709473
+worklist.add(candidate);#212,16.269245386123657
+return true;#900,16.256905902515758
+return n;#808,16.24799953807484
+return false;#923,16.233999252319336
+this.shouldTraverseFunctions = shouldTraverseFunctions;#140,16.212151951260036
+NodeTraversal nodeTraversal, Node n, Node parent) {#219,16.206039428710938
+nextSibling = nextSibling.getNext();#780,16.199756117428052
+return;#353,16.19458999633789
+Preconditions.checkState(#171,16.172587394714355
+Node parent = node.getParent();#485,16.152997414271038
+Node thenBlock = node.getFirstChild().getNext();#358,16.144285482518814
+private Node root;#88,16.11652708053589
+continue;#204,16.09742317199707
+private final Multimap<Node, Node> finallyMap = HashMultimap.create();#126,16.080738804557107
+cfg.getDirectedSuccNodes(current);#210,16.04632680312447
+cfg.createNode(fromNode);#820,16.04395917745737
+break;#644,16.037038612365723
+return parent.getFirstChild().getNext().getNext();#743,16.012927511463996
+return n.getFirstChild().getNext();#802,15.982939624786377
+return s.getFirstChild();#993,15.980068599476533
+return true;#927,15.945124366066672
+private final boolean shouldTraverseFunctions;#82,15.91523890061812
+return true;#226,15.912435384897085
+public void visit(NodeTraversal t, Node n, Node parent) {#295,15.8960845344945
+return catchNode;#977,15.797969182332357
+break;#520,15.777094999949137
+iter = cur.getFirstChild().getNext().getNext();#629,15.403698301315307

@@ -1,0 +1,37 @@
+char getLastChar() {#80,20.296073532104494
+void append(String str){#85,19.928951835632326
+add(ESTIMATED_IDENTIFIER);#95,19.092168748378754
+cost += str.length();#87,19.03532036145528
+private static final String ESTIMATED_IDENTIFIER = "ab";#29,18.997269349939682
+void addIdentifier(String identifier) {#94,18.93814908541166
+@Override#84,18.910038312276203
+int getCost() {#70,18.835245450337727
+@Override#79,18.77517302831014
+@Override#74,18.65837303797404
+private static class CompiledSizeEstimator extends CodeConsumer {#55,18.47718620300293
+private InlineCostEstimator() {#32,18.453594294461336
+CodeGenerator cg = new CodeGenerator(this);#66,18.436599430285003
+private char last = '\0';#58,18.36699080467224
+private int cost = 0;#57,18.344523429870605
+boolean continueProcessing() {#75,18.326849842071532
+static final int ESTIMATED_IDENTIFIER_COST = ESTIMATED_IDENTIFIER.length();#30,18.31466711484469
+last = str.charAt(str.length() - 1);#86,18.246614074707033
+return continueProcessing;#76,18.165164947509766
+return last;#81,18.06664572821723
+@Override#93,18.044174830118816
+private boolean continueProcessing = true;#59,17.997480710347492
+void add(Node root) {#65,17.86977057023482
+if (maxCost <= cost) {#88,17.611483369554794
+CompiledSizeEstimator(int costThreshhold) {#61,17.533769925435383
+private int maxCost;#56,17.353844536675346
+return getCost(root, Integer.MAX_VALUE);#39,17.24072575569153
+return cost;#71,17.240241050720215
+static int getCost(Node root) {#38,16.884674592451617
+class InlineCostEstimator {#27,16.739418029785156
+CompiledSizeEstimator estimator = new CompiledSizeEstimator(costThreshhold);#46,16.531018807337833
+return estimator.getCost();#48,16.418667619878594
+cg.add(root);#67,16.327838457547703
+continueProcessing = false;#89,16.313297271728516
+this.maxCost = costThreshhold;#62,16.30305278301239
+static int getCost(Node root, int costThreshhold) {#45,16.301430533914004
+estimator.add(root);#47,16.187968080694024

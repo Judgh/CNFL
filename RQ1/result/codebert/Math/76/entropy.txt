@@ -1,0 +1,180 @@
+public RealMatrix getVT()#280,19.11201915740967
+private RealMatrix cachedV;#85,18.977313899993895
+private double[] singularValues;#73,18.686128234863283
+public double[] solve(final double[] b)#392,18.66111871931288
+cachedV = transformer.getV().multiply(e);#243,18.60713310241699
+public boolean isNonSingular() {#425,18.57742601633072
+public double getNorm()#323,18.565846549140083
+public RealVector solve(final RealVector b)#404,18.5304921997918
+final double threshold = Math.max(m, n) * Math.ulp(singularValues[0]);#338,18.512755978492
+private double[] secondaryBidiagonal;#61,18.500094413757324
+final double[][] wData = new double[m][p];#164,18.449780833336614
+private double[] secondaryTridiagonal;#67,18.444902340571087
+public RealMatrix getInverse() {#432,18.4413902759552
+return 0;#345,18.439944180575285
+final double[][] data = new double[dimension][p];#308,18.422955903139982
+singularValues[i] = Math.sqrt(eigenValues[i]);#147,18.38394572817046
+private final RealMatrix pseudoInverse;#359,18.364057421684265
+private RealMatrix cachedVt;#88,18.29841830513694
+public double[] getSingularValues()#227,18.286316871643066
+if (m >= n) {#239,18.2766469654284
+private boolean nonSingular;#362,18.2669894354684
+return jv.transpose().multiply(jv);#318,18.261148409409955
+while ((p > 0) && (eigenValues[p - 1] <= 0)) {#142,18.197310822350637
+getRank() == Math.max(m, n));#352,18.195610096580104
+private Solver(final double[] singularValues, final RealMatrix uT, final RealMatrix v,#371,18.165344336937213
+mainTridiagonal[0] = a * a;#128,18.128622198104857
+public void visit(final int row, final int column, final double value) {#312,18.127065428372088
+final double[][] wData = new double[n][p];#250,18.08722480650871
+double[][] suT      = uT.getData();#373,18.077577177683512
+final int p = singularValues.length;#238,18.060000555855886
+if (m >= n) {#159,18.056683389764082
+transformer.getU().multiply(MatrixUtils.createRealMatrix(wData));#185,18.04870409965515
+public RealMatrix getV()#233,18.035028553009035
+double[] ei1 = eData[0];#165,18.023133878354674
+final double a      = 1.0 / singularValues[i];#375,18.009092723622043
+private double[] mainTridiagonal;#64,17.999887863794964
+transformer.getV().multiply(MatrixUtils.createRealMatrix(wData));#269,17.983514761924745
+if (singularValues[i] > threshold) {#341,17.9659191629161
+while ((dimension < p) && (singularValues[dimension] >= minSingularValue)) {#298,17.943830128373772
+final RealMatrix e =#241,17.931495757330033
+return singularValues[0] / singularValues[singularValues.length - 1];#331,17.919640907874474
+public RealMatrix solve(final RealMatrix b)#416,17.90990416208903
+wData[i] = new double[p];#266,17.906281502016128
+if (dimension == 0) {#302,17.897421646118165
+double[] ei1 = eData[0];#251,17.890568415323894
+suTi[j] *= a;#378,17.886195676080114
+getVT().walkInOptimizedOrder(new DefaultRealMatrixPreservingVisitor() {#309,17.877695560455322
+int dimension = 0;#297,17.875337233910194
+public double getConditionNumber()#329,17.858119106292726
+final double[] ei0 = ei1;#169,17.84817034198392
+final double si = secondaryBidiagonal[i];#172,17.842168753487723
+final double[] ei0 = ei1;#254,17.820731286079653
+singularValues = new double[p];#145,17.81249076128006
+final RealMatrix e =#247,17.7974758602324
+for (int i = 0; i < singularValues.length; ++i) {#374,17.78547960917155
+cachedU  = null;#114,17.783001695360458
+private double[] mainBidiagonal;#58,17.77276547749837
+n = matrix.getColumnDimension();#112,17.75954818725586
+public RealMatrix getS()#214,17.753240203857423
+cachedV =#268,17.752222161543997
+private RealMatrix cachedS;#82,17.744944477081297
+for (int i = 0; i < p - 1; ++i) {#252,17.738244490189985
+private RealMatrix cachedU;#76,17.71298713684082
+cachedV  = null;#116,17.705047266823904
+final double mi = mainBidiagonal[i];#253,17.68455179276005
+final double[] wi  = wData[i];#255,17.67572815187516
+for (int i = 0; i < p - 1; ++i) {#166,17.67265565467603
+wData[i] = new double[p];#182,17.662344009645523
+for (int i = p; i < m; ++i) {#181,17.65185340758293
+final double si = secondaryBidiagonal[i];#257,17.638139533996583
+cachedVt = getV().transpose();#284,17.63802363655784
+final double[] suTi = suT[i];#376,17.63373562141701
+double a = mainBidiagonal[0];#127,17.63316795561049
+final double mi = mainBidiagonal[i];#168,17.632076540300922
+final RealMatrix e =#161,17.62990306672596
+public RealMatrix getU()#153,17.62880907058716
+throw MathRuntimeException.createIllegalArgumentException(#303,17.61824905872345
+cachedS = MatrixUtils.createRealDiagonalMatrix(singularValues);#220,17.592664192462788
+MathUtils.SAFE_MIN);#139,17.592036346594494
+secondaryTridiagonal[i - 1] = a * b;#131,17.590121305905857
+@Override#311,17.587736742837087
+wData[p - 1][j] = ei1[j] * mainBidiagonal[p - 1] / singularValues[j];#263,17.57616203625997
+this(matrix, Math.min(matrix.getRowDimension(), matrix.getColumnDimension()));#98,17.56552251180013
+public RealMatrix getUT()#201,17.56204786300659
+wData[p - 1][j] = ei1[j] * mainBidiagonal[p - 1] / singularValues[j];#178,17.55541845957438
+return singularValues.clone();#229,17.548292636871338
+for (int i = singularValues.length - 1; i >= 0; --i) {#340,17.540367671421595
+final double[][] eData = e.getData();#163,17.53683195442989
+int p = Math.min(max, eigenValues.length);#141,17.53550309720247
+wi[j] = (mi * ei0[j] + si * ei1[j]) / singularValues[j];#259,17.523111644544098
+final double[] wi  = wData[i];#170,17.521937616409794
+cachedVt = null;#117,17.50860834121704
+wi[j] = (mi * ei0[j] + si * ei1[j]) / singularValues[j];#174,17.50566608027408
+final double[][] eData = e.getData();#249,17.501752064145844
+for (int i = p; i < n; ++i) {#265,17.499167873013405
+RealMatrix jv = new Array2DRowRealMatrix(data, false);#317,17.495976600646973
+eigenDecomposition.getV().getSubMatrix(0, m - 1, 0, p - 1);#189,17.492656071980793
+cachedU =#184,17.480993471647565
+final RealMatrix e =#188,17.46086229596819
+m = matrix.getRowDimension();#111,17.460108588723575
+private RealMatrix cachedUt;#79,17.448053550720214
+private BiDiagonalTransformer transformer;#55,17.437350114186604
+transformer         = new BiDiagonalTransformer(matrix);#120,17.433118513652257
+pseudoInverse    = v.multiply(new Array2DRowRealMatrix(suT, false));#381,17.41050624847412
+return i + 1;#342,17.409946793004085
+cachedU = transformer.getU().multiply(e);#190,17.3814453125
+final int p = singularValues.length;#158,17.371492658342635
+for (int j = 0; j < p; ++j) {#173,17.368637305039627
+return new Solver(singularValues, getUT(), getV(),#351,17.36769788161568
+for (int j = 0; j < p; ++j) {#258,17.361514653915012
+return pseudoInverse.multiply(b);#418,17.339429440705672
+data[row][column] = value / singularValues[row];#313,17.335030142466227
+for (int j = 0; j < p; ++j) {#262,17.333013436733147
+for (int j = 0; j < p; ++j) {#177,17.318520130255283
+secondaryBidiagonal = transformer.getSecondaryDiagonalRef();#122,17.31520869515159
+private int m;#49,17.267072319984436
+final double b  = secondaryBidiagonal[i - 1];#130,17.218946860386776
+return singularValues[0];#325,17.218121596745082
+mainTridiagonal[i] = a * a + b * b;#133,17.206233501434326
+final boolean nonSingular) {#372,17.192182064056396
+ei1 = eData[i + 1];#171,17.19033908843994
+return cachedV;#275,17.188764015833538
+eigenDecomposition =#137,17.17364767619542
+return pseudoInverse.operate(b);#394,17.155469590967353
+a = mainBidiagonal[i];#132,17.138677233741397
+mainBidiagonal      = transformer.getMainDiagonalRef();#121,17.13460951585036
+for (int i = 1; i < mainBidiagonal.length; ++i) {#129,17.113116196223668
+ei1 = eData[i + 1];#256,17.109410912649974
+eigenDecomposition.getV().getSubMatrix(0, p - 1, 0, p - 1);#162,17.09866714477539
+for (int j = 0; j < suTi.length; ++j) {#377,17.08116640764124
+private int n;#52,17.04150629043579
+for (int i = 0; i < p; ++i) {#146,17.0394287109375
+return pseudoInverse.operate(b);#406,17.035305326635186
+final int p = singularValues.length;#296,17.011318599476535
+cachedS  = null;#115,16.995751993996755
+final double[] eigenValues = eigenDecomposition.getRealEigenvalues();#140,16.987386103029603
+secondaryTridiagonal = new double[mainBidiagonal.length - 1];#126,16.97625873565674
+if (cachedV == null) {#236,16.972742866067325
+if (cachedVt == null) {#283,16.912701182895237
+mainTridiagonal      = new double[mainBidiagonal.length];#125,16.885479995182582
+public SingularValueDecompositionImpl(final RealMatrix matrix)#96,16.881610446506077
+eigenDecomposition.getV().getSubMatrix(0, p - 1, 0, p - 1);#248,16.864693895975748
+eigenDecomposition.getV().getSubMatrix(0, n - 1, 0, p - 1);#242,16.796315087212456
+return pseudoInverse;#433,16.783948505626004
+"cutoff singular value is {0}, should be at most {1}",#304,16.74116927555629
+cachedUt = getU().transpose();#205,16.730016935439338
+if (cachedS == null) {#217,16.728486509884107
+return cachedVt;#288,16.724443655747635
+++dimension;#299,16.71570021311442
+this.nonSingular = nonSingular;#382,16.67250277779319
+public DecompositionSolver getSolver() {#350,16.668589719136556
+if (cachedUt == null) {#204,16.616471683277805
+minSingularValue, singularValues[0]);#305,16.575852700642177
+return cachedS;#223,16.56670069694519
+throws InvalidMatrixException {#215,16.529386960543118
+--p;#143,16.497367922465006
+private EigenDecomposition eigenDecomposition;#70,16.49418318271637
+public int getRank()#335,16.48941633436415
+public SingularValueDecompositionImpl(final RealMatrix matrix, final int max)#108,16.47359427538785
+public RealMatrix getCovariance(final double minSingularValue) {#293,16.42386904216948
+throws InvalidMatrixException {#202,16.419049116281364
+new EigenDecompositionImpl(mainTridiagonal, secondaryTridiagonal,#138,16.3574382464091
+throws IllegalArgumentException {#393,16.35390435324775
+throws InvalidMatrixException {#281,16.346442736112156
+return cachedU;#196,16.320727348327637
+if (cachedU == null) {#156,16.285377895130832
+return cachedUt;#209,16.216589132944744
+throws IllegalArgumentException {#405,16.212793668111164
+public class SingularValueDecompositionImpl implements SingularValueDecomposition {#46,16.205297629038494
+return nonSingular;#426,16.171600453993854
+private static class Solver implements DecompositionSolver {#356,16.170620560646057
+throws IllegalStateException {#336,16.138734817504883
+throws InvalidMatrixException {#154,16.1175757921659
+throws InvalidMatrixException {#109,16.07225176004263
+throws InvalidMatrixException {#234,16.046954301687386
+throws IllegalArgumentException {#417,15.882607301076254
+throws InvalidMatrixException {#324,15.593960835383488
+throws InvalidMatrixException {#330,15.532513471750113
+throws InvalidMatrixException {#228,15.390326866736778
+throws InvalidMatrixException {#97,14.92238264817458

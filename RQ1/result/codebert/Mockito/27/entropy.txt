@@ -1,0 +1,52 @@
+return mock;#59,18.08078349720348
+@SuppressWarnings("unchecked")#21,17.399965633045543
+return null;#104,17.34036853096702
+Factory factory = (Factory) mock;#99,17.21549302339554
+public class MockUtil {#22,17.21495750972203
+public MockUtil() {#30,17.152434253692626
+public MockName getMockName(Object mock) {#107,17.06251037120819
+Class<?>[] interfaces = settings.getExtraInterfaces();#42,17.03108669462658
+if (mock == null) {#76,16.920621395111084
+creationValidator.validateExtraInterfaces(classToMock, settings.getExtraInterfaces());#36,16.88639561335246
+return mock != null && isMockitoMock(mock);#92,16.850458414658256
+new LenientCopyTool().copyToMock(spiedInstance, mock);#56,16.813322692081847
+return (MethodInterceptorFilter) callback;#102,16.77495611281622
+Callback callback = factory.getCallback(0);#100,16.747282454842015
+Class<?>[] ancillaryTypes;#44,16.6726738985847
+MethodInterceptorFilter newFilter = new MethodInterceptorFilter(newMockHandler, (MockSettingsImpl) org.mockito.Mockito.withSettings().defaultAnswer(org.mockito.Mockito.RETURNS_DEFAULTS));#65,16.65443719517101
+return getInterceptor(mock) != null;#88,16.625737993340742
+if (spiedInstance != null) {#55,16.619304656982422
+return new MethodInterceptorFilter(invocationNotifierHandler, settings);#72,16.61674851956575
+return getMockHandler(mock).getMockSettings().getMockName();#108,16.609516814902978
+T mock = ClassImposterizer.INSTANCE.imposterise(filter, classToMock, ancillaryTypes);#53,16.595674542018344
+private <T> boolean isMockitoMock(T mock) {#87,16.52487187385559
+public boolean isMock(Object mock) {#91,16.493909222739084
+MethodInterceptorFilter filter = newMethodInterceptorFilter(settings);#41,16.489927942102607
+return null;#97,16.482145245869955
+if (isMockitoMock(mock)) {#80,16.453704652332124
+Object spiedInstance = settings.getSpiedInstance();#51,16.433784818649293
+throw new NotAMockException("Argument should be a mock, but is: " + mock.getClass());#83,16.404280794991386
+this.creationValidator = creationValidator;#27,16.364562140570747
+if (settings.isSerializable()) {#45,16.36192994959214
+this(new MockCreationValidator());#31,16.361858816707837
+ancillaryTypes = interfaces == null ? new Class<?>[] {Serializable.class} : new ArrayUtils().concat(interfaces, Serializable.class);#46,16.357451341590103
+if (callback instanceof MethodInterceptorFilter) {#101,16.304744971425908
+creationValidator.validateMockedType(classToMock, settings.getSpiedInstance());#37,16.267670345306396
+ancillaryTypes = interfaces == null ? new Class<?>[0] : interfaces;#48,16.234358755747476
+return (MockHandlerInterface) getInterceptor(mock).getHandler();#81,16.178663319554822
+((Factory) mock).setCallback(0, newFilter);#66,16.085769721439906
+public <T> T createMock(Class<T> classToMock, MockSettingsImpl settings) {#34,15.958646740232195
+if (!(mock instanceof Factory)) {#96,15.919161743587917
+throw new NotAMockException("Argument should be a mock, but is null!");#77,15.867686933086764
+MockHandler<T> mockHandler = new MockHandler<T>(settings);#70,15.848064363002777
+private final MockCreationValidator creationValidator;#24,15.806775919596355
+public <T> MockHandlerInterface<T> getMockHandler(T mock) {#75,15.801847167637037
+private <T> MethodInterceptorFilter getInterceptor(T mock) {#95,15.758689641952515
+creationValidator.validateType(classToMock);#35,15.740472657339913
+settings.initiateMockName(classToMock);#39,15.622064980593594
+private <T> MethodInterceptorFilter newMethodInterceptorFilter(MockSettingsImpl settings) {#69,15.599531631469727
+MockHandlerInterface<T> oldMockHandler = getMockHandler(mock);#63,15.584836341716626
+public MockUtil(MockCreationValidator creationValidator) {#26,15.5485196352005
+MockHandler<T> newMockHandler = new MockHandler<T>(oldMockHandler);#64,15.505696535110474
+InvocationNotifierHandler<T> invocationNotifierHandler = new InvocationNotifierHandler<T>(mockHandler, settings);#71,15.431172688802084
+public <T> void resetMock(T mock) {#62,15.398096982170554

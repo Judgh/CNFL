@@ -1,0 +1,150 @@
+return FastMath.abs(x) + FastMath.abs(y) + FastMath.abs(z);#204,19.33546723638262
+return FastMath.atan2(y, x);#233,18.94049701690674
+return FastMath.max(FastMath.max(FastMath.abs(x), FastMath.abs(y)), FastMath.abs(z));#225,18.885019090440537
+return FastMath.acos(dot / normProduct);#354,18.865466713905334
+return FastMath.max(FastMath.max(dx, dy), dz);#519,18.710566824132744
+this.x = FastMath.cos(alpha) * cosDelta;#109,18.591348296717594
+return FastMath.PI - FastMath.asin(v3.getNorm() / normProduct);#350,18.53428914811876
+final double dy = FastMath.abs(v2.y - v1.y);#517,18.510159616884977
+final double dx = FastMath.abs(v2.x - v1.x);#486,18.50624768630318
+final double dx = FastMath.abs(v2.x - v1.x);#516,18.47804832458496
+double cosDelta = FastMath.cos(delta);#108,18.40703386068344
+final double dy = FastMath.abs(v2.y - v1.y);#487,18.382486633632492
+public int hashCode() {#436,18.378733038902283
+this.y = FastMath.sin(alpha) * cosDelta;#110,18.33653063523142
+return dx * dx + dy * dy + dz * dz;#534,18.287845762152422
+this.x = a1 * u1.x + a2 * u2.x + a3 * u3.x + a4 * u4.x;#171,18.26911962032318
+return FastMath.sqrt(dx * dx + dy * dy + dz * dz);#504,18.244639320373537
+double dot = dotProduct(v1, v2);#342,18.209333300590515
+this.x = x;#94,18.16751194000244
+this.x = a1 * u1.x + a2 * u2.x + a3 * u3.x;#152,18.14032158255577
+return FastMath.sqrt (x * x + y * y + z * z);#211,18.09579546555229
+this.y = a1 * u1.y + a2 * u2.y + a3 * u3.y + a4 * u4.y;#172,18.05030400753021
+return dx + dy + dz;#489,18.03586498896281
+return FastMath.asin(v3.getNorm() / normProduct);#348,18.035507639249165
+return 31 * (23 * MathUtils.hash(x) +  19 * MathUtils.hash(y) +  MathUtils.hash(z));#440,17.992873645964124
+final double dx = v2.x - v1.x;#501,17.99114402135213
+final double dy = v2.y - v1.y;#502,17.988634215460884
+return new Vector3D(-x, -y, -z);#362,17.970142788357204
+this.y = a1 * u1.y + a2 * u2.y + a3 * u3.y;#153,17.95686623454094
+private final double x;#76,17.93356214250837
+this.x = a1 * u1.x + a2 * u2.x;#135,17.88450260957082
+final double dz = FastMath.abs(v2.z - v1.z);#518,17.87141426404317
+final double dy = v2.y - v1.y;#532,17.853320545620388
+final double dx = v2.x - v1.x;#531,17.849976380666096
+return x * x + y * y + z * z;#218,17.84157438839183
+this.z = a1 * u1.z + a2 * u2.z + a3 * u3.z + a4 * u4.z;#173,17.807200956344605
+private static final long serialVersionUID = 5133268763396045979L;#73,17.806628799438478
+this.y = a1 * u1.y + a2 * u2.y;#136,17.79389516512553
+final double dz = FastMath.abs(v2.z - v1.z);#488,17.79321277141571
+return x;#181,17.755801882062638
+this.z = a1 * u1.z + a2 * u2.z + a3 * u3.z;#154,17.75372877717018
+return v1.x * v2.x + v1.y * v2.y + v1.z * v2.z;#449,17.745412172589983
+throw new MathArithmeticException(LocalizedFormats.ZERO_NORM);#339,17.730873465538025
+private final double y;#79,17.72006062098912
+public boolean isNaN() {#377,17.719377199808758
+public Vector3D normalize() {#282,17.652528762817383
+throw new MathArithmeticException(LocalizedFormats.ZERO_NORM);#309,17.646520535151165
+this.z = FastMath.sin(delta);#111,17.644805133342743
+return new Vector3D(x + v.x, y + v.y, z + v.z);#249,17.636327130453928
+this.y = y;#95,17.596755599975587
+this.z = a1 * u1.z + a2 * u2.z;#137,17.56110417842865
+return scalarMultiply(1 / s);#287,17.50560499827067
+return new Vector3D(x - v.x, y - v.y, z - v.z);#266,17.47474343436105
+double inverse  = 1 / FastMath.sqrt(x * x + y * y);#319,17.458520929018658
+double inverse  = 1 / FastMath.sqrt(y * y + z * z);#313,17.425485684321476
+return 8;#438,17.415850199185886
+return new Vector3D(x + factor * v.x, y + factor * v.y, z + factor * v.z);#258,17.40691151338465
+return new Vector3D(v1.y * v2.z - v1.z * v2.y, v1.z * v2.x - v1.x * v2.z, v1.x * v2.y - v1.y * v2.x);#473,17.406073186132645
+return FastMath.asin(z / getNorm());#241,17.387055969238283
+public double getY() {#188,17.3773250579834
+double inverse  = 1 / FastMath.sqrt(x * x + z * z);#316,17.374783919407772
+public double getNormInf() {#224,17.373474438985188
+final Vector3D rhs = (Vector3D)other;#418,17.352181100845335
+final double dz = v2.z - v1.z;#533,17.335993415430973
+final double dz = v2.z - v1.z;#503,17.31389748422723
+public double getDelta() {#240,17.30785346031189
+return this.isNaN();#420,17.290101780610925
+Vector3D v3 = crossProduct(v1, v2);#346,17.28835764385405
+return y;#189,17.28288091932024
+double normProduct = v1.getNorm() * v2.getNorm();#337,17.277391024998256
+return new Vector3D(a * x, a * y, a * z);#370,17.21496924487027
+public double getNormSq() {#217,17.095361614227294
+this.x = a * u.x;#121,17.07622514452253
+public Vector3D negate() {#361,17.058342615763348
+Vector3DFormat.getInstance();#70,17.049544715881346
+private final double z;#82,17.01437704903739
+public static double distanceInf(Vector3D v1, Vector3D v2) {#515,17.01345075879778
+return z;#197,16.99200984409877
+double threshold = 0.6 * getNorm();#307,16.986959389277867
+public double getAlpha() {#232,16.972759127616882
+throw new MathArithmeticException(LocalizedFormats.CANNOT_NORMALIZE_A_ZERO_NORM_VECTOR);#285,16.96399956780511
+return new Vector3D(x - factor * v.x, y - factor * v.y, z - factor * v.z);#275,16.959403038024902
+public static double angle(Vector3D v1, Vector3D v2) {#335,16.956969261169434
+public static double dotProduct(Vector3D v1, Vector3D v2) {#448,16.913704463413783
+this.y = a * u.y;#122,16.890231609344482
+public static final Vector3D NaN = new Vector3D(Double.NaN, Double.NaN, Double.NaN);#57,16.876047134399414
+public double getNorm1() {#203,16.872525850931805
+@Override#435,16.8641414642334
+return new Vector3D(inverse * y, -inverse * x, 0);#320,16.86048926477847
+double threshold = normProduct * 0.9999;#343,16.828478949410574
+public double getNorm() {#210,16.812844395637512
+if ((x >= -threshold) && (x <= threshold)) {#312,16.809150043286774
+@Override#540,16.808343648910522
+public static double distanceSq(Vector3D v1, Vector3D v2) {#530,16.795054045590486
+public Vector3D scalarMultiply(double a) {#369,16.788997292518616
+return DEFAULT_FORMAT.format(this);#542,16.775036026449765
+public Vector3D add(Vector3D v) {#248,16.772680963788712
+public Vector3D orthogonal() {#305,16.772364356301047
+return new Vector3D(-inverse * z, 0, inverse * x);#317,16.770509719848633
+@Override#410,16.7353937625885
+return new Vector3D(0, inverse * z, -inverse * y);#314,16.735035975774128
+return (x == rhs.x) && (y == rhs.y) && (z == rhs.z);#423,16.73229203079686
+public static final Vector3D ZERO   = new Vector3D(0, 0, 0);#35,16.729750633239746
+public double getX() {#180,16.72499418258667
+public static double distance(Vector3D v1, Vector3D v2) {#500,16.703109455108642
+public String toString() {#541,16.701782822608948
+this.z = z;#96,16.698262214660645
+public static double distance1(Vector3D v1, Vector3D v2) {#485,16.684244201296853
+double a3, Vector3D u3, double a4, Vector3D u4) {#170,16.627548022147938
+return true;#414,16.586053318447536
+public Vector3D subtract(Vector3D v) {#265,16.550670283181326
+public static final Vector3D PLUS_I = new Vector3D(1, 0, 0);#38,16.520695852196734
+double a3, Vector3D u3) {#151,16.488623553308948
+public static final Vector3D PLUS_K = new Vector3D(0, 0, 1);#50,16.469447177389394
+return Double.isNaN(x) || Double.isNaN(y) || Double.isNaN(z);#378,16.44397429263953
+public static Vector3D crossProduct(final Vector3D v1, final Vector3D v2) {#457,16.433220443725585
+public Vector3D add(double factor, Vector3D v) {#257,16.41577989914838
+public Vector3D subtract(double factor, Vector3D v) {#274,16.34080359515022
+if (dot >= 0) {#347,16.339598802419808
+if (s == 0) {#284,16.33131356672807
+public static final Vector3D PLUS_J = new Vector3D(0, 1, 0);#44,16.30706206611965
+public Vector3D(double a1, Vector3D u1, double a2, Vector3D u2,#150,16.302355730975115
+double s = getNorm();#283,16.281393814086915
+public boolean isInfinite() {#387,16.281122631496853
+public Vector3D(double a1, Vector3D u1, double a2, Vector3D u2,#169,16.262494652359575
+public static final Vector3D MINUS_K = new Vector3D(0, 0, -1);#53,16.259376583099364
+public static final Vector3D MINUS_J = new Vector3D(0, -1, 0);#47,16.252182607650756
+if (normProduct == 0) {#338,16.178497234980266
+this.z = a * u.z;#123,16.158292293548584
+if (isNaN()) {#437,16.144905383770283
+public Vector3D(double a1, Vector3D u1, double a2, Vector3D u2) {#134,16.143704686846053
+public Vector3D(double x, double y, double z) {#93,16.07069901859059
+if (other instanceof Vector3D) {#417,16.06964213507516
+new Vector3D(Double.NEGATIVE_INFINITY, Double.NEGATIVE_INFINITY, Double.NEGATIVE_INFINITY);#66,16.029198041776333
+public class Vector3D implements Serializable {#33,16.015136432647704
+public static final Vector3D MINUS_I = new Vector3D(-1, 0, 0);#41,16.014595488707226
+if (this == other) {#413,15.988951249556107
+public Vector3D(double alpha, double delta) {#107,15.987834249223981
+if ((dot < -threshold) || (dot > threshold)) {#344,15.98696984742817
+if (threshold == 0) {#308,15.958727677663168
+return false;#425,15.949166706630162
+if (rhs.isNaN()) {#419,15.897744536399841
+public double getZ() {#196,15.893223404884338
+private static final Vector3DFormat DEFAULT_FORMAT =#69,15.796490848064423
+public Vector3D(double a, Vector3D u) {#120,15.681810438632965
+public static final Vector3D NEGATIVE_INFINITY =#65,15.651967644691467
+new Vector3D(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY);#62,15.631554417493867
+return !isNaN() && (Double.isInfinite(x) || Double.isInfinite(y) || Double.isInfinite(z));#388,15.55570571422577
+public static final Vector3D POSITIVE_INFINITY =#61,14.73040971159935
+public boolean equals(Object other) {#411,14.697167015075683

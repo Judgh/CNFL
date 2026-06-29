@@ -1,0 +1,168 @@
+LabelNameSupplier(Supplier<String> idSupplier) {#157,21.446356773376465
+static class LabelNameSupplier implements Supplier<String> {#154,21.018626085917155
+final Supplier<String> idSupplier;#155,20.479285989488876
+public String get() {#162,20.40833134121365
+Supplier<String> idSupplier = compiler.getUniqueNameIdSupplier();#143,20.35531538183039
+private Supplier<String> safeNameIdSupplier;#41,19.971944059644425
+this.idSupplier = idSupplier;#158,19.751473665237427
+this.safeNameIdSupplier = safeNameIdSupplier;#47,19.584960566626656
+AbstractCompiler compiler, Supplier<String> safeNameIdSupplier) {#45,19.564371399257492
+String resultName, String labelName) {#414,19.553134282430012
+if (hasArgs) {#86,18.97047996520996
+if (hasArgs) {#77,18.96110773086548
+new InlineRenamer(#147,18.88895606994629
+if (returnCount > 0) {#267,18.88873863220215
+private AbstractCompiler compiler;#40,18.87691593170166
+private String getLabelNameForFunction(String fnName){#170,18.810051236833846
+if (returnCount > 0) {#276,18.805900641850062
+Node node, String resultName) {#371,18.77804688044957
+Node block, String resultName) {#336,18.762876919337682
+idSupplier,#148,18.759300565719606
+compiler, fnNode, new MakeDeclaredNamesUnique(#146,18.748136520385742
+Set<String> namesToAlias) {#187,18.74205773671468
+String labelName = getLabelNameForFunction(fnName);#101,18.68892770655015
+this.compiler = compiler;#46,18.658997882496227
+Node block, String resultName, String labelName,#257,18.635348937090704
+return result;#194,18.603360493977863
+Node name = Node.newString(Token.LABEL_NAME, labelName)#284,18.572791906503532
+if (hasReturnAtExit) {#271,18.541840893881663
+String name = entry.getKey();#209,18.513274431228638
+return "JSCompiler_inline_label_" + idSupplier.get();#163,18.426511764526367
+boolean resultMustBeSet) {#258,18.383439430823692
+String resultName, boolean needsDefaultResult, boolean isCallInLoop) {#62,18.370861660350453
+Set<String> namesToAlias =#71,18.34660029411316
+Node name = Node.newString(Token.LABEL_NAME, labelName);#427,18.321017305056255
+private static void addDummyAssignment(Node node, String resultName) {#315,18.317139725936087
+for (Entry<String, Node> entry : argMap.entrySet()) {#208,18.29022341189177
+if (resultMustBeSet && !hasReturnAtExit && resultName != null) {#300,18.289687032284945
+boolean hasArgs = !args.isEmpty();#76,18.276171479906356
+if (namesToAlias.contains(name)) {#210,18.221363496780395
+return "JSCompiler_inline_label_" + name + "_" + safeNameIdSupplier.get();#172,18.207650057474773
+@Override#161,18.13038730621338
+newBlock, resultName, labelName, needsDefaultResult);#103,18.104757536025275
+convertLastReturnToStatement(block, resultName);#272,18.09908766495554
+Node resultNode = getReplacementReturnStatement(current, resultName);#426,18.072069258916947
+c = replaceReturnWithBreak(c, current, resultName, labelName);#441,18.065381126403807
+if (namesToAlias == null || namesToAlias.isEmpty()) {#189,18.0625919342041
+private void fixUnitializedVarDeclarations(Node n) {#114,18.05488681793213
+Node label = new Node(Token.LABEL).copyInformationFrom(block);#283,17.991761741638182
+if (node.hasChildren()) {#375,17.96221701304118
+private static Node createAssignStatementNode(String name, Node expression) {#353,17.952622996436226
+Node newValue = entry.getValue().cloneTree();#211,17.942190517078746
+Node fnTemplateRoot, LinkedHashMap<String, Node> argMap,#186,17.93070884372877
+Node inlineResult = aliasAndInlineArguments(newBlock,#87,17.881981897354127
+private static boolean hasReturnAtExit(Node block) {#401,17.866084780011857
+if (isCallInLoop) {#97,17.850215832392376
+if (!name.hasChildren()) {#125,17.845034531184606
+fixUnitializedVarDeclarations(c);#133,17.844620196024575
+if (resultName == null) {#381,17.830811421076458
+for (Node c = current.getFirstChild(); c != null; c = c.getNext()) {#439,17.825559550318225
+Map<String, Node> newArgMap = Maps.newHashMap(argMap);#201,17.813010215759277
+LinkedHashMap<String, Node> args =#73,17.801182174682616
+private static void convertLastReturnToStatement(#335,17.792225577614524
+newFnNode, callNode, this.safeNameIdSupplier);#75,17.788476943969727
+if (resultNode != null) {#433,17.744623116084508
+return injectableBlock;#106,17.700109269883896
+String name = (fnName == null || fnName.isEmpty()) ? "anon" : fnName;#171,17.698457223397714
+returnCount--;#273,17.62566868464152
+hasReturnAtExit = hasReturnAtExit(block);#268,17.624349276224773
+label.addChildToBack(block);#287,17.62173792895149
+replaceReturnWithBreak(block, null, resultName, labelName);#280,17.62034092778745
+for (Node n : newVars) {#227,17.618081867694855
+private void makeLocalNamesUnique(Node fnNode, boolean isCallInLoop) {#142,17.608438301086426
+private Node aliasAndInlineArguments(#185,17.58628090945157
+newRoot.addChildrenToBack(label);#290,17.58030547036065
+if (retVal == null) {#386,17.5609575680324
+Preconditions.checkNotNull(labelName);#260,17.55808900197347
+Node resultNode = getReplacementReturnStatement(ret, resultName);#339,17.540880153053685
+if (retVal != null) {#382,17.506570271083287
+return root;#304,17.503280775887625
+if (NodeUtil.isVar(n)) {#122,17.483438789844513
+Node nameNode = Node.newString(Token.NAME, name);#356,17.476469391270687
+Node resultNode = null;#372,17.46744613647461
+name.addChildToBack(NodeUtil.newUndefinedNode(srcLocation));#127,17.416117738794398
+List<Node> newVars = Lists.newLinkedList();#205,17.415959903172084
+int returnCount = NodeUtil.getNodeTypeReferenceCount(#265,17.41136317782932
+FunctionArgumentInjector.getFunctionCallParameterMap(#74,17.391034444173176
+return NodeUtil.newExpr(assign);#358,17.388156473636627
+label.addChildToFront(name);#286,17.3602954640108
+Node newRoot = new Node(Token.BLOCK).copyInformationFrom(block);#289,17.352964327885555
+Node newNode = NodeUtil.newVarNode(name, newValue)#212,17.329493240073877
+Node ret = block.getLastChild();#337,17.325873668377216
+for (Node c = n.getFirstChild(); c != null; c = c.getNext()) {#132,17.325348677458585
+return (block.getLastChild().getType() == Token.RETURN);#404,17.319327354431152
+Node resultNode = createAssignStatementNode(resultName, retVal);#321,17.318247032165527
+if (current.getType() == Token.FUNCTION#416,17.31486202688778
+resultNode = createAssignStatementNode(resultName, retVal);#392,17.31289259592692
+Node injectableBlock = replaceReturns(#102,17.30614407857259
+if (current.getType() == Token.RETURN) {#423,17.305999279022217
+newFnNode, args, namesToAlias, compiler.getCodingConvention());#79,17.28406988341233
+FunctionToBlockMutator(#44,17.282848119735718
+fnTemplateRoot, null, argMap);#192,17.262278908177425
+|| current.getType() == Token.EXPR_RESULT) {#417,17.25843020280202
+if (resultNode == null) {#341,17.254413922627766
+Node name = n.getFirstChild();#123,17.251218032836913
+return resultNode;#395,17.238250136375427
+return current;#445,17.21559238433838
+fnTemplateRoot, null, newArgMap);#222,17.205308151245116
+args, namesToAlias);#88,17.198803186416626
+Node root = block;#262,17.19071430630154
+if (NodeUtil.isLoopStructure(n)) {#117,17.16667260064019
+return result;#231,17.16305340660943
+Node assign = new Node(Token.ASSIGN, nameNode, expression);#357,17.160681629180907
+Node newFnNode = fnNode.cloneTree();#63,17.125925600528717
+Node srcLocation = node;#319,17.106387996673583
+resultNode.copyInformationFromForTree(current);#434,17.084204924734014
+isCallInLoop)));#150,17.048407424579967
+boolean hasReturnAtExit = false;#264,17.03996483484904
+return current;#420,17.03618621826172
+Preconditions.checkState(NodeUtil.isStatementBlock(parent));#424,16.99535315969716
+newVars.add(0, newNode);#214,16.982971600123815
+Node breakNode = new Node(Token.BREAK, name);#428,16.93720350265503
+class FunctionToBlockMutator {#38,16.936221599578857
+breakNode.copyInformationFromForTree(current);#431,16.927921856150906
+makeLocalNamesUnique(newFnNode, isCallInLoop);#67,16.912092108475534
+resultNode = NodeUtil.newExpr(retVal); // maybe null.#383,16.907700758713943
+Node retVal = null;#374,16.902610874176027
+Node srcLocation = node;#388,16.880746841430664
+Preconditions.checkArgument(node.getType() == Token.BLOCK);#316,16.863740921020508
+Node result = FunctionArgumentInjector.inject(#191,16.8548045911287
+resultNode.copyInformationFromForTree(node);#322,16.85261656443278
+block, Token.RETURN, new NodeUtil.MatchShallowStatement());#266,16.837583312988283
+retVal = node.getFirstChild().cloneTree();#378,16.825130197736954
+Preconditions.checkState(result == fnTemplateRoot);#193,16.78930207302696
+Node result = FunctionArgumentInjector.inject(#221,16.767063994156686
+Node srcLocation = name;#126,16.76270021711077
+private static Node getReplacementReturnStatement(#370,16.74573464827104
+addDummyAssignment(block, resultName);#301,16.699422499712774
+.copyInformationFrom(block);#285,16.692743652745296
+fixUnitializedVarDeclarations(newBlock);#98,16.684596478939056
+Preconditions.checkNotNull(block);#259,16.678326402391708
+FunctionArgumentInjector.findModifiedParameters(newFnNode);#72,16.641277313232422
+return;#118,16.63963031768799
+Preconditions.checkState(injectableBlock != null);#104,16.637160142262776
+Node newBlock = NodeUtil.getFunctionBody(newFnNode);#82,16.617526417686825
+resultNode.copyInformationFromForTree(ret);#344,16.616697647992304
+FunctionArgumentInjector.maybeAddTempsForCallArguments(#78,16.60825148495761
+current = breakNode;#437,16.602741154757414
+Preconditions.checkArgument(ret.getType() == Token.RETURN);#338,16.602021010025688
+Node retVal = NodeUtil.newUndefinedNode(srcLocation);#320,16.580359172821044
+newBlock.detachFromParent();#84,16.542917648951214
+retVal = NodeUtil.newUndefinedNode(srcLocation);#389,16.501544371895168
+Preconditions.checkState(result == fnTemplateRoot);#223,16.478826020893298
+root = newRoot;#294,16.41709481752836
+return;#129,16.40073025226593
+.copyInformationFromForTree(newValue);#213,16.34321395556132
+Node mutate(String fnName, Node fnNode, Node callNode,#61,16.328479025099014
+"inline_",#149,16.325226497650146
+parent.replaceChild(current, breakNode);#432,16.227701544761658
+newArgMap.remove(name);#216,16.20931429333157
+Preconditions.checkState(newBlock == inlineResult);#89,16.177869595979388
+fnTemplateRoot.addChildToFront(n);#228,16.11788272857666
+private static Node replaceReturnWithBreak(Node current, Node parent,#413,16.005798280239105
+block.replaceChild(ret, resultNode);#345,15.993393659591675
+node.addChildrenToBack(resultNode);#324,15.788484164646693
+private static Node replaceReturns(#256,15.740076303482056
+block.removeChild(ret);#342,15.539904814500074
+NodeTraversal.traverse(#145,15.53816548983256
+parent.addChildBefore(resultNode, breakNode);#435,15.330330324172973

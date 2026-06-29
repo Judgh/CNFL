@@ -1,0 +1,27 @@
+if (!invocation.isVoid()) {#32,17.53661558363173
+if (answer instanceof Returns) {#20,17.419853568077087
+validateException((ThrowsException) answer, invocation);#17,17.320405794226605
+reporter.wrongTypeOfReturnValue(invocation.printMethodReturnType(), "null", invocation.getMethodName());#43,17.246948319512445
+if (!answer.returnsNull() && !invocation.isValidReturnType(answer.getReturnType())) {#46,17.221523845897
+public void validate(Answer<?> answer, Invocation invocation) {#15,17.196777237786186
+if (invocation.isVoid()) {#38,17.18590169482761
+reporter.wrongTypeOfReturnValue(invocation.printMethodReturnType(), answer.printReturnType(), invocation.getMethodName());#47,17.131273341178893
+return;#58,17.126396247318812
+Throwable throwable = answer.getThrowable();#52,17.01672895331132
+if (answer instanceof ThrowsException) {#16,16.945312288072373
+if (throwable instanceof RuntimeException || throwable instanceof Error) {#57,16.823806126912434
+if (answer instanceof DoesNothing) {#24,16.754519069896023
+if (!invocation.isValidException(throwable)) {#61,16.687126250494096
+if (answer.returnsNull() && invocation.returnsPrimitive()) {#42,16.538687858581543
+if (throwable == null) {#53,16.510839462280273
+reporter.onlyVoidMethodsCanBeSetToDoNothing();#33,16.45037811279297
+validateReturnValue((Returns) answer, invocation);#21,16.337527188387785
+reporter.cannotStubVoidMethodWithAReturnValue();#39,16.330167028639053
+private void validateDoNothing(DoesNothing answer, Invocation invocation) {#31,16.207105787176836
+validateDoNothing((DoesNothing) answer, invocation);#25,16.16244187562362
+private void validateException(ThrowsException answer, Invocation invocation) {#51,16.001450388055098
+private void validateReturnValue(Returns answer, Invocation invocation) {#37,15.999228689405653
+private Reporter reporter = new Reporter();#13,15.803818616000088
+reporter.cannotStubWithNullThrowable();#54,15.621014429175336
+reporter.checkedExceptionInvalid(throwable);#62,15.456452642168317
+public class AnswersValidator {#11,15.424223218645368

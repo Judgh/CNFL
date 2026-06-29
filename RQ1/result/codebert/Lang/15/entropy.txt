@@ -1,0 +1,347 @@
+if (toClass == null) {#120,19.552273452281952
+if (type == null) {#262,19.483016395568846
+if (type == null) {#181,19.39182758331299
+if (type == null) {#338,19.387642478942873
+if (type == null) {#846,19.364762814839683
+if (fromTypeArg != null#226,19.353878824334394
+if (type == null) {#427,19.34965051015218
+if (toType instanceof ParameterizedType) {#83,19.34659061431885
+if (type == null) {#113,19.289210192362468
+if (type instanceof ParameterizedType) {#316,19.25676481347335
+if (type instanceof ParameterizedType) {#551,19.249498317116185
+if (toTypeVariable == null) {#433,19.223621031817267
+if (bounds.length < 2) {#877,19.14593399895562
+if (assigningType == null) {#1024,19.069975807553245
+if (type instanceof WildcardType) {#293,19.049293571048313
+Type result;#238,19.021155270663176
+if (type instanceof ParameterizedType) {#134,18.991106434872275
+.get(typeArg) : typeArg);#630,18.985957940419514
+for (Type type1 : bounds) {#883,18.971793567433078
+for (Type toBound : toUpperBounds) {#394,18.965925534566242
+if (toWildcardType == null) {#344,18.953779485490585
+if (toGenericArrayType == null) {#268,18.92452292972141
+if (toType instanceof WildcardType) {#91,18.888090836374385
+if (toType == null || toType instanceof Class<?>) {#79,18.873462759930156
+if (type instanceof ParameterizedType) {#1018,18.863207616304095
+if (type instanceof GenericArrayType) {#154,18.787431928846573
+if (type instanceof WildcardType) {#356,18.78660096062554
+return true;#309,18.762068458225418
+if (toParameterizedType == null) {#187,18.753995842403835
+if (fromTypeVarAssigns == null) {#203,18.73974280357361
+if (type instanceof WildcardType) {#562,18.732601430681015
+if (type instanceof GenericArrayType) {#1059,18.72679090499878
+return true;#193,18.640117009480793
+if (type instanceof GenericArrayType) {#555,18.638423018985325
+return true;#450,18.635562813800313
+return false;#970,18.63410012618355
+for (Type toBound : toLowerBounds) {#376,18.630994478861492
+return null;#1070,18.62919413248698
+if (toType instanceof GenericArrayType) {#87,18.628406625044974
+if (ownerType instanceof ParameterizedType) {#610,18.62048535346985
+Type toTypeArg = entry.getValue();#220,18.616726225072686
+return false;#204,18.613510004679362
+if (cls.isPrimitive()) {#658,18.583244694603813
+return true;#234,18.58135223388672
+if (type instanceof TypeVariable<?>) {#140,18.577029334174263
+if (midType instanceof Class<?>) {#727,18.57636759016249
+return null;#1025,18.57591257597271
+return false;#847,18.56874771118164
+return bounds.length == 0 ? new Type[] { null } : bounds;#944,18.543129324913025
+Type genericInterface = null;#803,18.538957330915665
+for (Type type2 : bounds) {#886,18.53583017985026
+for (Type toBound : toLowerBounds) {#403,18.51879539489746
+if (type instanceof GenericArrayType) {#1095,18.516876697540283
+return false;#188,18.50698776245117
+return false;#371,18.504441932395654
+if (type instanceof TypeVariable<?>) {#1023,18.503130012088352
+if (type instanceof WildcardType) {#1069,18.501026259528267
+throw new IllegalStateException("Wait... What!? Type of rawType: " + rawType);#994,18.494240283966064
+if (type instanceof TypeVariable<?>) {#304,18.493473529815674
+return typeVarAssigns;#676,18.48722979896947
+return false;#345,18.48485590616862
+if (type instanceof GenericArrayType) {#287,18.480057133568657
+if (type instanceof TypeVariable<?>) {#574,18.480027463701035
+return false;#386,18.466732025146484
+if (type instanceof Class<?>) {#279,18.45746068393483
+return false;#313,18.456372451782226
+return false;#164,18.44156837463379
+return true;#274,18.432472483317056
+return null;#1098,18.4206279407848
+public static boolean isArrayType(Type type) {#1081,18.41938082377116
+getRawType(parameterizedOwnerType), subtypeVarAssigns);#614,18.408266402579642
+if (type instanceof Class<?>) {#547,18.405644024119656
+if (superClass.isInterface()) {#799,18.403557889601764
+return true;#145,18.40194909468941
+return null;#570,18.391020329793296
+return false;#301,18.38994445800781
+if (type instanceof Class<?>) {#129,18.382571388693417
+if (typeArgument == null) {#1051,18.36896174294608
+for (int i = 0; i < typeParams.length; i++) {#627,18.357072353363037
+if (ownerType instanceof ParameterizedType) {#755,18.352563285827635
+if (type instanceof WildcardType) {#163,18.34528562757704
+if (toType instanceof TypeVariable<?>) {#96,18.34331969210976
+&& !toTypeArg.equals(fromTypeArg)#227,18.338791702732895
+ParameterizedType superType) {#711,18.336109399795532
+if (genericInterface != null) {#827,18.321736764907836
+return null;#716,18.318091074625652
+return false;#149,18.311982727050783
+return false;#269,18.310289510091145
+return true;#350,18.294026947021486
+if (toTypeVariable.equals(type)) {#438,18.28601779937744
+if (!isAssignable(cls, toClass)) {#653,18.28516214544123
+if (type instanceof TypeVariable<?>) {#442,18.280777825249565
+return true;#297,18.275909589684527
+for (int i = 0; i < typeArgs.length; i++) {#774,18.27088619232178
+if (toClass.equals(type)) {#125,18.269720378674958
+return typeVarAssigns;#635,18.261398967943695
+public static boolean isAssignable(Type type, Type toType) {#64,18.24929623603821
+if (typeVarAssigns == null) {#1044,18.248000849848207
+if (!isAssignable(cls, toClass)) {#603,18.247978253798053
+if (type instanceof Class<?>) {#1013,18.23842716217041
+if (midType instanceof ParameterizedType) {#809,18.23737100192479
+return null;#582,18.234557342529296
+return false;#121,18.20881525675456
+&& isAssignable(cls.getComponentType(), toComponentType, typeVarAssigns);#284,18.207134158112282
+.getGenericComponentType(), assigningType);#1062,18.202326379973314
+public TypeUtils() {#50,18.195439434051515
+for (Type toBound : toUpperBounds) {#361,18.188070869445802
+return getTypeArguments(bound, toClass, subtypeVarAssigns);#566,18.185177727749473
+return false;#457,18.181357447306315
+if (toClass.isPrimitive()) {#660,18.180389057506215
+if (toWildcardType.equals(type)) {#349,18.17979962485177
+return bounds;#878,18.177510452270507
+if (fromTypeVarAssigns.isEmpty()) {#210,18.17680145445324
+return false;#408,18.15774114508378
+return toClass == null || !toClass.isPrimitive();#115,18.15393414864173
+return getTypeArguments(superType, superClass, null);#720,18.14999510691716
+return true;#339,18.144448852539064
+boolean subtypeFound = false;#884,18.140613455521432
+for (Type midType : interfaceTypes) {#806,18.124236930500377
+Type typeArg = typeArgs[i];#776,18.123077710469563
+if (replacementType == null) {#475,18.12127317701067
+return true;#126,18.104989369710285
+if (type instanceof Class<?>) {#1091,18.103591189664954
+return false;#230,18.100076575028268
+do {#239,18.099574851989747
+return true;#412,18.095659082586113
+return true;#211,18.081939061482746
+return true;#975,18.081938483498313
+Type fromTypeArg = fromTypeVarAssigns.get(entry.getKey());#221,18.07862134133616
+if (!isAssignable(bound, toBound, typeVarAssigns)) {#370,18.074802741026268
+return true;#182,18.074164326985677
+return getTypeArguments(bound, toClass, subtypeVarAssigns);#578,18.067679806759482
+return true;#391,18.067490514119466
+return true;#439,18.04239298502604
+for (Type bound : bounds) {#448,18.03201370239258
+return false;#399,18.018817198903935
+return genericInterface;#828,18.017282581329347
+&& isAssignable(genericInterface, (Type) midClass)) {#821,18.015013813972473
+if (toGenericArrayType.equals(type)) {#273,17.99957239060175
+return null;#1045,17.997845800299395
+return null;#1034,17.98478849310624
+genericInterface = midType;#822,17.962332945603592
+Type ownerType = parameterizedType.getOwnerType();#753,17.921031093597414
+return determineTypeArguments((Class<?>) midType, superType);#728,17.91642665863037
+if (isAssignable(bound, toTypeVariable, typeVarAssigns)) {#449,17.90899223751492
+typeVarAssigns)) {#969,17.89755556660314
+if (!isAssignable(substituteTypeVariables(toBound, typeVarAssigns), type,#406,17.878316673072607
+for (Type bound : upperBounds) {#369,17.876598541553204
+return true;#428,17.874975840250652
+Type typeArg = typeArgs[i];#628,17.873736109052384
+if (cls.equals(superClass)) {#719,17.87211356163025
+result = typeVarAssigns.get(var);#240,17.864965279897053
+return true;#263,17.86106808980306
+private static boolean isAssignable(Type type, Type toType,#77,17.85847116771497
++ type);#477,17.8562178435149
+return false;#320,17.847818501790364
+return isAssignable(type, (WildcardType) toType, typeVarAssigns);#92,17.842583459966324
+return typeVarAssigns;#739,17.83939399719238
+if (type instanceof Class<?> || type instanceof ParameterizedType#455,17.833632389704388
+if (!subtypeFound) {#893,17.821612910220498
+if (!(rawType instanceof Class<?>)) {#993,17.82018141746521
+if (!isAssignable(toBound, bound, typeVarAssigns)) {#385,17.818917616819725
+var = (TypeVariable<?>) result;#242,17.81017932891846
+if (toParameterizedType.equals(type)) {#192,17.799471855163574
+return null;#604,17.795889536539715
+return isAssignable(type, (TypeVariable<?>) toType, typeVarAssigns);#97,17.791691864238064
+if (!isAssignable(cls, superClass)) {#715,17.787685697728936
+return isAssignable(type, (Class<?>) toType);#80,17.783792319121183
+if (!isAssignable(type, substituteTypeVariables(toBound, typeVarAssigns),#397,17.777573667253765
+&& isAssignable(((GenericArrayType) type).getGenericComponentType(), toClass#157,17.77383608818054
+return false;#434,17.769486236572266
+throw new IllegalArgumentException("unknown type: " + type);#1073,17.76808430931785
+return replacementType;#480,17.76756453514099
+if (!(genericDeclaration instanceof Class<?>)) {#1033,17.764128036499024
+return null;#1052,17.763751481708727
+if (isAssignable(bound, toClass)) {#144,17.76256567856361
+typeVarAssigns = getTypeArguments(parameterizedOwnerType,#613,17.759299705768452
+return isAssignable(type, toType, null);#65,17.758559363228933
+Type typeArgument = typeVarAssigns.get(type);#1049,17.737549357944065
+throw new IllegalStateException("found an unhandled type: " + toType);#101,17.733542098999024
+Type ownerType = parameterizedType.getOwnerType();#607,17.73323783874512
+Type type = entry.getValue();#965,17.731778478622438
+for (Type bound : lowerBounds) {#384,17.708351355332596
+.getComponentType());#158,17.704655213789508
+typeVarAssigns))) {#229,17.702550370352608
+if (type instanceof TypeVariable<?> && typeVarAssigns != null) {#472,17.693536016676163
+for (Type bound : getImplicitBounds(typeVar)) {#967,17.68825375592267
+toClass, typeVarAssigns);#216,17.685927314758302
+public class TypeUtils {#41,17.68284661429269
+ParameterizedType midParameterizedType = (ParameterizedType) midType;#731,17.6791393661499
+.isArray() ? toClass.getComponentType() : toClass, subtypeVarAssigns);#557,17.676672358845554
+return result;#247,17.669038079001687
+if (result instanceof TypeVariable<?> && !result.equals(var)) {#241,17.666826986497448
+for (Type bound : getImplicitUpperBounds((WildcardType) type)) {#563,17.663547933101654
+|| type instanceof GenericArrayType || type instanceof WildcardType) {#456,17.65913611650467
+|| toClass.isArray()#156,17.652450067025644
+public static Type[] getImplicitLowerBounds(WildcardType wildcardType) {#941,17.650232854096785
+&& !(toTypeArg instanceof WildcardType && isAssignable(fromTypeArg, toTypeArg,#228,17.64927855597602
+if (cls.getTypeParameters().length > 0 || toClass.equals(cls)) {#675,17.643781631223618
+: isAssignable(value.getClass(), type, null);#851,17.639801456082253
+return isAssignable(type, (GenericArrayType) toType, typeVarAssigns);#88,17.634587119607364
+return null;#654,17.631510543823243
+toComponentType, typeVarAssigns);#290,17.629278087615965
+if (!isAssignable(type, substituteTypeVariables(bound, typeVarAssigns),#968,17.625272374404105
+return toClass.equals(Object.class)#155,17.623993044314176
+return getTypeArguments(type, toClass, null);#534,17.621343431018648
+public static Type getArrayComponentType(Type type) {#1090,17.61727684736252
+return value == null ? !(type instanceof Class<?>) || !((Class<?>) type).isPrimitive()#850,17.592336307872426
+Type rawType = parameterizedType.getRawType();#986,17.582544565200806
+if (toClass.equals(cls)) {#633,17.580049419403075
+if (isAssignable(bound, toClass)) {#577,17.57841185865731
+for (Type bound : getImplicitUpperBounds((WildcardType) type)) {#295,17.575973600149155
+if (isAssignable(bound, toGenericArrayType)) {#308,17.57542985485446
+ParameterizedType parameterizedOwnerType = (ParameterizedType) ownerType;#612,17.574617385864258
+Type replacementType = typeVarAssigns.get(type);#473,17.561667992518498
+WildcardType wildcardType = (WildcardType) type;#357,17.553596863379845
+return bounds.length == 0 ? new Type[] { Object.class } : normalizeUpperBounds(bounds);#913,17.55083521674661
+.getTypeParameters());#772,17.54422205970401
+&& typeVarAssigns.containsKey(typeVar)) {#782,17.538101496015276
+Type[] toUpperBounds = getImplicitUpperBounds(toWildcardType);#353,17.535167332353264
+Type[] bounds = wildcardType.getLowerBounds();#942,17.532566978817893
++ " interface type found: " + midType);#815,17.527862255389874
+if (isAssignable(bound, toClass)) {#565,17.523086909590095
+typeVarAssigns)) {#398,17.4991938273112
+return bounds.length == 0 ? new Type[] { Object.class } : normalizeUpperBounds(bounds);#929,17.497243011699002
+for (Type bound : ((TypeVariable<?>) type).getBounds()) {#143,17.49490586642561
+public static boolean isInstance(Object value, Type type) {#845,17.49413552003748
+private static boolean isAssignable(Type type, Class<?> toClass) {#112,17.490440455350008
+Type[] toLowerBounds = getImplicitLowerBounds(toWildcardType);#354,17.48767171082673
+return isAssignable(type, (ParameterizedType) toType, typeVarAssigns);#84,17.479986555436078
+for (Map.Entry<TypeVariable<?>, Type> entry : toTypeVarAssigns.entrySet()) {#219,17.479496637980144
+if (isAssignable(midClass, superClass)#820,17.466188825409986
+for (Map.Entry<TypeVariable<?>, Type> entry : typeVarAssigns.entrySet()) {#963,17.453199833631516
+private static boolean isAssignable(Type type, ParameterizedType toParameterizedType,#179,17.452817916870117
+return getTypeArguments((Class<?>) type, toClass, subtypeVarAssigns);#548,17.440188667990945
+private static boolean isAssignable(Type type, GenericArrayType toGenericArrayType,#260,17.425581434498664
+Type toComponentType = toGenericArrayType.getGenericComponentType();#277,17.41677761077881
+throw new IllegalStateException("found an unhandled type: " + type);#586,17.412720402081806
+if (isAssignable(bound, toGenericArrayType)) {#296,17.394988736798688
+return getTypeArguments(type, getRawType(type), null);#498,17.388139883677166
+throw new IllegalStateException("Unexpected generic"#814,17.384625498453776
+subtypeFound = true;#888,17.358734167539158
+(Class<?>) genericDeclaration);#1040,17.354207822254725
+if (type1 != type2 && isAssignable(type2, type1, null)) {#887,17.345232009887695
+return isAssignable(getRawType((ParameterizedType) type), toClass);#136,17.33268670112856
+Type[] typeArgs = parameterizedType.getActualTypeArguments();#764,17.331828713417053
+Type[] bounds = wildcardType.getUpperBounds();#927,17.32587532563643
+Type[] bounds = typeVariable.getBounds();#911,17.293158531188965
+private static boolean isAssignable(Type type, WildcardType toWildcardType,#336,17.28150753352953
+throw new IllegalStateException("found an unhandled type: " + type);#167,17.280322472254436
+return getTypeArguments(getClosestParentType(cls, toClass), toClass, typeVarAssigns);#680,17.270362880494858
+if (typeVarList.contains(typeArg)#779,17.263579924901325
+return Array.newInstance(rawComponentType, 0).getClass();#1065,17.260673840840656
+typeVarAssigns.put((TypeVariable<?>) typeArg, typeVarAssigns.get(typeVar));#784,17.258411509650095
+typeVarAssigns)) {#407,17.247941264399774
+throw new IllegalStateException("found an unhandled type: " + type);#460,17.235862374305725
+return (Class<?>) type;#1015,17.234923965052555
+throw new IllegalStateException("found an unhandled type: " + type);#323,17.232311407725017
+return clazz.isArray() ? clazz.getComponentType() : null;#1093,17.22355950673421
+Type[] typeArgs = parameterizedType.getActualTypeArguments();#622,17.218905131022137
+toBound = substituteTypeVariables(toBound, typeVarAssigns);#364,17.214872707020152
+toBound = substituteTypeVariables(toBound, typeVarAssigns);#379,17.214497855215363
+Map<TypeVariable<?>, Type> fromTypeVarAssigns = getTypeArguments(type, toClass, null);#200,17.19819709232875
+for (Type bound : getImplicitBounds((TypeVariable<?>) type)) {#575,17.194058227539063
+for (Type bound : getImplicitBounds((TypeVariable<?>) type)) {#307,17.193600177764893
+mapTypeVariablesToArguments(cls, midParameterizedType, typeVarAssigns);#737,17.18650910059611
+return getTypeArguments((ParameterizedType) type, toClass, subtypeVarAssigns);#552,17.180199034073773
+Map<TypeVariable<?>, Type> typeVarAssigns = getTypeArguments(assigningType,#1039,17.168786103384836
+continue;#243,17.168214903937447
+super();#51,17.16779670715332
+return (Class<?>) rawType;#997,17.16465711593628
+return types.toArray(new Type[types.size()]);#898,17.1539737961509
+Type midType = getClosestParentType(cls, superClass);#724,17.142056579589845
+return type;#483,17.137460361827504
+TypeVariable<?>[] typeVars = getRawType(parameterizedType).getTypeParameters();#768,17.136917273203533
+Type[] upperBounds = getImplicitUpperBounds(wildcardType);#358,17.132689253489175
+return getTypeArguments(getClosestParentType(cls, toClass), toClass, typeVarAssigns);#639,17.125168138080173
+: new HashMap<TypeVariable<?>, Type>(subtypeVarAssigns);#618,17.12242465270193
+Map<TypeVariable<?>, Type> typeVarAssigns) {#337,17.075652616995352
+Type[] bounds = getImplicitBounds((TypeVariable<?>) type);#446,17.06991308076041
+mapTypeVariablesToArguments(cls, (ParameterizedType) ownerType, typeVarAssigns);#757,17.06812062134614
+: new HashMap<TypeVariable<?>, Type>(subtypeVarAssigns);#672,17.063473252689136
+Map<TypeVariable<?>, Type> typeVarAssigns) {#78,17.062691776840776
+Type[] lowerBounds = getImplicitLowerBounds(wildcardType);#359,17.06064977317021
+return ((GenericArrayType) type).getGenericComponentType();#1096,17.058072204589845
+Map<TypeVariable<?>, Type> typeVarAssigns) {#180,17.05480812214039
+public static Type[] getImplicitUpperBounds(WildcardType wildcardType) {#926,17.050623893737793
+break;#889,17.046684091741387
+TypeVariable<?> typeVar = entry.getKey();#964,17.034631371498108
+Class<?> cls = getRawType(parameterizedType);#600,17.016376744145933
+return isAssignable(((GenericArrayType) type).getGenericComponentType(),#289,17.011731402079263
+private static <T> void mapTypeVariablesToArguments(Class<T> cls,#750,17.01169593811035
+midClass = getRawType((ParameterizedType) midType);#810,17.010819603415097
+Class<?> midClass = null;#807,16.9916490316391
+Map<TypeVariable<?>, Type> typeVarAssigns) {#261,16.977059364318848
+return getRawType(typeArgument, assigningType);#1056,16.97566815217336
+TypeVariable<?> typeVar = typeVars[i];#775,16.93016990661621
+Map<TypeVariable<?>, Type> subtypeVarAssigns) {#546,16.917118889944895
+typeVarAssigns.put(typeParams[i], typeVarAssigns.containsKey(typeArg) ? typeVarAssigns#629,16.916937383015952
+return getTypeArguments(((GenericArrayType) type).getGenericComponentType(), toClass#556,16.9116088449955
+Map<TypeVariable<?>, Type> subtypeVarAssigns) {#651,16.89735644204276
+midClass = (Class<?>) midType;#812,16.894260470072428
+cls = ClassUtils.primitiveToWrapper(cls);#667,16.89101140839713
+Map<TypeVariable<?>, Type> typeVarAssigns) {#426,16.883452132896142
+public static Class<?> getRawType(Type type, Type assigningType) {#1012,16.87593414669945
+return ClassUtils.isAssignable((Class<?>) type, toClass);#131,16.87169256210327
+private static boolean isAssignable(Type type, TypeVariable<?> toTypeVariable,#425,16.867169732632846
+Map<TypeVariable<?>, Type> toTypeVarAssigns = getTypeArguments(toParameterizedType,#215,16.85028700395064
+typeVarAssigns = subtypeVarAssigns == null ? new HashMap<TypeVariable<?>, Type>()#617,16.81943820652209
+private static Class<?> getRawType(ParameterizedType parameterizedType) {#985,16.812663350786483
+types.add(type1);#894,16.794369780499004
+Class<?> rawComponentType = getRawType(((GenericArrayType) type)#1061,16.792652130126953
+public static Type[] normalizeUpperBounds(Type[] bounds) {#875,16.781581974029542
+break;#245,16.780303955078125
+TypeVariable<?>[] typeParams = cls.getTypeParameters();#624,16.753795981407166
+Set<Type> types = new HashSet<Type>(bounds.length);#881,16.736865158081056
+ParameterizedType parameterizedType, Class<?> toClass,#598,16.73559834406926
+ParameterizedType parameterizedType, Map<TypeVariable<?>, Type> typeVarAssigns) {#751,16.728203174046108
+Class<?> toClass = getRawType(toParameterizedType);#197,16.691070390784223
+throw new IllegalArgumentException("missing assignment type for type variable "#476,16.690762519836426
+Map<TypeVariable<?>, Type> typeVarAssigns = determineTypeArguments(midClass, superType);#735,16.656235030203156
+Class<?> superClass = getRawType(superType);#712,16.654640697297594
+Map<TypeVariable<?>, Type> subtypeVarAssigns) {#599,16.645408936909266
+Type[] interfaceTypes = cls.getGenericInterfaces();#801,16.643061180114746
+return getRawType((ParameterizedType) type);#1020,16.64150971951692
+return new HashMap<TypeVariable<?>, Type>();#663,16.625641652515956
+Class<?> clazz = (Class<?>) type;#1092,16.620567003885906
+public static boolean typesSatisfyVariables(Map<TypeVariable<?>, Type> typeVarAssigns) {#960,16.557474399435108
+private static Type substituteTypeVariables(Type type, Map<TypeVariable<?>, Type> typeVarAssigns) {#471,16.520938555399578
+return type instanceof GenericArrayType || type instanceof Class<?> && ((Class<?>) type).isArray();#1082,16.517293214797974
+Class<?> cls = (Class<?>) type;#280,16.51061209042867
+return cls.isArray()#283,16.447411788137334
+return cls.getGenericSuperclass();#834,16.44038912829231
+Class<?> midClass = getRawType(midParameterizedType);#732,16.419932282489277
+List<TypeVariable<Class<T>>> typeVarList = Arrays.asList(cls#771,16.3573988223898
+public static Map<TypeVariable<?>, Type> getTypeArguments(ParameterizedType type) {#497,16.29609432220459
+Map<TypeVariable<?>, Type> typeVarAssigns;#608,16.287345929579303
+private static Type unrollVariableAssignments(TypeVariable<?> var, Map<TypeVariable<?>, Type> typeVarAssigns) {#237,16.220114353724888
+Object genericDeclaration = ((TypeVariable<?>) type).getGenericDeclaration();#1029,16.176883302885912
+public static Type[] getImplicitBounds(TypeVariable<?> typeVariable) {#910,16.165463252501056
+private static Type getClosestParentType(Class<?> cls, Class<?> superClass) {#797,16.09859127468533
+private static Map<TypeVariable<?>, Type> getTypeArguments(#597,16.0880870066191
+HashMap<TypeVariable<?>, Type> typeVarAssigns = subtypeVarAssigns == null ? new HashMap<TypeVariable<?>, Type>()#671,16.007133195566578
+public static Map<TypeVariable<?>, Type> getTypeArguments(Type type, Class<?> toClass) {#533,15.902473877216208
+private static Map<TypeVariable<?>, Type> getTypeArguments(Class<?> cls, Class<?> toClass,#650,15.767902728049986
+private static Map<TypeVariable<?>, Type> getTypeArguments(Type type, Class<?> toClass,#545,15.747562408447266
+public static Map<TypeVariable<?>, Type> determineTypeArguments(Class<?> cls,#710,15.564865684509277

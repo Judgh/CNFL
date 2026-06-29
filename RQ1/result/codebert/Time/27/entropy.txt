@@ -1,0 +1,871 @@
+public PeriodFormatterBuilder append(PeriodFormatter formatter) {#191,20.15339083420603
+if (originalPrinter == null || originalParser == null ||#599,20.10067671821231
+if (text == null || finalText == null) {#730,20.029789876937866
+if (formatter == null) {#192,19.923515796661377
+if (text == null) {#552,19.867722511291504
+if (text == null) {#343,19.781499481201173
+public void printTo(Writer out, int value) throws IOException {#869,19.649396440257195
+public void printTo(Writer out, int value) throws IOException {#1004,19.637929335884426
+if (prefix == null) {#378,19.623448753356932
+private void appendField(int type) {#529,19.619667053222656
+if (text == null) {#228,19.601971689860026
+public void printTo(Writer out, int value) throws IOException {#927,19.55507871379023
+public PeriodFormatter toFormatter() {#122,19.4527765420767
+int suffixPos = -1;#1208,19.45143037093313
+if (value == 0) {#1427,19.44953612277382
+int limit;#1234,19.448526763916014
+if (pairs.size() == 0) {#738,19.3786264720716
+FieldFormatter(FieldFormatter field, PeriodFieldAffix suffix) {#1062,19.36672314008077
+if (printer == null && parser == null) {#212,19.365864849090578
+int length = 0;#1242,19.351917042451745
+appendField(HOURS);#450,19.278645242963517
+appendField(SECONDS);#476,19.25547866821289
+Literal(String text) {#1542,19.23257325490316
+void printTo(Writer out, int value) throws IOException;#837,19.227247021415018
+if (length <= 0) {#1353,19.22259531523052
+boolean found = false;#1709,19.218082988963406
+Separator separator = new Separator(#766,19.196151567542035
+private static PeriodFormatter toFormatter(List<Object> elementPairs, boolean notPrinter, boolean notParser) {#794,19.191046068745276
+boolean hasDigits = false;#1244,19.184511134498997
+iPrefix = null;#175,19.178389413016184
+public void printTo(Writer out, ReadablePeriod period, Locale locale) throws IOException {#1811,19.1700878461202
+if (stopAt <= 0) {#1077,19.164445924758912
+Separator separator = new Separator(#740,19.164333802682382
+Separator lastSeparator = null;#750,19.120135731167263
+public void printTo(Writer out, ReadablePeriod period, Locale locale) throws IOException {#1149,19.11541690826416
+public void printTo(Writer out, ReadablePeriod period, Locale locale) throws IOException {#1677,19.08529733022054
+public int scan(String periodStr, final int position) {#954,19.069496699741908
+if (position < 0) {#1705,19.05190698724044
+throw new IllegalArgumentException("No formatter supplied");#193,19.04891848564148
+if (position > oldPos) {#1710,19.046114349365233
+if (lastSeparator != null && pairs.size() == 0) {#761,19.04334888458252
+if (length == 0 && (c == '-' || c == '+') && !iRejectSignedValues) {#1248,19.03065685893214
+if (iPrefix != null) {#1191,19.028125490461075
+Literal literal = new Literal(text);#232,19.0259198612637
+public int parse(String periodStr, int position) {#1009,19.02041597366333
+if (position >= text.length()) {#1187,19.016222136361257
+if (position < 0) {#1730,19.001127845362614
+public int parseInto(#1819,18.998270511627197
+static class SimpleAffix implements PeriodFieldAffix {#854,18.99620272318522
+if (suffixPos >= 0 && position + length != suffixPos) {#1292,18.99494743347168
+if (iFieldType >= SECONDS_MILLIS) {#1137,18.99389644905373
+public int countFieldsToPrint(ReadablePeriod period, int stopAt, Locale locale) {#1076,18.99326422906691
+FieldFormatter newField = new FieldFormatter((FieldFormatter) originalPrinter, suffix);#606,18.972606889132795
+private final String iText;#1579,18.96374879564558
+if (iFieldType >= SECONDS_MILLIS) {#1093,18.958685203834815
+if (position >= 0 && iSuffix != null) {#1335,18.957930308121902
+int value = (int) valueLong;#1154,18.940070288521902
+void setFieldValue(ReadWritablePeriod period, int field, int value) {#1497,18.939874719690394
+if (singularText == null || pluralText == null) {#363,18.919239130887117
+boolean isSupported(PeriodType type, int field) {#1470,18.91477344149635
+if (!hasDigits) {#1288,18.90823981636449
+public int countFieldsToPrint(ReadablePeriod period, int stopAt, Locale locale) {#1785,18.908233642578125
+private static final int SECONDS = 6;#78,18.90568154198783
+int value = (int) valueLong;#1123,18.899713107517787
+private int parseInt(String text, int position, int length) {#1348,18.897115914717965
+int value = (int) valueLong;#1106,18.89683791569301
+if (singularText == null || pluralText == null) {#573,18.8954477743669
+public void printTo(Writer out, ReadablePeriod period, Locale locale) throws IOException {#1558,18.89290761947632
+int sourceLength = periodStr.length();#968,18.89062263852074
+public int scan(String periodStr, final int position) {#882,18.888751620338077
+public int parseInto(#1699,18.886831215449742
+while (length < limit) {#1245,18.882679587916325
+private final int iFieldType;#1038,18.87944876352946
+int fractPos = -1;#1243,18.875333986784284
+public int countFieldsToPrint(ReadablePeriod period, int stopAt, Locale locale) {#1622,18.875103704390988
+int oldPos = position;#1702,18.873361269632976
+if (length >= 10) {#1349,18.87229703602038
+public int scan(String periodStr, final int position) {#1017,18.871474629356747
+int textLength = text.length();#884,18.867767810821533
+return toFormatter().getParser();#163,18.866495370864868
+if (iFieldType == SECONDS_OPTIONAL_MILLIS &&#1099,18.864733387442197
+public int countFieldsToPrint(ReadablePeriod period, int stopAt, Locale locale) {#1546,18.861635577294134
+if (notPrinter) {#806,18.858363723754884
+if (found && position == oldPos) {#1734,18.856250849637117
+static interface PeriodFieldAffix {#832,18.855634862726387
+if (value == '-') {#1359,18.852194786071777
+return formatter;#125,18.847774346669514
+if (iFieldType >= SECONDS_MILLIS) {#1168,18.84499641701027
+private void clearPrefix() throws IllegalStateException {#778,18.844718233744302
+throw new IllegalArgumentException("Literal must not be null");#229,18.841800725018537
+if (parsers == null) {#1823,18.837024597894576
+return toFormatter().getPrinter();#144,18.83265972137451
+if (c >= '0' && c <= '9') {#1269,18.830420939127603
+public void printTo(StringBuffer buf, int value) {#865,18.826790037609282
+if (size >= 2 && elementPairs.get(0) instanceof Separator) {#799,18.817462756715972
+void printTo(StringBuffer buf, int value);#835,18.817099320261104
+clearPrefix();#734,18.815270741780598
+iPrefix = null;#782,18.811727115086146
+public void printTo(StringBuffer buf, int value) {#923,18.80853153410412
+private PeriodFormatterBuilder appendSeparator(String text, String finalText,#727,18.796244439624605
+iNotParser |= (parser == null);#789,18.791336218516033
+if (suffixPos > 0) {#1235,18.789953958420526
+private final PeriodFieldAffix iPrefix;#1045,18.772231260935467
+switch (field) {#1471,18.770620626561783
+if (iFieldType >= SECONDS_MILLIS) {#1155,18.758919715881348
+boolean isZero(ReadablePeriod period) {#1461,18.758375017266523
+static final Literal EMPTY = new Literal("");#1539,18.75485529899597
+public void printTo(StringBuffer buf, ReadablePeriod period, Locale locale) {#1803,18.74932289123535
+for (int pos = position; pos < sourceLength; pos++) {#887,18.747301631503635
+if (iFieldType >= SECONDS_MILLIS) {#1124,18.734214464823406
+if (useAfter && useBefore == false) {#739,18.732799073924188
+if (iPrefix != null) {#1159,18.732272693089076
+if (iSuffix != null) {#1111,18.73121838136153
+public void clear() {#170,18.728271696302627
+return null;#161,18.71811663309733
+return new PeriodFormatter((PeriodPrinter) comp[0], (PeriodParser) comp[1]);#811,18.717409557766384
+public PeriodFormatterBuilder appendSeparatorIfFieldsBefore(String text) {#671,18.714999545704234
+if (iPrefix != null) {#381,18.70982888165642
+if (iPrefix != null) {#1128,18.709100496201287
+oldPos = position;#1727,18.70731252782485
+switch (field) {#1498,18.70002825119916
+if (iElementPairs == null) {#176,18.697761005825466
+if (iSuffix != null) {#1175,18.696196035905317
+static class FieldFormatter#1030,18.695835961235893
+SimpleAffix(String text) {#857,18.694604218006134
+if (iUseBefore) {#1637,18.693792895266885
+boolean negative;#1358,18.691931915283202
+if (valueLong == Long.MAX_VALUE) {#1088,18.6904612382253
+if (valueLong == Long.MAX_VALUE) {#1120,18.68941056728363
+if (valueLong == Long.MAX_VALUE) {#1151,18.675000270207722
+FieldFormatter field = new FieldFormatter(minPrinted, iPrintZeroSetting,#534,18.673627641465927
+public int parse(String periodStr, int position) {#873,18.672755908966064
+int sourceLength = periodStr.length();#885,18.670347395397368
+public PeriodFormatterBuilder appendSeparatorIfFieldsAfter(String text) {#651,18.668030652132902
+if (parserList.size() <= 0) {#1777,18.66548019906749
+iText = text;#1594,18.6623031391817
+public PeriodFormatterBuilder appendWeeks() {#423,18.661632197243826
+public int parse(String periodStr, int position) {#931,18.65766315460205
+public int parseInto(#1180,18.656330108642578
+return null;#142,18.655977503458658
+int sum = 0;#1786,18.64994295905618
+private FieldFormatter[] iFieldFormatters;#99,18.649027006966726
+long getFieldValue(ReadablePeriod period) {#1378,18.64781265258789
+if (iPrefix != null) {#779,18.642758706036737
+public PeriodFormatterBuilder appendMinutes() {#462,18.631033420562744
+throw new IllegalArgumentException();#574,18.62327053672389
+switch (iFieldType) {#1391,18.617161550019915
+int i;#749,18.61516692421653
+return new PeriodFormatter(sep, sep);#803,18.611777552851922
+clearPrefix();#195,18.608835856119793
+public void printTo(StringBuffer buf, ReadablePeriod period, Locale locale) {#1118,18.60827078138079
+throw new IllegalArgumentException();#379,18.598818929571856
+append0(field, field);#536,18.598591486612957
+public void printTo(StringBuffer buf, int value) {#999,18.59589181627546
+for (int pos = position; pos < sourceLength; pos++) {#969,18.59497176276313
+if (iSuffix != null) {#1144,18.585649013519287
+int len = printers.length;#1813,18.5844121230276
+if (iNotParser) {#160,18.5837433497111
+public void printTo(StringBuffer buf, ReadablePeriod period, Locale locale) {#1655,18.580807788031443
+private final FieldFormatter[] iFieldFormatters;#1043,18.579980047125567
+throw new IllegalArgumentException();#364,18.579646562275133
+int textLength2 = text2.length();#966,18.579438903115012
+int sum = 0;#1795,18.577484635745776
+append0(formatter.getPrinter(), formatter.getParser());#196,18.576695322990417
+clearPrefix();#215,18.575624624888103
+public int calculatePrintedLength(int value) {#919,18.573696688601846
+appendField(SECONDS_MILLIS);#488,18.56990809189646
+int len = parsers.length;#1827,18.565625286102296
+iFieldFormatters = new FieldFormatter[10];#183,18.56340045928955
+if (pos >= 0) {#1019,18.561453066374128
+public PeriodFormatterBuilder appendSeparator(String text) {#631,18.560504807366264
+public int parseInto(#1562,18.55563245500837
+switch (elementPairs.size()) {#816,18.553450247820685
+static class PluralAffix implements PeriodFieldAffix {#910,18.53848522901535
+return appendSeparator(text, text, null, true, true);#632,18.537163496017456
+iNotPrinter |= (printer == null);#788,18.52879157066345
+private void appendField(int type, int minPrinted) {#533,18.523652606540256
+if (suffixPos >= 0) {#1213,18.523220443725585
+if (isZero(period) && iFieldFormatters[iFieldType] == this) {#1443,18.521399056039204
+private boolean iNotParser;#96,18.51544532775879
+String text = iText;#883,18.51149951087104
+private PeriodFieldAffix iPrefix;#89,18.509559044471153
+length--;#1357,18.50643030802409
+if (fractLen <= 0) {#1312,18.506211395263673
+appendField(DAYS);#437,18.50340509414673
+if (iSuffix != null && !mustParse) {#1209,18.4993672547517
+if (type != null && isSupported(type, iFieldType) == false) {#1385,18.497790459663637
+clearPrefix();#605,18.49419625600179
+public int calculatePrintedLength(int value) {#861,18.49286420721757
+iRejectSignedValues = false;#174,18.49145737816306
+if (printerList.size() <= 0) {#1770,18.4905203183492
+value -= '0';#1368,18.488142686731674
+if (periodStr.regionMatches(true, pos, text, 0, textLength)) {#888,18.481658755122005
+if (iPrefix != null) {#1108,18.474950018383208
+return appendSeparator(text, text, null, false, true);#652,18.473572572072346
+Composite comp = new Composite(elementPairs);#822,18.466766834259033
+private static final int PRINT_ZERO_ALWAYS = 4;#69,18.4636287689209
+if (length + 1 >= limit ||#1252,18.462673088599896
+return appendSeparator(text, finalText, variants, true, true);#724,18.457279205322266
+long valueLong = getFieldValue(period);#1150,18.45432285829024
+throw new IllegalArgumentException();#553,18.447891185158177
+if (notPrinter && notParser) {#795,18.44710895750258
+private final String iText;#855,18.444172314235143
+int textLength1 = text1.length();#965,18.444163582541726
+return new Object[] {comp, comp};#823,18.44337688446045
+Separator sep = (Separator) elementPairs.get(0);#800,18.443213780721027
+clearPrefix();#231,18.44198163350423
+private final String iText;#1540,18.440678187779017
+long valueLong = getFieldValue(period);#1119,18.44048448042436
+!(originalPrinter instanceof FieldFormatter)) {#601,18.440099205289567
+appendField(MILLIS);#513,18.43966064453125
+private static final int SECONDS_MILLIS = 8;#80,18.438178910149468
+private boolean iRejectSignedValues;#87,18.42050706423246
+if (iFieldType == SECONDS_MILLIS || dp > 0) {#1170,18.413668235143025
+private PeriodFormatterBuilder appendSuffix(PeriodFieldAffix suffix) {#588,18.412140759554777
+(PeriodPrinter) comp[0], (PeriodParser) comp[1],#768,18.409365825164013
+boolean mustParse = (iPrintZeroSetting == PRINT_ZERO_ALWAYS);#1184,18.408208966255188
+private static final int HOURS = 4;#76,18.405920322124775
+throw new IllegalArgumentException();#344,18.404782646580745
+public void printTo(StringBuffer buf, ReadablePeriod period, Locale locale) {#1554,18.403477873120988
+iPrefix = null;#538,18.40007768358503
+if (iFieldType == SECONDS_MILLIS || dp > 0) {#1139,18.396657996707493
+appendField(WEEKS);#424,18.394835980733237
+appendField(7, 3);#525,18.39251251220703
+if (position >= 0) {#1011,18.389358219347503
+iNotPrinter = false;#181,18.387702306111652
+static class CompositeAffix implements PeriodFieldAffix {#985,18.387697601318358
+throw new IllegalArgumentException("No printer or parser supplied");#213,18.382109375
+return false;#1464,18.379433673361074
+throw new IllegalArgumentException();#731,18.37941009119937
+static class Literal#1537,18.376811742782593
+iFieldFormatters[newField.getFieldType()] = newField;#609,18.370798110961914
+return new PeriodFormatter((PeriodPrinter) comp[0], null);#809,18.369484967198865
+for (int i = 0, isize = period.size(); i < isize; i++) {#1462,18.368423097273883
+private final PeriodFieldAffix iSuffix;#1046,18.36795621169241
+private static final int YEARS = 0;#72,18.362606415381798
+int parse(String periodStr, int position);#842,18.360986868540447
+return appendSeparator(text, finalText, null, true, true);#697,18.35241096496582
+int textLength = text.length();#875,18.351593685150146
+if (!mustParse && !isSupported(period.getPeriodType(), iFieldType)) {#1228,18.35111155229456
+if (sum < stopAt) {#1624,18.349307203292845
+public PeriodFormatterBuilder printZeroAlways() {#314,18.347063405173166
+iPrefix = prefix;#1058,18.346554544236923
+if (iNotPrinter) {#141,18.34168130159378
+throw new IllegalStateException("Cannot have two adjacent separators");#762,18.33774757385254
+private final String iFinalText;#1580,18.337606366475423
+for (int i=0; i < length; i++) {#1714,18.336093457539878
+iNotParser = false;#182,18.33599294934954
+private final int iPrintZeroSetting;#1033,18.332171499729156
+return 0;#1361,18.33191324316937
+before.printTo(out, period, locale);#1681,18.32662582397461
+String pluralText) {#572,18.32631540298462
+if (iFieldType != SECONDS_MILLIS && iFieldType != SECONDS_OPTIONAL_MILLIS) {#1300,18.326232954513195
+private PeriodFormatterBuilder appendPrefix(PeriodFieldAffix prefix) {#377,18.317459333510627
+return appendSeparator(text, text, null, true, false);#672,18.3131160736084
+if (periodStr.regionMatches#946,18.31222195625305
+iPrefix = prefix;#384,18.308700016566686
+int fractLen = position + length - fractPos;#1310,18.29818895128038
+return pos;#889,18.297621685525645
+if (pairs.get(i) instanceof Separator) {#752,18.296566452298844
+boolean useBefore, boolean useAfter) {#1593,18.293064193725584
+public PeriodFormatterBuilder appendSuffix(String text) {#551,18.292896906534832
+int len = printers.length;#1805,18.291855259945518
+public int calculatePrintedLength(int value) {#994,18.29171200802452
+position += length;#1333,18.288262724876404
+value = (int) (valueLong / DateTimeConstants.MILLIS_PER_SECOND);#1125,18.287566233903934
+public PeriodFormatterBuilder appendYears() {#397,18.286766052246094
+public PeriodFormatterBuilder appendDays() {#436,18.285669033343975
+char c = text.charAt(position + length);#1246,18.283492905753
+public PeriodFormatterBuilder appendSeparator(String text, String finalText) {#696,18.282883644104004
+int value = text.charAt(position++);#1356,18.281953604325004
+private final String iPluralText;#912,18.281620860099792
+if (iUseBefore) {#1660,18.281356058622663
+if (isZero(period) && iFieldFormatters[iFieldType] == this) {#1432,18.280280671468596
+int getFieldType() {#1528,18.280142375401088
+if (position >= 0) {#1193,18.27260274472444
+public PeriodFormatterBuilder appendHours() {#449,18.270200435931866
+if (iUseBefore) {#1682,18.266654717294795
+private final PeriodFieldAffix iRight;#987,18.262720108032227
+appendField(YEARS);#398,18.261291885375975
+case SECONDS:#1412,18.259052893694708
+iFieldFormatters[type] = field;#537,18.258912086486816
+public PeriodFormatterBuilder appendMonths() {#410,18.255418300628662
+public int calculatePrintedLength(ReadablePeriod period, Locale locale) {#1794,18.25524608905499
+if (iPrintZeroSetting == PRINT_ZERO_ALWAYS) {#1380,18.25219361535434
+long value;#1389,18.251514625549316
+found = true;#1721,18.249605757849558
+boolean negative = c == '-';#1249,18.248859303338186
+String text = iText;#874,18.248042106628418
+public PeriodFormatterBuilder appendSeparator(String text, String finalText,#722,18.244077773321244
+boolean useBefore, boolean useAfter) {#729,18.238989464441936
+value = (int) (valueLong / DateTimeConstants.MILLIS_PER_SECOND);#1156,18.233237902323406
+if (--length < 0) {#1360,18.232838193575542
+text1 = text2;#961,18.223315065557305
+iText = text;#858,18.218480278463925
+int calculatePrintedLength(int value);#833,18.21501339183134
+private final PeriodParser iBeforeParser;#1588,18.21500188112259
+private int iPrintZeroSetting;#85,18.20976985584606
+public int calculatePrintedLength(ReadablePeriod period, Locale locale) {#1086,18.20874966107882
+&& (iFieldType == SECONDS_MILLIS || iFieldType == SECONDS_OPTIONAL_MILLIS)) {#1273,18.206680400030955
+if (field.iSuffix != null) {#1070,18.20363199710846
+switch (periodStr.charAt(pos)) {#892,18.194583221718116
+originalParser = null;#596,18.193435220157397
+int seconds = period.get(DurationFieldType.seconds());#1420,18.19283725475443
+case SECONDS_MILLIS: // drop through#1418,18.192459106445312
+clear();#102,18.189335060119628
+Object[] comp = createComposite(elementPairs);#805,18.18918173653739
+if ((c == '.' || c == ',')#1272,18.1856772005558
+case SECONDS_OPTIONAL_MILLIS:#1419,18.184885902404787
+return new PeriodFormatter(null, (PeriodParser) comp[1]);#807,18.183952002689757
+lastSeparator = (Separator) pairs.get(i);#753,18.182819813489914
+private static final int SECONDS_OPTIONAL_MILLIS = 9;#81,18.17953651601618
+if ((finalText == null || text.equals(finalText)) &&#1597,18.17493806566511
+String text2 = iSingularText;#956,18.170760588212445
+appendField(MONTHS);#411,18.16811688741048
+int wholeValue = parseInt(text, position, fractPos - position - 1);#1307,18.163936867433435
+PeriodType type;#1379,18.161393642425537
+int dp = (int) (Math.abs(valueLong) % DateTimeConstants.MILLIS_PER_SECOND);#1138,18.158201756684676
+return appendSuffix(new PluralAffix(singularText, pluralText));#576,18.157452300742822
+case SECONDS_OPTIONAL_MILLIS:#1491,18.154891700744628
+int length = parsedForms.length;#1713,18.154294738769533
+if (minDigits <= 1) {#1132,18.15191990988595
+private boolean iNotPrinter;#94,18.147045135498047
+if (minDigits <= 1) {#1163,18.142433620634534
+iLeft.printTo(out, value);#1005,18.14012202349576
+public int calculatePrintedLength(ReadablePeriod period, Locale locale) {#1630,18.136701657221867
+private final boolean iUseBefore;#1583,18.135929044087728
+int dp = (int) (Math.abs(valueLong) % DateTimeConstants.MILLIS_PER_SECOND);#1169,18.133084732553232
+case SECONDS:#1519,18.126912677989285
+iText = text;#1543,18.124903061810663
+iPrefix.printTo(out, value);#1160,18.12400499979655
+position = iAfterParser.parseInto(period, periodStr, position, locale);#1728,18.121790855161606
+prefix = new CompositeAffix(iPrefix, prefix);#382,18.117645111083984
+if (negative) {#1258,18.115008239746093
+break;#1282,18.112157895014835
+String pluralText) {#362,18.10321694833261
+append0(separator, separator);#743,18.102301330566405
+i--;  // element pairs#757,18.100367897435238
+if (variants != null) {#1606,18.096741517384846
+type = null; // Don't need to check if supported.#1381,18.093994995643353
+throw new IllegalStateException("No field to apply suffix to");#602,18.09013153076172
+PluralAffix(String singularText, String pluralText) {#914,18.08929239619862
+private final boolean iRejectSignedValues;#1035,18.087132453918457
+public PeriodFormatterBuilder printZeroNever() {#328,18.085098811558314
+if (text1.length() < text2.length()) {#958,18.084987787099983
+if (fractLen == 1) {#1319,18.084589206811152
+for (int i=printers.length; sum < stopAt && --i>=0; ) {#1788,18.082322038922992
+for (int i=0; i<len && position >= 0; i++) {#1828,18.08138478597005
+if (array != null) {#1858,18.080809292040374
+(Math.abs(valueLong) % DateTimeConstants.MILLIS_PER_SECOND) == 0) {#1100,18.078794909458534
+if (iPrintZeroSetting == PRINT_ZERO_ALWAYS || getFieldValue(period) != Long.MAX_VALUE) {#1080,18.076316038767498
+if (periodStr.regionMatches#942,18.07340350151062
+long valueLong = getFieldValue(period);#1087,18.070955753326416
+before.printTo(buf, period, locale);#1659,18.0637208275173
+int size = elementPairs.size();#798,18.063374519348145
+public PeriodFormatterBuilder appendMillis() {#512,18.060055119650706
+iSuffix.printTo(out, value);#1176,18.05708490099226
+iLeft.printTo(buf, value);#1000,18.05595250563188
+String text2 = iSingularText;#933,18.049886400049385
+public PeriodFormatterBuilder appendLiteral(String text) {#227,18.046610090467667
+value = period.get(DurationFieldType.millis());#1416,18.034519655951136
+return 0;#1089,18.03224031548751
+throw new IllegalStateException("Prefix not followed by field");#780,18.02868995666504
+case SECONDS_MILLIS: // drop through#1490,18.028666973114014
+if (position > oldPos && !found && !iUseBefore) {#1739,18.027886390686035
+private static final int PRINT_ZERO_NEVER = 5;#70,18.025510787963867
+public PeriodParser toParser() {#159,18.021911881186746
+public PeriodFormatterBuilder append(PeriodPrinter printer, PeriodParser parser) {#211,18.018111792477693
+iFieldFormatters = (FieldFormatter[]) iFieldFormatters.clone();#124,18.0148334136376
+if (period.getValue(i) != 0) {#1463,18.008664196935193
+return position + iText.length();#1566,18.008613268534344
+private final String iSingularText;#911,18.006493508815765
+case HOURS:#1513,18.00598055124283
+if (fractPos >= 0) {#1274,18.005901394468367
+iBeforeParser = beforeParser;#1617,18.003453706440173
+case SECONDS:#1486,18.00253755906049
+return appendPrefix(new PluralAffix(singularText, pluralText));#366,18.001155633192795
+private PeriodFormatterBuilder append0(PeriodPrinter printer, PeriodParser parser) {#785,17.999951362609863
+PeriodFormatter formatter = toFormatter(iElementPairs, iNotPrinter, iNotParser);#123,17.998986423015594
+if (element instanceof PeriodPrinter) {#1838,17.99767354818491
+throw new IllegalStateException("Builder has created neither a printer nor a parser");#796,17.996515239988053
+implements PeriodPrinter, PeriodParser {#1538,17.994922256469728
+return pos;#974,17.994647233382516
+private static final int MILLIS = 7;#79,17.99456735757681
+int millis = period.get(DurationFieldType.millis());#1421,17.994130780619958
+private final boolean iUseAfter;#1584,17.99343579610189
+sum++;#1098,17.992772420247395
+while (length-- > 0) {#1369,17.990276670455934
+int scan(String periodStr, int position);#847,17.98586893081665
+return true;#1467,17.984149424235024
+FormatUtils.writePaddedInteger(out, dp, 3);#1172,17.979071140289307
+if (element instanceof PeriodParser) {#1847,17.97507957458496
+PeriodPrinter after = iAfterPrinter;#1632,17.973686521703545
+appendField(SECONDS_OPTIONAL_MILLIS);#500,17.973632439323094
+default:#1499,17.971868651253835
+if (!mustParse) {#1218,17.971692721048992
+originalPrinter != originalParser ||#600,17.968408543130625
+value = (seconds * (long) DateTimeConstants.MILLIS_PER_SECOND) + millis;#1422,17.96250545410883
+private final PeriodFieldAffix iLeft;#986,17.962406719432156
+(c = text.charAt(position + length + 1)) < '0' || c > '9')#1253,17.962014536062878
+FieldFormatter(int minPrintedDigits, int printZeroSetting,#1048,17.961095730463665
+length++;#1285,17.960748036702473
+Separator(String text, String finalText, String[] variants,#1591,17.959624249002207
+private volatile PeriodParser iAfterParser;#1589,17.957001566886902
+for (int i=variants.length; --i>=0; ) {#1607,17.954333957872894
+append0(printer, parser);#216,17.953890323638916
+return appendSuffix(new SimpleAffix(text));#555,17.952975454784575
+sum -= 4; // remove three digits and decimal point#1101,17.95124429272067
+iPrefix.printTo(buf, value);#1129,17.951123696786386
+search:#886,17.950980527060374
+PeriodFormatter f = toFormatter(elementPairs.subList(2, size), notPrinter, notParser);#801,17.948212557060774
+public PeriodPrinter toPrinter() {#140,17.94562867971567
+value = period.get(DurationFieldType.weeks());#1401,17.944366422192804
+case HOURS:#1482,17.944123327732086
+for (i=pairs.size(); --i>=0; ) {#751,17.943066864013673
+public PeriodFormatterBuilder appendPrefix(String text) {#342,17.941611963159897
+fractValue = -fractValue;#1326,17.941441148519516
+default:#1472,17.940060547419957
+return 0;#1083,17.93689702351888
+iRejectSignedValues = v;#266,17.93589131972369
+iSuffix.printTo(buf, value);#1145,17.9350334916796
+return sum;#1115,17.931794357299804
+value = period.get(DurationFieldType.minutes());#1410,17.92908918446508
+String text1 = iPluralText;#955,17.928870655241468
+if (fractLen >= 3) {#1315,17.92748369019607
+public int calculatePrintedLength(ReadablePeriod period, Locale locale) {#1550,17.92440366744995
+private static final int MINUTES = 5;#77,17.921591963086808
+(variants == null || variants.length == 0)) {#1598,17.919808552182953
+iFinalText = finalText;#1595,17.919581664235967
+new PeriodPrinter[printerList.size()]);#1774,17.918214983410305
+private int iMinPrintedDigits;#84,17.91734790802002
+valueLong = valueLong / DateTimeConstants.MILLIS_PER_SECOND;#1104,17.911185529496933
+int fieldType, FieldFormatter[] fieldFormatters,#1050,17.90482951572963
+buf.append('.');#1140,17.901826051565315
+fractValue = 0;#1313,17.901347045898437
+case '.': case ',': case '+': case '-':#895,17.90004563331604
+case 0:#817,17.896765899658202
+if (wholeValue < 0) {#1325,17.89478535487734
+private final PeriodPrinter iBeforePrinter;#1586,17.886563936869305
+case '0': case '1': case '2': case '3': case '4':#893,17.88120346599155
+value = period.get(DurationFieldType.days());#1404,17.8759320804051
+value = text.charAt(position++);#1364,17.86841862018292
+if ((parsedForm == null || parsedForm.length() == 0) ||#1716,17.86645181555497
+iSuffix = suffix;#1059,17.863103113676374
+after.printTo(out, period, locale);#1696,17.862726543260656
+value = ((value << 3) + (value << 1)) + text.charAt(position++) - '0';#1370,17.86178407436464
+static class Separator#1577,17.861396895514595
+appendField(MINUTES);#463,17.860481643676756
+PeriodPrinter after = iAfterPrinter;#1679,17.858568755063143
+private int iMaxParsedDigits;#86,17.85507890156337
+element = elementPairs.get(i + 1);#1846,17.854706968579972
+iRight.printTo(out, value);#1006,17.854633634740654
+value = period.get(DurationFieldType.seconds());#1413,17.848434380122594
+default:#1392,17.84272643498012
+text1 = text2;#938,17.840980703180488
+position = iBeforeParser.parseInto(period, periodStr, position, locale);#1703,17.840543746948242
+for (; i >= 0 && i <= MAX_FIELD; i--) {#1446,17.83929101432242
+value = period.get(DurationFieldType.years());#1395,17.839009591511317
+implements PeriodPrinter, PeriodParser {#1031,17.836977624893187
+private final int iMaxParsedDigits;#1034,17.835611242997018
+if (!mustParse) {#1198,17.83502232586896
+if (element instanceof Composite) {#1839,17.832031522478378
+String text1 = iPluralText;#932,17.83171626499721
+private final int iMinPrintedDigits;#1032,17.83128473493788
+if (before.countFieldsToPrint(period, 1, locale) > 0) {#1638,17.83073443836636
+break;#1417,17.82667530907525
+buf.append(iText);#866,17.824459678248356
+for (int i=0; i<len; i++) {#1814,17.823164536402775
+return Long.MAX_VALUE;#1448,17.816066693036984
+private static final int MAX_FIELD = SECONDS_OPTIONAL_MILLIS;#82,17.810096820195515
+if (periodStr.regionMatches(true, pos, text2, 0, textLength2)) {#973,17.80920593555157
+position++;#1262,17.80695232978234
+FormatUtils.appendPaddedInteger(buf, dp, 3);#1141,17.806949588987564
+int fractValue;#1311,17.806536865234374
+if (before.countFieldsToPrint(period, 1, locale) > 0) {#1661,17.804410881466335
+return ~position;#951,17.80208557844162
+if (text1.length() < text2.length()) {#935,17.798927233769344
+case '5': case '6': case '7': case '8': case '9':#894,17.797577089733547
+case MONTHS:#1476,17.79756747975069
+public PeriodFormatterBuilder appendSeconds() {#475,17.796640259878977
+iFieldType = fieldType;#1056,17.795225996720163
+pairs = pairs.subList(i + 1, pairs.size());#754,17.794009116388136
+case MONTHS:#1504,17.79265308380127
+PeriodPrinter before = iBeforePrinter;#1631,17.784296989440918
+printers[i].printTo(out, period, locale);#1815,17.782949381861194
+if (periodStr.regionMatches(true, position, text, 0, textLength)) {#876,17.781293493328672
+if (iElementPairs.size() > 0) {#591,17.780812127249582
+break;#1423,17.777853541904026
+PeriodPrinter after = iAfterPrinter;#1657,17.776239091699775
+hasDigits = true;#1270,17.772650535290058
+if (before.countFieldsToPrint(period, 1, locale) > 0) {#1683,17.772300322850544
+implements PeriodPrinter, PeriodParser {#1759,17.772102975845335
+return appendPrefix(new SimpleAffix(text));#346,17.769519090652466
+return Long.MAX_VALUE;#1435,17.762596815060345
+PeriodPrinter before = iBeforePrinter;#1678,17.76236525448886
+buf.append(iText);#1555,17.76166303534257
+case HOURS:#1406,17.75939416885376
+return position + textLength;#877,17.759001861919057
+fractValue = parseInt(text, fractPos, 3);#1316,17.757100234160553
+PeriodPrinter before = iBeforePrinter;#1656,17.756368333643135
+(true, position, parsedForm, 0, parsedForm.length())) {#1718,17.751022455168933
+text2 = temp;#962,17.750253223237536
+int sum = iBeforePrinter.countFieldsToPrint(period, stopAt, locale);#1623,17.74806649757154
+periodStr.regionMatches#1717,17.74759324391683
+final Object originalParser;#590,17.745944389930138
+return ~position;#879,17.745105743408203
+iRight = right;#991,17.74200708725873
+public PeriodFormatterBuilder printZeroIfSupported() {#302,17.737942441304526
+if (isSupported(type, i) && iFieldFormatters[i] != null) {#1447,17.73579097280697
+iSuffix = suffix;#1073,17.735647301924857
+{#1254,17.73293077378046
+iUseAfter = useAfter;#1619,17.731335639953613
+mustParse = true;#1195,17.72970129893376
+PeriodParser[] parsers = iParsers;#1822,17.72948191382668
+value = period.get(DurationFieldType.hours());#1407,17.72919171197074
+pairs.add(separator);#770,17.726410313656455
+parserList.add(element);#1851,17.725667984254898
+implements PeriodPrinter, PeriodParser {#1578,17.72453908920288
+String temp = text1;#960,17.721900853243742
+addArrayToList(printerList, ((Composite) element).iPrinters);#1840,17.717981793663718
+if (element instanceof Composite) {#1848,17.717662470681326
+case MONTHS:#1397,17.716097607332117
+iPrintZeroSetting = PRINT_ZERO_NEVER;#329,17.71589287844571
+for (int i=0; i<len; i++) {#1806,17.713456594027004
+final Object originalPrinter;#589,17.706872599465505
+addArrayToList(parserList, ((Composite) element).iParsers);#1849,17.705445354635064
+return 0;#1354,17.704620260941354
+break;#1512,17.70341894361708
+if (periodStr.regionMatches(true, pos, text1, 0, textLength1)) {#970,17.703035819224823
+return Integer.parseInt(text.substring(position, position + length));#1351,17.701980966510195
+fractValue = parseInt(text, fractPos, fractLen);#1318,17.698802747224505
+break;#1276,17.69811340967814
+type = period.getPeriodType();#1383,17.698109970092773
+iAfterParser = afterParser;#1749,17.696554535313656
+iRight.printTo(buf, value);#1001,17.696170286698774
+for (int i=printers.length; --i>=0; ) {#1797,17.69388755162557
+CompositeAffix(PeriodFieldAffix left, PeriodFieldAffix right) {#989,17.692796853872444
+length++;#1259,17.68908298932589
+fractPos = position + length + 1;#1278,17.686000303788617
+case PRINT_ZERO_NEVER:#1429,17.682673674363357
+position = iPrefix.parse(text, position);#1192,17.682333162852697
+ReadWritablePeriod period, String periodStr,#1700,17.68142756709346
+pairs.add(separator);#771,17.679197010241058
+pairs.clear();#765,17.67891126871109
+int position, Locale locale) {#1182,17.67746837933858
+Object[] comp = createComposite(pairs);#764,17.677329500516255
+text2 = temp;#939,17.677088964553107
+iPrintZeroSetting = PRINT_ZERO_IF_SUPPORTED;#303,17.675398139953614
+public PeriodFormatterBuilder appendMillis3Digit() {#524,17.674627752865064
+case YEARS:#1474,17.673969388008118
+iPrefix = field.iPrefix;#1069,17.673492301594127
+public PeriodFormatterBuilder() {#101,17.67220653187145
+append0(literal, literal);#233,17.670081794261932
+buf.append(iText);#1668,17.670036623554846
+break;#1405,17.66938410864936
+if (isSupported(type, i) && iFieldFormatters[i] != null) {#1434,17.664213842275192
+value = period.get(DurationFieldType.months());#1398,17.66326573916844
+return value;#1458,17.662207539876302
+for (int i = iFieldType + 1; i <= MAX_FIELD; i++) {#1433,17.65756210413846
+return position + text2.length();#948,17.65620458126068
+suffix = new CompositeAffix(field.iSuffix, suffix);#1071,17.65546664595604
+break;#1722,17.649997857900765
+break;#1255,17.64839157691369
+iPluralText = pluralText;#916,17.64782061576843
+public PeriodFormatterBuilder rejectSignedValues(boolean v) {#265,17.640409118250798
+break;#1524,17.637726042005752
+iParsers = null;#1778,17.633793917569246
+iPrintZeroSetting = PRINT_ZERO_ALWAYS;#315,17.62942535226995
+case YEARS:#1394,17.62805962562561
+PeriodFieldAffix prefix, PeriodFieldAffix suffix) {#1051,17.61388129658169
+fractValue *= 10;#1322,17.609824825735654
+break;#1515,17.609140184190537
+break;#1509,17.605394469367134
+limit = Math.min(limit + 1, text.length() - position);#1265,17.605304975767393
+int position, Locale locale) {#1821,17.60418124993642
+fractValue *= 100;#1320,17.60334477705114
+Object element = elementPairs.get(i);#1837,17.601405602914316
+private static final int PRINT_ZERO_IF_SUPPORTED = 3;#68,17.5982122854753
+Composite(List<Object> elementPairs) {#1764,17.593766363043535
+case DAYS:#1510,17.591700553894043
+break;#1402,17.59042082892524
+return false;#1473,17.588840735586064
+return position;#1831,17.58709716796875
+position += parsedForm.length();#1720,17.584313423402847
+break;#1408,17.583151287502712
+String[] parsedForms = iParsedForms;#1712,17.58261431966509
+setFieldValue(period, SECONDS, wholeValue);#1308,17.581676713351545
+limit = Math.min(iMaxParsedDigits, suffixPos - position);#1236,17.58106918334961
+public PeriodFormatterBuilder printZeroRarelyFirst() {#291,17.578371703624725
+break;#1414,17.576285521189373
+String parsedForm = parsedForms[i];#1715,17.57624797821045
+private volatile PeriodPrinter iAfterPrinter;#1587,17.57608042822944
+private void addArrayToList(List<Object> list, Object[] array) {#1857,17.575293467595028
+int sum = before.calculatePrintedLength(period, locale)#1634,17.574060644422257
+out.write('.');#1171,17.57211556801429
+public PeriodFormatterBuilder appendSuffix(String singularText,#571,17.571478631761337
+iPrinters = null;#1771,17.5687198638916
+iMaxParsedDigits = 10;#173,17.567912949456108
+private void decompose(List<Object> elementPairs, List<Object> printerList, List<Object> parserList) {#1834,17.567653046713936
+return new Object[] {elementPairs.get(0), elementPairs.get(1)};#820,17.567636565158242
+return 1;#1081,17.5661812832481
+int maxParsedDigits, boolean rejectSignedValues,#1049,17.565926989993535
+return iRight.scan(periodStr, pos);#1020,17.564826082300257
+case WEEKS:#1478,17.554294866674088
+throw new UnsupportedOperationException();#1824,17.553861783898395
+negative = false;#1366,17.546784162521362
+printerList.add(element);#1842,17.545387391121157
+break;#1399,17.545072343614365
+suffixPos = iSuffix.scan(text, position);#1212,17.544923782348633
+if (afterCount > 0) {#1686,17.54403766989708
+new PeriodParser[parserList.size()]);#1781,17.54366209927727
+limit = Math.min(limit + 1, text.length() - position);#1280,17.54328757960622
+if (periodStr.regionMatches(true, position, iText, 0, iText.length())) {#1565,17.541627548836374
+printers[i].printTo(buf, period, locale);#1807,17.54047420107085
+if (afterCount > 0) {#1641,17.5403009057045
+break;#1518,17.5371216668023
+return Long.MAX_VALUE;#1386,17.535816192626953
+int minDigits = iMinPrintedDigits;#1162,17.534918626149494
+FormatUtils.writeUnpaddedInteger(out, value);#1164,17.531536801656088
+return pos;#971,17.53049145574155
+private static final int MONTHS = 1;#73,17.52998011452811
+if (afterCount > 0) {#1664,17.52976030111313
+for (int i=0; i<size; i+=2) {#1836,17.527885845729283
+String temp = text1;#937,17.5216402574019
+int size = elementPairs.size();#1835,17.51985468183245
+iPrintZeroSetting = PRINT_ZERO_RARELY_LAST;#172,17.517422896165115
+iMinPrintedDigits = 1;#171,17.516493629006778
+int afterCount = after.countFieldsToPrint(period, 2, locale);#1640,17.514012472970144
+break;#1411,17.51392168468899
+return ~position;#977,17.513288617134094
+private final PeriodParser[] iParsers;#1762,17.51288946937112
+iFieldFormatters = fieldFormatters;#1057,17.512128375825426
+return iFieldType;#1529,17.507119683658374
+int minDigits = iMinPrintedDigits;#1131,17.506747166315716
+iUseBefore = useBefore;#1618,17.5059848082693
+after.printTo(buf, period, locale);#1674,17.504477169202723
+if (iUseAfter) {#1639,17.50346272080033
+break;#1503,17.500337176852756
+iRejectSignedValues = field.iRejectSignedValues;#1066,17.499908174787247
+parsedSet.add(variants[i]);#1608,17.499603580026065
+break;#1521,17.495642556084526
+position = parsers[i].parseInto(period, periodStr, position, locale);#1829,17.489824718899197
+out.write(iText);#1559,17.48760865864001
+mustParse = true;#1215,17.487295077397274
+return ~position;#1289,17.485956239700318
+(true, position, text2, 0, text2.length())) {#947,17.485514640808105
+if (iUseAfter) {#1684,17.474864147327565
+case MINUTES:#1516,17.47434919020709
+if (iUseAfter) {#1662,17.474346019603587
+FormatUtils.writePaddedInteger(out, value, minDigits);#1166,17.473077687350187
+setFieldValue(period, SECONDS, parseInt(text, position, length));#1304,17.472574751717705
+iBeforePrinter = beforePrinter;#1616,17.472344534737722
+sum += iText.length();#1645,17.46979614996141
+FormatUtils.appendUnpaddedInteger(buf, value);#1133,17.469192250569662
+case DAYS:#1480,17.467378437519073
+case YEARS:#1501,17.466311275959015
+public PeriodFormatterBuilder appendSecondsWithOptionalMillis() {#499,17.466191238827175
+break;#1506,17.465933587816025
+public PeriodFormatterBuilder appendSecondsWithMillis() {#487,17.462183110854205
+negative = true;#1363,17.458935165405272
+break;#755,17.45854139328003
+return ~oldPos;#1736,17.456831160045805
+return ~suffixPos;#1222,17.455093765258788
+return position + text1.length();#944,17.45001769065857
+ReadWritablePeriod period, String periodStr,#1563,17.448112629078054
+return 0;#1078,17.444252967834473
+case DAYS:#1403,17.438948035240173
+return 0;#1547,17.438364664713543
+return position;#1231,17.437309214943333
+int position, Locale locale) {#1564,17.436129609743755
+(true, position, text1, 0, text1.length())) {#943,17.434371225761645
+return Long.MAX_VALUE;#1430,17.433850747567636
+i--;                              // see bug 1660490#1445,17.43358112150623
+limit = Math.min(iMaxParsedDigits, text.length() - position);#1238,17.43225533253438
+int afterCount = after.countFieldsToPrint(period, 2, locale);#1685,17.418119793846493
+return position;#1297,17.416669343647204
+public PeriodFormatterBuilder printZeroRarelyLast() {#279,17.41470777988434
+iFieldType = field.iFieldType;#1067,17.414657896215264
+return ~position;#901,17.410772681236267
+ReadWritablePeriod period, String text,#1181,17.40931150648329
+int i = Math.min(iFieldType, 8);  // line split out for IBM JDK#1444,17.406668600828752
+buf.append(iText);#1672,17.40463037076204
+private final String[] iParsedForms;#1581,17.403553114997017
+sum += printers[i].countFieldsToPrint(period, Integer.MAX_VALUE, locale);#1789,17.400373835312692
+int afterCount = after.countFieldsToPrint(period, 2, locale);#1663,17.39970890680949
+break;#1396,17.39855930540297
+iAfterPrinter = afterPrinter;#1748,17.39483578999837
++ iRight.calculatePrintedLength(value);#996,17.393918201841156
+return new Object[] {Literal.EMPTY, Literal.EMPTY};#818,17.391292403726016
+iParsedForms = new String[] {text};#1600,17.390471833092825
+Separator finish(PeriodPrinter afterPrinter, PeriodParser afterParser) {#1747,17.387676380298757
+PeriodPrinter[] printers = iPrinters;#1787,17.387607314369895
+return position;#1706,17.38612807424445
+return sum;#1652,17.385740534464517
+Literal.EMPTY, Literal.EMPTY, useBefore, useAfter);#742,17.384894075847807
+out.write(iText);#870,17.383758344148333
+return ~position;#1022,17.382651209831238
+text, finalText, variants,#767,17.382576271339698
+case MINUTES:#1484,17.380050995770624
+position = iRight.parse(periodStr, position);#1012,17.38001046861921
+return sum;#1791,17.37775052388509
+useBefore, useAfter);#769,17.371451671306904
+iLeft = left;#990,17.369598893558276
+return;#1121,17.364623917473686
+return type.isSupported(DurationFieldType.seconds()) ||#1492,17.364400205941035
+out.write(iText);#1690,17.360196944205992
+FormatUtils.appendPaddedInteger(buf, value, minDigits);#1135,17.35767991615064
+private final PeriodPrinter[] iPrinters;#1761,17.357593801286484
+int position, Locale locale) {#1701,17.356367031733196
+case MINUTES:#1409,17.34883218653062
+iSingularText = singularText;#915,17.343431377410887
+type.isSupported(DurationFieldType.millis());#1493,17.339323588779994
+return position;#1014,17.33805605570475
+return type.isSupported(DurationFieldType.seconds());#1487,17.337440967559814
+return ~oldPos;#1741,17.33680670601981
+private static final int PRINT_ZERO_RARELY_LAST = 2;#67,17.33277125980543
+private static final int PRINT_ZERO_RARELY_FIRST = 1;#66,17.328959340634555
+buf.append(afterCount > 1 ? iText : iFinalText);#1665,17.327753001993354
+return Long.MAX_VALUE;#1439,17.320035380701864
+public PeriodFormatterBuilder appendPrefix(String singularText,#361,17.319563753464642
+private static final int WEEKS = 2;#74,17.318045139312744
+iFieldFormatters = field.iFieldFormatters;#1068,17.31613862514496
+originalPrinter = null;#595,17.31319671207004
+return this;#526,17.31049884449352
+appendField(type, iMinPrintedDigits);#530,17.310126543045044
+case 1:#819,17.30988292694092
+return type.isSupported(DurationFieldType.years());#1475,17.309602430888585
+return suffixPos;#1224,17.30876676241557
+List<Object> pairs = iElementPairs;#737,17.30470471633108
+PeriodPrinter[] printers = iPrinters;#1796,17.302375880154695
+return position;#1339,17.296372922261558
+case WEEKS:#1507,17.29478364832261
+public class PeriodFormatterBuilder {#65,17.291079998016357
+case PRINT_ZERO_RARELY_FIRST:#1442,17.288104661305745
+return this;#489,17.2801720012318
+return this;#501,17.274679270657625
+return sum;#1800,17.274645551045737
+int pos = iLeft.scan(periodStr, position);#1018,17.273831405639648
+text, finalText, variants,#741,17.273125679262222
+iPrintZeroSetting = PRINT_ZERO_RARELY_LAST;#280,17.272667738107536
+return type.isSupported(DurationFieldType.millis());#1489,17.272557916312383
+iPrinters = printerList.toArray(#1773,17.27208375930786
+return type.isSupported(DurationFieldType.minutes());#1485,17.268602469871784
+break search;#898,17.2672756858494
+return sum;#1627,17.262788772583008
+return mustParse ? ~position : position;#1188,17.258974698873665
+return this;#399,17.255104758522727
+position = iSuffix.parse(text, position);#1336,17.254144043757996
+ReadWritablePeriod period, String periodStr,#1820,17.252927356296116
+case MILLIS:#1415,17.25007516145706
+sum += (afterCount > 1 ? iText : iFinalText).length();#1642,17.23794697655572
+return this;#464,17.234274690801445
+return iText.length();#862,17.227454397413467
+private static final int DAYS = 3;#75,17.221484624422512
+return ~position;#1568,17.220954418182373
+return this;#281,17.21707716855136
+public PeriodFormatterBuilder minimumPrintedDigits(int minDigits) {#244,17.21642743973505
+for (int i=0; i<array.length; i++) {#1859,17.215544551610947
+switch (iPrintZeroSetting) {#1428,17.214731216430664
+sum += iAfterPrinter.countFieldsToPrint(period, stopAt, locale);#1625,17.21146037843492
+return;#1152,17.2103361553616
+parsedSet.add(text);#1604,17.210265823032547
+period.setYears(value);#1502,17.20696892945663
+return this;#412,17.205697146329012
+break;#1500,17.200824790530735
+case PRINT_ZERO_RARELY_LAST:#1431,17.198742039998372
+out.write(afterCount > 1 ? iText : iFinalText);#1687,17.19835656339472
+return type.isSupported(DurationFieldType.weeks());#1479,17.195903547878924
+return this;#293,17.19307431307706
+return type.isSupported(DurationFieldType.days());#1481,17.191920893532888
+iRejectSignedValues = rejectSignedValues;#1055,17.18816578388214
+period.setWeeks(value);#1508,17.187090237935383
+period.setMillis(value);#1523,17.186717351277668
+return this;#438,17.183909156105734
+return this;#451,17.182931379838422
+position = iLeft.parse(periodStr, position);#1010,17.178461988766987
+sep = sep.finish(f.getPrinter(), f.getParser());#802,17.168105321771957
+return this;#514,17.16653997247869
+return this;#425,17.16314662586559
+private static Object[] createComposite(List<Object> elementPairs) {#815,17.162050940773703
+iElementPairs.add(printer);#786,17.158645629882812
+return this;#774,17.155404437672008
+decompose(elementPairs, printerList, parserList);#1768,17.15253105163574
+return this;#316,17.150238904086027
+return Long.MAX_VALUE;#1393,17.13976238084876
+iParsedForms = parsedList.toArray(new String[parsedList.size()]);#1613,17.13954084347456
+return Long.MAX_VALUE;#1452,17.13636564439343
+case WEEKS:#1400,17.1337173686308
+iElementPairs = new ArrayList<Object>();#177,17.133557856082916
+out.write(iText);#1694,17.132212680319082
+String[] variants) {#723,17.13163570057262
+iPrintZeroSetting = printZeroSetting;#1053,17.131392024812243
+iMinPrintedDigits = minPrintedDigits;#1052,17.123021049499513
+sum += iSuffix.calculatePrintedLength(value);#1112,17.121389865875244
+return ~position;#1202,17.120447601590836
+return this;#330,17.119491577148438
++ after.calculatePrintedLength(period, locale);#1635,17.116551735821893
+parsedSet.add(finalText);#1605,17.115938266118366
+sum += iText.length();#1649,17.114493992017664
+return this;#304,17.11208066073331
+return position;#1731,17.1081801966617
+continue;#1266,17.10776866566051
+return type.isSupported(DurationFieldType.months());#1477,17.104180199759348
+return this;#477,17.10392050309615
+sum = Math.max(sum, 4);#1096,17.088725896982048
+iPrintZeroSetting = PRINT_ZERO_RARELY_FIRST;#292,17.080063819885254
+PeriodPrinter[] printers = iPrinters;#1812,17.0797907222401
+return position;#1204,17.077286927596383
+return this;#790,17.075587359341707
+setFieldValue(period, iFieldType, parseInt(text, position, length));#1302,17.07422054835728
+buf.append(value == 1 ? iSingularText : iPluralText);#924,17.073867416381837
+return position;#1744,17.068359247843425
+PeriodPrinter[] printers = iPrinters;#1804,17.065696412866767
+iParsers = parserList.toArray(#1780,17.033281949850227
+originalParser = iElementPairs.get(iElementPairs.size() - 1);#593,17.02963936328888
+out.write(value == 1 ? iSingularText : iPluralText);#928,17.029193433125815
+break;#1441,17.028930100527678
+break;#1454,17.028135906566273
+setFieldValue(period, MILLIS, fractValue);#1330,17.026445865631104
+return negative ? -value : value;#1372,17.020250654220582
+case MILLIS:#1522,17.018715143203735
+iMinPrintedDigits = minDigits;#245,17.014131897374202
+sum += iPrefix.calculatePrintedLength(value);#1109,17.013417705412834
+return this;#267,17.011922576210715
+return this;#257,17.004005692221902
+list.add(array[i]);#1860,17.000657285962784
+return this;#246,16.9924898147583
+Collections.reverse(parsedList);#1612,16.99225124359131
+iMaxParsedDigits = maxParsedDigits;#1054,16.988913677356862
+case MILLIS:#1488,16.982933819293976
+return type.isSupported(DurationFieldType.hours());#1483,16.97974923678807
+public PeriodFormatterBuilder maximumParsedDigits(int maxDigits) {#255,16.975290775299072
+originalPrinter = iElementPairs.get(iElementPairs.size() - 2);#592,16.974236199350067
+return this;#197,16.973228194496848
+period.setDays(value);#1511,16.957920737888504
+iMaxParsedDigits, iRejectSignedValues, type, iFieldFormatters, iPrefix, null);#535,16.95748987197876
+return iText.length();#1551,16.951227294074165
+break;#896,16.95058116045865
+iPrintZeroSetting = field.iPrintZeroSetting;#1064,16.949219783147175
+return this;#745,16.945329411824545
+iElementPairs.clear();#179,16.944049232884456
+iElementPairs.add(parser);#787,16.942615621230182
+int sum = Math.max(FormatUtils.calculateDigitCount(valueLong), iMinPrintedDigits);#1092,16.93171944618225
+period.setMinutes(value);#1517,16.914436141649883
+TreeSet<String> parsedSet = new TreeSet<String>(String.CASE_INSENSITIVE_ORDER);#1603,16.91365742128949
+return this;#234,16.89519101923162
+period.setHours(value);#1514,16.894983789195184
+period.setMonths(value);#1505,16.88538348674774
+ArrayList<String> parsedList = new ArrayList<String>(parsedSet);#1611,16.875923878805978
+iElementPairs.set(iElementPairs.size() - 2, newField);#607,16.871421098709106
+return (value == 1 ? iSingularText : iPluralText).length();#920,16.86325340270996
+default:#821,16.861401557922363
+iElementPairs.set(iElementPairs.size() - 1, newField);#608,16.84416355405535
+iMaxParsedDigits = field.iMaxParsedDigits;#1065,16.7659192721049
+return this;#217,16.747570991516113
+static class Composite#1758,16.740335055759974
+default:#897,16.7312044567532
+sum += printers[i].calculatePrintedLength(period, locale);#1798,16.730491869377367
+return this;#611,16.696232015436347
+iMaxParsedDigits = maxDigits;#256,16.691097927093505
+setFieldValue(period, MILLIS, 0);#1305,16.679911578143084
+PeriodPrinter beforePrinter, PeriodParser beforeParser,#1592,16.61411895070757
+List<Object> printerList = new ArrayList<Object>();#1765,16.60696425804725
+private List<Object> iElementPairs;#92,16.593971524919784
+iMinPrintedDigits = field.iMinPrintedDigits;#1063,16.59097283227103
+period.setSeconds(value);#1520,16.58615525563558
+return this;#385,16.559027325023305
+List<Object> parserList = new ArrayList<Object>();#1766,16.4961560689486
+return this;#1750,16.489424196879067
+return iLeft.calculatePrintedLength(value)#995,16.4592435836792
+String[] variants,#728,15.889709143205122

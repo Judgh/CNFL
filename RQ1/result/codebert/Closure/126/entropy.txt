@@ -1,0 +1,117 @@
+AbstractCompiler compiler;#36,19.48504843030657
+case Token.LABEL:#50,19.392427841822307
+implements CompilerPass {#34,19.229549196031357
+MinimizeExitPoints(AbstractCompiler compiler) {#38,19.22393461374136
+case Token.WHILE:#56,18.963802973429363
+if (labelName == null) {#282,18.894343376159668
+Node trueBlock, falseBlock;#169,18.800483894348144
+if (destBlock == null) {#244,18.662711007254465
+if (elseBlock != null) {#120,18.62675973347255
+if (ifNode.getNext() != null) {#240,18.61767989397049
+case Token.FOR:#55,18.599742542613637
+@Override#42,18.570919513702393
+if (c.isIf()) {#167,18.55206162588937
+this.compiler = compiler;#39,18.54509700428356
+case Token.DO:#60,18.521862290122293
+Node ifNode, int exitType, String labelName) {#217,18.447249613310163
+tryMinimizeExits(ifBlock, exitType, labelName);#118,18.424263590858097
+@Override#47,18.39545965194702
+if (falseBlock != null) {#181,18.34587997198105
+tryMinimizeExits(c, exitType, labelName);#195,18.328731489181518
+if (isFunctionDeclaration) {#305,18.297788619995117
+if (!matchingExitNode(exitNode, exitType, labelName)) {#235,18.247427940368652
+tryMinimizeExits(catchCodeBlock, exitType, labelName);#135,18.2118425766627
+for (Node c : n.children()) {#164,18.203882353646414
+void tryMinimizeExits(Node n, int exitType, String labelName) {#106,18.185499509175617
+ifTree, exitType, labelName);#175,18.14856056939988
+Node ifTree = c;#168,18.14076021739415
+if (c == n.getLastChild()) {#197,18.102296043844785
+if (NodeUtil.hasFinally(n)) {#141,18.063332292768692
+if (matchingExitNode(n, exitType, labelName)) {#109,18.057385778427125
+return !n.hasChildren();#280,18.031140327453613
+if (c == n.getLastChild()) {#187,17.998848971198587
+switch (n.getType()) {#49,17.994755506515503
+private static boolean matchingExitNode(Node n, int type, String labelName) {#276,17.978966188430785
+tryMinimizeExits(tryBlock, exitType, labelName);#129,17.967740422203427
+compiler.reportCodeChange();#111,17.864558537801106
+if (n.isIf()) {#116,17.787359476089478
+falseBlock = trueBlock.getNext();#173,17.772677477668314
+return !n.hasChildren();#283,17.76541384528665
+case Token.FUNCTION:#72,17.76197653550368
+Node start, Node srcParent, Node destParent) {#301,17.752552403344048
+tryMinimizeExits(labelBlock, exitType, labelName);#150,17.7524535769508
+if (!n.isBlock() || n.getLastChild() == null) {#156,17.75219084999778
+class MinimizeExitPoints#32,17.7430157661438
+for (Node c = n.getLastChild(); c != null; c = n.getLastChild()) {#194,17.71821161678859
+if (NodeUtil.getImpureBooleanValue(cond) == TernaryValue.FALSE) {#64,17.697518319794625
+if (NodeUtil.hasCatchHandler(allCatchNodes)) {#131,17.671784162521362
+if (type == Token.RETURN) {#278,17.64913696050644
+tryMinimizeExits(finallyBlock, exitType, labelName);#143,17.640091856320698
+if (n.isLabel()) {#148,17.63226882616679
+falseBlock = trueBlock.getNext();#180,17.611138287712546
+if (n.getType() == type) {#277,17.576578903198243
+compiler.reportCodeChange();#261,17.574548800786335
+Node catchCodeBlock = catchNode.getLastChild();#134,17.56932940483093
+tryMinimizeExits(elseBlock, exitType, labelName);#121,17.5611744756284
+tryMinimizeExits(NodeUtil.getLoopCodeBlock(n), Token.CONTINUE, null);#61,17.527991699449945
+if (srcBlock.isBlock()) {#222,17.494816926809456
+Node newDestBlock = IR.block().srcref(ifNode);#243,17.4382658913022
+return n.hasChildren()#285,17.438118755817413
+exitNodeParent = srcBlock;#226,17.432258165799656
+Node elseBlock = ifBlock.getNext();#119,17.431308209896088
+boolean isFunctionDeclaration = NodeUtil.isFunctionDeclaration(n);#303,17.380688128264055
+tryMinimizeExits(#51,17.366922310420446
+Node tryBlock = n.getFirstChild();#128,17.341813623905182
+tryMinimizeExits(NodeUtil.getLoopCodeBlock(n), Token.CONTINUE, null);#57,17.338519674358945
+newDestBlock = destBlock;#252,17.307333183288574
+ifTree, exitType, labelName);#183,17.304819107055664
+trueBlock = ifTree.getFirstChild().getNext();#172,17.29403273264567
+tryMinimizeIfBlockExits(trueBlock, falseBlock,#174,17.277070435610685
+if (!srcBlock.hasChildren()) {#223,17.27545585632324
+Node labelBlock = n.getLastChild();#149,17.182397961616516
+Node exitNode = null;#219,17.178965663909914
+n.getLastChild(), Token.BREAK, n.getFirstChild().getString());#52,17.115260988473892
+exitNode = exitNodeParent.getLastChild();#227,17.11458391301772
+trueBlock = ifTree.getFirstChild().getNext();#179,17.110032263256254
+Node cond = NodeUtil.getConditionExpression(n);#63,17.032865004106
+extends AbstractPostOrderCallback#33,17.00958103603787
+private void tryMinimizeIfBlockExits(Node srcBlock, Node destBlock,#216,16.94493522644043
+Node finallyBlock = n.getLastChild();#142,16.942130671607124
+if (n.isTry()) {#127,16.92740750312805
+return false;#290,16.914680208478654
+break;#53,16.912913417816164
+&& labelName.equals(n.getFirstChild().getString());#286,16.900623355593
+exitNode = srcBlock;#231,16.839077631632488
+Node exitNodeParent = null;#218,16.811702034690164
+Node ifBlock = n.getFirstChild().getNext();#117,16.810821533203125
+exitNodeParent = ifNode;#230,16.801328585698055
+tryMinimizeExits(n.getFirstChild(), Token.BREAK, null);#68,16.782068712957972
+public void process(Node externs, Node root) {#43,16.746821467081705
+ifNode.replaceChild(destBlock, newDestBlock);#249,16.73552694774809
+NodeTraversal.traverse(compiler, root, this);#44,16.7327366377178
+private static void moveAllFollowing(#300,16.730777104695637
+ifNode.addChildToBack(newDestBlock);#246,16.712659454345705
+break;#58,16.67190017700195
+tryMinimizeExits(n.getLastChild(), Token.RETURN, null);#73,16.623552251745153
+return;#123,16.61026406288147
+return;#112,16.60569655895233
+tryMinimizeIfBlockExits(falseBlock, trueBlock,#182,16.60127540429433
+destParent.addChildToBack(n);#308,16.482969601949055
+moveAllFollowing(ifNode, ifNode.getParent(), newDestBlock);#260,16.432555240133535
+Node catchNode = allCatchNodes.getFirstChild();#133,16.40899020975286
+Node allCatchNodes = NodeUtil.getCatchBlock(n);#130,16.395301739374798
+NodeUtil.removeChild(n.getParent(), n);#110,16.334780406951904
+for (Node n = start.getNext(); n != null; n = start.getNext()) {#302,16.328489010150616
+break;#70,16.32811346054077
+return;#224,16.301953887939455
+return;#236,16.28826880455017
+ifNode.replaceChild(destBlock, newDestBlock);#255,16.283169882638113
+newDestBlock.addChildToBack(destBlock);#256,16.27733540534973
+srcParent.removeChild(n);#304,16.274832044328964
+return;#157,16.2078218460083
+destParent.addChildToFront(n);#306,16.19763289557563
+public void visit(NodeTraversal t, Node n, Node parent) {#48,16.133699166147334
+break;#188,15.920391941070557
+Preconditions.checkState(allCatchNodes.hasOneChild());#132,15.917300300598145
+break;#198,15.347716522216796
+break;#74,15.220408725738526

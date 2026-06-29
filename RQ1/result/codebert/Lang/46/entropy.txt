@@ -1,0 +1,258 @@
+boolean inUnicode = false;#315,20.339614748954773
+if (str == null) {#276,20.13781019846598
+if (out == null) {#179,20.109192339579263
+if (str == null) {#525,20.095355224609374
+if (str == null) {#453,20.03030687967936
+if (str == null) {#801,20.027599080403647
+if (out == null) {#306,20.009968058268228
+if (str == null) {#839,19.980440266927083
+if (str == null) {#155,19.979542668660482
+if (str == null) {#182,19.9406681060791
+if (str == null) {#309,19.756933784484865
+if (str == null) {#666,19.73323853810628
+if (str == null) {#692,19.73190072377523
+if (str == null) {#616,19.62823549906413
+if (string == null) {#562,19.525704511006673
+if (inUnicode) {#318,19.449951553344725
+if (string == null) {#501,19.439744504292808
+if (str == null) {#644,19.433300399780272
+boolean hadSlash = false;#314,19.425484212239585
+if (str == null) {#592,19.406928380330402
+if (writer == null ) {#641,19.261867968241372
+if (writer == null ) {#589,19.22958580652873
+if (writer == null ) {#498,19.152113978068034
+if (writer == null ) {#559,19.127571678161623
+if (str.length() < 2) {#842,19.060075759887695
+if (str != null) {#762,18.959590711091693
+return null;#667,18.80558090209961
+public static void unescapeJava(Writer out, String str) throws IOException {#305,18.795503570919944
+if (hadSlash) {#382,18.77372538248698
+if (hadSlash) {#337,18.769117305153294
+if (unicode.length() == 4) {#322,18.720882839626736
+public static void unescapeHtml(Writer writer, String string) throws IOException {#558,18.7050613490018
+private static void escapeJavaStyleString(Writer out, String str, boolean escapeSingleQuote) throws IOException {#178,18.67459018142135
+return null;#617,18.663543065388996
+public static void escapeHtml(Writer writer, String string) throws IOException {#497,18.643782388596307
+public static void escapeJava(Writer out, String str) throws IOException {#101,18.637021923065184
+if ( str.charAt(0) != CSV_QUOTE || str.charAt(str.length() - 1) != CSV_QUOTE ) {#846,18.632020450773695
+public static void unescapeJavaScript(Writer out, String str) throws IOException {#420,18.62414927916093
+out.write(str);#763,18.590621948242188
+for (int i = 0; i < sz; i++) {#187,18.567916289619777
+for (int i = 0; i < str.length(); i++) {#768,18.525832295417786
+public static void unescapeCsv(Writer out, String str) throws IOException {#838,18.523184472864326
+public static String unescapeJava(String str) {#275,18.508641497294107
+private static String escapeJavaStyleString(String str, boolean escapeSingleQuotes) {#154,18.49762843904041
+for (int i = 0; i < sz; i++) {#316,18.495849526446797
+int sz = str.length();#312,18.489639937877655
+if (ch > 0xfff) {#191,18.486687296912784
+char ch = str.charAt(i);#317,18.434203364632346
+public static String escapeJava(String str) {#85,18.420742716108048
+return null;#693,18.419592412312827
+throw new IllegalArgumentException ("The Writer must not be null.");#499,18.417691513344092
+throw new IllegalArgumentException ("The Writer must not be null.");#560,18.403528849283855
+return null;#733,18.394752248128256
+throw new IllegalArgumentException ("The Writer must not be null.");#642,18.39155613934552
+if ( StringUtils.containsAny(quoteless, CSV_SEARCH_CHARS) ) {#854,18.36357644200325
+throw new IllegalArgumentException ("The Writer must not be null.");#590,18.355187204149033
+unicode.append(ch);#321,18.354348929032035
+return null;#165,18.352740224202474
+try {#325,18.34574179215865
+return null;#286,18.3418275197347
+return null;#811,18.3335444132487
+int sz;#185,18.316867272059124
+public static String escapeHtml(String str) {#452,18.292236455281575
+private static final char CSV_DELIMITER = ',';#43,18.28898525238037
+try {#528,18.28292465209961
+public static String unescapeHtml(String str) {#524,18.27208000421524
+try {#726,18.26624698638916
+try {#158,18.24801139831543
+throw new IllegalArgumentException("The Writer must not be null");#307,18.24131657527043
+return null;#536,18.237455495198567
+public static void escapeJavaScript(Writer out, String str) throws IOException {#142,18.236608187357586
+try {#456,18.235361289978027
+try {#804,18.218168926239013
+public static void escapeCsv(Writer out, String str) throws IOException {#760,18.207938375927153
+sz = str.length();#186,18.203922589619953
+if (c == CSV_QUOTE) {#770,18.193651979619805
+public static void unescapeXml(Writer writer, String str) throws IOException {#640,18.187118010087445
+return null;#464,18.177810923258463
+switch (ch) {#198,18.160098484584264
+return null;#156,18.15930112202962
+try {#279,18.149820423126222
+throw new IllegalArgumentException("The Writer must not be null");#180,18.143878643329327
+int value = Integer.parseInt(unicode.toString(), 16);#326,18.123226284980774
+private static final char CSV_QUOTE = '"';#44,18.112156808376312
+return;#645,18.10575975690569
+return;#502,18.09930842263358
+char ch = str.charAt(i);#188,18.091960603540596
+return;#563,18.09122862134661
+throw new NestableRuntimeException("Unable to parse unicode value: " + unicode, nfe);#332,18.09045544076473
+public static void escapeXml(Writer writer, String str) throws IOException {#588,18.06898221515474
+public static String escapeSql(String str) {#691,18.05755812327067
+inUnicode = false;#329,18.05694635452763
+String quoteless = str.substring(1, str.length() - 1);#852,18.033889330350437
+return null;#454,18.029624684651694
+return;#593,18.029622622898646
+hadSlash = false;#330,18.023501936594645
+return null;#802,18.010669072469074
+if (StringUtils.containsNone(str, CSV_SEARCH_CHARS)) {#761,18.009923737624597
+out.write(ch);#372,17.99841651916504
+hadSlash = false;#339,17.983992836692117
+public static String escapeJavaScript(String str) {#126,17.980170822143556
+return escapeJavaStyleString(str, false);#86,17.966490586598713
+if (StringUtils.containsNone(str, CSV_SEARCH_CHARS)) {#723,17.952113151550293
+return null;#277,17.952054341634113
+private static String hex(char ch) {#262,17.939398545485275
+public static String unescapeJavaScript(String str) {#400,17.938341975212097
+return;#848,17.935983112880162
+return str;#724,17.933764775594074
+return StringUtils.replace(str, "'", "''");#695,17.93061113357544
+public static String unescapeCsv(String str) {#800,17.918579697608948
+return unescapeJava(str);#401,17.884714380900064
+inUnicode = true;#368,17.874301065717425
+escapeJavaStyleString(out, str, false);#102,17.87196289865594
+out.write(str);#859,17.862238883972168
+StringBuffer unicode = new StringBuffer(4);#313,17.85984280234889
+switch (ch) {#228,17.847170421055385
+return escapeJavaStyleString(str, true);#127,17.796152856614853
+escapeJavaStyleString(out, str, true);#143,17.792585573698346
+e.printStackTrace();#463,17.790002421328897
+case 'u':#365,17.789658228556316
+char c = str.charAt(i);#769,17.761328437111594
+return null;#526,17.753988647460936
+return;#840,17.745444774627686
+public static String escapeCsv(String str) {#722,17.727962430318197
+unescapeJava(out, str);#421,17.72399491071701
+out.write(str);#843,17.717131667666965
+switch (ch) {#340,17.71061188834054
+case '\r' :#215,17.708317866692177
+e.printStackTrace();#535,17.707821143300908
+if (escapeSingleQuote) {#230,17.707155566061697
+case '"' :#235,17.680857976277668
+case '\f' :#211,17.67933335671058
+public static String unescapeXml(String str) {#665,17.67208880186081
+public static String escapeXml(String str) {#615,17.66103432973226
+ioe.printStackTrace();#810,17.642243099212646
+ioe.printStackTrace();#164,17.616767501831056
+return;#844,17.615978513445175
+if (ch > 0xf) {#220,17.601278692483902
+break;#364,17.5861595593966
+ioe.printStackTrace();#285,17.578591918945314
+public StringEscapeUtils() {#58,17.565406878789265
+out.write(str);#847,17.561370425754124
+return;#310,17.550812040056503
+ioe.printStackTrace();#732,17.549669647216795
+StringWriter writer = new StringWriter(str.length() * 2);#159,17.532947540283203
+case '\t' :#207,17.532203857715313
+StringWriter writer = new StringWriter ((int)(str.length() * 1.5));#457,17.52501610786684
+case '\n' :#203,17.52347234579233
+case '/' :#243,17.508259455362957
+case 'b':#362,17.507171471913654
+out.write(ch);#248,17.47718079884847
+return;#765,17.461200850350515
+StringWriter writer = new StringWriter ((int)(str.length() * 1.5));#529,17.456411853913337
+hadSlash = true;#377,17.448744600469414
+case '\\' :#239,17.445388259887697
+break;#343,17.443710767305813
+continue;#335,17.42578845553928
+break;#234,17.425657198979305
+case 'f':#353,17.418236255645752
+out.write(ch);#380,17.418164518144394
+break;#346,17.409489778371956
+break;#218,17.38367484166072
+out.write("\\u00" + hex(ch));#196,17.380620528911724
+break;#214,17.372291088104248
+break;#249,17.362262652470516
+out.write('\\');#231,17.35912867153392
+case 'r':#350,17.356837034225464
+out.write("\\u00" + hex(ch));#221,17.343344292989592
+default :#219,17.32939980246804
+break;#206,17.326942627246563
+break;#210,17.319831371307373
+super();#59,17.316293239593506
+break;#349,17.315331605764534
+out.write((char) value);#327,17.303943306207657
+{#366,17.303121795654295
+StringWriter writer = new StringWriter();#727,17.293855285644533
+return writer.toString();#531,17.289876566992866
+out.write('\\');#385,17.286483817630344
+unicode.setLength(0);#328,17.276959270238876
+StringWriter writer = new StringWriter(str.length());#280,17.27183945973714
+StringWriter writer = new StringWriter();#805,17.26532974243164
+return;#183,17.265311241149902
+break;#238,17.263405396388126
+out.write("\\u0" + hex(ch));#194,17.248789688636517
+break;#202,17.23106993161715
+break;#361,17.226941989018368
+break;#242,17.223148272587704
+break;#355,17.214537767263558
+case 'n':#359,17.2111390431722
+out.write("\\u" + hex(ch));#192,17.205894333975657
+break;#225,17.195116079770603
+break;#352,17.181061487931473
+return writer.toString();#282,17.180948469373917
+return writer.toString();#807,17.1796555519104
+out.write(CSV_QUOTE); // escape double quote#771,17.17514762878418
+case '\"':#347,17.171233256657917
+break;#358,17.158511088444637
+out.write('\\');#200,17.15464054743449
+break;#369,17.15399522781372
+return Integer.toHexString(ch).toUpperCase();#263,17.132411708002504
+out.write('r');#217,17.13215751647949
+out.write("\\u000" + hex(ch));#223,17.12775007108363
+case '\b' :#199,17.125641382657566
+break;#373,17.124642225412224
+return writer.toString();#459,17.110305945078533
+out.write('b');#201,17.106508000691733
+continue;#375,17.073528289794922
+case '\\':#341,17.07240891456604
+case 't':#356,17.05563275019328
+out.write('/');#245,17.047784837086997
+out.write('\\');#204,16.993628533681235
+return writer.toString();#729,16.991804281870525
+return writer.toString();#161,16.986506462097168
+break;#246,16.98428150323721
+default :#371,16.979153459722344
+out.write(CSV_QUOTE);#767,16.976361910502117
+escapeJavaStyleString(writer, str, escapeSingleQuotes);#160,16.975469436645508
+private static final String CSV_QUOTE_STR = String.valueOf(CSV_QUOTE);#45,16.971315603989822
+out.write('\\');#244,16.96998635460349
+out.write('\b');#363,16.960692621046498
+out.write('f');#213,16.955119864145914
+out.write('\\');#208,16.950452423095705
+out.write(c);#773,16.94563600752089
+default :#247,16.936081756245006
+out.write('\\');#216,16.921042760213215
+out.write('\'');#233,16.898968081320486
+out.write('\\');#212,16.88725903828939
+unescapeJava(writer, str);#281,16.878821086883544
+out.write('\\');#236,16.859319241841636
+continue;#378,16.85370858510335
+case '\'' :#229,16.79845848083496
+out.write('n');#205,16.78301296234131
+out.write('\n');#360,16.764508555012366
+out.write('"');#348,16.75381269454956
+out.write(CSV_QUOTE);#775,16.749194780985516
+out.write('\r');#351,16.74149482480941
+out.write('t');#209,16.730601660410564
+out.write('\\');#342,16.719634342193604
+out.write('\f');#354,16.67015694033715
+out.write('\\');#240,16.665096950531005
+out.write('\\');#241,16.66495860417684
+case '\'':#344,16.648954391479492
+out.write('"');#237,16.631602636973064
+out.write('\'');#345,16.62597047128985
+out.write('\t');#357,16.608951322494015
+unescapeHtml(writer, str);#530,16.543119839259557
+return Entities.XML.unescape(str);#669,16.541602993011473
+return Entities.XML.escape(str);#619,16.526457184239437
+unescapeCsv(writer, str);#806,16.525692258562362
+Entities.HTML40.unescape(writer, string);#565,16.47058087303525
+private static final char[] CSV_SEARCH_CHARS = new char[] {CSV_DELIMITER, CSV_QUOTE, CharUtils.CR, CharUtils.LF};#46,16.449729422728222
+escapeHtml(writer, str);#458,16.422094583511353
+str = StringUtils.replace(quoteless, CSV_QUOTE_STR + CSV_QUOTE_STR, CSV_QUOTE_STR);#856,16.40518832736545
+public class StringEscapeUtils {#41,16.388626204596626
+Entities.HTML40.escape(writer, string);#504,16.341110610961913
+escapeCsv(writer, str);#728,16.297017908096315
+Entities.XML.unescape(writer, str);#647,15.865240028926305
+Entities.XML.escape(writer, str);#595,15.757370734214783

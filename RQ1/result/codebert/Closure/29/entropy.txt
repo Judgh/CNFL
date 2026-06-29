@@ -1,0 +1,185 @@
+private final Supplier<String> safeNameIdSupplier;#54,20.266802151997883
+Supplier<String> safeNameIdSupplier) {#58,19.748119778103298
+private Map<String, String> computeVarList(#255,19.632665888468424
+this.safeNameIdSupplier = safeNameIdSupplier;#60,19.494178771972656
+private final AbstractCompiler compiler;#52,19.474484337700737
+if (defined) {#397,19.41057621348988
+private void blacklistVarReferencesInTree(Node root, final Scope scope) {#115,19.291980838775636
+String var = key.getString();#325,19.20803189277649
+Var v, ReferenceCollection referenceInfo) {#256,19.088355232687558
+Map<String, String> varmap = computeVarList(v, referenceInfo);#388,19.06890833377838
+for (Map.Entry<String, String> entry : varmap.entrySet()) {#406,19.067933616638182
+private boolean isVarInlineForbidden(Var var) {#129,19.055638705982883
+String var = VAR_PREFIX + varname + "_" + safeNameIdSupplier.get();#288,18.93401288986206
+blacklistVarReferencesInTree(val, v.scope);#320,18.825528727637398
+String varname = getprop.getLastChild().getString();#283,18.820151209831238
+if (ref.isLvalue() || ref.isInitializingDeclaration()) {#260,18.815295146061825
+private void fillInitialValues(Reference init, Map<String, Node> initvals) {#301,18.757915621218473
+AbstractCompiler compiler,#57,18.75420960513028
+String var = VAR_PREFIX + varname + "_" +#271,18.752486324310304
+if (child.isGetterDef() ||#210,18.73966064453125
+for (String var : all) {#336,18.729663712637766
+if (val == null) {#409,18.728980445861815
+this.compiler = compiler;#59,18.721406849947844
+String varname = child.getString();#266,18.71071131333061
+for (Reference ref : refs) {#157,18.692475509643554
+ReferenceCollection referenceInfo) {#385,18.68322960989816
+Var v = it.next();#86,18.680097897847492
+int i;#357,18.655607136813078
+boolean defined = referenceInfo.isWellDefined() &&#395,18.636987739139133
+String var = getprop.getChildAtIndex(1).getString();#440,18.626697650322548
+if (ref.isLvalue()) {#426,18.587657255284928
+if (defined) {#418,18.55451384457675
+if (isVarInlineForbidden(v)) {#88,18.545951414108277
+Node val = ref.getAssignedValue();#261,18.543754005432127
+while (!NodeUtil.isStatementBlock(refNode)) {#223,18.53164104314951
+for (Reference t : refs) {#221,18.483009840312757
+Node val = ref.getAssignedValue();#189,18.475919511583115
+for (i = 0; i < nodes.size() - 2; i++) {#358,18.467629542717567
+fillInitialValues(init, initvals);#399,18.443796774920294
+if (gramps.isCall()#168,18.44008339775933
+if (val == null) {#190,18.42720667521159
+for (Reference ref : referenceInfo.references) {#259,18.41399245791965
+Reference init = referenceInfo.getInitializingReference();#100,18.41066110701788
+if (isInlinableObject(referenceInfo.references)) {#94,18.39519169019616
+@Override#117,18.379637718200684
+private void splitObject(Var v, Reference declaration,#383,18.37821324666341
+if (node.isName()) {#119,18.376158449384903
+Node replacement;#343,18.36572308010525
+@Override#83,18.350228945414226
+if (defined && ref == init) continue;#424,18.321702745225693
+ReferenceCollectingCallback callback = new ReferenceCollectingCallback(#65,18.318123698234558
+IR.assign(#338,18.317599016077377
+Node vnode;#394,18.293671321868896
+public void afterExitScope(NodeTraversal t, ReferenceMap referenceMap) {#84,18.26987613331188
+Node name = ref.getNode();#158,18.269441843032837
+if (val != null) {#262,18.254105119144214
+IR.assign(#329,18.235605913050033
+blacklistVarReferencesInTree(val, v.scope);#413,18.23484247381037
+Map<String, String> varmap = Maps.newLinkedHashMap();#257,18.232834774514902
+for (Reference ref : referenceInfo.references) {#422,18.220636791653103
+return varmap;#293,18.20591535568237
+private boolean isInlinableObject(List<Reference> refs) {#155,18.185852670669554
+Reference declaration = referenceInfo.references.get(0);#99,18.171023037122644
+Node object = init.getAssignedValue();#302,18.166876792907715
+ReferenceCollection referenceInfo = referenceMap.getReferences(v);#92,18.166277840023948
+|| compiler.getCodingConvention().isExported(var.name)#142,18.146594471401638
+(parent.isAssign()#245,18.133508850546445
+Node refNode = t.getParent();#222,18.103177933465865
+Node cur = replacement;#356,18.08225000821627
+public void visit(Node node) {#118,18.0813866853714
+Node val = ref.getAssignedValue();#319,18.0756618976593
+boolean ret = false;#156,18.034448450261895
+@Override#63,18.028048515319824
+Node getprop = ref.getParent();#279,18.02259013527318
+Map<String, Node> initvals = Maps.newHashMap();#390,18.015306518191384
+private final Set<Var> staleVars = Sets.newHashSet();#81,18.01231689453125
+Node getprop = ref.getParent();#436,17.995158295882376
+List<Node> nodes = Lists.newArrayList();#318,17.9881911277771
+|| var.isExtern()#141,17.985147083506863
+for (Iterator<Var> it = t.getScope().getVars(); it.hasNext();) {#85,17.973728211720786
+if (parent.isGetProp()) {#165,17.959097245160272
+if (!isVarOrAssignExprLhs(name)) {#185,17.893542206805684
+Node varnode = NodeUtil.newVarNode(entry.getValue(), val);#408,17.879235797458225
+child = child.getNext()) {#209,17.8590608778454
+public static final String VAR_PREFIX = "JSCompiler_object_inline_";#50,17.85661021868388
+Node parent = ref.getParent();#159,17.841824650764465
+child.isSetterDef()) {#211,17.82901841943914
+compiler, new InliningBehavior());#66,17.79973042011261
+for (Node key = val.getFirstChild(); key != null;#323,17.795262790861585
+for (Node child = val.getFirstChild(); child != null;#264,17.791508498015226
+Map<String, String> varmap) {#316,17.779407050392845
+private void replaceAssignmentExpression(Var v, Reference ref,#315,17.764677577548557
+if (!val.isObjectLit()) {#196,17.72619602415297
+if (refNode == childVal) {#224,17.725466479425844
+Node replacement = IR.name(varmap.get(var));#447,17.708737678527832
+Node childVal = child.getFirstChild();#217,17.707683420181276
+replacement = new Node(Token.COMMA);#355,17.698008166419136
+for (Node child = val.getFirstChild(); child != null;#208,17.69656110846478
+if (replace.isVar()) {#371,17.66938522883824
+return var.isGlobal()#140,17.66552956899007
+Node gramps = ref.getGrandparent();#160,17.660654703776043
+Node value = key.removeFirstChild();#326,17.650823032154758
+Node val = initvals.get(entry.getKey());#407,17.63894816807338
+if (varmap.containsKey(varname)) {#267,17.63233862252071
+replaceAssignmentExpression(v, ref, varmap);#429,17.59856659433116
+class InlineObjectLiterals implements CompilerPass {#48,17.59551453590393
+Preconditions.checkState(parent.getFirstChild() == name);#166,17.585918243114765
+for (Node key = object.getFirstChild(); key != null;#304,17.585161345345632
+if (varmap.containsKey(varname)) {#284,17.53810218811035
+varmap.put(varname, var);#273,17.536413040161133
+return parent.isVar() ||#244,17.535829323988693
+nodes = Lists.reverse(nodes);#354,17.51850644279929
+cur.addChildToFront(nodes.get(i + 1));#365,17.499312321345013
+cur.addChildToFront(t);#361,17.459531683670846
+if (nodes.isEmpty()) {#344,17.44175192515055
+compiler.reportCodeChange();#453,17.424250682195026
+Preconditions.checkState(val.isObjectLit());#263,17.40736429507916
+cur.addChildToFront(nodes.get(i));#359,17.356704394022625
+nodes.add(#328,17.348252216974895
+varnode.copyInformationFromForTree(vnode);#411,17.335558501156893
+private class InliningBehavior implements Behavior {#75,17.318093820051715
+safeNameIdSupplier.get();#272,17.301921526590984
+varmap.put(varname, var);#289,17.276598203749884
+nodes.add(#337,17.275637706120808
+value));#331,17.25368611017863
+Node t = new Node(Token.COMMA);#360,17.250568162827264
+cur.addChildToFront(nodes.get(i));#364,17.250364433635365
+vnode = init.getParent();#398,17.181753039360046
+NodeUtil.newUndefinedNode(null)));#340,17.150720017296926
+Node replace = ref.getParent();#368,17.138962950025284
+return ret;#239,17.134234216478134
+private boolean isVarOrAssignExprLhs(Node n) {#242,17.13097176551819
+replacement.copyInformationFrom(getprop);#448,17.09754477049175
+|| RenameProperties.RENAME_PROPERTY_FUNCTION_NAME.equals(var.name)#143,17.09566758130048
+Reference init,#384,17.09479707479477
+Preconditions.checkState(getprop.isGetProp());#437,17.093485434850056
+replacement.copyInformationFromForTree(replace);#369,17.08469533920288
+IR.name(varmap.get(var)),#330,17.05790271077837
+splitObject(v, declaration, init, referenceInfo);#104,17.05593035437844
+&& gramps.getFirstChild() == parent) {#169,17.05506548514733
+Preconditions.checkState(getprop.isGetProp());#280,16.998776356379192
+IR.name(varmap.get(var)),#339,16.98909071513585
+key = key.getNext()) {#324,16.979815031352796
+NodeUtil.visitPreOrder(root, new NodeUtil.Visitor() {#116,16.967315600468563
+init.getParent().isVar();#396,16.966769006517197
+nodes.add(IR.trueNode());#349,16.93970495111802
+replacement = IR.trueNode();#345,16.930947558085123
+cur = t;#362,16.875094618116105
+return false;#213,16.867169253031413
+staleVars.add(scope.getVar(node.getString()));#120,16.834152418991614
+return false;#170,16.818566703796385
+continue;#181,16.801626205444336
+initvals.put(key.getString(), key.removeFirstChild());#306,16.80097242196401
+Preconditions.checkState(object.isObjectLit());#303,16.78647651672363
+Preconditions.checkState(val.isObjectLit());#321,16.764014053344727
+key = key.getNext()) {#305,16.75571592230546
+InlineObjectLiterals(#56,16.745094418525696
+Set<String> all = Sets.newLinkedHashSet(varmap.keySet());#322,16.721485208581996
+Preconditions.checkState(varmap.containsKey(var));#444,16.71686617533366
+continue;#192,16.704115788141888
+replace, NodeUtil.newExpr(replacement));#373,16.688300018310546
+all.remove(var);#332,16.659362179892405
+staleVars.add(v);#97,16.64456584718492
+vnode.getParent().addChildBefore(varnode, vnode);#415,16.603342666625977
+vnode = v.getScope().getRootNode().getLastChild().getFirstChild();#403,16.582308667046682
+ref.getGrandparent().removeChild(ref.getParent());#433,16.577881912390392
+ref.getGrandparent().replaceChild(ref.getParent(), replacement);#449,16.510452068769016
+child = child.getNext()) {#265,16.50382297515869
+continue;#89,16.496160586675007
+continue;#268,16.49442179997762
+&& parent.getFirstChild() == n#246,16.48094197978144
+public void process(Node externs, Node root) {#64,16.403185653686524
+Node parent = n.getParent();#243,16.398193972451345
+refNode = refNode.getParent();#228,16.392182018445887
+|| staleVars.contains(var);#144,16.390811109542845
+ret = true;#237,16.369296550750732
+callback.process(externs, root);#67,16.315620967320033
+return false;#226,16.293598927949603
+return false;#197,16.277012678293083
+&& parent.getParent().isExprResult());#247,16.228903732299806
+replace.getParent().replaceChild(replace, replacement);#375,16.10160627365112
+return false;#186,16.057374477386475
+continue;#285,15.82606588091169
+vnode.getParent().removeChild(vnode);#419,15.8005952835083
+replace.getParent().replaceChild(#372,15.30040156841278

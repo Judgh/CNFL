@@ -1,0 +1,49 @@
+public class MannWhitneyUTest {#34,19.36044438680013
+public double mannWhitneyUTest(final double[] x, final double[] y)#218,18.29823415175728
+public MannWhitneyUTest() {#44,18.111467440923054
+throw new NullArgumentException();#76,18.089768108568695
+public double mannWhitneyU(final double[] x, final double[] y)#126,18.021071303974498
+private void ensureDataConformance(final double[] x, final double[] y)#71,17.971115112304688
+public MannWhitneyUTest(final NaNStrategy nanStrategy,#58,17.93845844268799
+throw new NoDataException();#80,17.71090777715047
+ensureDataConformance(x, y);#129,17.706299837897806
+private double calculateAsymptoticPValue(final double Umin,#168,17.70075787995991
+private double[] concatenateSamples(final double[] x, final double[] y) {#89,17.674789786338806
+final double[] z = new double[x.length + y.length];#90,17.670007745424908
+TiesStrategy.AVERAGE);#46,17.66373706817627
+y == null) {#75,17.661373250624713
+ensureDataConformance(x, y);#222,17.62535285949707
+final double Umax = mannWhitneyU(x, y);#224,17.612797488336977
+y.length == 0) {#79,17.593594952633506
+sumRankX += ranks[i];#141,17.56505150794983
+final double VarU = n1n2prod * (n1 + n2 + 1) / 12.0;#177,17.526310752419864
+return FastMath.max(U1, U2);#155,17.44571943283081
+final double[] z = concatenateSamples(x, y);#131,17.413038046463676
+naturalRanking = new NaturalRanking(NaNStrategy.FIXED,#45,17.323177795410157
+naturalRanking = new NaturalRanking(nanStrategy, tiesStrategy);#60,17.287715797424315
+final double U1 = sumRankX - (x.length * (x.length + 1)) / 2;#148,17.249953985214233
+final int n1n2prod = n1 * n2;#173,17.18202255083167
+System.arraycopy(x, 0, z, 0, x.length);#92,17.130756492614747
+return calculateAsymptoticPValue(Umin, x.length, y.length);#231,17.11852134977068
+double sumRankX = 0;#134,17.10813897450765
+System.arraycopy(y, 0, z, x.length, y.length);#93,17.0974413200661
+final double EU = n1n2prod / 2.0;#176,17.097068662228793
+return z;#95,17.072913603349164
+return 2 * standardNormal.cumulativeProbability(z);#183,17.045614329251375
+final double U2 = x.length * y.length - U1;#153,17.039364258448284
+final TiesStrategy tiesStrategy) {#59,17.002746933384945
+throws NullArgumentException, NoDataException {#72,16.97280306286282
+final int n1,#169,16.92739294052124
+final double z = (Umin - EU) / FastMath.sqrt(VarU);#179,16.92294819014413
+throws NullArgumentException, NoDataException,#219,16.91448179880778
+throws ConvergenceException, MaxCountExceededException {#171,16.869294118881225
+throws NullArgumentException, NoDataException {#127,16.861263857947456
+final double[] ranks = naturalRanking.rank(z);#132,16.77543167840867
+for (int i = 0; i < x.length; ++i) {#140,16.761181869506835
+final double Umin = x.length * y.length - Umax;#229,16.70129930973053
+final int n2)#170,16.686934375762938
+ConvergenceException, MaxCountExceededException {#220,16.653020256444027
+private NaturalRanking naturalRanking;#37,16.58289972941081
+if (x.length == 0 ||#78,16.545777559280396
+if (x == null ||#74,16.116135256631033
+final NormalDistribution standardNormal = new NormalDistribution(0, 1);#181,15.596171180407206

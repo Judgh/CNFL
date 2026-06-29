@@ -1,0 +1,271 @@
+boolean suppressTrailingZeroElements) {#173,20.05108378915226
+TimeZone timezone) {#263,19.580755763583714
+boolean inLiteral = false;#463,19.463804364204407
+int milliseconds = 0;#134,19.4396118750939
+private int count;#538,19.324925422668457
+int seconds      = 0;#133,19.2235353257921
+public String toString() {#630,19.2123840876988
+int sz = tokens.length;#382,19.20180904865265
+Token previous = null;#465,19.075045805711014
+boolean lastOutputSeconds = false;#381,19.068019688129425
+while (days < 0) {#305,19.059190877278645
+if (suppressTrailingZeroElements) {#200,19.0523907008924
+int minutes      = 0;#132,19.03947967953152
+private Object value;#537,18.99989128112793
+if(value != null) {#501,18.97229796961734
+public static String formatDurationWords(#170,18.94904934276234
+if (endValue < startValue) {#436,18.92760966805851
+if (suppressLeadingZeroElements) {#179,18.916256854408665
+Object getValue() {#583,18.9112308208759
+duration = " " + duration;#215,18.90433349609375
+seconds = 0;#357,18.879228711128235
+public boolean equals(Object obj2) {#593,18.82099443323472
+milliseconds = (int) durationMillis;#153,18.76962098621187
+int getCount() {#574,18.766155536358173
+long durationMillis,#171,18.759824752807617
+if(previous != null && previous.getValue() == value) {#502,18.754419654607773
+public static String formatDuration(long durationMillis, String format) {#109,18.728789982042816
+public static String formatDuration(long durationMillis, String format, boolean padWithZeros) {#126,18.71416000366211
+while (months < 0) {#314,18.703574562072752
+int startValue = start.get(field);#435,18.654533704121906
+while (seconds < 0) {#293,18.64848035176595
+int milliseconds, boolean padWithZeros) {#379,18.618196314031426
+days = 0;#345,18.601608753204346
+int sz = array.length;#466,18.577626526355743
+switch(ch) {#474,18.560856145970963
+return true;#531,18.556440933890965
+if (obj2 instanceof Token) {#594,18.543269475301106
+if(buffer == null) {#494,18.537764015197755
+int endValue = end.get(field);#434,18.529418839348686
+while (minutes < 0) {#297,18.519685328006744
+for (int i = 0; i < sz; i++) {#383,18.517871359120246
+return formatDuration(millis, format, padWithZeros);#267,18.51554643190824
+duration = " " + duration;#181,18.499154944168893
+while (hours < 0) {#301,18.498980204264324
+while (milliseconds < 0) {#289,18.493515070746927
+if (value instanceof StringBuffer) {#387,18.48146556672596
+duration = StringUtils.replaceOnce(tmp, " 0 seconds", "");#191,18.478500668595476
+if (duration.length() != 0) {#195,18.46216162768277
+years -= 1;#316,18.4554500579834
+months = 0;#341,18.451421916484833
+long millis = endMillis - startMillis;#265,18.44913754463196
+static class Token {#518,18.446858167648315
+int months = end.get(Calendar.MONTH) - start.get(Calendar.MONTH);#285,18.44683089852333
+char ch = array[i];#468,18.44078124196906
+years = 0;#336,18.43337483406067
+end.add( field, -1 * difference );#433,18.4060529407702
+public int hashCode() {#621,18.40166255405971
+public static String formatDurationHMS(long durationMillis) {#79,18.399227778116863
+int hours        = 0;#131,18.397082471847533
+return formatDuration(durationMillis, ISO_EXTENDED_FORMAT_PATTERN, false);#95,18.37774798075358
+int years = end.get(Calendar.YEAR) - start.get(Calendar.YEAR);#286,18.375268578529358
+if (value == y) {#390,18.365896059119184
+if(inLiteral && ch != '\'') {#469,18.344378214616043
+int days = end.get(Calendar.DAY_OF_MONTH) - start.get(Calendar.DAY_OF_MONTH);#284,18.340800094604493
+void increment() {#565,18.338349122267502
+String duration = formatDuration(durationMillis, "d' days 'H' hours 'm' minutes 's' seconds'");#178,18.33564700020684
+end.setTime(new Date(endMillis));#277,18.335454988479615
+boolean suppressLeadingZeroElements,#172,18.328107714653015
+for(int i=0; i<sz; i++) {#467,18.32588879958443
+if (millis < 28 * DateUtils.MILLIS_PER_DAY) {#266,18.317036730902537
+public static String formatDurationISO(long durationMillis) {#94,18.29885471568388
+duration = StringUtils.replaceOnce(tmp, " 0 days", "");#209,18.29254687704691
+seconds -= 1;#291,18.282448291778564
+minutes = 0;#353,18.27976167201996
+duration = tmp;#184,18.264665603637695
+public static String formatPeriod(long startMillis, long endMillis, String format) {#246,18.24965908050537
+int seconds = end.get(Calendar.SECOND) - start.get(Calendar.SECOND);#281,18.247995644807816
+public static String formatPeriod(long startMillis, long endMillis, String format, boolean padWithZeros,#262,18.23764210362588
+.toString(minutes));#408,18.230691392081123
+minutes -= 1;#295,18.22413957118988
+inLiteral = true;#483,18.21142814899313
+static final Object m = "m";#449,18.19331940015157
+duration = tmp;#187,18.189597845077515
+hours = 0;#349,18.186029314994812
+if (tokens[i].getValue() == value) {#530,18.182159946810813
+Calendar end = Calendar.getInstance(timezone);#276,18.1790838743511
+return formatDuration(durationMillis, format, true);#110,18.168727827072143
+hours = (int) (durationMillis / DateUtils.MILLIS_PER_HOUR);#141,18.166521399361745
+minutes = (int) (durationMillis / DateUtils.MILLIS_PER_MINUTE);#145,18.165412276131764
+Token(Object value) {#545,18.157854897635325
+seconds = (int) (durationMillis / DateUtils.MILLIS_PER_SECOND);#149,18.15637912750244
+return duration.trim();#220,18.1486234664917
+tmp = StringUtils.replaceOnce(duration, " 0 minutes", "");#188,18.14855181204306
+years = 0;#332,18.132924461364745
+static int reduceAndCorrect(Calendar start, Calendar end, int field, int difference) {#432,18.121763706207275
+return formatPeriod(startMillis, endMillis, ISO_EXTENDED_FORMAT_PATTERN, false, TimeZone.getDefault());#234,18.121757321241425
+duration = tmp;#203,18.096897411346436
+int count = token.getCount();#386,18.095571660995482
+days = (int) (durationMillis / DateUtils.MILLIS_PER_DAY);#137,18.086447827956256
+durationMillis = durationMillis - (minutes * DateUtils.MILLIS_PER_MINUTE);#146,18.084192147126068
+String tmp = StringUtils.replaceOnce(duration, " 0 seconds", "");#201,18.084060351053875
+durationMillis = durationMillis - (days * DateUtils.MILLIS_PER_DAY);#138,18.080998420715332
+duration = StringUtils.replaceOnce(duration, " 1 seconds", " 1 second");#216,18.07914239388925
+if (Token.containsTokenWithValue(tokens, S) ) {#152,18.065621926234318
+int hours = end.get(Calendar.HOUR_OF_DAY) - start.get(Calendar.HOUR_OF_DAY);#283,18.061275291442872
+years -= reduceAndCorrect(start, end, Calendar.YEAR, years);#324,18.055022010803224
+durationMillis = durationMillis - (seconds * DateUtils.MILLIS_PER_SECOND);#150,18.053788291083443
+duration = tmp;#206,18.047520637512207
+int days         = 0;#130,18.039992695762997
+if (tmp.length() != duration.length()) {#202,18.038177609443665
+static final Object s = "s";#450,18.035282293955486
+Object value = null;#473,18.016873415778665
+durationMillis = durationMillis - (hours * DateUtils.MILLIS_PER_HOUR);#142,18.01603020562066
+days -= 1;#303,18.00823676586151
+days -= reduceAndCorrect(start, end, Calendar.DAY_OF_MONTH, days);#322,17.99998378753662
+months -= reduceAndCorrect(start, end, Calendar.MONTH, months);#323,17.999575233459474
+duration = StringUtils.replaceOnce(duration, " 1 days", " 1 day");#219,17.993765583744757
+if (tmp.length() != duration.length()) {#190,17.990846127271652
+int sz = tokens.length;#528,17.989956426620484
+Calendar start = Calendar.getInstance(timezone);#274,17.986780568173057
+hours -= reduceAndCorrect(start, end, Calendar.HOUR_OF_DAY, hours);#321,17.986479923642914
+if (!Token.containsTokenWithValue(tokens, M)) {#339,17.983101501464844
+days += 365 * years;#335,17.976792335510254
+seconds += 60 * minutes;#352,17.975273609161377
+days += 31;#306,17.975253701210022
+start.setTime(new Date(startMillis));#275,17.966562128067018
+static final Object H = "H";#448,17.966446320215862
+StringBuffer buffer = null;#464,17.964036873408727
+for (int i = 0; i < sz; i++) {#529,17.957150565253365
+Token token = tokens[i];#384,17.952279843782122
+static Token[] lexx(String format) {#459,17.95202820641654
+if (Token.containsTokenWithValue(tokens, m) ) {#144,17.950395107269287
+buffer = null;#509,17.948039191109793
+return format(tokens, 0, 0, days, hours, minutes, seconds, milliseconds, padWithZeros);#156,17.94674898596371
+.toString(years));#392,17.946474636302273
+if (tmp.length() != duration.length()) {#208,17.9457406103611
+duration = duration.substring(1);#197,17.939201316833497
+tmp = StringUtils.replaceOnce(duration, " 0 hours", "");#207,17.923659814370644
+inLiteral = false;#479,17.922902534747944
+if (tmp.length() != duration.length()) {#183,17.921677748362224
+Token tok2 = (Token) obj2;#595,17.906891681529856
+duration = StringUtils.replaceOnce(duration, " 1 minutes", " 1 minute");#217,17.89937909444173
+count++;#566,17.8953492300851
+buffer.append(ch);#470,17.894744352860883
+String tmp = StringUtils.replaceOnce(duration, " 0 days", "");#182,17.892363452911376
+return 0;#441,17.890861892700194
+duration = tmp;#189,17.890657663345337
+buffer = new StringBuffer();#495,17.890510729381017
+if (!Token.containsTokenWithValue(tokens, d)) {#343,17.87792495727539
+int newdiff = startValue - endValue;#437,17.87355522675948
+static final Object y = "y";#445,17.865013599395752
+int minutes = end.get(Calendar.MINUTE) - start.get(Calendar.MINUTE);#282,17.864421486854553
+if (!Token.containsTokenWithValue(tokens, y)) {#329,17.864124641418456
+if (tmp.length() != duration.length()) {#186,17.862356390271867
+public DurationFormatUtils() {#56,17.861438404430043
+public static String formatPeriodISO(long startMillis, long endMillis) {#233,17.857255272243332
+lastOutputSeconds = false;#401,17.855907369543004
+.toString(days));#400,17.849467221428366
+if (Token.containsTokenWithValue(tokens, d) ) {#136,17.838450248424824
+tmp = StringUtils.replaceOnce(duration, " 0 hours", "");#185,17.837404135501746
+minutes += 60;#298,17.837167024612427
+case 'y'  : value = y; break;#486,17.833166667393275
+hours -= 1;#299,17.82836937904358
+lastOutputSeconds = false;#426,17.827431148952908
+months -= 1;#312,17.826058387756348
+buffer = null;#478,17.818643936744103
+hours += 24 * days;#344,17.816644615597195
+seconds -= reduceAndCorrect(start, end, Calendar.SECOND, seconds);#319,17.81450969696045
+.toString(hours));#404,17.810927194707535
+.toString(seconds));#412,17.810911178588867
+lastOutputSeconds = false;#405,17.80687363942464
+return false;#600,17.806231706038766
+lastOutputSeconds = false;#397,17.803345221060294
+case 'm'  : value = m; break;#490,17.800737653459823
+return formatPeriod(startMillis, endMillis, format, true, TimeZone.getDefault());#247,17.79560375213623
+continue;#471,17.79312695397271
+milliseconds += 1000 * seconds;#356,17.790625784132217
+if (!Token.containsTokenWithValue(tokens, m)) {#351,17.790413246154785
+if (!Token.containsTokenWithValue(tokens, H)) {#347,17.788993301391603
+if (!Token.containsTokenWithValue(tokens, s)) {#355,17.78506446838379
+lastOutputSeconds = false;#393,17.784007637589067
+minutes += 60 * hours;#348,17.78086519241333
+end.add( field, newdiff );#438,17.7768889381772
+if (tmp.length() != duration.length()) {#205,17.766833066940308
+int milliseconds = end.get(Calendar.MILLISECOND) - start.get(Calendar.MILLISECOND);#280,17.766772069429095
+case 'M'  : value = M; break;#487,17.761858769825526
+months += 12 * years;#331,17.761456749655984
+static final Object d = "d";#447,17.75651979446411
+duration = StringUtils.replaceOnce(duration, " 1 hours", " 1 hour");#218,17.745000274093062
+case 's'  : value = s; break;#491,17.744426829474314
+months += 12;#315,17.734466314315796
+if (this.count != tok2.count) {#599,17.730955913149078
+.toString(months));#396,17.72633675967946
+static final Object M = "M";#446,17.71755321820577
+tmp = StringUtils.replaceOnce(duration, " 0 minutes", "");#204,17.715930591930043
+buffer.append(ch);#498,17.715758323669434
+days += end.get(Calendar.DAY_OF_YEAR) - start.get(Calendar.DAY_OF_YEAR);#340,17.71247513349666
+StringBuffer buffer = new StringBuffer();#380,17.712194979190826
+return buffer.toString();#430,17.707504544939315
+if (Token.containsTokenWithValue(tokens, H) ) {#140,17.701057800879845
+return this.value == tok2.value;#607,17.691487127734767
+seconds += 60;#294,17.68306541442871
+if (this.value.getClass() != tok2.value.getClass()) {#596,17.673654476801556
+minutes -= reduceAndCorrect(start, end, Calendar.MINUTE, minutes);#320,17.671982421875
+return newdiff;#439,17.670281291007996
+return false;#597,17.666752607926078
+Token(Object value, int count) {#557,17.65963588041418
+buffer.append(padWithZeros#422,17.65140724182129
+if (Token.containsTokenWithValue(tokens, s) ) {#148,17.646911437694843
+return value;#584,17.645833206176757
+lastOutputSeconds = false;#409,17.63377468674271
+static boolean containsTokenWithValue(Token[] tokens, Object value) {#527,17.63128027708634
+case 'S'  : value = S; break;#492,17.627237967082433
+case 'd'  : value = d; break;#488,17.62159023966108
+this.count = 1;#547,17.61864275402493
+if(inLiteral) {#477,17.61027061022245
+lastOutputSeconds = true;#413,17.584840456644695
+previous.increment();#503,17.58278751373291
+this.value = value;#546,17.578260209825302
+if (lastOutputSeconds) {#415,17.563452652522496
+case 'H'  : value = H; break;#489,17.56138035229274
+java.util.ArrayList list = new java.util.ArrayList(array.length);#461,17.56034275463649
+buffer = new StringBuffer();#481,17.558062417166575
+return false;#534,17.549082438151043
+case '\'' :#476,17.521670384840533
+buffer.append(str.substring(1));#420,17.516355214800154
+this.value = value;#558,17.51254897647434
+hours += 24;#302,17.50382149219513
+buffer.append(value.toString());#388,17.501345024108886
+String str = padWithZeros#417,17.497966058792606
+Object value = token.getValue();#385,17.483464908599853
+if (this.value instanceof StringBuffer) {#602,17.47203184057165
+milliseconds += 1000;#290,17.460369884967804
+Token[] tokens = lexx(format);#270,17.434292961569394
+return formatDuration(durationMillis, "H:mm:ss.SSS");#80,17.424283101008488
+if (Token.containsTokenWithValue(tokens, M)) {#330,17.414731683402227
+static final Object S = "S";#451,17.404341459274292
+default   :#493,17.394096011207218
+list.add(new Token(buffer));#496,17.38271464070966
+return (Token[]) list.toArray( new Token[0] );#512,17.38041154543559
+return false;#610,17.365877051102487
+milliseconds -= reduceAndCorrect(start, end, Calendar.MILLISECOND, milliseconds);#318,17.35961069379534
+super();#57,17.34495153427124
+public static final String ISO_EXTENDED_FORMAT_PATTERN = "'P'yyyy'Y'M'M'd'DT'H'H'm'M's.S'S'";#67,17.336143791675568
+previous = token;#507,17.31399401028951
+return this.value.equals(tok2.value);#605,17.311959519105798
+return format(tokens, years, months, days, hours, minutes, seconds, milliseconds, padWithZeros);#360,17.309459630180807
+: Integer.toString(milliseconds));#424,17.30186412447975
+: Integer.toString(milliseconds);#419,17.285129978543235
+return this.value.toString().equals(tok2.value.toString());#603,17.266649150848387
+break;#485,17.22206320762634
+list.add(new Token(buffer));#482,17.218018931727254
+static String format(Token[] tokens, int years, int months, int days, int hours, int minutes, int seconds,#378,17.171100203196207
+milliseconds += 1000;#416,17.16548354285104
+Token token = new Token(value);#505,17.068684441702707
+char[] array = format.toCharArray();#460,16.984339872996014
+Token[] tokens = lexx(format);#128,16.98389154322007
+return this.value.hashCode();#622,16.91613655090332
+list.add(token);#506,16.882034831576878
+return count;#575,16.880657068888347
+this.count = count;#559,16.83502091301812
+public class DurationFormatUtils {#48,16.775931358337402
+return StringUtils.repeat(this.value.toString(), this.count);#631,16.615914599100748
+buffer.append(padWithZeros ? StringUtils.leftPad(Integer.toString(minutes), count, '0') : Integer#407,16.612582356322047
+buffer.append(padWithZeros ? StringUtils.leftPad(Integer.toString(years), count, '0') : Integer#391,16.555175323486328
+buffer.append(padWithZeros ? StringUtils.leftPad(Integer.toString(days), count, '0') : Integer#399,16.465714988708495
+buffer.append(padWithZeros ? StringUtils.leftPad(Integer.toString(seconds), count, '0') : Integer#411,16.460113487243653
+buffer.append(padWithZeros ? StringUtils.leftPad(Integer.toString(hours), count, '0') : Integer#403,16.41985950469971
+buffer.append(padWithZeros ? StringUtils.leftPad(Integer.toString(months), count, '0') : Integer#395,16.35552219390869
+? StringUtils.leftPad(Integer.toString(milliseconds), count, '0')#423,16.251281208462185
+? StringUtils.leftPad(Integer.toString(milliseconds), count, '0')#418,15.905645511768482

@@ -1,0 +1,40 @@
+public MockSettings serializable() {#21,18.148765997453168
+private MockName mockName;#19,18.118117809295654
+private Answer<Object> defaultAnswer;#18,17.876290321350098
+public Answer<Object> getDefaultAnswer() {#69,17.775305134909495
+public MockSettings defaultAnswer(Answer defaultAnswer) {#64,17.76427593231201
+return this.extraInterfaces(java.io.Serializable.class);#22,17.6815328001976
+return extraInterfaces != null && java.util.Arrays.asList(extraInterfaces).contains(java.io.Serializable.class);#74,17.671158930150472
+@SuppressWarnings("unchecked")#63,17.56276818684169
+return defaultAnswer;#70,17.42803438504537
+this.name = name;#54,17.384899752480642
+return mockName;#42,17.3712899684906
+mockName = new MockName(name, classToMock);#78,17.323017597198486
+public class MockSettingsImpl implements MockSettings {#12,17.305741596221925
+new Reporter().extraInterfacesDoesNotAcceptNullParameters();#32,17.273753438677108
+public MockSettings name(String name) {#53,17.238687148460976
+public MockSettings extraInterfaces(Class<?>... extraInterfaces) {#25,17.21711778640747
+if (i == null) {#31,17.16115705590499
+this.defaultAnswer = defaultAnswer;#65,17.157836198806763
+if (extraInterfaces == null || extraInterfaces.length == 0) {#26,17.14173900604248
+public Class<?>[] getExtraInterfaces() {#45,17.092427317301432
+public boolean isSerializable() {#73,17.050908782265402
+return extraInterfaces;#46,16.979360653803898
+this.extraInterfaces = extraInterfaces;#37,16.92693387137519
+return this;#55,16.920036142522637
+public MockName getMockName() {#41,16.916011883662296
+return this;#38,16.839984373612836
+return spiedInstance;#50,16.819430057819073
+return this;#66,16.775500557639383
+private String name;#16,16.761908888816833
+this.spiedInstance = spiedInstance;#59,16.584622383117676
+return this;#60,16.530325109308418
+public MockSettings spiedInstance(Object spiedInstance) {#58,16.477302495171042
+for (Class<?> i : extraInterfaces) {#30,16.462621784210206
+private static final long serialVersionUID = 4475297236197939568L;#14,16.44340605962844
+new Reporter().extraInterfacesRequiresAtLeastOneInterface();#27,16.42690216064453
+public Object getSpiedInstance() {#49,16.355719168980915
+private Class<?>[] extraInterfaces;#15,16.176526436438927
+new Reporter().extraInterfacesAcceptsOnlyInterfaces(i);#34,16.058324797948202
+private Object spiedInstance;#17,16.053055667877196
+public void initiateMockName(Class classToMock) {#77,16.038636843363445

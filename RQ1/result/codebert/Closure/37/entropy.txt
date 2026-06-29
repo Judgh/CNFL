@@ -1,0 +1,291 @@
+int getScopeDepth() {#638,20.629838705062866
+private String sourceName;#72,19.95084544590541
+String... arguments) {#648,19.89988153631037
+public String getSourceName() {#425,19.87782277001275
+String src = compiler.getSourceLine(sourceName, lineNumber);#322,19.516524264686986
+String... arguments) {#670,19.471366708928887
+if (cfgs.peek() == null) {#613,19.367449402809143
+private final Callback callback;#41,19.328755378723145
+if (scopeCallback != null) {#583,19.29923144976298
+public Compiler getCompiler() {#398,19.290652656555174
+if (refinedScope != null && getScope() != refinedScope) {#385,19.250016260147095
+boolean inGlobalScope() {#634,19.23489546775818
+public JSModule getModule() {#439,19.21294837527805
+scopeCallback.enterScope(this);#577,19.198123591286794
+if (scopeCallback != null) {#576,19.162095944086712
+private final boolean include;#190,19.124785953097874
+return (Compiler) compiler;#401,19.084290764548562
+scopeCallback.enterScope(this);#567,19.077996526445663
+private final Set<Integer> nodeTypes;#189,19.07176692669208
+private void throwUnexpectedException(Exception unexpectedException) {#241,19.071137155805314
+public Scope getScope() {#595,19.063895106315613
+Node parent) {#178,19.056532859802246
+if (scopeCallback != null) {#566,19.047595024108887
+if (cb instanceof ScopedCallback) {#232,18.998153686523438
+return getScopeDepth() <= 1;#635,18.919848442077637
+switch (type) {#487,18.903957578870987
+Node parent) {#144,18.86697729428609
+private final AbstractCompiler compiler;#40,18.821643299526638
+this(compiler, cb, new SyntacticScopeCreator(compiler));#222,18.787153113972057
+Node parent) {#162,18.767576932907104
+this.callback = cb;#231,18.7657582543113
+public boolean hasScope() {#642,18.74329423904419
+public CompilerInput getInput() {#432,18.733189487457274
+Node parent) {#132,18.723763863245647
+AbstractCompiler compiler, Node root, Callback cb) {#453,18.718306922912596
+AbstractCompiler compiler, Callback cb, Node ... roots) {#468,18.70681163242885
+private ScopedCallback scopeCallback;#81,18.701538403828938
+while (it.hasNext()) {#602,18.668393691380818
+@Override#142,18.665398597717285
+implements Callback {#175,18.664618301391602
+AbstractCompiler compiler, List<Node> roots, Callback cb) {#462,18.663054424783457
+this.compiler = compiler;#235,18.634856830943715
+public int getLineNumber() {#408,18.62661361694336
+private void pushScope(Scope s) {#572,18.621850100430574
+public NodeTraversal(AbstractCompiler compiler, Callback cb) {#221,18.60604953765869
+Scope scope = scopes.isEmpty() ? null : scopes.peek();#596,18.601092858748004
+if (line >=0) {#412,18.595850504361668
+default:#492,18.585614442825317
+Node parent) {#213,18.5589599609375
+@SuppressWarnings("fallthrough")#476,18.533283631006878
+public Node getScopeRoot() {#623,18.524398697747124
+private static String getSourceName(Node n) {#653,18.515789325420673
+implements Callback {#188,18.50599257151286
+boolean include) {#206,18.496805599757604
+String message = unexpectedException.getMessage();#244,18.465627083411583
+@Override#148,18.46017869313558
+Iterator<Node> it = scopeRoots.descendingIterator();#601,18.40696314761513
+this.include = include;#208,18.40673017501831
+return sourceName;#426,18.402418613433838
+public JSError makeError(Node n, DiagnosticType type, String... arguments) {#681,18.38243306201437
+sourceName = getSourceName(n);#358,18.34378827412923
+scope = scopeCreator.createScope(it.next(), scope);#603,18.342776616414387
+pushScope(refinedScope);#387,18.33719671689547
+private void popScope() {#582,18.331008791923523
+return input == null ? null : input.getModule();#441,18.324397802352905
+throwUnexpectedException(unexpectedException);#309,18.323634338378906
+implements ScopedCallback {#141,18.321866382252086
+try {#272,18.31968402862549
+String name = n.getSourceFileName();#654,18.315847250131462
+void traverseAtScope(Scope s) {#350,18.30119479786266
+public AbstractNodeTypePruningCallback(Set<Integer> nodeTypes) {#196,18.29608626592727
+formatNodeContext("Node", curNode) +#252,18.290816640853883
+int line = cur.getLineno();#411,18.282429122924803
+int columnNumber = n.getCharno();#321,18.273135375976562
+throwUnexpectedException(unexpectedException);#280,18.26583913167318
+return !(scopes.isEmpty() && scopeRoots.isEmpty());#643,18.250753947666713
+CompilerInput input = getInput();#440,18.245662450790405
+@Override#151,18.245639006296795
+@Override#160,18.230435053507488
+return cfgs.peek();#619,18.200218547474254
+return sourceName + ":" + lineNumber + ":" + columnNumber + "\n"#326,18.200004494708516
+this.nodeTypes = nodeTypes;#207,18.196007864815847
+InputId getInputId() {#658,18.195500479804146
+public ControlFlowGraph<Node> getControlFlowGraph() {#612,18.19426466623942
+this.scopeCallback = (ScopedCallback) cb;#233,18.176675846702175
+if (inputId != null) {#249,18.16560387611389
+pushScope(scopeRoot);#300,18.16430902481079
+public void enterScope(NodeTraversal t) {}#149,18.161389410495758
+traverseBranch(args, n);#537,18.14105025927226
+private String formatNodeContext(String label, Node n) {#260,18.121568870544433
+public NodeTraversal(AbstractCompiler compiler, Callback cb,#229,18.11737913555569
+private static final String MISSING_SOURCE = "[source unknown]";#313,18.097431421279907
+ScopeCreator scopeCreator) {#230,18.082120963505336
+case Token.FUNCTION:#488,18.06397137275109
+if (inputId == null) {#355,18.049607753753662
+unexpectedException.getMessage() + "\n" +#251,18.042919658479235
+this.sourceName = "";#237,18.04202261838046
+return null;#551,18.04039764404297
+void traverseWithScope(Node root, Scope s) {#335,18.010902404785156
+this(nodeTypes, true);#197,17.990674165578987
+private final Deque<Scope> scopes = new ArrayDeque<Scope>();#54,17.975749826431276
+int lineNumber = n.getLineno();#320,17.972989763532365
+public Node getCurrentNode() {#445,17.969065136379665
+if (!callback.shouldTraverse(this, n, parent)) return;#485,17.968050718307495
+ControlFlowAnalysis cfa = new ControlFlowAnalysis(compiler, false, true);#614,17.96689287821452
+scopeCallback.exitScope(this);#584,17.96669660295759
+curNode = scopeRoot;#299,17.964978297551472
+public interface ScopedCallback extends Callback {#111,17.958772485906426
+@Override#130,17.95703188578288
+public void exitScope(NodeTraversal t) {}#152,17.944438695907593
+if (scopes.size() + scopeRoots.size() < 2) {#550,17.940986026417125
+@Override#176,17.927531401316326
+sourceName = "";#274,17.922730099071156
+sourceName = "";#298,17.919772321527656
+if (scopeRoots.isEmpty()) {#553,17.91608214378357
+if (roots.isEmpty()) {#289,17.907539288202923
+return scope;#608,17.901569638933456
+compiler.throwInternalError(message, unexpectedException);#257,17.895413398742676
+private String formatNodePosition(Node n) {#315,17.895022471745808
+message =#250,17.874820470809937
+if (n == null) {#316,17.874736005609687
+Deque<ControlFlowGraph<Node>> cfgs = new LinkedList<ControlFlowGraph<Node>>();#69,17.86989318407499
+if (isFunctionExpression) {#527,17.855104049046833
+JSError error = JSError.make(getSourceName(), n, diagnosticType, arguments);#649,17.853850637163436
+cfgs.push(cfa.getCfg());#617,17.851360215081108
+sourceName = "";#339,17.848463270399307
+Node body = args.getNext();#363,17.843667643410818
+private void pushScope(Node node) {#562,17.84034078771418
+return scopes.size() + scopeRoots.size();#639,17.833747414981616
+for (Node root : roots) {#302,17.809822831835067
+pushScope(s);#341,17.807911025153267
+this.inputId = null;#236,17.802933519536797
+if (src == null) {#323,17.793304096568715
+@SuppressWarnings("unchecked")#548,17.76451031366984
+Node scopeRoot = roots.get(0).getParent();#294,17.743777425665606
+if (scopeRoots.isEmpty()) {#624,17.742915630340576
+this.scopeCreator = scopeCreator;#238,17.723086970193044
+return "  " + label + "(" + n.toString(false, false, false) + "): "#264,17.72179777868863
+scopes.push(scope);#604,17.719755319448616
+public AbstractNodeTypePruningCallback(Set<Integer> nodeTypes,#205,17.719464206695555
+sourceName = getSourceName(n);#481,17.702675946553548
+protected void traverseInnerNode(Node node, Node parent, Scope refinedScope) {#383,17.690176725387573
+try {#293,17.6779359181722
+@Override#211,17.64747889836629
+cfa.process(null, getScopeRoot());#615,17.64698948579676
+return true;#133,17.63610225253635
+traverseWithScope(n, s);#369,17.634383950914657
+return 0;#417,17.626300266810826
+if (!isFunctionExpression) {#519,17.62029965718587
+Preconditions.checkState(body.getNext() == null &&#540,17.607411334389134
+cfgs.push(null);#575,17.60200769251043
+return JSError.make(getSourceName(), n, type, arguments);#682,17.601607582785867
+if (scopeRoots.isEmpty()) {#586,17.598775182451522
+for (Node child = n.getFirstChild(); child != null; ) {#493,17.59812526702881
+final Node body = args.getNext();#534,17.597363838782677
+return scopeRoots.peek();#627,17.593460696084158
+public Node getEnclosingFunction() {#549,17.593331770463422
+return parent == null || !parent.isFunction() ||#165,17.584745354122585
+traverseBranch(args, n);#364,17.581594262804305
+return true;#145,17.576362397935654
+if (n == null) {#261,17.566434600136496
+cfgs.push(null);#565,17.56588823145086
+public JSError makeError(Node n, CheckLevel level, DiagnosticType type,#669,17.565215154127642
+(curNode == null ?#253,17.564468324184418
+pushScope(s);#360,17.558410384438254
+void enterScope(NodeTraversal t);#117,17.557457447052002
+traverseBranch(body, n);#365,17.534390449523926
+if (n.isFunction()) {#352,17.5221164226532
+callback.visit(this, n, parent);#504,17.51013355255127
+while (cur != null) {#410,17.505251624367453
+return "  " + label + ": NULL";#262,17.501474100000717
+public static final DiagnosticType NODE_TRAVERSAL_ERROR =#46,17.499083624945747
+return compiler.getInput(inputId);#433,17.478827990018406
+traverseBranch(body, n);#542,17.467087586720783
+void exitScope(NodeTraversal t);#123,17.42047691345215
+cfgs.pop();#591,17.41732120513916
+if (scopeRoots.isEmpty()) {#597,17.403570856366837
+Node cur = curNode;#409,17.388051414489745
+return scope;#598,17.387260013156467
+return name == null ? "" : name;#655,17.38501262664795
+src = MISSING_SOURCE;#324,17.374677364642803
+private void traverseBranch(Node n, Node parent) {#477,17.363700993855794
+"" :#254,17.35244369506836
+private ScopeCreator scopeCreator;#78,17.316193962097167
+return line;#413,17.308258230035957
+return JSError.make(getSourceName(), n, level, type, arguments);#671,17.297141035397846
+inputId = NodeUtil.getInputId(scopeRoot);#297,17.295587158203126
+traverseBranch(root, null);#342,17.29395929972331
+public void report(Node n, DiagnosticType diagnosticType,#647,17.28586743672689
+Node next = child.getNext();#496,17.26522710588243
+return inputId;#659,17.26052463054657
+return scopes.peek().getRootNode();#625,17.258482820847455
+Preconditions.checkState(scopeRoot != null);#295,17.25377305348714
+private final Deque<Node> scopeRoots = new ArrayDeque<Node>();#60,17.244577271597727
+traverseBranch(child, n);#497,17.24444998635186
+popScope();#278,17.242415322197807
+private InputId inputId;#75,17.235251903533936
+popScope();#307,17.210169262356228
+traverseBranch(fnName, n);#521,17.206153361002603
+return curNode;#446,17.204572439193726
+public interface Callback {#86,17.1985924584525
+inputId = null;#338,17.196527375115288
+private void traverseFunction(Node n, Node parent) {#510,17.181565080370223
+traverseRoots(Lists.newArrayList(roots));#285,17.180249214172363
+if (type == Token.SCRIPT) {#479,17.174049377441406
+public abstract static class AbstractShallowCallback implements Callback {#159,17.1689407484872
+|| NodeUtil.isStatementBlock(parent);#180,17.14823317527771
+NodeTraversal t = new NodeTraversal(compiler, cb);#469,17.145229599692605
+formatNodeContext("Parent", curNode.getParent()));#255,17.139086264151114
+public abstract static class AbstractPostOrderCallback implements Callback {#129,17.137124265943253
+popScope();#367,17.124342176649307
+traverseBranch(node, parent);#388,17.11516659600394
+final Node fnName = n.getFirstChild();#514,17.10802593231201
+int type = n.getType();#478,17.106804450352985
+return scopeRoots.peek();#556,17.09995800256729
+body.isBlock());#541,17.091556492973776
+scopeRoots.clear();#606,17.081085205078125
+curNode = root;#275,17.071367263793945
+NodeTraversal t = new NodeTraversal(compiler, cb);#463,17.06789666956121
+traverseBranch(root, scopeRoot);#304,17.062657973345587
+NodeTraversal t = new NodeTraversal(compiler, cb);#454,17.059425830841064
+return scopes.peek().getRootNode();#554,17.04480999394467
+scopes.pop();#587,17.043790557167746
+DiagnosticType.error("JSC_NODE_TRAVERSAL_ERROR", "{0}");#47,17.040108812266382
+curNode = n;#359,17.035156336697664
+popScope();#343,17.034570830208914
+Node args = n.getFirstChild().getNext();#362,17.024644321865505
+public void traverseRoots(List<Node> roots) {#288,17.015804290771484
+traverseFunction(n, parent);#489,17.006714375813804
+return include == nodeTypes.contains(n.getType());#214,17.003243732452393
+traverseBranch(fnName, n);#530,16.999896303812662
+popScope();#389,16.988635487026638
+traverseBranch(node, parent);#391,16.987695898328507
+cfgs.pop();#616,16.985312461853027
+return parent == null || NodeUtil.isControlStructure(parent)#179,16.971913294358686
+curNode = node;#386,16.956695383245293
+final Node args = fnName.getNext();#533,16.948946475982666
+pushScope(n);#525,16.942211045159233
+Node n = s.getRootNode();#351,16.922124789311336
+boolean isFunctionExpression = (parent != null)#516,16.921757888793945
+pushScope(root);#276,16.919827721335672
+traverseBranch(root, null);#277,16.91418695449829
+scopes.push(s);#574,16.912330193953082
+curNode = root;#340,16.90232213338216
+compiler.report(error);#650,16.82168321609497
++ formatNodePosition(n);#265,16.8182341893514
+scopeRoots.pop();#589,16.812397003173828
+public void traverse(Node root) {#271,16.78472137451172
+inputId = NodeUtil.getInputId(root);#273,16.761866469132272
+public abstract static class AbstractShallowStatementCallback#174,16.735437653281473
+cur = cur.getParent();#415,16.71176704993615
+return;#290,16.693623304367065
+return MISSING_SOURCE + "\n";#317,16.69285430908203
+public static void traverseRoots(#461,16.683928065829807
+break;#490,16.67472219467163
+popScope();#544,16.66001170022147
+public static void traverse(#452,16.65338638850621
+public static void traverseRoots(#467,16.61346541510688
+public class NodeTraversal {#38,16.61211884021759
+Preconditions.checkState(root.getParent() == scopeRoot);#303,16.611943046251934
+curNode = n;#524,16.586215019226074
+curNode = n;#484,16.580759154425728
+private Node curNode;#44,16.570449420383998
+curNode = n;#503,16.56579483879937
+Preconditions.checkState(n.getChildCount() == 3);#511,16.560338258743286
+inputId = NodeUtil.getInputId(n);#356,16.546149344671342
+Preconditions.checkNotNull(parent);#384,16.532748903547013
+n == parent.getFirstChild();#166,16.52890894148085
+public abstract static class AbstractScopedCallback#140,16.521028423309325
+void visit(NodeTraversal t, Node n, Node parent);#105,16.514525212739642
+inputId = n.getInputId();#480,16.509561920166014
+public void traverseRoots(Node ... roots) {#284,16.497181525597206
+Preconditions.checkState(s.isGlobal());#336,16.421956181526184
+public final boolean shouldTraverse(NodeTraversal nodeTraversal, Node n,#143,16.417080671890922
+Preconditions.checkState(curNode != null);#573,16.396885752677917
+Preconditions.checkState(curNode != null);#563,16.38609206676483
+&& NodeUtil.isFunctionExpression(n);#517,16.373459815979004
+scopeRoots.push(node);#564,16.37222107251485
+public final boolean shouldTraverse(NodeTraversal nodeTraversal, Node n,#131,16.366689640542734
++ src + "\n";#327,16.30964081627982
+public abstract static class AbstractNodeTypePruningCallback#187,16.295761108398438
+t.traverse(root);#455,16.241774472323332
+t.traverseRoots(roots);#464,16.18629682981051
+t.traverseRoots(roots);#470,16.078430762657753
+public final boolean shouldTraverse(NodeTraversal nodeTraversal, Node n,#177,16.04484910550325
+public boolean shouldTraverse(NodeTraversal nodeTraversal, Node n,#212,15.9298790584911
+public final boolean shouldTraverse(NodeTraversal nodeTraversal, Node n,#161,15.895228012748387
+child = next;#498,15.89258895601545
+boolean shouldTraverse(NodeTraversal nodeTraversal, Node n, Node parent);#96,15.803348263104757
+Preconditions.checkState(n.isFunction());#512,15.69047099351883
+break;#500,15.512846183776855

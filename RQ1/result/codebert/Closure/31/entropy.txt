@@ -1,0 +1,1224 @@
+CodeBuilder append(String str) {#1738,21.365933815638225
+Config getParserConfig() {#1936,20.727138996124268
+public String toString() {#1761,20.710892105102538
+PassConfig getPassConfig() {#711,20.681091096666123
+CodeBuilder cb = new CodeBuilder();#1548,20.539332640798467
+Supplier<String> getUniqueNameIdSupplier() {#969,20.537190691630045
+CodeBuilder cb = new CodeBuilder();#1575,20.523772351882037
+CodeBuilder cb = new CodeBuilder();#1604,20.51861280553481
+PassConfig createPassConfigInternal() {#722,20.486775493621828
+public String get() {#973,20.472246863625266
+private final StringBuilder sb = new StringBuilder();#1728,20.471769714355467
+private final StringBuilder debugLog = new StringBuilder();#148,20.419062100923977
+CompilerOptions options) {#336,20.35200770696004
+public String call() throws Exception {#1517,20.301115916325497
+CodeBuilder cb = new CodeBuilder();#1520,20.251465546457393
+public String call() throws Exception {#1569,20.25024237999549
+protected CompilerPass createInternal(AbstractCompiler compiler) {#812,20.193100648767807
+CompilerOptions getOptions() {#2130,20.173997667100693
+CompilerOptions options) {#311,20.119134108225506
+public String[] call() throws Exception {#1596,20.10908821650914
+JSModuleGraph getModuleGraph() {#1126,20.07406692504883
+public String[] call() throws Exception {#1543,20.04474381038121
+private PassConfig getCleanupPassConfig() {#2379,20.021807352701824
+return new Supplier<String>() {#971,19.968737382155197
+public LanguageMode languageMode() {#1926,19.913093354966904
+public String toSource() {#1514,19.889697909355164
+public Result call() throws Exception {#583,19.880283502432015
+public static class CodeBuilder {#1727,19.849350214004517
+public String toSource(final JSModule module) {#1566,19.843905522273136
+public String getSourceLine(String sourceName, int lineNumber) {#2074,19.71348055671243
+public Void call() throws Exception {#1633,19.68430335705097
+public class Compiler extends AbstractCompiler {#77,19.665124797821044
+final Compiler self = this;#970,19.61738326332786
+private String currentPassName = null;#872,19.583405113220216
+private int lineCount = 0;#1729,19.570945566350762
+if (devMode) {#1359,19.57031318119594
+public String[] toSourceArray(final JSModule module) {#1593,19.56904042561849
+case ECMASCRIPT5:#1943,19.549861653645834
+Node parseTestCode(String js) {#1491,19.54699845747514
+Node collectionRoot) {#2269,19.52802207253196
+protected CompilerOptions newCompilerOptions() {#1472,19.527552445729572
+private Config parserConfig = null;#154,19.48583836025662
+void addChangeHandler(CodeChangeHandler handler) {#1883,19.480935096740723
+int getColumnIndex() {#1776,19.478389739990234
+String comment = passName#901,19.47208701239692
+private String toSource(Node n, SourceMap sourceMap, boolean firstOutput) {#1705,19.461674976348878
+JSModuleGraph getDegenerateModuleGraph() {#1134,19.446926253182546
+CompilerOptions options) {#322,19.43046514193217
+static String createFillFileName(String moduleName) {#423,19.406940868922643
+public Compiler() {#197,19.406692504882812
+int getLineIndex() {#1771,19.405320739746095
+for (JSModule module : modules) {#432,19.3787721487192
+private SourceFile getSourceFileByName(String sourceName) {#2061,19.363600540161134
+private PassConfig.State passConfigState;#2202,19.34313282599816
+public String[] toSourceArray() {#1540,19.337067985534667
+case ECMASCRIPT5_STRICT:#1946,19.331540531582302
+VariableMap getVariableMap() {#2122,19.307673772176106
+CompilerInput previous = putCompilerInput(id, input);#486,19.285458183288576
+if (sourceName != null) {#2064,19.27556498845418
+String finalMessage =#2009,19.267773389816284
+return (DefaultPassConfig) passes;#1156,19.262994050979614
+public String getAstDotGraph() throws IOException {#2146,19.262311799185618
+return new CompilerOptions();#1473,19.233360290527344
+case ECMASCRIPT3:#1940,19.228244082132974
+List<CompilerInput> getInputsInOrder() {#2165,19.223560206095378
+Node originalRoot, Node js, PassConfig passConfig) {#2364,19.220096688521537
+if (pass != null) {#2373,19.192665793678977
+public int getLength() {#1766,19.175922012329103
+PassConfig passes = getPassConfig().getBasePassConfig();#1153,19.175424014820774
+public PerformanceTracker tracker;#159,19.17341491154262
+CompilerInput previous = putCompilerInput(id, input);#493,19.170182371139525
+String toSource(Node n) {#1697,19.153733825683595
+if (options.sourceMapOutputPath != null ||#1366,19.151615795336273
+final Throwable[] exception = new Throwable[1];#618,19.14973956346512
+@VisibleForTesting#963,19.143691744123185
+for (CompilerInput input : inputs) {#491,19.128120626722062
+return new DefaultPassConfig(options);#723,19.100903749465942
+void startPass(String passName) {#877,19.089567531238902
+public void toSource(final CodeBuilder cb,#1628,19.080137986403244
+private CompilerInput putCompilerInput(InputId id, CompilerInput input) {#1034,19.069329398018972
+private static final long serialVersionUID = 1L;#2195,19.068519147237144
+for (JSModule module : modules) {#1427,19.063474527994792
+private <T> T runInCompilerThread(final Callable<T> callable) {#598,19.06094613282577
+for (JSModule module : modules) {#458,19.04952049255371
+private List<JSModule> modules;#2201,19.04739276568095
+boolean endsWith(String suffix) {#1781,19.046162843704224
+private SourceMap sourceMap;#124,19.041901111602783
+public SymbolTable buildKnownSymbolTable() {#1159,19.04115565617879
+public SourceMap getSourceMap() {#2118,19.037189865112303
+return runInCompilerThread(new Callable<String>() {#1515,19.022385045101768
+private IntermediateState() {}#2207,19.018680784437393
+exception[0] = e;#628,19.015750941108255
+char secondLastChar = length >= 2 ?#1679,19.00967206453022
+VariableMap getPropertyMap() {#2126,18.999316109551323
+String[] sources = new String[numInputs];#1603,18.992228809155915
+if (options.isExternExportsEnabled()#686,18.98910842222326
+private Result compile() {#580,18.986870084490096
+for (String require : input.getRequires()) {#1429,18.97960036141532
+JSSourceFile extern, JSModule[] modules, CompilerOptions options) {#511,18.97951610883077
+case ECMASCRIPT5_STRICT:#1920,18.977335274219513
+String[] sources = new String[numInputs];#1547,18.95932370140439
+if (warningsGuard != null) {#1983,18.95782602750338
+return runInCompilerThread(new Callable<String>() {#1567,18.955303894846065
+static final String SINGLETON_MODULE_NAME = "[singleton]";#78,18.953419637680053
+private List<CompilerInput> inputs;#2200,18.940311211806076
+private JSModuleGraph moduleGraph;#101,18.93406253390842
+DefaultPassConfig ensureDefaultPassConfig() {#1152,18.914263985373758
+!options.stripTypes.isEmpty() ||#781,18.909419536590576
+try {#622,18.90651054382324
+char lastChar = code.charAt(length - 1);#1678,18.906412622202996
+for (CompilerPass p : options.customPasses.get(executionTime)) {#862,18.905843053545272
+void removeChangeHandler(CodeChangeHandler handler) {#1888,18.904546077434834
+List<JSModule> modules) {#455,18.900147914886475
+if (cause != null) {#2014,18.896986874667082
+private PassConfig passes = null;#91,18.894946840074326
+CompilerOptions options) {#553,18.89490795135498
+if (parserConfig == null) {#1937,18.887505531311035
+while ((index = str.indexOf('\n', index + 1)) >= 0) {#1744,18.87329571063702
+try {#641,18.865501594543456
+if ((cb.getLength() > 0) && !cb.endsWith("\n")) {#1635,18.85879092062673
+return lineCount;#1772,18.85857219696045
+JSModule m = cjs.getModule();#1414,18.85697513156467
+public double getProgress() {#2293,18.854126930236816
+String sourceName = root.getSourceFileName();#1643,18.849553442001344
+private boolean useThreads = true;#136,18.849319076538087
+public Map<InputId, CompilerInput> getInputsById() {#2172,18.84630028406779
+if (options.sourceMapOutputPath != null) {#1663,18.846072340011595
+List<JSModule> modules, CompilerOptions options) {#563,18.837026094135485
+CompilerOptions options = null;#89,18.82847679985894
+for (SourceFile input : inputs) {#324,18.821959416071575
+"PassConfigs must eventually delegate to the DefaultPassConfig");#1155,18.81245858328683
+mode,#1955,18.799258136749266
+GlobalVarReferenceMap getGlobalVarReferences() {#2280,18.79822317759196
+if (m != null) {#1415,18.7950101852417
+private List<CompilerInput> inputs;#104,18.792886213822797
+String code = toSource(root, sourceMap, inputSeqNum == 0);#1670,18.789808896871712
+@Override#1760,18.788990656534832
+public void run() {#621,18.784277482466265
+return runInCompilerThread(new Callable<String[]>() {#1541,18.77067985534668
+Config.LanguageMode mode;#1938,18.75578212738037
+CodePrinter.Builder builder = new CodePrinter.Builder(n);#1706,18.753228425979614
+getPassConfig().setIntermediateState(state.passConfigState);#2239,18.746861508018092
+logger.fine("Computing Control Flow Graph");#1840,18.735710075923375
+List<CompilerInput> getExternsInOrder() {#2179,18.73557150363922
+isIdeMode(),#1954,18.73369526863098
+if (dumpTraceReport) {#623,18.731594297620987
+PassConfig.State state = getPassConfig().getIntermediateState();#920,18.7293344798841
+boolean hasRegExpGlobalReferences() {#2258,18.72619457244873
+if (lineNumber < 1) {#2075,18.726003726323444
+case ECMASCRIPT5:#1919,18.723107704749474
+static final DiagnosticType DUPLICATE_INPUT =#472,18.715742111206055
+void throwInternalError(String message, Exception cause) {#2008,18.71573393685477
+@Override#582,18.71540629863739
+private Map<String, Node> injectedLibraries;#2205,18.71406364440918
+return runInCompilerThread(new Callable<Result>() {#581,18.707230517738743
+public Scope getTopScope() {#1198,18.706736034817165
+if (lineNumber < 1) {#2087,18.70642598470052
+Node originalRoot, Node js, PassFactory passFactory) {#2371,18.705869373522308
+public void report(JSError error) {#1981,18.69920488504263
+public void setPassConfig(PassConfig passes) {#731,18.69787333561824
+private String externExports = null;#127,18.692461187189277
+if (previous != null) {#494,18.68415096827916
+boolean devMode = options.devMode != DevMode.OFF;#1237,18.682584444681805
+state.passConfigState = getPassConfig().getIntermediateState();#2220,18.676318218833522
+result[0] = callable.call();#626,18.673371744155883
+CompilerInput input = new CompilerInput(#1493,18.665257453918457
+if (globalNamespace != null) {#1172,18.657728782066933
+return parserConfig;#1959,18.65698492527008
+for (CompilerInput input : inputs) {#1401,18.656588894980295
+private Map<InputId, CompilerInput> inputsById;#121,18.656311798095704
+return runInCompilerThread(new Callable<String[]>() {#1594,18.655460834503174
+for (CompilerInput input : inputs) {#1353,18.65524709224701
+this();#214,18.651094436645508
+if (useLargeStackThread) {#637,18.64606785774231
+Node parseInputs() {#1236,18.644619703292847
+CompilerOptions options) {#521,18.64376055399577
+"Root module '{0}' must contain at least one source code input");#403,18.63497907144052
+if (isBase) {#2404,18.63235397338867
+if (outStream == null) {#245,18.631444931030273
+private void runCustomPasses(CustomPassExecutionTime executionTime) {#858,18.628579086727566
+if (previous != null) {#487,18.62684290749686
+Node loadLibraryCode(String resourceName) {#2418,18.62343756357829
+public boolean isIdeMode() {#1912,18.62150372399224
+int index = -1;#1742,18.621442794799805
+int length = code.length();#1677,18.62013267068302
+@Override#1542,18.619250297546387
+private <T extends SourceFile> List<CompilerInput> makeCompilerInput(#388,18.60349507331848
+String originalCode;#2419,18.599969506263733
+"Exceeded max number of optimization iterations: {0}");#172,18.59275941848755
+ErrorReporter getDefaultErrorReporter() {#1503,18.58967097600301
+PhaseOptimizer phaseOptimizer = new PhaseOptimizer(this, tracker, null);#1799,18.586668548583983
+RuntimeException e = new RuntimeException(finalMessage, cause);#2013,18.584675059599036
+try {#358,18.5845468044281
+try {#861,18.584378719329834
+return !isIdeMode() && getErrorCount() > 0;#2037,18.58305523130629
+TypeValidator getTypeValidator() {#1219,18.576831904324617
+state.modules = modules;#2219,18.575415325164794
+public Compiler(ErrorManager errorManager) {#213,18.575043598810833
+@Override#972,18.566908717155457
+public Result getResult() {#919,18.566237926483154
+public boolean acceptConstKeyword() {#1931,18.565978050231934
+private Node jsRoot;#2198,18.560250176323784
+this.modules = modules;#356,18.558222579956055
+try {#1545,18.55273857116699
+boolean hasSemiColon = lastChar == ';' ||#1681,18.55080008506775
+@Override#1484,18.53964853286743
+public int getWarningCount() {#2031,18.529422124226887
+for (int i = 0; i < numInputs; i++) {#1549,18.52832398047814
+public void parse() {#707,18.520414352416992
+if (options.devMode == DevMode.EVERY_PASS) {#818,18.51944773537772
+for (CompilerInput input : inputs) {#1287,18.51524019241333
+putCompilerInput(id, new CompilerInput(ast));#1043,18.511901007758247
+try {#1519,18.509005546569824
+if (options.printInputDelimiter) {#1634,18.501058026363975
+@Override#1810,18.495781183242798
+SourceFile extern, JSSourceFile[] input, CompilerOptions options) {#506,18.490920106569927
+for (CodeChangeHandler handler : codeChangeHandlers) {#1899,18.489818516899557
+if (options.customPasses != null) {#859,18.489608192443846
+currentPassName = passName;#879,18.482669483531605
+for (CompilerInput input : module.getInputs()) {#1428,18.478975729508832
+void reset() {#1733,18.474307775497437
+public int getErrorCount() {#2024,18.466774940490723
+Compiler.class.getResourceAsStream(#2422,18.462635612487794
+runInCompilerThread(new Callable<Void>() {#1631,18.459795500102796
+if (!isBase) {#2396,18.459735488891603
+return (sb.length() > suffix.length())#1782,18.459465363446405
+@Override#1696,18.456928730010986
+@VisibleForTesting#2417,18.456323896135604
+if (!code.isEmpty()) {#1671,18.453090727329254
+@Override#2257,18.452900886535645
+!options.stripNameSuffixes.isEmpty() ||#782,18.452701005068693
+private int colCount = 0;#1730,18.45060209794478
+public Region getSourceRegion(String sourceName, int lineNumber) {#2086,18.44975202223834
+if (getOptions().errorHandler != null) {#1991,18.446357278262866
+if (jsRoot != null) {#1244,18.446335872014362
+@Override#1911,18.4454607963562
+void stripCode(Set<String> stripTypes, Set<String> stripNameSuffixes,#842,18.445319771766663
+@Override#1568,18.44433879852295
+Node getNodeForCodeInsertion(JSModule module) {#2102,18.443849563598633
+if (hasErrors()) {#682,18.443044148958645
+for (PassFactory passFactory : passConfig.getChecks()) {#2365,18.439586388437373
+Node scriptNode = inputs.get(i).getAstRoot(Compiler.this);#1606,18.438086378163305
+"required entry point \"{0}\" never provided");#87,18.436471197340225
+@Override#2292,18.431890726089478
+SourceFile extern, SourceFile input, CompilerOptions options) {#501,18.43144180661156
+@Override#1490,18.43036413192749
+if (jsRoot != null) {#2147,18.428510030110676
+for (CompilerInput input : inputs) {#1319,18.427040576934814
+currentPassName = null;#891,18.422988891601562
+if (options.devMode == DevMode.EVERY_PASS) {#1800,18.421843347095308
+@Override#1815,18.419188737869263
+SourceFile input = getSourceFileByName(sourceName);#2090,18.41904079914093
+CompilerInput newInput = new CompilerInput(ast);#1112,18.40554209316478
+public Compiler(PrintStream stream) {#205,18.401037562977184
+return getPassConfig().getTopScope();#1199,18.3998023546659
+@Override#2164,18.395281076431274
+String inputName = input.getName();#460,18.394736570470474
+private List<JSModule> modules;#97,18.3935188293457
+PhaseOptimizer phaseOptimizer = new PhaseOptimizer(this, tracker,#760,18.392091999883238
+List<JSModule> modules = Lists.newArrayList(modulesByName.values());#1422,18.39014877319336
+@Override#1146,18.3897762298584
+@Override#968,18.388128757476807
+SourceFile input = getSourceFileByName(sourceName);#2078,18.386863887310028
+@Override#1930,18.38467311859131
+throw new IllegalStateException("Root module has no inputs");#2115,18.383970022201538
+if (hasErrors()) {#1361,18.383571849149817
+if (dumpTraceReport) {#630,18.38135904735989
+if (staleInputs) {#1347,18.380488872528076
+tracker.recordPassStart(passName);#904,18.378054428100587
+@Override#2279,18.377604722976685
+boolean isInliningForbidden() {#1832,18.36396551132202
+private volatile double progress = 0.0;#192,18.361369653181598
+private void checkFirstModule(List<JSModule> modules) {#409,18.360005497932434
+mode = Config.LanguageMode.ECMASCRIPT5;#1944,18.359864608101223
+@Override#1461,18.357518672943115
+@Override#1882,18.34981346130371
+tracker.recordPassStop(passName, result);#912,18.347727495081283
+Node ensureLibraryInjected(String resourceName) {#2389,18.344846652104305
+CompilerPass pass = new PrepareAst(this);#1857,18.343501091003418
+if (hasErrors()) {#1305,18.342575409833124
+@Override#2284,18.342099905014038
+@Override#2388,18.34185218811035
+@Override#1197,18.339866399765015
+default:#1949,18.33890438079834
+try {#1439,18.33603024482727
+private MessageFormatter createMessageFormatter() {#233,18.335944175720215
+return parse(SourceFile.fromCode(fileName, js));#1487,18.335366024690515
+if (passes == null) {#712,18.33435034751892
+if (options.closurePass) {#1208,18.33297606876918
+void setHasRegExpGlobalReferences(boolean references) {#2263,18.332107480367025
+if (hasErrors()) {#666,18.331325617703524
+private static final Logger logger =#185,18.330396440294052
+if (options.devMode == DevMode.EVERY_PASS) {#762,18.330300058637345
+public JSError[] getMessages() {#930,18.328329819899338
+if (options.enables(DiagnosticGroups.CHECK_TYPES)) {#257,18.327498475710552
+cb.append("/*\n")#1656,18.326814651489258
+if (input != null) {#2079,18.32571099021218
+boolean addNewSourceAst(JsAst ast) {#1099,18.323507822476902
+"Exceeded max number of code motion iterations: {0}");#175,18.32267765045166
+@Override#1516,18.32232117652893
+final Callable<T> callable, boolean useLargeStackThread, boolean trace) {#608,18.320474395751955
+private GlobalVarReferenceMap globalRefMap = null;#190,18.318190427926872
+public CompilerInput newExternInput(String name) {#1022,18.310727500915526
+@Override#1595,18.31024694442749
+if (options == null) {#2158,18.309640190818094
+if (module != null) {#1074,18.30944364721125
+if (info.isExterns()) {#1329,18.30757670402527
+switch (options.getLanguageIn()) {#1939,18.306037012736002
+if (hasErrors()) {#767,18.302152807062324
+void process(CompilerPass p) {#805,18.302009149031207
+if (module == null) {#2103,18.299089431762695
+for (CompilerInput input : module.getInputs()) {#459,18.295530700683592
+public Node getRoot() {#949,18.294031262397766
+if (scriptNode == null) {#1607,18.29197422663371
+Map<String, JSModule> inputMap = Maps.newHashMap();#457,18.290693712234496
+if (dependency == null) {#1431,18.289470195770264
+if (newRoot == null) {#1059,18.28859273592631
+if (this.passes != null) {#739,18.288565635681152
+SymbolTable symbolTable = new SymbolTable(getTypeRegistry());#1160,18.28694332970513
+List<CompilerInput> getExternsForTesting() {#2253,18.284477174282074
+public JSError[] getWarnings() {#944,18.279720033918107
+@Override#804,18.27878737449646
+if (hasErrors()) {#1805,18.2783824747259
+if (input != null) {#2091,18.274061029607598
+for (CompilerInput input : externs) {#484,18.272851586341858
+if (lastIndex == -1) {#1749,18.272471936543784
+if (!replaceIncrementalSourceAst(ast)) {#2317,18.272356224060058
+private void initBasedOnOptions() {#380,18.272164821624756
+private List<CompilerInput> externs;#94,18.27209890805758
+switch (options.getLanguageIn()) {#1918,18.270208285405086
+if (globalRefMap == null) {#2272,18.26780289870042
+final Object[] result = new Object[1];#617,18.267509596688406
+int i = 0;#1522,18.26695094389074
+if (modules.size() > 1) {#357,18.26694004876273
+++lineCount;#1745,18.2664901415507
+for (int i = 0; i < numInputs; i++) {#1576,18.265071153640747
+if (options.getLanguageIn() == LanguageMode.ECMASCRIPT5_STRICT) {#278,18.26294631224412
+if (jsRoot != null) {#1521,18.26271454493205
+void addToDebugLog(String str) {#2055,18.26164944966634
+this.warningsGuard = composedGuards;#304,18.260013784681046
+@Override#1897,18.259358882904053
+for (int i = 0; i < numInputs; i++) {#1605,18.25882116953532
+try {#567,18.257583300272625
+setProgress(1.0);#704,18.25724150917747
+Node scriptNode = inputs.get(i).getAstRoot(Compiler.this);#1577,18.256708309568207
+return new CleanupPasses(getOptions());#2380,18.24956362588065
+ComposeWarningsGuard composedGuards = new ComposeWarningsGuard(guards);#291,18.244569738705952
+List<T> files, boolean isExtern) {#389,18.243982315063477
+Map<String, JSModule> modulesByName = Maps.newLinkedHashMap();#1395,18.243316235749617
+parserConfig = ParserRunner.createConfig(#1953,18.242070615291595
+colCount += str.length();#1751,18.240720621744792
+String inputName = root.getInputId().getIdName();#1642,18.240057071050007
+private static List<CompilerInput> getAllInputsFromModules(#454,18.239924642774795
+!options.stripTypePrefixes.isEmpty() ||#783,18.239187513078964
+return hasRegExpGlobalReferences;#2259,18.23762694272128
+public void reportCodeChange() {#1898,18.230949719746906
+inputsById = new HashMap<InputId, CompilerInput>();#483,18.229983379966335
+Node parseSyntheticCode(String fileName, String js) {#1485,18.228915775523465
+DiagnosticGroup.forType(#266,18.224396425134994
+if (oldRoot != null) {#1064,18.22426676750183
+if (n == null) {#1355,18.22258586883545
+if (newRoot == null) {#1106,18.22219427426656
+@Override#1916,18.221046209335327
+sourceMap.setStartingPosition(#1664,18.219231549431296
+startPass("stripCode");#845,18.218799209594728
+public boolean isTypeCheckingEnabled() {#1963,18.218211434104226
+StripCode r = new StripCode(this, stripTypes, stripNameSuffixes,#846,18.216090242067974
+sources[i] = cb.toString();#1614,18.215697833469935
+ControlFlowGraph<Node> computeCFG() {#1839,18.21546635260949
+static <T> T runCallableWithLargeStack(final Callable<T> callable) {#602,18.21507215499878
+void updateGlobalVarReferences(Map<Var, ReferenceCollection> refMapPatch,#2268,18.21386728788677
+public <T1 extends SourceFile, T2 extends SourceFile> Result compile(#530,18.211802030864515
+String sourceName = Compiler.SYNTHETIC_EXTERNS;#2384,18.210745311918714
+return sb.length();#1767,18.208466291427612
+Map<CompilerInput, JSModule> modulesByInput = Maps.newLinkedHashMap();#1396,18.2059525680542
+if (!options.skipAllPasses) {#680,18.204665660858154
+if (preprocessorSymbolTable != null) {#1184,18.203360811869302
+passes = createPassConfigInternal();#713,18.203097270085262
+@Override#1855,18.20176100730896
+List<CompilerInput> getInputsForTesting() {#2248,18.201265652974445
+@Override#2262,18.19877052307129
+try {#535,18.197368303934734
+@Override#1904,18.196567058563232
+@Override#948,18.19146466255188
+if (hasErrors()) {#1269,18.18976796468099
+CompilerInput input = new CompilerInput(#1463,18.186254705701554
+JSModule dependency = modulesByName.get(require);#1430,18.182334701220196
+GlobalNamespace globalNamespace =#1170,18.181352441961113
+if (moduleGraph == null && !modules.isEmpty()) {#1115,18.17996448940701
+if (root.getJSDocInfo() != null &&#1654,18.179232461111887
+@Override#1998,18.176034212112427
+static final DiagnosticType DUPLICATE_EXTERN_INPUT =#474,18.17432123072007
+!composedGuards.enables(DiagnosticGroups.CHECK_VARIABLES)) {#299,18.172627806663513
+String passToCheck = currentPassName;#890,18.170645493727463
+return globalRefMap;#2281,18.170159022013348
+modules = state.modules;#2237,18.17000608444214
+CompilerInput input = new CompilerInput(ast, true);#1027,18.162380695343018
+public void initOptions(CompilerOptions options) {#242,18.157583750211277
+long result = t.stop();#910,18.156099579551004
+List<CompilerInput> inputs = module.getInputs();#1570,18.15461492538452
+return getPassConfig().getIntermediateState().variableMap;#2123,18.15453815460205
+if (input != null) {#2066,18.154144360468937
+new SuppressDocWarningsGuard(#287,18.15315841226017
+return cb.toString();#1529,18.152218369876636
+if (options.sourceMapOutputPath != null) {#382,18.15141624212265
+CodingConvention defaultCodingConvention = new ClosureCodingConvention();#151,18.151248502731324
+sources[i] = cb.toString();#1553,18.151101568470832
+options.closurePass) {#1286,18.149697244167328
+SourceInformationAnnotator sia =#1371,18.14955425262451
+List<T> externs, List<JSModule> modules, CompilerOptions options) {#346,18.148335138956707
+throw new RuntimeException(e);#2426,18.139534950256348
+if (scriptNode == null) {#1578,18.134963512420654
+if (options == null) {#1477,18.13342389193448
+return moduleGraph == null ? new JSModuleGraph(modules) : moduleGraph;#1135,18.13119447798956
+@VisibleForTesting#2247,18.131117956978933
+private int nextUniqueNameId() {#956,18.13040723800659
+void stopTracer(Tracer t, String passName) {#909,18.13022094964981
+Node scriptNode = inputs.get(i).getAstRoot(Compiler.this);#1550,18.128116176974387
+throw new IllegalArgumentException(#1608,18.126144007632607
+final Node root) {#1630,18.123379911695206
+if (n.getJSDocInfo() != null) {#1327,18.122874476692893
+report(JSError.make(#1309,18.122278263694362
+private final List<CodeChangeHandler> codeChangeHandlers =#1874,18.120795885721844
+List<CompilerInput> inputs = module.getInputs();#1597,18.12073391134089
+if (!options.ideMode) {#692,18.119198662894114
+if (hasErrors()) {#1313,18.114803931292364
+if (typeValidator == null) {#1220,18.114581474891075
+return symbolTable;#1194,18.11024570465088
+inputs =#1296,18.11003049214681
+private boolean hasRegExpGlobalReferences = true;#142,18.109023332595825
+mode = Config.LanguageMode.ECMASCRIPT5_STRICT;#1947,18.108264923095703
+void endPass() {#886,18.106260980878556
+RecordFunctionInformation recordFunctionInfoPass =#1864,18.10175387064616
+@Override#1632,18.099211931228638
+passes = createPassConfigInternal();#2238,18.099091789939187
+@Override#1887,18.096253871917725
+private List<CompilerInput> externs;#2199,18.095822715759276
+protected DiagnosticGroups getDiagnosticGroups() {#1976,18.09450562795003
+report(JSError.make(#1301,18.094343285811576
+int lastIndex = index;#1743,18.09274633725484
+if (modules.isEmpty()) {#410,18.091178735097248
+builder.setSourceMap(sourceMap);#1710,18.084512197054348
+Node parseSyntheticCode(String js) {#1462,18.083737006554237
+Tracer tracer = newTracer("toSource");#1518,18.080115413665773
+void initCompilerOptionsIfTesting() {#1476,18.079207593744453
+report(JSError.make(DUPLICATE_EXTERN_INPUT, input.getName()));#488,18.078483441296747
+report(JSError.make(DUPLICATE_INPUT, input.getName()));#495,18.070864215973884
+report(JSError.make(MISSING_ENTRY_ERROR, require));#1432,18.064783152411966
+return null;#2070,18.06444549560547
+if (abstractInterpreter == null) {#1204,18.06376921335856
+try {#1295,18.06295528411865
+public ErrorManager getErrorManager() {#2157,18.058298301696777
+toSource(cb, i, scriptNode);#1613,18.054873752593995
+Node jsRoot;#118,18.053539911905926
+@Override#1138,18.05103874206543
+Node n = input.getAstRoot(this);#1354,18.050150971663626
+if (numInputs == 0) {#1599,18.047869401819565
+for (String provide : input.getProvides()) {#1290,18.046471509066496
+@Override#1021,18.044436931610107
+options.dependencyOptions, inputs)) {#1442,18.044351850237167
+public JSError[] getErrors() {#937,18.03867714221661
+modules = Lists.newArrayList();#1440,18.03565365076065
+this((PrintStream) null);#198,18.03367328643799
+@Override#2297,18.030166625976562
+if (inputsById == null) {#1495,18.029516366811897
+static <T> T runCallable(#607,18.02865661274303
+return moduleGraph;#1127,18.028277039527893
+List<T1> externs, List<T2> inputs, CompilerOptions options) {#531,18.026225294385636
+public <T extends SourceFile> void initModules(#345,18.025588239942277
+ControlFlowAnalysis cfa = new ControlFlowAnalysis(this, true, false);#1842,18.01570719764346
+this.modules = modules;#1445,18.011994089399064
+if (!addNewSourceAst(ast)) {#2333,18.011762482779368
+e.setStackTrace(cause.getStackTrace());#2015,18.01057939529419
+if (!modules.isEmpty()) {#1423,18.010273592812673
+initCompilerOptionsIfTesting();#1698,18.004551020535555
+convention = convention != null ? convention : defaultCodingConvention;#1907,18.003036393059624
+builder.setPreferLineBreakAtEndOfFile(options.preferLineBreakAtEndOfFile);#1709,18.00220051518193
+putCompilerInput(input.getInputId(), input);#1498,18.000444300034466
+List<WarningsGuard> guards = Lists.newArrayList();#285,17.99931270197818
+if (exception[0] != null) {#653,17.995670064290366
+if (root != null) {#1016,17.995617519725453
+!options.skipAllPasses &&#1285,17.994105709923637
+if (n == null) {#1323,17.99398225148519
+this.moduleGraph = new JSModuleGraph(modules);#1446,17.986321115493773
+if (newLevel != null) {#1985,17.984758377075195
+Set<String> stripTypePrefixes, Set<String> stripNamePrefixes) {#843,17.982072759557653
+CompilerInput input = inputsById.get(new InputId(sourceName));#2065,17.981889766195547
+@Override#998,17.980496168136597
+return sb.toString();#1762,17.98023634690505
+new PhaseOptimizer.ProgressRange(getProgress(), 1.0));#761,17.979290008544922
+@Override#1202,17.977097749710083
+options.nameReferenceReportPath != null) {#1367,17.97533369064331
+CompilerInput newInput = new CompilerInput(ast);#1070,17.974194021785962
+return null;#2082,17.97388063158308
+@Override#2054,17.97315788269043
+CssRenamingMap getCssRenamingMap() {#1816,17.970151074727376
+public IntermediateState getState() {#2213,17.970096800062393
+return new SanityCheck(compiler);#813,17.9692019144694
+new PassFactory("sanityCheck", false) {#810,17.96845256581026
+return compile();#572,17.965529335869682
+Tracer tracer = newTracer("toSourceArray");#1544,17.964226586478098
+if (root == null) {#1404,17.963378319373497
+|| options.externExportsPath != null) {#687,17.963041392239656
+if (numInputs == 0) {#1572,17.96247190587661
+JSModule module = new JSModule(SINGLETON_MODULE_NAME);#323,17.96119464527477
+List<CompilerInput> inputs = Lists.newArrayList();#456,17.961133586035835
+if (hasErrors()) {#569,17.96082254556509
+@Override#1935,17.960713863372803
+currentTracer = newTracer(passName);#880,17.959430249532065
+String delimiter = options.inputDelimiter;#1640,17.95910626366025
+Runnable runnable = new Runnable() {#619,17.954959196202896
+@Override#1980,17.95323348045349
+mode = Config.LanguageMode.ECMASCRIPT3;#1941,17.948462693587594
+List<CompilerInput> inputs = Lists.newArrayList();#390,17.948360231187607
+parse();#662,17.942519505818684
+Lists.<CodeChangeHandler>newArrayList();#1875,17.942009568214417
+for (CompilerInput input : this.moduleGraph.manageDependencies(#1441,17.941364545088547
+&& suffix.equals(sb.substring(sb.length() - suffix.length()));#1783,17.9363523913968
+@Override#979,17.928690671920776
+modules.get(0).getName()));#415,17.926533222198486
+public <T1 extends SourceFile, T2 extends SourceFile> void init(#319,17.92419513903166
+Node n = input.getAstRoot(this);#1320,17.923039837887412
+private static void fillEmptyModules(List<JSModule> modules) {#431,17.922484503851997
+private static final DiagnosticType EMPTY_ROOT_MODULE_ERROR =#401,17.920557975769043
+input.setCompiler(this);#1402,17.920211996350968
+if (!hasSemiColon) {#1683,17.918523336711683
+if (options.dependencyOptions.needsManagement() &&#1284,17.91785520977444
+if (newProgress > 1.0) {#2299,17.916257313319615
+@Override#2156,17.91573977470398
+static final DiagnosticType MISSING_ENTRY_ERROR = DiagnosticType.error(#85,17.914884249369305
+private ReverseAbstractInterpreter abstractInterpreter;#156,17.913804421058067
+@Override#620,17.909587502479553
+public CompilerInput getInput(InputId id) {#999,17.907754353114537
+return state;#2225,17.906799725123815
+cb.append(code);#1672,17.906797633451575
+return null;#2094,17.905275344848633
+this, getPassConfig().getIntermediateState().functionNames);#1866,17.90362765238835
+!options.disables(DiagnosticGroups.GLOBAL_THIS)) {#272,17.899985278094256
+builder.setLineBreak(options.lineBreak);#1708,17.898818079630534
+for (CompilerInput input : externs) {#1267,17.897701528337265
+toSource(cb, i, scriptNode);#1582,17.8946102142334
+private final PassFactory sanityCheck =#809,17.891661326090496
+final boolean dumpTraceReport = trace;#616,17.891222733717697
+setProgress(0.15);#665,17.889877579428934
+throw new IllegalStateException("this.passes has already been assigned");#740,17.886888231549943
+ExternExportsPass pass = new ExternExportsPass(this);#796,17.886758470535277
+@Override#811,17.8847713470459
+JSModule[] modules,#552,17.879994491050983
+for (T file : files) {#391,17.87925918896993
+return inputs.get(0).getAstRoot(this);#2108,17.87513747968172
+putCompilerInput(input.getInputId(), input);#1465,17.875060025383444
+return sources;#1555,17.87494938190167
+startPass("externExports");#794,17.874389171600342
+@Override#2035,17.873135805130005
+try {#2420,17.872800827026367
+"At least one module must be provided");#399,17.87162258750514
+initCompilerOptionsIfTesting();#1486,17.86879756233909
+String.format("jscomp_%s_", resourceName));#2431,17.86644055626609
+@Override#2007,17.86607527732849
+public void setState(IntermediateState state) {#2232,17.863709743206318
+@Override#1502,17.862480401992798
+initBasedOnOptions();#372,17.86180305480957
+if (hasErrors()) {#537,17.861272004934456
+if (options.checkGlobalThisLevel.isOn() &&#271,17.85992639205035
+if (input == null) {#1009,17.85991859436035
+return "[" + moduleName + "]";#424,17.85841601235526
+currentTracer = null;#892,17.855068969726563
+private static final DiagnosticType EMPTY_MODULE_LIST_ERROR =#397,17.855023013220894
+ControlFlowAnalysis cfa = new ControlFlowAnalysis(this, true, false);#2148,17.852970289147418
+outStream = stream;#207,17.851943969726562
+public boolean hasErrors() {#2049,17.851557943556045
+putCompilerInput(input.getInputId(), input);#1028,17.849239124971277
+if (externsRoot != null) {#1241,17.844078608921595
+if (hasErrors()) {#1380,17.83668591425969
+cb.reset();#1551,17.82929588766659
+if (options.devMode == DevMode.START_AND_END) {#701,17.8266376582059
+progress = 1.0;#2300,17.825520833333332
+@Override#2073,17.821157455444336
+boolean hasHaltingErrors() {#2036,17.820399284362793
+this.options = options;#243,17.81991844177246
+Node n = input.getAstRoot(this);#1268,17.818286243237946
+toSource(cb, i, scriptNode);#1552,17.817909717559814
+if (oldInput != null) {#1101,17.817830562591553
+if (moduleInputs.size() > 0) {#2112,17.81609618663788
+(moduleGraph == null ? new JSModuleGraph(modules) : moduleGraph)#1297,17.81407159374606
+Preconditions.checkState(!sourceName.isEmpty());#1645,17.8116272687912
+globalRefMap.updateGlobalVarReferences(refMapPatch, collectionRoot);#2276,17.80884838104248
+throw new IllegalStateException(#1102,17.802143335342407
+return cb.toString();#1584,17.799728266398112
+return true;#752,17.798180988856725
+if (typedScopeCreator != null) {#1163,17.79424616495768
+private void externExports() {#792,17.788057327270508
+Preconditions.checkState(passes instanceof DefaultPassConfig,#1154,17.787480203728926
+for (Node scriptNode = jsRoot.getFirstChild();#1523,17.784417572021486
+@Override#1962,17.78084397315979
+HotSwapCompilerPass pass = passFactory.getHotSwapPass(this);#2372,17.778780522553816
+Tracer newTracer(String passName) {#900,17.778499676631046
+colCount = str.length() - (lastIndex + 1);#1753,17.776575565338135
+Preconditions.checkState(sourceName != null);#1644,17.771587241779674
+logger.fine("Strip code");#844,17.771457751592
+e.getModule().getName(), e.getDependentModule().getName()));#364,17.770597130911693
+private int uniqueNameId = 0;#133,17.76896858215332
+public static class IntermediateState implements Serializable {#2194,17.767747012051668
+root.getJSDocInfo().getLicense() != null) {#1655,17.76565247994882
++ "Modules must be listed in dependency order.");#83,17.765061928675724
+private int syntheticCodeId = 0;#1459,17.7631685256958
+this.moduleGraph = null;#368,17.76019705258883
+@Override#1218,17.758378505706787
+return this;#1756,17.75604799058702
+runCustomPasses(CustomPassExecutionTime.BEFORE_OPTIMIZATIONS);#789,17.74878732363383
+throw new IllegalArgumentException("Conflicting externs name: " + name);#1025,17.74857234954834
+@Override#1125,17.746476650238037
+public CheckLevel getErrorLevel(JSError error) {#1999,17.74645584821701
+return n1.isEquivalentTo(n2);#987,17.745629681481255
+Tracer t = newTracer("runCustomPasses");#860,17.74489382693642
+cb.getLineIndex(), cb.getColumnIndex());#1665,17.742449317659652
+SourceFile.fromCode(inputId.getIdName(), ""));#2340,17.74227698644002
+return toSource(n, null, true);#1699,17.74217755453927
+(new DefaultPassConfig(options)).processDefines.create(this)#1828,17.7416871547699
+List<CompilerInput> moduleInputs = module.getInputs();#2111,17.741426706314087
+@VisibleForTesting#2252,17.739047867911204
+initCompilerOptionsIfTesting();#1454,17.737925442782316
+!options.stripNamePrefixes.isEmpty()) {#784,17.737520444960822
+final int inputSeqNum,#1629,17.73628307978312
+globalRefMap = new GlobalVarReferenceMap(getInputsInOrder(),#2273,17.73471030321988
+options.disambiguateProperties) {#982,17.734213564130997
+jsRoot = IR.block();#1249,17.730702660300516
+return Collections.<CompilerInput>unmodifiableList(inputs);#2166,17.725061316239206
+symbolTable.fillThisReferences(this, externsRoot, jsRoot);#1190,17.719801403227308
+String.format("js/%s.js", resourceName)),#2423,17.71565546308245
+private void compileInternal() {#660,17.713894248008728
+void setProgress(double newProgress) {#2298,17.71263061870228
+List<T2> inputs,#321,17.709005795992336
+if (options.ambiguateProperties ||#981,17.704041140420095
+if (errorManager == null) {#244,17.70074399312337
+return new Tracer("Compiler", comment);#906,17.69966036932809
+IntermediateState state = new IntermediateState();#2214,17.699427127838135
+"JSC_MISSING_ENTRY_ERROR",#86,17.698228986639727
+initCompilerOptionsIfTesting();#1492,17.696394486860797
+state.variableMap, state.propertyMap,#922,17.694993019104004
+DiagnosticType.error("JSC_DUPLICATE_INPUT", "Duplicate input: {0}");#473,17.691721656105734
+sb.append(str);#1739,17.69025098360502
+this.moduleGraph = new JSModuleGraph(this.modules);#1425,17.687089096416127
+if (inputs.isEmpty()) {#2104,17.686552302042642
+report(JSError.make(EMPTY_ROOT_MODULE_ERROR,#414,17.684108880849983
+acceptConstKeyword(),#1956,17.68320193657508
+MISSING_ENTRY_ERROR, e.getMessage()));#1310,17.681758335658483
+SourceFile.fromCode(" [synthetic:" + (++syntheticCodeId) + "] ", js));#1464,17.679913492763745
+throw new IllegalArgumentException(#1579,17.678310645254033
+throw new IllegalStateException("No inputs");#2105,17.675962504218607
+return Collections.unmodifiableMap(inputsById);#2173,17.674916207790375
+"Bad dependency: {0} -> {1}. "#82,17.671179337935015
+public void disableThreads() {#594,17.664812299940323
+if (level.isOn()) {#1990,17.664254824320476
+CompilerInput input = getInput(id);#1008,17.663641793387278
+getCodingConvention(), getTypeRegistry())#1210,17.662221950033437
+(lastChar == '\n' && secondLastChar == ';');#1682,17.661801306406655
+input.setCompiler(this);#1035,17.658101797103882
+return input.getLine(lineNumber);#2080,17.65763874053955
+options.setWarningLevel(#279,17.645360231399536
+runCustomPasses(CustomPassExecutionTime.BEFORE_CHECKS);#756,17.643628983270553
+cjs.process(null, root);#1413,17.643442153930664
+Node newRoot = ast.getAstRoot(this);#1058,17.641579806804657
+@Override#2101,17.640016555786133
+report(JSError.make(MODULE_DEPENDENCY_ERROR,#363,17.638411375192497
+inputMap.put(inputName, module);#466,17.634766207800972
+typeValidator = new TypeValidator(this);#1221,17.629907664130716
+stopTracer(currentTracer, currentPassName);#889,17.62770140171051
+protected final CodeChangeHandler.RecentChange recentChange =#1872,17.62448677649865
+Charset.forName(options.outputCharset) : null;#1717,17.62425434112549
+@Override#2085,17.62327003479004
+throw new IllegalStateException("unexpected language mode");#1950,17.62276690346854
+PreprocessorSymbolTable preprocessorSymbolTable =#1182,17.622427050272623
+return compile();#540,17.620885848999023
+public Node parse(SourceFile file) {#1453,17.620231056213377
+symbolTable.fillPropertyScopes();#1189,17.61945080757141
+return new String[0];#1600,17.61862486600876
+useThreads = false;#595,17.617443084716797
+return typeValidator;#1223,17.61649990081787
+state.jsRoot = jsRoot;#2216,17.607471704483032
+setProgress(0.0);#661,17.605337489734996
+Tracer.initCurrentThreadTrace();#624,17.60375181833903
+return errorManager.getWarningCount();#2032,17.603662093480427
+"Input already exists: " + ast.getInputId().getIdName());#1103,17.60327868991428
+this.modules = modules;#1424,17.60309498650687
+SourceAst ast = new SyntheticAst(name);#1023,17.60157521565755
+DiagnosticGroups.ES5_STRICT,#280,17.599470047723678
+cb.reset();#1612,17.5985356648763
+return colCount;#1777,17.596359634399413
+return uniqueNameId++;#957,17.596158027648926
+inputs = state.inputs;#2236,17.59197269786488
+return getPassConfig().getIntermediateState().propertyMap;#2127,17.59157113467946
+public Result compile(#510,17.59067948659261
+input.getName(), options.devMode != DevMode.OFF);#1373,17.588309981606223
+options.getLanguageOut() == LanguageMode.ECMASCRIPT5_STRICT);#1713,17.584173379121005
+getDiagnosticGroups().getRegisteredGroups()));#288,17.5827197265625
+symbolTable.fillNamespaceReferences();#1188,17.58052937189738
+startPass("normalize");#1850,17.57901086807251
+return false;#1923,17.576122283935547
+code.charAt(length - 2) : '\0';#1680,17.574450935636246
+public static final DiagnosticType MOTION_ITERATIONS_ERROR =#173,17.57308297998765
+this.moduleGraph = new JSModuleGraph(modules);#359,17.5728168964386
+Node externsRoot;#2197,17.57141571044922
+public CodingConvention getCodingConvention() {#1905,17.570598466055735
+JSDocInfo info = n.getJSDocInfo();#1328,17.56882071495056
+runHotSwap(originalRoot, js, this.ensureDefaultPassConfig());#2357,17.567206166007303
+modulesByName.put(m.getName(), m);#1416,17.558713249538254
+createFillFileName(module.getName()), ""));#435,17.555589749262882
+return progress;#2294,17.554112570626394
+return (T) result[0];#657,17.548233032226562
+try {#1265,17.548032760620117
+Node js = ast.getAstRoot(this);#2346,17.54755605061849
+initOptions(options);#347,17.543135431077744
+state.inputs = inputs;#2218,17.54006004333496
+hasRegExpGlobalReferences = references;#2264,17.53514003753662
+private final Map<String, Node> injectedLibraries = Maps.newLinkedHashMap();#114,17.53279347853227
+ensureDefaultPassConfig().getGlobalNamespace();#1171,17.53243170844184
+return new DiagnosticGroups();#1977,17.529930288141426
+errorManager.generateReport();#575,17.524456611046425
+return options.ideMode;#1913,17.51940279006958
+sourceMap = options.sourceMapFormat.getInstance();#383,17.518996132744682
+Charset charset = options.outputCharset != null ?#1716,17.518950110987614
+if (options.processCommonJSModules) {#1410,17.51843048544491
+initOptions(newCompilerOptions());#2159,17.51835857118879
+runHotSwap(originalRoot, js, this.getCleanupPassConfig());#2349,17.517729369076815
+return String.valueOf(self.nextUniqueNameId());#974,17.517251014709473
+input.getModule().remove(input);#1336,17.514049166724796
+public Result compile(JSSourceFile[] externs,#519,17.513248697916666
+JSSourceFile[] inputs,#520,17.511618675724154
+input.setIsExtern(true);#1334,17.509317034766788
+symbolTable.fillJSDocInfo(this, externsRoot, jsRoot);#1192,17.50705913875414
+parseInputs();#708,17.50583267211914
+tracker = new PerformanceTracker(jsRoot, options.tracer);#1259,17.501716375350952
+logger.fine("Creating extern file for exports");#793,17.501329294840495
+putCompilerInput(ast.getInputId(), newInput);#1071,17.50077003902859
+public void addNewScript(JsAst ast) {#2332,17.498235335716835
+"Duplicate extern input: {0}");#476,17.497753099961713
+public <T extends SourceFile> Result compileModules(List<T> externs,#562,17.497325203635476
+delimiter = delimiter#1647,17.49713045756022
+return "";#1573,17.493764950678898
+SourceFile.fromCode("[testcode]", js));#1494,17.492493947347004
+inputs = getAllInputsFromModules(modules);#446,17.49238669872284
+return passes;#715,17.492183685302734
+this.passes = passes;#742,17.488061471418902
++ (recentChange.hasCodeChanged() ? " on recently changed AST" : "");#902,17.487879823755335
+getTypeRegistry().forwardDeclareType(provide);#1291,17.483106269836426
+composedGuards.addGuard(new DiagnosticGroupWarningsGuard(#300,17.478974602439187
+return compile(Lists.newArrayList(extern), Lists.newArrayList(input), options);#502,17.472758429391043
+r.enableTweakStripping();#849,17.47064069112142
+"Bad module input: " + inputs.get(i).getName());#1609,17.469620138406754
+stopTracer(t, "generateReport");#576,17.468220766852884
+void addIncrementalSourceAst(JsAst ast) {#1040,17.463919843946183
+uniqueNameId = 0;#965,17.46121253967285
+newInput.getInputId().equals(oldInput.getInputId()));#1081,17.459626527932976
+throw new RuntimeException(exception[0]);#654,17.45846712589264
+process(new Normalize(this, false));#1851,17.458418164934432
+injectedLibraries.put(resourceName, lastChild);#2412,17.457200288772583
+private CompilerInput synthesizedExternsInput = null;#1880,17.45526542663574
+public void setErrorManager(ErrorManager errorManager) {#223,17.452939374106272
+CodingConvention convention = options.getCodingConvention();#1906,17.4482815000746
+return null;#2076,17.447502772013348
+Tracer t = newTracer("generateReport");#574,17.447197914123535
+DiagnosticType.error("JSC_DUPLICATE_EXTERN_INPUT",#475,17.44603391794058
+options.setWarningLevel(#265,17.443468809127808
+if (options.tracer.isOn()) {#1258,17.441435623168946
+private ErrorManager errorManager;#107,17.43949043750763
+break;#1945,17.437367121378582
+public Result compile(#500,17.428743203481037
+return inputs;#394,17.426930836268834
+reportCodeChange();#2410,17.423011302947998
+if (options.getTweakProcessing().shouldStrip() ||#780,17.422450969093724
+putCompilerInput(ast.getInputId(), newInput);#1120,17.422165870666504
+return compile(Lists.newArrayList(extern), Lists.newArrayList(input), options);#507,17.420898301260813
+"Tracer should not be null at the end of a pass.");#888,17.418537015500277
+public ReverseAbstractInterpreter getReverseAbstractInterpreter() {#1203,17.417639149559868
+Node root = input.getAstRoot(this);#1403,17.415722005507526
+return errorManager.getErrorCount();#2025,17.415244420369465
+return null;#1687,17.410606124184348
+int numInputs = inputs.size();#1546,17.410238215797825
+@SuppressWarnings("unchecked")#1151,17.409226099650066
+public Result compile(#505,17.407367706298828
+return inputsById.put(id, input);#1036,17.403010300227574
+new ReferenceCollectingCallback(#1177,17.401726382119314
+private final PrintStream outStream;#188,17.400915145874023
+JSModule module = oldInput.getModule();#1073,17.400244576590403
+private static final long COMPILER_STACK_SIZE = 1048576L;#177,17.398999309539796
+addChangeHandler(tracker.getCodeChangeHandler());#1260,17.39798026614719
+return getPassConfig().getTypedScopeCreator();#1148,17.397083342075348
+static final DiagnosticType MODULE_DEPENDENCY_ERROR =#80,17.39681053161621
+builder.setLineLengthThreshold(options.lineLengthThreshold);#1714,17.395461885552656
+return runCallable(callable, true, false);#603,17.390887558460236
+return getResult();#585,17.390562693277996
+private void maybeSanityCheck() {#817,17.389914131164552
+return null;#1306,17.388665517171223
+return sources;#1616,17.383617227727715
+progress = 0.0;#2302,17.383010466893513
+return input.getRegion(lineNumber);#2092,17.38226579030355
+errorManager, "the error manager cannot be null");#225,17.380761598285876
+errorManager.generateReport();#543,17.372072513286884
+static final String SYNTHETIC_EXTERNS = "{SyntheticVarsDeclar}";#1878,17.37027687072754
+JSModule.CIRCULAR_DEPENDENCY_ERROR, e.getMessage()));#1302,17.36602476871375
+Tracer tracer = newTracer("computeCFG");#1841,17.365166876051163
+cb.append("\n");  // Make sure that the label starts on a new line#1636,17.362410008907318
+InputId id = input.getInputId();#485,17.359871745109558
+logger.fine(str);#2058,17.35855016708374
+return inputs;#469,17.35692732674735
+if (options.nameAnonymousFunctionsOnly) {#772,17.35385398864746
+Preconditions.checkNotNull(oldInput, "No input to replace: %s", ast.getInputId().getIdName());#1057,17.353487659903134
+int numInputs = inputs.size();#1598,17.352936352000516
+return input;#1031,17.351822989327566
+return DotFormatter.toDot(jsRoot, cfa.getCfg());#2150,17.351540946960448
+return errorManager;#2161,17.34889554977417
+public void normalize() {#1848,17.34800624847412
+return Collections.<CompilerInput>unmodifiableList(externs);#2180,17.347699880599976
+getCodingConvention(), getTypeRegistry());#1207,17.34467960357666
+Thread th = new Thread(null, runnable, "jscompiler", COMPILER_STACK_SIZE);#638,17.34331923723221
+initModules(externs, modules, options);#568,17.342325422498917
+if (options.nameAnonymousFunctionsOnly) {#674,17.338407897949217
+if (injectedLibraries.containsKey(resourceName)) {#2390,17.33549976348877
+options.commonJSModulePathPrefix);#1412,17.334864253089542
+Preconditions.checkState(input.isExtern(), "Not an extern input: %s", input.getName());#1012,17.328613579273224
+Node lastChild = firstChild.getLastSibling();#2401,17.32767289876938
+emptyScript.setStaticSourceFile(#2339,17.327220830050383
+return defaultErrorReporter;#1504,17.324921894073487
+return options.acceptConstKeyword;#1932,17.323716799418133
+Lists.<JSModule>newArrayList(modules),#555,17.323198970995453
+compileInternal();#584,17.32261917807839
+stopTracer(t, "runCustomPasses");#866,17.32043776512146
+report(JSError.make(EMPTY_MODULE_LIST_ERROR));#411,17.319192543029786
+logger.fine("Normalizing");#1849,17.318185286088422
+stopTracer(tracer, "toSourceArray");#1557,17.316781910983
+return lastChild;#2413,17.31411850452423
+return "";#2152,17.313236660427517
+break;#1942,17.31202205022176
+InputId id = input.getInputId();#492,17.309890031814575
+return compileModules(#512,17.308124923706053
+if (typeRegistry == null) {#1140,17.30563868009127
+protected void removeExternInput(InputId id) {#1007,17.30255917140416
+CheckLevel.OFF);#268,17.302452532450356
+void initInputsByIdMap() {#482,17.299331855773925
+public Result compile(JSSourceFile[] externs,#551,17.297623761494954
+RhinoErrorReporter.TYPE_PARSE_ERROR),#267,17.297237102801983
+if (options.tracer.isOn()) {#911,17.29670664469401
+new SourceInformationAnnotator(#1372,17.296086356753396
+new RecordFunctionInformation(#1865,17.29494307591365
+fillEmptyModules(modules);#350,17.294222484935414
+public void init(JSSourceFile[] externs, JSModule[] modules,#335,17.29209222793579
+Tracer t = newTracer("generateReport");#542,17.29054398006863
+PrintStreamErrorManager printer =#249,17.2903870173863
+modules.add(modulesByInput.get(input));#1443,17.29004157673229
+runSanityCheck();#1360,17.28806978861491
+boolean areNodesEqualForInlining(Node n1, Node n2) {#980,17.28716500600179
+"Please report this problem.\n" + message;#2011,17.287118487887913
+cb.append(delimiter)#1651,17.28682663566188
+if (module.getInputs().isEmpty()) {#433,17.28679344389174
+.manageDependencies(options.dependencyOptions, inputs);#1298,17.284652709960938
+startPass("recordFunctionInformation");#1863,17.284255027770996
+getExternsInOrder());#2274,17.283423816456516
+public boolean acceptEcmaScript5() {#1917,17.283108364452016
+builder.setTagAsStrict(firstOutput &&#1712,17.282079696655273
+boolean replaceIncrementalSourceAst(JsAst ast) {#1055,17.28096001488822
+return sourceMap;#2119,17.28036141395569
+private WarningsGuard warningsGuard;#110,17.278635025024414
+new TransformAMDToCJSModule(this).process(null, root);#1408,17.27679177125295
+private TypeValidator typeValidator;#157,17.27662420272827
+return null;#2088,17.27591101328532
+Preconditions.checkState(getInput(id) == null, "Duplicate input %s", id.getIdName());#1042,17.274699702407375
+return n1.isEquivalentToTyped(n2);#985,17.274683237075806
+@Override#2267,17.26887822151184
+ProcessCommonJSModules cjs = new ProcessCommonJSModules(this,#1411,17.267553482055664
+int numInputs = inputs.size();#1571,17.267364558051614
+Node newRoot = ast.getAstRoot(this);#1105,17.2672101855278
+private void processNewScript(JsAst ast, Node originalRoot) {#2345,17.26695801230038
+process(recordFunctionInfoPass);#1867,17.264502612027254
+"INTERNAL COMPILER ERROR.\n" +#2010,17.263704199539987
+return options;#2131,17.26340253012521
+DiagnosticGroups.CHECK_VARIABLES, CheckLevel.OFF));#301,17.263049806867325
+toSource(cb, i++, scriptNode);#1526,17.255661010742188
+module.add(SourceFile.fromCode(#434,17.255408455343808
+phaseOptimizer.consume(getPassConfig().getOptimizations());#1803,17.25212233407157
+public void processDefines() {#1827,17.249587376912434
+Node originalRoot = input.getAstRoot(this);#2320,17.248362183570862
+return moduleInputs.get(0).getAstRoot(this);#2113,17.247545968918573
+runHotSwapPass(originalRoot, js, passFactory);#2366,17.241296672821044
+process(pass);#797,17.23884606361389
+return new Result(getErrors(), getWarnings(), debugLog.toString(),#921,17.237100559732188
+new CodeChangeHandler.RecentChange();#1873,17.236479418618337
+private void runSanityCheck() {#823,17.23342409133911
+initOptions(newCompilerOptions());#1480,17.233067648751394
+Throwables.propagate(e);#1448,17.23295259475708
+stripCode(options.stripTypes, options.stripNameSuffixes,#785,17.226550060769785
+logger.info("Performing HotSwap for pass " + passFactory.getName());#2374,17.224131126403808
+init(externs, inputs, options);#536,17.22358202934265
+this.externs = makeCompilerInput(externs, true);#352,17.2226779120309
+while (true) {#640,17.220525308088824
+throw e;#2017,17.218730109078543
+if (!precheck()) {#670,17.218615341186524
+debugLog.append('\n');#2057,17.2145893573761
+if (options.removeTryCatchFinally) {#776,17.21415958404541
+inputs.add(new CompilerInput(file, isExtern));#392,17.203116780235653
+return null;#2391,17.199818505181206
+if (options.transformAMDToCJSModules) {#1407,17.198381223176654
+externs.add(input);#1338,17.19569025039673
+return input.getAstRoot(this);#1466,17.18886844928448
+return options.getLanguageIn();#1927,17.187451102516867
+return getErrors();#931,17.184487448798286
+boolean isBase = "base".equals(resourceName);#2395,17.1844383688534
+jsRoot = state.jsRoot;#2234,17.180906931559246
+if (options.recordFunctionInformation) {#697,17.180855164161095
+return inputs;#2249,17.179689952305385
+normalize();#1797,17.17632075718471
+interpreter = new ClosureReverseAbstractInterpreter(#1209,17.174422127859934
+public JSTypeRegistry getTypeRegistry() {#1139,17.174241270337784
+return true;#1921,17.17403203790838
+sourceMap, externExports, state.cssNames, state.idGeneratorMap);#924,17.17142575127738
+modulesByInput.put(input, m);#1417,17.169099378585816
+new LoggerErrorManager(createMessageFormatter(), logger));#247,17.167008018493654
+return input.getAstRoot(this);#1499,17.16604526226337
+return abstractInterpreter;#1215,17.16268663406372
+this, originalCode,#2430,17.161350396963265
+Lists.<SourceFile>newArrayList(inputs),#523,17.160023538689863
+externExports();#688,17.15190938802866
+|| collectionRoot.isBlock());#2271,17.150621477762858
+CompilerInput input = this.getInput(ast.getInputId());#2316,17.14924249649048
+builder.setOutputCharset(charset);#1718,17.14885425567627
+CompilerInput getSynthesizedExternsInput() {#2285,17.148779153823853
+stopTracer(tracer, "toSource");#1531,17.14582125345866
+@SuppressWarnings("unchecked")#606,17.144111792246502
+return cfa.getCfg();#1845,17.143829186757404
+runHotSwapPass(null, null, ensureDefaultPassConfig().garbageCollectChecks);#2352,17.14324363708496
+sb.setLength(0);#1734,17.142871379852295
+handler.reportChange();#1900,17.142140648581766
+void resetUniqueNameId() {#964,17.137418111165363
+if (options.processCommonJSModules) {#1421,17.134872118632
+return;#677,17.132094740867615
+private final ErrorReporter defaultErrorReporter =#166,17.130916754404705
+input.getModule().remove(input);#1341,17.130479858035134
+Node parent = getNodeForCodeInsertion(null);#2403,17.123428463935852
+return convention;#1908,17.121860095432826
+endPass();#835,17.12044416155134
+void recordFunctionInformation() {#1861,17.11668598651886
+ReferenceCollectingCallback refCollector =#1176,17.11189866065979
+this.errorManager = errorManager;#226,17.105939547220867
+cfa.process(null, jsRoot);#2149,17.105790197849274
+boolean precheck() {#751,17.09152943747384
+initInputsByIdMap();#447,17.090302181243896
+endPass();#801,17.088649613516672
+public static void setLoggingLevel(Level level) {#2141,17.088054248264857
+injectedLibraries.clear();#2243,17.087632942199708
+Preconditions.checkState(newInput.getInputId().equals(inputIdOnAst));#1083,17.085010748643143
+return hasHaltingErrors();#2050,17.08437815579501
+staleInputs = true;#1299,17.08406925201416
+DiagnosticType.error("JSC_EMPTY_ROOT_MODULE_ERROR",#402,17.082910427680382
+boolean colorize = options.shouldColorizeErrorOutput();#234,17.082820415496826
+pass.hotSwapScript(js, originalRoot);#2375,17.079954836103653
+th.start();#639,17.079741764068604
+debugLog.append(str);#2056,17.074299465526234
+private JSTypeRegistry typeRegistry;#2203,17.068463802337646
+staleInputs = true;#1339,17.066554811265732
+Preconditions.checkState(root.isScript());#1638,17.06641609018499
+Node emptyScript = new Node(Token.SCRIPT);#2336,17.064601242542267
+stopTracer(t, "generateReport");#544,17.058740784140195
+return;#671,17.055241346359253
+InputId inputId = ast.getInputId();#2337,17.053920364379884
+ensureDefaultPassConfig().getPreprocessorSymbolTable();#1183,17.049178457260133
+options.setWarningLevel(#273,17.04818081855774
+stopTracer(tracer, "computeCFG");#1844,17.04447303098791
+Preconditions.checkState(collectionRoot.isScript()#2270,17.044287905973547
+return true;#1086,17.041699137006486
+public void init(JSSourceFile[] externs, JSSourceFile[] inputs,#310,17.04053427956321
+fillEmptyModules(modules);#1348,17.033769861857095
+printer.setSummaryDetailLevel(options.summaryDetailLevel);#251,17.02892203952955
+if (options.tracer.isOn()) {#903,17.026757685343423
+return warningsGuard.level(error);#2001,17.02574610710144
+RemoveTryCatch r = new RemoveTryCatch(this);#833,17.024151643117268
+Lists.<JSModule>newArrayList(modules), options);#338,17.02033619447188
+endPass();#1869,17.01327678135463
+return true;#1122,17.01161425454276
+return runCallable(callable, useThreads, options.tracer.isOn());#599,17.009126742680866
+Lists.newArrayList(extern), Lists.newArrayList(modules), options);#513,17.00541298730033
+if (synthesizedExternsInput == null) {#2286,16.998978508843315
+InputId inputIdOnAst = newInput.getAstRoot(this).getInputId();#1082,16.998530864715576
+.append(interpreter).getFirst();#1211,16.998366615988992
+setErrorManager(errorManager);#215,16.997999451377176
+CompilerInput oldInput = getInput(ast.getInputId());#1056,16.996906631871273
+externsRoot.addChildToBack(n);#1333,16.985745827356975
+DiagnosticType.error("JSC_EMPTY_MODULE_LIST_ERROR",#398,16.98422866821289
+if (inputsById.containsKey(ast.getInputId())) {#1024,16.978955919092353
+return errorManager.getWarnings();#945,16.978296059828537
+firstChild, injectedLibraries.get("base"));#2408,16.972693573344838
+initInputsByIdMap();#374,16.97071781158447
+DiagnosticType.error("JSC_MODULE_DEPENDENCY_ERROR",#81,16.969770550727844
+if (options.getTweakProcessing().shouldStrip()) {#848,16.964512724625436
+Preconditions.checkState(jsRoot == null);#533,16.96217542886734
+void setCssRenamingMap(CssRenamingMap map) {#1811,16.959405422210693
+th.join();#642,16.955702781677246
+FunctionInformationMap getFunctionalInformationMap() {#2134,16.933062473932903
+DiagnosticGroups.GLOBAL_THIS,#274,16.931580089387438
+private FunctionInformationMap functionInformationMap;#145,16.929168891906738
+InputId id = ast.getInputId();#1041,16.923922061920166
+phaseOptimizer.consume(getPassConfig().getChecks());#765,16.923478603363037
+return inputsById.get(id);#1000,16.9191951751709
+endPass();#852,16.91458238874163
+Preconditions.checkState(currentTracer != null,#887,16.911587771247415
+this.inputs = getAllInputsFromModules(modules);#371,16.91146689967105
+addChangeHandler(recentChange);#206,16.91052636233243
+progress = newProgress;#2304,16.90569643540816
+typeRegistry = new JSTypeRegistry(oldErrorReporter, options.looseTypes);#1141,16.895702600479126
+.append("*/\n");#1658,16.894670988384046
+state.injectedLibraries = Maps.newLinkedHashMap(injectedLibraries);#2223,16.89129137992859
+removeExternInput(new InputId(sourceName));#2385,16.889482378959656
+return errorManager.getErrors();#938,16.88623038927714
+this, ReferenceCollectingCallback.DO_NOTHING_BEHAVIOR);#1178,16.88495569229126
+void prepareAst(Node root) {#1856,16.88395223617554
+"JSC_OPTIMIZE_LOOP_ERROR",#171,16.883537673950194
+endPass();#1852,16.88222857883998
+continue;#1356,16.88104510307312
+public void check() {#755,16.881020954677037
+public static final DiagnosticType OPTIMIZE_LOOP_ERROR = DiagnosticType.error(#170,16.876666856848676
+Lists.<JSSourceFile>newArrayList(inputs), options);#313,16.876526713371277
+symbolTable.findScopes(this, externsRoot, jsRoot);#1167,16.875295556109883
+Logger.getLogger("com.google.javascript.jscomp");#186,16.874744632027365
+injectedLibraries.putAll(state.injectedLibraries);#2244,16.874151070912678
+state.anonymousFunctionNameMap, state.stringMap, functionInformationMap,#923,16.870111846923827
+CheckLevel level = error.getDefaultLevel();#1982,16.860914366585867
+Charsets.UTF_8));#2424,16.86032337612576
+setLifeCycleStage(state.lifeCycleStage);#2241,16.858351819655475
+"Bad module: " + module.getName());#1580,16.857152726915146
+builder.setPrettyPrint(options.prettyPrint);#1707,16.855794525146486
+.replaceAll("%num%", String.valueOf(inputSeqNum));#1649,16.850955843925476
+guards.add(options.getWarningsGuard());#289,16.85061126947403
+setErrorManager(#246,16.849538644154865
+symbolTable.fillPropertySymbols(this, externsRoot, jsRoot);#1191,16.843238540317703
+.append("\n");#1652,16.842571205563015
+inputsById.remove(id);#1013,16.842126066034492
+Preconditions.checkState(jsRoot == null);#565,16.84006255865097
+return new JsAst(file).getAstRoot(this);#1456,16.833740605248344
+.replaceAll("%name%", Matcher.quoteReplacement(inputName))#1648,16.827387750148773
+modules.get(0).add(newInput);#1117,16.819380367503445
+private Tracer currentTracer = null;#871,16.818008422851562
+CheckLevel newLevel = warningsGuard.level(error);#1984,16.813862323760986
+return;#773,16.810022473335266
+return options.errorFormat.toFormatter(this, colorize);#235,16.80854034423828
+return externs;#2254,16.80851893954807
+logger.fine("Remove try/catch/finally");#831,16.807092547416687
+return;#683,16.799483966827392
+List<T1> externs,#320,16.79552485148112
+new SemanticReverseAbstractInterpreter(#1206,16.794501122974214
+stripTypePrefixes, stripNamePrefixes);#847,16.79132709503174
+return;#667,16.784104704856873
+return;#1010,16.77967119216919
+jsRoot.addChildToBack(n);#1377,16.777867476145428
+CompilerInput oldInput = getInput(ast.getInputId());#1100,16.77631327980443
+.process(externsRoot, jsRoot);#1829,16.772106471814606
+if (options.transformAMDToCJSModules || options.processCommonJSModules) {#1276,16.767890788890696
+Node externAndJsRoot;#119,16.766852696736652
+private JSTypeRegistry typeRegistry;#153,16.763632376988728
+functionInformationMap = recordFunctionInfoPass.getMap();#1868,16.75394880771637
+return input.getSourceFile();#2067,16.753926072801864
+phaseOptimizer.setSanityCheck(sanityCheck);#1801,16.74839267730713
+public void rebuildInputsFromModules() {#445,16.74622658888499
+options.extraAnnotationNames);#1957,16.74161605834961
+return externAndJsRoot;#950,16.73731379075484
+Node firstChild = loadLibraryCode(resourceName).removeChildren();#2400,16.736671924591064
+logger.fine("Recording function information");#1862,16.734287335322453
+Tracer tracer = newTracer("parseInputs");#1263,16.73245480481316
+inputs.add(input);#465,16.728723117283412
+return options.propertyRenaming == PropertyRenamingPolicy.HEURISTIC ||#1833,16.723256565275648
+Node oldRoot = oldInput.getAstRoot(this);#1063,16.722316854140338
+Preconditions.checkNotNull(options);#2000,16.716592379978724
+options.checkTypes = true;#258,16.71139563046969
+startPass("removeTryCatchFinally");#832,16.708945274353027
+return;#1806,16.70726716518402
+private void runHotSwapPass(#2370,16.706246280670165
+checkFirstModule(modules);#349,16.704165077209474
+lastIndex = index;#1746,16.700413117041954
+options);#524,16.69341630935669
+Preconditions.checkNotNull(js);#2347,16.689146518707275
+builder.setSourceMapDetailLevel(options.sourceMapDetailLevel);#1711,16.68899695078532
+emptyScript.setInputId(inputId);#2338,16.684794562203543
+init(Lists.<JSSourceFile>newArrayList(externs),#312,16.67980332808061
+guards.add(#286,16.67979109287262
+options);#556,16.67579116821289
+return;#2318,16.671435713768005
+return null;#1362,16.667384401957193
+p.process(externsRoot, jsRoot);#806,16.66319340467453
+continue;#1324,16.66276224454244
+Node root = input.getAstRoot(this);#1015,16.658914184570314
+private AbstractCompiler.LifeCycleStage lifeCycleStage;#2204,16.658429463704426
+recordFunctionInformation();#698,16.65527229309082
+externExports = pass.getGeneratedExterns();#799,16.654422442118328
+check();#681,16.652729988098145
+.append(root.getJSDocInfo().getLicense())#1657,16.64933960254376
+module.addDependency(dependency);#1434,16.648099382718403
+return externAndJsRoot;#1383,16.647799858680138
+Node externsRoot;#117,16.63884162902832
+boolean staleInputs = false;#1281,16.635855674743652
+continue;#1405,16.635755252838134
+phaseOptimizer.process(externsRoot, jsRoot);#1804,16.633463056463945
+return false;#1107,16.62531418270535
+state.typeRegistry = typeRegistry;#2221,16.622358798980713
+return builder.build();#1720,16.61544926961263
+phaseOptimizer.process(externsRoot, jsRoot);#766,16.608875525625127
+phaseOptimizer.setSanityCheck(sanityCheck);#763,16.589356994628908
+public void optimize() {#1791,16.588269778660365
+return;#2334,16.574331045150757
+return false;#1060,16.566341506110298
+Tracer.logAndClearCurrentThreadTrace();#631,16.561910670736562
+options.stripTypePrefixes, options.stripNamePrefixes);#786,16.561102133530838
+synthesizedExternsInput = newExternInput(SYNTHETIC_EXTERNS);#2287,16.558216639927455
+DiagnosticType.error("JSC_OPTIMIZE_LOOP_ERROR",#174,16.556257705688477
+getOptions().errorHandler.report(level, error);#1992,16.549089908599854
+stopTracer(tracer, "parseInputs");#1385,16.53485123316447
+return compile(Lists.<SourceFile>newArrayList(externs),#522,16.529239702224732
+new PrintStreamErrorManager(createMessageFormatter(), outStream);#250,16.52561827806326
+private void runHotSwap(#2363,16.518519507514107
+initModules(Lists.<SourceFile>newArrayList(externs),#337,16.515864826384046
+RhinoErrorReporter.forNewRhino(this);#167,16.509327464633518
+state.lifeCycleStage = getLifeCycleStage();#2222,16.50861695233513
+externAndJsRoot = IR.block(externsRoot, jsRoot);#1255,16.50244379043579
+cb.append(";");#1684,16.495677546450967
+Preconditions.checkState(currentTracer == null);#878,16.488054948694565
+process(cfa);#1843,16.48233445485433
+NodeTraversal.traverse(this, n, sia);#1374,16.48019779205322
+state.externsRoot = externsRoot;#2215,16.47942888736725
+logger.setLevel(level);#2142,16.474233453924004
+externsRoot.addChildToBack(n);#1272,16.469004106521606
+RhinoErrorReporter.forOldRhino(this);#163,16.46648973888821
+ChainableReverseAbstractInterpreter interpreter =#1205,16.462344394010657
+return getResult();#570,16.461317539215088
+typeRegistry = state.typeRegistry;#2240,16.46126753943307
+Preconditions.checkNotNull(#224,16.45992310841878
+externsRoot = state.externsRoot;#2233,16.45971029996872
+pass.process(null, root);#1858,16.45543924967448
+runSanityCheck();#819,16.449824766679242
+initModules(externs, Lists.newArrayList(module), options);#328,16.445587635040283
+Preconditions.checkNotNull(passes);#737,16.44037005106608
+externsRoot = IR.block();#1252,16.43156917278583
+return synthesizedExternsInput;#2289,16.42211588223775
+originalCode = CharStreams.toString(new InputStreamReader(#2421,16.42078767504011
+return null;#1381,16.419910170815207
+module.add(input);#325,16.41400686899821
+return Normalize.parseAndNormalizeSyntheticCode(#2429,16.413568945492017
+level = newLevel;#1986,16.40148214193491
+return options.cssRenamingMap;#1817,16.396135330200195
+return compileModules(Lists.<SourceFile>newArrayList(externs),#554,16.382742751728404
+Preconditions.checkState(#1080,16.37682394547896
+return null;#1314,16.368484942118325
+runnable.run();#649,16.349490880966187
+return getResult();#538,16.334786971410114
+codeChangeHandlers.add(handler);#1884,16.334497305063103
+scriptNode != null;#1524,16.33372974395752
+options.cssRenamingMap = map;#1812,16.32560238471398
+private final com.google.javascript.rhino.ErrorReporter oldErrorReporter =#162,16.32326057979039
+this.getTypeRegistry().clearNamedTypes();#2354,16.322961568832397
+setErrorManager(printer);#252,16.31040802001953
+check();#676,16.304804801940918
+return;#768,16.298829793930054
+runSanityCheck();#702,16.298589272932574
+options.propertyRenaming ==#1834,16.293872220175608
+void removeTryCatchFinally() {#830,16.290882968902586
+abstractInterpreter = interpreter;#1213,16.281180895291843
+state.externs = externs;#2217,16.277369022369385
+codeChangeHandlers.remove(handler);#1889,16.276009192833534
+if (!options.checkSymbols &&#298,16.26664917285626
+removeTryCatchFinally();#777,16.259544610977173
+return typeRegistry;#1143,16.259420500861275
+return options.checkTypes;#1964,16.254635429382326
+errorManager.report(level, error);#1994,16.253156598409017
+break;#643,16.253119150797527
+ensureLibraryInjected("base");#2397,16.247314012967625
+inputsById = Maps.newHashMap();#1496,16.24331734975179
+public MemoizedScopeCreator getTypedScopeCreator() {#1147,16.23038308760699
+public void replaceScript(JsAst ast) {#2315,16.220730304718018
+root.detachFromParent();#1017,16.210859665503868
+jsRoot.detachChildren();#1245,16.206425226651707
+externs.remove(input);#1014,16.19794726371765
+externsRoot.setIsSyntheticBlock(true);#1253,16.19794601864285
+staleInputs = true;#1342,16.191057417127823
+private void removeSyntheticVarsInput() {#2383,16.18811196547288
+options.checkTypes = false;#260,16.181165034954365
+MemoizedScopeCreator typedScopeCreator = getTypedScopeCreator();#1162,16.17713806845925
+symbolTable.addScopes(typedScopeCreator.getAllMemoizedScopes());#1164,16.171029020238805
+CheckLevel.ERROR);#281,16.170013109842937
+jsRoot.setIsSyntheticBlock(true);#1250,16.157835721969604
+rebuildInputsFromModules();#1349,16.14340731302897
+externsRoot.addChildToFront(ast.getAstRoot(this));#1029,16.13430963863026
+sanityCheck.create(this).process(externsRoot, jsRoot);#824,16.12214538029262
+scriptNode = scriptNode.getNext()) {#1525,16.106572928252042
+externAndJsRoot.setIsSyntheticBlock(true);#1256,16.103017003912676
+addToDebugLog("Parsing: " + file.getName());#1455,16.09599542617798
+getRoot().getLastChild().addChildToBack(newRoot);#1110,16.093300267269736
+processNewScript(ast, originalRoot);#2322,16.085738989023064
+externs = state.externs;#2235,16.078212669917516
+maybeSanityCheck();#894,16.03097809685601
+processNewScript(ast, emptyScript);#2342,16.021381231454704
+symbolTable.addSymbolsFrom(globalNamespace);#1173,16.019655829981755
+PropertyRenamingPolicy.AGGRESSIVE_HEURISTIC;#1835,16.002090701350458
+return null;#1270,16.000722591693584
+break;#1948,15.998368978500366
+symbolTable.addSymbolsFrom(preprocessorSymbolTable);#1185,15.989360718500047
+symbolTable.addSymbolsFrom(typedScopeCreator);#1165,15.96647834777832
+inputs.remove(oldInput);#1085,15.94862174987793
+externs.add(0, input);#1030,15.947524343218122
+this.removeSyntheticVarsInput();#2355,15.939683641706194
+NodeTraversal.traverse(this, getRoot(), refCollector);#1179,15.938988458542596
+process(p);#863,15.913186754499163
+parent.addChildrenToFront(firstChild);#2405,15.889493644237518
+externsRoot.detachChildren();#1242,15.88478889465332
+process(r);#834,15.88119626045227
+getRoot().getLastChild().addChildToBack(newRoot);#1067,15.879026503789992
+options.checkGlobalThisLevel);#275,15.874891729915843
+oldRoot.getParent().replaceChild(oldRoot, newRoot);#1065,15.858976682027182
+return functionInformationMap;#2135,15.854024993048775
+process(r);#851,15.849223732948303
+sourceMap.setPrefixMappings(options.sourceMapLocationMappings);#384,15.839647500411324
+symbolTable.addSymbolsFrom(refCollector);#1180,15.827853988198672
+optimize();#693,15.806133365631103
+module.addAfter(newInput, oldInput);#1075,15.797692523283118
+return;#365,15.796599578857421
+module.remove(oldInput);#1076,15.73678156045767
+void processAMDAndCommonJSModules() {#1394,15.591067632039389
+processAMDAndCommonJSModules();#1277,15.415322363376617
+parent.addChildrenAfter(#2407,15.107181390126547

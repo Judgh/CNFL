@@ -1,0 +1,201 @@
+public boolean isVarArgsParameter(Node parameter) {#323,19.473894045903133
+public boolean isOptionalParameter(Node parameter) {#318,19.24912182490031
+public String getGlobalObject() {#274,19.22998110453288
+if (!isDeprecatedCall) {#100,19.026242315769196
+Node callNode) {#292,18.981109272349965
+if (isDeprecatedCall) {#84,18.950957706996373
+FunctionType getterType, ObjectType objectType) {#266,18.855622450510662
+public class ClosureCodingConvention extends DefaultCodingConvention {#38,18.8388888835907
+public String getAbstractMethodName() {#245,18.83499355316162
+String functionName){#189,18.822043228149415
+@Override#173,18.74956464767456
+if (name != null) {#369,18.739008470015094
+String methodName = null;#131,18.68243350982666
+if (methodName.equals("inherits")) {#143,18.667914591337507
+@Override#210,18.635535955429077
+boolean isDeprecatedCall = callNode.getChildCount() == 2 &&#82,18.59023839777166
+public List<String> identifyTypeDeclarationCall(Node n) {#225,18.588667140287512
+if (type != null) {#71,18.504493973471902
+Node parameters = safeNext(thisValue);#378,18.50299902523265
+if (name.getType() == Token.STRING) {#234,18.487800280253094
+@Override#183,18.483839511871338
+if (methodName != null) {#142,18.441349983215332
+@Override#219,18.440361499786377
+String name = callName.getString();#135,18.416737365722657
+if (callee != null && callee.getType() == Token.GETPROP) {#193,18.387760400772095
+public Collection<AssertionFunctionSpec> getAssertionFunctions() {#333,18.368450365568464
+if (functionName.equals(qualifiedName)) {#195,18.361456632614136
+String className = null;#190,18.346775436401366
+@Override#322,18.32825207710266
+String qualifiedName = callee.getQualifiedName();#194,18.315479516983032
+@Override#317,18.300411224365234
+@Override#327,18.276161670684814
+return new Bind(fn, thisValue, parameters);#379,18.24076085341604
+@Override#224,18.225665807724
+if (typeArray.getType() == Token.ARRAYLIT) {#230,18.215263325235117
+public String getExportPropertyFunction() {#211,18.213914108276366
+if (dollarIndex != -1) {#137,18.20773919423421
+String name = callTarget.getQualifiedName();#368,18.204771169026692
+if (target != null) {#197,18.196181802188647
+"Object literal expected as second argument");#44,18.190877641950333
+callNode.getChildCount() != 2) {#257,18.187813809043483
+Node fn = callTarget.getNext();#384,18.177414613611557
+if (callName.getType() == Token.GETPROP) {#132,18.172609424591066
+private static final long serialVersionUID = 1L;#40,18.157632387601414
+return ImmutableList.<AssertionFunctionSpec>of(#334,18.139240601483515
+public boolean isPrivate(String name) {#328,18.108206662264738
+@Override#67,18.1081223487854
+SubclassType type = typeofClassDefiningName(callName);#70,18.097613886782998
+if (!"goog.reflect.object".equals(callName.getQualifiedName()) ||#295,18.093562309558575
+OBJECTLIT_EXPECTED));#309,18.085487982806036
+methodName = callName.getLastChild().getString();#133,18.08090721933465
+public boolean isSuperClassReference(String propertyName) {#153,18.073781285967147
+if (fn == null) {#374,18.0720796585083
+@Override#249,18.058303356170654
+if (subclass != null &&#114,18.05818168933575
+public String getExportSymbolFunction() {#220,18.056099891662598
+subclass = callName.getFirstChild();#86,18.05213939442354
+Node fn = callTarget.getNext();#373,18.04733035143684
+return null;#241,18.036477906363352
+|| name.equals("goog$bind")) {#371,18.03092449361628
+if (fn == null) {#385,18.012454541524253
+new AssertionFunctionSpec("goog.asserts.assertInstanceof",#348,17.998076019287108
+return null;#149,17.99607563018799
+Node target = callee.getNext();#196,17.994312788310804
+if (result != null) {#356,17.991380431435324
+Node thisValue = safeNext(fn);#377,17.99053607267492
+@Override#244,17.98695659637451
+@Override#283,17.981011390686035
+public boolean isPropertyTestFunction(Node call) {#284,17.98024426973783
+@Override#273,17.974090337753296
+private SubclassType typeofClassDefiningName(Node callName) {#129,17.965558952755398
+String callName = callArg.getQualifiedName();#252,17.96065926551819
+return null;#98,17.95233601790208
+@Override#152,17.949882984161377
+if (n.getType() != Token.CALL) {#363,17.94945176442464
+public String extractClassNameIfRequire(Node node, Node parent){#184,17.945535771987018
+functionType.defineDeclaredProperty("getInstance", getterType,#267,17.929725546585885
+@Override#353,17.907126903533936
+callNode.getChildCount() != 3) {#296,17.906351039284154
+subclass = callName.getNext();#89,17.90114676952362
+Node subclass = null;#72,17.883779352361504
+JSTypeNative.NUMBER_TYPE),#337,17.877652471715752
+@Override#332,17.86282777786255
+Node callee = node.getFirstChild();#192,17.85944426059723
+return extractClassNameIfGoog(node, parent, "goog.provide");#175,17.85686497066332
+Node callName = callNode.getFirstChild();#69,17.854910214742024
+public String getSingletonGetterClassName(Node callNode) {#250,17.84475545322194
+return qualifiedName.getType() == Token.GETPROP &&#164,17.82471619711982
+return className;#203,17.810181379318237
+Node superclass = callNode.getLastChild();#73,17.810115589815027
+FunctionType childCtor, SubclassType type) {#52,17.770362112257217
+return null;#91,17.756182757290926
+if (!("goog.addSingletonGetter".equals(callName) ||#255,17.74793243408203
+if (name.equals("goog.bind")#370,17.74737787246704
+return new Bind(fn, thisValue, parameters);#390,17.746039189790423
+if (!endsWithPrototype(subclass)) {#101,17.724025839851016
+List<String> typeNames = Lists.newArrayList();#231,17.689460073198592
+if (n != null) {#398,17.678153384815563
+new AssertionFunctionSpec("goog.asserts.assert"),#335,17.67627417522928
+new AssertionFunctionSpec("goog.asserts.assertString",#338,17.670127193133037
+subclass = subclass.getFirstChild();#105,17.66909254921807
+if ("goog.addDependency".equals(callName.getQualifiedName()) &&#227,17.66263297887949
+JSTypeNative.FUNCTION_INSTANCE_TYPE),#341,17.661811901972843
+subclass.isUnscopedQualifiedName() &&#115,17.657269977387926
+int dollarIndex = name.lastIndexOf('$');#136,17.651547114054363
+t.getCompiler().report(JSError.make(t.getSourceName(), callNode,#308,17.651465288798015
+n.getChildCount() >= 3) {#228,17.631139066484238
+return null;#394,17.61116831643241
+JSTypeNative.STRING_TYPE),#339,17.60825317556208
+if (NodeUtil.isExprCall(parent)) {#191,17.595319959852432
+return null;#121,17.590315137590682
+new AssertionFunctionSpec("goog.asserts.assertArray",#344,17.58925175666809
+if (name.equals("goog.partial") || name.equals("goog$partial")) {#382,17.578217474619546
+if (type == SubclassType.MIXIN) {#94,17.57211840780158
+superclass.isUnscopedQualifiedName()) {#116,17.563989942724053
+return extractClassNameIfGoog(node, parent, "goog.require");#185,17.563149148767646
+for (Node name = typeArray.getFirstChild(); name != null;#232,17.559693654378254
+new AssertionFunctionSpec("goog.asserts.assertNumber",#336,17.557411551475525
+return new ObjectLiteralCast(typeNode.getQualifiedName(),#313,17.52175455093384
+Preconditions.checkArgument(call.getType() == Token.CALL);#285,17.520901555600375
+Preconditions.checkArgument(callNode.getType() == Token.CALL);#293,17.520068367322285
+qualifiedName.getLastChild().getString().equals("prototype");#165,17.517385068147078
+return null;#401,17.508327075413295
+Node parameters = safeNext(fn);#389,17.50528460741043
+"goog.isDef", "goog.isNull", "goog.isDefAndNotNull",#279,17.5004386583964
+JSTypeNative.OBJECT_TYPE)#349,17.495403376492586
+Node thisValue = null;#388,17.488605771745956
+public SubclassRelationship getClassesDefinedByCall(Node callNode) {#68,17.47548098564148
+static final DiagnosticType OBJECTLIT_EXPECTED = DiagnosticType.warning(#42,17.4583422053944
+Bind result = super.describeFunctionBind(n);#355,17.45231783390045
+return false;#324,17.44495255606515
+public String extractClassNameIfProvide(Node node, Node parent){#174,17.42668628692627
+if (objectNode.getType() != Token.OBJECTLIT) {#306,17.422335533868697
+return false;#319,17.412302834647043
+if (!endsWithPrototype(superclass)) {#97,17.407232635899593
+Node typeArray = callName.getNext().getNext();#229,17.40505730478387
+private Node safeNext(Node n) {#397,17.37581513144753
+@Override#50,17.374001502990723
+functionType.defineDeclaredProperty("instance_", objectType,#269,17.372330082787407
+if (!typeNode.isQualifiedName()) {#301,17.350840886433918
+"goog.isString", "goog.isNumber", "goog.isBoolean",#280,17.342600652149745
+superclass = superclass.getFirstChild();#107,17.335775428348118
+public Bind describeFunctionBind(Node n) {#354,17.261441787083943
+private static String extractClassNameIfGoog(Node node, Node parent,#188,17.260425090789795
+return false;#329,17.251773153032577
+callName.getType() == Token.GETPROP;#83,17.235305412955906
+@Override#264,17.22034502029419
+new AssertionFunctionSpec("goog.asserts.assertObject",#342,17.219185948371887
+if (type == SubclassType.INHERITS) {#53,17.19213726941277
+@Override#290,17.181650161743164
+"goog$addSingletonGetter".equals(callName)) ||#256,17.178800370958115
+public void applySingletonGetter(FunctionType functionType,#265,17.16438407897949
+functionType.getSource());#268,17.163902623312815
+JSTypeNative.OBJECT_TYPE),#343,17.152943351052024
+call.getFirstChild().getQualifiedName());#287,17.130974167271663
+JSTypeNative.ARRAY_TYPE),#345,17.12149897488681
+Node callTarget = n.getFirstChild();#367,17.120334693363734
+new AssertionFunctionSpec("goog.asserts.assertFunction",#340,17.116945544878643
+return null;#364,17.112600326538086
+public void applySubclassRelationship(FunctionType parentCtor,#51,17.08087182044983
+return null;#258,17.031597031487358
+Node callName = n.getFirstChild();#226,17.02059895651681
+return result;#357,17.01808516184489
+Node callName = callNode.getFirstChild();#294,17.00802141825358
+private final Set<String> propertyTestFunctions = ImmutableSet.of(#278,16.995993764776934
+className = target.getString();#198,16.97977170944214
+return "superClass_".equals(propertyName);#154,16.977282106876373
+return null;#310,16.963749885559082
+childCtor.defineDeclaredProperty("superClass_",#54,16.954291142915423
+Node callArg = callNode.getFirstChild();#251,16.952197710673016
+return callArg.getNext().getQualifiedName();#261,16.93050789833069
+return null;#297,16.923294597201878
+"JSC_REFLECT_OBJECTLIT_EXPECTED",#43,16.91230158372359
+methodName = name.substring(dollarIndex + 1);#138,16.90496253967285
+"goog.isFunction", "goog.isArray", "goog.isObject");#281,16.876162988168222
+name = name.getNext()) {#233,16.857062703087216
+return new SubclassRelationship(type, subclass, superclass);#117,16.83891096982089
+Node typeNode = callName.getNext();#300,16.835517951420375
+return null;#302,16.774896091885036
+typeNode.getNext());#314,16.77276415702624
+return typeNames;#238,16.719040870666504
+private boolean endsWithPrototype(Node qualifiedName) {#163,16.615856511252268
+Node objectNode = typeNode.getNext();#305,16.573230743408203
+typeNames.add(name.getString());#235,16.514534300023858
+return SubclassType.INHERITS;#144,16.513691621668197
+return null;#386,16.51253296778752
+return "goog.abstractMethod";#246,16.46977894122784
+return "goog.global";#275,16.381302313371137
+return null;#102,16.371869214375813
+return null;#375,16.36846300271841
+return "goog.exportProperty";#212,16.348945379257202
+functionType.getSource());#270,16.33761194774083
+childCtor, parentCtor.getSource());#57,16.310346875871932
+public ObjectLiteralCast getObjectLiteralCast(NodeTraversal t,#291,16.22677653176444
+return propertyTestFunctions.contains(#286,16.165871400099533
+return n.getNext();#399,16.148709217707317
+return "goog.exportSymbol";#221,16.036574437068058
+return SubclassType.MIXIN;#146,16.02148931166705
+parentCtor.getPrototype(), parentCtor.getSource());#55,15.824184341430664
+childCtor.getPrototype().defineDeclaredProperty("constructor",#56,15.764032168821855
+);#350,15.673046493530274

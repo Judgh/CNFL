@@ -1,0 +1,426 @@
+if (str == null) {#273,20.43058916238638
+if (str == null) {#221,20.400245079627403
+if (str == null) {#714,20.17508176167806
+if (str == null) {#446,20.05214506785075
+if(str == null) {#372,19.99453608194987
+if (str == null) {#169,19.92867151896159
+if(str == null) {#120,19.867138862609863
+if(str == null) {#323,19.85392665863037
+if (str == null) {#664,19.81423625946045
+if (str == null) {#609,19.790412584940594
+if (dec == null && exp == null) {#560,19.751029719477113
+boolean hasDecPoint = false;#1327,19.721551259358723
+if (str == null) {#631,19.713525199890135
+if (str == null) {#682,19.710563151041665
+public static double toDouble(String str) {#249,19.704272951398575
+if (str == null) {#647,19.673288345336914
+if (str == null) {#698,19.655687650044758
+public static int toInt(String str) {#98,19.599427018846786
+public static float toFloat(String str) {#197,19.49433524268014
+if (chars[i] == '.') {#1394,19.477593700091045
+boolean hasExp = false;#1326,19.466736112322128
+public static float toFloat(String str, float defaultValue) {#220,19.45808966954549
+boolean foundDigit = false;#1329,19.4505002339681
+if (!allowSigns#1402,19.42462371377384
+if (array == null) {#1052,19.41473108927409
+public static float max(float a, float b, float c) {#1280,19.409302761680202
+if (array == null) {#880,19.405214564005533
+if (array == null) {#849,19.394615681966147
+if (str.startsWith("--")) {#452,19.363558869612845
+public static double toDouble(String str, double defaultValue) {#272,19.34524091084798
+public static float min(float a, float b, float c) {#1174,19.34515616768285
+if (array == null) {#767,19.334781710306803
+if (array == null) {#939,19.328461011250813
+if (array == null) {#821,19.327953338623047
+if (array == null) {#912,19.320732879638673
+if (array == null) {#794,19.318136787414552
+if (array == null) {#740,19.31404838562012
+if (array == null) {#993,19.306549135843913
+if (array == null) {#966,19.300770441691082
+if (chars[i] >= '0' && chars[i] <= '9') {#1386,19.2469939029578
+int start = (chars[0] == '-') ? 1 : 0;#1331,19.202149354494534
+return toFloat(str, 0.0f);#198,19.17754544709858
+public static double max(double a, double b, double c) {#1264,19.174969422189815
+public static int toInt(String str, int defaultValue) {#119,19.162672360738117
+if (chars[i] >= '0' && chars[i] <= '9') {#1353,19.158521536624793
+if (i == sz) {#1334,19.145980453491212
+if (i < chars.length) {#1385,19.14301636639763
+boolean allowSigns = false;#1328,19.1304069519043
+String mant;#466,19.118895617398348
+public static double min(double a, double b, double c) {#1158,19.100566211499665
+if (chars[i] == 'e' || chars[i] == 'E') {#1390,19.098073785955254
+return null;#683,19.088248697916665
+double max = array[0];#1028,19.062070465087892
+if (array== null) {#1021,19.036823018391928
+double min = array[0];#856,19.011578369140626
+return null;#665,18.994914627075197
+int sz = chars.length;#1325,18.97813057899475
+if (b < a) {#1083,18.97539291381836
+if (decPos > -1) {#472,18.965861320495605
+if (b < a) {#1137,18.953484217325848
+while (i < sz || (i < sz + 1 && allowSigns && !foundDigit)) {#1352,18.947240020289566
+public static int min(int a, int b, int c) {#1100,18.938600891514827
+return false; // str == "0x"#1335,18.93251140301044
+public static int max(int a, int b, int c) {#1206,18.90522595455772
+if (b < a) {#1119,18.90239969889323
+short max = array[0];#973,18.899732398986817
+return toInt(str, 0);#99,18.891948223114014
+public static long toLong(String str) {#147,18.88643482753209
+if (b < a) {#1101,18.88225746154785
+return null;#632,18.880961481730143
+public static boolean isNumber(String str) {#1320,18.86960002354213
+if (!(f.isInfinite() || (f.floatValue() == 0.0F && !allZeros))) {#522,18.86687783094553
+byte max = array[0];#1000,18.86630433400472
+return f;#525,18.856683546496974
+return false;#1301,18.843732833862305
+float max = array[0];#1059,18.842560132344563
+a = c;#1141,18.820669293403625
+public static short toShort(String str) {#350,18.810157094682967
+int max = array[0];#946,18.792724164326987
+a = c;#1247,18.789486527442932
+float min = array[0];#887,18.78830509185791
+if (c < a) {#1086,18.77284812927246
+for (int j = 1; j < array.length; j++) {#1029,18.766525745391846
+if (!(f.isInfinite() || (f.floatValue() == 0.0F && !allZeros))) {#579,18.763491928577423
+if (c < a) {#1140,18.76129519144694
+return null;#699,18.75590311686198
+return createLong(str);#461,18.753554170781914
+String exp;#468,18.745121869173918
+if (c < a) {#1104,18.73089167277018
+sz--; // don't want to loop to the last char, check it afterwords#1347,18.728278089452672
+public static Double createDouble(String str) {#646,18.72497374670846
+if (StringUtils.isBlank(str)) {#449,18.716368175688245
+public static byte toByte(String str) {#301,18.715518065861293
+for (int j = 1; j < array.length; j++) {#1060,18.714125116666157
+if (c < a) {#1122,18.710026613871257
+for (int j = 1; j < array.length; j++) {#947,18.707571585973103
+max = array[i];#976,18.701332439075816
+if (chars[i] == 'l'#1409,18.69676162885583
+if (sz > start + 1 && chars[start] == '0' && chars[start + 1] == 'x') {#1332,18.69377105300491
+public static Float createFloat(String str) {#630,18.69266435078212
+a = b;#1190,18.683874547481537
+if (StringUtils.isBlank(str)) {#718,18.683281898498535
+return false;#1297,18.680582173665364
+if (str.startsWith("0x") || str.startsWith("-0x") || str.startsWith("0X") || str.startsWith("-0X")) {#455,18.679579734802246
+max = array[i];#1003,18.67446049776944
+a = b;#1244,18.672786474227905
+short min = array[0];#801,18.671399943033855
+return d;#537,18.670879610123173
+if (!(d.isInfinite() || (d.floatValue() == 0.0D && !allZeros))) {#536,18.66267411525433
+long min = array[0];#747,18.659493001302085
+for (int j = 1; j < array.length; j++) {#920,18.658686916033428
+min = array[i];#831,18.656024152582344
+min = array[i];#750,18.655550696633078
+min = array[i];#804,18.655492089011453
+int min = array[0];#774,18.652410888671874
+return toDouble(str, 0.0d);#250,18.64288786837929
+max = array[j];#949,18.636714935302734
+for (int j = 1; j < array.length; j++) {#775,18.63417700926463
+&& (numeric.charAt(0) == '-' && isDigits(numeric.substring(1)) || isDigits(numeric))) {#508,18.633096468650688
+if (dec == null#506,18.62487636566162
+try {#375,18.622598934173585
+String dec;#467,18.615315090526234
+return null;#648,18.612456385294596
+byte min = array[0];#828,18.607711219787596
+if (str.charAt(i) != '0') {#613,18.60198923257681
+return false;#614,18.593355730960244
+min = array[j];#777,18.574892564253375
+int decPos = str.indexOf('.');#469,18.57418321308337
+try {#509,18.57369767702543
+try {#276,18.56986129283905
+long max = array[0];#919,18.569513003031414
+return createLong(numeric);#510,18.566560527256556
+a = b;#1138,18.565374791622162
+a = b;#1226,18.56445801258087
+public static Number createNumber(String str) throws NumberFormatException {#445,18.563990698920357
+if (b > a) {#1189,18.556743558247884
+if (b > a) {#1243,18.556269200642905
+try {#123,18.55243549346924
+if (c > a) {#1192,18.55181605021159
+if (hexDigits > 8) { // too many for an int#460,18.540145626774542
+try {#172,18.53494529724121
+public static boolean isDigits(String str) {#1295,18.530454126993813
+try {#326,18.529283618927003
+hasDecPoint = true;#1362,18.523594856262207
+if ((chars[i] < '0' || chars[i] > '9')#1339,18.518432749642265
+a = c;#1123,18.506232976913452
+a = b;#1120,18.500263333320618
+if (str.startsWith("-")) { // drop -#457,18.49798220854539
+a = c;#1193,18.49744164943695
+public NumberUtils() {#76,18.493410873413087
+a = b;#1208,18.49063730239868
+return Float.parseFloat(str);#225,18.48919693628947
+max = array[j];#922,18.487788633866742
+a = c;#1229,18.486618995666504
+if (b > a) {#1225,18.484330685933433
+for (int i = 0; i < str.length(); i++) {#1299,18.48026466369629
+return false;#1342,18.470936153246008
+a = b;#1084,18.469497621059418
+&& (chars[i] < 'A' || chars[i] > 'F')) {#1341,18.465904099600657
+return Float.NaN;#890,18.464724800803445
+for (int i = 1; i < array.length; i++) {#888,18.455991466840107
+try {#224,18.45573329925537
+if (expPos > -1 && expPos < str.length() - 1) {#495,18.453398858347246
+if (b > a) {#1207,18.451915295918784
+a = c;#1105,18.448904752731323
+if (c > a) {#1246,18.436247126261392
+return Float.NaN;#1062,18.433445410294965
+if (!Character.isDigit(str.charAt(i))) {#1300,18.429461887904576
+a = c;#1211,18.427408695220947
+private static boolean isAllZeros(String str) {#608,18.424404740333557
+if (expPos > -1 && expPos < str.length() - 1) {#555,18.424354061003655
+if (!(d.isInfinite() || (d.doubleValue() == 0.0D && !allZeros))) {#587,18.42415205637614
+if (c > a) {#1210,18.423025385538736
+if (expPos > -1) {#484,18.41914821806408
+a = b;#1102,18.418123841285706
+throw new NumberFormatException("A blank string is not a valid number");#450,18.417985562924986
+return true;#610,18.414119974772134
+for (int i = 1; i < array.length; i++) {#857,18.410207351048786
+if (c > a) {#1228,18.403133837381997
+a = c;#1087,18.397326707839966
+if (expPos > -1) {#474,18.389678455534437
+return Double.NaN;#859,18.378524346785113
+return Double.NaN;#1031,18.375153108076617
+return f;#580,18.369966012460214
+try {#585,18.360293600294327
+Float f = NumberUtils.createFloat(numeric);#521,18.35213158581708
+mant = str;#490,18.34117364883423
+for (int i = 1; i < array.length; i++) {#974,18.332799951235454
+for (int i = 1; i < array.length; i++) {#1001,18.33040789763133
+return d;#588,18.318051161589445
+throw new IllegalArgumentException("The Array must not be null");#850,18.316647639641396
+for (int i = 1; i < array.length; i++) {#829,18.304155429204304
+public static long toLong(String str, long defaultValue) {#168,18.30348269144694
+return !allowSigns && foundDigit;#1419,18.29792552524143
+throw new IllegalArgumentException("The Array must not be null");#741,18.295601698068474
+return toShort(str, (short) 0);#351,18.291502300061676
+throw new IllegalArgumentException("The Array must not be null");#881,18.290441549741306
+return Double.parseDouble(str);#277,18.289646996392143
+for (int i = 1; i < array.length; i++) {#748,18.28477954864502
+throw new NumberFormatException("A blank string is not a valid number");#719,18.284372153105558
+String numeric = str.substring(0, str.length() - 1);#501,18.27858043539113
+throw new IllegalArgumentException("The Array must not be null");#1022,18.27387336584238
+for (int i = 1; i < array.length; i++) {#802,18.267600814501446
+throw new IllegalArgumentException("The Array must not be null");#795,18.265481105217567
+char lastChar = str.charAt(str.length() - 1);#465,18.2613529364268
+public static final Double DOUBLE_ONE = Double.valueOf(1.0d);#59,18.261294325192768
+i++;#1383,18.259385790143693
+max = array[j];#1065,18.258937228809703
+&& (chars[i] < 'a' || chars[i] > 'f')#1340,18.25724501609802
+throw new IllegalArgumentException("The Array must not be null");#967,18.248147377601036
+for (int i = str.length() - 1; i >= 0; i--) {#612,18.246527637754166
+Double d = createDouble(str);#586,18.246032169887
+public static Long createLong(String str) {#681,18.244476863316127
+return toByte(str, (byte) 0);#302,18.237200184872275
+return false;#1322,18.236699549357095
+throw new IllegalArgumentException("The Array must not be null");#822,18.236426243415245
+throw new IllegalArgumentException("The Array must not be null");#768,18.234726062187782
+public static Integer createInteger(String str) {#663,18.234547206333705
+return null;#453,18.23453025817871
+try {#577,18.23418468899197
+public static final Float FLOAT_ONE = Float.valueOf(1.0f);#65,18.232898513476055
+int i = start;#1349,18.230541082528923
+dec = null;#492,18.22599893808365
+throw new IllegalArgumentException("The Array must not be null");#940,18.22365841498742
+throw new IllegalArgumentException("The Array must not be null");#994,18.216085764077995
+|| chars[i] == 'F')) {#1406,18.20990679340978
+try {#542,18.209509762850676
+public static byte min(byte a, byte b, byte c) {#1136,18.208116280405147
+return toLong(str, 0L);#148,18.204374088960535
+public static byte toByte(String str, byte defaultValue) {#322,18.20416408114963
+&& (chars[i] == 'd'#1403,18.19941086239285
+return createBigInteger(numeric);#514,18.192624747753143
+case 'f' :#518,18.18484760466076
+min = array[i];#893,18.180123589255594
+return createBigDecimal(numeric);#543,18.177738825480144
+hasExp = true;#1372,18.171226319812593
+if (array[i] < min) {#803,18.162924419749867
+if (array[i] < min) {#861,18.159369988874957
+if (array[i] < min) {#749,18.158183618025348
+Double d = NumberUtils.createDouble(numeric);#535,18.15802437550313
+if (expPos > str.length()) {#485,18.154603738051193
+try {#520,18.15333717519587
+throw new NumberFormatException(str + " is not a valid number.");#476,18.1478038099077
+boolean allZeros = isAllZeros(mant) && isAllZeros(exp);#502,18.146316528320312
+&& exp == null#507,18.14608543259757
+for (; i < chars.length; i++) {#1338,18.1385102669398
+mant = str.substring(0, decPos);#482,18.1321443716685
+public static byte max(byte a, byte b, byte c) {#1242,18.128043275130423
+return defaultValue;#274,18.114077431815012
+return max;#1069,18.11125911365856
+if (!Character.isDigit(lastChar) && lastChar != '.') {#494,18.10785108142429
+if (Float.isNaN(array[j])) {#1061,18.100838110997127
+if (array[j] < min) {#776,18.098972754044965
+if (Double.isNaN(array[j])) {#1030,18.09579951946552
+public static BigDecimal createBigDecimal(String str) {#713,18.093490653567844
+if (hasDecPoint || hasExp) {#1358,18.093104105729324
+return defaultValue;#222,18.08481454849243
+return true;#1304,18.083787051114168
+max = array[j];#1034,18.082037058743563
+if (expPos < decPos || expPos > str.length()) {#475,18.075022369623184
+case 'D' :#533,18.07502233414423
+public static final Float FLOAT_MINUS_ONE = Float.valueOf(-1.0f);#67,18.07057119298864
+public static final Integer INTEGER_ONE = Integer.valueOf(1);#41,18.06983670734224
+int hexDigits = str.length() - 2; // drop 0x#456,18.067412785121373
+public static int max(int[] array) {#937,18.06611946650914
+public static final Float FLOAT_ZERO = Float.valueOf(0.0f);#63,18.061357154846192
+return Integer.parseInt(str);#124,18.059204721450804
+return defaultValue;#227,18.058833122253418
+min = array[i];#862,18.057836272499777
+if (array[i] < min) {#892,18.050024205988105
+Float f = createFloat(str);#578,18.041499750954763
+foundDigit = true;#1354,18.04122578014027
+case 'F' :#519,18.040661130632675
+if (Float.isNaN(array[i])) {#889,18.040538274324856
+return foundDigit && !hasExp && !hasDecPoint;#1412,18.03643906911214
+return Double.valueOf(str);#650,18.035474836826324
+public static int min(int[] array) {#765,18.03434419631958
+try {#562,18.0281417104933
+return Float.valueOf(str);#634,18.021480202674866
+if (Double.isNaN(array[i])) {#858,18.017981455876278
+int expPos = str.indexOf('e') + str.indexOf('E') + 1;#470,18.013396231333413
+if (array[i] < min) {#830,18.012703115289863
+return null;#715,18.012451680501304
+return null;#447,18.0124392191569
+return new BigDecimal(str);#725,17.994741201400757
+if (array[j] > max) {#1033,17.992612622000955
+throw new IllegalArgumentException("Array cannot be empty.");#770,17.98536060333252
+exp = str.substring(expPos + 1, str.length() - 1);#496,17.979794338771274
+return true;#1388,17.978433910169098
+if (!allowSigns) {#1375,17.97817964139192
+throw new IllegalArgumentException("Array cannot be empty.");#797,17.964137496948243
+throw new IllegalArgumentException("Array cannot be empty.");#942,17.963358802795412
+public static long min(long a, long b, long c) {#1082,17.960847402873792
+try {#567,17.95913134680854
+try {#534,17.950837178663775
+throw new IllegalArgumentException("Array cannot be empty.");#969,17.949523010253905
+return true;#1345,17.948078409830728
+throw new IllegalArgumentException("Array cannot be empty.");#743,17.94416198730469
+if (array[i] > max) {#975,17.9435414834456
+exp = null;#498,17.937373208999634
+throw new IllegalArgumentException("Array cannot be empty.");#996,17.93662425994873
+public static short toShort(String str, short defaultValue) {#371,17.93534580866496
+throw new IllegalArgumentException("Array cannot be empty.");#915,17.926704483032225
+throw new IllegalArgumentException("Array cannot be empty.");#824,17.926085700988768
+public static long max(long a, long b, long c) {#1188,17.920848746048776
+if (array[j] > max) {#1064,17.92023411664096
+if (array[j] > max) {#948,17.916386474262584
+|| chars[i] == 'f'#1405,17.913305019510204
+return defaultValue;#279,17.910172598702566
+if (StringUtils.isEmpty(str)) {#1321,17.909671354293824
+public static final Double DOUBLE_MINUS_ONE = Double.valueOf(-1.0d);#61,17.908360834474916
+return defaultValue;#126,17.907982766628265
+throw new IllegalArgumentException("The Array must not be null");#913,17.897698915921726
+int i = start + 2;#1333,17.89584561398155
+throw new NumberFormatException(str + " is not a valid number.");#517,17.89054510328505
+return false;#1392,17.889779944168893
+return Byte.parseByte(str);#327,17.889038944244383
+public static final Short SHORT_ONE = Short.valueOf((short) 1);#47,17.881334521553732
+allowSigns = true;#1373,17.88105362111872
+return Long.parseLong(str);#173,17.87887315750122
+return defaultValue;#329,17.878530859947205
+if (StringUtils.isEmpty(str)) {#1296,17.875709295272827
+return max;#926,17.864248449152168
+foundDigit = false; // we need a digit after the E#1379,17.85809876124064
+throw new NumberFormatException(str + " is not a valid number.");#486,17.856781005859375
+if (!foundDigit) {#1369,17.85378257088039
+public static final Long LONG_ONE = Long.valueOf(1L);#35,17.852969455718995
+public static BigInteger createBigInteger(String str) {#697,17.852003574371338
+case 'd' :#532,17.840939113071986
+return Integer.decode(str);#668,17.839747190475464
+return defaultValue;#324,17.83751803636551
+if (array[i] > max) {#1002,17.837504690343682
+boolean allZeros = isAllZeros(mant) && isAllZeros(exp);#576,17.826404880832982
+return Short.parseShort(str);#376,17.82430782318115
+throw new IllegalArgumentException("The Array must not be null");#1053,17.822570397303654
+throw new IllegalArgumentException("Array cannot be empty.");#1024,17.818881187438965
+return max;#980,17.807986346158113
+return defaultValue;#121,17.807192504405975
+exp = str.substring(expPos + 1, str.length());#556,17.806856870651245
+allowSigns = false;#1355,17.80322551727295
+return defaultValue;#175,17.80316984653473
+throw new IllegalArgumentException("Array cannot be empty.");#852,17.802230758666994
+return min;#754,17.801842949607156
+public static float max(float[] array) {#1050,17.80133397238595
+return max;#953,17.792787898670543
+return defaultValue;#170,17.783569812774658
+if (hasExp) {#1365,17.782414436340332
+exp = null;#558,17.780021333694457
+throw new NumberFormatException(str + " is not a valid number.");#549,17.77691462304857
+throw new IllegalArgumentException("Array cannot be empty.");#883,17.77225788116455
+if (hasDecPoint || hasExp) {#1395,17.7716671870305
+return min;#808,17.762456026944246
+dec = str.substring(decPos + 1);#480,17.758596931185043
+public static final Double DOUBLE_ZERO = Double.valueOf(0.0d);#57,17.741223754882814
+return new BigInteger(str);#701,17.7262757619222
+return min;#781,17.7226298939098
+switch (lastChar) {#503,17.72244358062744
+|| chars[i] == 'D'#1404,17.719203028185614
+mant = str.substring(0, expPos);#488,17.71117169516427
+return str.length() > 0;#617,17.70974314212799
+return Long.decode(str);#685,17.70833295583725
+return min;#835,17.706703532825816
+return createLong(str);#568,17.700226967151348
+hexDigits--;#458,17.699484961373464
+|| chars[i] == 'L') {#1410,17.69420759494488
+throw new IllegalArgumentException("Array cannot be empty.");#1055,17.690165481567384
+return max;#1038,17.687240600585938
+public static final Integer INTEGER_MINUS_ONE = Integer.valueOf(-1);#43,17.684382418791454
+return max;#1007,17.683988571166992
+case 'L' :#505,17.681948071434384
+public static final Short SHORT_ZERO = Short.valueOf((short) 0);#45,17.6786526389744
+public static short min(short a, short b, short c) {#1118,17.67469893003765
+allowSigns = false;#1378,17.6734600500627
+return min;#897,17.672495408491656
+return createInteger(str);#563,17.672480839949387
+public static float min(float[] array) {#878,17.66320821217128
+dec = str.substring(decPos + 1, expPos);#478,17.64237582299017
+return false;#1367,17.64200036422066
+return min;#866,17.629936044866387
+return defaultValue;#373,17.628889322280884
+public static final Short SHORT_MINUS_ONE = Short.valueOf((short) -1);#49,17.61347932081956
+case 'l' :#504,17.601144291105726
+return false;#1376,17.584944061611008
+if (array[j] > max) {#921,17.581588354977693
+return a;#1195,17.56156063079834
+return a;#1125,17.557578693736684
+return a;#1143,17.553985942493785
+public static short max(short a, short b, short c) {#1224,17.54454467171117
+public static byte max(byte[] array) {#991,17.53957646233695
+return false;#1370,17.535350343455438
+return a;#1089,17.534831740639426
+return a;#1231,17.53121393377131
+public static double max(double[] array) {#1019,17.52210569381714
+return a;#1107,17.521786082874645
+return a;#1249,17.51695901697332
+super();#77,17.499667739868165
+return false;#1381,17.492230063990544
+return a;#1213,17.484056212685324
+public static byte min(byte[] array) {#819,17.465129375457764
+public static final Long LONG_MINUS_ONE = Long.valueOf(-1L);#37,17.451980632284414
+public static final Byte BYTE_ONE = Byte.valueOf((byte) 1);#53,17.451501629569314
+return createBigDecimal(str);#594,17.423867265383404
+public static double min(double[] array) {#847,17.421648297991073
+return false;#1360,17.414179055587105
+public class NumberUtils {#30,17.402736936296737
+return false;#1397,17.37295150756836
+public static final Byte BYTE_MINUS_ONE = Byte.valueOf((byte) -1);#55,17.364125398489143
+public static final Integer INTEGER_ZERO = Integer.valueOf(0);#39,17.35791826248169
+return defaultValue;#378,17.328215420246124
+return Math.min(Math.min(a, b), c);#1175,17.296201581540316
+char[] chars = str.toCharArray();#1324,17.28659364912245
+public static final Long LONG_ZERO = Long.valueOf(0L);#33,17.25445493062337
+public static final Byte BYTE_ZERO = Byte.valueOf((byte) 0);#51,17.225880913112473
+return createInteger(str);#463,17.17429330613878
+return false;#1415,17.158843739827475
+public static long max(long[] array) {#910,17.148844855172293
+public static short min(short[] array) {#792,17.133758885519846
+return createBigInteger(str);#572,17.126808705537215
+public static short max(short[] array) {#964,17.118533202580043
+default :#548,17.088601695166695
+return Math.min(Math.min(a, b), c);#1159,17.078987909399945
+return foundDigit;#1407,17.07585684458415
+return foundDigit;#1400,17.01094472975958
+public static long min(long[] array) {#738,16.997442313602992
+return Math.max(Math.max(a, b), c);#1281,16.795092997343644
+return Math.max(Math.max(a, b), c);#1265,16.763189191403598

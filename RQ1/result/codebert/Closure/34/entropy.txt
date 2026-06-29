@@ -1,0 +1,339 @@
+String build() {#657,20.368491888046265
+protected final StringBuilder code = new StringBuilder(1024);#52,20.295417368412018
+void append(String str) {#244,20.273515007712625
+void append(String str) {#443,20.120074185458098
+char getLastChar() {#206,20.119563865661622
+Builder setLineLengthThreshold(int threshold) {#612,20.023292541503906
+Builder setOutputTypes(boolean outputTypes) {#601,19.872041447957358
+private int lineStartPosition = 0;#417,19.837244351704914
+protected final int getCurrentLineIndex() {#214,19.81194774921124
+Mapping mapping = new Mapping();#100,19.780564308166504
+public String getCode() {#201,19.724317359924317
+private SourceMap sourceMap = null;#552,19.707176208496094
+void appendBlockStart() {#291,19.678830337524413
+void startNewLine() {#452,19.647392654418944
+prevLineStartPosition = lineStartPosition;#455,19.638850380392636
+Builder setSourceMap(SourceMap sourceMap) {#623,19.631210454305013
+private int prevLineStartPosition = 0;#420,19.624352821936974
+void startNewLine() {#261,19.556120681762696
+protected int lineLength = 0;#54,19.542605139992453
+if (lineLength > 0) {#262,19.506155014038086
+static class PrettyCodePrinter#219,19.444788336753845
+if (lineLength > 0) {#453,19.438238416399276
+if (lineLength == 0) {#246,19.425840650285995
+if (lineBreak) {#465,19.397281487782795
+lineLength += str.length();#253,19.367446459256687
+if (preferredBreakPosition > lineStartPosition &&#493,19.351308722245065
+lineLength += str.length();#445,19.330282944899338
+void endLine() {#286,19.301115565829807
+void listSeparator() {#304,19.265125361355867
+if (binOp) {#333,19.257272720336914
+void appendBlockEnd() {#297,19.23217248916626
+lineStartPosition = prevLineStartPosition;#528,19.228905341204474
+lineLength -= (position - lineStartPosition);#500,19.222799873352052
+boolean createSourceMap = (sourceMap != null);#693,19.19508590698242
+final private boolean createSrcMap;#50,19.178545633951824
+case Token.CATCH:#384,19.169857025146484
+switch (type) {#374,19.163957669184757
+case Token.IF:#387,19.162664922078452
+Builder(Node node) {#564,19.157321548461915
+FilePosition start;#81,19.113176536560058
+private static class Mapping {#79,19.1057559967041
+if (!preferLineBreakAtEndOfFile) {#516,19.093008359273274
+reportLineCut(lineIndex, position - lineStartPosition, true);#498,19.09200927734375
+lineLength = code.length() - lineStartPosition;#529,19.07646861076355
+mapping.start = new FilePosition(line, index);#102,19.069292306900024
+protected final int getCurrentCharIndex() {#210,19.06573640383207
+void maybeLineBreak() {#270,19.065158557891845
+if (lineLength > lineLengthThreshold) {#280,19.04392904393813
+protected final int lineLengthThreshold;#53,19.04256757100423
+if (originalLine == lineIndex) {#186,19.03991413116455
+prevLineStartPosition = 0;#533,19.02470677693685
+? new CompactCodePrinter(#696,19.01498317718506
+if (sawFunction) {#466,19.012935910906112
+private PrettyCodePrinter(#233,18.994547271728514
+protected int lineIndex = 0;#55,18.993623039939187
+int lineLengthThreshold,#234,18.991516658238
+void beginCaseBody() {#318,18.985349559783934
+Builder setLineBreak(boolean lineBreak) {#581,18.985099093119302
+private boolean lineBreak = false;#548,18.972245823253285
+void maybeCutLine() {#279,18.941278553009035
+FilePosition end;#82,18.936521339416505
+void notePreferredLineBreak() {#509,18.93153937657674
+if (ch == ';') {#478,18.931163728237152
+this.outputTypes = outputTypes;#602,18.89328990663801
+case Token.TRY:#381,18.887692133585613
+if (lineLength > lineLengthThreshold / 2) {#519,18.887341449135228
+private int indent = 0;#224,18.87773723602295
+Builder setOutputCharset(Charset outCharset) {#641,18.866029024124146
+if (getLastChar() != ' ') {#334,18.8597950182463
+if (lineLength > lineLengthThreshold) {#491,18.850046831018783
+void generateSourceMap(SourceMap map){#128,18.845267515916092
+case Token.DO:#375,18.829919306437173
+static class CompactCodePrinter#402,18.818442463874817
+extends MappedCodePrinter {#220,18.810647304241474
+if (statementContext) {#312,18.807424386342365
+void maybeLineBreak() {#464,18.79266300201416
+for (Mapping mapping : allMappings) {#130,18.79002234810277
+for (int i = 0; i < indent; i++) {#247,18.78984225880016
+if (preferredBreakPosition == len - 1) {#476,18.78271982404921
+boolean preferLineBreakAtEndOfFile, int lineLengthThreshold,#432,18.759615442027215
+for (Mapping mapping : allMappings) {#145,18.75939770748741
+@Override#290,18.738271713256836
+append(" {");#292,18.72129726409912
+private boolean preferLineBreakAtEndOfFile = false;#549,18.716876685619354
+static final String INDENT = "  ";#222,18.713975157056534
+int line = getCurrentLineIndex();#97,18.711647391319275
+return lineLength;#211,18.70745391845703
+int len = code.length();#475,18.698063850402832
+private final boolean preferLineBreakAtEndOfFile;#416,18.684143257141113
+MappedCodePrinter(#57,18.66941556930542
+&& node.getSourceFileName() != null#94,18.66240546577855
+lineStartPosition = position + 1;#501,18.653342882792156
+if (parent != null) {#372,18.649175130403957
+throw new IllegalStateException(#659,18.645596981048584
+int lineLengthThreshold,#686,18.644373624752728
+private final boolean lineBreak;#415,18.625643062591553
+void endFile() {#396,18.625375323825413
+if (insertion) {#176,18.61760679880778
+int lineLengthThreshold,#58,18.608879021235875
+extends MappedCodePrinter {#403,18.60815136249249
+boolean createSourceMap,#235,18.604706103985126
+private CompactCodePrinter(boolean lineBreak,#431,18.603690083821615
+boolean createSrcMap,#59,18.596094403948104
+private boolean outputTypes = false;#550,18.587947238575328
+@Override#296,18.58719491958618
+if (originalLine == lineIndex && originalChar >= characterPosition) {#177,18.586255115011465
+lineStartPosition = code.length();#459,18.5821430683136
+case Token.FUNCTION:#378,18.562947441549863
+private int prevCutPosition = 0;#419,18.55548628171285
+int index = getCurrentCharIndex();#98,18.551616191864014
+@Override#285,18.528520425160725
+boolean breakAfterBlockFor(Node n,  boolean isStatementContext) {#369,18.524257373809814
+private FilePosition convertPosition(FilePosition position, int lineIndex,#172,18.520849810706245
+startNewLine();#522,18.513493061065674
+private int preferredBreakPosition = 0;#418,18.513341585795086
+@Override#89,18.513190905253094
+void endFunction(boolean statementContext) {#310,18.49964155469622
+lineIndex++;#499,18.49891471862793
+reportLineCut(lineIndex, prevCutPosition + 1, false);#530,18.498573137366254
+if (root == null) {#658,18.494161165677586
+void appendOp(String op, boolean binOp) {#332,18.489282369613647
+enum Format {#675,18.48411407470703
+return lineIndex;#215,18.48382501602173
+int index = getCurrentCharIndex();#117,18.473268747329712
+boolean shouldPreserveExtraBlocks() {#350,18.472442229588825
+@Override#368,18.46553643544515
+prevCutPosition = position;#497,18.45911067724228
+startNewLine();#287,18.454051303863526
+if (mapping.end != null) {#149,18.44109454154968
+code.append('\n');#456,18.43874142964681
+@Override#489,18.432997703552246
+Builder setPrettyPrint(boolean prettyPrint) {#572,18.428504308064777
+CodeGenerator cg =#701,18.425419044494628
+Mapping mapping = mappings.pop();#115,18.42051461163689
+endLine();#298,18.4171625773112
+lineLength = 0;#457,18.41418163592999
+private abstract static class MappedCodePrinter extends CodeConsumer {#47,18.41283416748047
+Node node;#80,18.41000811258952
+mapping.end = new FilePosition(line, index);#119,18.405005931854248
+static class Builder {#545,18.398202260335285
+code.append(str);#252,18.391058365503948
+@Override#269,18.38597520192464
+@Override#303,18.385498046875
+@Override#508,18.381486415863037
+Builder setPreferLineBreakAtEndOfFile(boolean lineBreakAtEnd) {#592,18.381334677986477
+void startSourceMapping(Node node) {#90,18.37282657623291
+return this;#651,18.357102500067818
+prevCutPosition = code.length();#454,18.34635055065155
+char ch = code.charAt(len - 1);#477,18.343829107284545
+@Override#278,18.34272034962972
+code.insert(position, '\n');#496,18.34168701171875
+mapping.node = node;#101,18.33730254854475
+this.lineLengthThreshold = threshold;#613,18.336421140034993
+class CodePrinter {#35,18.335604349772137
+if (createSourceMap) {#715,18.33223568309437
+prevCutPosition = 0;#532,18.329378945486887
+MappedCodePrinter mcp =#694,18.321985801060993
+int line = getCurrentLineIndex();#116,18.31556612253189
+indent--;#327,18.31331443786621
+void endFile() {#514,18.307916535271538
+return this;#574,18.3063227335612
+this.lineLengthThreshold = lineLengthThreshold <= 0 ? Integer.MAX_VALUE :#62,18.305350523728592
+int position = preferredBreakPosition;#495,18.302592389723834
+preferredBreakPosition < lineStartPosition + lineLength) {#494,18.293458024660747
+@Override#260,18.291045824686687
+if (createSrcMap) {#129,18.284954071044922
+void endCaseBody() {#325,18.282258701324462
+indent--;#299,18.276206970214844
+mapping.end = convertPosition(mapping.end, lineIndex, charIndex,#150,18.272698243459065
+mapping.start = convertPosition(mapping.start, lineIndex, charIndex,#146,18.269523280007498
+this.sourceMap = sourceMap;#624,18.268802847181046
+return this;#643,18.26789379119873
+return this;#614,18.266215642293293
+void reportLineCut(int lineIndex, int charIndex, boolean insertion) {#143,18.25223600296747
+boolean lineBreak,  boolean preferEndOfFileBreak,#685,18.2518253326416
+lineIndex++;#458,18.24587414481423
+private int lineLengthThreshold = DEFAULT_LINE_LENGTH_THRESHOLD;#551,18.235476692517597
+: new PrettyCodePrinter(#699,18.23546028137207
+@Override#451,18.228092829386394
+return new FilePosition(#187,18.222374471028647
+@Override#205,18.21320088704427
+SourceMap.DetailLevel sourceMapDetailLevel) {#236,18.21066592988514
+return this;#625,18.2103820376926
+private boolean prettyPrint = false;#547,18.20871032368053
+append("}");#300,18.20564708709717
+lineIndex++;#264,18.205299377441406
+lineIndex--;#531,18.20092519124349
+code.setCharAt(prevCutPosition, ' ');#527,18.198710123697918
+code.append(str);#444,18.190607865651447
+endLine();#321,18.181586477491592
+int originalLine = position.getLine();#174,18.173610560099284
+@Override#349,18.167595863342285
+return this;#583,18.164172596401638
+@Override#317,18.160054047902424
+SourceMap sourceMap,#687,18.15155937797145
+final private Deque<Mapping> mappings;#48,18.145939699808757
+code.append('\n');#263,18.14014104207357
+@Override#395,18.137681166330974
+@Override#112,18.135517756144207
+@Override#324,18.13426144917806
+return this;#603,18.12921142578125
+add(", ");#305,18.129147096113726
+append(" ");#338,18.116246064503986
+@Override#442,18.101317246754963
+void endSourceMapping(Node node) {#113,18.09865631375994
+SourceMap.DetailLevel sourceMapDetailLevel) {#60,18.09647955213274
+append(op);#337,18.070534467697144
+private Charset outputCharset = null;#557,18.056405131022135
+if (createSrcMap) {#144,18.050452300480433
+private final Node root;#546,18.044001473320854
+this.preferLineBreakAtEndOfFile = preferLineBreakAtEndOfFile;#436,18.03546142578125
+void maybeCutLine() {#490,18.032859230041502
+this.preferLineBreakAtEndOfFile = lineBreakAtEnd;#593,18.00986974889582
+int originalChar = position.getColumn();#175,18.0083189646403
+startNewLine();#535,18.007261355717976
+return this;#594,18.0070735083686
+return this;#634,17.989831924438477
+@Override#309,17.989312807718914
+@Override#243,17.983160495758057
+append(";");#521,17.980362971623737
+lineBreak, preferEndOfFileBreak, lineLengthThreshold,#697,17.970949209653416
+"Cannot build without root node being specified");#660,17.969777540727094
+return (code.length() > 0) ? code.charAt(code.length() - 1) : '\0';#207,17.966786268985633
+return n != parent.getFirstChild();#383,17.9618589310419
+lineLength += INDENT.length();#249,17.960417217678494
+return new FilePosition(#180,17.96012763977051
+preferredBreakPosition = code.length();#510,17.954297746930802
+indent++;#293,17.934056997299194
+indent++;#320,17.923734664916992
+int characterPosition, boolean insertion) {#173,17.919724824693468
+@Override#513,17.897170066833496
+Builder setTagAsStrict(boolean tagAsStrict) {#649,17.895576226083858
+lineLength = 0;#265,17.892758956322304
+this.lineBreak = lineBreak;#435,17.89239924294608
+boolean tagAsStrict) {#690,17.88893566131592
+if (createSrcMap && !mappings.isEmpty() && mappings.peek().node == node) {#114,17.886579304933548
+super.endFunction(statementContext);#311,17.869371346064977
+originalLine - 1, originalChar + characterPosition);#188,17.868273429870605
+boolean createSrcMap, SourceMap.DetailLevel sourceMapDetailLevel) {#433,17.86512890568486
+Builder setSourceMapDetailLevel(SourceMap.DetailLevel level) {#631,17.849682989574614
+SourceMap.DetailLevel sourceMapDetailLevel,#688,17.84955253601074
+@Override#331,17.847264289855957
+&& node.getLineno() > 0#95,17.83440359015214
+return false;#377,17.833782704671226
+: prettyPrint#665,17.83103223947378
+return !NodeUtil.hasFinally(getTryForCatch(parent));#386,17.80086477871599
+append(op);#340,17.79769762357076
+this.lineBreak = lineBreak;#582,17.796929223196848
+throw new IllegalStateException(#193,17.7966013484531
+final private SourceMap.DetailLevel sourceMapDetailLevel;#51,17.792539225684273
+return position;#183,17.78699155954214
+return toSource(root, outputFormat, lineBreak, preferLineBreakAtEndOfFile,#669,17.77546941317045
+append(";");#534,17.770158290863037
+lineLengthThreshold;#63,17.750928145188553
+maybeLineBreak();#306,17.75077667236328
+super.beginCaseBody();#319,17.742414633433025
+startNewLine();#313,17.733076095581055
+lineLengthThreshold, sourceMap, sourceMapDetailLevel, outputCharset,#670,17.720776853890253
+return false;#380,17.715084520975747
+return true;#354,17.714497990078396
+: new CodeGenerator(mcp, outputCharset);#704,17.71347002549605
+map.addMapping(mapping.node, mapping.start, mapping.end);#131,17.71093431012384
+private static String toSource(Node root, Format outputFormat,#684,17.70994300842285
+startNewLine();#281,17.69273591041565
+endStatement();#328,17.685553868611652
+final private List<Mapping> allMappings;#49,17.66014143625895
+private boolean tagAsStrict;#558,17.65894386985085
+"Cannot undo line cut on a previous line.");#194,17.637082951409475
+this.outputCharset = outCharset;#642,17.636062251196968
+String code = mcp.getCode();#713,17.627443827115574
+int type = parent.getType();#373,17.62605619430542
+Preconditions.checkState(line >= 0);#99,17.613899431730573
+@Override#463,17.61163345972697
+originalLine + 1, originalChar - characterPosition);#181,17.59378852844238
+return true;#392,17.58842839135064
+this.mappings = createSrcMap ? new ArrayDeque<Mapping>() : null;#66,17.568851232528687
+return code.toString();#202,17.55456296602885
+Format outputFormat = outputTypes#663,17.549330552419026
+private SourceMap.DetailLevel sourceMapDetailLevel =#553,17.54395165162928
+? Format.TYPED#664,17.536190629005432
+return code;#719,17.526830673217773
+if (tagAsStrict) {#706,17.506580750147503
+Charset outputCharset,#689,17.501075674847858
+lineLengthThreshold, createSourceMap, sourceMapDetailLevel);#700,17.488083804095233
+private Node getTryForCatch(Node n) {#360,17.48428052663803
+super(lineLengthThreshold, createSourceMap, sourceMapDetailLevel);#237,17.482460478077765
+startNewLine();#503,17.416699137006486
+? new TypedCodeGenerator(mcp, outputCharset)#703,17.391636848449707
+maybeEndStatement();#397,17.39120225906372
+super(lineLengthThreshold, createSrcMap, sourceMapDetailLevel);#434,17.373050411542255
+Preconditions.checkState(node != null);#92,17.357487510232364
+: Format.COMPACT;#667,17.34199587504069
+return;#517,17.333356189727784
+maybeCutLine();#482,17.329717445373536
+maybeCutLine();#271,17.328631973266603
+outputFormat == Format.COMPACT#695,17.284695863723755
+this.allMappings = createSrcMap ? new ArrayList<Mapping>() : null;#67,17.272957359041488
+code.append(INDENT);#248,17.26945058037253
+this.sourceMapDetailLevel = level;#633,17.22553926706314
+super.endCaseBody();#326,17.219693501790363
+&& sourceMapDetailLevel.apply(node)) {#96,17.20479826493697
+outputFormat == Format.TYPED#702,17.202873826026917
+if (createSrcMap#93,17.188235918680828
+this.sourceMapDetailLevel = sourceMapDetailLevel;#65,17.182205581665038
+startNewLine();#467,17.175402845655167
+this.prettyPrint = prettyPrint;#573,17.139181750161306
+return position;#196,17.124146461486816
+root = node;#565,17.101408672332763
+mappings.push(mapping);#103,17.076774179935455
+PRETTY,#677,17.07239317893982
+Preconditions.checkState(line >= 0);#118,17.063631911026803
+createSourceMap, sourceMapDetailLevel)#698,17.04086685180664
+return n == parent.getLastChild();#389,17.037337666466122
+TYPED#678,16.954968861171178
+tagAsStrict);#671,16.9438840230306
+Preconditions.checkState(sourceMapDetailLevel != null);#61,16.933257148379372
+append(" ");#335,16.919917583465576
+Node parent = n.getParent();#371,16.91491617475237
+static final int DEFAULT_LINE_LENGTH_THRESHOLD = 500;#37,16.90563883781433
+super.endFile();#515,16.89316160028631
+SourceMap.DetailLevel.ALL;#554,16.856408511891086
+Preconditions.checkState(sourceMapDetailLevel != null);#91,16.81169400896345
+this.createSrcMap = createSrcMap;#64,16.790933714972603
+preferredBreakPosition = len;#479,16.739115834236145
+this.tagAsStrict = tagAsStrict;#650,16.70910776986016
+insertion);#147,16.63529860973358
+COMPACT,#676,16.63087899344308
+return n.getParent().getParent();#361,16.58739325205485
+mcp.generateSourceMap(sourceMap);#716,16.5422700994155
+Preconditions.checkState(sourceMapDetailLevel != null);#691,16.514404096101458
+Preconditions.checkState(level != null);#632,16.467684801887064
+cg.tagAsStrict();#707,16.44994388307844
+sawFunction = false;#468,16.442060216267905
+? Format.PRETTY#666,16.278705453872682
+Preconditions.checkState(n.isBlock());#370,16.27495903438992
+insertion);#151,16.129966311984592
+allMappings.add(mapping);#104,15.957716605242561
+cg.add(root);#710,15.926430442116477
+mcp.endFile();#711,15.87102451324463

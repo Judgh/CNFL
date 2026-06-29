@@ -1,0 +1,221 @@
+protected SumOfSquares sumsq = new SumOfSquares();#76,16.858342117733425
+protected SecondMoment secondMoment = new SecondMoment();#70,16.217981338500977
+protected Variance variance = new Variance(secondMoment);#94,16.064666860243854
+private StorelessUnivariateStatistic sumsqImpl = sumsq;#100,15.576923582288954
+protected Max max = new Max();#82,15.39547148617831
+public StorelessUnivariateStatistic getVarianceImpl() {#615,15.35269021987915
+protected SumOfLogs sumLog = new SumOfLogs();#85,15.21716727150811
+outBuffer.append("sum of squares: ").append(getSumsq()).append(endl);#334,15.168902277946472
+protected Sum sum = new Sum();#73,15.15030644156716
+outBuffer.append("variance: ").append(getVariance()).append(endl);#333,15.112940581639608
+public void setVarianceImpl(StorelessUnivariateStatistic varianceImpl) {#634,15.078415847959972
+public void setSumsqImpl(StorelessUnivariateStatistic sumsqImpl) {#459,15.072302403657332
+public double getPopulationVariance() {#250,15.030379136403402
+private StorelessUnivariateStatistic varianceImpl = variance;#118,14.953996896743774
+public StorelessUnivariateStatistic getSumsqImpl() {#440,14.946722586949667
+protected Mean mean = new Mean(secondMoment);#91,14.90856221516927
+outBuffer.append("standard deviation: ").append(getStandardDeviation())#335,14.860044059753418
+if (source.getVarianceImpl() instanceof Variance) {#681,14.836214521656865
+public double getSecondMoment() {#312,14.81151795387268
+outBuffer.append("geometric mean: ").append(getGeometricMean())#331,14.786755703113696
+public double getVariance() {#238,14.725817983800715
+dest.sumsqImpl = source.sumsqImpl.copy();#676,14.658101479212442
+public StorelessUnivariateStatistic getSumImpl() {#411,14.588320106267929
+public void setSumLogImpl(StorelessUnivariateStatistic sumLogImpl) {#546,14.559726498343728
+private StorelessUnivariateStatistic sumImpl = sum;#97,14.558173894882202
+public StorelessUnivariateStatistic getSumLogImpl() {#527,14.550244864295511
+public StorelessUnivariateStatistic getGeoMeanImpl() {#557,14.537556472577547
+if (source.getGeoMeanImpl() instanceof GeometricMean) {#691,14.494232566268355
+if (source.sumsq == source.sumsqImpl) {#734,14.481255372365316
+private StorelessUnivariateStatistic sumLogImpl = sumLog;#109,14.467600557539198
+public StorelessUnivariateStatistic getMinImpl() {#469,14.460447251796722
+public StorelessUnivariateStatistic getMaxImpl() {#498,14.456934094429016
+outBuffer.append("max: ").append(getMax()).append(endl);#329,14.441892453602382
+public StorelessUnivariateStatistic getMeanImpl() {#586,14.438572883605957
+outBuffer.append("sum of logs: ").append(getSumOfLogs()).append(endl);#337,14.411316857193455
+public void setGeoMeanImpl(StorelessUnivariateStatistic geoMeanImpl) {#576,14.400411033630371
+if (!(varianceImpl instanceof Variance)) {#161,14.384965133666991
+private StorelessUnivariateStatistic geoMeanImpl = geoMean;#112,14.355812931060791
+private StorelessUnivariateStatistic maxImpl = max;#106,14.33016312122345
+outBuffer.append("min: ").append(getMin()).append(endl);#328,14.327300139835902
+outBuffer.append("n: ").append(getN()).append(endl);#327,14.320378235408239
+public void setMaxImpl(StorelessUnivariateStatistic maxImpl) {#517,14.30051486492157
+outBuffer.append("mean: ").append(getMean()).append(endl);#330,14.276665786216999
+public void setMinImpl(StorelessUnivariateStatistic minImpl) {#488,14.247087001800537
+protected GeometricMean geoMean = new GeometricMean(sumLog);#88,14.238776597109707
+if (source.variance == source.varianceImpl) {#724,14.238134124062277
+return Precision.equalsIncludingNaN(stat.getGeometricMean(), getGeometricMean()) &&#377,14.168630224285703
+public double getSumsq() {#193,14.156450351079306
+protected Min min = new Min();#79,14.148530873385342
+public void setSumImpl(StorelessUnivariateStatistic sumImpl) {#430,14.08919141292572
+public void setMeanImpl(StorelessUnivariateStatistic meanImpl) {#605,14.08488555181594
+private StorelessUnivariateStatistic meanImpl = mean;#115,14.04368007183075
+dest.sumsq = (SumOfSquares) dest.sumsqImpl;#735,14.00190931750882
+private StorelessUnivariateStatistic minImpl = min;#103,13.973343908786774
+private void checkEmpty() {#642,13.933607959747315
+public double getSumOfLogs() {#297,13.933218259077806
+private static final long serialVersionUID = -2021321786743555871L;#64,13.898969693617387
+return new StatisticalSummaryValues(getMean(), getVariance(), getN(),#141,13.892251319885254
+Variance populationVariance = new Variance(secondMoment);#251,13.828208706595682
+public double getGeometricMean() {#285,13.714635115403395
+SumOfSquares.copy(source.sumsq, dest.sumsq);#737,13.710156502262238
+public double getStandardDeviation() {#215,13.678234020868937
+protected long n = 0;#67,13.67711706161499
+MathUtils.checkNotNull(dest);#671,13.649935722351074
+dest.secondMoment = source.secondMoment.copy();#677,13.61798078363592
+if (source.meanImpl instanceof Mean) {#686,13.589826985409385
+public class SummaryStatistics implements StatisticalSummary, Serializable {#61,13.58018159866333
+if (varianceImpl != variance) {#356,13.57274840859806
+public long getN() {#174,13.546902561187744
+public StatisticalSummary getSummary() {#140,13.522931228984486
+if (!(meanImpl instanceof Mean)) {#158,13.516818364461264
+dest.varianceImpl = new Variance(dest.secondMoment);#682,13.49556371143886
+result = result * 31 + MathUtils.hash(getGeometricMean());#394,13.494891790243296
+if (source.geoMean == source.geoMeanImpl) {#699,13.46794788654034
+dest.variance = (Variance) dest.varianceImpl;#725,13.44167748203984
+@Override#322,13.434548695882162
+if (!(geoMeanImpl instanceof GeometricMean)) {#164,13.384093880653381
+MathUtils.checkNotNull(source);#670,13.340733846028646
+result = result * 31 + MathUtils.hash(getSumsq());#400,13.32894432067871
+this.sumsqImpl = sumsqImpl;#461,13.320798346870824
+result = result * 31 + MathUtils.hash(getMean());#396,13.305538475513458
+outBuffer.append("SummaryStatistics:").append(endl);#326,13.296048641204834
+if (source.sumLog == source.sumLogImpl) {#729,13.282636707479304
+dest.sumLogImpl = source.sumLogImpl.copy();#675,13.27853337201205
+secondMoment.clear();#352,13.247077941894531
+sumsqImpl.clear();#350,13.245898655482701
+public double getMean() {#204,13.23714980212125
+result = result * 31 + MathUtils.hash(getVariance());#401,13.236599763234457
+if (source.sum == source.sumImpl) {#719,13.228127241134644
+result = result * 31 + MathUtils.hash(getN());#398,13.225223147350809
+result = result * 31 + MathUtils.hash(getSum());#399,13.211373743803605
+public boolean equals(Object object) {#369,13.206586996714273
+result = result * 31 + MathUtils.hash(getMax());#395,13.165238898733389
+result = result * 31 + MathUtils.hash(getMin());#397,13.151944139729375
+public double getMax() {#263,13.13494701385498
+sumsqImpl.increment(value);#151,13.110030735240263
+dest.geoMeanImpl = new GeometricMean((SumOfLogs) dest.sumLogImpl);#692,13.093115419954866
+if (source.mean == source.meanImpl) {#709,13.079547786712647
+if (source.max == source.maxImpl) {#704,13.074255990982056
+@Override#391,13.070679982503256
+populationVariance.setBiasCorrected(false);#252,13.064438939094543
+public double getSum() {#182,13.050947570800782
+if (object instanceof SummaryStatistics == false) {#373,13.039003673352694
+int result = 31 + MathUtils.hash(getGeometricMean());#393,13.035370292663574
+dest.sumLog = (SumOfLogs) dest.sumLogImpl;#730,13.003360978488264
+secondMoment.increment(value);#155,12.98374860426959
+dest.sumImpl = source.sumImpl.copy();#674,12.980344200134278
+public int hashCode() {#392,12.965970373153686
+geoMean.setSumLogImpl(sumLogImpl);#549,12.956437020074754
+public void addValue(double value) {#149,12.95256886115441
+StringBuilder outBuffer = new StringBuilder();#324,12.908336527207318
+if (source.min == source.minImpl) {#714,12.905708360671998
+sumLogImpl.clear();#349,12.887167930603027
+SummaryStatistics stat = (SummaryStatistics)object;#376,12.851723194122314
+public double getMin() {#274,12.83533697128296
+@Override#368,12.811488310496012
+Precision.equalsIncludingNaN(stat.getSumsq(),         getSumsq())         &&#383,12.768384384659102
+Precision.equalsIncludingNaN(stat.getMax(),           getMax())           &&#378,12.752142789228907
+dest.maxImpl = source.maxImpl.copy();#672,12.751351356506348
+geoMeanImpl.clear();#351,12.74595241546631
+throws NullArgumentException {#669,12.697029215948922
+public static void copy(SummaryStatistics source, SummaryStatistics dest)#668,12.692194630117978
+public SummaryStatistics(SummaryStatistics original) {#131,12.671328104459322
+Precision.equalsIncludingNaN(stat.getVariance(),      getVariance());#384,12.671064853668213
+dest.geoMean = (GeometricMean) dest.geoMeanImpl;#700,12.60125309048277
+dest.meanImpl = new Mean(dest.secondMoment);#687,12.59584065584036
+if (meanImpl != mean) {#353,12.545848965644836
+sumImpl.clear();#348,12.525087063129131
+sumLogImpl.increment(value);#154,12.519023839165182
+public void clear() {#344,12.499979337056478
+Precision.equalsIncludingNaN(stat.getMean(),          getMean())          &&#379,12.487666345992178
+Precision.equalsIncludingNaN(stat.getN(),             getN())             &&#381,12.470517283991763
+dest.varianceImpl = source.varianceImpl.copy();#684,12.457771484668438
+Precision.equalsIncludingNaN(stat.getMin(),           getMin())           &&#380,12.449329142300588
+SumOfLogs.copy(source.sumLog, dest.sumLog);#732,12.446879386901855
+public String toString() {#323,12.446613979339599
+sumImpl.increment(value);#150,12.425662159919739
+Variance.copy(source.variance, dest.variance);#727,12.417216707158971
+double stdDev = Double.NaN;#216,12.400457185857436
+public SummaryStatistics copy() {#654,12.398602056503297
+this.varianceImpl = varianceImpl;#636,12.332348711350384
+return populationVariance.getResult();#253,12.328078806400299
+dest.minImpl = source.minImpl.copy();#673,12.323350715637208
+public SummaryStatistics() {#123,12.283006403181288
+if (object == this) {#370,12.256941986083984
+this.geoMeanImpl = geoMeanImpl;#578,12.249534675053187
+maxImpl.clear();#347,12.231122603783241
+Precision.equalsIncludingNaN(stat.getSum(),           getSum())           &&#382,12.144974825517187
+minImpl.increment(value);#152,12.142139196395874
+minImpl.clear();#346,12.132706642150879
+maxImpl.increment(value);#153,12.127807140350342
+LocalizedFormats.VALUES_ADDED_BEFORE_CONFIGURING_STATISTIC, n);#645,12.063686510411705
+GeometricMean.copy(source.geoMean, dest.geoMean);#702,11.986583955360182
+return secondMoment.getResult();#313,11.984560996294022
+stdDev = FastMath.sqrt(getVariance());#219,11.974034276501886
+if (getN() > 0) {#217,11.956957340240479
+dest.sum = (Sum) dest.sumImpl;#720,11.956424474716187
+dest.geoMeanImpl = source.geoMeanImpl.copy();#694,11.870091946919759
+return outBuffer.toString();#338,11.849930985768635
+return sumsqImpl.getResult();#194,11.844503998756409
+dest.mean = (Mean) dest.meanImpl;#710,11.756233081817626
+return sumsqImpl;#441,11.743250920222355
+this.maxImpl = maxImpl;#519,11.741823494434357
+dest.max = (Max) dest.maxImpl;#705,11.72893234093984
+dest.n = source.n;#678,11.703253269195557
+this.sumLogImpl = sumLogImpl;#548,11.584776454501682
+this.sumImpl = sumImpl;#432,11.544632375240326
+return sumImpl.getResult();#183,11.526757208506266
+Sum.copy(source.sum, dest.sum);#722,11.526709020137787
+return varianceImpl.getResult();#239,11.500329113006591
+return sumLogImpl.getResult();#298,11.497315019369125
+return geoMeanImpl.getResult();#286,11.478966600754681
+getMax(), getMin(), getSum());#142,11.433512897491456
+dest.min = (Min) dest.minImpl;#715,11.412980357805887
+return stdDev;#224,11.405785322189331
+this.minImpl = minImpl;#490,11.39875403046608
+throw new MathIllegalStateException(#644,11.281467080116272
+checkEmpty();#489,11.24276893789118
+return maxImpl.getResult();#264,11.23200257619222
+checkEmpty();#606,11.231483589519154
+checkEmpty();#577,11.230016188188033
+checkEmpty();#460,11.224199078299783
+checkEmpty();#431,11.217370856891979
+return geoMeanImpl;#558,11.210275650024414
+checkEmpty();#518,11.201016035946934
+checkEmpty();#635,11.200462688099254
+this.meanImpl = meanImpl;#607,11.181117057800293
+Max.copy(source.max, dest.max);#707,11.1798375248909
+checkEmpty();#547,11.173612507906826
+this.n = 0;#345,11.166138410568237
+if (n > 0) {#643,11.157221539815266
+String endl = "\n";#325,11.14913272857666
+dest.meanImpl = source.meanImpl.copy();#689,11.146712283293406
+varianceImpl.clear();#357,11.044075264650232
+return minImpl.getResult();#275,10.991852474212646
+return varianceImpl;#616,10.985657175381979
+SummaryStatistics result = new SummaryStatistics();#655,10.979195594787598
+return meanImpl.getResult();#205,10.978476079305013
+if (getN() > 1) {#218,10.976012388865152
+Mean.copy(source.mean, dest.mean);#712,10.940028091271719
+copy(original, this);#132,10.917164938790458
+return maxImpl;#499,10.87117608388265
+copy(this, result);#656,10.867316484451294
+return sumLogImpl;#528,10.832392325768105
+Min.copy(source.min, dest.min);#717,10.779684841632843
+return sumImpl;#412,10.677338600158691
+.append(endl);#332,10.66534916559855
+meanImpl.clear();#354,10.596162599675795
+return result;#402,10.528522231362082
+return minImpl;#470,10.513230005900065
+.append(endl);#336,10.505791664123535
+return meanImpl;#587,10.450515349706015
+geoMeanImpl.increment(value);#165,10.403284961527044
+varianceImpl.increment(value);#162,10.33450644016266
+meanImpl.increment(value);#159,10.240171766281128
+return result;#657,10.171146652915262
+n++;#167,10.101597929000855
+return n;#175,9.923171130093662
+stdDev = 0.0;#221,9.87165878130042
+return false;#374,9.036409346262614
+return true;#371,8.936547819773356

@@ -1,0 +1,152 @@
+protected EmbeddedRungeKuttaIntegrator(final String name, final boolean fsal,#109,18.752458572387695
+protected EmbeddedRungeKuttaIntegrator(final String name, final boolean fsal,#147,18.717550017616965
+public abstract class EmbeddedRungeKuttaIntegrator#65,18.113172384408806
+this.minReduction = minReduction;#372,17.689765248979842
+this.maxGrowth = maxGrowth;#386,17.534276689801896
+public abstract int getOrder();#174,17.516289830207825
+throws DerivativeException, IntegratorException {#195,17.428847948710125
+exp = -1.0 / getOrder();#124,17.394833700997488
+exp = -1.0 / getOrder();#162,17.340814181736537
+return maxGrowth;#379,17.22376166449653
+private final boolean fsal;#69,17.15232973098755
+if (requiresDenseOutput() || (! eventsHandlersManager.isEmpty())) {#212,17.102454931839652
+public void setMinReduction(final double minReduction) {#371,17.066079676151276
+private final double exp;#84,17.061104668511284
+private double maxGrowth;#93,16.975033283233643
+public double integrate(final FirstOrderDifferentialEquations equations,#192,16.970142110188803
+final boolean forward = t > t0;#200,16.948214604304386
+public void setMaxGrowth(final double maxGrowth) {#385,16.87602823972702
+rki.reinitialize(this, yTmp, yDotK, forward);#214,16.872309684753418
+private final double[] b;#78,16.850988960266115
+final int stages = c.length + 1;#203,16.797863006591797
+private double safety;#87,16.762316942214966
+interpolator = new DummyStepInterpolator(yTmp, forward);#217,16.719149755394977
+computeDerivatives(stepStart + c[k-1] * stepSize, yTmp, yDotK[k]);#270,16.680986697857197
+private final double[] c;#72,16.67675323486328
+AbstractStepInterpolator interpolator;#211,16.623700777689617
+System.arraycopy(y0, 0, y, 0, y0.length);#205,16.620730094909668
+public double getMaxGrowth() {#378,16.61017541885376
+final RungeKuttaStepInterpolator rki = (RungeKuttaStepInterpolator) prototype.copy();#213,16.60709986967199
+resetInternalState();#356,16.570653796195984
+return minReduction;#365,16.569215562608505
+System.arraycopy(yTmp, 0, y, 0, y0.length);#315,16.545729013589714
+@Override#191,16.509548664093018
+resetEvaluations();#199,16.50396908654107
+if (vecAbsoluteTolerance == null) {#246,16.500675383068266
+lastStep = manager.stop();#317,16.499579429626465
+this.prototype = prototype;#122,16.490471267700194
+this.safety = safety;#187,16.479577827453614
+error = estimateError(yDotK, y, yTmp, stepSize);#284,16.436577019868075
+boolean firstTime = true;#224,16.431799602508544
+this.prototype = prototype;#160,16.37894563674927
+return safety;#180,16.359327180044993
+for (int k = 1; k < stages; ++k) {#260,16.354448816050652
+scale = vecAbsoluteTolerance;#250,16.351379611275412
+interpolator.shift();#234,16.336135430769488
+if (y != y0) {#204,16.335081338882446
+public double getMinReduction() {#364,16.31484146118164
+System.arraycopy(yDotK[stages - 1], 0, yDotK[0], 0, y0.length);#328,16.311962176591923
+handler.handleStep(interpolator, lastStep);#322,16.309620293703947
+private double minReduction;#90,16.29408836364746
+CombinedEventsManager manager = addEndTimeChecker(t0, t, eventsHandlersManager);#228,16.281447944641112
+this.fsal      = fsal;#118,16.280933941111844
+private final RungeKuttaStepInterpolator prototype;#81,16.26838695301729
+for (int l = 1; l < stages; ++l) {#277,16.238090896606444
+computeDerivatives(stepStart, y, yDotK[0]);#334,16.210085258483886
+this.fsal      = fsal;#156,16.2099713157205
+java.util.Arrays.fill(scale, scalAbsoluteTolerance);#248,16.18178444523965
+return stopTime;#357,16.157785892486572
+for (int l = 1; l < k; ++l) {#264,16.112605977941442
+extends AdaptiveStepsizeIntegrator {#66,16.071343612670898
+sanityChecks(equations, t0, y0, t, y);#197,16.06823471614293
+boolean lastStep = false;#229,16.018328189849854
+for (boolean loop = true; loop;) {#237,15.983867963155111
+computeDerivatives(stepStart, y, yDotK[0]);#241,15.980661568818268
+public void setSafety(final double safety) {#186,15.953096707661947
+if (manager.reset(stepStart, y) && ! lastStep) {#331,15.945214934971021
+final boolean nextIsLast = forward ? (nextT >= t) : (nextT <= t);#349,15.93499308619006
+super(name, minStep, maxStep, vecAbsoluteTolerance, vecRelativeTolerance);#154,15.930783051710863
+interpolator = rki;#215,15.926598072052002
+setMinReduction(0.2);#128,15.875654073861929
+manager.stepAccepted(nextStep, y);#316,15.855124697965735
+setMaxGrowth(10.0);#129,15.835281738868126
+final double  nextT      = stepStart + scaledH;#348,15.832729682922363
+sum += a[k-1][l] * yDotK[l][j];#265,15.824022966272691
+final double stopTime = stepStart;#355,15.802840630213419
+final double dt = manager.getEventTime() - stepStart;#290,15.797023510110789
+final double[] vecAbsoluteTolerance,#151,15.786230297088624
+yTmp[j] = y[j] + stepSize * sum;#280,15.779369778103298
+protected abstract double estimateError(double[][] yDotK,#396,15.77245532765108
+setMaxGrowth(10.0);#167,15.77236483647273
+final double scalAbsoluteTolerance,#113,15.757909288211744
+final double[][] yDotK = new double[stages][y0.length];#207,15.754727363586426
+double error = 0;#236,15.711507970636541
+final double[] yTmp = new double[y0.length];#208,15.7064847946167
+yTmp[j] = y[j] + stepSize * sum;#267,15.704830071021771
+final double[] scale;#245,15.7012814839681
+for (int j = 0; j < y0.length; ++j) {#275,15.695796232957106
+if (error <= 1.0) {#285,15.684559878181009
+super(name, minStep, maxStep, scalAbsoluteTolerance, scalRelativeTolerance);#116,15.670705538529615
+setMinReduction(0.2);#166,15.662199093745304
+sum    += b[l] * yDotK[l][j];#278,15.65542257985761
+hNew = initializeStep(equations, forward, getOrder(), scale,#252,15.651831260094276
+final double  scaledH    = stepSize * factor;#347,15.632208520715887
+for (int j = 0; j < y0.length; ++j) {#262,15.611948728561401
+firstTime = false;#254,15.597837702433269
+private final double[][] a;#75,15.597442944844564
+interpolator.storeTime(stepStart + stepSize);#288,15.583346063440496
+if (manager.evaluateStep(interpolator)) {#289,15.572880138050426
+hNew = dt;#296,15.528909881909689
+stepSize = filterStep(stepSize, forward, true);#341,15.514887560968814
+stepStart = nextStep;#324,15.510079224904379
+hNew = filterStep(stepSize * factor, forward, false);#308,15.497477493286134
+while (!lastStep) {#232,15.430914688110352
+handler.reset();#226,15.425408124923706
+stepStart, y, yDotK[0], yTmp, yDotK[1]);#253,15.418055707758123
+interpolator.storeTime(nextStep);#320,15.404164059956868
+for (StepHandler handler : stepHandlers) {#321,15.403577243580537
+final double nextStep = stepStart + stepSize;#314,15.397379875183105
+for (StepHandler handler : stepHandlers) {#225,15.332309277852376
+interpolator.storeTime(t0);#219,15.332180169912485
+public double getSafety() {#179,15.299805998802185
+this.a         = a;#120,15.2817718717787
+setEquations(equations);#198,15.262734413146973
+Math.max(minReduction, safety * Math.pow(error, exp)));#307,15.261777744736783
+stepSize = hNew;#257,15.261377198355538
+final double[] c, final double[][] a, final double[] b,#148,15.249799958590803
+final double t0, final double[] y0,#193,15.228082837285223
+if (firstTime || !fsal) {#239,15.177175203959147
+this.a         = a;#158,15.161132123735216
+hNew = filterStep(scaledH, forward, nextIsLast);#350,15.15983541806539
+scale = new double[y0.length];#247,15.148141821225485
+double sum = a[k-1][0] * yDotK[0][j];#263,15.139251824581262
+final double minStep, final double maxStep,#112,15.131748105965409
+if (fsal) {#326,15.107375065485636
+double  hNew      = 0;#223,15.064725816249847
+final RungeKuttaStepInterpolator prototype,#149,15.055449377815679
+final double   minStep, final double maxStep,#150,15.052694734537377
+final RungeKuttaStepInterpolator prototype,#111,15.033252644089034
+if (Math.abs(dt) <= Math.ulp(stepStart)) {#291,15.029833055311634
+stepStart         = t0;#222,14.990558783213297
+loop = false;#300,14.983326375484467
+final double[] c, final double[][] a, final double[] b,#110,14.97814757248451
+final double factor = Math.min(maxGrowth,#344,14.922207593917847
+if (! lastStep) {#337,14.907348791758219
+this.c         = c;#119,14.877834108140734
+setSafety(0.9);#127,14.863177126104182
+this.c         = c;#157,14.851943863762749
+final double t, final double[] y)#194,14.840522738865443
+if (firstTime) {#244,14.839512484414238
+safety * Math.pow(error, exp)));#346,14.80494589805603
+double sum    = b[0] * yDotK[0][j];#276,14.772451368967692
+final double factor =#305,14.73940624509539
+this.b         = b;#121,14.700269169277615
+final double scalRelativeTolerance) {#114,14.670818042755126
+setSafety(0.9);#165,14.652131600813432
+this.b         = b;#159,14.645427650875515
+double h);#398,14.63020502726237
+loop = false;#293,14.588271314447576
+final double[] vecRelativeTolerance) {#152,14.54906332726572
+Math.min(maxGrowth,#306,14.475926009091465
+Math.max(minReduction,#345,14.223900855855739
+double[] y0, double[] y1,#397,14.151702789159922

@@ -1,0 +1,38 @@
+m = UnivariateRealSolverUtils.midpoint(min, max);#87,17.944493458188813
+m = UnivariateRealSolverUtils.midpoint(min, max);#100,17.71185201587099
+public class BisectionSolver extends UnivariateRealSolverImpl {#31,17.584385617574057
+setResult(m, i);#101,17.25528853872548
+max = m;#96,17.222358655929565
+clearResult();#79,17.09290461106734
+return m;#102,17.03007341686048
+@Deprecated#63,16.83288029261998
+++i;#104,16.801901690165202
+double m;#81,16.755232550881125
+int i = 0;#85,16.736488635723408
+@Deprecated#42,16.722795622689382
+throws MaxIterationsExceededException, FunctionEvaluationException {#65,16.70884824835736
+public double solve(final UnivariateRealFunction f, double min, double max, double initial)#70,16.69452925523122
+throws MaxIterationsExceededException, FunctionEvaluationException {#58,16.692791897317637
+double fm;#82,16.683064937591553
+min = m;#93,16.676470613479616
+@Deprecated#56,16.663635798863
+public double solve(final UnivariateRealFunction f, double min, double max)#76,16.586546920594714
+throw new MaxIterationsExceededException(maximalIterationCount);#107,16.574898799260456
+public BisectionSolver() {#51,16.50001014362682
+throws MaxIterationsExceededException, FunctionEvaluationException {#71,16.495425556017004
+super(100, 1E-6);#52,16.48924524643842
+return solve(min, max);#72,16.42287613550822
+return solve(f, min, max);#59,16.412403106689453
+public BisectionSolver(UnivariateRealFunction f) {#43,16.358464128830853
+fm = f.value(m);#89,16.348055601119995
+return solve(f, min, max);#66,16.345341626335593
+while (i < maximalIterationCount) {#86,16.33639446894328
+throws MaxIterationsExceededException, FunctionEvaluationException {#77,16.284110400987707
+super(f, 100, 1E-6);#44,16.274076110438298
+if (Math.abs(max - min) <= absoluteAccuracy) {#99,16.14401956966945
+double fmin;#83,16.012876669565838
+public double solve(double min, double max, double initial)#57,15.915262783274931
+verifyInterval(min,max);#80,15.834505259990692
+fmin = f.value(min);#88,15.691526842117309
+public double solve(double min, double max)#64,15.467568704060145
+if (fm * fmin > 0.0) {#91,15.46075721581777

@@ -1,0 +1,29 @@
+field.set(testClass, Mockito.spy(instance));#49,18.189573630308495
+Mockito.reset(instance);#47,17.919988386092648
+if (instance == null) {#37,17.709753742924445
+throw new MockitoException("Problems initiating spied field " + field.getName(), e);#52,17.69603896722561
+boolean wasAccessible = field.isAccessible();#33,17.694477363868995
+field.setAccessible(wasAccessible);#54,17.569845072428386
+"   //also, don't forget about MockitoAnnotations.initMocks();");#42,17.491263352188408
+Object instance = field.get(testClass);#36,17.467526642481484
+if (new MockUtil().isMock(instance)) {#45,17.436770956856865
+assertNoAnnotations(Spy.class, field, Mock.class, org.mockito.MockitoAnnotations.Mock.class, Captor.class);#32,17.434213832572656
+Field[] fields = context.getDeclaredFields();#29,17.356308889389037
+new Reporter().unsupportedCombinationOfAnnotations(annotation.getSimpleName(), annotation.getClass().getSimpleName());#64,17.287114520405613
+"Example of correct usage of @Spy:\n" +#40,17.280504186102686
+return null;#24,17.278114492242988
+field.setAccessible(true);#34,17.258784274260204
+throw new MockitoException("Cannot create a @Spy for '" + field.getName() + "' field because the *instance* is missing\n" +#38,17.213446791966756
+@SuppressWarnings("deprecation")#27,17.136277198791504
+void assertNoAnnotations(Class annotation, Field field, Class ... undesiredAnnotations) {#61,17.13235080242157
+try {#35,17.002427101135254
+"   @Spy List mock = new LinkedList();\n" +#41,16.98610767053098
+for (Class u : undesiredAnnotations) {#62,16.958310328031843
+for (Field field : fields) {#30,16.943877339363098
+@SuppressWarnings({"unchecked"})#20,16.85399048145001
+"The instance must be created *before* initMocks();\n" +#39,16.817167282104492
+if (field.isAnnotationPresent(Spy.class)) {#31,16.56126817067464
+public void process(Class<?> context, Object testClass) {#28,16.55022308561537
+public Object createMockFor(Annotation annotation, Field field) {#23,16.201264582182233
+if (field.isAnnotationPresent(u)) {#63,16.192509293556213
+public class SpyAnnotationEngine implements AnnotationEngine {#21,15.812434752782186

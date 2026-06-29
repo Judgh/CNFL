@@ -1,0 +1,125 @@
+public long getCumFreq(char v) {#397,15.054189503192902
+public double getCumPct(long v) {#444,14.979462146759033
+public double getCumPct(char v) {#457,14.91650915145874
+public long getCumFreq(long v) {#385,14.906342327594757
+public double getCumPct(Object v) {#414,14.83778566122055
+public long getCumFreq(int v) {#373,14.805794298648834
+public long getCumFreq(Object v) {#323,14.693047940731049
+public double getCumPct(int v) {#431,14.565704464912415
+private final TreeMap freqTable;#52,14.541034698486328
+private static class NaturalComparator implements Comparator, Serializable {#465,14.424375029171214
+@Deprecated#108,14.36670412336077
+public double getPct(Object v) {#272,14.31382669721331
+outBuffer.append("Value \t Freq. \t Pct. \t Cum Pct. \n");#80,14.293061343106357
+if (c.compare(v, freqTable.lastKey()) >= 0) {#349,14.252779824393135
+public double getPct(long v) {#298,14.203955854688372
+public double getPct(char v) {#309,14.202597413744245
+public double getPct(int v) {#287,14.088006223951067
+if (c.compare(v, freqTable.firstKey()) < 0) {#345,14.019673892429896
+public long getSumFreq() {#199,13.967135508855185
+outBuffer.append(nf.format(getCumPct(value)));#90,13.853463111385222
+public long getCount(Object v) {#215,13.763308451725887
+final long sumFreq = getSumFreq();#415,13.759272123637952
+public long getCount(char v) {#257,13.733171756450947
+Comparator c = freqTable.comparator();#330,13.708243322372436
+public long getCount(int v) {#237,13.69816413292518
+outBuffer.append(nf.format(getPct(value)));#88,13.68681133204493
+Iterator iter = freqTable.keySet().iterator();#81,13.666130724407378
+public long getCount(long v) {#247,13.657678897564228
+private static final long serialVersionUID = -3845586908418844111L;#49,13.621453364690145
+public class Frequency implements Serializable {#46,13.602541208267212
+final long sumFreq = getSumFreq();#273,13.557211424175062
+public int compare(Object o1, Object o2) {#483,13.551873320624942
+public void addValue(Object v) {#109,13.5450685941256
+Iterator iterator = freqTable.values().iterator();#201,13.473693156242371
+public void addValue(char v) {#170,13.382105900691105
+public void addValue(long v) {#161,13.345069958613468
+Long value = (Long) freqTable.get(v);#337,13.337831625571617
+public void addValue(int v) {#143,13.326245307922363
+while (iter.hasNext()) {#82,13.325917899608612
+@Override#76,13.317543188730875
+public Iterator valuesIterator() {#188,13.299173008311879
+private static final long serialVersionUID = -3852193713161395148L;#468,13.282671042851039
+StringBuffer outBuffer = new StringBuffer();#79,13.24750976001515
+while (values.hasNext()) {#354,13.229746580123901
+NumberFormat nf = NumberFormat.getPercentInstance();#78,13.213532209396362
+public Frequency(Comparator comparator) {#66,13.191526926480806
+if (getSumFreq() == 0) {#324,13.160175524259868
+throw new IllegalArgumentException("Value not comparable to existing values.");#134,13.098192903730604
+if (v instanceof Integer) {#122,13.093559324741364
+public void addValue(Integer v) {#152,13.056996565598707
+addValue(Long.valueOf(v.longValue()));#153,12.977932583202016
+Iterator values = valuesIterator();#353,12.94762388865153
+return getCumFreq(Long.valueOf(v));#374,12.932862446225922
+return getCumPct(Long.valueOf(v));#432,12.909254731803104
+outBuffer.append(getCount(value));#86,12.869702035730535
+outBuffer.append('\t');#87,12.85164978504181
+Long count = (Long) freqTable.get(obj);#126,12.814851229007427
+obj = Long.valueOf(((Integer) v).longValue());#123,12.804470905890831
+freqTable = new TreeMap(comparator);#67,12.791047358512879
+if (c.compare(v, nextValue) > 0) {#356,12.789935452597481
+if (v instanceof Integer) {#327,12.760204195976257
+outBuffer.append('\t');#85,12.736808919906617
+return getCount(Long.valueOf(v));#238,12.732690284126683
+return getCount(Long.valueOf(v));#248,12.702994371715345
+Long count =  (Long) freqTable.get(v);#221,12.699697211936668
+return getCumPct(Character.valueOf(v));#458,12.677105565224924
+Object obj = v;#121,12.652768721947304
+return getCumPct(Long.valueOf(v));#445,12.594307591838222
+outBuffer.append('\t');#89,12.585600090026855
+while (iterator.hasNext())  {#202,12.523660323199104
+return getCount(Character.valueOf(v));#258,12.520308594954642
+return getCumFreq(((Integer) v).longValue());#328,12.509481430053711
+return getCumFreq(Long.valueOf(v));#386,12.499878021978564
+return freqTable.keySet().iterator();#189,12.447626166873508
+return (double) getCumFreq(v) / (double) sumFreq;#419,12.403714895248413
+return getCumFreq(Character.valueOf(v));#398,12.365992915245794
+return getPct(Long.valueOf(v));#288,12.362999121348063
+addValue(Long.valueOf(v));#144,12.33146063486735
+if (v instanceof Integer) {#216,12.321350812911987
+public void clear() {#175,12.303767098320854
+Object nextValue = values.next();#355,12.286975049972535
+addValue(Long.valueOf(v));#162,12.277309974034628
+if (c == null) {#331,12.234115028381348
+addValue(Character.valueOf(v));#171,12.2307337919871
+public Frequency() {#57,12.224689245223999
+return getPct(Character.valueOf(v));#310,12.201380729675293
+return getSumFreq();    // v is comparable, but greater than the last value#350,12.18637529015541
+public String toString() {#77,12.17895221710205
+return getPct(Long.valueOf(v));#299,12.093248169997644
+return outBuffer.toString();#93,12.033819007873536
+freqTable.put(obj, Long.valueOf(count.longValue() + 1));#130,12.027177797781455
+outBuffer.append('\n');#91,12.01669008731842
+freqTable = new TreeMap();#58,11.987599194049835
+long result = 0;#334,11.924669485825758
+return 0;  // v is comparable, but less than first value#346,11.909113608873808
+return ((Comparable)o1).compareTo(o2);#484,11.906983817065203
+Object value = iter.next();#83,11.86828384901348
+result += ((Long) iterator.next()).longValue();#203,11.784230461120606
+freqTable.put(obj, Long.valueOf(1));#128,11.778900054193311
+if (sumFreq == 0) {#416,11.767271883347455
+return (double) getCount(v) / (double) sumFreq;#277,11.757605581572562
+freqTable.clear();#176,11.71072520528521
+return getCount(((Integer) v).longValue());#217,11.658707837263742
+outBuffer.append(value);#84,11.651720950478001
+if (sumFreq == 0) {#274,11.625500033883487
+try {#336,11.539027404785156
+return result;   // v is not comparable#342,11.305147951299494
+try {#125,11.240397548675537
+if (value != null) {#338,11.170872060876144
+return result;#362,11.164691318165172
+if (count == null) {#127,11.159286348443283
+long result = 0;#200,11.028192300062914
+long result = 0;#219,11.009073734283447
+c = new NaturalComparator();#332,10.893470588483309
+return result;#228,10.846818403764205
+result += getCount(nextValue);#357,10.725862304369608
+if (count != null) {#222,10.52910664207057
+return result;#205,10.441428444602273
+try {#220,9.964516466314143
+return Double.NaN;#417,9.598980373806423
+return Double.NaN;#275,9.569388363096449
+result = value.longValue();#339,9.533627717391305
+result = count.longValue();#223,9.481200259664785
+return 0;#325,9.310343742370605
+return result;#359,9.187408999392861

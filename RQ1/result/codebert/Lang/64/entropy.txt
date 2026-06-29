@@ -1,0 +1,24 @@
+if (enumClass == null) {#143,19.790261268615723
+public int compareTo(Object other) {#182,19.11587773836576
+public String toString() {#203,18.9675931930542
+if (iToString == null) {#204,18.943907737731934
+protected ValuedEnum(String name, int value) {#125,18.90807611802045
+ValuedEnum enumeration = (ValuedEnum) it.next();#148,18.8726795788469
+protected static Enum getEnum(Class enumClass, int value) {#142,18.849744844436646
+throw new IllegalArgumentException("The Enum Class must not be null");#144,18.834357125418528
+public abstract class ValuedEnum extends Enum {#105,18.77579466501872
+if (enumeration.getValue() == value) {#149,18.693131561279298
+public final int getValue() {#161,18.590029456398703
+iToString = shortName + "[" + getName() + "=" + getValue() + "]";#206,18.55029969745212
+private final int iValue;#117,18.44749870300293
+List list = Enum.getEnumList(enumClass);#146,18.167771859602496
+return iValue - ((ValuedEnum) other).iValue;#183,18.108031231424082
+iValue = value;#127,18.071093779343826
+return iToString;#208,18.056796293992264
+return enumeration;#150,17.948283863067626
+for (Iterator it = list.iterator(); it.hasNext();) {#147,17.876704573631287
+return null;#153,17.826465346596457
+return iValue;#162,17.748952865600586
+super(name);#126,17.70847733815511
+String shortName = ClassUtils.getShortClassName(getEnumClass());#205,17.46825606028239
+private static final long serialVersionUID = -7129650521543789085L;#112,17.117067615191143

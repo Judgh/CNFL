@@ -1,0 +1,27 @@
+return mock;#91,18.419320800087668
+container.addAnswer(new Answer<Object>() {#85,17.994298648834228
+public class ReturnsDeepStubs implements Answer<Object>, Serializable {#38,17.508604303995767
+return mock;#87,17.455085854781302
+return stubbedInvocationMatcher.answer(invocation);#63,17.41383252825056
+actualParameterizedType(invocation.getMock()).resolveGenericReturnType(invocation.getMethod());#46,17.13463478553586
+final Object mock = org.mockito.Mockito.mock(clz, this);#83,17.042089064915974
+Class<?> clz = invocation.getMethod().getReturnType();#82,17.026417649310567
+return getMock(invocation);#53,17.00670474767685
+public Object answer(InvocationOnMock invocation) throws Throwable {#86,16.938864884553134
+if(container.getInvocationForStubbing().matches(stubbedInvocationMatcher.getInvocation())) {#62,16.8209644291136
+InternalMockHandler<Object> handler = new MockUtil().getMockHandler(invocation.getMock());#57,16.693369656801224
+private ReturnsEmptyValues delegate = new ReturnsEmptyValues();#42,16.68023370107015
+for (StubbedInvocationMatcher stubbedInvocationMatcher : container.getStubbedInvocations()) {#61,16.389016560145787
+if (!new MockCreationValidator().isTypeMockable(rawType)) {#49,16.364124439380788
+Class<?> rawType = returnTypeGenericMetadata.rawType();#48,16.32925162108048
+return recordDeepStubMock(invocation, container);#68,16.32009592510405
+protected GenericMetadataSupport actualParameterizedType(Object mock) {#94,16.2906174659729
+CreationSettings mockSettings = (CreationSettings) new MockUtil().getMockHandler(mock).getMockSettings();#95,16.24296122127109
+return GenericMetadataSupport.inferFrom(mockSettings.getTypeToMock());#96,16.217830078942434
+GenericMetadataSupport returnTypeGenericMetadata =#45,16.202298906114365
+private static final long serialVersionUID = -7105341425736035847L;#40,16.18205424149831
+public Object answer(InvocationOnMock invocation) throws Throwable {#44,16.13433411246852
+private Object recordDeepStubMock(InvocationOnMock invocation, InvocationContainerImpl container) {#81,16.017876413133408
+InvocationContainerImpl container = (InvocationContainerImpl) handler.getInvocationContainer();#58,15.872054710388184
+private Object getMock(InvocationOnMock invocation) throws Throwable {#56,15.74208945319766
+return delegate.returnValueFor(rawType);#50,15.695765321904963

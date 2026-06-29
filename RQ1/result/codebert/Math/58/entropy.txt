@@ -1,0 +1,114 @@
+private boolean isBetween(double value, double boundary1, double boundary2) {#290,19.359912033081056
+public double[] gradient(double x, double[] p) {#97,19.317600447556067
+private double[] parameters;#133,19.14957464658297
+return -1;#308,18.97663242476327
+double v = Double.POSITIVE_INFINITY;#88,18.816214070175633
+public double value(double x, double[] p) {#87,18.813014881951467
+if (p1.getX() > p2.getX()) {#316,18.751344786749947
+double[] params = new double[3];#170,18.68775226956322
+try {#177,18.62454387119838
+private final WeightedObservedPoint[] observations;#131,18.612085236443413
+if (p1.getWeight() > p2.getWeight()) {#328,18.61094257566664
+return 1;#311,18.60580603281657
+if (p1.getX() < p2.getX()) {#313,18.561926232443916
+public ParameterGuesser(WeightedObservedPoint[] observations) {#140,18.55687940120697
+if (p2 == null) {#310,18.539156879697526
+return -1;#320,18.538038764681136
+return new Comparator<WeightedObservedPoint>() {#302,18.53628578186035
+Arrays.sort(points, createWeightedObservedPointComparator());#169,18.51927263396127
+public int compare(WeightedObservedPoint p1, WeightedObservedPoint p2) {#303,18.51761008597709
+double maxY = Double.NEGATIVE_INFINITY;#272,18.492435198563797
+return -1;#314,18.467727422714233
+return 1;#317,18.46204019475866
+params[1] = points[maxYIdx].getX();#174,18.458683614377623
+public double[] guess() {#155,18.45436634336199
+if (p1.getY() > p2.getY()) {#322,18.433736933602226
+double[] v = { Double.POSITIVE_INFINITY,#98,18.401767076764788
+if (p1 == null) {#307,18.400272130966187
+params[2] = fwhmApprox / (2.0 * Math.sqrt(2.0 * Math.log(2.0)));#185,18.39924430847168
+double minY = Double.POSITIVE_INFINITY;#271,18.39273390403161
+params[0] = points[maxYIdx].getY();#173,18.390388382805718
+if (p1.getWeight() < p2.getWeight()) {#325,18.370778057310318
+try {#89,18.36358560215343
+private Comparator<WeightedObservedPoint> createWeightedObservedPointComparator() {#301,18.283413580485753
+if (p1.getY() < p2.getY()) {#319,18.278677278094822
+private final ParametricUnivariateRealFunction g = new Gaussian.Parametric();#85,18.26846562009869
+return 0;#305,18.262522132308394
+return parameters.clone();#159,18.212418163523953
+return 1;#323,18.20195194526955
+try {#101,18.159635413776744
+double fwhmApprox;#176,18.13615864201596
+return -1;#326,18.065680844443186
+private WeightedObservedPoint[] getInterpolationPointsForY(WeightedObservedPoint[] points,#255,18.010389758694558
+i += idxStep) {#263,17.925415992736816
+maxYIdx = i;#200,17.914757799219203
+WeightedObservedPoint pointB = twoPoints[1];#228,17.908544883728027
+private double interpolateXAtY(WeightedObservedPoint[] points,#220,17.889621178309124
+this.observations = observations.clone();#147,17.881069616837934
+fwhmApprox = fwhmX2 - fwhmX1;#181,17.844670744503247
+private double[] basicGuess(WeightedObservedPoint[] points) {#168,17.82962707678477
+double halfY = params[0] + ((params[1] - params[0]) / 2.0);#178,17.818330430984496
+Double.POSITIVE_INFINITY };#100,17.803747812906902
+int maxYIdx = findMaxY(points);#172,17.799886743227642
+throws OutOfRangeException {#257,17.79570558336046
+return 0;#331,17.774584065312926
+return (value >= boundary1 && value <= boundary2) ||#291,17.744193687438965
+return maxYIdx;#203,17.730472829606796
+v = g.gradient(x, p);#102,17.71612554437974
+return v;#94,17.703159581059996
+if (isBetween(y, points[i].getY(), points[i + idxStep].getY())) {#264,17.70148179697436
+for (int i = startIdx;#261,17.698660169328964
+public double[] fit() {#119,17.69086790084839
+parameters = basicGuess(observations);#157,17.656910456143894
+double fwhmX1 = interpolateXAtY(points, maxYIdx, -1, halfY);#179,17.64977116811843
+throws OutOfRangeException {#222,17.641696294148762
+return fit(new Gaussian.Parametric(), guess);#121,17.63484811782837
+return 1;#329,17.62351707175926
+return v;#106,17.611817318460215
+if (parameters == null) {#156,17.595703125
+if (observations.length < 3) {#144,17.555180715477984
+if (p1 == null && p2 == null) {#304,17.54390285954331
+v = g.value(x, p);#90,17.52583952511058
+for (final WeightedObservedPoint point : points) {#273,17.52097469329834
+double fwhmX2 = interpolateXAtY(points, maxYIdx, +1, halfY);#180,17.500449521201
+return (idxStep < 0) ?#265,17.47837263962318
+Double.POSITIVE_INFINITY,#99,17.465300708346895
+final ParametricUnivariateRealFunction f = new ParametricUnivariateRealFunction() {#84,17.4333081979018
+private int findMaxY(WeightedObservedPoint[] points) {#196,17.409232885941215
+if (idxStep == 0) {#223,17.40880861736479
+for (int i = 1; i < points.length; i++) {#198,17.399759156363352
+(idxStep < 0) ? (i + idxStep >= 0) : (i + idxStep < points.length);#262,17.33982003253439
+int maxYIdx = 0;#197,17.33853769302368
+return pointA.getX() +#235,17.33614649772644
+WeightedObservedPoint[] twoPoints = getInterpolationPointsForY(points, startIdx, idxStep, y);#226,17.33054056400206
+maxY = Math.max(maxY, point.getY());#275,17.303090526211648
+WeightedObservedPoint pointA = twoPoints[0];#227,17.270513648986817
+if (pointA.getY() == y) {#229,17.220890442530315
+(value >= boundary2 && value <= boundary1);#292,17.167347462972007
+if (observations == null) {#141,17.159180595761253
+return pointB.getX();#233,17.14259205693784
+if (idxStep == 0) {#258,17.142578034173873
+throw new OutOfRangeException(y, minY, maxY);#277,17.103180567423504
+throw new NullArgumentException(LocalizedFormats.INPUT_ARRAY);#142,17.092204711016485
+new WeightedObservedPoint[] { points[i + idxStep], points[i] } :#266,17.085409417444346
+public class GaussianFitter extends CurveFitter {#61,17.043912013371784
+if (pointB.getY() == y) {#232,17.023972709973652
+throw new NumberIsTooSmallException(observations.length, 3, true);#145,16.98130994684556
+return pointA.getX();#230,16.845034350519594
+minY = Math.min(minY, point.getY());#274,16.812273148567446
+return params;#187,16.76209856669108
+if (points[i].getY() > points[maxYIdx].getY()) {#199,16.750211947673076
+final double[] guess = (new ParameterGuesser(getObservations())).guess();#120,16.735779126485188
+new WeightedObservedPoint[] { points[i], points[i + idxStep] };#267,16.719838817914326
+public double[] fit(double[] initialGuess) {#83,16.60838347673416
+(((y - pointA.getY()) * (pointB.getX() - pointA.getX())) /#236,16.325137159098748
+fwhmApprox = points[points.length - 1].getX() - points[0].getX();#183,16.27718869651236
+int startIdx, int idxStep, double y)#221,16.245831617942223
+public GaussianFitter(DifferentiableMultivariateVectorialOptimizer optimizer) {#67,16.238492449124653
+throw new ZeroException();#259,16.20336287362235
+super(optimizer);#68,16.154087433448204
+int startIdx, int idxStep, double y)#256,16.03655754327774
+(pointB.getY() - pointA.getY()));#237,16.00621806553432
+throw new ZeroException();#224,15.95827089037214
+return fit(f, initialGuess);#110,15.900224685668945
+public static class ParameterGuesser {#129,15.631060673640324

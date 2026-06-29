@@ -1,0 +1,33 @@
+if (out == null) {#76,20.229434076944987
+if (input == null) {#79,19.84503428141276
+if (input == null) {#54,19.705143292744953
+if (consumed == 0) {#86,19.58028326034546
+while (pos < len) {#84,19.52845656077067
+int pos = 0;#82,19.365562438964844
+int len = input.length();#83,19.069016393025716
+public final void translate(CharSequence input, Writer out) throws IOException {#75,18.575740450904483
+try {#57,18.486389636993408
+throw new IllegalArgumentException("The Writer must not be null");#77,18.22593721976647
+for (int pt = 0; pt < consumed; pt++) {#94,18.22305103448721
+public final String translate(CharSequence input) {#53,18.160987917582194
+public static String hex(int codepoint) {#121,18.10587323506673
+return null;#55,18.103211720784504
+public abstract int translate(CharSequence input, int index, Writer out) throws IOException;#46,18.07527728875478
+public final CharSequenceTranslator with(CharSequenceTranslator... translators) {#107,17.959965332694676
+pos+= c.length;#89,17.85512911189686
+int consumed = translate(input, pos, out);#85,17.79334254886793
+newArray[0] = this;#109,17.747922837734222
+char[] c = Character.toChars(Character.codePointAt(input, pos));#87,17.694696717792088
+CharSequenceTranslator[] newArray = new CharSequenceTranslator[translators.length + 1];#108,17.648937582969666
+return new AggregateTranslator(newArray);#111,17.60715362760756
+continue;#90,17.59765805138482
+out.write(c);#88,17.579451517625287
+return;#80,17.545076642717635
+StringWriter writer = new StringWriter(input.length() * 2);#58,17.519412217316805
+pos += Character.charCount(Character.codePointAt(input, pos));#95,17.2999875906742
+System.arraycopy(translators, 0, newArray, 1, translators.length);#110,17.27527322440312
+public abstract class CharSequenceTranslator {#32,17.272355461120604
+return writer.toString();#60,17.104953394995796
+throw new RuntimeException(ioe);#63,17.065336322784425
+return Integer.toHexString(codepoint).toUpperCase(Locale.ENGLISH);#122,17.044091939926147
+translate(input, writer);#59,16.685892475975884

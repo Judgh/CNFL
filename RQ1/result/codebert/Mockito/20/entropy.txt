@@ -1,0 +1,63 @@
+"You might experience classloading issues, please ask the mockito mailing-list.",#47,17.99836241232382
+return ClassInstantiator.class.cast(usingClassCacheConstructor.newInstance(new GlobalConfiguration().enableClassCache()));#88,17.773450803756713
+"  instance creation by : " + classInstantiator.getClass().getSimpleName(),#45,17.73440816402435
+throw new MockitoException(join(#101,17.71174063682556
+"ClassCastException occurred while creating the mockito mock :",#41,17.691274960835774
+mockAccess.setMockitoInterceptor(new MockMethodInterceptor(asInternalMockHandler(handler), settings));#36,17.67656986336959
+throw new MockitoException(join(#40,17.39743390083313
+"",#46,17.360553741455078
+cachingMockBytecodeGenerator = new CachingMockBytecodeGenerator();#21,17.3472931935237
+""#48,17.289757229032972
+"  created class : " + describeClass(settings.getTypeToMock()),#43,17.249375979105633
+"  proxy instance class : " + describeClass(mockInstance),#44,17.185712187630788
+throw new MockitoException("Unable to create mock instance of type '" + mockedProxyType.getSuperclass().getSimpleName() + "'", e);#51,17.13047454668128
+classInstantiator = initializeClassInstantiator();#20,17.08584273488898
+);#31,17.058359146118164
+throw new IllegalStateException(join(#91,17.05332260131836
+T mockInstance = null;#32,17.023286819458008
+return ensureMockIsAssignableToMockedType(settings, mockInstance);#38,16.9729651927948
+));#105,16.968009068415714
+return instance == null ? "null" : describeClass(instance.getClass());#68,16.94969554901123
+"Please add Objenesis on the classpath.",#93,16.906345552013768
+Class<?> objenesisClassLoader = Class.forName("org.mockito.internal.creation.bytebuddy.ClassInstantiator$UsingObjenesis");#86,16.90416337966919
+private static ClassInstantiator initializeClassInstantiator() {#84,16.85493564605713
+"  class to mock : " + describeClass(mockedProxyType),#42,16.843766080008614
+public void resetMock(Object mock, MockHandler newHandler, MockCreationSettings settings) {#78,16.837762718200683
+return type == null ? "null" : "'" + type.getCanonicalName() + "', loaded by classloader : '" + type.getClassLoader() + "'";#64,16.834804395834606
+"At the moment you cannot provide own implementations of MockHandler.",#102,16.80291684468587
+Constructor<?> usingClassCacheConstructor = objenesisClassLoader.getDeclaredConstructor(boolean.class);#87,16.78618679291163
+private final ClassInstantiator classInstantiator;#16,16.7822785059611
+try {#85,16.72596549987793
+MockMethodInterceptor.MockAccess mockAccess = (MockMethodInterceptor.MockAccess) mockInstance;#35,16.70113063502956
+private final CachingMockBytecodeGenerator cachingMockBytecodeGenerator;#17,16.69872201572765
+((MockMethodInterceptor.MockAccess) mock).setMockitoInterceptor(#79,16.688424825668335
+throw new MockitoException("Serialization across classloaders not yet supported with ByteBuddyMockMaker");#26,16.68430777958461
+try {#33,16.666915130615234
+"Mockito could not create mock: Objenesis is missing on the classpath.",#92,16.66398608378875
+return ((MockMethodInterceptor.MockAccess) mock).getMockitoInterceptor().getMockHandler();#75,16.644606113433838
+return (InternalMockHandler) handler;#107,16.57522397882798
+public MockHandler getHandler(Object mock) {#71,16.52945171083723
+),cce);#49,16.49845141172409
+if (settings.getSerializableMode() == SerializableMode.ACROSS_CLASSLOADERS) {#25,16.45575711221406
+"Please see the javadocs for the MockMaker interface.",#103,16.425004414149694
+return null;#73,16.36205908457438
+""#94,16.35126422700428
+new MockMethodInterceptor(asInternalMockHandler(newHandler), settings)#80,16.315785668113016
+public ByteBuddyMockMaker() {#19,16.215991973876953
+if (!(mock instanceof MockMethodInterceptor.MockAccess)) {#72,16.190619812011718
+);#81,16.173170407613117
+""#104,16.158646856035507
+mockInstance = classInstantiator.instantiate(mockedProxyType);#34,16.15234302652293
+private static String describeClass(Object instance) {#67,16.12391608101981
+return typeToMock.cast(mock);#60,16.11364301882292
+if (!(handler instanceof InternalMockHandler)) {#100,16.04804391860962
+private static String describeClass(Class type) {#63,15.940324238368444
+Class<? extends T> mockedProxyType = cachingMockBytecodeGenerator.get(#28,15.932270014727557
+), throwable);#95,15.931294023990631
+settings.getTypeToMock(),#29,15.811777631441752
+private <T> T ensureMockIsAssignableToMockedType(MockCreationSettings<T> settings, T mock) {#55,15.799708529881068
+public <T> T createMock(MockCreationSettings<T> settings, MockHandler handler) {#24,15.702162878853935
+settings.getExtraInterfaces()#30,15.694268641264543
+Class<T> typeToMock = settings.getTypeToMock();#59,15.643082504272462
+public class ByteBuddyMockMaker implements MockMaker {#14,15.401475466214693
+private static InternalMockHandler asInternalMockHandler(MockHandler handler) {#99,15.289445096796209

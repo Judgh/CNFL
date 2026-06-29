@@ -1,0 +1,182 @@
+private final Supplier<String> safeNameIdSupplier;#53,20.27347615559896
+Supplier<String> safeNameIdSupplier) {#57,19.75164768430922
+private Map<String, String> computeVarList(#243,19.612632115681965
+this.safeNameIdSupplier = safeNameIdSupplier;#59,19.494178771972656
+private final AbstractCompiler compiler;#51,19.468922826978897
+if (defined) {#380,19.354692285711113
+private void blacklistVarReferencesInTree(Node root, final Scope scope) {#114,19.254305410385133
+String var = key.getString();#313,19.249138474464417
+Var v, ReferenceCollection referenceInfo) {#244,19.11385984981761
+Map<String, String> varmap = computeVarList(v, referenceInfo);#371,19.085967779159546
+private boolean isVarInlineForbidden(Var var) {#128,19.076747501597684
+for (Map.Entry<String, String> entry : varmap.entrySet()) {#389,19.0572745513916
+String var = VAR_PREFIX + varname + "_" + safeNameIdSupplier.get();#276,18.920638785642737
+for (String var : all) {#323,18.92013713291713
+blacklistVarReferencesInTree(val, v.scope);#308,18.826640711890327
+String varname = getprop.getLastChild().getString();#271,18.817901094754536
+if (ref.isLvalue() || ref.isInitializingDeclaration()) {#248,18.80185163938082
+String var = VAR_PREFIX + varname + "_" +#259,18.77701473236084
+if (child.getType() == Token.GET ||#200,18.769307309930976
+AbstractCompiler compiler,#56,18.75850027257746
+if (node.getType() == Token.NAME) {#118,18.742101047350012
+int i;#341,18.73433494567871
+Var v = it.next();#85,18.73086477915446
+if (val == null) {#392,18.726841990152995
+this.compiler = compiler;#58,18.717196291143242
+String varname = child.getString();#254,18.70994986658511
+private void fillInitialValues(Reference init, Map<String, Node> initvals) {#289,18.69189092387324
+ReferenceCollection referenceInfo) {#368,18.685415622166225
+for (Reference ref : refs) {#156,18.671696345011394
+boolean defined = referenceInfo.isWellDefined() &&#378,18.636987739139133
+String var = getprop.getChildAtIndex(1).getString();#423,18.579772142263558
+while (!NodeUtil.isStatementBlock(refNode)) {#211,18.543673515319824
+Node val = ref.getAssignedValue();#249,18.51944770812988
+if (ref.isLvalue()) {#409,18.508638438056497
+if (defined) {#401,18.501821171153676
+for (Reference t : refs) {#209,18.498237660056667
+if (isVarInlineForbidden(v)) {#87,18.496831369400024
+if (gramps.getType() == Token.CALL#167,18.484321096669074
+for (i = 0; i < nodes.size() - 2; i++) {#342,18.469129489018368
+fillInitialValues(init, initvals);#382,18.467487335205078
+if (val == null) {#180,18.446103477478026
+Node val = ref.getAssignedValue();#179,18.43698607550727
+for (Reference ref : referenceInfo.references) {#247,18.418521775139702
+Node replacement;#330,18.41062439812554
+private void splitObject(Var v, Reference declaration,#366,18.39108009338379
+Node replacement = Node.newString(Token.NAME, varmap.get(var));#430,18.385221185355352
+if (isInlinableObject(referenceInfo.references)) {#93,18.358686447143555
+@Override#82,18.358348846435547
+if (defined && ref == init) continue;#407,18.34559859169854
+Node vnode;#377,18.32061414718628
+ReferenceCollectingCallback callback = new ReferenceCollectingCallback(#64,18.318123698234558
+Node name = ref.getNode();#157,18.2884681224823
+public void afterExitScope(NodeTraversal t, ReferenceMap referenceMap) {#83,18.272741404446688
+Map<String, String> varmap = Maps.newLinkedHashMap();#245,18.23850038777227
+blacklistVarReferencesInTree(val, v.scope);#396,18.2360258102417
+@Override#116,18.235340976715086
+return parent.getType() == Token.VAR ||#232,18.227121777004665
+if (val != null) {#250,18.216479413649616
+for (Reference ref : referenceInfo.references) {#405,18.20208544201321
+private boolean isInlinableObject(List<Reference> refs) {#154,18.187538146972656
+return varmap;#281,18.177495670318603
+Node object = init.getAssignedValue();#290,18.166876792907715
+Node cur = replacement;#340,18.1481756063608
+|| compiler.getCodingConvention().isExported(var.name)#141,18.146594471401638
+Node val = ref.getAssignedValue();#307,18.107552647590637
+Map<String, Node> initvals = Maps.newHashMap();#373,18.107513791038876
+boolean ret = false;#155,18.104477275501598
+Node refNode = t.getParent();#210,18.087326867239817
+public void visit(Node node) {#117,18.075980365276337
+Reference declaration = referenceInfo.references.get(0);#98,18.04397476196289
+@Override#62,18.028048515319824
+ReferenceCollection referenceInfo = referenceMap.getReferences(v);#91,18.011809939429874
+Node getprop = ref.getParent();#419,17.986393978721217
+|| var.isExtern()#140,17.985147083506863
+private final Set<Var> staleVars = Sets.newHashSet();#80,17.982825183868407
+if (replace.getType() == Token.VAR) {#354,17.960035037994384
+if (val.getType() != Token.OBJECTLIT) {#186,17.95254103342692
+Reference init = referenceInfo.getInitializingReference();#99,17.94984531402588
+Node getprop = ref.getParent();#267,17.94399512441535
+if (!isVarOrAssignExprLhs(name)) {#175,17.936280084692914
+for (Iterator<Var> it = t.getScope().getVars(); it.hasNext();) {#84,17.917008908589683
+List<Node> nodes = Lists.newArrayList();#306,17.916680018107098
+if (parent.getType() == Token.GETPROP) {#164,17.91544885220735
+Node varnode = NodeUtil.newVarNode(entry.getValue(), val);#391,17.911575988486963
+Node parent = ref.getParent();#158,17.910492718219757
+child.getType() == Token.SET) {#201,17.898414459228515
+new Node(Token.ASSIGN,#325,17.891894552442764
+for (Node key = val.getFirstChild(); key != null;#311,17.884869802565802
+public static final String VAR_PREFIX = "JSCompiler_object_inline_";#49,17.876081307729084
+Map<String, String> varmap) {#304,17.811027336120606
+compiler, new InliningBehavior());#65,17.791017830371857
+private void replaceAssignmentExpression(Var v, Reference ref,#303,17.784154891967773
+for (Node child = val.getFirstChild(); child != null;#252,17.72528729615388
+Node childVal = child.getFirstChild();#205,17.72103147506714
+nodes.add(new Node(Token.TRUE));#333,17.711566543579103
+child = child.getNext()) {#199,17.708953221638996
+if (refNode == childVal) {#212,17.704420006793477
+Preconditions.checkState(parent.getFirstChild() == name);#165,17.69254655104417
+Node value = key.removeFirstChild();#314,17.68316588682287
+replacement = new Node(Token.COMMA);#339,17.67416312959459
+return var.isGlobal()#139,17.66552956899007
+(parent.getType() == Token.ASSIGN#233,17.659293901352655
+Node val = initvals.get(entry.getKey());#390,17.63926805768694
+Node gramps = ref.getGrandparent();#159,17.62925534778171
+for (Node child = val.getFirstChild(); child != null;#198,17.5992549398671
+if (varmap.containsKey(varname)) {#255,17.591789146949505
+for (Node key = object.getFirstChild(); key != null;#292,17.590986297244118
+class InlineObjectLiterals implements CompilerPass {#47,17.584110577901203
+cur.addChildToFront(nodes.get(i + 1));#349,17.58215848604838
+nodes = Lists.reverse(nodes);#338,17.56288500393138
+Node.newString(Token.NAME, varmap.get(var)), value));#318,17.55029348424963
+replaceAssignmentExpression(v, ref, varmap);#412,17.547569357830547
+Node.newString(Token.NAME, varmap.get(var)),#326,17.512659127371652
+init.getParent().getType() == Token.VAR;#379,17.499367634455364
+varmap.put(varname, var);#261,17.480668563842773
+if (varmap.containsKey(varname)) {#272,17.459899673461916
+new Node(Token.ASSIGN,#317,17.45312696033054
+Preconditions.checkState(val.getType() == Token.OBJECTLIT);#251,17.449413239955902
+continue;#171,17.444991032282513
+compiler.reportCodeChange();#436,17.406798442204792
+cur.addChildToFront(t);#345,17.38550673033062
+cur.addChildToFront(nodes.get(i));#343,17.341661771138508
+varnode.copyInformationFromForTree(vnode);#394,17.335558501156893
+private class InliningBehavior implements Behavior {#74,17.32249424674294
+safeNameIdSupplier.get();#260,17.30719558397929
+varmap.put(varname, var);#277,17.295338857741584
+nodes.add(#324,17.287028710047405
+Node t = new Node(Token.COMMA);#344,17.18789105188279
+nodes.add(#316,17.183842658996582
+Preconditions.checkState(object.getType() == Token.OBJECTLIT);#291,17.15125138943012
+Preconditions.checkState(val.getType() == Token.OBJECTLIT);#309,17.142506746145393
+return ret;#227,17.13330141703288
+cur.addChildToFront(nodes.get(i));#348,17.132123253562234
+Reference init,#367,17.13131058216095
+vnode = init.getParent();#381,17.1286381483078
+replacement.copyInformationFromForTree(replace);#352,17.128218054771423
+return false;#203,17.11677951812744
+|| RenameProperties.RENAME_PROPERTY_FUNCTION_NAME.equals(var.name)#142,17.09566758130048
+private boolean isVarOrAssignExprLhs(Node n) {#230,17.04227375984192
+Node replace = ref.getParent();#351,17.024417400360107
+NodeUtil.newUndefinedNode(null)));#327,17.01446468599381
+&& gramps.getFirstChild() == parent) {#168,16.996356120476356
+NodeUtil.visitPreOrder(root, new NodeUtil.Visitor() {#115,16.98095472042377
+replacement.copyInformationFrom(getprop);#431,16.96085904773913
+Preconditions.checkState(getprop.getType() == Token.GETPROP);#268,16.942921733856203
+Preconditions.checkState(getprop.getType() == Token.GETPROP);#420,16.927644125620525
+continue;#182,16.912850697835285
+&& parent.getParent().getType() == Token.EXPR_RESULT);#235,16.91280898451805
+staleVars.add(scope.getVar(node.getString()));#119,16.89984735949286
+key = key.getNext()) {#312,16.881955849496944
+initvals.put(key.getString(), key.removeFirstChild());#294,16.81998880704244
+cur = t;#346,16.80852930886405
+key = key.getNext()) {#293,16.776196680570905
+InlineObjectLiterals(#55,16.745687007904053
+splitObject(v, declaration, init, referenceInfo);#103,16.734636863072712
+Preconditions.checkState(varmap.containsKey(var));#427,16.689891461972838
+replace, NodeUtil.newExpr(replacement));#356,16.669980812072755
+Set<String> all = Sets.newLinkedHashSet(varmap.keySet());#310,16.639314156991464
+return false;#169,16.626745732625327
+vnode.getParent().addChildBefore(varnode, vnode);#398,16.614132003784178
+ref.getGrandparent().removeChild(ref.getParent());#416,16.552055696646374
+child = child.getNext()) {#253,16.550711212158202
+vnode = v.getScope().getRootNode().getLastChild().getFirstChild();#386,16.55024221965245
+all.remove(var);#319,16.52645594733102
+&& parent.getFirstChild() == n#234,16.509195244830586
+ref.getGrandparent().replaceChild(ref.getParent(), replacement);#432,16.5008602142334
+Node parent = n.getParent();#231,16.48641347885132
+refNode = refNode.getParent();#216,16.43163933961288
+public void process(Node externs, Node root) {#63,16.403185653686524
+|| staleVars.contains(var);#143,16.390811109542845
+staleVars.add(v);#96,16.387758016586304
+continue;#256,16.370487372080486
+ret = true;#225,16.324575503667194
+callback.process(externs, root);#66,16.31637464250837
+return false;#187,16.28195227109469
+return false;#214,16.262632821735583
+replace.getParent().replaceChild(replace, replacement);#358,16.168933963775636
+continue;#88,16.162470272609166
+return false;#176,16.064211300441197
+vnode.getParent().removeChild(vnode);#402,15.814793634414674
+continue;#273,15.713992663792201
+replace.getParent().replaceChild(#355,15.224277079105377

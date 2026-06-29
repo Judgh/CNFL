@@ -1,0 +1,96 @@
+ScopeState() {#46,19.997421264648438
+ScopeState peek() {#64,19.97934341430664
+StateStack() {#60,19.5438494682312
+static private class ScopeState {#43,19.27280282974243
+currentDepth++;#69,19.17967478434245
+if (states.size() <= currentDepth) {#70,19.045198721044205
+private class PeepholeChangeHandler implements CodeChangeHandler {#82,19.013585567474365
+public AbstractCompiler getCompiler() {#99,19.007873014970258
+private int currentDepth = 0;#58,18.99192393909801
+private AbstractCompiler compiler;#34,18.97152602672577
+PeepholeChangeHandler handler = new PeepholeChangeHandler();#105,18.7973370552063
+this.compiler = compiler;#95,18.713862505826082
+AbstractPeepholeOptimization... optimizations) {#94,18.700144487268783
+if (state.changed) {#143,18.696365503164436
+ScopeState previous = traversalState.peek();#158,18.596431732177734
+ScopeState state = traversalState.peek();#142,18.588936805725098
+private ArrayList<ScopeState> states = Lists.newArrayList();#57,18.49917627635755
+implements CompilerPass {#33,18.46039655473497
+currentDepth--;#78,18.444331550598143
+void push() {#68,18.42349672317505
+@Override#103,18.41043186187744
+@Override#83,18.393863360087078
+public void reportChange() {#84,18.379472064971925
+if (node.isFunction() || node.isScript()) {#157,18.339179515838623
+if (node.getParent() != null && node.isFunction() || node.isScript()) {#141,18.31794896492591
+while(c != null) {#125,18.29136063502385
+if (newVersionOfNode != currentVersionOfNode) {#183,18.282272747584752
+this.peepholeOptimizations = optimizations;#96,18.234564781188965
+static private class StateStack {#56,18.223954916000366
+compiler.addChangeHandler(handler);#106,18.211437384287517
+return compiler;#100,18.201986857822963
+void reset() {#50,18.179064750671387
+if (node.isFunction() || node.isScript()) {#168,18.169114854600693
+if (currentVersionOfNode == null) {#189,18.154476377699112
+Node currentVersionOfNode = n;#174,18.07435925801595
+int visits = 0;#122,18.037800047132706
+for (AbstractPeepholeOptimization optimization : peepholeOptimizations) {#179,18.026177825927736
+if (!shouldVisit(node)) {#118,17.926916201909382
+PeepholeOptimizationsPass(AbstractCompiler compiler,#93,17.872914822896323
+private StateStack traversalState = new StateStack();#41,17.840489020714394
+void pop() {#77,17.677451014518738
+return states.get(currentDepth);#65,17.659489359174454
+compiler.removeChangeHandler(handler);#110,17.64933967590332
+Node newVersionOfNode =#180,17.629002571105957
+traversalState.peek().changed = true;#85,17.57419771306655
+do {#123,17.481101353963215
+for (AbstractPeepholeOptimization optimization : peepholeOptimizations) {#201,17.444252470265265
+states.get(currentDepth).reset();#73,17.436532188864316
+currentVersionOfNode = newVersionOfNode;#186,17.39406533241272
+do {#177,17.367963314056396
+private void traverse(Node node) {#113,17.350778579711914
+private void exitNode(Node node) {#167,17.336127801374957
+private boolean shouldVisit(Node node) {#156,17.305475495078348
+traversalState.push();#162,17.30250684420268
+class PeepholeOptimizationsPass#32,17.27648703257243
+states.add(new ScopeState());#61,17.27398715700422
+private void beginTraversal() {#200,17.26609754562378
+for (AbstractPeepholeOptimization optimization : peepholeOptimizations) {#207,17.251927209937055
+Node c = node.getFirstChild();#124,17.24488786061605
+traverse(c);#126,17.238650401433308
+if (!previous.traverseChildScopes) {#159,17.205459276835125
+Preconditions.checkState(visits < 10000, "too many interations");#134,17.20031162103017
+changed = false;#51,17.188418197631837
+return true;#164,17.1827906199864
+traverseChildScopes = true;#52,17.10221290588379
+boolean changed;#44,17.097517694745743
+private final AbstractPeepholeOptimization[] peepholeOptimizations;#37,17.08087363996004
+states.add(new ScopeState());#71,17.07157927751541
+optimization.beginTraversal(compiler);#202,17.000914692878723
+private boolean shouldRetraverse(Node node) {#140,16.96147948044997
+Node next = c.getNext();#127,16.95303785800934
+boolean somethingChanged = false;#175,16.946735095977782
+traverse(root);#108,16.94032621383667
+somethingChanged = false;#178,16.88703476298939
+state.changed = false;#148,16.857239382607595
+beginTraversal();#107,16.834042972988552
+reset();#47,16.811864256858826
+optimization.optimizeSubtree(currentVersionOfNode);#181,16.806588610013325
+visits++;#132,16.757047653198242
+return false;#153,16.74746949332101
+somethingChanged = true;#184,16.726312764485677
+state.traverseChildScopes = false;#149,16.697623835669624
+public void process(Node externs, Node root) {#104,16.66425476074219
+boolean traverseChildScopes;#45,16.610810565948487
+optimization.endTraversal(compiler);#208,16.574442088603973
+return;#119,16.49177050590515
+traversalState.pop();#169,16.484427452087402
+public void visit(Node n) {#173,16.481202125549316
+private void endTraversal() {#206,16.427031326293946
+visit(node);#131,16.332301712036134
+exitNode(node);#137,16.32336351606581
+return false;#160,16.299959096041594
+c = next;#128,16.22631851832072
+return true;#150,16.183229186318137
+endTraversal();#109,16.143937216864693
+return;#190,15.66037662823995

@@ -1,0 +1,186 @@
+if (bool == null) {#183,20.12471694946289
+if (bool == null) {#447,20.082160186767577
+if (str == "true") {#656,20.017023146152496
+if (bool == null) {#64,20.012811152140298
+if (bool == null) {#530,19.991491508483886
+if (bool == null) {#486,19.980875523885093
+if (bool == null) {#822,19.956410217285157
+if (str == null) {#659,19.94768060048421
+if (bool == null) {#203,19.92716579437256
+if (value == null) {#264,19.879708925882976
+if (bool == null) {#87,19.764155006408693
+if (bool == null) {#126,19.759905433654787
+public static String toStringOnOff(boolean bool) {#860,19.677616399877213
+if (str == null) {#603,19.668631680806477
+public static int toInteger(boolean bool) {#412,19.636330540974935
+int trueCount = 0;#925,19.63534368787493
+public static String toStringYesNo(boolean bool) {#877,19.414000230676987
+public static boolean isNotTrue(Boolean bool) {#107,19.4122274518013
+public static String toStringOnOff(Boolean bool) {#781,19.396596123190488
+if (str == null) {#732,19.389926401774087
+if (array == null) {#918,19.377031962076824
+if (value == null) {#379,19.24826208750407
+return toString(bool, "on", "off");#861,19.2235004901886
+public static String toStringYesNo(Boolean bool) {#799,19.22214076098274
+if (value == trueValue) {#287,19.192208528518677
+if (array == null) {#958,19.172633425394693
+switch (str.length()) {#662,19.132832972208657
+public static boolean isTrue(Boolean bool) {#86,19.111911710103353
+if (value == null) {#316,19.050167910257976
+public static Integer toIntegerObject(boolean bool) {#428,19.03650277853012
+if (value == trueValue) {#348,19.027324557304382
+return false;#88,19.01358896891276
+return !isTrue(bool);#108,19.00579465230306
+return false;#127,18.98936716715495
+return value == 0 ? false : true;#226,18.964751580182245
+if ("true".equalsIgnoreCase(str)) {#563,18.96376655215309
+return toString(bool, "on", "off", null);#782,18.948057434775613
+public static String toStringTrueFalse(boolean bool) {#843,18.88999091877657
+return toString(bool, "yes", "no");#878,18.856949234008788
+return true;#288,18.839604949951173
+if (trueString == null) {#604,18.836256790161134
+public static int toInteger(boolean bool, int trueValue, int falseValue) {#466,18.830284906470258
+return false;#184,18.825780232747395
+if (ch == 'y') {#672,18.81467612584432
+return valueIfNull;#204,18.80950579923742
+return bool ? 1 : 0;#413,18.808691596984865
+return nullString;#823,18.80711042881012
+public static boolean isFalse(Boolean bool) {#125,18.740363438924152
+if (trueString == null) {#733,18.73709201812744
+if (ch == 't') {#685,18.73628866672516
+throw new IllegalArgumentException("The array must not contain any null elements");#967,18.73218584060669
+public static String toStringTrueFalse(Boolean bool) {#763,18.719801958869486
+public static boolean toBoolean(int value) {#225,18.708985392252604
+if (trueValue == null) {#380,18.707900953292846
+return toString(bool, "yes", "no", null);#800,18.70142854343761
+return toString(bool, "true", "false");#844,18.695662117004396
+public BooleanUtils() {#43,18.677685832977296
+public static boolean isNotFalse(Boolean bool) {#146,18.66964191198349
+return nullValue;#487,18.667064905166626
+if (trueValue == null) {#317,18.66123743057251
+if (ch == 'T') {#691,18.655683437983196
+public static Boolean toBooleanObject(boolean bool) {#164,18.646584342507754
+(str.charAt(2) == 'U' || str.charAt(2) == 'u') &&#694,18.633327581444565
+boolean[] primitive = null;#963,18.627610274723597
+return nullValue;#531,18.60081946849823
+return null;#448,18.58755874633789
+if (ch == 'Y') {#677,18.583067655563354
+return bool ? trueValue : falseValue;#467,18.565846723668717
+public static Boolean negate(Boolean bool) {#63,18.565050193241664
+return null;#265,18.53305803934733
+public static boolean toBooleanDefaultIfNull(Boolean bool, boolean valueIfNull) {#202,18.527995109558105
+return trueCount == 1;#939,18.514150074550084
+(ch0 == 'o' || ch0 == 'O') &&#667,18.49919286455427
+return false;#699,18.49719914523038
+public static boolean toBoolean(int value, int trueValue, int falseValue) {#286,18.4902926735256
+for (int i = 0; i < array.length; i++) {#926,18.488346219062805
+throw new IllegalArgumentException("The Integer did not match either specified value");#293,18.469960808753967
+return bool ? trueValue : falseValue;#508,18.44897107517018
+throw new IllegalArgumentException("The Integer did not match any specified value");#356,18.4483695824941
+return toString(bool, "true", "false", null);#764,18.440020734613594
+return !isFalse(bool);#147,18.4327273050944
+(str.charAt(2) == 'u' || str.charAt(2) == 'U') &&#688,18.42064871106829
+return false;#290,18.400640106201173
+throw new IllegalArgumentException("The Integer did not match either specified value");#328,18.389861305554707
+(str.charAt(1) == 'e' || str.charAt(1) == 'E') &&#674,18.38251660794628
+return true;#657,18.379548899332683
+try {#964,18.371749305725096
+case 2: {#663,18.346257150173187
+public static boolean toBoolean(Boolean bool) {#182,18.342509508132935
+case 3: {#670,18.330344676971436
+case 4: {#683,18.32910054922104
+return null;#65,18.3264284769694
+(str.charAt(3) == 'E' || str.charAt(3) == 'e');#695,18.294068296750385
+throw new IllegalArgumentException("The String did not match any specified value");#619,18.28879725933075
+(str.charAt(2) == 'S' || str.charAt(2) == 's');#680,18.27974698940913
+throw new IllegalArgumentException("The Integer did not match any specified value");#395,18.2717125415802
+throw new IllegalArgumentException("The Array must not be null");#959,18.267332040346584
+throw new IllegalArgumentException("The String did not match either specified value");#744,18.26700500647227
+(str.charAt(2) == 's' || str.charAt(2) == 'S');#675,18.265982031822205
+public static String toString(boolean bool, String trueString, String falseString) {#896,18.259171402972676
+public static Boolean toBooleanObject(int value) {#243,18.245453119277954
+return false;#660,18.22654571533203
+public static int toInteger(Boolean bool, int trueValue, int falseValue, int nullValue) {#485,18.21193723325376
+public class BooleanUtils {#34,18.202806064060756
+return Boolean.FALSE;#574,18.202310191260445
+(ch1 == 'n' || ch1 == 'N');#668,18.198684580185834
+public static boolean toBoolean(String str) {#649,18.196227709452312
+(str.charAt(1) == 'R' || str.charAt(1) == 'r') &&#693,18.191046870484644
+throw new IllegalArgumentException("Array is empty");#961,18.190136785092562
+(str.charAt(3) == 'e' || str.charAt(3) == 'E');#689,18.18955324093501
+return bool ? NumberUtils.INTEGER_ONE : NumberUtils.INTEGER_ZERO;#429,18.188585311174393
+return bool.booleanValue() ? true : false;#186,18.178498554229737
+(str.charAt(1) == 'r' || str.charAt(1) == 'R') &&#687,18.164795680921905
+return null;#577,18.15147694674405
+char ch = str.charAt(0);#684,18.141056464268612
+public static Integer toIntegerObject(Boolean bool) {#446,18.130621016025543
+return bool ? trueString : falseString;#897,18.124880902907428
+char ch = str.charAt(0);#671,18.11681501681988
+char ch0 = str.charAt(0);#664,18.10990121629503
+return value == 0 ? Boolean.FALSE : Boolean.TRUE;#244,18.107916831970215
+(str.charAt(1) == 'E' || str.charAt(1) == 'e') &&#679,18.098955894003108
+return false;#933,18.07076230256454
+return#678,18.01601709019054
+return true;#323,18.012736892700197
+return null;#353,18.011607360839843
+if (array[i]) {#929,18.008594814099762
+char ch1 = str.charAt(1);#665,17.97933758629693
+return bool.booleanValue() ? false : true;#129,17.977486515045165
+return bool.booleanValue() ? true : false;#90,17.958591413497924
+return bool.booleanValue() ? NumberUtils.INTEGER_ONE : NumberUtils.INTEGER_ZERO;#450,17.95602646389523
+return false;#325,17.95453796386719
+return value.intValue() == 0 ? Boolean.FALSE : Boolean.TRUE;#267,17.94383642408583
+public static String toString(Boolean bool, String trueString, String falseString, String nullString) {#821,17.92914072672526
+return#666,17.925751368204754
+return true;#739,17.902812449137368
+throw new IllegalArgumentException("The Array must not be null");#919,17.899601789621208
+throw new IllegalArgumentException("Array is empty");#921,17.88445124418839
+public static Boolean toBooleanObject(String str) {#562,17.88277930021286
+public static Boolean toBooleanObject(int value, int trueValue, int falseValue, int nullValue) {#347,17.880706514630997
+return bool.booleanValue() ? true : false;#206,17.83828434944153
+public static Integer toIntegerObject(boolean bool, Integer trueValue, Integer falseValue) {#507,17.836675484975178
+return#686,17.829946691339668
+return false;#741,17.823745346069337
+public static boolean toBoolean(String str, String trueString, String falseString) {#731,17.81821043595024
+trueCount++;#931,17.814222667528234
+if (trueCount < 1) {#930,17.80235767364502
+return#673,17.775916012850676
+return false;#736,17.755325718929893
+return null;#616,17.752018229166666
+return bool.booleanValue() ? trueValue : falseValue;#489,17.746275078166615
+return false;#320,17.709728240966797
+return bool.booleanValue() ? trueString : falseString;#825,17.699341210451994
+return null;#392,17.676197306315103
+return Boolean.FALSE;#566,17.657215542263454
+return bool ? Boolean.TRUE : Boolean.FALSE;#165,17.649864196777344
+return null;#609,17.630104165328177
+return bool.booleanValue() ? trueValue : falseValue;#533,17.620345852591775
+return#692,17.617626840418037
+return true;#318,17.580409652308415
+return xor(primitive) ? Boolean.TRUE : Boolean.FALSE;#969,17.555184914515568
+return true;#734,17.54851115377326
+return Boolean.TRUE;#564,17.528842608133953
+public static boolean toBoolean(Integer value, Integer trueValue, Integer falseValue) {#315,17.52389978325885
+return null;#385,17.521351764076634
+primitive = ArrayUtils.toPrimitive(array);#965,17.50392957528432
+return Boolean.TRUE;#572,17.484155548943413
+return Boolean.FALSE;#570,17.47796365949843
+public static Boolean toBooleanObject(String str, String trueString, String falseString, String nullString) {#602,17.442455530166626
+return Boolean.FALSE;#614,17.409914016723633
+return Boolean.FALSE;#607,17.40986615961248
+return Boolean.TRUE;#612,17.401995288001167
+return Boolean.TRUE;#568,17.396325323316788
+return Boolean.FALSE;#390,17.389842457241482
+return Boolean.FALSE;#351,17.350844118330215
+return Boolean.FALSE;#383,17.34535733136264
+public static boolean xor(boolean[] array) {#916,17.33009511232376
+return Boolean.TRUE;#388,17.327936702304417
+public static Boolean toBooleanObject(Integer value) {#263,17.32484543323517
+public static Integer toIntegerObject(Boolean bool, Integer trueValue, Integer falseValue, Integer nullValue) {#529,17.276862246649607
+super();#44,17.276615262031555
+return Boolean.TRUE;#349,17.19235240088569
+public static Boolean xor(Boolean[] array) {#957,17.119763374328613
+return Boolean.TRUE;#605,17.096986120397393
+return Boolean.TRUE;#381,17.080823378129438
+return (bool.booleanValue() ? Boolean.FALSE : Boolean.TRUE);#67,16.874665295636213
+public static Boolean toBooleanObject(Integer value, Integer trueValue, Integer falseValue, Integer nullValue) {#378,16.86891211782183

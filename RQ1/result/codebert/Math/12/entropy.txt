@@ -1,0 +1,62 @@
+public boolean nextBoolean() {#62,15.671048164367676
+public int nextInt(int n) throws IllegalArgumentException {#139,14.984705713060167
+public abstract class BitsStreamGenerator#28,14.929957151412964
+protected abstract int next(int bits);#59,14.46402128537496
+public float nextFloat() {#93,14.343118000030518
+public abstract void setSeed(long seed);#48,14.115575177328926
+throw new NotStrictlyPositiveException(n);#152,14.027010583877564
+public abstract void setSeed(int seed);#42,14.010847432272774
+public double nextGaussian() {#98,13.966422427784313
+public BitsStreamGenerator() {#37,13.962916634299539
+public void nextBytes(byte[] bytes) {#67,13.920437335968018
+implements RandomGenerator {#29,13.899990611606174
+public abstract void setSeed(int[] seed);#45,13.837726338704426
+public long nextLong() {#156,13.808857107162476
+private double nextGaussian;#32,13.800320148468018
+public double nextDouble() {#86,13.72702202796936
+public int nextInt() {#120,13.553394794464111
+final int iEnd = bytes.length - 3;#69,13.183179604379754
+if (Double.isNaN(nextGaussian)) {#101,13.146053813752674
+final double random;#100,13.130783677101135
+bytes[i + 2] = (byte) ((random >> 16) & 0xff);#74,13.010493586140294
+while (i < bytes.length) {#79,12.935923183665556
+final long  low  = ((long) next(32)) & 0xffffffffL;#158,12.879572970526558
+int random = next(32);#78,12.837710412343343
+bytes[i + 3] = (byte) ((random >> 24) & 0xff);#75,12.805516027635143
+bytes[i + 1] = (byte) ((random >>  8) & 0xff);#73,12.771793127059937
+final double r      = FastMath.sqrt(-2 * FastMath.log(y));#106,12.598520464367336
+final double y = nextDouble();#104,12.58482313156128
+final long high = ((long) next(26)) << 26;#87,12.58328611200506
+bytes[i++] = (byte) (random & 0xff);#80,12.467424392700195
+public void clear() {#166,12.457914034525553
+final double x = nextDouble();#103,12.340485873975252
+if ((n & -n) == n) {#141,12.279924911001455
+while (i < iEnd) {#70,12.172421157360077
+final double alpha = 2 * FastMath.PI * x;#105,12.122767944335937
+nextGaussian = Double.NaN;#167,12.100748959709616
+final long high  = ((long) next(32)) << 32;#157,12.059091464332912
+bytes[i]     = (byte) (random & 0xff);#72,12.051819197336833
+final int random = next(32);#71,12.036357140541076
+nextGaussian = Double.NaN;#38,11.87213634042179
+if (n > 0) {#140,11.695975144704184
+nextGaussian = r * FastMath.sin(alpha);#108,11.685005416870117
+return (int) ((n * (long) next(31)) >> 31);#142,11.630854144240871
+return next(32);#121,11.538695408747746
+int i = 0;#68,11.475458695338322
+final int  low  = next(26);#88,11.440484205881754
+return next(1) != 0;#63,11.269767731428146
+int val;#145,11.208909193674723
+return random;#115,11.15114671533758
+int bits;#144,11.063279088338216
+random       = r * FastMath.cos(alpha);#107,11.021370624673777
+return next(23) * 0x1.0p-23f;#94,11.000625133514404
+return (high | low) * 0x1.0p-52d;#89,10.96558343887329
+nextGaussian = Double.NaN;#112,10.941825480688186
+random = nextGaussian;#111,10.72723494635688
+val = bits % n;#148,10.345883716236461
+random     = random >> 8;#81,10.33006145737388
+return val;#150,10.28288230895996
+return high | low;#159,10.245458639585054
+bits = next(31);#147,10.240882635116577
+do {#146,10.181116138185773
+i += 4;#76,9.962750285863876

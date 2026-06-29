@@ -1,0 +1,209 @@
+if (registry != null) {#247,19.4809912443161
+int depth = 0;#351,19.474467350886417
+int fmtCount = 0;#154,19.41353443690709
+if (registry == null) {#143,19.384588181972504
+private String toPattern;#80,19.368403434753418
+if (coll == null || coll.size() == 0) {#464,19.260374719446357
+int depth = 1;#316,19.257221955519455
+boolean escapingOn) {#454,19.156426934634936
+private boolean containsElements(Collection coll) {#463,19.143351554870605
+if (escapingOn && c[start] == QUOTE) {#421,19.100200943324875
+int len = 0;#388,19.05015857403095
+boolean error = false;#274,19.024589685293343
+"Unterminated quoted string at position " + start);#443,19.016802106584823
+private Format getFormat(String desc) {#246,19.009371537428635
+return appendTo == null ? null : appendTo.append(QUOTE);#422,18.984335115977697
+int fe = -1;#350,18.95745985848563
+"Unterminated format element at position " + start);#302,18.923827852521622
+StringBuffer appendTo, boolean escapingOn) {#418,18.898088585246693
+int lastHold = start;#424,18.89669622693743
+int text = pos.getIndex();#315,18.8884454369545
+return true;#469,18.875798074822676
+return false;#472,18.83142800764604
+"Unterminated format element at position " + start);#334,18.784719364983694
+if (error) {#296,18.73234932239239
+if (containsElements(foundFormats)) {#193,18.715231275558473
+if (depth == 1) {#360,18.679669587508492
+switch (c) {#354,18.647666201871985
+if (c[pos.getIndex()] == START_FMT) {#169,18.627498944600422
+try {#286,18.59380096859402
+if (iter.next() != null) {#468,18.583690946752373
+for (int i = pos.getIndex(); i < pattern.length(); i++) {#425,18.56943600266068
+private static final char START_FMT = ',';#75,18.565126717090607
+if (depth == 0) {#324,18.534408983976945
+int start = pos.getIndex();#313,18.514442920684814
+int i = 0;#197,18.48439396128935
+int start = pos.getIndex();#271,18.455809473991394
+"Unreadable format element at position " + start);#183,18.44763252062675
+String args = null;#249,18.440975020913516
+return appendTo == null ? null : appendTo.append(c, lastHold,#436,18.436861262601965
+throw new IllegalArgumentException(#301,18.427443504333496
+public String toPattern() {#133,18.422761821746825
+if ((c == START_FMT || c == END_FE) && result.length() > 0) {#285,18.40861047638787
+if (i > 0) {#251,18.404727333470394
+public void setFormatsByArgumentIndex(Format[] newFormats) {#236,18.39503574371338
+public void setFormatByArgumentIndex(int argumentIndex, Format newFormat) {#220,18.38996934890747
+do {#390,18.371537971496583
+int start = pos.getIndex();#419,18.34254252910614
+appendQuotedString(pattern, pos, sb, false);#356,18.33946510950724
+private static final String DUMMY_PATTERN = "";#73,18.327314164903427
+throw new IllegalArgumentException(#442,18.315862210591636
+while (pos.getIndex() < pattern.length()) {#352,18.300422214326403
+if (!containsElements(customPatterns)) {#345,18.298414516448975
+if (factory != null) {#256,18.297836303710938
+public final void applyPattern(String pattern) {#142,18.289451667240687
+depth++;#320,18.273703045315212
+while (pos.getIndex() < pattern.length()) {#155,18.25263854435512
+depth++;#359,18.24720647599962
+return factory.getFormat(name, args, getLocale());#257,18.24624449412028
+throw new IllegalArgumentException(#333,18.238058916727702
+return false;#465,18.23568992614746
+ParsePosition pos = new ParsePosition(0);#152,18.179721307754516
+String name = desc;#248,18.16523265838623
+StringBuffer result = new StringBuffer();#273,18.163265466690063
+return null;#260,18.160918322476473
+private static final char START_FE = '{';#77,18.158776728312173
+for (Iterator it = foundFormats.iterator(); it.hasNext(); i++) {#198,18.15204260426183
+if (escapingOn && pattern.substring(i).startsWith(ESCAPED_QUOTE)) {#426,18.139148841033112
+String formatDescription = null;#168,18.135392492467705
+if (c[pos.getIndex()] != END_FE) {#181,18.132008880376816
+if (f != null) {#200,18.1143332356992
+for (; pos.getIndex() < pattern.length(); next(pos)) {#317,18.112792015075684
+"Invalid format argument index at position " + start + ": "#298,18.11247486226699
+return Integer.parseInt(result.toString());#287,18.082595056103123
+case START_FE:#319,18.06602382659912
+appendTo.append(c, lastHold, pos.getIndex() - lastHold).append(#427,18.05841422725368
+throw new IllegalArgumentException(#297,18.0474661776894
+error = true;#281,18.04742709795634
+ParsePosition pos = new ParsePosition(0);#349,18.037810134887696
+if (c != START_FMT && c != END_FE) {#280,18.037734895944595
+continue;#282,18.031244798140094
+ArrayList foundFormats = new ArrayList();#148,18.02348984612359
+fe++;#361,18.02125219865279
+for (; !error && pos.getIndex() < pattern.length(); next(pos)) {#275,18.018043682493012
+int index = readArgumentIndex(pattern, next(pos));#164,18.00401407877604
+private String insertFormats(String pattern, ArrayList customPatterns) {#344,18.002315950393676
+char c = pattern.charAt(pos.getIndex());#353,17.998693199157714
+this.registry = registry;#126,17.998350397745767
+result.append(c);#294,17.997572633955215
+pos.getIndex() - lastHold);#437,17.985222527475067
+c = pattern.charAt(pos.getIndex());#279,17.98084170477731
+throw new UnsupportedOperationException();#221,17.941639455159507
+args = desc.substring(i + 1).trim();#253,17.934571743011475
+case END_FE:#322,17.930921161876004
+throw new UnsupportedOperationException();#237,17.925891621907553
+switch (c[pos.getIndex()]) {#156,17.923655344092328
+case START_FE:#160,17.9223212073831
+return pos;#404,17.90445241061124
+char c = pattern.charAt(pos.getIndex());#276,17.901737022399903
+private static final String ESCAPED_QUOTE = "''";#74,17.89477602640788
+appendQuotedString(pattern, pos, null, escapingOn);#455,17.879524664445356
+name = desc.substring(0, i).trim();#252,17.87759453455607
+Validate.isTrue(foundFormats.size() == fmtCount);#179,17.872571676969528
+setLocale(locale);#125,17.865260632832847
+char[] c = pattern.toCharArray();#153,17.863300959269207
+private Map registry;#81,17.86040687561035
+throw new UnsupportedOperationException();#213,17.85919469197591
+Format[] origFormats = getFormats();#194,17.856649832292035
+return sb.toString();#378,17.850135294596353
+switch (c[pos.getIndex()]) {#433,17.8497314867766
+Format format = null;#167,17.846227872939338
+return pattern;#346,17.828205108642578
+return pattern.substring(text, pos.getIndex());#325,17.824762199864242
+origFormats[i] = f;#201,17.821107239558778
+public void setFormat(int formatElementIndex, Format newFormat) {#212,17.81829301934493
+this(pattern, Locale.getDefault());#90,17.813982433742947
+public void setFormats(Format[] newFormats) {#228,17.80361282124239
+sb.append(START_FE).append(#362,17.80042752623558
+continue;#431,17.78767702314589
+depth--;#323,17.78717834071109
+return toPattern;#134,17.778851747512817
+if (format == null) {#173,17.777997122870552
+stripCustom.append(START_FMT).append(formatDescription);#174,17.773502826690674
+String customPattern = (String) customPatterns.get(fe);#364,17.769723374503
+Format f = (Format) it.next();#199,17.76543092727661
+private static final char END_FE = '}';#76,17.76118418375651
+case START_FE:#358,17.74775168474983
+private StringBuffer appendQuotedString(String pattern, ParsePosition pos,#417,17.74451103210449
+QUOTE);#428,17.737602198565448
+private void getQuotedString(String pattern, ParsePosition pos,#453,17.736386048166377
+appendQuotedString(pattern, pos, stripCustom, true);#158,17.734083970387776
+toPattern = super.toPattern();#145,17.725448513031004
+public ExtendedMessageFormat(String pattern, Locale locale, Map registry) {#123,17.722720098495483
+throw new UnsupportedOperationException();#229,17.719003041585285
+public ExtendedMessageFormat(String pattern) {#89,17.71876159081092
+error = !Character.isDigit(c);#293,17.71082923723304
+fmtCount++;#161,17.708378340068617
+case QUOTE:#355,17.707948923110962
+switch (pattern.charAt(pos.getIndex())) {#318,17.705170264610878
+private void seekNonWs(String pattern, ParsePosition pos) {#387,17.696744366696006
+public ExtendedMessageFormat(String pattern, Locale locale) {#100,17.695228857152603
+next(pos));#171,17.68415105342865
+case QUOTE:#157,17.683303594589233
+char[] c = pattern.toCharArray();#420,17.681756761338974
+private int readArgumentIndex(String pattern, ParsePosition pos) {#270,17.657196283340454
+if (Character.isWhitespace(c)) {#277,17.655622998873394
+int i = desc.indexOf(START_FMT);#250,17.650366746462307
+next(pos);#439,17.645393800735473
+case END_FE:#370,17.637543005101822
+StringBuffer sb = new StringBuffer(pattern.length() * 2);#348,17.63556730747223
+foundDescriptions.add(format == null ? null : formatDescription);#178,17.631927877664566
+return;#146,17.607598985944474
+private ParsePosition next(ParsePosition pos) {#402,17.601905643939972
+formatDescription = parseFormatDescription(pattern,#170,17.59849551628376
+throw new IllegalArgumentException(#182,17.595506774054634
+getQuotedString(pattern, pos, false);#329,17.58879530871356
+for (Iterator iter = coll.iterator(); iter.hasNext();) {#467,17.57361916700999
+sb.append(c);#374,17.568716588227645
+if (customPattern != null) {#365,17.538830552782333
+Validate.isTrue(foundDescriptions.size() == fmtCount);#180,17.52687506242232
+next(pos);#375,17.52557520866394
+lastHold = pos.getIndex();#430,17.517566363016766
+case QUOTE:#328,17.478488981723785
+sb.append(START_FMT).append(customPattern);#366,17.47744631767273
+pos.setIndex(pos.getIndex() + len);#392,17.474754943847657
+break;#327,17.44297483232286
+default:#186,17.441511631011963
+public ExtendedMessageFormat(String pattern, Map registry) {#111,17.439058125019073
+default:#373,17.430428504943848
+readArgumentIndex(pattern, next(pos)));#363,17.425757336616517
+break;#330,17.41701168484158
+seekNonWs(pattern, pos);#314,17.397647857666016
+len = StrMatcher.splitMatcher().isMatch(buffer, pos.getIndex());#391,17.388602674007416
+super.applyPattern(stripCustom.toString());#191,17.38516280525609
+private String parseFormatDescription(String pattern, ParsePosition pos) {#312,17.38397758885434
+StringBuffer stripCustom = new StringBuffer(pattern.length());#150,17.380761373610724
+int start = pos.getIndex();#163,17.367769598960876
+next(pos);#188,17.342538022994994
+break;#357,17.338807000054253
+private static final char QUOTE = '\'';#78,17.33846698488508
+pos.setIndex(pos.getIndex() + 1);#403,17.333414713541668
+format = getFormat(formatDescription);#172,17.332969665527344
+case QUOTE:#434,17.330285906791687
+stripCustom.append(c[pos.getIndex()]);#187,17.327641980401403
+break;#321,17.320616298251682
+toPattern = insertFormats(super.toPattern(), foundDescriptions);#192,17.319312324523924
+pos.setIndex(i + ESCAPED_QUOTE.length());#429,17.296166837215424
++ pattern.substring(start, pos.getIndex()));#299,17.281623022896902
+break;#159,17.23204713397556
+depth--;#371,17.216913825587223
+private static final long serialVersionUID = -2362048321261811743L;#71,17.203397170357082
+super(DUMMY_PATTERN);#124,17.18801588482327
+default:#438,17.18654945918492
+this(pattern, Locale.getDefault(), registry);#112,17.181818437576293
+ArrayList foundDescriptions = new ArrayList();#149,17.170695856997842
+FormatFactory factory = (FormatFactory) registry.get(name);#255,17.147568702697754
+next(pos);#435,17.14317092895508
+public class ExtendedMessageFormat extends MessageFormat {#70,17.132506370544434
+break;#369,17.115822580125595
+seekNonWs(pattern, pos);#272,17.113198578357697
+stripCustom.append(START_FE).append(index);#165,17.100903224945068
+super.applyPattern(pattern);#144,17.085083459552965
+applyPattern(pattern);#127,17.06811633476844
+seekNonWs(pattern, pos);#278,17.0524556239446
+this(pattern, locale, null);#101,17.024362325668335
+foundFormats.add(format);#177,17.01003686587016
+char[] buffer = pattern.toCharArray();#389,16.912764231363933
+seekNonWs(pattern, pos);#162,16.70385201772054
+seekNonWs(pattern, pos);#166,16.679914116859436
+super.setFormats(origFormats);#204,16.58698272705078

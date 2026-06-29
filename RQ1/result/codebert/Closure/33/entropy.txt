@@ -1,0 +1,282 @@
+StringBuilder sb = new StringBuilder();#369,20.00889841715495
+public boolean matchesNumberContext() {#299,19.524699211120605
+String toStringHelper(boolean forAnnotations) {#353,19.40233543940953
+public String getReferenceName() {#428,19.37809880574544
+public boolean matchesStringContext() {#305,19.27496602800157
+private final String className;#73,19.23095679283142
+return isTheObjectType() || isStringObjectType() || isDateType() ||#306,19.21515638178045
+return isNumberObjectType() || isDateType() || isBooleanObjectType() ||#300,19.20642214236052
+public Set<String> getOwnPropertyNames() {#178,19.187351373525765
+if (!isPropertyTypeDeclared(prop)) {#570,19.159221197429456
+if (isStringObjectType()) {#331,18.93143097559611
+public FunctionType getOwnerFunction() {#521,18.885887145996094
+if (p != null) {#223,18.8179613460194
+isRegexpType() || isArrayType() || isNumberObjectType() ||#307,18.77007168989915
+void collectPropertyNames(Set<String> props) {#192,18.734602791922434
+if (!hasProperty(prop)) {#572,18.700908448961044
+if (p != null) {#259,18.681109775196422
+if (p != null) {#272,18.66696869243275
+if (JSType.isSubtypeHelper(this, that)) {#445,18.663042068481445
+public boolean hasReferenceName() {#439,18.62006155649821
+for (ObjectType thisInterface : thisInterfaces) {#468,18.605131679111057
+if (hasOwnDeclaredProperty(name)) {#236,18.600858306884767
+if (thisInterface.isSubtype(that)) {#469,18.595347452163697
+if (thisInterface.isSubtype(that)) {#477,18.563674020767213
+public boolean matchesObjectContext() {#343,18.544032838609482
+@Override#347,18.528283834457397
+for (ObjectType current = this;#362,18.520064967019216
+this.className = className;#117,18.516432682673138
+while (p != null) {#495,18.507512526078656
+if (i > 0) {#374,18.505441919962564
+private static final long serialVersionUID = 1L;#71,18.48381343254676
+@Override#411,18.460201740264893
+: ImmutableList.<ObjectType>of();#529,18.423625469207764
+return null;#408,18.41355460030692
+public Iterable<ObjectType> getCtorExtendedInterfaces() {#533,18.41142882241143
+boolean isPrettyPrint() {#402,18.406400322914124
+return this;#551,18.404361997331893
+for (ObjectType thisInterface : getCtorExtendedInterfaces()) {#476,18.39054354754361
+@Override#177,18.382000207901
+@Override#510,18.376986503601074
+for (Property prop : properties.values()) {#548,18.367483343396867
+for (String prop : constraintObj.getOwnPropertyNames()) {#568,18.352995204925538
+@Override#406,18.35178017616272
+Node propertyNode) {#235,18.348562760786578
+if (hasReferenceName()) {#354,18.344839442859996
+boolean defineProperty(String name, JSType type, boolean inferred,#234,18.325849028194654
+@Override#172,18.299675464630127
+current != null && !current.isNativeObjectType() &&#363,18.2778981924057
+if (className != null) {#429,18.276468515396118
+@Override#151,18.264578342437744
+@Override#251,18.262465953826904
+: ImmutableList.<ObjectType>of();#536,18.241405381096733
+@Override#166,18.223283052444458
+@Override#256,18.191744327545166
+@Override#520,18.19027829170227
+Iterable<ObjectType> thisInterfaces = getCtorImplementedInterfaces();#467,18.185601921081542
+public boolean canBeCalled() {#348,18.180751514434814
+@Override#342,18.179607152938843
+public boolean isPropertyTypeDeclared(String property) {#183,18.171358108520508
+@Override#525,18.167972803115845
+@Override#211,18.160030841827393
+@Override#269,18.154316902160645
+ObjectType thatObj = that.toObjectType();#464,18.14016621907552
+private final Map<String, Property> properties;#74,18.139831860860188
+private boolean hasOverridenNativeProperty(String propertyName) {#315,18.136856257915497
+return className != null || ownerFunction != null;#440,18.13622194925944
+if (p.isUnknownType()) {#496,18.132549540201822
+@Override#443,18.127059936523438
+if (that.isRecordType()) {#457,18.113046646118164
+@Override#352,18.093389749526978
+if (prop != null) {#141,18.085231047410232
+@Override#438,18.08022665977478
+if (prop != null) {#135,18.07845218365009
+if (info != null) {#280,18.077784538269043
+isStringObjectType() || hasOverridenNativeProperty("valueOf");#301,18.07429611682892
+@Override#182,18.063928604125977
+int localCount = 0;#157,18.060998821258544
+public boolean hasCachedValues() {#505,18.0608717918396
+int i = 0;#372,18.056225169788707
+@Override#127,18.056218147277832
+public Iterable<ObjectType> getCtorImplementedInterfaces() {#526,18.053638809605648
+for (String property : propertyNames) {#373,18.05352694193522
+public boolean hasOwnProperty(String propertyName) {#173,18.047864840580868
+return isUnknownType() || getSlot(propertyName) != null;#169,18.0376356526425
+@Override#220,18.035375356674194
+for (ObjectType interfaceType : getCtorExtendedInterfaces()) {#139,18.029687547683714
+@Override#504,18.025712966918945
+void setOwnerFunction(FunctionType type) {#515,18.0244775613149
+++i;#382,18.02323514764959
+private final boolean nativeType;#75,18.01550555229187
+@Override#329,17.998058795928955
+@Override#554,17.9976487159729
+for (String prop : properties.keySet()) {#193,17.987618446350098
+PrototypeObjectType(JSTypeRegistry registry, String className,#104,17.971654667573816
+return null;#266,17.96344784327916
+if (thatCtor != null && thatCtor.isInterface()) {#466,17.938204765319824
+return true;#344,17.938038417271205
+@Override#298,17.928123712539673
+public boolean hasProperty(String propertyName) {#167,17.922745148340862
+@Override#202,17.921032428741455
+return null;#434,17.919880443149143
+isBooleanObjectType() || hasOverridenNativeProperty("toString");#308,17.916530799865722
+@Override#539,17.91077184677124
+public void matchConstraint(ObjectType constraintObj) {#555,17.903786786397298
+public boolean isSubtype(JSType that) {#444,17.9001339503697
+PrototypeObjectType(JSTypeRegistry registry, String className,#113,17.89741527332979
+public int getPropertiesCount() {#152,17.89087543487549
+@Override#427,17.88748860359192
+if (constraintObj.isRecordType()) {#567,17.876611709594727
+@Override#532,17.875429153442383
+@Override#191,17.85941982269287
+return null;#275,17.854887008666992
+if (oldProp != null) {#242,17.84823401769002
+Set<String> propertyNames = Sets.newTreeSet();#361,17.82897146124589
+ObjectType implicitPrototype) {#105,17.82842914874737
+JSType propType = constraintObj.getPropertyType(prop);#569,17.819305585778277
+return forAnnotations ? "?" : "{...}";#394,17.798316849602593
+return ownerFunction.getReferenceName() + ".prototype";#432,17.78627194298638
+? getOwnerFunction().getExtendedInterfaces()#535,17.780299939607318
+return className;#430,17.7796989440918
+if (property != null) {#292,17.77843952178955
+class PrototypeObjectType extends ObjectType {#70,17.7773503197564
+@Override#304,17.771634817123413
+this.isFunctionType() ?#322,17.761154238382975
+return null;#145,17.74926498958043
+@Override#278,17.712367296218872
+public boolean isPropertyTypeInferred(String property) {#203,17.70521354675293
+ObjectType implicitPrototype, boolean nativeType) {#114,17.702129027422735
+JSType resolveInternal(ErrorReporter t, StaticScope<JSType> scope) {#540,17.701485302137293
+for (String property : properties.keySet()) {#158,17.701159858703612
+if (!forAnnotations && i == MAX_PRETTY_PRINTED_PROPERTIES) {#383,17.699940472841263
+ObjectType thatCtor = thatObj == null ? null : thatObj.getConstructor();#465,17.696657220522564
+return RecordType.isSubtype(this, that.toMaybeRecordType());#458,17.688826229261316
+public Property getSlot(String name) {#128,17.668444633483887
+public boolean removeProperty(String name) {#252,17.66734574057839
+return prettyPrint;#403,17.663095355033875
+Property newProp = new Property(#239,17.649356842041016
+public boolean isNativeObjectType() {#511,17.612343311309814
+name, type, inferred, propertyNode);#240,17.61006529190961
+if (nativeType || implicitPrototype != null) {#119,17.5805281996727
+sb.append(getPropertyType(property).toStringHelper(forAnnotations));#380,17.5778035764341
+public void setPropertyJSDocInfo(String propertyName, JSDocInfo info) {#279,17.571679895574395
+return getReferenceName();#355,17.570095148953524
+return properties.remove(name) != null;#253,17.5650189944676
+public JSType getPropertyType(String property) {#212,17.564962932041713
+JSType typeToInfer = propType;#571,17.54775823865618
+ObjectType p = getImplicitPrototype();#494,17.541573183877126
+return nativeType;#512,17.535505652427673
+if (slot == null) {#205,17.532623984596945
+if (isNativeObjectType()) {#316,17.524649143218994
+if (slot == null) {#214,17.515228791670367
+if (that.isUnionType()) {#450,17.504770865807167
+defineInferredProperty(prop, typeToInfer, null);#576,17.48351852099101
+public JSType unboxesTo() {#330,17.4821364662864
+if (isUnknownType() || implicitPrototypeChainIsUnknown()) {#484,17.446612609060185
+Property prop = interfaceType.getSlot(name);#140,17.440792027641745
+ObjectType nativeType =#321,17.42908827463786
+checkState(!hasCachedValues());#423,17.421666071965145
+return super.hasCachedValues();#506,17.412221749623615
+sb.append("{");#370,17.410197991591232
+public ObjectType getImplicitPrototype() {#412,17.402276118596394
+this.nativeType = nativeType;#118,17.39621074994405
+void setPrettyPrint(boolean prettyPrint) {#398,17.391996530386116
+public boolean isPropertyInExterns(String propertyName) {#221,17.391137778759003
+if (!properties.containsKey(propertyName)) {#281,17.38703801896837
+return propertyType != nativePropertyType;#326,17.38671867052714
+? getOwnerFunction().getImplementedInterfaces()#528,17.382382345199584
+if (slot == null) {#185,17.382284077731047
+prop.setType(safeResolve(prop.getType(), t, scope));#549,17.331040183703106
+sb.append(": ");#379,17.323593199253082
+properties.put(name, newProp);#247,17.30722163273738
+return ownerFunction;#522,17.303753972053528
+localCount++;#160,17.29518916390159
+if (implicitPrototype != null) {#133,17.281792504446848
+if (properties.containsKey(name)) {#129,17.264075787862144
+if (getConstructor() != null && getConstructor().isInterface()) {#475,17.247554688226607
+private FunctionType ownerFunction = null;#85,17.242451477050782
+return true;#248,17.237812178475515
+if (implicitPrototype != null) {#263,17.235114438193186
+if (implicitPrototype != null) {#227,17.226641859327042
+return true;#446,17.210429827372234
+return false;#501,17.205264772687638
+public FunctionType getConstructor() {#407,17.203386068344116
+return implicitPrototype.getPropertiesCount() + localCount;#163,17.20132107204861
+return properties.get(propertyName) != null;#174,17.19850114186605
+return sb.toString();#392,17.19618665255033
+if (implicitPrototype == null) {#154,17.188319751194545
+sb.append("}");#389,17.175292308513935
+if (implicitPrototype != null) {#197,17.160064561026438
+prettyPrint = false;#358,17.15510333668102
+typeToInfer = getNativeType(JSTypeNative.VOID_TYPE)#573,17.14221748228996
+registry.getNativeObjectType(JSTypeNative.FUNCTION_PROTOTYPE) :#323,17.137694727989935
+defineInferredProperty(propertyName, getPropertyType(propertyName),#285,17.12817459521086
+public JSDocInfo getOwnPropertyJSDocInfo(String propertyName) {#270,17.108903026580812
+return false;#230,17.103904451642716
+ObjectType implicitPrototype = getImplicitPrototype();#543,17.094416558742523
+return getNativeType(JSTypeNative.NUMBER_TYPE);#336,17.088117099943616
+prettyPrint = true;#391,17.06978685205633
+if (!implicitPrototype.hasProperty(property)) {#159,17.06737262324283
+private boolean prettyPrint = false;#89,17.062408871120876
+this.properties = Maps.newTreeMap();#116,17.061377457209996
+private boolean implicitPrototypeChainIsUnknown() {#493,17.055277109146118
+sb.append(", ");#375,17.051717652214897
+this(registry, className, implicitPrototype, false);#106,17.046034548017715
+null);#286,17.014488083975657
+ownerFunction = type;#517,17.01156732771132
+sb.append(", ...");#384,17.00323337978787
+public Node getPropertyNode(String propertyName) {#257,16.99417363680326
+if (implicitPrototype != null) {#544,16.977461338043213
+return isRegexpType();#349,16.9669997475364
+return this.isImplicitPrototype(thatObj);#490,16.964766561985016
+registry.getNativeObjectType(JSTypeNative.OBJECT_TYPE));#123,16.964104970296223
+@Override#233,16.94385004043579
+return super.unboxesTo();#338,16.939709736750675
+return !slot.isTypeInferred();#188,16.933172152592586
+Property oldProp = properties.get(name);#241,16.923820427485875
+final void setImplicitPrototype(ObjectType implicitPrototype) {#422,16.91955016641056
+return false;#206,16.903159883287216
+ObjectType implicitPrototype = getImplicitPrototype();#262,16.90241825580597
+registry.getNativeObjectType(JSTypeNative.OBJECT_PROTOTYPE);#324,16.884129425574994
+ObjectType implicitPrototype = getImplicitPrototype();#226,16.88267356157303
+return getNativeType(JSTypeNative.BOOLEAN_TYPE);#334,16.8742966859237
+newProp.setJSDocInfo(oldProp.getJSDocInfo());#245,16.870909372965496
+Property property = properties.get(propertyName);#291,16.868125796318054
+sb.append(property);#378,16.865725580851237
+Property p = properties.get(propertyName);#222,16.85115487234933
+return false;#186,16.829503801133896
+super(registry);#115,16.82831244998508
+private ObjectType implicitPrototypeFallback;#80,16.82164261557839
+Preconditions.checkState(ownerFunction == null || type == null);#516,16.80548858642578
+return getNativeType(JSTypeNative.STRING_TYPE);#332,16.80484353928339
+Property p = properties.get(propertyName);#258,16.792250292641775
+ObjectType implicitPrototype = getImplicitPrototype();#196,16.79164958000183
+current = current.getImplicitPrototype()) {#365,16.766488161954012
+return implicitPrototypeFallback;#413,16.748549287969414
+return true;#488,16.7472169664171
+ObjectType implicitPrototype = getImplicitPrototype();#132,16.73844015598297
+return isFunctionPrototypeType()#527,16.737888856367633
+return false;#317,16.72895696428087
+private static final int MAX_PRETTY_PRINTED_PROPERTIES = 4;#91,16.694000741709832
+return p.isFromExterns();#224,16.669625091552735
+p = p.getImplicitPrototype();#499,16.66761612892151
+Property p = properties.get(propertyName);#271,16.665388992854528
+property.setJSDocInfo(info);#293,16.657725546095108
+Property prop = implicitPrototype.getSlot(name);#134,16.654764705234104
+JSType propertyType = getPropertyType(propertyName);#320,16.650590279523065
+this.prettyPrint = prettyPrint;#399,16.648039261500042
+return getNativeType(JSTypeNative.UNKNOWN_TYPE);#215,16.635170845758346
+return this.properties.size();#155,16.617579680222732
+propertyNames.size() <= MAX_PRETTY_PRINTED_PROPERTIES;#364,16.613431374231975
+ObjectType implicitPrototype = getImplicitPrototype();#153,16.613336980342865
+return properties.keySet();#179,16.609264087677
+return false;#237,16.59125985039605
+props.add(prop);#194,16.578661918640137
+setResolvedTypeInternal(this);#541,16.565463701883953
+return p.getJSDocInfo();#273,16.561032422383626
+return slot.isTypeInferred();#208,16.539417425791424
+return isFunctionPrototypeType()#534,16.531552574851297
+.getLeastSupertype(propType);#574,16.45648772899921
+propertyNames.addAll(current.getOwnPropertyNames());#366,16.433107966468448
+StaticSlot<JSType> slot = getSlot(property);#184,16.41729672749837
+JSType nativePropertyType = nativeType.getPropertyType(propertyName);#325,16.400522686186292
+this.implicitPrototypeFallback = implicitPrototype;#424,16.400433708639707
+StaticSlot<JSType> slot = getSlot(property);#213,16.385351551903618
+return false;#453,16.368288464016384
+return prop;#142,16.34627775712447
+return prop;#136,16.32851843400435
+return p.getNode();#260,16.323246399561565
+return true;#497,16.310325795953926
+StaticSlot<JSType> slot = getSlot(property);#204,16.24581919776069
+(ObjectType) implicitPrototype.resolve(t, scope);#546,16.16629051208496
+return implicitPrototype.isPropertyInExterns(propertyName);#228,16.163870970408123
+return properties.get(name);#130,16.081052633432243
+return true;#470,16.024559901310848
+setImplicitPrototype(implicitPrototype);#120,15.969880496754365
+return true;#478,15.968018971956694
+return implicitPrototype.getPropertyNode(propertyName);#264,15.962428463829887
+return slot.getType();#217,15.937670993804932
+setImplicitPrototype(#122,15.817197640736898
+implicitPrototypeFallback =#545,15.61397123336792
+implicitPrototype.collectPropertyNames(props);#198,15.583497271818274
+break;#385,15.178143739700317

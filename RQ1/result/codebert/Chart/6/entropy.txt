@@ -1,0 +1,36 @@
+public Object clone() throws CloneNotSupportedException {#92,20.91838768550328
+public ShapeList() {#58,20.672909206814236
+if (!(obj instanceof ShapeList)) {#108,19.655437893337673
+public int hashCode() {#120,19.469021224975585
+public Shape getShape(int index) {#69,19.436248045701248
+public void setShape(int index, Shape shape) {#80,19.09657073020935
+private void writeObject(ObjectOutputStream stream) throws IOException {#131,19.04671510060628
+private void readObject(ObjectInputStream stream) throws IOException,#157,18.671630753411186
+Shape shape = getShape(i);#137,18.641525411605834
+public class ShapeList extends AbstractObjectList {#53,18.6298770904541
+if (obj == this) {#105,18.534476725260415
+public boolean equals(Object obj) {#103,18.46868960062663
+if (shape != null) {#138,18.44506419332404
+for (int i = 0; i < count; i++) {#136,18.403300978920676
+int count = size();#134,18.40178130223201
+int index = stream.readInt();#163,18.334705305099487
+for (int i = 0; i < count; i++) {#162,18.31272554397583
+if (index != -1) {#164,18.09359574317932
+int count = stream.readInt();#161,17.9896879196167
+super();#59,17.84998083114624
+stream.writeInt(count);#135,17.738623809814452
+return (Shape) get(index);#70,17.73656404018402
+set(index, shape);#81,17.715349333626882
+return super.hashCode();#121,17.669928686959402
+return super.clone();#93,17.513635855454666
+stream.writeInt(i);#139,17.185415806977645
+else {#142,17.14111920765468
+ClassNotFoundException {#158,17.113786585190716
+return super.equals(obj);#111,17.0039159655571
+stream.defaultReadObject();#160,16.951121875217982
+stream.defaultWriteObject();#133,16.87212119783674
+stream.writeInt(-1);#143,16.726048801256262
+SerialUtilities.writeShape(shape, stream);#140,16.60604699452718
+return false;#109,16.205165417989097
+setShape(index, SerialUtilities.readShape(stream));#165,16.18100026448568
+return true;#106,16.125560569763184

@@ -1,0 +1,161 @@
+private AllowedSolution allowed;#63,17.76044626235962
+private static final double REDUCTION_FACTOR = 1.0 / 16.0;#57,17.62177073955536
+private static final double DEFAULT_ABSOLUTE_ACCURACY = 1e-6;#48,17.466325035095213
+public int getMaximalOrder() {#135,17.250171343485516
+private final int maximalOrder;#60,17.20490427017212
+this.allowed = allowedSolution;#393,17.05218900044759
+this.allowed = AllowedSolution.ANY_SIDE;#107,17.051519484747026
+this.allowed = AllowedSolution.ANY_SIDE;#87,17.032815524509974
+this.allowed = AllowedSolution.ANY_SIDE;#129,16.902854964846657
+private static final int MAXIMAL_AGING = 2;#54,16.887650097117703
+this.allowed = allowedSolution;#385,16.873485310872397
+private static final int DEFAULT_MAXIMAL_ORDER = 5;#51,16.863793802261352
+final double xTol = getAbsoluteAccuracy() +#211,16.643489990234375
+targetY = -REDUCTION_FACTOR * yA;#238,16.606877265437955
+this.maximalOrder = maximalOrder;#86,16.567686810212976
+super(relativeAccuracy, absoluteAccuracy, functionValueAccuracy);#124,16.499535767928414
+public BracketingNthOrderBrentSolver(final double absoluteAccuracy,#79,16.463638305664062
+this.maximalOrder = maximalOrder;#106,16.430480171652402
+this.maximalOrder = maximalOrder;#128,16.42008871190688
+targetY = -REDUCTION_FACTOR * yB;#235,16.25869431034211
+protected double doSolve() {#143,16.228355147621848
+private double guessX(final double targetY, final double[] x, final double[] y,#361,16.22221064567566
+public BracketingNthOrderBrentSolver(final double relativeAccuracy,#98,16.21891632947055
+throw new NumberIsTooSmallException(maximalOrder, 2, true);#104,16.171924999782018
+this(DEFAULT_ABSOLUTE_ACCURACY, DEFAULT_MAXIMAL_ORDER);#69,16.15910193324089
+throw new NumberIsTooSmallException(maximalOrder, 2, true);#84,16.147935935429164
+throw new NumberIsTooSmallException(maximalOrder, 2, true);#126,16.126665421894618
+System.arraycopy(y, start, y, 0, nbPoints);#296,16.122533971613105
+public BracketingNthOrderBrentSolver(final double relativeAccuracy,#119,16.095817305824973
+final double[] y = new double[maximalOrder + 1];#147,16.09441934932362
+return maximalOrder;#136,16.055179119110107
+if (maximalOrder < 2) {#103,16.026573293349323
+extends AbstractUnivariateRealSolver#44,16.013640490445223
+if (((xB - xA) <= xTol) || (FastMath.max(absYA, absYB) < getFunctionValueAccuracy())) {#213,15.963292024573501
+public double solve(int maxEval, UnivariateFunction f, double min,#383,15.945460001627604
+final double[] x = new double[maximalOrder + 1];#146,15.930312546816738
+if (y[0] * y[1] < 0) {#169,15.877941007199494
+implements BracketedUnivariateRealSolver<UnivariateFunction> {#45,15.864540852998433
+if (y[1] * y[2] < 0) {#184,15.820440115752044
+super(relativeAccuracy, absoluteAccuracy);#102,15.789197815789116
+if (maximalOrder < 2) {#83,15.775044946109547
+public class BracketingNthOrderBrentSolver#43,15.770965796250563
+public double solve(int maxEval, UnivariateFunction f, double min,#390,15.738549959091912
+System.arraycopy(y, 1, y, 0, nbPoints);#308,15.735558690251532
+for (int j = end - 1; j >= start; --j) {#374,15.723336372375488
+targetY = 0;#241,15.71741821652367
+return super.solve(maxEval, f, min, max, startValue);#394,15.702399995591906
+if (maximalOrder < 2) {#125,15.693813043482164
+@Override#142,15.691588401794434
+nextX = xA + 0.5 * (xB - xA);#277,15.654346668359006
+super(absoluteAccuracy);#82,15.644980566842216
+System.arraycopy(y, signChangeIndex, y, signChangeIndex + 1, nbPoints - signChangeIndex);#318,15.630561926426031
+if (nextY * yA <= 0) {#323,15.538955688476562
+x0 = x[j] + x0 * (targetY - y[j]);#375,15.538261105937343
+final double nextY = computeObjectiveValue(nextX);#283,15.529762153625489
+for (int j = end - 1; j > i; --j) {#367,15.527041237929772
+double xA    = x[signChangeIndex - 1];#198,15.506027636320695
+throws NumberIsTooSmallException {#123,15.495993741353352
+while (true) {#208,15.447487170879658
+return x[0];#164,15.447006954866296
+System.arraycopy(x, start, x, 0, nbPoints);#295,15.445366050257828
+double yA    = y[signChangeIndex - 1];#199,15.443120873492697
+x[j] = (x[j] - x[j-1]) / (y[j] - y[j - delta]);#368,15.43624962931094
+x[0] = getMin();#148,15.43479597568512
+for (int i = start; i < end - 1; ++i) {#365,15.4242964553833
+nbPoints        = 2;#172,15.421600837707519
+final int delta = i + 1 - start;#366,15.405760678378018
+System.arraycopy(x, signChangeIndex, x, signChangeIndex + 1, nbPoints - signChangeIndex);#316,15.375944528824244
+return (yA <= 0) ? xA : xB;#222,15.353007793426514
+return nextX;#287,15.336302900314331
+y[signChangeIndex] = nextY;#319,15.333510745655406
+throws NumberIsTooSmallException {#101,15.322938601175943
+double absYA = FastMath.abs(yA);#200,15.320134592056274
+return absYA < absYB ? xA : xB;#216,15.319563669316908
+x[1] = getStartValue();#149,15.309867914985208
+signChangeIndex = 1;#173,15.273569160037571
+if (Precision.equals(nextY, 0.0, 1)) {#284,15.268449687957764
+double max, AllowedSolution allowedSolution) {#384,15.262556468739229
+if (!((nextX > xA) && (nextX < xB))) {#254,15.261407655828139
+return x[2];#181,15.258878798711867
+System.arraycopy(x, start, tmpX, start, end - start);#251,15.254193053526038
+if ((nbPoints > 2) && (end - start != nbPoints)) {#290,15.25371109644572
+nextX = guessX(targetY, tmpX, y, start, end);#252,15.250668974483714
+int signChangeIndex;#168,15.230551939744215
+xA = nextX;#332,15.219909798015248
+throw new NoBracketingException(x[0], x[2], y[0], y[2]);#189,15.21668016910553
+throws NumberIsTooSmallException {#81,15.216297658284505
+return xA;#218,15.20760158697764
+getRelativeAccuracy() * FastMath.max(FastMath.abs(xA), FastMath.abs(xB));#212,15.205913432439168
+absYA = FastMath.abs(yA);#334,15.199517709237558
+return super.solve(maxEval, f, min, max);#386,15.184082786242167
+nbPoints        = 3;#186,15.171961850133435
+y[2] = computeObjectiveValue(x[2]);#178,15.159390522883488
+if (Precision.equals(y[2], 0.0, 1)) {#179,15.125216330251385
+x[2] = getMax();#150,15.123288631439209
+y[1] = computeObjectiveValue(x[1]);#154,15.120947014201771
+if (signChangeIndex >= (x.length + 1) / 2) {#305,15.107719190192945
+double targetY;#232,15.104652166366577
+xB = nextX;#325,15.102681636810303
+do {#248,15.065922464643206
+if (Precision.equals(y[1], 0.0, 1)) {#155,15.065725220574272
+start = signChangeIndex - 1;#278,15.061806877454122
+yA = nextY;#333,15.060510808771307
+int nbPoints;#167,15.051693989680363
+final double functionValueAccuracy,#121,15.042084415753683
+final int start, final int end) {#362,15.019223812648228
+if (agingA >= MAXIMAL_AGING) {#233,15.011204643249512
+if (Precision.equals(y[0], 0.0, 1)) {#162,15.009938451978895
+y[0] = computeObjectiveValue(x[0]);#161,15.000612952492453
+yB = nextY;#326,14.995752854780717
+return x[1];#157,14.99528828789206
+System.arraycopy(x, 1, x, 0, nbPoints);#307,14.992973946236276
+return xB;#220,14.992174506187439
+x[signChangeIndex] = nextX;#317,14.977110515941273
+return x0;#378,14.958020528157553
+end   = signChangeIndex;#279,14.952700893084208
+AllowedSolution allowedSolution) {#392,14.949632213961694
+case ANY_SIDE :#215,14.941578778353604
+switch (allowed) {#214,14.92403793334961
+case BELOW_SIDE :#221,14.9096078005704
+agingA = 0;#335,14.90869208744594
+double x0 = 0;#373,14.883160999843053
+int agingA   = 0;#201,14.882332682609558
+final double[] tmpX = new double[x.length];#195,14.880854924519857
+signChangeIndex = 2;#187,14.850061806765469
+return (yA <  0) ? xB : xA;#224,14.84821788242885
+signChangeIndex -= start;#297,14.84091481295499
+double max, double startValue,#391,14.839623697342411
+case LEFT_SIDE :#217,14.838280014369799
+verifySequence(x[0], x[1], x[2]);#151,14.833797176678976
+nextX = Double.NaN;#269,14.827582359313965
+nbPoints = end - start;#294,14.79258898893992
+--signChangeIndex;#309,14.741685256958007
+final double absoluteAccuracy,#99,14.733547068656758
+if (signChangeIndex - start >= end - signChangeIndex) {#260,14.724251665387834
+double absYB = FastMath.abs(yB);#204,14.713136672973633
+case ABOVE_SIDE :#223,14.711968183517456
+++agingA;#328,14.668758392333984
+signChangeIndex++;#339,14.640327453613281
+if (Double.isNaN(nextX)) {#275,14.639505664507547
+case RIGHT_SIDE :#219,14.63669404116544
+throw new MathInternalError(null);#227,14.6153484412602
+int end   = nbPoints;#247,14.608713967459542
+double nextX;#245,14.549033641815186
+int agingB   = 0;#205,14.536489486694336
+int start = 0;#246,14.535910662482767
+double yB    = y[signChangeIndex];#203,14.501056943620954
+double xB    = x[signChangeIndex];#202,14.488636925106956
+absYB = FastMath.abs(yB);#327,14.479170152119227
+final int maximalOrder)#122,14.371623453886613
+public BracketingNthOrderBrentSolver() {#68,14.35588539347929
+final double absoluteAccuracy,#120,14.345122966360538
+agingB = 0;#329,14.21916775476365
+++agingB;#336,14.216468095779419
+nbPoints--;#302,14.178107125418526
+final int maximalOrder)#100,14.163610562034275
+++nbPoints;#320,14.006137490272522
+--end;#265,13.916522555881077
+default :#225,13.844349649217394
+final int maximalOrder)#80,13.827696281930674
+++start;#262,13.476401929502133

@@ -1,0 +1,317 @@
+case TRUE:#782,19.984915415445965
+public boolean isInstanceType() {#304,19.68384552001953
+case TRUE:#752,19.60743056403266
+if (thisType.isEquivalentTo(thatType)) {#899,19.507923709021675
+if (jsType instanceof ProxyObjectType) {#328,19.466694831848145
+public boolean isDateType() {#225,19.379404491848415
+public boolean isRecordType() {#269,19.262446297539604
+public boolean matchesStringContext() {#389,19.25150860680474
+if (thisType.isEquivalentTo(thatType)) {#630,19.239113436804878
+case FALSE:#749,19.219485388861763
+public int hashCode() {#350,19.212669134140015
+public final boolean isString() {#195,19.194164276123047
+return this instanceof ObjectType ? (ObjectType) this : null;#474,19.191958377235814
+case FALSE:#786,19.182261996799046
+if (bType.isAllType() || bType.isUnknownType() ||#517,19.164001074704256
+public boolean isArrayType() {#209,19.153079774644638
+public final boolean isNumber() {#204,19.128393173217773
+public boolean isStringObjectType() {#179,19.12752056121826
+public final boolean matchesUint32Context() {#369,19.11985166867574
+public boolean matchesNumberContext() {#377,19.073372734917534
+public boolean isNumberObjectType() {#166,19.019958877563475
+throw new IllegalStateException();#758,18.963536548614503
+public ObjectType toObjectType() {#473,18.938932991027833
+if (this.isNullType() && that.isNullType() ||#828,18.878883028030394
+if (aType.isFunctionType() || bType.isFunctionType()) {#534,18.871672370217063
+case UNKNOWN:#753,18.861430168151855
+public boolean isStringValueType() {#187,18.829991817474365
+public final boolean matchesInt32Context() {#360,18.82864301854914
+throw new IllegalStateException();#792,18.81492223739624
+return thisType.isEquivalentTo(thatType) ? thisType :#635,18.802248868075285
+public String toDebugHashCodeString() {#1025,18.796214970675383
+if (this.isSubtype(that)) {#442,18.78914368947347
+return displayName != null && !displayName.isEmpty();#140,18.788232803344727
+public boolean isNumberValueType() {#170,18.77983694076538
+public String getDisplayName() {#131,18.77416314019097
+public boolean isTemplateType() {#273,18.76479000515408
+case UNKNOWN:#787,18.75017738342285
+bType.isNoResolvedType() ||#518,18.73202027214898
+if (aIsEmpty || bIsEmpty) {#526,18.722261428833008
+if (thatType instanceof NamedType) {#916,18.71908167430333
+return isNoType() || isNoObjectType() || isNoResolvedType();#163,18.699348839846525
+public boolean isAllType() {#237,18.684689309861923
+return areEquivalent ? thisType :#600,18.67817211151123
+switch (this.testForEquality(that)) {#748,18.6631001830101
+switch (this.testForEquality(that)) {#781,18.624955654144287
+return (jsType instanceof JSType) ?#345,18.618425305684408
+public final ObjectType dereference() {#483,18.591251277923583
+static boolean isSubtype(JSType thisType, JSType thatType) {#893,18.579256466456822
+return result;#939,18.579186984470912
+public JSType restrictByNotNullOrUndefined() {#840,18.566940561930338
+aType.isAllType() || aType.isUnknownType() ||#519,18.5536105632782
+return null;#463,18.527538572038925
+if (thatType instanceof UnionType) {#907,18.525302205766952
+public boolean hasDisplayName() {#138,18.521420584784615
+if (thatType.isAllType()) {#903,18.513086455208914
+return null;#454,18.491458075387136
+JSType otherType = aType.isFunctionType() ? bType : aType;#535,18.489163362062893
+@Override#349,18.48844575881958
+public final boolean isEmptyType() {#162,18.475493240356446
+@Override#343,18.47438907623291
+return !this.isEquivalentTo(that);#883,18.46115224501666
+return ((UnionType) thisType).meet(thatType);#642,18.45264018209357
+return this;#841,18.44679491860526
+public boolean isFunctionType() {#253,18.446613947550457
+if (thisType.isSubtype(element)) {#910,18.437126302719115
+isEquivalentTo((JSType) jsType) : false;#346,18.43015886389691
+public boolean isUnknownType() {#241,18.425255457560223
+public boolean isNullType() {#229,18.424991819593643
+public boolean isBooleanValueType() {#217,18.41064860604026
+if (that.isRecordType()) {#618,18.402857780456543
+if (!this.isUnknownType() && !that.isUnknownType()) {#882,18.402099745614187
+boolean aIsEmpty = aType.isEmptyType();#524,18.392746925354004
+boolean areEquivalent = thisType.isEquivalentTo(thatType);#599,18.381321048736574
+return jsType.isEquivalentTo(this);#329,18.357514269211713
+return null;#119,18.354950223650253
+private static final long serialVersionUID = 1L;#68,18.320922778202938
+String displayName = getDisplayName();#139,18.317925771077473
+public boolean isBooleanObjectType() {#213,18.314716252413664
+public boolean matchesObjectContext() {#401,18.308185047573513
+if (aIsEmpty && bIsEmpty) {#527,18.305780018077176
+public boolean isUnionType() {#249,18.288457446628147
+"Not declared as a type name";#80,18.277129650115967
+public boolean isEquivalentTo(JSType jsType) {#327,18.27044314146042
+if (thatType.isUnknownType()) {#895,18.266600131988525
+if (meet.isNoType() || meet.isNoObjectType()) {#544,18.259333030037258
+return matchesNumberContext();#370,18.230371369255913
+return matchesNumberContext();#361,18.227356486850315
+boolean bIsEmpty = bType.isEmptyType();#525,18.22648847103119
+if (bType.isEnumElementType() || bType.isUnionType()) {#550,18.222598274548847
+static JSType getGreatestSubtype(JSType thisType, JSType thatType) {#629,18.21856830596924
+public boolean isEnumType() {#261,18.214949798583984
+return null;#132,18.205395017351425
+if (autoboxObjType != null) {#417,18.197795613606772
+return this.isSubtype(#196,18.190711888399992
+public boolean isVoidType() {#233,18.17795124053955
+static JSType filterNoResolvedType(JSType type) {#659,18.171771738264297
+return this.isUnknownType() ^ that.isUnknownType();#886,18.17019436094496
+registry.setResolveMode(ResolveMode.IMMEDIATE);#936,18.167311000823975
+public final boolean canTestForEqualityWith(JSType that) {#495,18.16649129655626
+public boolean differsFrom(JSType that) {#880,18.157340563260593
+void forgiveUnknownNames() {}#148,18.148560404777527
+public JSType getRestrictedTypeGivenToBooleanOutcome(boolean outcome) {#701,18.12492747740312
+this.isVoidType() && that.isVoidType()) {#829,18.11840299765269
+return System.identityHashCode(this);#351,18.110059125082834
+"Not declared as a constructor";#77,18.105309119591347
+return ((UnionType) thatType).meet(thisType);#644,18.099097603245784
+return this == jsType;#335,18.08167905807495
+if (alt.isNoResolvedType()) {#668,18.081329747250205
+return this.isSubtype(#205,18.07582040266557
+return this.isSubtype(that) || that.isSubtype(this);#564,18.073523824865166
+if (that instanceof UnionType) {#742,18.060022354125977
+if (that instanceof UnionType) {#775,18.054496471698467
+TernaryValue testForEqualityHelper(JSType aType, JSType bType) {#516,18.053265266418457
+public static final String EMPTY_TYPE_COMPONENT =#82,18.048075079917908
+if (that instanceof UnionType) {#820,18.04677779857929
+if (type.isNoResolvedType()) {#660,18.045087242126463
+if (that.isUnionType()) {#587,18.017817130455605
+public final JSType typeB;#1013,18.003030856450398
+public boolean isNoType() {#150,18.002872149149578
+public boolean setValidator(Predicate<JSType> validator) {#1007,18.001573713202227
+public boolean isNominalType() {#297,17.993951884183016
+UnionTypeBuilder builder = new UnionTypeBuilder(type.registry);#675,17.98730108012324
+return testForEqualityHelper(this, that);#513,17.986320050557456
+public JSType unboxesTo() {#462,17.965517477555707
+public final JSType resolve(ErrorReporter t, StaticScope<JSType> scope) {#956,17.95468334356944
+public boolean isNoResolvedType() {#154,17.94965345209295
+public boolean isObject() {#281,17.931253910064697
+JSType meet = otherType.getGreatestSubtype(#542,17.91194052696228
+public boolean isOrdinaryFunction() {#320,17.9077187538147
+public boolean isEnumElementType() {#257,17.903095852244984
+public boolean isNoObjectType() {#158,17.894032669067382
+return filterNoResolvedType(thisType);#638,17.89161854982376
+return null;#553,17.876712935311453
+public boolean equals(Object jsType) {#344,17.87009585987438
+public boolean isInterface() {#312,17.861804723739624
+return "{" + this.hashCode() + "}";#1026,17.844903104445514
+aType.isNoResolvedType()) {#520,17.837223317888046
+return null;#421,17.834205627441406
+for (JSType alt : unionType.getAlternates()) {#676,17.813988519751508
+if (resolved) {#957,17.8033278465271
+public static final String UNKNOWN_NAME =#73,17.796162258494984
+JSType result = resolve(t, scope);#937,17.79368476867676
+static JSType getLeastSupertype(JSType thisType, JSType thatType) {#598,17.792781372070312
+JSType(JSTypeRegistry registry) {#102,17.788049697875977
+public boolean isRegexpType() {#221,17.786419695073906
+public static final String NOT_A_TYPE =#79,17.780791123708088
+public static boolean isEquivalent(JSType typeA, JSType typeB) {#338,17.774918036027387
+getNativeType(JSTypeNative.NUMBER_VALUE_OR_OBJECT_TYPE));#206,17.756348609924316
+JSType restricted = restrictByNotNullOrUndefined();#484,17.754928083980786
+public JSType getGreatestSubtype(JSType that) {#617,17.75447702407837
+public boolean canBeCalled() {#430,17.736497020721437
+if (!alt.isNoResolvedType()) {#677,17.733811878022692
+if (needsFiltering) {#674,17.728077301612267
+return false;#305,17.719487054007395
+public final boolean canTestForShallowEqualityWith(JSType that) {#563,17.715526866912843
+ResolveMode oldResolveMode = registry.getResolveMode();#935,17.712598348918714
+return false;#313,17.711915152413503
+return type == null ? null : type.resolve(t, scope);#998,17.701601839065553
+return false;#378,17.696542603628977
+public TypePair(JSType typeA, JSType typeB) {#1015,17.694554979150947
+public final boolean isResolved() {#982,17.683924865722656
+public int compare(JSType t1, JSType t2) {#91,17.681965555463517
+JSType type, ErrorReporter t, StaticScope<JSType> scope) {#997,17.675195327171913
+public JSType findPropertyType(String propertyName) {#415,17.67333132425944
+return new TypePair(null, null);#830,17.671630024909973
+resolveResult = null;#989,17.670742670694988
+return getGreatestSubtype(this, that);#622,17.670082155863444
+return false;#290,17.67005525316511
+JSType getNativeType(JSTypeNative typeId) {#109,17.661676855648267
+return this.isSubtype(getNativeType(JSTypeNative.NULL_TYPE));#571,17.649860103925068
+if (resolveResult == null) {#960,17.638066228230795
+return false;#298,17.636988503592356
+return false;#282,17.63526807512556
+return filterNoResolvedType(thatType);#640,17.600116193294525
+typeA == typeB : typeA.isEquivalentTo(typeB);#340,17.597637748718263
+return true;#900,17.580659760369194
+for (JSType element : union.alternates) {#909,17.571342819615413
+return thisType;#631,17.567455768585205
+return (typeA == null || typeB == null) ?#339,17.565279624041388
+return this.testForEquality(that).equals(UNKNOWN);#496,17.55788998603821
+return true;#896,17.556805504692925
+return false;#321,17.539836066109793
+public final void clearResolved() {#987,17.529656314849852
+public boolean canAssignTo(JSType that) {#441,17.526821263631184
+for (JSType alt : unionType.getAlternates()) {#667,17.51749424707322
+resolveResult = resolveInternal(t, scope);#966,17.512952259608678
+return new TypePair(null, null);#750,17.50924163394504
+return t1.toString().compareTo(t2.toString());#92,17.506329246189285
+if (literals.contains(outcome)) {#703,17.506065368652344
+filterNoResolvedType(#601,17.50367988858904
+return false;#390,17.497632571629115
+return new TypePair(noType, noType);#784,17.4887264251709
+public TypePair getTypesUnderInequality(JSType that) {#773,17.475640899256657
+boolean isTheObjectType() {#183,17.4633821911282
+"Unknown class name";#74,17.457585854963824
+return new TypePair(this, that);#832,17.436710357666016
+boolean isNamedType() {#265,17.434684329562717
+getNativeType(JSTypeNative.OBJECT_TYPE));#543,17.431264241536457
+public TypePair getTypesUnderEquality(JSType that) {#740,17.427975442674423
+return false;#402,17.427151952471053
+getNativeType(JSTypeNative.STRING_VALUE_OR_OBJECT_TYPE));#197,17.411969579499342
+public final JSType typeA;#1012,17.411491235097248
+public JSDocInfo getJSDocInfo() {#118,17.402513095310756
+public boolean isNullable() {#570,17.392412397596573
+return false;#431,17.38881710597447
+public TernaryValue testForEquality(JSType that) {#512,17.354567686716717
+return true;#904,17.35402266184489
+this.typeB = typeB;#1017,17.3449228150504
+public TypePair getTypesUnderShallowInequality(JSType that) {#818,17.34271644410633
+return resolved;#983,17.334291866847447
+"Named type with empty name component";#83,17.333281008402505
+return false;#167,17.306071417672293
+public abstract <T> T visit(Visitor<T> visitor);#927,17.295776591581458
+return resolveResult;#968,17.289580821990967
+return false;#180,17.267518179757253
+return that.getGreatestSubtype(this);#620,17.26642670350916
+private JSType resolveResult = null;#71,17.259477095170453
+return false;#155,17.24198627471924
+UnionType unionType = (UnionType) type;#665,17.238898165085736
+public boolean isConstructor() {#289,17.235116004943848
+return validator.apply(this);#1008,17.222203493118286
+public abstract boolean isSubtype(JSType that);#870,17.219291755131312
+public final JSType forceResolve(ErrorReporter t, StaticScope<JSType> scope) {#934,17.205697756547195
+return bType.testForEquality(aType);#551,17.20316531923082
+registry.setResolveMode(oldResolveMode);#938,17.202715694904327
+TypePair p = that.getTypesUnderEquality(this);#743,17.201194218226842
+return thisType.isSubtype(((NamedType)thatType).getReferencedType());#917,17.19210365840367
+public static final String NOT_A_CLASS =#76,17.187716563542683
+return false;#171,17.18568297794887
+public TypePair getTypesUnderShallowEquality(JSType that) {#804,17.174879693984984
+return false;#176,17.170754977634974
+return false;#184,17.170424597603933
+return false;#274,17.170393535069056
+final JSTypeRegistry registry;#100,17.165826320648193
+return UNKNOWN;#521,17.15697889328003
+return false;#151,17.143931797572545
+ObjectType autoboxObjType = ObjectType.cast(autoboxesTo());#416,17.13278418001921
+return false;#159,17.123777525765554
+UnionType union = (UnionType)thatType;#908,17.09795570373535
+public abstract class JSType implements Serializable {#67,17.095987926829945
+public static class TypePair {#1011,17.094005160861546
+return new TypePair(this, that);#754,17.09383005566067
+return ObjectType.cast(autobox == null ? restricted : autobox);#486,17.081147280606356
+return false;#445,17.0764126096453
+TypePair p = that.getTypesUnderInequality(this);#776,17.075678435238924
+return getLeastSupertype(this, that);#591,17.063517379760743
+return false;#270,17.05948175702776
+public JSType getLeastSupertype(JSType that) {#586,17.059209876590305
+JSType commonType = getGreatestSubtype(that);#805,17.055158403184677
+static final Comparator<JSType> ALPHA = new Comparator<JSType>() {#90,17.031675775845844
+abstract JSType resolveInternal(ErrorReporter t, StaticScope<JSType> scope);#974,17.02551381484322
+return false;#262,17.023687635149276
+return type;#684,17.00960499899728
+return thisType.getNativeType(JSTypeNative.NO_TYPE);#648,17.009151731218612
+return true;#443,17.000488599141438
+return this;#704,16.996036529541016
+return false;#222,16.995962687901088
+private boolean resolved = false;#70,16.991641879081726
+return new TypePair(commonType, commonType);#806,16.991542279720306
+return false;#226,16.96646240779332
+return false;#210,16.96392331804548
+return thisType.getNativeType(JSTypeNative.NO_OBJECT_TYPE);#646,16.959871512192947
+return false;#266,16.95850099836077
+return false;#188,16.956713267735072
+this.registry = registry;#103,16.951893286271527
+return new TypePair(this, that);#788,16.94227080874973
+return false;#234,16.93599714551653
+return false;#230,16.93441527230399
+return false;#258,16.928087779453822
+public boolean isFunctionPrototypeType() {#175,16.927151333202016
+return new TypePair(p.typeB, p.typeA);#744,16.918570431795988
+return false;#246,16.91505745479039
+return false;#250,16.91106619153704
+static final JSType safeResolve(#996,16.884251074357465
+return false;#218,16.88177272251674
+return false;#214,16.875385693141393
+resolveResult = type;#977,16.858909395005966
+return new TypePair(p.typeB, p.typeA);#777,16.85455911809748
+thisType.registry.createUnionType(thisType, thatType));#602,16.852149384362356
+return false;#242,16.84729548863002
+return false;#238,16.828574453081405
+void setResolvedTypeInternal(JSType type) {#976,16.826889292399088
+return false;#254,16.82617732456752
+return new TypePair(p.typeB, p.typeA);#822,16.81573421304876
+public JSType autoboxesTo() {#453,16.80860115931584
+BooleanLiteralSet literals = getPossibleToBooleanOutcomes();#702,16.802076294308616
+resolved = true;#965,16.79440689086914
+resolved = false;#988,16.79185712337494
+boolean needsFiltering = false;#666,16.779543069692757
+return registry.getNativeType(JSTypeNative.UNKNOWN_TYPE);#961,16.76652099609375
+public boolean isCheckedUnknownType() {#245,16.76203589005904
+return TernaryValue.TRUE;#528,16.75916576385498
+TypePair p = that.getTypesUnderShallowInequality(this);#821,16.752766013145447
+return type.getNativeType(JSTypeNative.NO_RESOLVED_TYPE);#663,16.74381842436614
+return builder.build();#681,16.7166716502263
+public abstract BooleanLiteralSet getPossibleToBooleanOutcomes();#726,16.709684901767307
+this.typeA = typeA;#1016,16.702447618756974
+return that.getLeastSupertype(this);#589,16.677946651683133
+return false;#919,16.63505608694894
+JSType noType = getNativeType(JSTypeNative.NO_TYPE);#783,16.634608374701607
+return getNativeType(JSTypeNative.NO_TYPE);#706,16.614592599868775
+return TernaryValue.FALSE;#545,16.614027808694278
+return registry.getNativeType(typeId);#110,16.613295555114746
+resolved = true;#978,16.545511960983276
+return resolveResult;#963,16.51851463317871
+public static final int ENUMDECL = 1;#97,16.383778718801643
+return TernaryValue.UNKNOWN;#547,16.352475615108716
+return UNKNOWN;#530,16.327876726786297
+return true;#911,16.239061795748196
+resolveResult.setResolvedTypeInternal(resolveResult);#967,16.196782673106473
+thisType.getNativeType(JSTypeNative.UNKNOWN_TYPE);#636,16.188624064127605
+JSType autobox = restricted.autoboxesTo();#485,16.154209086769505
+needsFiltering = true;#669,16.07402777671814
+builder.addAlternate(alt);#678,15.848794794082641
+public static final int NOT_ENUMDECL = 0;#98,15.796126302083334
+break;#670,15.468613068262735
+return autoboxObjType.findPropertyType(propertyName);#418,15.429985761642456

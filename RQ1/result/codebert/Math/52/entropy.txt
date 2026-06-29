@@ -1,0 +1,391 @@
+double[] m0 = m[0];#916,18.62845831650954
+double normProduct = u.getNorm() * v.getNorm();#407,18.595087252165143
+double[] m1 = m[1];#917,18.542302718529335
+if ((v2.getZ() < -0.9999999999) || (v2.getZ() > 0.9999999999)) {#779,18.492876479500218
+private static final long serialVersionUID = -2153622329907944313L;#101,18.462002481733048
+double alpha  = coeffU - beta * coeffV;#333,18.458112835884094
+return new Rotation(r.q0 * q0 - (r.q1 * q1 + r.q2 * q2 + r.q3 * q3),#878,18.439772628602526
+double[][] m = new double[3][];#810,18.429944038391113
+q2 = 0.5 * FastMath.sqrt(s + 1.0);#276,18.416465101570918
+if ((v2.getZ() < -0.9999999999) || (v2.getZ() > 0.9999999999)) {#761,18.39670685717934
+if ((v2.getZ() < -0.9999999999) || (v2.getZ() > 0.9999999999)) {#617,18.388093320946943
+double beta   = FastMath.sqrt((u2u2 - u1u2 * coeffU) / (v2v2 - v1v2 * coeffV));#332,18.37117053187171
+return new Rotation(-r.q0 * q0 - (r.q1 * q1 + r.q2 * q2 + r.q3 * q3),#897,18.309065183003742
+if  ((v2.getZ() < -0.9999999999) || (v2.getZ() > 0.9999999999)) {#581,18.244779953589806
+return 2 * FastMath.asin(FastMath.sqrt(q1 * q1 + q2 * q2 + q3 * q3));#527,18.239494850761012
+q1 = 0.5 * FastMath.sqrt(s + 1.0);#267,18.22231031347204
+double[] m2 = m[2];#918,18.1993047274076
+double norm = axis.getNorm();#175,18.192527532577515
+if ((v2.getX() < -0.9999999999) || (v2.getX() > 0.9999999999)) {#707,18.180607620038483
+if ((v2.getX() < -0.9999999999) || (v2.getX() > 0.9999999999)) {#671,18.177167792069284
+if ((v2.getX() < -0.9999999999) || (v2.getX() > 0.9999999999)) {#635,18.165062201650517
+if ((v2.getX() < -0.9999999999) || (v2.getX() > 0.9999999999)) {#689,18.15188535891081
+q3 = inv * (ort[2][1] + ort[1][2]);#280,18.1516721089681
+double s = q1 * x + q2 * y + q3 * z;#859,18.128836154937744
+double coeff = FastMath.sin(halfAngle) / norm;#181,18.127659797668457
+double fn1;#929,18.12724804878235
+double s = q1 * x + q2 * y + q3 * z;#841,18.11880176717585
+o1[0] = x10 - 0.5 * (x10 * mx00 + x11 * mx10 + x12 * mx20 - m1[0]);#955,18.107942539712656
+double inverse = 1 / FastMath.sqrt(squaredSine);#514,18.095398165962912
+double inv = 1.0 / FastMath.sqrt(q0 * q0 + q1 * q1 + q2 * q2 + q3 * q3);#138,18.086673381716707
+FastMath.atan2(-(v1.getZ()), v1.getX()),#639,18.070891215883453
+return new Vector3D(2 * (m0 * (x * m0 - (q2 * z - q3 * y)) + s * q1) - x,#862,18.06811882200695
+q3 = 0.5 * FastMath.sqrt(s + 1.0);#284,18.048765116724475
+double x12 = m1[2];#924,18.040842863229607
+private final double q1;#107,18.040605068206787
+double x = u.getX();#855,18.029799938201904
+public double[][] getMatrix() {#795,17.997390486977316
+return new Vector3D(2 * (q0 * (x * q0 - (q2 * z - q3 * y)) + s * q1) - x,#843,17.991692179725284
+FastMath.atan2(v1.getZ(), -v1.getX()),#747,17.977573326655797
+double coeffV = v1v2 / u1u1;#331,17.972160507650937
+if ((v2.getY() < -0.9999999999) || (v2.getY() > 0.9999999999)) {#725,17.958763699782523
+q1 = coeff * q.getX();#428,17.956225507399616
+if ((v2.getY() < -0.9999999999) || (v2.getY() > 0.9999999999)) {#653,17.953303512774017
+private double[][] orthogonalizeMatrix(double[][] m, double threshold)#914,17.95233678817749
+if ((v2.getY() < -0.9999999999) || (v2.getY() > 0.9999999999)) {#599,17.94561303289313
+-FastMath.asin(v2.getZ()),#622,17.943273782730103
+2 * (q0 * (y * q0 - (q3 * x - q1 * z)) + s * q2) - y,#844,17.942963804517472
+o1[2] = x12 - 0.5 * (x10 * mx02 + x11 * mx12 + x12 * mx22 - m1[2]);#957,17.941744731820148
+q1 = inv * (ort[0][1] + ort[1][0]);#279,17.938954289754232
+double z = u.getZ();#839,17.934917052586872
+double z = u.getZ();#857,17.933925946553547
+q0 = 0.5 * FastMath.sqrt(s + 1.0);#258,17.933646354675293
+if ((v2.getY() < -0.9999999999) || (v2.getY() > 0.9999999999)) {#743,17.932919125807913
+double x = u.getX();#837,17.929840167363484
+q0 = composed.q0;#460,17.923935572306316
+public double getAngle() {#525,17.92390473683675
+double[][] ort = orthogonalizeMatrix(m, threshold);#232,17.92335519336519
+o0[0] = x00 - 0.5 * (x00 * mx00 + x01 * mx10 + x02 * mx20 - m0[0]);#952,17.922795606696088
+2 * (m0 * (y * m0 - (q3 * x - q1 * z)) + s * q2) - y,#863,17.922780684062413
+o2[2] = x22 - 0.5 * (x20 * mx02 + x21 * mx12 + x22 * mx22 - m2[2]);#960,17.91706313257632
+FastMath.asin(v2.getZ()),#586,17.916997241973878
+r.q1 * q0 + r.q0 * q1 + (r.q2 * q3 - r.q3 * q2),#879,17.91279777727629
+q0 = inv * (ort[0][1] - ort[1][0]);#286,17.8844469388326
+private final double q3;#113,17.880483269691467
+o2[0] = x20 - 0.5 * (x20 * mx00 + x21 * mx10 + x22 * mx20 - m2[0]);#958,17.879874789196514
+m[0] = new double[3];#811,17.874144894736155
+double[][] o = new double[3][3];#931,17.873994995565976
+FastMath.atan2(v1.getX(), v1.getZ()),#621,17.872321905913175
+Vector3D v2 = applyInverseTo(Vector3D.PLUS_K);#652,17.86835134946383
+Vector3D v2 = applyInverseTo(Vector3D.PLUS_I);#706,17.851090247814472
+public Rotation(double q0, double q1, double q2, double q3,#133,17.84661761197177
+FastMath.atan2(-(v1.getY()), v1.getZ()),#585,17.842929215266786
+Vector3D v2 = applyInverseTo(Vector3D.PLUS_K);#760,17.842815399169922
+q2 = coeff * q.getY();#429,17.84230972738827
+Vector3D v2 = applyInverseTo(Vector3D.PLUS_I);#688,17.837906800783596
+q0 = inv * (ort[1][2] - ort[2][1]);#269,17.82022193499974
+o1[1] = x11 - 0.5 * (x10 * mx01 + x11 * mx11 + x12 * mx21 - m1[1]);#956,17.81969852032869
+Vector3D v2 = applyInverseTo(Vector3D.PLUS_K);#670,17.815734533163216
+FastMath.atan2(v1.getY(), -v1.getZ()),#693,17.809603350503103
+double x01 = m0[1];#920,17.80695152282715
+private final double q2;#110,17.80428385734558
+FastMath.atan2(v1.getZ(), v1.getY()),#711,17.802253369931822
+FastMath.atan2(-(v1.getX()), v1.getY()),#657,17.801392818319385
+q2 = inv * (ort[0][1] + ort[1][0]);#270,17.796631472451345
+FastMath.atan2(v1.getZ(), v1.getY()),#603,17.78935782114665
+public Rotation(double[][] m, double threshold)#220,17.778799629211427
+Vector3D v2 = applyInverseTo(Vector3D.PLUS_J);#634,17.7786953999446
+double x22 = m2[2];#927,17.777481739337627
+double x10 = m1[0];#922,17.775649144099308
+FastMath.atan2(v1.getX(), -v1.getY()),#765,17.773111275264196
+q0 = FastMath.cos (halfAngle);#183,17.766692399978638
+Vector3D v2 = applyInverseTo(Vector3D.PLUS_I);#580,17.763455904447117
+q3 = coeff * q.getZ();#430,17.763137144200943
+m[2] = new double[3];#813,17.754921981266566
+-r.q1 * q0 + r.q0 * q1 + (r.q2 * q3 - r.q3 * q2),#898,17.75266593078087
+Vector3D v2 = applyInverseTo(Vector3D.PLUS_K);#778,17.74960129077618
+Vector3D v2 = applyInverseTo(Vector3D.PLUS_J);#724,17.74196067223182
+double inverse = -1 / FastMath.sqrt(squaredSine);#517,17.74058964138939
+double x11 = m1[1];#923,17.737836544330303
+-r.q2 * q0 + r.q0 * q2 + (r.q3 * q1 - r.q1 * q3),#899,17.73431764799973
+FastMath.acos(v2.getZ()),#784,17.729851813543412
+q0 = 1.0;#362,17.725469080607095
+private final double q0;#104,17.72213327884674
+m[1] = new double[3];#812,17.721991062164307
+r.q2 * q0 + r.q0 * q2 + (r.q3 * q1 - r.q1 * q3),#880,17.71190939451519
+q1 = -w.getX();#419,17.710603968302408
+q1 = 0.0;#363,17.710099283854166
+double q1q1  = q1 * q1;#802,17.70683771021226
+double s = ort[0][0] + ort[1][1] + ort[2][2];#255,17.70374959309896
+FastMath.atan2(v1.getY(), v1.getX()),#675,17.701846617239493
+Vector3D v2 = applyInverseTo(Vector3D.PLUS_I);#598,17.700554260840782
+FastMath.atan2(v1.getX(), v1.getZ()),#729,17.69781349323414
+Vector3D v2 = applyInverseTo(Vector3D.PLUS_J);#742,17.69393154291006
+-FastMath.asin(v2.getY()),#604,17.6929630279541
+m [0][0] = 2.0 * (q0q0 + q1q1) - 1.0;#815,17.690006532976703
+o2[1] = x21 - 0.5 * (x20 * mx01 + x21 * mx11 + x22 * mx21 - m2[1]);#959,17.682092884312507
+double fn = 0;#928,17.679312070210774
+m [0][1] = 2.0 * (q1q2 + q0q3);#819,17.677601117354172
+double mx02 = m0[0] * x02 + m1[0] * x12 + m2[0] * x22;#947,17.674576031534297
+double q1q3  = q1 * q3;#804,17.659987674039954
+public double[] getAngles(RotationOrder order)#569,17.659518037523544
+-FastMath.asin(v2.getX()),#676,17.653660535812378
+q0 = inv * (ort[2][0] - ort[0][2]);#278,17.65311247507731
+o0[1] = x01 - 0.5 * (x00 * mx01 + x01 * mx11 + x02 * mx21 - m0[1]);#953,17.63477099460104
+q3 = inv * (ort[0][1] - ort[1][0]);#262,17.633330491872933
+Vector3D v2 = applyInverseTo(Vector3D.PLUS_J);#616,17.626448044410118
+FastMath.acos(v2.getZ()),#766,17.625474838983443
+2 * (m0 * (z * m0 - (q1 * y - q2 * x)) + s * q3) - z);#864,17.616285511425563
+double x00 = m0[0];#919,17.61247466160701
+double mx01 = m0[0] * x01 + m1[0] * x11 + m2[0] * x21;#944,17.609868175105046
+2 * (q0 * (z * q0 - (q1 * y - q2 * x)) + s * q3) - z);#845,17.597866688455856
+s = ort[2][2] - ort[0][0] - ort[1][1];#283,17.594933891296385
+Rotation r2 = new Rotation(order.getA2(), alpha2);#457,17.59467215971513
+Rotation composed = r1.applyTo(r2.applyTo(r3));#459,17.591064370196797
+double dot = u.dotProduct(v);#412,17.590444224221365
+v1 = new Vector3D(FastMath.sqrt(u1u1 / v1v1), v1);#325,17.589449619424755
+if (needsNormalization) {#136,17.583827018737793
+double q2q2  = q2 * q2;#805,17.577809558195227
+throw new NotARotationMatrixException(#226,17.575816426958358
+FastMath.asin(v2.getX()),#640,17.57425217628479
+double mx22 = m0[2] * x02 + m1[2] * x12 + m2[2] * x22;#949,17.567636113417777
+double q1q2  = q1 * q2;#803,17.56645449470071
+q3 = -w.getZ();#421,17.56187260945638
+double x02 = m0[2];#921,17.552033864534817
+FastMath.asin(v2.getY()),#658,17.547585582733156
+m [2][1] = 2.0 * (q2q3 - q0q1);#821,17.54474214407114
+Rotation r3 = new Rotation(order.getA3(), alpha3);#458,17.531444159421053
+c = FastMath.sqrt(c);#378,17.52207612991333
+q1 = inv * (ort[1][2] - ort[2][1]);#260,17.520654164827786
+r.q3 * q0 + r.q0 * q3 + (r.q1 * q2 - r.q2 * q1),#881,17.520079512345163
+o0[2] = x02 - 0.5 * (x00 * mx02 + x01 * mx12 + x02 * mx22 - m0[2]);#954,17.50762391090393
+double mx00 = m0[0] * x00 + m1[0] * x10 + m2[0] * x20;#941,17.50696561211034
+double det = ort[0][0] * (ort[1][1] * ort[2][2] - ort[2][1] * ort[1][2]) -#235,17.50398006845028
+return r1.applyInverseTo(r2).getAngle();#1028,17.499120235443115
+Rotation r1 = new Rotation(order.getA1(), alpha1);#456,17.499007745222613
+double squaredSine = q1 * q1 + q2 * q2 + q3 * q3;#510,17.48766945026539
+double v1v2   = v1.dotProduct(v2);#329,17.481345226890163
+q1 = coeff * axis.getX();#184,17.48070723215739
+double corr11 = o1[1] - m1[1];#967,17.479364958676424
+this.q0 = q0;#145,17.478161811828613
+double coeff = 1.0 / (2.0 * q0 * normProduct);#426,17.45757183074951
+FastMath.atan2(v1.getY(), v1.getX()),#783,17.450845153243453
+q0 = vRef.dotProduct(k) / (2 * k.getNormSq());#388,17.45004399617513
+FastMath.atan2(-(v2.getZ()), v2.getY())#641,17.446539776665823
+q0 = FastMath.sqrt(0.5 * (1.0 + dot / normProduct));#425,17.446162486898487
+uRef.getZ() * q1 - uRef.getX() * q3,#386,17.439104795455933
+FastMath.atan2(v2.getZ(), -v2.getY())#713,17.43836099130136
+s = ort[1][1] - ort[0][0] - ort[2][2];#273,17.436622186140582
+q3 = coeff * axis.getZ();#186,17.43136838277181
+m [1][1] = 2.0 * (q0q0 + q2q2) - 1.0;#820,17.430821295707457
+q3 = inv * (ort[0][2] + ort[2][0]);#271,17.4255336693355
+double inv = 0.25 / q2;#277,17.41639461517334
+m [1][0] = 2.0 * (q1q2 - q0q3);#816,17.41331856067364
+s = ort[0][0] - ort[1][1] - ort[2][2];#264,17.40263197498937
+q0 *= inv;#139,17.399194558461506
+throw new NotARotationMatrixException(#998,17.389011939366657
+uRef.getX() * q2 - uRef.getY() * q1);#387,17.38097176551819
+FastMath.acos(v2.getY()),#730,17.37468674069359
+FastMath.atan2(v2.getX(), -v2.getZ())#731,17.36754396226671
+throw new NotARotationMatrixException(#239,17.36375250135149
+double corr12 = o1[2] - m1[2];#968,17.363170753825795
+if ((u1u1 == 0) || (u2u2 == 0) || (v1v1 == 0) || (v2v2 == 0)) {#320,17.34402827727489
+FastMath.atan2(-(v2.getX()), v2.getZ())#659,17.342871836253575
+double[] o0 = o[0];#932,17.34128475189209
+double corr10 = o1[0] - m1[0];#966,17.339540698311545
+m [2][0] = 2.0 * (q1q3 + q0q2);#817,17.33090584094708
+double x21 = m2[1];#926,17.32791101015531
+c = k.dotProduct(u2.crossProduct(u3));;#357,17.3257592657338
+FastMath.atan2(v2.getZ(), v2.getX())#749,17.321997532477745
+FastMath.acos(v2.getX()),#712,17.320470537458146
+FastMath.acos(v2.getX()),#694,17.30982948484875
+double y = u.getY();#856,17.301992336908977
+Vector3D v1 = applyTo(Vector3D.PLUS_K);#759,17.293535272280376
+FastMath.acos(v2.getY()),#748,17.290756270999
+q2 = inv * (ort[2][1] + ort[1][2]);#288,17.2880765914917
+Vector3D v1 = applyTo(Vector3D.PLUS_K);#579,17.280595382054646
+if (c == 0) {#359,17.274477005004883
+double inv = 0.25 / q3;#285,17.27088279724121
+false);#882,17.267732290121224
+if (FastMath.abs(fn1 - fn) <= threshold) {#979,17.26523767818104
+m [2][2] = 2.0 * (q0q0 + q3q3) - 1.0;#825,17.264536273094915
+Vector3D v1 = applyTo(Vector3D.PLUS_K);#615,17.256609161694843
+return new double[] {#782,17.253797444430266
+q2 = 0.0;#364,17.25057945251465
+FastMath.atan2(-(v2.getY()), v2.getX())#587,17.2488123689379
+Vector3D v1 = applyTo(Vector3D.PLUS_I);#687,17.243260224660236
+Vector3D v1 = applyTo(Vector3D.PLUS_I);#705,17.241092443466187
+double inv = 0.25 / q1;#268,17.237604300181072
+double mx12 = m0[1] * x02 + m1[1] * x12 + m2[1] * x22;#948,17.236169237839547
+-r.q3 * q0 + r.q0 * q3 + (r.q1 * q2 - r.q2 * q1),#900,17.234762273985766
+if (s > -0.19) {#274,17.233496295081245
+double corr22 = o2[2] - m2[2];#971,17.230388684706256
+double q0q1  = q0 * q1;#799,17.229593389174518
+double y = u.getY();#838,17.2286802927653
+double u1u1 = u1.getNormSq();#316,17.228254854679108
+double inv = 1.0 / (c + c);#379,17.221995421818324
+double m0 = -q0;#860,17.21509027481079
+return new Vector3D(q1 * inverse, q2 * inverse, q3 * inverse);#515,17.213995121143483
+public Rotation applyInverseTo(Rotation r) {#896,17.213237635294597
+double mx11 = m0[1] * x01 + m1[1] * x11 + m2[1] * x21;#945,17.209644719174033
+q1 = composed.q1;#461,17.209391911824543
+Vector3D v1 = applyTo(Vector3D.PLUS_J);#741,17.205202380816143
+FastMath.atan2(v2.getZ(), v2.getX())#605,17.200299226320706
+return 2 * FastMath.acos(-q0);#529,17.199998908572727
+Vector3D v1 = applyTo(Vector3D.PLUS_I);#669,17.198946793874104
+q0 = 0.0;#418,17.198747268089882
+Vector3D v1 = applyTo(Vector3D.PLUS_I);#633,17.197648962338764
+m [0][2] = 2.0 * (q1q3 - q0q2);#823,17.19683265686035
+ort[2][0] * (ort[0][1] * ort[1][2] - ort[1][1] * ort[0][2]);#237,17.195574283599854
+double v2v2 = v2.getNormSq();#319,17.194895088672638
+double mx21 = m0[2] * x01 + m1[2] * x11 + m2[2] * x21;#946,17.194350142227975
+m [1][2] = 2.0 * (q2q3 + q0q1);#824,17.19257222689115
+q2 = inv * (ort[2][0] - ort[0][2]);#261,17.18345616413997
+k = new Vector3D(uRef.getY() * q3 - uRef.getZ() * q2,#385,17.1802729288737
+Vector3D v1 = applyTo(Vector3D.PLUS_J);#597,17.17700179417928
+double v1v1 = v1.getNormSq();#318,17.17450875043869
+return new double[] {#764,17.17031296816739
+FastMath.atan2(v2.getX(), v2.getY())#767,17.16472284610455
+vRef = v2;#371,17.163427114486694
+FastMath.atan2(v2.getY(), v2.getZ())#695,17.161520444429836
+Vector3D v1 = applyTo(Vector3D.PLUS_J);#723,17.151300350824993
+return;#366,17.14459114074707
+double corr20 = o2[0] - m2[0];#969,17.1444580338218
+ort[1][0] * (ort[0][1] * ort[2][2] - ort[2][1] * ort[0][2]) +#236,17.137459303203382
+Vector3D v1 = applyTo(Vector3D.PLUS_J);#651,17.13293703397115
+return new double[] {#638,17.130539200522684
+double u2u2 = u2.getNormSq();#317,17.13030833005905
+x12 = o1[2];#989,17.125958851405553
+double mx20 = m0[2] * x00 + m1[2] * x10 + m2[2] * x20;#943,17.125070019772178
+double x20 = m2[0];#925,17.124963687016415
+double mx10 = m0[1] * x00 + m1[1] * x10 + m2[1] * x20;#942,17.124850348422402
+double q3q3  = q3 * q3;#807,17.122785512138815
+Vector3D v1 = applyTo(Vector3D.PLUS_K);#777,17.114882866541546
+FastMath.atan2(v2.getX(), v2.getY())#623,17.106899224794827
+double q0q0  = q0 * q0;#798,17.10461212606991
+double[] o2 = o[2];#934,17.103025363041805
+FastMath.atan2(v2.getY(), -v2.getX())#785,17.100281044288916
+q1 = inv * (ort[0][2] + ort[2][0]);#287,17.097939936319985
+double q2q3  = q2 * q3;#806,17.095133949728574
+return new double[] {#584,17.09321455522017
+return new double[] {#620,17.091404394669965
+double corr01 = o0[1] - m0[1];#964,17.081099726937033
+double q0q3  = q0 * q3;#801,17.080559730529785
+return new double[] {#746,17.075820662758566
+x22 = o2[2];#992,17.071198190961564
+Vector3D w = u.orthogonal();#417,17.07047451243681
+FastMath.atan2(v2.getY(), v2.getZ())#677,17.069307584028977
+double[] o1 = o[1];#933,17.06790850712703
+public double getQ3() {#501,17.06577354007297
+public Rotation applyTo(Rotation r) {#877,17.057991101191593
+return new double[] {#692,17.05226889523593
+return new double[] {#656,17.0521352074363
+return new Vector3D(q1 * inverse, q2 * inverse, q3 * inverse);#518,17.051285705566407
+double inv = 0.25 / q0;#259,17.050388395786285
+public Rotation revert() {#473,17.045959949493408
+q2 = -w.getY();#420,17.043160247802735
+return new double[] {#728,17.03746258128773
+return new double[] {#710,17.03163563121449
+return new double[] {#602,17.028735160827637
+q1 = inv * k.getX();#380,17.02148636182149
+x11 = o1[1];#988,17.016791888645717
+return new double[] {#674,17.01094115864147
+Vector3D q = v.crossProduct(u);#427,17.008943610721165
+double corr00 = o0[0] - m0[0];#963,17.00680546327071
+public static final Rotation IDENTITY = new Rotation(1.0, 0.0, 0.0, 0.0, false);#98,17.00462344198516
+(m[1].length != 3) || (m[2].length != 3)) {#225,17.00011372566223
+if ((q0 < -0.1) || (q0 > 0.1)) {#526,16.99417992432912
+return new Vector3D(1, 0, 0);#512,16.990491814083523
+x10 = o1[0];#987,16.99048137664795
+double corr21 = o2[1] - m2[1];#970,16.981482289054178
+if (dot < ((2.0e-15 - 1.0) * normProduct)) {#414,16.96580253601074
+public static double distance(Rotation r1, Rotation r2) {#1027,16.96347252527873
+public double getQ2() {#494,16.959956910875107
+return 2 * FastMath.acos(q0);#531,16.957018435001373
+if (c == 0) {#353,16.94333587993275
+i - 1);#1000,16.940762281417847
+while (++i < 11) {#938,16.94056797027588
+return new Rotation(-q0, q1, q2, q3, false);#474,16.9359827456267
+fn  = fn1;#993,16.92465869585673
+public double getQ1() {#487,16.899595472547745
+public Vector3D applyInverseTo(Vector3D u) {#853,16.882751689237708
+false);#901,16.874102445749138
+double c       = k.dotProduct(u3);#343,16.871780997828434
+Vector3D v3 = Vector3D.crossProduct(v1, v2);#347,16.867670432381008
+if ((m.length != 3) || (m[0].length != 3) ||#224,16.860078521396805
+q2 = composed.q2;#462,16.85524280865987
+public Rotation(Vector3D u, Vector3D v) {#405,16.85391835605397
+double u1u2   = u1.dotProduct(u2);#328,16.84993954708702
+k = v2Su2.crossProduct(v3Su3);;#356,16.845632162961092
+q2 = coeff * axis.getY();#185,16.83541768391927
+double q0q2  = q0 * q2;#800,16.833888558780444
+throw MathRuntimeException.createArithmeticException(LocalizedFormats.ZERO_NORM_FOR_ROTATION_AXIS);#177,16.833365625805325
+q3 = composed.q3;#463,16.83212407430013
+double halfAngle = -0.5 * angle;#180,16.83204847574234
+double coeffU = u1u2 / u1u1;#330,16.83010185466093
+q3 = inv * k.getZ();#382,16.81870714823405
+if (s > -0.19) {#265,16.794490814208984
+Vector3D v1Su1 = v1.subtract(u1);#339,16.791403388977052
+v2 = new Vector3D(alpha, v1, beta, v2);#334,16.772831392288207
+double corr02 = o0[2] - m0[2];#965,16.767921621149238
+return q3;#502,16.7596595287323
+return q2;#495,16.745224118232727
+return m;#827,16.744953836713517
+LocalizedFormats.UNABLE_TO_ORTHOGONOLIZE_MATRIX,#999,16.733350220848532
+q2 = inv * k.getY();#381,16.70348310470581
+this.q1 = q1;#146,16.684855461120605
+fn1 = corr00 * corr00 + corr01 * corr01 + corr02 * corr02 +#974,16.683541933695476
+throw MathRuntimeException.createIllegalArgumentException(LocalizedFormats.ZERO_NORM_FOR_ROTATION_DEFINING_VECTOR);#321,16.66803778671637
+public Rotation(Vector3D u1, Vector3D u2, Vector3D v1, Vector3D v2) {#313,16.659918354403587
+q3 = 0.0;#365,16.658361180623373
+x01 = o0[1];#985,16.65790980202811
+q1 *= inv;#140,16.657729625701904
+double alpha1, double alpha2, double alpha3) {#455,16.6452027597735
+public Rotation(Vector3D axis, double angle) {#173,16.63412577311198
+return q1;#488,16.632728695869446
+throw new CardanEulerSingularityException(false);#780,16.614137887954712
+x20 = o2[0];#990,16.60148859024048
+k = v1Su1.crossProduct(v3Su3);#349,16.582707806637412
+public double getQ0() {#480,16.581392606099445
+throw new CardanEulerSingularityException(false);#762,16.57250633239746
+if (order == RotationOrder.XYZ) {#572,16.54463690519333
+corr10 * corr10 + corr11 * corr11 + corr12 * corr12 +#975,16.54340516196357
+boolean needsNormalization) {#134,16.541290760040283
+if (norm == 0) {#176,16.538433768532492
+Vector3D v3Su3 = v3.subtract(u3);#348,16.516246102072976
+throw new CardanEulerSingularityException(false);#726,16.502443075180054
+if (s > -0.19) {#256,16.49798141207014
+throw new CardanEulerSingularityException(false);#708,16.496044540405272
+return q0;#481,16.488115787506104
+throw new CardanEulerSingularityException(false);#690,16.48492612838745
+throw new CardanEulerSingularityException(false);#744,16.481706047058104
+int i = 0;#937,16.47882948981391
+public class Rotation implements Serializable {#95,16.478468259175617
+corr20 * corr20 + corr21 * corr21 + corr22 * corr22;#976,16.47779001129998
+x00 = o0[0];#984,16.47541298185076
+Vector3D k     = v1Su1.crossProduct(v2Su2);#341,16.448101719220478
+throw new CardanEulerSingularityException(true);#618,16.43063015937805
+throw new CardanEulerSingularityException(true);#636,16.42291021347046
+throw new CardanEulerSingularityException(true);#600,16.41878423690796
+throw new CardanEulerSingularityException(true);#654,16.418323945999145
+if (det < 0.0) {#238,16.416034405048077
+throw new CardanEulerSingularityException(true);#582,16.405370044708253
+throw MathRuntimeException.createIllegalArgumentException(LocalizedFormats.ZERO_NORM_FOR_ROTATION_DEFINING_VECTOR);#409,16.402840677897135
+x21 = o2[1];#991,16.39936317716326
+LocalizedFormats.ROTATION_MATRIX_DIMENSIONS,#227,16.383067190647125
+q2 *= inv;#141,16.380814790725708
+throw new CardanEulerSingularityException(true);#672,16.37934889793396
+c = k.dotProduct(u2Prime);#351,16.330585225423178
+if (c == 0) {#344,16.317524274190266
+public Rotation(RotationOrder order,#454,16.298513065684926
+public Vector3D applyTo(Vector3D u) {#835,16.27471841176351
+Vector3D v2Su2 = v2.subtract(u2);#340,16.259198093414305
+x02 = o0[2];#986,16.255673544747488
+throws NotARotationMatrixException {#915,16.225913828069512
+this.q2 = q2;#147,16.224207798639934
+throws NotARotationMatrixException {#221,16.200792225924406
+this.q3 = q3;#148,16.165976126988728
+m.length, m[0].length);#228,16.154862642288208
+uRef = u2;#370,16.11077340443929
+Vector3D u2Prime = u1.crossProduct(u3);#350,16.083839321136473
+det);#241,16.079284191131592
+Vector3D u3    = u1.crossProduct(u2);#342,16.067231750488283
+if (normProduct == 0) {#408,16.02406160036723
+LocalizedFormats.CLOSEST_ORTHOGONAL_MATRIX_HAS_NEGATIVE_DETERMINANT,#240,16.005681722060494
+q3 *= inv;#142,16.000149250030518
+Vector3D vRef  = v1;#338,15.937035163243612
+public Vector3D getAxis() {#509,15.77343463897705
+return o;#980,15.745301393362192
+throws CardanEulerSingularityException {#570,15.42182078728309
+if (squaredSine == 0) {#511,15.421489988054548
+Vector3D uRef  = u1;#337,15.310898542404175

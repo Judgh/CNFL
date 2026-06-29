@@ -1,0 +1,132 @@
+protected UnivariatePointValuePair doOptimize() {#109,17.307121336460114
+private UnivariatePointValuePair best(UnivariatePointValuePair a,#283,17.147176833379838
+private final double absoluteThreshold;#54,16.95066191933372
+private final double relativeThreshold;#50,16.852292667735707
+private static final double MIN_RELATIVE_TOLERANCE = 2 * FastMath.ulp(1d);#46,16.776870250701904
+public class BrentOptimizer extends BaseAbstractUnivariateOptimizer {#38,16.775138556957245
+private static final double GOLDEN_SECTION = 0.5 * (3 - FastMath.sqrt(5));#42,16.726574174289045
+return b;#287,16.703260294596355
+return a.getValue() > b.getValue() ? a : b;#296,16.54513612286798
+final boolean isMinim = getGoalType() == GoalType.MINIMIZE;#110,16.53614245928251
+public BrentOptimizer(double rel,#72,16.50948289724497
+b = lo;#126,16.40332716703415
+= new UnivariatePointValuePair(x, isMinim ? fx : -fx);#143,16.3579020355687
+final boolean stop = FastMath.abs(x - m) <= tol2 - 0.5 * (b - a);#152,16.29737724402012
+return a.getValue() < b.getValue() ? a : b;#294,16.296407140534498
+d = GOLDEN_SECTION * e;#205,16.216034825642904
+return a;#290,16.186111068725587
+fx = -fx;#136,16.178580072191025
+throw new NotStrictlyPositiveException(abs);#81,16.099344333012898
+public BrentOptimizer(double rel,#102,16.093959441551796
+final double m = 0.5 * (a + b);#147,16.091344833374023
+UnivariatePointValuePair previous = null;#141,16.087760130564373
+if (b == null) {#289,16.06195487976074
+throw new NumberIsTooSmallException(rel, MIN_RELATIVE_TOLERANCE, true);#78,16.032517461215747
+while (true) {#146,16.01560453268198
+final double tol2 = 2 * tol1;#149,16.001959363619488
+if (a == null) {#286,15.848918342590332
+final ConvergenceChecker<UnivariatePointValuePair> checker#116,15.846897954526154
+UnivariatePointValuePair current#142,15.814594395955403
+double fv = fx;#138,15.789759381612141
+if (rel < MIN_RELATIVE_TOLERANCE) {#77,15.760530969370967
+if (FastMath.abs(e) > tol1) { // Fit parabola.#159,15.746855168729216
+double w = x;#131,15.686155319213867
+current = new UnivariatePointValuePair(u, isMinim ? fu : -fu);#226,15.681334315119562
+p = (x - v) * q - (x - w) * r;#162,15.64725082799008
+if (!stop) {#153,15.620685128604665
+double v = x;#130,15.610890021690956
+final double tol1 = relativeThreshold * FastMath.abs(x) + absoluteThreshold;#148,15.598287582397461
+double e = 0;#133,15.57066535949707
+a = hi;#125,15.559544503688812
+double fw = fx;#139,15.548232714335123
+this(rel, abs, null);#104,15.519419729709625
+final double mid = getStartValue();#112,15.516882240772247
+double fx = computeObjectiveValue(x);#134,15.512522948415656
+d = GOLDEN_SECTION * e;#196,15.507386431974524
+absoluteThreshold = abs;#85,15.503750256129674
+if (u - a < tol2 || b - u < tol2) {#182,15.489711717117665
+r = (x - w) * (fx - fv);#160,15.467223532059613
+= getConvergenceChecker();#117,15.45638303756714
+@Override#108,15.43618631362915
+u = x - tol1;#213,15.40823894739151
+double a;#119,15.34200364893133
+double x = mid;#129,15.331957523639385
+b = hi;#123,15.321678042411804
+if (FastMath.abs(d) < tol1) {#209,15.290911089989446
+if (abs <= 0) {#80,15.287153816223144
+if (isMinim) {#293,15.276663398742675
+if (fu <= fx) {#235,15.270292202631632
+a = lo;#122,15.261567950248718
+d = p / q;#178,15.246909968058269
+int iter = 0;#145,15.236741652855507
+if (checker.converged(iter, previous, current)) {#229,15.216352489259508
+if (lo < hi) {#121,15.213780275980632
+q = (x - v) * (fx - fw);#161,15.19428508421954
+u = x + tol1;#211,15.143422901630402
+if (checker != null) {#228,15.124955693880716
+p = -p;#166,15.121658292309991
+double r = 0;#156,15.086647033691406
+u = x + d;#179,15.056485366821288
+u = x + d;#216,15.055728949033297
+e = a - x;#203,15.036310418446858
+final double lo = getMin();#111,15.0260648727417
+double d = 0;#132,15.020021145160381
+FastMath.abs(p) < FastMath.abs(0.5 * q * r)) {#176,14.999739418859066
+fu = -fu;#221,14.979517860412598
+if (fu <= fw ||#253,14.962261341236255
+if (p > q * (a - x) &&#174,14.951092898845673
+double b;#120,14.950840429826217
+double fu = computeObjectiveValue(u);#219,14.94947939652663
+double u = 0;#157,14.92637502579462
+final double hi = getMax();#113,14.912283770243327
+if (!isMinim) {#135,14.81241652170817
+if (u < x) {#236,14.796353410791468
+e = d;#172,14.789149562517801
+Precision.equals(w, x)) {#254,14.76539805356194
+double p = 0;#154,14.759280976795015
+relativeThreshold = rel;#84,14.726057120731898
+fv = fu;#263,14.724244315048743
+b = u;#251,14.709561313901629
+fx = fu;#246,14.709073867797851
+e = b - x;#201,14.699208418528238
+v = u;#262,14.677775042397636
+w = x;#243,14.660997152328491
+e = a - x;#194,14.630272444556741
+q = 2 * (q - r);#163,14.62133447055159
+UnivariatePointValuePair b,#284,14.620348243713378
+q = -q;#168,14.619970617623165
+double q = 0;#155,14.612242380777994
+if (u < x) {#248,14.607658456873011
+boolean isMinim) {#285,14.595521628856659
+super(checker);#75,14.567589246309721
+ConvergenceChecker<UnivariatePointValuePair> checker) {#74,14.564072450002035
+fv = fw;#242,14.548873644608717
+d = -tol1;#186,14.544829124059433
+if (!isMinim) {#220,14.517011310743248
+fw = fu;#258,14.50499205753721
+x = u;#245,14.497165640195211
+return current;#230,14.495630087675872
+if (d >= 0) {#210,14.493744002448189
+e = b - x;#192,14.48568753635182
+fw = fx;#244,14.478132174565243
+r = e;#171,14.472386797269186
+a = x;#239,14.457599912370954
+p < q * (b - x) &&#175,14.445158874287324
+fv = fw;#256,14.444596068064373
+v = w;#241,14.417554577191671
+d = tol1;#184,14.41109602074874
+b = x;#237,14.410787786756243
+Precision.equals(v, x) ||#260,14.381091257420982
+Precision.equals(v, w)) {#261,14.377836297198039
+w = u;#257,14.371340138571602
+if (q > 0) {#165,14.354511049058702
+previous = current;#225,14.302031707763671
+if (x <= m) {#183,14.284747041974748
+++iter;#269,14.277330652872722
+if (x < m) {#200,14.248160574171278
+return current;#267,14.220279392443205
+if (x < m) {#191,14.16983518292827
+a = u;#249,14.168842077255249
+v = w;#255,14.030491760798864
+double abs) {#103,13.978807989756266
+double abs,#73,13.963422479300663

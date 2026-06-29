@@ -1,0 +1,98 @@
+if (val1 == 0 || val2 == 0) {#166,19.907678785778227
+if (object1 == null || object2 == null) {#321,19.74084695180257
+if (val2 == 1) {#160,19.598430633544922
+if (val1 == 1) {#163,19.440686225891113
+return (int) value;#185,19.363504303826225
+if (remByRange == 0) {#302,19.33594249276554
+if (object1 == object2) {#318,19.111215310938217
+private FieldUtils() {#35,19.07635679244995
+if (total / val2 != val1 || val1 == Long.MIN_VALUE && val2 == -1 || val2 == Long.MIN_VALUE && val1 == -1) {#170,19.063520042263733
+if (minValue >= maxValue) {#289,19.05383087606991
+switch (val2) {#136,19.004190853663854
+if (value >= 0) {#296,18.953691164652508
+if (total / val2 != val1) {#145,18.905459203218157
+("The calculation caused an overflow: " + val1 + " + " + val2);#86,18.895194380623952
+public static int safeToInt(long value) {#183,18.884047063191733
+("The calculation caused an overflow: " + val1 + " - " + val2);#104,18.83015880584717
+("The calculation caused an overflow: " + val1 + " + " + val2);#68,18.8289824622018
+public static void verifyValueBounds(DateTimeField field,#212,18.763880464765762
+if (value == Integer.MIN_VALUE) {#49,18.763828026620967
+return (int) total;#123,18.71721955708095
+return val2;#164,18.689024031162262
+return 0;#167,18.672900517781574
+public static int getWrappedValue(int value, int minValue, int maxValue) {#288,18.659115592638653
+return 0 + minValue;#303,18.634399520026314
+int value, int lowerBound, int upperBound) {#248,18.620587708815087
+public static void verifyValueBounds(DateTimeFieldType fieldType,#230,18.6080105304718
+public static int safeAdd(int val1, int val2) {#63,18.58086405302349
+throw new ArithmeticException("Integer.MIN_VALUE cannot be negated");#50,18.58049862725394
+long total = val1 * val2;#169,18.543840464423685
+int minValue, int maxValue) {#272,18.510704121691116
+if ((val1 ^ sum) < 0 && (val1 ^ val2) >= 0) {#66,18.499345812304266
+long total = val1 * val2;#144,18.483311877531165
+if ((val1 ^ diff) < 0 && (val1 ^ val2) < 0) {#102,18.467242372447046
+if ((val1 ^ sum) < 0 && (val1 ^ val2) >= 0) {#84,18.454177428936138
+throw new IllegalArgumentException("MIN > MAX");#290,18.4326231997946
+if (total < Integer.MIN_VALUE || total > Integer.MAX_VALUE) {#120,18.428966557538068
+int wrapRange = maxValue - minValue + 1;#293,18.406047964096068
+int value, int lowerBound, int upperBound) {#213,18.394778269641805
+public static int safeMultiply(int val1, int val2) {#118,18.38223448253813
+return val1;#161,18.374010801315308
+return false;#322,18.358016586303712
+return true;#319,18.332028834025063
+throw new ArithmeticException("Value cannot fit in an int: " + value);#187,18.325071716308592
+return (wrapRange - remByRange) + minValue;#305,18.303400266738166
+public static int safeNegate(int value) {#48,18.29898910522461
+public static boolean equals(Object object1, Object object2) {#317,18.24722883436415
+return FieldUtils.safeToInt(val);#200,18.2465114091572
+int remByRange = (-value) % wrapRange;#300,18.185504913330078
+value -= minValue;#294,18.181245803833008
+return (value % wrapRange) + minValue;#297,18.10812755253004
+throw new ArithmeticException#103,18.019136765423944
+int value, int lowerBound, int upperBound) {#231,17.99288182888391
+throw new IllegalFieldValueException#215,17.98510895835029
+throw new ArithmeticException("Multiplication overflows a long: " + val1 + " * " + val2);#171,17.98249322489688
+throw new ArithmeticException#85,17.969896148232852
+public static int getWrappedValue(int currentValue, int wrapValue,#271,17.959832382202148
+long total = (long) val1 * (long) val2;#119,17.94421913312829
+public static void verifyValueBounds(String fieldName,#247,17.94103741645813
+return val1;#142,17.91847562789917
+throw new IllegalFieldValueException#250,17.905615700615776
+long diff = val1 - val2;#100,17.897224762860468
+return -val1;#138,17.88587960742769
+long sum = val1 + val2;#82,17.867172465604895
+public static long safeMultiply(long val1, int val2) {#135,17.85916446504139
+int sum = val1 + val2;#64,17.85062520644244
+public static int safeMultiplyToInt(long val1, long val2) {#198,17.834870089655336
+long val = FieldUtils.safeMultiply(val1, val2);#199,17.833028463216927
+public class FieldUtils {#30,17.826210839407786
+throw new IllegalFieldValueException#233,17.809515317281086
+throw new ArithmeticException("Multiplication overflows an int: " + val1 + " * " + val2);#121,17.770376655790542
+throw new ArithmeticException#67,17.76916722690358
+throw new ArithmeticException("Multiplication overflows a long: " + val1 + " * " + val2);#146,17.755067745844524
+return object1.equals(object2);#324,17.75459056430393
+return total;#173,17.719368847933683
+return diff;#106,17.699711192737926
+return sum;#70,17.688603661277078
+if (Integer.MIN_VALUE <= value && value <= Integer.MAX_VALUE) {#184,17.684948497348362
+return total;#148,17.621206283569336
+return sum;#88,17.616783662275836
+public static long safeAdd(long val1, long val2) {#81,17.57695544393439
+return -value;#52,17.543399890263874
+return 0L;#140,17.509993982315063
+public static long safeSubtract(long val1, long val2) {#99,17.488019988650368
+if ((value < lowerBound) || (value > upperBound)) {#232,17.421276797419008
+case 0:#139,17.389643732706705
+public static long safeMultiply(long val1, long val2) {#159,17.381525993347168
+case -1:#137,17.3785839676857
+super();#36,17.32512378692627
+if ((value < lowerBound) || (value > upperBound)) {#249,17.31167051066523
+if ((value < lowerBound) || (value > upperBound)) {#214,17.28503600410793
+case 1:#141,17.09820645650228
+return getWrappedValue(currentValue + wrapValue, minValue, maxValue);#273,17.088274038754978
+(field.getType(), Integer.valueOf(value),#216,16.94538981339027
+(fieldType, Integer.valueOf(value),#234,16.862691314132125
+(fieldName, Integer.valueOf(value),#251,16.82950602637397
+Integer.valueOf(lowerBound), Integer.valueOf(upperBound));#252,16.577981544263434
+Integer.valueOf(lowerBound), Integer.valueOf(upperBound));#217,16.523585030526824
+Integer.valueOf(lowerBound), Integer.valueOf(upperBound));#235,16.46964758092707

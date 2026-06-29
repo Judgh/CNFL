@@ -1,0 +1,1211 @@
+StringBuilder builder = new StringBuilder();#1412,20.66483195622762
+StringBuilder builder = new StringBuilder();#1320,20.455985466639202
+case LB:#1162,20.018136978149414
+case PIPE:#1177,19.780682130293414
+case QMARK:#1174,19.73453053561124
+case LT:#1171,19.678320566813152
+case LC:#1165,19.66470103793674
+int startCharno) {#1059,19.650501397939827
+case RB:#1180,19.641310585869682
+case LP:#1168,19.64074643452962
+private final String sourceName;#49,19.635517358779907
+case TYPE:#784,19.567822004619398
+switch (token) {#2122,19.5442377726237
+case DEFINE:#781,19.527245712280273
+case PRIVATE:#674,19.460893267676944
+switch (token) {#1417,19.453113729303535
+switch (token) {#1146,19.448937945895725
+private final String string;#1221,19.426492267184788
+case PROTECTED:#682,19.41447076343355
+case ANNOTATION:#202,19.403015870314377
+switch (token) {#201,19.384826833551582
+String annotationName = stream.getString();#208,19.378351938156854
+case TYPE:#854,19.377895584106444
+case EOF:#1420,19.351898352305096
+case PRESERVE_TRY:#666,19.306787490844727
+if (!ignoreStar) {#1331,19.303176999092102
+case EOF:#1353,19.29471794764201
+case RP:#1186,19.271800994873047
+case BANG:#1150,19.258550262451173
+String string = stream.getString();#1698,19.240194456917898
+case VERSION:#764,19.216634368896486
+switch (token) {#1329,19.214676596901633
+case PRESERVE:#327,19.209831873575848
+case THIS:#783,19.193675292165654
+public final class JsDocInfoParser {#45,19.17776041030884
+private JsDocToken current() {#2237,19.177375030517577
+case EXPORT:#364,19.15525541305542
+if (!ignoreStar && builder.length() > 0) {#1442,19.12333583831787
+ExtractionInfo preserveInfo =#328,19.1226247549057
+case ANNOTATION:#1351,19.111719058110165
+case ANNOTATION:#1418,19.105274493877705
+case STAR:#1423,19.103365551341664
+case RC:#1183,19.100906372070312
+case AUTHOR:#218,19.095457378186676
+case ANNOTATION:#1147,19.0953031019731
+if (builder.length() > 0) {#1332,19.085985487157647
+case SEE:#726,19.085347828112152
+case EQUALS:#1195,19.084518241882325
+case STRING:#2123,19.0712890625
+if (!ignoreStar) {#1424,19.068523406982422
+case NO_ALIAS:#489,19.054341836409137
+public ExtendedTypeInfo(JSTypeExpression type, int lineno, int charno) {#1238,19.05273555755615
+if (line.length() > 0) {#1262,19.051749570029124
+default:#1441,19.050261116027833
+if (c == ' ') {#2292,19.033599308558873
+if (paramType != null) {#1856,19.02762269973755
+boolean parse() {#169,19.02644395828247
+case MODIFIES:#714,19.025597617739724
+case THIS:#847,19.025098876953123
+case PARAM:#568,19.00878095626831
+case THROWS:#526,19.007175588607787
+private final JSDocInfoBuilder jsdocBuilder;#48,18.98899247096135
+default:#899,18.983757400512694
+case DEFINE:#814,18.98253976381742
+if (builder.length() > 0) {#1425,18.958270853215996
+case EOC:#1352,18.951162417729694
+case INTERFACE:#275,18.94962854385376
+if (parameters != null) {#1809,18.946009476979572
+public ExtractionInfo(String string, JsDocToken token) {#1224,18.945427493045205
+if (builder.length() > 0) {#1381,18.943237447738646
+private enum WhitespaceOption {#1274,18.928895235061646
+String returnDescription =#833,18.92572790781657
+String tokenStr = stream.getString();#1772,18.922330183141373
+String name = stream.getString();#943,18.920754538642036
+case NO_COMPILE:#497,18.918044214663297
+String line = stream.getRemainingJSDocLine();#1315,18.903682652641745
+case GT:#1159,18.897974438137478
+case DEPRECATED:#256,18.890338550914418
+case STAR:#1330,18.88583131269975
+case NO_SHADOW:#698,18.885601416878078
+String preserve = preserveInfo.string;#332,18.873577411358173
+case NO_TYPE_CHECK:#505,18.868878323098887
+case TYPEDEF:#861,18.867433888571604
+private static String trimEnd(String s) {#1468,18.865351756413776
+case EXTERNS:#372,18.848502931140718
+case EOF:#884,18.845704714457195
+case DESC:#288,18.8401891708374
+if (!jsdocBuilder.recordHiddenness()) {#444,18.83672414976975
+return "{";#1166,18.835717519124348
+case IMPLEMENTS:#389,18.834126381647017
+String paramDescription = paramDescriptionInfo.string;#653,18.82475862503052
+case COLON:#1156,18.822045135498048
+private JsDocToken next() {#2226,18.811118793487548
+case EOC:#1419,18.809399445851643
+if (!(option == WhitespaceOption.PRESERVE &&#1356,18.80831129654594
+case STAR:#1189,18.806676970587837
+token == JsDocToken.EQUALS ||#1654,18.805371466137114
+if (multilineText.length() > 0) {#1367,18.804085350036623
+private String toString(JsDocToken token) {#1145,18.802187479459324
+token = next();#1925,18.802132606506348
+if (option != WhitespaceOption.PRESERVE) {#1360,18.797551918029786
+case LENDS:#451,18.796777997698104
+case SUPPRESS:#744,18.794065284729005
+if (hasParams) {#1801,18.792868320758526
+if (arg != null) {#2001,18.78872247842642
+if (paramDescription.length() > 0) {#655,18.78446686652399
+token = next();#896,18.784354754856654
+case CONSTANT:#235,18.781871386936732
+case LICENSE:#326,18.771409893035887
+String line = stream.getRemainingJSDocLine();#1450,18.770167682481848
+if (!jsdocBuilder.recordModifies(modifies)) {#1016,18.76666376807473
+parser.addTypeWarning(#856,18.76525714993477
+case OVERRIDE:#518,18.76371174766904
+private enum State {#116,18.7612361907959
+case ENUM:#343,18.752743911743163
+if (match(JsDocToken.EQUALS)) {#1890,18.747673324916672
+if (!suppressionNames.contains(name)) {#944,18.74725697257302
+case TYPEDEF:#785,18.74609032544223
+case EOC:#877,18.74186372756958
+void addParserWarning(String messageId, String messageArg, int lineno,#58,18.71977728889102
+String string = stream.getString();#2124,18.706510841846466
+case PUBLIC:#690,18.703946113586426
+if (contextType == null) {#1782,18.696273422241212
+break;#819,18.6946382522583
+case HIDDEN:#443,18.693584669203986
+case FILE_OVERVIEW:#305,18.689107808199797
+case EXTENDS:#388,18.683883076622372
+case COMMA:#1153,18.680978965759277
+paramType = wrapNode(Token.ELLIPSIS, parseTypeExpression(next()));#1878,18.67245700955391
+if (annotation == null) {#210,18.65867133140564
+String name = stream.getString();#989,18.64687220255534
+private final JsDocToken token;#1222,18.644790252049763
+if (version.length() == 0) {#768,18.640221323285783
+private final JsDocTokenStream stream;#47,18.63400190526789
+switch (annotation) {#217,18.633253002166747
+JsDocInfoParser parser = new JsDocInfoParser(#151,18.632947815789116
+if (memberType != null) {#1738,18.631382533482142
+if (!match(JsDocToken.LB)) {#1872,18.630004385243293
+int charno = stream.getCharno() + 1;#1257,18.621800316704643
+private final ErrorReporterParser parser = new ErrorReporterParser();#51,18.620952427387238
+if (jsdocBuilder.shouldParseDocumentation()) {#649,18.613111403680616
+private final Set<String> suppressionNames;#90,18.61066011949019
+&& !jsdocBuilder.hasParameter(name)) {#991,18.610590567955605
+case NOT_IMPLEMENTED:#513,18.608826398849487
+String multilineText = builder.toString();#1358,18.60180137468421
+if (token != JsDocToken.ANNOTATION &&#191,18.600108397634404
+if (paramType == null) {#1897,18.59865415096283
+if (reference.length() == 0) {#731,18.59821694691976
+String line = stream.getRemainingJSDocLine().trim();#1259,18.594843053817748
+if (author.length() == 0) {#223,18.590723673502605
+int charno) {#70,18.58715805053711
+if (state == State.SEARCHING_ANNOTATION) {#203,18.584951324462892
+if (!jsdocBuilder.recordOverride()) {#519,18.583141837801254
+return ":";#1157,18.58199644088745
+int endCharno = stream.getCharno();#1365,18.580311965942382
+if (match(JsDocToken.QMARK)) {#1668,18.575786000206357
+if (fieldTypeList == null) {#2038,18.575195165780876
+case MEANING:#478,18.574523698715936
+if (match(JsDocToken.RP)) {#1868,18.57354568299793
+return null;#2159,18.570790154593332
+parser.addParserWarning("msg.jsdoc.suppress",#952,18.570529381434124
+token = next();#950,18.56694998059954
+this.suppressionNames = config.suppressionNames;#134,18.56306880712509
+if (isVarArgs) {#1901,18.553920682271322
+Node parameters = null;#1765,18.544160842895508
+if (!jsdocBuilder.recordConstancy()) {#236,18.54169829138394
+charno = stream.getCharno();#206,18.538829023187812
+token = next();#968,18.537740389506023
+if (option != WhitespaceOption.PRESERVE) {#1389,18.53596484142801
+case NO_SIDE_EFFECTS:#706,18.532546887030968
+this.sourceName = sourceName;#128,18.524466673533123
+if (jsdocBuilder.isDescriptionRecorded()) {#289,18.524197483062743
+token = next();#901,18.52392280101776
+case IMPLICIT_CAST:#718,18.522548882857613
+if (templateTypeName.length() == 0) {#752,18.52144858042399
+token = next();#1532,18.51955246925354
+int endLineno = stream.getLineno();#1364,18.517804477525793
+if (hasVarArgs) {#2018,18.511190487788273
+private void checkExtendedTypes(List<ExtendedTypeInfo> extendedTypes) {#915,18.507583475112916
+if (parameters == null) {#1803,18.506816029548645
+default:#1377,18.5055233001709
+token = next();#456,18.50551374753316
+String fileOverview = "";#306,18.504312753677368
+int charno) {#59,18.501571215116062
+if (typeNode != null) {#1502,18.497831753322057
+@SuppressWarnings("fallthrough")#1301,18.49271869659424
+if (reason.length() > 0) {#268,18.492133481161936
+if (isThis || isNew) {#1775,18.486852477578555
+if (option != WhitespaceOption.SINGLE_LINE) {#1343,18.485908813476563
+String author = authorInfo.string;#221,18.485016345977783
+next();#1876,18.474694320133754
+paramType = wrapNode(Token.EQUALS, paramType);#1893,18.473582797580296
+ExtractionInfo paramDescriptionInfo =#650,18.473193910386826
+WhitespaceOption.PRESERVE);#330,18.469985670962576
+if (!jsdocBuilder.recordNoSideEffects()) {#707,18.46933625539144
+if (jsdocBuilder.shouldParseDocumentation()) {#552,18.46831201737927
+return "|";#1178,18.459900856018066
+void addTypeWarning(String messageId, String messageArg, int lineno,#69,18.456930296761648
+for (ExtendedTypeInfo typeInfo : extendedTypes) {#916,18.45225446364459
+token = next();#1324,18.448227643966675
+case ELLIPSIS:#1192,18.447002569834392
+if (arg == null) {#2013,18.446981576772835
+if (!jsdocBuilder.recordSuppressions(suppressions)) {#969,18.4447519381841
+token = next();#1768,18.443280601501463
+if (!blockInfo.string.isEmpty()) {#187,18.44184970855713
+if (match(JsDocToken.COLON)) {#1776,18.43800618431785
+private ExtractionInfo extractSingleLineBlock() {#1252,18.437596559524536
+void addParserWarning(String messageId, int lineno, int charno) {#64,18.437438097867098
+stream.getLineno(), stream.getCharno());#754,18.435213406880695
+String sourceName,#124,18.434442693536933
+builder.append('\n');#1437,18.433938587413113
+break;#852,18.433434339670036
+if (preserve.length() > 0) {#334,18.432697296142578
+if (!jsdocBuilder.recordDeprecated()) {#257,18.430178214763774
+token = next();#997,18.428566115243093
+lineno, charno);#817,18.428498691982693
+builder.append(toString(token));#1385,18.423590057774593
+if (match(JsDocToken.PIPE)) {#957,18.422204789661226
+jsdocBuilder.markAnnotation(annotationName, lineno, charno);#215,18.422032833099365
+JsDocToken token = next();#179,18.420444011688232
+final int charno;#1236,18.418574863009983
+case RETURN:#782,18.410037755966187
+case EOL:#1342,18.40992792447408
+Config config = new Config(#145,18.407614326477052
+if (match(JsDocToken.PIPE)) {#1004,18.405840056283132
+case RETURN:#821,18.403212730701153
+token = next();#610,18.402547802243912
+Annotation annotation = annotationNames.get(annotationName);#209,18.400380897521973
+if (typeExpr != null) {#1593,18.3948943064763
+if (fieldName == null) {#2090,18.391860802968342
+case EOL:#1435,18.3877059618632
+parameters = parseParametersType(token);#1802,18.38265484571457
+return "*";#1190,18.380415121714275
+private Node reportTypeSyntaxWarning(String warning) {#2157,18.378633499145508
+case INHERIT_DOC:#517,18.377244285915207
+if (description.length() > 0) {#558,18.37558781305949
+line = stream.getRemainingJSDocLine();#1387,18.37531462582675
+ExtractionInfo blockInfo = extractBlockComment(token);#185,18.373955090840656
+lineno, charno);#633,18.368680056403665
+private static class ExtendedTypeInfo {#1233,18.36806148952908
+if (jsdocBuilder.isInterfaceRecorded()) {#918,18.366755379570854
+private Node newStringNode(String s) {#2143,18.366583665211994
+if (option != WhitespaceOption.PRESERVE) {#1316,18.36619337867288
+case TEMPLATE:#748,18.364184379577637
+if (expr != null) {#1957,18.364130533658543
+private Node parseRecordType(JsDocToken token) {#2034,18.3635926927839
+token = next();#1015,18.36111895243327
+"Bad type annotation. " +#72,18.361101431005142
+if (!match(JsDocToken.RB)) {#1880,18.354303691698156
+Node paramType = null;#1853,18.35093536376953
+sourceName, lineno, null, charno);#66,18.350580805823917
+return "(";#1169,18.347095012664795
+if (typeNode != null) {#1570,18.346335547310964
+if (fieldType == null) {#2062,18.33884825025286
+case CONSTRUCTOR:#243,18.337008340018137
+if (jsdocBuilder.shouldParseDocumentation()) {#307,18.331281631223618
+Set<String> modifies = new HashSet<String>();#986,18.329012537002562
+int startCharno = stream.getCharno() + 1;#1312,18.321952247619627
+String description = descriptionInfo.string;#556,18.32093756539481
+"Bad type annotation. " +#79,18.320348403033087
+stream.getLineno(), stream.getCharno());#279,18.315638542175293
+token = next();#1438,18.312827110290527
+switch (annotation) {#813,18.305857548346886
+String description = descriptionInfo.string;#298,18.296085800443375
+String meaning = meaningInfo.string;#481,18.295525000645565
+token == JsDocToken.RC ||#1655,18.292052570142243
+builder.append(toString(token));#1448,18.290193055805407
+case STRING:#1198,18.28794918060303
+if (!jsdocBuilder.recordEnumParameterType(type)) {#357,18.28576402953177
+private JsDocToken parseSuppressTag(JsDocToken token) {#938,18.282367759280735
+jsdocBuilder.build(null);#886,18.27646885977851
+String typeName = stream.getString();#1722,18.27297936953031
+type, stream.getLineno(), stream.getCharno()));#417,18.271601699647448
+if (!jsdocBuilder.recordVersion(version)) {#772,18.27150908112526
+paramType = parseTypeExpression(token);#1889,18.26881637573242
+token = next();#1339,18.268039226531982
+WhitespaceOption.TRIM);#310,18.262995529174805
+this.token = token;#1226,18.26013493537903
+ExtractionInfo fileOverviewInfo =#308,18.254663467407227
+if (!jsdocBuilder.recordDefineType(type)) {#815,18.253498378552887
+token = next();#1432,18.253411974225724
+builder.append(line);#1321,18.25281229019165
+if ("function".equals(string)) {#1699,18.24925023317337
+if (match(JsDocToken.PIPE)) {#1595,18.248458009017142
+if (token == JsDocToken.STRING) {#1771,18.247376040408486
+parser.addTypeWarning(#849,18.24650129675865
+charno = stream.getCharno();#572,18.241844245365687
+token = next();#1959,18.241790294647217
+if (!jsdocBuilder.recordNoShadow()) {#699,18.24013900756836
+if (!match(JsDocToken.RC)) {#1572,18.239137950696442
+if (match(JsDocToken.STRING)) {#1726,18.235939290788437
+boolean isNew = "new".equals(tokenStr);#1774,18.235092435564315
+charno = stream.getCharno();#406,18.23155012130737
+Node contextType = wrapNode(#1779,18.22755547573692
+token = next();#1969,18.224205176035564
+boolean isThis = "this".equals(tokenStr);#1773,18.222555569240026
+int startCharno,#1119,18.2221040725708
+public static Node parseTypeString(String typeString) {#144,18.21823365347726
+if (JsDocToken.STRING != token) {#597,18.2121426264445
+token = next();#570,18.209551074288107
+ExtractionInfo descriptionInfo =#295,18.205043609325703
+if (basicTypeExpr != null) {#1667,18.194343268871307
+if (!jsdocBuilder.recordNoAlias()) {#490,18.193392786486395
+ignoreStar = true;#1436,18.19331226348877
+List<ExtendedTypeInfo> extendedTypes = Lists.newArrayList();#181,18.18934049606323
+token = current();#546,18.186302878639914
+token = next();#1652,18.18537883758545
+if (!match(JsDocToken.GT)) {#1742,18.180778001484118
+if (jsdocBuilder.hasParameter(name)) {#631,18.180108350865982
+private Node parseFieldType(JsDocToken token) {#2087,18.179249695369176
+parser.addParserWarning("msg.unexpected.eof",#887,18.17652364571889
+parser.addParserWarning("msg.jsdoc.modifies",#999,18.176215251286823
+private Node parseFieldName(JsDocToken token) {#2121,18.171136243002756
+if (match(JsDocToken.PIPE)) {#1597,18.169212522960844
+if (!jsdocBuilder.recordJavaDispatch()) {#381,18.165204475665913
+if (typeNode != null) {#1543,18.164721727371216
+if (!jsdocBuilder.recordImplicitCast()) {#719,18.161337280273436
+stream.getLineno(), stream.getCharno());#669,18.160108360084326
+if (jsdocBuilder.shouldParseDocumentation()) {#184,18.159665612613452
+stream.getLineno(), stream.getCharno());#468,18.1594836776321
+break;#859,18.15940633186927
+parser.addParserWarning("msg.jsdoc.suppress",#965,18.1577730178833
+Node memberType = parseTypeExpressionList(next());#1737,18.15638346142239
+private final Map<String, Annotation> annotationNames;#89,18.15415416445051
+if (state == State.SEARCHING_NEWLINE) {#893,18.15060555934906
+String name = null;#591,18.150179987368375
+int startCharno, boolean matchingLC) {#1075,18.14936008093492
+return Node.newString(s, stream.getLineno(),#2144,18.149326695336235
+default:#2127,18.14527678489685
+typeName.charAt(typeName.length() - 1) == '.') {#1724,18.144851507963956
+ExtractionInfo descriptionInfo =#553,18.14449383662297
+private Node parseResultType(JsDocToken token) {#1919,18.1440589768546
+if (!jsdocBuilder.recordMeaning(meaning)) {#483,18.143577698738344
+return "[";#1163,18.143537174571644
+token = next();#528,18.14289617538452
+Node fieldName = parseFieldName(token);#2088,18.139954566955566
+if (token == JsDocToken.STAR && state == State.SEARCHING_ANNOTATION) {#900,18.136744443108054
+if (returnDescription.length() > 0) {#836,18.133433702829723
+if (onlyParseSimpleNames) {#1124,18.127507576575645
+int trimCount = 0;#1469,18.1211989402771
+Node fieldTypeList = parseFieldTypeList(token);#2036,18.11591988801956
+builder.append('*');#1336,18.114727020263672
+if (isBracketedParam) {#603,18.112287258279736
+stream.getLineno(), stream.getCharno());#701,18.111618995666504
+Node fieldTypeList = newNode(Token.LB);#2057,18.109068036079407
+Node fieldType = parseFieldType(token);#2060,18.108304381370544
+stream.getLineno(), stream.getCharno());#247,18.107791973994328
+next();#2249,18.10533344745636
+if (isBracketedParam) {#593,18.093305799696182
+ExtractionInfo meaningInfo =#479,18.093083024024963
+private static class ExtractionInfo {#1220,18.092215538024902
+boolean onlyParseSimpleNames) {#1121,18.090513644011125
+token = next();#958,18.088492393493652
+token = next();#426,18.086958090464275
+line = trimEnd(line);#1451,18.086022713605097
+token = next();#461,18.077423850695293
+jsdocBuilder.markText(multilineText, startLineno, startCharno,#1368,18.075350597926548
+int startLineno = stream.getLineno();#1311,18.072408294677736
+Comment commentNode,#123,18.072322628714822
+"msg.jsdoc.incompat.type", lineno, charno);#850,18.07000635067622
+charno = stream.getCharno();#787,18.069088867732457
+private ExtractionInfo extractBlockComment(JsDocToken token) {#1411,18.067786872386932
+lineno = stream.getLineno();#571,18.066169491520636
+new JsDocTokenStream(typeString),#152,18.063714080386692
+if (!lookAheadForTypeAnnotation() &&#790,18.06356114354627
+if (!jsdocBuilder.recordExport()) {#365,18.062811510903494
+token = next();#1348,18.060027531215123
+boolean hasVarArgs = false;#1998,18.058930830522016
+return fieldTypeList;#2081,18.058166715833877
+token = next();#391,18.055415153503418
+if (name == null) {#641,18.055365867614746
+return parseArrayType(next());#1690,18.04815174983098
+private boolean lookAheadForTypeAnnotation() {#2287,18.046938529381386
+char ch = s.charAt(s.length() - trimCount - 1);#1471,18.04617377122243
+paramType = newNode(Token.ELLIPSIS);#1869,18.044072945912678
+return ">";#1160,18.04276768366496
+if (match(JsDocToken.STRING)) {#942,18.04226622581482
+if (!jsdocBuilder.recordNoCompile()) {#498,18.03820718129476
+continue;#1439,18.036131858825684
+if (jsdocBuilder.shouldParseDocumentation()) {#727,18.033675655241936
+token == JsDocToken.RP ||#1656,18.03272412952624
+void addTypeWarning(String messageId, int lineno, int charno) {#77,18.030878023667768
+case JAVA_DISPATCH:#380,18.025828704833984
+token = next();#612,18.024638430277506
+sourceName, lineno, null, charno);#81,18.021487735566637
+private Node parseFieldTypeList(JsDocToken token) {#2056,18.021040026346842
+if (jsdocBuilder.shouldParseDocumentation()) {#829,18.020990242829193
+ExtractionInfo returnDescriptionInfo =#830,18.019608064131305
+token = next();#1005,18.019563266209193
+"msg.jsdoc.incompat.type", lineno, charno);#857,18.01866414149602
+case EOL:#892,18.01747266451518
+if (alternate != null) {#1951,18.01721692085266
+lineno = stream.getLineno();#405,18.015566464128167
+sourceName, lineno, null, charno);#74,18.01346983228411
+type = null;#348,18.013309348713268
+isVarArgs = true;#1887,18.012022376060486
+null,#153,18.009292602539062
+int endCharno = stream.getCharno();#1134,18.00908582350787
+if (!jsdocBuilder.recordType(type)) {#855,18.006300899717544
+if (token == JsDocToken.ELLIPSIS) {#1863,18.004095467654142
+if (matchingRc && !match(JsDocToken.RC)) {#471,18.003808157784597
+if (token == JsDocToken.STRING) {#401,17.999230323299283
+stream.getLineno(), stream.getCharno());#375,17.999224482355892
+return "...";#1193,17.99692169825236
+token = meaningInfo.token;#482,17.996564979553224
+if (type == null) {#809,17.99371810913086
+if (!jsdocBuilder.recordPreserveTry()) {#667,17.99124002456665
+return "]";#1181,17.99048153559367
+if (token != JsDocToken.STRING) {#1718,17.98989133273854
+token = next();#397,17.985629200935364
+lineno = stream.getLineno();#205,17.984516597929456
+token = next();#1794,17.98319685459137
+private Node createTemplateNode() {#2150,17.980429861280655
+String version = versionInfo.string;#766,17.980293420644905
+return new ExtractionInfo(line, next());#1267,17.97963387625558
+if (!jsdocBuilder.recordVisibility(Visibility.PROTECTED)) {#683,17.979475201787174
+private Node parseTypeName(JsDocToken token) {#1717,17.978398186819895
+if (matchingRc) {#427,17.976298843111312
+int charno;#171,17.976171135902405
+if (restArg) {#1545,17.970533450444538
+lineno = stream.getLineno();#392,17.968340520505553
+do {#2000,17.96713638305664
+if (!jsdocBuilder.recordVisibility(Visibility.PRIVATE)) {#675,17.96709654066298
+if (hasParsedFileOverviewDocInfo()) {#878,17.96652889251709
+if (expr == null) {#1972,17.965886922983024
+charno = stream.getCharno();#346,17.96456173488072
+return jsdocBuilder.isPopulated();#2265,17.964370727539062
+if (!jsdocBuilder.recordBaseType(typeInfo.type)) {#924,17.962807536125183
+lineno = stream.getLineno();#529,17.96175116079825
+charno + line.length());#1264,17.961508314950127
+charno = stream.getCharno();#393,17.96143433025905
+private class ErrorReporterParser {#57,17.960652987162273
+token = next();#911,17.95907802581787
+return ")";#1187,17.956942558288574
+if (match(JsDocToken.STRING)) {#988,17.955553150177003
+token = next();#586,17.95545705159505
+this.stream = stream;#127,17.954039669036867
+Node basicTypeExpr = parseBasicTypeExpression(token);#1666,17.9537917137146
+if (match(JsDocToken.LC)) {#455,17.952663849140034
+private boolean match(JsDocToken token1, JsDocToken token2) {#2217,17.9524046421051
+parser.addParserWarning("msg.bad.jsdoc.tag", annotationName,#211,17.951204240322113
+SINGLE_LINE#1285,17.947502772013348
+if (!jsdocBuilder.recordLends(stream.getString())) {#462,17.94705736314928
+token = next();#797,17.946982502937317
+templateTypeName)) {#756,17.938845811066805
+"msg.jsdoc.incompat.type", lineno, charno);#824,17.937800228595734
+if (!match(JsDocToken.RC)) {#1553,17.93743133544922
+Node resultType = parseResultType(next());#1819,17.93624128614153
+private Node parseArrayType(JsDocToken token) {#1995,17.930406093597412
+boolean ignoreStar = true;#1414,17.929556465148927
+token = next();#1534,17.928387260437013
+LanguageMode.ECMASCRIPT3,#149,17.927847750046674
+while (trimCount < s.length()) {#1470,17.91882921854655
+name = stream.getString();#601,17.918228997124565
+return wrapNode(Token.QMARK, parseBasicTypeExpression(token));#1662,17.917792121569317
+if (!match(JsDocToken.RC)) {#1504,17.91776170228657
+if (JsDocToken.EQUALS == token) {#609,17.917705154418947
+stream.getLineno(), stream.getCharno());#677,17.91747611277812
+token = next();#344,17.912376837296918
+boolean hasParams = true;#1770,17.91144216977633
+builder.append(line);#1452,17.90667235851288
+if (jsdocBuilder.isInterfaceRecorded()) {#245,17.906279265880585
+return "@" + stream.getString();#1148,17.905657487757065
+skipEOLs();#1871,17.905404315275305
+if (token == JsDocToken.RC) {#1535,17.904950618743896
+return ",";#1154,17.904900312423706
+token == JsDocToken.PIPE) {#1657,17.904395666989412
+parser.addParserWarning("msg.jsdoc.suppress.unknown", name,#945,17.904346974690757
+continue retry;#370,17.90331372347745
+int lineno = stream.getLineno();#1256,17.902791295732772
+if (token == JsDocToken.ELLIPSIS) {#2006,17.900699663162232
+parser.addTypeWarning(warning, stream.getLineno(), stream.getCharno());#2158,17.90067081451416
+if (token != JsDocToken.RP) {#1854,17.899913609027863
+private Node parseParametersType(JsDocToken token) {#1850,17.897617885044642
+return newStringNode(string);#2125,17.896974245707195
+if (token == JsDocToken.COMMA ||#1653,17.895639366573757
+String reference = referenceInfo.string;#729,17.89456602505275
+builder.append('*');#1429,17.894420464833576
+continue retry;#897,17.894328457968577
+if (isPipe && match(JsDocToken.PIPE)) {#1964,17.894103965759278
+if (!jsdocBuilder.recordFileOverview(fileOverview) ||#319,17.893979102373123
+builder.append(line);#1393,17.89342302083969
+token != JsDocToken.EOC) {#192,17.89295123872303
+token = returnDescriptionInfo.token;#841,17.89290725483614
+if (jsdocBuilder.shouldParseDocumentation()) {#219,17.892653619089433
+if (match(JsDocToken.COMMA)) {#1791,17.890155488794502
+if (match(JsDocToken.STAR)) {#2250,17.888581780826343
+final JSTypeExpression type;#1234,17.88567050298055
+"msg.jsdoc.incompat.type", lineno, charno);#864,17.88557521502177
+ScriptRuntime.getMessage1(messageId, messageArg),#73,17.883931035580844
+stream.getLineno(), stream.getCharno());#464,17.88280149606558
+charno = stream.getCharno();#530,17.880037478038243
+private Node parseUnionType(JsDocToken token) {#1941,17.878269740513392
+if (!jsdocBuilder.recordExterns()) {#373,17.876361846923828
+sourceName, lineno, null, charno);#61,17.876251720246813
+parser.addParserWarning("msg.jsdoc.modifies",#1012,17.874571843580767
+ignoreStar = true;#1347,17.873673756917317
+WhitespaceOption option) {#1303,17.87238907814026
+return parseRecordType(next());#1693,17.867765866793118
+if (Character.isWhitespace(ch)) {#1472,17.86505831612481
+continue retry;#503,17.86482672257857
+return jsdocBuilder.isPopulatedWithFileOverview();#2261,17.863826394081116
+token = parseSuppressTag(next());#745,17.861811955769856
+private Node parseTopLevelTypeExpression(JsDocToken token) {#1591,17.86038662405575
+ImmutableSet.<String>of("this", "arguments");#92,17.860332441329955
+continue retry;#845,17.857773338045394
+if (!jsdocBuilder.recordReturnType(type)) {#822,17.85567080008017
+continue retry;#680,17.85326233777133
+return "!";#1151,17.85204267501831
+continue retry;#696,17.85064389488914
+next();#2100,17.850028196970623
+continue retry;#495,17.84966013648293
+skipEOLs();#1877,17.8493353619295
+if (trimCount == 0) {#1479,17.849321438716007
+continue;#1433,17.845746596654255
+return wrapNode(Token.BANG, parseBasicTypeExpression(next()));#1664,17.845091303189594
+String reason = reasonInfo.string;#266,17.84478286596445
+private void skipEOLs() {#2247,17.84431662559509
+return current();#2230,17.844172689649795
+if (name.indexOf('.') > -1) {#628,17.84231404697194
+Node typeNameNode = newStringNode(typeName);#1732,17.837112307548523
+PRESERVE,#1279,17.83583092689514
+typeInfo.lineno, typeInfo.charno);#921,17.83510073909053
+return new Node(type, stream.getLineno(),#2139,17.834002315998077
+parser.addTypeWarning(#823,17.83289724588394
+private Node newNode(int type) {#2138,17.832686597650703
+JSTypeExpression type;#174,17.83119010925293
+continue retry;#378,17.82921028137207
+private Node parseBasicTypeExpression(JsDocToken token) {#1685,17.82892370223999
+if (match(JsDocToken.STRING) && "void".equals(stream.getString())) {#1927,17.827626096791235
+private Node parseFunctionType(JsDocToken token) {#1757,17.82694911956787
+fileOverviewJSDocInfo != null) {#320,17.825244218111038
+int lineno = stream.getLineno();#1094,17.824855191367014
+state = State.SEARCHING_ANNOTATION;#1379,17.822884993119672
+private boolean match(JsDocToken token) {#2208,17.822340488433838
+stream.getLineno(), stream.getCharno());#685,17.822307303145124
+return t;#2240,17.820533207484655
+token = next();#1860,17.82008068902152
+next();#1792,17.819689886910574
+private boolean hasParsedFileOverviewDocInfo() {#2260,17.81573806490217
+continue;#1340,17.813026507695515
+next();#1777,17.810938153948104
+stream.getLineno(), stream.getCharno());#733,17.809206987038635
+return ".<";#1172,17.807615836461384
+return parseAndRecordTypeNode(token, stream.getLineno(), stream.getCharno(),#1045,17.807596169985256
+stream.getLineno(), stream.getCharno());#770,17.806900244492752
+retry: for (;;) {#200,17.806615511576336
+this.string = string;#1225,17.80616768201192
+token = blockInfo.token;#186,17.806153077345627
+Set<String> suppressions = new HashSet<String>();#940,17.800866889953614
+Node typeNode = parseTypeName(next());#1569,17.800809502601624
+"typeparsing",#154,17.790141241891043
+if (commentNode != null) {#130,17.788298686345417
+next();#2027,17.788078943888348
+do {#1416,17.787951946258545
+this.charno = charno;#1241,17.787558174133302
+continue retry;#704,17.787132653323088
+ignoreStar = false;#1446,17.786829884847005
+int endCharno = stream.getCharno();#1098,17.78512180552763
+type = null;#573,17.78430275483565
+if (!modifiesAnnotationKeywords.contains(name)#990,17.783824920654297
+continue retry;#511,17.780632149089467
+private JsDocToken parseModifiesTag(JsDocToken token) {#984,17.778801653120254
+return "?";#1175,17.778201738993328
+token = next();#2078,17.77478942871094
+if (match(JsDocToken.STRING)) {#460,17.774715677897134
+if (typeExpression == null) {#2107,17.77191264812763
+return new ExtractionInfo(builder.toString().trim(), token);#1421,17.771626179034893
+token != JsDocToken.EOF && token != JsDocToken.EOC) {#433,17.77068451775445
+while (true) {#987,17.76881642775102
+token = next();#1602,17.7671856880188
+if (token != JsDocToken.RC) {#428,17.766861466800464
+continue;#1349,17.766345977783203
+expr = parseTypeExpression(token);#1971,17.765506299336753
+return new ExtractionInfo(multilineText, token);#1372,17.76277744293213
+parser.addParserWarning("msg.jsdoc.define",#816,17.7616150195782
+continue retry;#712,17.757056713104248
+jsdocBuilder.recordParameterDescription(name,#656,17.75686538219452
+next();#1735,17.756481170654297
+if (typeExpr == null) {#1615,17.756472514225887
+if (!jsdocBuilder.recordVisibility(Visibility.PUBLIC)) {#691,17.756305176871162
+continue retry;#233,17.75608392195268
+token = paramDescriptionInfo.token;#660,17.755926745278494
+private final ErrorReporter errorReporter;#50,17.755265495993875
+private Node parseTypeExpressionList(JsDocToken token) {#1613,17.753972113132477
+if (type == null) {#537,17.753550458837438
+stream.getLineno(), stream.getCharno());#430,17.75171233386528
+Node expr = null;#1955,17.75031958685981
+if (token == JsDocToken.LC) {#575,17.74900132815043
+token = authorInfo.token;#229,17.746952268812393
+token = next();#604,17.746440740732048
+stream.getLineno(), stream.getCharno());#225,17.745439627231697
+functionType.addChildToFront(contextType);#1786,17.74403136709462
+if (token == JsDocToken.LC) {#533,17.74320600827535
+skipEOLs();#1879,17.741706146913415
+next();#2047,17.739023844401043
+stream.update();#1255,17.73900318145752
+return fieldType;#2114,17.7387056350708
+if (!jsdocBuilder.recordNoTypeCheck()) {#506,17.738551266988118
+return "=";#1196,17.736772537231445
+continue retry;#688,17.73600790717385
+next();#1596,17.73594379425049
+continue retry;#672,17.733285990628328
+if (typeExpr == null) {#1624,17.733281326293945
+skipEOLs();#585,17.73251829147339
+stream.ungetChar(c);#2301,17.73110008239746
+return false;#890,17.730009665855995
+jsdocBuilder.markText(line, lineno, charno, lineno,#1263,17.729992469151814
+type = null;#531,17.729260791431773
+if (token == JsDocToken.EOL || token == JsDocToken.EOC ||#2180,17.72695861543928
+typeName += stream.getString();#1728,17.72578114271164
+new Node(type, n, stream.getLineno(),#2134,17.720707575480144
+if (resultType == null) {#1820,17.719201882680256
+skipEOLs();#1867,17.718368021647134
+if (!jsdocBuilder.recordExtendedInterface(typeInfo.type)) {#919,17.7174089050293
+while (true) {#941,17.712597240101207
+if (!match(JsDocToken.RP)) {#1982,17.712194162256576
+stream.getLineno(), stream.getCharno());#500,17.71004210291682
+if (!jsdocBuilder.recordInterface()) {#276,17.70697580065046
+if (token == JsDocToken.QMARK) {#1641,17.706674416859943
+continue retry;#362,17.70579858259721
+jsdocBuilder.markName(name, lineno, charno);#646,17.704701741536457
+stream.getLineno(), stream.getCharno());#521,17.703157450701738
+false,#148,17.702687168121336
+if (type == null) {#354,17.699433860778807
+stream.getLineno(), stream.getCharno());#508,17.69939902022078
+paramsType.addChildToBack(paramType);#1900,17.698712700291683
+if (isVarArgs && match(JsDocToken.COMMA)) {#1907,17.69697070121765
+private Node parseTypeNameAnnotation(JsDocToken token) {#1566,17.695290327072144
+token = eatTokensUntilEOL();#292,17.694665602275304
+if (!match(JsDocToken.RC)) {#1011,17.687753116383274
+next();#1858,17.68767277399699
+do {#2059,17.686680952707928
+String templateTypeName = templateInfo.string;#750,17.684828451701573
+Node fieldType = newNode(Token.COLON);#2111,17.6839742064476
+stream.getLineno(), stream.getCharno());#291,17.683122170938027
+if (unreadToken == NO_UNREAD_TOKEN) {#2227,17.6830059352674
+if (!jsdocBuilder.recordTypedef(type)) {#862,17.681070277565404
+if (token != JsDocToken.LP) {#1760,17.680334627628326
+if (!match(JsDocToken.COMMA)) {#2069,17.67944124009874
+multilineText = multilineText.trim();#1361,17.67930691330521
+matchingRc = false;#454,17.677545706431072
+do {#1956,17.67541519800822
+boolean isPipe = token == JsDocToken.PIPE;#1963,17.675015767415363
+Node arg = null;#1997,17.672516292995876
+charno = stream.getCharno();#588,17.671248722076417
+return token;#975,17.66929449353899
+continue retry;#487,17.66864707253196
+return paramsType;#1913,17.668190717697144
+private ExtractionInfo extractMultilineTextualBlock(JsDocToken token) {#1270,17.66698489189148
+token = descriptionInfo.token;#301,17.666847511574073
+return typeExpr;#1606,17.6633489396837
+if (!match(JsDocToken.RC)) {#964,17.66206926458022
+annotation == Annotation.RETURN) {#791,17.660999667259954
+checkExtendedTypes(extendedTypes);#881,17.660887567620527
+return parseAndRecordTypeNode(token, lineno, startCharno,#1060,17.660630271548317
+if (!match(JsDocToken.RP)) {#1814,17.66016368865967
+lineno = stream.getLineno();#345,17.654317749871147
+JSDocInfo getFileOverviewJSDocInfo() {#2275,17.652939987182616
+private Node parseParamTypeExpressionAnnotation(JsDocToken token) {#1526,17.649332152472603
+if (!jsdocBuilder.recordThisType(type)) {#848,17.647816245620316
+boolean matchingRc = false;#394,17.64706367492676
+stream.getLineno(), stream.getCharno());#446,17.642395586580843
+continue retry;#286,17.639672452753242
+ExtractionInfo reasonInfo =#263,17.638579924901325
+jsdocBuilder.recordBlockDescription("");#195,17.638277670916388
+if (token == JsDocToken.STAR) {#1686,17.63601714372635
+int startCharno = stream.getCharno();#1095,17.63269115896786
+if (type == null) {#579,17.632623495878995
+ExtractionInfo authorInfo = extractSingleLineBlock();#220,17.63207918597806
+Config config,#125,17.62575358436221
+token = next();#594,17.621325651804607
+if (token == JsDocToken.LC) {#396,17.617539095878602
+jsdocBuilder.recordThrowType(type);#549,17.616827692304337
+private Node wrapNode(int type, Node n) {#2132,17.615054403032577
+return true;#882,17.614735309894268
+int c;#2289,17.614341190883092
+type = createJSTypeExpression(typeNode);#807,17.61422233581543
+parser.addParserWarning("msg.jsdoc.suppress.duplicate",#970,17.613937514168875
+Sets.<String>newHashSet(),#146,17.613849580287933
+private Node parseTypeExpressionAnnotation(JsDocToken token) {#1498,17.612926483154297
+continue retry;#716,17.61174553090876
+Node typeNode = null;#789,17.61125115553538
+boolean ignoreStar = false;#1326,17.608585834503174
+token == JsDocToken.PIPE || token == JsDocToken.COMMA);#1961,17.608068061597418
+if (token == JsDocToken.ELLIPSIS) {#1533,17.60725482304891
+boolean isBracketedParam = JsDocToken.LB == token;#592,17.606772422790527
+private Node parseTypeExpression(JsDocToken token) {#1640,17.605849011739096
+stream.getLineno(), stream.getCharno());#238,17.6053690008215
+stream.getLineno(), stream.getCharno());#492,17.60248836311134
+returnDescriptionInfo.string;#834,17.600939671198528
+lineno, charno);#599,17.600616455078125
+state = State.SEARCHING_ANNOTATION;#1323,17.599318504333496
+return parseUnionType(next());#1696,17.59910766895001
+state = State.SEARCHING_ANNOTATION;#176,17.59897881746292
+if (token == JsDocToken.EOC || token == JsDocToken.EOL ||#1305,17.598598810342644
+continue retry;#724,17.5948073647239
+if (token != JsDocToken.EOL && token != JsDocToken.EOC) {#349,17.592737988727848
+JsDocInfoParser(JsDocTokenStream stream,#122,17.591138090406144
+if (alternate == null) {#1980,17.589765151341755
+static private final Set<String> modifiesAnnotationKeywords =#91,17.58811193704605
+SEARCHING_ANNOTATION,#117,17.586323579152424
+return jsdocBuilder.build(sourceName);#2269,17.584859711783274
+parser.addTypeWarning(#863,17.583519876003265
+return stream.getString();#1199,17.582601887839182
+this.lineno = lineno;#1240,17.58102982384818
+if (!match(JsDocToken.COLON)) {#1921,17.58037829399109
+if (match(JsDocToken.LT)) {#1734,17.578744252522785
+stream.getLineno(), stream.getCharno());#709,17.57857186085469
+stream.getLineno(), stream.getCharno());#758,17.57796184436695
+stream.getLineno(), stream.getCharno());#367,17.57507038116455
+Sets.<String>newHashSet(),#147,17.57055687904358
+typeExpr = parseTopLevelTypeExpression(next());#1623,17.56874280226858
+skipEOLs();#1778,17.56872544569128
+stream.getLineno(), stream.getCharno());#485,17.568628130732357
+lineno = stream.getLineno();#786,17.566666355839484
+boolean isVarArgs = false;#1852,17.56619470769709
+arg = wrapNode(Token.ELLIPSIS, parseTypeExpression(next()));#2007,17.564967084814
+return newNode(Token.QMARK);#1659,17.563442548116047
+c = stream.getChar();#2291,17.560489581181454
+continue retry;#241,17.558794238350607
+if (!match(JsDocToken.RC)) {#2043,17.55714906056722
+skipEOLs();#1920,17.554391649034287
+private Node parseUnionTypeWithAlternate(JsDocToken token, Node alternate) {#1949,17.549040699005126
+ignoreStar = false;#1378,17.54831116994222
+token == JsDocToken.ANNOTATION)) {#1357,17.547647544315883
+continue retry;#293,17.54629909992218
+unreadToken = token;#2201,17.545284938812255
+ExtractionInfo referenceInfo = extractSingleLineBlock();#728,17.541629914314516
+token = next();#2004,17.540715217590332
+ErrorReporter errorReporter) {#126,17.539156290201042
+if (!jsdocBuilder.recordImplementedInterface(type)) {#421,17.537201288584118
+continue retry;#902,17.53363072872162
+token = fileOverviewInfo.token;#314,17.533196347100393
+token = parseModifiesTag(next());#715,17.532676696777344
+stream.getLineno(), stream.getCharno());#721,17.531932598835713
+name = null;#629,17.52974220422598
+ExtractionInfo templateInfo = extractSingleLineBlock();#749,17.529180428077435
+stream.getLineno(), stream.getCharno());#966,17.52879093170166
+return parseUnionTypeWithAlternate(token, typeExpr);#1603,17.528493404388428
+continue retry;#515,17.52800737727772
+stream.getLineno(), stream.getCharno());#1000,17.52657417014793
+stream.getLineno(), stream.getCharno());#888,17.526043432730216
+stream.getLineno(), stream.getCharno());#322,17.523248388960553
+next();#1669,17.522128184636433
+private void restoreLookAhead(JsDocToken token) {#2200,17.520108477274576
+next();#1621,17.51983952522278
+do {#2179,17.51902945836385
+jsdocBuilder.recordDescription(description);#300,17.517711244780443
+return parseUnionTypeWithAlternate(token, null);#1942,17.51715475320816
+if (!match(JsDocToken.RB)) {#2024,17.51610533396403
+typeInfo.lineno, typeInfo.charno);#926,17.51601279223407
+typeNode.putBooleanProp(Node.BRACELESS_TYPE, true);#1131,17.513293380737306
+if (JsDocToken.STRING == token) {#611,17.512994898690117
+continue retry;#441,17.506737275557086
+stream.getLineno(), stream.getCharno());#946,17.499742080425396
+fieldTypeList.addChildToBack(fieldType);#2066,17.49630445904202
+stream.getLineno(), stream.getCharno());#693,17.495015273223053
+stream.getLineno(), stream.getCharno());#473,17.493167516347523
+token = next();#2185,17.492296409606933
+type = createJSTypeExpression(#534,17.49138276330356
+return "}";#1184,17.49118185043335
+return newNode(Token.VOID);#1929,17.490890121459962
+lineno, charno);#423,17.49082669089822
+while (true) {#2290,17.487616327073837
+unreadToken = next();#2218,17.486371326446534
+next();#2074,17.486138701438904
+Node array = newNode(Token.LB);#1996,17.484369482312882
+jsdocBuilder.recordBlockDescription(blockInfo.string);#188,17.48357391357422
+new JSTypeExpression(n, sourceName);#1212,17.482918357849123
+return n == null ? null :#1211,17.481032198125664
+parser.addTypeWarning("msg.jsdoc.incompat.type", name,#635,17.47900093433469
+type = createJSTypeExpression(#576,17.475361330755824
+state = State.SEARCHING_ANNOTATION;#894,17.472642938296
+token = referenceInfo.token;#738,17.47049363454183
+fileOverview = fileOverviewInfo.string;#312,17.468455840801372
+if (jsdocBuilder.isConstructorRecorded()) {#277,17.464532447583746
+parser.addParserWarning("msg.jsdoc.noalias",#491,17.458847775178796
+stream.getLineno(), stream.getCharno());#953,17.456386001021773
+NEXT_IS_ANNOTATION#119,17.451881061900746
+stream.getLineno(), stream.getCharno());#993,17.45142509091285
+stream.getCharno()).clonePropsFrom(templateNode);#2135,17.450662885393417
+type = createJSTypeExpression(#350,17.450478093377477
+private static final JsDocToken NO_UNREAD_TOKEN = null;#2192,17.449389859249717
+next();#1985,17.444530248641968
+errorReporter.warning(ScriptRuntime.getMessage1(messageId, messageArg),#60,17.443341941833495
+builder.append(' ');#1443,17.44218937555949
+if (token == JsDocToken.LC) {#939,17.441770792007446
+JsDocToken t = unreadToken;#2238,17.43900101525443
+unreadToken = next();#2209,17.438847732543945
+return token;#1022,17.437504087175643
+int lineno;#170,17.436313152313232
+if (!match(JsDocToken.COLON)) {#2095,17.43471908569336
+checkExtendedTypes(extendedTypes);#889,17.43184084641306
+break;#875,17.42981521288554
+if (annotation == Annotation.EXTENDS) {#414,17.428540258696586
+parser.addParserWarning("msg.jsdoc.versionmissing",#769,17.427165143630084
+parser.addParserWarning("msg.jsdoc.extends.duplicate",#920,17.426697049822128
+token = eatTokensUntilEOL();#377,17.425451425405647
+skipEOLs();#1544,17.423997792330656
+skipEOLs();#527,17.42362468138985
+returnDescription);#838,17.42238336290632
+return unreadToken == token;#2210,17.418452349576082
+parser.addTypeWarning("msg.dup.variable.name", name,#632,17.416904589024984
+stream.getCharno()).clonePropsFrom(templateNode);#2140,17.414795478185017
+return stream.getJsDocToken();#2228,17.414111954825266
+trimCount++;#1473,17.413802320306953
+return extractMultilineTextualBlock(token, WhitespaceOption.SINGLE_LINE);#1271,17.413567237854004
+unreadToken = NO_UNREAD_TOKEN;#2239,17.41087406873703
+return basicTypeExpr;#1677,17.408947070439655
+extractMultilineTextualBlock(token);#831,17.408213353157045
+token = eatTokensUntilEOL();#679,17.407205013128426
+token = eatTokensUntilEOL(token);#843,17.406225177976822
+fieldType.addChildToBack(fieldName);#2112,17.404469617207845
+typeNode.putBooleanProp(Node.BRACELESS_TYPE, true);#410,17.403816060322086
+Node functionType = newNode(Token.FUNCTION);#1764,17.403726241167853
+stream.getLineno(), stream.getCharno());#1013,17.40199077606201
+token = preserveInfo.token;#340,17.39938407897949
+next();#1884,17.398570128849574
+if (typeNode != null && !matchingRc) {#409,17.398405776304358
+private JsDocToken eatTokensUntilEOL() {#2170,17.397123881748744
+continue retry;#449,17.39603090286255
+final int lineno;#1235,17.393503612942165
+if (!jsdocBuilder.recordConstructor()) {#244,17.39228843820506
+lineno = stream.getLineno();#587,17.391897990785797
+token = eatTokensUntilEOL();#687,17.386956966840305
+private Node reportGenericTypeSyntaxWarning() {#2162,17.38682230313619
+skipEOLs();#1568,17.38661427931352
+return typeList;#1629,17.384637594223022
+stream.getLineno(), stream.getCharno());#250,17.383753654284355
+stream.getLineno(), stream.getCharno());#435,17.383274176181892
+stream.getLineno(), stream.getCharno());#774,17.381053142058544
+continue retry;#664,17.380623644048516
+private Node parseAndRecordTypeNameNode(JsDocToken token, int lineno,#1074,17.38006911277771
+token = reasonInfo.token;#272,17.379942970275877
+return newNode(Token.EMPTY);#1922,17.37897446950277
+token = descriptionInfo.token;#562,17.377382137157298
+parser.addParserWarning("msg.jsdoc.export",#366,17.376224344426934
+skipEOLs();#2068,17.373789960687812
+private Node parseAndRecordTypeNode(JsDocToken token) {#1032,17.372141540050507
+ScriptRuntime.getMessage0(messageId),#80,17.372070026397704
+do {#1855,17.370885848999023
+Node typeNode = null;#1122,17.370853614807128
+return recordType;#2050,17.370516896247864
+token = eatTokensUntilEOL();#703,17.36086739026583
+builder.append(' ');#1382,17.360346264309353
+token = eatTokensUntilEOL();#540,17.35925750732422
+stream.getLineno(), stream.getCharno());#282,17.358966680673454
+token = versionInfo.token;#778,17.356921882629393
+skipEOLs();#1500,17.356306596235797
+parser.addTypeWarning("msg.missing.variable.name",#598,17.355138666489545
+private Node parseAndRecordParamTypeNode(JsDocToken token) {#1092,17.354526070987475
+stream.getLineno(), stream.getCharno());#383,17.347496393564587
+state = State.SEARCHING_NEWLINE;#204,17.344216015027918
+jsdocBuilder.markTypeNode(typeNode, lineno, startCharno, endCharno,#1136,17.338105712618148
+continue retry;#762,17.33791056546298
+jsdocBuilder.recordReturnDescription(#837,17.333821773529053
+stream.getLineno(), stream.getCharno());#1018,17.332308875189888
+if (token == JsDocToken.LC) {#985,17.32938653230667
+private JsDocToken unreadToken = NO_UNREAD_TOKEN;#2197,17.32223505722849
+ExtractionInfo versionInfo = extractSingleLineBlock();#765,17.321131969320362
+stream.update();#1310,17.32105326652527
+do {#1328,17.320926348368328
+token = eatTokensUntilEOL(token);#231,17.31674839655558
+continue retry;#742,17.315877654335715
+Node typeNode = parseTopLevelTypeExpression(next());#1501,17.314735111437347
+if (fileLevelJsDocBuilder != null) {#335,17.3143499435917
+stream.getLineno(), stream.getCharno());#259,17.312945237030853
+parser.addTypeWarning("msg.no.type.name", lineno, charno);#438,17.309400653839113
+type = createJSTypeExpression(typeNode);#412,17.308351755142212
+parser.addParserWarning("msg.jsdoc.nosideeffects",#708,17.307379995073592
+throw new IllegalStateException(token.toString());#1202,17.305856955678838
+if (!match(JsDocToken.RP)) {#1767,17.302100880940756
+Node paramsType = newNode(Token.LP);#1851,17.30143140157064
+token = eatTokensUntilEOL();#494,17.295643072861893
+return n == null ? null :#2133,17.293615514581855
+stream.getLineno(), stream.getCharno());#971,17.292990225332755
+return matchedLc;#2302,17.289969232347275
+typeNode = wrapNode(Token.EQUALS, typeNode);#1550,17.287652471791144
+parser.addTypeWarning("msg.jsdoc.missing.rc",#429,17.28524083357591
+fieldType.addChildToBack(typeExpression);#2113,17.283011078834534
+lineno, charno);#636,17.27996192258947
+token = eatTokensUntilEOL();#369,17.278580335470345
+token = eatTokensUntilEOL();#514,17.277990414546085
+extendedTypes.add(new ExtendedTypeInfo(#416,17.2759031355381
+continue retry;#476,17.27467441558838
+while (match(JsDocToken.EOL)) {#2248,17.271134793758392
+parser.addParserWarning("msg.jsdoc.modifies.unknown", name,#992,17.2705157995224
+continue retry;#524,17.2685565514998
+stream.getCharno()).clonePropsFrom(templateNode);#2145,17.26269817352295
+next();#1892,17.26229238510132
+parser.addTypeWarning("msg.jsdoc.incompat.type",#249,17.262135334503956
+this.type = type;#1239,17.25671641031901
+token == JsDocToken.EOF) {#1306,17.255809031034772
+break;#825,17.254652295793807
+private JSTypeExpression createJSTypeExpression(Node n) {#1210,17.2530988392077
+state = State.SEARCHING_NEWLINE;#904,17.252295079438582
+parser.addParserWarning("msg.jsdoc.modifies.duplicate",#1017,17.250782353537424
+parser.addParserWarning("msg.jsdoc.javadispatch",#382,17.249996185302734
+parser.addParserWarning("msg.jsdoc.const",#237,17.24611117623069
+this.errorReporter = errorReporter;#136,17.244110311780656
+token = eatTokensUntilEOL();#671,17.243225776232205
+return parseTypeName(token);#1581,17.24292278289795
+continue retry;#566,17.239643530412152
+return token;#954,17.23886020366962
+continue retry;#254,17.2379131750627
+skipEOLs();#452,17.236306833184283
+parseTypeName(next()));#1781,17.236272521640945
+skipEOLs();#569,17.230543447577436
+if (token == JsDocToken.LC) {#1567,17.230059772729874
+hasVarArgs = true;#2008,17.228352001735143
+typeNode.putBooleanProp(Node.BRACELESS_TYPE, true);#804,17.22522507644281
+stream.getLineno(), stream.getCharno());#212,17.224433068306215
+token = eatTokensUntilEOL();#502,17.222053417792687
+return s.substring(0, s.length() - trimCount);#1482,17.218998003005982
+Node union = newNode(Token.PIPE);#1950,17.218836963176727
+line = line.trim();#1317,17.218501091003418
+continue retry;#386,17.21837919408625
+parser.addParserWarning("msg.jsdoc.nocompile",#499,17.217950608995224
+token = eatTokensUntilEOL();#510,17.217196831336388
+token = eatTokensUntilEOL();#695,17.21653698040889
+annotation == Annotation.IMPLEMENTS);#420,17.216043499537875
+"msg.jsdoc.incompat.type", lineno, charno);#359,17.21603300457909
+return array;#2028,17.21451050894601
+SEARCHING_NEWLINE,#118,17.21219435605136
+return token;#1001,17.209844442514274
+parser.addParserWarning("msg.jsdoc.meaning.extra",#484,17.209643718174526
+token = eatTokensUntilEOL();#253,17.209297290215126
+parser.addTypeWarning("msg.jsdoc.incompat.type",#281,17.20852746718969
+continue retry;#746,17.207864848050203
+private State state;#87,17.20610745747884
+skipEOLs();#1736,17.205750248648904
+return null;#1616,17.205142233106827
+config,#155,17.205059242248534
+parser.addParserWarning("msg.jsdoc.desc.extra",#290,17.202884347098216
+skipEOLs();#1958,17.196024601276104
+Node typeExpression = parseTypeExpression(next());#2105,17.19540762901306
+skipEOLs();#177,17.195047272576225
+array.addChildToBack(arg);#2017,17.194176355997723
+continue;#2293,17.192741680145264
+token = eatTokensUntilEOL();#285,17.191879290800827
+token = eatTokensUntilEOL();#582,17.189865589141846
+parser.addParserWarning("msg.jsdoc.externs",#374,17.188937105451313
+skipEOLs();#1503,17.18827720788809
+token = eatTokensUntilEOL();#240,17.18802600640517
+boolean hasParsedJSDocInfo() {#2264,17.185344989483173
+errorReporter.warning(ScriptRuntime.getMessage0(messageId),#65,17.183824842626397
+return newStringNode(string);#1703,17.183012008666992
+return null;#1898,17.18277615767259
+skipEOLs();#1883,17.18096985536463
+token = eatTokensUntilEOL();#723,17.180925662700947
+suppressions.add(stream.getString());#949,17.178623056411745
+continue retry;#324,17.176360953937877
+if (annotation == Annotation.THIS) {#801,17.17010685493206
+line = trimEnd(line);#1390,17.169766426086426
+private Node parseAndRecordTypeNode(JsDocToken token, int lineno,#1118,17.169167217455414
+token = eatTokensUntilEOL();#711,17.164023949549748
+return null;#2128,17.163796424865723
+hasParams = false;#1796,17.157287915547688
+jsdocBuilder.markTypeNode(typeNode, lineno, startCharno, endCharno,#1100,17.15693323952811
+skipEOLs();#1859,17.156193606058757
+if (token == JsDocToken.LC) {#1499,17.156108990311623
+state = State.SEARCHING_ANNOTATION;#2182,17.15222010612488
+next();#1928,17.1493958234787
+typeNode = newNode(Token.QMARK);#794,17.14373868703842
+return typeNode;#1139,17.14261794090271
+this.jsdocBuilder = new JSDocInfoBuilder(config.parseJsDocDocumentation);#129,17.1419229888916
+boolean matchingLC,#1120,17.14139768055507
+paramDescription);#657,17.14071277092243
+return wrapNode(Token.QMARK, basicTypeExpr);#1670,17.135540008544922
+parser.addParserWarning("msg.jsdoc.deprecated",#258,17.134774460512048
+builder.append("\n");#1344,17.129919303090947
+if (JsDocToken.RB != token) {#616,17.128942720817797
+default:#1201,17.126521944999695
+skipEOLs();#1766,17.126405398050945
+skipEOLs();#1725,17.122998324307527
+type = createJSTypeExpression(newStringNode("number"));#355,17.12295362684462
+private ExtractionInfo extractMultilineTextualBlock(JsDocToken token,#1302,17.12077095634059
+fileOverviewJSDocInfo = retrieveAndResetParsedJSDocInfo();#879,17.1202203689083
+skipEOLs();#1529,17.116780757904053
+parser.addTypeWarning("msg.jsdoc.incompat.type",#925,17.11647955576579
+fileLevelJsDocBuilder.append(preserve);#336,17.116104154875785
+jsdocBuilder.addAuthor(author);#227,17.112922483874904
+token = eatTokensUntilEOL(token);#316,17.11131148338318
+return functionType;#1825,17.1083322763443
+parser.addParserWarning("msg.jsdoc.noshadow",#700,17.106335994175502
+builder.append(' ');#1333,17.10294485092163
+token, lineno, charno, matchingRc);#403,17.102355003356934
+return fileOverviewJSDocInfo;#2276,17.099960803985596
+parser.addParserWarning("msg.jsdoc.preservertry",#668,17.099528339174057
+parser.addParserWarning("msg.jsdoc.fileoverview.extra",#321,17.098187059969515
+skipEOLs();#1926,17.09738408194648
+parser.addParserWarning("msg.jsdoc.nocheck",#507,17.095888083321707
+token = eatTokensUntilEOL(token);#642,17.093249734242757
+return new ExtractionInfo("", token);#1307,17.089478302001954
+return parseAndRecordTypeNode(token, lineno, startCharno, matchingLC, true);#1076,17.08829226860633
+parseAndRecordTypeNode(token));#535,17.08688446879387
+parser.addTypeWarning(#358,17.08566845380343
+token = next();#1453,17.084629671914236
+token = templateInfo.token;#761,17.07934886932373
+skipEOLs();#1571,17.07841704441951
+token = eatTokensUntilEOL();#869,17.078384619492752
+skipEOLs();#390,17.077298537544582
+while (match(JsDocToken.EOL) &&#1723,17.075901180505753
+this.annotationNames = config.annotationNames;#133,17.075178802013397
+skipEOLs();#796,17.07265203475952
+continue retry;#583,17.07111798799955
+parseAndRecordParamTypeNode(token));#577,17.070127313787285
+continue retry;#273,17.068182251670144
+parser.addTypeWarning("msg.jsdoc.lends.missing",#467,17.06571322017246
+builder.append(' ');#1426,17.06439652442932
+parser.addParserWarning("msg.jsdoc.hidden",#445,17.062550429141883
+Node typeList = new Node(Token.BLOCK);#1618,17.061994433403015
+endLineno, endCharno);#1369,17.059582180447048
+token = eatTokensUntilEOL(token);#564,17.059321657816568
+skipEOLs();#1601,17.051910657149094
+errorReporter.warning(#71,17.051429748535156
+return wrapNode(Token.ELLIPSIS, new Node(Token.EMPTY));#1537,17.050826512850247
+if (typeNode != null && token != JsDocToken.LC) {#803,17.05058783453864
+return templateNode;#2154,17.050215244293213
+matchingRc = true;#398,17.048241138458252
+skipEOLs();#1793,17.043260181651394
+return parseTypeExpression(next());#1931,17.04256228038243
+parser.addParserWarning("msg.jsdoc.visibility.public",#692,17.040492216746014
+return null;#1821,17.038586192660862
+skipEOLs();#1689,17.038358211517334
+if (typeNode != null && !matchingLC) {#1130,17.035388217252844
+continue retry;#302,17.030501127243042
+recordType.addChildToBack(fieldTypeList);#2049,17.02991557121277
+return reportTypeSyntaxWarning("msg.jsdoc.missing.colon");#1788,17.02837480347732
+return typeNameNode;#1749,17.027204195658367
+next();#1966,17.021528561909992
+Node typeExpr = parseTypeExpression(token);#1592,17.020248532295227
+return newNode(Token.STAR);#1687,17.018938337053573
+continue retry;#341,17.018616199493408
+return reportGenericTypeSyntaxWarning();#1709,17.018069903055828
+skipEOLs();#2094,17.01790671878391
+parser.addTypeWarning("msg.jsdoc.template.at.most.once",#757,17.016888227218235
+modifies.add(stream.getString());#996,17.01491508483887
+restoreLookAhead(token);#1658,17.014625612894694
+next();#1599,17.013845682144165
+parser.addParserWarning("msg.jsdoc.extraversion",#773,17.012931230905895
+true);#1101,17.01268548965454
+type = JSTypeExpression.makeOptionalArg(type);#621,17.01108576122083
+return typeNode;#1511,17.010488510131836
+token = eatTokensUntilEOL(token);#440,17.007204907281057
+next();#1727,17.006599521636964
+token == JsDocToken.EOF) {#2181,17.005419912792387
+isThis ? Token.THIS : Token.NEW,#1780,17.00146120565909
+token = eatTokensUntilEOL();#448,17.000997616694523
+next();#1507,16.999120076497395
+continue retry;#779,16.997967633334074
+private JSDocInfo fileOverviewJSDocInfo = null;#86,16.996285140514374
+skipEOLs();#1622,16.99456613714045
+next();#2002,16.994494247436524
+skipEOLs();#1695,16.987888249483976
+typeNode = parseAndRecordTypeNode(token, lineno, charno);#798,16.986219792752653
+next();#2251,16.97958126068115
+errorReporter.warning(#78,16.978072722752888
+parser.addTypeWarning("msg.jsdoc.implements.duplicate",#422,16.97459145479424
+parser.addParserWarning("msg.jsdoc.visibility.private",#676,16.97397738032871
+token = eatTokensUntilEOL();#475,16.972401215479923
+token = eatTokensUntilEOL();#905,16.968722915649415
+this.templateNode = this.createTemplateNode();#137,16.968604596455894
+token = eatTokensUntilEOL();#523,16.963564909421482
+return parser.parseTopLevelTypeExpression(parser.next());#158,16.961170567406548
+return unreadToken == token1 || unreadToken == token2;#2219,16.9592342376709
+typeNameNode.addChildToFront(memberType);#1739,16.957515811920167
+token = next();#1394,16.956362996782577
+void setFileOverviewJSDocInfo(JSDocInfo fileOverviewJSDocInfo) {#112,16.956036194511082
+next();#1548,16.954887485504152
+while (match(JsDocToken.COMMA)) {#1620,16.94500470161438
+return null;#2091,16.938524034288193
+next();#1556,16.938169956207275
+skipEOLs();#1968,16.933538803687462
+return typeNode;#1579,16.9284707069397
+parser.addTypeWarning("msg.end.annotation.expected",#434,16.920397784258867
+Node typeNode = parseTopLevelTypeExpression(token);#1542,16.919877220602597
+skipEOLs();#1891,16.915307998657227
+private Node parseAndRecordTypeNode(JsDocToken token, int lineno,#1058,16.91173111765008
+return parseFunctionType(next());#1701,16.911309814453126
+parser.addTypeWarning("msg.jsdoc.templatemissing",#753,16.91083410623911
+extractMultilineTextualBlock(token);#480,16.909987956285477
+next();#1746,16.90738124847412
+token = eatTokensUntilEOL(token);#740,16.907055632273355
+parser.addTypeWarning("msg.jsdoc.implicitcast",#720,16.905961200169155
+arg = parseTypeExpression(token);#2010,16.902983833761777
+return s;#1480,16.898587438795303
+matchingRc = true;#457,16.898208178006687
+jsdocBuilder.recordDeprecationReason(reason);#269,16.893112748861313
+token = eatTokensUntilEOL(token);#361,16.892131669180735
+return parseTypeName(token);#1705,16.887027931213378
+skipEOLs();#1813,16.88573959138658
+parser.addTypeWarning("msg.jsdoc.missing.rc",#472,16.883941377912247
+next();#1575,16.878752946853638
+false);#150,16.87445936203003
+jsdocBuilder.recordThrowDescription(type, description);#559,16.872033764334287
+return reportTypeSyntaxWarning("msg.jsdoc.missing.rb");#1881,16.86545057296753
+parser.addTypeWarning("msg.jsdoc.lends.incompatible",#463,16.85736020406087
+parser.addParserWarning("msg.jsdoc.visibility.protected",#684,16.855659166971844
+return fieldName;#2096,16.853826332092286
+token = eatTokensUntilEOL();#385,16.848360391763542
+return typeNode;#1102,16.84355056285858
+Node.FileLevelJsDocBuilder fileLevelJsDocBuilder) {#104,16.839709949493407
+parser.addParserWarning("msg.jsdoc.seemissing",#732,16.82974712472213
+templateNode.putProp(Node.SOURCENAME_PROP, sourceName);#2153,16.820618232091267
+skipEOLs();#2042,16.817316479153103
+skipEOLs();#2104,16.809427155388725
+TRIM,#1282,16.803544725690568
+token == JsDocToken.LC, false);#1061,16.80327754271658
+JSDocInfo retrieveAndResetParsedJSDocInfo() {#2268,16.80035104249653
+Node typeExpr = parseTopLevelTypeExpression(token);#1614,16.800085650549995
+break;#866,16.798044278071476
+private Node parseAndRecordTypeNode(JsDocToken token, boolean matchingLC) {#1044,16.797297286987305
+next();#1672,16.797261555989582
+extractMultilineTextualBlock(token);#296,16.78096055984497
+parser.addTypeWarning("msg.jsdoc.override",#520,16.775627725264606
+skipEOLs();#1692,16.77326028997248
+boolean matchedLc = false;#2288,16.765361872586336
+return reportGenericTypeSyntaxWarning();#1719,16.762860706874303
+return reportTypeSyntaxWarning("msg.jsdoc.missing.rp");#1815,16.76243193253227
+private JsDocToken eatTokensUntilEOL(JsDocToken token) {#2178,16.7564630006489
+Node recordType = newNode(Token.LC);#2035,16.74910701115926
+typeNode = wrapNode(Token.ELLIPSIS, typeNode);#1546,16.738100217736285
+return reportTypeSyntaxWarning("msg.jsdoc.missing.rc");#2044,16.730159195986662
+parser.addParserWarning("msg.jsdoc.authormissing",#224,16.723866312127363
+return null;#2108,16.715021981133354
+return null;#1783,16.71373468286851
+matchedLc = true;#2295,16.70585080555507
+return parseTypeExpression(token);#1513,16.696121828896658
+Node typeNode = parseAndRecordTypeNameNode(#402,16.69430265118999
+skipEOLs();#2021,16.68636621128429
+typeNode = wrapNode(Token.BANG, typeNode);#802,16.683080757365506
+typeNode = parseTypeNameAnnotation(token);#1125,16.679083263172824
+typeList.addChildToBack(typeExpr);#1619,16.664534091949463
+token = eatTokensUntilEOL(token);#662,16.660308488210042
+return reportTypeSyntaxWarning("msg.jsdoc.function.varargs");#1908,16.655919448189113
+typeNode = wrapNode(Token.BANG, typeNode);#408,16.64642785577213
+return null;#1973,16.646095102483574
+functionType.addChildToBack(parameters);#1810,16.634321717654956
+return reportGenericTypeSyntaxWarning();#2039,16.628237996782577
+return null;#1625,16.627940438010476
+Node typeNode = parseParamTypeExpressionAnnotation(token);#1097,16.625329812367756
+extractMultilineTextualBlock(token);#651,16.623249951530905
+return union;#1987,16.621961321149552
+skipEOLs();#2077,16.6211368820884
+continue retry;#541,16.61664317204402
+return reportTypeSyntaxWarning("msg.jsdoc.missing.lp");#1761,16.61299115961248
+Preconditions.checkState(#419,16.606637297005488
+return parseAndRecordTypeNode(token, token == JsDocToken.LC);#1033,16.58440527048978
+skipEOLs();#1741,16.58187220646785
+Preconditions.checkState(#1960,16.579436620076496
+extractMultilineTextualBlock(token,#329,16.574587374925613
+return reportTypeSyntaxWarning("msg.jsdoc.missing.lb");#1873,16.56522471110026
+parser.addTypeWarning("msg.jsdoc.interface.constructor",#246,16.56074621802882
+continue retry;#643,16.555657108624775
+skipEOLs();#1981,16.552859046242453
+parser.addTypeWarning("msg.jsdoc.interface.constructor",#278,16.550444075935765
+private final Node templateNode;#55,16.54104793071747
+private Node.FileLevelJsDocBuilder fileLevelJsDocBuilder;#94,16.536296486854553
+typeList.addChildToBack(typeExpr);#1627,16.53585598203871
+Node templateNode = new Node(Token.SCRIPT);#2152,16.534335434436798
+return null;#2014,16.5232985236428
+NullErrorReporter.forNewRhino());#156,16.490145206451416
+reportTypeSyntaxWarning("msg.jsdoc.missing.rc");#1554,16.48987571052883
+reportTypeSyntaxWarning("msg.jsdoc.missing.rc");#1573,16.487372436523437
+extractMultilineTextualBlock(token,#309,16.487371360554416
+return wrapNode(Token.BANG, basicTypeExpr);#1673,16.461862087249756
+skipEOLs();#1549,16.4567190683805
+jsdocBuilder.addReference(reference);#735,16.454787008223995
+this.fileOverviewJSDocInfo = fileOverviewJSDocInfo;#113,16.454094791412352
+return reportTypeSyntaxWarning("msg.jsdoc.missing.rp");#1983,16.451447792053223
+skipEOLs();#1818,16.446666134728325
+reportTypeSyntaxWarning("msg.jsdoc.missing.rc");#1505,16.438818740844727
+boolean restArg = false;#1531,16.433795356750487
+extractMultilineTextualBlock(token);#264,16.42623919248581
+restArg = true;#1539,16.424553524364125
+this.fileLevelJsDocBuilder = fileLevelJsDocBuilder;#105,16.424493100908066
+parseAndRecordTypeNode(token));#351,16.418239563703537
+extractMultilineTextualBlock(token);#554,16.410106630886304
+skipEOLs();#1700,16.4069944528433
+reportTypeSyntaxWarning("msg.jsdoc.missing.rb");#617,16.401772988148224
+return reportTypeSyntaxWarning("msg.jsdoc.type.syntax");#2163,16.377452941167924
+skipEOLs();#2003,16.37285694709191
+return reportTypeSyntaxWarning("msg.jsdoc.missing.rb");#2025,16.359564607793633
+return eatTokensUntilEOL(next());#2171,16.3519910298861
+return typeNode;#1560,16.32862639427185
+this.jsdocBuilder.recordOriginalCommentString(commentNode.getValue());#131,16.324047005694844
+Preconditions.checkArgument(token == JsDocToken.LC);#1093,16.323762553078787
+return token;#2183,16.315026456659492
+Preconditions.checkArgument(token == JsDocToken.LC);#1527,16.29744595573062
+typeNode = parseTypeExpressionAnnotation(token);#1127,16.27650573518541
+break;#960,16.248198588689167
+return null;#2063,16.242609197443183
+return reportTypeSyntaxWarning("msg.jsdoc.missing.gt");#1743,16.241309092595028
+matchingLC, false);#1046,16.2355678998507
+union.addChildToBack(alternate);#1952,16.22261416912079
+void setFileLevelJsDocBuilder(#103,16.215962409973145
+functionType.addChildToBack(resultType);#1823,16.207697307362277
+continue retry;#906,16.202701926231384
+break;#1007,16.163474877675373
+union.addChildToBack(expr);#1976,16.151847330729165
+continue retry;#871,16.12981081008911
+break;#2296,16.04470863342285
+return null;#1804,15.952642954312838
+break;#2298,15.946140575408936
+matchingLC);#1137,15.718714714050293
+break;#1902,15.629621664683023
+break;#2070,15.381833934783936
+break;#2019,15.228443431854249
+break;#1475,15.047243976593018

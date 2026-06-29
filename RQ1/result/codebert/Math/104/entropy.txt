@@ -1,0 +1,86 @@
+-59.597960355475491248,#44,18.33340345110212
+public static double regularizedGammaQ(final double a,#225,17.97178973091973
+public static double regularizedGammaP(double a,#150,17.952977236579446
+ret = Double.NaN;#91,17.899238435845625
+double tmp = x + g + .5;#101,17.832042043859307
+-.98374475304879564677e-4,#49,17.832013378972594
+ret = 1.0 - regularizedGammaP(a, x, epsilon, maxIterations);#240,17.818578720092773
+private static final long serialVersionUID = -6587513359895466954L;#34,17.780997939731765
+-0.49191381609762019978,#46,17.7803380602882
+ret = Double.NaN;#234,17.757992593865644
+ret = 1.0 - regularizedGammaQ(a, x, epsilon, maxIterations);#165,17.755400869581436
+-.16431810653676389022e-3,#53,17.705751299858093
+throws MathException#118,17.6936562278054
+14.136097974741747174,#45,17.67521291308933
+throws MathException#198,17.63610232960094
+private static final long serialVersionUID = 5378525034886164398L;#245,17.63388978733736
+ret = Double.NaN;#159,17.623083716944645
+double ret;#88,17.567289352416992
+sum = sum + (lanczos[i] / (x + i));#97,17.55862501895789
+-.21026444172410488319e-3,#51,17.520144379657246
+public static double regularizedGammaQ(double a, double x)#197,17.41378869508442
+public static double logGamma(double x) {#87,17.39189427693685
+.33994649984811888699e-4,#47,17.38026644966819
+HALF_LOG_2_PI + Math.log(sum / x);#103,17.37114172270804
+public static double regularizedGammaP(double a, double x)#117,17.357090247304814
+an = an * (x / (a + n));#174,17.354951245444163
+ret = Math.exp(-x + (a * Math.log(x)) - logGamma(a)) * ret;#257,17.33881901472043
+sum = sum + an;#177,17.332044644789264
+double ret;#231,17.326080322265625
+ret = ((x + .5) * Math.log(tmp)) - tmp +#102,17.322772153218587
+double g = 607.0 / 128.0;#93,17.305293798446655
+double ret;#156,17.28585147857666
+throw new MaxIterationsExceededException(maxIterations);#180,17.27312447230021
+ret = Math.exp(-x + (a * Math.log(x)) - logGamma(a)) * sum;#182,17.23080501999966
+.15808870322491248884e-3,#50,17.183251641013406
+sum = sum + lanczos[0];#99,17.175655841827393
+return ret;#260,17.14017356525768
+ret = 1.0 / cf.evaluate(x, epsilon, maxIterations);#256,17.1097811460495
+return n * (a - n);#252,17.10754214014326
+return ((2.0 * n) + 1.0) - a + x;#248,17.08273639177021
+return ret;#106,17.02949671311812
+ret = 1.0;#236,17.02435048421224
+return regularizedGammaP(a, x, DEFAULT_EPSILON, Integer.MAX_VALUE);#120,16.988506750626996
+return regularizedGammaQ(a, x, DEFAULT_EPSILON, Integer.MAX_VALUE);#200,16.986381415164832
+ret = 0.0;#161,16.947682486640083
+-.26190838401581408670e-4,#55,16.933301676874574
+return ret;#186,16.92521684820002
+double x,#226,16.91344005503553
+for (int i = lanczos.length - 1; i > 0; --i) {#96,16.878369418057527
+double epsilon,#227,16.859508105686732
+.84418223983852743293e-4,#54,16.852825728329744
+.36899182659531622704e-5,#56,16.847454331137918
+int maxIterations)#228,16.844228880746023
+double x,#151,16.818485604955796
+int maxIterations)#153,16.81764369108239
+double epsilon,#152,16.81717366588359
+{#119,16.778254890441893
+.21743961811521264320e-3,#52,16.750456289811567
+{#41,16.745920372009277
+super();#67,16.735888671875
+throws MathException#229,16.71567509391091
+n = n + 1.0;#173,16.685670773188274
+throws MathException#154,16.678039464083586
+{#199,16.66044044494629
+double sum = 0.0;#95,16.64499895196212
+{#230,16.644542121887206
+57.156235665862923517,#43,16.63537385728624
+{#155,16.624653625488282
+while (Math.abs(an) > epsilon && n < maxIterations) {#171,16.60951566696167
+if (n >= maxIterations) {#179,16.59325804029192
+private static final double HALF_LOG_2_PI = 0.5 * Math.log(2.0 * Math.PI);#60,16.53681740616307
+double an = 1.0 / a; // n-th element in the series#169,16.470531364967083
+.46523628927048575665e-4,#48,16.46807861328125
+double sum = an; // partial sum#170,16.38811342716217
+if (Double.isNaN(a) || Double.isNaN(x) || (a <= 0.0) || (x < 0.0)) {#158,16.237231037833475
+protected double getB(int n, double x) {#251,16.192682606833323
+if (Double.isNaN(a) || Double.isNaN(x) || (a <= 0.0) || (x < 0.0)) {#233,16.187463825399224
+protected double getA(int n, double x) {#247,16.071227107729232
+private static double[] lanczos =#40,16.050724347432453
+if (Double.isNaN(x) || (x <= 0.0)) {#90,16.02066093020969
+double n = 0.0; // current element index#168,15.910517112068508
+private static final double DEFAULT_EPSILON = 10e-9;#37,15.809635979788643
+0.99999999999999709182,#42,15.512873930089613
+ContinuedFraction cf = new ContinuedFraction() {#243,15.448473018148672
+private Gamma() {#66,15.195429921150208
+public class Gamma implements Serializable {#31,14.479854822158813

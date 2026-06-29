@@ -1,0 +1,456 @@
+static {#97,20.28007221221924
+if (period == null || scalar == 0) {#1133,20.130322456359863
+public Interval toInterval(DateTimeZone zone) {#964,20.09047519459444
+if (time == null) {#874,20.088869857788087
+public DateTime toDateTimeAtStartOfDay(DateTimeZone zone) {#717,19.99215489342099
+if (days == 0) {#1260,19.97760950724284
+if (days == 0) {#1379,19.971970303853354
+if (years == 0) {#1307,19.911006927490234
+public DateTime toDateTimeAtCurrentTime(DateTimeZone zone) {#804,19.90136218070984
+if (years == 0) {#1188,19.866987164815267
+if (partial == null) {#1046,19.804393768310547
+if (months == 0) {#1333,19.798862965901694
+if (amount == 0) {#1106,19.79390042622884
+if (months == 0) {#1214,19.766480255126954
+if (zone == null) {#136,19.71628583272298
+return toString();#1816,19.678258657455444
+if (type == null) {#560,19.643442598978677
+public DateTime toDateTimeAtMidnight(DateTimeZone zone) {#765,19.638487005233763
+public DateTimeField getField() {#1908,19.63473331928253
+public Interval toInterval() {#949,19.620872338612873
+if (weeks == 0) {#1237,19.614809930324554
+public DateTime toDateTimeAtStartOfDay() {#695,19.596794843673706
+if (fieldType == null) {#1396,19.59646511077881
+public int get(DateTimeFieldType fieldType) {#541,19.591942310333252
+if (fieldType == null) {#1071,19.588789582252502
+if (weeks == 0) {#1356,19.583483397960663
+if (fieldType == null) {#542,19.57115662097931
+public static LocalDate now(DateTimeZone zone) {#135,19.570424497127533
+if (time != null) {#931,19.55430285135905
+if (fieldType == null) {#1100,19.54832935333252
+protected long getMillis() {#1917,19.527058283487957
+public static LocalDate parse(String str, DateTimeFormatter formatter) {#178,19.524385452270508
+DateTime start = toDateTimeAtStartOfDay(zone);#966,19.480974197387695
+if (date == null) {#240,19.477358245849608
+private transient DateTimeField iField;#1871,19.46499264240265
+if (type == null) {#580,19.43620402018229
+return toString();#1830,19.413125038146973
+public LocalDate(DateTimeZone zone) {#274,19.372100148882186
+if (iChronology == null) {#457,19.35806793636746
+public DateTime toDateTime(LocalTime time, DateTimeZone zone) {#924,19.33174505687895
+public int getCenturyOfEra() {#1420,19.329848085130966
+public int getEra() {#1411,19.312997124411844
+if (calendar == null) {#207,19.298606038093567
+public LocalDate withField(DateTimeFieldType fieldType, int value) {#1070,19.267746153331938
+public DateMidnight toDateMidnight(DateTimeZone zone) {#850,19.241963587309186
+public LocalDate addToCopy(int value) {#1950,19.239017486572266
+public int getValue(int index) {#513,19.23040925539457
+if (partial instanceof LocalDate) {#669,19.223738950841568
+public int getDayOfMonth() {#1505,19.22011677424113
+if (time != null && getChronology() != time.getChronology()) {#925,19.21356041090829
+throw new NullPointerException("Zone must not be null");#137,19.204199752807618
+if (isSupported(fieldType) == false) {#1103,19.183543539047243
+if (isSupported(fieldType) == false) {#1074,19.176689910888673
+int dom = getDayOfMonth();#989,19.144729137420654
+public int getDayOfWeek() {#1516,19.142313480377197
+private void writeObject(ObjectOutputStream oos) throws IOException {#1888,19.134753102841586
+public int getYearOfEra() {#1429,19.120334185086765
+if (pattern == null) {#1829,19.11683972676595
+if (pattern == null) {#1815,19.1161776860555
+@Deprecated#764,19.11261749267578
+if (DateTimeZone.UTC.equals(iChronology.getZone()) == false) {#460,19.10179030510687
+if (isSupported(fieldType) == false) {#545,19.099047708511353
+if (partial instanceof LocalDate) {#625,19.091715756584616
+long instant = getLocalMillis();#1136,19.090337932109833
+public DateTime toDateTimeAtMidnight() {#742,19.056536165873208
+public DateTime toDateTimeAtCurrentTime() {#784,19.05385882059733
+DateTime end = plusDays(1).toDateTimeAtStartOfDay(zone);#967,19.034823523627388
+public LocalDate withPeriodAdded(ReadablePeriod period, int scalar) {#1132,19.030754877173383
+public LocalDate(Object instant, DateTimeZone zone) {#378,19.02349012038287
+public String toString(String pattern) {#1814,19.015482095571663
+if (this == partial) {#666,19.009726778666177
+return toDateTimeAtStartOfDay(null);#696,18.98960610439903
+private transient LocalDate iInstant;#1869,18.98639399210612
+public int getDayOfYear() {#1494,18.98445773124695
+if (isSupported(fieldType) == false) {#1399,18.984413957595827
+private static final int YEAR = 0;#90,18.977966785430908
+public Property property(DateTimeFieldType fieldType) {#1395,18.974413871765137
+public String toString() {#1804,18.95960102081299
+public int getYearOfCentury() {#1438,18.95543722005991
+throw new IllegalArgumentException("The time must not be null");#875,18.932981124291054
+return toDateTime(time, null);#903,18.924567054299747
+Property(LocalDate instant, DateTimeField field) {#1879,18.91682062149048
+public LocalDate getLocalDate() {#1936,18.908397257328033
+public Date toDate() {#988,18.898498439788817
+if (hash == 0) {#642,18.876297378540038
+public LocalDate withMinimumValue() {#2037,18.874131202697754
+public int getMonthOfYear() {#1471,18.856002966562908
+public LocalDate withFieldAdded(DurationFieldType fieldType, int amount) {#1099,18.854532695951917
+Chronology chrono = getChronology().withZone(zone);#767,18.8508009288622
+public int getWeekOfWeekyear() {#1485,18.840044535123386
+public DateTime toDateTime(LocalTime time) {#902,18.837210297584534
+public LocalDate plusDays(int days) {#1259,18.831161090305873
+public Property dayOfMonth() {#1784,18.829619147560813
+Chronology chrono = getChronology().withZone(zone);#852,18.829488339631453
+public LocalDate withYearOfCentury(int yearOfCentury) {#1577,18.82669734954834
+public LocalDate withEra(int era) {#1532,18.813283983866373
+public String toString(String pattern, Locale locale) throws IllegalArgumentException {#1828,18.812867858193137
+return new LocalDate();#124,18.80296538426326
+public LocalDate plusYears(int years) {#1187,18.79697322845459
+if (this == partial) {#622,18.79671688079834
+public Property yearOfCentury() {#1721,18.779587745666504
+protected Chronology getChronology() {#1927,18.776763018439798
+public LocalDate withCenturyOfEra(int centuryOfEra) {#1547,18.770838283357165
+public int getYear() {#1447,18.770182037353514
+public boolean equals(Object partial) {#620,18.76714523633321
+protected long getLocalMillis() {#599,18.76236017545064
+public LocalDate minusDays(int days) {#1378,18.76145533152989
+public Property monthOfYear() {#1757,18.760796720331367
+throw new IllegalArgumentException("Field must not be null");#1072,18.752628173828125
+throw new NullPointerException("Chronology must not be null");#152,18.74793423546685
+throw new IllegalArgumentException("The chronology of the time does not match");#926,18.743649581383014
+@Deprecated#741,18.735345567975724
+public LocalDate roundHalfFloorCopy() {#2076,18.729197290208603
+public LocalDate addWrapFieldToCopy(int value) {#1965,18.722835237329658
+if (chronology == null) {#151,18.716386198997498
+public boolean isSupported(DateTimeFieldType type) {#559,18.716142058372498
+private final long iLocalMillis;#109,18.712228536605835
+public Property yearOfEra() {#1730,18.708819150924683
+throw new IllegalArgumentException("The DateTimeFieldType must not be null");#543,18.70833423219878
+return getChronology().yearOfEra().get(getLocalMillis());#1430,18.704996439126823
+throw new IllegalArgumentException("Field must not be null");#1101,18.694849586486818
+public LocalDate roundFloorCopy() {#2052,18.694623217863196
+public Property centuryOfEra() {#1712,18.690718332926433
+@ToString#1803,18.681274686540878
+throw new IllegalArgumentException("The DateTimeFieldType must not be null");#1397,18.679283503828376
+public LocalDate setCopy(int value) {#1979,18.67312987645467
+throw new IllegalArgumentException("The chronology of the time does not match");#878,18.67061713646198
+public Property dayOfYear() {#1775,18.669632738286797
+public LocalDate minusYears(int years) {#1306,18.667244025639125
+public Property dayOfWeek() {#1793,18.65370611710982
+private static final int MONTH_OF_YEAR = 1;#92,18.653572612338596
+return false;#561,18.647576141357423
+public LocalDate plusWeeks(int weeks) {#1236,18.646480814615884
+return getChronology().yearOfCentury().get(getLocalMillis());#1439,18.63771699025081
+throw new IllegalArgumentException("Field '" + fieldType + "' is not supported");#1075,18.625851292763986
+private Object readResolve() {#456,18.621751004999336
+Chronology chrono = getChronology().withZone(zone);#719,18.6070614275725
+return getChronology().year().get(getLocalMillis());#1448,18.592607373776644
+public int getWeekyear() {#1462,18.59189883145419
+public LocalDate withMaximumValue() {#2025,18.58905827999115
+public boolean isSupported(DurationFieldType type) {#579,18.58597443898519
+return toInterval(null);#950,18.582083638509115
+public static LocalDate now() {#123,18.573199879039418
+zone = DateTimeUtils.getZone(zone);#965,18.57301769256592
+return new LocalDate(#244,18.571023500882664
+public LocalDate(long instant, DateTimeZone zone) {#315,18.570905629326315
+return toDateTimeAtMidnight(null);#743,18.569803131951225
+throw new IllegalArgumentException("Field '" + fieldType + "' is not supported");#546,18.55250161693942
+return this;#1189,18.54812742869059
+private static final int DAY_OF_MONTH = 2;#94,18.543261864606073
+throw new IllegalArgumentException("Field '" + fieldType + "' is not supported");#1400,18.54269193833874
+return new LocalDate(#211,18.542108975923977
+return toDateTimeAtCurrentTime(null);#785,18.537656201256645
+public LocalDate minusWeeks(int weeks) {#1355,18.525311533610026
+zone = DateTimeUtils.getZone(zone);#718,18.522033643722533
+zone = DateTimeUtils.getZone(zone);#805,18.520728826522827
+public LocalDate setCopy(String text) {#2006,18.519240273369682
+return this;#1047,18.51234499613444
+Chronology chrono = getChronology();#1137,18.511795626746284
+if (DATE_DURATION_TYPES.contains(durType) ||#564,18.506549802319757
+return getChronology().dayOfMonth().get(getLocalMillis());#1506,18.506226081848144
+return this;#1308,18.50340328216553
+throw new IllegalArgumentException("The calendar must not be null");#208,18.501397426311787
+return this;#1357,18.490744145711265
+newMillis = iChronology.dayOfMonth().roundFloor(newMillis);#1027,18.485809655025086
+return this;#1215,18.485190264383952
+throw new IllegalArgumentException("The date must not be null");#241,18.48516167127169
+private void readObject(ObjectInputStream oos) throws IOException, ClassNotFoundException {#1896,18.483096599578857
+return this;#1334,18.481504058837892
+return new Interval(start, end);#968,18.465899186975815
+return this;#1380,18.463075637817383
+return getChronology().era().get(getLocalMillis());#1412,18.46127825197966
+public LocalDate withDayOfWeek(int dayOfWeek) {#1693,18.455418586730957
+public LocalDate roundHalfEvenCopy() {#2097,18.4550002041985
+public Property year() {#1739,18.4549347559611
+return withLocalMillis(instant);#1145,18.45420489591711
+return this;#1238,18.45322519938151
+zone = DateTimeUtils.getZone(zone);#851,18.452249002456664
+return getChronology().weekOfWeekyear().get(getLocalMillis());#1486,18.452077388763428
+date = earlier;#1009,18.44650650024414
+return getChronology().centuryOfEra().get(getLocalMillis());#1421,18.444080609541672
+@FromString#166,18.441333498273575
+Date date = new Date(getYear() - 1900, getMonthOfYear() - 1, dom);#990,18.439978981018065
+return getChronology().monthOfYear().get(getLocalMillis());#1472,18.438519592285157
+public LocalDate plusMonths(int months) {#1213,18.435162862141926
+public LocalDate setCopy(String text, Locale locale) {#1993,18.429683338512074
+if (DATE_DURATION_TYPES.contains(type) ||#584,18.4244644023754
+return new DateTime(getYear(), getMonthOfYear(), getDayOfMonth(), 0, 0, 0, 0, chrono);#768,18.419030808113718
+Chronology chrono = getChronology().withZone(zone);#806,18.41597598531972
+while (date.getDate() == dom) {#1000,18.415509141009785
+return getChronology().dayOfYear().get(getLocalMillis());#1495,18.414375915527344
+public LocalDate plus(ReadablePeriod period) {#1165,18.410216867923737
+for (int i = 0; i < period.size(); i++) {#1138,18.398128509521484
+DurationField field = type.getField(getChronology());#583,18.397532679817893
+while (check.equals(this) == false) {#995,18.39405288696289
+zone = DateTimeUtils.getZone(zone);#766,18.390018224716187
+int dayOfMonth) {#425,18.388549115922714
+if (getChronology() != time.getChronology()) {#877,18.38183315594991
+throw new IllegalArgumentException("Field '" + fieldType + "' is not supported");#1104,18.377521668711015
+Date earlier = new Date(date.getTime() - TimeZone.getDefault().getDSTSavings());#1007,18.368850178188747
+protected DateTimeField getField(int index, Chronology chrono) {#488,18.36627039909363
+return this;#1261,18.358451398213706
+public LocalDateTime toLocalDateTime(LocalTime time) {#873,18.3529241349962
+public Property era() {#1703,18.349581400553387
+return getChronology().dayOfWeek().get(getLocalMillis());#1517,18.34943836212158
+iLocalMillis = instant;#449,18.3393803914388
+switch (index) {#514,18.334403404822716
+public LocalDate(Object instant) {#356,18.331643104553223
+long instant = getChronology().days().add(getLocalMillis(), days);#1263,18.32175558584708
+long instant = getChronology().years().add(getLocalMillis(), years);#1191,18.32173478161847
+return withLocalMillis(instant);#1337,18.317447886747473
+long instant = getChronology().months().add(getLocalMillis(), months);#1217,18.312304002267343
+return new Property(this, getChronology().yearOfCentury());#1722,18.31013818581899
+public LocalDate withYearOfEra(int yearOfEra) {#1562,18.310002470016478
+return false;#581,18.309544372558594
+if (earlier.getDate() == dom) {#1008,18.296027104059856
+return new LocalDate(zone);#139,18.28779525756836
+public static LocalDate now(Chronology chronology) {#150,18.284364027135513
+DateTimeFieldType type = (DateTimeFieldType) oos.readObject();#1898,18.271572399139405
+instant = chrono.dayOfMonth().roundFloor(instant);#722,18.262982447942097
+return false;#588,18.261195269497957
+public LocalDate withDayOfMonth(int dayOfMonth) {#1678,18.256628142462837
+DurationFieldType durType = type.getDurationType();#563,18.25351972579956
+@SuppressWarnings("deprecation")#238,18.25135809580485
+switch (index) {#489,18.24683482830341
+return getChronology().weekyear().get(getLocalMillis());#1463,18.24200777212779
+public LocalDate withYear(int year) {#1592,18.215305668967112
+@SuppressWarnings("deprecation")#987,18.214927864074706
+long localMillis = getLocalMillis() + 6L * DateTimeConstants.MILLIS_PER_HOUR;#720,18.211676571104263
+public Property weekOfWeekyear() {#1766,18.210630257924397
+return false;#569,18.209467627785422
+public LocalDate minusMonths(int months) {#1332,18.206255594889324
+return iLocalMillis == other.iLocalMillis;#628,18.20524426164298
+public int size() {#475,18.192019674513077
+return new Property(this, getChronology().yearOfEra());#1731,18.185897707939148
+return withLocalMillis(instant);#1311,18.17612350688261
+public LocalDate minus(ReadablePeriod period) {#1284,18.174291968345642
+return toDateMidnight(null);#830,18.171007752418518
+return withLocalMillis(instant);#1218,18.159144345451804
+return field.isSupported();#586,18.158695379892986
+return new Property(this, getChronology().year());#1740,18.143539428710938
+iInstant = (LocalDate) oos.readObject();#1897,18.13569435119629
+long localMillis = getLocalMillis() + time.getLocalMillis();#880,18.134407190176155
+long localMillis = chronology.getZone().getMillisKeepLocal(DateTimeZone.UTC, instant);#332,18.132752678611062
+public LocalDate withDayOfYear(int dayOfYear) {#1663,18.131290647718643
+Chronology chrono = getChronology().withZone(zone);#928,18.129725746486496
+public static LocalDate fromDateFields(Date date) {#239,18.128149649676153
+return withLocalMillis(instant);#1360,18.114276998183307
+public LocalDate roundHalfCeilingCopy() {#2086,18.107031119497197
+return new LocalDateTime(localMillis, getChronology());#881,18.10205368373705
+iField = type.getField(iInstant.getChronology());#1899,18.09965671811785
+this(instant, (Chronology) null);#357,18.097981405258178
+return 0;#667,18.085186513264976
+long instant = fieldType.getField(getChronology()).set(getLocalMillis(), value);#1077,18.082367777824402
+public LocalDate roundCeilingCopy() {#2066,18.08086183336046
+public DateMidnight toDateMidnight() {#829,18.075805527823313
+public LocalDate withMonthOfYear(int monthOfYear) {#1628,18.075423187679714
+public LocalDate() {#260,18.063669310675728
+return withLocalMillis(instant);#1078,18.06353776595172
+LocalDate other = (LocalDate) partial;#670,18.05750140276822
+return withLocalMillis(instant);#1192,18.057106074164896
+return iLocalMillis;#600,18.051671709333146
+return new Property(this, getChronology().dayOfMonth());#1785,18.05125617980957
+return new Property(this, getChronology().weekOfWeekyear());#1767,18.049309253692627
+public LocalDate(long instant) {#301,18.04654312133789
+return new LocalDate(iLocalMillis, iChronology.withUTC());#461,18.046386909484863
+public static LocalDate parse(String str) {#167,18.035968780517578
+return this;#1107,18.026717313130696
+public Property weekyear() {#1748,18.0263879776001
+return formatter.parseLocalDate(str);#179,18.023811499277752
+public LocalDate(Chronology chronology) {#288,18.02199363708496
+int monthOfYear,#442,18.019445419311523
+return withLocalMillis(getChronology().yearOfCentury().set(getLocalMillis(), yearOfCentury));#1578,18.017171250449287
+Chronology chronology = converter.getChronology(instant, zone);#380,18.01671039581299
+return iInstant.getLocalMillis();#1918,18.01432060060047
+return new Property(this, getChronology().monthOfYear());#1758,18.011358675749406
+return getChronology().dayOfMonth().get(getLocalMillis());#520,18.007732275760535
+return new Property(this, getChronology().weekyear());#1749,18.007348580793902
+return iChronology;#609,18.004358972821915
+if (iChronology.equals(other.iChronology)) {#671,18.0021559715271
+long instant = getChronology().days().subtract(getLocalMillis(), days);#1382,17.9954105245656
+return new Property(this, getChronology().centuryOfEra());#1713,17.994083325068157
+return withLocalMillis(instant);#1241,17.991718909319708
+if (iChronology.equals(other.iChronology)) {#627,17.985238297780356
+return new Property(this, getChronology().dayOfYear());#1776,17.977770059005074
+return withLocalMillis(instant);#1264,17.97373115315157
+return fieldType.getField(getChronology()).get(getLocalMillis());#548,17.96947509901864
+return true;#623,17.965930557250978
+return new Property(this, getChronology().era());#1704,17.965681462060836
+field.getUnitMillis() >= getChronology().days().getUnitMillis()) {#585,17.96102523803711
+LocalDate other = (LocalDate) partial;#626,17.957551045851275
+long instant = getChronology().months().subtract(getLocalMillis(), months);#1336,17.95648117723136
+return new DateTime(instant, chrono);#723,17.951871068854082
+long instant = getChronology().weeks().add(getLocalMillis(), weeks);#1240,17.951539243970597
+long instant = DateTimeUtils.currentTimeMillis();#929,17.940394265311106
+check = LocalDate.fromDateFields(date);#997,17.939164025442942
+return withLocalMillis(instant);#1383,17.93828863256118
+Chronology chronology) {#444,17.936214023166233
+instant = type.getField(chrono).add(instant, value);#1142,17.932391368981563
+instant = chrono.set(time, instant);#932,17.925446676171344
+return new DateTime(instant, chrono);#934,17.923784958688838
+return new Property(this, getChronology().dayOfWeek());#1794,17.920448883720066
+long instantMillis = DateTimeUtils.currentTimeMillis();#807,17.918635824452277
+durType.getField(getChronology()).getUnitMillis() >=#565,17.90333024193259
+long instant = fieldType.getField(getChronology()).add(getLocalMillis(), amount);#1109,17.88622486591339
+return withPeriodAdded(period, -1);#1285,17.88095880809583
+public Chronology getChronology() {#608,17.879018416771522
+iField = field;#1882,17.859211080214557
+return getChronology().monthOfYear().get(getLocalMillis());#518,17.858875621448863
+if (isSupported(type)) {#1141,17.858016633987425
+return iInstant.getChronology();#1928,17.847340265909832
+long instant = getChronology().years().subtract(getLocalMillis(), years);#1310,17.84696493477657
+if (check.isBefore(this)) {#992,17.84555270936754
+return new LocalDate(iLocalMillis, ISOChronology.getInstanceUTC());#458,17.844778122440463
+return withLocalMillis(instant);#1110,17.841808543485755
+public LocalDate(#440,17.838500261306763
+iChronology = chronology.withUTC();#408,17.83608923460308
+return type.getField(getChronology()).isSupported();#567,17.83455633234095
+return new DateMidnight(getYear(), getMonthOfYear(), getDayOfMonth(), chrono);#853,17.83258514404297
+return getChronology().year().get(getLocalMillis());#516,17.8120974879111
+return super.compareTo(partial);#677,17.80331179674934
+int hash = iHash;#641,17.782824720655167
+public static LocalDate fromCalendarFields(Calendar calendar) {#206,17.78014494243421
+return super.equals(partial);#631,17.772960245609283
+oos.writeObject(iInstant);#1889,17.76854805719285
+iChronology = chronology;#448,17.762173235416412
+iLocalMillis = iChronology.getDateTimeMillis(values[0], values[1], values[2], 0);#384,17.755489826202393
+iLocalMillis = chronology.dayOfMonth().roundFloor(localMillis);#334,17.75322709764753
+public LocalDate(#422,17.743923544883728
+iChronology = chronology.withUTC();#382,17.743258677030866
+this(instant, ISOChronology.getInstance());#302,17.736839476085844
+iLocalMillis = iChronology.getDateTimeMillis(values[0], values[1], values[2], 0);#410,17.73178840938367
+throw new IndexOutOfBoundsException("Invalid index: " + index);#522,17.723213583230972
+return new Property(this, fieldType.getField(getChronology()));#1402,17.721858904911922
+long instant = getChronology().weeks().subtract(getLocalMillis(), weeks);#1359,17.718600432078045
+DATE_DURATION_TYPES.add(DurationFieldType.eras());#105,17.71193320410592
+long instant = chronology.getDateTimeMillis(year, monthOfYear, dayOfMonth, 0);#447,17.70971179008484
+int yearOfEra = calendar.get(Calendar.YEAR);#210,17.70171030362447
+long instant = zone.convertLocalToUTC(localMillis, false);#721,17.69273754119873
+return 3;#476,17.689591841264203
+iInstant = instant;#1881,17.67637623057646
+public LocalDate withWeekOfWeekyear(int weekOfWeekyear) {#1648,17.645491647720338
+int year,#441,17.62166690826416
+public LocalDate withFields(ReadablePartial partial) {#1045,17.6197935740153
+return withPeriodAdded(period, 1);#1166,17.60707892311944
+throw new IndexOutOfBoundsException("Invalid index: " + index);#497,17.605455935001373
+super();#445,17.601635360717772
+case MONTH_OF_YEAR:#517,17.596360706147692
+long value = FieldUtils.safeMultiply(period.getValue(i), scalar);#1139,17.593839196597827
+return new DateTime(resolved, chrono);#809,17.590855648643092
+LocalDate check = LocalDate.fromDateFields(date);#991,17.581639896739613
+getChronology().days().getUnitMillis()) {#566,17.57915687561035
+public static final class Property extends AbstractReadableInstantFieldProperty {#1863,17.571102647220386
+return withLocalMillis(getChronology().monthOfYear().set(getLocalMillis(), monthOfYear));#1629,17.568977019366095
+return iInstant;#1937,17.562145352363586
+date.setTime(date.getTime() + 3600000);#996,17.556727600097656
+DurationFieldType type = period.getFieldType(i);#1140,17.54431827545166
+return withLocalMillis(getChronology().dayOfWeek().set(getLocalMillis(), dayOfWeek));#1694,17.542303478016574
+this(instant, ISOChronology.getInstance(zone));#316,17.538314777871836
+return iField;#1909,17.53234612941742
+public int compareTo(ReadablePartial partial) {#664,17.52708625793457
+return setCopy(getMinimumValue());#2038,17.5213050365448
+return withLocalMillis(getChronology().yearOfEra().set(getLocalMillis(), yearOfEra));#1563,17.504372437795002
+return (newMillis == getLocalMillis() ? this : new LocalDate(newMillis, getChronology()));#1028,17.4970387617747
+return DateTimeFormat.forPattern(pattern).withLocale(locale).print(this);#1832,17.495806069209657
+return parse(str, ISODateTimeFormat.localDateParser());#168,17.492421108743418
+return withLocalMillis(getChronology().weekOfWeekyear().set(getLocalMillis(), weekOfWeekyear));#1649,17.49158583747016
+return (iLocalMillis < other.iLocalMillis ? -1 :#672,17.488281336697664
+return iInstant.withLocalMillis(iField.roundFloor(iInstant.getLocalMillis()));#2053,17.481728708421862
+return date;#1012,17.468779650601473
+LocalDate withLocalMillis(long newMillis) {#1026,17.458958120907056
+case MONTH_OF_YEAR:#492,17.458770116170246
+return iInstant.withLocalMillis(iField.add(iInstant.getLocalMillis(), value));#1951,17.441636959711712
+default:#521,17.439434596470424
+return setCopy(getMaximumValue());#2026,17.43694143295288
+chronology = chronology.withUTC();#333,17.43611947227927
+return withLocalMillis(getChronology().set(partial, getLocalMillis()));#1049,17.432576738554857
+public LocalDate withWeekyear(int weekyear) {#1613,17.43105846643448
+private transient volatile int iHash;#113,17.411456021395598
+private final Chronology iChronology;#111,17.41056831066425
+date.setTime(date.getTime() - 1000);#1001,17.399510087638067
+return withLocalMillis(getChronology().dayOfMonth().set(getLocalMillis(), dayOfMonth));#1679,17.39348790224861
+return withLocalMillis(getChronology().year().set(getLocalMillis(), year));#1593,17.378626823425293
+return chrono.dayOfMonth();#495,17.377251108487446
+int dayOfMonth,#443,17.375734834110034
+return withLocalMillis(getChronology().era().set(getLocalMillis(), era));#1533,17.357137076059978
+private static final long serialVersionUID = -3193829732634L;#1866,17.356928596496584
+return withLocalMillis(getChronology().dayOfYear().set(getLocalMillis(), dayOfYear));#1664,17.33612573848051
+extends BaseLocal#83,17.327801097523082
+DATE_DURATION_TYPES.add(DurationFieldType.centuries());#103,17.312228679656982
+chronology = DateTimeUtils.getChronology(chronology).withUTC();#446,17.300996250576443
+public int hashCode() {#639,17.29441957473755
+chronology = converter.getChronology(instant, chronology);#406,17.28953528404236
+return iInstant.withLocalMillis(iField.set(iInstant.getLocalMillis(), value));#1980,17.28595386611091
+private static final long serialVersionUID = -8775358157899L;#87,17.266255287897017
+yearOfEra,#212,17.257207309498508
+date.getYear() + 1900,#245,17.249411392211915
+return withLocalMillis(getChronology().weekyear().set(getLocalMillis(), weekyear));#1614,17.24498650431633
+return iInstant.withLocalMillis(iField.roundHalfEven(iInstant.getLocalMillis()));#2098,17.242828369140625
+return new LocalDate(chronology);#154,17.23808193206787
+return iInstant.withLocalMillis(iField.roundHalfFloor(iInstant.getLocalMillis()));#2077,17.237895789899323
+return iInstant.withLocalMillis(iField.addWrapField(iInstant.getLocalMillis(), value));#1966,17.2300989933503
+date.setTime(date.getTime() + 1000);#1004,17.223416137695313
+return ISODateTimeFormat.date().print(this);#1805,17.223132814679825
+this(year, monthOfYear, dayOfMonth, ISOChronology.getInstanceUTC());#426,17.22173674353238
+long resolved = chrono.set(this, instantMillis);#808,17.20800144022161
+super();#1880,17.20637811933245
+oos.writeObject(iField.getType());#1890,17.198222319285076
+return withLocalMillis(getChronology().centuryOfEra().set(getLocalMillis(), centuryOfEra));#1548,17.196778774261475
+);#248,17.192150857713486
+return this;#1134,17.185850207010905
+PartialConverter converter = ConverterManager.getInstance().getPartialConverter(instant);#405,17.155345055364794
+PartialConverter converter = ConverterManager.getInstance().getPartialConverter(instant);#379,17.125363073041363
+return iInstant.withLocalMillis(iField.set(iInstant.getLocalMillis(), text, locale));#1994,17.12441840924715
+chronology = DateTimeUtils.getChronology(chronology);#381,17.122224768002827
+(iLocalMillis == other.iLocalMillis ? 0 : 1));#673,17.114406479729546
+case YEAR:#515,17.099601046244302
+chronology = DateTimeUtils.getChronology(chronology);#407,17.0772883494695
+default:#496,17.07539231436593
+);#215,17.073566754659016
+calendar.get(Calendar.DAY_OF_MONTH)#214,17.06291701243474
+implements ReadablePartial, Serializable {#84,17.058950424194336
+return this;#463,17.05422453446822
+iChronology = chronology;#335,17.05399465560913
+public LocalDate(long instant, Chronology chronology) {#329,17.053877662209903
+return chrono.monthOfYear();#493,17.053715467453003
+public LocalDate(Object instant, Chronology chronology) {#404,17.05187219731948
+case DAY_OF_MONTH:#494,17.038417291641235
+instant = chrono.set(this, instant);#930,17.02534424631219
+this(DateTimeUtils.currentTimeMillis(), ISOChronology.getInstance());#261,17.014446360724314
+case YEAR:#490,16.983132044474285
+return iInstant.withLocalMillis(iField.roundCeiling(iInstant.getLocalMillis()));#2067,16.9744905045158
+hash = iHash = super.hashCode();#643,16.973800572482023
+DATE_DURATION_TYPES.add(DurationFieldType.days());#98,16.973612573411728
+return chrono.year();#491,16.96366869319569
+int[] values = converter.getPartialValues(this, instant, chronology, ISODateTimeFormat.localDateParser());#383,16.960842344495987
+DATE_DURATION_TYPES.add(DurationFieldType.years());#102,16.95332188076443
+case DAY_OF_MONTH:#519,16.95309853553772
+int monthOfYear,#424,16.948658606585333
+calendar.get(Calendar.MONTH) + 1,#213,16.927090682983398
+this(DateTimeUtils.currentTimeMillis(), ISOChronology.getInstance(zone));#275,16.925290934244792
+int[] values = converter.getPartialValues(this, instant, chronology, ISODateTimeFormat.localDateParser());#409,16.92252257135179
+return iInstant.withLocalMillis(iField.roundHalfCeiling(iInstant.getLocalMillis()));#2087,16.911900703723614
+int year,#423,16.89441769917806
+chronology = DateTimeUtils.getChronology(chronology);#330,16.878921906153362
+return DateTimeFormat.forPattern(pattern).print(this);#1818,16.873322183435615
+return setCopy(text, null);#2007,16.830404615402223
+date.getMonth() + 1,#246,16.815656757354738
+DATE_DURATION_TYPES.add(DurationFieldType.weekyears());#101,16.806684766496932
+DATE_DURATION_TYPES.add(DurationFieldType.weeks());#99,16.79230788775853
+private static final Set<DurationFieldType> DATE_DURATION_TYPES = new HashSet<DurationFieldType>();#96,16.776978608333703
+this(DateTimeUtils.currentTimeMillis(), chronology);#289,16.72208309173584
+DATE_DURATION_TYPES.add(DurationFieldType.months());#100,16.713085527773256
+return hash;#645,16.543281468478117
+date.getDate()#247,16.540567510268268
+public final class LocalDate#82,16.117069562276203

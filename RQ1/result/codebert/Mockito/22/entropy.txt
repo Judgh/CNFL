@@ -1,0 +1,17 @@
+return o.getClass().isArray();#39,17.47728931202608
+return isArray(o2) && areArraysEqual(o1, o2);#16,17.147826671600342
+return o1 == null && o2 == null;#14,17.044697637143344
+if (!areEqual(Array.get(o1, i), Array.get(o2, i))) return false;#33,17.020617900750576
+return true;#35,16.88245894692161
+public class Equality {#10,16.579598426818848
+return o1.equals(o2);#18,16.20777008750222
+for (int i = 0; i < Array.getLength(o1); i++) {#32,16.036885159356252
+static boolean isArray(Object o) {#38,16.027093153733475
+static boolean areArraysEqual(Object o1, Object o2) {#22,15.909757477896553
+return Array.getLength(o1) == Array.getLength(o2);#28,15.899039066754854
+return areArrayLengthsEqual(o1, o2)#23,15.772491108287465
+static boolean areArrayElementsEqual(Object o1, Object o2) {#31,15.718589696017178
+public static boolean areEqual(Object o1, Object o2) {#12,15.718488788604736
+static boolean areArrayLengthsEqual(Object o1, Object o2) {#27,15.695569211786443
+&& areArrayElementsEqual(o1, o2);#24,15.4934645652771
+if (o1 == null || o2 == null) {#13,15.337429182870048

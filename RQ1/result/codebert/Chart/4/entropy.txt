@@ -1,0 +1,2133 @@
+public Object clone() throws CloneNotSupportedException {#5520,21.001777240208217
+private ObjectList datasets;#362,20.523305892944336
+throws IOException, ClassNotFoundException {#5641,20.05055607066435
+public String getPlotType() {#717,19.985730517994273
+Iterator iterator = ticks.iterator();#3549,19.90200881958008
+Iterator iterator = ticks.iterator();#3584,19.845493412017824
+PathIterator iterator = path.getPathIterator(null);#5823,19.816289234161378
+private List annotations;#541,19.767938017845154
+private ObjectList rangeAxes;#356,19.761023261330344
+private Map foregroundRangeMarkers;#531,19.657217372547496
+private Map backgroundRangeMarkers;#534,19.641933701255105
+private double rangeCrosshairValue;#510,19.62889428572221
+Iterator iterator = keys.iterator();#2490,19.614742231369018
+Iterator iterator = keys.iterator();#2736,19.593653869628906
+private Map datasetToRangeAxesMap;#385,19.561568406911995
+Iterator iterator = ticks.iterator();#3876,19.531217575073242
+private int weight;#573,19.526163578033447
+GeneralPath path = convertToDataSpace(region, dataArea, dataset);#5763,19.430760043007986
+private double domainCrosshairValue;#492,19.429311752319336
+public XYPlot() {#601,19.414130952623154
+private boolean rangeZeroBaselineVisible;#480,19.412373029268704
+public int getWeight() {#1765,19.37296142578125
+public void datasetChanged(DatasetChangeEvent event) {#4528,19.345274308148554
+Iterator iterator = this.annotations.iterator();#3999,19.33013509449206
+public AxisLocation getDomainAxisLocation() {#892,19.30359663282122
+int seriesCount = dataset.getSeriesCount();#5767,19.285519469868053
+public double getDomainCrosshairValue() {#4618,19.281244864830605
+public AxisLocation getRangeAxisLocation() {#1111,19.27543544769287
+private Map datasetToDomainAxesMap;#375,19.27319570688101
+if (axis != null) {#3926,19.253474285728053
+this.weight = 1;  // only relevant when this is a subplot#624,19.22902822494507
+public void setWeight(int weight) {#1777,19.228956589331993
+private ObjectList rangeAxisLocations;#359,19.22052654853234
+public int getDomainAxisCount() {#944,19.2149354494535
+public int getRangeAxisCount() {#1242,19.212083229651817
+if (dataset instanceof AbstractXYDataset) {#5852,19.177701729994553
+if (axis != null) {#1096,19.17532056172689
+public LegendItemCollection getLegendItems() {#5271,19.17213982802171
+private Map backgroundDomainMarkers;#528,19.168421051718973
+if (yaxis != null) {#4306,19.166325759887695
+Iterator i = c.iterator();#4494,19.14816669055394
+private Map foregroundDomainMarkers;#525,19.14683870835738
+Iterator iterator = keys.iterator();#2499,19.14482126235962
+Iterator iterator = mappedDatasets.iterator();#4469,19.134657056708086
+public void setRangeAxisLocation(int index, AxisLocation location) {#1308,19.132208156585694
+Dataset dataset = (Dataset) this.datasets.get(i);#5689,19.12932088971138
+public double getRangeCrosshairValue() {#4773,19.12849572988657
+LegendItemCollection result = new LegendItemCollection();#5275,19.127604060702854
+private ObjectList renderers;#365,19.11501169204712
+Iterator iterator = markers.iterator();#4033,19.113518142700194
+if (info != null) {#3173,19.111308415730793
+public void setDataset(XYDataset dataset) {#1398,19.105996290842693
+public ValueAxis getRangeAxis() {#1070,19.10447597503662
+public void setDomainAxisLocation(int index, AxisLocation location) {#1009,19.10053071975708
+for (int d = 0; d < datasetCount; d++) {#5850,19.099576120791227
+private GeneralPath convertToDataSpace(GeneralPath path,#5814,19.092589735984802
+public int getDatasetCount() {#1430,19.083959139310398
+public Range getDataRange(ValueAxis axis) {#4425,19.079948246479034
+private boolean rangeCrosshairVisible;#507,19.079724550247192
+AxisCollection axisCollection = new AxisCollection();#3619,19.079169497770422
+public int indexOf(XYDataset dataset) {#1442,19.078843355178833
+if (axis != null) {#1211,19.066681543986004
+for (int s = 0; s < seriesCount; s++) {#5768,19.065824579309535
+if (xaxis != null) {#4298,19.065254497528077
+Iterator iterator = keys.iterator();#2745,19.064324188232423
+public int getSeriesCount() {#5230,19.063233202153985
+public void setRangeAxis(int index, ValueAxis axis) {#1188,19.06054401397705
+private ObjectList domainAxes;#350,19.05879341472279
+if (axis != null) {#861,19.04976119995117
+Collection markers;#2789,19.030103510076348
+ValueAxis axis = (ValueAxis) iterator.next();#3668,19.02024683585534
+Iterator iterator = ticks.iterator();#3927,19.016058365503948
+private boolean domainGridlinesVisible;#395,19.014850934346516
+Collection markers;#2588,19.005151315168902
+else {#2682,19.00334644317627
+List result = new ArrayList();#4326,18.995554987589518
+public ValueAxis getDomainAxis() {#787,18.99406828199114
+public void setDomainAxis(ValueAxis axis) {#824,18.986200220444623
+ValueAxis axis = (ValueAxis) iterator.next();#3656,18.976631678067722
+List result = new ArrayList();#4356,18.971747461954752
+private boolean rangeGridlinesVisible;#404,18.9684255917867
+Iterator iterator = this.annotations.iterator();#4457,18.963992260120534
+Iterator iterator = this.annotations.iterator();#4440,18.959045198228623
+for (int i = 0; i < getDatasetCount(); i++) {#3288,18.956524594624838
+for (int pass = 0; pass < passCount; pass++) {#3734,18.95378445040795
+if (!(obj instanceof XYPlot)) {#5313,18.95157554414537
+if (!(item instanceof Integer)) {#1546,18.949054127647763
+for (int i = 0; i < datasetCount; i++) {#5688,18.948121775751527
+public void setDomainAxis(int index, ValueAxis axis) {#838,18.947333526611327
+RenderingSource source) {#5735,18.93990029229058
+if (this.weight != that.weight) {#5317,18.936163500735635
+for (int pass = 0; pass < passCount; pass++) {#3768,18.9350399509553
+if (axis != null) {#1207,18.931555557250977
+if (axis != null) {#857,18.92959124247233
+if (axis != null) {#1085,18.926598612467448
+private AxisSpace fixedRangeAxisSpace;#553,18.926262928889347
+else if (segType == PathIterator.SEG_LINETO) {#5831,18.911748059590657
+public void handleClick(int x, int y, PlotRenderingInfo info) {#4292,18.909049780472465
+else {#2921,18.903226470947267
+Collection result = null;#4138,18.897990740262546
+private boolean domainCrosshairVisible;#489,18.894846439361572
+if (index >= getDatasetCount()) {#4060,18.894003516749333
+DatasetChangeEvent event = new DatasetChangeEvent(this, dataset);#1421,18.89271934215839
+AxisSpace space = calculateAxisSpace(g2, area);#3169,18.88887440074574
+Iterator iterator = markers.iterator();#2826,18.888407866160076
+AxisSpace space = new AxisSpace();#3038,18.886692762374878
+for (int datasetIndex = 0; datasetIndex < count; datasetIndex++) {#5277,18.88514228820801
+double end = axis.getUpperBound();#3595,18.88402167233554
+private AxisSpace fixedDomainAxisSpace;#550,18.88008036980262
+Iterator iterator = markers.iterator();#4066,18.874904251098634
+private ObjectList domainAxisLocations;#353,18.870610383840706
+int datasetIndex = indexOf(dataset);#5817,18.86930857206646
+for (int d = 0; d < datasetCount; d++) {#5753,18.85756608714228
+double cursor = dataArea.getMinY() - this.axisOffset.calculateTopOutset(#3640,18.85436882511262
+Iterator iterator = markers.iterator();#2523,18.853974898656208
+if (index >= getDatasetCount()) {#4027,18.853842383936833
+Collection markers#2520,18.850631986345565
+public int getRangeAxisIndex(ValueAxis axis) {#4405,18.850213103824192
+private LegendItemCollection fixedLegendItems;#579,18.84835894902547
+while (iterator.hasNext()) {#3585,18.84814581871033
+while (iterator.hasNext()) {#2491,18.846617555618288
+for (int i = 0; i < axes.length; i++) {#1229,18.844903349876404
+Map axisStateMap = new HashMap();#3637,18.84398993323831
+Collection result = null;#4112,18.840013063870945
+while (iterator.hasNext()) {#2737,18.83914198875427
+while (iterator.hasNext()) {#3550,18.837832307815553
+Iterator iterator = axisCollection.getAxesAtTop().iterator();#3642,18.836692353953485
+if (fillBand) {#3561,18.83619435628255
+public void setRangeAxis(int index, ValueAxis axis, boolean notify) {#1202,18.832931477090586
+XYPlot that = (XYPlot) obj;#5316,18.832385804918076
+ArrayList markers;#2916,18.828556617101032
+if (bandPaint != null) {#3580,18.82710215624641
+private boolean domainZeroBaselineVisible;#460,18.82332280965952
+if (fillBand) {#3596,18.820856783125137
+if (dataset instanceof SelectableXYDataset) {#5795,18.820465253747027
+ValueAxis axis = (ValueAxis) iterator.next();#3644,18.817837898547833
+if (fillBand) {#3553,18.816538984125312
+if (info != null) {#3161,18.815074666341147
+private RectangleInsets axisOffset;#347,18.812362353007
+else {#3202,18.810980055067276
+public int getDomainAxisIndex(ValueAxis axis) {#4383,18.809434201982285
+int result = -1;#1443,18.80908489227295
+if (fillBand) {#3588,18.805202527479693
+ValueTick tick = (ValueTick) iterator.next();#3880,18.805160649617513
+if (dataset != null) {#5279,18.800650596618652
+for (int i = 0; i < axes.length; i++) {#879,18.799906810124714
+Collection markers#2823,18.797939709254674
+Integer key = new Integer(index);#1519,18.797863245010376
+public AxisSpace getFixedRangeAxisSpace() {#4915,18.795646540323894
+double previous = axis.getLowerBound();#3583,18.79299195607503
+if (this.backgroundDomainMarkers != null) {#2488,18.788816070556642
+public AxisSpace getFixedDomainAxisSpace() {#4874,18.788429005940756
+if (segType == PathIterator.SEG_MOVETO) {#5828,18.787136872609455
+Map axisStateMap = drawAxes(g2, area, dataArea, info);#3179,18.78089321984185
+private void writeObject(ObjectOutputStream stream) throws IOException {#5606,18.77983660168118
+if (axisIndex == null) {#4353,18.7736713886261
+for (int i = 0; i < domainAxisCount; i++) {#5672,18.7729252243042
+public LegendItemCollection getFixedLegendItems() {#5246,18.772868497031077
+if (this.backgroundRangeMarkers != null) {#2734,18.771818161010742
+if (getParent() != null) {#4531,18.769184561336743
+double yy;#3370,18.763744831085205
+private transient Paint rangeGridlinePaint;#410,18.7606808589055
+AxisState info = axis.draw(g2, cursor, plotArea, dataArea,#3669,18.759751012248376
+int result = 0;#5231,18.75927499624399
+iterator = axisCollection.getAxesAtLeft().iterator();#3666,18.75778461637951
+public AxisLocation getDomainAxisLocation(int index) {#988,18.748206923989688
+else if (segType == PathIterator.SEG_CLOSE) {#5834,18.74494903428214
+Integer key = new Integer(index);#1483,18.742411851882935
+iterator = axisCollection.getAxesAtRight().iterator();#3678,18.74201992579869
+if (rangeAxis != null) {#3209,18.741299720037553
+if (axis != null) {#5526,18.74122725035015
+if (dataset != null) {#647,18.739355087280273
+if (axis != null) {#5682,18.738274273119476
+public AxisLocation getRangeAxisLocation(int index) {#1288,18.737279330982883
+while (iterator.hasNext()) {#3878,18.736964988708497
+if (dataset != null) {#5233,18.734439344967114
+if (origin == null) {#2406,18.73128693898519
+while (iterator.hasNext()) {#3643,18.729963958263397
+public boolean isRangeGridlinesVisible() {#1987,18.72976909364973
+if (bandPaint != null) {#3545,18.72595551434685
+XYDataset dataset = (XYDataset) this.datasets.get(d);#5754,18.72391840990852
+if (axisIndex == null) {#4323,18.721981644630432
+if (axis != null) {#5674,18.72191740337171
+public void mapDatasetToRangeAxis(int index, int axisIndex) {#1498,18.721040311067
+drawBackground(g2, dataArea);#3178,18.72008733188405
+double xx;#3348,18.71881847381592
+for (int i = 0; i < rangeAxisCount; i++) {#5680,18.71834186553955
+public boolean isDomainGridlinesVisible() {#1790,18.716652733939036
+while (iterator.hasNext()) {#3667,18.713377475738525
+AxisState info = axis.draw(g2, cursor, plotArea, dataArea,#3657,18.712756679904075
+ValueAxis axis = (ValueAxis) iterator.next();#3680,18.711976014650784
+else {#4206,18.711933408464706
+else {#4272,18.711177008492605
+public RectangleEdge getDomainAxisEdge() {#932,18.707843653361003
+public void mapDatasetToRangeAxes(int index, List axisIndices) {#1514,18.701195041338604
+PlotChangeEvent e = new PlotChangeEvent(this);#4535,18.69904903570811
+List ticks) {#3914,18.697761036100843
+if (indices == null) {#1536,18.696966350078583
+if (i >= getDatasetCount()) { // we need the dataset to make#3330,18.692147591534784
+cursor = dataArea.getMaxY()#3652,18.691649941837085
+double sourceY = source.getY();#5165,18.68846942638529
+double xmax = xAxis.getUpperBound();#3449,18.68345696585519
+AxisLocation result = null;#989,18.68234770638602
+ValueAxis axis = getRangeAxis();#3582,18.680789123881947
+if (axis == null) {#5041,18.678721478110866
+Integer key = new Integer(index);#2821,18.677549839019775
+public void setDomainAxis(int index, ValueAxis axis, boolean notify) {#852,18.67721922501274
+public RectangleEdge getRangeAxisEdge() {#1150,18.67465960184733
+else {#4483,18.67417393790351
+List ticks) {#3865,18.674073108406954
+Integer key = new Integer(index);#2518,18.673250257968903
+if (b1 || b2) {#3156,18.672651122598086
+int datasetCount = this.datasets.size();#5752,18.672341203689577
+int count = indices.size();#1539,18.66990540822347
+if (i >= getDatasetCount()) { // we need the dataset to make#3311,18.665860905366785
+int seriesCount = dataset.getSeriesCount();#5285,18.66184253692627
+if (markers != null && axis != null) {#4032,18.66157159805298
+AxisState info = axis.draw(g2, cursor, plotArea, dataArea,#3645,18.661229687352336
+AxisLocation result = null;#1289,18.659718445369176
+public boolean isDomainPannable() {#4957,18.659440627464882
+public void mapDatasetToDomainAxis(int index, int axisIndex) {#1462,18.656844802524734
+public boolean isRangeZoomable() {#5220,18.65661518390362
+PlotOrientation orientation, double value, ValueAxis axis,#4195,18.654593981229343
+Integer key = new Integer(index);#4113,18.645623087882996
+this.rangeAxes = new ObjectList();#633,18.64552789264255
+if (obj == this) {#5310,18.64450658162435
+while (iterator.hasNext()) {#3655,18.642715334892273
+this.datasets = new ObjectList();#638,18.64113473892212
+if (rangeAxisState != null) {#3250,18.640038596259224
+int datasetCount = this.datasets.size();#5849,18.639491510391235
+ArrayList markers;#2677,18.633023023605347
+if (state == null) {#5760,18.625876075343083
+if (markers != null && axis != null) {#4065,18.624530506134032
+boolean b1 = (area.getWidth() <= MINIMUM_WIDTH_TO_DRAW);#3154,18.62299457192421
+for (int i = 0; i < rangeAxisCount; i++) {#5039,18.6229927444458
+ValueTick tick = (ValueTick) iterator.next();#3551,18.618696435292563
+if (isDomainCrosshairVisible()) {#3358,18.61600335439046
+public boolean canSelectByPoint() {#5713,18.61573537190755
+int passCount = renderer.getPassCount();#3729,18.61389288694962
+if (axis == null) {#5014,18.613780473407946
+public void setRangeAxis(ValueAxis axis)  {#1083,18.613588704003227
+Collection markers#2835,18.613463946751185
+Integer key = new Integer(index);#4139,18.613296389579773
+private boolean rangeMinorGridlinesVisible;#438,18.610009927016037
+int seriesCount = dataset.getSeriesCount();#3735,18.60988737742106
+if (axis != null) {#5539,18.608852436667995
+ValueAxis rangeAxis = getRangeAxis();#3208,18.604353666305542
+if (parentState != null) {#3242,18.598689222335814
+public void clearRangeMarkers(int index) {#2820,18.597900009155275
+public void clearRangeMarkers() {#2733,18.59618639945984
+AxisState info = axis.draw(g2, cursor, plotArea, dataArea,#3681,18.59583790071549
+double end = xAxis.getUpperBound();#3560,18.595807552337646
+ValueAxis axis = getRangeAxis();#3925,18.59560203552246
+private List getDatasetsMappedToRangeAxis(Integer axisIndex) {#4352,18.595360972664572
+ValueTick tick = (ValueTick) iterator.next();#3586,18.595091660817463
+this.datasetToRangeAxesMap = new TreeMap();#642,18.593275318975035
+public RectangleInsets getAxisOffset() {#757,18.593090438842772
+if (d != null) {#4472,18.591931694432308
+while (it.hasNext()) {#4505,18.588400423526764
+int count = this.datasets.size();#5276,18.58801299647281
+if (isRangeCrosshairVisible()) {#3379,18.585672272576225
+for (int i = 0; i < rendererCount; i++) {#3294,18.58044539179121
+ValueAxis axis = getRangeAxis();#4166,18.578079329596626
+else {#3215,18.576621585422092
+public void setRangeAxes(ValueAxis[] axes) {#1228,18.576130655076767
+throw new RuntimeException();#5800,18.57354560265174
+Iterator iterator = markers.iterator();#2535,18.573520580927532
+ValueAxis axis = getRangeAxisForDataset(index);#4064,18.571472644805908
+Collection markers#2532,18.571381296430314
+Stroke stroke, Paint paint) {#4262,18.56897916793823
+while (!iterator.isDone()) {#5824,18.567083775997162
+if (isDomainZeroBaselineVisible()) {#3965,18.566948238172028
+public boolean isDomainZoomable() {#5208,18.56377807030311
+PlotOrientation orientation, double value, ValueAxis axis,#4261,18.561102481988762
+public boolean isRangeMinorGridlinesVisible() {#2075,18.556935373942057
+public boolean isDomainMinorGridlinesVisible() {#1822,18.556832440694173
+public void setDataset(int index, XYDataset dataset) {#1410,18.556763921465194
+public void mapDatasetToDomainAxes(int index, List axisIndices) {#1478,18.553993423779804
+if (this.rangeCrosshairValue != that.rangeCrosshairValue) {#5366,18.55156837463379
+public boolean isDomainZeroBaselineVisible() {#2173,18.551273600260416
+else {#4534,18.548129081726074
+public List getAnnotations() {#3013,18.546777031638406
+public boolean equals(Object obj) {#5309,18.544952789942425
+public XYDataset getDataset() {#1368,18.544824663798014
+Iterator iterator = markers.iterator();#2838,18.544408559799194
+if (getRenderer() == null) {#3868,18.543613383644505
+public boolean isRangePannable() {#4981,18.543030958909256
+Paint gridPaint = null;#3875,18.54075712906687
+else if (this.orientation == PlotOrientation.VERTICAL) {#3117,18.5403146086068
+if (getRenderer() == null) {#3917,18.53981083317807
+XYDataset d = (XYDataset) iterator.next();#4471,18.53968412535531
+else if (this.orientation == PlotOrientation.VERTICAL) {#3070,18.537765075420513
+if (count == 0) {#1540,18.5376766204834
+if (x > xmin && y > ymin) {#3490,18.533041763305665
+for (int i = 0; i < clone.datasets.size(); ++i) {#5551,18.522567157087654
+double current = tick.getValue();#3587,18.521247903505962
+if (rangeAxis != null) {#5161,18.517893200828915
+AbstractXYDataset axyd = (AbstractXYDataset) dataset;#5855,18.514516281359125
+while (iterator.hasNext()) {#3679,18.511548161506653
+private void checkAxisIndices(List indices) {#1532,18.510498881340027
+for (int i = 0; i < domainAxisCount; i++) {#5012,18.50951229095459
+if (axis.isInverted()) {#5044,18.50845041729155
+if (domainAxis != null) {#3196,18.508009910583496
+public boolean isRangeZeroBaselineVisible() {#2264,18.507223701477052
+while (iterator.hasNext()) {#2500,18.507200050354005
+for (int i = 0; i < itemCount; i++) {#5770,18.504882381808372
+if (dataset != null) {#1416,18.50416794945212
+for (int i = 0; i < count; i++) {#1544,18.504019477150656
+Composite originalComposite = g2.getComposite();#3520,18.492925533881554
+Stroke stroke, Paint paint) {#4196,18.49167432785034
+public void setRangeAxisLocation(AxisLocation location) {#1123,18.4916484091017
+if (this.datasets.size() > index) {#1383,18.49123022773049
+while (iterator.hasNext()) {#4470,18.490195393562317
+public boolean removeRangeMarker(Marker marker) {#2860,18.486785650253296
+private boolean domainMinorGridlinesVisible;#417,18.485919365516075
+List mappedAxes = (List) this.datasetToRangeAxesMap.get(#4358,18.484994917204887
+public boolean isRangeCrosshairVisible() {#4718,18.484889916011266
+if (isRangeZeroBaselineVisible()) {#3982,18.48460578918457
+PlotRenderingInfo plotState) {#3617,18.47981097963121
+boolean paintLine = false;#3877,18.479779455396866
+public void setDomainAxisLocation(AxisLocation location, boolean notify) {#918,18.479644775390625
+ValueAxis axis = getDomainAxisForDataset(index);#4031,18.47846718629201
+if (rangeAxisState != null) {#3257,18.47409333123101
+public void setDomainAxes(ValueAxis[] axes) {#878,18.47183958689372
+public void setRangeAxisLocation(AxisLocation location, boolean notify) {#1137,18.470047042483376
+double current = tick.getValue();#3552,18.468631664911907
+cursor = dataArea.getMinX()#3664,18.468097798964557
+public void setDomainAxisLocation(AxisLocation location) {#904,18.466107103559708
+if (parentState != null) {#3234,18.46570529937744
+private PlotOrientation orientation;#344,18.46286817030473
+new float[] {2.0f, 2.0f}, 0.0f);#323,18.46180171351279
+if (this.fixedLegendItems != null) {#5272,18.459844137492933
+if (dataset != null) {#5690,18.457654544285365
+while (iterator.hasNext()) {#2746,18.45397925376892
+Range result = null;#4427,18.444769785954403
+Point2D source) {#5137,18.444719341066147
+for (int i = 0; i < 4; i++) {#5625,18.444584499705922
+private transient Paint domainGridlinePaint;#401,18.44446666424091
+ValueAxis yaxis = getRangeAxis();#4305,18.44399933193041
+if ((r instanceof AbstractXYItemRenderer) && paintLine) {#3894,18.443847482854668
+createAndAddEntity((Rectangle2D) dataArea.clone(), info, null, null);#3172,18.443492560551086
+Paint gridPaint = null;#3924,18.442824514288652
+int seriesCount = dataset.getSeriesCount();#3769,18.442221260070802
+for (int i = 0; i < this.datasets.size(); i++) {#1444,18.440261908939906
+iterator = axisCollection.getAxesAtBottom().iterator();#3654,18.440102077665784
+if (somethingToDraw) {#3519,18.4382355372111
+if (this.quadrantPaint[3] != null) {#3504,18.437183421591055
+if (existing != null) {#1091,18.435943031311034
+this.backgroundDomainMarkers = new HashMap();#631,18.43429580487703
+this.datasetToDomainAxesMap = new TreeMap();#641,18.43174067787502
+clone.datasetToDomainAxesMap = new TreeMap();#5558,18.42943390556004
+if (space == null) {#3105,18.428986740112304
+if (this.quadrantPaint[0] != null) {#3459,18.428000781847082
+this.backgroundRangeMarkers = new HashMap();#636,18.426543587132503
+if (this.datasets.get(i) == dataset) {#1746,18.42599708693368
+if (space == null) {#3058,18.425913302103677
+if (isDomainAxis) {#4474,18.424476782480877
+if (axis.isInverted()) {#5017,18.423327445983887
+public void clearDomainMarkers(int index) {#2517,18.42301851908366
+for (int i = 0; i < 4; i++) {#5662,18.421448837627064
+if (r != null) {#3279,18.41866385418436
+if (markers == null) {#2686,18.417608380317688
+public void addRangeMarker(Marker marker) {#2707,18.414954006671906
+public boolean isDomainCrosshairVisible() {#4563,18.414251259395055
+ValueAxis yAxis = getRangeAxisForDataset(index);#3714,18.411395359039307
+public Stroke getDomainGridlineStroke() {#1854,18.411290228366852
+for (int i = 0; i < 4; i++) {#5503,18.410241213711824
+public ValueAxis getRangeAxis(int index) {#1164,18.41019344329834
+double ymax = yAxis.getUpperBound();#3455,18.409817059834797
+XYDataset dataset = (XYDataset) this.datasets.get(d);#5851,18.40953077989466
+List mappedDatasets = new ArrayList();#4428,18.407116995917427
+boolean paintLine = false;#3928,18.406944881786
+if (markers == null) {#2925,18.405356407165527
+while (iterator.hasNext()) {#4034,18.404310274124146
+if (isDomainGridlinesVisible() || isDomainMinorGridlinesVisible()) {#3873,18.40413870634856
+public void clearDomainMarkers() {#2487,18.40212082862854
+if (paint == null) {#1937,18.400855541229248
+RectangleEdge yAxisEdge = getRangeAxisEdge();#5821,18.400752067565918
+while (iterator.hasNext()) {#4000,18.398889899253845
+public ValueAxis getDomainAxis(int index) {#800,18.398460051592657
+XYDataset dataset = getDataset(datasetIndex);#5278,18.39774033001491
+if (this.quadrantPaint[1] != null) {#3474,18.397695541381836
+protected AxisSpace calculateRangeAxisSpace(Graphics2D g2,#3101,18.395923162761488
+public static final boolean DEFAULT_CROSSHAIR_VISIBLE = false;#329,18.394472848801385
+List ticks) {#3543,18.394170236587524
+if (r != null) {#3314,18.392170201177183
+public Stroke getDomainCrosshairStroke() {#4660,18.390176832675934
+public void clearSelection() {#5847,18.389715628190473
+if (this.quadrantPaint[2] != null) {#3489,18.387154579162598
+public RectangleEdge getRangeAxisEdge(int index) {#1350,18.38630437850952
+if (!isRangePannable()) {#5035,18.384334452012006
+private transient Paint rangeZeroBaselinePaint;#486,18.382228919437953
+else if ((tick.getTickType() == TickType.MAJOR)#3887,18.382020557627957
+cursor = dataArea.getMaxX()#3676,18.381981400882495
+else {#4335,18.380577768598283
+if (rangeAxisState == null) {#3241,18.37809811698066
+public RectangleEdge getDomainAxisEdge(int index) {#1050,18.37769799762302
+if (this.backgroundDomainMarkers != null) {#2519,18.377371644973756
+AxisSpace space) {#3056,18.377366737083154
+double sourceX = source.getX();#5088,18.376715627209894
+else {#3352,18.37142746789115
+if (isRangeGridlinesVisible() || isRangeMinorGridlinesVisible()) {#3922,18.37116591135661
+if (rangeIndex >= 0) {#4452,18.370585203170776
+double xmin = xAxis.getLowerBound();#3446,18.369363355636597
+XYDataset dataset, Object source) {#5794,18.3665734204379
+if (r == null) {#4022,18.366559410095213
+for (int i = 0; i < rendererCount; i++) {#3277,18.36586488996233
+if (rangeIndex == 0) {#4456,18.365849637985228
+ValueAxis yAxis = getRangeAxisForDataset(datasetIndex);#5819,18.36545727170747
+clone.datasetToRangeAxesMap = new TreeMap();#5560,18.36537730175516
+if (paint == null) {#2249,18.364502370357513
+public Stroke getRangeGridlineStroke() {#2017,18.36303073167801
+if (markers == null) {#2592,18.36223316192627
+ValueAxis xaxis = getDomainAxis();#4297,18.362111423326574
+int rangeAxisCount = getRangeAxisCount();#5038,18.36196937561035
+if (paint == null) {#1972,18.361961245536804
+if (notify) {#4903,18.360691138676234
+this.mapDatasetToDomainAxis(0, 0);#658,18.360522394594938
+private List getDatasetsMappedToDomainAxis(Integer axisIndex) {#4322,18.360448880629107
+if (axis != null) {#1255,18.359017924258584
+private transient Paint domainZeroBaselinePaint;#474,18.358224323817662
+return new ArrayList(this.annotations);#3014,18.356524732377792
+else {#4365,18.35633032662528
+AxisLocation location = getDomainAxisLocation(index);#1051,18.356151008605956
+public void setRangeAxisLocation(int index, AxisLocation location,#1327,18.355912158363743
+PlotRenderingInfo info, CrosshairState crosshairState) {#3707,18.355563552291304
+return localizationResources.getString("XY_Plot");#718,18.354790587174264
+XYAnnotationBoundsInfo xyabi = (XYAnnotationBoundsInfo) it.next();#4506,18.353541065664853
+else {#3124,18.35250949859619
+if (r == null) {#4055,18.352206420898437
+if (paint == null) {#2156,18.351316452026367
+if (dataArea.contains(x, y)) {#4295,18.34719907669794
+else {#3077,18.34581184387207
+if (marker == null) {#2582,18.344525575637817
+if (paint == null) {#2330,18.344404697418213
+if (!ObjectUtilities.equal(this.axisOffset, that.axisOffset)) {#5369,18.34424379136827
+public Point2D getQuadrantOrigin() {#2393,18.343363952636718
+if (layer == null) {#2585,18.34311555226644
+this.rangeGridlineStroke = DEFAULT_GRIDLINE_STROKE;#689,18.341789926801408
+public ValueAxis getRangeAxisForDataset(int index) {#3835,18.341464315141952
+if (dataset == this.datasets.get(i)) {#1445,18.33868980407715
+List ticks) {#3578,18.337031829051483
+&& renderer.isSeriesVisibleInLegend(i)) {#5288,18.33505508174067
+if (index == 0 && location == null) {#1031,18.335011933979235
+if (x > xmin && y < ymax) {#3460,18.334477500915526
+if (selectionState != null) {#3784,18.332717445161606
+int itemCount = dataset.getItemCount(s);#5769,18.332599435533798
+for (int i = 0; i < this.datasets.size(); i++) {#4357,18.331531184060232
+AxisSpace space) {#3103,18.331422877761554
+for (int i = 0; i < this.datasets.size(); i++) {#4327,18.330181292125157
+this.mapDatasetToRangeAxis(0, 0);#666,18.329686745353367
+public void addRangeMarker(int index, Marker marker, Layer layer) {#2769,18.329439986835826
+public Paint getDomainGridlinePaint() {#1921,18.328833716256277
+Axis axis = (Axis) this.rangeAxes.get(i);#5681,18.328808291205043
+public void zoomRangeAxes(double lowerPercent, double upperPercent,#5190,18.328718888132197
+datasetChanged(new DatasetChangeEvent(this, getDataset(index)));#1522,18.327801125390188
+if (axis != null) {#957,18.326303733022588
+for (int i = 0; i < rendererCount; i++) {#5695,18.32626787821452
+if (index == 0 && location == null) {#1330,18.322644334090384
+Set keys = this.backgroundDomainMarkers.keySet();#2489,18.320198287963866
+if (marker == null) {#2913,18.31833928823471
+for (int i = 0; i < renderers.length; i++) {#1658,18.31814838409424
+for (int i = 0; i < seriesCount; i++) {#5286,18.315665790012904
+public void panRangeAxes(double percent, PlotRenderingInfo info,#5033,18.31552773430234
+if (markers != null) {#2522,18.311246871948242
+double y;#3210,18.31090595847682
+public class XYPlot extends Plot implements ValueAxisPlot, Pannable,#313,18.309132912579706
+if (existing != null) {#854,18.308293279012045
+if (!isDomainPannable()) {#5008,18.30803601882037
+private transient Stroke rangeGridlineStroke;#407,18.306316884358726
+if (this.foregroundDomainMarkers != null) {#2497,18.304351624988374
+private DatasetRenderingOrder datasetRenderingOrder#559,18.303624433629654
+if (!DatasetUtilities.isEmptyOrNull(dataset)) {#3711,18.301792731651894
+XYPlot clone = (XYPlot) super.clone();#5522,18.301263856887818
+public boolean removeDomainMarker(Marker marker) {#2624,18.30027413368225
+if (this.backgroundRangeMarkers != null) {#2822,18.29924306869507
+ValueAxis axis = (ValueAxis) this.rangeAxes.get(i);#5538,18.298934310674667
+int rangeIndex = getRangeAxisIndex(axis);#4451,18.29842267036438
+Paint paint) {#4164,18.2968171891712
+int datasetCount = this.datasets.size();#5687,18.296006059646608
+public boolean isRangeCrosshairLockedOnData() {#4746,18.29569286108017
+else {#3766,18.295687130519322
+double x;#3197,18.2954370599044
+if (existing != null) {#1204,18.294282150268554
+public boolean canSelectByRegion() {#5725,18.291814009348553
+if (selectionState != null) {#3753,18.291715251074898
+if (paint == null) {#4860,18.29073929786682
+public void zoomDomainAxes(double lowerPercent, double upperPercent,#5117,18.290553193343314
+this(null, null, null, null);#602,18.289269765218098
+if (existing != null) {#1412,18.287104606628418
+boolean somethingToDraw = false;#3430,18.286511993408205
+if (!foundData) {#3386,18.28560107094901
+if (parent instanceof XYPlot) {#4388,18.284664971487864
+ValueAxis domainAxis = getDomainAxis();#3195,18.282679001490276
+List mappedAxes = (List) this.datasetToDomainAxesMap.get(#4328,18.28193054777203
+public Paint getDomainTickBandPaint() {#2345,18.28116200764974
+public Paint getRangeTickBandPaint() {#2369,18.27890625
+AxisLocation location = getRangeAxisLocation(index);#1351,18.27687363624573
+ValueAxis axis = getDomainAxis();#4231,18.276704523298477
+this.rangeAxisLocations = new ObjectList();#634,18.276244926452637
+public Stroke getRangeCrosshairStroke() {#4817,18.27576172351837
+if (paint == null) {#2058,18.275449991226196
+XYDataset dataset = getDataset();#5232,18.273615987677324
+if (paint == null) {#4703,18.271827220916748
+if (rangeAxis != null) {#667,18.271813673131607
+ValueAxis xAxis = getDomainAxisForDataset(index);#3713,18.271755282084147
+Object item = indices.get(i);#1545,18.271515619187127
+ValueAxis xAxis = getDomainAxisForDataset(datasetIndex);#5818,18.270018380263757
+ValueAxis axis = getRangeAxis(i);#5040,18.267857551574707
+if (this.fixedLegendItems != null) {#5588,18.267191585741546
+if (parent instanceof XYPlot) {#1171,18.266882306053525
+public void addDomainMarker(Marker marker) {#2460,18.264530837535858
+if (renderer != null) {#1640,18.263812959194183
+private transient Stroke domainGridlineStroke;#398,18.263020324707032
+public Paint getDomainCrosshairPaint() {#4690,18.259835379464285
+datasetChanged(new DatasetChangeEvent(this, getDataset(index)));#1486,18.257576159068517
+ValueAxis xAxis = getDomainAxis();#3432,18.257448530197145
+public Collection getDomainMarkers(Layer layer) {#4083,18.25694319407145
+SeriesRenderingOrder seriesOrder = getSeriesRenderingOrder();#3731,18.254131811636466
+if (r != null) {#4475,18.25385966124358
+public Paint getDomainMinorGridlinePaint() {#1954,18.252732785542808
+if (dataset == null) {#5755,18.25269435700916
+if (this.foregroundRangeMarkers != null) {#2743,18.250704447428387
+if (result != null) {#4146,18.249324099222818
+public void setDomainAxisLocation(int index, AxisLocation location,#1028,18.24911749990363
+if (r != null) {#3296,18.24805491903554
+if (notify) {#4944,18.241478647504533
+while (iterator.hasNext()) {#4067,18.240208864212036
+this.rangeAxes.set(0, rangeAxis);#665,18.23980140686035
+List includedAnnotations = new ArrayList();#4429,18.23874142590691
+else if (order == DatasetRenderingOrder.REVERSE) {#3305,18.237865301278923
+public void addDomainMarker(int index, Marker marker, Layer layer) {#2561,18.23770423368974
+this.renderers = new ObjectList();#639,18.23644514644847
+ValueAxis axis = getDomainAxis(i);#5013,18.23486320177714
+if (parent instanceof XYPlot) {#807,18.2345096043178
+protected AxisSpace calculateDomainAxisSpace(Graphics2D g2,#3054,18.234116955807334
+if (this.quadrantPaint[i] != null && r[i] != null) {#3524,18.2336139929922
+if (this.fixedRangeAxisSpace != null) {#5584,18.232845306396484
+g2.setClip(originalClip);#3398,18.22871228268272
+public Collection getRangeMarkers(Layer layer) {#4096,18.228617986043293
+if (renderer != null) {#652,18.22759222984314
+if (domainAxisState != null) {#3247,18.227366076575386
+public boolean removeRangeMarker(int index, Marker marker, Layer layer) {#2893,18.226043224334717
+ValueAxis yAxis = getRangeAxis();#3439,18.22552833557129
+this.annotations = new java.util.ArrayList();#644,18.224064872378396
+if (renderer != null) {#5284,18.2226224342982
+if (notify) {#1215,18.22258472442627
+public Stroke getRangeMinorGridlineStroke() {#2109,18.220899133121264
+if (notify) {#1335,18.220468248639786
+ValueAxis existing = getRangeAxis();#1090,18.220170232984756
+public void addAnnotation(XYAnnotation annotation) {#2944,18.218618392944336
+public void configureRangeAxes() {#1268,18.215726375579834
+private boolean rangeCrosshairLockedOnData = true;#522,18.2156720161438
+configureRangeAxes();#4530,18.21541551443247
+ValueAxis xAxis = getDomainAxis();#3547,18.21527659893036
+public void panDomainAxes(double percent, PlotRenderingInfo info,#5006,18.214714459010533
+AxisState domainAxisState = (AxisState) axisStateMap.get(#3231,18.21432975622324
+public ValueAxis getDomainAxisForDataset(int index) {#3808,18.212910970052082
+if (notify) {#1036,18.21289028440203
+public boolean removeRangeMarker(Marker marker, Layer layer) {#2876,18.211035377100895
+PlotRenderingInfo info, Point2D source) {#5191,18.210629396660384
+if (index < 0) {#1515,18.210584259033205
+private boolean domainPannable;#587,18.20951288396662
+Integer axisIndex = (Integer) axisIndices.get(0);#3846,18.208200807924623
+while (iterator.hasNext()) {#3929,18.206223011016846
+if (!ObjectUtilities.equal(this.annotations, that.annotations)) {#5485,18.205770633838796
+ValueAxis result = null;#1165,18.20421708424886
+public void rendererChanged(RendererChangeEvent event) {#4546,18.203825261857773
+private boolean rangePannable;#595,18.203300302678887
+else {#4478,18.202252301302824
+if (markers != null) {#2534,18.202194929122925
+Rectangle2D dataArea = space.shrink(area, null);#3170,18.20181119441986
+while (iterator.hasNext()) {#2524,18.201141873995464
+if (notify) {#2962,18.197993278503418
+if (notify) {#865,18.197976997920446
+if (parent instanceof XYPlot) {#4410,18.197128795442126
+public Paint getRangeMinorGridlinePaint() {#2141,18.19535954793294
+if (result != null) {#4120,18.192075856526692
+Rectangle2D dataArea = info.getDataArea();#4294,18.191657792954217
+while (iterator.hasNext()) {#2827,18.190852522850037
+public Stroke getDomainMinorGridlineStroke() {#1888,18.189884241889505
+if (markers == null) {#2793,18.189551734924315
+private void readObject(ObjectInputStream stream)#5640,18.189498492649623
+this.datasetToRangeAxesMap.put(key, new ArrayList(axisIndices));#1520,18.187929245733446
+if (markers != null) {#2825,18.18784418106079
+if (xAxis == null || yAxis == null) {#3715,18.18725402266891
+if (orient == PlotOrientation.VERTICAL) {#3371,18.18421865463257
+if (seriesOrder == SeriesRenderingOrder.REVERSE) {#3732,18.183329309735978
+private transient Paint rangeCrosshairPaint;#516,18.18292661813589
+if (this.fixedDomainAxisSpace != null) {#5580,18.180906295776367
+for (int i = 0; i < 4; i++) {#3523,18.179607244638298
+if (yAxis != null) {#3632,18.179465975080216
+that.datasetToRangeAxesMap)) {#5386,18.179373536791122
+this.domainAxes = new ObjectList();#628,18.178456094529892
+public void setRangeCrosshairValue(double value) {#4787,18.178130269050598
+public Paint getRangeZeroBaselinePaint() {#2317,18.174875513712564
+if (index < 0) {#1479,18.174286715189616
+if (offset == null) {#770,18.174208641052246
+return result;#5236,18.171867804093793
+int rangeAxisCount = this.rangeAxes.size();#5679,18.1706375208768
+double previous = xAxis.getLowerBound();#3548,18.16992125303849
+if (index < 0 || index >= upper) {#3810,18.167998364097194
+if (index < 0 || index >= upper) {#3837,18.167923877113743
+if (domainAxis != null) {#5084,18.166552725292387
+if (axis != null) {#3128,18.166473513064176
+public Paint getDomainZeroBaselinePaint() {#2234,18.166063499450683
+ValueAxis result = null;#801,18.16603031158447
+|| !isRangeZeroBaselineVisible()) && paintLine) {#3945,18.165466863055563
+Shape originalClip = g2.getClip();#3224,18.163848638534546
+ValueAxis axis = (ValueAxis) this.rangeAxes.get(i);#1254,18.16348311305046
+if (stroke == null) {#2030,18.163028462727866
+if (notify) {#1646,18.160088062286377
+Stroke gridStroke = null;#3874,18.15994403475807
+Point2D source) {#5061,18.158647073281777
+if (this.rangeGridlinesVisible != visible) {#2003,18.156902358645485
+ValueAxis rangeAxis = (ValueAxis) this.rangeAxes.get(i);#5160,18.156400315901813
+public int getIndexOf(XYItemRenderer renderer) {#1730,18.15581572683234
+if (axisIndices != null) {#3844,18.154202573439655
+public Collection getRangeMarkers(int index, Layer layer) {#4137,18.154118537902832
+public Paint getRangeGridlinePaint() {#2045,18.153751713888987
+public void select(double x, double y, Rectangle2D dataArea,#5734,18.151210921151296
+if (markers != null) {#2837,18.15114207267761
+if (axis != null) {#3624,18.150296863756683
+if (this.fixedRangeAxisSpace != null) {#3110,18.149834451221285
+protected void drawQuadrants(Graphics2D g2, Rectangle2D area) {#3426,18.14980634053548
+public void addAnnotation(XYAnnotation annotation, boolean notify) {#2957,18.14951992034912
+public void addRangeMarker(Marker marker, Layer layer) {#2723,18.149352675990055
+if (stroke == null) {#2302,18.149286206563314
+if (this.fixedDomainAxisSpace != null) {#3063,18.149154118129186
+if (renderer == null) {#3719,18.147195911407472
+if (notify) {#2809,18.147031715938024
+public Collection getDomainMarkers(int index, Layer layer) {#4111,18.146346145206028
+ValueTick tick = (ValueTick) iterator.next();#3931,18.145071282106287
+Collection markers = getRangeMarkers(index, layer);#4063,18.144448709487914
+Rectangle2D plotArea) {#3037,18.143966992696125
+public void setRangeCrosshairValue(double value, boolean notify) {#4801,18.143609348096344
+that.rangeGridlineStroke)) {#5398,18.143591073843147
+if (xyabi.getIncludeInDataBounds()) {#4507,18.14182208134578
+if (orient == PlotOrientation.VERTICAL) {#3349,18.141667366027832
+if (stroke == null) {#2217,18.14124387105306
+this.datasets.set(0, dataset);#646,18.140591144561768
+if (stroke == null) {#1906,18.140331522623697
+public void setDomainCrosshairValue(double value) {#4630,18.14025378227234
+for (int series = 0; series < seriesCount; series++) {#3770,18.139665957859584
+throw new IllegalArgumentException("Null 'axisIndex' argument.");#4354,18.138969703956885
+if (markers == null) {#2802,18.138562774658205
+Axis axis = (Axis) this.domainAxes.get(i);#5673,18.138543161852606
+public void clearRangeAxes() {#1252,18.138227621714275
+Line2D line = null;#4199,18.13524848536441
+that.fixedLegendItems)) {#5489,18.13373379085375
+for (int i = getDatasetCount() - 1; i >= 0; i--) {#3322,18.133707214804257
+if (this.rangeCrosshairVisible != flag) {#4732,18.133594058808825
+for (int i = 0; i < this.datasets.size(); i++) {#1745,18.133303778512136
+crosshairState.setCrosshairY(getRangeCrosshairValue());#3223,18.13234395566194
+throw new IllegalArgumentException("Null 'axisIndex' argument.");#4324,18.131271291662145
+clone.annotations = (List) ObjectUtilities.deepClone(this.annotations);#5579,18.130475997924805
+if (this.rangeMinorGridlinesVisible#5343,18.129273732503254
+if (stroke == null) {#4831,18.126583735148113
+Line2D line = null;#4265,18.126570651405736
+if (axisIndices != null) {#3817,18.126098857206458
+if (markers == null) {#2601,18.124580669403077
+public void setDomainCrosshairValue(double value, boolean notify) {#4644,18.124360837434466
+if (domainAxisState != null) {#3253,18.12354114320543
+while (i.hasNext()) {#4495,18.123230116707937
+if (r != null) {#3333,18.12315269138502
+List axisIndices = (List) this.datasetToRangeAxesMap.get(#3842,18.12255234553896
+public Paint getRangeCrosshairPaint() {#4847,18.12166370664324
+if (stroke == null) {#4674,18.12137654622396
+if (isRangeCrosshairVisible() && notify) {#4803,18.119733174641926
+public boolean isDomainCrosshairLockedOnData() {#4591,18.118250846862793
+Stroke gridStroke = null;#3923,18.117362385704403
+private transient Paint domainMinorGridlinePaint;#431,18.1143638747079
+ValueAxis axis = (ValueAxis) this.domainAxes.get(index);#3623,18.113200306892395
+Iterator it = includedAnnotations.iterator();#4504,18.112003485361736
+if (stroke == null) {#1870,18.109695688883463
+Set keys = this.backgroundRangeMarkers.keySet();#2735,18.10947052001953
+paintLine = true;#3936,18.10774517059326
+private transient Paint rangeMinorGridlinePaint;#452,18.105187961033412
+if ((tick.getTickType() == TickType.MINOR)#3881,18.10093829035759
+int domainAxisCount = getDomainAxisCount();#5011,18.09985508918762
+XYDataset d = getDataset(i);#5552,18.09769760131836
+that.backgroundDomainMarkers)) {#5474,18.095173875490826
+if (stroke == null) {#2124,18.095052846272786
+int result = this.rangeAxes.indexOf(axis);#4406,18.09169305454601
+if (existing != null) {#1636,18.091033681233725
+public void setRangeTickBandPaint(Paint paint) {#2380,18.090550422668457
+return result;#1450,18.090533343228426
+result.lineTo((float) xx, (float) yy);#5832,18.090098196460353
+if (renderer2 instanceof PublicCloneable) {#5566,18.088220596313477
+configureRangeAxes();#1645,18.088195140545185
+Rectangle2D dataArea, XYDataset dataset) {#5815,18.08768991323618
+space = calculateDomainAxisSpace(g2, revPlotArea, space);#3041,18.085813331604005
+private transient Stroke rangeZeroBaselineStroke;#483,18.085743606090546
+if (r != null) {#4484,18.084801497282804
+else {#3849,18.084564876556396
+if (!this.rangeCrosshairLockedOnData && anchor != null) {#3369,18.08456066131592
+if (event.getSeriesVisibilityChanged()) {#4549,18.082844633805124
+if (yAxis == null) {  // we can't draw quadrants without a valid y-axis#3440,18.07994544121527
+if (x < xmax && y > ymin) {#3505,18.079914779663085
+if (useAnchor) {#5085,18.07987908522288
+markers = (Collection) this.backgroundDomainMarkers.get(#2599,18.0793928366441
+CrosshairState crosshairState = new CrosshairState();#3188,18.078363990783693
+if (useAnchor) {#5162,18.07800813515981
+if (isDomainCrosshairVisible() && notify) {#4646,18.07790551866804
+for (int i = rendererCount - 1; i >= 0; i--) {#3328,18.077560732441565
+ValueAxis axis = (ValueAxis) this.domainAxes.get(i);#956,18.07544681429863
+while (iterator.hasNext()) {#4458,18.07535247008006
+if (domainAxis != null) {#659,18.07154604967903
+PlotRenderingInfo info) {#3997,18.071476888656616
+this.datasetToDomainAxesMap.put(key, new ArrayList(axisIndices));#1484,18.069765429342947
+while (iterator.hasNext()) {#4441,18.069565137227375
+public boolean removeDomainMarker(int index, Marker marker, Layer layer) {#2657,18.068588256835938
+if (orient == PlotOrientation.VERTICAL) {#3198,18.06848463518866
+else if ((tick.getTickType() == TickType.MAJOR)#3938,18.067181813089473
+if (x < xmax && y < ymax) {#3475,18.06686771392822
+public void configureDomainAxes() {#968,18.06683548291524
+Integer axisIndex = (Integer) axisIndices.get(0);#3819,18.064605642248083
+public int getRendererCount() {#1564,18.062769229595478
+throw new IllegalArgumentException("Null 'layer' not permitted.");#2586,18.0623844994439
+this.domainAxisLocations = new ObjectList();#629,18.0623140335083
+public void addDomainMarker(Marker marker, Layer layer) {#2477,18.061947671990644
+Paint paint = getRangeCrosshairPaint();#3381,18.06071038679643
+setRangeCrosshairValue(crosshairState.getCrosshairY(), false);#3378,18.05973518371582
+return axisStateMap;#3687,18.057838660020096
+if (domainIndex == 0) {#4438,18.057360792160033
+markers = (Collection) this.backgroundRangeMarkers.get(#2800,18.05413792683528
+if (this.rangeCrosshairVisible != that.rangeCrosshairVisible) {#5363,18.053949815255624
+PlotState parentState, PlotRenderingInfo info) {#3151,18.05260181427002
+for (int i = 0; i < this.rangeAxes.size(); i++) {#5192,18.049554313932145
+setDomainAxis(0, axis);#825,18.049447115729837
+if (axis.getRange().contains(value)) {#4198,18.047234217325848
+Rectangle2D revPlotArea = space.shrink(plotArea, null);#3040,18.046328214498665
+double y = yAxis.getRange().constrain(this.quadrantOrigin.getY());#3443,18.042803241360573
+if (domainIndex >= 0) {#4434,18.042674720287323
+public boolean removeAnnotation(XYAnnotation annotation) {#2978,18.04025399684906
+public boolean removeAnnotation(XYAnnotation annotation, boolean notify) {#2993,18.04010893169202
+while (iterator.hasNext()) {#2536,18.04008134206136
+Collection markers = getDomainMarkers(index, layer);#4030,18.03909077644348
+if (index < 0 || index > 3) {#2440,18.03828420137104
+else {#3822,18.03766260147095
+for (int series = seriesCount - 1; series >= 0; series--) {#3736,18.037156280718353
+double yy = yAxis.valueToJava2D(y, area, getRangeAxisEdge());#3444,18.036671102046967
+double ymin = yAxis.getLowerBound();#3452,18.036270809173583
+if (removed && notify) {#2929,18.034366607666016
+result.moveTo((float) xx, (float) yy);#5829,18.033942376413652
+double xx = axis.valueToJava2D(value, dataArea,#4236,18.033920117786952
+new Integer(rangeIndex)));#4455,18.033303508052118
+if (notify) {#2608,18.033040591648646
+double yy = yAxis.java2DToValue(coords[1], dataArea, yAxisEdge);#5827,18.03216371780787
+public boolean removeDomainMarker(Marker marker, Layer layer) {#2640,18.031843837938812
+double xx = xAxis.java2DToValue(coords[0], dataArea, xAxisEdge);#5826,18.031685502905596
+for (int i = 0; i < this.rangeAxes.size(); i++) {#3126,18.031680077314377
+if (orient == PlotOrientation.VERTICAL) {#3211,18.031216325431036
+throw new IllegalArgumentException("Null 'marker' not permitted.");#2583,18.030128853661672
+that.backgroundDomainMarkers)) {#5458,18.027018586794537
+for (int i = 0; i < this.rangeAxes.size(); i++) {#5159,18.024130480630056
+this.rangeMinorGridlineStroke = DEFAULT_GRIDLINE_STROKE;#693,18.022277634719323
+ValueAxis valueAxis = null;#3841,18.022254999946146
+ValueAxis axis = (ValueAxis) this.rangeAxes.get(i);#1270,18.022167444229126
+if (axisIndex.equals(ZERO)) {#4331,18.022066014153616
+RectangleEdge yAxisEdge = getRangeAxisEdge(yAxisIndex);#3368,18.020851311860262
+that.backgroundRangeMarkers)) {#5466,18.019833485285442
+if (xAxis == null) {  // we can't draw quadrants without a valid x-axis#3433,18.017952980533725
+ValueAxis axis = (ValueAxis) this.domainAxes.get(i);#5525,18.016914874315262
+protected void drawZeroDomainBaseline(Graphics2D g2, Rectangle2D area) {#3964,18.016301498413085
+return this.weight;#1766,18.016094721280613
+Paint bandPaint = getRangeTickBandPaint();#3579,18.015924135843914
+clone.datasetToRangeAxesMap.putAll(this.datasetToRangeAxesMap);#5561,18.015290809400152
+int domainIndex = getDomainAxisIndex(axis);#4433,18.014850902557374
+RectangleEdge xAxisEdge = getDomainAxisEdge();#5820,18.013215931979094
+ValueAxis valueAxis = null;#3814,18.00943453171674
+int result = this.domainAxes.indexOf(axis);#4384,18.00830992785367
+double[] coords = new double[6];#5822,18.00813372929891
+previous = current;#3592,18.007406282424927
+if (axis.getRange().contains(value)) {#4264,18.00723666236514
+Rectangle2D[] r = new Rectangle2D[] {null, null, null, null};#3458,18.00715398788452
+else {  // PlotOrientation.VERTICAL#3481,18.005797739382142
+XYDatasetSelectionState selectionState = state.getSelectionState();#3728,18.005578106847302
+if (axyd.getSelectionState() != null) {#5856,18.004615783691406
+this.foregroundRangeMarkers = new HashMap();#635,18.003758335113524
+if (result == null) {#805,18.002409489949546
+if (mappedAxes == null) {#4330,18.00225340236317
+else {  // PlotOrientation.VERTICAL#3496,18.001722653706867
+ValueAxis domainAxis = (ValueAxis) this.domainAxes.get(i);#5120,18.00138526804307
+return result;#4341,18.001235615123402
+for (int i = 0; i < this.rangeAxes.size(); i++) {#1253,18.000312396458217
+return result;#4393,18.000006502324883
+that.rangeCrosshairStroke)) {#5446,17.999577412238487
+return this.datasetRenderingOrder;#1672,17.999405308773643
+if (axis != null) {#3081,17.999376628709875
+RectangleEdge xAxisEdge = getDomainAxisEdge(xAxisIndex);#3346,17.99862759201615
+if (isDomainAxis) {#4508,17.99786412715912
+public XYPlot(XYDataset dataset,#616,17.996813774108887
+else {  // PlotOrientation.VERTICAL#3466,17.996384055526168
+this.foregroundDomainMarkers = new HashMap();#630,17.995941066741942
+int lastItem = dataset.getItemCount(series) - 1;#3738,17.9947541310237
+if (axis.getRange().contains(value)) {#4170,17.994730131966726
+RectangleEdge.LEFT);#3066,17.99275976611722
+public XYDataset getDataset(int index) {#1381,17.99260081185235
+return result;#5839,17.9923809224909
+boolean fillBand = false;#3546,17.990866978963215
+private transient Stroke domainMinorGridlineStroke;#424,17.98958545923233
+if (order == null) {#1686,17.98880246480306
+if (annotation == null) {#2994,17.98614376783371
+ValueAxis yAxis = getRangeAxis(yAxisIndex);#3367,17.985626068115234
+protected void drawHorizontalLine(Graphics2D g2, Rectangle2D dataArea,#4162,17.98446834087372
+double xx = xAxis.valueToJava2D(x, area, getDomainAxisEdge());#3437,17.981481059905022
+if (state.getProcessVisibleItemsOnly()) {#3742,17.980173296398586
+if (this.foregroundRangeMarkers != null) {#2531,17.979997816539946
+public DatasetRenderingOrder getDatasetRenderingOrder() {#1671,17.979819124395195
+that.rangeMinorGridlineStroke)) {#5414,17.979632024411803
+Point2D source) {#5034,17.979357878367107
+this.axisOffset.trim(dataArea);#3171,17.97918128967285
+this.rangeAxes.set(0, axis);#1095,17.976924324035643
+AxisState rangeAxisState = (AxisState) axisStateMap.get(getRangeAxis());#3240,17.976919235721713
+result = Range.combine(result,#4479,17.976832736622203
+boolean b2 = (area.getHeight() <= MINIMUM_HEIGHT_TO_DRAW);#3155,17.976302731421686
+int lastItem = dataset.getItemCount(series) - 1;#3772,17.976285885541866
+if (state.getProcessVisibleItemsOnly()) {#3773,17.97357153892517
+if (this.foregroundRangeMarkers != null) {#2834,17.973018464587984
+for (int i = 0; i < this.rangeAxes.size(); i++) {#1269,17.972953830446517
+if (d != null) {#5553,17.97096940090782
+PlotRenderingInfo info, Point2D source) {#5118,17.97056325999173
+else {  // PlotOrientation.VERTICAL#3511,17.968693097432453
+if (axisIndex.equals(ZERO)) {#4361,17.967548642839706
+if (axis != null) {#971,17.96731592479505
+if (mappedAxes == null) {#4360,17.965143767270174
+private transient Stroke domainZeroBaselineStroke;#467,17.964750826358795
+else if (layer == Layer.BACKGROUND) {#4143,17.96444451181512
+cursor = info.getCursor();#3647,17.962811851501463
+public Stroke getRangeZeroBaselineStroke() {#2289,17.962416873258704
+if (renderer == null) {#5281,17.962293306986492
+if (anchor != null) {#3194,17.96209990978241
+g2.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER,#3228,17.961398741778204
+public void setFixedRangeAxisSpace(AxisSpace space, boolean notify) {#4942,17.96016081896695
+RenderingSource source) {#5749,17.95936738120185
+else if (layer == Layer.BACKGROUND) {#4117,17.959282975447806
+for (int index = 0; index < this.rangeAxes.size(); index++) {#3630,17.95898219517299
+while (iterator.hasNext()) {#2839,17.958882292111713
+double xxmin = xAxis.valueToJava2D(xmin, area, getDomainAxisEdge());#3447,17.95862524437182
+List axisIndices = (List) this.datasetToDomainAxesMap.get(#3815,17.957806291251348
+if (this.rangeMinorGridlinesVisible != visible) {#2093,17.956347118724477
+public SeriesRenderingOrder getSeriesRenderingOrder() {#1700,17.955776267581516
+if (removed && notify) {#2690,17.955553650856018
+protected AxisSpace calculateAxisSpace(Graphics2D g2,#3036,17.955436812506782
+Point2D source) {#5007,17.954376220703125
+public void drawBackground(Graphics2D g2, Rectangle2D area) {#3411,17.95193303715099
+ValueAxis domainAxis = (ValueAxis) this.domainAxes.get(i);#5083,17.95116427365471
+space = calculateRangeAxisSpace(g2, plotArea, space);#3039,17.950050274531048
+new Integer(index));#2680,17.949600105285644
+ValueAxis rangeAxis = (ValueAxis) this.rangeAxes.get(i);#5193,17.948248190038345
+return this.rangeGridlinesVisible;#1988,17.947386124554804
+HashSet set = new HashSet();#1543,17.94707816839218
+if (this.rangeGridlinesVisible != that.rangeGridlinesVisible) {#5336,17.94662136501736
+DatasetRenderingOrder order = getDatasetRenderingOrder();#3272,17.945816186758186
+public void setDomainTickBandPaint(Paint paint) {#2356,17.944867284674395
+else {#4487,17.944314653223213
+new Integer(index));#2919,17.94242805480957
+private transient Stroke rangeMinorGridlineStroke;#445,17.942072689533234
+private transient Paint domainCrosshairPaint;#498,17.94198520366962
+Axis axis = (Axis) this.rangeAxes.get(i);#3127,17.940590511668812
+Composite originalComposite = g2.getComposite();#3225,17.939713217995383
+that.foregroundRangeMarkers)) {#5478,17.93941204071045
+public Stroke getDomainZeroBaselineStroke() {#2202,17.937708742478314
+int index, Layer layer) {#4019,17.93619580702348
+boolean fillBand = false;#3581,17.935660786098904
+if (!ObjectUtilities.equal(this.datasetToRangeAxesMap,#5385,17.935346532751012
+public void setFixedDomainAxisSpace(AxisSpace space, boolean notify) {#4901,17.934665940024637
+public static final Stroke DEFAULT_GRIDLINE_STROKE = new BasicStroke(0.5f,#321,17.9345183526316
+if (axis.getRange().contains(value)) {#4235,17.934375944591704
+if (result == null) {#993,17.934347089131673
+return this.rangeGridlineStroke;#2018,17.93305624855889
+int firstItem = 0;#3737,17.93189614613851
+protected static ResourceBundle localizationResources#339,17.930073738098145
+return result;#4415,17.92928730357777
+if (!ObjectUtilities.equal(this.datasetToDomainAxesMap,#5381,17.928589326364023
+if (orientation == PlotOrientation.VERTICAL) {#4200,17.928286277330837
+if (axis != null) {#1271,17.928262509797747
+that.rangeZeroBaselineStroke)) {#5434,17.928216192457413
+private transient Paint[] quadrantPaint#391,17.927324771881104
+protected void drawZeroRangeBaseline(Graphics2D g2, Rectangle2D area) {#3981,17.924821510314942
+this.datasets.set(index, dataset);#1415,17.924812746047973
+if (this.orientation == PlotOrientation.HORIZONTAL) {#3111,17.924301947316817
+private boolean domainCrosshairLockedOnData = true;#504,17.92263299226761
+"Null 'location' for index 0 not permitted.");#1332,17.922441393136978
+crosshairState.setCrosshairX(getDomainCrosshairValue());#3222,17.92061295716659
+this.rangeGridlinePaint = paint;#2061,17.918537033928764
+public boolean render(Graphics2D g2, Rectangle2D dataArea, int index,#3706,17.91796112060547
+return valueAxis;#3852,17.91738539475661
+cursor = info.getCursor();#3671,17.917006731033325
+XYAnnotation annotation = (XYAnnotation) iterator.next();#4001,17.916868906754715
+boolean notify) {#1634,17.91610673069954
+boolean notify) {#1328,17.913907408714294
+if (result == null) {#1354,17.91361713409424
+if (this.orientation == PlotOrientation.HORIZONTAL) {#3064,17.912551203081684
+public void setRangeGridlineStroke(Stroke stroke) {#2029,17.911007928848267
+throw new IllegalArgumentException("Null 'marker' argument.");#2914,17.910318303991247
+markers = (Collection) this.foregroundDomainMarkers.get(#2590,17.90971208501745
+private SeriesRenderingOrder seriesRenderingOrder#566,17.909286816914875
+&& isRangeMinorGridlinesVisible()) {#3933,17.908024311065674
+RectangleEdge.TOP);#3113,17.906275431315105
+return space;#3134,17.90595106645064
+boolean notify) {#1029,17.90592235326767
+public static final Stroke DEFAULT_CROSSHAIR_STROKE#332,17.905499839782713
+if (order == null) {#1715,17.904380544026694
+that.datasetToDomainAxesMap)) {#5382,17.901373147964478
+that.rangeGridlinePaint)) {#5402,17.90003765106201
+for (int i = 0; i < this.domainAxes.size(); i++) {#3079,17.89950880408287
+dataset, series, xAxis.getLowerBound(),#3775,17.898121257623036
+public void clearDomainAxes() {#954,17.898065249125164
+public void zoomRangeAxes(double factor, PlotRenderingInfo info,#5136,17.89572438739595
+this.domainCrosshairValue = 0.0;#701,17.894579536036442
+if (annotation == null) {#2958,17.8942232131958
+return valueAxis;#3825,17.893088120680588
+return this.rangeMinorGridlinesVisible;#2076,17.891735977596706
+for (int i = 0; i < this.domainAxes.size(); i++) {#5119,17.891730512891495
+that.domainGridlineStroke)) {#5390,17.891041902395393
+if (domainAxisState == null) {#3233,17.888819853464764
+public void setFixedRangeAxisSpace(AxisSpace space) {#4927,17.88625350751375
+double xxmax = xAxis.valueToJava2D(xmax, area, getDomainAxisEdge());#3450,17.884416955890078
+that.foregroundRangeMarkers)) {#5462,17.884140434265138
+if (result == null) {#1293,17.883425331115724
+if (this.domainCrosshairValue != that.domainCrosshairValue) {#5356,17.88271862030029
+if (this.domainCrosshairVisible != flag) {#4577,17.88113158089774
+if (index < 0 || index > 3) {#2423,17.881082835950348
+for (int i = 0; i < this.domainAxes.size(); i++) {#5082,17.880415678024292
+if (result == null) {#1169,17.879920132954915
+ValueAxis axis = (ValueAxis) this.domainAxes.get(i);#970,17.87879267334938
+paintLine = false;#3879,17.876401083809988
+space.ensureAtLeast(this.fixedDomainAxisSpace.getLeft(),#3065,17.87481395176479
+if (!ObjectUtilities.equal(this.rangeAxes, that.rangeAxes)) {#5375,17.87343117286419
+dataset, series, xAxis.getLowerBound(),#3744,17.872652411460876
+for (int i = 0; i < this.renderers.size(); i++) {#3266,17.87214946746826
+that.domainGridlinePaint)) {#5394,17.868149223327638
+setDataset(0, dataset);#1399,17.867762509514304
+public void setDomainGridlinePaint(Paint paint) {#1936,17.867261939578587
+marker.addChangeListener(this);#2808,17.865850806236267
+for (int i = 0; i < this.rangeAxes.size(); i++) {#5537,17.864568982805526
+that.domainCrosshairStroke)) {#5438,17.863993718073917
+public void setRangeGridlinePaint(Paint paint) {#2057,17.86377747853597
+XYDataset result = null;#1382,17.863068401813507
+else if (layer == Layer.BACKGROUND) {#2598,17.86257166611521
+this.rangeAxes.set(index, axis);#1210,17.86110339164734
+ValueAxis domainAxis = getDomainAxisForDataset(i);#3280,17.860400074406673
+int segType = iterator.currentSegment(coords);#5825,17.86006157214825
+public void zoomDomainAxes(double factor, PlotRenderingInfo info,#5060,17.859954016549246
+for (int i = rendererCount - 1; i >= 0; i--) {#3309,17.858478053923577
+setRangeAxis(index, axis, true);#1189,17.858175829837197
+Paint bandPaint = getDomainTickBandPaint();#3544,17.8579044342041
+protected void drawVerticalLine(Graphics2D g2, Rectangle2D dataArea,#4228,17.857899983723957
+private transient Stroke domainCrosshairStroke;#495,17.85762856801351
+return result;#4371,17.856925097378817
+boolean notify) {#2788,17.856701731681824
+throw new IllegalArgumentException("Null 'origin' argument.");#2407,17.85620803099412
+public void setAxisOffset(RectangleInsets offset) {#769,17.85596407784356
+ValueAxis domainAxis = getDomainAxisForDataset(i);#3315,17.853465130454616
+public void setRangeCrosshairPaint(Paint paint) {#4859,17.85287724600898
+cursor = info.getCursor();#3659,17.85254693031311
+ValueAxis domainAxis = getDomainAxisForDataset(i);#3297,17.852309377569902
+"Null 'location' for index 0 not permitted.");#1033,17.850340008735657
+protected void drawRangeGridlines(Graphics2D g2, Rectangle2D area,#3913,17.84841131127399
+ValueAxis yAxis = (ValueAxis) this.rangeAxes.get(index);#3631,17.84563221650965
+if (!ObjectUtilities.equal(this.backgroundRangeMarkers,#5465,17.8454006858494
+previous = current;#3557,17.845390796661377
+throw new IllegalArgumentException("Empty list not permitted.");#1541,17.84531581878662
+if (anchor != null && !dataArea.contains(anchor)) {#3185,17.843062547536995
+protected Map drawAxes(Graphics2D g2,#3614,17.84295892715454
+if (this.domainGridlinesVisible != visible) {#1806,17.840674173264276
+if (result < 0) {#4385,17.839894104003907
+crosshairState.setCrosshairY(yy);#3376,17.83826214334239
+markers = (Collection) this.foregroundRangeMarkers.get(#2791,17.836105735213668
+if (!ObjectUtilities.equal(this.backgroundRangeMarkers,#5481,17.835692032523777
+if (result == null) {#1054,17.835348637898765
+- this.axisOffset.calculateLeftOutset(dataArea.getWidth());#3665,17.830470853381687
+return result;#812,17.82974485917525
+if (!ObjectUtilities.equal(this.backgroundDomainMarkers,#5457,17.829500073971957
+if (!ObjectUtilities.equal(this.backgroundDomainMarkers,#5473,17.82943638511326
+this.rangeGridlinesVisible = true;#688,17.82891829808553
+clone.datasets = (ObjectList) ObjectUtilities.clone(this.datasets);#5550,17.828216489156087
+private transient Stroke rangeCrosshairStroke;#513,17.827777290344237
+this.rangeGridlinePaint = DEFAULT_GRIDLINE_PAINT;#690,17.826618671417236
+for (int i = 0; i < this.renderers.size(); i++) {#3263,17.826609364262335
+int rendererCount = this.renderers.size();#3308,17.826549808184307
+space.ensureAtLeast(this.fixedRangeAxisSpace.getTop(),#3112,17.82555193219866
+if (result < 0) {#4407,17.823775418599446
+space.ensureAtLeast(this.fixedRangeAxisSpace.getLeft(),#3118,17.822328921726772
+public void setFixedDomainAxisSpace(AxisSpace space) {#4886,17.82178793455425
+that.foregroundDomainMarkers)) {#5454,17.82151077270508
+new Integer(index));#2684,17.820856552124024
+if (this.renderers.size() > index) {#1590,17.820485614594958
+Paint paint = getDomainCrosshairPaint();#3360,17.81945497339422
+return Plot.resolveRangeAxisLocation(getRangeAxisLocation(),#1151,17.817673365275066
+public void setDatasetRenderingOrder(DatasetRenderingOrder order) {#1685,17.81731716156006
+public void setRangeCrosshairStroke(Stroke stroke) {#4830,17.811382913589476
+Point2D source, boolean useAnchor) {#5079,17.811154099397882
+&& isRangeGridlinesVisible()) {#3939,17.810211542490368
+for (int i = 0; i < this.renderers.size(); i++) {#3393,17.80749437544081
+ValueAxis clonedAxis = (ValueAxis) axis.clone();#5540,17.80534420591412
+if (!this.domainCrosshairLockedOnData && anchor != null) {#3347,17.80157325744629
+XYDatasetSelectionState state = findSelectionStateForDataset(#5758,17.800774987538656
+this.rangeMinorGridlinePaint = Color.white;#694,17.800177029200963
++ this.axisOffset.calculateBottomOutset(dataArea.getHeight());#3653,17.798094193140667
+space.ensureAtLeast(this.fixedDomainAxisSpace.getTop(),#3071,17.797417313711986
+Axis axis = (Axis) this.domainAxes.get(i);#3080,17.79659129634048
+if (this.rangeCrosshairLockedOnData != flag) {#4760,17.796283390211023
+if (orientation == null) {#741,17.79574763774872
+if (removed && notify) {#2998,17.795427978038788
+double x = xAxis.getRange().constrain(this.quadrantOrigin.getX());#3436,17.793548061001687
+xAxis, yAxis, dataset, series, item,#3758,17.793099212646485
+result = Range.combine(result, xyabi.getXRange());#4509,17.79278866020409
+((AbstractXYItemRenderer) r).drawDomainLine(g2, this,#3895,17.792529644110264
+boolean notify) {#2912,17.792407870292664
+public void zoomRangeAxes(double factor, PlotRenderingInfo info,#5155,17.792355582827614
+space.ensureAtLeast(this.fixedRangeAxisSpace.getBottom(),#3114,17.79155785696847
+protected void drawRangeCrosshair(Graphics2D g2, Rectangle2D dataArea,#4260,17.790706475575764
+new Integer(index));#2923,17.787809524536133
+return this.datasets.size();#1431,17.787661776823157
+RectangleEdge.LEFT, plotState);#3670,17.787259833017984
+else if (layer == Layer.BACKGROUND) {#2799,17.786128445675498
+int index, Layer layer) {#4052,17.78586265652679
+return this.fixedDomainAxisSpace;#4875,17.782691170187558
+marker.addChangeListener(this);#2607,17.782416224479675
+XYDataset dataset = getDataset(index);#3710,17.78198037828718
+List axisIndices = new java.util.ArrayList(1);#1499,17.780048080112625
+public void setDomainGridlineStroke(Stroke stroke) {#1869,17.77943024635315
+that.backgroundRangeMarkers)) {#5482,17.778980096181233
+if (!this.rangeAxisLocations.equals(that.rangeAxisLocations)) {#5378,17.77862771352132
+public void setRangeCrosshairVisible(boolean flag) {#4731,17.777460628085667
+boolean isDomainAxis = true;#4430,17.776758074760437
+return Plot.resolveDomainAxisLocation(getDomainAxisLocation(),#933,17.776357253392536
+RectangleEdge.BOTTOM);#4268,17.77505949139595
+that.foregroundDomainMarkers)) {#5470,17.77437702178955
+return this.rangeMinorGridlineStroke;#2110,17.773684652228106
+if (this.rangeCrosshairLockedOnData#5329,17.772979083814118
+this.rangeZeroBaselineStroke = new BasicStroke(0.5f);#698,17.772112583291943
+for (int i = 0; i < this.domainAxes.size(); i++) {#955,17.77184513636998
+crosshairState.setCrosshairDistance(Double.POSITIVE_INFINITY);#3189,17.771568121733488
+XYDataset existing = getDataset(index);#1411,17.770738647097634
+if (this.rangeZeroBaselineVisible != that.rangeZeroBaselineVisible) {#5350,17.76866047957848
+double yymin = yAxis.valueToJava2D(ymin, area, getRangeAxisEdge());#3453,17.765822326435764
+drawRangeCrosshair(g2, dataArea, orient, y, yAxis, stroke, paint);#3383,17.765443120683944
+boolean notify) {#2581,17.764678120613098
+int rendererCount = this.renderers.size();#3276,17.760268330574036
+RectangleEdge.RIGHT);#3068,17.758442971014208
+for (int index = 0; index < this.domainAxes.size(); index++) {#3622,17.75811505317688
+double y = dataset.getYValue(s, i);#5772,17.753627892696496
+public void setDomainCrosshairPaint(Paint paint) {#4702,17.751049359639484
+super();#621,17.75070991516113
+ValueAxis rangeAxis = getRangeAxisForDataset(i);#3281,17.749103495949193
+Point2D source, boolean useAnchor) {#5156,17.74797702970959
+int xAxisIndex = crosshairState.getDomainAxisIndex();#3344,17.747350573539734
+public void setQuadrantOrigin(Point2D origin) {#2405,17.746544943915474
+List axisIndices = new java.util.ArrayList(1);#1463,17.746242854906164
+return result;#1176,17.745725631713867
+public void setRangeMinorGridlineStroke(Stroke stroke) {#2123,17.74500933147612
+if (this.orientation == PlotOrientation.HORIZONTAL) {#3506,17.743274225507463
+int rendererCount = this.renderers.size();#5694,17.743199634552003
+public void select(GeneralPath region, Rectangle2D dataArea,#5748,17.74286265122263
+continue;                 // a link to the axes#3312,17.74145689877597
+RectangleEdge.TOP, plotState);#3646,17.740579703758502
+return this.domainGridlineStroke;#1855,17.740469482209946
+int upper = Math.max(getDatasetCount(), getRendererCount());#3809,17.740285237630207
+space.ensureAtLeast(this.fixedDomainAxisSpace.getRight(),#3067,17.739899853297644
+public void zoomDomainAxes(double factor, PlotRenderingInfo info,#5078,17.739285559881303
+for (int i = 0; i < this.renderers.size(); i++) {#5564,17.7382869720459
+if ((tick.getTickType() == TickType.MINOR)#3932,17.73801056543986
+if (this.orientation == PlotOrientation.HORIZONTAL) {#3476,17.73782067980085
+return this.rangeCrosshairVisible;#4719,17.73464803134694
+new Integer(i));#4329,17.734038887023925
+drawRangeGridlines(g2, dataArea, rangeAxisState.getTicks());#3258,17.73100110888481
+this.rangeCrosshairValue = 0.0;#706,17.729655767741956
+for (int i = 0; i < this.domainAxes.size(); i++) {#969,17.72852349281311
+private XYDatasetSelectionState findSelectionStateForDataset(#5793,17.728462264651345
+RectangleEdge.BOTTOM);#4202,17.726753443479538
+this.domainAxes.set(0, domainAxis);#657,17.726706504821777
+this.rangeMinorGridlinesVisible = false;#692,17.725008412411338
+XYAnnotation a = (XYAnnotation) i.next();#4496,17.723641370472155
+if (this.orientation == PlotOrientation.HORIZONTAL) {#3491,17.72278297969273
+datasetIndex, i);#5290,17.721372464808024
+public void setRangeCrosshairLockedOnData(boolean flag) {#4759,17.72097268104553
+that.rangeMinorGridlinePaint)) {#5418,17.720903616685135
+public void setQuadrantPaint(int index, Paint paint) {#2439,17.720557403564452
+Line2D line = new Line2D.Double(xx, dataArea.getMinY(), xx,#4238,17.71699788229806
+continue;                 // a link to the axes#3331,17.7169536894018
+this.rangeZeroBaselinePaint = paint;#2333,17.714346885681152
+ValueAxis domainAxis = getDomainAxisForDataset(i);#3334,17.713903452220716
+setDomainAxis(index, axis, true);#839,17.71275906813772
+if (this.orientation != that.orientation) {#5320,17.711475372314453
+new Integer(i));#4359,17.71116672515869
+double value, Stroke stroke,#4163,17.710552321539986
+return result;#5299,17.71006913618608
+Math.abs(xx - xxmin));#3494,17.709856213750065
+boolean notify) {#2676,17.708127915859222
+return this.domainMinorGridlineStroke;#1889,17.70741154018201
+return getRangeAxis(0);#1071,17.707057178020477
+Set keys = this.foregroundDomainMarkers.keySet();#2498,17.704184422126183
+throw new IllegalArgumentException("Null 'annotation' argument.");#2959,17.704113995587385
+public void setFixedLegendItems(LegendItemCollection items) {#5259,17.70287794225356
+return this.quadrantOrigin;#2394,17.70222676595052
+axisStateMap.put(axis, info);#3672,17.702130144292656
+double hvalue = xaxis.java2DToValue(x, info.getDataArea(),#4299,17.701457204045475
+if (this.domainMinorGridlinesVisible#5339,17.70074001948039
+xAxis.getUpperBound());#3745,17.700364345974393
+return this.rangeZeroBaselineStroke;#2290,17.700262119895534
+int domainAxisCount = this.domainAxes.size();#5671,17.699235699393533
+that.domainCrosshairPaint)) {#5442,17.699002685546876
+Integer key = (Integer) iterator.next();#2492,17.6976308455834
+if (!this.quadrantOrigin.equals(that.quadrantOrigin)) {#5500,17.69738116631141
+public void setDomainCrosshairVisible(boolean flag) {#4576,17.697276910146076
+public void setRangeMinorGridlinePaint(Paint paint) {#2155,17.69638533341257
+ValueAxis clonedAxis = (ValueAxis) axis.clone();#5527,17.696209387345746
+checkAxisIndices(axisIndices);#1518,17.69512388441298
+line = new Line2D.Double(xx, dataArea.getMinY(), xx,#4203,17.694872697194416
+line = new Line2D.Double(xx, dataArea.getMinY(), xx,#4269,17.694567574395073
+setRangeAxisLocation(0, location, true);#1125,17.69247145652771
+return this.axisOffset;#758,17.691741262163436
+int yAxisIndex = crosshairState.getRangeAxisIndex();#3366,17.689950545628864
+public void setDomainMinorGridlineStroke(Stroke stroke) {#1905,17.687949362255278
+getBackgroundAlpha()));#3522,17.68751045227051
+XYItemRendererState state = renderer.initialise(g2, dataArea, this,#3726,17.685826890608844
+for (int item = firstItem; item <= lastItem; item++) {#3782,17.685003185272215
+RectangleEdge.BOTTOM);#3115,17.68436908721924
+dataArea.getMaxY());#4204,17.68390984689036
++ this.axisOffset.calculateRightOutset(dataArea.getWidth());#3677,17.682943873935276
+setDomainCrosshairValue(crosshairState.getCrosshairX(), false);#3357,17.682153472900392
+this.axisOffset = new RectangleInsets(4.0, 4.0, 4.0, 4.0);#625,17.67970175061907
+int firstItem = 0;#3771,17.679344367980956
+space.ensureAtLeast(this.fixedDomainAxisSpace.getBottom(),#3073,17.6785703931536
+protected void drawDomainGridlines(Graphics2D g2, Rectangle2D dataArea,#3864,17.678565581639607
+if (this.orientation == PlotOrientation.HORIZONTAL) {#3461,17.677397973196847
+public void setSeriesRenderingOrder(SeriesRenderingOrder order) {#1714,17.677260035560245
+Math.abs(xx - xxmin));#3464,17.675531954378695
+new Integer(domainIndex)));#4437,17.674515547575773
+axisStateMap.put(axis, info);#3660,17.674411947076972
+this.domainAxes.set(index, axis);#860,17.673680305480957
+clone.backgroundRangeMarkers = (Map) ObjectUtilities.clone(#5577,17.672472953796387
+double x = dataset.getXValue(s, i);#5771,17.671736428231902
+"org.jfree.chart.plot.LocalizationBundle");#341,17.67163031441825
+Rectangle2D plotArea,#3615,17.670231819152832
+return result;#1754,17.669239044189453
+this.rangeCrosshairValue = value;#4802,17.669026935801785
+double vvalue = yaxis.java2DToValue(y, info.getDataArea(),#4307,17.668912397848594
+public void setRangePannable(boolean pannable) {#4993,17.66707982515034
+g2.setComposite(originalComposite);#3399,17.665274302164715
+public void setDomainCrosshairStroke(Stroke stroke) {#4673,17.660866498947144
+RectangleEdge.BOTTOM, plotState);#3658,17.660500372609786
+this.domainGridlinePaint = paint;#1940,17.65939214494493
+return this.rangeTickBandPaint;#2370,17.65868526034885
+Math.abs(xx - xxmax));#3479,17.657724921767777
+public void setRangeZeroBaselinePaint(Paint paint) {#2329,17.657325041921514
+return false;  // TODO: make this true later#5714,17.656617975234987
+addRangeMarker(0, marker, layer);#2724,17.6564585033216
+for (int item = firstItem; item <= lastItem; item++) {#3751,17.656066298484802
+return this.rangeZeroBaselineVisible;#2265,17.652094893985325
+this.fixedRangeAxisSpace = space;#4943,17.651790830824112
+double xx = axis.valueToJava2D(value, dataArea,#4267,17.6506307721138
+Math.abs(xx - xxmax));#3509,17.648729582090635
+that.rangeTickBandPaint)) {#5497,17.646573066711426
+Math.min(xxmin, xx), Math.abs(yy - yymin),#3493,17.645894821653975
+this.fixedDomainAxisSpace = space;#4902,17.64577251010471
+dataArea.getMaxY());#4270,17.644932654596143
+this.domainZeroBaselineStroke = new BasicStroke(0.5f);#686,17.643846906464674
+int upper = Math.max(getDatasetCount(), getRendererCount());#3836,17.643227047390408
+public boolean removeRangeMarker(int index, Marker marker, Layer layer,#2911,17.642648242768786
+that.rangeCrosshairPaint)) {#5450,17.642255477905273
+ValueAxis existing = getDomainAxis(index);#853,17.64076361656189
+double xx = axis.valueToJava2D(value, dataArea,#4201,17.640179067850113
+for (int i = 0; i < this.renderers.size(); i++) {#3390,17.639678495901602
+drawDomainGridlines(g2, dataArea, domainAxisState.getTicks());#3254,17.63914194703102
+axisStateMap.put(axis, info);#3648,17.638421058654785
+if (!PaintUtilities.equal(this.rangeCrosshairPaint,#5449,17.63742763519287
+if (index < this.rangeAxes.size()) {#1166,17.637323424929665
+this.quadrantOrigin = origin;#2409,17.63714838027954
+public void setDomainCrosshairLockedOnData(boolean flag) {#4604,17.636756896972656
+public void setRenderer(int index, XYItemRenderer renderer) {#1619,17.63454234081766
+if (!PaintUtilities.equal(this.rangeGridlinePaint,#5401,17.634380645751953
+that.domainMinorGridlineStroke)) {#5406,17.63285301349781
+if (!ObjectUtilities.equal(this.rangeMinorGridlineStroke,#5413,17.63146708561824
+if (!ObjectUtilities.equal(this.rangeGridlineStroke,#5397,17.63065059661865
+that.rangeZeroBaselinePaint)) {#5430,17.63017643415011
+getDomainAxis(), dataArea, tick.getValue(),#3896,17.629729968745533
+configureDomainAxes();#1644,17.629030007582443
+setRangeAxisLocation(0, location, notify);#1139,17.626909589767457
+clone.backgroundDomainMarkers = (Map) ObjectUtilities.clone(#5573,17.62672754128774
+setDomainAxisLocation(0, location, true);#906,17.624681377410887
+new Integer(index));#3816,17.623125621250697
+public void clearAnnotations() {#3023,17.62233474037864
++ ") should be in the range 0 to 3.");#2442,17.61823732202703
+if (!ObjectUtilities.equal(this.foregroundRangeMarkers,#5477,17.617528955141704
+space.ensureAtLeast(this.fixedRangeAxisSpace.getRight(),#3120,17.617213112967356
+return this.rangeGridlinePaint;#2046,17.615935606115006
++ ") should be in the range 0 to 3.");#2425,17.615888306588836
+valueAxis = getRangeAxis(axisIndex.intValue());#3847,17.612283282809788
+this.domainGridlineStroke = DEFAULT_GRIDLINE_STROKE;#677,17.610748495374406
+Plot parent = getParent();#1170,17.609795888264973
+new Integer(index));#3843,17.60754630679176
+markers = (ArrayList) this.backgroundRangeMarkers.get(#2922,17.607527909455477
+markers = (ArrayList) this.backgroundDomainMarkers.get(#2683,17.60704849384449
+SerialUtilities.writeStroke(this.rangeGridlineStroke, stream);#5610,17.606157030378068
+Integer key = (Integer) iterator.next();#2738,17.6037236727201
+public XYItemRenderer getRendererForDataset(XYDataset dataset) {#1743,17.603129166823166
+this.domainMinorGridlineStroke = DEFAULT_GRIDLINE_STROKE;#681,17.601194644796436
+if (orientation == PlotOrientation.HORIZONTAL) {#4266,17.599872194487475
+return this.fixedRangeAxisSpace;#4916,17.59972045000862
+SerialUtilities.writePaint(this.rangeGridlinePaint, stream);#5611,17.599366958324726
+g2.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER,#3521,17.59874358930086
+ValueAxis rangeAxis = getRangeAxisForDataset(i);#3298,17.59710424824765
+private transient Point2D quadrantOrigin = new Point2D.Double(0.0, 0.0);#388,17.596808876310075
+return this.rangeCrosshairStroke;#4818,17.596202850341797
+Math.min(xxmin, xx), Math.abs(yy - yymax),#3463,17.59590601413808
+iterator.next();#5837,17.595586478710175
+checkAxisIndices(axisIndices);#1482,17.594375769297283
+for (int i = 0; i < this.domainAxes.size(); i++) {#5524,17.59406907217843
+return result;#996,17.593447425148703
+setDomainAxisLocation(index, location, true);#1011,17.591594314575197
+ValueAxis domainAxis,#617,17.59042266845703
+double yy = axis.valueToJava2D(value, dataArea, RectangleEdge.LEFT);#4171,17.588568343056572
+this.domainGridlinePaint = DEFAULT_GRIDLINE_PAINT;#678,17.588336321023796
+paintLine = true;#3885,17.586782875061036
+axis.pan(percent);#5047,17.586631298065186
+return this.domainGridlinesVisible;#1791,17.586157967062558
+getForegroundAlpha()));#3229,17.58424858613448
+getDomainAxisEdge());#3200,17.584153287550983
+public Paint getQuadrantPaint(int index) {#2422,17.583657713497388
+= new Paint[] {null, null, null, null};#392,17.58350185394287
+protected void drawDomainCrosshair(Graphics2D g2, Rectangle2D dataArea,#4194,17.581309914588928
+double x = getDomainCrosshairValue();#3359,17.580379531497048
+XYItemRenderer renderer) {#619,17.580319227995695
+Set keys = this.foregroundRangeMarkers.keySet();#2744,17.57989153495202
+public void setOrientation(PlotOrientation orientation) {#740,17.579502317640518
+public static final Paint DEFAULT_CROSSHAIR_PAINT = Color.blue;#336,17.579431782598082
+throw new IllegalArgumentException("Null 'annotation' argument.");#2995,17.578930572227197
+throw new IllegalArgumentException(#1547,17.57882134810738
+double value, Stroke stroke, Paint paint) {#4229,17.578314415951994
+if (!ObjectUtilities.equal(this.foregroundDomainMarkers,#5469,17.578245004018147
+throw new IllegalArgumentException("Null 'offset' argument.");#771,17.578014593857986
+this.weight = weight;#1778,17.57729148864746
+if (!ObjectUtilities.equal(this.foregroundRangeMarkers,#5461,17.57635196050008
+selected, pass);#3759,17.57613627910614
+setDomainAxisLocation(0, location, notify);#920,17.574474143981934
+drawZeroDomainBaseline(g2, dataArea);#3255,17.571452339490254
+public void setDomainZeroBaselinePaint(Paint paint) {#2248,17.570738641839277
+clone.datasetToDomainAxesMap.putAll(this.datasetToDomainAxesMap);#5559,17.568252303383566
+if (annotation instanceof XYAnnotationBoundsInfo) {#4460,17.567429710836972
+this.backgroundDomainMarkers.clear();#2495,17.567298525855655
+return result;#4149,17.567038449374113
+if (this.domainCrosshairLockedOnData != flag) {#4605,17.566413920858633
+public PlotOrientation getOrientation() {#728,17.565578905741372
+that.domainZeroBaselineStroke)) {#5426,17.564470997563117
+double y = getRangeCrosshairValue();#3380,17.56370430900937
+Plot parent = getParent();#4387,17.56182034810384
+return this.rangePannable;#4982,17.561748445034027
+if (domainAxis != null) {#5121,17.561681247892835
+lastItem, pass, passCount);#3750,17.5607971906662
+return result;#4517,17.560173988342285
+if (index < this.rangeAxisLocations.size()) {#1290,17.560084799061652
+area, tick.getValue(), gridPaint, gridStroke);#3947,17.559501945972443
+if (index < this.domainAxes.size()) {#802,17.559200831821986
+public void setDomainMinorGridlinePaint(Paint paint) {#1971,17.558213133560983
+this.rangeCrosshairStroke = DEFAULT_CROSSHAIR_STROKE;#707,17.557016701533875
+ValueAxis xAxis = getDomainAxis(xAxisIndex);#3345,17.556283988952636
+axis.setPlot(this);#1208,17.555908454091924
+public void setRangeZeroBaselineStroke(Stroke stroke) {#2301,17.55469494774228
+xAxis, yAxis, dataset, series, item,#3789,17.55196472167969
+return getDomainAxis(0);#788,17.551899254322052
+return this.rangeAxes.size();#1243,17.55005729899687
+that.domainTickBandPaint)) {#5493,17.54951964891874
+if (!PaintUtilities.equal(this.rangeZeroBaselinePaint,#5429,17.548316588768593
+if (rangeAxis != null) {#5194,17.548262641543435
+if (a instanceof XYAnnotationBoundsInfo) {#4497,17.547770165108346
+this.backgroundRangeMarkers.clear();#2741,17.547760463896253
+ValueAxis rangeAxis = getRangeAxisForDataset(i);#3316,17.544775184832123
+return space;#3088,17.54347783868963
+axis.setPlot(this);#858,17.543085198653372
+getDomainAxisEdge());#3204,17.5420724363888
+this.rangeGridlineStroke = stroke;#2033,17.540853149012516
+xAxis.getUpperBound());#3776,17.540340847439236
+drawRangeTickBands(g2, dataArea, rangeAxisState.getTicks());#3251,17.538965393515195
+cursor = info.getCursor();#3683,17.53714852333069
+ValueAxis existing = getRangeAxis(index);#1203,17.53429594039917
+lastItem, pass, passCount);#3781,17.5335862159729
+Math.min(xxmax, xx), Math.abs(yy - yymin),#3508,17.533575544966027
+else {#4511,17.532971170213486
+drawDomainCrosshair(g2, dataArea, orient, x, xAxis, stroke, paint);#3362,17.532117298671178
+result = Range.combine(result,#4488,17.531626672455758
+if (!ObjectUtilities.equal(this.foregroundDomainMarkers,#5453,17.52968355019887
+throw new IllegalArgumentException("Requires 'index' >= 0.");#1516,17.52539327409532
+if (index < this.domainAxisLocations.size()) {#990,17.52511260820472
+if (layer == Layer.FOREGROUND) {#4114,17.523268858591717
+return true;#5726,17.523246244950727
+result = Range.combine(result, xyabi.getYRange());#4512,17.52323026914854
+addDomainMarker(0, marker, layer);#2478,17.52192903819837
+if (this.domainMinorGridlinesVisible != visible) {#1840,17.521625518798828
+RectangleEdge.TOP);#3072,17.520855236053468
+return foundData;#3798,17.52041419347127
+private transient Paint rangeTickBandPaint;#547,17.520405428750173
+mapDatasetToRangeAxes(index, axisIndices);#1501,17.520123937855598
+this.domainGridlinesVisible = true;#676,17.52001667022705
+XYAnnotation annotation = (XYAnnotation) iterator.next();#4442,17.519516608294317
+Plot parent = getParent();#806,17.51890691121419
+r[0] = new Rectangle2D.Double(Math.min(xxmin, xx),#3467,17.518620218549454
+valueAxis = getDomainAxis(axisIndex.intValue());#3820,17.517186412104852
+drawQuadrants(g2, area);#3413,17.517036861843533
+public void drawRangeTickBands(Graphics2D g2, Rectangle2D dataArea,#3577,17.516948993389423
+XYAnnotation annotation = (XYAnnotation) iterator.next();#4459,17.51367712020874
+g2.clip(dataArea);#3227,17.5130295753479
+public void setRangeGridlinesVisible(boolean visible) {#2002,17.51141028934055
+this.quadrantPaint[index] = paint;#2444,17.51137509346008
+this.domainCrosshairStroke = DEFAULT_CROSSHAIR_STROKE;#702,17.51024630974079
+this.rangeMinorGridlineStroke = stroke;#2127,17.50956258773804
+GeneralPath result = new GeneralPath(path.getWindingRule());#5816,17.50888430553934
+return this.rangeCrosshairValue;#4774,17.508088290691376
+if (!ObjectUtilities.equal(this.fixedLegendItems,#5488,17.508045586672697
+axisIndices.add(new Integer(axisIndex));#1500,17.507477045059204
+Math.abs(yy - yymin));#3514,17.50739842966983
+Line2D line = new Line2D.Double(dataArea.getMinX(), yy,#4172,17.50668003979851
+if (annotation instanceof XYAnnotationBoundsInfo) {#4443,17.50522804260254
+RectangleEdge result = Plot.resolveRangeAxisLocation(location,#1352,17.504055778185528
+RectangleEdge.LEFT);#4274,17.504044225139
+&& isDomainGridlinesVisible()) {#3888,17.503163308808297
+configureDomainAxes();#4529,17.502975023709812
+percent = -percent;#5045,17.50207437787737
+configureRangeAxes();#674,17.500203426067646
+public void setDomainZeroBaselineStroke(Stroke stroke) {#2216,17.49924614315941
+if (set.contains(item)) {#1550,17.49905356493863
+return result;#4123,17.49864214116877
+if (mappedAxes.contains(axisIndex)) {#4336,17.498014132181805
+zoomDomainAxes(factor, info, source, false);#5063,17.49756345294771
+axis.pan(percent);#5020,17.49669843249851
+private static final long serialVersionUID = 7044148245716569264L;#318,17.496484192934904
+axisIndices.add(new Integer(axisIndex));#1464,17.49562258720398
+this.rangeCrosshairPaint = paint;#4863,17.49514849980672
+RectangleEdge result = Plot.resolveDomainAxisLocation(location,#1052,17.494741837183636
+throw new IllegalArgumentException("Requires 'index' >= 0.");#1480,17.49459679921468
+return false;#5341,17.494555791219074
+paintLine = false;#3930,17.49316539764404
+r.drawDomainLine(g2, this, getDomainAxis(), area, 0.0,#3967,17.49186633614933
+markers = (ArrayList) this.foregroundRangeMarkers.get(#2918,17.491597141538346
+throw new IllegalArgumentException("Null 'paint' argument.");#1938,17.490590236805104
+"Indices must be Integer instances.");#1548,17.489890416463215
+RectangleEdge.LEFT);#3119,17.4866853837044
+Plot parent = getParent();#4409,17.486353132459854
+return result;#1296,17.485990957780317
+!= that.rangeMinorGridlinesVisible) {#5344,17.485954178704155
+setRangeAxisLocation(index, location, true);#1310,17.485018968582153
+public void setRenderer(XYItemRenderer renderer) {#1606,17.48364214897156
+throw new IllegalArgumentException("Null 'paint' argument.");#1973,17.483026928371853
+&& isDomainMinorGridlinesVisible()) {#3882,17.482580072739545
+if ((tick.getValue() != 0.0#3944,17.482371791716545
+isDomainAxis = false;#4453,17.482368168077972
+if (order == DatasetRenderingOrder.FORWARD) {#3273,17.481848120689392
+RectangleEdge.LEFT);#4208,17.481695944263087
+public void addDomainMarker(int index, Marker marker, Layer layer,#2580,17.4805756069365
+return this.domainGridlinePaint;#1922,17.48043424942914
+throw new IllegalArgumentException("Null 'stroke' argument.");#1871,17.47921030337994
+public void drawDomainTickBands(Graphics2D g2, Rectangle2D dataArea,#3542,17.479072093963623
+return this.domainTickBandPaint;#2346,17.478677166832817
+SerialUtilities.writeStroke(this.rangeMinorGridlineStroke, stream);#5614,17.478160759498333
+if (mappedAxes.contains(axisIndex)) {#4366,17.47554235458374
+markers = (ArrayList) this.foregroundDomainMarkers.get(#2679,17.474948746817454
+return this.domainPannable;#4958,17.474200010299683
+return this.domainMinorGridlinesVisible;#1823,17.47249444325765
+private transient Paint domainTickBandPaint;#544,17.47173765727452
+if (!ObjectUtilities.equal(this.domainGridlineStroke,#5389,17.471175842285156
+this.domainAxisLocations.set(0, AxisLocation.BOTTOM_OR_LEFT);#663,17.471103489398956
+if (orientation != this.orientation) {#744,17.47106466795269
+= (Collection) this.backgroundDomainMarkers.get(key);#2521,17.468979312527566
+SelectableXYDataset sd = (SelectableXYDataset) dataset;#5796,17.46701955795288
+Math.min(yymin, yy), Math.abs(xx - xxmin),#3498,17.466039799629375
+g2.setComposite(originalComposite);#3529,17.46570400238037
+else {#5096,17.462266445159912
+ValueAxis rangeAxis = getRangeAxisForDataset(i);#3335,17.462000294735557
+if (!ObjectUtilities.equal(this.rangeZeroBaselineStroke,#5433,17.459383194263165
+new Integer(index));#2591,17.45909568786621
+Math.min(yymin, yy), Math.abs(xx - xxmax),#3513,17.459018118838046
+this.rangeGridlineStroke = SerialUtilities.readStroke(stream);#5646,17.458626883370535
+if (!PaintUtilities.equal(this.domainGridlinePaint,#5393,17.45824157714844
+return this.domainZeroBaselineStroke;#2203,17.45479769455759
+this.rangeMinorGridlinePaint = paint;#2159,17.454775057340925
+renderer.drawItem(g2, state, dataArea, this,#3788,17.4546449025472
+r[1] = new Rectangle2D.Double(Math.min(xx, xxmax),#3482,17.454565275283088
+double anchorY = rangeAxis.java2DToValue(sourceY,#5169,17.45369137944402
+public void addRangeMarker(int index, Marker marker, Layer layer,#2787,17.453386624654133
+if (path.contains(x, y)) {#5773,17.452268928289413
+axisStateMap.put(axis, info);#3684,17.450603485107422
+firstItem = Math.max(itemBounds[0] - 1, 0);#3746,17.450342136880625
+space = axis.reserveSpace(g2, this, plotArea, edge, space);#3083,17.449753403663635
+r[2] = new Rectangle2D.Double(Math.min(xxmin, xx),#3497,17.448340370541526
+paintLine = true;#3942,17.447087682526686
+that.domainMinorGridlinePaint)) {#5410,17.446710109710693
+return false;#5383,17.445876693725587
+r[2] = new Rectangle2D.Double(Math.min(yymin, yy),#3492,17.445415873860203
+this.domainCrosshairValue = value;#4645,17.445045358994427
+gridStroke = getRangeMinorGridlineStroke();#3934,17.444164928637054
+return false;#5459,17.443900299072265
+this.domainMinorGridlinesVisible = false;#680,17.441309778313887
+protected void drawRangeMarkers(Graphics2D g2, Rectangle2D dataArea,#4051,17.43982521692912
+if (layer == Layer.FOREGROUND) {#4140,17.43982246186998
+result = dataset.getSeriesCount();#5234,17.439317750930787
+Collection c = r.getAnnotations();#4493,17.439045642984325
+this.renderers.set(0, renderer);#651,17.437998056411743
+throw new IllegalArgumentException("Null 'stroke' argument.");#1907,17.437993379739616
+return false;#5455,17.437128829956055
+r[0] = new Rectangle2D.Double(Math.min(yymax, yy),#3462,17.43565344810486
+SerialUtilities.writePaint(this.rangeZeroBaselinePaint, stream);#5617,17.43536917368571
+!= that.domainMinorGridlinesVisible) {#5340,17.434229462235063
+return this.seriesRenderingOrder;#1701,17.43404539893655
+this.domainZeroBaselinePaint = paint;#2252,17.43265347731741
+drawBackgroundImage(g2, area);#3414,17.432133506326114
+ValueAxis xAxis = getDomainAxis();#4002,17.43185603618622
+return result;#1057,17.431266177784313
+firstItem = Math.max(itemBounds[0] - 1, 0);#3777,17.43052101135254
+renderer.drawItem(g2, state, dataArea, this,#3757,17.430336258628152
+= (Collection) this.foregroundDomainMarkers.get(key);#2533,17.428243100643158
+return removeRangeMarker(0, marker, layer);#2877,17.42820038795471
+return false;#5337,17.425655047098797
+gridStroke = getRangeGridlineStroke();#3940,17.423864673923802
+this.rangeZeroBaselineStroke = stroke;#2305,17.42244620323181
+return (AxisLocation) this.rangeAxisLocations.get(0);#1112,17.421852662013126
+if (lastItem == -1) {#3739,17.421249736439098
+crosshairState.setCrosshairX(xx);#3355,17.413705286772355
+SerialUtilities.writeStroke(this.domainCrosshairStroke, stream);#5618,17.41146128518241
+SerialUtilities.writePaint(this.rangeMinorGridlinePaint, stream);#5615,17.41136939437301
+throw new IllegalArgumentException("Null 'stroke' argument.");#2031,17.4095800106342
+this.axisOffset = offset;#773,17.409358024597168
+this.rangeAxisLocations.set(0, AxisLocation.BOTTOM_OR_LEFT);#671,17.408687621355057
+throw new IllegalArgumentException("Null 'stroke' argument.");#4832,17.408499387594368
+throw new IllegalArgumentException("Null 'stroke' argument.");#4675,17.4074994967534
+return getDataset(0);#1369,17.407355546951294
+return this.rangeMinorGridlinePaint;#2142,17.407273292541504
+PlotOrientation orient = getOrientation();#3181,17.405750525625127
+getRangeAxisEdge());#3213,17.405295484206256
+getRenderer().fillRangeGridBand(g2, this, axis, dataArea,#3597,17.405092583762276
+rangeAxisState = (AxisState) parentState.getSharedAxisStates()#3243,17.404478391011555
+return this.domainCrosshairStroke;#4661,17.404049237569172
+clone.rangeAxisLocations = (ObjectList) ObjectUtilities.clone(#5546,17.403983006110558
+mapDatasetToDomainAxes(index, axisIndices);#1465,17.40304424451745
+this.rangeZeroBaselineVisible = false;#696,17.4027133238943
+return false;#5431,17.402415784200034
+return this.rangeZeroBaselinePaint;#2318,17.402288913726807
+sourceX = source.getY();#5090,17.401756018400192
+if (!PaintUtilities.equal(this.rangeMinorGridlinePaint,#5417,17.400834817152756
+public static final Paint DEFAULT_GRIDLINE_PAINT = Color.WHITE;#326,17.400710562001105
+fillBackground(g2, area, this.orientation);#3412,17.398385547456286
+throw new IllegalArgumentException("Null 'paint' argument.");#4861,17.397853392141837
+throw new IllegalArgumentException("Null 'paint' argument.");#2059,17.39544797826696
+if (!PaintUtilities.equal(this.rangeTickBandPaint,#5496,17.39541945090661
+Marker m = (Marker) iterator.next();#2525,17.394979774951935
+SerialUtilities.writeStroke(this.rangeZeroBaselineStroke, stream);#5616,17.39161017845417
+else {#5173,17.39091221491496
+this.rangeZeroBaselinePaint, this.rangeZeroBaselineStroke);#3984,17.39082502707457
+this.rangeTickBandPaint = paint;#2381,17.39048491026226
+Math.min(yymax, yy), Math.abs(xx - xxmin),#3468,17.389087975025177
+throw new IllegalArgumentException("Null 'stroke' argument.");#2218,17.38816576737624
+boolean foundData = false;#3271,17.387444836752756
+if (layer == Layer.FOREGROUND) {#2678,17.387422455681694
+return false;#5395,17.38695176442464
+dataset, source);#5759,17.386330723762512
+public void setDomainPannable(boolean pannable) {#4969,17.385499904030247
+space = axis.reserveSpace(g2, this, plotArea, edge, space);#3130,17.385445952415466
+return false;#5427,17.38540884653727
+RectangleEdge.RIGHT, plotState);#3682,17.385270182291666
+foundData = render(g2, dataArea, i, info, crosshairState)#3289,17.385019384111676
+= (Collection) this.foregroundRangeMarkers.get(key);#2836,17.3829747736454
+clone.rangeAxes = (ObjectList) ObjectUtilities.clone(this.rangeAxes);#5536,17.37866932551066
+gridStroke = getDomainGridlineStroke();#3889,17.378183018077504
+SerialUtilities.writeStroke(this.domainGridlineStroke, stream);#5608,17.378175360815867
+zoomRangeAxes(factor, info, source, false);#5139,17.378135136195592
+this.domainMinorGridlinePaint = Color.white;#682,17.37781742640904
+SerialUtilities.writeStroke(this.rangeCrosshairStroke, stream);#5620,17.37772195679801
+clone.quadrantOrigin = (Point2D) ObjectUtilities.clone(#5592,17.377244491577148
+RectangleEdge.BOTTOM);#4237,17.375583035605295
+ValueAxis yAxis = getRangeAxis();#4003,17.37538754940033
+= (Collection) this.backgroundRangeMarkers.get(key);#2824,17.374723157575055
+return this.domainZeroBaselineVisible;#2174,17.374126434326172
+state.startSeriesPass(dataset, series, firstItem,#3749,17.373976707458496
+state.startSeriesPass(dataset, series, firstItem,#3780,17.373976707458496
+that.domainZeroBaselinePaint)) {#5422,17.37333235373864
+this.quadrantPaint = new Paint[4];#5661,17.373325681686403
+return false;#5415,17.37175833384196
+return true;#5221,17.370578505776145
+return false;#5475,17.37031192779541
+return false;#5411,17.37002684275309
+this.rangeCrosshairPaint = DEFAULT_CROSSHAIR_PAINT;#708,17.36896302964952
+Math.abs(yy - yymin));#3499,17.367862400255706
+drawDomainTickBands(g2, dataArea, domainAxisState.getTicks());#3248,17.36725860483506
+if (!ObjectUtilities.equal(this.rangeCrosshairStroke,#5445,17.366898307800295
+if (renderer == null) { // no default renderer available#3721,17.365879821777344
+this.domainCrosshairPaint = DEFAULT_CROSSHAIR_PAINT;#703,17.36568581616437
+throw new IllegalArgumentException("Null 'paint' argument.");#2331,17.36363908979628
+public void setDomainGridlinesVisible(boolean visible) {#1805,17.363578213585747
+Rectangle2D plotArea,#3055,17.361964191709244
+Rectangle2D plotArea,#3102,17.3613432450728
+if (getOrientation() == PlotOrientation.HORIZONTAL) {#4232,17.36080595425197
+setRangeAxis(i, axes[i], false);#1230,17.360685691833496
+r[3] = new Rectangle2D.Double(Math.min(xx, xxmax),#3512,17.35993106024606
+crosshairState.setAnchorY(Double.NaN);#3193,17.357831830563754
+this.renderers.set(index, renderer);#1639,17.35440945625305
+Marker m = (Marker) iterator.next();#2828,17.35384249687195
+if (renderer != null) {#5697,17.353486680984496
+return false;#5463,17.353032302856445
+return false;#5399,17.353013674418133
+throw new IllegalArgumentException("Null 'orientation' argument.");#742,17.352464428654425
+percent = -percent;#5018,17.349452926999046
+domainAxisState = (AxisState) parentState.getSharedAxisStates()#3235,17.348662694295246
+return false;#5345,17.34757277170817
+this.annotations.add(annotation);#2961,17.34692456987169
+boolean removed = this.annotations.remove(annotation);#2997,17.34524835859026
+this.rangeGridlinePaint = SerialUtilities.readPaint(stream);#5647,17.34483968294584
+insets.trim(area);#3167,17.344015657901764
+return false;#5451,17.343441009521484
+RectangleEdge.RIGHT);#3121,17.3432525204074
+SerialUtilities.writeStroke(this.domainMinorGridlineStroke, stream);#5612,17.343004095143286
+fillBand = !fillBand;#3593,17.341989724532418
+throw new IllegalArgumentException("Null 'paint' argument.");#2157,17.341310289171005
+return result;#1386,17.340259205211293
+Math.min(xxmax, xx), Math.abs(yy - yymax),#3478,17.33955795206922
+return false;#5435,17.339217694600425
+return;  // OK#1537,17.339209276087143
+this.rangeAxisLocations.set(index, location);#1334,17.338059121912178
+rangeAxis.resizeRange2(factor, anchorY);#5171,17.337225324967328
+double yy = axis.valueToJava2D(value, dataArea,#4207,17.334116184350215
+ValueAxis rangeAxis,#618,17.333397674560548
+return true;#5209,17.333139939741656
+if (this.domainGridlinesVisible != that.domainGridlinesVisible) {#5333,17.332506091506392
+return false;#5467,17.332473055521646
+previous, current);#3590,17.331502228975296
+SerialUtilities.writePaint(this.domainGridlinePaint, stream);#5609,17.331370793856106
+r[1] = new Rectangle2D.Double(Math.min(yymax, yy),#3477,17.331251166083597
+addRangeMarker(index, marker, layer, true);#2770,17.331188792274112
+public void setRangeZeroBaselineVisible(boolean visible) {#2277,17.33085617266203
+double anchorX = domainAxis.java2DToValue(sourceX,#5092,17.33019205041834
+drawAnnotations(g2, dataArea, info);#3397,17.329636907577516
+throw new IllegalArgumentException(#1331,17.329141917981598
+return false;#5479,17.328477668762208
+double yy = axis.valueToJava2D(value, dataArea,#4273,17.327151529716723
+throw new IllegalArgumentException("Null 'stroke' argument.");#2303,17.32643046745887
+this.rangeMinorGridlineStroke = SerialUtilities.readStroke(stream);#5650,17.326084827554638
+throw new IllegalArgumentException("Null 'paint' argument.");#4704,17.32570531633165
+this.domainGridlineStroke = stroke;#1873,17.32531055651213
+return this.rangeCrosshairPaint;#4848,17.32478136174819
+return false;#5494,17.3245875676473
+if (this.domainCrosshairLockedOnData#5359,17.324539887277705
+Integer key = (Integer) iterator.next();#2501,17.324141135582558
+throw new IllegalArgumentException("Null 'stroke' argument.");#2125,17.32396521935096
+return false;#5423,17.323781140645345
+gridPaint, gridStroke);#3897,17.323480992703825
+r[3] = new Rectangle2D.Double(Math.min(yymin, yy),#3507,17.323014214981434
+throw new IllegalArgumentException("Null 'paint' argument.");#2250,17.322973745840567
+double yymax = yAxis.valueToJava2D(ymax, area, getRangeAxisEdge());#3456,17.322625777300665
+return this.domainCrosshairValue;#4619,17.31982183456421
+getRenderer().fillDomainGridBand(g2, this, xAxis, dataArea,#3554,17.317888555072603
+throw new IllegalArgumentException("Null 'order' argument.");#1687,17.315016196324276
+return this.rangeCrosshairLockedOnData;#4747,17.31488463753148
+return false;#5447,17.313919512430825
+if (layer == Layer.FOREGROUND) {#2917,17.313667827182346
+Stroke stroke = getDomainCrosshairStroke();#3361,17.311849037806194
+g2.setStroke(stroke);#4278,17.311258619481865
+public void draw(Graphics2D g2, Rectangle2D area, Point2D anchor,#3150,17.31117938995361
+addAnnotation(annotation, true);#2945,17.310905568739948
+getRenderer().fillRangeGridBand(g2, this, axis, dataArea,#3589,17.307713055610655
+return false;#5407,17.30581143697103
+clone.fixedDomainAxisSpace = (AxisSpace) ObjectUtilities.clone(#5581,17.304558784730972
+Math.min(yymax, yy), Math.abs(xx - xxmax),#3483,17.304087181886036
+if (!ObjectUtilities.equal(this.domainCrosshairStroke,#5437,17.302143592834472
+return removeDomainMarker(0, marker, layer);#2641,17.301637172698975
+that.quadrantPaint[i])) {#5505,17.300074177403605
+isDomainAxis = true;#4435,17.29869606620387
+return false;#5419,17.298625628153484
+Layer.BACKGROUND, info);#3283,17.296935163225445
+if (!PaintUtilities.equal(this.domainCrosshairPaint,#5441,17.29688259124756
+new Integer(index));#2801,17.296579093933104
+return false;#5471,17.29504852294922
+return false;#5403,17.295005480448406
+RectangleEdge.BOTTOM);#3074,17.292438209056854
+if (!ObjectUtilities.equal(this.domainZeroBaselineStroke,#5425,17.287922859191895
++ " out of bounds.");#3839,17.287613692107023
+return this.domainAxes.size();#945,17.287105335908777
+this.rangeCrosshairStroke = stroke;#4834,17.285089141444157
+if (!this.domainAxes.equals(that.domainAxes)) {#5323,17.28464022049537
+protected void drawDomainMarkers(Graphics2D g2, Rectangle2D dataArea,#4018,17.284361124038696
++ " out of bounds.");#3812,17.283056082548917
+result = RectangleEdge.opposite(getDomainAxisEdge());#1055,17.282847298516167
+if (!ObjectUtilities.equal(this.domainMinorGridlineStroke,#5405,17.280974718240593
+if (this.orientation == PlotOrientation.HORIZONTAL) {#5089,17.280833635574734
+if (getOrientation() == PlotOrientation.HORIZONTAL) {#4167,17.279881681714738
+throw new IllegalArgumentException(#1032,17.278572986000462
+addDomainMarker(index, marker, layer, true);#2562,17.278432301112584
+Stroke stroke = getRangeCrosshairStroke();#3382,17.27641451358795
+dataArea.getMaxX(), yy);#4173,17.27623268763224
+if (!PaintUtilities.equal(this.domainZeroBaselinePaint,#5421,17.27497618014996
+public boolean removeDomainMarker(int index, Marker marker, Layer layer,#2675,17.27298859187535
+clone.quadrantPaint = (Paint[]) this.quadrantPaint.clone();#5594,17.272894563346075
+this.domainZeroBaselinePaint,#3968,17.271580663220636
+this.rangePannable = pannable;#4994,17.27153035214073
+public void setRangeMinorGridlinesVisible(boolean visible) {#2092,17.270596303437884
+return false;#5439,17.268804677327473
+return false;#5443,17.268319193522135
+this.domainMinorGridlinePaint = paint;#1975,17.267365154467132
+return result;#1357,17.267338145862926
+return false;#5357,17.26664129892985
+info.getDataArea(), getRangeAxisEdge());#5170,17.260836911201476
+new Integer(index));#2792,17.259485664367677
+if (!ObjectUtilities.equal(this.renderers, that.renderers)) {#5372,17.258597621211297
+DatasetUtilities.findDomainBounds(d));#4480,17.25799297756619
+RectangleInsets insets = getInsets();#3166,17.257205561587686
+return removeRangeMarker(index, marker, layer, true);#2894,17.255827166817404
+return this.domainCrosshairVisible;#4564,17.25393996519201
+if (this.orientation == PlotOrientation.HORIZONTAL) {#5166,17.252667622688488
+return this.domainMinorGridlinePaint;#1955,17.25256723827786
+this.domainCrosshairPaint = paint;#4706,17.252468480004204
+mappedDatasets.addAll(getDatasetsMappedToRangeAxis(#4454,17.25134741875433
+throw new IllegalArgumentException("Null 'order' argument.");#1716,17.249821516183708
+SerialUtilities.writePaint(this.rangeCrosshairPaint, stream);#5621,17.248951765207146
+public XYItemRenderer getRenderer(int index) {#1588,17.248930730317767
+drawDomainMarkers(g2, dataArea, i, Layer.BACKGROUND);#3264,17.24780314763387
+XYItemRenderer r = getRenderer(i);#3310,17.246168486277263
+e.setType(ChartChangeEventType.DATASET_UPDATED);#4536,17.24490416844686
+Integer key = (Integer) iterator.next();#2747,17.243053986476017
+item);#3786,17.241983640761603
+return false;#5391,17.241841761271157
+return false;#5387,17.241458320617674
+this.domainZeroBaselineStroke = stroke;#2220,17.240247869491576
+return (AxisLocation) this.domainAxisLocations.get(0);#893,17.240061943347637
+if (!PaintUtilities.equal(this.domainTickBandPaint,#5492,17.23942573253925
+this.datasetRenderingOrder = order;#1689,17.239180850982667
+if (this.domainCrosshairVisible != that.domainCrosshairVisible) {#5353,17.23732038780495
+if (this.domainZeroBaselineVisible != that.domainZeroBaselineVisible) {#5347,17.23582729799994
+return getDomainMarkers(0, layer);#4084,17.234801451365154
+yy = yAxis.java2DToValue(anchor.getY(), dataArea, yAxisEdge);#3372,17.2343429299288
+public void setDomainZeroBaselineVisible(boolean visible) {#2188,17.233835019563372
+this.orientation = PlotOrientation.VERTICAL;#623,17.229447251274472
+sourceY = source.getX();#5167,17.228845715522766
+return removeAnnotation(annotation, true);#2979,17.22777885860867
+this.backgroundRangeMarkers);#5578,17.226644847704016
+Layer.BACKGROUND, info);#3318,17.22649211883545
+this.rangeCrosshairStroke = SerialUtilities.readStroke(stream);#5656,17.22468328475952
+boolean removed = markers.remove(marker);#2928,17.22308572133382
+previous, current);#3555,17.222352921962738
+Rectangle2D dataArea,#3616,17.22116823757396
+rangeAxis.setPlot(this);#668,17.220574378967285
+XYItemRenderer renderer = getRenderer(index);#3718,17.21970353303132
+domainAxis.setPlot(this);#660,17.219311078389484
+clone.rangeAxes.set(i, clonedAxis);#5541,17.219051330320298
+this.rangeZeroBaselineStroke = SerialUtilities.readStroke(stream);#5652,17.218230675006733
+line = new Line2D.Double(dataArea.getMinX(), yy,#4209,17.21577238355364
+foundData = render(g2, dataArea, i, info, crosshairState)#3323,17.21511720929827
+info.getDataArea(), getDomainAxisEdge());#5093,17.21373646259308
+g2.setPaint(paint);#4279,17.213353980671275
+g2.setStroke(stroke);#4212,17.212368835102428
+x = domainAxis.java2DToValue(anchor.getY(), dataArea,#3203,17.21216720488013
+drawRangeMarkers(g2, dataArea, i, Layer.BACKGROUND);#3267,17.210856437683105
+this.rangeMinorGridlinePaint = SerialUtilities.readPaint(stream);#5651,17.208467766090674
+dataArea.getMaxY());#4239,17.20845928898564
+XYItemRenderer r = getRenderer(i);#3329,17.208338324228922
+this.domainGridlineStroke = SerialUtilities.readStroke(stream);#5644,17.20706980569022
+clone.fixedRangeAxisSpace = (AxisSpace) ObjectUtilities.clone(#5585,17.204939073131932
+result = (Collection) this.backgroundRangeMarkers.get(key);#4144,17.20441143853324
+item);#3755,17.203652450016566
+result = Range.combine(result, r.findRangeBounds(d));#4485,17.202827680678595
+return false;#5490,17.201435216267903
+setRangeCrosshairValue(value, true);#4788,17.200369358062744
+SerialUtilities.writePaint(this.domainMinorGridlinePaint, stream);#5613,17.199353995146573
+this.domainMinorGridlineStroke = stroke;#1909,17.199290418624877
+setDomainAxis(i, axes[i], false);#880,17.198883476257325
+datasetChanged(event);#1422,17.197505657489483
+throw new IllegalArgumentException("The index value (" + index#2424,17.197250061035156
+public void drawAnnotations(Graphics2D g2,#3995,17.196884393692017
+return;#3869,17.19441536494664
+return this.domainCrosshairPaint;#4691,17.191533846013687
+return false;#5334,17.189719009399415
+return this.domainZeroBaselinePaint;#2235,17.189523220062256
+this.domainAxisLocations.set(index, location);#1035,17.18931883031672
+boolean removed = markers.remove(marker);#2689,17.18670103285048
+SerialUtilities.writePaint(this.rangeTickBandPaint, stream);#5623,17.18620236714681
+return;#3918,17.185454164232528
+SerialUtilities.writePaint(this.domainCrosshairPaint, stream);#5619,17.184935789841873
+Layer.FOREGROUND, info);#3300,17.184803989955356
+result = (Collection) this.backgroundDomainMarkers.get(key);#4118,17.184473787035262
+if (layer == Layer.FOREGROUND) {#2589,17.182189517551
+getRangeAxisEdge());#3217,17.179303646087646
+return false;#5331,17.17875124613444
+stream.defaultReadObject();#5643,17.176584311894008
+= DEFAULT_GRIDLINE_STROKE;#333,17.175782521565754
+this.rangeZeroBaselinePaint = Color.black;#697,17.17464678628104
+PublicCloneable, Serializable {#315,17.174413323402405
+return foundData;  // can't render anything without axes#3716,17.170354536601476
+stream.defaultWriteObject();#5607,17.167930603027344
+result = Range.combine(result, r.findDomainBounds(d));#4476,17.167853627886092
+crosshairState.setAnchorX(x);#3206,17.16762948036194
+Marker marker = (Marker) iterator.next();#4035,17.16556351525443
+Math.abs(yy - yymax));#3469,17.163276396299665
+lastItem, pass, passCount);#3762,17.163213443756103
+return false;#5327,17.163014539082845
+fireChangeEvent();#2358,17.162845849990845
+if (!PaintUtilities.equal(this.quadrantPaint[i],#5504,17.16233428319295
+setDomainCrosshairValue(value, true);#4631,17.16085884306166
+public void setRenderer(int index, XYItemRenderer renderer,#1633,17.16032496365634
+clone.domainAxes.set(i, clonedAxis);#5528,17.157451998802923
+return this.fixedLegendItems;#5247,17.157021776835123
+return getRangeMarkers(0, layer);#4097,17.15557294421726
+if (!PaintUtilities.equal(this.domainMinorGridlinePaint,#5409,17.15405251429631
+result = RectangleEdge.opposite(getRangeAxisEdge());#1355,17.154031259042245
+fireChangeEvent();#2382,17.149844566981
+XYItemRenderer renderer2 = (XYItemRenderer) this.renderers.get(i);#5565,17.149305884902542
+this.domainMinorGridlineStroke = SerialUtilities.readStroke(stream);#5648,17.14890618159853
+Math.abs(yy - yymax));#3484,17.146848728782253
+public void setDomainMinorGridlinesVisible(boolean visible) {#1839,17.146046889455693
+boolean foundData = false;#3709,17.14555467878069
+return false;#5351,17.143916447957356
+if (renderer.isSeriesVisible(i)#5287,17.143279314041138
+Marker m = (Marker) iterator.next();#2537,17.142778247594833
+!= that.rangeCrosshairLockedOnData) {#5330,17.142519439969742
+fireChangeEvent();#882,17.142053206761677
+XYItemRenderer r = getRenderer(i);#3295,17.14092798233032
+return false;#5348,17.139918009440105
+line = new Line2D.Double(dataArea.getMinX(), yy,#4275,17.13966781071254
+paintLine = true;#3891,17.13853805541992
+return removeDomainMarker(index, marker, layer, true);#2658,17.137761809609152
+fillBand = !fillBand;#3558,17.137469042902406
+return false;#5486,17.136916478474934
+this.domainZeroBaselineVisible = false;#684,17.13582952399003
+XYItemRenderer renderer = getRenderer(datasetIndex);#5280,17.13442387300379
+fireChangeEvent();#3025,17.134079933166504
+return result;#1593,17.132982514121316
+xx = xAxis.java2DToValue(anchor.getX(), dataArea, xAxisEdge);#3350,17.132201875959122
+if (layer == Layer.FOREGROUND) {#2790,17.131615585751003
+axis.setPlot(this);#5675,17.127996693486754
+this.orientation);#934,17.127505711146764
+annotation.draw(g2, this, dataArea, xAxis, yAxis, 0, info);#4004,17.12736980120341
+this.rangeZeroBaselinePaint = SerialUtilities.readPaint(stream);#5653,17.12580246395535
+return false;#5373,17.125577227274576
+getDomainAxisEdge());#4300,17.125238958994547
+dataArea.getHeight());#3641,17.122145132585004
+result = (Collection) this.foregroundDomainMarkers.get(key);#4115,17.121922492980957
+SerialUtilities.writePoint2D(this.quadrantOrigin, stream);#5624,17.11985054016113
+new Integer(index));#2600,17.119513244628905
+XYItemRenderer result = null;#1589,17.11899611529182
+setFixedRangeAxisSpace(space, true);#4928,17.115416878148128
+if (!this.domainAxisLocations.equals(that.domainAxisLocations)) {#5326,17.11433288256327
+domainAxis.resizeRange2(factor, anchorX);#5094,17.114199357874252
+Selectable, Zoomable, RendererChangeListener, Cloneable,#314,17.113185839219526
+return false;#5379,17.113125165303547
+boolean selected = false;#3783,17.11299312475956
+fireChangeEvent();#1232,17.112966855367024
+fireChangeEvent();#2334,17.10916233062744
+throw new IllegalArgumentException("Indices must be unique.");#1551,17.109094842274985
+g2.setPaint(paint);#4213,17.108806956898082
+drawZeroRangeBaseline(g2, dataArea);#3259,17.10876949628194
+fireChangeEvent();#1779,17.105921904246014
+gridStroke = getDomainMinorGridlineStroke();#3883,17.10542625539443
+this.seriesRenderingOrder = order;#1718,17.104850610097248
+return false;#5376,17.104659271240234
+this.rangeCrosshairVisible = false;#705,17.10378975338406
+drawOutline(g2, dataArea);#3401,17.10245376163059
+clone.foregroundDomainMarkers = (Map) ObjectUtilities.clone(#5571,17.10081283569336
+result = (Collection) this.foregroundRangeMarkers.get(key);#4141,17.10052750028413
+this.annotations.clear();#3024,17.098638852437336
+throw new IllegalArgumentException("Index " + index#3811,17.098571984664254
+axis.setPlot(this);#5683,17.098168290179707
+this.domainTickBandPaint = paint;#2357,17.09749688600239
+SerialUtilities.writePaint(this.domainTickBandPaint, stream);#5622,17.09597690017135
+g2.setStroke(stroke);#4240,17.09567707235163
+this.foregroundRangeMarkers);#5576,17.095537384351093
+markers = new java.util.ArrayList();#2593,17.0944960300739
+clone.foregroundRangeMarkers = (Map) ObjectUtilities.clone(#5575,17.093504219055177
+fireChangeEvent();#1661,17.0921630859375
+XYPlot xy = (XYPlot) parent;#808,17.09210459391276
+XYItemRenderer r = getRenderer(i);#3278,17.090171178181965
+getRenderer().drawRangeLine(g2, this, getRangeAxis(), area, 0.0,#3983,17.08951983580718
+this.orientation);#1152,17.088315600440616
+public XYItemRenderer getRenderer() {#1575,17.08812040090561
+this.foregroundDomainMarkers.put(new Integer(index), markers);#2594,17.087435548955742
+return false;#5354,17.08737939198812
+this.foregroundDomainMarkers);#5572,17.086564699808758
+this.domainCrosshairStroke = SerialUtilities.readStroke(stream);#5654,17.085828372410365
+throw new IllegalArgumentException("Index " + index#3838,17.085086242012355
+xx = xAxis.java2DToValue(anchor.getY(), dataArea, xAxisEdge);#3353,17.083089351654053
+clone.domainAxisLocations = (ObjectList)#5533,17.081760931015015
+return super.equals(obj);#5509,17.08151924610138
+result = AxisLocation.getOpposite(getDomainAxisLocation());#994,17.079108273541486
+fireChangeEvent();#962,17.079089164733887
+renderer.setPlot(this);#653,17.077827215194702
+this.backgroundDomainMarkers);#5574,17.074394765107527
+r.drawAnnotations(g2, dataArea, domainAxis, rangeAxis,#3299,17.073417520523073
+this.domainZeroBaselineStroke);#3969,17.069969685872397
+rangeAxis.addChangeListener(this);#669,17.06984923102639
+result = (XYDataset) this.datasets.get(index);#1384,17.06239964167277
+fireChangeEvent();#4835,17.06233024597168
+axis.addChangeListener(this);#1098,17.061074686050414
+if (result == null) {#1748,17.059613435164742
+int[] itemBounds = RendererUtilities.findLiveItems(#3743,17.05878357554591
+boolean selected = false;#3752,17.05467972610936
+y = rangeAxis.java2DToValue(anchor.getY(), dataArea,#3212,17.053822936081303
+fireChangeEvent();#2160,17.052794535954792
+selected, pass);#3790,17.05071222782135
+dataArea.getMaxX(), yy);#4210,17.04810282763313
+XYPlot xy = (XYPlot) parent;#1172,17.047164033960414
+space = new AxisSpace();#3106,17.04216464360555
+this.rangeAxes.clear();#1259,17.041758120059967
+Marker m = (Marker) iterator.next();#2840,17.041415065526962
+Rectangle2D dataArea,#3996,17.040691253466484
+this.domainGridlinePaint = SerialUtilities.readPaint(stream);#5645,17.038205220149113
+x = domainAxis.java2DToValue(anchor.getX(), dataArea,#3199,17.038159370422363
+drawNoDataMessage(g2, dataArea);#3387,17.03553456845491
+mappedDatasets.addAll(getDatasetsMappedToDomainAxis(#4436,17.034535623365834
+setFixedDomainAxisSpace(space, true);#4887,17.03294196881746
+this.domainCrosshairStroke = stroke;#4677,17.032343061346758
+getRenderer().drawRangeLine(g2, this, getRangeAxis(),#3946,17.031869777413302
+axis = getRangeAxis();#4233,17.031174860502546
+gridPaint = getRangeMinorGridlinePaint();#3935,17.02923819753859
+space = new AxisSpace();#3059,17.028373135460747
+state.endSeriesPass(dataset, series, firstItem,#3792,17.027024049025314
+fireChangeEvent();#2062,17.02612280845642
+renderer.setPlot(this);#1641,17.024252223968507
+fireChangeEvent();#2034,17.022866090138752
+throw new IllegalArgumentException("The index value (" + index#2441,17.022441940307615
+XYItemRenderer result = null;#1744,17.021212690016803
+fireChangeEvent();#4678,17.020841042200725
+fireChangeEvent();#2128,17.018628199895222
+fireChangeEvent();#1874,17.016926924387615
+fireChangeEvent();#2410,17.0164471467336
+this.domainCrosshairPaint = SerialUtilities.readPaint(stream);#5655,17.014552409832294
+domainAxis.addChangeListener(this);#661,17.01368167183616
+renderer = getRenderer();#3720,17.013599356015522
+this.rangeCrosshairPaint = SerialUtilities.readPaint(stream);#5657,17.01305026274461
+Marker marker = (Marker) iterator.next();#4068,17.00995465687343
+this.domainZeroBaselinePaint = Color.black;#685,17.007388432820637
+this.domainMinorGridlinePaint = SerialUtilities.readPaint(stream);#5649,17.00650261066578
+result.closePath();#5835,17.004722958519345
+XYItemRenderer r = getRendererForDataset(d);#4473,17.004576458650476
+state.endSeriesPass(dataset, series, firstItem,#3761,17.00255305950458
+fireChangeEvent();#2306,17.001319726308186
+fireChangeEvent();#1260,17.00009552637736
+clearRangeMarkers(key.intValue());#2739,16.99806415117704
+this.domainPannable = pannable;#4970,16.995726836355107
+fireChangeEvent();#1976,16.994863748550415
+fireChangeEvent();#1941,16.993369102478027
+configureDomainAxes();#673,16.99313919360821
+result = AxisLocation.getOpposite(getRangeAxisLocation());#1294,16.991252545957213
+fireChangeEvent();#1690,16.990613619486492
+markers = new java.util.ArrayList();#2794,16.989534561450665
+this.domainTickBandPaint = SerialUtilities.readPaint(stream);#5658,16.986299867983217
+fireChangeEvent();#2221,16.98599322636922
+dataArea.getMaxX(), yy);#4276,16.985484712264117
+return this.orientation;#729,16.984153270721436
+fireChangeEvent();#5261,16.981009483337402
+XYItemRenderer r = getRenderer();#3893,16.98028152329581
+r.drawAnnotations(g2, dataArea, domainAxis, rangeAxis,#3282,16.979906511306762
+foundData = true;#3712,16.977892314686496
+this.rangeTickBandPaint = SerialUtilities.readPaint(stream);#5659,16.976658044037997
+markers.add(marker);#2797,16.975987986514443
+gridPaint = getDomainGridlinePaint();#3890,16.97420766276698
+crosshairState.setAnchorX(Double.NaN);#3192,16.972476834836215
+return space;#3042,16.971982175653633
+return this.domainCrosshairLockedOnData;#4592,16.971841209813167
+fireChangeEvent();#774,16.969789107640583
+return this.quadrantPaint[index];#2427,16.969354258643257
+result = (ValueAxis) this.rangeAxes.get(index);#1167,16.967424688668086
+markers.add(marker);#2596,16.966426297237998
+gridPaint = getDomainMinorGridlinePaint();#3884,16.96620410680771
+Layer.FOREGROUND, info);#3337,16.963726779392786
+fireChangeEvent();#2846,16.96255660057068
+continue;#5756,16.96235105726454
+return removed;#3001,16.960438208146527
+clone.renderers = (ObjectList) ObjectUtilities.clone(this.renderers);#5563,16.9602233341762
+continue;#3740,16.95950543085734
+fireChangeEvent();#4864,16.95785657564799
+g2.setStroke(stroke);#4174,16.957032333720814
+fireChangeEvent();#2190,16.956476370493572
+fireChangeEvent();#1910,16.955116907755535
+axis.addChangeListener(this);#863,16.95457515716553
+fireChangeEvent();#1100,16.95118037859599
+axis.addChangeListener(this);#1213,16.948393154144288
+return false;#5321,16.947370084126792
+markers = new java.util.ArrayList();#2803,16.946192888113167
+g2.setPaint(paint);#4241,16.943401770158246
+continue;#5042,16.942769951290554
+fireChangeEvent();#2279,16.931865692138672
+getRenderer().fillDomainGridBand(g2, this, xAxis, dataArea,#3562,16.930255739312422
+r.drawRangeMarker(g2, this, axis, marker, dataArea);#4069,16.926558603559222
+return false;#5483,16.926195526123045
+LegendItem item = renderer.getLegendItem(#5289,16.92503435183794
+XYItemRenderer renderer = (XYItemRenderer) this.renderers.get(i);#5696,16.9238535033332
+return false;#5367,16.921092987060547
+= DatasetRenderingOrder.REVERSE;#560,16.91968837738037
+if (item != null) {#5291,16.918610082353865
+this.orientation);#1353,16.918189003354026
+fireChangeEvent();#2253,16.91642888387044
+return removed;#2693,16.915582916953348
+notifyListeners(e);#4537,16.91308863957723
+return this.renderers.size();#1565,16.911297082901
+clearDomainMarkers(key.intValue());#2493,16.91034408716055
+gridPaint = getRangeGridlinePaint();#3941,16.908182825360978
+result = (ValueAxis) this.domainAxes.get(index);#803,16.907526377973884
+DatasetUtilities.findRangeBounds(d));#4489,16.90729037390815
+this.quadrantOrigin = SerialUtilities.readPoint2D(stream);#5660,16.906934280395507
+yy = yAxis.java2DToValue(anchor.getX(), dataArea, yAxisEdge);#3374,16.905609042145485
+domainAxis.zoomRange(lowerPercent, upperPercent);#5122,16.90551691055298
+return false;#5370,16.90484078725179
+y = rangeAxis.java2DToValue(anchor.getX(), dataArea,#3216,16.90353719199576
+return removed;#2932,16.90152983231978
+this.domainCrosshairVisible = false;#700,16.900420665740967
+this.fixedDomainAxisSpace);#5582,16.900106940950668
+this.fixedLegendItems = items;#5260,16.897990703582764
+fireChangeEvent();#4707,16.89717109998067
+rangeAxis.zoomRange(lowerPercent, upperPercent);#5195,16.895750459035238
+return false;#5361,16.89476350148519
+fireChangeEvent();#1719,16.893388350804646
+lastItem, pass, passCount);#3793,16.89041907787323
+this.orientation);#1053,16.8848420551845
+axis.configure();#862,16.882303574505976
+BasicStroke.CAP_BUTT, BasicStroke.JOIN_BEVEL, 0.0f,#322,16.87476406599346
+fireChangeEvent();#4553,16.874677975972492
+rangeAxis.resizeRange(factor);#5174,16.872521273295085
+crosshairState.setAnchorY(y);#3219,16.87182835170201
+axis.configure();#1212,16.869900703430176
+this.domainZeroBaselinePaint = SerialUtilities.readPaint(stream);#5667,16.867956797281902
+this.foregroundRangeMarkers.put(new Integer(index), markers);#2795,16.86709331743645
+this.backgroundRangeMarkers.put(new Integer(index), markers);#2804,16.86648142337799
+return this.renderers.indexOf(renderer);#1731,16.86431031227112
+r.drawDomainMarker(g2, this, axis, marker, dataArea);#4036,16.864258766174316
+continue;#5761,16.85997242397732
+PublicCloneable pc = (PublicCloneable) renderer2;#5567,16.858643114566803
+fireChangeEvent();#2752,16.85771640141805
+this.quadrantOrigin);#5593,16.85659473592585
+return false;#5364,16.853844706217448
+fireChangeEvent();#2506,16.85381015141805
+g2.setPaint(paint);#4175,16.852911602367055
+return false;#5324,16.851994705200195
+getParent().datasetChanged(event);#4532,16.847464994950727
+clone.domainAxes = (ObjectList) ObjectUtilities.clone(this.domainAxes);#5523,16.840751202901206
+this.rangeCrosshairVisible = flag;#4733,16.839357939633455
+g2.draw(line);#4214,16.838719066820648
+this.domainZeroBaselineStroke = SerialUtilities.readStroke(stream);#5666,16.834332071501635
+markers = new java.util.ArrayList();#2602,16.829277001894436
+XYPlot p = (XYPlot) parent;#4389,16.827662614675667
+clonedAxis.setPlot(clone);#5542,16.826923370361328
+return this.fixedLegendItems;#5273,16.82484049546091
+clonedAxis.setPlot(clone);#5529,16.822271457085243
+!= that.domainCrosshairLockedOnData) {#5360,16.814285039901733
+return false;#5318,16.81360003153483
+this.backgroundDomainMarkers.put(new Integer(index), markers);#2603,16.810746788978577
+axisCollection.add(axis, getDomainAxisEdge(index));#3625,16.81066285410235
+somethingToDraw = true;#3501,16.809317978945646
+setRenderer(index, renderer, true);#1620,16.797288131713866
+int[] itemBounds = RendererUtilities.findLiveItems(#3774,16.79603179665499
+selected = selectionState.isSelected(series,#3785,16.795719745547274
+fireChangeEvent();#2445,16.793530066808064
+lastItem = Math.min(itemBounds[1] + 1, lastItem);#3747,16.788186682031508
+lastItem = Math.min(itemBounds[1] + 1, lastItem);#3778,16.788186682031508
+return getRenderer(0);#1576,16.784584164619446
+somethingToDraw = true;#3486,16.78396602110429
+axis = getDomainAxis();#4168,16.7711215270193
+g2.draw(line);#4280,16.770450742621172
+fireChangeEvent();#2543,16.76979374885559
+return false;#5314,16.765277926127116
+setRenderer(0, renderer);#1607,16.764146857791477
+somethingToDraw = true;#3471,16.763616821982644
+this.rangeZeroBaselineVisible = visible;#2278,16.758901395295794
+renderer = getRenderer(0);#5282,16.75781799952189
+r.drawAnnotations(g2, dataArea, domainAxis, rangeAxis,#3317,16.755878949165343
+result = (XYItemRenderer) this.renderers.get(i);#1747,16.754517667433795
+public void setRenderers(XYItemRenderer[] renderers) {#1657,16.754454794384184
+XYDatasetSelectionState selState = axyd.getSelectionState();#5857,16.75110799838335
+getDomainAxis());#3232,16.746875172569638
+dataset, info);#3727,16.74643810590108
+XYPlot p = (XYPlot) parent;#4411,16.739752072554367
+selected = selectionState.isSelected(series,#3754,16.735456666281056
+this.rangeCrosshairLockedOnData = flag;#4761,16.73189425468445
+result = (AxisLocation) this.rangeAxisLocations.get(index);#1291,16.73106796510758
+r.drawAnnotations(g2, dataArea, domainAxis, rangeAxis,#3336,16.729294729232787
+dataset.addChangeListener(this);#648,16.72882213592529
+domainAxis.resizeRange(factor);#5097,16.720839754740396
+valueAxis = getRangeAxis(0);#3850,16.720385468524434
+axis.setPlot(this);#1086,16.718042273270456
+SerialUtilities.writePaint(this.domainZeroBaselinePaint, stream);#5629,16.715956864533602
+return;#5036,16.715644223349436
+result = p.getDomainAxisIndex(axis);#4390,16.711890629359655
+drawDomainMarkers(g2, dataArea, i, Layer.FOREGROUND);#3391,16.710981178283692
+return false;#5498,16.70976842244466
+XYDatasetSelectionState s = sd.getSelectionState();#5797,16.701745952878678
+this.rangeGridlinesVisible = visible;#2004,16.701501759615812
+RectangleEdge edge = getDomainAxisEdge(i);#3082,16.69952155604507
+axisCollection.add(yAxis, getRangeAxisEdge(index));#3633,16.69311387611158
+addRangeMarker(marker, Layer.FOREGROUND);#2708,16.68725486028762
+this.domainAxes.clear();#961,16.68320369720459
+result = Collections.unmodifiableCollection(result);#4147,16.682153121284816
+SerialUtilities.writeStroke(this.domainZeroBaselineStroke, stream);#5628,16.681287962814856
+result.add(this.datasets.get(i));#4362,16.676865745993222
+result.add(this.datasets.get(i));#4332,16.66799295649809
+return foundData;#3722,16.667210340499878
+continue;#5015,16.66528919008043
+existing.removeChangeListener(this);#1637,16.663813591003418
+RectangleEdge edge = getRangeAxisEdge(i);#3129,16.66092650095622
+previous, end);#3598,16.655354942594254
+return;#3441,16.65452766418457
+return;#4023,16.65376145499093
+return;#5009,16.64237798963274
+result = (AxisLocation) this.domainAxisLocations.get(index);#991,16.640468505121046
+addDomainMarker(marker, Layer.FOREGROUND);#2462,16.640304202125186
+return;#4056,16.631141594478063
+return;#4061,16.626918384007045
+axis.configure();#1272,16.623443285624187
+renderer.addChangeListener(this);#1642,16.622934159778413
+this.quadrantPaint[i] = SerialUtilities.readPaint(stream);#5663,16.612431079149246
+axis.addChangeListener(this);#5684,16.603858908017475
+axis.configure();#1097,16.60343344071332
+this.fixedRangeAxisSpace);#5586,16.600045101983206
+g2.draw(line);#4242,16.596958361173932
+.get(getDomainAxis());#3236,16.59509441256523
+.get(getRangeAxis());#3244,16.595027059316635
+return;#4028,16.584441253117152
+g2.draw(line);#4176,16.58373852779991
+getRangeAxisEdge());#4308,16.576697222391765
+existing.removeChangeListener(this);#855,16.573393487930296
+axis.removeChangeListener(this);#1256,16.573022683461506
+result = Collections.unmodifiableCollection(result);#4121,16.572681966035262
+axis.removeChangeListener(this);#958,16.571753184000652
+g2.fill(r[i]);#3526,16.567487420706914
+return removeRangeMarker(marker, Layer.FOREGROUND);#2861,16.56538573178378
+result = p.getRangeAxisIndex(axis);#4412,16.561960765293666
+this.foregroundRangeMarkers.clear();#2750,16.55651924826882
+existing.removeChangeListener(this);#1205,16.55632472038269
+this.foregroundDomainMarkers.clear();#2504,16.554559967734598
+markers.add(marker);#2806,16.553268181650264
+clone.renderers.set(i, pc.clone());#5568,16.552686526857574
+XYItemRenderer r = getRenderer(index);#4054,16.552131392739035
+return;#3434,16.55113560812814
+axis.configure();#972,16.550369762239
+result = xy.getDomainAxis(index);#809,16.55016200883048
+info.setDataArea(dataArea);#3174,16.544637044270832
+valueAxis = getDomainAxis(0);#3823,16.544149896372918
+return clone;#5595,16.54402004588734
+axis.addChangeListener(this);#5676,16.533911903699238
+return removeDomainMarker(marker, Layer.FOREGROUND);#2625,16.52457046508789
+result.add(this.datasets.get(i));#4337,16.52322025860057
+this.rangeMinorGridlinesVisible = visible;#2094,16.522544902303945
+clonedAxis.addChangeListener(clone);#5530,16.5016191623829
+result = xy.getRangeAxis(index);#1173,16.500371149608068
+clone.fixedLegendItems#5589,16.49679122251623
+m.removeChangeListener(this);#2526,16.49554603440421
+dataset.addChangeListener(this);#1417,16.48523817062378
+SerialUtilities.writePaint(this.quadrantPaint[i], stream);#5626,16.48467223874984
+state.setSelected(s, i, true);#5774,16.483035643895466
+XYItemRenderer r = getRenderer(index);#4021,16.480081861669365
+this.domainCrosshairVisible = flag;#4578,16.47388003089211
+dataset.addChangeListener(this);#5691,16.472870588302612
+clearRangeMarkers(key.intValue());#2748,16.47121627514179
+result.add(this.datasets.get(i));#4367,16.46519655339858
+drawRangeMarkers(g2, dataArea, i, Layer.FOREGROUND);#3394,16.46517057418823
+info.setPlotArea(area);#3162,16.462672662734985
+return true;#5311,16.459312693277994
+renderer.addChangeListener(this);#654,16.458016713460285
+previous, end);#3563,16.446657521384104
+m.removeChangeListener(this);#2829,16.44647424561637
+return false;#5501,16.445101674397787
+XYItemRenderer existing = getRenderer(index);#1635,16.442049459977582
+fireChangeEvent();#2999,16.43842715024948
+existing.removeChangeListener(this);#1092,16.432087182998657
+this.orientation = orientation;#745,16.43037846213893
+return false;#2687,16.424798456827798
+XYItemRenderer r = getRenderer();#3966,16.42323823769887
+this.domainCrosshairLockedOnData = flag;#4606,16.400803565979004
+markers.add(marker);#2605,16.396477498506243
+setDomainCrosshairValue(hvalue);#4301,16.396420860290526
+clonedAxis.addChangeListener(clone);#5543,16.391051292419434
+configureRangeAxes();#4551,16.358588106491986
+= (LegendItemCollection) this.fixedLegendItems.clone();#5590,16.34389579997343
+= SeriesRenderingOrder.REVERSE;#567,16.32818197167438
+result = (XYItemRenderer) this.renderers.get(index);#1591,16.323074277242025
+existing.removeChangeListener(this);#1413,16.320415210723876
+selState.clearSelection();#5858,16.31961144719805
+clearDomainMarkers(key.intValue());#2502,16.319131667797382
+fireChangeEvent();#2930,16.318333446979523
+return s;#5798,16.29910488128662
+this.domainZeroBaselineVisible = visible;#2189,16.29553418410452
+crosshairState.setAnchor(anchor);#3190,16.28511323928833
+setRangeCrosshairValue(vvalue);#4309,16.278096313476563
+result = getRenderer();#1749,16.277370735451026
+return false;#2926,16.239813613891602
+fireChangeEvent();#2810,16.23637318611145
+setRenderer(i, renderers[i], false);#1659,16.221898592435398
+anchor = null;#3186,16.22035276889801
+m.removeChangeListener(this);#2538,16.217402287891932
+g2.setPaint(this.quadrantPaint[i]);#3525,16.21719808048672
+somethingToDraw = true;#3516,16.207298625599254
+fireChangeEvent();#866,16.205274283885956
+this.domainGridlinesVisible = visible;#1807,16.18947557969527
+fireChangeEvent();#1216,16.18458080291748
+m.removeChangeListener(this);#2841,16.167626278741018
+renderer.addChangeListener(this);#5698,16.165964012145995
+fireChangeEvent();#2691,16.161965429782867
+fireChangeEvent();#1336,16.159181654453278
+= ResourceBundleWrapper.getBundle(#340,16.11048109635063
+fireChangeEvent();#1037,16.098106622695923
+fireChangeEvent();#2609,16.075246334075928
+configureDomainAxes();#4550,16.068386302274817
+result = i;#1446,16.05525493621826
+this.domainMinorGridlinesVisible = visible;#1841,16.050587156544562
+d.addChangeListener(clone);#5554,16.037617325782776
+fireChangeEvent();#2963,16.03637832403183
+markers.clear();#2528,16.017085075378418
+fireChangeEvent();#2005,16.012991428375244
+markers.clear();#2831,16.0071213722229
+fireChangeEvent();#746,16.006422340869904
+fireChangeEvent();#1808,16.004501581192017
+fireChangeEvent();#4904,15.98113739490509
+fireChangeEvent();#1647,15.98082959651947
+fireChangeEvent();#4945,15.971588134765625
+result.add(item);#5292,15.960896040263929
+fireChangeEvent();#1842,15.959676444530487
+includedAnnotations.add(a);#4498,15.95230221748352
+fireChangeEvent();#2095,15.942181944847107
+fireChangeEvent();#4579,15.924255430698395
+return;#3157,15.906176498958043
+fireChangeEvent();#4647,15.90178781747818
+fireChangeEvent();#4734,15.893055975437164
+this.rangeAxisLocations);#5547,15.879681706428528
+fireChangeEvent();#4804,15.877491652965546
+fireChangeEvent();#4607,15.86411863565445
+return false;#5506,15.845726715890985
+|| foundData;#3290,15.837948044141134
+|| foundData;#3324,15.832294782002768
+fireChangeEvent();#4762,15.80651193857193
+set.add(item);#1553,15.783392747243246
+this.domainAxisLocations.clone();#5534,15.67209819646982
+markers.clear();#2843,15.639442205429077
+includedAnnotations.add(annotation);#4461,15.617385517467152
+break;#1751,15.610566563076443
+includedAnnotations.add(annotation);#4444,15.598081213055234
+markers.clear();#2540,15.513961362838746
+break;#1447,15.477848264906141

@@ -1,0 +1,260 @@
+private static final long serialVersionUID = -6195664516687396620L;#71,18.53728111584981
+return createComplex(FastMath.log(abs()),#754,18.168122064499627
+final List<Complex> result = new ArrayList<Complex>();#1091,18.154109358787537
+final double nthRootOfAbs = FastMath.pow(abs(), 1.0 / n);#1103,18.117405796051024
+public Complex add(Complex addend) throws NullArgumentException {#158,18.100271124588815
+return createComplex(FastMath.sin(real2) / d,#990,18.090425848960876
+MathUtils.checkNotNull(x);#780,18.051669597625732
+if (FastMath.abs(c) < FastMath.abs(d)) {#270,18.04221934538621
+public int hashCode() {#345,17.96396369934082
+public double abs() {#117,17.961343659294975
+throws NullArgumentException {#779,17.94598048073905
+double t = FastMath.sqrt((FastMath.abs(real) + abs()) / 2.0);#919,17.941877216100693
+return createComplex(MathUtils.sinh(real2) / d,#1035,17.93763619202834
+public Complex acos() {#532,17.818550968170165
+return createComplex(real / divisor,#302,17.793243809750205
+if (FastMath.abs(real) < FastMath.abs(imaginary)) {#124,17.76264070581507
+return FastMath.abs(real) * FastMath.sqrt(1 + q * q);#135,17.733649282744437
+return NaN;#829,17.7326677441597
+.multiply(I.divide(createComplex(2.0, 0.0)));#588,17.72954954419817
+return NaN;#869,17.716384410858154
+return isNaN;#329,17.712792714436848
+return createComplex(real + addend.getReal(),#164,17.708566302344913
+return NaN;#751,17.690754175186157
+return NaN;#625,17.680290639400482
+return createComplex(real * factor.real - imaginary * factor.imaginary,#432,17.67605051627526
+return NaN;#584,17.672460079193115
+final double slice = 2 * FastMath.PI / n;#1107,17.67118640173049
+return NaN;#494,17.665301740169525
+return NaN;#665,17.65703511238098
+return createComplex(expReal *  FastMath.cos(imaginary),#710,17.64628917694092
+imaginary  / divisor);#303,17.640232801437378
+return NaN;#534,17.635740756988525
+return NaN;#912,17.63306897878647
+double expReal = FastMath.exp(real);#709,17.628580394544098
+return NaN;#161,17.619263410568237
+return NaN;#983,17.617080569267273
+return NaN;#200,17.615592777729034
+return FastMath.abs(imaginary);#132,17.615092849731447
+return createComplex(real + addend, imaginary);#181,17.606601238250732
+return NaN;#706,17.59701108932495
+return result;#1095,17.593572998046874
+throws NullArgumentException {#491,17.58320426940918
+return NaN;#559,17.579797387123108
+double d = FastMath.cos(real2) + MathUtils.cosh(imaginary2);#988,17.56908936654368
+expReal * FastMath.sin(imaginary));#711,17.56742305755615
+return isNaN;#379,17.55752365405743
+return NaN;#466,17.55563175678253
+return FastMath.abs(real);#126,17.548269669214886
+return NaN;#1028,17.546112179756165
+n);#1088,17.530715815226237
+MathUtils.checkNotNull(addend);#159,17.52918163098787
+return NaN;#178,17.527302026748657
+return FastMath.abs(imaginary) * FastMath.sqrt(1 + q * q);#129,17.521245872273166
+return createComplex(FastMath.cos(real) * MathUtils.cosh(imaginary),#628,17.49968639496834
+this.real = real;#100,17.492867061070033
+isInfinite = !isNaN &&#104,17.48824355181526
+.multiply(I.negate());#538,17.488189350474965
+return NaN;#511,17.478156685829163
+double d = MathUtils.cosh(real2) + FastMath.cos(imaginary2);#1033,17.4763670890562
+return createComplex(MathUtils.cosh(real) * FastMath.cos(imaginary),#668,17.47160053253174
+final double realPart = nthRootOfAbs *  FastMath.cos(innerPart);#1111,17.465826094150543
+return NaN;#1145,17.464420318603516
+return createComplex(real, -imaginary);#203,17.462927215977718
+real * factor.imaginary + imaginary * factor.real);#433,17.46169378643944
+FastMath.cos(real) * MathUtils.sinh(imaginary));#833,17.45324587314687
+throws NullArgumentException {#420,17.447304725646973
+MathUtils.hash(real));#350,17.441033267974852
+MathUtils.checkNotNull(factor);#421,17.43960248099433
+private final transient boolean isNaN;#78,17.437337557474773
+public static final Complex I = new Complex(0.0, 1.0);#58,17.432947158813477
+return NaN;#1158,17.429253101348877
+return createComplex(FastMath.abs(imaginary) / (2.0 * t),#923,17.427511735395953
+return this.log().multiply(x).exp();#792,17.42671875726609
+FastMath.atan2(imaginary, real));#755,17.409798860549927
+.multiply(I.negate());#563,17.403823592446066
+public Complex atan() {#582,17.402830028533934
+double imaginary2 = 2.0 * imaginary;#1032,17.399685223897297
+public static final Complex ONE = new Complex(1.0, 0.0);#66,17.39073612576439
+FastMath.sin(imaginary2) / d);#1036,17.390405934031417
+return Double.NaN;#119,17.385623455047607
+public Complex tanh() {#1026,17.383245754241944
+return createComplex(1.0, 0.0).subtract(this.multiply(this)).sqrt();#946,17.381896283891464
+return createComplex(-real, -imaginary);#469,17.375247854935495
+double imaginary2 = 2.0 * imaginary;#987,17.36888466940986
+return this.log().multiply(x).exp();#781,17.368059339977446
+return FastMath.atan2(getImaginary(), getReal());#1059,17.36761586562447
+MathUtils.sinh(real) * FastMath.sin(imaginary));#669,17.36294517111271
+-FastMath.sin(real) * MathUtils.sinh(imaginary));#629,17.353479584058125
+return createComplex(MathUtils.sinh(real) * FastMath.cos(imaginary),#872,17.34463417914606
+MathUtils.sinh(imaginary2) / d);#991,17.333944276321766
+return createComplex(FastMath.sin(real) * MathUtils.cosh(imaginary),#832,17.314167976379395
+MathUtils.cosh(real) * FastMath.sin(imaginary));#873,17.309628423055013
+result.add(NaN);#1094,17.303980375591077
+imaginary + addend.getImaginary());#165,17.290365757086338
+result.add(createComplex(realPart, imaginaryPart));#1113,17.28795051574707
+return createComplex(real - subtrahend, imaginary);#513,17.262305850074405
+return createComplex(real - subtrahend.getReal(),#497,17.25840174068104
+return real;#368,17.250707366249777
+return createComplex(real * factor, imaginary * factor);#454,17.2479792095366
+public Complex tan() {#981,17.247267723083496
+final double imaginaryPart = nthRootOfAbs *  FastMath.sin(innerPart);#1112,17.23427128791809
+return 7;#347,17.233940442403156
+this(real, 0.0);#90,17.23070865869522
+return NaN;#255,17.228749990463257
+return createComplex(t, imaginary / (2.0 * t));#921,17.21893313952855
+return isZero ? NaN : INF;#297,17.214016460237048
+double q = c / d;#271,17.200827899732086
+throws NullArgumentException {#252,17.196765627179825
+return NaN;#446,17.193570733070374
+return NaN;#423,17.191903352737427
+return INF;#452,17.162219619750978
+MathUtils.indicator(imaginary) * t);#924,17.157035019086756
+return NaN;#293,17.151194989681244
+protected Complex createComplex(double realPart,#1129,17.139442784445627
+return createComplex((real * q + imaginary) / denominator,#273,17.135963051407426
+public static final Complex NaN = new Complex(Double.NaN, Double.NaN);#61,17.12473698457082
+MathUtils.checkNotNull(subtrahend);#492,17.105539751052856
+for (int k = 0; k < n ; k++) {#1109,17.10543498125943
+double q = d / c;#276,17.104495299489873
+return INF;#430,17.102799224853516
+public Complex conjugate() {#198,17.099816062233664
+public Complex divide(Complex divisor)#251,17.09798846926008
+return this.add(this.sqrt1z().multiply(I)).log()#537,17.09207330431257
+public Complex cos() {#623,17.087402873569065
+return createComplex(real, imaginary);#1172,17.086079821867102
+return true;#324,17.080233573913574
+MathUtils.checkNotNull(divisor);#253,17.070315504074095
+return isZero ? NaN : INF;#260,17.066182454427082
+public Complex sqrt() {#910,17.043496227264406
+return this.add(I).divide(I.subtract(this)).log()#587,17.038392203194753
+public Complex pow(Complex x)#778,17.035645405451458
+return createComplex(0.0, 0.0);#916,17.032672080993652
+public Complex negate() {#464,17.028842290242512
+return result;#1099,17.002255948384605
+double real2 = 2.0 * real;#986,16.994587474399143
+public Complex exp() {#704,16.98537498050266
+public boolean isNaN() {#378,16.98224128376354
+public String toString() {#1182,16.97909860610962
+double q = imaginary / real;#134,16.978725081995915
+double real2 = 2.0 * real;#1031,16.97769414054023
+if (isNaN || addend.isNaN) {#160,16.968930201096967
+return ZERO;#264,16.967745423316956
+double denominator = c * q + d;#272,16.96686363220215
+public class Complex implements FieldElement<Complex>, Serializable  {#56,16.96087277730306
+return !isInfinite() ? ZERO : NaN;#300,16.953953514099123
+public Complex sin() {#827,16.951524946424698
+imaginary - subtrahend.getImaginary());#498,16.93499004840851
+return createComplex((imaginary * q + real) / denominator,#278,16.93264591693878
+final double d = divisor.getImaginary();#268,16.921454883757093
+public static final Complex ZERO = new Complex(0.0, 0.0);#68,16.9087833924727
+private final transient boolean isInfinite;#80,16.89296015103658
+return 37 * (17 * MathUtils.hash(imaginary) +#349,16.89055025577545
+double q = real / imaginary;#128,16.88502984297903
+double imaginaryPart) {#1142,16.873218536376953
+throw new NotPositiveException(LocalizedFormats.CANNOT_COMPUTE_NTH_ROOT_FOR_NEGATIVE_N,#1087,16.851416714986165
+public Complex multiply(Complex factor)#419,16.829021692276
+final double nthPhi = getArgument() / n;#1106,16.823814045299184
+public Complex cosh() {#663,16.809215450286864
+return result;#1117,16.804671547629617
+return imaginary;#359,16.8019397908991
+public Complex log() {#749,16.798194461398655
+Complex c = (Complex)other;#327,16.78177547454834
+(imaginary - real * q) / denominator);#279,16.78098997047969
+return new Complex(realPart, imaginaryPart);#1147,16.7677124871148
+public Complex asin() {#557,16.76222152709961
+return new Complex(realPart, imaginaryPart);#1131,16.761862754821777
+this.imaginary = imaginary;#101,16.75695667266846
+innerPart += slice;#1114,16.74429001527674
+(imaginary * q - real) / denominator);#274,16.74083001273019
+double imaginaryPart) {#1130,16.70268291380347
+return isInfinite;#392,16.688730459946854
+double denominator = d * q + c;#277,16.68535991148515
+if (isNaN) {#346,16.68255926767985
+if (isNaN) {#465,16.67537040710449
+if (isNaN || factor.isNaN) {#422,16.66585890452067
+isZero = real == 0 && imaginary == 0;#106,16.655507338674443
+return sqrt1z().add(this.multiply(I)).log()#562,16.654525096599873
+result.add(INF);#1098,16.637946329618757
+public Complex sinh() {#867,16.637836742401124
+if (isNaN) {#199,16.62585703531901
+return (real == c.real) && (imaginary == c.imaginary);#331,16.6251319436466
+public double getReal() {#367,16.611847019195558
+double innerPart = nthPhi;#1108,16.596781057469986
+if (isNaN) {#583,16.594289207458495
+if (isNaN || subtrahend.isNaN) {#493,16.593669062075406
+return "(" + real + ", " + imaginary + ")";#1183,16.593335931951348
+private final transient boolean isZero;#82,16.59235347401012
+return ComplexField.getInstance();#1177,16.59006544748942
+isNaN = Double.isNaN(real) || Double.isNaN(imaginary);#103,16.58461767832438
+Double.isNaN(imaginaryPart)) {#1144,16.577888074128523
+public ComplexField getField() {#1176,16.5776630748402
+if (isNaN || Double.isNaN(addend)) {#177,16.564815322558086
+if (isNaN) {#868,16.55776246388753
+if (isNaN) {#624,16.54768886566162
+protected final Object readResolve() {#1171,16.542333602905273
+if (isNaN) {#664,16.527053769429525
+if (isNaN) {#828,16.513432439168295
+if (isNaN) {#750,16.507802200317382
+if (isNaN || divisor.isNaN) {#254,16.505283853282098
+if (isNaN) {#533,16.481320889790855
+public double getArgument() {#1058,16.47239702398127
+public Complex subtract(Complex subtrahend)#490,16.46999488558088
+if (this == other) {#323,16.465084075927734
+if (isNaN) {#705,16.464509582519533
+final double c = divisor.getReal();#267,16.457033056961862
+if (isNaN) {#558,16.430989583333332
+return false;#334,16.400186798789285
+if (isNaN) {#982,16.390607007344563
+@Override#1181,16.390082995096844
+private final double imaginary;#74,16.365497483147514
+if (isNaN) {#1027,16.35260321299235
+@Override#344,16.33661762873332
+private final double real;#76,16.33263651529948
+public Complex add(double addend) {#176,16.332379561204178
+if (c.isNaN) {#328,16.332274891081312
+return new Complex(realPart);#1160,16.32497812906901
+public List<Complex> nthRoot(int n) {#1084,16.305880069732666
+public Complex sqrt1z() {#945,16.30584144592285
+Double.isInfinite(factor)) {#450,16.295608202616375
+if (isNaN || Double.isNaN(factor)) {#445,16.278927429862645
+if (isNaN) {#911,16.278497314453126
+public Complex pow(double x) {#791,16.27699455848107
+Double.isInfinite(imaginary) ||#449,16.250527381896973
+@Override#321,16.215672334035236
+if (isNaN || Double.isNaN(subtrahend)) {#510,16.208262100219727
+if (isNaN) {#1093,16.16053670247396
+if (isNaN) {#118,16.130171712239584
+if (divisor == 0d) {#295,16.10403389400906
+if (divisor.isInfinite() && !isInfinite()) {#263,16.099183502197267
+Double.isInfinite(factor.real) ||#427,16.03666355298913
+public static Complex valueOf(double realPart,#1141,16.03313228062221
+if (n <= 0) {#1086,16.03216946919759
+return Double.POSITIVE_INFINITY;#122,16.007568504499353
+public Complex(double real, double imaginary) {#99,15.985267843518939
+if (other instanceof Complex){#326,15.9720916112264
+if (real == 0.0 && imaginary == 0.0) {#915,15.97159016650656
+public boolean isInfinite() {#391,15.945279208096592
+if (real == 0.0) {#131,15.92710440499442
+Double.isInfinite(imaginary) ||#426,15.923678094690496
+if (divisor.isZero) {#258,15.916283024681938
+public Complex multiply(double factor) {#444,15.915844519933065
+public Complex divide(double divisor) {#291,15.914956229073661
+if (isNaN || Double.isNaN(divisor)) {#292,15.888291130065918
+if (imaginary == 0.0) {#125,15.854031085968018
+Double.isInfinite(factor.imaginary)) {#428,15.851893305778503
+public Complex(double real) {#89,15.813779657537287
+if (real >= 0.0) {#920,15.778134570402258
+if (Double.isNaN(realPart)) {#1157,15.721652126312256
+(Double.isInfinite(real) || Double.isInfinite(imaginary));#105,15.540225890374952
+if (Double.isInfinite(real) ||#425,15.52824572512978
+if (Double.isInfinite(real) ||#448,15.525388466684442
+public Complex subtract(double subtrahend) {#509,15.491406985691615
+if (Double.isNaN(realPart) ||#1143,15.47324733734131
+public double getImaginary() {#358,15.466806411743164
+if (isInfinite()) {#1097,15.4514591217041
+if (isInfinite()) {#121,15.442790095011393
+public static final Complex INF = new Complex(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY);#64,15.320499261220297
+public static Complex valueOf(double realPart) {#1156,15.29056282043457
+public boolean equals(Object other) {#322,15.247166792551676
+if (Double.isInfinite(divisor)) {#299,14.97894995553153

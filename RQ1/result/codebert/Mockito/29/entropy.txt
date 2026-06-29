@@ -1,0 +1,17 @@
+return wanted == actual;#23,18.771697704608624
+public class Same extends ArgumentMatcher<Object> implements Serializable {#13,17.48457775115967
+this.wanted = wanted;#19,17.379579989115395
+description.appendText("\"");#36,17.377402255409642
+description.appendText(wanted.toString());#29,17.240528407849762
+public boolean matches(Object actual) {#22,17.000560998916626
+public Same(Object wanted) {#18,16.988757827065207
+appendQuoting(description);#28,16.6779249055045
+private final Object wanted;#16,16.56261486477322
+description.appendText(")");#31,16.509678332010903
+if (wanted instanceof String) {#35,16.50651791516472
+description.appendText("'");#38,16.49267332177413
+description.appendText("same(");#27,16.32165038585663
+appendQuoting(description);#30,16.17562961578369
+public void describeTo(Description description) {#26,16.12082129258376
+private static final long serialVersionUID = -1226959355938572597L;#15,15.63046626249949
+private void appendQuoting(Description description) {#34,14.65859876360212

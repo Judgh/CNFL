@@ -1,0 +1,134 @@
+FlowScope blindScope, boolean outcome) {#218,19.647579956054688
+private FlowScope restrictParameter(Node parameter, JSType type,#241,19.595874190330505
+@Override#109,19.27259702682495
+@Override#86,19.241699695587158
+@Override#81,19.235228252410888
+if (callee.isGetProp() && param.isQualifiedName()) {#222,19.19527400970459
+@Override#52,19.14588108062744
+public JSType caseAllType() {#104,19.042244350208957
+@Override#91,19.006773376464842
+@Override#114,19.00175428390503
+public JSType caseObjectType(ObjectType type) {#87,18.95980385371617
+public JSType caseObjectType(ObjectType type) {#110,18.949490501767112
+@Override#143,18.90929126739502
+public JSType caseObjectType(ObjectType type) {#70,18.880913416544598
+@Override#154,18.867538070678712
+public JSType apply(TypeRestriction p) {#167,18.861475944519043
+@Override#166,18.857551956176756
+public JSType caseFunctionType(FunctionType type) {#92,18.82358959742955
+public JSType apply(TypeRestriction p) {#173,18.82098455429077
+@Override#57,18.818663597106934
+if (p.outcome) {#145,18.809564378526474
+@Override#172,18.807613182067872
+public JSType apply(TypeRestriction p) {#179,18.80736289024353
+@Override#103,18.799233818054198
+public JSType apply(TypeRestriction p) {#203,18.78595104217529
+FlowScope blindScope, Function<TypeRestriction, JSType> restriction,#242,18.777716802514117
+public JSType caseFunctionType(FunctionType type) {#115,18.774701073056175
+public JSType apply(TypeRestriction p) {#185,18.770558500289916
+@Override#190,18.722529029846193
+if (p.outcome) {#134,18.718377113342285
+@Override#202,18.707051849365236
+@Override#178,18.704996967315672
+return nextPreciserScopeKnowingConditionOutcome(#237,18.693176142374675
+public JSType apply(TypeRestriction p) {#191,18.69056315422058
+if (restricter != null) {#230,18.674949445222552
+if (condition.isCall() && condition.getChildCount() == 2) {#219,18.662676854567096
+if (p.type == null) {#192,18.659584346570465
+private final boolean outcome;#259,18.657093683878582
+public JSType apply(TypeRestriction p) {#155,18.638564682006837
+public JSType apply(TypeRestriction p) {#133,18.636572408676148
+@Override#132,18.63217658996582
+public JSType caseObjectType(ObjectType type) {#58,18.62988435654413
+public JSType apply(TypeRestriction p) {#144,18.618867588043212
+Node right = callee.getLastChild();#225,18.590515242682564
+@Override#184,18.581925296783446
+Node param = condition.getLastChild();#221,18.575774828592937
+if (p.outcome) {#156,18.571956952412922
+if (p.type == null) {#204,18.496992010819284
+if (left.isName() && "goog".equals(left.getString()) &&#226,18.49321322605528
+new RestrictByTrueTypeOfResultVisitor() {#51,18.477256494409897
+public class ClosureReverseAbstractInterpreter#44,18.367411216100056
+new RestrictByTrueTypeOfResultVisitor() {#80,18.362660127527572
+declareNameInScope(informed, parameter, type);#250,18.351489459767063
+new ImmutableMap.Builder<String, Function<TypeRestriction, JSType>>()#130,18.3255877494812
+new RestrictByFalseTypeOfResultVisitor() {#101,18.32260726479923
+public FlowScope getPreciserScopeKnowingConditionOutcome(Node condition,#217,18.31660011079576
+if (type != null) {#248,18.313149799000133
+right.isString()) {#227,18.311562326219345
+protected JSType caseTopType(JSType topType) {#53,18.30160725635031
+new RestrictByFalseTypeOfResultVisitor() {#68,18.300641957451315
+protected JSType caseTopType(JSType topType) {#82,18.300497220910113
+JSType paramType =  getTypeIfRefinable(param, blindScope);#223,18.28759518376103
+return restrictParameter(param, paramType, blindScope, restricter,#231,18.278399092810496
+private TypeRestriction(JSType type, boolean outcome) {#261,18.252163410186768
+private final JSType type;#258,18.232129096984863
+return type.isSubtype(getNativeType(ARRAY_TYPE)) ? null : type;#71,18.23205901730445
+return null;#111,18.181192031273476
+Function<TypeRestriction, JSType> restricter =#228,18.15195870399475
+return p.type != null ?#160,18.125341114244964
+private Map<String, Function<TypeRestriction, JSType>> restricters;#121,18.11186390831357
+return arrayType.isSubtype(type) ? arrayType : null;#60,18.087414264678955
+Node left = callee.getFirstChild();#224,18.056511402130127
+return getRestrictedByTypeOfResult(p.type, "boolean", p.outcome);#174,18.04394057393074
+.put("isDefAndNotNull", new Function<TypeRestriction, JSType>() {#153,18.032467535563878
+return p.type != null ?#146,18.008631405077484
+super(convention, typeRegistry);#128,18.00631515796368
+@Override#69,17.998811721801758
+boolean outcome) {#243,17.99491767883301
+private final Visitor<JSType> restrictToArrayVisitor =#50,17.990529453053195
+final JSTypeRegistry typeRegistry) {#127,17.984514797435086
+.put("isArray", new Function<TypeRestriction, JSType>() {#189,17.982965393066408
+return getRestrictedByTypeOfResult(p.type, "string", p.outcome);#168,17.948619596419796
+private final Visitor<JSType> restrictToNotArrayVisitor =#67,17.92925559149848
+.put("isDef", new Function<TypeRestriction, JSType>() {#131,17.90804718017578
+.put("isString", new Function<TypeRestriction, JSType>() {#165,17.904841651916502
+.put("isNumber", new Function<TypeRestriction, JSType>() {#177,17.890728721618654
+return  p.type != null ?#137,17.874969005584717
+return getRestrictedByTypeOfResult(p.type, "number", p.outcome);#180,17.842524159339167
+return p.outcome ? getNativeType(ARRAY_TYPE) : null;#193,17.81518611907959
+return getNativeType(NO_OBJECT_TYPE);#83,17.80163236097856
+return getRestrictedWithoutUndefined(#157,17.770231819152833
+.put("isBoolean", new Function<TypeRestriction, JSType>() {#171,17.75569409590501
+type = restriction.apply(new TypeRestriction(type, outcome));#245,17.751365109493857
+return getRestrictedByTypeOfResult(p.type, "function", p.outcome);#186,17.718317862479918
+return p.outcome ? getNativeType(OBJECT_TYPE) : null;#205,17.67276601791382
+return type;#88,17.6666778417734
+Visitor<JSType> visitor = p.outcome ? restrictToArrayVisitor :#196,17.643467394510903
+FlowScope informed = blindScope.createChildFlowScope();#249,17.642948362562393
+.put("isObject", new Function<TypeRestriction, JSType>() {#201,17.634489936828615
+.put("isNull", new Function<TypeRestriction, JSType>() {#142,17.62930507659912
+getNativeType(NUMBER_STRING_BOOLEAN), getNativeType(NULL_VOID));#106,17.62459619421708
+.put("isFunction", new Function<TypeRestriction, JSType>() {#183,17.615703048706056
+private final Visitor<JSType> restrictToObjectVisitor =#79,17.57441470202278
+public ClosureReverseAbstractInterpreter(CodingConvention convention,#126,17.554167998464482
+return getRestrictedWithoutUndefined(p.type);#135,17.542166074117024
+return typeRegistry.createUnionType(#105,17.53482773429469
+this.outcome = outcome;#263,17.52992967458872
+private final Visitor<JSType> restrictToNotObjectVisitor =#100,17.52419243918525
+Node callee = condition.getFirstChild();#220,17.48319149017334
+return type;#93,17.46335088289701
+condition, blindScope, outcome);#238,17.459308878580728
+return topType;#54,17.424300261906215
+return getRestrictedWithoutNull(p.type);#149,17.392418032107145
+getNativeType(NULL_VOID).getGreatestSubtype(p.type) : null;#161,17.389993015088532
+return null;#116,17.378813596872185
+return blindScope;#253,17.34823398590088
+Visitor<JSType> visitor = p.outcome ? restrictToObjectVisitor :#208,17.315665213267007
+@Override#216,17.292226791381836
+getNativeType(VOID_TYPE).getGreatestSubtype(p.type) : null;#138,17.202138499209756
+this.type = type;#262,17.19552715619405
+JSType arrayType = getNativeType(ARRAY_TYPE);#59,17.095169639587404
+this.restricters =#129,17.08290376663208
+.build();#213,17.078168127271866
+getNativeType(NULL_TYPE).getGreatestSubtype(p.type) : null;#147,17.062936628187025
+return p.type.visit(visitor);#198,17.004411879039946
+getRestrictedWithoutNull(p.type));#158,16.95694065093994
+private static class TypeRestriction {#257,16.946224000718857
+extends ChainableReverseAbstractInterpreter {#45,16.93882033030192
+restrictToNotArrayVisitor;#197,16.88892686934698
+restricters.get(right.getString());#229,16.87993362426758
+return informed;#251,16.860030068291557
+outcome);#232,16.43461004892985
+return p.type.visit(visitor);#210,16.33721315293085
+restrictToNotObjectVisitor;#209,16.188297635033017

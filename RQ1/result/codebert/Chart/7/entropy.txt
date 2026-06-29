@@ -1,0 +1,184 @@
+public Object clone() throws CloneNotSupportedException {#479,20.920654024396622
+private String range;#85,20.586859703063965
+public String getRangeDescription() {#169,20.19590273770419
+private String domain;#82,20.192402362823486
+public String getDomainDescription() {#143,20.027314272793856
+throws CloneNotSupportedException {#496,19.94575105394636
+public TimePeriodValues(Comparable name, String domain, String range) {#128,19.711699985322497
+private int minEndIndex = -1;#103,19.597474024846004
+private List data;#88,19.417766332626343
+public TimePeriodValues(Comparable name) {#113,19.342535400390624
+long middle = start + ((end - start) / 2);#261,19.315570240929013
+private int minStartIndex = -1;#91,19.30796139056866
+public int hashCode() {#450,19.305669403076173
+private int minMiddleIndex = -1;#97,19.294303600604717
+public int getItemCount() {#192,19.23096396706321
+private int maxEndIndex = -1;#106,19.206326558039738
+private int maxStartIndex = -1;#94,19.18645976139949
+public int getMinEndIndex() {#560,19.07365345954895
+private int maxMiddleIndex = -1;#100,19.060684644258938
+public Number getValue(int index) {#232,19.012544118441067
+public TimePeriodValue getDataItem(int index) {#204,18.99082425061394
+public void delete(int start, int end) {#399,18.983769989013673
+public void setRangeDescription(String description) {#181,18.98121186665126
+result = 29 * result + this.minStartIndex;#455,18.97706789970398
+for (int i = 0; i <= (end - start); i++) {#400,18.897097282409668
+if (!(obj instanceof TimePeriodValues)) {#418,18.864336681365966
+public void update(int index, Number value) {#386,18.84930337270101
+public int getMinStartIndex() {#522,18.84302560488383
+for (int i = 0; i < count; i++) {#437,18.81108708815141
+public void setDomainDescription(String description) {#155,18.810106004987443
+public int getMaxStartIndex() {#531,18.806660413742065
+if (obj == this) {#415,18.77236124674479
+result = 29 * result + this.maxStartIndex;#456,18.764404678344725
+public TimePeriodValues createCopy(int start, int end)#495,18.75293837095562
+long end = period.getEnd().getTime();#260,18.748820455450762
+private void recalculateBounds() {#340,18.71976192180927
+public int getMinMiddleIndex() {#541,18.67931119600932
+int count = getItemCount();#433,18.668533833821616
+long e = getDataItem(this.minMiddleIndex).getPeriod().getEnd()#302,18.66678112745285
+int result;#451,18.6647255637429
+long minMiddle = s + (e - s) / 2;#290,18.65942034354577
+result = 29 * result + this.minMiddleIndex;#457,18.64128041267395
+long maxStart = getDataItem(this.maxStartIndex).getPeriod()#275,18.633345254262288
+public int getMaxMiddleIndex() {#551,18.626423835754395
+static final long serialVersionUID = -2210593619794989709L;#73,18.61981656334617
+protected static final String DEFAULT_DOMAIN_DESCRIPTION = "Time";#76,18.609431552886964
+long e = getDataItem(this.minMiddleIndex).getPeriod().getEnd()#288,18.590854555368423
+if (end < minEnd) {#316,18.587748289108276
+if (this.minStartIndex >= 0) {#263,18.587627461082057
+public int getMaxEndIndex() {#569,18.57395585378011
+else {#270,18.56853437423706
+else {#320,18.559017753601076
+this.minStartIndex = -1;#341,18.557020355673398
+long s = getDataItem(this.minMiddleIndex).getPeriod().getStart()#300,18.554625660181046
+if (this.maxStartIndex >= 0) {#274,18.553741856625205
+long maxMiddle = s + (e - s) / 2;#304,18.546867847442627
+result = 29 * result + this.minEndIndex;#459,18.53568830490112
+long s = getDataItem(this.minMiddleIndex).getPeriod().getStart()#286,18.519967198371887
+else {#331,18.504682636260988
+public boolean equals(Object obj) {#414,18.503209590911865
+if (this.maxEndIndex >= 0) {#324,18.490195224159642
+else {#281,18.46940631866455
+long minStart = getDataItem(this.minStartIndex).getPeriod()#264,18.468730862935384
+if (this.minEndIndex >= 0) {#313,18.45200874930934
+result = 29 * result + this.maxMiddleIndex;#458,18.440439653396606
+long start = period.getStart().getTime();#259,18.403281161659642
+else {#309,18.383663749694826
+result = 29 * result + (this.range != null ? this.range.hashCode() : 0);#453,18.354020457113943
+else {#295,18.349164390563963
+private void updateBounds(TimePeriod period, int index) {#257,18.329400765268428
+if (start > maxStart) {#277,18.329323863983156
+long maxEnd = getDataItem(this.maxEndIndex).getPeriod().getEnd()#325,18.326856035174746
+this.maxStartIndex = -1;#344,18.325008336235495
+public void add(TimePeriod period, Number value) {#374,18.31273993323831
+if (count != that.getItemCount()) {#434,18.293701422841924
+this.minEndIndex = -1;#343,18.2923241222606
+long minEnd = getDataItem(this.minEndIndex).getPeriod().getEnd()#314,18.254654999935266
+if (middle < minMiddle) {#291,18.251972675323486
+return this.minStartIndex;#523,18.245795504252115
+public void add(TimePeriod period, double value) {#362,18.21870512120864
+if (start < minStart) {#266,18.21835060119629
+return this.maxStartIndex;#532,18.203486506144205
+public TimePeriod getTimePeriod(int index) {#218,18.20310037276324
+that.getDomainDescription())) {#426,18.201967279116314
+if (this.maxMiddleIndex >= 0) {#299,18.19343120173404
+if (end > maxEnd) {#327,18.192018508911133
+protected static final String DEFAULT_RANGE_DESCRIPTION = "Value";#79,18.189819145202637
+return this.minEndIndex;#561,18.18701318105062
+this.minMiddleIndex = -1;#342,18.1852466358858
+return this.maxEndIndex;#570,18.18510773976644
+if (!getDataItem(i).equals(that.getDataItem(i))) {#438,18.175712317228317
+this.maxMiddleIndex = -1;#345,18.17464531169218
+for (int i = 0; i < this.data.size(); i++) {#347,18.164993506211502
+result = 29 * result + this.data.hashCode();#454,18.15995593298049
+this.maxEndIndex = -1;#346,18.138980697183047
+if (!ObjectUtilities.equal(this.getRangeDescription(),#429,18.13397461435069
+if (this.minMiddleIndex >= 0) {#285,18.09612234015214
+if (item == null) {#243,18.089091618855793
+public void add(TimePeriodValue item) {#242,18.087790870666502
+Object clone = createCopy(0, getItemCount() - 1);#480,18.082964109337848
+return this.maxMiddleIndex;#552,18.078676478068033
+for (int index = start; index <= end; index++) {#502,18.061513900756836
+if (middle > maxMiddle) {#305,18.045222520828247
+if (!ObjectUtilities.equal(this.getDomainDescription(),#425,18.027558409649394
+catch (SeriesException e) {#508,18.02666651684305
+this.minStartIndex = index;#271,17.99825563430786
+result = 29 * result + this.maxEndIndex;#460,17.99658646583557
+if (!super.equals(obj)) {#421,17.97865041097005
+if (this.data.size() > 0) {#501,17.97688274383545
+return this.minMiddleIndex;#542,17.93471768697103
+this.maxMiddleIndex = index;#310,17.92170991897583
+this.maxStartIndex = index;#282,17.897689962387084
+TimePeriodValues copy = (TimePeriodValues) super.clone();#498,17.872120936711628
+TimePeriodValues that = (TimePeriodValues) obj;#424,17.864921179684725
+String old = this.range;#182,17.860170809427895
+super(name);#129,17.841809272766113
+public class TimePeriodValues extends Series implements Serializable {#70,17.81415293766902
+result = (this.domain != null ? this.domain.hashCode() : 0);#452,17.795098269427264
+that.getRangeDescription())) {#430,17.75700791676839
+this.minEndIndex = index;#321,17.732570505142213
+this.data = new ArrayList();#132,17.7150821685791
+return getDataItem(index).getValue();#233,17.6833553314209
+.getTime();#287,17.655972003936768
+this.minMiddleIndex = index;#296,17.63913803100586
+return result;#461,17.638348232616078
+.getTime();#301,17.633236694335938
+String old = this.domain;#156,17.5902156829834
+this.maxStartIndex = index;#278,17.587293461390903
+try {#505,17.579420142703587
+this(name, DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION);#114,17.559509754180908
+this.maxEndIndex = index;#332,17.55580530166626
+this.range = description;#183,17.548467772347585
+recalculateBounds();#403,17.523019518171036
+return this.range;#170,17.522972620450535
+return getDataItem(index).getPeriod();#219,17.512782096862793
+this.range = range;#131,17.482455457959855
+copy.data = new ArrayList();#500,17.449634969234467
+.getTime();#315,17.446266603469848
+this.minEndIndex = index;#317,17.434683336530412
+return clone;#481,17.416672706604004
+return false;#427,17.38912232716878
+return this.data.size();#193,17.36492328643799
+this.maxMiddleIndex = index;#306,17.360852350507464
+this.minMiddleIndex = index;#292,17.353338296072824
+return true;#442,17.34273659099232
+this.domain = description;#157,17.335541316441127
+this.maxEndIndex = index;#328,17.328680392674038
+this.minStartIndex = index;#267,17.271815681457518
+TimePeriodValue item = (TimePeriodValue) this.data.get(index);#503,17.266403410169815
+return this.domain;#144,17.255773764390213
+throw new IllegalArgumentException("Null item not allowed.");#244,17.213181610107423
+return copy;#513,17.18377512151545
+.getTime();#326,17.182391834259032
+TimePeriodValue item = getDataItem(index);#387,17.17203049659729
+TimePeriodValue clone = (TimePeriodValue) item.clone();#504,17.163285702466965
+.getTime();#303,17.162741279602052
+fireSeriesChanged();#404,17.133314689000446
+fireSeriesChanged();#248,17.13276441891988
+TimePeriodValue tpv = (TimePeriodValue) this.data.get(i);#348,17.09600482267492
+.getTime();#289,17.094483041763304
+fireSeriesChanged();#389,17.082497755686443
+.getStart().getTime();#276,17.068957204404086
+this.domain = domain;#130,17.0166152545384
+.getStart().getTime();#265,17.014891500058383
+firePropertyChange("Range", old, description);#184,17.007366286383736
+updateBounds(item.getPeriod(), this.data.size() - 1);#247,16.990367147657608
+return (TimePeriodValue) this.data.get(index);#205,16.91257957790209
+firePropertyChange("Domain", old, description);#158,16.88605064815945
+add(item);#376,16.835970719655354
+return false;#422,16.78704700469971
+add(item);#364,16.76320759455363
+TimePeriodValue item = new TimePeriodValue(period, value);#375,16.707924207051594
+TimePeriodValue item = new TimePeriodValue(period, value);#363,16.70557157198588
+return false;#419,16.701189613342287
+item.setValue(value);#388,16.67577991485596
+return true;#416,16.667327435811362
+return false;#435,16.616873423258465
+return false;#431,16.50769723256429
+this.data.add(item);#246,16.36289781332016
+copy.add(clone);#506,16.141733646392822
+System.err.println("Failed to add cloned item.");#509,16.139523724147253
+updateBounds(tpv.getPeriod(), i);#349,16.069746589660646
+this.data.remove(start);#401,15.924808835983276
+return false;#439,15.53034049586246

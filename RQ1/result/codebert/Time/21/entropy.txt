@@ -1,0 +1,32 @@
+if (locale == null || id == null || nameKey == null) {#53,19.820150451660155
+if (byIdCache == null) {#58,19.17837400997386
+if (byNameKeyCache == null) {#63,18.823459095425076
+return null;#54,18.681599934895832
+for (String[] strings : zoneStringsLoc) {#68,18.62840445836385
+if (strings != null && strings.length == 5 && id.equals(strings[0])) {#69,18.445795626253695
+@SuppressWarnings("unchecked")#34,18.279320196671918
+iByLocaleCache.put(locale, byIdCache = createCache());#59,18.13398281733195
+setLoc = strings;#70,18.06143292926607
+private HashMap createCache() {#88,18.03656187924472
+return (String[]) byNameKeyCache.get(nameKey);#85,17.971291168876316
+return new HashMap(7);#89,17.95018138885498
+return nameSet == null ? null : nameSet[0];#44,17.891179084777832
+String[][] zoneStringsLoc = DateTimeUtils.getDateFormatSymbols(locale).getZoneStrings();#66,17.858735177575088
+public DefaultNameProvider() {#39,17.780504131317137
+return nameSet == null ? null : nameSet[1];#49,17.690761520749046
+Map<String, Map<String, Object>> byIdCache = iByLocaleCache.get(locale);#57,17.648726983503863
+String[] setLoc = null;#67,17.61360820971037
+byIdCache.put(id, byNameKeyCache = createCache());#64,17.50916256223406
+if (setLoc[2].equals(setLoc[4])) {#76,17.485938502896218
+public String getShortName(Locale locale, String id, String nameKey) {#42,17.479419058019463
+break;#81,17.41703001658122
+public String getName(Locale locale, String id, String nameKey) {#47,17.392576989673433
+String[] nameSet = getNameSet(locale, id, nameKey);#48,17.324887962341307
+Map<String, Object> byNameKeyCache = byIdCache.get(id);#62,17.257133625171804
+private synchronized String[] getNameSet(Locale locale, String id, String nameKey) {#52,17.172815958658855
+String[] nameSet = getNameSet(locale, id, nameKey);#43,17.16879535675049
+byNameKeyCache.put(setLoc[4] + "-Summer", new String[] {setLoc[4], setLoc[3]});#77,16.992283412388392
+public class DefaultNameProvider implements NameProvider {#35,16.930879306793212
+byNameKeyCache.put(setLoc[2], new String[] {setLoc[2], setLoc[1]});#72,16.924487904804508
+byNameKeyCache.put(setLoc[4], new String[] {setLoc[4], setLoc[3]});#79,16.786272048950195
+private HashMap<Locale, Map<String, Map<String, Object>>> iByLocaleCache = createCache();#37,16.74213196436564

@@ -1,0 +1,388 @@
+private final Supplier<String> safeNameIdSupplier;#41,20.266369120279947
+this.safeNameIdSupplier = safeNameIdSupplier;#61,20.203302277459038
+Supplier<String> safeNameIdSupplier,#54,20.139766188228833
+switch (callSiteType) {#509,19.8288310657848
+final InliningMode mode;#86,19.70544891357422
+enum InliningMode {#68,19.655452728271484
+switch (callSiteType) {#472,19.631319046020508
+int commaCount = (paramCount > 1) ? paramCount - 1 : 0;#880,19.598245403983377
+CallSiteType callSiteType = classifyCallSite(callNode);#581,19.311748186747234
+private enum CallSiteType {#292,19.280035614967346
+enum CanInlineResult {#562,19.277661323547363
+CallSiteType callSiteType = classifyCallSite(callNode);#446,19.242027865515816
+private CallSiteType classifyCallSite(Node callNode) {#394,19.222464561462402
+compiler, safeNameIdSupplier, knownConstants);#438,19.201696491241456
+CallSiteType callSiteType = classifyCallSite(callNode);#462,19.16770871480306
+case SIMPLE_CALL:#481,19.142081040602463
+String resultName = null;#470,19.137745094299316
+JSModuleGraph moduleGraph = compiler.getModuleGraph();#766,19.116984963417053
+AbstractCompiler compiler,#53,19.100839354775168
+final JSModule module;#85,18.99734263949924
+if (hasArgs) {#663,18.992409070332844
+Reference(Node callNode, JSModule module, InliningMode mode){#88,18.98113341080515
+SIMPLE_CALL() {#310,18.96132573214444
+if (fnInstanceCount == 0) {#829,18.948604803818924
+compiler, safeNameIdSupplier, knownConstants);#420,18.928382396697998
+case SIMPLE_CALL:#525,18.915670835054836
+private static final int NAME_COST_ESTIMATE =#101,18.89074649810791
+UNSUPPORTED() {#298,18.884775161743164
+compiler, this.safeNameIdSupplier);#499,18.85217046737671
+if (callSiteType == CallSiteType.DECOMPOSABLE_EXPRESSION#597,18.8350605097684
+|| (!fnName.isEmpty()#148,18.8339084148407
+if (callSiteType == CallSiteType.UNSUPPORTED) {#582,18.82966866493225
+Node callNode, String fnName, Node fnNode, InliningMode mode) {#241,18.78913978735606
+private final AbstractCompiler compiler;#40,18.78539541032579
+Set<String> namesToAlias) {#612,18.784744008382162
+this.allowDecomposition = allowDecomposition;#62,18.760390639305115
+case DECOMPOSABLE_EXPRESSION:#490,18.756542801856995
+static class Reference {#83,18.74768892923991
+this.compiler = compiler;#60,18.746733925559305
+if (mode == InliningMode.DIRECT) {#890,18.746377646923065
+int resultCount = (returnCount > 0) ? returnCount - 1 : 0;#916,18.711002588272095
+int fnInstanceCount = directInlines + blockInlines - (removable ? 1 : 0);#827,18.69508445739746
+return !referencesArguments#157,18.681438827514647
+if (cArg == null || !cArg.isThis()) {#707,18.674957938816238
+Node fnNode, Set<String> namesToAlias, InliningMode mode) {#876,18.671777764956158
+if (!allowDecomposition#586,18.666953468322752
+@Override#637,18.66638603210449
+public void setKnownConstants(Set<String> knownConstants) {#932,18.64428604973687
+for (Reference ref : refs) {#768,18.614636567922737
+return CallSiteType.UNSUPPORTED;#433,18.58117233003889
+if (numArgs > 0) {#856,18.575345039367676
+if (!isSupportedCallType(callNode)) {#180,18.564116350809734
+if (expressionRoot != null) {#418,18.563626970563615
+while (cArg != null || fnParam != null) {#719,18.55547383252312
+if (ref.module != fnModule &&#775,18.554544841541965
+case EXPRESSION:#486,18.543713743036445
+CallSiteType callSiteType = injector.classifyCallSite(callNode);#365,18.492847222548264
+if (!assumeMinimumCapture && !t.inGlobalScope()) {#189,18.49033010573614
+if (referencesThis) {#860,18.487353151494805
+if (mode == InliningMode.DIRECT) {#207,18.477289855480194
+if (ref.mode == InliningMode.BLOCK) {#769,18.472949171066283
+Node inline(#240,18.46458854675293
+boolean allowDecomposition,#55,18.45047640800476
+InliningMode mode, boolean referencesThis, boolean containsFunctions) {#175,18.44997841971261
+throw new IllegalStateException(#491,18.440104280199325
+if (mode == InliningMode.DIRECT) {#244,18.433958768844604
+if (n.isName()) {#639,18.411587132347954
+int baseOverhead = (returnCount > 0) ? inlineBlockOverhead : 0;#917,18.40846939086914
+Preconditions.checkNotNull(safeNameIdSupplier);#59,18.405340830485027
+private CanInlineResult canInlineReferenceAsStatementBlock(#579,18.400618934631346
+CallSiteType callSiteType = injector.classifyCallSite(callNode);#382,18.40021933042086
+if (!callMeetsBlockInliningRequirements(#592,18.394949981144496
+this.mode = mode;#91,18.384260018666584
+boolean hasArgs = !args.isEmpty();#662,18.38041877746582
+if (NodeUtil.mayHaveSideEffects(cArg, compiler)) {#741,18.37889301300049
+|| callSiteType == CallSiteType.EXPRESSION)) {#588,18.368289654071514
+if (!t.inGlobalScope()) {#630,18.36555055471567
+int overallCallCost = callCost * referenceCount;#800,18.34756520589193
+if (referenceCount == 0) {#759,18.345370213190716
+final String fnName, Node fnNode) {#120,18.343899071216583
+|| callSiteType == CallSiteType.EXPRESSION) {#598,18.33628645810214
+(paramCount * InlineCostEstimator.ESTIMATED_IDENTIFIER_COST);#882,18.332568486531574
+return CallSiteType.SIMPLE_CALL;#401,18.323794589323157
+callCost += (numArgs * NAME_COST_ESTIMATE) + ((numArgs - 1) * COMMA_COST);#857,18.31410421265496
+private final boolean allowDecomposition;#42,18.31397466659546
+Preconditions.checkArgument(callSiteType != CallSiteType.UNSUPPORTED);#463,18.292944145202636
+&& (callSiteType == CallSiteType.DECOMPOSABLE_EXPRESSION#587,18.289258626791145
+public boolean apply(Node n) {#638,18.287525177001953
+private boolean callMeetsBlockInliningRequirements(#610,18.280259211858112
+resultName = null;  // "foo()" doesn't need a result.#482,18.265627098083495
+private boolean isSupportedCallType(Node callNode) {#220,18.26550599506923
+if (type == DecompositionType.MOVABLE) {#423,18.24100216952237
+DECOMPOSABLE_EXPRESSION() {#376,18.238194669995988
+throw new IllegalStateException(#487,18.23680795942034
+@Override#377,18.235347509384155
+&& !NodeUtil.isConstantName(parent.getFirstChild())) {#405,18.223366172225386
+int returnCount = NodeUtil.getNodeTypeReferenceCount(#914,18.22255644798279
+Set<String> namesToAlias, boolean isRemovable, boolean referencesThis) {#757,18.21037169297536
+if (cArg != null) {#722,18.2103613615036
+@Override#144,18.192741632461548
+if (fnParam != null) {#721,18.190444537571498
+public boolean apply(Node n) {#145,18.184092249189103
+JSModule fnModule, Node fnNode, Collection<? extends Reference> refs,#756,18.179132503011953
+final int inlineBlockOverhead = 4; // "X:{}"#906,18.17862215042114
+return CanInlineResult.NO;#192,18.17128437757492
+if (NodeUtil.isFunctionObjectCall(callNode)) {#705,18.170101074945357
+if (cArg != null) {#740,18.149199281420028
+fnNode, callNode, this.safeNameIdSupplier);#661,18.1488721711295
+int referencesUsingDirectInlining = referenceCount -#785,18.142276423318044
+int aliasCount = namesToAlias.size();#895,18.129509806632996
+@Override#311,18.123852372169495
+if (n.isName()) {#146,18.118389308452606
+private CanInlineResult canInlineReferenceDirectly(#689,18.117577280317033
+case SIMPLE_ASSIGNMENT:#518,18.116866997310094
+private ExpressionDecomposer getDecomposer() {#436,18.11621157328288
+@Override#299,18.103291273117065
+fnNode, callNode, this.safeNameIdSupplier);#267,18.097127987788273
+return callCost;#868,18.096535801887512
+&& !NodeUtil.isConstantName(parent)#409,18.08415194920131
+private Set<String> knownConstants = Sets.newHashSet();#43,18.080555579241583
+if (referencesThis && !NodeUtil.isFunctionObjectCall(callNode)) {#201,18.0608632961909
+public void prepare(FunctionInjector injector, Node callNode) {#312,18.055299758911133
+int blockInlines, int costDeltaBlock,#819,18.049572467803955
+Map<String, Node> args =#659,18.041962214878627
+case SIMPLE_ASSIGNMENT:#473,18.040633269718715
+@Override#326,18.023189783096313
+Node callNode, Node fnNode, String fnName) {#456,18.016149621260794
+int referencesUsingBlockInlining = 0;#763,18.01466186229999
+int threshold = (callCost - costDelta) / fnInstanceCount;#841,18.01335154081646
+!moduleGraph.dependsOn(ref.module, fnModule)) {#776,18.004760912486486
+if (block.getFirstChild().isReturn()#553,17.999079704284668
+if (NodeUtil.mayEffectMutableState(cArg, compiler)#727,17.993022247597022
+return CanInlineResult.AFTER_PREPARATION;#599,17.989853256627132
+Node fnCaller = t.getScopeRoot();#631,17.986212842604694
+if (thisValue == null || !thisValue.isThis()) {#225,17.97727294921875
+Predicate<Node> p = new Predicate<Node>(){#143,17.971532344818115
+EXPRESSION() {#359,17.969971656799316
+public void prepare(FunctionInjector injector, Node callNode) {#327,17.955826325850055
+throw new IllegalStateException("Unexpected call site type.");#495,17.952777317592076
+|| (!fnRecursionName.isEmpty()#150,17.948866150595926
+block, fnParam.getString()) > 1) {#729,17.945809237162273
+return n.getString().equals("eval")#147,17.944161505926225
++ returnCount * perReturnOverhead#920,17.934435208638508
+public void prepare(FunctionInjector injector, Node callNode) {#300,17.93216306513006
+Predicate<Node> match = new Predicate<Node>(){#636,17.927761554718018
+if (!assumeMinimumCapture && n.isFunction()) {#642,17.921094645624574
+Map<String, Node> argMap =#265,17.91555221264179
+if (NodeUtil.isFunctionObjectCall(callNode)) {#222,17.91282762799944
+SIMPLE_ASSIGNMENT() {#325,17.912049531936646
+return new ExpressionDecomposer(#437,17.91194438934326
+int paramCount = NodeUtil.getFunctionParameters(fnNode).getChildCount();#879,17.904153616532035
+@Override#360,17.902284026145935
+void maybePrepareCall(Node callNode) {#445,17.894799819359413
+int directInlines, int costDeltaDirect,#818,17.888951241970062
+callSiteType.prepare(this, callNode);#447,17.88421654701233
+public void prepare(FunctionInjector injector, Node callNode) {#361,17.87311419573697
+if (blockInlines > 0 && costDeltaBlock > 0) {#833,17.869508924938383
+public void prepare(FunctionInjector injector, Node callNode) {#342,17.862490784038197
+return canInlineReferenceAsStatementBlock(#210,17.860696601867676
+case VAR_DECL_SIMPLE_ASSIGNMENT:#510,17.856916189193726
+ExpressionDecomposer decomposer = new ExpressionDecomposer(#419,17.854098399480183
+"Movable expressions must be moved before inlining.");#488,17.853945175806682
+referencesUsingDirectInlining == 1) {#795,17.85112953186035
+case VAR_DECL_SIMPLE_ASSIGNMENT:#477,17.8469030380249
+if (NodeUtil.isExprCall(parent)) {#399,17.839857048458523
+Node fnCallerBody = fnCaller.getLastChild();#632,17.82411241531372
+default:#531,17.820300340652466
+final int perReturnOverhead = 2;   // "return" --> "break X"#907,17.820030799278847
+public void prepare(FunctionInjector injector, Node callNode) {#378,17.819059588692404
+@Override#341,17.817960739135742
+if (!allNamesToAlias.isEmpty()) {#668,17.814453476353695
+return CallSiteType.EXPRESSION;#424,17.800226663288317
+Node callNode, Node fnNode) {#690,17.795694478352864
+if (!assumeStrictThis) {#223,17.785022679497214
+Preconditions.checkNotNull(compiler);#58,17.778301811218263
+this.module = module;#90,17.77306612332662
+throw new IllegalStateException("unexpected");#301,17.77198309056899
+final int perReturnResultOverhead = 3; // "XX="#908,17.76878204345703
+return CanInlineResult.NO;#589,17.767583438328334
+referencesUsingBlockInlining++;#770,17.764819962637766
+return CanInlineResult.NO;#583,17.758272988455637
+final int perAliasOverhead = 3; // "XX="#909,17.75477022873728
+t, callNode, fnNode, namesToAlias)) {#593,17.75059814453125
+referencesUsingDirectInlining, costDeltaDirect,#808,17.742378764682346
+boolean forbidTemps = false;#629,17.72796206040816
+t, callNode, fnNode, needAliases);#211,17.72262499549172
+if (forbidTemps) {#658,17.72145160039266
+this.knownConstants = knownConstants;#936,17.706765379224503
+if (referenceCount == 1 && isRemovable &&#794,17.704708607991538
+"Decomposable expressions must be decomposed before inlining.");#492,17.697315675240976
+if (checkModules && ref.module != null) {#774,17.69628590031674
+Node newBlock = mutator.mutate(#501,17.696189676012313
+private Node inlineReturnValue(Node callNode, Node fnNode) {#256,17.684088650871725
+return newExpression;#286,17.68344963921441
+Node fnNode, int callCost,#817,17.67706768853324
+if (!callNode.getFirstChild().isName()) {#704,17.67524191912483
+Set<String> allNamesToAlias = Sets.newHashSet(namesToAlias);#665,17.673427899678547
+Node newExpression;#269,17.66303316752116
+return CallSiteType.DECOMPOSABLE_EXPRESSION;#426,17.649456699689228
+if (!callNode.getFirstChild().isName()) {#221,17.639119989731732
+if (!block.hasChildren()) {#885,17.61003605524699
++ resultCount * perReturnResultOverhead#921,17.60551286998548
+if (!compiler.getCodingConvention().isInlinableFunction(fnNode)) {#131,17.596981658935547
+final Node callNode;#84,17.595580948723686
+boolean assumeMinimumCapture) {#57,17.584383487701416
+referencesUsingBlockInlining;#786,17.58029576710292
+&& !NodeUtil.has(block, p, Predicates.<Node>alwaysTrue());#158,17.578737463269913
+return CanInlineResult.NO;#594,17.559377125331334
+int callCost = NAME_COST_ESTIMATE + PAREN_COST;#855,17.553865805916164
+fnNode, namesToAlias, InliningMode.DIRECT);#803,17.54249603098089
+return CanInlineResult.NO;#692,17.52536133357457
+InlineCostEstimator.ESTIMATED_IDENTIFIER_COST;#102,17.510066906611126
+int costDelta = (directInlines * costDeltaDirect) +#839,17.509548717074924
+injector.getDecomposer().maybeExposeExpression(callNode);#379,17.50847702759963
+throw new IllegalStateException("Unexpected call site type.");#532,17.501579784211657
+fnNode, args, allNamesToAlias, compiler.getCodingConvention());#667,17.492398071289063
+boolean needsDefaultReturnResult = true;#471,17.491795380910236
+this.assumeMinimumCapture = assumeMinimumCapture;#64,17.485527737935385
+if (!block.hasChildren()) {#270,17.485389073689777
+boolean isCallInLoop = NodeUtil.isWithinLoop(callNode);#465,17.483349300566175
+callSiteType.prepare(injector, callNode);#367,17.481216474012896
+if (!block.hasChildren()) {#548,17.47388752301534
+final String fnRecursionName = fnNode.getFirstChild().getString();#135,17.4687013171968
+callCost += 5 + 5;  // ".call" + "this,"#865,17.465754248879172
+Node callNode, Node fnNode, Set<String> needAliases,#174,17.463411634618584
+return -(costDeltaFunctionOverhead + 7);#893,17.45932169521556
+Node fnParam = NodeUtil.getFunctionParameters(fnNode).getFirstChild();#718,17.445078435151473
+FunctionToBlockMutator mutator = new FunctionToBlockMutator(#498,17.437170731393916
+NO#565,17.435051918029785
+Node block = fnNode.getLastChild();#695,17.428640638078964
+final boolean assumeMinimumCapture = this.assumeMinimumCapture;#613,17.426103087032544
+VAR_DECL_SIMPLE_ASSIGNMENT() {#340,17.420695940653484
+boolean inliningLowersCost(#755,17.386691093444824
+return CanInlineResult.NO;#196,17.38388180732727
+cArg = cArg.getNext();#710,17.38232068454518
+Node expressionRoot = ExpressionDecomposer.findExpressionRoot(callNode);#417,17.382258256276447
+if (fnContainsVars && forbidTemps) {#652,17.379784415749942
+&& parent.getFirstChild().isName()#404,17.375225649939644
+return true;#550,17.367607222663032
+fnNode, namesToAlias, InliningMode.BLOCK);#805,17.36167235807939
+Node srcLocation = block;#271,17.343690474828083
+boolean removable) {#820,17.34019203186035
+return InlineCostEstimator.getCost(fnNode, threshold + 1) <= threshold;#843,17.339286079406737
+return CallSiteType.SIMPLE_ASSIGNMENT;#407,17.335082319047714
+return CanInlineResult.NO;#204,17.333679676055908
+return CallSiteType.VAR_DECL_SIMPLE_ASSIGNMENT;#415,17.329514066378277
+return CanInlineResult.NO;#181,17.32480505534581
++ aliasCount * perAliasOverhead;#922,17.318505889491032
+private final boolean assumeMinimumCapture;#45,17.318079312642414
+int costDeltaFunctionOverhead = 15 + commaCount +#881,17.308886528015137
+private static int estimateCallCost(Node fnNode, boolean referencesThis) {#851,17.30102523167928
+Node safeReturnNode = returnNode.cloneTree();#278,17.296690099379596
+&& NodeUtil.getNameReferenceCount(#728,17.29013164838155
+this.callNode = callNode;#89,17.282419068472727
+return newBlock;#535,17.26320493221283
+callSiteType.prepare(injector, callNode);#384,17.263058575716887
+&& grandParent.isVar()#410,17.25395940144857
+&& grandParent.hasOneChild()) {#411,17.24576748118681
+int referenceCount = refs.size();#758,17.240656192486103
+Node block = fnNode.getLastChild();#257,17.237000805991038
+fnParam = fnParam.getNext();#735,17.232103740467746
+referencesUsingBlockInlining, costDeltaBlock,#809,17.22964991463555
+&& block.getFirstChild().getFirstChild() != null) {#554,17.22653762817383
+return n.getString().equals("eval");#640,17.214615490125574
+&& !NodeUtil.isVarOrSimpleAssignLhs(callNode, parent)#403,17.212972504752024
+Node returnNode = block.getFirstChild();#274,17.210911631584167
+needsDefaultReturnResult, isCallInLoop);#503,17.179504765404594
+Preconditions.checkState(parent.getFirstChild() == null);#513,17.177836934725445
+NodeUtil.getFunctionBody(fnNode),#626,17.157195141440944
+Node block = fnNode.getLastChild();#884,17.15392276218959
+boolean doesFunctionMeetMinimumRequirements(#119,17.15262571970622
+int numArgs = argsNode.getChildCount();#853,17.151790936787922
+YES,#563,17.14923683802287
+if (!isDirectCallNodeReplacementPossible(fnNode)) {#691,17.14632757086503
+NodeTraversal t, Node callNode, Node fnNode, Set<String> namesToAlias) {#580,17.142055412818646
+return CanInlineResult.NO;#708,17.129964139726425
+callNode);#422,17.125951512654623
+Preconditions.checkState(type == DecompositionType.UNDECOMPOSABLE);#428,17.124799664815267
+default:#494,17.12120223045349
+return canInlineReferenceDirectly(callNode, fnNode);#208,17.10749773979187
+FunctionArgumentInjector.getFunctionCallParameterMap(#266,17.102615901402064
+injector.getDecomposer().moveExpression(callNode);#362,17.100948572158813
+checkModules = false;  // no need to check additional modules.#780,17.086409950256346
+return true;#836,17.084773699442547
+Node inlineResult = FunctionArgumentInjector.inject(#279,17.08136377334595
+FunctionArgumentInjector.getFunctionCallParameterMap(#660,17.07982589887536
+new NodeUtil.MatchDeclaration(),#627,17.06363633099724
+DecompositionType type = decomposer.canExposeExpression(#421,17.06091547012329
+return inlineReturnValue(callNode, fnNode);#245,17.060848909265854
+boolean fnContainsVars = NodeUtil.has(#625,17.038686079137467
+return false;#153,17.029534513300117
+private Node inlineFunction(#455,17.028459276471818
+Preconditions.checkState(this != callSiteType);#366,17.02142892565046
+Preconditions.checkState(!NodeUtil.isFunctionObjectApply(callNode));#713,17.020053999764578
+&& n.getString().equals(fnName))#149,17.018990993499756
+(blockInlines * costDeltaBlock);#840,17.018634403453152
+return CanInlineResult.YES;#601,17.01749086380005
+block, "arguments", NodeUtil.MATCH_NOT_FUNCTION);#140,17.016218962492765
+Node thisValue = callNode.getFirstChild().getNext();#224,17.00996236006419
+boolean referencesArguments = NodeUtil.isNameReferenced(#139,17.007771492004395
+resultName = parent.getString();#478,17.006260812282562
+Node argsNode = NodeUtil.getFunctionParameters(fnNode);#852,16.999205137553968
+return CanInlineResult.YES;#748,16.998068809509277
+Preconditions.checkState(parent.isExprResult());#527,16.989168773997914
+private static final int PAREN_COST = 2;#108,16.96870735713414
+boolean assumeStrictThis,#56,16.963939825693767
+resultName = parent.getFirstChild().getString();#474,16.958382272720335
+int callCost = estimateCallCost(fnNode, referencesThis);#799,16.955450958675808
+FunctionArgumentInjector.maybeAddTempsForCallArguments(#666,16.945635120073955
+private boolean doesLowerCost(#816,16.918710827827454
+forbidTemps = NodeUtil.has(fnCallerBody,#648,16.914221672784713
+break;#516,16.898958587646483
+Preconditions.checkState(this != callSiteType);#383,16.883690606980096
+Preconditions.checkState(this.knownConstants.isEmpty());#935,16.872239780426025
+return inlineFunction(callNode, fnNode, fnName);#247,16.856472969055176
+boolean checkModules = isRemovable && fnModule != null;#765,16.83465952343411
+return CanInlineResult.NO;#730,16.831260871887206
+if (containsFunctions) {#188,16.825584014256794
+fnName, fnNode, callNode, resultName,#502,16.825183486938478
+new NodeUtil.MatchShallowStatement());#628,16.820339520772297
+int overhead = baseOverhead#919,16.807377179463703
+null, safeReturnNode, null, argMap);#280,16.80724875132243
+return CanInlineResult.NO;#742,16.806618054707844
+return false;#645,16.80224315936749
+return n != fnNode;#643,16.796069833967422
+private final boolean assumeStrictThis;#44,16.79548873901367
+private static int inlineCostDelta(#875,16.787855254279243
+newExpression = NodeUtil.newUndefinedNode(srcLocation);#272,16.78549198670821
+block, Token.RETURN, new NodeUtil.MatchShallowStatement());#915,16.78178139086123
+CanInlineResult canInlineReferenceToFunction(NodeTraversal t,#173,16.77740398206209
+Preconditions.checkState(grandParent.isExprResult());#521,16.755850543146547
+needsDefaultReturnResult = false;#483,16.74351952870687
+AFTER_PREPARATION,#564,16.741871452331544
+return true;#674,16.73672321864537
+&& n.getString().equals(fnRecursionName));#151,16.73038142522176
+return true;#234,16.729949814932688
+break;#479,16.729714107513427
+Node block = NodeUtil.getFunctionBody(fnNode);#544,16.649713304307724
+return true;#796,16.64699798160129
+Preconditions.checkArgument(returnNode.isReturn());#275,16.641903781890868
+Node callParentNode = callNode.getParent();#258,16.636115328470865
+public abstract void prepare(FunctionInjector injector, Node callNode);#388,16.61254014968872
+Node cArg = callNode.getFirstChild().getNext();#699,16.604767905341255
+callParentNode.replaceChild(callNode, newExpression);#285,16.590804682837593
+Node block = NodeUtil.getFunctionBody(fnNode);#121,16.585336367289226
+return false;#132,16.584200859069824
+int costDeltaBlock = inlineCostDelta(#804,16.571643169109638
+Node parent = callNode.getParent();#395,16.559607652517464
+return true;#760,16.543042288886177
+int costDeltaDirect = inlineCostDelta(#802,16.536705603966347
+Preconditions.checkState(fnRecursionName != null);#136,16.534151130252415
+private static final int COMMA_COST = 1;#105,16.52461290359497
+break;#475,16.47461576461792
+return false;#559,16.462304251534597
+return -costDeltaFunctionOverhead;#887,16.450207029070175
+parent.removeChild(parent.getFirstChild());#512,16.416848182678223
+match, NodeUtil.MATCH_NOT_FUNCTION);#649,16.407711868286132
+break;#484,16.384129142761232
+newExpression = safeReturnNode.removeFirstChild();#282,16.374256239997017
+Node grandParent = parent.getParent();#396,16.37422165503869
+Node grandParent = parent.getParent();#458,16.3633755170382
+Node parent = callNode.getParent();#457,16.361609312204216
+this.assumeStrictThis = assumeStrictThis;#63,16.35429348665125
+isRemovable);#810,16.349829991658527
+Preconditions.checkArgument(safeReturnNode == inlineResult);#281,16.32831064860026
+DIRECT,#73,16.302311579386394
+cArg = cArg.getNext();#744,16.29968895631678
+return (overhead - costDeltaFunctionOverhead);#924,16.295444881214816
+isRemovable = false;#779,16.266935884952545
+grandParent.replaceChild(parent, newBlock);#528,16.255435642443206
+return false;#653,16.250928984747993
+BLOCK#79,16.214996814727783
+greatGrandParent.addChildAfter(newBlock, grandParent);#515,16.17929072813554
+return false;#230,16.15626161748713
+return doesLowerCost(fnNode, overallCallCost,#807,16.14918488264084
+return false;#834,16.146975950761274
+boolean isDirectCallNodeReplacementPossible(Node fnNode) {#542,16.14644662071677
+break;#523,16.13364419937134
+Preconditions.checkState(compiler.getLifeCycleStage().isNormalized());#242,16.112629175186157
+break;#529,16.090797328948973
+NodeTraversal t, Node callNode, final Node fnNode,#611,16.089380400521414
+Node greatGrandParent = grandParent.getParent();#508,16.06667334238688
+public FunctionInjector(#52,15.983845710754395
+return true;#555,15.902383110739969
+greatGrandParent.replaceChild(grandParent, newBlock);#522,15.829509916759672
+return false;#226,15.510276222229004
+return false;#669,15.379067274240347
+class FunctionInjector {#38,15.06494494846889

@@ -1,0 +1,226 @@
+Scope getScope() {#519,20.68982717725966
+private final Scope scope;#420,20.194760004679363
+public String getSourceName() {#523,20.157441919500176
+private final String sourceName;#421,19.88808670043945
+private final Predicate<Var> varFilter;#73,19.628939787546795
+case Token.HOOK:#179,19.510983330862864
+private final AbstractCompiler compiler;#68,19.439214918348526
+Scope scope = null;#272,19.405086170543324
+private boolean isInitializingDeclarationAt(int index) {#290,19.390734840841855
+Predicate<Var> varFilter) {#89,19.36738961537679
+protected boolean isWellDefined() {#243,19.31983820597331
+private final Map<Var, ReferenceCollection> referenceMap =#52,19.318300247192383
+case Token.FOR:#164,19.31742000579834
+private final Behavior behavior;#63,19.243768283299037
+Map<Var, ReferenceCollection> referenceMap) {}#219,19.234872817993164
+case Token.WHILE:#166,19.22821113041469
+static class ReferenceCollection {#226,19.193118504115514
+boolean isEscaped() {#271,19.175792694091797
+boolean isDeclaration() {#447,19.167740631103516
+for (Reference ref : references) {#273,19.159103052956716
+case Token.TRY:#165,19.15838182889498
+boolean isVarDeclaration() {#453,19.14270782470703
+this.varFilter = varFilter;#92,19.10263705253601
+BasicBlock basicBlock, Scope scope, String sourceName) {#438,19.10011182512556
+boolean isNeverAssigned() {#388,19.097804763100363
+Reference getInitializingReference() {#328,19.095887097445402
+if (ref.isLvalue() || ref.isInitializingDeclaration()) {#374,19.08629952944242
+if (isInitializingDeclarationAt(0)) {#329,19.06848414738973
+case Token.WITH:#167,19.030093056815012
+boolean isInitializingDeclaration() {#464,19.017656644185383
+case Token.IF:#180,18.983220907358024
+case Token.OR:#181,18.971153552715595
+this.scope = scope;#443,18.9560128847758
+Reference getInitializingReferenceForConstants() {#340,18.934415681021555
+private static final Set<Integer> DECLARATION_PARENTS =#413,18.926954419989336
+public ReferenceCollection getReferenceCollection(Var v) {#106,18.902788162231445
+ReferenceCollectingCallback(AbstractCompiler compiler, Behavior behavior) {#78,18.9027778506279
+Node parent) {#149,18.887615489959718
+for (int i = 0; i < size; i++) {#342,18.88000707626343
+private Reference getOneAndOnlyAssignment() {#369,18.836159569876536
+Map<Var, ReferenceCollection> referenceMap);#213,18.831213845147026
+this.compiler = compiler;#90,18.817379691384055
+case Token.AND:#178,18.813717108506424
+if (ref == null) {#356,18.80802037165715
+if (ref.isLvalue() || ref.isInitializingDeclaration()) {#392,18.795479774475098
+for (int i = 1; i < size; i++) {#258,18.76536931991577
+if (isInitializingDeclarationAt(i) || isInitializingAssignmentAt(i)) {#343,18.76361322402954
+Node getAssignedValue() {#475,18.727399132468484
+class ReferenceCollectingCallback implements ScopedCallback, CompilerPass {#45,18.71050942738851
+for (int i = 0; i < size; i++) {#390,18.70720558166504
+Reference assignment = null;#370,18.701716683127664
+BasicBlock getParent() {#564,18.69537525177002
+Node getParent() {#484,18.69221454196506
+return isDeclaration() &&#467,18.638233820597332
+if (scope == null) {#274,18.636347516377768
+case Token.DO:#163,18.625242453355057
+if (init == null) {#252,18.625024575453537
+Reference init = getInitializingReference();#251,18.600777285439626
+if (isBlockBoundary(n, parent)) {#151,18.584018349647522
+Node getNameNode() {#488,18.577230072021486
+if (assignment == null) {#375,18.56941631105211
+this(compiler, behavior, Predicates.<Var>alwaysTrue());#79,18.54248930278577
+return scope;#520,18.53872839609782
+Reference ref = references.get(i);#391,18.522558268378763
+for (int i = 0; i < size; i++) {#372,18.487955236434935
+if (n.getType() == Token.NAME) {#115,18.4764960232903
+if (size == 0) {#245,18.454499024611252
+private boolean isInitializingAssignmentAt(int index) {#307,18.444530711454505
+Reference ref = references.get(i);#373,18.421175788430606
+BasicBlock getBasicBlock() {#480,18.416072845458984
+return null;#334,18.364269892374676
+boolean isLvalue() {#509,18.351335334777833
+BasicBlock basicBlock, Node func) {#432,18.323270180646112
+if (size > 0 && references.get(0).isInitializingDeclaration()) {#401,18.32190803527832
+if (isBlockBoundary(n, parent)) {#123,18.31449669599533
+BasicBlock basicBlock) {#424,18.31130872453962
+if (maybeDecl.isVarDeclaration()) {#310,18.310535782261898
+if (parent.getType() == Token.VAR) {#498,18.291870832443237
+if (referenceInfo == null) {#195,18.283588965733845
+Reference ref = getOneAndOnlyAssignment();#355,18.27265101671219
+boolean isAssignedOnceInLifetime() {#354,18.267806879679362
+scope = ref.scope;#275,18.22385323047638
+if (maybeInit.isInitializingDeclaration()) {#292,18.217893070644802
+Reference maybeDecl = references.get(index-1);#309,18.217153692245482
+for (currentBlock = thatBlock;#576,18.21379225594657
+switch (parent.getType()) {#162,18.20846196583339
+referenceInfo = new ReferenceCollection();#196,18.206927959735577
+@Override#217,18.201906363169353
+private final BasicBlock basicBlock;#419,18.1794960715554
+return (parent.getType() == Token.FUNCTION)#476,18.1644917011261
+private static boolean isBlockBoundary(Node n, Node parent) {#160,18.1616709653069
+|| parentType == Token.DEC#513,18.156514392179602
+int size = references.size();#244,18.154493918785683
+ReferenceCollectingCallback(AbstractCompiler compiler, Behavior behavior,#88,18.145683415730794
+static final class Reference {#411,18.13124111720494
+this.sourceName = sourceName;#444,18.129565375191824
+int size = references.size();#389,18.124302570636456
+BasicBlock currentBlock;#575,18.103804328224875
+int size = references.size();#341,18.102502529437725
+int size = references.size();#371,18.037093749413124
+if (v != null && varFilter.apply(v)) {#117,18.012396144866944
+private void addReference(NodeTraversal t, Var v, Reference reference) {#192,17.99785442352295
+return parent.getType() == Token.VAR;#454,17.981939156850178
+|| parentType == Token.INC#512,17.981666901532343
+return null;#347,17.976350678337944
+if (!initBlock.provablyExecutesBefore(#259,17.965801740947523
+private final Node parent;#417,17.93907864888509
+return DECLARATION_PARENTS.contains(parent.getType()) ||#448,17.936481475830078
+return sourceName;#524,17.934864616394044
+private final Deque<BasicBlock> blockStack = new ArrayDeque<BasicBlock>();#58,17.933604673905805
+return true;#362,17.86579269833035
+static final class BasicBlock {#532,17.802271842956543
+return references.get(0);#330,17.792029571533202
+return NodeUtil.isForIn(parent) && parent.getFirstChild() == n;#501,17.790099603158456
+boolean firstReferenceIsAssigningDeclaration() {#399,17.787810393742152
+behavior.afterExitScope(t, referenceMap);#142,17.747982470194497
+private final boolean isHoisted;#540,17.74795527891679
+if (parent != null) {#161,17.743989424272016
+return (parentType == Token.VAR && nameNode.getFirstChild() != null)#511,17.742164905254658
+Preconditions.checkState(references.get(0).isDeclaration());#256,17.73276972770691
+BasicBlock(BasicBlock parent, Node root) {#555,17.713103357950846
+BasicBlock initBlock = init.getBasicBlock();#257,17.690993252922507
+return true;#396,17.679809252421062
+references.get(i).getBasicBlock())) {#260,17.660852125712804
+Node getGrandparent() {#492,17.648545837402345
+int size = references.size();#400,17.63816686776968
+return n.getType() == Token.CASE;#189,17.637685239315033
+if (index < references.size() && index > 0) {#308,17.636507034301758
+private final Node nameNode;#416,17.635601139068605
+Reference maybeInit = references.get(index);#291,17.62365186214447
+return currentBlock == this;#584,17.59084701538086
+return true;#177,17.588107109069824
+boolean isSimpleAssignmentToName() {#504,17.58335597698505
+ReferenceCollection referenceInfo = referenceMap.get(v);#194,17.57932585477829
+|| (NodeUtil.isAssignmentOp(parent)#514,17.57236099243164
+if (maybeInit.isSimpleAssignmentToName()) {#313,17.570292638695758
+BasicBlock parent = blockStack.isEmpty() ? null : blockStack.peek();#133,17.5587564551312
+private static boolean isLhsOfForInExpression(Node n) {#496,17.53542823791504
+this.basicBlock = basicBlock;#442,17.52920123508998
+List<Reference> references = Lists.newArrayList();#228,17.526414811611176
+private final BasicBlock parent;#534,17.507597637176513
+if (currentBlock.isHoisted) {#579,17.4940410984887
+boolean isHoistedFunction() {#457,17.479399767788973
+basicBlock, t.getScope(), t.getSourceName());#434,17.477864106496174
+return new Reference(func.getFirstChild(), func, func.getParent(),#433,17.47504827250605
+Reference maybeInit = references.get(index);#312,17.46052751541138
+void add(Reference reference, NodeTraversal t, Var v) {#230,17.45375452041626
+return basicBlock;#481,17.441930961608886
+return nameNode;#489,17.39014301300049
+this.parent = parent;#440,17.379682620366413
+boolean provablyExecutesBefore(BasicBlock thatBlock) {#572,17.37825926612405
+Var v = t.getScope().getVar(n.getString());#116,17.37115560878407
+return references.get(1);#332,17.361559041341145
+this.behavior = behavior;#91,17.35832633972168
+return false;#298,17.3519500096639
+return assignment;#382,17.336598290337456
+(parent.getType() != Token.VAR || nameNode.getFirstChild() != null);#468,17.33044096827507
+return parent.getType() == Token.ASSIGN#505,17.32635155846091
+new Reference(n, parent, t, blockStack.peek()));#119,17.316712583814347
+blockStack.push(new BasicBlock(parent, n));#134,17.292632944443646
+void afterExitScope(NodeTraversal t,#212,17.28692169189453
+blockStack.push(new BasicBlock(blockStack.peek(), n));#152,17.279849135357402
+return true;#265,17.279248025682236
+return false;#318,17.27120802137587
+public void afterExitScope(NodeTraversal t,#218,17.237914979457855
+return parent;#485,17.228247430589462
+parent.getType() == Token.LP &&#449,17.218724536895753
+private final Node grandparent;#418,17.218266201019286
+return false;#280,17.203624089558918
+t.getSourceName());#426,17.20154302260455
+Preconditions.checkState(!maybeDecl.isInitializingDeclaration());#311,17.196118178191007
+return referenceMap.get(v);#107,17.15398335456848
+referenceMap.put(v, referenceInfo);#197,17.153296291828156
+&& parent.getFirstChild() == nameNode;#506,17.15139666057768
+ImmutableSet.of(Token.VAR, Token.FUNCTION, Token.CATCH);#414,17.144107214609782
+currentBlock != null && currentBlock != this;#577,17.135074751717703
+public void exitScope(NodeTraversal t) {#140,17.134243760790145
+|| isLhsOfForInExpression(nameNode);#516,17.087143835814103
+this.parent = parent;#556,17.08429153760274
+public void enterScope(NodeTraversal t) {#131,17.041953768048966
+this.nameNode = nameNode;#439,17.035647051674978
+currentBlock = currentBlock.getParent()) {#578,17.023943401518324
+return parent;#565,17.019586669074165
+return false;#404,17.014636039733887
+return false;#357,17.01289601759477
+assignment = ref;#376,16.98870587348938
+this(nameNode, parent, parent.getParent(), basicBlock, t.getScope(),#425,16.987806466909554
+return true;#154,16.971486500331334
+static Behavior DO_NOTHING_BEHAVIOR = new Behavior() {#216,16.94130932657342
+references.add(reference);#231,16.915918588638306
+int parentType = parent.getType();#510,16.901483217875164
+? parent : NodeUtil.getAssignedValue(getNameNode());#477,16.86533546447754
+return grandparent;#493,16.855323791503906
+Node n = t.getScope().getRootNode();#132,16.84326261281967
+interface Behavior {#208,16.824181365966798
+addReference(t, v,#118,16.824027633666994
+blockStack.pop();#141,16.801898850335014
+Node parent = n.getParent();#497,16.801023960113525
+return NodeUtil.isHoistedFunctionDeclaration(parent);#458,16.77690682411194
+referenceInfo.add(reference, t, v);#201,16.702332496643066
+return isLhsOfForInExpression(parent);#499,16.680879735946654
+grandparent.getType() == Token.FUNCTION;#450,16.64413365073826
+return false;#246,16.59532928466797
+NodeTraversal.traverse(compiler, root, this);#100,16.560171127319336
+&& parent.getFirstChild() == nameNode)#515,16.550917205810546
+return n != parent.getFirstChild();#184,16.55005465055767
+this.isHoisted = NodeUtil.isHoistedFunctionDeclaration(root);#559,16.54368667602539
+blockStack.pop();#124,16.528989098288797
+return false;#253,16.512178421020508
+Maps.newHashMap();#53,16.402801036834717
+return references.get(i);#344,16.373608420876895
+private Reference(Node nameNode, Node parent, Node grandparent,#437,16.345787684122723
+public void process(Node externs, Node root) {#99,16.3087584177653
+return true;#402,16.28953812339089
+return true;#296,16.23718885941939
+Reference(Node nameNode, Node parent, NodeTraversal t,#423,16.14923677946392
+this.grandparent = grandparent;#441,16.09415360859462
+public void visit(NodeTraversal t, Node n, Node parent) {#114,16.03811404579564
+return true;#277,16.01179423699012
+return null;#378,16.002387046813965
+return false;#393,15.779695437504696
+static Reference newBleedingFunction(NodeTraversal t,#431,15.718134936164407
+return false;#580,15.707920734698956
+return true;#314,15.625972811381022
+return false;#261,15.40909268305852
+public boolean shouldTraverse(NodeTraversal nodeTraversal, Node n,#148,15.37742486000061

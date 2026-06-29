@@ -1,0 +1,32 @@
+MockUtil mockUtil = new MockUtil();#58,18.00022429227829
+return "Mock for " + mockUtil.getMockSettings(mock).getTypeToMock().getSimpleName() + ", hashCode: " + mock.hashCode();#68,17.284671816909523
+public class ReturnsEmptyValues implements Answer<Object>, Serializable {#54,17.222620487213135
+return null;#120,17.192157571965996
+MockName name = mockUtil.getMockName(mock);#66,17.177998781204224
+Object mock = invocation.getMock();#65,17.146176065717423
+if (name.isDefault()) {#67,17.07221989631653
+Class<?> returnType = invocation.getMethod().getReturnType();#79,16.92312228161356
+return new TreeMap<Object, Object>();#113,16.894526481628418
+if (methodsGuru.isToString(invocation.getMethod())) {#64,16.862858878241646
+return new TreeSet<Object>();#95,16.822153329849243
+return new TreeSet<Object>();#97,16.806691646575928
+return new TreeMap<Object, Object>();#111,16.801556370475076
+return new LinkedList<Object>();#101,16.785200845627557
+return new LinkedList<Object>();#103,16.76255566733224
+return new HashSet<Object>();#91,16.747349166870116
+return new HashMap<Object, Object>();#107,16.667184136130594
+return new HashSet<Object>();#93,16.665998792648317
+return new ArrayList<Object>();#105,16.65966386795044
+return new LinkedHashSet<Object>();#99,16.63036467812278
+return new HashMap<Object, Object>();#109,16.617756019939076
+public Object answer(InvocationOnMock invocation) {#63,16.583795487880707
+return new LinkedList<Object>();#89,16.577352614629838
+return name.toString();#70,16.544163357127797
+return 1;#76,16.519815953572593
+return returnValueFor(returnType);#80,16.38475912809372
+return new LinkedHashMap<Object, Object>();#115,16.142484545707703
+ObjectMethodsGuru methodsGuru = new ObjectMethodsGuru();#57,15.921926922268337
+private static final long serialVersionUID = 1998191268711234347L;#56,15.634204561060125
+return Primitives.defaultValueForPrimitiveOrWrapper(type);#85,15.159264070016366
+if (Primitives.isPrimitiveOrWrapper(type)) {#84,15.144647017769191
+Object returnValueFor(Class<?> type) {#83,15.079880396525065

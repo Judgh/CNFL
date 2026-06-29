@@ -1,0 +1,63 @@
+if (object == null) {#79,19.989355278015136
+try {#86,19.127405071258544
+if (outputStream == null) {#131,19.062591791152954
+if (objectData == null) {#218,19.03359043598175
+if (inputStream == null) {#185,18.900577068328857
+throw new IllegalArgumentException("The byte[] must not be null");#219,18.796741591559517
+public static Object deserialize(byte[] objectData) {#217,18.613552430096796
+@Override#262,18.613062477111818
+if (in != null) {#200,18.60685688516368
+if (out != null) {#144,18.540991575821586
+try {#189,18.52629327774048
+try {#135,18.50908832550049
+if (in != null) {#104,18.426119099492613
+ObjectInputStream in = null;#188,18.293960571289062
+public static Object deserialize(InputStream inputStream) {#184,18.27266732384177
+try {#265,18.181307315826416
+throw new IllegalArgumentException("The OutputStream must not be null");#132,18.180167657357675
+out.close();#145,18.1496528784434
+public static void serialize(Serializable obj, OutputStream outputStream) {#130,18.110749101638795
+in.close();#105,18.094404061635334
+ObjectOutputStream out = null;#134,18.07052205403646
+String name = desc.getName();#264,18.02286581993103
+return Class.forName(name, false, Thread.currentThread().getContextClassLoader());#268,17.997233438491822
+throw new IllegalArgumentException("The InputStream must not be null");#186,17.966978285047745
+in.close();#201,17.962801376978557
+try {#143,17.918376786368235
+ByteArrayInputStream bais = new ByteArrayInputStream(objectData);#83,17.9099858601888
+ByteArrayInputStream bais = new ByteArrayInputStream(objectData);#221,17.907973686854046
+return in.readObject();#192,17.84896749920315
+byte[] objectData = serialize(object);#82,17.843288951449924
+try {#103,17.787986414773123
+try {#199,17.74307346343994
+ByteArrayOutputStream baos = new ByteArrayOutputStream(512);#162,17.650797553684402
+@SuppressWarnings("unchecked") // see above#94,17.642196502685547
+super(in);#249,17.631040394306183
+return null;#80,17.58201370239258
+return readObject;#96,17.498420357704163
+return deserialize(bais);#222,17.484289705753326
+out.writeObject(obj);#138,17.467302824321546
+serialize(obj, baos);#163,17.430189728736877
+out = new ObjectOutputStream(outputStream);#137,17.416238568045877
+T readObject = (T) in.readObject();#95,17.34371292591095
+in = new ObjectInputStream(inputStream);#191,17.328234802592885
+public static byte[] serialize(Serializable obj) {#161,17.327182710170746
+throw new SerializationException("IOException while reading cloned object data", ex);#101,17.31608223092967
+public static <T extends Serializable> T clone(T object) {#78,17.308511081494782
+super();#59,17.23182621002197
+protected Class<?> resolveClass(ObjectStreamClass desc) throws IOException, ClassNotFoundException {#263,17.217880150367474
+return Class.forName(name, false, classLoader);#266,17.21321776817585
+ClassLoaderAwareObjectInputStream in = null;#85,17.14540501644737
+return baos.toByteArray();#164,17.130849242210388
+public SerializationUtils() {#58,17.09912040016868
+throw new SerializationException("IOException on closing cloned object data InputStream.", ex);#108,17.090023394993374
+private ClassLoader classLoader;#239,17.086379187447683
+throw new SerializationException(ex);#141,17.076630783081054
+throw new SerializationException("ClassNotFoundException while reading cloned object data", ex);#99,17.032529369477302
+throw new SerializationException(ex);#195,16.998031663894654
+in = new ClassLoaderAwareObjectInputStream(bais, object.getClass().getClassLoader());#88,16.91513729095459
+throw new SerializationException(ex);#197,16.909947204589844
+public ClassLoaderAwareObjectInputStream(InputStream in, ClassLoader classLoader) throws IOException {#248,16.731711546579998
+public class SerializationUtils {#48,16.652270078659058
+static class ClassLoaderAwareObjectInputStream extends ObjectInputStream {#238,16.56306485125893
+this.classLoader = classLoader;#250,15.986461687088013

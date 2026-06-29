@@ -1,0 +1,288 @@
+private static final long serialVersionUID = -5630213147331578515L;#86,18.539143603780996
+throw new NullArgumentException(LocalizedFormats.FRACTION);#902,18.445360289679634
+return FastMath.pow(numerator.doubleValue(),   exponent) /#1004,18.43637819643374
+throw new NullArgumentException();#857,18.399283609892194
+throw new NullArgumentException(LocalizedFormats.FRACTION);#1087,18.369633109481246
+throw new NullArgumentException(LocalizedFormats.FRACTION);#508,18.36806869506836
+throw new NullArgumentException();#1044,18.319293473896227
+MathUtils.checkNotNull(num, LocalizedFormats.NUMERATOR);#120,18.306407292683918
+throw new NullArgumentException(LocalizedFormats.FRACTION);#665,18.29145410325792
+m = m >> 1;#193,18.263763162824844
+long m              = bits & 0x000fffffffffffffL;#183,18.168339702061246
+m |= 0x0010000000000000L;#186,18.044831362637606
+MathUtils.checkNotNull(bg);#463,17.922581301795113
+ret = thisOne.numerator.equals(rhs.numerator) && thisOne.denominator.equals(rhs.denominator);#715,17.90616697194625
+return nOd.compareTo(dOn);#596,17.87128577232361
+numerator   = num;#144,17.86393958643863
+MathUtils.checkNotNull(den, LocalizedFormats.DENOMINATOR);#121,17.79695269039699
+ArithmeticUtils.pow(numerator,   -exponent));#967,17.7556299173607
+throw new MathIllegalArgumentException(LocalizedFormats.NAN_VALUE_CONVERSION);#173,17.731425509733313
+this(num, BigInteger.ONE);#107,17.72589038400089
+throw new ZeroException(LocalizedFormats.ZERO_DENOMINATOR);#123,17.716387716929116
+return (BigInteger.ZERO.compareTo(numerator) <= 0) ? this : negate();#447,17.700960963964462
+throw new ZeroException(LocalizedFormats.ZERO_DENOMINATOR);#615,17.697624174753823
+return new BigFraction(numerator.multiply(fraction.numerator),#908,17.661281519922717
+final BigInteger gcd = numerator.gcd(denominator);#1028,17.636935432751972
+public int hashCode() {#813,17.618786334991455
+(FastMath.abs(convergent - value) > epsilon) &&#308,17.610791458803064
+return 37 * (37 * 17 + numerator.hashCode()) + denominator.hashCode();#814,17.590799923600823
+throw new ZeroException(LocalizedFormats.ZERO_DENOMINATOR);#668,17.589713478088377
+BigInteger nOd = numerator.multiply(object.denominator);#594,17.586662115874113
+throw new FractionConversionException(value, a0, 1l);#275,17.56561824253627
+numerator   = BigInteger.ZERO;#126,17.565046600673508
+final long sign     = bits & 0x8000000000000000L;#181,17.564739570617675
+FastMath.pow(denominator.doubleValue(), exponent);#1005,17.557076295216877
+str = numerator + " / " + denominator;#1123,17.528063774108887
+public int getDenominatorAsInt() {#756,17.522592272077286
+m = -m;#189,17.51340439740349
+den = den.negate();#140,17.485876373622727
+ret = true;#711,17.478164851665497
+return new BigFraction(ArithmeticUtils.pow(numerator,   exponent),#969,17.46795221964518
+return new BigFraction(numerator.subtract(denominator.multiply(bg)), denominator);#1046,17.45254658290318
+final long exponent = bits & 0x7ff0000000000000L;#182,17.440232406963002
+return this;#1090,17.439803568522134
+long a0 = (long) FastMath.floor(r0);#273,17.437834947005562
+return new BigFraction(ArithmeticUtils.pow(numerator,   exponent),#989,17.43210309346517
+public int getNumeratorAsInt() {#789,17.42619228363037
+ArithmeticUtils.pow(denominator, exponent));#970,17.42562279171414
+return this;#511,17.42202574412028
+public long getDenominatorAsLong() {#767,17.406449726649694
+ArithmeticUtils.pow(numerator,   eNeg));#987,17.40123068369352
+return new BigFraction(bg.multiply(numerator), denominator);#859,17.393540170457626
+str = numerator.toString();#1119,17.38852815628052
+num = numerator.subtract(fraction.numerator);#1096,17.37464669772557
+num = numerator.add(fraction.numerator);#518,17.36754853908832
+den = den.divide(gcd);#134,17.362501841325027
+denominator.multiply(fraction.denominator));#909,17.357880740695528
+num = num.negate();#139,17.35391144130541
+BigInteger dOn = denominator.multiply(object.numerator);#595,17.35294198989868
+return new BigFraction(numerator.add(denominator.multiply(bg)), denominator);#464,17.350508892174922
+return new BigFraction(denominator, numerator);#1016,17.34888063158308
+return numerator;#779,17.345924536387127
+return new BigFraction(numerator, denominator.multiply(bg));#617,17.343755898652255
+ArithmeticUtils.pow(denominator, exponent));#990,17.33659144507514
+final long a1 = (long) FastMath.floor(r1);#299,17.334539345332555
+this(BigInteger.valueOf(num), BigInteger.ONE);#366,17.331103698067043
+return new BigFraction(ArithmeticUtils.pow(denominator, -exponent),#966,17.323488544015323
+throws FractionConversionException {#352,17.31268393198649
+denominator = den;#145,17.30984878540039
+stop = true;#317,17.307994747161864
+int k = ((int) (exponent >> 52)) - 1075;#191,17.294906695683796
+float result = numerator.floatValue() / denominator.floatValue();#732,17.25896942615509
+throw new FractionConversionException(value, p2, q2);#303,17.24630519747734
+this(BigInteger.valueOf(num), BigInteger.ONE);#393,17.241876726565152
+throw new FractionConversionException(value, maxIterations);#322,17.225543829110954
+num = (numerator.multiply(fraction.denominator)).subtract((fraction.numerator).multiply(denominator));#1099,17.21437304360526
+return new BigFraction(numerator.negate(), denominator);#921,17.20955729484558
+throw new MathIllegalArgumentException(LocalizedFormats.INFINITE_VALUE_CONVERSION);#176,17.209246035984584
+num = (numerator.multiply(fraction.denominator)).add((fraction.numerator).multiply(denominator));#521,17.20299769462423
+return new BigFraction(numerator.divide(gcd), denominator.divide(gcd));#1029,17.19396279074929
+return new BigFraction(denominator.pow(-exponent), numerator.pow(-exponent));#949,17.186442246308197
+public long getNumeratorAsLong() {#800,17.182957853589738
+++k;#194,17.177893575032552
+num = num.divide(gcd);#133,17.1539207972013
+boolean ret = false;#708,17.152767254756046
+final BigInteger gcd = num.gcd(den);#131,17.151394996643067
+boolean stop = false;#295,17.144753529475285
+BigFraction thisOne = this.reduce();#714,17.137297298597254
+this(value, 0, maxDenominator, 100);#353,17.129355839320592
+++n;#297,17.12786471048991
+return ZERO; // normalize zero.#433,17.124569665817987
+return new BigDecimal(numerator).divide(new BigDecimal(denominator));#541,17.12424955368042
+numerator   = BigInteger.valueOf(p2);#326,17.120929644658016
+throws FractionConversionException {#230,17.119000307718913
+public BigFraction(final double value) throws MathIllegalArgumentException {#171,17.118115833827428
+return result;#688,17.114710894497957
+public BigFraction add(final BigInteger bg) throws NullArgumentException {#462,17.103657895868476
+this(BigInteger.valueOf(num), BigInteger.valueOf(den));#381,17.091648725362923
+final int denominator) {#431,17.086755683205343
+numerator   = BigInteger.valueOf(p1);#329,17.085628289442795
+fraction.numerator.equals(BigInteger.ZERO)) {#905,17.08168888092041
+r0 = r1;#315,17.08132839202881
+if (exponent.compareTo(BigInteger.ZERO) < 0) {#984,17.076530279936613
+return ZERO;#906,17.073723912239075
+if (FastMath.abs(a0 - value) < epsilon) {#280,17.06717689220722
+den = denominator.multiply(fraction.denominator);#522,17.043647868292673
+numerator   = BigInteger.valueOf(m);#198,17.02165241241455
+final double r1 = 1.0 / (r0 - a0);#298,17.021581990378245
+den = denominator.multiply(fraction.denominator);#1100,17.009419884000504
+this(BigInteger.valueOf(num), BigInteger.valueOf(den));#408,17.006162349994366
+return result;#735,16.98339488289573
+denominator = BigInteger.ONE;#127,16.962128829956054
+denominator = BigInteger.valueOf(q2);#327,16.958128412564594
+a0 = a1;#314,16.952436100352894
+this(value, epsilon, Integer.MAX_VALUE, maxIterations);#231,16.94891408773569
+double result = numerator.doubleValue() / denominator.doubleValue();#685,16.948856194814045
+numerator   = BigInteger.valueOf(m).multiply(BigInteger.ZERO.flipBit(k));#201,16.943381402550674
+public double doubleValue() {#684,16.93980131149292
+denominator = BigInteger.ONE;#202,16.93122034072876
+final long bits     = Double.doubleToLongBits(value);#180,16.914027507488544
+return numerator.divide(denominator).longValue();#842,16.909180771220814
+extends Number#40,16.903497854868572
+return new BigFraction(ArithmeticUtils.pow(denominator, eNeg),#986,16.90127551916874
+private static final BigInteger ONE_HUNDRED = BigInteger.valueOf(100);#89,16.900553703308105
+denominator = BigInteger.valueOf(q1);#330,16.891902089118958
+return new BigFraction(numerator.pow(exponent), denominator.pow(exponent));#951,16.873024246909402
+return denominator;#746,16.867372671763103
+while (((m & 0x001ffffffffffffeL) != 0) && ((m & 0x1) == 0)) {#192,16.85187427417652
+denominator = BigInteger.ONE;#282,16.844015169143677
+return new BigFraction(numerator, denominator);#436,16.83572246914818
+public String toString() {#1116,16.834602546691894
+final double convergent = (double) p2 / (double) q2;#306,16.8314428658321
+return new BigDecimal(numerator).divide(new BigDecimal(denominator), roundingMode);#560,16.8209191235629
+p0 = p1;#310,16.819603399796918
+return numerator.intValue();#790,16.816042327880858
+return new BigDecimal(numerator).divide(new BigDecimal(denominator), scale, roundingMode);#579,16.81111079624721
+long overflow = Integer.MAX_VALUE;#271,16.80643423865823
+p1 = p2;#311,16.80427178469571
+return numerator.longValue();#801,16.7984920501709
+q0 = q1;#312,16.795960339632902
+numerator = BigInteger.valueOf(a0);#281,16.79263420899709
+if (BigInteger.ZERO.compareTo(den) > 0) {#138,16.792536735534668
+public int intValue() {#827,16.788502502441407
+throws FractionConversionException {#270,16.784763844807944
+den = denominator;#519,16.772959484773523
+final int maxIterations)#229,16.765770780629126
+return ret;#718,16.747604803605512
+return new BigFraction(num, den);#524,16.741686450110542
+den = denominator;#1097,16.74146842956543
+return new BigFraction(num, den);#1102,16.739036719004314
+return;#283,16.737801824297225
+public long longValue() {#841,16.735009288787843
+denominator = BigInteger.ZERO.flipBit(-k);#199,16.725299411349827
+double r0 = value;#272,16.720588207244873
+return add(BigInteger.valueOf(l));#492,16.715361394380267
+if (BigInteger.ONE.compareTo(gcd) < 0) {#132,16.697578779856364
+return multiply(BigInteger.valueOf(l));#887,16.679238720944053
+return numerator.divide(denominator).intValue();#828,16.6709209355441
+q1 = q2;#313,16.670211922038686
+return multiply(ONE_HUNDRED).doubleValue();#933,16.669386318751744
+return subtract(BigInteger.valueOf(l));#1072,16.658504486083984
+if (exponent < 0) {#948,16.657916367053986
+if (bg == null) {#856,16.6553165435791
+if (bg == null) {#1043,16.648401959737143
+final BigInteger eNeg = exponent.negate();#985,16.64298322926397
+return divide(BigInteger.valueOf(l));#649,16.642587511163008
+return multiply(fraction.reciprocal());#671,16.626409636603462
+if (numerator == 0) {#432,16.61906909942627
+public static BigFraction getReducedFraction(final int numerator,#430,16.599440336227417
+p2 = (a1 * p1) + p0;#300,16.599254498114952
+public BigInteger getDenominator() {#745,16.57341018089881
+public BigFraction abs() {#446,16.55347087166526
+if (BigInteger.ZERO.equals(bg)) {#614,16.548358136957344
+if (n >= maxIterations) {#321,16.541326017940747
+if (numerator.equals(BigInteger.ZERO) ||#904,16.530001024405163
+String str = null;#1117,16.46975069779616
+long p0 = 1;#286,16.465315886906215
+final int maxDenominator, int maxIterations)#269,16.438913292355007
+q2 = (a1 * q1) + q0;#301,16.42383854205792
+public BigInteger getNumerator() {#778,16.42125232403095
+return add(BigInteger.valueOf(i));#478,16.410842945701198
+return divide(BigInteger.valueOf(i));#633,16.407612198277523
+private final BigInteger numerator;#92,16.39929233897816
+return multiply(BigInteger.valueOf(i));#873,16.38741704037315
+long p1 = a0;#288,16.386686325073242
+if ((n < maxIterations) &&#307,16.378748394194105
+if (exponent < 0) {#965,16.372077107429504
+if (BigInteger.ZERO.equals(num)) {#125,16.361297780817207
+return denominator.intValue();#757,16.345212427775063
+BigInteger den = null;#1094,16.336047989981516
+return str;#1125,16.308424256064676
+BigInteger den = null;#515,16.29506513050624
+public BigFraction(final long num, final long den) {#407,16.283005714416504
+return subtract(BigInteger.valueOf(i));#1059,16.27547254060444
+public BigFraction negate() {#920,16.274951327930797
+long q1 = 1;#289,16.27023424421038
+long q0 = 0;#287,16.26994248798915
+return denominator.longValue();#768,16.242201868693034
+public BigFraction(final int num, final int den) {#380,16.22266451517741
+long q2 = 1;#292,16.220813410622732
+(q2 < maxDenominator)) {#309,16.21514734855065
+public static final BigFraction ONE_QUARTER = new BigFraction(1, 4);#65,16.190653915405274
+private final BigInteger denominator;#95,16.190610365434125
+@Override#840,16.189157485961914
+public BigFraction subtract(final int i) {#1058,16.18795026143392
+public BigFraction(final double value, final double epsilon,#228,16.172985629031533
+if (exponent != 0) {#184,16.17162126302719
+int n = 0;#294,16.166579246520996
+private BigFraction(final double value, final double epsilon,#268,16.158191781294974
+if (this == other) {#710,16.144534428914387
+public static final BigFraction THREE_QUARTERS = new BigFraction(3, 4);#74,16.142647323608397
+public BigFraction(final double value, final int maxDenominator)#351,16.137341022491455
+@Override#812,16.13305203119914
+@Override#826,16.128252347310383
+if (BigInteger.ZERO.equals(fraction.numerator)) {#667,16.125708403410734
+BigInteger num = null;#1093,16.125116075788224
+str = "0";#1121,16.12074100269991
+BigInteger num = null;#514,16.117425169263566
+@Override#683,16.10832866032918
+long p2 = 0;#291,16.106059006282262
+public BigFraction add(final int i) {#477,16.099966049194336
+public float floatValue() {#731,16.091030311584472
+public double percentageValue() {#932,16.090482425689697
+public static final BigFraction ONE_HALF = new BigFraction(1, 2);#62,16.085714416503905
+do {#296,16.07836170196533
+public BigDecimal bigDecimalValue() {#540,16.06475169318063
+@Override#1115,16.060537656148274
+@Override#730,16.04807249704997
+public static final BigFraction TWO_QUARTERS = new BigFraction(2, 4);#80,16.036367378234864
+public BigFraction add(final long l) {#491,16.02955290476481
+if (a0 > overflow) {#274,16.014193892478943
+public static final BigFraction FOUR_FIFTHS = new BigFraction(4, 5);#56,16.009251523900915
+if (q2 < maxDenominator) {#325,16.001014860052813
+@Override#706,15.998673756917318
+public static final BigFraction ZERO = new BigFraction(0);#50,15.97455096244812
+public BigFraction subtract(final long l) {#1071,15.953680419921875
+BigFraction rhs = ((BigFraction) other).reduce();#713,15.94444853918893
+public BigFraction multiply(final long l) {#886,15.931872685750326
+public BigFractionField getField() {#1129,15.894454735976
+public BigFraction multiply(final int i) {#872,15.882783444722493
+public static final BigFraction ONE_THIRD = new BigFraction(1, 3);#68,15.87550981839498
+if ((p2 > overflow) || (q2 > overflow)) {#302,15.870854130497685
+public boolean equals(final Object other) {#707,15.851328409635103
+public BigFraction pow(final long exponent) {#964,15.85083662668864
+return BigFractionField.getInstance();#1130,15.84568068560432
+if (BigInteger.ZERO.equals(den)) {#122,15.81829851323908
+public BigFraction divide(final int i) {#632,15.817190424601238
+public double pow(final double exponent) {#1003,15.787046946012056
+if (fraction == null) {#901,15.779353976249695
+public BigFraction(BigInteger num, BigInteger den) {#119,15.776730431450737
+public BigFraction divide(final long l) {#648,15.77386048634847
+public static final BigFraction ONE = new BigFraction(1);#47,15.758718490600586
+public BigFraction pow(final int exponent) {#947,15.743346468607585
+if (BigInteger.ONE.equals(denominator)) {#1118,15.742444535960322
+public BigFraction subtract(final BigInteger bg) {#1042,15.728106779210707
+public BigFraction reduce() {#1027,15.70817843350497
+public BigFraction reciprocal() {#1015,15.707869269631125
+if (fraction == null) {#664,15.68178141117096
+if (sign != 0) {#188,15.673982747395833
+if (denominator.equals(fraction.denominator)) {#517,15.671797218322753
+if (denominator.equals(fraction.denominator)) {#1095,15.668778266906738
+public BigFraction multiply(final BigInteger bg) {#855,15.665065484888414
+public static final BigFraction TWO = new BigFraction(2);#44,15.662908604270534
+public BigDecimal bigDecimalValue(final int scale, final int roundingMode) {#578,15.638899429984715
+public BigFraction(final long num) {#392,15.608643191201347
+public BigFraction(final int num) {#365,15.591537884303502
+if (k < 0) {#197,15.560735003153484
+implements FieldElement<BigFraction>, Comparable<BigFraction>, Serializable {#41,15.540153850208629
+public static final BigFraction THREE_FIFTHS = new BigFraction(3, 5);#71,15.538193812737099
+public int compareTo(final BigFraction object) {#593,15.523368299007416
+public static final BigFraction ONE_FIFTH = new BigFraction(1, 5);#59,15.51906608581543
+public static final BigFraction TWO_THIRDS = new BigFraction(2, 3);#83,15.483221817016602
+public static final BigFraction TWO_FIFTHS = new BigFraction(2, 5);#77,15.459069838890663
+if (fraction == null) {#507,15.421525597572327
+public BigFraction divide(final BigInteger bg) {#613,15.418601765352136
+if (fraction == null) {#1086,15.380202889442444
+public BigFraction pow(final BigInteger exponent) {#983,15.371297657489777
+public BigDecimal bigDecimalValue(final int roundingMode) {#559,15.355748929475483
+if (ZERO.equals(fraction)) {#1089,15.334201502799989
+if (Double.isNaN(value)) {#172,15.334143287257143
+if (ZERO.equals(fraction)) {#510,15.318781018257141
+public BigFraction subtract(final BigFraction fraction) {#1085,15.101386462940889
+public BigFraction divide(final BigFraction fraction) {#663,15.075448204489316
+public BigFraction multiply(final BigFraction fraction) {#900,15.062382754157571
+public BigFraction add(final BigFraction fraction) {#506,15.042207773993997
+public class BigFraction#39,15.002357482910156
+public BigFraction(final BigInteger num) {#106,14.995935503641764
+if (Double.isInfinite(value)) {#175,14.825515797263698
+public static final BigFraction MINUS_ONE = new BigFraction(-1);#53,14.804264502091842

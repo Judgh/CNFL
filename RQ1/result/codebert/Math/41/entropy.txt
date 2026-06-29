@@ -1,0 +1,125 @@
+public class Variance extends AbstractStorelessUnivariateStatistic implements Serializable, WeightedEvaluation {#69,15.435625325078549
+public Variance(boolean isBiasCorrected, SecondMoment m2) {#138,15.363707459491232
+protected boolean incMoment = true;#84,15.148083448410034
+public void setBiasCorrected(boolean biasCorrected) {#589,14.698241534985995
+public Variance(final SecondMoment m2) {#111,14.619866609573364
+public Variance(boolean isBiasCorrected) {#124,14.589457680197324
+public boolean isBiasCorrected() {#582,14.57845189021184
+public Variance(Variance original) {#150,14.290083298316368
+protected SecondMoment moment = null;#75,14.251225392023722
+private boolean isBiasCorrected = true;#91,14.182712350572858
+public static void copy(Variance source, Variance dest)#611,13.88328992619234
+public long getN() {#195,13.693794250488281
+public Variance() {#97,13.621961805555555
+MathUtils.checkNotNull(dest);#614,13.555546230740017
+public double evaluate(final double[] values, final int begin, final int length) {#254,13.44204620881514
+private static final long serialVersionUID = -9111962718267217978L;#72,13.328560580377994
+public double evaluate(final double[] values, final double mean) {#452,13.28049569659763
+public Variance copy() {#597,13.263766002655029
+public double evaluate(final double[] values, final double mean,#399,13.262957909527946
+@Override#253,13.261370023091635
+@Override#177,13.219985961914062
+MathUtils.checkNotNull(source);#613,13.20969229274326
+public double evaluate(final double[] values, final double[] weights) {#369,13.186819929825631
+dest.isBiasCorrected = source.isBiasCorrected;#617,13.141089042027792
+@Override#167,13.127868811289469
+dest.setData(source.getDataRef());#615,13.05624996988397
+if (test(values, weights, begin, length)) {#506,13.040647461300804
+public double evaluate(final double[] values) {#226,13.035572052001953
+public double evaluate(final double[] values, final double[] weights,#501,12.884395917256674
+@Override#225,12.866340001424154
+public double getResult() {#178,12.864046764373779
+@Override#596,12.849636713663736
+public double evaluate(final double[] values, final double[] weights, final double mean) {#575,12.844410460928213
+var = (accum - (accum2 * accum2 / sumWts)) / sumWts;#527,12.803344981614934
+if (test(values, begin, length)) {#404,12.787535918386359
+dest.incMoment = source.incMoment;#618,12.770034670829773
+@Override#202,12.765522321065268
+public double evaluate(final double[] values, final double[] weights,#313,12.75194501876831
+if (incMoment) {#169,12.718240006764729
+if (test(values, begin, length)) {#258,12.655121150769686
+for (int i = 0; i < weights.length; i++) {#520,12.64168219268322
+double var = Double.NaN;#256,12.59470209479332
+dest.moment = source.moment.copy();#616,12.584524393081665
+if (test(values, weights,begin, length)) {#318,12.575695310320173
+double var = Double.NaN;#316,12.566515147686005
+this.isBiasCorrected = isBiasCorrected;#141,12.563737088983709
+double var = Double.NaN;#504,12.547969728708267
+var = (accum - (accum2 * accum2 / sumWts)) / (sumWts - 1.0);#525,12.49647456407547
+final int begin, final int length) {#400,12.494777270725795
+this.isBiasCorrected = isBiasCorrected;#126,12.474446578459306
+if (incMoment) {#204,12.470211919148763
+public void increment(final double d) {#168,12.416911271902231
+double var = Double.NaN;#402,12.416908472776413
+this.isBiasCorrected = biasCorrected;#590,12.412129497528076
+throws NullArgumentException {#612,12.39806502205985
+Variance result = new Variance();#598,12.37015414237976
+double sumWts = 0;#519,12.36391946543818
+for (int i = begin; i < begin + length; i++) {#411,12.3257015645504
+return evaluate(values, 0, values.length);#230,12.270005602585641
+throw new NullArgumentException(LocalizedFormats.INPUT_ARRAY);#228,12.267084757486979
+for (int i = begin; i < begin + length; i++) {#513,12.24710899591446
+return evaluate(values, weights, mean, 0, values.length);#576,12.104660262232242
+var = (accum - (accum2 * accum2 / len)) / len;#420,12.083136069468964
+if (isBiasCorrected) {#417,12.018595199584961
+public void clear() {#203,12.005485640631782
+return evaluate(values, weights, 0, values.length);#370,11.944121519724527
+return evaluate(values, mean, 0, values.length);#453,11.894658043271018
+moment = new SecondMoment();#98,11.819183158874512
+if (isBiasCorrected) {#524,11.79277359008789
+var = (accum - (accum2 * accum2 / len)) / (len - 1.0);#418,11.748962358994918
+this.moment = m2;#113,11.748563915491104
+double accum2 = 0.0;#410,11.737239062786102
+if (length == 1) {#507,11.718494540766665
+if (isBiasCorrected) {#184,11.698765754699707
+if (moment.n == 0) {#179,11.674384052103216
+return isBiasCorrected;#583,11.610089270273845
+if (length == 1) {#405,11.595088682676616
+double accum2 = 0.0;#512,11.508641044298807
+this.moment = m2;#140,11.496794879436493
+incMoment = false;#112,11.484362295695714
+final double mean, final int begin, final int length) {#502,11.466719329357147
+moment = new SecondMoment();#125,11.43094867070516
+if (length == 1) {#320,11.428598504317435
+accum2 += weights[i] * dev;#516,11.375940068562825
+dev = values[i] - mean;#412,11.370346595501077
+double len = length;#416,11.305933634440104
+incMoment = false;#139,11.236143146242414
+accum += weights[i] * (dev * dev);#515,11.231495410203934
+if (length == 1) {#260,11.19256255501195
+double m = mean.evaluate(values, weights, begin, length);#324,11.186702574453046
+sumWts += weights[i];#521,11.177777085985456
+copy(original, this);#151,11.153049877711705
+final int begin, final int length) {#314,11.129504071341621
+dev = values[i] - mean;#514,11.08623008070321
+return moment.getN();#196,11.082700729370117
+accum += dev * dev;#413,11.055632572907667
+double m = mean.evaluate(values, begin, length);#264,11.013694828954236
+double accum = 0.0;#408,10.924292232679283
+if (values == null) {#227,10.915289370218913
+var = evaluate(values, weights, m, begin, length);#325,10.913055245081583
+double accum = 0.0;#510,10.898511679276176
+copy(this, result);#599,10.845789466585432
+return moment.m2 / (moment.n);#187,10.8013174533844
+return var;#531,10.78401669588956
+return var;#328,10.760105653242631
+double dev = 0.0;#511,10.748058360555898
+return moment.m2 / (moment.n - 1d);#185,10.73108480998448
+return var;#424,10.70551872253418
+return var;#268,10.704184011979537
+var = evaluate(values, m, begin, length);#265,10.600603273936681
+accum2 += dev;#414,10.555647449493408
+return Double.NaN;#180,10.528108423406428
+double dev = 0.0;#409,10.517169371895168
+Mean mean = new Mean();#323,10.417373310435902
+clear();#319,10.212781054633004
+Mean mean = new Mean();#263,10.19005898995833
+return result;#600,10.07865537296642
+clear();#259,10.042725869587489
+var = 0.0;#508,10.017225157130849
+moment.clear();#205,10.004252046346664
+var = 0.0;#406,9.929830074310303
+return 0d;#182,9.642701148986816
+moment.increment(d);#170,9.41328181718525
+var = 0.0;#321,9.408092260360718
+var = 0.0;#261,9.305358951741999

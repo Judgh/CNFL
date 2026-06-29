@@ -1,0 +1,81 @@
+double sum = 0;#234,19.011077440702
+private final RealMatrix samplingMatrix;#52,18.933233694596723
+private final RealMatrix covarianceMatrixInverse;#48,18.667466231754847
+public double[] getMeans() {#163,18.58940100669861
+this.means = MathArrays.copyOf(means);#117,18.53863293191661
+final double[] vals = samplingMatrix.operate(normalVals);#213,18.41361101468404
+final double[] normalVals = new double[dim];#207,18.38640332221985
+final double[] centered = new double[values.length];#229,18.2205979347229
+private final RealMatrix covarianceMatrix;#46,18.195414463678997
+final double[][] s = covarianceMatrix.getData();#197,18.16046073219993
+final double[] std = new double[dim];#196,18.15138790342543
+private final double[] means;#44,17.928319931030273
+private double getExponentTerm(final double[] values) {#228,17.892109983107623
+return FastMath.pow(2 * FastMath.PI, -dim / 2) *#183,17.879847526550293
+tmpMatrix.multiplyEntry(row, col, factor);#151,17.879696114857992
+public double density(final double[] vals) throws DimensionMismatchException {#177,17.853412764413015
+return FastMath.exp(-0.5 * sum);#238,17.820012521743774
+final double[] evec = covMatDec.getEigenvector(v).toArray();#141,17.7830131649971
+final double factor = FastMath.sqrt(covMatEigenvalues[row]);#149,17.78162931626843
+return MathArrays.copyOf(means);#164,17.728865322313812
+covMatEigenvectors.setColumn(v, evec);#142,17.69300651550293
+covarianceMatrixInverse = covMatDec.getSolver().getInverse();#125,17.687232457674465
+for (int i = 0; i < dim; i++) {#111,17.68095974488692
+for (int v = 0; v < dim; v++) {#140,17.655703371221367
+samplingMatrix = covMatEigenvectors.multiply(tmpMatrix);#155,17.63535919189453
+std[i] = FastMath.sqrt(s[i][i]);#199,17.627437887520625
+for (int i = 0; i < dim; i++) {#209,17.621648701754484
+private final double covarianceMatrixDeterminant;#50,17.583491802215576
+return covarianceMatrix.copy();#173,17.575606918334962
+if (dim != covariances[i].length) {#112,17.566788368225097
+if (covariances.length != dim) {#107,17.563053321838378
+public class MultivariateNormalDistribution#41,17.455806016921997
+for (int row = 0; row < dim; row++) {#148,17.445298411629416
+final double[][] covariances)#99,17.406356792823942
+for (int i = 0; i < dim; i++) {#215,17.378464828838002
+public double[] getStandardDeviations() {#194,17.375973114600548
+covarianceMatrixDeterminant = covMatDec.getDeterminant();#127,17.370351632436115
+final double[] covMatEigenvalues = covMatDec.getRealEigenvalues();#130,17.359380545439542
+centered[i] = values[i] - getMeans()[i];#231,17.33899711740428
+for (int i = 0; i < covMatEigenvalues.length; i++) {#132,17.308812754494802
+this(new Well19937c(), means, covariances);#76,17.307898564772174
+for (int i = 0; i < dim; i++) {#198,17.288036476482045
+final EigenDecomposition covMatDec = new EigenDecomposition(covarianceMatrix);#122,17.24336608763664
+final RealMatrix tmpMatrix = covMatEigenvectors.transpose();#145,17.223408381144207
+for (int i = 0; i < centered.length; i++) {#230,17.203471064567566
+covarianceMatrix = new Array2DRowRealMatrix(covariances);#119,17.183463134765624
+if (covMatEigenvalues[i] < 0) {#133,17.167543199327255
+throws SingularMatrixException,#100,17.147291501363117
+for (int i = 0; i < preMultiplied.length; i++) {#235,17.125384366070783
+final double[] preMultiplied = covarianceMatrixInverse.preMultiply(centered);#233,17.103865442604853
+normalVals[i] = random.nextGaussian();#210,17.103316230773927
+final double[][] covariances)#72,17.101205769707175
+if (vals.length != dim) {#179,16.971770623150995
+throw new NonPositiveDefiniteMatrixException(covMatEigenvalues[i], i, 0);#134,16.9609345411643
+vals[i] += means[i];#216,16.942670605399393
+throw new DimensionMismatchException(covariances[i].length, dim);#113,16.92138328552246
+public double[] sample() {#205,16.871015739440917
+getExponentTerm(vals);#185,16.86375331878662
+sum += preMultiplied[i] * centered[i];#236,16.861283192267784
+FastMath.pow(covarianceMatrixDeterminant, -0.5) *#184,16.84662238034335
+final Array2DRowRealMatrix covMatEigenvectors = new Array2DRowRealMatrix(dim, dim);#139,16.810582497540643
+throw new DimensionMismatchException(covariances.length, dim);#108,16.66423879820725
+return vals;#219,16.636379321416218
+NonPositiveDefiniteMatrixException {#75,16.599180636198625
+final int dim = getDimension();#178,16.558060705661774
+super(rng, means.length);#103,16.553956761079675
+final double[] means,#98,16.48496897677158
+NonPositiveDefiniteMatrixException {#102,16.473906057852286
+for (int col = 0; col < dim; col++) {#150,16.464741633488583
+public RealMatrix getCovariances() {#172,16.32952812739781
+throw new DimensionMismatchException(vals.length, dim);#180,16.31846677339994
+return std;#201,16.31256207552823
+DimensionMismatchException,#74,16.301634652273997
+DimensionMismatchException,#101,16.202505149841308
+throws SingularMatrixException,#73,16.198457309177943
+final int dim = getDimension();#195,16.166863441467285
+final int dim = getDimension();#206,16.133078694343567
+final int dim = means.length;#105,16.098033845424652
+extends AbstractMultivariateRealDistribution {#42,15.96764055887858
+public MultivariateNormalDistribution(final double[] means,#71,15.959098756313324
+public MultivariateNormalDistribution(RandomGenerator rng,#97,15.697481884675867

@@ -1,0 +1,136 @@
+JSModule getModule() {#79,20.404199600219727
+private final String suffix;#260,20.39164924621582
+String moduleName) {#212,20.035539920513447
+private String normalizeSourceName(String filename) {#116,19.665613908034103
+String currentFilename) {#100,19.533321727405895
+String guessCJSModuleName(String filename) {#71,19.37530943063589
+SuffixVarsCallback(String suffix) {#262,19.211650848388672
+private final String filenamePrefix;#49,19.209362347920734
+public static String toModuleName(String filename) {#88,19.186985456026516
+String moduleName = guessCJSModuleName(normalizeSourceName(script.getSourceFileName()));#183,19.12504240444728
+private final AbstractCompiler compiler;#48,19.099623256259495
+if (var != null && var.isGlobal()) {#278,19.011058633977715
+private JSModule module;#51,18.930267197745188
+if (filename.indexOf(filenamePrefix) == 0) {#120,18.910514881736354
+String moduleName = toModuleName(require.getChildAtIndex(1).getString(),#160,18.7843116246737
+if (suffix.equals(name)) {#270,18.778562846936676
+String moduleName = guessCJSModuleName(prop.getSourceFileName());#230,18.727102973244406
+return toModuleName(normalizeSourceName(filename));#72,18.721054077148438
+private int scriptNodeCount = 0;#133,18.673203945159912
+this.compiler = compiler;#59,18.66328542882746
+moduleExportsProp,#220,18.649101956685385
+if (n.isCall() && n.getChildCount() == 2 &&#138,18.63752439747686
+String name = n.getString();#269,18.626664519309998
+ProcessCommonJSModules(AbstractCompiler compiler, String filenamePrefix) {#53,18.549952205858734
+Node moduleRef = IR.name(moduleName).srcref(require);#162,18.530673157085072
+moduleExportsProp.cloneTree())))).copyInformationFromForTree(#222,18.52047217686971
+private static final String EXPORTS = "exports";#258,18.519965235392252
+if (reportDependencies) {#186,18.50335148402623
+CompilerInput ci = t.getInput();#187,18.49767780303955
+JSModule m = new JSModule(moduleName);#189,18.491012523048802
+@Override#136,18.458736737569172
+private void visitModuleExports(Node prop) {#229,18.431896273295084
+private Set<String> modulesWithExports = Sets.newHashSet();#134,18.417761182785036
+try {#106,18.413593292236328
+Scope.Var var = t.getScope().getVar(name);#277,18.40124168395996
+private class SuffixVarsCallback extends AbstractPostOrderCallback {#256,18.399852116902668
+private static final String MODULE_NAME_SEPARATOR = "\\$";#45,18.362197081247967
+if (reportDependencies) {#165,18.35380642754691
+public static String toModuleName(String requiredFilename,#99,18.27308280651386
+ProcessCommonJSModules(AbstractCompiler compiler, String filenamePrefix,#57,18.25353717803955
+@Override#266,18.253203709920246
+@Override#65,18.190627098083496
+moduleName));#201,18.170662879943848
+if (EXPORTS.equals(name)) {#273,18.162730969880755
+Node exports = prop.getChildAtIndex(1);#234,18.12900972366333
+if (n.isGetProp() &&#149,18.10981299082438
+if (requiredFilename.startsWith("." + MODULE_SLASH) ||#104,18.06420371645973
+while (true) {#244,18.060831156643953
+filename.replaceAll("^\\." + Pattern.quote(MODULE_SLASH), "")#90,18.015109292392072
+if (!modulesWithExports.contains(moduleName)) {#213,17.98316717147827
+Node module = prop.getChildAtIndex(0);#231,17.9338624742296
+n.setString(suffix);#274,17.925093915727402
+requiredFilename = (new URI(currentFilename)).resolve(new URI(requiredFilename))#107,17.912792806272154
+if (n.isName()) {#268,17.910677977970668
+normalizeSourceName(t.getSourceName()));#161,17.891890915957365
+IR.string(moduleName))).copyInformationFromForTree(script));#195,17.891220474243163
+emitOptionalModuleExportsOverride(script, moduleName);#197,17.87806447347005
+requiredFilename.startsWith(".." + MODULE_SLASH)) {#105,17.86296272277832
+return filename;#124,17.848404475620814
+"module.exports".equals(n.getQualifiedName())) {#150,17.839290107999528
+this(compiler, filenamePrefix, true);#54,17.839242871602377
+Preconditions.checkArgument(scriptNodeCount == 1,#180,17.808283853530884
+public class ProcessCommonJSModules implements CompilerPass {#38,17.80620706998385
+private Node getCurrentScriptNode(Node n) {#243,17.800256792704264
+Node moduleExportsProp = IR.getprop(IR.name(moduleName),#217,17.79915491739909
+return toModuleName(requiredFilename);#113,17.79335610071818
+IR.string(moduleName))).copyInformationFromForTree(require));#171,17.7931835492452
+"require".equals(n.getFirstChild().getQualifiedName()) &&#139,17.774439811706543
+visitRequireCall(t, n, parent);#141,17.770744273537083
+return MODULE_NAME_PREFIX +#89,17.76934476999136
+if (n.isScript()) {#245,17.751192152500153
+module.putProp(Node.ORIGINALNAME_PROP, "module");#232,17.746091882387798
+compiler.reportCodeChange();#203,17.72732138633728
+n.getChildAtIndex(1).isString()) {#140,17.727188276207965
+"ProcessCommonJSModules supports only one invocation per " +#181,17.71366322558859
+boolean reportDependencies) {#58,17.71106118422288
+if (n.isScript()) {#144,17.710477692740305
+module = m;#191,17.708900054295857
+exports.putProp(Node.ORIGINALNAME_PROP, "exports");#235,17.701725044250487
+compiler.reportCodeChange();#172,17.67742355664571
+private final boolean reportDependencies;#50,17.676038646697997
+module.setString(moduleName);#233,17.661931378500803
+private void emitOptionalModuleExportsOverride(Node script,#211,17.632171094417572
+Node script = getCurrentScriptNode(parent);#164,17.614783763885498
+private static final String MODULE_NAME_PREFIX = "module$";#46,17.60541338390774
+return module;#80,17.602913447788783
+n.putProp(Node.ORIGINALNAME_PROP, EXPORTS);#275,17.57793930598668
+"CompilerInput / script node");#182,17.556747436523438
+m.addAndOverrideModule(ci);#190,17.555761898265164
+AbstractPostOrderCallback {#131,17.550862485712226
+scriptNodeCount++;#145,17.549425840377808
+IR.call(IR.getprop(IR.name("goog"), IR.string("provide")),#194,17.53974148806404
+script.addChildToFront(IR.var(IR.name(moduleName), IR.objectlit())#184,17.51522051054856
+throw new RuntimeException(e);#110,17.46637751261393
+.copyInformationFromForTree(script));#185,17.458901857074938
+this.suffix = suffix;#263,17.44678042485164
+filenamePrefix : filenamePrefix + MODULE_SLASH;#61,17.438892546154204
+exports.setString("module$exports");#236,17.39691436290741
+public static final String DEFAULT_FILENAME_PREFIX = "." + MODULE_SLASH;#43,17.35868293762207
+private static final String MODULE_SLASH = "/";#41,17.3483216212346
+IR.call(IR.getprop(IR.name("goog"), IR.string("require")),#170,17.318694721568715
+private void visitRequireCall(NodeTraversal t, Node require, Node parent) {#159,17.30167289574941
+parent.replaceChild(require, moduleRef);#163,17.29373735189438
+n.putProp(Node.ORIGINALNAME_PROP, name);#280,17.287527051465265
+.replaceAll(Pattern.quote(MODULE_SLASH), MODULE_NAME_SEPARATOR)#91,17.219492154962875
+ci.addProvide(moduleName);#188,17.183369848463272
+n.setString(name + "$$" + suffix);#279,17.173817825317382
+modulesWithExports.add(moduleName);#237,17.146410286426544
+return;#214,17.129478168487548
+IR.string("module$exports"));#218,17.112636280059814
+this.filenamePrefix = filenamePrefix.endsWith(MODULE_SLASH) ?#60,17.083511273066204
+return;#271,17.080015182495117
+NodeTraversal.traverse(compiler, script, new SuffixVarsCallback(#200,17.04229318178617
+script));#223,17.031324466069538
+private class ProcessCommonJsModulesCallback extends#130,17.029296961697664
+script.addChildToFront(IR.exprResult(#193,17.02861425611708
+.traverse(compiler, root, new ProcessCommonJsModulesCallback());#68,17.00779510498047
+script.addChildToFront(IR.exprResult(#169,17.0045043097602
+visitScript(t, n);#146,16.886329905192056
+this.reportDependencies = reportDependencies;#62,16.859062135219574
+script.addChildToBack(IR.ifNode(#219,16.82634491390652
+IR.block(IR.exprResult(IR.assign(IR.name(moduleName),#221,16.815953408518144
+t.getInput().addRequire(moduleName);#166,16.810345363616943
+filename = filename.substring(filenamePrefix.length());#121,16.723706998323138
+private void visitScript(NodeTraversal t, Node script) {#179,16.688070046274287
+public void visit(NodeTraversal t, Node n, Node parent) {#267,16.673739342462447
+visitModuleExports(n);#151,16.6064759572347
+public void visit(NodeTraversal t, Node n, Node parent) {#137,16.605937185741606
+NodeTraversal#67,16.565038323402405
+.toString();#108,16.428100407123566
+public void process(Node externs, Node root) {#66,16.21965306599935
+currentFilename = currentFilename.replaceAll("\\.js$", "");#102,16.193948411941527
+n = n.getParent();#248,16.11313222249349
+.replaceAll("\\.js$", "").replaceAll("-", "_");#92,16.056077766418458
+return n;#246,16.001089316148025
+requiredFilename = requiredFilename.replaceAll("\\.js$", "");#101,15.720555543899536

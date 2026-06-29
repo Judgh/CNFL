@@ -1,0 +1,515 @@
+public ArrayRealVector(double[] d, boolean copyArray)#100,19.13626064973719
+public double[] toArray(){#1051,19.07574815750122
+double sum = 0;#699,19.067876228919395
+double max = 0;#719,19.030846669123722
+double sum = 0;#746,18.899343197162334
+double sum = 0;#792,18.8515106347891
+double sum = 0;#709,18.827206244835487
+public RealVector subtract(double[] v)#324,18.81983933081994
+public ArrayRealVector(double[] d) {#82,18.777427196502686
+double[] out = data.clone();#576,18.741271495819092
+set(index, (ArrayRealVector) v);#1010,18.724743101331924
+double[] out = data.clone();#588,18.700363337993622
+public ArrayRealVector subtract(ArrayRealVector v)#340,18.696411450703938
+double[] out = data.clone();#613,18.665411281585694
+public RealVector subtract(RealVector v)#307,18.652431928194485
+public RealVector mapSignumToSelf() {#554,18.64615753718785
+double max = 0;#838,18.640464929433968
+double sum = 0;#779,18.63760561101577
+double sum = 0;#733,18.62070925095502
+checkVectorDimensions(v.length);#587,18.61318784601548
+double[] out = data.clone();#625,18.596596837043762
+checkVectorDimensions(v.length);#933,18.592551455778235
+checkVectorDimensions(v);#663,18.56466669785349
+Iterator<Entry> it = v.sparseIterator();#275,18.56083988189697
+checkVectorDimensions(v.length);#326,18.553008360021256
+checkVectorDimensions(v.length);#287,18.547635246725644
+protected void checkVectorDimensions(RealVector v)#1067,18.543297894795735
+public class ArrayRealVector extends AbstractRealVector implements Serializable {#31,18.537580285753524
+Iterator<Entry> it = v.sparseIterator();#314,18.52270694732666
+Iterator<Entry> it = v.sparseIterator();#665,18.51785301208496
+public double getDistance(ArrayRealVector v)#767,18.511070251464844
+public ArrayRealVector(RealVector v) {#158,18.510918957846506
+checkVectorDimensions(v.length);#745,18.4995818418615
+double[] out = data.clone();#327,18.494209587574005
+public double[] getData() {#644,18.47776343605735
+private static final String NON_FITTING_POSITION_AND_SIZE_MESSAGE =#34,18.475406389970047
+checkVectorDimensions(v);#312,18.468269046984222
+checkVectorDimensions(v);#273,18.46583722767077
+checkVectorDimensions(v);#907,18.465230239065068
+checkVectorDimensions(v.length);#791,18.454127087312585
+checkVectorDimensions(v.length);#837,18.450418921077954
+checkVectorDimensions(v.length);#624,18.449506479151108
+checkVectorDimensions(v);#732,18.44787171012477
+double max = 0;#825,18.444798469543457
+final double norm = getNorm();#866,18.432507451375326
+double[] out = data.clone();#288,18.425370454788208
+public ArrayRealVector(double[] v1, double[] v2) {#254,18.420382976531982
+return new ArrayRealVector(this, (ArrayRealVector) v);#957,18.41189603452329
+sum += delta * delta;#736,18.404363328760322
+double dot = 0;#678,18.38534509218656
+checkVectorDimensions(v);#575,18.385136453728926
+final double norm = getNorm();#875,18.380763880411784
+public ArrayRealVector(Double[] d) {#130,18.38013710294451
+data[index] = value;#1000,18.36927358727706
+checkVectorDimensions(v);#612,18.366352081298828
+checkVectorDimensions(v.length);#677,18.365965618806726
+public String toString(){#1057,18.348116132948135
+data = new double[size];#148,18.34460671742757
+checkVectorDimensions(v);#778,18.338551973041735
+public ArrayRealVector(ArrayRealVector v, boolean deep) {#178,18.323152542114258
+Entry e;#276,18.3118896484375
+public ArrayRealVector(RealVector v1, ArrayRealVector v2) {#213,18.303332465035574
+public double getL1Distance(ArrayRealVector v)#813,18.294438183307648
+checkVectorDimensions(v);#824,18.292714570697985
+public RealVector mapTanToSelf() {#466,18.290918056781475
+Entry e;#315,18.27742296854655
+RealVectorFormat.getInstance();#42,18.2772040049235
+private static final long serialVersionUID = -1097961340710804027L;#38,18.27689027786255
+return ebeMultiply((ArrayRealVector) v);#573,18.276068572998046
+public ArrayRealVector(ArrayRealVector v1, double[] v2) {#228,18.25878025236584
+public RealVector mapSubtractToSelf(double d) {#354,18.258114602830673
+max = Math.max(max, Math.abs(delta));#828,18.252399229234264
+Entry e;#666,18.249590555826824
+public RealVector mapMultiplyToSelf(double d) {#362,18.244373003641766
+Arrays.fill(data, preset);#75,18.244290464064655
+public RealVector mapSinToSelf() {#458,18.242384983943058
+public RealVector mapDivideToSelf(double d) {#370,18.23627129723044
+double[] out = data.clone();#274,18.231013822555543
+public RealVector mapExpToSelf() {#386,18.227126048161434
+double[] out = data.clone();#313,18.222269344329835
+public ArrayRealVector add(ArrayRealVector v)#301,18.222235870361327
+public RealVector append(RealVector v) {#955,18.199077333722794
+public ArrayRealVector(ArrayRealVector v) {#169,18.190757052103677
+public ArrayRealVector(ArrayRealVector v1, ArrayRealVector v2) {#187,18.170151016928934
+public RealVector add(double[] v)#285,18.16480431189904
+final RealMatrix out = MatrixUtils.createRealMatrix(m, m);#909,18.157290688876447
+final RealMatrix out = MatrixUtils.createRealMatrix(m, m);#935,18.1559281539917
+if (Double.isInfinite(v)) {#1114,18.150041289951492
+public ArrayRealVector(int size, double preset) {#73,18.143412351608276
+double dot = 0;#664,18.1427682427799
+checkVectorDimensions(v.getDimension());#1069,18.140913662157562
+public ArrayRealVector(ArrayRealVector v1, RealVector v2) {#198,18.136574427286785
+for (double v : data) {#1113,18.127135932445526
+final double[] out = new double[data.length + 1];#974,18.121349811553955
+public RealVector mapTanhToSelf() {#442,18.108635561806814
+public ArrayRealVector(int size) {#64,18.08413182772123
+public double getLInfDistance(ArrayRealVector v)#859,18.079116940498352
+Arrays.fill(data, value);#1047,18.070874775157254
+for (double a : data) {#710,18.052051961421967
+public RealVector mapPowToSelf(double d) {#378,18.049740510828354
+public double getL1Distance(double[] v)#789,18.046405601501466
+public RealVector mapSqrtToSelf() {#514,18.045026334126792
+sum += delta * delta;#749,18.043743027581108
+public RealVector mapAddToSelf(double d) {#346,18.037460327148438
+data = new double[l1 + l2];#216,18.035790644193952
+for (double a : data) {#700,18.01684606075287
+return Math.sqrt(sum);#703,18.016508400440216
+return getDistance((ArrayRealVector) v);#730,17.99947521903298
+data = new double[l1 + l2];#257,17.99766374889173
+return (ArrayRealVector) subtract(v.data);#342,17.997134828567503
+ArrayRealVector out = new ArrayRealVector(n);#987,17.995968437194826
+public double getDistance(double[] v)#743,17.99589883364164
+public ArrayRealVector(double[] v1, ArrayRealVector v2) {#241,17.986928485688708
+public ArrayRealVector ebeDivide(ArrayRealVector v)#638,17.985051843855118
+public void setEntry(int index, double value) {#998,17.985011398792267
+public ArrayRealVector ebeMultiply(ArrayRealVector v)#601,17.982482257642243
+System.arraycopy(v1.data, 0, data, 0, l1);#202,17.98145068133319
+max = Math.max(max, Math.abs(delta));#841,17.977197293882018
+data = new double[l1 + l2];#244,17.97507004988821
+return MathUtils.hash(data);#1181,17.969291126026828
+public RealVector mapLog1pToSelf() {#418,17.965778668721516
+public RealVector mapSinhToSelf() {#434,17.96442358834403
+try {#1008,17.96255769729614
+public ArrayRealVector() {#56,17.94489402770996
+public RealVector mapLog10ToSelf() {#410,17.943198204040527
+public RealVector mapExpm1ToSelf() {#394,17.93502279917399
+if (Double.isNaN(v)) {#1094,17.922111220981765
+public ArrayRealVector append(ArrayRealVector v) {#968,17.916724622249603
+RealVector rhs = (RealVector) other;#1154,17.91415792353013
+public RealVector mapUlpToSelf() {#562,17.91388484409877
+private static final RealVectorFormat DEFAULT_FORMAT =#41,17.90895974636078
+public RealVector append(double[] in) {#981,17.907210281917028
+while(it.hasNext() && (e = it.next()) != null) {#316,17.90202045440674
+public RealVector add(RealVector v)#268,17.89900647676908
+public ArrayRealVector projection(ArrayRealVector v) {#897,17.894753992557526
+for (double a : data) {#720,17.88329541683197
+return subtract((ArrayRealVector) v);#310,17.88217444646926
+try {#988,17.881620502471925
+public double getDistance(RealVector v)#727,17.8787810252263
+while (it.hasNext() && (e = it.next()) != null) {#277,17.877508871016964
+return false;#1119,17.87666927684437
+public RealVector ebeDivide(double[] v)#622,17.869655668735504
+data = new double[l1 + l2];#231,17.869097057141754
+if (v instanceof ArrayRealVector) {#270,17.85337209701538
+for (double v : data) {#1093,17.853167116642
+while(it.hasNext() && (e = it.next()) != null) {#667,17.84813339479508
+data[i] = Math.expm1(data[i]);#396,17.847680021215368
+data = new double[size];#74,17.847152837117513
+public double getNorm() {#698,17.844791889190674
+final double delta = data[i] - v.getEntry(i);#781,17.832343608140945
+NON_FITTING_POSITION_AND_SIZE_MESSAGE, pos, size, d.length);#120,17.824927134947345
+final double delta = data[i] - v.getEntry(i);#827,17.82308068871498
+sum += a * a;#701,17.82244004143609
+return (ArrayRealVector) ebeMultiply(v.data);#603,17.809021313985188
+public double[] getDataRef() {#653,17.80542000134786
+public RealVector mapCosToSelf() {#450,17.804677449739895
+if (d.length < pos + size) {#118,17.793635669507477
+public double getLInfDistance(double[] v)#835,17.79313055674235
+return (ArrayRealVector) add(v.data);#303,17.792180252075195
+public RealVector projection(double[] v) {#888,17.789521830422537
+return projection(new ArrayRealVector(v, false));#889,17.780455017089842
+final double delta = data[i] - v.getEntry(i);#735,17.775950402021408
+return Math.sqrt(sum);#751,17.77353084087372
+if (v instanceof ArrayRealVector) {#309,17.772708680894638
+public RealVector ebeMultiply(double[] v)#585,17.762484326082117
+return add((ArrayRealVector) v);#271,17.755279904320126
+public ArrayRealVector(double[] d, int pos, int size) {#117,17.75437264442444
+out.setEntry(i, j, data[i] * v.getEntry(j));#912,17.753713584527738
+data[i] = Math.tanh(data[i]);#444,17.746030440697304
+try {#999,17.74271535873413
+public void set(double value) {#1046,17.74198253949483
+return true;#1115,17.73662697641473
+public RealVector mapRintToSelf() {#546,17.734641551971436
+return getL1Distance((ArrayRealVector) v);#776,17.727187911669414
+data = new double[v.getDimension()];#159,17.726008081436156
+data[i] = Math.sqrt(data[i]);#516,17.724687796372635
+public RealVector projection(RealVector v) {#883,17.722476482391357
+if (v instanceof ArrayRealVector) {#572,17.716657320658367
+data[i] = Math.tan(data[i]);#468,17.71649887084961
+public double getL1Distance(RealVector v)#773,17.713375027974447
+public void set(int index, ArrayRealVector v)#1040,17.7076815366745
+if (v instanceof ArrayRealVector) {#904,17.70363638136122
+data[i] = Math.signum(data[i]);#556,17.69801037128155
+data[l1 + i] = v2.getEntry(i);#204,17.697454520634242
+if (data.length != n) {#1081,17.6961913950303
+System.arraycopy(data, 0, out, 0, data.length);#975,17.694190483093262
+return true;#1095,17.694053750289115
+public RealVector append(double in) {#973,17.68848081735464
+for (int i = 0; i < data.length; ++i) {#826,17.684202819034972
+public RealVector mapAbsToSelf() {#506,17.67257316295917
+@Override#1056,17.670505205790203
+return sum;#797,17.669522458856758
+public RealVector ebeMultiply(RealVector v)#570,17.667626044329474
+if (isNaN()) {#1109,17.66696046193441
+out[i] *= v.getEntry(i);#578,17.666101389917834
+for (int i = 0; i < data.length; i++) {#910,17.665218251092092
+for (int i = 0; i < data.length; ++i) {#780,17.66371569140204
+public double getL1Norm() {#708,17.66228787104289
+final double delta = data[i] - v[i];#748,17.6618355178833
+return data.clone();#645,17.660961884718674
+if (v instanceof ArrayRealVector) {#660,17.66093709733751
+return ebeDivide((ArrayRealVector) v);#610,17.660770416259766
+final double delta = data[i] - v[i];#794,17.656839599609373
+for (int i = 0; i < data.length; ++i) {#734,17.6562745982203
+public RealVector ebeDivide(RealVector v)#607,17.65510779619217
+public boolean isInfinite() {#1107,17.649954188953746
+return sum;#713,17.63958350094882
+data = new double[l1 + l2];#201,17.63923404091283
+if (d.length < pos + size) {#144,17.63428120864065
+return new ArrayRealVector(this, in);#982,17.630422751108807
+System.arraycopy(v1, 0, data, 0, l1);#245,17.627448692321778
+public RealVector mapLogToSelf() {#402,17.621974651630108
+sum += Math.abs(delta);#782,17.621813507080077
+protected double data[];#45,17.620161374409992
+if (v instanceof ArrayRealVector) {#609,17.619119273291695
+for (int i = 0; i < data.length; i++) {#577,17.614922864096506
+try {#1009,17.614381108965194
+NON_FITTING_POSITION_AND_SIZE_MESSAGE, pos, size, d.length);#146,17.60897725278681
+public ArrayRealVector(Double[] d, int pos, int size) {#143,17.608356094360353
+this(v, true);#170,17.605419840131486
+System.arraycopy(v1.data, 0, data, 0, l1);#232,17.601470276161475
+if (v instanceof ArrayRealVector) {#729,17.60049952401055
+System.arraycopy(v1, 0, data, 0, l1);#258,17.597710876464845
+return true;#1168,17.593463473849827
+out[data.length] = in;#976,17.583448746625116
+for (int i = 0; i < data.length; i++) {#614,17.582431759153092
+return (ArrayRealVector) v.mapMultiply(dotProduct(v) / v.dotProduct(v));#898,17.582317969378302
+data = new double[v1.data.length + v2.data.length];#188,17.57924094023528
+public void unitize() throws ArithmeticException {#874,17.578274250030518
+return getLInfDistance((ArrayRealVector) v);#822,17.576202869415283
+public RealVector mapAtanToSelf() {#490,17.573651450020925
+public RealMatrix outerProduct(ArrayRealVector v)#925,17.56539618174235
+if (v instanceof ArrayRealVector) {#821,17.56018951204088
+return (ArrayRealVector) ebeDivide(v.data);#640,17.558706159177035
+public boolean isNaN() {#1092,17.552340247414328
+final double delta = data[i] - v[i];#840,17.541804580688478
+public double getLInfNorm() {#718,17.540448268254597
+public void setSubVector(int index, RealVector v) {#1007,17.534473207261826
+data[i] = Math.pow(data[i], d);#380,17.529810973576136
+data[i] = Math.cbrt(data[i]);#524,17.528521820350928
+"position {0} and size {1} don't fit to the size of the input array {2}";#35,17.528222382068634
+data[i] = v.getEntry(i);#161,17.52609646320343
+public double dotProduct(ArrayRealVector v)#691,17.52514716557094
+if (v instanceof ArrayRealVector) {#775,17.52056540383233
+System.arraycopy(v1.data, 0, data, 0, v1.data.length);#189,17.51501234116093
+return data.clone();#1052,17.513066805326023
+public RealVector mapAsinToSelf() {#482,17.509195259639196
+data[i] = Math.log1p(data[i]);#420,17.50742347152145
+data = new double[d.length];#131,17.507035704220044
+for (int i = 0; i < data.length; i++) {#379,17.503188292185467
+data[i] = Math.ceil(data[i]);#532,17.502011409172646
+try {#956,17.498709678649902
+return getDistance(v.data);#769,17.488469779491425
+return mapDivide(norm);#870,17.47779986063639
+data[i] = v1.getEntry(i);#218,17.472971115112305
+public RealVector mapAcosToSelf() {#474,17.46801941735404
+return max;#723,17.466562357815828
+try {#1024,17.46031970977783
+System.arraycopy(v, 0, data, index, v.length);#1025,17.459360714616448
+public RealVector mapInvToSelf() {#498,17.45917217548077
+return Math.sqrt(sum);#738,17.45730800628662
+data = new double[size];#122,17.455856577555338
+System.arraycopy(data, index, out.data, 0, n);#989,17.454946781026905
+for (int i = 0; i < data.length; i++) {#363,17.448365966478985
+if (other == null || !(other instanceof RealVector)) {#1149,17.44276796068464
+for (int i = 0; i < data.length; i++) {#387,17.442726055781048
+for (int j = 0; j < data.length; j++) {#937,17.442008222852433
+for (int i = 0; i < data.length; i++) {#355,17.440987189610798
+dot += data[e.getIndex()] * e.getValue();#668,17.44052016735077
+out[i] /= v.getEntry(i);#615,17.432012163359545
+return new ArrayRealVector(this, v);#969,17.427778191036648
+protected void checkVectorDimensions(int n)#1079,17.424806594848633
+for (int i = 0; i < data.length; i++) {#371,17.423303564389546
+for (int i = 0; i < data.length; ++i) {#747,17.422151794433592
+if (rhs.isNaN()) {#1159,17.42037796974182
+return this;#350,17.420253320173785
+out[e.getIndex()] -= e.getValue();#317,17.418357690175373
+for (int i = 0; i < data.length; i++) {#515,17.41423686345418
+return outerProduct((ArrayRealVector) v);#905,17.411566214127973
+for (int i = 0; i < data.length; i++) {#507,17.408627430597942
+System.arraycopy(d, pos, data, 0, size);#123,17.408277221347976
+for (int i = 0; i < data.length; i++) {#443,17.405935327212017
+for (int i = 0; i < data.length; i++) {#427,17.399800141652424
+for (int i = 0; i < data.length; i++) {#347,17.398603002230328
+for (int i = 0; i < data.length; i++) {#435,17.39522198836009
+public RealVector mapCeilToSelf() {#530,17.39399611155192
+for (int i = 0; i < data.length; i++) {#539,17.391931732495625
+for (int i = 0; i < data.length; i++) {#483,17.390607317288715
+for (int i = 0; i < data.length; i++) {#403,17.389810999234516
+for (int i = 0; i < data.length; i++) {#467,17.3850972255071
+return getL1Distance(v.data);#815,17.38287289937337
+for (int i = 0; i < data.length; i++) {#523,17.381027698516846
+for (int i = 0; i < data.length; i++) {#499,17.38080112139384
+for (int i = 0; i < data.length; ++i) {#793,17.38003288269043
+out[e.getIndex()] += e.getValue();#278,17.378529485066732
+for (int i = 0; i < data.length; i++) {#419,17.378430485725403
+for (int i = 0; i < data.length; i++) {#555,17.377087354660034
+data[i] = d[i].doubleValue();#133,17.375933806101482
+for (int i = 0; i < data.length; i++) {#491,17.37526035308838
+for (int i = 0; i < data.length; i++) {#459,17.375059803326923
+for (int i = 0; i < data.length; i++) {#475,17.370392362276714
+for (int i = 0; i < data.length; i++) {#531,17.369698524475098
+max += Math.max(max, Math.abs(a));#721,17.368882802816536
+for (int i = 0; i < data.length; i++) {#547,17.368489861488342
+for (int i = 0; i < data.length; i++) {#411,17.368166009585064
+return dotProduct((ArrayRealVector) v);#661,17.36552060734142
+checkIndex(index + v.getDimension() - 1);#1018,17.362630403958836
+public double getLInfDistance(RealVector v)#819,17.362579409281413
+data[i] = Math.rint(data[i]);#548,17.357251510620117
+for (int i = 0; i < data.length; i++) {#936,17.355382204055786
+setSubVector(index, v.data);#1042,17.354839695824516
+throw MathRuntimeException.createIllegalArgumentException(#1082,17.354620774586994
+for (int i = 0; i < data.length; i++) {#451,17.353246331214905
+System.arraycopy(v2, 0, data, l1, l2);#259,17.352848052978516
+for (int i = 0; i < data.length; i++) {#395,17.349052627881367
+return max;#843,17.344258655201305
+data[i] = Math.exp(data[i]);#388,17.34133041381836
+for (int i = pos; i < pos + size; i++) {#149,17.340646982192993
+out[i] /= v[i];#627,17.33994146493765
+return false;#1098,17.333501729098234
+data = copyArray ? d.clone() :  d;#108,17.332188379196893
+data[i] = Math.sinh(data[i]);#436,17.327751269707313
+for (int i = 0; i < data.length; ++i) {#839,17.326450271606447
+data[i] = Math.sin(data[i]);#460,17.32533676147461
+data = new double[size];#65,17.32478847503662
+public RealVector unitVector() throws ArithmeticException {#865,17.315973726908364
+throws IllegalArgumentException {#728,17.30744171142578
+for (int i = 0; i < data.length; i++) {#563,17.30640963713328
+data[i] = Math.floor(data[i]);#540,17.305464401245118
+for (int j = 0; j < data.length; j++) {#911,17.304211974143982
+return data[index];#946,17.30405198610746
+out[i] *= v[i];#590,17.301783431660045
+data[i] = Math.cos(data[i]);#452,17.29291072845459
+return data;#654,17.291449026627973
+@Override#717,17.289887110392254
+data[i] = Math.log10(data[i]);#412,17.27567588365995
+return this;#550,17.27000513943759
+return new ArrayRealVector(out, false);#292,17.267757680681015
+for (int i = 0; i < data.length; i++) {#679,17.266066590944927
+return false;#1110,17.26574815114339
+return sum;#784,17.26263167063395
+data[i] = Math.abs(data[i]);#508,17.261229515075684
+return DEFAULT_FORMAT.format(this);#1058,17.26085050482499
+return this;#462,17.25928922133012
+return getLInfDistance(v.data);#861,17.255803214179146
+return new ArrayRealVector(out, false);#331,17.25548442204793
+for (int i = 0; i < data.length; i++) {#626,17.252898414929707
+public void setSubVector(int index, double[] v) {#1023,17.252428849538166
+@Override#707,17.248734951019287
+"vector length mismatch: got {0} but expected {1}",#1083,17.241544096810475
+@Override#697,17.241318543752033
+return this;#470,17.236564376137473
+dot += data[i] * v[i];#680,17.23369913515837
+for (int i = 0; i < data.length; i++) {#589,17.227970719337463
+throws IllegalArgumentException {#903,17.22791031428746
+return this.isNaN();#1160,17.217161305745442
+public RealMatrix outerProduct(RealVector v)#902,17.21645552771432
+data = d.clone();#83,17.216454914637975
+public AbstractRealVector copy() {#263,17.214541521939363
+mapDivideToSelf(norm);#879,17.21364963054657
+return this;#502,17.211313594471324
+data[i] = Math.ulp(data[i]);#564,17.209294052124022
+return this;#518,17.20858755978671
+throw MathRuntimeException.createIllegalArgumentException(#119,17.208550413449604
+System.arraycopy(v2.data, 0, data, l1, l2);#246,17.207864114216395
+return this;#454,17.202134652571246
+public double dotProduct(double[] v)#675,17.19768454478337
+data[i] = Math.acos(data[i]);#476,17.192469706902138
+System.arraycopy(v2.data, 0, data, l1, l2);#220,17.19189579146249
+data[i] = Math.log(data[i]);#404,17.187912101745606
+return this;#438,17.186310508034445
+return this;#510,17.18457941575484
+for (int i = 0; i < data.length; i++) {#328,17.183387597401936
+return this;#542,17.18265047940341
+public RealMatrix outerProduct(double[] v)#931,17.179621492113387
+for (int i = 0; i < data.length; i++) {#289,17.177544116973877
+sum += Math.abs(delta);#795,17.17240415300642
+return this;#406,17.17165253379128
+return new ArrayRealVector(out, false);#592,17.17101987202962
+throws IllegalArgumentException {#659,17.170331818716868
+return new ArrayRealVector(out, false);#977,17.16924073961046
+return new ArrayRealVector(this, true);#264,17.167338954077827
+checkIndex(index);#1027,17.16702668807086
+return this;#446,17.164518356323242
+data[i-pos] = d[i].doubleValue();#150,17.162482004899246
+return this;#534,17.16213104941628
+data[i] = data[i] * d;#364,17.161267797152203
+public double dotProduct(RealVector v)#658,17.160241493811974
+out[i] += v[i];#290,17.154561224437895
+return this;#414,17.15370273590088
+if (data[i] != rhs.getEntry(i)) {#1164,17.152856071790058
+public RealVector mapCbrtToSelf() {#522,17.141721343994142
+return this;#494,17.139082821932707
+return this;#558,17.138612140308727
+return this;#398,17.137076464566317
+return this;#526,17.129675605080344
+return v.mapMultiply(dotProduct(v) / v.dotProduct(v));#884,17.129370261882915
+return this;#358,17.129367048090156
+return this;#486,17.12876319885254
+return this;#478,17.125685691833496
+out[i] -= v[i];#329,17.125647454034713
+throws IllegalArgumentException {#269,17.124233995165145
+if (isNaN()) {#1178,17.119967460632324
+throws IllegalArgumentException {#1080,17.116721902574813
+public RealVector mapCoshToSelf() {#426,17.114784513201034
+data[i] = Math.cosh(data[i]);#428,17.11308006139902
+sum += Math.abs(a);#711,17.10804762840271
+data[i] = data[i] / d;#372,17.107249816258747
+public boolean equals(Object other) {#1143,17.10624400774638
+data[i] = Math.asin(data[i]);#484,17.100739860534667
+return this;#374,17.098141843622383
+for (int i = 0; i < d.length; i++) {#132,17.096999486287434
+return out;#994,17.08611921830611
+return this;#366,17.08077924901789
+data[i] = 1.0 / data[i];#500,17.08057987213135
+return this;#430,17.077478062022816
+return this;#566,17.073097055608574
+System.arraycopy(v2, 0, data, l1, l2);#233,17.07222131582407
+return this;#390,17.072007352655586
+throw MathRuntimeException.createIllegalArgumentException(#145,17.065419952074688
+out.setEntry(i, j, data[i] * v[j]);#938,17.058666425592758
+if (this == other) {#1145,17.056286591749924
+return new ArrayRealVector(out, false);#629,17.052358203464085
+System.arraycopy(v2.data, 0, data, v1.data.length, v2.data.length);#190,17.04979027642144
+public int hashCode() {#1177,17.04977626800537
+throws IllegalArgumentException {#820,17.046854972839355
+return this;#422,17.041100588711824
+throws IllegalArgumentException {#774,17.03245939527239
+throws IllegalArgumentException {#308,17.02580084119524
+throws IllegalArgumentException {#571,17.007823262895858
+checkIndex(index);#1017,16.996873406802905
+data[i] = data[i] + d;#348,16.99305586020152
+return new ArrayRealVector(this, v);#959,16.990806796334006
+data[i] = data[i] - d;#356,16.985085646311443
+final int m = data.length;#908,16.982928371429445
+throws IllegalArgumentException {#608,16.977280616760254
+for (int i = 0; i < data.length; ++i) {#1163,16.967226152834684
+throw MathRuntimeException.createArithmeticException("cannot normalize a zero norm vector");#877,16.960966602448494
+return this;#382,16.955091303045098
+if (norm == 0) {#867,16.943300183614095
+return max;#830,16.942496236165365
+throws NullPointerException, IllegalArgumentException {#101,16.937605908042507
+return dot;#682,16.932343049482867
+throws IllegalArgumentException {#744,16.932291303362167
+for (int i = 0; i < l1; ++i) {#217,16.932136098543804
+return out;#915,16.931466801961264
+throws IllegalArgumentException {#836,16.92781639099121
+data[i] = v.getEntry(i-index);#1013,16.926024296704462
+data[i] = Math.atan(data[i]);#492,16.9240336227417
+@Override#1176,16.919962565104168
+data = deep ? v.data.clone() : v.data;#179,16.917703504147738
+throws IllegalArgumentException {#790,16.91332026890346
+return outerProduct(v.data);#927,16.903211295604706
+throw MathRuntimeException.createIllegalArgumentException("vector must have at least one element");#106,16.89970025420189
+data = new double[0];#57,16.89617856343587
+for (int i = index; i < index + v.getDimension(); ++i) {#1012,16.894941665030814
+return new ArrayRealVector(out, false);#280,16.887822107835248
+public double getEntry(int index) throws MatrixIndexException {#945,16.875487383674173
+checkIndex(index);#991,16.86794090270996
+return new ArrayRealVector(out, false);#319,16.86120505766435
+public RealVector getSubVector(int index, int n) {#986,16.860194630093044
+final int l1 = v1.data.length;#199,16.859255886077882
+for (int i = 0; i < data.length; ++i) {#160,16.834847183227538
+return new ArrayRealVector(out, false);#617,16.829934206875887
+@Override#1142,16.810644308725994
+if (norm == 0) {#876,16.79808890024821
+return new ArrayRealVector(out, false);#580,16.788782596588135
+throws IllegalArgumentException {#676,16.783347334180558
+return out;#941,16.77014992453835
+if (d.length == 0) {#105,16.756232878741095
+return data.length;#951,16.750233796926643
+checkIndex(index + n - 1);#992,16.74254340217227
+throws IllegalArgumentException {#586,16.740927355630056
+throws IllegalArgumentException {#623,16.740086827959335
+data.length, n);#1084,16.723253433520977
+final int l1 = v1.length;#242,16.693606429629856
+throws IllegalArgumentException {#932,16.68773419516427
+checkIndex(index + v.length - 1);#1028,16.68265554179316
+public RealVector mapFloorToSelf() {#538,16.666618415287562
+final int l1 = v1.length;#255,16.652028931511772
+return false;#1156,16.641035079956055
+return 9;#1179,16.61475327809652
+throws IllegalArgumentException {#286,16.602794306618826
+throw MathRuntimeException.createArithmeticException("zero norm");#868,16.60279239654541
+return dotProduct(v.data);#693,16.597849130630493
+throws IllegalArgumentException {#325,16.582131249564036
+for (int i = 0; i < l2; ++i) {#203,16.565436283747356
+return false;#1165,16.55443756396954
+if (data.length != rhs.getDimension()) {#1155,16.54690170288086
+return dot;#670,16.525765736897785
+final int l2 = v2.length;#256,16.502670817905003
+final int l1 = v1.getDimension();#214,16.459205150604248
+final int m = data.length;#934,16.43019288778305
+final int l1 = v1.getDimension();#229,16.417870235443115
+checkIndex(index);#1002,16.378158905926874
+final int l2 = v2.getDimension();#243,16.354968452453612
+return true;#1146,16.32676887512207
+final int l2 = v2.data.length;#215,16.2660973072052
+if (d == null) {#102,16.25539754231771
+final int l2 = v2.getDimension();#200,16.193498277664183
+final int l2 = v2.length;#230,16.06541723675198
+throws IllegalArgumentException {#1068,16.042521272386825
+throws IllegalArgumentException {#860,15.98607689993722
+return false;#1150,15.982550447637385
+throw new NullPointerException();#103,15.957257170426217
+throws IllegalArgumentException {#814,15.944066524505615
+throws IllegalArgumentException {#768,15.926611287253243
+throws IllegalArgumentException {#341,15.911452429635185
+throws IllegalArgumentException {#602,15.786298138754708
+throws IllegalArgumentException {#926,15.659060955047607
+public int getDimension() {#950,15.651033054698598
+throws IllegalArgumentException {#302,15.613366876329694
+throws IllegalArgumentException {#692,15.406344822474889
+throws IllegalArgumentException {#639,15.30625091280256
+throws MatrixIndexException {#1041,14.692296321575459

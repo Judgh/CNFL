@@ -1,0 +1,98 @@
+private final AbstractCompiler compiler;#54,19.361487918429905
+case Token.CONTINUE:#157,19.06859868367513
+case Token.CATCH:#218,19.023391519274032
+case Token.BREAK:#156,18.858752455030167
+this.compiler = compiler;#60,18.722254493019797
+if (n.isEmpty() || (n.isBlock() && !n.hasChildren())) {#192,18.580261329124713
+case Token.DO:#207,18.564171057481033
+@SuppressWarnings("fallthrough")#128,18.559111390795028
+if (gNode == null) { // Not in CFG.#99,18.432698059082032
+(n.getNext() == null || n.getNext().isFunction())) {#164,18.419611757451836
+switch (n.getType()) {#203,18.37193386895316
+public void visit(AbstractCompiler compiler, Node root) {#68,18.350104876926967
+if (outEdges.size() == 1 &&#162,18.343746230715798
+private boolean codeChanged;#56,18.321579796927317
+while (next != null && next.isBlock()) {#180,18.300883293151855
+@Override#67,18.25420570373535
+@Override#93,18.23904259999593
+class UnreachableCodeElimination implements CompilerPass {#51,18.233619826180593
+case Token.BLOCK:#210,18.22389554977417
+private EliminationPass(ControlFlowGraph<Node> cfg) {#89,18.22271859018426
+@Override#64,18.19557523727417
+Node fallThrough = computeFollowing(n);#168,18.195254598345077
+ControlFlowGraph<Node> cfg = cfa.getCfg();#73,18.189552270449123
+private static final Logger logger =#52,18.15265761481391
+if (next.hasChildren()) {#181,18.087906658649445
+if (n == null) {#141,18.08626497708834
+case Token.RETURN:#152,18.08595977510725
+private final ControlFlowGraph<Node> cfg;#88,18.076751263936362
+if (nextCfgNode == fallThrough) {#170,18.075862386952277
+do {#79,18.063665628433228
+compiler.reportCodeChange();#243,18.050153811772663
+private Node computeFollowing(Node n) {#178,18.028370563800518
+switch (n.getType()) {#151,18.025070667266846
+cfa.process(null, root);#72,18.01060972715679
+UnreachableCodeElimination(AbstractCompiler compiler,#58,18.00542297363281
+if (parent == null || n.isFunction() || n.isScript()) {#95,18.002344290415447
+Node next = ControlFlowAnalysis.computeFollowNode(n);#179,17.9426109790802
+if (root.isFunction()) {#76,17.930981159210205
+private class EliminationPass extends AbstractShallowCallback {#87,17.918941204364483
+if (parent.isTry() && NodeUtil.isTryCatchNodeContainer(n)) {#213,17.913634419441223
+if (n.hasChildren()) {#153,17.913180033365887
+if (NodeUtil.isForIn(parent)) {#199,17.880373402645713
+if (gNode == null) {#147,17.865587302616664
+(removeNoOpStatements && !NodeUtil.mayHaveSideEffects(n, compiler))) {#103,17.85602968931198
+return;#148,17.83219814300537
+Node nextCfgNode = outEdges.get(0).getDestination().getValue();#169,17.76566644148393
+codeChanged = true;#241,17.73396717418324
+boolean removeNoOpStatements) {#59,17.676262378692627
+List<DiGraphEdge<Node, Branch>> outEdges = gNode.getOutEdges();#161,17.67218577861786
+return next;#187,17.63909657796224
+new ControlFlowAnalysis(compiler, false, false);#71,17.611902236938477
+if (logger.isLoggable(Level.FINE)) {#244,17.582108633858816
+public void process(Node externs, Node toplevel) {#65,17.580104547388412
+return;#208,17.574248870213825
+ControlFlowAnalysis cfa =#70,17.56620055437088
+new GraphReachability<Node, ControlFlowGraph.Branch>(cfg)#74,17.521143171522354
+private void removeDeadExprStatementSafely(Node n) {#190,17.44025754928589
+if (n.isVar() && !n.getFirstChild().hasChildren()) {#224,17.410824394226076
+DiGraphNode<Node, Branch> gNode = cfg.getDirectedGraphNode(n);#145,17.405305419649398
+break;#216,17.314903418223064
+DiGraphNode<Node, Branch> gNode = cfg.getDirectedGraphNode(n);#98,17.274475574493408
+Preconditions.checkState(#166,17.21742424212004
+if (gNode.getAnnotation() != GraphReachability.REACHABLE ||#102,17.199462547302247
+private final boolean removeNoOpStatements;#55,17.152616154063832
+outEdges.get(0).getValue() == Branch.UNCOND);#167,17.13344991908354
+Node tryNode = parent.getParent();#219,17.106657730905635
+next = next.getFirstChild();#182,17.081747584872776
+this.cfg = cfg;#90,17.062737758343037
+return;#100,17.042906475067138
+return;#200,17.017122650146483
+codeChanged = false;#80,17.001681159524356
+removeDeadExprStatementSafely(n);#104,16.992483139038086
+NodeTraversal.traverseChangedFunctions(compiler, new FunctionCallback() {#66,16.90284467780072
+root = root.getLastChild();#77,16.89223976135254
+private void removeNode(Node n) {#240,16.837549943190353
+return;#96,16.809424877166748
+.compute(cfg.getEntry().getValue());#75,16.79756267254169
+return;#142,16.75562321056019
+return;#234,16.686772537231445
+next = computeFollowing(next);#184,16.685852836160098
+Node parent = n.getParent();#191,16.674574851989746
+NodeUtil.redeclareVarsInsideBranch(n);#242,16.655682216991078
+private void tryRemoveUnconditionalBranching(Node n) {#129,16.60819992266203
+Logger.getLogger(UnreachableCodeElimination.class.getName());#53,16.5954247713089
+return;#194,16.554304313659667
+NodeTraversal.traverse(compiler, root, new EliminationPass(cfg));#81,16.546286463737488
+public void visit(NodeTraversal t, Node n, Node parent) {#94,16.512513524010068
+NodeUtil.maybeAddFinally(tryNode);#220,16.46989141191755
+logger.fine("Removing " + n.toString());#245,16.46226183573405
+this.removeNoOpStatements = removeNoOpStatements;#61,16.414951218499077
+removeNode(n);#237,16.310992154208098
+break;#221,16.259243488311768
+return;#214,16.212122304098948
+return;#105,16.139504146575927
+tryRemoveUnconditionalBranching(n);#107,15.935918471392464
+NodeUtil.removeChild(n.getParent(), n);#247,15.868681478500367
+removeNode(n);#171,15.70955979196649
+break;#154,15.704240117754255

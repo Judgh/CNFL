@@ -1,0 +1,234 @@
+public String getHelperSource() {#415,20.445698391307484
+public String getHelperSource() {#361,20.40163230895996
+public String getHelperSource() {#477,20.378327889875933
+public String getHelperSource() {#301,20.341533920981668
+public String getHelperSource() {#244,20.248999335549094
+abstract String getHelperSource();#198,19.74945411682129
+private final AbstractCompiler compiler;#47,19.378127839830185
+void apply() {#137,19.37113070487976
+int estimateSavings() {#145,19.32384662628174
+static final String FACTORY_METHOD_NAME = "JSCompiler_identityFn";#293,19.180406863872822
+FunctionRewriter(AbstractCompiler compiler) {#52,19.065208196640015
+FACTORY_METHOD_NAME + "_name) {" +#470,19.044714609781902
+static final String FACTORY_METHOD_NAME = "JSCompiler_emptyFn";#237,19.024102249145507
+static final String FACTORY_METHOD_NAME = "JSCompiler_get";#407,18.999215457750402
+static final String FACTORY_METHOD_NAME = "JSCompiler_set";#467,18.964480192764945
+"function " + FACTORY_METHOD_NAME +#355,18.941975688934328
+static final String FACTORY_METHOD_NAME = "JSCompiler_returnArg";#353,18.92158309618632
+for (Reducer reducer : reducers) {#175,18.90225601196289
+new SetterReducer(),#60,18.894226184258095
+"  return function() {return this[" + FACTORY_METHOD_NAME + "_name]}" +#411,18.857400063545473
+"(" + FACTORY_METHOD_NAME + "_value) {" +#356,18.833579301834106
+"function " + FACTORY_METHOD_NAME + "(" +#469,18.82513834082562
+"function " + FACTORY_METHOD_NAME + "() {" +#295,18.8046852350235
+Node helperCode = parseHelperCode(reducer);#78,18.800641789155847
+"  return function() {return " + FACTORY_METHOD_NAME + "_value}" +#357,18.79118646424392
+private final List<Reducer> reducers;#157,18.789323534284318
+FACTORY_METHOD_NAME + "_name) {" +#410,18.753843262082054
+private final Node newChild;#126,18.706403160095213
+ReductionGatherer(List<Reducer> reducers,#165,18.689821860369513
+static final String HELPER_SOURCE =#238,18.688472668329876
+"this[" + FACTORY_METHOD_NAME + "_name] = " +#472,18.659202062166653
+new GetterReducer(),#59,18.645211476546066
+extends SingleReturnStatementReducer {#352,18.62632993551401
+if (propName != null) {#426,18.604750769478933
+if (propName != null) {#488,18.60387740816389
+"function " + FACTORY_METHOD_NAME + "(" +#409,18.590131884035856
+@Override#360,18.58371384938558
+private static class SetterReducer extends Reducer {#466,18.580837103036735
+public Node parseHelperCode(Reducer reducer) {#110,18.55498708997454
+static final String HELPER_SOURCE =#354,18.51615317662557
+@Override#414,18.508839925130207
+static final String HELPER_SOURCE =#408,18.481672286987305
+"  return function(" + FACTORY_METHOD_NAME + "_value) {" +#471,18.477243776674623
+int savings = 0;#86,18.474206404252485
+"function " + FACTORY_METHOD_NAME + "() {" +#239,18.45632549126943
+static final String HELPER_SOURCE =#468,18.452775080998737
+private static class IdentityReducer extends SingleReturnStatementReducer {#292,18.428262329101564
+if (paramNode == null) {#516,18.4226427759443
+@Override#476,18.398790677388508
+static final String HELPER_SOURCE =#294,18.396040598551433
+if (paramNode == null) {#328,18.395771844046457
+@Override#243,18.3718843460083
+private static class EmptyFunctionReducer extends Reducer {#236,18.36654707101675
+"  return function(" + FACTORY_METHOD_NAME + "_value) {" +#296,18.35208288828532
+class FunctionRewriter implements CompilerPass {#46,18.34081621170044
+"  return function() {}" +#240,18.29594373703003
+@Override#56,18.284523963928223
+private boolean isIdentityFunction(Node functionNode) {#325,18.261141180992126
+if (propName.getType() != Token.STRING) {#489,18.260314112124234
+return buildCallNode(FACTORY_METHOD_NAME, propName,#432,18.25571270783742
+if (isIdentityFunction(node)) {#311,18.25437617301941
+@Override#419,18.248650074005127
+private class ReductionGatherer implements Callback {#156,18.242472330729168
+if (propName.getType() != Token.STRING) {#427,18.240748405456543
+@Override#481,18.24069118499756
+this.compiler = compiler;#53,18.2251973585649
+@Override#300,18.22348753611247
+for (Reduction reduction : reductions) {#94,18.19658862843233
+return buildCallNode(FACTORY_METHOD_NAME, propName,#494,18.194238146146137
+Node addingRoot = compiler.getNodeForCodeInsertion(null);#98,18.193420202835746
+Node paramNode = argList.getFirstChild();#327,18.192854432498706
+Node paramNode = argList.getFirstChild();#515,18.173887982087976
+if (valueNode != null) {#372,18.115978240966797
+return buildCallNode(FACTORY_METHOD_NAME, null,#251,18.111412214196246
+for (Reduction reduction : reductions) {#87,18.105616569519043
+if (savings > (helperCodeCost + SAVINGS_THRESHOLD)) {#93,18.103944177980775
+if (!body.hasOneChild()) {#510,18.097254625956218
+private static class GetterReducer extends SingleReturnStatementReducer {#406,18.087636053562164
+@Override#248,18.078407287597656
+throw new IllegalStateException(#428,18.071442127227783
+return buildCallNode(FACTORY_METHOD_NAME, null,#312,18.071119142615277
+for (Reducer reducer : reducers) {#72,18.062156105041502
+int lineno, int charno) {#216,18.059232890605927
+@Override#186,17.998935381571453
+if (statement.getType() == Token.RETURN) {#276,17.9933002948761
+Node call = new Node(Token.CALL, lineno, charno);#217,17.982696077098016
+throw new IllegalStateException(#490,17.98114573955536
+Node parent) {#174,17.97740670254356
+if (value != null &&#448,17.976564089457195
+new ReductionGatherer(reducers, reductionMap));#69,17.973614144325257
+call.addChildToBack(Node.newString(Token.NAME, methodName));#219,17.971862335205078
+if (value != null &&#389,17.970075925191242
+@Override#305,17.962300936381023
+if (argumentNode != null) {#220,17.958403996058873
+@Override#365,17.93363396326701
+return buildCallNode(FACTORY_METHOD_NAME, valueNode,#373,17.89176630973816
+compiler.reportCodeChange();#139,17.887513478597004
+value.getString().equals(paramNode.getString())) {#335,17.883934094355656
+private static class ReturnConstantReducer#351,17.877922916412352
+FACTORY_METHOD_NAME + "_value}" +#473,17.86891713142395
+if (value != null &&#333,17.864174207051594
+List<Reducer> reducers = ImmutableList.of(new ReturnConstantReducer(),#58,17.863113746643066
+if (!body.hasOneChild()) {#271,17.86132920583089
+private final Multimap<Reducer, Reduction> reductions;#158,17.85319434895235
+if (NodeUtil.isName(rhs) &&#529,17.8380803607759
+call.putBooleanProp(Node.FREE_CALL, true);#218,17.824647296558727
+savings += reduction.estimateSavings();#88,17.799279044656192
+private final Node parent;#124,17.79902850257026
+if (NodeUtil.isEmptyFunctionExpression(node)) {#250,17.79136185418992
+public Node reduce(Node node) {#306,17.785513242085774
+if (!NodeUtil.isExprAssign(statement)) {#521,17.783117475963774
+private Node getGetPropertyName(Node functionNode) {#446,17.771800637245178
+private final Node oldChild;#125,17.766328048706054
+"Expected STRING, got " + Token.name(propName.getType()));#429,17.761090026182288
+"Expected STRING, got " + Token.name(propName.getType()));#491,17.750317517448874
+if (replacement != node) {#177,17.74851655960083
+public Node reduce(Node node) {#366,17.7193345228831
+"return " + FACTORY_METHOD_NAME + "_value}" +#297,17.697978348567567
+rhs.getString().equals(paramNode.getString())) {#530,17.666445830772663
+public Node reduce(Node node) {#420,17.66353988647461
+if (helperCode == null) {#79,17.629049428304036
+private Node getSetPropertyName(Node functionNode) {#508,17.617801249027252
+if (!isReduceableFunctionExpression(node)) {#421,17.607565026534232
+if (!isReduceableFunctionExpression(node)) {#483,17.60601570731715
+Multimap<Reducer, Reduction> reductions) {#166,17.602062674129712
+public Node reduce(Node node) {#482,17.601266384124756
+if (reductions.isEmpty()) {#74,17.5941370010376
+public Node reduce(Node node) {#249,17.59293309847514
+Node propName = getSetPropertyName(node);#487,17.588967042810776
+new EmptyFunctionReducer(),#61,17.58253187399644
+reductions.put(reducer, new Reduction(parent, node, replacement));#178,17.57476102388822
+private class Reduction {#123,17.571322600046795
+Node replacement = reducer.reduce(node);#176,17.571108868247585
+if (!isReduceableFunctionExpression(node)) {#367,17.56648580651534
+if (!isReduceableFunctionExpression(node)) {#307,17.563551400837145
+node.getLineno(), node.getCharno());#252,17.554844810849143
+this.reducers = reducers;#167,17.55379098256429
+return null;#279,17.553042305840385
+return call;#223,17.548094007703995
+Node rhs = assign.getLastChild();#528,17.540058347913956
+private Node getValueNode(Node functionNode) {#387,17.52653923034668
+return null;#393,17.511029349433052
+Reduction(Node parent, Node oldChild, Node newChild) {#128,17.504592577616375
+Node body = functionNode.getLastChild();#509,17.476966559886932
+"}";#241,17.44997327977961
+return (root != null) ? root.removeFirstChild() : null;#113,17.449804639816286
+protected final Node buildCallNode(String methodName, Node argumentNode,#215,17.446579330845882
+return HELPER_SOURCE;#302,17.425584236780804
+Node statement = body.getFirstChild();#520,17.425291379292805
+new IdentityReducer());#62,17.421301187253466
+return HELPER_SOURCE;#362,17.415475447972614
+NodeUtil.isThis(value.getFirstChild())) {#450,17.392969970703124
+return HELPER_SOURCE;#416,17.391775687535603
+this.reductions = reductions;#168,17.390517528240498
+if (NodeUtil.isGetProp(lhs) && NodeUtil.isThis(lhs.getFirstChild())) {#527,17.388520399729412
+@Override#171,17.385610421498615
+node.getLineno(), node.getCharno());#313,17.360859734671457
+node.getLineno(), node.getCharno());#374,17.359883512769425
+Node propName = getGetPropertyName(node);#425,17.35725155998679
+"}";#298,17.355621337890625
+NodeUtil.isImmutableValue(value)) {#390,17.35221290588379
+return null;#535,17.33147398630778
+return true;#182,17.329764472113716
+return null;#453,17.321112314860027
+int helperCodeCost = InlineCostEstimator.getCost(helperCode);#83,17.309843082427978
+private static final int SAVINGS_THRESHOLD = 16;#50,17.30430036432603
+return HELPER_SOURCE;#478,17.302817821502686
+"}";#358,17.283920114690606
+return HELPER_SOURCE;#245,17.280105749766033
+Node node,#173,17.25567639840616
+NodeUtil.isName(value) &&#334,17.252418088912965
+"}";#412,17.247510996731844
+Node assign = statement.getFirstChild();#525,17.239334551493325
+Node statement = body.getFirstChild();#275,17.221759923299153
+this.newChild = newChild;#131,17.186118807111466
+Node body = functionNode.getLastChild();#270,17.182533860206604
+return InlineCostEstimator.getCost(oldChild) -#146,17.134581475030807
+node.getLineno(), node.getCharno());#433,17.131366707029798
+Node root = compiler.parseSyntheticCode(#111,17.119522921244304
+node.getLineno(), node.getCharno());#495,17.102994237627303
+"}";#474,17.057190895080566
+Collection<Reduction> reductions = reductionMap.get(reducer);#73,17.04790651230585
+private static boolean isReduceableFunctionExpression(Node n) {#116,17.039368068470676
+call.addChildToBack(argumentNode.cloneTree());#221,17.035796210879372
+abstract static class SingleReturnStatementReducer extends Reducer {#263,17.032418727874756
+abstract static class Reducer {#194,17.032134532928467
+this.parent = parent;#129,17.007055521011353
+compiler.reportCodeChange();#100,17.004066807883127
+Node value = maybeGetSingleReturnRValue(functionNode);#332,16.98075098740427
+protected final Node maybeGetSingleReturnRValue(Node functionNode) {#269,16.970197878385846
+Node lhs = assign.getFirstChild();#526,16.968190133571625
+reducer.getClass().toString() + ":helper", reducer.getHelperSource());#112,16.964541896184286
+NodeUtil.isGetProp(value) &&#449,16.955700511024112
+public void process(Node externs, Node root) {#57,16.881476720174152
+Node value = maybeGetSingleReturnRValue(functionNode);#388,16.879260163558158
+return value.getLastChild();#451,16.8667693456014
+Multimap<Reducer, Reduction> reductionMap = HashMultimap.create();#64,16.827767745308254
+return false;#338,16.817302703857422
+Node value = maybeGetSingleReturnRValue(functionNode);#447,16.76473210987292
+return null;#272,16.757650462063875
+Node valueNode = getValueNode(node);#371,16.713222444057465
+return false;#329,16.659061431884766
+return null;#517,16.643878850069914
+return null;#522,16.643652048977938
+return null;#511,16.608869379216973
+Node propertyName = lhs.getLastChild();#531,16.607780411129905
+this.oldChild = oldChild;#130,16.522702353341238
+Node argList = functionNode.getFirstChild().getNext();#514,16.502818632125855
+Node argList = functionNode.getFirstChild().getNext();#326,16.485686922073363
+return node;#308,16.437956203113902
+return statement.getFirstChild();#277,16.386434936523436
+InlineCostEstimator.getCost(newChild);#147,16.372967637103535
+addingRoot.addChildrenToFront(helperCode);#99,16.371311116218568
+abstract Node reduce(Node node);#204,16.34820166501132
+parent.replaceChild(oldChild, newChild);#138,16.300849521861355
+return node;#254,16.29423410242254
+return true;#336,16.251416553150523
+NodeTraversal.traverse(compiler, root,#68,16.236930342281568
+return node;#315,16.16687228462913
+return node;#376,16.132783456282183
+return value;#391,16.131019505587492
+return node;#368,16.12398442355069
+public boolean shouldTraverse(NodeTraversal raversal,#172,16.12191809548272
+return NodeUtil.isFunctionExpression(n);#117,16.118840038776398
+return node;#484,16.11608774011785
+return node;#422,16.069025559858844
+continue;#80,16.06858386993408
+public void visit(NodeTraversal traversal, Node node, Node parent) {#187,15.897401506250555
+return node;#435,15.819619005376643
+return node;#497,15.813939441334117
+continue;#75,15.797337627410888
+return propertyName;#532,15.743770463126046
+reduction.apply();#95,15.736960887908936
+return false;#179,15.441320272592398

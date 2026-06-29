@@ -1,0 +1,262 @@
+public Object clone() throws CloneNotSupportedException {#745,20.68484619685582
+private Comparable[] generateKeys(int count, String prefix) {#592,20.22051731745402
+public Number getStartValue(int series, int category) {#429,19.94213300592759
+public Number getValue(int series, int category) {#391,19.710422933101654
+private Number[][] startData;#76,19.662403345108032
+public Number getEndValue(int series, int category) {#481,19.66100591771743
+public Number getStartValue(Comparable series, Comparable category) {#406,19.655185147335654
+public List getColumnKeys() {#313,19.649105072021484
+public Number getEndValue(Comparable series, Comparable category) {#459,19.546438417936628
+private static Number[][] clone(Number[][] array) {#788,19.485863936574834
+private Comparable[] categoryKeys;#73,19.44405642422763
+public Number getValue(Comparable series, Comparable category) {#366,19.442464881473118
+public Comparable getColumnKey(int column) {#611,19.41703077952067
+public Comparable getSeriesKey(int series) {#260,19.380542627970378
+public int getColumnCount() {#689,19.377722826871004
+public int getCategoryIndex(Comparable category) {#572,19.365850257873536
+private Comparable[] seriesKeys;#70,19.343393672596324
+private Number[][] endData;#79,19.334909439086914
+String name;#594,19.331401998346504
+public void setSeriesKeys(Comparable[] seriesKeys) {#276,19.309453459346997
+clone.seriesKeys = (Comparable[]) this.seriesKeys.clone();#749,19.302059173583984
+public int getCategoryCount() {#295,19.266257286071777
+public void setCategoryKeys(Comparable[] categoryKeys) {#334,19.256585682139676
+clone.categoryKeys = (Comparable[]) this.categoryKeys.clone();#748,19.256067237854005
+public void setStartValue(int series, Comparable category, Number value) {#507,19.102336928957985
+int result = 0;#223,19.08374331547664
+public void setEndValue(int series, Comparable category, Number value) {#540,19.073493730454217
++ "number of categories in the start value "#186,19.052906218029204
+int categoryCount = starts[0].length;#183,19.04727187523475
+public List getRowKeys() {#652,19.036221504211426
+public int getColumnIndex(Comparable columnKey) {#624,19.033973455429077
+public int getSeriesCount() {#222,19.00227858803489
+if ((category < 0) || (category >= getCategoryCount())) {#438,18.99574605623881
+if ((category < 0) || (category >= getCategoryCount())) {#488,18.993140776952107
+if (!(obj instanceof DefaultIntervalCategoryDataset)) {#716,18.977843491927437
++ "dataset does not match the number of "#187,18.922707557678223
+DefaultIntervalCategoryDataset clone#746,18.879339666927564
+public DefaultIntervalCategoryDataset(Number[][] starts, Number[][] ends) {#106,18.87898239722619
+public class DefaultIntervalCategoryDataset extends AbstractSeriesDataset#66,18.876296937465668
+if (!equal(this.endData, that.endData)) {#730,18.86924175594164
+int result = 0;#296,18.860413184532753
+if ((series < 0) || (series > getSeriesCount() - 1)) {#510,18.823513727921707
+if ((series < 0) || (series > getSeriesCount() - 1)) {#543,18.820200773385857
+else {#176,18.797434277004665
+if (seriesCount != ends.length) {#156,18.737164887514982
+if (categoryCount != ends[0].length) {#184,18.73018969808306
+if (obj == this) {#713,18.727948824564617
+String errMsg = "DefaultIntervalCategoryDataset: the "#185,18.72794679914202
+public int getSeriesIndex(Comparable seriesKey) {#240,18.700976967811584
+else {#199,18.696098221672905
+if ((series >= getSeriesCount()) || (series < 0)) {#261,18.6957486194113
+if ((series < 0) || (series >= getSeriesCount())) {#482,18.673904577891033
+private static boolean equal(Number[][] array1, Number[][] array2) {#763,18.630311330159504
+public int getRowCount() {#701,18.628128051757812
+if (seriesKeys.length != getSeriesCount()) {#280,18.623683309555055
+if (seriesKeys != null) {#166,18.620480060577393
++ "of series in the start value dataset does "#158,18.616669562555128
+if (!equal(this.startData, that.startData)) {#727,18.61655562856923
+if ((series < 0) || (series >= getSeriesCount())) {#432,18.611890474955242
+if (categoryKeys != null) {#191,18.607883373896282
+for (int i = 0; i < this.categoryKeys.length; i++) {#574,18.57915475633409
+for (int i = 0; i < categoryKeys.length; i++) {#342,18.575953979492187
+for (int i = 0; i < array.length; i++) {#793,18.56908655166626
+if (categoryKeys[i] == null) {#343,18.56903590326724
+return result;#227,18.550073883750223
+for (int i = 0; i < count; i++) {#595,18.544308835809883
+if ((row >= getRowCount()) || (row < 0)) {#673,18.541227548018746
+if (this.startData != null) {#224,18.538110309176975
+if (seriesCount > 0) {#163,18.51498112678528
+public DefaultIntervalCategoryDataset(Comparable[] seriesKeys,#142,18.510674878170615
+int categoryIndex = getCategoryIndex(category);#517,18.504128826989067
+public DefaultIntervalCategoryDataset(double[][] starts, double[][] ends) {#90,18.504078131455643
+public int getRowIndex(Comparable rowKey) {#640,18.501833379268646
+int categoryIndex = getCategoryIndex(category);#550,18.4817123942905
+public boolean equals(Object obj) {#712,18.47274907430013
+if (starts != null && ends != null) {#150,18.44385347366333
+for (int i = 0; i < array1.length; i++) {#773,18.442345962524413
+if (categoryKeys == null) {#335,18.428552746772766
+public Comparable getRowKey(int row) {#672,18.425500043233235
+Number[][] ends) {#124,18.411845499155472
+int seriesCount = starts.length;#155,18.407032775878907
+implements IntervalCategoryDataset {#67,18.397407472133636
+DefaultIntervalCategoryDataset that#719,18.388780818266028
+for (int i = 0; i < this.seriesKeys.length; i++) {#242,18.382582240634495
+throw new IllegalArgumentException("Null 'categoryKeys' argument.");#336,18.373938348558212
+return result;#302,18.370909864252265
+int result = -1;#573,18.37067835671561
+else {#206,18.353333268846786
+if (categoryKeys.length != this.startData[0].length) {#338,18.345544776916505
+if (!Arrays.equals(this.seriesKeys, that.seriesKeys)) {#721,18.31580268012153
+throw new IllegalArgumentException(#339,18.312767329968903
+if (this.startData != null) {#297,18.312689569261337
+throw new IllegalArgumentException(#439,18.30809447639867
+if (categoryKeys.length != categoryCount) {#192,18.303042227222072
+int seriesIndex = getSeriesIndex(series);#460,18.27252001232571
+throw new IllegalArgumentException(#483,18.271942841379268
+String errMsg = "DefaultIntervalCategoryDataset: the number "#157,18.271382689476013
+throw new IllegalArgumentException(#193,18.260819588938066
+int result = -1;#241,18.25320843287877
+Number[][] starts,#123,18.250357309977215
+if (category.equals(this.categoryKeys[i])) {#575,18.246824502944946
+if (!Arrays.equals(this.categoryKeys, that.categoryKeys)) {#724,18.24012491438124
+int seriesIndex = getSeriesIndex(series);#367,18.230579747094048
+Comparable[] categoryKeys,#143,18.22093403339386
+Number[][] result = new Number[array.length][];#792,18.21593223918568
++ "categories in the end value dataset.";#188,18.191052370293196
+return getEndValue(series, category);#392,18.18957239038804
+if (seriesKeys == null) {#277,18.18139487504959
+if (this.categoryKeys == null) {#316,18.176867961883545
+String prefix = resources.getString(#177,18.16035192353385
+throw new IllegalArgumentException(#433,18.15919946369372
+if (seriesKey.equals(this.seriesKeys[i])) {#243,18.15381181651148
+throw new IllegalArgumentException(#169,18.152468619808072
+int seriesIndex = getSeriesIndex(series);#407,18.131715721554226
+else {#319,18.122509479522705
+if (seriesIndex < 0) {#408,18.111016035079956
+if (array1 == null) {#764,18.102841019630432
+if (getSeriesCount() > 0) {#298,18.096741156144574
+throw new IllegalArgumentException(#489,18.071118455184134
+int itemIndex = getColumnIndex(category);#371,18.06784576839871
++ "not match the number of series in the end "#159,18.064148008823395
+String prefix = resources.getString(#200,18.057417460850306
+if (seriesIndex < 0) {#368,18.04728537797928
+System.arraycopy(child, 0, copychild, 0, child.length);#796,18.04474646250407
+int itemIndex = getColumnIndex(category);#464,18.032890213860405
+if (seriesIndex < 0) {#461,18.03140789270401
+if (this.seriesKeys == null) {#655,18.03087372250027
+int itemIndex = getColumnIndex(category);#411,18.02615891562568
+if (seriesKeys.length != seriesCount) {#168,18.02517703271681
+this.endData = ends;#148,17.99593645731608
+if (categoryIndex < 0) {#518,17.983055353164673
+throw new IllegalArgumentException(errMsg);#189,17.97446845372518
+if (categoryIndex < 0) {#551,17.961255729198456
+this.categoryKeys = categoryKeys;#197,17.94869954245431
+return result;#248,17.942966721274637
+if (array2 == null) {#767,17.939545035362244
+if (array == null) {#789,17.92454579671224
+return result;#580,17.920487837357953
+return this.categoryKeys.length;#690,17.918168663978577
+Number[] child = array[i];#794,17.9005916595459
+throw new IllegalArgumentException(#552,17.88849720201994
+"The number of category keys does not match "#194,17.88836059116182
+Number[][] ends) {#145,17.888038012446188
+public DefaultIntervalCategoryDataset(String[] seriesNames,#122,17.877807829115127
+"DefaultIntervalCategoryDataset.setCategoryKeys(): "#345,17.86785333296832
+throw new IllegalArgumentException(#511,17.855256833528216
+throw new IllegalArgumentException(#544,17.85198382327431
+return this.seriesKeys.length;#702,17.827408492565155
+"DefaultIntervalCategoryDataset.setValue: "#512,17.82456506531814
+"The number of series keys does not "#170,17.823980354681247
+throw new IllegalArgumentException("Null 'seriesKeys' argument.");#278,17.81693352593316
++ "the number of categories in the data.");#195,17.799634001975836
+"DefaultIntervalCategoryDataset.setValue: "#545,17.794952392578125
+this.startData = starts;#147,17.785323015848796
+clone.endData = clone(this.endData);#751,17.782647562026977
++ "match the number of series in the data.");#171,17.774659698659722
+this(null, null, starts, ends);#107,17.76189311345418
+throw new IllegalArgumentException(errMsg);#161,17.76130925692045
+this.categoryKeys));#321,17.75874740600586
+"DefaultIntervalCategoryDataset.getValue(): "#484,17.74732517373973
+"The 'row' argument is out of bounds.");#675,17.736734867095947
+"DefaultIntervalCategoryDataset.getValue(): "#434,17.726177051149566
+"DefaultIntervalCategoryDataset.getValue(): "#490,17.718827510702198
+return getEndValue(seriesIndex, itemIndex);#468,17.70660857150429
++ "null category not permitted.");#346,17.704592875071935
++ "series outside valid range.");#546,17.6969655752182
+"categories.default-prefix") + " ";#201,17.695921182632446
+String baseName = "org.jfree.data.resources.DataPackageResources";#152,17.69591999053955
+if (array1.length != array2.length) {#770,17.68832392919631
+return getStartValue(seriesIndex, itemIndex);#415,17.688108343827096
+else {#658,17.686578845977785
++ "series outside valid range.");#513,17.67567976315816
+if (itemIndex < 0) {#465,17.667373180389404
+throw new IllegalArgumentException(#519,17.65883275082237
+if (itemIndex < 0) {#412,17.63726109266281
+"DefaultIntervalCategoryDataset.setValue: "#553,17.636201529667296
+throw new IllegalArgumentException("Null 'array' argument.");#790,17.635697328127346
+if (itemIndex < 0) {#372,17.63175994157791
+name = prefix + (i + 1);#596,17.628018878755114
+if (columnKey == null) {#625,17.626041054725647
+fireDatasetChanged();#285,17.623940059116908
+throw new IllegalArgumentException(#344,17.604554093402363
+"DefaultIntervalCategoryDataset.setValue: "#520,17.588071231184333
+"The number of categories does not match the data.");#340,17.570874094963074
+return result;#799,17.55596585707231
+"DefaultIntervalCategoryDataset.getValue(): "#440,17.549359288708917
+return Collections.unmodifiableList(Arrays.asList(#320,17.542736016787014
+this.categoryKeys = generateKeys(categoryCount, prefix);#202,17.534923322273023
+this(seriesNames, null, starts, ends);#126,17.517656125520404
+clone.startData = clone(this.startData);#750,17.50569314956665
+this.categoryKeys = categoryKeys;#349,17.497880160808563
+return getSeriesIndex(rowKey);#641,17.496801912784576
+= (DefaultIntervalCategoryDataset) super.clone();#747,17.477476755777996
++ "value dataset.";#160,17.47651426608746
+"series.default-prefix") + " ";#178,17.47096795302171
+if (!Arrays.equals(array1[i], array2[i])) {#774,17.43209445476532
+throw new UnknownKeyException("Unknown 'category' key.");#413,17.41752098083496
+throw new UnknownKeyException("Unknown 'category' key.");#466,17.408257904052736
+return result;#599,17.405414407903496
+Comparable[] result = new Comparable[count];#593,17.404998076589482
+Number[] copychild = new Number[child.length];#795,17.39637776215871
+this.seriesKeys = generateKeys(seriesCount, prefix);#179,17.395625519030023
+throw new IllegalArgumentException("Null 'columnKey' argument.");#626,17.389688421178747
+return new ArrayList();#317,17.37562510546516
++ "series index out of range.");#485,17.373354835510256
++ "category index out of range.");#441,17.359122695922853
+"The number of series keys does not match the data.");#282,17.35791232369163
+Number[][] starts,#144,17.35044761498769
+throw new UnknownKeyException("Unknown 'series' key.");#409,17.35022434234619
+throw new UnknownKeyException("Unknown 'series' key.");#462,17.349896812438963
+= (DefaultIntervalCategoryDataset) obj;#720,17.345854009900773
+this.seriesKeys = seriesKeys;#284,17.332120895385742
++ "unrecognised category.");#554,17.311132828394573
+throw new IllegalArgumentException(#281,17.298721915797184
+this.endData[series][categoryIndex] = value;#558,17.28895092010498
+this.seriesKeys = seriesKeys;#174,17.28020657811846
+return this.seriesKeys[row];#677,17.275169491767883
++ "series index out of range.");#435,17.27302989959717
++ "category index out of range.");#491,17.270489311218263
+return Collections.unmodifiableList(Arrays.asList(this.seriesKeys));#659,17.269547493227066
+return this.seriesKeys[series];#264,17.260155141353607
+throw new UnknownKeyException("Unknown 'category' key.");#373,17.248502082824707
+return this.categoryKeys[column];#612,17.248375296592712
+throw new IllegalArgumentException(#674,17.24678305575722
+return true;#734,17.24069187857888
+throw new UnknownKeyException("Unknown 'series' key.");#369,17.19680431365967
+return getValue(seriesIndex, itemIndex);#375,17.194235642751057
+return false;#771,17.18702087402344
++ "unrecognised category.");#521,17.18276011943817
+return true;#778,17.176495031876996
+return getCategoryIndex(columnKey);#628,17.158884525299072
+this.startData[series][categoryIndex] = value;#525,17.145371437072754
+return this.startData[series][category];#445,17.14024935828315
+return this.endData[series][category];#494,17.13815212249756
+fireDatasetChanged();#350,17.124962738582067
+return new java.util.ArrayList();#656,17.122512136186874
+return false;#717,17.105347188313804
+fireDatasetChanged();#559,17.104798861912318
+ResourceBundle resources = ResourceBundle.getBundle(baseName);#153,17.102310793740408
+fireDatasetChanged();#526,17.091228893824987
+return clone;#752,17.080019430680707
+throw new IllegalArgumentException("No such series : " + series);#262,17.038787453262895
+result[i] = copychild;#797,16.9500563621521
+result[i] = name;#597,16.918276184483577
+result = this.startData.length;#225,16.756945382981073
+result = this.startData[0].length;#299,16.754524372242116
+return true;#714,16.719338417053223
+return false;#768,16.685538419087727
+this.seriesKeys = null;#207,16.68463317207668
+return (array2 == null);#765,16.67292464406867
+DataUtilities.createNumberArray2D(ends));#92,16.611850023269653
+return false;#728,16.57033576965332
+return false;#725,16.567534764607746
+this(DataUtilities.createNumberArray2D(starts),#91,16.460824924966563
+this.categoryKeys = null;#208,16.43386011538298
+return false;#722,16.374591636657716
+return false;#731,15.907773717244465
+result = i;#576,15.863621044158936
+result = i;#244,15.814858436584473
+return false;#775,15.814129779213353
+break;#577,15.46984895070394
+break;#245,15.425692717234293

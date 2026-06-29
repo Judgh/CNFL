@@ -1,0 +1,71 @@
+@SuppressWarnings("unchecked")#618,17.5476148778742
+return MOCKITO_CORE.doAnswer(new Returns(toBeReturned));#1346,17.362970181873866
+public class Mockito extends Matchers {#619,17.330643759833443
+return mock(classToMock, withSettings().defaultAnswer(new AnswerReturnValuesAdapter(returnValues)));#777,17.204546570777893
+return mock(classToMock, withSettings().defaultAnswer(defaultAnswer));#800,17.168396682739257
+return mock(classToMock, withSettings()#741,17.110829503912676
+return MOCKITO_CORE.doAnswer(new DoesNothing());#1299,17.10610095659892
+return MOCKITO_CORE.doAnswer(answer);#1260,17.065370711413298
+return new MockitoDebuggerImpl();#1567,17.049851417541504
+return MOCKITO_CORE.doAnswer(new ThrowsException(toBeThrown));#1200,16.952642409006753
+return MOCKITO_CORE.doAnswer(new CallsRealMethods());#1234,16.941059608459472
+public static void validateMockitoUsage() {#1523,16.9151394707816
+@Deprecated#928,16.904190063476562
+public static void verifyZeroInteractions(Object... mocks) {#1145,16.89585918850369
+MOCKITO_CORE.validateMockitoUsage();#1524,16.8396344806837
+return MOCKITO_CORE.mock((Class<T>) object.getClass(), withSettings()#897,16.79050812125206
+public static InOrder inOrder(Object... mocks) {#1370,16.76802646412569
+return VerificationModeFactory.only();#1475,16.762140205928258
+return MOCKITO_CORE.inOrder(mocks);#1371,16.72572956914487
+MOCKITO_CORE.reset(mocks);#1082,16.71684978121803
+private static final MockitoCore MOCKITO_CORE = new MockitoCore();#621,16.709779096686322
+return MOCKITO_CORE.mock(classToMock, mockSettings);#827,16.694732223238265
+public static MockitoDebugger debug() {#1566,16.683238469637356
+return mock(classToMock, withSettings().defaultAnswer(RETURNS_DEFAULTS));#722,16.667150084177653
+public static MockSettings withSettings() {#1557,16.652702808380127
+public static void verifyNoMoreInteractions(Object... mocks) {#1126,16.63789277327688
+MOCKITO_CORE.verifyNoMoreInteractions(mocks);#1127,16.630058692051815
+return MOCKITO_CORE.verify(mock, times(1));#1025,16.61928773809362
+return MOCKITO_CORE.verify(mock, mode);#1051,16.561313285827637
+MOCKITO_CORE.verifyNoMoreInteractions(mocks);#1146,16.541618548906765
+public static <T> T mock(Class<T> classToMock, Answer defaultAnswer) {#799,16.50932077261118
+@Deprecated#775,16.472298758370535
+.defaultAnswer(CALLS_REAL_METHODS));#899,16.426833429644184
+public static <T> T mock(Class<T> classToMock, MockSettings mockSettings) {#826,16.41517519067835
+public static <T> T mock(Class<T> classToMock, ReturnValues returnValues) {#776,16.37060398525662
+return VerificationModeFactory.atLeast(minNumberOfInvocations);#1439,16.275161628723144
+return MOCKITO_CORE.stubVoid(mock);#1182,16.275050468444825
+public static Stubber doAnswer(Answer answer) {#1259,16.272524038950603
+public static VerificationMode times(int wantedNumberOfInvocations) {#1386,16.253153705596922
+return new MockSettingsImpl().defaultAnswer(RETURNS_DEFAULTS);#1558,16.243733749389648
+.defaultAnswer(RETURNS_DEFAULTS));#743,16.224677188055857
+public static VerificationMode never() {#1407,16.217884063720703
+public static <T> void reset(T ... mocks) {#1081,16.210305637783474
+public static final Answer<Object> RETURNS_DEFAULTS = new GloballyConfiguredAnswer();#632,16.20535267316378
+public static VerificationMode only() {#1474,16.199955940246582
+return VerificationModeFactory.times(wantedNumberOfInvocations);#1387,16.1635027329127
+public static <T> T verify(T mock, VerificationMode mode) {#1050,16.144557816641672
+public static final Answer<Object> RETURNS_MOCKS = new ReturnsMocks();#677,16.110902547836304
+return VerificationModeFactory.atLeastOnce();#1423,16.076435340078252
+public static VerificationMode atLeastOnce() {#1422,16.024868647257488
+public static <T> VoidMethodStubbable<T> stubVoid(T mock) {#1181,15.991141319274902
+public static <T> T mock(Class<T> classToMock, String name) {#740,15.945022163391114
+public static <T> DeprecatedOngoingStubbing<T> stub(T methodCall) {#929,15.94493254908809
+public static VerificationMode atLeast(int minNumberOfInvocations) {#1438,15.93945160779086
+.name(name)#742,15.934505008515858
+return MOCKITO_CORE.when(methodCall);#994,15.915050333196467
+return MOCKITO_CORE.stub(methodCall);#930,15.868903118631113
+return VerificationModeFactory.atMost(maxNumberOfInvocations);#1455,15.845281819502512
+return times(0);#1408,15.827276229858398
+public static VerificationMode atMost(int maxNumberOfInvocations) {#1454,15.692387944176083
+public static <T> T mock(Class<T> classToMock) {#721,15.646379774267023
+public static final Answer<Object> CALLS_REAL_METHODS = new CallsRealMethods();#711,15.617551841735839
+public static final Answer<Object> RETURNS_SMART_NULLS = new ReturnsSmartNulls();#664,15.546013867413556
+public static <T> T verify(T mock) {#1024,15.493167221546173
+.spiedInstance(object)#898,15.31177048061205
+public static <T> T spy(T object) {#896,15.254000067710876
+public static Stubber doNothing() {#1298,15.148613055547079
+public static Stubber doReturn(Object toBeReturned) {#1345,15.064456701278687
+public static <T> OngoingStubbing<T> when(T methodCall) {#993,14.989966630935669
+public static Stubber doCallRealMethod() {#1233,14.935243742806572
+public static Stubber doThrow(Throwable toBeThrown) {#1199,14.205798048722116

@@ -1,0 +1,85 @@
+private final int nObs;#48,17.214175128936766
+TDistribution tDistribution = new TDistributionImpl(nObs - 2);#161,17.087121963500977
+public class PearsonsCorrelation {#42,16.988437440660263
+public PearsonsCorrelation() {#53,16.60778482755025
+public RealMatrix getCorrelationStandardErrors() {#135,16.5677090326945
+public PearsonsCorrelation(RealMatrix covarianceMatrix, int numberOfObservations) {#108,16.364858741760255
+public double correlation(final double[] xArray, final double[] yArray) throws IllegalArgumentException {#224,16.167619668520413
+return outMatrix;#263,16.124464352925617
+public PearsonsCorrelation(Covariance covariance) {#91,16.12317526967902
+private final RealMatrix correlationMatrix;#45,16.12174961783669
+nObs = numberOfObservations;#109,16.10058038374957
+public PearsonsCorrelation(RealMatrix matrix) {#77,16.040951251983643
+return outMatrix;#197,15.94645365079244
+if (nRows < 2 || nCols < 2) {#275,15.912899141726287
+public PearsonsCorrelation(double[][] data) {#67,15.901556968688965
+private void checkSufficientData(final RealMatrix matrix) {#272,15.84399688945097
+SimpleRegression regression = new SimpleRegression();#225,15.842647658454048
+if(xArray.length == yArray.length && xArray.length > 1) {#226,15.84031445639474
+int nRows = matrix.getRowDimension();#273,15.79115834236145
+correlationMatrix = computeCorrelationMatrix(matrix);#80,15.75445290615684
+public RealMatrix getCorrelationPValues() throws MathException {#160,15.736875590156107
+throw MathRuntimeException.createIllegalArgumentException(#276,15.699394226074219
+throw MathRuntimeException.createIllegalArgumentException("covariance matrix is null");#94,15.69466495513916
+public RealMatrix getCorrelationMatrix() {#119,15.65946234189547
+checkSufficientData(matrix);#78,15.621123671531677
+nObs = 0;#56,15.609161083514874
+"insufficient data: only {0} rows and {1} columns.",#277,15.598715225855509
+public RealMatrix covarianceToCorrelation(RealMatrix covarianceMatrix) {#250,15.524741411209106
+outMatrix.setEntry(i, i, 1d);#195,15.458230781555176
+for (int i = 0; i < nVars; i++) {#164,15.44705299536387
+nObs = matrix.getRowDimension();#79,15.38847647772895
+out[i][j] = Math.sqrt((1 - r * r) /(nObs - 2));#141,15.3665785673188
+correlationMatrix = covarianceToCorrelation(covarianceMatrix);#97,15.354345280191172
+outMatrix.setEntry(i, i, 1d);#255,15.347841911315918
+"invalid array dimensions. xArray has size {0}; yArray has {1} elements",#234,15.344336323621796
+throw MathRuntimeException.createIllegalArgumentException(#233,15.34045640627543
+outMatrix.setEntry(j, i, entry);#260,15.338395357131958
+outMatrix.setEntry(j, i, corr);#193,15.336400985717773
+correlationMatrix = null;#55,15.31342000227708
+int nVars = correlationMatrix.getColumnDimension();#136,15.279778026399159
+out[i][j] = 2 * (1 - tDistribution.cumulativeProbability(t));#171,15.272103656422008
+nObs = covariance.getN();#96,15.261768172768985
+regression.addData(xArray[i], yArray[i]);#228,15.240191828820013
+outMatrix.setEntry(i, j, corr);#192,15.235909285368743
+for (int i = 0; i < nVars; i++) {#138,15.211907664934794
+return correlationMatrix;#120,15.18358047803243
+nRows, nCols);#278,15.174496412277222
+for (int i = 0; i < nVars; i++) {#253,15.17192812760671
+for(int i=0; i<xArray.length; i++) {#227,15.165177970096982
+int nVars = correlationMatrix.getColumnDimension();#162,15.149356842041016
+public RealMatrix computeCorrelationMatrix(RealMatrix matrix) {#186,15.110379780040068
+for (int i = 0; i < nVars; i++) {#189,15.089911540349325
+int nVars = matrix.getColumnDimension();#187,15.069416093826295
+xArray.length, yArray.length);#235,15.065633201599121
+this(new BlockRealMatrix(data));#68,15.0460485570571
+int nCols = matrix.getColumnDimension();#274,15.042050647735596
+return regression.getR();#230,15.008458879258898
+else {#232,14.999751853942872
+return computeCorrelationMatrix(new BlockRealMatrix(data));#209,14.984667634963989
+double t = Math.abs(r * Math.sqrt((nObs - 2)/(1 - r * r)));#170,14.980923916431184
+out[i][j] = 0d;#167,14.959413496653239
+if (covarianceMatrix == null) {#93,14.958850559435392
+return new BlockRealMatrix(out);#144,14.958134233951569
+correlationMatrix = covarianceToCorrelation(covarianceMatrix);#110,14.947120500647504
+RealMatrix covarianceMatrix = covariance.getCovarianceMatrix();#92,14.929644306500753
+int nVars = covarianceMatrix.getColumnDimension();#251,14.904132582924582
+public RealMatrix computeCorrelationMatrix(double[][] data) {#208,14.886017347636976
+outMatrix.setEntry(i, j, entry);#259,14.880688054221016
+for (int j = 0; j < nVars; j++) {#165,14.821107625961304
+double r = correlationMatrix.getEntry(i, j);#140,14.811973604662665
+RealMatrix outMatrix = new BlockRealMatrix(nVars, nVars);#252,14.789194217095009
+double[][] out = new double[nVars][nVars];#163,14.76296173095703
+double[][] out = new double[nVars][nVars];#137,14.761199989318847
+double sigma = Math.sqrt(covarianceMatrix.getEntry(i, i));#254,14.756656815023984
+for (int j = 0; j < i; j++) {#256,14.75266981124878
+for (int j = 0; j < i; j++) {#190,14.75100697003878
+return new BlockRealMatrix(out);#175,14.718476712703705
+for (int j = 0; j < nVars; j++) {#139,14.662837369101387
+RealMatrix outMatrix = new BlockRealMatrix(nVars, nVars);#188,14.593647736769457
+double r = correlationMatrix.getEntry(i, j);#169,14.576104337518865
+double entry = covarianceMatrix.getEntry(i, j) /#257,14.56075680640436
+if (i == j) {#166,14.549519580343496
+double corr = correlation(matrix.getColumn(i), matrix.getColumn(j));#191,14.54301815032959
+(sigma * Math.sqrt(covarianceMatrix.getEntry(j, j)));#258,14.486552964086117
+super();#54,13.938873863220214

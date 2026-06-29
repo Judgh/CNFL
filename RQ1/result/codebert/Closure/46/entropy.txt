@@ -1,0 +1,123 @@
+RecordType toMaybeRecordType() {#218,20.153737163543703
+RecordTypeBuilder builder = new RecordTypeBuilder(registry);#145,19.262226777918197
+RecordType otherRecord = other.toMaybeRecordType();#102,19.051832497119904
+RecordTypeBuilder builder = new RecordTypeBuilder(registry);#159,19.01541458932977
+if (otherRecord == this) {#103,18.939614454905193
+if (!propA.isEquivalentTo(propB)) {#272,18.839116136233013
+if (altPropType != null && !alt.isEquivalentTo(this) &&#204,18.79205108511037
+RecordType(JSTypeRegistry registry, Map<String, RecordProperty> properties) {#78,18.739162054928865
+public boolean isEquivalentTo(JSType other) {#96,18.700472831726074
+@Override#120,18.586401224136353
+if (!otherProps.get(key).isEquivalentTo(properties.get(key))) {#113,18.541686875479563
+if (!other.isRecordType()) {#97,18.53835964202881
+Map<String, JSType> otherProps = otherRecord.properties;#108,18.46845254443941
+String propName = entry.getKey();#198,18.464398720685175
+@Override#222,18.461620330810547
+for (Map.Entry<String, JSType> entry : properties.entrySet()) {#197,18.420522763178898
+UnionTypeBuilder builder = new UnionTypeBuilder(registry);#200,18.41959571838379
+if (JSType.isSubtypeHelper(this, that)) {#224,18.410394620895385
+for (String key : keySet) {#112,18.408711653489334
+if (!propA.isSubtype(propB)) {#276,18.337446876194168
+@Override#217,18.3243248462677
+private static final long serialVersionUID = 1L;#65,18.29988824404203
+if (!inferred) {#132,18.296376514434815
+if (prop == null) {#84,18.284548686100887
+alt.isSubtype(that) &&#205,18.281495467476223
+if (typeA.isPropertyTypeDeclared(property)) {#271,18.276507464322176
+@Override#95,18.24553918838501
+if (!propA.isUnknownType() && !propB.isUnknownType()) {#270,18.222884101867677
+return this;#219,18.175748825073242
+JSType altPropType = alt.getPropertyType(propName);#203,18.1585971392118
+if (!hasProperty(property)) {#176,18.056470692157745
+JSType getGreatestSubtypeHelper(JSType that) {#156,18.047554439968533
+public boolean isSubtype(JSType that) {#223,18.03555086680821
+static boolean isSubtype(ObjectType typeA, RecordType typeB) {#245,18.014489625629626
+for (ObjectType alt :#201,18.005687032427108
+for (Map.Entry<String, JSType> entry : properties.entrySet()) {#288,18.005081057548523
+if (thatRecord.hasProperty(property) &&#165,18.00214130000064
+for (String property : properties.keySet()) {#164,17.9991875816794
+@Override#286,17.958881616592407
+for (String property : properties.keySet()) {#146,17.929417355855307
+!thatRecord.getPropertyType(property).isEquivalentTo(#166,17.877545674641926
+JSType propType = entry.getValue();#199,17.865360812137002
+if (type != resolvedType) {#291,17.864551544189453
+(propType.isUnknownType() || altPropType.isUnknownType() ||#206,17.857150822877884
+if (!that.isRecordType()) {#237,17.851665570185734
+if (that.isRecordType()) {#157,17.847646933335525
+.getGreatestSubtype(that);#189,17.846487101386575
+@Override#140,17.839662551879883
+RecordType thatRecord = that.toMaybeRecordType();#158,17.838825702667236
+altPropType.isEquivalentTo(propType))) {#207,17.834829115098522
+Set<String> keySet = properties.keySet();#107,17.799161672592163
+return greatestSubtype;#214,17.797695371839737
+for (String property : properties.keySet()) {#82,17.772729937235514
+boolean defineProperty(String propertyName, JSType type,#126,17.749996948242188
+class RecordType extends PrototypeObjectType {#64,17.71891827053494
+getPropertyType(property))) {#149,17.714405899956112
+for (String property : thatRecord.properties.keySet()) {#175,17.703128862380982
+return RecordType.isSubtype(this, that.toMaybeRecordType());#241,17.693300610496884
+return super.defineProperty(propertyName, type, inferred,#136,17.680117999806125
+private final SortedMap<String, JSType> properties = Maps.newTreeMap();#67,17.67020151831887
+JSTypeNative.OBJECT_TYPE).isSubtype(that)) {#230,17.66469929136079
+if (isFrozen) {#128,17.63491049679843
+if (!that.isRecordType()) {#142,17.59485963674692
+getPropertyType(property))) {#167,17.57972816798998
+if (!otherProps.keySet().equals(keySet)) {#109,17.574210834503173
+JSType propB = typeB.getPropertyType(property);#269,17.546069962637766
+registry.getEachReferenceTypeWithProperty(propName)) {#202,17.532315731048584
+public ObjectType getImplicitPrototype() {#121,17.524680137634277
+throw new IllegalStateException(#85,17.515494755336217
+JSType resolveInternal(ErrorReporter t, StaticScope<JSType> scope) {#287,17.493432998657227
+JSTypeNative.NO_OBJECT_TYPE);#186,17.476961040496825
+if (!thatRestrictedToObj.isEmptyType()) {#190,17.45476952721091
+for (String property : typeB.properties.keySet()) {#263,17.401531749301487
+that.toMaybeRecordType().getPropertyType(property).isEquivalentTo(#148,17.370130436761038
+@Override#125,17.344136476516724
+super(registry, null, null);#79,17.337498518136833
+registry.getNativeType(JSTypeNative.OBJECT_TYPE)#188,17.33034412066142
+setPrettyPrint(true);#80,17.31792640686035
+JSType greatestSubtype = registry.getNativeType(#185,17.30831230387968
+if (that.toMaybeRecordType().hasProperty(property) &&#147,17.294497262863885
+RecordProperty prop = properties.get(property);#83,17.19650810956955
+return registry.getNativeObjectType(JSTypeNative.OBJECT_TYPE);#122,17.188330780376088
+if (!typeA.hasProperty(property)) {#264,17.160746350007898
+JSType type = entry.getValue();#289,17.12979108095169
+"RecordProperty associated with a property should not be null!");#86,17.103473052978515
+if (registry.getNativeObjectType(#229,17.10030153819493
+boolean inferred, Node propertyNode) {#127,17.065895829881942
+private boolean isFrozen = false;#68,17.062214946746828
+return true;#117,17.03695583343506
+JSType resolvedType = type.resolve(t, scope);#290,17.03470616113572
+return registry.getNativeObjectType(JSTypeNative.NO_TYPE);#168,16.996378863299334
+JSType propA = typeA.getPropertyType(property);#268,16.969446273077104
+public JSType getLeastSupertype(JSType that) {#141,16.956887086232502
+return builder.build();#154,16.919650077819824
+JSType thatRestrictedToObj =#187,16.900989532470703
+builder.addProperty(property, getPropertyType(property),#171,16.89300296420143
+return super.resolveInternal(t, scope);#295,16.889518038431802
+return false;#110,16.853636423746746
+properties.put(entry.getKey(), resolvedType);#292,16.81644024848938
+return true;#104,16.806705898708767
+return true;#283,16.79218360355922
+return true;#231,16.774251831902397
+return true;#225,16.771352767944336
+return builder.build();#182,16.718466672030363
+getPropertyNode(property));#151,16.695227066675823
+defineDeclaredProperty(property, prop.getType(), prop.getPropertyNode());#88,16.679110407829285
+builder.addProperty(property, thatRecord.getPropertyType(property),#177,16.620775919694168
+return false;#129,16.613452699449326
+builder.addProperty(property, getPropertyType(property),#150,16.60278878893171
+getPropertyNode(property));#172,16.56203039487203
+greatestSubtype = greatestSubtype.getLeastSupertype(builder.build());#211,16.560553587399998
+isFrozen = true;#92,16.546661567687988
+return false;#238,16.535711924235027
+return false;#98,16.513557963901096
+properties.put(propertyName, type);#133,16.443588320414225
+propertyNode);#137,16.348873485218395
+builder.addAlternate(alt);#208,16.344277763366698
+return false;#265,16.298959385265004
+return super.getLeastSupertype(that);#143,16.117850191452924
+thatRecord.getPropertyNode(property));#178,16.073222284731656
+return false;#273,16.032471720377604
+return false;#114,15.874468543312766
+return false;#277,15.522956530253092

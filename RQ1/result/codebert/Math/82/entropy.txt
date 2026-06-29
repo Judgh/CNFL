@@ -1,0 +1,72 @@
+tableau.discardArtificialVariables();#189,18.394537289937336
+double multiplier = tableau.getEntry(i, pivotCol);#118,18.2552614847819
+final double ratio = rhs / entry;#83,18.015804290771484
+double pivotVal = tableau.getEntry(pivotRow, pivotCol);#112,17.94748695373535
+if (MathUtils.compareTo(entry, 0, epsilon) >= 0) {#82,17.941976266748764
+if (pivotRow == null) {#107,17.940335217644186
+return tableau.getSolution();#193,17.901220893859865
+double minValue = 0;#59,17.851453031812394
+return false;#135,17.820124124225817
+return false;#152,17.81898021697998
+return true;#138,17.754295695911754
+if (tableau.getNumArtificialVariables() > 0) {#147,17.702445030212402
+return true;#155,17.69453204761852
+if (tableau.getNumArtificialVariables() == 0) {#168,17.61635132630666
+tableau.subtractRow(i, pivotRow, multiplier);#119,17.61407003095073
+tableau.divideRow(pivotRow, pivotVal);#113,17.605004267259076
+minRatio = ratio;#85,17.578871103433464
+Integer minPos = null;#60,17.568149702889578
+final double entry = tableau.getEntry(i, col);#81,17.512236851912277
+return true;#131,17.486072285970053
+Integer minRatioPos = null;#78,17.410233974456787
+Integer pivotRow = getPivotRow(pivotCol, tableau);#106,17.376184662183125
+if (ratio < minRatio) {#84,17.374714851379395
+final double rhs = tableau.getEntry(i, tableau.getWidth() - 1);#80,17.361504274256088
+for (int i = tableau.getNumObjectiveFunctions(); i < tableau.getWidth() - 1; i++) {#150,17.356715769381136
+for (int i = tableau.getNumObjectiveFunctions(); i < tableau.getWidth() - 1; i++) {#61,17.343118899577373
+incrementIterationsCounter();#103,17.33577530200665
+for (int i = 0; i < tableau.getHeight(); i++) {#116,17.3237403356112
+if (tableau.getNumArtificialVariables() == 0) {#130,17.29945719242096
+for (int i = tableau.getNumObjectiveFunctions(); i < tableau.getWidth() - 1; i++) {#133,17.284642709268105
+minValue = tableau.getEntry(0, i);#63,17.28043822584481
+return false;#148,17.25659637451172
+minPos = i;#64,17.22554211389451
+if (MathUtils.compareTo(tableau.getEntry(0, i), 0, epsilon) < 0) {#134,17.17085513614473
+if (i != pivotRow) {#117,17.165528726577758
+double minRatio = Double.MAX_VALUE;#77,17.157669167769583
+if (MathUtils.compareTo(tableau.getEntry(0, i), minValue, epsilon) < 0) {#62,17.148551785668662
+this(DEFAULT_EPSILON);#42,17.141170713636612
+minRatioPos = i;#86,17.11543873378209
+if (MathUtils.compareTo(tableau.getEntry(0, i), 0, epsilon) < 0) {#151,17.10611304782686
+for (int i = tableau.getNumObjectiveFunctions(); i < tableau.getHeight(); i++) {#79,17.047914701349594
+Integer pivotCol = getPivotColumn(tableau);#105,17.036777925491332
+final SimplexTableau tableau =#186,17.01286494731903
+public RealPointValuePair doOptimize()#184,16.976874147142684
+return minPos;#67,16.9505033493042
+@Override#183,16.870300610860188
+return minRatioPos;#90,16.8537049974714
+solvePhase1(tableau);#188,16.844189071655272
+while (!isPhase1Solved(tableau)) {#172,16.81391863822937
+public boolean isOptimal(final SimplexTableau tableau) {#146,16.79407616665489
+private static final double DEFAULT_EPSILON = 1.0e-6;#33,16.785484852998152
+if (!MathUtils.equals(tableau.getEntry(0, tableau.getRhsOffset()), 0, epsilon)) {#177,16.66270528188566
+private boolean isPhase1Solved(final SimplexTableau tableau) {#129,16.604449226742698
+while (!isOptimal(tableau)) {#190,16.596213605668808
+public SimplexSolver() {#41,16.57162805037065
+throw new NoFeasibleSolutionException();#178,16.545968918573287
+return;#169,16.427491937364852
+protected void solvePhase1(final SimplexTableau tableau)#165,16.266242610083687
+doIteration(tableau);#173,16.178671585886104
+public SimplexSolver(final double epsilon) {#49,16.14745611302993
+new SimplexTableau(f, constraints, goalType, restrictToNonNegative, epsilon);#187,16.137185314723425
+private Integer getPivotRow(final int col, final SimplexTableau tableau) {#76,16.12772301832835
+protected void doIteration(final SimplexTableau tableau)#100,16.08301618364122
+this.epsilon = epsilon;#50,16.063508616553413
+doIteration(tableau);#191,15.95890572196559
+protected final double epsilon;#36,15.885523282564604
+private Integer getPivotColumn(SimplexTableau tableau) {#58,15.748812926443
+throw new UnboundedSolutionException();#108,15.602106761932372
+public class SimplexSolver extends AbstractLinearOptimizer {#30,15.592097409566243
+throws OptimizationException {#166,15.55605407861563
+throws OptimizationException {#101,15.528807199918306
+throws OptimizationException {#185,15.158139448899488

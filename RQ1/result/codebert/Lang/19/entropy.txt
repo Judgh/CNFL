@@ -1,0 +1,29 @@
+int seqEnd = input.length();#38,18.990282654762268
+boolean isHex = false;#42,18.979911703812448
+int entityValue;#59,18.97381567955017
+{#55,18.67726340660682
+if(firstChar == 'x' || firstChar == 'X') {#45,18.651015962873185
+if(input.charAt(index) == '&' && index < seqEnd - 1 && input.charAt(index + 1) == '#') {#40,18.577699661254883
+public int translate(CharSequence input, int index, Writer out) throws IOException {#37,18.54092141856318
+int end = start;#52,18.522765103508444
+try {#60,18.51040199824742
+return 0;#82,18.48982100053267
+if(entityValue > 0xFFFF) {#71,18.38578987121582
+char firstChar = input.charAt(start);#44,18.36844236954399
+end++;#56,18.35414589775933
+isHex = true;#47,18.251786145296965
+start++;#46,18.227028316921658
+while(input.charAt(end) != ';')#54,18.195400641514706
+System.err.println("FAIL: " + input.subSequence(start, end) + "[" + start +"]["+ end +"]");#67,18.07886050609832
+entityValue = Integer.parseInt(input.subSequence(start, end).toString(), 10);#64,18.061583518981934
+int start = index + 2;#41,17.937755283556488
+@Override#36,17.92418686548869
+entityValue = Integer.parseInt(input.subSequence(start, end).toString(), 16);#62,17.844918960748718
+return 0;#68,17.700620048924495
+if(isHex) {#61,17.61111707272737
+public class NumericEntityUnescaper extends CharSequenceTranslator {#31,17.39778855267693
+char[] chrs = Character.toChars(entityValue);#72,17.391476186116538
+return 2 + (end - start) + (isHex ? 1 : 0) + 1;#80,17.385447242043234
+out.write(entityValue);#76,17.326575445092242
+out.write(chrs[1]);#74,16.923570938110352
+out.write(chrs[0]);#73,16.88123580932617

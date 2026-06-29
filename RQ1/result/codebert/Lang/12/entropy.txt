@@ -1,0 +1,63 @@
+if (start == 0 && end == 0) {#231,19.988090364556562
+if (chars == null) {#299,19.6778364777565
+if (chars == null) {#318,19.66192853450775
+if (chars == null) {#245,19.4514518737793
+if (count == 0) {#225,19.439148902893066
+int gap = end - start;#241,19.107357215881347
+while (count-- != 0) {#243,19.105865359306335
+return random(count, 0, 0, false, false, null, RANDOM);#300,18.756118551890054
+public static String random(int count, int start, int end, boolean letters, boolean numbers) {#162,18.727967681884767
+public static String random(int count, int start, int end, boolean letters, boolean numbers,#223,18.69207962354024
+char[] chars, Random random) {#224,18.661399579048158
+return random(count, 0, 0, false, false, null, RANDOM);#319,18.642116864522297
+public static String random(int count, boolean letters, boolean numbers) {#142,18.55038703115363
+public static String randomAlphanumeric(int count) {#110,18.546189725399017
+if (!letters && !numbers) {#232,18.45576103210449
+public static String random(int count, int start, int end, boolean letters, boolean numbers, char... chars) {#186,18.45160882226352
+if(count == 0) {#254,18.364186604817707
+if(count == 0) {#263,18.24995775575991
+char ch;#244,18.21239891052246
+if(ch >= 56320 && ch <= 57343) {#253,18.201870822906493
+|| !letters && !numbers) {#252,18.14492843891012
+return random(count, 0, 0, letters, numbers);#143,18.13764613015311
+public static String random(int count, char... chars) {#317,18.135581409229953
+public static String random(int count) {#68,18.117865342360275
+public RandomStringUtils() {#53,18.091770952398125
+return new String(buffer);#281,18.071356909615652
+public static String random(int count, String chars) {#298,18.069316804409027
+public static String randomAlphabetic(int count) {#96,18.06837284564972
+public static String randomNumeric(int count) {#124,18.00582389831543
+return "";#226,17.98742586771647
+throw new IllegalArgumentException("Requested random string length " + count + " is less than 0.");#228,17.978485897609165
+start = ' ';#236,17.972459141801043
+ch = chars[random.nextInt(gap) + start];#248,17.963649050394693
+if (letters && Character.isLetter(ch)#250,17.955624497455098
+end = Integer.MAX_VALUE;#233,17.952468429292953
+return random(count, true, true);#111,17.81870438070858
+public static String randomAscii(int count) {#82,17.80575406551361
+char[] buffer = new char[count];#240,17.789704771602857
+return random(count, true, false);#97,17.7880537369672
+return random(count, false, false);#69,17.78219778397504
+return random(count, false, true);#125,17.77242795158835
+return random(count, 0, chars.length, false, false, chars, RANDOM);#321,17.726864167622157
+buffer[count] = (char) (56320 + random.nextInt(128));#267,17.695509600084883
+end = 'z' + 1;#235,17.693762711116246
+buffer[count] = (char) (55296 + random.nextInt(128));#260,17.689046593599542
+ch = (char) (random.nextInt(gap) + start);#246,17.623431980609894
+return random(count, 32, 127, false, false);#83,17.56545271192278
+public class RandomStringUtils {#36,17.538730025291443
+count++;#264,17.488083362579346
+buffer[count] = ch;#269,17.466852157346665
+return random(count, start, end, letters, numbers, null, RANDOM);#163,17.428942606999325
+buffer[count] = ch;#258,17.401088653072232
+count++;#255,17.39572110542884
+buffer[count] = ch;#275,17.393664006833678
+count++;#273,17.378322991457853
+return random(count, start, end, letters, numbers, chars, RANDOM);#187,17.346647629371056
+|| numbers && Character.isDigit(ch)#251,17.335110910477177
+super();#54,17.332094073295593
+private static final Random RANDOM = new Random();#43,17.261561598096574
+count--;#268,17.192171379371924
+return random(count, chars.toCharArray());#302,16.986663416812295
+count--;#259,16.95485344639531
+count++;#278,16.610004001193577

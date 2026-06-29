@@ -1,0 +1,203 @@
+private final String varName;#234,20.30439109802246
+private boolean canInline() {#256,19.656509052623402
+public FlowSensitiveInlineVariables(AbstractCompiler compiler) {#112,19.510253625757553
+private void inlineVariable() {#381,19.20198497772217
+case Token.NAME:#416,19.11416227677289
+implements CompilerPass, ScopedCallback {#57,19.09914779663086
+if (c.canInline()) {#147,18.979290707906088
+new Predicate<Node>() {#329,18.894110255771214
+private final AbstractCompiler compiler;#72,18.849077542622883
+new Predicate<Node>() {#344,18.83200804392497
+if (compiler.getCodingConvention().isExported(name)) {#209,18.801434103647868
+this.varName = varName;#250,18.789929253714426
+String name = n.getString();#208,18.765116024017335
+if (t.inGlobalScope()) {#119,18.718289375305176
+@Override#178,18.71465031305949
+if (!ControlFlowGraph.isEnteringNewCfgNode(c) && apply(c)) {#104,18.689114063978195
+FlowState<MustDef> state = graphNode.getAnnotation();#185,18.64086087544759
+@Override#330,18.6371591091156
+private final Node use;#241,18.581221050686306
+@Override#191,18.53862953186035
+cfg,#363,18.529480361938475
+case Token.ASSIGN:#422,18.514356719122993
+if (NodeUtil.isWithinLoop(use)) {#310,18.49259998923854
+if (NodeUtil.mayHaveSideEffects(def.getLastChild())) {#296,18.47270492553711
+switch (input.getType()) {#332,18.452356060345966
+@Override#443,18.450207328796388
+if (def.isAssign()) {#384,18.444443957010904
+final MustDef defs = state.getIn();#186,18.44376564025879
+if (def == null) {#267,18.439534187316895
+if (n.isName() && n.getString().equals(varName) &&#445,18.428823121388753
+@Override#413,18.426921463012697
+public boolean apply(Node input) {#331,18.42487161809748
+if (n.isName()) {#193,18.418587737613255
+for (Candidate c : candidates) {#146,18.416789274949295
+@Override#83,18.411954641342163
+|| parent.isVar() || parent.isInc() || parent.isDec() ||#203,18.40545449938093
+public boolean apply(Node n) {#84,18.383753776550293
+private static final Predicate<Node> SIDE_EFFECT_PREDICATE =#81,18.373765037173317
+while (defParent.getParent().isLabel()) {#389,18.35426745414734
+if (parent == null) {#197,18.34113055781314
+reachingDef = new MustBeReachingVariableDef(cfg, t.getScope(), compiler);#134,18.339752237002056
+private MustBeReachingVariableDef reachingDef;#78,18.32856623331706
+if (defNode != null &&#216,18.32681595651727
+if (checkLeftOf(use, useCfgNode, SIDE_EFFECT_PREDICATE)) {#288,18.321809061111942
+this.use = use;#252,18.298373222351074
+parent.isParamList() || parent.isCatch()) {#204,18.268960412343343
+if (checkRightOf(def, defCfgNode, SIDE_EFFECT_PREDICATE)) {#281,18.260170659711285
+if (uses.size() != 1) {#317,18.23673665523529
+SIDE_EFFECT_PREDICATE,#366,18.213841710771835
+this.compiler = compiler;#113,18.209905364296652
+@Override#345,18.2090225815773
+if (n == null) {#87,18.17995459238688
+switch (n.getType()) {#415,18.15959824456109
+class FlowSensitiveInlineVariables extends AbstractPostOrderCallback#56,18.156835215432302
+case Token.REGEXP:#337,18.146376927693684
+private Node def;#237,18.146121859550476
+ControlFlowAnalysis cfa = new ControlFlowAnalysis(compiler, false, true);#129,18.122214794158936
+reachingDef.analyze();#135,18.112067127227782
+private class GatherCandiates extends AbstractShallowCallback {#177,18.103664588928222
+t.getScope().getVarCount()) {#124,18.090402391221787
+Node useParent = use.getParent();#383,18.089762242635093
+if (n.isCall() && NodeUtil.functionCallHasSideEffects(n)) {#94,18.066387176513672
+if (lhs.isName() && lhs.getString().equals(varName)) {#424,18.062159644232857
+if (numUseWithinUseCfgNode != 1) {#305,18.05006594406931
+if (n.getString().equals(varName) && n.hasChildren()) {#417,18.03700242323034
+case Token.OBJECTLIT:#336,18.033743088061993
+Node n, Node expressionRoot, Predicate<Node> predicate) {#467,18.024968919299898
+case Token.NEW:#338,18.021352560623832
+case Token.ARRAYLIT:#335,18.02082872390747
+private class Candidate {#231,18.009636878967285
+@Override#156,17.998650074005127
+if (n.isNew() && NodeUtil.constructorCallHasSideEffects(n)) {#98,17.99522457122803
+case Token.GETELEM:#333,17.994843152853157
+public boolean apply(Node input) {#346,17.98801426454024
+if (def.isAssign() && !NodeUtil.isExprAssign(def.getParent())) {#273,17.968815456737172
+if (NodeUtil.isStatementBlock(defCfgNode.getParent()) &&#356,17.954040718078613
+if (pathCheck.somePathsSatisfyPredicate()) {#370,17.952612089074176
+new Predicate<Node>() {#82,17.91579047838847
+Candidate(String varName, Node defCfgNode, Node use, Node useCfgNode) {#248,17.90725088119507
+cfg.getDirectedGraphNode(useCfgNode),#365,17.87894541217435
+Node n, Node expressionRoot, Predicate<Node> predicate) {#487,17.869900340125675
+private final Node defCfgNode;#238,17.862707297007244
+reachingUses = new MaybeReachingVariableUse(cfg, t.getScope(), compiler);#144,17.8568780819575
+new AbstractCfgNodeTraversalCallback() {#411,17.829689578006143
+case Token.GETPROP:#334,17.826736068725587
+if (NodeUtil.has(def.getLastChild(),#328,17.821788215637206
+if (graphNode == null) {#181,17.818346432277135
+Node rhs = def.getLastChild();#385,17.805945449405247
+if ((NodeUtil.isAssignmentOp(parent) && parent.getFirstChild() == n)#202,17.80247481209891
+private List<Candidate> candidates;#77,17.77809944152832
+compiler.reportCodeChange();#401,17.75481454531352
+Node defNode = reachingDef.getDef(name, cfgNode);#213,17.7526113986969
+private final Node useCfgNode;#242,17.746856609980266
+for (Node c = n.getFirstChild(); c != null; c = c.getNext()) {#103,17.742354300714307
+private void getDefinition(Node n, Node parent) {#409,17.71682095527649
+cfg.getDirectedGraphNode(defCfgNode),#364,17.68560298796623
+@Override#116,17.68238091468811
+return; // Don't even brother. All global variables are likely escaped.#120,17.671945254007976
+private ControlFlowGraph<Node> cfg;#76,17.66428256034851
+Node rhs = def.getLastChild();#395,17.659421973758274
+!reachingDef.dependsOnOuterScopeVars(name, cfgNode)) {#217,17.639689233567978
+if (defCfgNode.isFunction()) {#259,17.617738779853372
+new AbstractCfgNodeTraversalCallback() {#189,17.616165024893625
+@Override#153,17.600663423538208
+!(parent.isAssign() &&#447,17.595320825991422
+if (predicate.apply(cur)) {#470,17.594295422236126
+return;#183,17.58164758682251
+getDefinition(defCfgNode, null);#263,17.579418540000916
+new AbstractCfgNodeTraversalCallback() {#441,17.559825488499232
+cfg = cfa.getCfg();#133,17.55737897327968
+(parent.getFirstChild() == n))) {#448,17.533735862145058
+if (predicate.apply(cur)) {#491,17.501119401719833
+final Node cfgNode = n;#187,17.477222238268173
+Preconditions.checkArgument(use.isName());#249,17.465722535785876
+return false;#341,17.451963474876003
+getNumUseInUseCfgNode(useCfgNode, null);#264,17.43632091175426
+AbstractCfgNodeTraversalCallback gatherCb =#410,17.432364834679497
+Collection<Node> uses = reachingUses.getUses(varName, defCfgNode);#315,17.431583949497767
+@Override#161,17.416648864746094
+AbstractCfgNodeTraversalCallback gatherCb =#188,17.38825050989787
+CheckPathsBetweenNodes<Node, ControlFlowGraph.Branch>#361,17.36345450083415
+private static boolean checkLeftOf(#486,17.361449347601997
+cfa.process(null, t.getScopeRoot().getLastChild());#132,17.34602741968064
+private void getNumUseInUseCfgNode(Node n, Node parant) {#438,17.33948504406473
+for (Node cur = p.getParent().getFirstChild(); cur != p;#489,17.335465391476948
+cur = cur.getNext()) {#490,17.331543180677627
+return;#420,17.330670833587646
+Preconditions.checkState(false, "No other definitions can be inlined.");#399,17.32498327891032
+public void exitScope(NodeTraversal t) {}#154,17.322867597852433
+defCfgNode.getNext() != useCfgNode) {#357,17.293273849487306
+for (Node cur = p.getNext(); cur != null; cur = cur.getNext()) {#469,17.29280138015747
+pathCheck = new CheckPathsBetweenNodes<Node, ControlFlowGraph.Branch>(#362,17.27372678120931
+return;#198,17.260788142681122
+return;#205,17.255727112293243
+return true;#375,17.23378064897325
+numUseWithinUseCfgNode++;#449,17.23311996459961
+useParent.replaceChild(use, rhs);#393,17.229786772477
+DiGraphNode<Node, Branch> graphNode = cfg.getDirectedGraphNode(n);#180,17.224914380482264
+Node defParent = def.getParent();#382,17.218697357177735
+private static boolean checkRightOf(#466,17.21549966600206
+AbstractCfgNodeTraversalCallback gatherCb =#440,17.20237218009101
+return false;#351,17.169407064264472
+new NodeTraversal(compiler, new GatherCandiates()).traverse(#140,17.164926767349243
+for (Node p = n; p != expressionRoot; p = p.getParent()) {#468,17.15416618188222
+if (LiveVariablesAnalysis.MAX_VARIABLES_TO_ANALYZE <#123,17.151142835617065
+this.useCfgNode = useCfgNode;#253,17.145943217807346
+Node lhs = n.getFirstChild();#423,17.136417508125305
+Preconditions.checkState(defParent.isExprResult());#388,17.133040054984715
+t.getScopeRoot().getLastChild());#141,17.13199610180325
+return false;#108,17.120913418856535
+(new NodeTraversal(compiler, this)).traverseRoots(externs, root);#158,17.114705156396937
+private MaybeReachingVariableUse reachingUses;#79,17.105517148971558
+reachingUses.analyze();#145,17.07698665965687
+private int numUseWithinUseCfgNode;#246,17.05889790398734
+<DiGraphEdge<Node, ControlFlowGraph.Branch>>alwaysTrue(),#368,17.045512575852243
+return !input.isFunction();#348,17.00218503371529
+for (Node p = n.getParent(); p != expressionRoot; p = p.getParent()) {#488,16.99045615726047
+return;#125,16.956651091575623
+useParent.replaceChild(use, rhs);#397,16.946253726356908
+public void visit(NodeTraversal t, Node n, Node parent) {#444,16.90609508514404
+defParent.detachFromParent();#392,16.89509207010269
+def = n;#418,16.879075956344604
+public void visit(NodeTraversal t, Node n, Node parent) {#192,16.86802318572998
+return true;#95,16.867247581481934
+return;#210,16.846668303012848
+return false;#88,16.84096908569336
+this.defCfgNode = defCfgNode;#251,16.817145771450466
+public void visit(NodeTraversal t, Node n, Node parent) {#414,16.815769233703612
+rhs.detachFromParent();#386,16.791288435459137
+NodeTraversal.traverse(compiler, n, gatherCb);#431,16.759999565456223
+public void visit(NodeTraversal t, Node n, Node parent) {#179,16.757967222304572
+NodeTraversal.traverse(compiler, n, gatherCb);#454,16.727313249007516
+return true;#99,16.705180975107048
+candidates.add(new Candidate(name, defNode, n, cfgNode));#218,16.69317716360092
+Preconditions.checkState(t.getScopeRoot().isFunction());#131,16.68846230506897
+return false;#475,16.678638322012766
+return false;#306,16.671998717568137
+public void enterScope(NodeTraversal t) {#117,16.657745633806503
+NodeTraversal.traverse(compiler, cfgNode, gatherCb);#224,16.64665882110596
+public void process(Node externs, Node root) {#157,16.57357908884684
+defParent = defParent.getParent();#390,16.544498242829974
+return false;#260,16.49699930711226
+Predicates.#367,16.483013343811034
+return false;#282,16.479758956215598
+return false;#289,16.45985612002286
+def = n;#425,16.451758527755736
+return false;#268,16.418410994789816
+return false;#311,16.390296589244496
+return false;#318,16.380154869773172
+public void visit(NodeTraversal t, Node n, Node parent) {#162,16.377802246495296
+return true;#339,16.37658289204473
+def.removeChild(rhs);#396,16.346903443336487
+c.inlineVariable();#148,16.319527846116287
+return false;#274,16.316765611821953
+return false;#496,16.29445484706334
+false);#369,16.264161009537546
+return false;#297,16.26338750665838
+return;#427,16.235703229904175
+candidates = Lists.newLinkedList();#136,16.199356959416317
+return true;#492,16.15524512070876
+return true;#471,16.094394757197453
+return false;#371,15.90950657771184
+return true;#105,15.76112143198649

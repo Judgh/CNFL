@@ -1,0 +1,102 @@
+public class HarmonicFitter extends CurveFitter<HarmonicOscillator.Parametric> {#40,15.80465561410655
+public HarmonicFitter(final DifferentiableMultivariateVectorOptimizer optimizer) {#45,15.653797128926152
+private final WeightedObservedPoint[] observations;#181,14.454029507107204
+private void sortObservations() {#224,14.382358312606812
+return fit((new ParameterGuesser(getObservations())).guess());#77,14.340259269431785
+public ParameterGuesser(WeightedObservedPoint[] observations) {#195,14.045759161313375
+double c3 = sx2 * sy2 - sxy * sxy;#299,13.971995518125336
+for (int j = 1; j < observations.length; ++j) {#229,13.811200470759951
+public static class ParameterGuesser {#179,13.733548971322866
+final double xRange = observations[last].getX() - observations[0].getX();#304,13.643960701094734
+double c1 = sy2 * sxz - sxy * syz;#297,13.526079720464246
+for (int i = 1; i < observations.length; ++i) {#270,13.392899414588666
+if (observations.length < 4) {#196,13.329911107602326
+while ((i >= 0) && (curr.getX() < mI.getX())) {#236,13.320210423580436
+WeightedObservedPoint curr = observations[0];#228,13.320070346196493
+public double[] fit(double[] initialGuess) {#61,13.28701502084732
+private double omega;#185,13.250118414560953
+private double phi;#187,13.20596328148475
+for (int i = 1; i < observations.length; ++i) {#341,13.198806532498065
+double currentY = observations[0].getY();#266,13.189237117767334
+throw new NumberIsTooSmallException(LocalizedFormats.INSUFFICIENT_OBSERVED_POINTS_IN_SAMPLE,#197,13.166090755462646
+private double a;#183,13.145233710606893
+private void guessPhi() {#334,13.130437660217286
+final double currentYPrime = (currentY - previousY) / (currentX - previousX);#347,13.102968370592272
+public double[] guess() {#214,13.05750220162528
+private void guessAOmega() {#257,13.054013192653656
+final double fPrime2StepIntegral = dy * dy / dx;#283,12.997451474589687
+double c2 = sxy * sxz - sx2 * syz;#298,12.963717397054037
+final double dy = currentY - previousY;#280,12.96221503844628
+double currentY = observations[0].getY();#340,12.957814175149668
+if (curr.getX() < prec.getX()) {#232,12.957292033780005
+double yMax = Double.NEGATIVE_INFINITY;#311,12.937951914469402
+fPrime2Integral += fPrime2StepIntegral;#287,12.827693544585129
+final double startX = currentX;#269,12.779141616821288
+double yMin = Double.POSITIVE_INFINITY;#310,12.772567812601725
+sy2 += f2Integral * f2Integral;#290,12.7669950024835
+final double f2StepIntegral =#281,12.751778721809387
+double currentX = observations[0].getX();#265,12.750535094219705
+for (int i = 1; i < observations.length; ++i) {#312,12.737359754966967
+final double dx = currentX - previousX;#279,12.705817314294668
+sx2 += x * x;#289,12.705412904421488
+phi = FastMath.atan2(-fsMean, fcMean);#356,12.654941654205322
+public double[] fit() {#76,12.627904891967773
+this.observations = observations.clone();#201,12.574628829956055
+dx * (previousY * previousY + previousY * currentY + currentY * currentY) / 3;#282,12.57042711046007
+final double x = currentX - startX;#285,12.56824016571045
+double currentX = observations[0].getX();#339,12.503700277079707
+sxy += x * f2Integral;#291,12.482007026672363
+final double y = observations[i].getY();#313,12.463254836297804
+currentY = observations[i].getY();#275,12.458885412949781
+double syz = 0;#263,12.454873906241524
+f2Integral += f2StepIntegral;#286,12.434952700579608
+return fit(new HarmonicOscillator.Parametric(), initialGuess);#62,12.432357864379883
+if ((c1 / c2 < 0) || (c2 / c3 < 0)) {#300,12.413938204447428
+sortObservations();#215,12.394952774047852
+double sy2 = 0;#260,12.331078555848864
+syz += f2Integral * fPrime2Integral;#293,12.326119836171468
+final int last = observations.length - 1;#301,12.317397667811466
+fcMean += omega * currentY * cosine - currentYPrime * sine;#352,12.284181104765999
+final double previousY = currentY;#273,12.278546869754791
+sxz += x * fPrime2Integral;#292,12.24750668661935
+double cosine = FastMath.cos(omegaX);#350,12.206009831921808
+double f2Integral = 0;#267,12.19654221534729
+fsMean += omega * currentY * sine + currentYPrime * cosine;#353,12.193224934169224
+omega = 2 * Math.PI / xRange;#308,12.12838183508979
+WeightedObservedPoint prec = curr;#230,12.12563338646522
+double sx2 = 0;#259,12.098751369275545
+final double previousX = currentX;#272,12.092389523983002
+currentY = observations[i].getY();#346,12.067818861741285
+final double previousY = currentY;#344,12.058863937854767
+double fPrime2Integral = 0;#268,12.037834439958845
+double sxy = 0;#261,12.032354725731743
+observations[i + 1] = curr;#242,12.00970951716105
+WeightedObservedPoint mI = observations[i];#235,11.992656096816063
+if (y > yMax) {#317,11.960975919451032
+double fsMean = 0;#337,11.926120005155864
+currentX = observations[i].getX();#274,11.864135081951435
+currentX = observations[i].getX();#345,11.856742602128248
+a = FastMath.sqrt(c1 / c2);#326,11.823787768681845
+if (y < yMin) {#314,11.764018484524318
+final double previousX = currentX;#343,11.761787255605062
+omega = FastMath.sqrt(c2 / c3);#327,11.651016775767008
+double fcMean = 0;#336,11.631818723678588
+super(optimizer);#46,11.61171634380634
+double sxz = 0;#262,11.592653425116287
+double sine = FastMath.sin(omegaX);#351,11.590322510949497
+a = 0.5 * (yMax - yMin);#321,11.562894360772495
+guessPhi();#217,11.430220186710358
+double omegaX = omega * currentX;#349,11.359125137329102
+if (xRange == 0) {#305,11.250720858573914
+guessAOmega();#216,11.190317378324622
+curr = observations[j];#231,11.188548046609629
+observations[i + 1] = mI;#237,11.176309557522044
+return new double[] { a, omega, phi };#218,11.046089371045431
+int i = j - 1;#234,10.992469469706217
+yMax = y;#318,10.959051822793894
+observations.length, 4, true);#198,10.859199476242065
+yMin = y;#315,10.801347305034769
+curr = observations[j];#243,10.798511487466318
+mI = observations[i];#239,10.60962975365775
+if (i-- != 0) {#238,10.596870303153992
+throw new ZeroException();#306,10.253004379272461

@@ -1,0 +1,229 @@
+private CategoryDataset dataset;#105,20.15330626747825
+throws IOException, ClassNotFoundException {#612,19.989206201889935
+public String getPlotType() {#329,19.918900229714133
+public MultiplePiePlot(CategoryDataset dataset) {#143,19.727574586868286
+public void setDataset(CategoryDataset dataset) {#175,19.69249651167128
+public double getLimit() {#253,19.611860084533692
+public MultiplePiePlot() {#134,19.529123306274414
+public LegendItemCollection getLegendItems() {#509,19.503444084754356
+public CategoryDataset getDataset() {#165,19.480815760294597
+int y = (int) area.getY();#386,19.33642271945351
+public JFreeChart getPieChart() {#200,19.28479920900785
+LegendItemCollection result = new LegendItemCollection();#511,19.19164530436198
+public Comparable getAggregatedItemsKey() {#276,19.025799369812013
+for (int c = 0; c < this.dataset.getColumnCount(); c++) {#475,19.020442541907816
+private double limit = 0.0;#111,18.991517066955566
+if (!(pieChart.getPlot() instanceof PiePlot)) {#216,18.980290744615637
+private void writeObject(ObjectOutputStream stream) throws IOException {#598,18.956930266486275
+if (!(obj instanceof MultiplePiePlot)) {#565,18.945333631415117
+if (this.limit != that.limit) {#572,18.944905080293353
+for (int pieIndex = 0; pieIndex < pieCount; pieIndex++) {#395,18.87761563521165
+if (dataset != null) {#184,18.864506665398093
+if (keys != null) {#524,18.863881663272256
+if (this.limit > 0.0) {#411,18.839544710905656
+if (info != null) {#440,18.838063892565277
+MultiplePiePlot that = (MultiplePiePlot) obj;#568,18.81952772140503
+int diff = (displayRows * displayCols) - pieCount;#391,18.815959612528484
+else {#367,18.78023509979248
+int x = (int) area.getX();#385,18.777097852606524
+if (this.limit > 0.0) {#540,18.774522615515668
+int column = 0;#390,18.737553376417893
+datasetChanged(new DatasetChangeEvent(this, dataset));#190,18.72199227593162
+public void setPieChart(JFreeChart pieChart) {#212,18.719265713411218
+public TableOrder getDataExtractOrder() {#229,18.70525142124721
+private JFreeChart pieChart;#102,18.70328530398282
+int row = 0;#389,18.69420022230882
+if (this.dataset != null) {#178,18.690897238881963
+private TableOrder dataExtractOrder;#108,18.669031540552776
+Iterator iterator = keys.iterator();#526,18.640623410542805
+PiePlot piePlot = (PiePlot) getPieChart().getPlot();#471,18.633175214131672
+if (obj == this) {#562,18.63288148244222
+int width = ((int) area.getWidth()) / displayCols;#387,18.58181957403819
+public void setAggregatedItemsKey(Comparable key) {#288,18.54906728532579
+public void setLimit(double limit) {#263,18.535252204308144
+int pieCount = 0;#363,18.502390384674072
+else {#403,18.49213477543422
+for (int r = 0; r < this.dataset.getRowCount(); r++) {#489,18.486362793866327
+private Comparable aggregatedItemsKey;#117,18.483643531799316
+if (this.dataExtractOrder == TableOrder.BY_ROW) {#517,18.475127951304117
+if (pieChart == null) {#213,18.463019013404846
+String title = null;#399,18.461026360006894
+public boolean equals(Object obj) {#561,18.450207551320393
+if (this.dataExtractOrder == TableOrder.BY_ROW) {#400,18.44811814626058
+if (this.dataExtractOrder == TableOrder.BY_ROW) {#364,18.44092739545382
+private static final long serialVersionUID = -355377800470807389L;#99,18.43124602057717
+public Paint getAggregatedItemsPaint() {#304,18.4085023244222
+if (p == null) {#492,18.39257924453072
+int height = ((int) area.getHeight()) / displayRows;#388,18.38867461681366
+drawBackground(g2, area);#354,18.375548362731934
+public class MultiplePiePlot extends Plot implements Cloneable, Serializable {#96,18.363161468505858
+if (this.dataset != null) {#513,18.361050806547468
+else {#415,18.359084946768625
+if (info != null) {#436,18.35118835850766
+PiePlot piePlot = (PiePlot) this.pieChart.getPlot();#418,18.34681487905568
+if (p == null) {#478,18.344940641651984
+if (paint == null) {#317,18.328018605709076
+if (column == displayCols) {#447,18.316647438775924
+drawOutline(g2, area);#355,18.287143314585965
+++column;#446,18.27600517272949
+private void readObject(ObjectInputStream stream)#611,18.27083546774728
+ChartRenderingInfo subinfo = null;#435,18.24568327990445
+for (int i = 0; i < piedataset.getItemCount(); i++) {#423,18.237095720627728
+this.dataset = dataset;#145,18.234001636505127
+Rectangle rect = new Rectangle();#393,18.211736917495728
+PiePlot piePlot = new PiePlot(null);#146,18.206703838549164
+Paint p;#425,18.19862968043277
+if (this.dataExtractOrder != that.dataExtractOrder) {#569,18.196780128479006
+if (DatasetUtilities.isEmptyOrNull(this.dataset)) {#358,18.18495168004717
+this.dataset = dataset;#183,18.17373013496399
+this.pieChart.draw(g2, rect, subinfo);#439,18.15276742864538
+return this.limit;#254,18.15090436201829
+if (this.dataExtractOrder == TableOrder.BY_ROW) {#473,18.149034793560322
+List keys = null;#514,18.1405372058644
+PieDataset piedataset = null;#408,18.134041865666706
+public void setDataExtractOrder(TableOrder order) {#239,18.104639389935663
+Rectangle2D area,#345,18.101886184127242
+else {#487,18.075986289978026
+Comparable key = this.dataset.getColumnKey(c);#476,18.07350680232048
+int displayCols = (int) Math.ceil(Math.sqrt(pieCount));#372,18.0679758334982
+return this.dataset;#166,18.049202346801756
+int displayRows#373,18.046374320983887
+if (row == displayRows - 1 && diff != 0) {#451,18.027957547095514
+private transient Paint aggregatedItemsPaint;#123,18.018369161165676
+int xoffset = 0;#392,18.00319732938494
+while (iterator.hasNext()) {#527,17.97646474838257
+if (order == null) {#240,17.97356719970703
+else if (this.dataExtractOrder == TableOrder.BY_COLUMN) {#520,17.96661686897278
+else {#429,17.959666834937202
+Comparable key = (Comparable) iterator.next();#528,17.958577126264572
+int section = 0;#525,17.952805700756254
+super();#144,17.936517333984376
+public void draw(Graphics2D g2,#344,17.936197962079728
+this.pieChart = new JFreeChart(piePlot);#147,17.93464388166155
+PieDataset dd = new CategoryToPieDataset(this.dataset,#409,17.929499477148056
+if (key == null) {#289,17.920818901062013
+if (!super.equals(obj)) {#585,17.907142056359184
+if (!this.aggregatedItemsKey.equals(that.aggregatedItemsKey)) {#575,17.900029786427815
+PlotRenderingInfo info) {#348,17.870740199911182
+this(null);#135,17.870728015899658
+++row;#449,17.86788885216964
+return "Multiple Pie Plot";#330,17.848744119916642
+rect.setBounds(x + xoffset + (width * column), y + (height * row),#396,17.846233367919922
+= (int) Math.ceil((double) pieCount / (double) displayCols);#374,17.82876136086204
+pieCount = this.dataset.getRowCount();#365,17.824078407287598
+if (key.equals(this.aggregatedItemsKey)) {#426,17.818321973085403
+String label = key.toString();#529,17.810261487960815
+if (displayCols > displayRows && area.getWidth() < area.getHeight()) {#377,17.782106781005858
++ "be a chart based on a PiePlot.");#218,17.78167662024498
+throw new IllegalArgumentException("The 'pieChart' argument must "#217,17.777641614278156
+pieCount = this.dataset.getColumnCount();#368,17.76980026245117
+LegendItem item = new LegendItem(label, description,#532,17.766835778951645
+if (!ObjectUtilities.equal(this.pieChart, that.pieChart)) {#582,17.75191013901322
+this.aggregatedItemsKey.toString(), null, null,#542,17.748758364946415
+private void prefetchSectionPaints() {#465,17.746017089256874
+this.aggregatedItemsPaint = paint;#320,17.743704394290322
+public void setAggregatedItemsPaint(Paint paint) {#316,17.734338007475202
+this.pieChart.setBackgroundPaint(null);#150,17.726141214370728
+String description = label;#530,17.71695430755615
+if (!PaintUtilities.equal(this.aggregatedItemsPaint,#578,17.716812427227314
+piePlot.setDataset(piedataset);#419,17.712286655719463
+Comparable key = this.dataset.getRowKey(r);#490,17.705423682928085
+PlotState parentState,#347,17.688062777886024
+if (p == null) {#480,17.683719635009766
+private transient Map sectionPaints;#129,17.679113734852184
+throw new IllegalArgumentException("Null 'order' argument");#241,17.6739115524292
+this.pieChart = pieChart;#220,17.673691034317017
+this.limit = limit;#264,17.66387074334281
+Comparable key = piedataset.getKey(i);#424,17.645073736867598
+Point2D anchor,#346,17.639641138223503
+return this.aggregatedItemsKey;#277,17.63654069339528
+this.aggregatedItemsPaint,#544,17.625057393854316
+piePlot.setPieIndex(pieIndex);#420,17.607599995353006
+result.add(new LegendItem(this.aggregatedItemsKey.toString(),#541,17.604496083940777
+column = 0;#448,17.59621982574463
+prefetchSectionPaints();#516,17.585649013519287
+throw new IllegalArgumentException("Null 'pieChart' argument.");#214,17.55845398373074
+this.pieChart.setTitle(title);#406,17.536742600527678
+insets.trim(area);#353,17.517103731632233
+return this.aggregatedItemsPaint;#305,17.511595673031277
+return result;#549,17.503957228227094
+keys = this.dataset.getColumnKeys();#518,17.501149211611068
+this.dataExtractOrder = TableOrder.BY_COLUMN;#149,17.48158593972524
+return this.dataExtractOrder;#230,17.470976531505585
+title = this.dataset.getRowKey(pieIndex).toString();#401,17.469881057739258
+return this.pieChart;#201,17.45006309236799
+throw new IllegalArgumentException("Null 'paint' argument.");#318,17.449651965388544
+this.pieChart.removeLegend();#148,17.43959152698517
+that.aggregatedItemsPaint)) {#579,17.427511582007774
+seriesTitle.setPosition(RectangleEdge.BOTTOM);#153,17.42308404228904
+null, null, Plot.DEFAULT_LEGEND_ITEM_CIRCLE,#533,17.42223298549652
+Paint p = piePlot.getSectionPaint(key);#477,17.413309491913893
+TextTitle seriesTitle = new TextTitle("Series Title",#151,17.404693174362183
+this.pieChart.setTitle(seriesTitle);#154,17.40464170355546
+p = getDrawingSupplier().getNextPaint();#481,17.398673753480654
+info.addSubplotInfo(subinfo.getPlotInfo());#443,17.38435436884562
+Plot.DEFAULT_LEGEND_ITEM_CIRCLE,#543,17.373316860198976
+RectangleInsets insets = getInsets();#352,17.370888358668278
+setDatasetGroup(dataset.getGroup());#185,17.363908309936523
+xoffset = (diff * width) / 2;#452,17.363682070086078
+Paint p = piePlot.getSectionPaint(key);#491,17.316361525963092
+this.aggregatedItemsKey = "Other";#155,17.311427718714665
+throw new IllegalArgumentException("Null 'key' argument.");#290,17.307455356304462
+info.getOwner().getEntityCollection().addAll(#441,17.30174289430891
+paint, Plot.DEFAULT_OUTLINE_STROKE, paint);#534,17.299895481629804
+this.aggregatedItemsKey = key;#292,17.282763746049667
+title = this.dataset.getColumnKey(pieIndex).toString();#404,17.266812100129968
+if (p == null) {#494,17.265410352636266
+drawNoDataMessage(g2, area);#359,17.257902925664727
+subinfo = new ChartRenderingInfo();#437,17.241424817305344
+this.dataExtractOrder = order;#243,17.23827059128705
+fireChangeEvent();#265,17.21847407023112
+this.sectionPaints = new HashMap();#615,17.14466444651286
+fireChangeEvent();#321,17.100247462590534
+width, height);#397,17.09499418735504
+piedataset = DatasetUtilities.createConsolidatedPieDataset(#412,17.085682198808
+subinfo.getEntityCollection());#442,17.082226507125363
+p = getDrawingSupplier().getNextPaint();#495,17.07301023844126
+item.setDataset(getDataset());#535,17.047771990299225
+return true;#588,17.047003572637383
+this.dataExtractOrder, pieIndex);#410,17.043179098765055
+stream.defaultReadObject();#613,17.021546840667725
+prefetchSectionPaints();#383,17.01403774533953
+Plot.DEFAULT_OUTLINE_STROKE,#545,17.013382991154987
+p = (Paint) this.sectionPaints.get(key);#493,16.96083090040419
+SerialUtilities.writePaint(this.aggregatedItemsPaint, stream);#600,16.944076043588144
+Paint paint = (Paint) this.sectionPaints.get(key);#531,16.935068439792943
+new Font("SansSerif", Font.BOLD, 12));#152,16.92878753908219
+this.dataset.removeChangeListener(this);#179,16.92843504746755
+p = (Paint) this.sectionPaints.get(key);#479,16.925941202375625
+this.aggregatedItemsPaint = Color.lightGray;#156,16.915984413840555
+fireChangeEvent();#244,16.91470392545064
+piePlot.setSectionPaint(key, p);#432,16.853988443102157
+return false;#573,16.85196526845296
+fireChangeEvent();#293,16.848705768585205
+section++;#537,16.83460079539906
+p = this.aggregatedItemsPaint;#427,16.80028364735265
+fireChangeEvent();#221,16.793148914972942
+dd, this.aggregatedItemsKey, this.limit);#413,16.791720013869437
+this.sectionPaints.put(key, p);#484,16.730694191796438
+return false;#566,16.72833824157715
+int temp = displayCols;#378,16.727607827437552
+this.aggregatedItemsPaint));#546,16.706293134978324
+this.sectionPaints = new HashMap();#157,16.666404830084907
+piedataset = dd;#416,16.645855744679768
+stream.defaultWriteObject();#599,16.591062137058803
+dataset.addChangeListener(this);#186,16.584693145751952
+p = (Paint) this.sectionPaints.get(key);#430,16.573969496621025
+keys = this.dataset.getRowKeys();#521,16.5672287940979
+return false;#570,16.562120819091795
+return false;#576,16.543799718221027
+this.aggregatedItemsPaint = SerialUtilities.readPaint(stream);#614,16.52941996962936
+displayCols = displayRows;#379,16.519428062438966
+return false;#580,16.49684658050537
+displayRows = temp;#380,16.48949326409234
+this.sectionPaints.put(key, p);#498,16.39204737118312
+return true;#563,16.37595704396566
+return false;#583,16.209304745992025
+return;#360,16.079758507864817
+return false;#586,16.057209650675457
+result.add(item);#536,15.695869665879469

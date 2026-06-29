@@ -1,0 +1,145 @@
+public String toString() {#101,20.56578998565674
+public int hashCode() {#106,19.614320755004883
+AbstractCompiler compiler) {#116,19.4714199701945
+private final Scope jsScope;#112,19.28907573223114
+case Token.HOOK:#230,19.188416083653767
+case Token.NAME:#237,19.11532939564098
+void markAllParametersEscaped() {#281,19.04659423828125
+@Override#136,18.880703926086426
+public boolean equals(Object other) {#85,18.876301924387615
+boolean isForward() {#132,18.81548568180629
+private final Set<Var> escaped;#113,18.813860511779787
+case Token.WHILE:#187,18.77502711613973
+for (int i = 1; i < in.size(); i++) {#57,18.704258008436724
+@Override#100,18.677332719167072
+case Token.OR:#224,18.663945371454414
+case Token.FOR:#194,18.62377539548007
+case Token.VAR:#212,18.610213836034138
+if (c.hasChildren()) {#214,18.60903263092041
+return (other instanceof LiveVariableLattice) &&#87,18.587126784854465
+public int getVarIndex(String var) {#127,18.569404125213623
+@Override#141,18.56798529624939
+if (!jsScope.isDeclared(name, false)) {#268,18.56201934814453
+@Override#131,18.536260843276978
+LiveVariableLattice createEntryLattice() {#137,18.533021654401505
+if (!NodeUtil.isForIn(n)) {#195,18.51810396285284
+default:#245,18.492567539215088
+if (isArgumentsName(n)) {#238,18.49184947543674
+case Token.AND:#223,18.480924606323242
+case Token.IF:#189,18.480822823264383
+@Override#84,18.431767145792644
+this.jsScope = jsScope;#118,18.412758429845173
+@Override#54,18.372339884440105
+public boolean isLive(int index) {#96,18.356906157273514
+Var var = jsScope.getVar(name);#271,18.32205492655436
+case Token.DO:#188,18.313680735501375
+case Token.FUNCTION:#184,18.30252324617826
+LiveVariableLattice createInitialEstimateLattice() {#142,18.292042195796967
+if (!NodeUtil.isAssign(n)) {#251,18.286351038062055
+public Set<Var> getEscapedLocals() {#123,18.268588066101074
+String name = node.getString();#267,18.261635065078735
+@Override#146,18.219645977020264
+if (NodeUtil.isVar(lhs)) {#202,18.188703495523203
+if (n.getType() != Token.NAME ||#289,18.185694456100464
+case Token.SCRIPT:#182,18.107852856318157
+LiveVariablesAnalysis(ControlFlowGraph<Node> cfg, Scope jsScope,#115,18.104856729507446
+switch (n.getType()) {#181,18.094470024108887
+boolean conditional) {#179,18.07590494155884
+computeEscaped(jsScope, escaped, compiler);#120,18.06085313161214
+case Token.BLOCK:#183,18.01309585571289
+for (DiGraphEdge<Node, Branch> edge : edgeList) {#154,18.010603427886963
+private boolean isArgumentsName(Node n) {#288,17.99641389113206
+@Override#105,17.980652173360188
+return;#192,17.96550807952881
+return result;#164,17.92043195452009
+if (!conditional) {#248,17.912643432617188
+if (!escaped.contains(var)) {#272,17.87002811431885
+public LiveVariableLattice apply(List<LiveVariableLattice> in) {#55,17.86867722221043
+private LiveVariableLattice(int numVars) {#75,17.839940519893872
+public boolean isLive(Var v) {#91,17.81474340879
+return jsScope.getVar(var).index;#128,17.800177383422852
+return result;#60,17.709497451782227
+jsScope.isDeclared(ARGUMENT_ARRAY_ALIAS, false)) {#291,17.704260628798913
+computeGenKill(c.getFirstChild(), gen, kill, conditional);#215,17.69888380595616
+if (NodeUtil.isAssignmentOp(n) && NodeUtil.isName(n.getFirstChild())) {#246,17.668484378505397
+return;#221,17.665768432617188
+for (Node c = n.getFirstChild(); c != null; c = c.getNext()) {#213,17.65363102574502
+return;#243,17.652111053466797
+if (!conditional) {#216,17.646905157301163
+DataFlowAnalysis<Node, LiveVariablesAnalysis.LiveVariableLattice> {#48,17.64196083762429
+if (Branch.ON_EX.equals(edge.getValue())) {#155,17.607243957519533
+private LiveVariableLattice(LiveVariableLattice other) {#79,17.59197506151701
+markAllParametersEscaped();#239,17.583627998828888
+return;#210,17.560405254364014
+return false;#133,17.549882888793945
+private final BitSet liveSet;#70,17.535310051657937
+return escaped;#124,17.51541246686663
+return new LiveVariableLattice(jsScope.getVarCount());#143,17.503244199250872
+for (Node c = n.getFirstChild(); c != null; c = c.getNext()) {#257,17.50285466512044
+return;#235,17.49667081832886
+computeGenKill(node, gen, kill, conditional);#159,17.466806769371033
+return;#185,17.459899520874025
+LiveVariableLattice flowThrough(Node node, LiveVariableLattice input) {#147,17.453358695620583
+private void addToSetIfLocal(Node node, BitSet set) {#265,17.446425173017715
+Node lhs = n.getFirstChild();#200,17.435103368759155
+private static class LiveVariableJoinOp#52,17.403732193840874
+computeGenKill(n.getLastChild(), gen, kill, true);#227,17.397454380989075
+implements JoinOp<LiveVariableLattice> {#53,17.379169015323413
+return new LiveVariableLattice(jsScope.getVarCount());#138,17.35758211738185
+static class LiveVariableLattice implements LatticeElement {#69,17.351360448201497
+computeGenKill(n.getLastChild(), gen, kill, true);#234,17.35114336013794
+escaped.add(jsScope.getVar(arg.getString()));#284,17.343207012523305
+this.liveSet = (BitSet) other.liveSet.clone();#81,17.337104884060945
+return;#228,17.323263263702394
+LiveVariableLattice result = new LiveVariableLattice(in.get(0));#56,17.323172679314247
+Node lhs = n.getFirstChild();#247,17.317335224151613
+computeGenKill(lhs.getNext(), gen, kill, conditional);#255,17.263380454136776
+class LiveVariablesAnalysis extends#47,17.243999481201172
+computeGenKill(NodeUtil.getConditionExpression(n), gen, kill,#196,17.206565133456525
+Node rhs = lhs.getNext();#201,17.19170026779175
+computeGenKill(NodeUtil.getConditionExpression(n), gen, kill,#190,17.190961484555846
+computeGenKill(rhs, gen, kill, conditional);#208,17.140027377916418
+public static final String ARGUMENT_ARRAY_ALIAS = "arguments";#50,17.128393718174525
+this.liveSet = new BitSet(numVars);#76,17.104590466147975
+computeGenKill(n.getFirstChild(), gen, kill, conditional);#231,17.077106595039368
+return liveSet.toString();#102,17.06790696657621
+computeGenKill(n.getFirstChild(), gen, kill, conditional);#225,17.054205417633057
+!n.getString().equals(ARGUMENT_ARRAY_ALIAS) ||#290,17.05177300551842
+lhs = lhs.getLastChild();#204,17.039816206151787
+computeGenKill(n.getFirstChild().getNext(), gen, kill, true);#233,17.02489471435547
+super(cfg, new LiveVariableJoinOp());#117,17.0167464528765
+addToSetIfLocal(n, gen);#241,17.002886486053466
+computeGenKill(c, gen, kill, conditional);#258,16.990982453028362
+for(Node arg = lp.getFirstChild(); arg != null; arg = arg.getNext()) {#283,16.987053428377425
+addToSetIfLocal(lhs, kill);#206,16.976874517357867
+List<DiGraphEdge<Node, Branch>> edgeList = getCfg().getOutEdges(node);#153,16.94797945022583
+addToSetIfLocal(lhs, kill);#249,16.933224304862645
+return liveSet.hashCode();#107,16.922430405249962
+addToSetIfLocal(lhs, gen);#207,16.90276568868886
+final BitSet kill = new BitSet(input.liveSet.size());#149,16.886617183685303
+this.escaped = Sets.newHashSet();#119,16.87092202504476
+boolean conditional = false;#152,16.83726363711887
+return liveSet.get(v.index);#93,16.816589653491974
+addToSetIfLocal(lhs, gen);#253,16.799338755400285
+return true;#294,16.789903110928005
+Preconditions.checkNotNull(other);#86,16.784824311733246
+addToSetIfLocal(c, kill);#217,16.78240664800008
+Preconditions.checkNotNull(other);#80,16.747910976409912
+conditional);#191,16.745339734213694
+result.liveSet.andNot(kill);#162,16.742230347224645
+LiveVariableLattice result = new LiveVariableLattice(input);#160,16.732783842086793
+final BitSet gen = new BitSet(input.liveSet.size());#148,16.694858503341674
+return liveSet.get(index);#97,16.668769427708217
+result.liveSet.or(in.get(i).liveSet);#58,16.616689721743267
+return;#269,16.61156463623047
+Preconditions.checkNotNull(v);#92,16.606782495975494
+return;#261,16.558903884887695
+Preconditions.checkState(NodeUtil.isName(node));#266,16.502309703826903
+set.set(var.index);#273,16.49962956564767
+private void computeGenKill(Node n, BitSet gen, BitSet kill,#178,16.440760913648102
+Node lp = jsScope.getRootNode().getFirstChild().getNext();#282,16.437577724456787
+this.liveSet.equals(((LiveVariableLattice) other).liveSet);#88,16.240097109476725
+return false;#292,16.225640296936035
+conditional = true;#156,16.16587249437968
+conditional);#197,16.147131979465485
+result.liveSet.or(gen);#163,16.066837090712326

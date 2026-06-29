@@ -1,0 +1,51 @@
+private static final long serialVersionUID = -3349935121172596109L;#49,18.65177809673807
+public double getMean() {#129,18.14565303108909
+return Integer.MAX_VALUE;#239,17.91706314086914
+mean = p;#96,17.758947134017944
+double ret;#141,17.750097621570934
+@Override#224,17.624282836914062
+return (int) FastMath.min(randomData.nextPoisson(mean), Integer.MAX_VALUE);#213,17.621600776910782
+private double mean;#57,17.61022973060608
+return 0;#226,17.594314141706988
+normal = new NormalDistributionImpl(p, FastMath.sqrt(p));#97,17.57528180342454
+ret = FastMath.exp(-SaddlePointExpansion.getStirlingError(x) -#147,17.51806655074611
+public double probability(int x) {#140,17.50574493408203
+return normal.cumulativeProbability(x + 0.5);#191,17.488626148389734
+return Gamma.regularizedGammaQ((double) x + 1, mean, epsilon, maxIterations);#171,17.461975357749246
+@Override#163,17.457672437032063
+@Override#237,17.44985024134318
+ret = FastMath.exp(-mean);#145,17.438121750241233
+@Override#211,17.433266321818035
+public double cumulativeProbability(int x) throws MathException {#164,17.31233851114909
+public double normalApproximateProbability(int x) throws MathException {#189,17.276982216607955
+return 0;#166,17.26047134399414
+if (x < 0 || x == Integer.MAX_VALUE) {#142,17.239568461542543
+FastMath.sqrt(MathUtils.TWO_PI * x);#149,17.235798263549803
+public PoissonDistributionImpl(double p) {#79,17.194558652242026
+return 1;#169,17.192408498128255
+protected int getDomainLowerBound(double p) {#225,17.183869552612304
+throw MathRuntimeException.createIllegalArgumentException(LocalizedFormats.NOT_POSITIVE_POISSON_MEAN, p);#94,17.172605709596112
+this(p, DEFAULT_EPSILON, maxIterations);#121,17.1136022011439
+if (x == Integer.MAX_VALUE) {#168,17.11028676283987
+public static final double DEFAULT_EPSILON = 1E-12;#46,17.02130617414202
+protected int getDomainUpperBound(double p) {#238,16.998556196689606
+private NormalDistribution normal;#52,16.903491306304932
+if (p <= 0) {#93,16.89869441986084
+if (x < 0) {#165,16.852103360493977
+return mean;#130,16.808852715925738
+this(p, DEFAULT_EPSILON, DEFAULT_MAX_ITERATIONS);#80,16.721819943395154
+public static final int DEFAULT_MAX_ITERATIONS = 10000000;#40,16.708295011520384
+SaddlePointExpansion.getDeviancePart(x, mean)) /#148,16.67440762239344
+ret = 0.0;#143,16.66660065121121
+return ret;#151,16.558456074107777
+this.maxIterations = maxIterations;#99,16.555351628197563
+public PoissonDistributionImpl(double p, double epsilon) {#109,16.459099578857423
+private double epsilon = DEFAULT_EPSILON;#70,16.371299849616157
+private int maxIterations = DEFAULT_MAX_ITERATIONS;#65,16.34787981133712
+public int sample() throws MathException {#212,16.34655507405599
+this(p, epsilon, DEFAULT_MAX_ITERATIONS);#110,16.2662784576416
+public PoissonDistributionImpl(double p, int maxIterations) {#120,16.193924808502196
+this.epsilon = epsilon;#98,16.087466186947292
+public class PoissonDistributionImpl extends AbstractIntegerDistribution#33,16.049508314866287
+public PoissonDistributionImpl(double p, double epsilon, int maxIterations) {#92,15.899551239013672
+implements PoissonDistribution, Serializable {#34,15.70890998840332

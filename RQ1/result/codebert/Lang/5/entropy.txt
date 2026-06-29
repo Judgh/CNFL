@@ -1,0 +1,95 @@
+if (str == null) {#89,20.066194788614908
+if (locale != null) {#167,19.79111111164093
+if (languageCode == null) {#264,19.52475780248642
+if (countries == null) {#268,19.512882828712463
+if (len < 2) {#93,19.42827943166097
+if (countryCode == null) {#232,19.336185693740845
+if (langs == null) {#236,19.305196166038513
+if (ch3 == '_') {#111,19.09282112121582
+static {#294,19.092569160461426
+if (str.charAt(2) != '_') {#107,19.040945456578182
+static class SyncAvoid {#288,18.950657314724392
+if (len == 5) {#118,18.925160257439863
+if (len < 5) {#104,18.907955470838044
+final int len = str.length();#92,18.902115166187286
+if (len < 7) {#121,18.839537118610583
+if (len == 2) {#101,18.814421503167402
+if (str.charAt(5) != '_') {#124,18.657936096191406
+if (locale.getVariant().length() > 0) {#169,18.61727301279704
+return langs;#250,18.51501210530599
+public static boolean isAvailableLocale(Locale locale) {#217,18.48296776939841
+public LocaleUtils() {#56,18.376761609857734
+if (locale.getCountry().length() > 0) {#172,18.325786333817703
+final char ch4 = str.charAt(4);#114,18.278518080711365
+return Collections.emptyList();#265,18.253299077351887
+langs.add(locale);#243,18.22983247893197
+return Collections.emptyList();#233,18.222458415561253
+final char ch0 = str.charAt(0);#96,18.19211983680725
+return new Locale(str);#102,18.19180277119512
+final char ch3 = str.charAt(3);#110,18.155985474586487
+for (int i = 0; i < locales.size(); i++) {#271,18.125888528495
+public static Locale toLocale(final String str) {#88,18.087878507726334
+if (languageCode.equals(locale.getLanguage()) &&#273,18.064130536971554
+for (int i = 0; i < locales.size(); i++) {#239,18.047789606554755
+return new Locale(str.substring(0, 2), "", str.substring(4));#112,18.011090131906364
+langs = Collections.unmodifiableList(langs);#246,18.002080688476564
+countries.add(locale);#276,17.99329189017967
+throw new IllegalArgumentException("Invalid locale format: " + str);#94,17.963365307560675
+final char ch1 = str.charAt(1);#97,17.92515802383423
+return SyncAvoid.AVAILABLE_LOCALE_SET;#207,17.90858403119174
+return null;#90,17.875483067830405
+public static List<Locale> languagesByCountry(String countryCode) {#231,17.839886379241943
+throw new IllegalArgumentException("Invalid locale format: " + str);#116,17.834875599030525
+list.add(locale);#168,17.819311543514853
+cCountriesByLanguage.putIfAbsent(languageCode, countries);#280,17.813369955335343
+list.add(new Locale(locale.getLanguage(), ""));#173,17.805525057243578
+countries = Collections.unmodifiableList(countries);#279,17.795482516288757
+private static final ConcurrentMap<String, List<Locale>> cCountriesByLanguage =#46,17.779161491394042
+public static List<Locale> countriesByLanguage(String languageCode) {#263,17.763267040252686
+if (list.contains(defaultLocale) == false) {#175,17.759382636458785
+if (!Character.isUpperCase(ch3) || !Character.isUpperCase(ch4)) {#115,17.757929853490882
+if (countryCode.equals(locale.getCountry()) &&#241,17.736496648480816
+return availableLocaleList().contains(locale);#218,17.73648781776428
+return SyncAvoid.AVAILABLE_LOCALE_LIST;#193,17.734560229561545
+locale.getVariant().isEmpty()) {#275,17.72926153856165
+throw new IllegalArgumentException("Invalid locale format: " + str);#125,17.7276646091092
+langs = new ArrayList<Locale>();#237,17.726750062859576
+throw new IllegalArgumentException("Invalid locale format: " + str);#108,17.721483445936634
+return new Locale(str.substring(0, 2), str.substring(3, 5));#119,17.68491351298797
+throw new IllegalArgumentException("Invalid locale format: " + str);#99,17.679977755392752
+if (!Character.isLowerCase(ch0) || !Character.isLowerCase(ch1)) {#98,17.66526028769357
+private static final Set<Locale> AVAILABLE_LOCALE_SET;#292,17.66221647996169
+locale.getCountry().length() != 0 &&#274,17.660483752979953
+Locale locale = locales.get(i);#272,17.64543550985831
+return countries;#283,17.64315241033381
+Locale locale = locales.get(i);#240,17.641168665002894
+private static final ConcurrentMap<String, List<Locale>> cLanguagesByCountry =#42,17.641034774780273
+throw new IllegalArgumentException("Invalid locale format: " + str);#122,17.61790527835969
+private static final List<Locale> AVAILABLE_LOCALE_LIST;#290,17.577712902655968
+throw new IllegalArgumentException("Invalid locale format: " + str);#105,17.555517073600523
+List<Locale> locales = availableLocaleList();#270,17.53997226715088
+List<Locale> countries = cCountriesByLanguage.get(languageCode);#267,17.539670357337364
+return new Locale(str.substring(0, 2), str.substring(3, 5), str.substring(6));#127,17.528163319542294
+List<Locale> langs = cLanguagesByCountry.get(countryCode);#235,17.526172161102295
+cLanguagesByCountry.putIfAbsent(countryCode, langs);#247,17.523503303527832
+countries = new ArrayList<Locale>();#269,17.505555066195402
+List<Locale> locales = availableLocaleList();#238,17.498378715515138
+locale.getVariant().isEmpty()) {#242,17.49378874722649
+public class LocaleUtils {#39,17.47346031665802
+AVAILABLE_LOCALE_SET = Collections.unmodifiableSet(new HashSet<Locale>(list));#297,17.423565588499372
+countries = cCountriesByLanguage.get(languageCode);#281,17.384615859985352
+AVAILABLE_LOCALE_LIST = Collections.unmodifiableList(list);#296,17.372589357437626
+super();#57,17.35623598098755
+list.add(defaultLocale);#176,17.338266968727112
+public static List<Locale> availableLocaleList() {#192,17.286052479463464
+list.add(new Locale(locale.getLanguage(), locale.getCountry()));#170,17.274298350016277
+return Collections.unmodifiableList(list);#179,17.273035473293728
+langs = cLanguagesByCountry.get(countryCode);#248,17.205133236371555
+public static Set<Locale> availableLocaleSet() {#206,17.194933807148654
+return localeLookupList(locale, locale);#144,17.114014123615465
+public static List<Locale> localeLookupList(Locale locale, Locale defaultLocale) {#165,17.08493419929787
+List<Locale> list = new ArrayList<Locale>(4);#166,17.028339624404907
+List<Locale> list = new ArrayList<Locale>(Arrays.asList(Locale.getAvailableLocales()));  // extra safe#295,16.98789856168959
+public static List<Locale> localeLookupList(Locale locale) {#143,16.79919669741676
+new ConcurrentHashMap<String, List<Locale>>();#43,16.792831897735596
+new ConcurrentHashMap<String, List<Locale>>();#47,16.57304351980036

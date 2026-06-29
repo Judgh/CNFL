@@ -1,0 +1,123 @@
+case 'f':#74,20.216811656951904
+case 't':#86,20.098431301116943
+case 'i':#78,19.92844409942627
+case 'v':#90,19.868922424316406
+case 'n':#82,19.832676792144774
+if (c=='f') {#65,19.672151406606037
+partial: switch (s.length()) {#63,19.630862644740514
+case 2: c=s.charAt(1);#64,19.545084317525227
+case 3: switch (s.charAt(0)) {#73,19.515534057617188
+case 5: switch (s.charAt(2)) {#126,19.39517250061035
+case 6: switch (s.charAt(1)) {#143,19.352381744384765
+case 8: switch (s.charAt(0)) {#166,19.286358947753907
+case 7: switch (s.charAt(1)) {#158,19.278709640502928
+case 4: switch (s.charAt(0)) {#95,19.260349197387697
+case 9: c=s.charAt(0);#173,19.252022822697956
+case 'o': c=s.charAt(0);#135,19.169773036036
+case 't': c=s.charAt(3);#116,19.10907745361328
+String s = name;#59,19.098370038546047
+case 'c': c=s.charAt(3);#97,19.07752911797885
+case 'e': c=s.charAt(3);#106,19.07608407119225
+public class TokenStream {#56,19.07035477956136
+else if (c=='r') {#100,19.067050210360822
+if (s.charAt(2)=='r' && s.charAt(1)=='o') {#75,19.05834436416626
+if (s.charAt(2)=='w' && s.charAt(1)=='e') {#83,19.053762045773592
+case 10: c=s.charAt(1);#178,18.981603304545086
+int c;#62,18.975721041361492
+String X = null;#61,18.961958155912512
+case 'e': c=s.charAt(0);#145,18.909411364588244
+if (s.charAt(2)=='r' && s.charAt(1)=='a') {#91,18.906433300538495
+if (c=='e') { if (s.charAt(2)=='s' && s.charAt(1)=='a') {#98,18.902912899299903
+for (int i = 1; i < length; i++) {#198,18.873214435577392
+if (c=='e') { if (s.charAt(2)=='u' && s.charAt(1)=='r') {#117,18.86860637311582
+case 'n': c=s.charAt(0);#131,18.861898751094422
+if (s.charAt(2)=='y' && s.charAt(1)=='r') {#87,18.85709203373302
+if (s.charAt(2)=='t' && s.charAt(1)=='n') {#79,18.840679212050006
+if (c=='e') { if (s.charAt(2)=='s' && s.charAt(1)=='l') {#107,18.765835638399476
+!Character.isJavaIdentifierStart(s.charAt(0))) {#194,18.740275665565772
+public static boolean isKeyword(String name) {#57,18.73498598734538
+if (length == 0 ||#193,18.688347895940144
+else if (c=='m') {#109,18.684411410627693
+complete: {#60,18.67990745197643
+if (s.charAt(2)=='a' && s.charAt(1)=='h') {#101,18.666205048561096
+public static boolean isJSIdentifier(String s) {#190,18.489385426044464
+else if (c=='s') {#119,18.394772957111226
+int length = s.length();#191,18.27791397388165
+!Character.isJavaIdentifierPart(s.charAt(i))) {#200,18.221161612148943
+if (s.charAt(2)=='u' && s.charAt(1)=='n') {#110,18.104670743147533
+if (s.charAt(0)=='i') {id=true; break complete;}#66,18.0958955960396
+case 'l': X="long";id=true; break partial;#114,18.089612499360115
+case 'v': X="void";id=true; break partial;#123,18.028622411912487
+case 'r': X="throw";id=true; break partial;#140,18.005199493900424
+case 'w': X="switch";id=true; break partial;#154,17.993529012126306
+case 'c': X="continue";id=true; break partial;#168,17.976555209006033
+if (#199,17.968433380126953
+if (s.charAt(2)=='i' && s.charAt(1)=='h') {#120,17.955528279145557
+break partial;#72,17.94851639396266
+case 'p': X="super";id=true; break partial;#139,17.943094468885853
+else if (c=='t') { X="transient";id=true; }#176,17.940790203639438
+case 'm': X="import";id=true; break partial;#150,17.93498030016499
+case 'g': X="goto";id=true; break partial;#113,17.892452120780945
+case 'a': X="package";id=true; break partial;#159,17.857278085524037
+case 'i': X="finally";id=true; break partial;#161,17.843729346990585
+if (s.charAt(0)=='i') {id=true; break complete;}#68,17.838769399202786
+case 'r': X="private";id=true; break partial;#163,17.816872565977036
+case 'e': X="break";id=true; break partial;#128,17.7941250647268
+if (s.charAt(0)=='d') {id=true; break complete;}#70,17.776577167021923
+case 'f': X="function";id=true; break partial;#170,17.77442338389735
+case 'l': X="false";id=true; break partial;#130,17.766653307022587
+case 'o': X="boolean";id=true; break partial;#162,17.74879989027977
+break partial;#105,17.741005358488664
+case 'd': X="debugger";id=true; break partial;#169,17.727890074253082
+case 'b': X="byte";id=true; break partial;#96,17.709280690839215
+boolean id = false;#58,17.699503898620605
+else if (c=='n') { X="instanceof";id=true; }#180,17.695806203569685
+case 'w': X="with";id=true; break partial;#124,17.68094942646642
+case 'x': X="export";id=true; break partial;#155,17.672962281011767
+case 'i': X="while";id=true; break partial;#129,17.665381123942712
+case 't': X="static";id=true; break partial;#152,17.65193437760876
+case 'h': X="throws";id=true; break partial;#149,17.60813108086586
+if (c=='i') { X="interface";id=true; }#174,17.596779158621125
+case 'o': X="double";id=true; break partial;#151,17.58857173304404
+if (c=='m') { X="implements";id=true; }#179,17.576677785600936
+else if (c=='f') { X="final";id=true; }#133,17.552704258968955
+case 'u': X="public";id=true; break partial;#153,17.543226088246993
+case 'a': X="class";id=true; break partial;#127,17.540951175074422
+case 'a': X="native";id=true; break partial;#144,17.537679026203772
+case 'n': X="null";id=true; break partial;#115,17.521974809708134
+case 12: X="synchronized";id=true; break partial;#182,17.50263660294669
+case 'e': X="default";id=true; break partial;#160,17.496909818341656
+else if (c=='p') { X="protected";id=true; }#175,17.466052419999066
+break partial;#177,17.46545696258545
+case 'a': X="abstract";id=true; break partial;#167,17.41093221306801
+if (c=='f') { X="float";id=true; }#136,17.381913442869443
+case 'x': X="extends";id=true; break partial;#164,17.316895604133606
+if (X!=null && X!=s && !X.equals(s)) return false;#185,17.3028539112636
+case 't': X="catch";id=true; break partial;#141,17.297581580377393
+return id;#187,17.27388095855713
+if (c=='c') { X="const";id=true; }#132,17.227283812857962
+case 'y': X="typeof";id=true; break partial;#156,17.213855385780334
+case 'v': X="volatile";id=true; break partial;#171,17.174580454826355
+else if (c=='r') { X="return";id=true; }#147,17.15480169497038
+if (c=='d') { X="delete";id=true; }#146,17.152218303164922
+else if (c=='s') { X="short";id=true; }#137,17.049135885740583
+break partial;#112,16.972340417944867
+id=true; break complete;#80,16.949523360640914
+return true;#205,16.93127187093099
+id=true; break complete;#92,16.883671760559082
+id=true; break complete;#84,16.836191989757396
+id=true; break complete;#102,16.8051539082681
+break partial;#138,16.780896062436312
+break partial;#122,16.77414483609407
+return false;#195,16.76497780192982
+break partial;#134,16.738028194593348
+break partial;#181,16.653809597617702
+id=true; break complete;#76,16.58716254764133
+id=true; break complete;} }#99,16.5417164961497
+id=true; break complete;} }#111,16.473160690731472
+id=true; break complete;#88,16.440701131467467
+id=true; break complete;} }#108,16.347331947750515
+id=true; break complete;} }#121,16.20785027080112
+id=true; break complete;} }#118,16.188330862257217
+break partial;#148,16.105607862057894
+return false;#201,15.889660981985239

@@ -1,0 +1,244 @@
+throws IOException, ClassNotFoundException {#549,19.867454641005573
+if (isDrawBarOutline() && state.getBarWidth() > 3) {#452,19.298773377029985
+if (isDrawBarOutline() && state.getBarWidth() > 3) {#308,19.29737302992079
+if (!(data instanceof StatisticalCategoryDataset)) {#200,19.014217058817547
+int categoryCount = getColumnCount();#247,18.995763778686523
+StatisticalCategoryDataset dataset,#236,18.995636071099174
+int categoryCount = getColumnCount();#391,18.987408459186554
+if (seriesCount > 1) {#392,18.96869534254074
+if (seriesCount > 1) {#248,18.9225834608078
+if (generator != null && isItemLabelVisible(row, column)) {#490,18.913146018981934
+if (generator != null && isItemLabelVisible(row, column)) {#347,18.87837138542762
+int seriesCount = getRowCount();#246,18.83198583126068
+int seriesCount = getRowCount();#390,18.796982526779175
+private void writeObject(ObjectOutputStream stream) throws IOException {#534,18.775105317433674
+g2.fill(bar);#451,18.765443420410158
+g2.fill(bar);#307,18.76262887318929
+if (entities != null) {#497,18.758380711078644
+else { // cases 9, 10, 11 and 12#428,18.754664672048467
+else { // cases 9, 10, 11 and 12#284,18.754533667313424
+double rectHeight = state.getBarWidth();#300,18.754045168558758
+StatisticalCategoryDataset dataset,#379,18.734038109003112
+else {#324,18.697594710758754
+CategoryAxis domainAxis,#377,18.696535132652105
+Number meanValue = dataset.getMeanValue(row, column);#402,18.67094566511071
+Number meanValue = dataset.getMeanValue(row, column);#258,18.67004340627919
+double uclip = getUpperClip();#263,18.66566260655721
+StatisticalCategoryDataset statData = (StatisticalCategoryDataset) data;#204,18.66148746930636
+double uclip = getUpperClip();#407,18.661352422502304
+if (obj == this) {#510,18.659682083129884
+value = uclip;#276,18.656138965061732
+value = uclip;#420,18.656138965061732
+CategoryPlot plot,#191,18.6496472194277
+Line2D line = null;#334,18.629830661572907
+rectY = rectY + row * (state.getBarWidth() + seriesGap);#251,18.62163355946541
+else {#278,18.617553302219935
+else {#422,18.617553302219935
+if (value >= uclip) {#410,18.614939212799072
+if (value >= uclip) {#266,18.61338315010071
+double rectX = domainAxis.getCategoryStart(#386,18.61277804374695
+Line2D line = null;#477,18.603212356567383
+double rectWidth = state.getBarWidth();#444,18.58124589920044
+if (value >= uclip) {#275,18.57365345954895
+if (value >= uclip) {#419,18.57365345954895
+else {#468,18.559361253465926
+double seriesGap = dataArea.getWidth() * getItemMargin()#393,18.553631124825312
+int column) {#238,18.551131793430873
+ValueAxis rangeAxis,#235,18.54866180419922
+column, getColumnCount(), dataArea, xAxisLocation#387,18.539378242492674
+double seriesGap = dataArea.getHeight() * getItemMargin()#249,18.522029547855773
+if (!(obj instanceof StatisticalBarRenderer)) {#513,18.505186262584868
+else {#474,18.49356814793178
+ValueAxis rangeAxis,#378,18.471528718637867
+else {#253,18.466440391540527
+else {#397,18.4585298538208
+CategoryAxis domainAxis,#234,18.454006830851238
+int row,#195,18.442216328212194
+base = getLowerClip();#288,18.432899475097656
+base = getLowerClip();#432,18.43258079729582
+if (entities != null) {#354,18.417583465576172
+implements CategoryItemRenderer,#94,18.40482124415311
+CategoryItemRendererState state,#231,18.38453603827435
+public boolean equals(Object obj) {#509,18.383254607518513
+super();#115,18.372101402282716
+CategoryItemRendererState state,#374,18.361469073729083
+rectX = rectX + row * (state.getBarWidth() + seriesGap);#395,18.34998819231987
+double value = meanValue.doubleValue();#260,18.320069649640253
+double value = meanValue.doubleValue();#404,18.320053100585938
+EntityCollection entities = state.getEntityCollection();#496,18.316010104285347
+Rectangle2D dataArea,#232,18.298762575785318
+int column) {#381,18.298282670974732
+if (this.errorIndicatorStroke != null) {#465,18.292088288527268
+double rectHeight = Math.abs(transY2 - transY1);#445,18.291441241900127
+private static final long serialVersionUID = -4986038395414039117L;#99,18.269106367359992
+double rectWidth = Math.abs(transY2 - transY1);#301,18.250600894292194
+double rectY = Math.min(transY2, transY1);#442,18.244405150413513
+CategoryPlot plot,#376,18.2286096572876
+if (this.errorIndicatorStroke != null) {#321,18.219430153186504
+EntityCollection entities = state.getEntityCollection();#353,18.211927519904243
+else {#330,18.211610112871444
+if (value <= lclip) {#270,18.21074161529541
+if (value <= lclip) {#414,18.210655689239502
+double valueDelta = dataset.getStdDevValue(row, column).doubleValue();#315,18.201091704830045
+double valueDelta = dataset.getStdDevValue(row, column).doubleValue();#459,18.201091704830045
+if (value >= uclip) {#433,18.180686473846436
+if (value >= uclip) {#289,18.17828130722046
+double rectY = domainAxis.getCategoryStart(column, getColumnCount(),#243,18.160562691865145
+int row,#237,18.158031463623047
+else if (lclip <= 0.0) { // cases 5, 6, 7 and 8#274,18.148376328604563
+else if (lclip <= 0.0) { // cases 5, 6, 7 and 8#418,18.148376328604563
+public StatisticalBarRenderer() {#114,18.135343233744305
+Rectangle2D dataArea,#190,18.12236785888672
+CategoryPlot plot,#233,18.095843905494327
+CategoryDataset data,#194,18.091344279627645
+g2.draw(line);#480,18.08573025151303
+g2.draw(line);#340,18.080504015872354
+private void readObject(ObjectInputStream stream)#548,18.06650015513102
+Rectangle2D dataArea,#375,18.055496082749478
+g2.draw(line);#337,18.052677957635176
+if (value <= lclip) {#285,18.05174026489258
+g2.draw(line);#483,18.05168975026984
+if (value <= lclip) {#429,18.048764801025392
+double base = 0.0;#261,18.03105703989665
+double base = 0.0;#405,18.028903325398762
+Cloneable, PublicCloneable,#95,18.012899705341884
+ValueAxis rangeAxis,#193,18.01101690530777
+CategoryItemLabelGenerator generator = getItemLabelGenerator(row,#345,18.002438068389893
+double rectX = Math.min(transY2, transY1);#298,17.97993727525075
+if (uclip <= 0.0) {  // cases 1, 2, 3 and 4#265,17.97982805115836
+drawVerticalItem(g2, state, dataArea, plot, domainAxis, rangeAxis,#212,17.979493829939102
+if (uclip <= 0.0) {  // cases 1, 2, 3 and 4#409,17.977255412510463
+CategoryItemLabelGenerator generator = getItemLabelGenerator(row,#488,17.973716894785564
+if (this.errorIndicatorPaint != null) {#327,17.96214069366455
+else if (orientation == PlotOrientation.VERTICAL) {#211,17.95511992081352
+base = uclip;#413,17.94692252664005
+base = uclip;#269,17.945291014278638
+rectY = rectY + row * state.getBarWidth();#254,17.943761348724365
+RectangleEdge yAxisLocation = plot.getRangeAxisEdge();#294,17.916653434435528
+if (this.errorIndicatorPaint != null) {#471,17.915287704467772
+/ (categoryCount * (seriesCount - 1));#250,17.905576319921586
+int pass) {#197,17.90154693866598
+CategoryItemRendererState state,#189,17.895736636537492
+RectangleEdge yAxisLocation = plot.getRangeAxisEdge();#438,17.888842582702637
+/ (categoryCount * (seriesCount - 1));#394,17.88874165217082
+public Stroke getErrorIndicatorStroke() {#154,17.87846976518631
+int row,#380,17.8619167865851
+);#388,17.849649747212727
+drawItemLabel(g2, dataset, row, column, plot, generator, bar,#491,17.833794832229614
+double highVal = rangeAxis.valueToJava2D(meanValue.doubleValue()#316,17.816157485499527
+double highVal = rangeAxis.valueToJava2D(meanValue.doubleValue()#460,17.816157485499527
+drawItemLabel(g2, dataset, row, column, plot, generator, bar,#348,17.815515249967575
+g2.setStroke(getItemStroke(row, column));#309,17.80927848815918
+g2.setStroke(getItemStroke(row, column));#453,17.807755788167317
+g2.setStroke(getItemOutlineStroke(row, column));#325,17.805018372005886
+g2.setPaint(seriesPaint);#306,17.798210294623125
+g2.setPaint(seriesPaint);#450,17.79693186910529
+if (!super.equals(obj)) {#516,17.790520403120254
+return this.errorIndicatorStroke;#155,17.78709366208031
+RectangleEdge xAxisLocation = plot.getDomainAxisEdge();#383,17.7779940366745
+public void setErrorIndicatorPaint(Paint paint) {#140,17.761997911665176
+Paint seriesPaint = getItemPaint(row, column);#305,17.761094830252908
+Paint seriesPaint = getItemPaint(row, column);#449,17.756713693792168
+highVal, rectY + rectHeight * 0.75);#339,17.746805019378662
+notifyListeners(new RendererChangeEvent(this));#170,17.74609045982361
+RectangleEdge xAxisLocation = plot.getDomainAxisEdge();#240,17.728442470232647
+rectX = rectX + row * state.getBarWidth();#398,17.72556000489455
+drawHorizontalItem(g2, state, dataArea, plot, domainAxis,#208,17.70984324812889
+private transient Paint errorIndicatorPaint;#102,17.708675311161922
+public Paint getErrorIndicatorPaint() {#128,17.707540852682932
+g2.setStroke(getItemOutlineStroke(row, column));#469,17.704316907458836
+addItemEntity(entities, dataset, row, column, bar);#498,17.704051300331397
+private transient Stroke errorIndicatorStroke;#109,17.67708002726237
+public void setErrorIndicatorStroke(Stroke stroke) {#168,17.66952700614929
+int column,#196,17.669303144727433
+PlotOrientation orientation = plot.getOrientation();#206,17.66385437193371
+double lowVal = rangeAxis.valueToJava2D(meanValue.doubleValue()#318,17.644736203280363
+double lowVal = rangeAxis.valueToJava2D(meanValue.doubleValue()#462,17.644736203280363
+notifyListeners(new RendererChangeEvent(this));#142,17.62746706008911
+addItemEntity(entities, dataset, row, column, bar);#355,17.58606649328161
+rectX + rectWidth / 2.0d + 5.0d, highVal);#482,17.574866924967086
+line = new Line2D.Double(rectX + rectWidth / 2.0d - 5.0d, highVal,#481,17.564688897132875
+double lclip = getLowerClip();#406,17.549637401805203
+double lclip = getLowerClip();#262,17.546833935905905
+highVal, rectY + rectHeight / 2.0d);#336,17.53791130290312
+rectX + rectWidth / 2.0d, highVal);#479,17.534956389782476
+CategoryAxis domainAxis,#192,17.520847737789154
+rangeAxis, statData, row, column);#209,17.50395187254875
+g2.setPaint(getItemOutlinePaint(row, column));#310,17.484674739837647
+g2.setPaint(getItemOutlinePaint(row, column));#454,17.484129842122396
+return this.errorIndicatorPaint;#129,17.48372530937195
+if (value <= lclip) {#279,17.48308519522349
+if (value <= lclip) {#423,17.48308519522349
+line = new Line2D.Double(highVal, rectY + rectHeight * 0.25,#338,17.482940237862724
+line = new Line2D.Double(lowVal, rectY + rectHeight * 0.25,#341,17.47043980189732
++ valueDelta, dataArea, yAxisLocation);#317,17.413997888565063
++ valueDelta, dataArea, yAxisLocation);#461,17.413997888565063
+rectX + rectWidth / 2.0d + 5.0d, lowVal);#485,17.412292071751185
+line = new Line2D.Double(rectX + rectWidth / 2.0d - 5.0d, lowVal,#484,17.40976164340973
+double transY2 = rangeAxis.valueToJava2D(value, dataArea,#296,17.405030283434638
+rectHeight);#448,17.39559811039975
+double transY1 = rangeAxis.valueToJava2D(base, dataArea, yAxisLocation);#295,17.383547869595613
+rectHeight);#304,17.374119658219186
+double transY1 = rangeAxis.valueToJava2D(base, dataArea, yAxisLocation);#439,17.36870389996153
+double transY2 = rangeAxis.valueToJava2D(value, dataArea,#440,17.367822975947938
+this.errorIndicatorStroke = new BasicStroke(0.5f);#117,17.354740824018204
+return; // bar is not visible#267,17.346802504166313
+return; // bar is not visible#411,17.34448304383651
+throw new IllegalArgumentException(#201,17.33936545723363
+g2.draw(line);#343,17.3248829088713
+if (orientation == PlotOrientation.HORIZONTAL) {#207,17.297603569030763
+lowVal, rectY + rectHeight * 0.75);#342,17.26969877243042
+- valueDelta, dataArea, yAxisLocation);#319,17.266789317131042
+- valueDelta, dataArea, yAxisLocation);#463,17.266789317131042
+protected void drawVerticalItem(Graphics2D g2,#373,17.26437344270594
+column);#346,17.254297574361164
+dataArea, xAxisLocation);#244,17.247910737991333
+(value < 0.0));#492,17.23251720711037
+return; // bar is not visible#286,17.197862873906676
+return; // bar is not visible#430,17.19393701138704
+line = new Line2D.Double(rectX + rectWidth / 2.0d, lowVal,#478,17.176602145603724
+(value < 0.0));#349,17.174435403611923
+line = new Line2D.Double(lowVal, rectY + rectHeight / 2.0d,#335,17.166135019726223
+g2.draw(line);#486,17.157565367849248
+stream.defaultReadObject();#550,17.133736882890975
+public void drawItem(Graphics2D g2,#188,17.125102678934734
+g2.setStroke(this.errorIndicatorStroke);#322,17.12348559408477
+Serializable {#96,17.089732513427734
+column);#489,17.085596508449978
+this.errorIndicatorPaint = paint;#141,17.0792137781779
+"Requires StatisticalCategoryDataset.");#202,17.077402229309083
+return true;#511,17.072202311621773
+g2.setPaint(getItemOutlinePaint(row, column));#331,17.071704555202174
+value = lclip;#271,17.059546243576776
+value = lclip;#415,17.056059246971493
+g2.draw(bar);#311,16.99727961891576
+if (!PaintUtilities.equal(this.errorIndicatorPaint,#520,16.9924986912654
+g2.draw(bar);#455,16.992393995586195
+g2.setPaint(getItemOutlinePaint(row, column));#475,16.99203604620856
+this.errorIndicatorStroke = SerialUtilities.readStroke(stream);#552,16.971221889768326
+this.errorIndicatorPaint = Color.gray;#116,16.96914949417114
+g2.setStroke(this.errorIndicatorStroke);#466,16.960256778832637
+Rectangle2D bar = new Rectangle2D.Double(rectX, rectY, rectWidth,#303,16.923029363155365
+public class StatisticalBarRenderer extends BarRenderer#93,16.913068551283615
+SerialUtilities.writeStroke(this.errorIndicatorStroke, stream);#537,16.906450850622996
+Rectangle2D bar = new Rectangle2D.Double(rectX, rectY, rectWidth,#447,16.906223088502884
+stream.defaultWriteObject();#535,16.891257899148123
+value = uclip;#290,16.88610644340515
+value = uclip;#434,16.880792665481568
+protected void drawHorizontalItem(Graphics2D g2,#230,16.843093647676355
+return true;#524,16.837501872669566
+that.errorIndicatorPaint)) {#521,16.81520923614502
+this.errorIndicatorStroke = stroke;#169,16.795610126696136
+return false;#517,16.705077913072373
+statData, row, column);#213,16.664674123128254
+value = lclip;#280,16.64997547149658
+value = lclip;#424,16.64997547149658
+g2.setPaint(this.errorIndicatorPaint);#472,16.647694992296625
+g2.setPaint(this.errorIndicatorPaint);#328,16.624398664994672
+return false;#514,16.6211740175883
+SerialUtilities.writePaint(this.errorIndicatorPaint, stream);#536,16.505055794349083
+yAxisLocation);#297,16.48872116633824
+yAxisLocation);#441,16.470590773082915
+this.errorIndicatorPaint = SerialUtilities.readPaint(stream);#551,16.313109911405125
+StatisticalBarRenderer that = (StatisticalBarRenderer) obj;#519,16.260325508117674
+return false;#522,15.808291371663412

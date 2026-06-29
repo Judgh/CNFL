@@ -1,0 +1,504 @@
+public String toString() {#807,20.17437767982483
+if (hasInstanceType()) {#981,19.76440869844877
+public boolean hasInstanceType() {#935,19.713161998324924
+public boolean isInstanceType() {#174,19.64505926767985
+if (call.hasEqualParameters(other.call)) {#667,19.62368212805854
+ArrowType getInternalArrowType() {#271,19.621928041631524
+public String getTemplateTypeName() {#1008,19.58000764846802
+private ArrowType call;#78,19.5697694505964
+private void appendVarArgsString(StringBuilder builder, JSType paramType) {#851,19.53791813850403
+StringBuilder b = new StringBuilder(32);#1066,19.51547043664115
+if (objType.isEquivalentTo(prototype)) {#555,19.465832074483234
+public ObjectType getInstanceType() {#919,19.423289585113526
+StringBuilder b = new StringBuilder(32);#812,19.386880534035818
+if (params != null) {#252,19.309607592496004
+if (isEquivalentTo(that)) {#600,19.29682832956314
+if (other != null &&#610,19.23839219411214
+String propertyName) {#723,19.219008359042082
+if (functionInstance.isEquivalentTo(that)) {#636,19.20285505997507
+public Node getSource() {#951,19.119484305381775
+return this.call.isEquivalentTo(otherType.call);#797,19.08511217016923
+if (hasKnownTypeOfThis) {#816,19.078400391798752
+if (hasKnownTypeOfThis) {#1070,19.073842708881084
+void setInstanceType(ObjectType instanceType) {#928,19.06541817004864
+public boolean hasEqualCallType(FunctionType otherType) {#796,19.015447974205017
+if (params == null) {#501,19.00245952606201
+if (maybeTypeOfThis instanceof ObjectType) {#1034,18.995879650115967
+public boolean isEquivalentTo(JSType otherType) {#766,18.99529129266739
+if (prototype != null) {#985,18.971488072321964
+for (FunctionType subType : subTypes) {#975,18.958966703975904
+public Set<String> getOwnPropertyNames() {#290,18.922717607938328
+if (lastParam == null || !lastParam.isVarArgs()) {#254,18.910210782831367
+if (this.isInterface()) {#778,18.891029675801594
+ArrowType arrowType, ObjectType typeOfThis,#132,18.880072818082922
+if ("call".equals(name)) {#498,18.874726355075836
+FunctionParamBuilder builder = new FunctionParamBuilder(registry);#526,18.846705345880416
+Node params = getParametersNode();#500,18.835839970906576
+throws UnsupportedOperationException {#487,18.81261291503906
+if (maybeNewTypeOfThis instanceof ObjectType) {#686,18.807148029929714
+private String getDebugHashCodeStringOf(JSType type) {#1093,18.784247230080997
+if (changed) {#1046,18.770760536193848
+this.source = source;#140,18.762530708312987
+this.source = source;#959,18.740414714813234
+if (p.isVarArgs()) {#829,18.738566462198893
+if (hasKnownTypeOfThis) {#825,18.735862414042156
+Node params = getParametersNode();#251,18.72569248893044
+Node lastParam = params.getLastChild();#253,18.718571960926056
+boolean treatThisTypesAsCovariant =#888,18.710208535194397
+params = params.cloneTree();#510,18.70263043571921
+if (subTypes != null) {#974,18.702173074086506
+for (Node n : getParameters()) {#237,18.69860128255991
+if (prototype == null) {#291,18.69353875246915
+!other.call.hasUnknownParamsOrReturn()) {#613,18.687965973563816
+private FunctionType(JSTypeRegistry registry, String name, Node source) {#155,18.686825370788576
+public FunctionType toMaybeFunctionType() {#195,18.685761538418856
+this.source = source;#161,18.681100177764893
+JSTypeRegistry registry, String name, Node source) {#169,18.663375282287596
+public List<FunctionType> getSubTypes() {#996,18.649994189922626
+public ObjectType getTypeOfThis() {#943,18.644868677312676
+if (hasKnownTypeOfThis) {#1075,18.63675651550293
+public int hashCode() {#792,18.624317407608032
+if (p.isVarArgs()) {#837,18.61555576324463
+if (other.isInterface()) {#873,18.60975388118199
+if (isConstructor() && prototype == getInstanceType()) {#362,18.60552104314168
+if ("prototype".equals(name)) {#277,18.59153550011771
+for (ObjectType interfaceType : getExtendedInterfaces()) {#382,18.570391394875266
+if (this.isInterface()) {#877,18.56641892024449
+return treatThisTypesAsCovariant && this.call.isSubtype(other.call);#903,18.562266520091466
+boolean isSubtypeOfThat = this.isSubtype(that);#617,18.54439461749533
+@Override#567,18.534805297851562
+private void addRelatedInterfaces(ObjectType instance, Set<ObjectType> set) {#413,18.53434381030855
+@Override#572,18.5301034450531
+String templateTypeName,  boolean isConstructor, boolean nativeType) {#133,18.521583340384744
+@Override#865,18.52103614807129
+@Override#275,18.517967224121094
+private void addSubType(FunctionType subType) {#963,18.51680850982666
+return source;#952,18.496608189174108
+@Override#179,18.49541664123535
+public JSType getReturnType() {#262,18.493344567038797
+boolean hasKnownTypeOfThis = !typeOfThis.isUnknownType();#815,18.488854694366456
+boolean isSubtypeOfThis = that.isSubtype(this);#618,18.485497391742207
+return extendedInterfaces;#478,18.48454252878825
+int paramNum = call.parameters.getChildCount();#814,18.4760523964377
+public boolean isOrdinaryFunction() {#190,18.47525453567505
+@Override#184,18.47406506538391
+defineDeclaredProperty(name,#504,18.463433153489056
+INTERFACE#72,18.461417198181152
+if (objType != null) {#554,18.461201872144425
+if (subTypes != null) {#1050,18.46079421043396
+if (isInterface()) {#488,18.458950138092042
+Node thisTypeNode = Node.newString(Token.NAME, "thisType");#511,18.453251327787125
+public boolean isReturnTypeInferred() {#266,18.452816356312145
+if (paramNum > 0) {#824,18.447823842366535
+if (maybeTypeOfThis != null) {#1031,18.446710927145823
+!this.call.hasUnknownParamsOrReturn() &&#612,18.439724963644277
+while (p != null) {#835,18.429514077993538
+public String toDebugHashCodeString() {#1061,18.422401775013316
+b.append(getDebugHashCodeStringOf(p.getJSType()));#1079,18.409702911376954
+if ("prototype".equals(name)) {#552,18.4095744405474
+private ObjectType typeOfThis;#100,18.40167299906413
+for (ObjectType iface : implementedInterfaces) {#1041,18.399568557739258
+@Override#765,18.393394470214844
+for (int i = 0; i < subTypes.size(); i++) {#1051,18.377191792363707
+private enum Kind {#69,18.37614091237386
+if (that.isInterface()) {#779,18.375280788966588
+if (isInterface()) {#746,18.37482042312622
+if (isFunctionType() && that.isFunctionType()) {#599,18.370634184943306
+public Iterable<ObjectType> getExtendedInterfaces() {#477,18.36619371175766
+private List<FunctionType> subTypes;#123,18.363630468195137
+if (baseType.hasReferenceName() ||#340,18.360884393964493
+FunctionType other, boolean leastSuper) {#665,18.358722305297853
+return this.typeOfThis.isEquivalentTo(that.typeOfThis) &&#787,18.35498851278554
+if (prototype == null) {#306,18.33964677290483
+if (superClass != null) {#377,18.33823844364711
+this.typeOfThis = typeOfThis != null ?#146,18.335083802541096
+Set<ObjectType> set) {#465,18.331826210021973
+@Override#942,18.331624507904053
+private String templateTypeName;#128,18.331247925758362
+return Iterables.concat(#435,18.327435640188362
+if (prototype == null) {#358,18.327155980196867
+return call.parameters;#227,18.326424884796143
+if (isInterface()) {#381,18.314164479573567
+baseType.isUnknownType() ||#341,18.311885595321655
+if (paramNum > 0) {#1074,18.3116401831309
+ObjectType newTypeOfThis = null;#679,18.3081725193904
+return isInterface() ? getReferenceName().hashCode() : call.hashCode();#793,18.307842601429332
+registry.createNullableType(getTypeOfThis()),#533,18.302786407470702
+registry, null, null,#699,18.30237783704485
+int paramNum = call.parameters.getChildCount();#1068,18.301292475532083
+@Override#791,18.300671577453613
+@Override#189,18.300200700759888
+if (isEquivalent(typeOfThis, other.typeOfThis)) {#680,18.29847898937407
+other.typeOfThis.isSubtype(this.typeOfThis) ||#901,18.296022758483886
+if (subTypes == null) {#964,18.292367776234943
+private static final long serialVersionUID = 1L;#67,18.29054539020245
+boolean hasKnownTypeOfThis = !typeOfThis.isUnknownType();#1069,18.28425269126892
+return subTypes;#997,18.274553298950195
+if (that.isInterface()) {#784,18.26899027824402
+throw new UnsupportedOperationException();#491,18.26305653498723
+public int getMaxArguments() {#250,18.259771633148194
+public int getMinArguments() {#231,18.25898838043213
+@Override#1012,18.254159212112427
+@Override#173,18.24686360359192
+@Override#194,18.242788076400757
+public boolean hasCachedValues() {#1001,18.236389255523683
+this.getReferenceName() + ".prototype",#310,18.235758026440937
+i++;#238,18.224053382873535
+isOrdinaryFunction() && that.isOrdinaryFunction() &&#611,18.22401797771454
+defineDeclaredProperty(name,#517,18.2229383132037
+builder.append("...[").append(paramType.toString()).append("]");#857,18.221404631932575
+if (isSubtypeOfThat && !isSubtypeOfThis) {#619,18.220144589742024
+(other.typeOfThis.getConstructor() != null &&#896,18.210673332214355
+while (p != null) {#1081,18.20764710352971
+if (maybeSuperInstanceType == null) {#712,18.190853936331614
+for (ObjectType type : implementedInterfaces) {#442,18.18905086517334
+this.isConstructor() || other.isConstructor() ||#890,18.18203637816689
+if (JSType.isSubtype(this, that)) {#867,18.181961862664473
+return typeOfThis;#921,18.178576045566135
+b.append(", ");#836,18.170207087198893
+!(baseType instanceof PrototypeObjectType)) {#344,18.16638459657368
+return call;#272,18.1657897404262
+boolean defineProperty(String name, JSType type,#550,18.162792818886892
+ObjectType resolvedIface = (ObjectType) iface.resolve(t, scope);#1042,18.148939279409554
+Node p = call.parameters.getFirstChild();#828,18.148333443535698
+Preconditions.checkArgument(source == null ||#158,18.14742738008499
+if (!n.isOptionalArg() && !n.isVarArgs()) {#239,18.146069277887758
+@Override#970,18.145293474197388
+if (that == null) {#769,18.14012839577415
+return this;#196,18.137706211635045
+if (isConstructor() || isInterface()) {#375,18.129336865743003
+ObjectType topInstanceType = ctor.getInstanceType();#750,18.120403177597943
+public void setExtendedInterfaces(List<ObjectType> extendedInterfaces)#486,18.118715687801963
+@Override#1000,18.106094121932983
+for (ObjectType interfaceType : getExtendedInterfaces()) {#458,18.10445541805691
+@Override#1060,18.101882934570312
+FunctionType greatestFn =#648,18.100379467010498
+private JSType supAndInfHelper(JSType that, boolean leastSuper) {#585,18.088163148789178
+if (merged != null) {#627,18.086615920066833
+if (type == this) {#1094,18.084616574374113
+if (isConstructor()) {#817,18.08409001277043
+int min = 0;#236,18.081682840983074
+b.append(getDebugHashCodeStringOf(call.returnType));#1089,18.0792667388916
+public int getExtendedInterfacesCount() {#482,18.07473397254944
+public void setSource(Node source) {#958,18.07409702647816
+public Iterable<ObjectType> getAllExtendedInterfaces() {#453,18.073126119725845
+public boolean canBeCalled() {#200,18.07132682800293
+@Override#806,18.058987617492676
+maybeTypeOfThis = maybeTypeOfThis.restrictByNotNullOrUndefined();#1032,18.04047264099121
+for (ObjectType interfaceType : constructor.getExtendedInterfaces()) {#470,18.036901690743186
+private List<ObjectType> extendedInterfaces = ImmutableList.of();#117,18.02950641844008
+int i = 0;#235,18.019911660088432
+public ObjectType getTopMostDefiningType(String propertyName) {#741,18.016927999608658
+FunctionType(JSTypeRegistry registry, String name, Node source,#131,18.01204909218682
+FunctionType other = that.toMaybeFunctionType();#604,18.01116522620706
+if (this.isConstructor()) {#772,18.00372160398043
+private List<ObjectType> implementedInterfaces = ImmutableList.of();#111,17.994493590460884
+JSType maybeTypeOfThis = safeResolve(typeOfThis, t, scope);#1030,17.994060039520264
+newTypeOfThis = (ObjectType) maybeNewTypeOfThis;#687,17.991434055825938
+this.prototypeSlot = new SimpleSlot("prototype", prototype, true);#369,17.97164445174368
+return topInstanceType;#758,17.969627062479656
+return new FunctionType(registry, name, source);#170,17.95958238840103
+this.typeOfThis = typeOfThis != null ?#143,17.95610703362359
+Preconditions.checkArgument(source == null ||#137,17.949875235557556
+return templateTypeName;#1009,17.94959757063124
+return extendedInterfaces;#461,17.9483036465115
+call = (ArrowType) safeResolve(call, t, scope);#1016,17.947872615995863
+getInstanceType().clearCachedValues();#982,17.944790166967056
+newTypeOfThis = leastSuper ?#689,17.9403258562088
+public void clearCachedValues() {#971,17.938504695892334
+b.append(getDebugHashCodeStringOf(typeOfThis));#1072,17.935592923845565
+return prototype != null || super.hasCachedValues();#1002,17.935563802719116
+return leastSuper ? that : this;#620,17.93330939610799
+b.append(getDebugHashCodeStringOf(p.getJSType()));#1083,17.928229402612757
+if (!implementedInterfaces.isEmpty()){#205,17.925265669822693
+if (!isNativeObjectType()) {#980,17.9200603167216
+new FunctionBuilder(registry)#538,17.918035356621992
+for (ObjectType interfaceType : instance.getCtorExtendedInterfaces()) {#422,17.91533346970876
+@Override#495,17.91332459449768
+public Iterable<Node> getParameters() {#216,17.90605926513672
+for (ObjectType type : getImplementedInterfaces()) {#407,17.90461630291409
+if (isConstructor) {#142,17.903624708002265
+return isEquivalentTo(registry.getNativeType(U2U_CONSTRUCTOR_TYPE));#176,17.9031725636235
+typeOfThis.getLeastSupertype(other.typeOfThis) :#684,17.89701557159424
+Node p = call.parameters.getFirstChild();#1078,17.88867738511827
+if (!hasOwnProperty(name)) {#497,17.888646859389084
+return isConstructor() || isInterface();#936,17.886801426227276
+if (that.isFunctionType()) {#871,17.886272283700798
+registry,#309,17.881234109401703
+new ArrowType(#700,17.879234790802002
+FunctionType other = that.toMaybeFunctionType();#872,17.86283779144287
+if (n != null) {#218,17.858406673778187
+if (superCtor != null) {#210,17.85823778005747
+this.call = new ArrowType(registry, new Node(Token.LP), null);#162,17.84585678577423
+@Override#199,17.838640213012695
+.withReturnType(getReturnType())#506,17.83839814559273
+return typeOfThis.isNoObjectType() ?#944,17.838101387023926
+if (type.hasProperty(propertyName)) {#725,17.837538973490396
+registry, this.getReferenceName() + ".prototype", baseType);#347,17.827817535400392
+public Node getParametersNode() {#226,17.82752863566081
+return kind == Kind.INTERFACE;#186,17.82063865661621
+appendVarArgsString(b, p.getJSType());#830,17.819486704739656
+public boolean isSubtype(JSType that) {#866,17.818652289254324
+this.prototype.setOwnerFunction(this);#370,17.817733900887625
+if (that.isConstructor()) {#773,17.799536895751952
+JSType functionInstance = registry.getNativeType(#634,17.788844267527264
+thisTypeNode.setJSType(#512,17.784560203552246
+@Override#909,17.781885385513306
+typeOfThis.getGreatestSubtype(other.typeOfThis);#685,17.7761979836684
+private final Kind kind;#95,17.775640078953334
+public <T> T visit(Visitor<T> visitor) {#910,17.770129372091855
+if (interfaceType.hasProperty(propertyName)) {#729,17.76960325241089
+JSType maybeNewTypeOfThis = leastSuper ?#683,17.76769060558743
+b.append(")");#1087,17.76649417877197
+private Node source;#105,17.761432488759358
+this.call.isEquivalentTo(that.call);#788,17.760033017113095
+params.addChildToFront(thisTypeNode);#514,17.759451866149902
+public boolean isInterface() {#185,17.751937747001648
+.withParams(builder)#539,17.745658171804326
+typeOfThis : new InstanceObjectType(registry, this, nativeType);#144,17.745574235916138
+this.typeOfThis = new InstanceObjectType(registry, this);#164,17.74528730483282
+return call.returnType;#263,17.739599800109865
+if (paramType.isUnionType()) {#852,17.73708942958287
+return extendedInterfaces.size();#483,17.737055691805754
+this.extendedInterfaces = ImmutableList.copyOf(extendedInterfaces);#489,17.732118606567383
+typeOfThis = (ObjectType) maybeTypeOfThis;#1035,17.72513771057129
+public JSType getPropertyType(String name) {#496,17.720455987112864
+FunctionType merged = tryMergeFunctionPiecewise(other, leastSuper);#626,17.71984115600586
+b.append(typeOfThis.toString());#822,17.717132007374484
+return Integer.MAX_VALUE;#259,17.711868026039816
+newParamsNode = call.parameters;#668,17.703086376190186
+if (this == registry.getNativeType(JSTypeNative.FUNCTION_INSTANCE_TYPE)) {#808,17.702376957597405
+isNativeObjectType() ||#342,17.700093814304896
+return supAndInfHelper(that, true);#569,17.691556658063615
+topInstanceType = ctor.getInstanceType();#752,17.68052095525405
+.withReturnType(getReturnType())#540,17.671103749956405
+p = p.getNext();#834,17.66861658829909
+Node n = getParametersNode();#217,17.667588060552422
+ObjectType foundType = null;#724,17.660173416137695
+Set<String> names = Sets.newHashSet("prototype");#294,17.658422422409057
+return implementedInterfaces;#433,17.654550378972832
+if (superCtor == null) {#432,17.653719902038574
+JSType resolveInternal(ErrorReporter t, StaticScope<JSType> scope) {#1013,17.653253804082457
+return supAndInfHelper(that, false);#574,17.649983269827707
+FunctionType that =#767,17.64781928062439
+changed |= (resolvedIface != iface);#1044,17.643555694156223
+typeOfThis = instanceType;#929,17.639062708074395
+return call.returnTypeInferred;#267,17.636198838551838
+return super.defineProperty(name, type, inferred, propertyNode);#564,17.635027333309775
+defineDeclaredProperty(name,#537,17.63309955596924
+.withReturnType(getReturnType())#520,17.63093616651452
+return superCtor.hasImplementedInterfaces();#211,17.630894078148735
+newTypeOfThis = typeOfThis;#681,17.626769002278646
+builder.addOptionalParams(#532,17.620577557881674
+newTypeOfThis, null, false, false);#702,17.61811923980713
+this.call = arrowType;#150,17.615206891840156
+b.append(p.getJSType().toString());#832,17.604231791062787
+ImmutableList.Builder<ObjectType> resolvedInterfaces =#1039,17.60316265330595
+this.templateTypeName = templateTypeName;#151,17.588226318359375
+baseType.isFunctionPrototypeType() ||#343,17.5861783557468
+boolean newReturnTypeInferred =#695,17.581122571771797
+return true;#868,17.580275747511124
+public boolean hasImplementedInterfaces() {#204,17.572617212931316
+public void setImplementedInterfaces(List<ObjectType> implementedInterfaces) {#440,17.572417032150994
+prototype = (PrototypeObjectType) safeResolve(prototype, t, scope);#1017,17.572035962885078
+new PrototypeObjectType(#308,17.570159085591634
+return leastSuper ? that : this;#637,17.56746757030487
+public Iterable<ObjectType> getImplementedInterfaces() {#429,17.56299114227295
+if (this == registry.getNativeType(JSTypeNative.FUNCTION_INSTANCE_TYPE)) {#1062,17.557724426532612
+Node newParamsNode = null;#666,17.552230834960938
+return leastSuper ? greatestFn : leastFn;#652,17.55060026380751
+call.returnTypeInferred || other.call.returnTypeInferred;#696,17.54977575937907
+if (interfaceType.getConstructor() != null) {#383,17.5390510144441
+return kind == Kind.ORDINARY;#191,17.534235514127293
+return true;#201,17.53272465297154
+private FunctionType tryMergeFunctionPiecewise(#664,17.532412088834324
+return prototypeSlot;#280,17.530475997924803
+.withParamsNode(params)#519,17.526635430075906
+return min;#243,17.523729596819198
+registry, newParamsNode, newReturnType, newReturnTypeInferred),#701,17.52152308102312
+this.prototype = prototype;#368,17.515509510040282
+return "me";#1095,17.5136775970459
+public boolean isConstructor() {#180,17.51362673441569
+new FunctionBuilder(registry)#518,17.512691361563547
+new FunctionBuilder(registry)#505,17.50277446565174
+private PrototypeObjectType prototype;#87,17.501999855041504
+super.clearCachedValues();#972,17.488913536071777
+ImmutableList.builder();#1040,17.479271480015345
+return this.getReferenceName().equals(that.getReferenceName());#780,17.47108034292857
+appendVarArgsString(b, p.getJSType());#838,17.465409954388935
+public Iterable<ObjectType> getAllImplementedInterfaces() {#402,17.460304419199627
+public JSType getGreatestSubtype(JSType that) {#573,17.46003903283013
+b.append(", ");#1082,17.459384854634603
+return false;#776,17.45419322119819
+JSType newReturnType = leastSuper ?#675,17.451708453042166
+Preconditions.checkState(hasInstanceType());#920,17.448615519205728
+for (ObjectType interfaceType : type.getCtorExtendedInterfaces()) {#728,17.44467947699807
+FunctionType superCtor = isConstructor() ?#208,17.443445205688477
+call.returnType.getLeastSupertype(other.call.returnType) :#676,17.44175504755091
+b.append(call.returnType);#846,17.441114132220928
+ObjectType objType = type.toObjectType();#553,17.431134448331946
+private void addRelatedExtendedInterfaces(ObjectType instance,#464,17.427141125996908
+p = p.getNext();#1080,17.420600450955906
+b.append(", ");#826,17.414954566955565
+other.typeOfThis.getConstructor().isInterface()) ||#897,17.40621633882876
+return false;#770,17.403013229370117
+return null;#713,17.402321815490723
+registry.getNativeObjectType(JSTypeNative.OBJECT_TYPE) : typeOfThis;#945,17.40118719736735
+super(registry, name,#156,17.39152431488037
+registry.registerTypeImplementingInterface(this, type);#443,17.381460691753187
+registry.getNativeObjectType(JSTypeNative.OBJECT_TYPE) :#690,17.38003988265991
+public StaticSlot<JSType> getSlot(String name) {#276,17.376606604632208
+return leastSuper ? this : that;#622,17.367276827494305
+subTypes = Lists.newArrayList();#965,17.365211232503256
+@Override#549,17.363181591033936
+return false;#785,17.355848418341743
+return null;#672,17.3441219329834
+registry.createOptionalNullableType(getTypeOfThis()));#513,17.33958785874503
+public class FunctionType extends PrototypeObjectType {#66,17.337755584716795
+implementedInterfaces, superCtor.getImplementedInterfaces());#436,17.336374130249023
+paramType = paramType.toMaybeUnionType().getRestrictedUnion(#854,17.3264647397128
+registry.getNativeObjectType(OBJECT_TYPE),#311,17.30877050986657
+return new FunctionType(#698,17.30426576402452
+call.returnType.getGreatestSubtype(other.call.returnType);#677,17.30217324770414
+superClass.addSubType(this);#378,17.294018296634448
+b.append("new:");#818,17.29121379852295
+return prototype;#314,17.288701466151647
+this.setPrototypeBasedOn(objType);#558,17.28816338589317
+return getTopDefiningInterface(this.getInstanceType(), propertyName);#747,17.264774625951592
+return true;#206,17.251938078138565
+FunctionType superCtor = isConstructor() ?#430,17.24955285390218
+return leastSuper ? this : that;#639,17.24473875761032
+super(registry, name,#134,17.235760602084074
+while (true) {#751,17.23036903805203
+registry.getNativeType(JSTypeNative.VOID_TYPE));#855,17.22833490371704
+boolean inferred, Node propertyNode) {#551,17.227963788168772
+if (ctor == null || !ctor.getPrototype().hasProperty(propertyName)) {#754,17.223996785970833
+return Collections.emptySet();#221,17.223201513290405
+thisTypeNode.setOptionalArg(true);#515,17.222465562820435
+b.append(p.getJSType().toString());#840,17.222428639729817
+b.append(": ");#1088,17.220466353676535
+FunctionType leastFn =#650,17.212851762771606
+FunctionType ctor = this;#744,17.20650880986994
+private SimpleSlot prototypeSlot;#89,17.203705668449402
+return false;#213,17.201827594212123
+isNativeObjectType()));#312,17.191230535507202
+b.append(", ");#1076,17.18904202779134
+super.getLeastSupertype(that) :#656,17.17488213589317
+if (constructor != null) {#415,17.170495351155598
+i, JSType.toMaybeFunctionType(subTypes.get(i).resolve(t, scope)));#1053,17.163652018496865
+Set<ObjectType> extendedInterfaces = Sets.newLinkedHashSet();#456,17.143124534970237
+if (constructor != null) {#467,17.14094114303589
+public static ObjectType getTopDefiningInterface(ObjectType type,#722,17.140345454216003
+addRelatedExtendedInterfaces(interfaceType, extendedInterfaces);#459,17.127674913406373
+return foundType;#733,17.125750303268433
+boolean changed = false;#1038,17.125398529900444
+JSType.toMaybeFunctionType(otherType);#768,17.11955304145813
+static FunctionType forInterface(#168,17.110424399375916
+return visitor.caseFunctionType(this);#911,17.101074878986065
+nativeType);#136,17.08611471002752
+registry.getNativeObjectType(JSTypeNative.FUNCTION_INSTANCE_TYPE));#157,17.082724571228027
+source);#508,17.07836663722992
+return super.getOwnPropertyNames();#292,17.07786614554269
+return kind == Kind.CONSTRUCTOR;#181,17.071465198810284
+return getNativeType(JSTypeNative.FUNCTION_PROTOTYPE).isSubtype(that);#906,17.07061834335327
+registry.getNativeType(JSTypeNative.OBJECT_TYPE)));#535,17.06646474202474
+this.typeOfThis.isSubtype(other.typeOfThis);#902,17.063050111134846
+return this;#601,17.060424717989836
+this.kind = Kind.INTERFACE;#163,17.059508910545937
+public JSType getLeastSupertype(JSType that) {#568,17.049928930070664
+JSTypeNative.FUNCTION_INSTANCE_TYPE);#635,17.045488635698955
+return type.toDebugHashCodeString();#1097,17.0352081934611
+return b.toString();#847,17.03184175491333
+registry.getNativeFunctionType(JSTypeNative.LEAST_FUNCTION_TYPE);#651,17.026838056502804
+return false;#359,17.02106825510661
+b.append("this:");#1071,17.0208797454834
+return super.resolveInternal(t, scope);#1057,17.0124205271403
+return true;#394,17.008255549839564
+return names;#296,17.001266479492188
+implementedInterfaces = resolvedInterfaces.build();#1047,16.99839597940445
+return super.getPropertyType(name);#546,16.99296393761268
+return b.toString();#1090,16.98936185836792
+b.append("this:");#820,16.9875207901001
+Preconditions.checkArgument(isConstructor() || isInterface());#710,16.97686710357666
+addRelatedInterfaces(type, interfaces);#408,16.970556894938152
+p = p.getNext();#842,16.965295155843098
+return interfaces;#410,16.956658227103098
+return params.getChildCount();#255,16.954604975382487
+return true;#875,16.951473409479316
+return leastSuper ?#655,16.9511216878891
+Preconditions.checkArgument(name != null);#160,16.947066247463226
+return true;#559,16.946471734480426
+getSuperClassConstructor() : null;#431,16.93273998709286
+public ObjectType getPrototype() {#304,16.916183376312254
+subType.clearCachedValues();#976,16.91193962097168
+return this == that;#774,16.9088773727417
+return false;#782,16.90728759765625
+return super.getSlot(name);#282,16.90723446437291
+ObjectType maybeSuperInstanceType = getPrototype().getImplicitPrototype();#711,16.869351704915363
+Token.FUNCTION == source.getType());#138,16.86145476291054
+getSuperClassConstructor() : null;#209,16.860285871169147
+b.append("): ");#845,16.856244520707563
+Token.FUNCTION == source.getType());#159,16.854144246954668
+min = i;#240,16.85268298784892
+registry.getNativeFunctionType(JSTypeNative.U2U_CONSTRUCTOR_TYPE);#649,16.842270106077194
+foundType = type;#726,16.841775807467375
+typeOfThis :#147,16.8413040297372
+Preconditions.checkState(isConstructor() || isInterface());#742,16.840130605195696
+super.getGreatestSubtype(that);#657,16.831253316667343
+return maybeSuperInstanceType.getConstructor();#715,16.824356624058314
+registry.getNativeObjectType(JSTypeNative.FUNCTION_INSTANCE_TYPE),#135,16.81222659143908
+subTypes.add(subType);#967,16.804667472839355
+addRelatedInterfaces(interfaceType, set);#423,16.795329835679794
+if (replacedPrototype) {#390,16.785590489705402
+.build(),#507,16.77924358143526
+this.implementedInterfaces = ImmutableList.copyOf(implementedInterfaces);#445,16.77647476196289
+foundType = getTopDefiningInterface(interfaceType, propertyName);#730,16.76418213222338
+baseType = new PrototypeObjectType(#346,16.759207929883683
+Preconditions.checkNotNull(arrowType);#139,16.755190340677895
+ctor = ctor.getSuperClassConstructor();#753,16.75039905971951
+FunctionType constructor = instance.getConstructor();#466,16.748759610312327
+set.add(instance);#420,16.74619158109029
+clearCachedValues();#391,16.727008386091754
+public void setPrototypeBasedOn(ObjectType baseType) {#322,16.709360003471375
+prototype.clearCachedValues();#986,16.70431760152181
+registry.getNativeObjectType(JSTypeNative.NO_OBJECT_TYPE);#691,16.687303696909257
+setResolvedTypeInternal(this);#1014,16.660330533981323
+subTypes.set(#1052,16.657173523536095
+resolvedInterfaces.add(resolvedIface);#1043,16.654487553764792
+source);#542,16.642816407339915
+return false;#363,16.638038953145344
+return false;#879,16.63121362165971
+return false;#561,16.625554518266156
+b.append("function (");#1067,16.6087082082575
+FunctionType superClass = getSuperClassConstructor();#376,16.605517667882584
+this.kind = isConstructor ? Kind.CONSTRUCTOR : Kind.ORDINARY;#141,16.599121928215027
+return "Function";#809,16.598521518707276
+addRelatedExtendedInterfaces(interfaceType, set);#471,16.591969156265257
+registry.createNullableType(#534,16.587025190654554
+p = p.getNext();#1084,16.58617655436198
+registry.getNativeObjectType(JSTypeNative.UNKNOWN_TYPE);#148,16.57832682574237
+Set<ObjectType> interfaces = Sets.newLinkedHashSet();#405,16.56560852653102
+return;#417,16.565457153320313
+ORDINARY,#70,16.56441879272461
+b.append("function (");#813,16.5451508435336
+return n.children();#219,16.49949247186834
+return super.toDebugHashCodeString();#1063,16.494990094502768
+if (!constructor.isInterface()) {#416,16.475048987070718
+set.add(instance);#468,16.471094926198322
+public FunctionType getSuperClassConstructor() {#709,16.40382655461629
+setPrototype((PrototypeObjectType) baseType);#349,16.363758742809296
+FunctionType constructor = instance.getConstructor();#414,16.33389469555446
+source);#522,16.317188382148743
+boolean replacedPrototype = prototype != null;#366,16.314358197725735
+Preconditions.checkArgument(getPrototype().hasProperty(propertyName));#743,16.28970857100053
+interfaceType.getConstructor().addSubType(this);#384,16.241212158203126
+.build(),#521,16.156380765578326
+.build(),#541,16.12626361846924
+getPrototype();#279,16.107475566864014
+setPrototype(#307,16.08639144897461
+public boolean setPrototype(PrototypeObjectType prototype) {#357,15.981184768676759
+CONSTRUCTOR,#71,15.887344717979431
+return true;#556,15.886346156780537
+names.addAll(super.getOwnPropertyNames());#295,15.76551760567559
+return merged;#628,15.726188366229717
+break;#755,14.7916090965271

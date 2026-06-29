@@ -1,0 +1,258 @@
+public DateTimeFormatter withZone(DateTimeZone zone) {#321,20.948812166849773
+if (instant == null) {#702,20.266999185085297
+public DateTimeZone getZone() {#334,20.02625830968221
+private DateTimeFormatter(#124,19.876088428497315
+if (iZone == zone) {#322,19.739980697631836
+public DateTimeFormatter withZoneUTC() {#301,19.64919642039708
+if (newPos >= 0) {#814,19.633855164051056
+if (newPos >= 0) {#855,19.61047261953354
+if (newPos >= 0) {#900,19.59322452545166
+if (partial == null) {#536,19.528973325093588
+if (partial == null) {#553,19.515141677856445
+if (iZone != null) {#947,19.398237884044647
+@Deprecated#280,19.36253901890346
+private final DateTimeZone iZone;#95,19.35606551170349
+return withZone(DateTimeZone.UTC);#302,19.34338601430257
+DateTimeZone zone = chrono.getZone();#624,19.332617107190583
+DateTimeZone zone = chrono.getZone();#641,19.32879006235223
+public void printTo(Appendable appendable, long instant) throws IOException {#520,19.32161149111661
+public DateTimeFormatter withChronology(Chronology chrono) {#257,19.32106572105771
+iZone = zone;#135,19.30614295372596
+int offset = zone.getOffset(instant);#625,19.285431912070827
+if (newPos >= 0) {#748,19.260161817073822
+zone = DateTimeZone.UTC;#629,19.25759801864624
+public void printTo(Writer out, long instant) throws IOException {#508,19.21247306622957
+int offset = zone.getOffset(instant);#642,19.193176319724635
+throw new IllegalArgumentException("The partial must not be null");#537,19.17767488039457
+if (iZone != null) {#724,19.158473908901215
+public DateTimeFormatter withLocale(Locale locale) {#189,19.11998176574707
+zone = DateTimeZone.UTC;#646,19.105352878570557
+throw new IllegalArgumentException("Instant must not be null");#703,19.079024620056153
+throw new IllegalArgumentException("The partial must not be null");#554,19.06790513258714
+iZone = null;#116,19.05840125450721
+public class DateTimeFormatter {#82,19.037460207939148
+public void printTo(Appendable appendable, ReadableInstant instant) throws IOException {#485,19.027963240941364
+public void printTo(Writer out, ReadableInstant instant) throws IOException {#472,18.997529211498442
+if (parser == null) {#929,18.996460469563804
+iChrono = null;#115,18.994387944539387
+long instantMillis = instant.getMillis();#706,18.976322073685495
+long adjustedInstant = instant + offset;#626,18.944625437259674
+public DateTimeFormatter withPivotYear(int pivotYear) {#405,18.931022393076045
+if (locale == getLocale() || (locale != null && locale.equals(getLocale()))) {#190,18.909689031328472
+if (iChrono != null) {#944,18.89639621310764
+public DateTime parseDateTime(String text) {#849,18.88243039449056
+if (newPos >= text.length()) {#856,18.873144669966265
+if (newPos >= text.length()) {#901,18.863772002133455
+long adjustedInstant = instant + offset;#643,18.861466467380524
+public boolean isPrinter() {#146,18.861413088711824
+if (newPos >= text.length()) {#815,18.853183139454234
+public DateTimeFormatter withDefaultYear(int defaultYear) {#438,18.831218507554794
+private DateTimeParser requireParser() {#927,18.82637071609497
+if ((instant ^ adjustedInstant) < 0 && (instant ^ offset) >= 0) {#627,18.823282439133216
+return (iParser != null);#165,18.814410654703774
+public DateTimeFormatter(#108,18.812587165832518
+if (printer == null) {#660,18.76520586013794
+adjustedInstant = instant;#631,18.763486301197727
+public void printTo(Appendable appendable, ReadablePartial partial) throws IOException {#569,18.749729347229003
+if (newPos >= text.length()) {#749,18.731607133691963
+public boolean isParser() {#164,18.72904415130615
+public DateTimeParser getParser() {#173,18.707485993703205
+public int getDefaultYear() {#449,18.671519192782316
+DateTimeParserBucket bucket = new DateTimeParserBucket(#712,18.664701071652498
+if ((instant ^ adjustedInstant) < 0 && (instant ^ offset) >= 0) {#644,18.620317656418372
+public DateTimeFormatter withPivotYear(Integer pivotYear) {#368,18.59940699527138
+private final DateTimeParser iParser;#87,18.58481462796529
+long instantLocal = instantMillis + chrono.getZone().getOffset(instantMillis);#708,18.5847957611084
+public String print(long instant) {#598,18.575323979059856
+public long parseMillis(String text) {#742,18.553926876613072
+public Locale getLocale() {#203,18.552947521209717
+printTo(out, instant, null);#509,18.528618027182187
+if (iChrono == chrono) {#258,18.527196382221423
+long millis = DateTimeUtils.getInstantMillis(instant);#461,18.51870071411133
+adjustedInstant = instant;#648,18.509933920467603
+DateTimeParser parser = iParser;#928,18.49147617816925
+public void printTo(Writer out, ReadablePartial partial) throws IOException {#551,18.4904428395358
+return new DateTimeFormatter(iPrinter, iParser, iLocale,#439,18.489643206963173
+printTo(buf, instant);#585,18.48905855814616
+return iParser;#174,18.48082383473714
+Chronology chrono = DateTimeUtils.getInstantChronology(instant);#462,18.45706229739719
+return (iPrinter != null);#147,18.45064651966095
+private final int iDefaultYear;#99,18.449832396073774
+iPivotYear = null;#117,18.448136738368444
+long millis = DateTimeUtils.getInstantMillis(instant);#473,18.444162216186523
+appendable.append(print(instant));#486,18.44221411810981
+public void printTo(StringBuffer buf, long instant) {#497,18.434412731843835
+return this;#370,18.421803601582845
+instant.setZone(iZone);#725,18.411988735198975
+int newPos = parser.parseInto(bucket, text, 0);#813,18.39845417022705
+return iPrinter;#156,18.389128391559307
+return new DateTimeFormatter(iPrinter, iParser, iLocale,#325,18.377834796905518
+iDefaultYear = 2000;#118,18.37252916608538
+newPos = ~newPos;#753,18.364967848125257
+DateTimeZone parsedZone = DateTimeZone.forOffsetMillis(parsedOffset);#718,18.36061242222786
+return this;#191,18.35974260965983
+printTo(buf, instant);#600,18.35759137471517
+appendable.append(print(partial));#570,18.357482461368335
+return new DateTimeFormatter(iPrinter, iParser, iLocale,#261,18.34933636738704
+int newPos = parser.parseInto(bucket, text, 0);#747,18.341473350524904
+appendable.append(print(instant));#521,18.333088239034016
+return new DateTimeFormatter(iPrinter, iParser, iLocale,#226,18.327923958118145
+DateTimeZone parsedZone = DateTimeZone.forOffsetMillis(parsedOffset);#905,18.326853609085084
+DateTimeZone parsedZone = DateTimeZone.forOffsetMillis(parsedOffset);#819,18.32484610080719
+newPos = ~newPos;#917,18.319700140702096
+DateTimeParser parser = requireParser();#701,18.317001402378082
+public LocalDateTime parseLocalDateTime(String text) {#808,18.31683366438922
+offset = 0;#630,18.314732789993286
+private void printTo(Writer buf, long instant, Chronology chrono) throws IOException {#636,18.30724636713664
+return new DateTimeFormatter(iPrinter, iParser, iLocale,#372,18.30681720146766
+printTo(buf, instant, null);#498,18.30384405921487
+public DateTimePrinter getPrinter() {#155,18.298235961369105
+int newPos = parser.parseInto(bucket, text, 0);#899,18.297851486206056
+return iZone;#335,18.29435698191325
+DateTimeZone parsedZone = DateTimeZone.forOffsetMillis(parsedOffset);#860,18.29064977169037
+return new DateTimeFormatter(iPrinter, iParser, locale,#193,18.2899675766627
+int newPos = parser.parseInto(bucket, text, 0);#854,18.289817543029784
+Chronology chrono = instant.getChronology();#707,18.289543056488036
+newPos = ~newPos;#827,18.27341872767398
+private DateTimePrinter requirePrinter() {#658,18.244948591504777
+Chronology chrono = DateTimeUtils.getInstantChronology(instant);#474,18.243010379649974
+iLocale = null;#113,18.239622116088867
+public DateTimeFormatter withOffsetParsed() {#222,18.23000317811966
+offset = 0;#647,18.229406654834747
+Integer pivotYear, int defaultYear) {#128,18.225353013901483
+if (iZone != null) {#866,18.223257740338642
+public Integer getPivotYear() {#415,18.21389428774516
+int defaultYear = chrono.year().get(instantLocal);#710,18.20199489593506
+newPos = ~newPos;#872,18.201331991898385
+iPivotYear = pivotYear;#136,18.194266764322915
+public int parseInto(ReadWritableInstant instant, String text, int position) {#700,18.18655142576798
+DateTimeParser parser = requireParser();#895,18.17621475458145
+DateTimeParser parser = requireParser();#850,18.158622324466705
+if (iZone != null) {#911,18.157043019930523
+public MutableDateTime parseMutableDateTime(String text) {#894,18.155963797318307
+public boolean isOffsetParsed() {#236,18.153323613680325
+return iChrono;#271,18.15104579925537
+long millis = bucket.computeMillis(true, text);#857,18.143056315760457
+if (iOffsetParsed == true) {#223,18.142495356108014
+long millis = bucket.computeMillis(true, text);#902,18.141683363145397
+long millis = bucket.computeMillis(true, text);#816,18.127974110264933
+DateTimeParser parser = requireParser();#809,18.12111258506775
+printer.printTo(out, partial, iLocale);#556,18.099427541097004
+public LocalTime parseLocalTime(String text) {#790,18.093992296854655
+throw new UnsupportedOperationException("Printing not supported");#661,18.074537833531696
+DateTimeParser parser = requireParser();#743,18.07151311635971
+Chronology chrono, DateTimeZone zone,#127,18.069510503248736
+int newPos = parser.parseInto(bucket, text, position);#714,18.066576499938964
+public Chronology getChronolgy() {#281,18.057018075670516
+return bucket.computeMillis(true, text);#750,18.050159011568343
+DateTimePrinter printer = requirePrinter();#552,18.042127821180557
+printTo(buf, partial);#615,18.042127100626626
+return iChrono;#282,18.04195519856044
+private final Chronology iChrono;#93,18.039040785569412
+public LocalDate parseLocalDate(String text) {#772,18.03872928619385
+if (bucket.getOffsetInteger() != null) {  // treat withOffsetParsed() as being true#817,18.030349987309155
+private final Integer iPivotYear;#97,18.02096939086914
+if (iPivotYear == pivotYear || (iPivotYear != null && iPivotYear.equals(pivotYear))) {#369,18.019101343656843
+public String print(ReadableInstant instant) {#583,18.013506616864884
+throw new UnsupportedOperationException("Parsing not supported");#930,18.012501106262206
+Chronology chrono = selectChronology(null).withUTC();  // always use UTC, avoiding DST gaps#811,17.984729853543367
+iPrinter = printer;#111,17.966267653873988
+public Chronology getChronology() {#270,17.94780943943904
+DateTime dt = new DateTime(millis, chrono);#865,17.937037283374416
+return this;#259,17.932976277669272
+chrono = chrono.withZone(parsedZone);#906,17.930376249201156
+Chronology chrono = selectChronology(null);#897,17.92976803779602
+return buf.toString();#586,17.925244331359863
+iPrinter = printer;#130,17.918179852621897
+DateTimePrinter printer = iPrinter;#659,17.9155781533983
+super();#110,17.913649559020996
+Chronology chrono = selectChronology(null);#852,17.913423156738283
+iChrono = chrono;#134,17.909364879131317
+iLocale = locale;#132,17.908437047685897
+iParser = parser;#112,17.903002592233513
+chrono = chrono.withZone(iZone);#948,17.90052930514018
+dt = dt.withZone(iZone);#867,17.896996527910233
+public void printTo(StringBuffer buf, ReadableInstant instant) {#460,17.896947358783923
+printTo(out, millis, chrono);#475,17.879169112757634
+return this;#323,17.875006357828777
+private final DateTimePrinter iPrinter;#85,17.870221819196427
+if (iOffsetParsed && bucket.getOffsetInteger() != null) {#716,17.868852652036228
+return this;#224,17.860153325398763
+Chronology chrono = selectChronology(iChrono);#745,17.85880992723548
+return buf.toString();#601,17.843201773507253
+DateTimePrinter printer = requirePrinter();#535,17.839283731248642
+return newPos;#727,17.833130677541096
+true, iChrono, null, iPivotYear, iDefaultYear);#227,17.821204965764824
+false, iChrono, zone, iPivotYear, iDefaultYear);#326,17.814340129043117
+iParser = parser;#131,17.802523686335636
+super();#129,17.792994117736818
+DateTimePrinter printer = requirePrinter();#637,17.792283640967476
+printer.printTo(buf, adjustedInstant, chrono.withUTC(), offset, zone, iLocale);#650,17.784117192029953
+return buf.toString();#616,17.78189550127302
+chrono = chrono.withZone(parsedZone);#820,17.781327836653766
+chrono = chrono.withZone(bucket.getZone());#908,17.75435654776437
+iOffsetParsed = false;#114,17.753382921218872
+chrono = iChrono;#945,17.750349855422975
+printer.printTo(buf, partial, iLocale);#539,17.747546650114515
+MutableDateTime dt = new MutableDateTime(millis, chrono);#910,17.747297613961354
+int parsedOffset = bucket.getOffsetInteger();#818,17.746329657236735
+DateTimePrinter printer = requirePrinter();#620,17.740782843695747
+printer.printTo(buf, adjustedInstant, chrono.withUTC(), offset, zone, iLocale);#633,17.737724870443344
+return new LocalDateTime(millis, chrono);#824,17.72744447844369
+private void printTo(StringBuffer buf, long instant, Chronology chrono) {#619,17.709771329706367
+chrono = chrono.withZone(bucket.getZone());#863,17.688867350987024
+dt.setZone(iZone);#912,17.68304443359375
+private Chronology selectChronology(Chronology chrono) {#942,17.682006484583805
+if (iOffsetParsed && bucket.getOffsetInteger() != null) {#858,17.67721226636101
+int parsedOffset = bucket.getOffsetInteger();#904,17.675920391082762
+chrono = chrono.withZone(parsedZone);#861,17.673797719618854
+int parsedOffset = bucket.getOffsetInteger();#859,17.658363564809164
+if (iOffsetParsed && bucket.getOffsetInteger() != null) {#903,17.635166869444006
+chrono = chrono.withZone(bucket.getZone());#721,17.632907902752912
+return iPivotYear;#416,17.625727566805754
+chrono = chrono.withZone(parsedZone);#719,17.60064356143658
+return iLocale;#204,17.595902149493877
+chrono = chrono.withZone(bucket.getZone());#822,17.595899609157016
+return dt;#914,17.589649868011474
+iDefaultYear = defaultYear;#137,17.580889828999837
+public void printTo(StringBuffer buf, ReadablePartial partial) {#534,17.568054819107054
+return parseLocalDateTime(text).toLocalDate();#773,17.56329107284546
+int parsedOffset = bucket.getOffsetInteger();#717,17.555634195154365
+instant.setMillis(bucket.computeMillis(false, text));#715,17.55199124262883
+private final Locale iLocale;#89,17.544002612431843
+return dt;#869,17.526854228973388
+chrono = selectChronology(chrono);#709,17.48424424623188
+DateTimePrinter printer, DateTimeParser parser) {#109,17.46109167734782
+StringBuffer buf = new StringBuffer(requirePrinter().estimatePrintedLength());#584,17.45889087823721
+printTo(buf, millis, chrono);#463,17.441540266338148
+return withPivotYear(Integer.valueOf(pivotYear));#406,17.423892560212508
+return parseLocalDateTime(text).toLocalTime();#791,17.421722602844238
+private final boolean iOffsetParsed;#91,17.417347834660458
+chrono = DateTimeUtils.getChronology(chrono);#943,17.416957179705303
+return chrono;#950,17.398178895314533
+instant.setChronology(chrono);#723,17.360568523406982
+public String print(ReadablePartial partial) {#613,17.347992197672525
+DateTimeParserBucket bucket = new DateTimeParserBucket(0, chrono, iLocale, iPivotYear, iDefaultYear);#812,17.341095215235
+StringBuffer buf = new StringBuffer(requirePrinter().estimatePrintedLength());#599,17.334141841301552
+DateTimeParserBucket bucket = new DateTimeParserBucket(0, chrono, iLocale, iPivotYear, iDefaultYear);#853,17.330452405489407
+chrono = selectChronology(chrono);#638,17.31791787398489
+DateTimeParserBucket bucket = new DateTimeParserBucket(0, chrono, iLocale, iPivotYear, iDefaultYear);#898,17.316305111616085
+return iDefaultYear;#450,17.285552978515625
+return parser;#932,17.262333956631746
+DateTimeParserBucket bucket = new DateTimeParserBucket(0, chrono, iLocale, iPivotYear, iDefaultYear);#746,17.257874806722004
+DateTimePrinter printer, DateTimeParser parser,#125,17.25553794529127
+chrono = selectChronology(chrono);#621,17.250608895954333
+return printer;#663,17.23019938035445
+iOffsetParsed, iChrono, iZone, pivotYear, iDefaultYear);#373,17.170741081237793
+Locale locale, boolean offsetParsed,#126,17.144452225078236
+throw new IllegalArgumentException(FormatUtils.createErrorMessage(text, newPos));#919,17.11879869869777
+throw new IllegalArgumentException(FormatUtils.createErrorMessage(text, newPos));#874,17.116356440952845
+StringBuffer buf = new StringBuffer(requirePrinter().estimatePrintedLength());#614,17.100112034724308
+iOffsetParsed, iChrono, iZone, iPivotYear, iDefaultYear);#194,17.091399719840602
+iOffsetParsed, chrono, iZone, iPivotYear, iDefaultYear);#262,17.081628190146553
+throw new IllegalArgumentException(FormatUtils.createErrorMessage(text, newPos));#829,17.076321022851126
+throw new IllegalArgumentException(FormatUtils.createErrorMessage(text, newPos));#755,17.05357265472412
+return iOffsetParsed;#237,17.031138801574706
+iOffsetParsed, iChrono, iZone, iPivotYear, defaultYear);#440,16.80736340703191
+iOffsetParsed = offsetParsed;#133,16.78663128300717
+instantLocal, chrono, iLocale, iPivotYear, defaultYear);#713,16.459112627752894

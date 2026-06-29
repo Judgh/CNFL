@@ -1,0 +1,142 @@
+public Object clone() throws CloneNotSupportedException {#463,20.79145520074027
+public List getKeys() {#165,19.704979705810548
+private ArrayList keys;#84,19.69492096371121
+public DefaultKeyedValues() {#98,19.395791834050957
+public int hashCode() {#451,19.302773857116698
+private ArrayList values;#87,19.244320339626736
+clone.keys = (ArrayList) this.keys.clone();#465,19.072918718511406
+public int getItemCount() {#109,19.04082575711337
+public void clear() {#345,19.03362888760037
+public void insertValue(int position, Comparable key, double value) {#255,19.013858556747437
+public Number getValue(Comparable key) {#180,19.006969451904297
+public void insertValue(int position, Comparable key, Number value) {#270,18.971045398712157
+public void addValue(Comparable key, Number value) {#208,18.892567297991583
+public Comparable getKey(int index) {#135,18.872169154030935
+public void setValue(Comparable key, Number value) {#228,18.864991188049316
+clone.values = (ArrayList) this.values.clone();#466,18.835899396376178
+Number v1 = getValue(i);#430,18.830516406467982
+public Number getValue(int item) {#122,18.82259434920091
+public void sortByKeys(SortOrder order) {#356,18.789431444803874
+if (position < 0 || position > getItemCount()) {#271,18.780371756780717
+public void addValue(Comparable key, double value) {#196,18.776484826031854
+public void sortByValues(SortOrder order) {#383,18.755743726094565
+int count = getItemCount();#419,18.73669999440511
+for (int i = 0; i < data.length; i++) {#370,18.690306782722473
+if (obj == this) {#410,18.68946647644043
+public int getIndex(Comparable key) {#149,18.676041875566757
+if (!(obj instanceof KeyedValues)) {#414,18.674183393779554
+for (int i = 0; i < size; i++) {#360,18.662611571225252
+for (int i = 0; i < data.length; i++) {#396,18.647948066393536
+else {#237,18.642414855957032
+for (int i = 0; i < size; i++) {#386,18.605593247847125
+public boolean equals(Object obj) {#409,18.594097932179768
+if (pos == position) {#278,18.58827978769938
+for (int i = 0; i < count; i++) {#424,18.55520135706121
+DefaultKeyedValues clone = (DefaultKeyedValues) super.clone();#464,18.49215575059255
+this.keys = new ArrayList();#99,18.485590934753418
+public void setValue(Comparable key, double value) {#218,18.45588835547952
+else {#437,18.43084171840123
+if (i == null) {#154,18.416569836934407
+this.values = new ArrayList();#100,18.41497176885605
+Cloneable, PublicCloneable,#77,18.39173122552725
+Number v2 = that.getValue(i);#431,18.332804679870605
+else {#282,18.309314346313478
+if (pos >= 0) {#283,18.300205481679814
+if (key == null) {#229,18.299610392252603
+for (int i = 0; i < this.keys.size(); i++) {#300,18.291259582226093
+public void removeValue(int index) {#315,18.286077352670524
+Comparator comparator = new KeyedValueComparator(#365,18.276834440231323
+Comparator comparator = new KeyedValueComparator(#391,18.275250339508055
+if (v1 == null) {#432,18.264494943618775
+final int size = this.keys.size();#357,18.258628686269123
+if (key == null) {#150,18.21370881398519
+int pos = getIndex(key);#277,18.210670828819275
+if (count != that.getItemCount()) {#420,18.20681175432707
+final int size = this.keys.size();#384,18.161064783732098
+if (keyIndex >= 0) {#233,18.14882618188858
+data[i] = new DefaultKeyedValue((Comparable) this.keys.get(i),#361,18.1417813709804
+public void removeValue(Comparable key) {#332,18.141308035169327
+data[i] = new DefaultKeyedValue((Comparable) this.keys.get(i),#387,18.137528691973007
+private static final long serialVersionUID = 8468154364608194797L;#81,18.13622644673223
+if (key == null) {#274,18.109466107686362
+private void rebuildIndex () {#298,18.090993309020995
+return (this.keys != null ? this.keys.hashCode() : 0);#452,18.07365292769212
+KeyedValues that = (KeyedValues) obj;#418,18.055401229858397
+if (!k1.equals(k2)) {#427,18.02602509657542
+Comparable k2 = that.getKey(i);#426,18.022756854693096
+this.values.set(pos, value);#280,18.004658525640313
+final DefaultKeyedValue[] data = new DefaultKeyedValue[size];#358,18.001215020815533
+if (v2 != null) {#433,17.980841954549152
+int index = getIndex(key);#333,17.979376077651978
+return i.intValue();#157,17.969629083360946
+this.keys.clear();#346,17.93495729991368
+Comparable k1 = getKey(i);#425,17.928203929554332
+final DefaultKeyedValue[] data = new DefaultKeyedValue[size];#385,17.925548791885376
+if (index < this.keys.size()) {#318,17.92331690537302
+throw new IllegalArgumentException("Null 'key' argument.");#275,17.91101624415471
+return (Comparable) this.keys.get(index);#136,17.903931163606188
+return (List) this.keys.clone();#166,17.896872679392498
+throw new IllegalArgumentException("'position' out of bounds.");#272,17.888942153365523
+if (index < 0) {#182,17.867178217569986
+if (index < 0) {#334,17.86592763264974
+int keyIndex = getIndex(key);#232,17.859532973345587
+this.values.clear();#347,17.858912808554514
+final Integer i = (Integer) this.indexMap.get(key);#153,17.80436646938324
+this.indexMap = new HashMap();#101,17.78042209849638
+int index = getIndex(key);#181,17.717136800289154
+private HashMap indexMap;#93,17.709884990345348
+this.keys.set(pos, key);#279,17.70940806648948
+return (Number) this.values.get(item);#123,17.683084392547606
+clone.indexMap = (HashMap) this.indexMap.clone();#467,17.67335617542267
+Arrays.sort(data, comparator);#393,17.64858071009318
+this.keys.add(position, key);#288,17.618147069757637
+this.indexMap.clear();#348,17.610026995340984
+throw new IllegalArgumentException("Null 'key' argument.");#151,17.58112071110652
+throw new IllegalArgumentException("Null 'key' argument.");#230,17.57391441785372
+return -1;  // key not found#155,17.566849753970192
+this.indexMap.clear();#299,17.559162139892578
+setValue(key, new Double(value));#219,17.5164696375529
+this.keys.remove(index);#316,17.516097486019135
+addValue(key, new Double(value));#197,17.50932758732846
+public class DefaultKeyedValues implements KeyedValues,#76,17.492764179523174
+insertValue(position, key, new Double(value));#256,17.490742111206053
+return clone;#468,17.48185990073464
+Arrays.sort(data, comparator);#367,17.427378866407608
+Serializable {#78,17.401619931925897
+this.indexMap.put(key, new Integer(this.keys.size() - 1));#240,17.375573880744703
+this.values.remove(index);#317,17.374248266220093
+this.indexMap.put(key, new Integer(i));#302,17.36055979361901
+return true;#443,17.35006115653298
+return this.indexMap.size();#110,17.304255664348602
+this.values.set(keyIndex, value);#235,17.1306500227555
+final Object key = this.keys.get(i);#301,17.12461503346761
+if (!v1.equals(v2)) {#438,17.11504009791783
+KeyedValueComparatorType.BY_KEY, order);#366,17.06415817655366
+throw new UnknownKeyException("Key not found: " + key);#183,17.0499650148245
+KeyedValueComparatorType.BY_VALUE, order);#392,17.046317922657934
+this.keys.set(keyIndex, key);#234,17.024433923804242
+this.values.add(position, value);#289,17.014837395061146
+return getValue(index);#185,17.011298997061594
+(Number) this.values.get(i));#362,17.006180424844064
+(Number) this.values.get(i));#388,17.005215121853738
+removeValue(index);#337,16.932966599097618
+clear();#368,16.854669094085693
+clear();#395,16.79975938796997
+setValue(key, value);#209,16.652276674906414
+return;#335,16.53385814030965
+rebuildIndex();#319,16.515308900312945
+this.values.add(value);#239,16.502705001831053
+this.keys.add(key);#238,16.456021070480347
+return true;#411,16.328429730733237
+final DefaultKeyedValue value = data[i];#371,16.295429602913234
+final DefaultKeyedValue value = data[i];#397,16.2669852298239
+this.values.remove(pos);#285,16.254037102063496
+return false;#434,16.226772847382918
+return false;#421,16.166443824768066
+this.keys.remove(pos);#284,16.16235605875651
+return false;#415,16.09724299112956
+return false;#428,16.025042082134046
+rebuildIndex();#290,15.981353187561036
+addValue(value.getKey(), value.getValue());#372,15.914132194519043
+addValue(value.getKey(), value.getValue());#398,15.777917022705077
+return false;#439,15.528892765874447
