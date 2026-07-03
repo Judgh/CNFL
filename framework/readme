@@ -1,1 +1,8 @@
+The workflow of the unfied approach consists of three stages:
 
+* Conducting fault localization by using existing fault  localization approach
+  
+  - We employed the [GZoltar](https://github.com/GZoltar) for SBFL
+  - We reused the result from learning-based and LLM-based approaches.
+* Evaluating the naturalness of a list of candidate statements.
+* Combining the suspiciousness score and code naturalness  score, and re-ranking statements
