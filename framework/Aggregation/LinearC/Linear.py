@@ -7,8 +7,8 @@ import sys
 
 import pandas as pd
 
-a = 0.9#sus权重
-b = 0.1#natural权重
+a = 0.3#sus: alpha
+b = 0.7#natural:1-alpha
 
 def merge_files_with_weights(input_dir1, input_dir2, output_dir):
     """

@@ -432,12 +432,12 @@ from itertools import groupby
 import sys
 import pandas as pd
 
-# --- 1. 全局配置 ---
-a = 0.6  # 可疑度相乘的权重
-b = 0.4  # 排名的权重
+# --- 1. configuration ---
+a = 0.6  # for scores gama
+b = 0.4  # for ranking 1-gama
 
 
-# --- 2. 核心数据融合函数 ---
+# --- 2. combination strategy ---
 def process_files(file1, file2, topN):
     """处理文件并根据分数和排名进行加权评分"""
     # 读取 file1 (stmt-susps.txt)
