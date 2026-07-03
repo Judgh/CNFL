@@ -1,3 +1,2 @@
-This is the repository for the paper "Integrating LLM-Based Code Naturalness For Effective Software Fault Localization". Our code draws inspiration from two prior works: the paper "Revisiting Unnaturalness for Automated Program Repair in the Era of Large Language Models" and its accompanying replication package (available at https://github.com/squaresLab/entropy-apr-replication), as well as the paper "An Empirical Study on the Code Naturalness Modeling Capability for LLMs in Automated Patch Correctness Assessment" and its associated code repository (available at https://github.com/YuningLi0902/CodeNaturalnessModeling).
-
+This is the repository for the paper "Integrating LLM-Based Code Naturalness For Effective Software Fault Localization". 
 
