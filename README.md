@@ -1,4 +1,4 @@
-# This is the repository for the paper "Integrating LLM-Based Code Naturalness For Effective Software Fault Localization".
+# This is the repository for the paper "Understanding and Leveraging Code Naturalness Signals From Large Language Models for Effective Software Fault Localization".
 
 ---
 
